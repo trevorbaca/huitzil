@@ -40,7 +40,7 @@ class DreamsMaker(makertools.SegmentMaker):
         tempo_map=None,
         time_signatures=None,
         ):
-        superclass = super(SegmentMaker, self)
+        superclass = super(DreamsMaker, self)
         superclass.__init__(name=name)
         self._initialize_music_makers(music_makers)
         self.final_barline = final_barline
