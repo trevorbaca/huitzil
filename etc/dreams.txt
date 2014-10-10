@@ -54,11 +54,17 @@ middle; (9) lower alone.
 
 8. at what points does the closing material foreshadow? during (3) lower alone,
 during (5) upper alone and during (7) upper, middle & lower. (so during
-odd-numberd stages). then the closing material appears in full after (9) lower
+odd-numbered stages.) then the closing material appears in full after (9) lower
 alone.
 
 9. what will be the proportions of the nine stages relative to each other?
-    1: (1) middle alone
-    2: (2) middle & lower
-    2: (3) lower alone
-    ...
+    1: (1) middle
+    1: (2) middle & lower
+    1: (3) lower
+    1: (4) lower & upper
+    1: (5) upper
+    1: (6) upper & middle
+    1: (7) upper, middle & lower
+    1: (8) lower & middle
+    2: (9) lower
+so relatively even proportion of stages except for stage 9.
