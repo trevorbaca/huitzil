@@ -73,11 +73,10 @@ class DreamsMaker(makertools.SegmentMaker):
             self._annotate_stages()
         self._interpret_music_makers()
         self._interpret_music_handlers()
-        self._attach_rehearsal_mark()
         self._add_final_barline()
         self._add_final_markup()
         score_block = self.lilypond_file['score']
-        score = score_block['Huitzil Score']
+        score = score_block['Score']
         if not inspect_(score).is_well_formed():
             string = inspect_(score).tabulate_well_formedness_violations()
             raise Exception(string)
@@ -131,14 +130,6 @@ class DreamsMaker(makertools.SegmentMaker):
             assert isinstance(start_skip, scoretools.Skip), start_skip
             directive = new(directive)
             attach(directive, start_skip)
-
-    def _attach_rehearsal_mark(self):
-        assert len(self.name) == 1 and self.name.upper(), repr(self.name)
-        letter_number = ord(self.name) - ord('A') + 1
-        rehearsal_mark = indicatortools.RehearsalMark(number=letter_number)
-        voice = self._score['Time Signature Context']
-        first_leaf = inspect_(voice).get_leaf(0)
-        attach(rehearsal_mark, first_leaf)
 
     def _attach_tempo_indicators(self):
         if not self.tempo_map:
@@ -377,8 +368,9 @@ class DreamsMaker(makertools.SegmentMaker):
         specifier = rhythmmakertools.DurationSpellingSpecifier(
             spell_metrically='unassignable',
             )
-        maker = rhythmmakertools.RestRhythmMaker(
+        maker = rhythmmakertools.NoteRhythmMaker(
             duration_spelling_specifier=specifier,
+            output_masks=[rhythmmakertools.mask_all()],
             )
         selections = maker(time_signatures)
         return selections
