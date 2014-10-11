@@ -192,7 +192,7 @@ class DreamsMaker(makertools.SegmentMaker):
             'stylesheet.ily',
             )
         lilypond_file.file_initial_user_includes.append(path)
-        if not self.name == 'A':
+        if not self.name == 'dreams':
             lilypond_file.header_block.title = None
             lilypond_file.header_block.composer = None
 
@@ -237,8 +237,8 @@ class DreamsMaker(makertools.SegmentMaker):
         self._make_music_for_time_signature_context()
         self._attach_tempo_indicators()
         self._attach_fermatas()
-        for voice in iterate(self._score).by_class(scoretools.Voice):
-            self._make_music_for_voice(voice)
+        music_voice = self._score['Music Voice']
+        self._make_music_for_voice(music_voice)
 
     def _interpret_music_handler(self, music_handler):
         from huitzil import makers

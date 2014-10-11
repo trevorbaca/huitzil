@@ -9,7 +9,7 @@ from huitzil import materials
 ### INITIALIZATION ###
 segment_maker = makers.DreamsMaker(
     name='dreams',
-    show_stage_annotations=True,
+    show_stage_annotations=False,
     )
 
 ### STAGES ###
