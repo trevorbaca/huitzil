@@ -213,14 +213,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             lilypond_file.header_block.title = None
             lilypond_file.header_block.composer = None
 
-    def _get_music_makers_for_context(self, context_name):
-        music_makers = []
-        for music_maker in self.music_makers:
-            #if music_maker.context_name == context_name:
-            if True:
-                music_makers.append(music_maker)
-        return music_makers
-
     def _get_offsets(self, start_stage, stop_stage):
         context = self._score['Time Signature Context']
         result = self._stage_number_to_measure_indices(start_stage)
@@ -408,8 +400,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
     def _make_music_for_time_signature_context(self):
         context_name = 'Time Signature Context'
         context = self._score[context_name]
-        music_makers = self._get_music_makers_for_context(context_name)
-        for music_maker in music_makers:
+        for music_maker in self.music_makers:
             if music_maker.start_tempo is not None:
                 start_tempo = new(music_maker.start_tempo)
                 first_leaf = inspect_(context).get_leaf(0)
@@ -421,7 +412,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
 
     def _make_music_for_voice(self, voice):
         assert not len(voice), repr(voice)
-        music_makers = self._get_music_makers_for_context(voice.name)
+        music_makers = self.music_makers[:]
         music_makers.sort(key=lambda x: x.stages[0])
         assert self._stages_do_not_overlap(music_makers)
         if not music_makers:

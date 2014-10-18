@@ -1,4 +1,4 @@
-% 2014-10-18 13:45
+% 2014-10-18 18:14
 
 \version "2.19.15"
 \language "english"
@@ -217,11 +217,29 @@
 			\context TextSpannerVoice = "Text Spanner Voice" {
 			}
 			\context Voice = "Music Voice" {
-				r4.
-				r4.
-				r2
-				r16
-				r4..
+				\tweak #'text #tuplet-number::calc-fraction-text
+				\times 6/5 {
+					fs'16
+					e'16
+					f'16
+					g'16
+					af'16
+				}
+				\tweak #'text #tuplet-number::calc-fraction-text
+				\times 3/1 {
+					a'16
+					ef'16
+				}
+				\tweak #'text #tuplet-number::calc-fraction-text
+				\times 3/1 {
+					d'16
+					e'16
+					f'16
+				}
+				\tweak #'text #tuplet-number::calc-fraction-text
+				\times 7/1 {
+					cs'16
+				}
 				r2.
 				r2..
 				r4.

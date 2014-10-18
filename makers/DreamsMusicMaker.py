@@ -11,8 +11,9 @@ class DreamsMusicMaker(abctools.AbjadObject):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
+        '_extra_counts_per_division',
         '_operator_map',
-        '_pitch_class_cells',
+        '_pitch_class_tree',
         '_stages',
         '_start_tempo',
         '_stop_tempo',
@@ -23,15 +24,17 @@ class DreamsMusicMaker(abctools.AbjadObject):
 
     def __init__(
         self,
+        extra_counts_per_division=None,
         operator_map=None,
-        pitch_class_cells=None,
+        pitch_class_tree=None,
         stages=None,
         start_tempo=None,
         stop_tempo=None,
         voice_map=None,
         ):
+        self.extra_counts_per_division = extra_counts_per_division
         self.operator_map = operator_map
-        self.pitch_class_cells = pitch_class_cells
+        self.pitch_class_tree = pitch_class_tree
         self.stages = stages
         self.start_tempo = start_tempo
         self.stop_tempo = stop_tempo
@@ -42,38 +45,16 @@ class DreamsMusicMaker(abctools.AbjadObject):
     def __call__(self, time_signatures=None):
         r'''Calls music-maker.
 
-        Returns music. Probably as a selection.
+        Returns selection.
         '''
         for time_signature in time_signatures:
             assert isinstance(time_signature, indicatortools.TimeSignature)
         music = self._make_rhythm(time_signatures)
         assert isinstance(music, (tuple, list, Voice)), repr(music)
         first_item = music[0]
-        if isinstance(first_item, selectiontools.Selection):
-            first_component = first_item[0]
-        else:
-            first_component = first_item
-        first_leaf = inspect_(first_component).get_leaf(0)
-        assert isinstance(first_leaf, scoretools.Leaf), repr(first_leaf)
-        prototype = instrumenttools.UntunedPercussion
-        if self.instrument is not None:
-            attach(self.instrument, first_leaf)
-        if (isinstance(self.instrument, prototype) and
-            not self._hide_untuned_percussion_markup):
-            self._attach_untuned_percussion_markup(first_leaf)
-        if self.clef is not None:
-            attach(self.clef, first_leaf)
-        if self.staff_line_count is not None:
-            self._set_staff_line_count(first_leaf, self.staff_line_count)
-        elif self.clef == Clef('percussion'):
-            self._set_staff_line_count(first_leaf, 1)
         return music
 
     ### PRIVATE PROPERTIES ###
-
-    @property
-    def _default_rhythm_maker(self):
-        return rhythmmakertools.RestRhythmMaker()
 
     @property
     def _storage_format_specification(self):
@@ -91,85 +72,100 @@ class DreamsMusicMaker(abctools.AbjadObject):
 
     ### PRIVATE METHODS ###
 
-    def _attach_untuned_percussion_markup(self, leaf):
-        name = self.instrument.instrument_name
-        name = name.lower()
-        markup = markuptools.Markup(name, direction=Up)
-        markup = markup.box().override(('box-padding', 0.5))
-        attach(markup, leaf)
+    def _attach_voice_numbers(self, note_lists):
+        for component in self.voice_map:
+            assert len(component) == 2
+            voice_number = component[0]
+            start_index, stop_index = component[1]
+            for i, note_list in enumerate(note_lists):
+                if start_index <= i < stop_index:
+                    for note in note_list:
+                        attach(voice_number, note)
 
     def _get_rhythm_maker(self):
-        if self.rhythm_maker is not None:
-            return self.rhythm_maker
-        return self._default_rhythm_maker
+        return self.rhythm_maker
+
+    def _make_note_lists(self, pitch_class_tree):
+        note_lists = []
+        for cell in pitch_class_tree.iterate_at_level(-2):
+            note_list = []
+            for pitch_class in cell.manifest_payload:
+                note = Note(pitch_class, Duration(1, 4))
+                note_list.append(note)
+            note_lists.append(note_list)
+        return note_lists
 
     def _make_rhythm(self, time_signatures):
-        if self.division_maker is not None:
-            divisions = self.division_maker(time_signatures) 
-        else:
-            divisions = [
-                mathtools.NonreducedFraction(_) for _ in time_signatures
-                ]
-        divisions = sequencetools.flatten_sequence(divisions)
-        for division in divisions:
-            assert isinstance(division, mathtools.NonreducedFraction), division
-        rhythm_maker = self._get_rhythm_maker()
-        selections = rhythm_maker(divisions)
-        if not self.rhythm_overwrites:
-            return selections
-        dummy_measures = scoretools.make_spacer_skip_measures(time_signatures)
-        dummy_time_signature_voice = Voice(dummy_measures)
-        dummy_music_voice = Voice()
-        dummy_music_voice.extend(selections)
-        dummy_staff = Staff([dummy_time_signature_voice, dummy_music_voice])
-        dummy_staff.is_simultaneous = True
-        for rhythm_overwrite in self.rhythm_overwrites:
-            selector, division_maker, rhythm_maker = rhythm_overwrite
-            old_music_selection = selector(dummy_music_voice)
-            prototype = selectiontools.ContiguousSelection
-            #if 1 < len(old_music_selection):
-            if True:
-                old_music_selection = selectiontools.SliceSelection(
-                    old_music_selection)
-                result = old_music_selection._get_parent_and_start_stop_indices()
-                parent, start_index, stop_index = result
-                old_duration = old_music_selection.get_duration()
-                division_lists = division_maker([old_duration])
-                assert len(division_lists) == 1
-                division_list = division_lists[0]
-                new_music_selection = rhythm_maker(division_list)
-                dummy_music_voice[start_index:stop_index+1] = \
-                    new_music_selection
-            #elif len(old_music_selection) == 1:
-            #    prototype = selectiontools.Selection
-            #    assert isinstance(old_music_selection[0], prototype)
-            #    old_music_selection = old_music_selection[0]
-            #    old_duration = old_music_selection.get_duration()
-            #    division_lists = division_maker([old_duration])
-            #    assert len(division_lists) == 1
-            #    division_list = division_lists[0]
-            #    new_music_selection = rhythm_maker(division_list)
-            #    old_component = old_music_selection[0]
-            #    index = dummy_music_voice.index(old_component)
-            #    dummy_music_voice[index:index+1] = new_music_selection
-        music = dummy_music_voice[:]
-        return dummy_music_voice
+        pitch_class_tree = self.pitch_class_tree
+        assert isinstance(pitch_class_tree, pitchtools.PitchClassTree)
+        assert pitch_class_tree.depth == 3
+        assert 0 < len(pitch_class_tree)
+        note_lists = self._make_note_lists(pitch_class_tree)
+        self._attach_voice_numbers(note_lists)
+        self._set_written_durations(note_lists)
+        selections = self._make_selections(time_signatures, note_lists)
+        return selections
+    
+    def _make_selections(self, time_signatures, note_lists):
+        selections = []
+        total_note_lists = len(note_lists)
+        current_note_list_index = 0
+        extra_counts_per_division = datastructuretools.CyclicTuple(
+            self.extra_counts_per_division
+            )
+        for i, time_signature in enumerate(time_signatures):
+            if current_note_list_index <= total_note_lists - 1:
+                note_list = note_lists[current_note_list_index]
+                current_note_list_index += 1
+                tuplet = scoretools.FixedDurationTuplet(
+                    time_signature.duration,
+                    note_list,
+                    )
+                selections.append(tuplet)
+            else:
+                selection = scoretools.make_rests([time_signature.duration])
+                selections.append(selection)
+        return selections
 
-    def _set_staff_line_count(self, first_leaf, staff_line_count):
-        command = indicatortools.LilyPondCommand('stopStaff')
-        attach(command, first_leaf)
-        string = "override Staff.StaffSymbol #'line-count = #{}"
-        string = string.format(staff_line_count)
-        command = indicatortools.LilyPondCommand(string)
-        attach(command, first_leaf)
-        command = indicatortools.LilyPondCommand('startStaff')
-        attach(command, first_leaf)
+    def _set_written_durations(self, note_lists):
+        durations = []
+        for note_list in note_lists:
+            for note in note_list:
+                voice_number = inspect_(note).get_indicator(int)
+                if voice_number == 1:
+                    duration = Duration(1, 8)
+                elif voice_number == 2:
+                    duration = Duration(1, 16)
+                elif voice_number == 3:
+                    duration = Duration(1, 4)
+                else:
+                    raise ValueError(voice_number)
+                note.written_duration = duration
 
     ### PUBLIC PROPERTIES ###
 
     @property
+    def extra_counts_per_division(self):
+        r'''Gets extra counts per division of music-maker.
+
+        Returns list.
+        '''
+        return self._extra_counts_per_division
+
+    @extra_counts_per_division.setter
+    def extra_counts_per_division(self, expr):
+        if expr is None:
+            self._extra_counts_per_division = []
+        elif isinstance(expr, list):
+            self._extra_counts_per_division = expr
+        else:
+            message = 'must be list or none: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
     def operator_map(self):
-        r'''Gets operator map of segment maker.
+        r'''Gets operator map of music-maker.
 
         Returns list.
         '''
@@ -187,19 +183,19 @@ class DreamsMusicMaker(abctools.AbjadObject):
             raise TypeError(message)
 
     @property
-    def pitch_class_cells(self):
-        r'''Gets pitch-class cells of segment maker.
+    def pitch_class_tree(self):
+        r'''Gets pitch-class cells of music-maker.
 
         Returns list.
         '''
-        return self._pitch_class_cells
+        return self._pitch_class_tree
 
-    @pitch_class_cells.setter
-    def pitch_class_cells(self, expr):
+    @pitch_class_tree.setter
+    def pitch_class_tree(self, expr):
         if expr is None:
-            self._pitch_class_cells = []
+            self._pitch_class_tree = []
         elif isinstance(expr, pitchtools.PitchClassTree):
-            self._pitch_class_cells = expr
+            self._pitch_class_tree = expr
         else:
             message = 'must be list or none: {!r}.'
             message = message.format(expr)
@@ -207,7 +203,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
 
     @property
     def stages(self):
-        r'''Gets stages of segment maker.
+        r'''Gets stages of music-maker.
 
         Returns pair of positive integers.
         '''
@@ -228,8 +224,16 @@ class DreamsMusicMaker(abctools.AbjadObject):
             raise TypeError(message)
 
     @property
+    def start_stage(self):
+        r'''Gets start stage of music-maker.
+
+        Returns positive integer.
+        '''
+        return self.stages[0]
+
+    @property
     def start_tempo(self):
-        r'''Gets start tempo of segment maker.
+        r'''Gets start tempo of music-maker.
 
         Returns tempo or none.
         '''
@@ -247,8 +251,16 @@ class DreamsMusicMaker(abctools.AbjadObject):
             raise TypeError(message)
 
     @property
+    def stop_stage(self):
+        r'''Gets stop stage of music-maker.
+
+        Returns positive integer.
+        '''
+        return self.stages[-1]
+
+    @property
     def stop_tempo(self):
-        r'''Gets stop tempo of segment maker.
+        r'''Gets stop tempo of music-maker.
 
         Returns tempo or none.
         '''
@@ -267,7 +279,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
 
     @property
     def voice_map(self):
-        r'''Gets voice map of segment maker.
+        r'''Gets voice map of music-maker.
 
         Returns list.
         '''
