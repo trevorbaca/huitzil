@@ -16,6 +16,7 @@ class DreamsMaker(makertools.SegmentMaker):
         '_final_markup_extra_offset',
         '_music_handlers',
         '_music_makers',
+        '_page_breaks',
         '_score',
         '_show_stage_annotations',
         '_stages',
@@ -36,6 +37,7 @@ class DreamsMaker(makertools.SegmentMaker):
         measures_per_stage=None,
         music_makers=None,
         name=None,
+        page_breaks=None,
         show_stage_annotations=False,
         tempo_map=None,
         time_signatures=None,
@@ -43,6 +45,8 @@ class DreamsMaker(makertools.SegmentMaker):
         superclass = super(DreamsMaker, self)
         superclass.__init__(name=name)
         self._initialize_music_makers(music_makers)
+        page_breaks = page_breaks or []
+        self._page_breaks = page_breaks
         self.final_barline = final_barline
         if final_markup is not None:
             assert isinstance(final_markup, markuptools.Markup)
@@ -69,6 +73,7 @@ class DreamsMaker(makertools.SegmentMaker):
         self._make_lilypond_file()
         self._configure_lilypond_file()
         self._populate_time_signature_context()
+        self._add_manual_page_breaks()
         if self.show_stage_annotations:
             self._annotate_stages()
         self._interpret_music_makers()
@@ -83,6 +88,20 @@ class DreamsMaker(makertools.SegmentMaker):
         return self.lilypond_file
 
     ### PRIVATE METHODS ###
+
+    def _add_manual_page_breaks(self):
+        if not self.page_breaks:
+            return
+        time_signature_context = self._score['Time Signature Context']
+        measures = iterate(time_signature_context).by_class(Measure)
+        for i, measure in enumerate(measures):
+            measure_number = i + 1
+            if measure_number in self.page_breaks:
+                command = indicatortools.LilyPondCommand(
+                    'pageBreak',
+                    format_slot='after',
+                    )
+                attach(command, measure)
 
     def _add_final_barline(self):
         if not self.final_barline:
@@ -463,6 +482,14 @@ class DreamsMaker(makertools.SegmentMaker):
 
     ### PUBLIC PROPERTIES ###
 
+    @property
+    def page_breaks(self):
+        r'''Gets page break measure numbers.
+
+        Returns list.
+        '''
+        return self._page_breaks
+    
     @property
     def final_markup(self):
         r'''Gets final markup of segment.
