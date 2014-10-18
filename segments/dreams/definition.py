@@ -7,7 +7,7 @@ from huitzil import materials
 
 
 ### INITIALIZATION ###
-segment_maker = makers.DreamsMaker(
+segment_maker = makers.DreamsSegmentMaker(
     name='dreams',
     show_stage_annotations=False,
     )
@@ -32,22 +32,15 @@ segment_maker.tempo_map = [
 ### MANUAL BREAKS ###
 segment_maker.page_breaks.append(15)
 
+infinity = mathtools.Infinity()
+
 ###############################################################################
 ################################ MUSIC-MAKERS #################################
 ###############################################################################
 
-#### vn, va, vc [A1] tremolo clusters (11.1) ###
-#music_maker = segment_maker.make_music_maker()
-#music_maker.stages = 1
-#music_maker.context_name = vn
-#music_maker.division_maker = makertools.HypermeasureDivisionMaker(
-#    measure_counts=mathtools.Infinity,
-#    secondary_division_maker=makertools.DivisionMaker(
-#        pattern=[(1, 4)],
-#        remainder=Left,
-#        ),
-#    )
-#music_maker.rhythm_maker = rhythmmakertools.TupletRhythmMaker(
-#    tuplet_ratios=[(1, 1, 1)],
-#    output_masks=[BooleanPattern(indices=[0])],
-#    )
+music_maker = segment_maker.make_music_maker()
+music_maker.stages = 1
+music_maker.pitch_class_cells = materials.pitch_classes[0]
+music_maker.voice_map = [
+    [3, (0, infinity)],
+    ]

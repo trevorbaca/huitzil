@@ -5,7 +5,7 @@ from abjad import *
 from experimental.tools import makertools
 
 
-class DreamsMaker(makertools.SegmentMaker):
+class DreamsSegmentMaker(makertools.SegmentMaker):
     r'''Huitzil dreams segment-maker.
     '''
 
@@ -42,7 +42,7 @@ class DreamsMaker(makertools.SegmentMaker):
         tempo_map=None,
         time_signatures=None,
         ):
-        superclass = super(DreamsMaker, self)
+        superclass = super(DreamsSegmentMaker, self)
         superclass.__init__(name=name)
         self._initialize_music_makers(music_makers)
         page_breaks = page_breaks or []
@@ -90,8 +90,6 @@ class DreamsMaker(makertools.SegmentMaker):
     ### PRIVATE METHODS ###
 
     def _add_manual_page_breaks(self):
-        if not self.page_breaks:
-            return
         time_signature_context = self._score['Time Signature Context']
         measures = iterate(time_signature_context).by_class(Measure)
         for i, measure in enumerate(measures):
@@ -218,7 +216,8 @@ class DreamsMaker(makertools.SegmentMaker):
     def _get_music_makers_for_context(self, context_name):
         music_makers = []
         for music_maker in self.music_makers:
-            if music_maker.context_name == context_name:
+            #if music_maker.context_name == context_name:
+            if True:
                 music_makers.append(music_maker)
         return music_makers
 
@@ -634,7 +633,7 @@ class DreamsMaker(makertools.SegmentMaker):
         Returns music-maker.
         '''
         from huitzil import makers
-        music_maker = makers.MusicMaker()
+        music_maker = makers.DreamsMusicMaker()
         self.music_makers.append(music_maker)
         return music_maker
 
