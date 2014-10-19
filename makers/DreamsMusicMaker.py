@@ -85,6 +85,33 @@ class DreamsMusicMaker(abctools.AbjadObject):
     def _get_rhythm_maker(self):
         return self.rhythm_maker
 
+    def _make_inner_tuplets(self, note_lists):
+        extra_counts_per_division = self.extra_counts_per_division
+        extra_counts_per_division = datastructuretools.CyclicTuple(
+            extra_counts_per_division
+            )
+        inner_tuplets = []
+        for i, note_list in enumerate(note_lists):
+            leaf_count = len(note_list)
+            start_duration = sum(_.written_duration for _ in note_list)
+            extra_count = extra_counts_per_division[i]
+            unit_duration = note_list[0].written_duration
+            extra_duration = extra_count * unit_duration
+            target_duration = start_duration + extra_duration
+            ratio = leaf_count * [1]
+            ratio = mathtools.Ratio(ratio)
+            inner_tuplet = Tuplet.from_duration_and_ratio(
+                target_duration,
+                ratio,
+                avoid_dots=True,
+                is_diminution=False,
+                )
+            for j, inner_tuplet_note in enumerate(inner_tuplet):
+                source_note = note_list[j]
+                inner_tuplet_note.written_pitch = source_note.written_pitch
+            inner_tuplets.append(inner_tuplet)
+        return inner_tuplets
+
     def _make_note_lists(self, pitch_class_tree):
         note_lists = []
         for cell in pitch_class_tree.iterate_at_level(-2):
@@ -95,6 +122,27 @@ class DreamsMusicMaker(abctools.AbjadObject):
             note_lists.append(note_list)
         return note_lists
 
+    def _make_outer_tuplets(self, inner_tuplets, time_signatures):
+        tuplet_durations = [inspect_(_).get_duration() for _ in inner_tuplets]
+        measure_durations = [_.duration for _ in time_signatures]
+#        outer_tuplets = []
+#        for i, measure_duration in enumerate(measure_durations):
+#            if i <= len(inner_tuplet_lists) - 1:
+#                inner_tuplet_list = inner_tuplet_lists[i]
+#                outer_tuplet = scoretools.FixedDurationTuplet(
+#                    measure_duration,
+#                    inner_tuplet_list,
+#                    )
+#                outer_tuplets.append(outer_tuplet)
+#            else:
+#                selection = scoretools.make_notes([0], [measure_duration])
+#                outer_tuplets.append(selection)
+        current_inner_tuplet = 0
+        for time_signature in time_signatures:
+            # TODO: resume implementation here
+            pass
+        return outer_tuplets
+
     def _make_rhythm(self, time_signatures):
         pitch_class_tree = self.pitch_class_tree
         assert isinstance(pitch_class_tree, pitchtools.PitchClassTree)
@@ -103,8 +151,12 @@ class DreamsMusicMaker(abctools.AbjadObject):
         note_lists = self._make_note_lists(pitch_class_tree)
         self._attach_voice_numbers(note_lists)
         self._set_written_durations(note_lists)
-        selections = self._make_selections(time_signatures, note_lists)
-        return selections
+        inner_tuplets = self._make_inner_tuplets(note_lists)
+        outer_tuplets = self._make_outer_tuplets(
+            inner_tuplets, 
+            time_signatures,
+            )
+        return outer_tuplets
     
     def _make_selections(self, time_signatures, note_lists):
         selections = []
