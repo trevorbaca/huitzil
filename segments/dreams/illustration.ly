@@ -1,4 +1,4 @@
-% 2014-10-18 18:14
+% 2014-10-19 18:32
 
 \version "2.19.15"
 \language "english"
@@ -225,22 +225,19 @@
 					g'16
 					af'16
 				}
-				\tweak #'text #tuplet-number::calc-fraction-text
-				\times 3/1 {
+				{
 					a'16
 					ef'16
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
-				\times 3/1 {
+				\times 5/3 {
 					d'16
 					e'16
 					f'16
 				}
-				\tweak #'text #tuplet-number::calc-fraction-text
-				\times 7/1 {
-					cs'16
+				{
+					cs'8
 				}
-				r2.
 				r2..
 				r4.
 				r2..
