@@ -80,6 +80,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         self._interpret_music_handlers()
         self._add_final_barline()
         self._add_final_markup()
+        self._position_tuplet_brackets()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         if not inspect_(score).is_well_formed():
@@ -452,6 +453,13 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         measures = self._make_skip_filled_measures()
         time_signature_context = self._score['Time Signature Context']
         time_signature_context.extend(measures)
+
+    def _position_tuplet_brackets(self):
+        for tuplet in iterate(self._score).by_class(Tuplet):
+            if inspect_(tuplet).get_parentage().tuplet_depth != 0:
+                continue
+            if len(tuplet) == 1:
+                override(tuplet).tuplet_bracket.staff_padding = 4.9
 
     def _stage_number_to_measure_indices(self, stage_number):
         assert stage_number <= self.stage_count
