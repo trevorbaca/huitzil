@@ -1,4 +1,4 @@
-% 2014-10-19 21:21
+% 2014-10-20 10:52
 
 \version "2.19.15"
 \language "english"
@@ -236,25 +236,26 @@
 						ef'16
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 5/3 {
-						d'16
-						e'16
-						f'16
+					\times 4/3 {
+						d'32
+						e'32
+						f'32
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 3/2 {
+						cs'8
 					}
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
-				\times 9/13 {
-					{
-						cs'8
-					}
-					{
+				\times 9/10 {
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/4 {
 						bf'16
 						a'16
 						b'16
 						c'16
 					}
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 7/5 {
+					{
 						f'16
 						a'16
 						ef'16
@@ -263,19 +264,19 @@
 					}
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
-				\times 7/13 {
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 3/2 {
-						c'16
-						cs'16
-					}
+				\times 7/12 {
 					{
+						c'32
+						cs'32
+					}
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 5/3 {
 						bf'16
 						a'16
 						b'16
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 7/5 {
+					\times 6/5 {
 						af'16
 						fs'16
 						e'16
@@ -283,17 +284,16 @@
 						g'16
 					}
 				}
-				\tweak #'text #tuplet-number::calc-fraction-text
-				\times 6/7 {
-					\tweak #'text #tuplet-number::calc-fraction-text
-					\times 3/2 {
+				{
+					{
 						b'16
 						c'16
 					}
-					{
-						cs'16
-						bf'16
-						a'16
+					\tweak #'text #tuplet-number::calc-fraction-text
+					\times 4/3 {
+						cs'32
+						bf'32
+						a'32
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/2 {
