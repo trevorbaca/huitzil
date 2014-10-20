@@ -50,6 +50,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         for time_signature in time_signatures:
             assert isinstance(time_signature, indicatortools.TimeSignature)
         music = self._make_rhythm(time_signatures)
+        self._register_voices(music)
         assert isinstance(music, (tuple, list, Voice)), repr(music)
         first_item = music[0]
         return music
@@ -106,9 +107,13 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 avoid_dots=True,
                 is_diminution=False,
                 )
+            beam = spannertools.ComplexBeam()
+            attach(beam, inner_tuplet)
             for j, inner_tuplet_note in enumerate(inner_tuplet):
                 source_note = note_list[j]
                 inner_tuplet_note.written_pitch = source_note.written_pitch
+                voice_number = inspect_(source_note).get_indicator(int)
+                attach(voice_number, inner_tuplet_note)
             inner_tuplets.append(inner_tuplet)
         return inner_tuplets
 
@@ -199,6 +204,29 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 selection = scoretools.make_rests([time_signature.duration])
                 selections.append(selection)
         return selections
+
+    def _register_voices(self, music):
+        from huitzil import materials
+        voice_1_registration = materials.registration_inventory[0]
+        voice_2_registration = materials.registration_inventory[1]
+        voice_3_registration = materials.registration_inventory[2]
+        for note in iterate(music).by_class(Note):
+            voice_number = inspect_(note).get_indicator(int)
+            if voice_number == 1:
+                #override(note).note_head.color = 'red'
+                registration = voice_1_registration
+            elif voice_number == 2:
+                #override(note).note_head.color = 'green'
+                registration = voice_2_registration
+            elif voice_number == 3:
+                #override(note).note_head.color = 'blue'
+                registration = voice_3_registration
+            else:
+                raise ValueError(voice_number)
+            pitches = [note.written_pitch]
+            transposed_pitches = registration(pitches)
+            transposed_pitch = transposed_pitches[0]
+            note.written_pitch = transposed_pitch
 
     def _set_written_durations(self, note_lists):
         durations = []
