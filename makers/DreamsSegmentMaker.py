@@ -459,7 +459,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             if inspect_(tuplet).get_parentage().tuplet_depth != 0:
                 continue
             if len(tuplet) == 1:
-                override(tuplet).tuplet_bracket.staff_padding = 4.9
+                override(tuplet).tuplet_bracket.staff_padding = 7.4
 
     def _stage_number_to_measure_indices(self, stage_number):
         assert stage_number <= self.stage_count

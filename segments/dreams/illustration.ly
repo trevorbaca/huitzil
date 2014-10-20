@@ -1,4 +1,4 @@
-% 2014-10-20 10:52
+% 2014-10-20 11:17
 
 \version "2.19.15"
 \language "english"
@@ -217,94 +217,170 @@
 			\context TextSpannerVoice = "Text Spanner Voice" {
 			}
 			\context Voice = "Music Voice" {
-				\override TupletBracket #'staff-padding = #4.9
+				\override TupletBracket #'staff-padding = #7.4
 				{
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 6/5 {
-						fs'16
-						e'16
-						f'16
-						g'16
-						af'16
+						\set stemLeftBeamCount = #0
+						\set stemRightBeamCount = #2
+						fs16 [
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						e16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						f16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						g16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #0
+						af,16 ]
 					}
 				}
 				\revert TupletBracket #'staff-padding
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 6/7 {
 					{
-						a'16
-						ef'16
+						\set stemLeftBeamCount = #0
+						\set stemRightBeamCount = #2
+						a,16 [
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #0
+						ef16 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 4/3 {
-						d'32
-						e'32
-						f'32
+						\set stemLeftBeamCount = #0
+						\set stemRightBeamCount = #3
+						d32 [
+						\set stemLeftBeamCount = #3
+						\set stemRightBeamCount = #3
+						e32
+						\set stemLeftBeamCount = #3
+						\set stemRightBeamCount = #0
+						f32 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/2 {
-						cs'8
+						cs8
 					}
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 9/10 {
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/4 {
-						bf'16
-						a'16
-						b'16
-						c'16
+						\set stemLeftBeamCount = #0
+						\set stemRightBeamCount = #2
+						bf,16 [
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						a,16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						b,16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #0
+						c16 ]
 					}
 					{
-						f'16
-						a'16
-						ef'16
-						d'16
-						e'16
+						\set stemLeftBeamCount = #0
+						\set stemRightBeamCount = #2
+						f16 [
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						a,16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						ef16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						d16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #0
+						e16 ]
 					}
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 7/12 {
 					{
-						c'32
-						cs'32
+						\set stemLeftBeamCount = #0
+						\set stemRightBeamCount = #3
+						c32 [
+						\set stemLeftBeamCount = #3
+						\set stemRightBeamCount = #0
+						cs32 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/3 {
-						bf'16
-						a'16
-						b'16
+						\set stemLeftBeamCount = #0
+						\set stemRightBeamCount = #2
+						bf,16 [
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						a,16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #0
+						b,16 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 6/5 {
-						af'16
-						fs'16
-						e'16
-						f'16
-						g'16
+						\set stemLeftBeamCount = #0
+						\set stemRightBeamCount = #2
+						af,16 [
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						fs16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						e16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						f16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #0
+						g16 ]
 					}
 				}
 				{
 					{
-						b'16
-						c'16
+						\set stemLeftBeamCount = #0
+						\set stemRightBeamCount = #2
+						b,16 [
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #0
+						c16 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 4/3 {
-						cs'32
-						bf'32
-						a'32
+						\set stemLeftBeamCount = #0
+						\set stemRightBeamCount = #3
+						cs32 [
+						\set stemLeftBeamCount = #3
+						\set stemRightBeamCount = #3
+						bf,32
+						\set stemLeftBeamCount = #3
+						\set stemRightBeamCount = #0
+						a,32 ]
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 3/2 {
-						g'8
+						g8
 					}
 					\tweak #'text #tuplet-number::calc-fraction-text
 					\times 5/4 {
-						af'16
-						fs'16
-						e'16
-						f'16
+						\set stemLeftBeamCount = #0
+						\set stemRightBeamCount = #2
+						af,16 [
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						fs16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #2
+						e16
+						\set stemLeftBeamCount = #2
+						\set stemRightBeamCount = #0
+						f16 ]
 					}
 				}
 				r2..

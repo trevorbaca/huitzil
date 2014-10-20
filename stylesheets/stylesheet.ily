@@ -73,7 +73,7 @@
             \null
             \override #'(font-name . "Palatino Italic")
             \fontsize #3 {
-               " commissioned by Alan Toda-Ambaras "
+               " for Alan Toda-Ambaras "
             }
         }
     }
@@ -159,7 +159,7 @@
         \override TextScript.direction = #up
         \override Stem.length = #10
         \override TextSpanner.staff-padding = #2
-        \override TupletBracket.staff-padding = #3
+        \override TupletBracket.staff-padding = #5.5
         instrumentName = \markup { \fontsize #3 Cello \hspace #1.5 }
     }
     \context {
@@ -173,6 +173,7 @@
         \override BarNumber.font-size = 1
         \override BarNumber.padding = 4
         \override Beam.breakable = ##t
+        \override Beam.positions = #'(-6 . -6)
         \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5)
         \override Glissando.breakable = ##t
         \override MetronomeMark.extra-offset = #'(3 . -3)
@@ -192,7 +193,7 @@
         \override TupletBracket.direction = #down
         \override TupletBracket.full-length-to-extent = ##f
         \override TupletBracket.padding = #1
-        \override TupletNumber.font-size = #1
+        \override TupletNumber.font-size = #0.333
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
         markFormatter = #format-mark-box-alphabet
