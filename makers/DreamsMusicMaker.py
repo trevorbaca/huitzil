@@ -123,24 +123,40 @@ class DreamsMusicMaker(abctools.AbjadObject):
         return note_lists
 
     def _make_outer_tuplets(self, inner_tuplets, time_signatures):
-        tuplet_durations = [inspect_(_).get_duration() for _ in inner_tuplets]
-        measure_durations = [_.duration for _ in time_signatures]
-#        outer_tuplets = []
-#        for i, measure_duration in enumerate(measure_durations):
-#            if i <= len(inner_tuplet_lists) - 1:
-#                inner_tuplet_list = inner_tuplet_lists[i]
-#                outer_tuplet = scoretools.FixedDurationTuplet(
-#                    measure_duration,
-#                    inner_tuplet_list,
-#                    )
-#                outer_tuplets.append(outer_tuplet)
-#            else:
-#                selection = scoretools.make_notes([0], [measure_duration])
-#                outer_tuplets.append(selection)
         current_inner_tuplet = 0
+        outer_tuplets = []
         for time_signature in time_signatures:
-            # TODO: resume implementation here
-            pass
+            if len(inner_tuplets) <= current_inner_tuplet:
+                notes = scoretools.make_notes([0], [time_signature.duration])
+                outer_tuplets.append(notes)
+                continue
+            my_inner_tuplets = []
+            my_inner_tuplets.append(inner_tuplets[current_inner_tuplet])
+            current_inner_tuplet += 1
+            target_duration = time_signature.duration
+            while (sum(inspect_(_).get_duration() for _ in my_inner_tuplets) <
+                target_duration):
+                if current_inner_tuplet < len(inner_tuplets) - 1:
+                    my_inner_tuplets.append(
+                        inner_tuplets[current_inner_tuplet]
+                        )
+                    current_inner_tuplet += 1
+                else:
+                    current_duration = sum(
+                        inspect_(_).get_duration()
+                        for _ in my_inner_tuplets
+                        )
+                    missing_duration = target_duration - current_duration
+                    missing_notes = scoretools.make_notes(
+                        [0],
+                        [missing_duration],
+                        )
+                    my_inner_tuplets.extend(missing_notes)
+            outer_tuplet = scoretools.FixedDurationTuplet(
+                target_duration,
+                my_inner_tuplets,
+                )
+            outer_tuplets.append(outer_tuplet)
         return outer_tuplets
 
     def _make_rhythm(self, time_signatures):
