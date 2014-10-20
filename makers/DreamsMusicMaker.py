@@ -13,7 +13,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
     __slots__ = (
         '_extra_counts_per_division',
         '_operator_map',
-        '_pitch_class_tree',
+        '_pitch_class_trees',
         '_stages',
         '_start_tempo',
         '_stop_tempo',
@@ -26,7 +26,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         self,
         extra_counts_per_division=None,
         operator_map=None,
-        pitch_class_tree=None,
+        pitch_class_trees=None,
         stages=None,
         start_tempo=None,
         stop_tempo=None,
@@ -34,7 +34,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         ):
         self.extra_counts_per_division = extra_counts_per_division
         self.operator_map = operator_map
-        self.pitch_class_tree = pitch_class_tree
+        self.pitch_class_trees = pitch_class_trees
         self.stages = stages
         self.start_tempo = start_tempo
         self.stop_tempo = stop_tempo
@@ -112,14 +112,17 @@ class DreamsMusicMaker(abctools.AbjadObject):
             inner_tuplets.append(inner_tuplet)
         return inner_tuplets
 
-    def _make_note_lists(self, pitch_class_tree):
+    def _make_note_lists(self, pitch_class_trees):
         note_lists = []
-        for cell in pitch_class_tree.iterate_at_level(-2):
-            note_list = []
-            for pitch_class in cell.manifest_payload:
-                note = Note(pitch_class, Duration(1, 4))
-                note_list.append(note)
-            note_lists.append(note_list)
+        for pitch_class_tree in pitch_class_trees:
+            assert pitch_class_tree.depth == 3
+            assert 0 < len(pitch_class_tree)
+            for cell in pitch_class_tree.iterate_at_level(-2):
+                note_list = []
+                for pitch_class in cell.manifest_payload:
+                    note = Note(pitch_class, Duration(1, 4))
+                    note_list.append(note)
+                note_lists.append(note_list)
         return note_lists
 
     def _make_outer_tuplets(self, inner_tuplets, time_signatures):
@@ -128,6 +131,8 @@ class DreamsMusicMaker(abctools.AbjadObject):
         for time_signature in time_signatures:
             if len(inner_tuplets) <= current_inner_tuplet:
                 notes = scoretools.make_notes([0], [time_signature.duration])
+                for note in iterate(notes).by_class(Note):
+                    override(note).note_head.color = 'red'
                 outer_tuplets.append(notes)
                 continue
             my_inner_tuplets = []
@@ -136,7 +141,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
             target_duration = time_signature.duration
             while (sum(inspect_(_).get_duration() for _ in my_inner_tuplets) <
                 target_duration):
-                if current_inner_tuplet < len(inner_tuplets) - 1:
+                if current_inner_tuplet <= len(inner_tuplets) - 1:
                     my_inner_tuplets.append(
                         inner_tuplets[current_inner_tuplet]
                         )
@@ -151,6 +156,8 @@ class DreamsMusicMaker(abctools.AbjadObject):
                         [0],
                         [missing_duration],
                         )
+                    for note in iterate(missing_notes).by_class(Note):
+                        override(note).note_head.color = 'red'
                     my_inner_tuplets.extend(missing_notes)
             outer_tuplet = scoretools.FixedDurationTuplet(
                 target_duration,
@@ -160,11 +167,9 @@ class DreamsMusicMaker(abctools.AbjadObject):
         return outer_tuplets
 
     def _make_rhythm(self, time_signatures):
-        pitch_class_tree = self.pitch_class_tree
-        assert isinstance(pitch_class_tree, pitchtools.PitchClassTree)
-        assert pitch_class_tree.depth == 3
-        assert 0 < len(pitch_class_tree)
-        note_lists = self._make_note_lists(pitch_class_tree)
+        pitch_class_trees = self.pitch_class_trees
+        assert isinstance(pitch_class_trees, tuple)
+        note_lists = self._make_note_lists(pitch_class_trees)
         self._attach_voice_numbers(note_lists)
         self._set_written_durations(note_lists)
         inner_tuplets = self._make_inner_tuplets(note_lists)
@@ -251,21 +256,21 @@ class DreamsMusicMaker(abctools.AbjadObject):
             raise TypeError(message)
 
     @property
-    def pitch_class_tree(self):
-        r'''Gets pitch-class cells of music-maker.
+    def pitch_class_trees(self):
+        r'''Gets pitch-class trees of music-maker.
 
-        Returns list.
+        Returns tuple.
         '''
-        return self._pitch_class_tree
+        return self._pitch_class_trees
 
-    @pitch_class_tree.setter
-    def pitch_class_tree(self, expr):
+    @pitch_class_trees.setter
+    def pitch_class_trees(self, expr):
         if expr is None:
-            self._pitch_class_tree = []
-        elif isinstance(expr, pitchtools.PitchClassTree):
-            self._pitch_class_tree = expr
+            self._pitch_class_trees = []
+        elif isinstance(expr, tuple):
+            self._pitch_class_trees = expr
         else:
-            message = 'must be list or none: {!r}.'
+            message = 'must be tuple of pitch-class trees or none: {!r}.'
             message = message.format(expr)
             raise TypeError(message)
 
