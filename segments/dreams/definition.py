@@ -41,7 +41,7 @@ infinity = mathtools.Infinity()
 music_maker = segment_maker.make_music_maker()
 music_maker.stages = 1
 music_maker.pitch_class_trees = materials.pitch_classes[:6]
-music_maker.extra_counts_per_division = [1, 0, 2]
+music_maker.extra_counts_per_division = [1, 0, -1, 2]
 music_maker.voice_map = [
     [2, (0, infinity)],
     ]
