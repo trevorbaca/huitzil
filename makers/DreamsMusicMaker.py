@@ -13,6 +13,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
     __slots__ = (
         '_pc_displacement',
         '_extra_counts_per_division',
+        '_glissando_patterns',
         '_operator_map',
         '_pitch_class_trees',
         '_stages',
@@ -27,6 +28,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         self,
         pc_displacement=None,
         extra_counts_per_division=None,
+        glissando_patterns=None,
         operator_map=None,
         pitch_class_trees=None,
         stages=None,
@@ -36,6 +38,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         ):
         self.pc_displacement = pc_displacement
         self.extra_counts_per_division = extra_counts_per_division
+        self.glissando_patterns = glissando_patterns
         self.operator_map = operator_map
         self.pitch_class_trees = pitch_class_trees
         self.stages = stages
@@ -55,6 +58,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         music = self._make_rhythm(time_signatures)
         self._displace_pitch_classes(music)
         self._register_voices(music)
+        self._apply_glissando_patterns(music)
         assert isinstance(music, (tuple, list, Voice)), repr(music)
         first_item = music[0]
         return music
@@ -76,6 +80,21 @@ class DreamsMusicMaker(abctools.AbjadObject):
             )
 
     ### PRIVATE METHODS ###
+
+    def _apply_glissando_patterns(self, music):
+        if not self.glissando_patterns:
+            return
+        notes = list(iterate(music).by_class(Note))
+        note_pairs = list(sequencetools.iterate_sequence_nwise(notes, n=2))
+        total_note_pairs = len(note_pairs)
+        for i, note_pair in enumerate(note_pairs):
+            has_glissando = False
+            for pattern in self.glissando_patterns:
+                if pattern._matches_index(i, total_note_pairs):
+                    has_glissando = True
+                    break
+            if has_glissando:
+                attach(Glissando(), note_pair)
 
     def _attach_voice_numbers(self, note_lists):
         for component in self.voice_map:
@@ -270,28 +289,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
     ### PUBLIC PROPERTIES ###
 
     @property
-    def pc_displacement(self):
-        r'''Gets displacement map of music-maker.
-
-        Boolean pattern that specifies whether pitch-classes should be
-        registered as high pitches or low pitches.
-
-        Returns list.
-        '''
-        return self._pc_displacement
-
-    @pc_displacement.setter
-    def pc_displacement(self, expr):
-        if expr is None:
-            self._pc_displacement = []
-        elif isinstance(expr, list):
-            self._pc_displacement = expr
-        else:
-            message = 'must be list or none: {!r}.'
-            message = message.format(expr)
-            raise TypeError(message)
-
-    @property
     def extra_counts_per_division(self):
         r'''Gets extra counts per division of music-maker.
 
@@ -311,6 +308,27 @@ class DreamsMusicMaker(abctools.AbjadObject):
             raise TypeError(message)
 
     @property
+    def glissando_patterns(self):
+        r'''Gets glissando patterns of music-maker.
+
+        Set to list of boolean pattern objects or none.
+
+        Returns list or none.
+        '''
+        return self._glissando_patterns
+
+    @glissando_patterns.setter
+    def glissando_patterns(self, expr):
+        if expr is None:
+            self._glissando_patterns = []
+        elif isinstance(expr, list):
+            self._glissando_patterns = expr
+        else:
+            message = 'must be list or none: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+    
+    @property
     def operator_map(self):
         r'''Gets operator map of music-maker.
 
@@ -324,6 +342,28 @@ class DreamsMusicMaker(abctools.AbjadObject):
             self._operator_map = []
         elif isinstance(expr, list):
             self._operator_map = expr
+        else:
+            message = 'must be list or none: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
+    def pc_displacement(self):
+        r'''Gets displacement map of music-maker.
+
+        Boolean pattern that specifies whether pitch-classes should be
+        registered as high pitches or low pitches.
+
+        Returns list.
+        '''
+        return self._pc_displacement
+
+    @pc_displacement.setter
+    def pc_displacement(self, expr):
+        if expr is None:
+            self._pc_displacement = []
+        elif isinstance(expr, list):
+            self._pc_displacement = expr
         else:
             message = 'must be list or none: {!r}.'
             message = message.format(expr)

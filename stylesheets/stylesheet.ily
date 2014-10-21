@@ -176,6 +176,7 @@
         \override Beam.positions = #'(-6 . -6)
         \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5)
         \override Glissando.breakable = ##t
+        \override Glissando.thickness = 2
         \override MetronomeMark.extra-offset = #'(3 . -3)
         \override MetronomeMark.font-size = #3
         \override NoteCollision.merge-differently-dotted = ##t
