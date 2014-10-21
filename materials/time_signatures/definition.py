@@ -25,41 +25,17 @@ def numerator_to_time_signature(numerator):
         time_signature = TimeSignature((int(2 * numerator), 16))
     return time_signature
 
-counts = [5, 5, 5, 5, 5, 5, 5, 5, 8]
-partition = sequencetools.partition_sequence_by_counts
-numerator_lists = sequencetools.partition_sequence_by_counts(
-    numerators,
-    counts,
-    )
-assert len(numerator_lists) == 9
-
-def numerator_to_time_signature(numerator):
-    if mathtools.is_integer_equivalent_number(numerator):
-        time_signature = TimeSignature((numerator, 8))
-    else:
-        time_signature = TimeSignature((int(2 * numerator), 16))
-    return time_signature
-
 time_signatures = []
-for numerator_list in numerator_lists:
-    time_signature_list = [
-        numerator_to_time_signature(_) for _ in numerator_list]
-    time_signatures.append(time_signature_list)
+for numerator in numerators:
+    time_signature = numerator_to_time_signature(numerator)
+    time_signatures.append(time_signature)
 
-assert len(time_signatures) == 9
-pairs = []
-for time_signature_list in time_signatures:
-    length = len(time_signature_list)
-    duration = sum([_.duration for _ in time_signature_list])
-    pair = (length, duration)
-    pairs.append(pair)
+stage_3_time_signatures = []
+for time_signature in time_signatures[10:15]:
+    numerator, denominator = time_signature.pair
+    denominator /= 2
+    stage_3_time_signature = TimeSignature((numerator, denominator))
+    stage_3_time_signatures.append(stage_3_time_signature)
+assert len(stage_3_time_signatures) == 5
 
-assert pairs[0] == (5, Duration(20, 8))
-assert pairs[1] == (5, Duration(25, 8))
-assert pairs[2] == (5, Duration(41, 16)) # 20.5 / 8
-assert pairs[3] == (5, Duration(45, 16)) # 22.5 / 8
-assert pairs[4] == (5, Duration(17, 8))
-assert pairs[5] == (5, Duration(24, 8))
-assert pairs[6] == (5, Duration(22, 8))
-assert pairs[7] == (5, Duration(20, 8))
-assert pairs[8] == (8, Duration(33, 8))
+time_signatures[10:15] = stage_3_time_signatures
