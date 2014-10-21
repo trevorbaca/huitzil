@@ -11,6 +11,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
+        '_pc_displacement',
         '_extra_counts_per_division',
         '_operator_map',
         '_pitch_class_trees',
@@ -24,6 +25,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
 
     def __init__(
         self,
+        pc_displacement=None,
         extra_counts_per_division=None,
         operator_map=None,
         pitch_class_trees=None,
@@ -32,6 +34,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         stop_tempo=None,
         voice_map=None,
         ):
+        self.pc_displacement = pc_displacement
         self.extra_counts_per_division = extra_counts_per_division
         self.operator_map = operator_map
         self.pitch_class_trees = pitch_class_trees
@@ -50,6 +53,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         for time_signature in time_signatures:
             assert isinstance(time_signature, indicatortools.TimeSignature)
         music = self._make_rhythm(time_signatures)
+        self._displace_pitch_classes(music)
         self._register_voices(music)
         assert isinstance(music, (tuple, list, Voice)), repr(music)
         first_item = music[0]
@@ -83,8 +87,28 @@ class DreamsMusicMaker(abctools.AbjadObject):
                     for note in note_list:
                         attach(voice_number, note)
 
-    def _get_rhythm_maker(self):
-        return self.rhythm_maker
+    def _displace_pitch_classes(self, music):
+        if not self.pc_displacement:
+            return
+        notes = list(iterate(music).by_class(Note))
+        total_notes = len(notes)
+        down_one_octave = pitchtools.Transposition(-12)
+        for i, note in enumerate(notes):
+            register = None
+            for pattern in self.pc_displacement:
+                if pattern._matches_index(i, total_notes):
+                    register = 'high'
+                    break
+            else:
+                register = 'low'
+            if register == 'high':
+                pass
+            elif register == 'low':
+                source_pitch = note.written_pitch
+                transposed_pitch = down_one_octave(source_pitch)
+                note.written_pitch = transposed_pitch
+            else:
+                raise ValueError(register)
 
     def _make_inner_tuplets(self, note_lists):
         extra_counts_per_division = self.extra_counts_per_division
@@ -244,6 +268,28 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 note.written_duration = duration
 
     ### PUBLIC PROPERTIES ###
+
+    @property
+    def pc_displacement(self):
+        r'''Gets displacement map of music-maker.
+
+        Boolean pattern that specifies whether pitch-classes should be
+        registered as high pitches or low pitches.
+
+        Returns list.
+        '''
+        return self._pc_displacement
+
+    @pc_displacement.setter
+    def pc_displacement(self, expr):
+        if expr is None:
+            self._pc_displacement = []
+        elif isinstance(expr, list):
+            self._pc_displacement = expr
+        else:
+            message = 'must be list or none: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
 
     @property
     def extra_counts_per_division(self):
