@@ -14,7 +14,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         '_pc_displacement',
         '_extra_counts_per_division',
         '_glissando_patterns',
-        '_operator_map',
+        '_pc_operators',
         '_pitch_class_trees',
         '_stages',
         '_start_tempo',
@@ -29,7 +29,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         pc_displacement=None,
         extra_counts_per_division=None,
         glissando_patterns=None,
-        operator_map=None,
+        pc_operators=None,
         pitch_class_trees=None,
         stages=None,
         start_tempo=None,
@@ -39,7 +39,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         self.pc_displacement = pc_displacement
         self.extra_counts_per_division = extra_counts_per_division
         self.glissando_patterns = glissando_patterns
-        self.operator_map = operator_map
+        self.pc_operators = pc_operators
         self.pitch_class_trees = pitch_class_trees
         self.stages = stages
         self.start_tempo = start_tempo
@@ -150,7 +150,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 avoid_dots=True,
                 is_diminution=False,
                 )
-            beam = spannertools.ComplexBeam()
+            beam = spannertools.DuratedComplexBeam()
             attach(beam, inner_tuplet)
             for j, inner_tuplet_note in enumerate(inner_tuplet):
                 source_note = note_list[j]
@@ -168,6 +168,8 @@ class DreamsMusicMaker(abctools.AbjadObject):
             for cell in pitch_class_tree.iterate_at_level(-2):
                 note_list = []
                 for pitch_class in cell.manifest_payload:
+                    for operator in self.pc_operators:
+                        pitch_class = operator(pitch_class)
                     note = Note(pitch_class, Duration(1, 4))
                     note_list.append(note)
                 note_lists.append(note_list)
@@ -329,19 +331,19 @@ class DreamsMusicMaker(abctools.AbjadObject):
             raise TypeError(message)
     
     @property
-    def operator_map(self):
-        r'''Gets operator map of music-maker.
+    def pc_operators(self):
+        r'''Gets pc operators of music-maker.
 
         Returns list.
         '''
-        return self._operator_map
+        return self._pc_operators
 
-    @operator_map.setter
-    def operator_map(self, expr):
+    @pc_operators.setter
+    def pc_operators(self, expr):
         if expr is None:
-            self._operator_map = []
+            self._pc_operators = []
         elif isinstance(expr, list):
-            self._operator_map = expr
+            self._pc_operators = expr
         else:
             message = 'must be list or none: {!r}.'
             message = message.format(expr)
