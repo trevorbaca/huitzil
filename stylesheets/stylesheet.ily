@@ -157,7 +157,7 @@
         \Staff
         \accepts TextSpannerVoice
         \override TextScript.direction = #up
-        \override Stem.length = #10
+        %\override Stem.length = #10
         \override TextSpanner.staff-padding = #2
         \override TupletBracket.staff-padding = #5.5
         instrumentName = \markup { \fontsize #3 Cello \hspace #1.5 }
