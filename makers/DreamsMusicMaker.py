@@ -150,11 +150,15 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 target_duration = start_duration
             ratio = leaf_count * [1]
             ratio = mathtools.Ratio(ratio)
+            if 0 <= extra_count:
+                is_diminution = False
+            else:
+                is_diminution = True
             inner_tuplet = Tuplet.from_duration_and_ratio(
                 target_duration,
                 ratio,
                 avoid_dots=True,
-                is_diminution=False,
+                is_diminution=is_diminution,
                 )
             beam = spannertools.DuratedComplexBeam()
             attach(beam, inner_tuplet)
