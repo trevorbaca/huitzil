@@ -16,7 +16,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
         '_glissando_patterns',
         '_pc_operators',
         '_pitch_class_trees',
-        #'_stages',
         '_start_tempo',
         '_stop_tempo',
         '_voice_map',
@@ -31,7 +30,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
         glissando_patterns=None,
         pc_operators=None,
         pitch_class_trees=None,
-        #stages=None,
         start_tempo=None,
         stop_tempo=None,
         voice_map=None,
@@ -41,22 +39,17 @@ class DreamsMusicMaker(abctools.AbjadObject):
         self.glissando_patterns = glissando_patterns
         self.pc_operators = pc_operators
         self.pitch_class_trees = pitch_class_trees
-        #self.stages = stages
         self.start_tempo = start_tempo
         self.stop_tempo = stop_tempo
         self.voice_map = voice_map
 
     ### SPECIAL METHODS ###
 
-    #def __call__(self, time_signatures=None):
     def __call__(self):
         r'''Calls music-maker.
 
         Returns selection.
         '''
-        #for time_signature in time_signatures:
-        #    assert isinstance(time_signature, indicatortools.TimeSignature)
-        #music = self._make_rhythm(time_signatures)
         music = self._make_rhythm()
         self._displace_pitch_classes(music)
         self._register_voices(music)
@@ -143,7 +136,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
             extra_count = extra_counts_per_division[i]
             unit_duration = note_list[0].written_duration
             extra_duration = extra_count * unit_duration
-            #target_duration = start_duration + extra_duration
             if 0 < start_duration + extra_duration:
                 target_duration = start_duration + extra_duration
             else:
@@ -185,48 +177,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 note_lists.append(note_list)
         return note_lists
 
-    def _make_outer_tuplets(self, inner_tuplets, time_signatures):
-        current_inner_tuplet = 0
-        outer_tuplets = []
-        for time_signature in time_signatures:
-            if len(inner_tuplets) <= current_inner_tuplet:
-                notes = scoretools.make_notes([0], [time_signature.duration])
-                for note in iterate(notes).by_class(Note):
-                    override(note).note_head.color = 'red'
-                outer_tuplets.append(notes)
-                continue
-            my_inner_tuplets = []
-            my_inner_tuplets.append(inner_tuplets[current_inner_tuplet])
-            current_inner_tuplet += 1
-            target_duration = time_signature.duration
-            while (sum(inspect_(_).get_duration() for _ in my_inner_tuplets) <
-                target_duration):
-                if current_inner_tuplet <= len(inner_tuplets) - 1:
-                    my_inner_tuplets.append(
-                        inner_tuplets[current_inner_tuplet]
-                        )
-                    current_inner_tuplet += 1
-                else:
-                    current_duration = sum(
-                        inspect_(_).get_duration()
-                        for _ in my_inner_tuplets
-                        )
-                    missing_duration = target_duration - current_duration
-                    missing_notes = scoretools.make_notes(
-                        [0],
-                        [missing_duration],
-                        )
-                    for note in iterate(missing_notes).by_class(Note):
-                        override(note).note_head.color = 'red'
-                    my_inner_tuplets.extend(missing_notes)
-            outer_tuplet = scoretools.FixedDurationTuplet(
-                target_duration,
-                my_inner_tuplets,
-                )
-            outer_tuplets.append(outer_tuplet)
-        return outer_tuplets
-
-    #def _make_rhythm(self, time_signatures):
     def _make_rhythm(self):
         pitch_class_trees = self.pitch_class_trees
         assert isinstance(pitch_class_trees, tuple)
@@ -234,11 +184,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
         self._attach_voice_numbers(note_lists)
         self._set_written_durations(note_lists)
         inner_tuplets = self._make_inner_tuplets(note_lists)
-        #outer_tuplets = self._make_outer_tuplets(
-        #    inner_tuplets, 
-        #    time_signatures,
-        #    )
-        #return outer_tuplets
         return inner_tuplets
     
     def _make_selections(self, time_signatures, note_lists):
@@ -402,36 +347,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
             message = message.format(expr)
             raise TypeError(message)
 
-#    @property
-#    def stages(self):
-#        r'''Gets stages of music-maker.
-#
-#        Returns pair of positive integers.
-#        '''
-#        return self._stages
-#
-#    @stages.setter
-#    def stages(self, expr):
-#        if expr is None:
-#            self._stages = expr
-#        elif mathtools.is_positive_integer(expr):
-#            self._stages = (expr, expr)
-#        elif (mathtools.all_are_positive_integers(expr)
-#            and len(expr) == 2):
-#            self._stages = tuple(expr)
-#        else:
-#            message = 'positive integer or pair of positive integers: {!r}.'
-#            message = message.format(expr)
-#            raise TypeError(message)
-
-#    @property
-#    def start_stage(self):
-#        r'''Gets start stage of music-maker.
-#
-#        Returns positive integer.
-#        '''
-#        return self.stages[0]
-
     @property
     def start_tempo(self):
         r'''Gets start tempo of music-maker.
@@ -450,14 +365,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
             message = 'must be tempo: {!r}.'
             message = message.format(expr)
             raise TypeError(message)
-
-#    @property
-#    def stop_stage(self):
-#        r'''Gets stop stage of music-maker.
-#
-#        Returns positive integer.
-#        '''
-#        return self.stages[-1]
 
     @property
     def stop_tempo(self):
