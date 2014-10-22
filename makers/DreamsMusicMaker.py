@@ -18,6 +18,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         '_pitch_class_trees',
         '_start_tempo',
         '_stop_tempo',
+        '_unit_duration',
         '_voice_map',
         )
 
@@ -32,6 +33,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         pitch_class_trees=None,
         start_tempo=None,
         stop_tempo=None,
+        unit_duration=None,
         voice_map=None,
         ):
         self.pc_displacement = pc_displacement
@@ -41,6 +43,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         self.pitch_class_trees = pitch_class_trees
         self.start_tempo = start_tempo
         self.stop_tempo = stop_tempo
+        self.unit_duration = unit_duration
         self.voice_map = voice_map
 
     ### SPECIAL METHODS ###
@@ -76,6 +79,11 @@ class DreamsMusicMaker(abctools.AbjadObject):
 
     ### PRIVATE METHODS ###
 
+    def _annotate_original_durations(self, note_lists):
+        notes = sequencetools.flatten_sequence(note_lists)
+        for note in notes:
+            attach(note.written_duration, note)
+
     def _apply_glissando_patterns(self, music):
         if not self.glissando_patterns:
             return
@@ -95,11 +103,12 @@ class DreamsMusicMaker(abctools.AbjadObject):
         for component in self.voice_map:
             assert len(component) == 2
             voice_number = component[0]
-            start_index, stop_index = component[1]
-            for i, note_list in enumerate(note_lists):
-                if start_index <= i < stop_index:
-                    for note in note_list:
-                        attach(voice_number, note)
+            indices = component[1]
+            notes = sequencetools.flatten_sequence(note_lists)
+            for i, note in enumerate(notes):
+                if i in indices:
+                    detach(int, note)
+                    attach(voice_number, note)
 
     def _displace_pitch_classes(self, music):
         if not self.pc_displacement:
@@ -134,14 +143,23 @@ class DreamsMusicMaker(abctools.AbjadObject):
             leaf_count = len(note_list)
             start_duration = sum(_.written_duration for _ in note_list)
             extra_count = extra_counts_per_division[i]
-            unit_duration = note_list[0].written_duration
-            extra_duration = extra_count * unit_duration
+            #inspector = inspect_(note_list[0])
+            #unit_duration = inspector.get_indicator(Duration)
+            #extra_duration = extra_count * unit_duration
+            extra_duration = extra_count * self.unit_duration
             if 0 < start_duration + extra_duration:
                 target_duration = start_duration + extra_duration
             else:
                 target_duration = start_duration
-            ratio = leaf_count * [1]
-            ratio = mathtools.Ratio(ratio)
+            #ratio = leaf_count * [1]
+            #ratio = mathtools.Ratio(ratio)
+            numerators = []
+            for note in note_list:
+                duration = note.written_duration
+                fraction = mathtools.NonreducedFraction(duration)
+                fraction = fraction.with_denominator(128)
+                numerators.append(fraction.numerator)
+            ratio = mathtools.Ratio(numerators)
             if 0 <= extra_count:
                 is_diminution = False
             else:
@@ -181,6 +199,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         pitch_class_trees = self.pitch_class_trees
         assert isinstance(pitch_class_trees, tuple)
         note_lists = self._make_note_lists(pitch_class_trees)
+        self._annotate_original_durations(note_lists)
         self._attach_voice_numbers(note_lists)
         self._set_written_durations(note_lists)
         inner_tuplets = self._make_inner_tuplets(note_lists)
@@ -215,13 +234,13 @@ class DreamsMusicMaker(abctools.AbjadObject):
         for note in iterate(music).by_class(Note):
             voice_number = inspect_(note).get_indicator(int)
             if voice_number == 1:
-                #override(note).note_head.color = 'red'
+                override(note).note_head.color = 'red'
                 registration = voice_1_registration
             elif voice_number == 2:
-                #override(note).note_head.color = 'green'
+                override(note).note_head.color = 'green'
                 registration = voice_2_registration
             elif voice_number == 3:
-                #override(note).note_head.color = 'blue'
+                override(note).note_head.color = 'blue'
                 registration = voice_3_registration
             else:
                 raise ValueError(voice_number)
@@ -382,6 +401,25 @@ class DreamsMusicMaker(abctools.AbjadObject):
             self._stop_tempo = expr
         else:
             message = 'must be tempo: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
+    def unit_duration(self):
+        r'''Gets unit duration of music-maker.
+
+        Returns list.
+        '''
+        return self._unit_duration
+
+    @unit_duration.setter
+    def unit_duration(self, expr):
+        if expr is None:
+            self._unit_duration = []
+        elif isinstance(expr, Duration):
+            self._unit_duration = expr
+        else:
+            message = 'must be list or none: {!r}.'
             message = message.format(expr)
             raise TypeError(message)
 
