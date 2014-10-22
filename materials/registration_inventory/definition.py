@@ -16,7 +16,7 @@ registration_inventory = pitchtools.RegistrationInventory(
                     source_pitch_range=pitchtools.PitchRange(
                         range_string='[C4, A8]',
                         ),
-                    target_octave_start_pitch=pitchtools.NumberedPitch(-10),
+                    target_octave_start_pitch=pitchtools.NumberedPitch(-9),
                     ),
                 ]
             ),
@@ -32,7 +32,7 @@ registration_inventory = pitchtools.RegistrationInventory(
                     source_pitch_range=pitchtools.PitchRange(
                         range_string='[C4, A8]',
                         ),
-                    target_octave_start_pitch=pitchtools.NumberedPitch(-16),
+                    target_octave_start_pitch=pitchtools.NumberedPitch(-15),
                     ),
                 ]
             ),
@@ -48,7 +48,7 @@ registration_inventory = pitchtools.RegistrationInventory(
                     source_pitch_range=pitchtools.PitchRange(
                         range_string='[C4, A8]',
                         ),
-                    target_octave_start_pitch=pitchtools.NumberedPitch(-22),
+                    target_octave_start_pitch=pitchtools.NumberedPitch(-21),
                     ),
                 ]
             ),
