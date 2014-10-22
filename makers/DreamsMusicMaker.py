@@ -143,7 +143,11 @@ class DreamsMusicMaker(abctools.AbjadObject):
             extra_count = extra_counts_per_division[i]
             unit_duration = note_list[0].written_duration
             extra_duration = extra_count * unit_duration
-            target_duration = start_duration + extra_duration
+            #target_duration = start_duration + extra_duration
+            if 0 < start_duration + extra_duration:
+                target_duration = start_duration + extra_duration
+            else:
+                target_duration = start_duration
             ratio = leaf_count * [1]
             ratio = mathtools.Ratio(ratio)
             inner_tuplet = Tuplet.from_duration_and_ratio(
