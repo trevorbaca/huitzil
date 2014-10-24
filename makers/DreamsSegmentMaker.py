@@ -34,7 +34,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         final_barline=False,
         final_markup=None,
         final_markup_extra_offset=None,
-        #measures_per_stage=None,
         music_makers=None,
         name=None,
         page_breaks=None,
@@ -54,7 +53,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         if final_markup_extra_offset is not None:
             assert isinstance(final_markup_extra_offset, tuple)
         self._final_markup_extra_offset = final_markup_extra_offset
-        #self.measures_per_stage = measures_per_stage
         self.name = name
         self._music_handlers = []
         self._initialize_time_signatures(time_signatures)
@@ -230,22 +228,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         assert isinstance(stop_measure, Measure), stop_measure
         stop_offset = inspect_(stop_measure).get_timespan().stop_offset
         return start_offset, stop_offset
-
-    def _get_time_signatures(self, start_stage=None, stop_stage=None):
-        counts = len(self.time_signatures), sum(self.measures_per_stage)
-        assert counts[0] == counts[1], counts
-        stages = sequencetools.partition_sequence_by_counts(
-            self.time_signatures,
-            self.measures_per_stage,
-            )
-        start_index = start_stage - 1
-        if stop_stage is None:
-            time_signatures = stages[start_index]
-        else:
-            stop_index = stop_stage
-            stages = stages[start_index:stop_index]
-            time_signatures = sequencetools.flatten_sequence(stages)
-        return time_signatures
 
     def _interpret_music_makers(self):
         music_voice = self._score['Music Voice']
@@ -459,20 +441,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         measures = scoretools.make_spacer_skip_measures(durations)
         time_signature_context.extend(measures)
 
-    #def _position_tuplet_brackets(self):
-    #    for tuplet in iterate(self._score).by_class(Tuplet):
-    #        if inspect_(tuplet).get_parentage().tuplet_depth != 0:
-    #            continue
-    #        if len(tuplet) == 1:
-    #            override(tuplet).tuplet_bracket.staff_padding = 7.4
-
-    def _stage_number_to_measure_indices(self, stage_number):
-        assert stage_number <= self.stage_count
-        measure_indices = mathtools.cumulative_sums(self.measures_per_stage)
-        start_measure_index = measure_indices[stage_number-1]
-        stop_measure_index = measure_indices[stage_number] - 1
-        return start_measure_index, stop_measure_index
-
     def _stages_do_not_overlap(self, makers):
         stage_numbers = []
         for maker in makers:
@@ -540,14 +508,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         Set to true or false.
         '''
         return self._show_stage_annotations
-
-#    @property
-#    def stage_count(self):
-#        r'''Gets total number of stages in segment.
-#
-#        Returns nonnegative integer.
-#        '''
-#        return len(self.measures_per_stage)
 
     @property
     def transpose_score(self):
@@ -654,11 +614,3 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             )
         self._music_handlers.append(pitch_handler)
         return pitch_handler
-
-#    def validate_time_signatures(self):
-#        r'''Is true when the sum of all measures per stage equals
-#        total number of measures in segment. Otherwise false.
-#
-#        Returns boolean.
-#        '''
-#        return sum(self.measures_per_stage) == self.measure_count 
