@@ -454,14 +454,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
     ### PUBLIC PROPERTIES ###
 
     @property
-    def page_breaks(self):
-        r'''Gets page break measure numbers.
-
-        Returns list.
-        '''
-        return self._page_breaks
-    
-    @property
     def final_markup(self):
         r'''Gets final markup of segment.
 
@@ -501,6 +493,14 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         '''
         return tuple(self._music_handlers)
 
+    @property
+    def page_breaks(self):
+        r'''Gets measure numbers of page breaks.
+
+        Returns list.
+        '''
+        return self._page_breaks
+    
     @property
     def show_stage_annotations(self):
         r'''Is true when segment should annotate stages.

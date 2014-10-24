@@ -14,6 +14,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         '_pc_displacement',
         '_extra_counts_per_division',
         '_glissando_patterns',
+        '_index_logical_ties',
         '_pc_operators',
         '_pitch_class_trees',
         '_start_tempo',
@@ -29,6 +30,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         pc_displacement=None,
         extra_counts_per_division=None,
         glissando_patterns=None,
+        index_logical_ties=None,
         pc_operators=None,
         pitch_class_trees=None,
         start_tempo=None,
@@ -39,6 +41,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         self.pc_displacement = pc_displacement
         self.extra_counts_per_division = extra_counts_per_division
         self.glissando_patterns = glissando_patterns
+        self.index_logical_ties = index_logical_ties
         self.pc_operators = pc_operators
         self.pitch_class_trees = pitch_class_trees
         self.start_tempo = start_tempo
@@ -57,6 +60,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         self._displace_pitch_classes(music)
         self._register_voices(music)
         self._apply_glissando_patterns(music)
+        self._attach_leaf_index_markup(music)
         assert isinstance(music, (tuple, list, Voice)), repr(music)
         first_item = music[0]
         return music
@@ -98,6 +102,14 @@ class DreamsMusicMaker(abctools.AbjadObject):
                     break
             if has_glissando:
                 attach(Glissando(), note_pair)
+
+    def _attach_leaf_index_markup(self, music):
+        if not self.index_logical_ties:
+            return
+        logical_ties = iterate(music).by_logical_tie()
+        for i, logical_tie in enumerate(logical_ties):
+            markup = Markup(i)
+            attach(markup, logical_tie.head)
 
     def _attach_voice_numbers(self, note_lists):
         for component in self.voice_map:
@@ -303,6 +315,26 @@ class DreamsMusicMaker(abctools.AbjadObject):
             self._glissando_patterns = expr
         else:
             message = 'must be list or none: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
+    def index_logical_ties(self):
+        r'''Is true when leaf indices should appear in score as markup.
+        Otherwise false.
+
+        Set to true or false.
+        '''
+        return self._index_logical_ties
+
+    @index_logical_ties.setter
+    def index_logical_ties(self, expr):
+        if expr is None:
+            self._index_logical_ties = []
+        elif isinstance(expr, type(True)):
+            self._index_logical_ties = expr
+        else:
+            message = 'must be boolean or none: {!r}.'
             message = message.format(expr)
             raise TypeError(message)
     

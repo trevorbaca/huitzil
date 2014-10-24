@@ -47,6 +47,7 @@ music_maker.voice_map = [
     [2, range(0, 99)],
     [3, (6, 12, 13, 18, 24)],
     ]
+music_maker.index_logical_ties = True
 
 #### stage [3] (lower voice) ###
 #music_maker = segment_maker.make_music_maker()
