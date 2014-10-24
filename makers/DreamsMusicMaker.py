@@ -11,10 +11,10 @@ class DreamsMusicMaker(abctools.AbjadObject):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
-        '_pc_displacement',
         '_extra_counts_per_division',
         '_glissando_patterns',
         '_index_logical_ties',
+        '_pc_displacement',
         '_pc_operators',
         '_pitch_class_trees',
         '_start_tempo',
@@ -28,10 +28,10 @@ class DreamsMusicMaker(abctools.AbjadObject):
 
     def __init__(
         self,
-        pc_displacement=None,
         extra_counts_per_division=None,
         glissando_patterns=None,
         index_logical_ties=None,
+        pc_displacement=None,
         pc_operators=None,
         pitch_class_trees=None,
         start_tempo=None,
