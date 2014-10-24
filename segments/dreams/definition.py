@@ -8,13 +8,14 @@ from huitzil import materials
 
 ### INITIALIZATION ###
 segment_maker = makers.DreamsSegmentMaker(
+    #calculate_duration=True,
     name='dreams',
     show_stage_annotations=False,
     )
 
 ### TEMPO MAP ###
 segment_maker.tempo_map = [
-    (1, materials.tempo_inventory[0]),
+    (0, materials.tempo_inventory[0]),
     ]
 
 ### MANUAL BREAKS ###
@@ -24,32 +25,31 @@ segment_maker.tempo_map = [
 ################################ MUSIC-MAKERS #################################
 ###############################################################################
 
-#### stage [1] (middle voice) ###
-#music_maker = segment_maker.make_music_maker()
-#music_maker.pitch_class_trees = materials.pitch_classes[:8]
-#music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
-#music_maker.pc_displacement = [
-#    BooleanPattern(indices=range(15), period=30),
-#    ]
-#music_maker.voice_map = [
-#    [2, range(0, 99)],
-#    ]
-
-### stage [2] (middle & lower voices) ###
+### stage [1] (middle) ###
 music_maker = segment_maker.make_music_maker()
-music_maker.pitch_class_trees = materials.pitch_classes[2:9]
-music_maker.unit_duration = Duration(1, 16)
+music_maker.pitch_class_trees = materials.pitch_classes[:8]
 music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
-#music_maker.pc_displacement = [
-#    BooleanPattern(indices=range(15), period=30),
-#    ]
+music_maker.pc_displacement = [
+    BooleanPattern(indices=range(15), period=30),
+    ]
 music_maker.voice_map = [
     [2, range(0, 99)],
-    [3, (6, 12, 13, 18, 24)],
     ]
-music_maker.index_logical_ties = True
 
-#### stage [3] (lower voice) ###
+#### stage [2] (middle & lower) ###
+#music_maker = segment_maker.make_music_maker()
+#music_maker.pitch_class_trees = materials.pitch_classes[2:9]
+#music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
+##music_maker.pc_displacement = [
+##    BooleanPattern(indices=range(15), period=30),
+##    ]
+#music_maker.voice_map = [
+#    [2, range(0, 99)],
+#    [3, (6, 12, 13, 18, 24)],
+#    ]
+#music_maker.index_logical_ties = True
+
+#### stage [3] (lower) ###
 #music_maker = segment_maker.make_music_maker()
 #music_maker.pitch_class_trees = materials.pitch_classes[6:8]
 #music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
@@ -60,7 +60,7 @@ music_maker.index_logical_ties = True
 #    [3, range(0, 99)],
 #    ]
 #
-#### stage [5] (upper voice) ###
+#### stage [5] (upper) ###
 #music_maker = segment_maker.make_music_maker()
 #music_maker.pitch_class_trees = materials.pitch_classes[12:16]
 #music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
@@ -71,7 +71,7 @@ music_maker.index_logical_ties = True
 #    [1, range(0, 99)],
 #    ]
 #
-#### stage [9] (lower voice) ###
+#### stage [9] (lower) ###
 #music_maker = segment_maker.make_music_maker()
 #music_maker.pitch_class_trees = materials.pitch_classes[16:20]
 #music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]

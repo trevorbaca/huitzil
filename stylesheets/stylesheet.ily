@@ -167,7 +167,7 @@
         \accepts TimeSignatureContext
         \remove Bar_number_engraver
         \remove Mark_engraver
-        \remove Metronome_mark_engraver
+        %\remove Metronome_mark_engraver
         \override BarLine.hair-thickness = 0.5
         \override BarNumber.extra-offset = #'(-6 . -4)
         \override BarNumber.font-size = 1

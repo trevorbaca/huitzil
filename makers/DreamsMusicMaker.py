@@ -19,9 +19,10 @@ class DreamsMusicMaker(abctools.AbjadObject):
         '_pitch_class_trees',
         '_start_tempo',
         '_stop_tempo',
-        '_unit_duration',
         '_voice_map',
         )
+
+    unit_duration = Duration(1, 16)
 
     ### INITIALIZER ###    
 
@@ -35,7 +36,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
         pitch_class_trees=None,
         start_tempo=None,
         stop_tempo=None,
-        unit_duration=None,
         voice_map=None,
         ):
         self.pc_displacement = pc_displacement
@@ -46,7 +46,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
         self.pitch_class_trees = pitch_class_trees
         self.start_tempo = start_tempo
         self.stop_tempo = stop_tempo
-        self.unit_duration = unit_duration
         self.voice_map = voice_map
 
     ### SPECIAL METHODS ###
@@ -155,16 +154,11 @@ class DreamsMusicMaker(abctools.AbjadObject):
             leaf_count = len(note_list)
             start_duration = sum(_.written_duration for _ in note_list)
             extra_count = extra_counts_per_division[i]
-            #inspector = inspect_(note_list[0])
-            #unit_duration = inspector.get_indicator(Duration)
-            #extra_duration = extra_count * unit_duration
             extra_duration = extra_count * self.unit_duration
             if 0 < start_duration + extra_duration:
                 target_duration = start_duration + extra_duration
             else:
                 target_duration = start_duration
-            #ratio = leaf_count * [1]
-            #ratio = mathtools.Ratio(ratio)
             numerators = []
             for note in note_list:
                 duration = note.written_duration
@@ -433,25 +427,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
             self._stop_tempo = expr
         else:
             message = 'must be tempo: {!r}.'
-            message = message.format(expr)
-            raise TypeError(message)
-
-    @property
-    def unit_duration(self):
-        r'''Gets unit duration of music-maker.
-
-        Returns list.
-        '''
-        return self._unit_duration
-
-    @unit_duration.setter
-    def unit_duration(self, expr):
-        if expr is None:
-            self._unit_duration = []
-        elif isinstance(expr, Duration):
-            self._unit_duration = expr
-        else:
-            message = 'must be list or none: {!r}.'
             message = message.format(expr)
             raise TypeError(message)
 
