@@ -12,6 +12,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
+        '_calculate_duration',
         '_final_markup',
         '_final_markup_extra_offset',
         '_music_handlers',
@@ -31,6 +32,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
 
     def __init__(
         self,
+        calculate_duration=False,
         final_barline=False,
         final_markup=None,
         final_markup_extra_offset=None,
@@ -44,8 +46,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         superclass = super(DreamsSegmentMaker, self)
         superclass.__init__(name=name)
         self._initialize_music_makers(music_makers)
-        page_breaks = page_breaks or []
-        self._page_breaks = page_breaks
+        self._calculate_duration = calculate_duration
         self.final_barline = final_barline
         if final_markup is not None:
             assert isinstance(final_markup, markuptools.Markup)
@@ -56,6 +57,8 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         self.name = name
         self._music_handlers = []
         self._initialize_time_signatures(time_signatures)
+        page_breaks = page_breaks or []
+        self._page_breaks = page_breaks
         assert isinstance(show_stage_annotations, bool)
         self._show_stage_annotations = show_stage_annotations
         self.tempo_map = tempo_map
@@ -73,13 +76,14 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         self._interpret_music_makers()
         self._populate_time_signature_context()
         self._make_music_for_time_signature_context()
-        #self._attach_tempo_indicators()
+        self._attach_tempo_indicators()
         #self._attach_fermatas()
         self._add_manual_page_breaks()
         self._annotate_stages()
         self._interpret_music_handlers()
         self._add_final_barline()
         self._add_final_markup()
+        self._raise_duration()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         if not inspect_(score).is_well_formed():
@@ -153,22 +157,13 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
     def _attach_tempo_indicators(self):
         if not self.tempo_map:
             return
-        context = self._score['Time Signature Context']
-        # TODO: adjust TempoSpanner to make this possible:
-        #attach(spannertools.TempoSpanner(), context)
-        skips = list(iterate(context).by_class(scoretools.Leaf))
-        tempo_spanner = spannertools.TempoSpanner()
-        attach(tempo_spanner, skips)
-        for stage_number, directive in self.tempo_map:
-            assert 0 < stage_number <= self.stage_count
-            result = self._stage_number_to_measure_indices(stage_number)
-            start_measure_index, stop_measure_index = result
-            start_measure = context[start_measure_index]
-            assert isinstance(start_measure, Measure), start_measure
-            start_skip = start_measure[0]
-            assert isinstance(start_skip, scoretools.Skip), start_skip
-            # TODO: adjust TempoSpanner to make measure attachment work
-            attach(directive, start_skip, is_annotation=True)
+        music_voice = self._score['Music Voice']
+        logical_ties = iterate(music_voice).by_logical_tie()
+        logical_ties = list(logical_ties)
+        for logical_tie_index, directive in self.tempo_map:
+            directive = copy.copy(directive)
+            logical_tie = logical_ties[logical_tie_index]
+            attach(directive, logical_tie.head)
 
     def _compound_scope_to_logical_ties(
         self, 
@@ -368,11 +363,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         selections = maker(time_signatures)
         return selections
 
-#    def _make_skip_filled_measures(self, time_signatures=None):
-#        time_signatures = time_signatures or self.time_signatures
-#        measures = scoretools.make_spacer_skip_measures(time_signatures)
-#        return measures
-
     def _make_lilypond_file(self):
         lilypond_file = lilypondfiletools.make_basic_lilypond_file(self._score)
         for item in lilypond_file.items[:]:
@@ -395,35 +385,9 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
 
     def _make_music_for_voice(self, voice):
         assert not len(voice), repr(voice)
-        #music_makers = self.music_makers[:]
-        #music_makers.sort(key=lambda x: x.stages[0])
-        #assert self._stages_do_not_overlap(music_makers)
-        #if not music_makers:
-        #    measures = self._make_rests()
-        #    voice.extend(measures) 
-        #    return
-        #next_stage = 1
         for music_maker in self.music_makers:
-            #if music_maker.stages is None:
-            #    continue
-#            if next_stage < music_maker.start_stage:
-#                start_stage = next_stage
-#                stop_stage = music_maker.start_stage - 1
-#                time_signatures = self._get_time_signatures(
-#                    start_stage=next_stage,
-#                    stop_stage=stop_stage,
-#                    )
-#                measures = self._make_rests(time_signatures)
-#                voice.extend(measures)
-#            time_signatures = self._get_time_signatures(*music_maker.stages)
             music = music_maker()
             voice.extend(music)
-            #next_stage = music_maker.stop_stage + 1
-#        if next_stage <= self.stage_count:
-#            time_signatures = self._get_time_signatures(
-#                next_stage, self.stage_count)
-#            measures = self._make_rests(time_signatures)
-#            voice.extend(measures)
 
     def _make_score(self):
         from huitzil import makers
@@ -441,6 +405,14 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         measures = scoretools.make_spacer_skip_measures(durations)
         time_signature_context.extend(measures)
 
+    def _raise_duration(self):
+        if not self.calculate_duration:
+            return
+        music_voice = self._score['Music Voice']
+        duration = inspect_(music_voice).get_duration(in_seconds=True)
+        string = '%.2f seconds' % float(duration)
+        raise Exception(string)
+
     def _stages_do_not_overlap(self, makers):
         stage_numbers = []
         for maker in makers:
@@ -452,6 +424,15 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         return len(stage_numbers) == len(set(stage_numbers))
 
     ### PUBLIC PROPERTIES ###
+
+    @property
+    def calculate_duration(self):
+        r'''Is true when segment-maker should calculate and then raise duration
+        of piece.
+
+        Set to true or false.
+        '''
+        return self._calculate_duration
 
     @property
     def final_markup(self):
