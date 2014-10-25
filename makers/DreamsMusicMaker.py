@@ -243,7 +243,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 override(note).note_head.color = 'red'
                 registration = voice_1_registration
             elif voice_number == 2:
-                override(note).note_head.color = 'green'
+                #override(note).note_head.color = 'green'
                 registration = voice_2_registration
             elif voice_number == 3:
                 override(note).note_head.color = 'blue'
