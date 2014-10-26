@@ -58,6 +58,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         music = self._make_rhythm()
         self._displace_pitch_classes(music)
         self._register_voices(music)
+        self._attach_beams(music)
         self._apply_glissando_patterns(music)
         self._attach_leaf_index_markup(music)
         assert isinstance(music, (tuple, list, Voice)), repr(music)
@@ -101,6 +102,21 @@ class DreamsMusicMaker(abctools.AbjadObject):
                     break
             if has_glissando:
                 attach(Glissando(), note_pair)
+
+    def _attach_beams(self, music):
+        tuplets = iterate(music).by_class(Tuplet)
+        for tuplet in tuplets:
+            voice_numbers = [inspect_(_).get_indicator(int) for _ in tuplet]
+            runs = sequencetools.partition_sequence_by_value_of_elements(
+                voice_numbers)
+            counts = [len(_) for _ in runs]
+            note_groups = sequencetools.partition_sequence_by_counts(
+                tuplet[:],
+                counts,
+                )
+            for note_group in note_groups:
+                beam = spannertools.DuratedComplexBeam()
+                attach(beam, note_group)
 
     def _attach_leaf_index_markup(self, music):
         if not self.index_logical_ties:
@@ -176,8 +192,8 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 avoid_dots=True,
                 is_diminution=is_diminution,
                 )
-            beam = spannertools.DuratedComplexBeam()
-            attach(beam, inner_tuplet)
+            #beam = spannertools.DuratedComplexBeam()
+            #attach(beam, inner_tuplet)
             for j, inner_tuplet_note in enumerate(inner_tuplet):
                 source_note = note_list[j]
                 inner_tuplet_note.written_pitch = source_note.written_pitch
