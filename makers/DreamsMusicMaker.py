@@ -56,6 +56,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         Returns selection.
         '''
         music = self._make_rhythm()
+        self._respell_tuplets(music)
         self._displace_pitch_classes(music)
         self._register_voices(music)
         self._attach_beams(music)
@@ -264,6 +265,14 @@ class DreamsMusicMaker(abctools.AbjadObject):
             transposed_pitches = registration(pitches)
             transposed_pitch = transposed_pitches[0]
             note.written_pitch = transposed_pitch
+
+    def _respell_tuplets(self, music):
+        multiplier = durationtools.Multiplier(3, 2)
+        for tuplet in iterate(music).by_class(Tuplet):
+            if tuplet.multiplier == multiplier:
+                for note in tuplet:
+                    new_written_duration = multiplier * note.written_duration
+                    note.written_duration = new_written_duration
 
     def _set_written_durations(self, note_lists):
         durations = []
