@@ -357,22 +357,20 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
     def _populate_time_signature_context(self):
         time_signature_context = self._score['Time Signature Context']
         music_voice = self._score['Music Voice']
-        durations = []
-        components = music_voice[:]
-        pairs = sequencetools.partition_sequence_by_counts(
-            components, 
-            [2],
-            cyclic=True,
-            overhang=True,
-            )
-        for pair in pairs:
-            durations_ = [inspect_(_).get_duration() for _ in pair]
-            duration = sum(durations_)
-            if duration <= Duration(1):
-                durations.append(duration)
+        measure_durations = []
+        current_duration = Duration(0)
+        ideal_measure_duration = Duration(4, 4)
+        for component in music_voice:
+            component_duration = inspect_(component).get_duration()
+            candidate_duration = current_duration + component_duration
+            if ideal_measure_duration < candidate_duration:
+                if 0 < current_duration:
+                    measure_durations.append(current_duration)
+                current_duration = component_duration
             else:
-                durations.extend(durations_)
-        measures = scoretools.make_spacer_skip_measures(durations)
+                current_duration = candidate_duration
+        measure_durations.append(current_duration)
+        measures = scoretools.make_spacer_skip_measures(measure_durations)
         time_signature_context.extend(measures)
 
     def _raise_duration(self):
