@@ -372,6 +372,15 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         measure_durations.append(current_duration)
         measures = scoretools.make_spacer_skip_measures(measure_durations)
         time_signature_context.extend(measures)
+        for measure in iterate(time_signature_context).by_class(Measure):
+            time_signature = inspect_(measure).get_indicator(TimeSignature)
+            if time_signature.denominator < 4:
+                fraction = mathtools.NonreducedFraction(time_signature.pair)
+                fraction = fraction.with_multiple_of_denominator(4)
+                detach(time_signature, measure)
+                new_time_signature = TimeSignature(fraction)
+                attach(new_time_signature, measure)
+
 
     def _raise_duration(self):
         if not self.calculate_duration:
