@@ -211,27 +211,6 @@ class DreamsMusicMaker(abctools.AbjadObject):
         inner_tuplets = self._make_inner_tuplets(note_lists)
         return inner_tuplets
     
-    def _make_selections(self, time_signatures, note_lists):
-        selections = []
-        total_note_lists = len(note_lists)
-        current_note_list_index = 0
-        extra_counts_per_division = datastructuretools.CyclicTuple(
-            self.extra_counts_per_division
-            )
-        for i, time_signature in enumerate(time_signatures):
-            if current_note_list_index <= total_note_lists - 1:
-                note_list = note_lists[current_note_list_index]
-                current_note_list_index += 1
-                tuplet = scoretools.FixedDurationTuplet(
-                    time_signature.duration,
-                    note_list,
-                    )
-                selections.append(tuplet)
-            else:
-                selection = scoretools.make_rests([time_signature.duration])
-                selections.append(selection)
-        return selections
-
     def _register_voices(self, music):
         from huitzil import materials
         voice_1_registration = materials.registration_inventory[0]
