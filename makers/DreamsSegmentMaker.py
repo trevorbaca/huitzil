@@ -6,7 +6,7 @@ from experimental.tools import makertools
 
 
 class DreamsSegmentMaker(makertools.SegmentMaker):
-    r'''Huitzil dreams segment-maker.
+    r'''Dreams segment-maker.
     '''
 
     ### CLASS ATTRIBUTES ###
@@ -20,11 +20,8 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         '_page_breaks',
         '_score',
         '_show_stage_annotations',
-        '_stages',
         'final_barline',
-        'measures_per_stage',
         'name',
-        'time_signatures',
         'tempo_map',
         )
 
@@ -41,7 +38,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         page_breaks=None,
         show_stage_annotations=False,
         tempo_map=None,
-        time_signatures=None,
         ):
         superclass = super(DreamsSegmentMaker, self)
         superclass.__init__(name=name)
@@ -56,7 +52,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         self._final_markup_extra_offset = final_markup_extra_offset
         self.name = name
         self._music_handlers = []
-        self._initialize_time_signatures(time_signatures)
         page_breaks = page_breaks or []
         self._page_breaks = page_breaks
         assert isinstance(show_stage_annotations, bool)
@@ -75,7 +70,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         self._configure_lilypond_file()
         self._interpret_music_makers()
         self._populate_time_signature_context()
-        self._make_music_for_time_signature_context()
         self._attach_tempo_indicators()
         #self._attach_fermatas()
         self._add_manual_page_breaks()
@@ -310,16 +304,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             assert isinstance(music_maker, makers.MusicMaker)
         self._music_makers = music_makers
 
-    def _initialize_time_signatures(self, time_signatures):
-        time_signatures = time_signatures or ()
-        time_signatures_ = list(time_signatures)
-        time_signatures_ = []
-        for time_signature in time_signatures:
-            time_signature = indicatortools.TimeSignature(time_signature)
-            time_signatures_.append(time_signature)
-        time_signatures_ = tuple(time_signatures_)
-        self.time_signatures = time_signatures_
-
     def _label_instrument_changes(self):
         prototype = instrumenttools.Instrument
         switching_voices = (
@@ -351,18 +335,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         markup = markup.box().override(('box-padding', 0.5))
         return markup
 
-    def _make_rests(self, time_signatures=None):
-        time_signatures = time_signatures or self.time_signatures
-        specifier = rhythmmakertools.DurationSpellingSpecifier(
-            spell_metrically='unassignable',
-            )
-        maker = rhythmmakertools.NoteRhythmMaker(
-            duration_spelling_specifier=specifier,
-            output_masks=[rhythmmakertools.mask_all()],
-            )
-        selections = maker(time_signatures)
-        return selections
-
     def _make_lilypond_file(self):
         lilypond_file = lilypondfiletools.make_basic_lilypond_file(self._score)
         for item in lilypond_file.items[:]:
@@ -370,19 +342,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
                 lilypond_file.items.remove(item)
         self._lilypond_file = lilypond_file
             
-    def _make_music_for_time_signature_context(self):
-        context_name = 'Time Signature Context'
-        context = self._score[context_name]
-        for music_maker in self.music_makers:
-            if music_maker.start_tempo is not None:
-                start_tempo = new(music_maker.start_tempo)
-                first_leaf = inspect_(context).get_leaf(0)
-                attach(start_tempo, first_leaf)
-            if music_maker.stop_tempo is not None:
-                stop_tempo = new(music_maker.stop_tempo)
-                last_leaf = inspect_(context).get_leaf(-1)
-                attach(stop_tempo, last_leaf)
-
     def _make_music_for_voice(self, voice):
         assert not len(voice), repr(voice)
         for music_maker in self.music_makers:
@@ -413,16 +372,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         string = '%.2f seconds' % float(duration)
         raise Exception(string)
 
-    def _stages_do_not_overlap(self, makers):
-        stage_numbers = []
-        for maker in makers:
-            if maker.stages is None:
-                continue
-            start_stage, stop_stage = maker.stages
-            stage_numbers_ = range(start_stage, stop_stage+1)
-            stage_numbers.extend(stage_numbers_)
-        return len(stage_numbers) == len(set(stage_numbers))
-
     ### PUBLIC PROPERTIES ###
 
     @property
@@ -449,14 +398,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         Set to pair or none.
         '''
         return self._final_markup_extra_offset
-
-    @property
-    def measure_count(self):
-        r'''Gets total number of measures in segment.
-
-        Returns nonnegative integer.
-        '''
-        return len(self.time_signatures)
 
     @property
     def music_makers(self):
@@ -489,15 +430,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         Set to true or false.
         '''
         return self._show_stage_annotations
-
-    @property
-    def transpose_score(self):
-        r'''Is true when segment should notate transposing instruments
-        as written (rather than as sounding).
-
-        Set to true or false.
-        '''
-        return self._transpose_score
 
     ### PUBLIC METHODS ###
 
