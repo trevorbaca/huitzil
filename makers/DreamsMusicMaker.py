@@ -219,13 +219,28 @@ class DreamsMusicMaker(abctools.AbjadObject):
         for note in iterate(music).by_class(Note):
             voice_number = inspect_(note).get_indicator(int)
             if voice_number == 1:
-                override(note).note_head.color = 'red'
+                color = 'red'
+                override(note).accidental.color = color
+                override(note).beam.color = color
+                override(note).dots.color = color
+                override(note).note_head.color = color
+                override(note).stem.color = color
                 registration = voice_1_registration
             elif voice_number == 2:
-                #override(note).note_head.color = 'green'
+                #color = 'green'
+                #override(note).accidental.color = color
+                #override(note).beam.color = color
+                #override(note).dots.color = color
+                #override(note).note_head.color = color
+                #override(note).stem.color = color
                 registration = voice_2_registration
             elif voice_number == 3:
-                override(note).note_head.color = 'blue'
+                color = 'blue'
+                override(note).accidental.color = color
+                override(note).beam.color = color
+                override(note).dots.color = color
+                override(note).note_head.color = color
+                override(note).stem.color = color
                 registration = voice_3_registration
             else:
                 raise ValueError(voice_number)
