@@ -358,9 +358,20 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         time_signature_context = self._score['Time Signature Context']
         music_voice = self._score['Music Voice']
         durations = []
-        for component in music_voice:
-            duration = inspect_(component).get_duration()
-            durations.append(duration)
+        components = music_voice[:]
+        pairs = sequencetools.partition_sequence_by_counts(
+            components, 
+            [2],
+            cyclic=True,
+            overhang=True,
+            )
+        for pair in pairs:
+            durations_ = [inspect_(_).get_duration() for _ in pair]
+            duration = sum(durations_)
+            if duration <= Duration(1):
+                durations.append(duration)
+            else:
+                durations.extend(durations_)
         measures = scoretools.make_spacer_skip_measures(durations)
         time_signature_context.extend(measures)
 

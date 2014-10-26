@@ -159,7 +159,7 @@
         \override TextScript.direction = #up
         \override Stem.length = #7
         \override TextSpanner.staff-padding = #2
-        \override TupletBracket.staff-padding = #5.5
+        \override TupletBracket.staff-padding = #2.5
         instrumentName = \markup { \fontsize #3 Cello \hspace #1.5 }
     }
     \context {
@@ -173,7 +173,8 @@
         \override BarNumber.font-size = 1
         \override BarNumber.padding = 4
         \override Beam.breakable = ##t
-        \override Beam.positions = #'(-6 . -6)
+        \override Beam.damping = 99
+        %\override Beam.positions = #'(-6 . -6)
         \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5)
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 2
@@ -184,7 +185,7 @@
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override Stem.direction = #down
+        %\override Stem.direction = #down
         \override StemTremolo.beam-width = #1.5
         \override StemTremolo.flag-count = #4
         \override StemTremolo.slope = #0.5
