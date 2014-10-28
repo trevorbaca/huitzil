@@ -60,6 +60,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         self._displace_pitch_classes(music)
         self._register_voices(music)
         self._attach_beams(music)
+        self._adjust_beams(music)
         self._apply_glissando_patterns(music)
         self._attach_leaf_index_markup(music)
         assert isinstance(music, (tuple, list, Voice)), repr(music)
@@ -84,6 +85,9 @@ class DreamsMusicMaker(abctools.AbjadObject):
 
     ### PRIVATE METHODS ###
 
+    def _adjust_beams(self, music):
+        pass
+
     def _annotate_original_durations(self, note_lists):
         notes = sequencetools.flatten_sequence(note_lists)
         for note in notes:
@@ -105,6 +109,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 attach(Glissando(), note_pair)
 
     def _attach_beams(self, music):
+        bass_clef = Clef('bass')
         tuplets = iterate(music).by_class(Tuplet)
         for tuplet in tuplets:
             voice_numbers = [inspect_(_).get_indicator(int) for _ in tuplet]
@@ -118,6 +123,28 @@ class DreamsMusicMaker(abctools.AbjadObject):
             for note_group in note_groups:
                 beam = spannertools.DuratedComplexBeam()
                 attach(beam, note_group)
+                staff_positions = [
+                    bass_clef.named_pitch_to_staff_position(_.written_pitch).number
+                    for _ in note_group
+                    ]
+                highest_staff_position = max(staff_positions)
+                lowest_staff_position = min(staff_positions)
+                if 0 <= lowest_staff_position:
+                    stem_direction = Down
+                elif highest_staff_position <= 0:
+                    stem_direction = Up
+                elif abs(lowest_staff_position) < abs(highest_staff_position):
+                    stem_direction = Down
+                elif abs(highest_staff_position) < abs(lowest_staff_position):
+                    stem_direction = Up
+                else:
+                    stem_direction = Down
+                if stem_direction == Up:
+                    markup = Markup('up', direction=Up)
+                else:
+                    markup = Markup('down', direction=Up)
+                first_note = note_group[0]
+                attach(markup, first_note)
 
     def _attach_leaf_index_markup(self, music):
         if not self.index_logical_ties:

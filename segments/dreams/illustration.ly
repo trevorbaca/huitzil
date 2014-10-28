@@ -1,4 +1,4 @@
-% 2014-10-26 15:19
+% 2014-10-28 17:28
 
 \version "2.19.15"
 \language "english"
@@ -236,7 +236,7 @@
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
 					\tempo 8=78
-					fs16 [
+					fs16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					e16
@@ -253,7 +253,7 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					a,8 [
+					a,8 [ ^ \markup { down }
 					\set stemLeftBeamCount = #1
 					\set stemRightBeamCount = #0
 					ef8 ]
@@ -261,7 +261,7 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					d16 [
+					d16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					e16
@@ -270,13 +270,13 @@
 					f16 ]
 				}
 				{
-					cs16
+					cs16 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 9/8 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					bf,8 [
+					bf,8 [ ^ \markup { down }
 					\set stemLeftBeamCount = #1
 					\set stemRightBeamCount = #1
 					a,8
@@ -291,7 +291,7 @@
 				\times 6/5 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					f,16 [
+					f,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					a,16
@@ -308,7 +308,7 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					c8 [
+					c8 [ ^ \markup { down }
 					\set stemLeftBeamCount = #1
 					\set stemRightBeamCount = #0
 					cs8 ]
@@ -316,7 +316,7 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					bf,16 [
+					bf,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					a,16
@@ -327,7 +327,7 @@
 				\times 4/5 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					af,16 [
+					af,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					fs,16
@@ -345,7 +345,7 @@
 				\times 7/4 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					b,8 [
+					b,8 [ ^ \markup { down }
 					\set stemLeftBeamCount = #1
 					\set stemRightBeamCount = #0
 					c8 ]
@@ -354,7 +354,7 @@
 				\times 4/3 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					cs16 [
+					cs16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					bf,16
@@ -363,12 +363,12 @@
 					a,16 ]
 				}
 				{
-					g8.
+					g8. ^ \markup { down }
 				}
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					af16 [
+					af16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					fs16
@@ -382,7 +382,7 @@
 				\times 4/5 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					e16 [
+					e16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					f16
@@ -400,7 +400,7 @@
 				\times 7/4 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					f,8 [
+					f,8 [ ^ \markup { down }
 					\set stemLeftBeamCount = #1
 					\set stemRightBeamCount = #0
 					g,8 ]
@@ -409,7 +409,7 @@
 				\times 4/3 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					af,16 [
+					af,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					fs,16
@@ -420,7 +420,7 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					cs16. [
+					cs16. [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #0
 					d16. ]
@@ -429,7 +429,7 @@
 				\times 4/3 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					b,16 [
+					b,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #0
 					bf,16 ]
@@ -438,12 +438,12 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					c4
+					c4 ^ \markup { down }
 				}
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					a,16 [
+					a,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					g16
@@ -460,7 +460,7 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #3
-					c32 [
+					c32 [ ^ \markup { down }
 					\set stemLeftBeamCount = #3
 					\set stemRightBeamCount = #0
 					cs32 ]
@@ -469,7 +469,7 @@
 				\times 11/6 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					d16 [
+					d16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #0
 					b,16 ]
@@ -478,7 +478,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					bf,4
+					bf,4 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 5/4 {
@@ -487,12 +487,12 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					af,4
+					af,4 ^ \markup { down }
 				}
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					a,16. [
+					a,16. [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					g,16.
@@ -506,7 +506,7 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					f,16 [
+					f,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					fs,16
@@ -523,20 +523,20 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #3
-					fs,32 [
+					fs,32 [ ^ \markup { down }
 					\set stemLeftBeamCount = #3
 					\set stemRightBeamCount = #0
 					af,32 ]
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 14/9 {
-					a,16
+					a,16 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					g,4
+					g,4 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -548,7 +548,7 @@
 				\times 6/5 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					ef16 [
+					ef16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					f16
@@ -569,7 +569,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					bf,4
+					bf,4 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -580,7 +580,7 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					cs16 [
+					cs16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					d16
@@ -589,7 +589,7 @@
 					b,16 ]
 				}
 				{
-					e16
+					e16 ^ \markup { down }
 				}
 				{
 					\once \override Accidental #'color = #blue
@@ -597,7 +597,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					ef,2
+					ef,2 ^ \markup { down }
 				}
 				{
 					\once \override Accidental #'color = #blue
@@ -605,7 +605,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					d,4.
+					d,4. ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -631,7 +631,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					fs,4
+					fs,4 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -665,7 +665,7 @@
 					\once \override Stem #'color = #blue
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					f,8 [
+					f,8 [ ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -682,7 +682,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					d,2
+					d,2 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -703,7 +703,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					f,4
+					f,4 ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -711,7 +711,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					g8 [
+					g8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -733,7 +733,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					fs,4
+					fs,4 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 7/6 {
@@ -742,13 +742,13 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					c,2
+					c,2 ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					d4
+					d4 ^ \markup { down }
 				}
 				{
 					\once \override Accidental #'color = #red
@@ -756,13 +756,13 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					ef8
+					ef8 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					e,4
+					e,4 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -776,7 +776,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					fs8
+					fs8 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 5/4 {
@@ -787,7 +787,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					fs8 [
+					fs8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -822,7 +822,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					d8 [
+					d8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -864,7 +864,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					af8 [
+					af8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -882,7 +882,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					b8 [
+					b8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -906,7 +906,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					f4
+					f4 ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -940,7 +940,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					bf8. [
+					bf8. [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -959,7 +959,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					a8 [
+					a8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -983,7 +983,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					cs8
+					cs8 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 3/4 {
@@ -994,7 +994,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					g8 [
+					g8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1026,7 +1026,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					c4
+					c4 ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1056,7 +1056,7 @@
 				\times 4/3 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					fs16 [
+					fs16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					a,16
@@ -1071,7 +1071,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					g8
+					g8 ^ \markup { down }
 				}
 				{
 					\once \override Accidental #'color = #red
@@ -1079,7 +1079,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					cs'4
+					cs'4 ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1095,7 +1095,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					d'8 [
+					d'8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1119,7 +1119,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					bf8
+					bf8 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 4/3 {
@@ -1128,7 +1128,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					e4
+					e4 ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1137,7 +1137,7 @@
 					f4
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					ef8 [
+					ef8 [ ^ \markup { down }
 					\set stemLeftBeamCount = #1
 					\set stemRightBeamCount = #0
 					d8 ]
@@ -1146,7 +1146,7 @@
 				\times 4/3 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					b,16 [
+					b,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					cs16
@@ -1161,7 +1161,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					c8
+					c8 ^ \markup { down }
 				}
 				{
 					\once \override Accidental #'color = #red
@@ -1169,7 +1169,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					d'4
+					d'4 ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1185,7 +1185,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					e8 [
+					e8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1211,7 +1211,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					b,8. [
+					b,8. [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1227,7 +1227,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					a,4.
+					a,4. ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1235,7 +1235,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					af8. [
+					af8. [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1248,7 +1248,7 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					fs,16 [
+					fs,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					g,16
@@ -1263,7 +1263,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					f8
+					f8 ^ \markup { down }
 				}
 				{
 					\once \override Accidental #'color = #red
@@ -1273,7 +1273,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					bf16 [
+					bf16 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1289,13 +1289,13 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					ef4
+					ef4 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					a,2
+					a,2 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -1309,13 +1309,13 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					f4
+					f4 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 9/5 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					fs16 [
+					fs16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					g16
@@ -1327,7 +1327,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					ef8
+					ef8 ^ \markup { down }
 				}
 				{
 					\once \override Accidental #'color = #red
@@ -1337,7 +1337,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					cs8 [
+					cs8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1356,7 +1356,7 @@
 					c8 ]
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					bf,16 [
+					bf,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #0
 					b,16 ]
@@ -1364,7 +1364,7 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					ef16 [
+					ef16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #0
 					f,16 ]
@@ -1375,7 +1375,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					fs,2
+					fs,2 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -1387,7 +1387,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					e4
+					e4 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 4/3 {
@@ -1396,10 +1396,10 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					b8
+					b8 ^ \markup { down }
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					cs16 [
+					cs16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					d16
@@ -1416,7 +1416,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					af4
+					af4 ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1427,7 +1427,7 @@
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					b,16 [
+					b,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					ef16
@@ -1441,7 +1441,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					bf,8
+					bf,8 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 4/3 {
@@ -1450,7 +1450,7 @@
 					\once \override Dots #'color = #red
 					\once \override NoteHead #'color = #red
 					\once \override Stem #'color = #red
-					b,4
+					b,4 ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1459,7 +1459,7 @@
 					cs4
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					d8 [
+					d8 [ ^ \markup { down }
 					\set stemLeftBeamCount = #1
 					\set stemRightBeamCount = #0
 					c8 ]
@@ -1468,7 +1468,7 @@
 				\times 9/7 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					a,16 [
+					a,16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					af,16
@@ -1482,7 +1482,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					b,8 [
+					b,8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1498,7 +1498,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					e,4.
+					e,4. ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -1514,7 +1514,7 @@
 					\once \override Stem #'color = #red
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #1
-					f8 [
+					f8 [ ^ \markup { down }
 					\once \override Accidental #'color = #red
 					\once \override Beam #'color = #red
 					\once \override Dots #'color = #red
@@ -1533,12 +1533,12 @@
 					g8 ]
 				}
 				{
-					fs8
+					fs8 ^ \markup { down }
 				}
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					g16. [
+					g16. [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					af16.
@@ -1555,10 +1555,10 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					d4
+					d4 ^ \markup { down }
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					ef16 [
+					ef16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					cs16
@@ -1570,13 +1570,13 @@
 					c16 ]
 				}
 				\times 4/5 {
-					e16
+					e16 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					fs,4
+					fs,4 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 14/9 {
@@ -1585,20 +1585,20 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					g,4
+					g,4 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
 					af,4
-					f16
+					f16 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 9/8 {
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					c16 [
+					c16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					d16
@@ -1613,7 +1613,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					b,4
+					b,4 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 7/5 {
@@ -1622,13 +1622,13 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					a,4
-					b,16
+					a,4 ^ \markup { down }
+					b,16 ^ \markup { down }
 				}
 				{
 					\set stemLeftBeamCount = #0
 					\set stemRightBeamCount = #2
-					c16 [
+					c16 [ ^ \markup { down }
 					\set stemLeftBeamCount = #2
 					\set stemRightBeamCount = #2
 					e16
@@ -1637,7 +1637,7 @@
 					bf,16 ]
 				}
 				{
-					b,16
+					b,16 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 6/5 {
@@ -1646,7 +1646,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					b,4
+					b,4 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -1678,7 +1678,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					d,2
+					d,2 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -1692,7 +1692,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					b,,4
+					b,,4 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -1712,7 +1712,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					c4
+					c4 ^ \markup { down }
 				}
 				\tweak #'text #tuplet-number::calc-fraction-text
 				\times 9/8 {
@@ -1721,7 +1721,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					b,2
+					b,2 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -1748,7 +1748,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					cs,4
+					cs,4 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -1780,7 +1780,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					fs,2
+					fs,2 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
@@ -1794,7 +1794,7 @@
 					\once \override Dots #'color = #blue
 					\once \override NoteHead #'color = #blue
 					\once \override Stem #'color = #blue
-					f,4
+					f,4 ^ \markup { down }
 					\once \override Accidental #'color = #blue
 					\once \override Beam #'color = #blue
 					\once \override Dots #'color = #blue
