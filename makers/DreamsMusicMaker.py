@@ -3,7 +3,7 @@ from abjad import *
 
 
 class DreamsMusicMaker(abctools.AbjadObject):
-    r'''Huitzil dreams music-maker.
+    r'''Dreams music-maker.
 
     All properties can be configured at or after initialization.
     '''
@@ -124,7 +124,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 beam = spannertools.DuratedComplexBeam()
                 attach(beam, note_group)
                 staff_positions = [
-                    bass_clef.named_pitch_to_staff_position(_.written_pitch).number
+                    _.written_pitch.to_staff_position(clef=bass_clef).number
                     for _ in note_group
                     ]
                 highest_staff_position = max(staff_positions)
@@ -143,8 +143,13 @@ class DreamsMusicMaker(abctools.AbjadObject):
                     markup = Markup('up', direction=Up)
                 else:
                     markup = Markup('down', direction=Up)
-                first_note = note_group[0]
-                attach(markup, first_note)
+                #first_note = note_group[0]
+                for note in note_group:
+                    staff_position = note.written_pitch.to_staff_position(
+                        clef=bass_clef)
+                    markup = Markup(staff_position.number)
+                    attach(markup, note)
+                #attach(markup, first_note)
 
     def _attach_leaf_index_markup(self, music):
         if not self.index_logical_ties:
