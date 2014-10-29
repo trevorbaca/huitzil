@@ -159,7 +159,8 @@
         \override TextScript.direction = #up
         \override Stem.length = #7
         \override TextSpanner.staff-padding = #2
-        \override TupletBracket.staff-padding = #3
+        %\override TupletBracket.staff-padding = #3
+        \override TupletBracket.staff-padding = #4
         instrumentName = \markup { \fontsize #3 Cello \hspace #1.5 }
     }
     \context {
