@@ -110,6 +110,8 @@ class DreamsMusicMaker(abctools.AbjadObject):
 
     def _attach_beams(self, music):
         bass_clef = Clef('bass')
+        down_beam_positions = (-4.5, -4.5)
+        up_beam_positions = (4.5, 4.5)
         tuplets = iterate(music).by_class(Tuplet)
         for tuplet in tuplets:
             voice_numbers = [inspect_(_).get_indicator(int) for _ in tuplet]
@@ -123,6 +125,9 @@ class DreamsMusicMaker(abctools.AbjadObject):
             for note_group in note_groups:
                 beam = spannertools.DuratedComplexBeam()
                 attach(beam, note_group)
+                first_note = note_group[0]
+                if Duration(1, 4) <= first_note.written_duration:
+                    continue
                 staff_positions = [
                     _.written_pitch.to_staff_position(clef=bass_clef).number
                     for _ in note_group
@@ -138,18 +143,13 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 elif abs(highest_staff_position) < abs(lowest_staff_position):
                     stem_direction = Up
                 else:
-                    stem_direction = Down
+                    stem_direction = Up
                 if stem_direction == Up:
-                    markup = Markup('up', direction=Up)
+                    override(first_note).beam.positions = up_beam_positions
                 else:
-                    markup = Markup('down', direction=Up)
-                #first_note = note_group[0]
+                    override(first_note).beam.positions = down_beam_positions
                 for note in note_group:
-                    staff_position = note.written_pitch.to_staff_position(
-                        clef=bass_clef)
-                    markup = Markup(staff_position.number)
-                    attach(markup, note)
-                #attach(markup, first_note)
+                    override(note).stem.direction = stem_direction
 
     def _attach_leaf_index_markup(self, music):
         if not self.index_logical_ties:
