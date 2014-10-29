@@ -169,6 +169,9 @@ class DreamsMusicMaker(abctools.AbjadObject):
                 if i in indices:
                     detach(int, note)
                     attach(voice_number, note)
+        notes = sequencetools.flatten_sequence(note_lists)
+        for note in notes:
+            assert inspect_(note).has_indicator(int), repr(note)
 
     def _displace_pitch_classes(self, music):
         if not self.pc_displacement:
