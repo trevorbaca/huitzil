@@ -70,6 +70,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         self._configure_lilypond_file()
         self._interpret_music_makers()
         self._populate_time_signature_context()
+        self._adjust_stems()
         self._attach_tempo_indicators()
         #self._attach_fermatas()
         self._add_manual_page_breaks()
@@ -111,6 +112,12 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             self.final_markup,
             extra_offset=self.final_markup_extra_offset,
             )
+
+    def _adjust_stems(self):
+        parts = self._partition_music_into_measures()
+        for part in parts:
+            markup = Markup('*', direction=Up)
+            attach(markup, part[0][0])
 
     def _annotate_stages(self):
         if not self.show_stage_annotations:
@@ -354,6 +361,22 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         score = template()
         self._score = score
 
+    def _partition_music_into_measures(self):
+        context = self._score['Time Signature Context']
+        measure_durations = [inspect_(_).get_duration() for _ in context]
+        music_voice = self._score['Music Voice']
+        component_durations = [inspect_(_).get_duration() for _ in music_voice]
+        measure_parts = sequencetools.partition_sequence_by_weights(
+            component_durations,
+            measure_durations,
+            )
+        measure_counts = [len(_) for _ in measure_parts]
+        parts = sequencetools.partition_sequence_by_counts(
+            music_voice[:],
+            measure_counts,
+            )
+        return parts
+
     def _populate_time_signature_context(self):
         time_signature_context = self._score['Time Signature Context']
         music_voice = self._score['Music Voice']
@@ -380,7 +403,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
                 detach(time_signature, measure)
                 new_time_signature = TimeSignature(fraction)
                 attach(new_time_signature, measure)
-
 
     def _raise_duration(self):
         if not self.calculate_duration:
