@@ -111,7 +111,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
     def _attach_beams(self, music):
         bass_clef = Clef('bass')
         down_beam_positions = (-4.5, -4.5)
-        up_beam_positions = (4.5, 4.5)
+        up_beam_positions = (5.5, 5.5)
         tuplets = iterate(music).by_class(Tuplet)
         for tuplet in tuplets:
             voice_numbers = [inspect_(_).get_indicator(int) for _ in tuplet]

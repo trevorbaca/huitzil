@@ -115,6 +115,8 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
 
     def _adjust_stems(self):
         measures = self._partition_music_into_measures()
+        down_beam_positions = (-4.5, -4.5)
+        up_beam_positions = (5.5, 5.5)
         for measure in measures:
             voice_numbers = []
             for component in measure:
@@ -124,8 +126,20 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
                     voice_numbers.append(voice_number)
             if len(set(voice_numbers)) == 1:
                 continue
-            markup = Markup('***', direction=Up)
-            attach(markup, measure[0][0])
+            for component in measure:
+                for note in component:
+                    voice_number = inspect_(note).get_indicator(int)
+                    if voice_number == 1:
+                        override(note).stem.direction = Up
+                        override(note).beam.positions = up_beam_positions
+                    elif voice_number == 2:
+                        override(note).stem.direction = Up
+                        override(note).beam.positions = up_beam_positions
+                    elif voice_number == 3:
+                        override(note).stem.direction = Down
+                        override(note).beam.positions = down_beam_positions
+                    else:
+                        raise ValueError(voice_number)
 
     def _annotate_stages(self):
         if not self.show_stage_annotations:
