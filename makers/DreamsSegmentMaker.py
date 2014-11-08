@@ -19,7 +19,9 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         '_music_makers',
         '_page_breaks',
         '_score',
+        '_show_leaf_indices',
         '_show_stage_annotations',
+        '_slurs',
         '_tuplet_bracket_tweaks',
         'final_barline',
         'name',
@@ -37,7 +39,9 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         music_makers=None,
         name=None,
         page_breaks=None,
+        show_leaf_indices=None,
         show_stage_annotations=False,
+        slurs=None,
         tempo_map=None,
         tuplet_bracket_tweaks=None,
         ):
@@ -56,8 +60,11 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         self._music_handlers = []
         page_breaks = page_breaks or []
         self._page_breaks = page_breaks
+        assert isinstance(show_leaf_indices, bool)
+        self._show_leaf_indices = show_leaf_indices
         assert isinstance(show_stage_annotations, bool)
         self._show_stage_annotations = show_stage_annotations
+        self._slurs = slurs or []
         self.tempo_map = tempo_map
         tuplet_bracket_tweaks = tuplet_bracket_tweaks or []
         self._tuplet_bracket_tweaks = tuplet_bracket_tweaks
@@ -79,7 +86,9 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         #self._attach_fermatas()
         self._add_manual_page_breaks()
         self._annotate_stages()
+        self._annotate_leaf_indices()
         self._interpret_music_handlers()
+        self._attach_slurs()
         self._tweak_tuplet_brackets()
         self._add_final_barline()
         self._add_final_markup()
@@ -161,6 +170,14 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             start_measure = context[start_measure_index]
             attach(markup, start_measure)
 
+    def _annotate_leaf_indices(self):
+        if not self.show_leaf_indices:
+            return
+        voice = self._score['Music Voice']
+        for i, leaf in enumerate(iterate(voice).by_class(scoretools.Leaf)):
+            markup = Markup(i)
+            attach(markup, leaf)
+
     def _attach_fermatas(self):
         if not self.tempo_map:
             return
@@ -181,6 +198,17 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             assert isinstance(start_skip, scoretools.Skip), start_skip
             directive = new(directive)
             attach(directive, start_skip)
+
+    def _attach_slurs(self):
+        voice = self._score['Music Voice']
+        leaves = iterate(voice).by_class(scoretools.Leaf)
+        leaves = list(leaves)
+        for slur in self.slurs:
+            start_index, stop_number = slur
+            stop_index = stop_number + 1
+            slur_leaves = leaves[start_index:stop_index]
+            slur = Slur()
+            attach(slur, slur_leaves)
 
     def _attach_tempo_indicators(self):
         if not self.tempo_map:
@@ -338,37 +366,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             assert isinstance(music_maker, makers.MusicMaker)
         self._music_makers = music_makers
 
-    def _label_instrument_changes(self):
-        prototype = instrumenttools.Instrument
-        switching_voices = (
-            'Clarinet Music Voice',
-            'Piano Music Voice',
-            )
-        for voice in iterate(self._score).by_class(scoretools.Voice):
-            if voice.name not in switching_voices:
-                continue
-            for leaf in iterate(voice).by_class(scoretools.Leaf):
-                instruments = inspect_(leaf).get_indicators(prototype)
-                if not instruments:
-                    continue
-                assert len(instruments) == 1
-                current_instrument = instruments[0]
-                previous_leaf = inspect_(leaf).get_leaf(-1)
-                if previous_leaf is None:
-                    continue
-                result = inspect_(previous_leaf).get_effective(prototype)
-                previous_effective_instrument = result
-                if not previous_effective_instrument == current_instrument:
-                    markup = self._make_instrument_change_markup(
-                        current_instrument)
-                    attach(markup, leaf)
-
-    def _make_instrument_change_markup(self, instrument):
-        string = 'to {}'.format(instrument.instrument_name)
-        markup = markuptools.Markup(string, direction=Up)
-        markup = markup.box().override(('box-padding', 0.5))
-        return markup
-
     def _make_lilypond_file(self):
         lilypond_file = lilypondfiletools.make_basic_lilypond_file(self._score)
         for item in lilypond_file.items[:]:
@@ -501,12 +498,28 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         return self._page_breaks
     
     @property
+    def show_leaf_indices(self):
+        r'''Is true when segment should annotate leaf indices.
+
+        Set to true or false.
+        '''
+        return self._show_leaf_indices
+
+    @property
     def show_stage_annotations(self):
         r'''Is true when segment should annotate stages.
 
         Set to true or false.
         '''
         return self._show_stage_annotations
+
+    @property
+    def slurs(self):
+        r'''Gets slur pairs.
+
+        Returns list of pairs.
+        '''
+        return self._slurs
 
     @property
     def tuplet_bracket_tweaks(self):
