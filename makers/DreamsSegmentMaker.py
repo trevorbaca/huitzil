@@ -20,6 +20,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         '_page_breaks',
         '_score',
         '_show_stage_annotations',
+        '_tuplet_bracket_tweaks',
         'final_barline',
         'name',
         'tempo_map',
@@ -38,6 +39,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         page_breaks=None,
         show_stage_annotations=False,
         tempo_map=None,
+        tuplet_bracket_tweaks=None,
         ):
         superclass = super(DreamsSegmentMaker, self)
         superclass.__init__(name=name)
@@ -57,6 +59,8 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         assert isinstance(show_stage_annotations, bool)
         self._show_stage_annotations = show_stage_annotations
         self.tempo_map = tempo_map
+        tuplet_bracket_tweaks = tuplet_bracket_tweaks or []
+        self._tuplet_bracket_tweaks = tuplet_bracket_tweaks
 
     ### SPECIAL METHODS ###
 
@@ -76,6 +80,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         self._add_manual_page_breaks()
         self._annotate_stages()
         self._interpret_music_handlers()
+        self._tweak_tuplet_brackets()
         self._add_final_barline()
         self._add_final_markup()
         self._raise_duration()
@@ -434,6 +439,16 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         string = '%.2f seconds' % float(duration)
         raise Exception(string)
 
+    def _tweak_tuplet_brackets(self):
+        measures = self._partition_music_into_measures()
+        for pair in self.tuplet_bracket_tweaks:
+            measure_number, staff_padding = pair
+            measure_index = measure_number - 1
+            measure = measures[measure_index]
+            leaves = iterate(measure).by_class(scoretools.Leaf)
+            for leaf in leaves:
+                override(leaf).tuplet_bracket.staff_padding = staff_padding
+
     ### PUBLIC PROPERTIES ###
 
     @property
@@ -492,6 +507,14 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         Set to true or false.
         '''
         return self._show_stage_annotations
+
+    @property
+    def tuplet_bracket_tweaks(self):
+        r'''Gets list of tuplet bracket tweaks.
+
+        Returns list of pairs.
+        '''
+        return self._tuplet_bracket_tweaks
 
     ### PUBLIC METHODS ###
 
