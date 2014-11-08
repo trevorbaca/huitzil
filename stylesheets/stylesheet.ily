@@ -61,6 +61,8 @@
     composer = \markup {
         \override #'(font-name . "Palatino")
         \fontsize #5 "Trevor Bača"
+        \hspace #1
+        \fontsize #3.5 "(*1975)"
         \hspace #15
     }
     tagline = \markup \null
@@ -161,7 +163,7 @@
         \override TextSpanner.staff-padding = #2
         %\override TupletBracket.staff-padding = #3
         \override TupletBracket.staff-padding = #4
-        instrumentName = \markup { \fontsize #3 Cello \hspace #1.5 }
+        instrumentName = \markup { \fontsize #3 Cello \hspace #3.5 }
     }
     \context {
         \Score
