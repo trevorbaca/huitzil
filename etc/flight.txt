@@ -1,3 +1,5 @@
+DETAILS
+
 1. flight is in many ways a song of accent types.
 
 2. tremolo dynamics and accent dynamics move independently. how will tremolo
@@ -50,3 +52,60 @@ hold rate of tremolo constant.
 
 8. eight types of type monad appear in flight. 3:2, 4:3, 5:3, 5:4 diminutions
 appear. 2:3, 3:4, 3:5, 4:5 augmentations appear.
+
+SHAPE
+
+what is the shape of flight?
+
+1. first stage of ascent up string IV (from ordinario to just before the dead
+zone immediately in front of the bridge) all on B1.
+
+2. second stage that prolongs the last station of the bow (just before the dead
+zone immediately in front of the bridge) and then varies primarily the position
+of the left hand microtonally *up* from B1 possibly together with a few
+dramatic glissandi of the left hand up from B1 but then quickly back down to
+B1.
+
+3. third stage that recapitulates stage 1 exactly but at the lower pitch level
+of Bb1 instead of B1.
+
+4. fourth stage that recapitulates stage 2 exactly but at the lower pitch level
+of Bb1 instead of B1.
+
+5. fifth stage that returns to the higher pitch level of B1 but then effects a
+slow but fantastic descent down string IV from ordinario to just before the
+dead zone immediately in front of the fingers of the left hand.
+
+6. sixth stage that moves the fingers of the left hand in very slow increments
+from B1 to Bb1 to the end of string IV ultimately revealing the fundamental
+pitch of the open string at A1.
+
+7. seventh stage of ascent that moves the bow all the way back up the compass
+of string IV from the spot at extreme upper end of the string all the way back
+down to the ordinario position of the bow. dynamics and the external-facing
+attitude of the player during this part of the flight are probabaly very
+special.
+
+8. eighth stage that recapitulates stages 1 and 3 exactly but at the lower
+pitch level of A1 and probabaly with a somewhat faster tempo.
+
+9. ninth stage that combines a downward trajectory of the bow (from the topmost
+position just before the dead position immediately in front of the bridge down
+to ordinario) together with a downward glissando featuring string IV pinched
+between the thumb and forefinger of the left hand starting immediately before
+the bow (to produce an incredibly high and essentially pitchless glassy noise
+tremolo) and then moving all the way down the compass of the string and then
+off of the string onto the scroll (to reveal A1 once again as the fundamental
+of the string). ninth stage executes this composite glissando a total of three
+times (each at different speeds: moderate, faster, very slow). ninth stage (and
+thus the entire piece) ends with the point of the bow trapped in tremolo
+at the topmost position (just before the dead position immediately in front of
+the the bridge) with the thumb and forefinger of the left hand just below and
+the bridge just above. the rhythmicized tremolo at the position is trapped for
+for several cycles of iteration with each carrying the possibility of a final
+downward glissando of the left hand. but the final downward glissando of the
+left hand never comes. the bow eventually comes to a rest. then tremolos
+momentarily again. then comes to a rest again (with the rest longer in duration
+than the tremolo). then tremolo and rest. then tremolo and rest. then tremolo
+and rest. then suddenly shorter tremolo-and-rest. and the shorter
+tremolo-and-rest once again. then done.
