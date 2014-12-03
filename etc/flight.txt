@@ -1,0 +1,52 @@
+1. flight is in many ways a song of accent types.
+
+2. tremolo dynamics and accent dynamics move independently. how will tremolo
+dynamics notate? how will accent dynamics notate?
+
+3. what combinations of tremolo dynamic and accent dynamic appear during
+flight? exverse accents appear; no inverse accents appear. regions of quiet,
+loud, very quiet, very loud tremolo all appear with accents one or two dynamic
+levels above the tremolo dynamic. regions of quiet and very quiet tremolo
+appear with accents many dynamic levels above the tremolo dynamic. effects
+differ between these two types of superimposed dynamic.
+
+4. rate of tremolo varies during flight. rate of tremolo does not vary much
+during flight. moderate; a bit fast, fast, quite fast; a bit relaxed, relaxed,
+quite relaxed. this provides an inventory of seven rates of tremolo.
+
+5. are changes of rate of tremolo used permutationally in huitzil? probabaly
+not very much. (massed permutational changes of rate of tremolo between
+multiple strings will be effective in al-kitab al-khamr.) might be interesting
+to have a moment in flight where an accent appears and then immediately slows
+(or increases) the rate of tremolo for the duration of only a single note
+before a subsequent accent appears and returns the rate fo tremolo to what it
+was before. questions then arise as to what should be the relation between the
+subito change in rate (whether up or down) and any corresponding subito change
+in dynamic. an example follows as one possibility.
+
+(*) consider a tremolo moderato played piano; a first forte accent subito
+changes the rate of tremolo to very fast and the tremolo dynamic to ppp
+(probabaly all played alla punta); a second forte accent accent then subito
+returns the rate of tremolo to moderato and the tremolo dynamic to piano. the
+effect is to start with one type of tremolo (moderato piano) and then open a
+momentary window to another type of tremolo (presto pianississimo). (the start-
+and stop-accents are the same because varying the start- and stop-accents
+produces an unintended type of confusion). the window can then be used
+syntactically. the window can be opened alteranately after third accent all in
+a series of equal durations. the window can be opened alternately for shorter
+durations than those of the main progression of accented notes. the window can
+be opened intermittently between the main progression of accented notes.
+perhaps most interestingly the predominant context can subito shift to the
+material of the window. this inverts two types of material.
+
+6. literatal accelerandi and ritardandi appear. literal accelerandi and
+ritardandi effect rate of tremolo and accent frequency at the same time.
+
+7. composite rate changes also appear. first type of composite rate change
+holds rate of tremolo constant while changing accent frequency; this type of
+"accent frequency transition" can probabaly be effected by hand with
+increasingly changed durations notated together with a textual indication to
+hold rate of tremolo constant. 
+
+8. eight types of type monad appear in flight. 3:2, 4:3, 5:3, 5:4 diminutions
+appear. 2:3, 3:4, 3:5, 4:5 augmentations appear.
