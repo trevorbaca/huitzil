@@ -1,38 +1,13 @@
-1. the closing material of the first half constitutes a microtonal ascent of at
-most six pitches. the material appears in the first half of the piece in two or
-three places prior to the full statement at the end of the first half. each
-appearance starts at an anchor pitch (E4) that is the same each time it
-appears. the first appearance of the material presents only the anchor pitch
-and the pitch that immediately follows the anchor as a type of prolonged
-two-note slur. successive appearances of the material ascend increasingly
-greater nubmers of pitches. the notes of the ascent are each long enough to
-lose the sense of counting and reenter the sensation of color. the pitches all
-project forcefully and are presented ponticello. the final note of the sequence
-at the end of the first half of the piece is present subito flautando to break
-completely the ponticello color of presentation and sink even further into a
-secondary underlying color revealed as having undergirded the material the
-entire time. the last note is also 30 or 40 seconds and undergoes an extensive
-diminuendo under a fermata lunghissima. the five or six pitches of the ascent
-span only [E4, F#4]. the last note is F#4. however once the F#4 is hit and the
-subito flautando set in there is a gliss from F#4 to A#4 that pairs with the
-dimimuendo and fermata lunghissima. and in fact the A#4 is then held as a
-constant pitch for at least 15 or 20 seconds. so the last pitched sound of the
-first half is A#4.
-
-2. pivot material is all rendered in A#4.
-
-3. second half opens on B1.
-
-4. the three voices of the first half all carry minor tenth ranges. the lowest
+1. the three voices of the first half all carry minor tenth ranges. the lowest
 voice spans [B1, D3]; the middle voice spans [F2, Ab3]; and the upper voice
 spans [B2, D4].
 
-5. the rhythmic characterization of the three voices of the first half is such
+2. the rhythmic characterization of the three voices of the first half is such
 that the lowest voice carries the notes with by far the longest durations; the
 upper voice carries notes that are moderately long; and the middle voice
 carries notes that stream together sometimes rather more quickly.
 
-6. there are characteristic regions of interaction between the three voices of
+3. there are characteristic regions of interaction between the three voices of
 the first half. there is a region of interplay between the outer voices (with
 the lower voice sounding notes of considerable duration and the upper voice
 sounding notes that move marginally more quickly); probabaly 1-2 (and sometimes
@@ -47,17 +22,17 @@ region of interplay between the lower two voices with the same profiles of
 animation as given above. and there's at least one region of interplay between
 all three voices.
 
-7. what is the order of regions of interplay between voices in the first half?
+4. what is the order of regions of interplay between voices in the first half?
 (1) middle alone; (2) middle & lower; (3) lower alone; (4) lower & upper; (5)
 upper alone; (6) upper & middle; (7) upper, middle & lower; (8) lower & 
 middle; (9) lower alone.
 
-8. at what points does the closing material foreshadow? during (3) lower alone,
+5. at what points does the closing material foreshadow? during (3) lower alone,
 during (5) upper alone and during (7) upper, middle & lower. (so during
 odd-numbered stages.) then the closing material appears in full after (9) lower
 alone.
 
-9. what will be the proportions of the nine stages relative to each other?
+6. what will be the proportions of the nine stages relative to each other?
     1: (1) middle
     1: (2) middle & lower
     1: (3) lower
