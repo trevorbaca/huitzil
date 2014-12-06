@@ -1,8 +1,8 @@
 from abjad import *
 
 
-class ScoreTemplate(abctools.AbjadValueObject):
-    r'''Huitzil score template.
+class DreamsScoreTemplate(abctools.AbjadValueObject):
+    r'''Huitzil dreams score template.
     '''
 
     ### SPECIAL METHODS ###
@@ -11,7 +11,7 @@ class ScoreTemplate(abctools.AbjadValueObject):
         r'''Calls Huitzil score template.
 
         >>> from huitzil import makers
-        >>> template = makers.ScoreTemplate()
+        >>> template = makers.DreamsScoreTemplate()
         >>> score = template()
         
         >>> f(score)
