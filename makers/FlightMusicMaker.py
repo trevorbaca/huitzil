@@ -13,10 +13,13 @@ class FlightMusicMaker(abctools.AbjadObject):
     __slots__ = (
         '_accent_dynamics',
         '_durations',
+        '_name',
+        '_pitches',
+        '_sforzandi',
         '_staff_line_count',
         '_staff_positions',
-        '_tempo_indications',
-        '_tremolo_rate_indications',
+        '_tempo_map',
+        '_tremolo_rate_map',
         '_underlying_dynamics',
         )
 
@@ -26,18 +29,24 @@ class FlightMusicMaker(abctools.AbjadObject):
         self,
         accent_dynamics=None,
         durations=None,
+        name=None,
+        pitches=None,
+        sforzandi=None,
         staff_line_count=None,
         staff_positions=None,
-        tempo_indications=None,
-        tremolo_rate_indications=None,
+        tempo_map=None,
+        tremolo_rate_map=None,
         underlying_dynamics=None,
         ):
         self.accent_dynamics = accent_dynamics
         self.durations = durations
+        self.name = name
+        self.pitches = pitches
+        self.sforzandi = sforzandi
         self.staff_line_count = staff_line_count
         self.staff_positions = staff_positions
-        self.tempo_indications = tempo_indications
-        self.tremolo_rate_indications = tremolo_rate_indications
+        self.tempo_map = tempo_map
+        self.tremolo_rate_map = tremolo_rate_map
         self.underlying_dynamics = underlying_dynamics
 
     ### SPECIAL METHODS ###
@@ -355,7 +364,64 @@ class FlightMusicMaker(abctools.AbjadObject):
         elif isinstance(expr, list):
             self._durations = expr
         else:
-            message = 'must be list of durations: {!r}.'
+            message = 'must be list of pairs: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
+    def name(self):
+        r'''Gets name of music-maker.
+
+        Returns string or none.
+        '''
+        return self._name
+
+    @name.setter
+    def name(self, expr):
+        if expr is None:
+            self._name = expr
+        elif isinstance(expr, str):
+            self._name = expr
+        else:
+            message = 'must be string: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
+    def pitches(self):
+        r'''Gets pitches of music-maker.
+
+        Returns list of pairs or none.
+        '''
+        return self._pitches
+
+    @pitches.setter
+    def pitches(self, expr):
+        if expr is None:
+            self._pitches = expr
+        elif isinstance(expr, list):
+            self._pitches = expr
+        else:
+            message = 'must be list of pairs: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
+    def sforzandi(self):
+        r'''Gets sforzandi of music-maker.
+
+        Returns list of pairs or none.
+        '''
+        return self._sforzandi
+
+    @sforzandi.setter
+    def sforzandi(self, expr):
+        if expr is None:
+            self._sforzandi = expr
+        elif isinstance(expr, list):
+            self._sforzandi = expr
+        else:
+            message = 'must be list of pairs: {!r}.'
             message = message.format(expr)
             raise TypeError(message)
 
@@ -398,38 +464,38 @@ class FlightMusicMaker(abctools.AbjadObject):
             raise TypeError(message)
 
     @property
-    def tempo_indications(self):
+    def tempo_map(self):
         r'''Gets tempo indications of music-maker.
 
         Returns list of pairs or none.
         '''
-        return self._tempo_indications
+        return self._tempo_map
 
-    @tempo_indications.setter
-    def tempo_indications(self, expr):
+    @tempo_map.setter
+    def tempo_map(self, expr):
         if expr is None:
-            self._tempo_indications = expr
+            self._tempo_map = expr
         elif isinstance(expr, list):
-            self._tempo_indications = expr
+            self._tempo_map = expr
         else:
             message = 'must be list of pairs: {!r}.'
             message = message.format(expr)
             raise TypeError(message)
 
     @property
-    def tremolo_rate_indications(self):
+    def tremolo_rate_map(self):
         r'''Gets tremolo rate indications of music-maker.
 
         Returns list of pairs or none.
         '''
-        return self._tremolo_rate_indications
+        return self._tremolo_rate_map
 
-    @tremolo_rate_indications.setter
-    def tremolo_rate_indications(self, expr):
+    @tremolo_rate_map.setter
+    def tremolo_rate_map(self, expr):
         if expr is None:
-            self._tremolo_rate_indications = expr
+            self._tremolo_rate_map = expr
         elif isinstance(expr, list):
-            self._tremolo_rate_indications = expr
+            self._tremolo_rate_map = expr
         else:
             message = 'must be list of pairs: {!r}.'
             message = message.format(expr)
