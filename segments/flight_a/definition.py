@@ -5,7 +5,7 @@ from huitzil import materials
 from huitzil.segments.abbreviations import *
 
 
-segment_maker = makers.FlightMusicMaker(
+segment_maker = makers.FlightSegmentMaker(
     name='flight A',
     pitches=[
         (NamedPitch('B1'), 0),

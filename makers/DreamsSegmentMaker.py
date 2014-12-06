@@ -381,7 +381,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
 
     def _make_score(self):
         from huitzil import makers
-        template = makers.ScoreTemplate()
+        template = makers.DreamsScoreTemplate()
         score = template()
         self._score = score
 
