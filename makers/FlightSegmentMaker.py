@@ -1,4 +1,5 @@
 # -*- encoding: utf-8 -*-
+import os
 from abjad import *
 
 
@@ -13,8 +14,10 @@ class FlightSegmentMaker(abctools.AbjadObject):
     __slots__ = (
         '_accent_dynamics',
         '_durations',
+        '_lilypond_file',
         '_name',
         '_pitches',
+        '_score',
         '_sforzandi',
         '_staff_line_count',
         '_staff_positions',
@@ -48,6 +51,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self.tempo_map = tempo_map
         self.tremolo_rate_map = tremolo_rate_map
         self.underlying_dynamics = underlying_dynamics
+        self._lilypond_file = None
+        self._score = None
 
     ### SPECIAL METHODS ###
 
@@ -57,8 +62,15 @@ class FlightSegmentMaker(abctools.AbjadObject):
         Returns LilyPond file.
         '''
         self._make_score()
+        self._make_lilypond_file()
+        self._configure_lilypond_file()
         #self._attach_leaf_index_markup(music)
         #assert isinstance(music, (tuple, list, Voice)), repr(music)
+        score_block = self.lilypond_file['score']
+        score = score_block['Score']
+        if not inspect_(score).is_well_formed():
+            string = inspect_(score).tabulate_well_formedness_violations()
+            raise Exception(string)
         return self.lilypond_file
 
     ### PRIVATE PROPERTIES ###
@@ -86,6 +98,26 @@ class FlightSegmentMaker(abctools.AbjadObject):
         for i, logical_tie in enumerate(logical_ties):
             markup = Markup(i)
             attach(markup, logical_tie.head)
+
+    def _configure_lilypond_file(self):
+        lilypond_file = self._lilypond_file
+        lilypond_file.use_relative_includes = True
+        path = os.path.join(
+            '..',
+            '..',
+            'stylesheets',
+            'stylesheet.ily',
+            )
+        lilypond_file.file_initial_user_includes.append(path)
+        lilypond_file.header_block.title = None
+        lilypond_file.header_block.composer = None
+
+    def _make_lilypond_file(self):
+        lilypond_file = lilypondfiletools.make_basic_lilypond_file(self._score)
+        for item in lilypond_file.items[:]:
+            if getattr(item, 'name', None) in ('layout', 'paper'):
+                lilypond_file.items.remove(item)
+        self._lilypond_file = lilypond_file
 
     def _make_score(self):
         from huitzil import makers
@@ -132,6 +164,14 @@ class FlightSegmentMaker(abctools.AbjadObject):
             message = 'must be list of pairs: {!r}.'
             message = message.format(expr)
             raise TypeError(message)
+
+    @property
+    def lilypond_file(self):
+        r'''Gets LilyPond file.
+
+        Returns LilyPond file.
+        '''
+        return self._lilypond_file
 
     @property
     def name(self):
