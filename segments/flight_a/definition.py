@@ -21,20 +21,20 @@ segment_maker.tremolo_rate_map = [
     (0, tremolo_moderato),
     ]
 
-segment_maker.sforzandi = [
-    (1, '1/2', 'smfz'),
-    (1, '1/4', 'smfz'),
-    (2, '1/4', 'smfz'),
+segment_maker.notes = [
+    (0, '1/2', '-'),
+    (0, '1/4', '-'),
+    (1, '1/4', '-'),
 
-    (1, '1/2', 'smfz'),
-    (1, '1/4', 'smfz'),
-    (2, '1/3+', 'smfz'),
+    (0, '1/2', '-'),
+    (0, '1/4', '-'),
+    (1, '1/3+', '-'),
 
-    (1, '1/2', 'smfz'),
-    (1, '1/4', 'smfz'),
-    (2, '1/4', 'smfz'),
+    (0, '1/2', '-'),
+    (0, '1/4', '-'),
+    (1, '1/4', '-'),
 
-    (2, '2/3+', 'sfz'),
+    (1, '2/3+', '>'),
     ]
 
 segment_maker.underlying_dynamics = [
