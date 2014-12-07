@@ -27,7 +27,7 @@
         \accepts TremoloIndicatorVoice
         instrumentName = \markup \null
         \override BarLine.stencil = ##f
-        \override Clef.stencil = ##f
+        \override Clef.transparent = ##t
         \override StaffSymbol.line-count = 7
         \override StemTremolo.direction = #up
         \override TupletBracket.direction = #up

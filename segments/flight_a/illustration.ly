@@ -1,4 +1,4 @@
-% 2014-12-07 16:14
+% 2014-12-07 16:41
 
 \version "2.19.15"
 \language "english"
@@ -14,7 +14,7 @@
 
 \score {
 	\context Score = "Score" <<
-		\context Staff = "Staff" <<
+		\context Staff = "Bow Staff" <<
 			\context TimeSignatureVoice = "Time Signature Voice" {
 				{
 					\time 1/1
@@ -56,5 +56,7 @@
 				}
 			}
 		>>
+		\context Staff = "Pitch Staff" {
+		}
 	>>
 }
