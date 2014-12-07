@@ -1,4 +1,4 @@
-% 2014-12-06 21:30
+% 2014-12-06 22:05
 
 \version "2.19.15"
 \language "english"
@@ -20,6 +20,24 @@
 			\context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
 			}
 			\context Voice = "Music Voice" {
+				c'2 -\tenuto
+				c'4 -\tenuto
+				e'4 -\tenuto
+				c'2 -\tenuto
+				c'4 -\tenuto
+				\tweak #'text #tuplet-number::calc-fraction-text
+				\tweak #'edge-height #'(0.7 . 0)
+				\times 4/3 {
+					e'4 -\tenuto
+				}
+				c'2 -\tenuto
+				c'4 -\tenuto
+				e'4 -\tenuto
+				\tweak #'text #tuplet-number::calc-fraction-text
+				\tweak #'edge-height #'(0.7 . 0)
+				\times 4/3 {
+					e'2 -\accent
+				}
 			}
 		>>
 	>>

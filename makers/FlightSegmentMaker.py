@@ -5,8 +5,6 @@ from abjad import *
 
 class FlightSegmentMaker(abctools.AbjadObject):
     r'''Flight segment-maker.
-
-    All properties can be configured at or after initialization.
     '''
 
     ### CLASS ATTRIBUTES ###
@@ -18,13 +16,32 @@ class FlightSegmentMaker(abctools.AbjadObject):
         '_name',
         '_pitches',
         '_score',
-        '_sforzandi',
+        '_notes',
         '_staff_line_count',
         '_staff_positions',
         '_tempo_map',
         '_tremolo_rate_map',
         '_underlying_dynamics',
         )
+
+    __staff_position_to_pitch_name = {
+        6: 'A5',
+        5: 'F5',
+        4: 'D5',
+        3: 'B4',
+        2: 'G4',
+        1: 'E4',
+        0: 'C4',
+        -1: 'A3',
+        -2: 'F3',
+        -3: 'D3',
+        -4: 'B2',
+        -5: 'G2',
+        -6: 'E2',
+        -7: 'C2',
+        -8: 'A1',
+        -9: 'F1',
+        }
 
     ### INITIALIZER ###    
 
@@ -34,7 +51,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         durations=None,
         name=None,
         pitches=None,
-        sforzandi=None,
+        notes=None,
         staff_line_count=None,
         staff_positions=None,
         tempo_map=None,
@@ -45,7 +62,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self.durations = durations
         self.name = name
         self.pitches = pitches
-        self.sforzandi = sforzandi
+        self.notes = notes
         self.staff_line_count = staff_line_count
         self.staff_positions = staff_positions
         self.tempo_map = tempo_map
@@ -64,6 +81,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self._make_score()
         self._make_lilypond_file()
         self._configure_lilypond_file()
+        self._make_notes()
         #self._attach_leaf_index_markup(music)
         #assert isinstance(music, (tuple, list, Voice)), repr(music)
         score_block = self.lilypond_file['score']
@@ -119,11 +137,49 @@ class FlightSegmentMaker(abctools.AbjadObject):
                 lilypond_file.items.remove(item)
         self._lilypond_file = lilypond_file
 
+    def _make_leaf(self, pitch, duration_string, indication):
+        is_diminution = None
+        if duration_string.endswith('+'):
+            is_diminution = False
+        elif duration_string.endswith('-'):
+            is_diminution = True
+        duration_string = duration_string.strip('+-')
+        duration = Duration(duration_string)
+        leaves = scoretools.make_leaves(
+            [pitch], 
+            [duration],
+            is_diminution=is_diminution,
+            )
+        if indication in ('-', '>'):
+            indication = Articulation(indication)
+        else:
+            message = 'unrecognized indication: {!r}.'
+            message = message.format(indication)
+            raise ValueError(message)
+        first_component = leaves[0]
+        first_leaf = inspect_(first_component).get_leaf(0)
+        attach(indication, first_leaf)
+        return leaves
+
+    def _make_notes(self):
+        notes = []
+        for staff_position, duration_string, indication in self.notes:
+            pitch = self._staff_position_to_pitch(staff_position)
+            components = self._make_leaf(pitch, duration_string, indication)
+            notes.extend(components)
+        music_voice = self._score['Music Voice']
+        music_voice.extend(notes)
+
     def _make_score(self):
         from huitzil import makers
         template = makers.FlightScoreTemplate()
         score = template()
         self._score = score
+
+    def _staff_position_to_pitch(self, staff_position):
+        pitch_string = self.__staff_position_to_pitch_name[staff_position]
+        pitch = NamedPitch(pitch_string)
+        return pitch
 
     ### PUBLIC PROPERTIES ###
 
@@ -193,6 +249,25 @@ class FlightSegmentMaker(abctools.AbjadObject):
             raise TypeError(message)
 
     @property
+    def notes(self):
+        r'''Gets notes of segment-maker.
+
+        Returns list of pairs or none.
+        '''
+        return self._notes
+
+    @notes.setter
+    def notes(self, expr):
+        if expr is None:
+            self._notes = expr
+        elif isinstance(expr, list):
+            self._notes = expr
+        else:
+            message = 'must be list of pairs: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
     def pitches(self):
         r'''Gets pitches of segment-maker.
 
@@ -206,25 +281,6 @@ class FlightSegmentMaker(abctools.AbjadObject):
             self._pitches = expr
         elif isinstance(expr, list):
             self._pitches = expr
-        else:
-            message = 'must be list of pairs: {!r}.'
-            message = message.format(expr)
-            raise TypeError(message)
-
-    @property
-    def sforzandi(self):
-        r'''Gets sforzandi of segment-maker.
-
-        Returns list of pairs or none.
-        '''
-        return self._sforzandi
-
-    @sforzandi.setter
-    def sforzandi(self, expr):
-        if expr is None:
-            self._sforzandi = expr
-        elif isinstance(expr, list):
-            self._sforzandi = expr
         else:
             message = 'must be list of pairs: {!r}.'
             message = message.format(expr)
