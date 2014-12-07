@@ -29,43 +29,49 @@ class FlightScoreTemplate(abctools.AbjadValueObject):
         Returns score.
         '''
 
-        # make staff
-        staff = Staff(
-            name='Staff',
+        # make bow staff
+        bow_staff = Staff(
+            name='Bow Staff',
             )
-        staff.is_simultaneous = True
+        bow_staff.is_simultaneous = True
 
         # make time signature voice
         time_signature_voice = Voice(
             context_name='TimeSignatureVoice', 
             name='Time Signature Voice',
             )
-        staff.append(time_signature_voice)
+        bow_staff.append(time_signature_voice)
 
         # make tempo indicator voice
         tempo_indicator_voice = Voice(
             context_name='TempoIndicatorVoice', 
             name='Tempo Indicator Voice',
             )
-        staff.append(tempo_indicator_voice)
+        bow_staff.append(tempo_indicator_voice)
 
         # make tremolo indicator voice
         tremolo_indicator_voice = Voice(
             context_name='TremoloIndicatorVoice', 
             name='Tremolo Indicator Voice',
             )
-        staff.append(tremolo_indicator_voice)
+        bow_staff.append(tremolo_indicator_voice)
 
         # make music voice
         music_voice = Voice(
             name='Music Voice',
             )
-        staff.append(music_voice)
+        bow_staff.append(music_voice)
+
+        # make pitch staff
+        pitch_staff = Staff(
+            name='Pitch Staff',
+            )
 
         # make score
         score = Score(
             [
-            staff,
+            bow_staff,
+            pitch_staff,
             ],
             name='Score',
             )
