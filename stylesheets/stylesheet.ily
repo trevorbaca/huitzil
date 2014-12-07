@@ -148,8 +148,8 @@
         \override NoteHead.X-extent = #'(0 . 0)
         \override Stem.stencil = ##f
         \override TextScript.direction = #up
-        \override TextScript.staff-padding = #9.5
-        \override TextScript.outside-staff-priority = #800
+        \override TextScript.staff-padding = 9.5
+        \override TextScript.outside-staff-priority = 800
         \override TextSpanner.extra-offset = #'(0 . 8.5)
         \override TextSpanner.Y-extent = ##f
         \override TupletBracket.stencil = ##f
@@ -159,10 +159,10 @@
         \Staff
         \accepts TextSpannerVoice
         \override TextScript.direction = #up
-        \override Stem.length = #7
-        \override TextSpanner.staff-padding = #2
-        %\override TupletBracket.staff-padding = #3
-        \override TupletBracket.staff-padding = #4
+        \override Stem.length = 7
+        \override TextSpanner.staff-padding = 2
+        %\override TupletBracket.staff-padding = 3
+        \override TupletBracket.staff-padding = 4
         instrumentName = \markup { \fontsize #3 Cello \hspace #3.5 }
     }
     \context {
@@ -182,23 +182,23 @@
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 2
         \override MetronomeMark.extra-offset = #'(3 . -3)
-        \override MetronomeMark.font-size = #3
+        \override MetronomeMark.font-size = 3
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
         %\override Stem.direction = #down
-        \override StemTremolo.beam-width = #1.5
-        \override StemTremolo.flag-count = #4
-        \override StemTremolo.slope = #0.5
-        \override StemTremolo.Y-offset = #-4
+        \override StemTremolo.beam-width = 1.5
+        %\override StemTremolo.flag-count = 4
+        \override StemTremolo.slope = 0.5
+        %\override StemTremolo.Y-offset = -4
         \override TextScript.Y-extent = #'(-1.5 . 1.5)
         \override TupletBracket.breakable = ##t
         \override TupletBracket.direction = #down
         \override TupletBracket.full-length-to-extent = ##f
-        \override TupletBracket.padding = #1
-        \override TupletNumber.font-size = #0.333
+        \override TupletBracket.padding = 1
+        \override TupletNumber.font-size = 0.333
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
         markFormatter = #format-mark-box-alphabet

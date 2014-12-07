@@ -13,6 +13,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         '_accent_dynamics',
         '_durations',
         '_lilypond_file',
+        '_markup_leaves',
         '_name',
         '_pitches',
         '_score',
@@ -49,6 +50,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self,
         accent_dynamics=None,
         durations=None,
+        markup_leaves=False,
         name=None,
         pitches=None,
         notes=None,
@@ -60,6 +62,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         ):
         self.accent_dynamics = accent_dynamics
         self.durations = durations
+        self.markup_leaves = markup_leaves
         self.name = name
         self.pitches = pitches
         self.notes = notes
@@ -82,8 +85,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self._make_lilypond_file()
         self._configure_lilypond_file()
         self._make_notes()
-        #self._attach_leaf_index_markup(music)
-        #assert isinstance(music, (tuple, list, Voice)), repr(music)
+        self._populate_time_signature_voice()
+        self._attach_leaf_index_markup()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         if not inspect_(score).is_well_formed():
@@ -109,10 +112,11 @@ class FlightSegmentMaker(abctools.AbjadObject):
 
     ### PRIVATE METHODS ###
 
-    def _attach_leaf_index_markup(self, music):
-        if not self.index_logical_ties:
+    def _attach_leaf_index_markup(self):
+        if not self.markup_leaves:
             return
-        logical_ties = iterate(music).by_logical_tie()
+        voice = self._score['Music Voice']
+        logical_ties = iterate(voice).by_logical_tie()
         for i, logical_tie in enumerate(logical_ties):
             markup = Markup(i)
             attach(markup, logical_tie.head)
@@ -124,7 +128,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
             '..',
             '..',
             'stylesheets',
-            'stylesheet.ily',
+            'flight-stylesheet.ily',
             )
         lilypond_file.file_initial_user_includes.append(path)
         lilypond_file.header_block.title = None
@@ -138,32 +142,34 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self._lilypond_file = lilypond_file
 
     def _make_leaf(self, pitch, duration_string, indication):
-        is_diminution = None
-        if duration_string.endswith('+'):
-            is_diminution = False
-        elif duration_string.endswith('-'):
-            is_diminution = True
-        duration_string = duration_string.strip('+-')
         duration = Duration(duration_string)
         leaves = scoretools.make_leaves(
             [pitch], 
             [duration],
-            is_diminution=is_diminution,
             )
         if indication in ('-', '>'):
             indication = Articulation(indication)
+            first_component = leaves[0]
+            first_leaf = inspect_(first_component).get_leaf(0)
+            attach(indication, first_leaf)
+        elif indication is None:
+            pass
         else:
             message = 'unrecognized indication: {!r}.'
             message = message.format(indication)
             raise ValueError(message)
-        first_component = leaves[0]
-        first_leaf = inspect_(first_component).get_leaf(0)
-        attach(indication, first_leaf)
+        for leaf in iterate(leaves).by_class(scoretools.Leaf):
+            if Duration(1, 16) < leaf.written_duration:
+                tremolo = indicatortools.StemTremolo(16)
+                attach(tremolo, leaf)
         return leaves
 
     def _make_notes(self):
         notes = []
-        for staff_position, duration_string, indication in self.notes:
+        for expression in self.notes:
+            if expression == '|':
+                continue
+            staff_position, duration_string, indication = expression
             pitch = self._staff_position_to_pitch(staff_position)
             components = self._make_leaf(pitch, duration_string, indication)
             notes.extend(components)
@@ -175,6 +181,24 @@ class FlightSegmentMaker(abctools.AbjadObject):
         template = makers.FlightScoreTemplate()
         score = template()
         self._score = score
+
+    def _populate_time_signature_voice(self):
+        voice = self._score['Time Signature Voice']
+        measure_durations = []
+        current_measure_duration = Duration(0)
+        for expression in self.notes:
+            if expression == '|':
+                measure_durations.append(current_measure_duration)
+                current_measure_duration = Duration(0)
+                continue
+            staff_position, duration_string, articulation = expression
+            duration_string = duration_string.strip('+-')
+            duration = Duration(duration_string)
+            current_measure_duration += duration
+        if 0 < current_measure_duration:
+            measure_durations.append(current_measure_duration)
+        measures = scoretools.make_spacer_skip_measures(measure_durations)
+        voice.extend(measures)
 
     def _staff_position_to_pitch(self, staff_position):
         pitch_string = self.__staff_position_to_pitch_name[staff_position]
@@ -228,6 +252,25 @@ class FlightSegmentMaker(abctools.AbjadObject):
         Returns LilyPond file.
         '''
         return self._lilypond_file
+
+    @property
+    def markup_leaves(self):
+        r'''Is true when leaf index markup should attach to leaves.
+
+        Returns string or none.
+        '''
+        return self._markup_leaves
+
+    @markup_leaves.setter
+    def markup_leaves(self, expr):
+        if expr is None:
+            self._markup_leaves = expr
+        elif isinstance(expr, type(True)):
+            self._markup_leaves = expr
+        else:
+            message = 'must be boolean: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
 
     @property
     def name(self):

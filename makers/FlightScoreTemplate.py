@@ -35,6 +35,13 @@ class FlightScoreTemplate(abctools.AbjadValueObject):
             )
         staff.is_simultaneous = True
 
+        # make time signature voice
+        time_signature_voice = Voice(
+            context_name='TimeSignatureVoice', 
+            name='Time Signature Voice',
+            )
+        staff.append(time_signature_voice)
+
         # make tempo indicator voice
         tempo_indicator_voice = Voice(
             context_name='TempoIndicatorVoice', 
