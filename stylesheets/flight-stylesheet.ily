@@ -13,6 +13,8 @@
         \name TempoIndicatorVoice
         \type Engraver_group
         \alias Voice
+        \override TextScript.staff-padding = 6
+        \override TextSpanner.staff-padding = 6.75
     }
     \context {
         \Voice
@@ -23,7 +25,11 @@
     \context {
         \Staff
         instrumentName = \markup \null
-        \override BarLine.stencil = ##f
+    }
+    \context {
+        \PianoStaff
+        \accepts BowStaff
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 14
     }
     \context {
         \Staff
@@ -41,7 +47,8 @@
     }
     \context {
         \Score
-        \accepts BowStaff
+        \override BarLine.stencil = ##f
+        \override SpanBar.stencil = ##f
         proportionalNotationDuration = #(ly:make-moment 1 20)
     }
 }

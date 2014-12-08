@@ -16,12 +16,18 @@ class FlightScoreTemplate(abctools.AbjadValueObject):
         
         >>> f(score)
         \context Score = "Score" <<
-            \context Staff = "Staff" <<
-                \context TempoIndicatorVoice = "Tempo Indicator Voice" {
-                }
-                \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
-                }
-                \context Voice = "Music Voice" {
+            \new PianoStaff <<
+                \context BowStaff = "Bow Staff" <<
+                    \context TimeSignatureVoice = "Time Signature Voice" {
+                    }
+                    \context TempoIndicatorVoice = "Tempo Indicator Voice" {
+                    }
+                    \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+                    }
+                    \context Voice = "Bow Location Voice" {
+                    }
+                >>
+                \context Staff = "Pitch Staff" {
                 }
             >>
         >>
@@ -57,22 +63,30 @@ class FlightScoreTemplate(abctools.AbjadValueObject):
             )
         bow_staff.append(tremolo_indicator_voice)
 
-        # make music voice
-        music_voice = Voice(
-            name='Music Voice',
+        # make bow location voice
+        bow_location_voice = Voice(
+            name='Bow Location Voice',
             )
-        bow_staff.append(music_voice)
+        bow_staff.append(bow_location_voice)
 
         # make pitch staff
         pitch_staff = Staff(
             name='Pitch Staff',
             )
 
+        # make staff group
+        staff_group = scoretools.StaffGroup(
+            context_name='PianoStaff',
+            )
+        staff_group.extend([
+            bow_staff,
+            pitch_staff,
+            ])
+
         # make score
         score = Score(
             [
-            bow_staff,
-            pitch_staff,
+            staff_group,
             ],
             name='Score',
             )
