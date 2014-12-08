@@ -22,11 +22,17 @@
     }
     \context {
         \Staff
+        instrumentName = \markup \null
+        \override BarLine.stencil = ##f
+    }
+    \context {
+        \Staff
+        \name BowStaff
+        \type Engraver_group
+        \alias Staff
         \accepts TimeSignatureVoice
         \accepts TempoIndicatorVoice
         \accepts TremoloIndicatorVoice
-        instrumentName = \markup \null
-        \override BarLine.stencil = ##f
         \override Clef.transparent = ##t
         \override StaffSymbol.line-count = 7
         \override StemTremolo.direction = #up
@@ -35,6 +41,7 @@
     }
     \context {
         \Score
+        \accepts BowStaff
         proportionalNotationDuration = #(ly:make-moment 1 20)
     }
 }

@@ -86,6 +86,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self._configure_lilypond_file()
         self._make_notes()
         self._populate_time_signature_voice()
+        self._populate_pitch_staff()
         self._attach_leaf_index_markup()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
@@ -181,6 +182,50 @@ class FlightSegmentMaker(abctools.AbjadObject):
         template = makers.FlightScoreTemplate()
         score = template()
         self._score = score
+
+    def _populate_pitch_staff(self):
+        pitch_staff = self._score['Pitch Staff']
+        if not self.pitches:
+            music_voice = self._score['Music Voice']
+            total_duration = inspect_(music_voice).get_duration()
+            skip = scoretools.Skip(1)
+            multiplier = durationtools.Multiplier(total_duration)
+            attach(multiplier, skip)
+            pitch_staff.append(skip)
+        else:
+            durations = []
+            current_duration = Duration(0)
+            leaf_indices = [_[0] for _ in self.pitches]
+            leaf_index = -1
+            for expression in self.notes:
+                if expression == '|':
+                    continue
+                leaf_index += 1
+                staff_position, duration, articulation = expression
+                duration = Duration(duration)
+                if leaf_index in leaf_indices and Duration(0) < current_duration:
+                    durations.append(current_duration)
+                    current_duration = duration
+                else:
+                    current_duration += duration
+            if Duration(0) < current_duration:
+                durations.append(current_duration)
+            assert len(durations) == len(self.pitches)
+            notes = []
+            for leaf_index, pitch in self.pitches:
+                pitch = NamedPitch(pitch)
+                note = Note(pitch, Duration(1))
+                notes.append(note)
+            for note, duration in zip(notes, durations):
+                multiplier = durationtools.Multiplier(duration)
+                attach(multiplier, note)
+            pitch_staff.extend(notes)
+        first_leaf = inspect_(pitch_staff).get_leaf(n=0)
+        clef = Clef('bass')
+        if isinstance(first_leaf, Note):
+            if NamedPitch('C4') < first_leaf.written_pitch:
+                clef = Clef('treble')
+        attach(clef, pitch_staff)
 
     def _populate_time_signature_voice(self):
         voice = self._score['Time Signature Voice']

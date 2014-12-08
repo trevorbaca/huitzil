@@ -9,7 +9,8 @@ segment_maker = makers.FlightSegmentMaker(
     markup_leaves=False,
     name='flight A',
     pitches=[
-        (NamedPitch('B1'), 0),
+        (0, 'B1'),
+        (5, 'Bb1'),
         ],
     staff_line_count = 7
     )
@@ -38,7 +39,7 @@ segment_maker.notes = [
     (1, '1/4', None),
     '|',
 
-    (1, '2/3', '>'),
+    (1, '1/2', '>'),
     ]
 
 segment_maker.underlying_dynamics = [
