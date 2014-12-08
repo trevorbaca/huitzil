@@ -1,4 +1,4 @@
-% 2014-12-07 16:41
+% 2014-12-08 11:55
 
 \version "2.19.15"
 \language "english"
@@ -14,7 +14,7 @@
 
 \score {
 	\context Score = "Score" <<
-		\context Staff = "Bow Staff" <<
+		\context BowStaff = "Bow Staff" <<
 			\context TimeSignatureVoice = "Time Signature Voice" {
 				{
 					\time 1/1
@@ -29,8 +29,8 @@
 					s1 * 1
 				}
 				{
-					\time 2/3
-					s1 * 2/3
+					\time 1/2
+					s1 * 1/2
 				}
 			}
 			\context TempoIndicatorVoice = "Tempo Indicator Voice" {
@@ -50,13 +50,13 @@
 				c'2 :16
 				c'4 :16
 				e'4 :16
-				\tweak #'edge-height #'(0.7 . 0)
-				\times 2/3 {
-					e'1 :16 -\accent
-				}
+				e'2 :16 -\accent
 			}
 		>>
 		\context Staff = "Pitch Staff" {
+			\clef "bass"
+			b,,1 * 7/4
+			bf,,1 * 11/6
 		}
 	>>
 }

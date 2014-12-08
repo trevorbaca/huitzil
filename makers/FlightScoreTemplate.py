@@ -31,6 +31,7 @@ class FlightScoreTemplate(abctools.AbjadValueObject):
 
         # make bow staff
         bow_staff = Staff(
+            context_name='BowStaff',
             name='Bow Staff',
             )
         bow_staff.is_simultaneous = True
