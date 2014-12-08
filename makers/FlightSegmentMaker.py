@@ -1,4 +1,5 @@
 # -*- encoding: utf-8 -*-
+import copy
 import os
 from abjad import *
 
@@ -84,8 +85,9 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self._make_score()
         self._make_lilypond_file()
         self._configure_lilypond_file()
-        self._make_notes()
+        self._populate_bow_location_voice()
         self._populate_time_signature_voice()
+        self._populate_tempo_indicator_voice()
         self._populate_pitch_staff()
         self._attach_leaf_index_markup()
         score_block = self.lilypond_file['score']
@@ -116,7 +118,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
     def _attach_leaf_index_markup(self):
         if not self.markup_leaves:
             return
-        voice = self._score['Music Voice']
+        voice = self._score['Bow Location Voice']
         logical_ties = iterate(voice).by_logical_tie()
         for i, logical_tie in enumerate(logical_ties):
             markup = Markup(i)
@@ -134,6 +136,14 @@ class FlightSegmentMaker(abctools.AbjadObject):
         lilypond_file.file_initial_user_includes.append(path)
         lilypond_file.header_block.title = None
         lilypond_file.header_block.composer = None
+
+    def _get_bow_location_durations(self):
+        bow_location_voice = self._score['Bow Location Voice']
+        durations = []
+        for logical_tie in iterate(bow_location_voice).by_logical_tie():
+            duration = logical_tie.get_duration()
+            durations.append(duration)
+        return durations
 
     def _make_lilypond_file(self):
         lilypond_file = lilypondfiletools.make_basic_lilypond_file(self._score)
@@ -165,7 +175,13 @@ class FlightSegmentMaker(abctools.AbjadObject):
                 attach(tremolo, leaf)
         return leaves
 
-    def _make_notes(self):
+    def _make_score(self):
+        from huitzil import makers
+        template = makers.FlightScoreTemplate()
+        score = template()
+        self._score = score
+
+    def _populate_bow_location_voice(self):
         notes = []
         for expression in self.notes:
             if expression == '|':
@@ -174,20 +190,14 @@ class FlightSegmentMaker(abctools.AbjadObject):
             pitch = self._staff_position_to_pitch(staff_position)
             components = self._make_leaf(pitch, duration_string, indication)
             notes.extend(components)
-        music_voice = self._score['Music Voice']
-        music_voice.extend(notes)
-
-    def _make_score(self):
-        from huitzil import makers
-        template = makers.FlightScoreTemplate()
-        score = template()
-        self._score = score
+        bow_location_voice = self._score['Bow Location Voice']
+        bow_location_voice.extend(notes)
 
     def _populate_pitch_staff(self):
         pitch_staff = self._score['Pitch Staff']
         if not self.pitches:
-            music_voice = self._score['Music Voice']
-            total_duration = inspect_(music_voice).get_duration()
+            bow_location_voice = self._score['Bow Location Voice']
+            total_duration = inspect_(bow_location_voice).get_duration()
             skip = scoretools.Skip(1)
             multiplier = durationtools.Multiplier(total_duration)
             attach(multiplier, skip)
@@ -226,6 +236,17 @@ class FlightSegmentMaker(abctools.AbjadObject):
             if NamedPitch('C4') < first_leaf.written_pitch:
                 clef = Clef('treble')
         attach(clef, pitch_staff)
+
+    def _populate_tempo_indicator_voice(self):
+        tempo_indicator_voice = self._score['Tempo Indicator Voice']
+        durations = self._get_bow_location_durations()
+        skips = scoretools.make_skips(Duration(1), durations)
+        tempo_indicator_voice.extend(skips)
+        for index, indicator in self.tempo_map:
+            skip = tempo_indicator_voice[index]
+            indicator = copy.copy(indicator)
+            attach(indicator, skip, is_annotation=True)
+        attach(spannertools.TempoSpanner(), tempo_indicator_voice[:])
 
     def _populate_time_signature_voice(self):
         voice = self._score['Time Signature Voice']
