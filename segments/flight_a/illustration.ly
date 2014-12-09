@@ -1,4 +1,4 @@
-% 2014-12-09 10:48
+% 2014-12-09 10:53
 
 \version "2.19.15"
 \language "english"
@@ -30,8 +30,8 @@
 						s1 * 1
 					}
 					{
-						\time 1/2
-						s1 * 1/2
+						\time 2/3
+						s1 * 2/3
 					}
 				}
 				\context TempoIndicatorVoice = "Tempo Indicator Voice" {
@@ -55,7 +55,7 @@
 					s1 * 1/2
 					s1 * 1/4
 					s1 * 1/4
-					s1 * 1/2
+					s1 * 2/3
 				}
 				\context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
 				}
@@ -108,11 +108,14 @@
 							\dynamic
 								mfz
 							}
-					e'2 :16
-						_ \markup {
-							\dynamic
-								mfz
-							}
+					\tweak #'edge-height #'(0.7 . 0)
+					\times 2/3 {
+						e'1 :16
+							_ \markup {
+								\dynamic
+									mfz
+								}
+					}
 				}
 				\context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
 					\once \override Hairpin #'stencil = #constante-hairpin
@@ -125,12 +128,12 @@
 					s1 * 1/2
 					s1 * 1/4
 					s1 * 1/4
-					s1 * 1/2 \pp
+					s1 * 2/3 \pp
 				}
 			>>
 			\context Staff = "Pitch Staff" {
 				\clef "bass"
-				b,,1 * 43/12
+				b,,1 * 15/4
 			}
 		>>
 	>>

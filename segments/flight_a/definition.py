@@ -38,7 +38,7 @@ segment_maker.notes = [
     (1, '1/4', 'mfz'),
     '|',
 
-    (1, '1/2', 'mfz'),
+    (1, '2/3', 'mfz'),
     ]
 
 segment_maker.underlying_dynamics = [

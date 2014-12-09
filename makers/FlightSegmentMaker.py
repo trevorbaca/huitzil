@@ -88,6 +88,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self._populate_bow_location_voice()
         self._populate_time_signature_voice()
         self._populate_tempo_indicator_voice()
+        self._populate_tremolo_indicator_voice()
         self._populate_underlying_dynamics_voice()
         self._populate_pitch_staff()
         self._attach_leaf_index_markup()
@@ -189,6 +190,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self._score = score
 
     def _populate_bow_location_voice(self):
+        if not self.notes:
+            return
         notes = []
         for expression in self.notes:
             if expression == '|':
@@ -201,6 +204,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         bow_location_voice.extend(notes)
 
     def _populate_pitch_staff(self):
+        if not self.notes:
+            return
         pitch_staff = self._score['Pitch Staff']
         if not self.pitches:
             bow_location_voice = self._score['Bow Location Voice']
@@ -245,6 +250,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         attach(clef, pitch_staff)
 
     def _populate_tempo_indicator_voice(self):
+        if not self.notes:
+            return
         if not self.tempo_map:
             return
         tempo_indicator_voice = self._score['Tempo Indicator Voice']
@@ -258,6 +265,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         attach(spannertools.TempoSpanner(), tempo_indicator_voice[:])
 
     def _populate_time_signature_voice(self):
+        if not self.notes:
+            return
         voice = self._score['Time Signature Voice']
         measure_durations = []
         current_measure_duration = Duration(0)
@@ -275,7 +284,12 @@ class FlightSegmentMaker(abctools.AbjadObject):
         measures = scoretools.make_spacer_skip_measures(measure_durations)
         voice.extend(measures)
 
+    def _populate_tremolo_indicator_voice(self):
+        pass
+
     def _populate_underlying_dynamics_voice(self):
+        if not self.notes:  
+            return
         underlying_dynamics_voice = self._score['Underlying Dynamics Voice']
         durations = self._get_bow_location_durations()
         skips = scoretools.make_skips(Duration(1), durations)
