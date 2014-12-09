@@ -289,6 +289,27 @@ class FlightSegmentMaker(abctools.AbjadObject):
                     string, 
                     format_slot='right',
                     )
+            elif string == '-|':
+                indicator = indicatortools.LilyPondCommand(
+                    '<', 
+                    format_slot='right',
+                    )
+                stencil = schemetools.Scheme('constante-hairpin')
+                override(skip).hairpin.stencil = stencil
+            elif string == '<!':
+                indicator = indicatortools.LilyPondCommand(
+                    '<', 
+                    format_slot='right',
+                    )
+                stencil = schemetools.Scheme('flared-hairpin')
+                override(skip).hairpin.stencil = stencil
+            elif string == '!>':
+                indicator = indicatortools.LilyPondCommand(
+                    '>', 
+                    format_slot='right',
+                    )
+                stencil = schemetools.Scheme('flared-hairpin')
+                override(skip).hairpin.stencil = stencil
             else:
                 indicator = Dynamic(string)
             attach(indicator, skip)
