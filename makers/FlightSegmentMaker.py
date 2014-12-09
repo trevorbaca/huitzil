@@ -88,6 +88,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self._populate_bow_location_voice()
         self._populate_time_signature_voice()
         self._populate_tempo_indicator_voice()
+        self._populate_underlying_dynamics_voice()
         self._populate_pitch_staff()
         self._attach_leaf_index_markup()
         score_block = self.lilypond_file['score']
@@ -165,6 +166,12 @@ class FlightSegmentMaker(abctools.AbjadObject):
             attach(indication, first_leaf)
         elif indication is None:
             pass
+        elif indication.endswith('z'):
+            markup = Markup(indication, direction=Down)
+            markup = markup.dynamic()
+            first_component = leaves[0]
+            first_leaf = inspect_(first_component).get_leaf(0)
+            attach(markup, first_leaf)
         else:
             message = 'unrecognized indication: {!r}.'
             message = message.format(indication)
@@ -265,6 +272,22 @@ class FlightSegmentMaker(abctools.AbjadObject):
             measure_durations.append(current_measure_duration)
         measures = scoretools.make_spacer_skip_measures(measure_durations)
         voice.extend(measures)
+
+    def _populate_underlying_dynamics_voice(self):
+        underlying_dynamics_voice = self._score['Underlying Dynamics Voice']
+        durations = self._get_bow_location_durations()
+        skips = scoretools.make_skips(Duration(1), durations)
+        underlying_dynamics_voice.extend(skips)
+        for index, string in self.underlying_dynamics:
+            skip = underlying_dynamics_voice[index]
+            if string in ('<', '>'):
+                indicator = indicatortools.LilyPondCommand(
+                    string, 
+                    format_slot='right',
+                    )
+            else:
+                indicator = Dynamic(string)
+            attach(indicator, skip)
 
     def _staff_position_to_pitch(self, staff_position):
         pitch_string = self.__staff_position_to_pitch_name[staff_position]
