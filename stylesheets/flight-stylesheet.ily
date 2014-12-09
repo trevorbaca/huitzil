@@ -23,6 +23,21 @@
         \alias Voice
     }
     \context {
+        \Voice
+        \name BowLocationVoice
+        \type Engraver_group
+        \alias Voice
+        \override TextScript.staff-padding = 3.5
+        \override TextScript.self-alignment-X = -0.375
+    }
+    \context {
+        \Voice
+        \name UnderlyingDynamicsVoice
+        \type Engraver_group
+        \alias Voice
+        \override DynamicLineSpanner.staff-padding = 6
+    }
+    \context {
         \Staff
         instrumentName = \markup \null
     }
@@ -39,6 +54,8 @@
         \accepts TimeSignatureVoice
         \accepts TempoIndicatorVoice
         \accepts TremoloIndicatorVoice
+        \accepts BowLocationVoice
+        \accepts UnderlyingDynamicsVoice
         \override Clef.transparent = ##t
         \override StaffSymbol.line-count = 7
         \override StemTremolo.direction = #up

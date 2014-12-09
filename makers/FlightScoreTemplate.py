@@ -65,9 +65,17 @@ class FlightScoreTemplate(abctools.AbjadValueObject):
 
         # make bow location voice
         bow_location_voice = Voice(
+            context_name='BowLocationVoice',
             name='Bow Location Voice',
             )
         bow_staff.append(bow_location_voice)
+
+        # make underlying dynamics voice
+        underlying_dynamics_voice = Voice(
+            context_name='UnderlyingDynamicsVoice',
+            name='Underlying Dynamics Voice',
+            )
+        bow_staff.append(underlying_dynamics_voice)
 
         # make pitch staff
         pitch_staff = Staff(
