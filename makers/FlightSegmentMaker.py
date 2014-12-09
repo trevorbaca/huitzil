@@ -245,6 +245,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         attach(clef, pitch_staff)
 
     def _populate_tempo_indicator_voice(self):
+        if not self.tempo_map:
+            return
         tempo_indicator_voice = self._score['Tempo Indicator Voice']
         durations = self._get_bow_location_durations()
         skips = scoretools.make_skips(Duration(1), durations)
@@ -278,6 +280,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         durations = self._get_bow_location_durations()
         skips = scoretools.make_skips(Duration(1), durations)
         underlying_dynamics_voice.extend(skips)
+        if not self.underlying_dynamics:
+            return
         for index, string in self.underlying_dynamics:
             skip = underlying_dynamics_voice[index]
             if string in ('<', '>'):
