@@ -37,10 +37,13 @@ fff = 'fff'
 
 quarter_44 = Tempo(Duration(1, 4), 44)
 quarter_66 = Tempo(Duration(1, 4), 66)
+quarter_88 = Tempo(Duration(1, 4), 88)
 
 meno_mosso = Markup('meno mosso').upright()
 molto_mosso = Markup('molto mosso').upright()
 piu_mosso = Markup('più mosso').upright()
+poco_meno_mosso = Markup('poco meno mosso').upright()
+poco_piu_mosso = Markup('poco più mosso').upright()
 
 sub_trem_meno_mosso = Markup('sub. trem. meno mosso').upright()
 sub_trem_moderato = Markup('sub. trem. moderato').upright()
