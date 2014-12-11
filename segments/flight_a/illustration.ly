@@ -1,4 +1,4 @@
-% 2014-12-09 10:53
+% 2014-12-11 11:31
 
 \version "2.19.15"
 \language "english"
@@ -58,6 +58,23 @@
 					s1 * 2/3
 				}
 				\context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+					\once \override TextSpanner.bound-details.left.text = \markup {
+						\upright
+							"tremolo moderato"
+						}
+					s1 * 1/2 \startTextSpan
+					s1 * 1/4
+					s1 * 1/4
+					s1 * 1/2
+					s1 * 1/4
+					s1 * 1/3
+					s1 * 1/2
+					s1 * 1/4
+					s1 * 1/4
+					s1 * 2/3 \stopTextSpan ^ \markup {
+						\upright
+							"sub. trem. poco più mosso"
+						}
 				}
 				\context BowLocationVoice = "Bow Location Voice" {
 					c'2 :16

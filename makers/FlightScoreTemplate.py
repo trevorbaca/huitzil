@@ -24,7 +24,9 @@ class FlightScoreTemplate(abctools.AbjadValueObject):
                     }
                     \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
                     }
-                    \context Voice = "Bow Location Voice" {
+                    \context BowLocationVoice = "Bow Location Voice" {
+                    }
+                    \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
                     }
                 >>
                 \context Staff = "Pitch Staff" {
