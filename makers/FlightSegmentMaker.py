@@ -98,6 +98,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self._attach_leaf_index_markup()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
+        duration = inspect_(score).get_duration(in_seconds=True)
+        #raise Exception(float(duration))
         if not inspect_(score).is_well_formed():
             string = inspect_(score).tabulate_well_formedness_violations()
             raise Exception(string)
