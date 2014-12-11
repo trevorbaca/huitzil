@@ -60,7 +60,7 @@
         \accepts UnderlyingDynamicsVoice
         \override Clef.transparent = ##t
         \override StaffSymbol.line-count = 7
-        \override StemTremolo.direction = #up
+        %\override StemTremolo.direction = #up
         \override TupletBracket.direction = #up
         \override TupletBracket.staff-padding = 1
     }
