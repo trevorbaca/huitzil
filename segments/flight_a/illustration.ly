@@ -1,4 +1,4 @@
-% 2014-12-11 11:31
+% 2014-12-11 11:52
 
 \version "2.19.15"
 \language "english"
@@ -58,10 +58,22 @@
 					s1 * 2/3
 				}
 				\context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+					\once \override TextSpanner.arrow-width = 0.25
+					\once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
 					\once \override TextSpanner.bound-details.left.text = \markup {
-						\upright
-							"tremolo moderato"
+						\concat
+							{
+								\upright
+									"tremolo moderato"
+								\hspace
+									#0.5
+							}
 						}
+					\once \override TextSpanner.bound-details.right.arrow = ##t
+					\once \override TextSpanner.bound-details.right.padding = 1.75
+					\once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+					\once \override TextSpanner.dash-fraction = 0.25
+					\once \override TextSpanner.dash-period = 1.5
 					s1 * 1/2 \startTextSpan
 					s1 * 1/4
 					s1 * 1/4
@@ -73,7 +85,7 @@
 					s1 * 1/4
 					s1 * 2/3 \stopTextSpan ^ \markup {
 						\upright
-							"sub. trem. poco più mosso"
+							"trem. poco più mosso"
 						}
 				}
 				\context BowLocationVoice = "Bow Location Voice" {
