@@ -10,6 +10,16 @@ class FlightSegmentMaker(abctools.AbjadObject):
 
     ### CLASS ATTRIBUTES ###
 
+    __frontiera_position_to_pitch_name = {
+        7: 'A5',
+        6: 'F5',
+        5: 'D5',
+        4: 'B4',
+        3: 'G4',
+        2: 'E4',
+        1: 'C4',
+        }
+
     __slots__ = (
         '_accent_dynamics',
         '_durations',
@@ -26,23 +36,17 @@ class FlightSegmentMaker(abctools.AbjadObject):
         '_underlying_dynamics',
         )
 
-    __staff_position_to_pitch_name = {
-        6: 'A5',
-        5: 'F5',
-        4: 'D5',
-        3: 'B4',
-        2: 'G4',
-        1: 'E4',
-        0: 'C4',
-        -1: 'A3',
-        -2: 'F3',
-        -3: 'D3',
-        -4: 'B2',
-        -5: 'G2',
-        -6: 'E2',
-        -7: 'C2',
-        -8: 'A1',
-        -9: 'F1',
+    __tastiera_position_to_pitch_name = {
+        1: 'C4',
+        2: 'A3',
+        3: 'F3',
+        4: 'D3',
+        5: 'B2',
+        6: 'G2',
+        7: 'E2',
+        8: 'C2',
+        9: 'A1',
+        10: 'F1',
         }
 
     ### INITIALIZER ###    
@@ -339,9 +343,18 @@ class FlightSegmentMaker(abctools.AbjadObject):
             else:
                 indicator = Dynamic(string)
             attach(indicator, skip)
+        last_skip = skips[-1]
+        prototype = indicatortools.LilyPondCommand
+        if not inspect_(last_skip).has_indicator(prototype):
+            if not inspect_(last_skip).has_indicator(Dynamic):
+                indicator = indicatortools.LilyPondCommand(
+                    '!', 
+                    format_slot='right',
+                    )
+                attach(indicator, last_skip)
 
     def _staff_position_to_pitch(self, staff_position):
-        pitch_string = self.__staff_position_to_pitch_name[staff_position]
+        pitch_string = self.__frontiera_position_to_pitch_name[staff_position]
         pitch = NamedPitch(pitch_string)
         return pitch
 
