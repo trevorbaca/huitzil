@@ -13,14 +13,16 @@
         \name TempoIndicatorVoice
         \type Engraver_group
         \alias Voice
-        \override TextScript.staff-padding = 6
-        \override TextSpanner.staff-padding = 6.75
+        \override TextScript.staff-padding = 9
+        \override TextSpanner.staff-padding = 9.75
     }
     \context {
         \Voice
         \name TremoloIndicatorVoice
         \type Engraver_group
         \alias Voice
+        \override TextScript.staff-padding = 5
+        \override TextSpanner.staff-padding = 5.5
     }
     \context {
         \Voice
