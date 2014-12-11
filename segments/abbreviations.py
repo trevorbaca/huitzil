@@ -35,14 +35,23 @@ f = 'f'
 ff = 'ff'
 fff = 'fff'
 
+quarter_44 = Tempo(Duration(1, 4), 44)
+quarter_66 = Tempo(Duration(1, 4), 66)
+
+meno_mosso = Markup('meno mosso').upright()
+molto_mosso = Markup('molto mosso').upright()
+piu_mosso = Markup('più mosso').upright()
+
 sub_trem_meno_mosso = Markup('sub. trem. meno mosso').upright()
 sub_trem_moderato = Markup('sub. trem. moderato').upright()
+sub_trem_mod = Markup('sub. trem. mod.').upright()
 sub_trem_piu_mosso = Markup('sub. trem. più mosso').upright()
 sub_trem_poco_meno_mosso = Markup('sub. trem. poco meno mosso').upright()
 sub_trem_poco_piu_mosso = Markup('sub. trem. poco più mosso').upright()
 sub_trem_possibile = Markup('sub. trem. possibile').upright()
 
 trem_meno_mosso = Markup('trem. meno mosso').upright()
+trem_molto_mosso = Markup('trem. molto mosso').upright()
 trem_mod = Markup('trem. mod.').upright()
 trem_moderato = Markup('trem. moderato').upright()
 trem_piu_mosso = Markup('trem. più mosso').upright()
