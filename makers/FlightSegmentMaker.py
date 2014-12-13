@@ -23,6 +23,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
     __slots__ = (
         '_accent_dynamics',
         '_durations',
+        '_lh_glissandi',
         '_lilypond_file',
         '_markup_leaves',
         '_name',
@@ -55,6 +56,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self,
         accent_dynamics=None,
         durations=None,
+        lh_glissandi=None,
         markup_leaves=False,
         name=None,
         pitches=None,
@@ -67,6 +69,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         ):
         self.accent_dynamics = accent_dynamics
         self.durations = durations
+        self.lh_glissandi = lh_glissandi
         self.markup_leaves = markup_leaves
         self.name = name
         self.pitches = pitches
@@ -95,6 +98,9 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self._populate_tremolo_indicator_voice()
         self._populate_underlying_dynamics_voice()
         self._populate_pitch_staff()
+        self._attach_clefs()
+        self._format_altissimi_pitches()
+        self._attach_lh_glissandi()
         self._attach_leaf_index_markup()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
@@ -126,6 +132,29 @@ class FlightSegmentMaker(abctools.AbjadObject):
 
     ### PRIVATE METHODS ###
 
+    def _attach_clefs(self):
+        pitch_staff = self._score['Pitch Staff']
+        notes = iterate(pitch_staff).by_class(Note)
+        pairs = sequencetools.iterate_sequence_nwise(notes, n=2)
+        for left_note, right_note in pairs:
+            left_clef = Clef.from_selection(left_note) 
+            right_clef = Clef.from_selection(right_note)
+            if left_clef != right_clef:
+                attach(right_clef, right_note)
+
+    def _attach_lh_glissandi(self):
+        if not self.notes:
+            return
+        if not self.lh_glissandi:
+            return
+        pitch_staff = self._score['Pitch Staff']
+        for start_index, stop_index in self.lh_glissandi:
+            leaves = iterate(pitch_staff).by_class(scoretools.Leaf)
+            leaves = list(leaves)
+            spanner_leaves = leaves[start_index:stop_index+1]
+            glissando = Glissando()
+            attach(glissando, spanner_leaves)
+
     def _attach_leaf_index_markup(self):
         if not self.markup_leaves:
             return
@@ -147,6 +176,16 @@ class FlightSegmentMaker(abctools.AbjadObject):
         lilypond_file.file_initial_user_includes.append(path)
         lilypond_file.header_block.title = None
         lilypond_file.header_block.composer = None
+
+    def _format_altissimi_pitches(self):
+        pitch_staff = self._score['Pitch Staff']
+        for note in iterate(pitch_staff).by_class(Note):
+            if note.written_pitch == NamedPitch('C6'):
+                override(note).note_head.no_ledgers = True
+                style = schemetools.Scheme('do', quoting="'")
+                override(note).note_head.style = style
+                override(note).note_head.duration_log = 2
+
 
     def _get_bow_location_durations(self):
         bow_location_voice = self._score['Bow Location Voice']
@@ -398,6 +437,25 @@ class FlightSegmentMaker(abctools.AbjadObject):
             self._durations = expr
         elif isinstance(expr, list):
             self._durations = expr
+        else:
+            message = 'must be list of pairs: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
+    def lh_glissandi(self):
+        r'''Gets LH glissandi of segment-maker.
+
+        Returns list of pairs or none.
+        '''
+        return self._lh_glissandi
+
+    @lh_glissandi.setter
+    def lh_glissandi(self, expr):
+        if expr is None:
+            self._lh_glissandi = expr
+        elif isinstance(expr, list):
+            self._lh_glissandi = expr
         else:
             message = 'must be list of pairs: {!r}.'
             message = message.format(expr)
