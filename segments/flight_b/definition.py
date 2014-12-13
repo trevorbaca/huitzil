@@ -12,7 +12,7 @@ segment_maker = makers.FlightSegmentMaker(
         (0, 'B1'),
         (15, 'B1'),
         (27, 'C2'),
-        (28, 'C6'),
+        (28, 'E6'),
         ],
     staff_line_count = 7
     )

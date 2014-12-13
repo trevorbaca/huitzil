@@ -180,12 +180,11 @@ class FlightSegmentMaker(abctools.AbjadObject):
     def _format_altissimi_pitches(self):
         pitch_staff = self._score['Pitch Staff']
         for note in iterate(pitch_staff).by_class(Note):
-            if note.written_pitch == NamedPitch('C6'):
+            if note.written_pitch == NamedPitch('E6'):
                 override(note).note_head.no_ledgers = True
                 style = schemetools.Scheme('do', quoting="'")
                 override(note).note_head.style = style
                 override(note).note_head.duration_log = 2
-
 
     def _get_bow_location_durations(self):
         bow_location_voice = self._score['Bow Location Voice']

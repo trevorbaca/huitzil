@@ -1,4 +1,4 @@
-% 2014-12-13 16:49
+% 2014-12-13 16:59
 
 \version "2.19.15"
 \language "english"
@@ -427,7 +427,7 @@
 				\once \override NoteHead #'no-ledgers = ##t
 				\once \override NoteHead #'style = #'do
 				\clef "treble"
-				c'''1 * 74/15
+				e'''1 * 74/15
 			}
 		>>
 	>>
