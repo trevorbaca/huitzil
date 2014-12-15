@@ -249,6 +249,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
             notes.extend(components)
         bow_location_voice = self._score['Bow Location Voice']
         bow_location_voice.extend(notes)
+        attach(Glissando(), bow_location_voice)
 
     def _populate_pitch_staff(self):
         if not self.notes:

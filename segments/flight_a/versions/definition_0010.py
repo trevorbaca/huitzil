@@ -7,9 +7,9 @@ from huitzil.segments.abbreviations import *
 
 segment_maker = makers.FlightSegmentMaker(
     markup_leaves=False,
-    name='flight C',
+    name='flight A',
     pitches=[
-        (0, 'Bb1'),
+        (0, 'B1'),
         ],
     staff_line_count = 7
     )
@@ -64,6 +64,35 @@ segment_maker.notes = [
 
     (3, '1/2', fz),
     (3, '1/4', fz),
+    bar,
+
+    (4, '1/3', mfz),
+    (1, '1/3', mfz),
+    bar,
+
+    (2, '1/3', mfz),
+    (3, '1/3', mfz),
+    bar,
+
+    (1, '1/5', mpz),
+    (2, '1/5', mpz),
+    (3, '1/5', mpz),
+    (4, '1/5', mpz),
+    bar,
+
+    # positions 4-6
+    (4, '1/1', ffz),
+    bar,
+    (4, '1/1', ffz),
+    bar,
+    (5, '1/1', ffz),
+    bar,
+    (5, '1/1', ffz),
+    bar,
+    (6, '1/1', ffz),
+    bar,
+
+    # pick-up into 4-7
     (4, '1/3', fz),
     bar,
 
@@ -77,30 +106,8 @@ segment_maker.notes = [
     (3, '1/5', mpz),
     (4, '1/5', mpz),
     bar,
-    (4, '1/1', ffz),
-    bar,
 
-    # positions 4-7 (#1A)
-    (4, '1/1', ffz),
-    bar,
-    (5, '1/1', ffz),
-    bar,
-    (5, '1/1', ffz),
-    bar,
-    (6, '1/1', ffz),
-    bar,
-
-    # positions 4-7 (#1B)
-    (4, '1/1', ffz),
-    bar,
-    (5, '1/1', ffz),
-    bar,
-    (5, '1/1', ffz),
-    bar,
-    (6, '1/1', ffz),
-    bar,
-
-    # positions 4-7 (#2)
+    # positions 4-7
     (4, '1/1', ffz),
     bar,
     (5, '1/1', ffz),
@@ -121,46 +128,37 @@ segment_maker.tempo_map = [
     (39, Accelerando()),
     (42, quarter_66),
     (43, quarter_44),
-    (43, Accelerando()),
-    (46, quarter_66),
-    (47, quarter_44),
-    (47, Accelerando()),
-    (52, quarter_88),
+    (51, Accelerando()),
+    (56, quarter_88),
     ]
+
 
 segment_maker.tremolo_rate_map = [
     (0, trem_moderato),
-    (25, trem_mod),
-    (25, dashed_arrow),
-    (38, poco_piu_stretto),
+    (30, trem_mod),
+    (30, dashed_arrow),
+    (34, trem_stretto),
     (39, sub_trem_mod),
     (39, dashed_arrow),
     (40, piu_stretto),
     (40, dashed_arrow),
     (41, piu_largo),
     (41, dashed_arrow),
-    (42, molto_stretto),
-
+    (42, piu_stretto),
     (43, sub_trem_mod),
     (43, dashed_arrow),
-    (44, piu_stretto),
-    (44, dashed_arrow),
-    (45, piu_largo),
-    (45, dashed_arrow),
-    (46, molto_stretto),
-
-    (47, sub_trem_mod),
-    (47, dashed_arrow),
-    (48, piu_stretto),
-    (48, dashed_arrow),
-    (49, piu_largo),
-    (49, dashed_arrow),
-    (50, piu_stretto),
-    (50, dashed_arrow),
-    (51, piu_largo),
+    (47, trem_stretto),
+    (51, sub_trem_mod),
     (51, dashed_arrow),
-    (52, molto_stretto),
-
+    (52, piu_stretto),
+    (52, dashed_arrow),
+    (53, piu_largo),
+    (53, dashed_arrow),
+    (54, piu_stretto),
+    (54, dashed_arrow),
+    (55, piu_largo),
+    (55, dashed_arrow),
+    (56, piu_stretto),
     ]
 
 segment_maker.underlying_dynamics = [
@@ -174,19 +172,19 @@ segment_maker.underlying_dynamics = [
     (18, p),
     (18, hold_dynamic),
     (24, mf),
-    (25, mf),
-    (25, decrescendo),
-    (38, pp),
+    (24, hold_dynamic),
+    (30, mp),
+    (30, decrescendo),
+    (34, ppp),
+    (34, hold_dynamic),
     (39, p),
-    (39, decrescendo),
-    (42, ppp),
-
-    (43, p),
+    (39, crescendo),
+    (42, mf),
+    (43, mp),
     (43, decrescendo),
-    (46, ppp),
-
-    (47, p),
-    (47, crescendo),
-    (52, f),
-
+    (47, ppp),
+    (47, hold_dynamic),
+    (51, p),
+    (51, crescendo),
+    (56, f),
     ]
