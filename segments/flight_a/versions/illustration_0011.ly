@@ -1,4 +1,4 @@
-% 2014-12-15 15:13
+% 2014-12-15 15:05
 
 \version "2.19.15"
 \language "english"
@@ -159,9 +159,16 @@
                     s1 * 1/5
                     s1 * 1
                     \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.padding = -2
                     \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
+                        \override
+                            #'(padding . 0.45)
+                            \parenthesize
+                                \large
+                                    \upright
+                                        accel.
+                        \hspace
+                            #0.75
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
@@ -212,9 +219,16 @@
                     s1 * 1/5
                     s1 * 1
                     \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.padding = -2
                     \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
+                        \override
+                            #'(padding . 0.45)
+                            \parenthesize
+                                \large
+                                    \upright
+                                        accel.
+                        \hspace
+                            #0.75
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
