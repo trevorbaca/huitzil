@@ -20,7 +20,7 @@ segment_maker.tempo_map = [
     #(5, Tempo(Duration(1, 4), 66)),
     ]
 
-segment_maker.tremolo_rate_map = [
+segment_maker.tremolo_map = [
     (0, tremolo_moderato),
     ]
 

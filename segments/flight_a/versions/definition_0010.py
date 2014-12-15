@@ -133,7 +133,7 @@ segment_maker.tempo_map = [
     ]
 
 
-segment_maker.tremolo_rate_map = [
+segment_maker.tremolo_map = [
     (0, trem_moderato),
     (30, trem_mod),
     (30, dashed_arrow),

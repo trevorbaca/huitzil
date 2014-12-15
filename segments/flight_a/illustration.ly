@@ -1,4 +1,4 @@
-% 2014-12-15 12:27
+% 2014-12-15 15:05
 
 \version "2.19.15"
 \language "english"
@@ -57,11 +57,8 @@
                         s1 * 2/3
                     }
                     {
-                        s1 * 2/3
-                    }
-                    {
-                        \time 4/5
-                        s1 * 4/5
+                        \time 22/15
+                        s1 * 22/15
                     }
                     {
                         \time 1/1
@@ -74,10 +71,8 @@
                         s1 * 1
                     }
                     {
-                        s1 * 1
-                    }
-                    {
-                        s1 * 1
+                        \time 2/1
+                        s1 * 2
                     }
                     {
                         \time 1/3
@@ -92,10 +87,11 @@
                         s1 * 4/5
                     }
                     {
-                        \time 1/1
-                        s1 * 1
+                        \time 2/1
+                        s1 * 2
                     }
                     {
+                        \time 1/1
                         s1 * 1
                     }
                     {
@@ -176,24 +172,8 @@
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
-                        \override
-                            #'(padding . 0.45)
-                            \parenthesize
-                                \line
-                                    {
-                                        \smaller
-                                            \general-align
-                                                #Y
-                                                #DOWN
-                                                \note-by-number
-                                                    #2
-                                                    #0
-                                                    #1
-                                        \upright
-                                            " = 44"
-                                    }
-                        \hspace
-                            #0.75
+                        \upright
+                            accel.
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
@@ -237,6 +217,7 @@
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1/5
+                    s1 * 1
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.padding = -2
                     \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -251,24 +232,8 @@
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
-                        \override
-                            #'(padding . 0.45)
-                            \parenthesize
-                                \line
-                                    {
-                                        \smaller
-                                            \general-align
-                                                #Y
-                                                #DOWN
-                                                \note-by-number
-                                                    #2
-                                                    #0
-                                                    #1
-                                        \upright
-                                            " = 44"
-                                    }
-                        \hspace
-                            #0.75
+                        \upright
+                            accel.
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
@@ -450,6 +415,7 @@
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1/5
+                    s1 * 1
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = #f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -812,7 +778,7 @@
                             \dynamic
                                 ffz
                             }
-                    f''1 :16 \glissando
+                    f''1 :16
                         _ \markup {
                             \dynamic
                                 ffz
@@ -881,6 +847,11 @@
                                     mpz
                                 }
                     }
+                    b'1 :16
+                        _ \markup {
+                            \dynamic
+                                ffz
+                            }
                     b'1 :16 \glissando
                         _ \markup {
                             \dynamic
@@ -970,6 +941,7 @@
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1/5
+                    s1 * 1
                     s1 * 1 \< \p
                     s1 * 1
                     s1 * 1
@@ -980,7 +952,7 @@
             >>
             \context Staff = "Pitch Staff" {
                 \clef "bass"
-                b,,1 * 519/20
+                b,,1 * 539/20
             }
         >>
     >>
