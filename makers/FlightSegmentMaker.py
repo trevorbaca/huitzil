@@ -327,7 +327,9 @@ class FlightSegmentMaker(abctools.AbjadObject):
             indicator = copy.copy(indicator)
             attach(indicator, skip, is_annotation=True)
         tempo_spanner = spannertools.TempoSpanner(
-            implicit_start_markup = Markup('accel.').upright(),
+            implicit_start_markup=Markup('accel.').upright(),
+            left_broken_padding=0,
+            left_broken_text=Markup.null(direction=None),
             )
         attach(tempo_spanner, tempo_indicator_voice[:])
 
