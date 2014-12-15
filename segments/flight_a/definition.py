@@ -72,7 +72,7 @@ segment_maker.notes = [
 
     (2, '1/3', mfz),
     (3, '1/3', mfz),
-    bar,
+    #bar,
 
     (1, '1/5', mpz),
     (2, '1/5', mpz),
@@ -88,7 +88,7 @@ segment_maker.notes = [
     (5, '1/1', ffz),
     bar,
     (5, '1/1', ffz),
-    bar,
+    #bar,
     (6, '1/1', ffz),
     bar,
 
@@ -106,6 +106,7 @@ segment_maker.notes = [
     (3, '1/5', mpz),
     (4, '1/5', mpz),
     bar,
+    (4, '1/1', ffz),
 
     # positions 4-7
     (4, '1/1', ffz),
@@ -123,17 +124,20 @@ segment_maker.notes = [
     
     ]
 
+segment_maker.glissando_break_indices = [
+    42,
+    ]
+
 segment_maker.tempo_map = [
     (0, quarter_44),
     (39, Accelerando()),
     (42, quarter_66),
     (43, quarter_44),
-    (51, Accelerando()),
-    (56, quarter_88),
+    (52, Accelerando()),
+    (57, quarter_88),
     ]
 
-
-segment_maker.tremolo_rate_map = [
+segment_maker.tremolo_map = [
     (0, trem_moderato),
     (30, trem_mod),
     (30, dashed_arrow),
@@ -148,17 +152,17 @@ segment_maker.tremolo_rate_map = [
     (43, sub_trem_mod),
     (43, dashed_arrow),
     (47, trem_stretto),
-    (51, sub_trem_mod),
-    (51, dashed_arrow),
-    (52, piu_stretto),
+    (52, sub_trem_mod),
     (52, dashed_arrow),
-    (53, piu_largo),
+    (53, piu_stretto),
     (53, dashed_arrow),
-    (54, piu_stretto),
+    (54, piu_largo),
     (54, dashed_arrow),
-    (55, piu_largo),
+    (55, piu_stretto),
     (55, dashed_arrow),
-    (56, piu_stretto),
+    (56, piu_largo),
+    (56, dashed_arrow),
+    (57, piu_stretto),
     ]
 
 segment_maker.underlying_dynamics = [
@@ -184,7 +188,7 @@ segment_maker.underlying_dynamics = [
     (43, decrescendo),
     (47, ppp),
     (47, hold_dynamic),
-    (51, p),
-    (51, crescendo),
-    (56, f),
+    (52, p),
+    (52, crescendo),
+    (57, f),
     ]

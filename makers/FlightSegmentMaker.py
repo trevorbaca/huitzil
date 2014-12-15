@@ -23,6 +23,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
     __slots__ = (
         '_accent_dynamics',
         '_durations',
+        '_glissando_break_indices',
         '_lh_glissandi',
         '_lilypond_file',
         '_markup_leaves',
@@ -33,7 +34,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         '_staff_line_count',
         '_staff_positions',
         '_tempo_map',
-        '_tremolo_rate_map',
+        '_tremolo_map',
         '_underlying_dynamics',
         )
 
@@ -56,6 +57,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self,
         accent_dynamics=None,
         durations=None,
+        glissando_break_indices=None,
         lh_glissandi=None,
         markup_leaves=False,
         name=None,
@@ -64,11 +66,12 @@ class FlightSegmentMaker(abctools.AbjadObject):
         staff_line_count=None,
         staff_positions=None,
         tempo_map=None,
-        tremolo_rate_map=None,
+        tremolo_map=None,
         underlying_dynamics=None,
         ):
         self.accent_dynamics = accent_dynamics
         self.durations = durations
+        self.glissando_break_indices = glissando_break_indices
         self.lh_glissandi = lh_glissandi
         self.markup_leaves = markup_leaves
         self.name = name
@@ -77,7 +80,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self.staff_line_count = staff_line_count
         self.staff_positions = staff_positions
         self.tempo_map = tempo_map
-        self.tremolo_rate_map = tremolo_rate_map
+        self.tremolo_map = tremolo_map
         self.underlying_dynamics = underlying_dynamics
         self._lilypond_file = None
         self._score = None
@@ -249,7 +252,20 @@ class FlightSegmentMaker(abctools.AbjadObject):
             notes.extend(components)
         bow_location_voice = self._score['Bow Location Voice']
         bow_location_voice.extend(notes)
-        attach(Glissando(), bow_location_voice)
+        indices = range(len(notes))
+        if self.glissando_break_indices is not None:
+            for index in self.glissando_break_indices:
+                indices.remove(index)
+        glissando_break_indices = self.glissando_break_indices or []
+        notes = iterate(bow_location_voice).by_class(Note)
+        notes_in_spanner = []
+        for i, note in enumerate(notes):
+            notes_in_spanner.append(note)
+            if i in glissando_break_indices:
+                attach(Glissando(), notes_in_spanner)
+                notes_in_spanner = []
+        if notes_in_spanner:
+            attach(Glissando(), notes_in_spanner)
 
     def _populate_pitch_staff(self):
         if not self.notes:
@@ -310,7 +326,10 @@ class FlightSegmentMaker(abctools.AbjadObject):
             skip = tempo_indicator_voice[index]
             indicator = copy.copy(indicator)
             attach(indicator, skip, is_annotation=True)
-        attach(spannertools.TempoSpanner(), tempo_indicator_voice[:])
+        tempo_spanner = spannertools.TempoSpanner(
+            implicit_start_markup = Markup('accel.').upright(),
+            )
+        attach(tempo_spanner, tempo_indicator_voice[:])
 
     def _populate_time_signature_voice(self):
         if not self.notes:
@@ -335,13 +354,13 @@ class FlightSegmentMaker(abctools.AbjadObject):
     def _populate_tremolo_indicator_voice(self):
         if not self.notes:
             return
-        if not self.tremolo_rate_map:
+        if not self.tremolo_map:
             return
         tremolo_indicator_voice = self._score['Tremolo Indicator Voice']
         durations = self._get_bow_location_durations()
         skips = scoretools.make_skips(Duration(1), durations)
         tremolo_indicator_voice.extend(skips)
-        for index, indicator in self.tremolo_rate_map:
+        for index, indicator in self.tremolo_map:
             skip = tremolo_indicator_voice[index]
             indicator = copy.copy(indicator)
             attach(indicator, skip, is_annotation=True)
@@ -439,6 +458,25 @@ class FlightSegmentMaker(abctools.AbjadObject):
             self._durations = expr
         else:
             message = 'must be list of pairs: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
+    def glissando_break_indices(self):
+        r'''Gets glissando break indices of segment-maker.
+
+        Returns list of integers or none.
+        '''
+        return self._glissando_break_indices
+
+    @glissando_break_indices.setter
+    def glissando_break_indices(self, expr):
+        if expr is None:
+            self._glissando_break_indices = expr
+        elif isinstance(expr, list):
+            self._glissando_break_indices = expr
+        else:
+            message = 'must be list of integers: {!r}.'
             message = message.format(expr)
             raise TypeError(message)
 
@@ -603,19 +641,19 @@ class FlightSegmentMaker(abctools.AbjadObject):
             raise TypeError(message)
 
     @property
-    def tremolo_rate_map(self):
+    def tremolo_map(self):
         r'''Gets tremolo rate indications of segment-maker.
 
         Returns list of pairs or none.
         '''
-        return self._tremolo_rate_map
+        return self._tremolo_map
 
-    @tremolo_rate_map.setter
-    def tremolo_rate_map(self, expr):
+    @tremolo_map.setter
+    def tremolo_map(self, expr):
         if expr is None:
-            self._tremolo_rate_map = expr
+            self._tremolo_map = expr
         elif isinstance(expr, list):
-            self._tremolo_rate_map = expr
+            self._tremolo_map = expr
         else:
             message = 'must be list of pairs: {!r}.'
             message = message.format(expr)
