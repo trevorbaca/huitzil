@@ -299,8 +299,19 @@ class FlightSegmentMaker(abctools.AbjadObject):
             assert len(durations) == len(self.pitches)
             notes = []
             for leaf_index, pitch in self.pitches:
+                if pitch == 'skip':
+                    skip = scoretools.Skip(Duration(1))
+                    notes.append(skip)
+                    continue
+                parenthesize = False
+                if pitch.endswith('()'):
+                    parenthesize = True
+                    pitch = pitch.strip('()')
                 pitch = NamedPitch(pitch)
                 note = Note(pitch, Duration(1))
+                if parenthesize:
+                    command = indicatortools.LilyPondCommand('parenthesize')
+                    attach(command, note)
                 notes.append(note)
             for note, duration in zip(notes, durations):
                 multiplier = durationtools.Multiplier(duration)
@@ -327,9 +338,9 @@ class FlightSegmentMaker(abctools.AbjadObject):
             indicator = copy.copy(indicator)
             attach(indicator, skip, is_annotation=True)
         tempo_spanner = spannertools.TempoSpanner(
-            implicit_start_markup=Markup('accel.').upright(),
             left_broken_padding=0,
             left_broken_text=Markup.null(direction=None),
+            start_with_parenthesized_tempo=False,
             )
         attach(tempo_spanner, tempo_indicator_voice[:])
 

@@ -1,4 +1,4 @@
-% 2014-12-15 16:58
+% 2014-12-16 18:05
 
 \version "2.19.15"
 \language "english"
@@ -165,8 +165,11 @@
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
-                        \upright
-                            accel.
+                        \large
+                            \upright
+                                accel.
+                        \hspace
+                            #0.75
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
@@ -218,8 +221,11 @@
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
-                        \upright
-                            accel.
+                        \large
+                            \upright
+                                accel.
+                        \hspace
+                            #0.75
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0

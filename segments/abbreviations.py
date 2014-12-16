@@ -46,6 +46,7 @@ piu_stretto = Markup('più stretto').upright()
 poco_piu_stretto = Markup('poco più stretto').upright()
 poco_piu_largo = Markup('poco più largo').upright()
 
+sub_piu_stretto = Markup('sub. più stretto').upright()
 sub_trem_moderato = Markup('sub. trem. moderato').upright()
 sub_trem_mod = Markup('sub. trem. mod.').upright()
 sub_trem_piu_stretto = Markup('sub. trem. più stretto').upright()
