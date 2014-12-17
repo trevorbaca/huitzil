@@ -94,6 +94,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         Returns LilyPond file.
         '''
         self._make_score()
+        self._configure_score()
         self._make_lilypond_file()
         self._configure_lilypond_file()
         self._populate_bow_location_voice()
@@ -181,6 +182,14 @@ class FlightSegmentMaker(abctools.AbjadObject):
         lilypond_file.header_block.title = None
         lilypond_file.header_block.composer = None
 
+    def _configure_score(self):
+        bow_staff = self._score['Bow Staff']
+        override(bow_staff).staff_symbol.line_count = self.staff_line_count
+        if self.name == 'flight E':
+            voice = self._score['Tempo Indicator Voice']
+            override(voice).text_script.staff_padding = 5
+            override(voice).text_spanner.staff_padding = 5.75
+
     def _format_altissimi_pitches(self):
         pitch_staff = self._score['Pitch Staff']
         for note in iterate(pitch_staff).by_class(Note):
@@ -238,8 +247,6 @@ class FlightSegmentMaker(abctools.AbjadObject):
         from huitzil import makers
         template = makers.FlightScoreTemplate()
         score = template()
-        bow_staff = score['Bow Staff']
-        override(bow_staff).staff_symbol.line_count = self.staff_line_count
         self._score = score
 
     def _populate_bow_location_voice(self):
