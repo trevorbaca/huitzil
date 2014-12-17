@@ -39,16 +39,17 @@ class FlightSegmentMaker(abctools.AbjadObject):
         )
 
     __tastiera_position_to_pitch_name = {
-        1: 'C4',
-        2: 'A3',
-        3: 'F3',
-        4: 'D3',
-        5: 'B2',
-        6: 'G2',
-        7: 'E2',
-        8: 'C2',
-        9: 'A1',
-        10: 'F1',
+        1: 'E6',
+        2: 'C6',
+        3: 'A5',
+        4: 'F5',
+        5: 'D5',
+        6: 'B4',
+        7: 'G4',
+        8: 'E4',
+        9: 'C4',
+        10: 'A3',
+        11: 'F3',
         }
 
     ### INITIALIZER ###    
@@ -237,6 +238,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         from huitzil import makers
         template = makers.FlightScoreTemplate()
         score = template()
+        bow_staff = score['Bow Staff']
+        override(bow_staff).staff_symbol.line_count = self.staff_line_count
         self._score = score
 
     def _populate_bow_location_voice(self):
@@ -429,7 +432,12 @@ class FlightSegmentMaker(abctools.AbjadObject):
                 attach(indicator, last_skip)
 
     def _staff_position_to_pitch(self, staff_position):
-        pitch_string = self.__frontiera_position_to_pitch_name[staff_position]
+        if self.staff_line_count == 7:
+            pitch_string = self.__frontiera_position_to_pitch_name[
+                staff_position]
+        elif self.staff_line_count == 11:
+            pitch_string = self.__tastiera_position_to_pitch_name[
+                staff_position]
         pitch = NamedPitch(pitch_string)
         return pitch
 
