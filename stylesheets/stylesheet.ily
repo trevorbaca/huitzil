@@ -36,10 +36,9 @@
         (padding . 0)
         (stretchability . 0)
     )
-    % previous minimum-distance = 24
     system-system-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 21)
+        (minimum-distance . 23)
         (padding . 0)
         (stretchability . 0)
     )
