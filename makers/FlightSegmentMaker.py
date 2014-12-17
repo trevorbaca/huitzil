@@ -310,8 +310,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
                 pitch = NamedPitch(pitch)
                 note = Note(pitch, Duration(1))
                 if parenthesize:
-                    command = indicatortools.LilyPondCommand('parenthesize')
-                    attach(command, note)
+                    note.note_head.is_parenthesized = True
                 notes.append(note)
             for note, duration in zip(notes, durations):
                 multiplier = durationtools.Multiplier(duration)
