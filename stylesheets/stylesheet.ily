@@ -36,9 +36,10 @@
         (padding . 0)
         (stretchability . 0)
     )
+    % previous minimum-distance = 24
     system-system-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 24)
+        (minimum-distance . 21)
         (padding . 0)
         (stretchability . 0)
     )
@@ -188,11 +189,8 @@
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        %\override Stem.direction = #down
         \override StemTremolo.beam-width = 1.5
-        %\override StemTremolo.flag-count = 4
         \override StemTremolo.slope = 0.5
-        %\override StemTremolo.Y-offset = -4
         \override TextScript.Y-extent = #'(-1.5 . 1.5)
         \override TupletBracket.breakable = ##t
         \override TupletBracket.direction = #down
