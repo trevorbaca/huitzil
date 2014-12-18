@@ -7,11 +7,11 @@ from huitzil.segments.abbreviations import *
 
 segment_maker = makers.FlightSegmentMaker(
     markup_leaves=False,
-    name='flight B',
+    name='flight H',
     pitches=[
         (0, 'skip'),
-        (15, 'B1()'),
-        (27, 'C2'),
+        (15, 'A1()'),
+        (27, 'Bb1'),
         (28, 'C6'),
         ],
     staff_line_count=7

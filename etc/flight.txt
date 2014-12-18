@@ -18,17 +18,15 @@ then effects a fantastic descent down string III from ordinario to just before
 the dead zone immediately in front of the fingers of the left hand.
 
 [F]. sixth stage that moves the fingers of the left hand in very slow increments
-from A2 to Ab2 to the end of string III ultimately revealing the fundamental
-pitch of string III at G2.
+from A2 to Ab2 to the end of string III (ultimately revealing the fundamental
+pitch of string III at G2) while simultaneously moving the bow all the way back
+up the compass of string III and then switching to string IV to allow the
+further descent from G2 to A1.
 
-[G]. seventh stage of ascent that moves the bow all the way back up the compass
-of string III from the spot at the extreme upper end of the string all the way
-back down to the ordinario position of the bow.
+[G]. seventh stage that recapitulates stage 1 (or 3) at A1 played on open
+string IV with a broader tempo.
 
-[H]. eighth stage that recapitulates stage 1 (or 3) at the double stop [A1 G2]
-played on open strings III and IV with a broader tempo.
-
-[I]. ninth stage that recapitulates stage 2 (or 4) at A1. the bow eventually
+[I]. eighth stage that recapitulates stage 2 (or 4) at A1. the bow eventually
 comes to a rest. then tremolos momentarily again. then comes to a rest again
 (with the rest longer in duration than the tremolo). then tremolo and rest.
 then tremolo and rest. then tremolo and rest. then suddenly shorter
