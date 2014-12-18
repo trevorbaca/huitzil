@@ -64,8 +64,8 @@
     }
     \context {
         \Score
-        \override BarLine.stencil = ##f
-        \override SpanBar.stencil = ##f
+        \override BarLine.transparent = ##t
+        \override SpanBar.transparent = ##t
         proportionalNotationDuration = #(ly:make-moment 1 20)
     }
 }

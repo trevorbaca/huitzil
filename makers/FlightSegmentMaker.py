@@ -22,6 +22,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
 
     __slots__ = (
         '_accent_dynamics',
+        '_clef',
         '_durations',
         '_glissando_break_indices',
         '_lh_glissandi',
@@ -57,6 +58,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
     def __init__(
         self,
         accent_dynamics=None,
+        clef=None,
         durations=None,
         glissando_break_indices=None,
         lh_glissandi=None,
@@ -71,6 +73,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         underlying_dynamics=None,
         ):
         self.accent_dynamics = accent_dynamics
+        self.clef = clef
         self.durations = durations
         self.glissando_break_indices = glissando_break_indices
         self.lh_glissandi = lh_glissandi
@@ -106,6 +109,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self._attach_clefs()
         self._format_altissimi_pitches()
         self._attach_lh_glissandi()
+        self._attach_final_bar_line()
         self._attach_leaf_index_markup()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
@@ -136,6 +140,19 @@ class FlightSegmentMaker(abctools.AbjadObject):
             )
 
     ### PRIVATE METHODS ###
+
+    def _attach_final_bar_line(self):
+        if not self.name == 'flight I':
+            return
+        self._score.add_final_bar_line()
+        pitch_staff = self._score['Pitch Staff']
+        last_leaf = inspect_(pitch_staff).get_leaf(-1)
+        string = r'override Score.BarLine.transparent = ##f'
+        command = indicatortools.LilyPondCommand(string, format_slot='after')
+        attach(command, last_leaf)
+        string = r'override Score.SpanBar.transparent = ##f'
+        command = indicatortools.LilyPondCommand(string, format_slot='after')
+        attach(command, last_leaf)
 
     def _attach_clefs(self):
         pitch_staff = self._score['Pitch Staff']
@@ -185,7 +202,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
     def _configure_score(self):
         bow_staff = self._score['Bow Staff']
         override(bow_staff).staff_symbol.line_count = self.staff_line_count
-        if self.name in ('flight E', 'flight F'):
+        if self.name in ('flight E', 'flight F', 'flight I'):
             voice = self._score['Tempo Indicator Voice']
             override(voice).text_script.staff_padding = 5
             override(voice).text_spanner.staff_padding = 5.75
@@ -278,9 +295,12 @@ class FlightSegmentMaker(abctools.AbjadObject):
             attach(Glissando(), notes_in_spanner)
 
     def _populate_pitch_staff(self):
+        pitch_staff = self._score['Pitch Staff']
+        if self.clef is not None:
+            clef = Clef(self.clef)
+            attach(clef, pitch_staff)
         if not self.notes:
             return
-        pitch_staff = self._score['Pitch Staff']
         if not self.pitches:
             bow_location_voice = self._score['Bow Location Voice']
             total_duration = inspect_(bow_location_voice).get_duration()
@@ -331,7 +351,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         if isinstance(first_leaf, Note):
             if NamedPitch('C4') < first_leaf.written_pitch:
                 clef = Clef('treble')
-        attach(clef, pitch_staff)
+            attach(clef, pitch_staff)
 
     def _populate_tempo_indicator_voice(self):
         if not self.notes:
@@ -466,6 +486,25 @@ class FlightSegmentMaker(abctools.AbjadObject):
             self._accent_dynamics = expr
         else:
             message = 'must be list of strings: {!r}.'
+            message = message.format(expr)
+            raise TypeError(message)
+
+    @property
+    def clef(self):
+        r'''Gets clef of segment-maker.
+
+        Returns string or none.
+        '''
+        return self._clef
+
+    @clef.setter
+    def clef(self, expr):
+        if expr is None:
+            self._clef = expr
+        elif isinstance(expr, str):
+            self._clef = expr
+        else:
+            message = 'must be string: {!r}.'
             message = message.format(expr)
             raise TypeError(message)
 

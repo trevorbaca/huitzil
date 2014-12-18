@@ -26,10 +26,11 @@ further descent from G2 to A1.
 [G]. seventh stage that recapitulates stage 1 (or 3) at A1 played on open
 string IV with a broader tempo.
 
-[I]. eighth stage that recapitulates stage 2 (or 4) at A1. the bow eventually
-comes to a rest. then tremolos momentarily again. then comes to a rest again
-(with the rest longer in duration than the tremolo). then tremolo and rest.
-then tremolo and rest. then tremolo and rest. then suddenly shorter
+[H]. eighth stage that recapitulates stage 2 (or 4) at A1.
+
+[I]. ninth stage in which the bow eventually comes to a rest. then tremolos
+momentarily again. then comes to a rest again. then tremolo and rest. then
+tremolo and rest. then tremolo and rest. then suddenly shorter
 tremolo-and-rest. and the shorter tremolo-and-rest once again. then done.
 
 DETAILS
