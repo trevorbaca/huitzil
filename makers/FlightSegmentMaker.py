@@ -185,7 +185,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
     def _configure_score(self):
         bow_staff = self._score['Bow Staff']
         override(bow_staff).staff_symbol.line_count = self.staff_line_count
-        if self.name == 'flight E':
+        if self.name in ('flight E', 'flight F'):
             voice = self._score['Tempo Indicator Voice']
             override(voice).text_script.staff_padding = 5
             override(voice).text_spanner.staff_padding = 5.75
