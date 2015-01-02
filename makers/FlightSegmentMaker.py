@@ -212,7 +212,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         for note in iterate(pitch_staff).by_class(Note):
             if note.written_pitch == NamedPitch('C6'):
                 override(note).note_head.no_ledgers = True
-                style = schemetools.Scheme('do', quoting="'")
+                style = schemetools.SchemeSymbol('do')
                 override(note).note_head.style = style
                 override(note).note_head.duration_log = 2
 
