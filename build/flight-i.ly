@@ -1,6 +1,6 @@
 
     \context Score = "Score" <<
-        \new PianoStaff <<
+        \context PianoStaff = "Piano Staff" <<
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol #'line-count = #7
             } <<

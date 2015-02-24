@@ -1,4 +1,4 @@
-% 2014-12-18 14:04
+% 2015-02-24 16:37
 
 \version "2.19.15"
 \language "english"
@@ -14,7 +14,7 @@
 
 \score {
     \context Score = "Score" <<
-        \new PianoStaff <<
+        \context PianoStaff = "Piano Staff" <<
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol #'line-count = #7
             } <<

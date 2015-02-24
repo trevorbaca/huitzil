@@ -1,10 +1,13 @@
 
     \context Score = "Score" <<
-        \new PianoStaff <<
+        \context PianoStaff = "Piano Staff" <<
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol #'line-count = #11
             } <<
                 \context TimeSignatureVoice = "Time Signature Voice" {
+                    \stopStaff
+                    \override Staff.StaffSymbol #'line-count = #11
+                    \startStaff
                     {
                         \time 3/4
                         s1 * 3/4
