@@ -1,5 +1,10 @@
 \include "stylesheet.ily"
 
+\header {
+    composer = ##f
+    title = ##f
+}
+
 \layout {
     indent = 0
     \context {
@@ -68,4 +73,9 @@
         \override SpanBar.transparent = ##t
         proportionalNotationDuration = #(ly:make-moment 1 20)
     }
+}
+
+\paper {
+    first-page-number = #6
+    print-first-page-number= ##t
 }
