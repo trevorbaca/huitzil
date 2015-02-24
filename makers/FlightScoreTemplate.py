@@ -87,6 +87,7 @@ class FlightScoreTemplate(abctools.AbjadValueObject):
         # make staff group
         staff_group = scoretools.StaffGroup(
             context_name='PianoStaff',
+            name='Piano Staff',
             )
         staff_group.extend([
             bow_staff,
