@@ -1,4 +1,4 @@
-% 2014-12-18 13:08
+% 2015-02-24 16:28
 
 \version "2.19.15"
 \language "english"
@@ -14,7 +14,7 @@
 
 \score {
     \context Score = "Score" <<
-        \new PianoStaff <<
+        \context PianoStaff = "Piano Staff" <<
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol #'line-count = #7
             } <<
@@ -308,7 +308,7 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1/3 \stopTextSpan \startTextSpan
+                    s1 * 1/3 \startTextSpan
                     s1 * 1/3
                     s1 * 1/3
                     s1 * 1/3
@@ -339,7 +339,7 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \stopTextSpan \startTextSpan
+                    s1 * 1 \startTextSpan
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -403,7 +403,7 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1/3 \stopTextSpan \startTextSpan
+                    s1 * 1/3 \startTextSpan
                     s1 * 1/3
                     s1 * 1/3
                     s1 * 1/3
@@ -434,7 +434,7 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \stopTextSpan \startTextSpan
+                    s1 * 1 \startTextSpan
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -955,7 +955,6 @@
                 }
             >>
             \context Staff = "Pitch Staff" {
-                \clef "bass"
                 s1 * 539/20
             }
         >>

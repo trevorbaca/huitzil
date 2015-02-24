@@ -1,4 +1,4 @@
-% 2014-12-16 19:45
+% 2015-02-24 16:28
 
 \version "2.19.15"
 \language "english"
@@ -14,8 +14,10 @@
 
 \score {
     \context Score = "Score" <<
-        \new PianoStaff <<
-            \context BowStaff = "Bow Staff" <<
+        \context PianoStaff = "Piano Staff" <<
+            \context BowStaff = "Bow Staff" \with {
+                \override StaffSymbol #'line-count = #7
+            } <<
                 \context TimeSignatureVoice = "Time Signature Voice" {
                     {
                         \time 1/1
@@ -239,7 +241,7 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \stopTextSpan \startTextSpan
+                    s1 * 1 \startTextSpan
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -304,7 +306,7 @@
                         \upright
                             "trem. mod."
                         }
-                    s1 * 1 \stopTextSpan
+                    s1 * 1
                 }
                 \context BowLocationVoice = "Bow Location Voice" {
                     a''4 :16 \glissando
@@ -640,7 +642,6 @@
                 }
             >>
             \context Staff = "Pitch Staff" {
-                \clef "bass"
                 s1 * 124/15
                 \parenthesize
                 b,,1 * 107/15 \glissando

@@ -1,20 +1,6 @@
-% 2015-02-24 16:28
 
-\version "2.19.15"
-\language "english"
-
-#(ly:set-option 'relative-includes #t)
-
-\include "../../stylesheets/flight-stylesheet.ily"
-
-\header {
-    composer = ##f
-    title = ##f
-}
-
-\score {
     \context Score = "Score" <<
-        \context PianoStaff = "Piano Staff" <<
+        \new PianoStaff <<
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol #'line-count = #11
             } <<
@@ -1059,4 +1045,3 @@
             }
         >>
     >>
-}

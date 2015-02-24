@@ -1,23 +1,7 @@
-% 2015-02-24 16:28
 
-\version "2.19.15"
-\language "english"
-
-#(ly:set-option 'relative-includes #t)
-
-\include "../../stylesheets/flight-stylesheet.ily"
-
-\header {
-    composer = ##f
-    title = ##f
-}
-
-\score {
     \context Score = "Score" <<
-        \context PianoStaff = "Piano Staff" <<
-            \context BowStaff = "Bow Staff" \with {
-                \override StaffSymbol #'line-count = #7
-            } <<
+        \new PianoStaff <<
+            \context BowStaff = "Bow Staff" <<
                 \context TimeSignatureVoice = "Time Signature Voice" {
                     {
                         \time 1/1
@@ -241,7 +225,7 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \startTextSpan
+                    s1 * 1 \stopTextSpan \startTextSpan
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -306,7 +290,7 @@
                         \upright
                             "trem. mod."
                         }
-                    s1 * 1
+                    s1 * 1 \stopTextSpan
                 }
                 \context BowLocationVoice = "Bow Location Voice" {
                     a''4 :16 \glissando
@@ -642,6 +626,7 @@
                 }
             >>
             \context Staff = "Pitch Staff" {
+                \clef "bass"
                 s1 * 124/15
                 \parenthesize
                 bf,,1 * 107/15 \glissando
@@ -654,4 +639,3 @@
             }
         >>
     >>
-}
