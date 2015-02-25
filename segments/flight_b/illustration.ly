@@ -1,4 +1,4 @@
-% 2015-02-24 16:28
+% 2015-02-25 14:10
 
 \version "2.19.15"
 \language "english"
@@ -309,17 +309,17 @@
                     s1 * 1
                 }
                 \context BowLocationVoice = "Bow Location Voice" {
-                    a''4 :16 \glissando
+                    c'4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 ffz
                             }
-                    f''4 :16 \glissando
+                    e'4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 ffz
                             }
-                    d''4 :16 \glissando
+                    g'4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 ffz
@@ -642,6 +642,7 @@
                 }
             >>
             \context Staff = "Pitch Staff" {
+                \clef "bass"
                 s1 * 124/15
                 \parenthesize
                 b,,1 * 107/15 \glissando
