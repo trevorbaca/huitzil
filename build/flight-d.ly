@@ -295,17 +295,17 @@
                     s1 * 1
                 }
                 \context BowLocationVoice = "Bow Location Voice" {
-                    a''4 :16 \glissando
+                    c'4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 ffz
                             }
-                    f''4 :16 \glissando
+                    e'4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 ffz
                             }
-                    d''4 :16 \glissando
+                    g'4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 ffz
@@ -628,6 +628,7 @@
                 }
             >>
             \context Staff = "Pitch Staff" {
+                \clef "bass"
                 s1 * 124/15
                 \parenthesize
                 bf,,1 * 107/15 \glissando
