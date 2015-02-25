@@ -1,4 +1,4 @@
-% 2015-02-24 16:28
+% 2015-02-25 14:13
 
 \version "2.19.15"
 \language "english"
@@ -453,80 +453,80 @@
                         }
                 }
                 \context BowLocationVoice = "Bow Location Voice" {
-                    c'2 :16
+                    a''2 :16
                         _ \markup {
                             \dynamic
                                 mfz
                             }
-                    c'4 :16 \glissando
+                    a''4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 mfz
                             }
-                    e'4 :16 \glissando
+                    f''4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 mfz
                             }
-                    c'2 :16
+                    a''2 :16
                         _ \markup {
                             \dynamic
                                 mfz
                             }
-                    c'4 :16 \glissando
+                    a''4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 mfz
                             }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        e'2 :16 \glissando
+                        f''2 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mfz
                                 }
                     }
-                    c'2 :16
+                    a''2 :16
                         _ \markup {
                             \dynamic
                                 mfz
                             }
-                    c'4 :16 \glissando
+                    a''4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 mfz
                             }
-                    e'4 :16
+                    f''4 :16
                         _ \markup {
                             \dynamic
                                 mfz
                             }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        e'1 :16
+                        f''1 :16
                             _ \markup {
                                 \dynamic
                                     fz
                                 }
                     }
-                    e'4 :16 \glissando
+                    f''4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 mpz
                             }
-                    g'4 :16 \glissando
+                    d''4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 mpz
                             }
-                    e'2 :16
+                    f''2 :16
                         _ \markup {
                             \dynamic
                                 mpz
                             }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        e'2 :16 \glissando
+                        f''2 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mpz
@@ -534,7 +534,7 @@
                     }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        g'2 :16 \glissando
+                        d''2 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mpz
@@ -542,7 +542,7 @@
                     }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 4/5 {
-                        c'4 :16 \glissando
+                        a''4 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mfz
@@ -550,7 +550,7 @@
                     }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 4/5 {
-                        e'4 :16 \glissando
+                        f''4 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mfz
@@ -558,20 +558,20 @@
                     }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 4/5 {
-                        g'4 :16 \glissando
+                        d''4 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mfz
                                 }
                     }
-                    e'2 :16
+                    f''2 :16
                         _ \markup {
                             \dynamic
                                 fz
                             }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        e'2 :16 \glissando
+                        f''2 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mpz
@@ -579,38 +579,38 @@
                     }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        g'2 :16 \glissando
+                        d''2 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mpz
                                 }
                     }
-                    c'4 :16 \glissando
+                    a''4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 mpz
                             }
-                    e'4 :16 \glissando
+                    f''4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 mpz
                             }
-                    g'4 :16
+                    d''4 :16
                         _ \markup {
                             \dynamic
                                 mpz
                             }
-                    g'1 :16
+                    d''1 :16
                         _ \markup {
                             \dynamic
                                 fz
                             }
-                    g'2 :16
+                    d''2 :16
                         _ \markup {
                             \dynamic
                                 fz
                             }
-                    g'4 :16 \glissando
+                    d''4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 fz
@@ -620,12 +620,12 @@
                             \dynamic
                                 fz
                             }
-                    g'2 :16
+                    d''2 :16
                         _ \markup {
                             \dynamic
                                 fz
                             }
-                    g'4 :16 \glissando
+                    d''4 :16 \glissando
                         _ \markup {
                             \dynamic
                                 fz
@@ -640,7 +640,7 @@
                     }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        c'2 :16 \glissando
+                        a''2 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mfz
@@ -648,7 +648,7 @@
                     }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        e'2 :16 \glissando
+                        f''2 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mfz
@@ -656,7 +656,7 @@
                     }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        g'2 :16 \glissando
+                        d''2 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mfz
@@ -664,7 +664,7 @@
                     }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 4/5 {
-                        c'4 :16 \glissando
+                        a''4 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mpz
@@ -672,7 +672,7 @@
                     }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 4/5 {
-                        e'4 :16 \glissando
+                        f''4 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mpz
@@ -680,7 +680,7 @@
                     }
                     \tweak #'edge-height #'(0.7 . 0)
                     \times 4/5 {
-                        g'4 :16 \glissando
+                        d''4 :16 \glissando
                             _ \markup {
                                 \dynamic
                                     mpz
@@ -704,17 +704,17 @@
                             \dynamic
                                 ffz
                             }
-                    d''1 :16
+                    g'1 :16
                         _ \markup {
                             \dynamic
                                 ffz
                             }
-                    d''1 :16 \glissando
+                    g'1 :16 \glissando
                         _ \markup {
                             \dynamic
                                 ffz
                             }
-                    f''1 :16
+                    e'1 :16
                         _ \markup {
                             \dynamic
                                 ffz
@@ -724,27 +724,27 @@
                             \dynamic
                                 ffz
                             }
-                    d''1 :16
+                    g'1 :16
                         _ \markup {
                             \dynamic
                                 ffz
                             }
-                    d''1 :16 \glissando
+                    g'1 :16 \glissando
                         _ \markup {
                             \dynamic
                                 ffz
                             }
-                    f''1 :16
+                    e'1 :16
                         _ \markup {
                             \dynamic
                                 ffz
                             }
-                    f''1 :16 \glissando
+                    e'1 :16 \glissando
                         _ \markup {
                             \dynamic
                                 ffz
                             }
-                    a''1 :16
+                    c'1 :16
                         _ \markup {
                             \dynamic
                                 ffz

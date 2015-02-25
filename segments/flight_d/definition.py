@@ -6,6 +6,7 @@ from huitzil.segments.abbreviations import *
 
 
 segment_maker = makers.FlightSegmentMaker(
+    clef='bass',
     markup_leaves=False,
     name='flight D',
     pitches=[
@@ -23,10 +24,10 @@ segment_maker.lh_glissandi = [
     ]
 
 segment_maker.notes = [
-    # descent
-    (7, '1/4', ffz),
-    (6, '1/4', ffz),
-    (5, '1/4', ffz),
+    # ascent
+    (1, '1/4', ffz),
+    (2, '1/4', ffz),
+    (3, '1/4', ffz),
     (4, '1/4', ffz),
     bar,
 
