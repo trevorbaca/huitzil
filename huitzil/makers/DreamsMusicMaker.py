@@ -102,7 +102,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         for i, note_pair in enumerate(note_pairs):
             has_glissando = False
             for pattern in self.glissando_patterns:
-                if pattern._matches_index(i, total_note_pairs):
+                if pattern.matches_index(i, total_note_pairs):
                     has_glissando = True
                     break
             if has_glissando:
@@ -182,7 +182,7 @@ class DreamsMusicMaker(abctools.AbjadObject):
         for i, note in enumerate(notes):
             register = None
             for pattern in self.pc_displacement:
-                if pattern._matches_index(i, total_notes):
+                if pattern.matches_index(i, total_notes):
                     register = 'high'
                     break
             else:

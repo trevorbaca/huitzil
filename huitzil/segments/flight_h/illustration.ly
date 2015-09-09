@@ -1,6 +1,6 @@
-% 2015-02-25 14:19
+% 2015-09-09 13:11
 
-\version "2.19.15"
+\version "2.19.23"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -169,7 +169,8 @@
                     s1 * 1
                     s1 * 1
                     s1 * 1 \stopTextSpan ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -178,7 +179,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 44"
+                            {
+                                =
+                                44
+                            }
                         }
                     s1 * 1
                 }

@@ -46,7 +46,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         tuplet_bracket_tweaks=None,
         ):
         superclass = super(DreamsSegmentMaker, self)
-        superclass.__init__(name=name)
+        superclass.__init__()
         self._initialize_music_makers(music_makers)
         self._calculate_duration = calculate_duration
         self.final_barline = final_barline
@@ -71,7 +71,11 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self):
+    def __call__(
+        self,
+        segment_metadata=None,
+        previous_segment_metadata=None,
+        ):
         r'''Calls segment-maker.
 
         Returns LilyPond file.
@@ -98,7 +102,8 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         if not inspect_(score).is_well_formed():
             string = inspect_(score).tabulate_well_formedness_violations()
             raise Exception(string)
-        return self.lilypond_file
+        segment_metadata = None
+        return self.lilypond_file, segment_metadata
 
     ### PRIVATE METHODS ###
 

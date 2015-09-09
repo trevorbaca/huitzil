@@ -1,6 +1,6 @@
-% 2015-02-25 14:18
+% 2015-09-09 13:11
 
-\version "2.19.15"
+\version "2.19.23"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -111,7 +111,8 @@
                 }
                 \context TempoIndicatorVoice = "Tempo Indicator Voice" {
                     s1 * 1/2 ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -120,7 +121,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 44"
+                            {
+                                =
+                                44
+                            }
                         }
                     s1 * 1/4
                     s1 * 1/4
@@ -185,7 +189,8 @@
                     s1 * 1
                     s1 * 1
                     s1 * 1 \stopTextSpan ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -194,10 +199,14 @@
                                     #0
                                     #1
                         \upright
-                            " = 66"
+                            {
+                                =
+                                66
+                            }
                         }
                     s1 * 1/3 ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -206,7 +215,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 44"
+                            {
+                                =
+                                44
+                            }
                         }
                     s1 * 1/3
                     s1 * 1/3
@@ -243,7 +255,8 @@
                     s1 * 1
                     s1 * 1
                     s1 * 1 \stopTextSpan ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -252,7 +265,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 88"
+                            {
+                                =
+                                88
+                            }
                         }
                 }
                 \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
