@@ -7,7 +7,7 @@ import huitzil
 from abjad.tools import systemtools
 
 
-boilerplate_path = ide.tools.idetools.Configuration().boilerplate_directory
+boilerplate_path = ide.tools.idetools.AbjadIDEConfiguration().abjad_ide_boilerplate_directory
 boilerplate_path = os.path.join(boilerplate_path, '__illustrate_segment__.py')
 
 segments_path = os.path.join(huitzil.__path__[0], 'segments')
