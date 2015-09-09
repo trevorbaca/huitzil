@@ -91,7 +91,11 @@ class FlightSegmentMaker(abctools.AbjadObject):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self):
+    def __call__(
+        self,
+        segment_metadata=None,
+        previous_segment_metadata=None,
+        ):
         r'''Calls segment-maker.
 
         Returns LilyPond file.
@@ -121,7 +125,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         if not inspect_(score).is_well_formed():
             string = inspect_(score).tabulate_well_formedness_violations()
             raise Exception(string)
-        return self.lilypond_file
+        segment_metadata = None
+        return self.lilypond_file, segment_metadata
 
     ### PRIVATE PROPERTIES ###
 

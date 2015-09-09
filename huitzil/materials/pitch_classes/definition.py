@@ -18,3 +18,5 @@ pitch_classes = baca.makers.ZaggedPitchClassMaker(
         ],
     grouping_counts=[4, 2, 2, 3, 1],
     )
+
+pitch_classes = pitch_classes()

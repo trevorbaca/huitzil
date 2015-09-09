@@ -1,6 +1,6 @@
-% 2015-02-25 14:22
+% 2015-09-09 13:11
 
-\version "2.19.15"
+\version "2.19.23"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -259,7 +259,8 @@
                     \override TextSpanner #'staff-padding = #5.75
                 } {
                     s1 * 3/4 ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -268,7 +269,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 66"
+                            {
+                                =
+                                66
+                            }
                         }
                     s1 * 1/3
                     s1 * 3/4
@@ -305,7 +309,8 @@
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -314,7 +319,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 88"
+                            {
+                                =
+                                88
+                            }
                         \hspace
                             #1.25
                         }
@@ -332,7 +340,8 @@
                     s1 * 3/4
                     s1 * 1
                     s1 * 3/4 \stopTextSpan ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -341,7 +350,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 66"
+                            {
+                                =
+                                66
+                            }
                         }
                     s1 * 1/3
                     s1 * 3/4
@@ -376,7 +388,8 @@
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -385,7 +398,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 88"
+                            {
+                                =
+                                88
+                            }
                         \hspace
                             #1.25
                         }
@@ -399,7 +415,8 @@
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 1 \stopTextSpan \startTextSpan
                     s1 * 3/4 \stopTextSpan ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -408,7 +425,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 66"
+                            {
+                                =
+                                66
+                            }
                         }
                     s1 * 1/3
                     s1 * 3/4
@@ -445,7 +465,8 @@
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -454,7 +475,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 88"
+                            {
+                                =
+                                88
+                            }
                         \hspace
                             #1.25
                         }
@@ -472,7 +496,8 @@
                     s1 * 3/4
                     s1 * 1
                     s1 * 3/4 \stopTextSpan ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -481,7 +506,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 66"
+                            {
+                                =
+                                66
+                            }
                         }
                     s1 * 1/3
                     s1 * 3/4
@@ -516,7 +544,8 @@
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -525,7 +554,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 88"
+                            {
+                                =
+                                88
+                            }
                         \hspace
                             #1.25
                         }
@@ -539,7 +571,8 @@
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 1 \stopTextSpan \startTextSpan
                     s1 * 3/4 \stopTextSpan ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -548,7 +581,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 66"
+                            {
+                                =
+                                66
+                            }
                         }
                     s1 * 1/3
                     s1 * 3/4
@@ -583,7 +619,8 @@
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -592,7 +629,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 88"
+                            {
+                                =
+                                88
+                            }
                         \hspace
                             #1.25
                         }
@@ -608,7 +648,8 @@
                     s1 * 3/4
                     s1 * 1/2
                     s1 * 3/4 \stopTextSpan ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -617,7 +658,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 66"
+                            {
+                                =
+                                66
+                            }
                         }
                     s1 * 1/3
                     s1 * 1
@@ -651,7 +695,8 @@
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
                     \once \override TextSpanner.bound-details.left.text = \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -660,7 +705,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 88"
+                            {
+                                =
+                                88
+                            }
                         \hspace
                             #1.25
                         }
@@ -675,7 +723,8 @@
                     s1 * 3/4 \stopTextSpan \startTextSpan
                     s1 * 1/2
                     s1 * 3/4 \stopTextSpan ^ \markup {
-                        \smaller
+                        \fontsize
+                            #-6
                             \general-align
                                 #Y
                                 #DOWN
@@ -684,7 +733,10 @@
                                     #0
                                     #1
                         \upright
-                            " = 66"
+                            {
+                                =
+                                66
+                            }
                         }
                     s1 * 1/3
                     s1 * 1
