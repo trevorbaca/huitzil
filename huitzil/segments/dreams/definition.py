@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from abjad import *
 from abjad.tools.rhythmmakertools import BooleanPattern
 from experimental import *
