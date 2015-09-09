@@ -11,7 +11,7 @@ configuration = ide.tools.idetools.AbjadIDEConfiguration()
 boilerplate_path = configuration.abjad_ide_boilerplate_directory
 boilerplate_path = os.path.join(
     boilerplate_path, 
-    '__illustrate_material_1__.py',
+    '__illustrate_material__.py',
     )
 
 materials_path = os.path.join(huitzil.__path__[0], 'materials')
@@ -29,7 +29,7 @@ def test_materials_01(material_path):
 
     local_boilerplate_path = os.path.join(
         material_path,
-        '__illustrate_material_1__.py',
+        '__illustrate_material__.py',
         )
     local_illustration_candidate_ly = os.path.join(
         material_path,
