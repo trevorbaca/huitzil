@@ -24,13 +24,33 @@ material_paths = [_ for _ in material_paths if os.path.isdir(_)]
 
 @pytest.mark.parametrize('material_path', material_paths)
 def test_materials_01(material_path):
+    r'''Illustrates any materials that can illustrate.
+    '''
+
     local_boilerplate_path = os.path.join(
         material_path,
         '__illustrate_material_1__.py',
         )
-    if os.path.exists(local_boilerplate_path):
-        os.remove(local_boilerplate_path)
-    with systemtools.FilesystemState(remove=[local_boilerplate_path]):
+    local_illustration_candidate_ly = os.path.join(
+        material_path,
+        'illustration.candidate.ly',
+        )
+    local_illustration_candidate_pdf = os.path.join(
+        material_path,
+        'illustration.candidate.pdf',
+        )
+
+    local_files = (
+        local_boilerplate_path,
+        local_illustration_candidate_ly,
+        local_illustration_candidate_pdf,
+        )
+
+    for local_file in local_files:
+        if os.path.exists(local_file):
+            os.remove(local_file)
+
+    with systemtools.FilesystemState(remove=local_files):
         shutil.copyfile(boilerplate_path, local_boilerplate_path)
         material_name = os.path.basename(material_path)
         ide.tools.idetools.AbjadIDE._replace_in_file(
