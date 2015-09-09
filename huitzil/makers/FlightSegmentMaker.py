@@ -284,7 +284,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
             notes.extend(components)
         bow_location_voice = self._score['Bow Location Voice']
         bow_location_voice.extend(notes)
-        indices = range(len(notes))
+        indices = list(range(len(notes)))
         if self.glissando_break_indices is not None:
             for index in self.glissando_break_indices:
                 indices.remove(index)
