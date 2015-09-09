@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
-import makers
-import materials
-import segments
+from huitzil import makers
+from huitzil import materials
+from huitzil import segments
