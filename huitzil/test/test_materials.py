@@ -24,7 +24,7 @@ material_paths = [_ for _ in material_paths if os.path.isdir(_)]
 
 @pytest.mark.parametrize('material_path', material_paths)
 def test_materials_01(material_path):
-    r'''Illustrates any materials that can illustrate.
+    r'''Illustrates materials.
     '''
 
     local_boilerplate_path = os.path.join(
