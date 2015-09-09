@@ -36,6 +36,8 @@ stage_3_time_signatures = []
 for time_signature in time_signatures[10:15]:
     numerator, denominator = time_signature.pair
     denominator /= 2
+    assert mathtools.is_integer_equivalent_number(denominator)
+    denominator = int(denominator)
     stage_3_time_signature = TimeSignature((numerator, denominator))
     stage_3_time_signatures.append(stage_3_time_signature)
 assert len(stage_3_time_signatures) == 5
