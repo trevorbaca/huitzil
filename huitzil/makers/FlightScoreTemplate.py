@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from abjad import *
 
 
@@ -16,7 +17,7 @@ class FlightScoreTemplate(abctools.AbjadValueObject):
         
         >>> f(score)
         \context Score = "Score" <<
-            \new PianoStaff <<
+            \context PianoStaff = "Piano Staff" <<
                 \context BowStaff = "Bow Staff" <<
                     \context TimeSignatureVoice = "Time Signature Voice" {
                     }
