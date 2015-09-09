@@ -20,9 +20,11 @@ assert sum(numerators) == 204
 
 def numerator_to_time_signature(numerator):
     if mathtools.is_integer_equivalent_number(numerator):
+        numerator = int(numerator)
         time_signature = TimeSignature((numerator, 8))
     else:
-        time_signature = TimeSignature((int(2 * numerator), 16))
+        numerator = int(2 * numerator)
+        time_signature = TimeSignature((numerator, 16))
     return time_signature
 
 time_signatures = []
