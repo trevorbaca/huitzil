@@ -24,8 +24,39 @@ directory_names = [_ for _ in directory_names if not _.startswith(('.', '_'))]
 material_paths = [os.path.join(materials_path, _) for _ in directory_names]
 material_paths = [_ for _ in material_paths if os.path.isdir(_)]
 
+
 @pytest.mark.parametrize('material_path', material_paths)
 def test_materials_01(material_path):
+    r'''Interprets material packages.
+    '''
+    definition_file_path = os.path.join(material_path, 'definition.py')
+    command = 'python {}'.format(definition_file_path)
+    exit_status = systemtools.IOManager.spawn_subprocess(command)
+    assert exit_status == 0
+
+
+def test_materials_02():
+    r'''Tests miscellaneous materials.
+    '''
+    if not os.path.exists(miscellaneous_materials_path):
+        return
+    command = 'python {}'.format(miscellaneous_materials_path)
+    exit_status = systemtools.IOManager.spawn_subprocess(command)
+    assert exit_status == 0
+
+
+def test_materials_03():
+    r'''Tests abbreviations file.
+    '''
+    if not os.path.exists(abbreviations_path):
+        return
+    command = 'python {}'.format(abbreviations_path)
+    exit_status = systemtools.IOManager.spawn_subprocess(command)
+    assert exit_status == 0
+
+
+@pytest.mark.parametrize('material_path', material_paths)
+def test_materials_04(material_path):
     r'''Illustrates materials.
     '''
     local_boilerplate_path = os.path.join(
@@ -60,23 +91,3 @@ def test_materials_01(material_path):
         command = 'python {}'.format(local_boilerplate_path)
         exit_status = systemtools.IOManager.spawn_subprocess(command)
         assert exit_status == 0
-
-
-def test_materials_02():
-    r'''Tests miscellaneous materials.
-    '''
-    if not os.path.exists(miscellaneous_materials_path):
-        return
-    command = 'python {}'.format(miscellaneous_materials_path)
-    exit_status = systemtools.IOManager.spawn_subprocess(command)
-    assert exit_status == 0
-
-
-def test_materials_03():
-    r'''Tests abbreviations file.
-    '''
-    if not os.path.exists(abbreviations_path):
-        return
-    command = 'python {}'.format(abbreviations_path)
-    exit_status = systemtools.IOManager.spawn_subprocess(command)
-    assert exit_status == 0
