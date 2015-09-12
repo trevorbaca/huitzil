@@ -7,6 +7,7 @@ python:
 before_install:
     - wget -q http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.19.26-1.linux-64.sh
     - sudo sh lilypond-2.19.26-1.linux-64.sh --batch
+    - pip install --upgrade pip
 
 install:
     - pip install --allow-external abjad --allow-unverified abjad -e git://github.com/Abjad/abjad.git#egg=abjad
@@ -16,7 +17,7 @@ install:
 
 script:
     - ajv doctest ./huitzil -x
-    - py.test -rf ./huitzil -x
+    - python ./huitzil/test/run_tests_with_timing.py
 
 notifications:
     email: false
