@@ -15,3 +15,5 @@ if __name__ == '__main__':
         message = 'pytest failed with exit code {}.'
         message = message.format(exit_code)
         raise Exception(message)
+    message = 'Done with pytest battery.'
+    print(message)
