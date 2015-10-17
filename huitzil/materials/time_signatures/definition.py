@@ -4,7 +4,7 @@ import baca
 
 
 def make_numerators(numerators, addenda):
-    numerators = baca.utilities.helianthate(numerators, -1, 1)
+    numerators = baca.tools.helianthate(numerators, -1, 1)
     numerators = sequencetools.flatten_sequence(numerators)
     length = len(numerators)
     addenda = sequencetools.repeat_sequence_to_length(addenda, length)
