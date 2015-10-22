@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from abjad import *
 
 
@@ -10,8 +11,8 @@ class DreamsScoreTemplate(abctools.AbjadValueObject):
     def __call__(self):
         r'''Calls Huitzil score template.
 
-        >>> from huitzil import makers
-        >>> template = makers.DreamsScoreTemplate()
+        >>> import huitzil
+        >>> template = huitzil.tools.DreamsScoreTemplate()
         >>> score = template()
         
         >>> f(score)

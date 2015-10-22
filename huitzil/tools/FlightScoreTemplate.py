@@ -11,29 +11,33 @@ class FlightScoreTemplate(abctools.AbjadValueObject):
     def __call__(self):
         r'''Calls Huitzil score template.
 
-        >>> from huitzil import makers
-        >>> template = makers.FlightScoreTemplate()
-        >>> score = template()
+        ::
+
+            >>> import huitzil
+            >>> template = huitzil.tools.FlightScoreTemplate()
+            >>> score = template()
+
+        ::
         
-        >>> f(score)
-        \context Score = "Score" <<
-            \context PianoStaff = "Piano Staff" <<
-                \context BowStaff = "Bow Staff" <<
-                    \context TimeSignatureVoice = "Time Signature Voice" {
-                    }
-                    \context TempoIndicatorVoice = "Tempo Indicator Voice" {
-                    }
-                    \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
-                    }
-                    \context BowLocationVoice = "Bow Location Voice" {
-                    }
-                    \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
+            >>> f(score)
+            \context Score = "Score" <<
+                \context PianoStaff = "Piano Staff" <<
+                    \context BowStaff = "Bow Staff" <<
+                        \context TimeSignatureVoice = "Time Signature Voice" {
+                        }
+                        \context TempoIndicatorVoice = "Tempo Indicator Voice" {
+                        }
+                        \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+                        }
+                        \context BowLocationVoice = "Bow Location Voice" {
+                        }
+                        \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
+                        }
+                    >>
+                    \context Staff = "Pitch Staff" {
                     }
                 >>
-                \context Staff = "Pitch Staff" {
-                }
             >>
-        >>
 
         Returns score.
         '''

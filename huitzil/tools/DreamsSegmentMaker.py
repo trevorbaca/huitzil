@@ -231,7 +231,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         compound_scope,
         include_rests=False,
         ):
-        from huitzil import makers
+        import huitzil
         timespan_map, timespans = [], []
         for scope in compound_scope.simple_scopes:
             start_stage, stop_stage = scope.stages
@@ -290,10 +290,10 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         self._make_music_for_voice(music_voice)
 
     def _interpret_music_handler(self, music_handler):
-        from huitzil import makers
+        import huitzil
         simple_scope = music_handler.scope
-        assert isinstance(simple_scope, makers.SimpleScope), simple_scope
-        compound_scope = makers.CompoundScope(simple_scope)
+        assert isinstance(simple_scope, huitzil.tools.SimpleScope), simple_scope
+        compound_scope = huitzil.tools.CompoundScope(simple_scope)
         result = self._compound_scope_to_logical_ties(compound_scope)
         logical_ties, timespan = result
         result = self._compound_scope_to_logical_ties(
@@ -356,19 +356,19 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             specifier(logical_ties, timespan)
 
     def _interpret_music_handlers(self):
-        from huitzil import makers
+        import huitzil
         for music_handler in self.music_handlers:
-            if isinstance(music_handler, makers.PitchHandler):
+            if isinstance(music_handler, huitzil.tools.PitchHandler):
                 self._interpret_pitch_handler(music_handler)
             else:
                 self._interpret_music_handler(music_handler)
 
     def _initialize_music_makers(self, music_makers):
-        from huitzil import makers
+        import huitzil
         music_makers = music_makers or []
         music_makers = list(music_makers)
         for music_maker in music_makers:
-            assert isinstance(music_maker, makers.MusicMaker)
+            assert isinstance(music_maker, huitzil.tools.MusicMaker)
         self._music_makers = music_makers
 
     def _make_lilypond_file(self):
@@ -385,8 +385,8 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             voice.extend(music)
 
     def _make_score(self):
-        from huitzil import makers
-        template = makers.DreamsScoreTemplate()
+        import huitzil
+        template = huitzil.tools.DreamsScoreTemplate()
         score = template()
         self._score = score
 
@@ -581,8 +581,8 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
 
         Returns music-handler.
         '''
-        from huitzil import makers
-        parser = makers.ScopeTokenParser()
+        import huitzil
+        parser = huitzil.tools.ScopeTokenParser()
         scope_tokens = []
         if isinstance(scope, tuple):
             simple_scopes = parser._to_simple_scopes(scope)
@@ -595,7 +595,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             raise TypeError(scope)
         music_handlers = []
         for scope_token in scope_tokens:
-            music_handler = makers.MusicHandler(
+            music_handler = huitzil.tools.MusicHandler(
                 scope=scope_token,
                 specifiers=specifiers,
                 )
@@ -612,8 +612,8 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
 
         Returns music-maker.
         '''
-        from huitzil import makers
-        music_maker = makers.DreamsMusicMaker()
+        import huitzil
+        music_maker = huitzil.tools.DreamsMusicMaker()
         self.music_makers.append(music_maker)
         return music_maker
 
@@ -622,9 +622,9 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         scope,
         specifiers,
         ):
-        from huitzil import makers
+        import huitzil
         assert isinstance(specifiers, list), repr(specifiers)
-        pitch_handler = makers.PitchHandler(
+        pitch_handler = huitzil.tools.PitchHandler(
             scope=scope,
             specifiers=specifiers,
             )
