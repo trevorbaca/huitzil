@@ -16,8 +16,9 @@ install:
     - pip install -e .
 
 script:
-    - ajv doctest ./huitzil -x
-    - python ./huitzil/test/run_tests_with_timing.py
+    - ajv doctest -x ./huitzil
+    - py.test -xrf
+    - python ./huitzil/test/test_segments.py
 
 notifications:
     email: false
