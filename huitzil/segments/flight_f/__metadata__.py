@@ -3,5 +3,8 @@ from abjad import *
 
 
 metadata = datastructuretools.TypedOrderedDict(
-    []
+    [
+        ('segment_count', 10),
+        ('segment_number', 7),
+        ]
     )
