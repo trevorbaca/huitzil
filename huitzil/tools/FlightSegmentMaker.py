@@ -266,8 +266,8 @@ class FlightSegmentMaker(abctools.AbjadObject):
         return leaves
 
     def _make_score(self):
-        from huitzil import makers
-        template = makers.FlightScoreTemplate()
+        import huitzil
+        template = huitzil.tools.FlightScoreTemplate()
         score = template()
         self._score = score
 

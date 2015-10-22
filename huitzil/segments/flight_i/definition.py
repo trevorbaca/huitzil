@@ -1,9 +1,9 @@
-from huitzil import makers
-from huitzil import materials
+# -*- coding: utf-8 -*-
+import huitzil
 from huitzil.segments.abbreviations import *
 
 
-segment_maker = makers.FlightSegmentMaker(
+segment_maker = huitzil.tools.FlightSegmentMaker(
     clef='treble',
     markup_leaves=False,
     name='flight I',
