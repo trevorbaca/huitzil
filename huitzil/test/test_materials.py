@@ -55,39 +55,39 @@ def test_materials_03():
     assert exit_status == 0
 
 
-@pytest.mark.parametrize('material_path', material_paths)
-def test_materials_04(material_path):
-    r'''Illustrates materials.
-    '''
-    local_boilerplate_path = os.path.join(
-        material_path,
-        '__illustrate_material__.py',
-        )
-    local_illustration_candidate_ly = os.path.join(
-        material_path,
-        'illustration.candidate.ly',
-        )
-    local_illustration_candidate_pdf = os.path.join(
-        material_path,
-        'illustration.candidate.pdf',
-        )
-    local_files = (
-        local_boilerplate_path,
-        local_illustration_candidate_ly,
-        local_illustration_candidate_pdf,
-        )
-    for local_file in local_files:
-        if os.path.exists(local_file):
-            os.remove(local_file)
-    with systemtools.FilesystemState(remove=local_files):
-        shutil.copyfile(boilerplate_path, local_boilerplate_path)
-        material_name = os.path.basename(material_path)
-        ide.tools.idetools.AbjadIDE._replace_in_file(
-            local_boilerplate_path,
-            'OUTPUT_OBJECT',
-            material_name,
-            )
-        assert os.path.exists(local_boilerplate_path)
-        command = 'python {}'.format(local_boilerplate_path)
-        exit_status = systemtools.IOManager.spawn_subprocess(command)
-        assert exit_status == 0
+#@pytest.mark.parametrize('material_path', material_paths)
+#def test_materials_04(material_path):
+#    r'''Illustrates materials.
+#    '''
+#    local_boilerplate_path = os.path.join(
+#        material_path,
+#        '__illustrate_material__.py',
+#        )
+#    local_illustration_candidate_ly = os.path.join(
+#        material_path,
+#        'illustration.candidate.ly',
+#        )
+#    local_illustration_candidate_pdf = os.path.join(
+#        material_path,
+#        'illustration.candidate.pdf',
+#        )
+#    local_files = (
+#        local_boilerplate_path,
+#        local_illustration_candidate_ly,
+#        local_illustration_candidate_pdf,
+#        )
+#    for local_file in local_files:
+#        if os.path.exists(local_file):
+#            os.remove(local_file)
+#    with systemtools.FilesystemState(remove=local_files):
+#        shutil.copyfile(boilerplate_path, local_boilerplate_path)
+#        material_name = os.path.basename(material_path)
+#        ide.tools.idetools.AbjadIDE._replace_in_file(
+#            local_boilerplate_path,
+#            'OUTPUT_OBJECT',
+#            material_name,
+#            )
+#        assert os.path.exists(local_boilerplate_path)
+#        command = 'python {}'.format(local_boilerplate_path)
+#        exit_status = systemtools.IOManager.spawn_subprocess(command)
+#        assert exit_status == 0
