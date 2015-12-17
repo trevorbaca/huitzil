@@ -90,7 +90,8 @@ music_maker.pc_operators = [
     pitchtools.Transposition(2), 
     pitchtools.Inversion(),
     ]
-music_maker.pc_displacement = [rhythmmakertools.silence_none()]
+#music_maker.pc_displacement = [rhythmmakertools.silence_none()]
+music_maker.pc_displacement = [rhythmmakertools.select_none()]
 music_maker.voice_map = [
     [3, range(0, 99)],
     ]
@@ -102,7 +103,8 @@ music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
 music_maker.pc_operators = [
     pitchtools.Transposition(3), 
     ]
-music_maker.pc_displacement = [rhythmmakertools.silence_none()]
+#music_maker.pc_displacement = [rhythmmakertools.silence_none()]
+music_maker.pc_displacement = [rhythmmakertools.select_none()]
 music_maker.voice_map = [
     [3, range(0, 99)],
     [1, (1, 2, 3, 6, 7, 10)],
