@@ -237,11 +237,11 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             start_stage, stop_stage = scope.stages
             offsets = self._get_offsets(start_stage, stop_stage)
             timespan = timespantools.Timespan(*offsets)
-            timespan_map.append((scope.context_name, timespan))
+            timespan_map.append((scope.voice_name, timespan))
             timespans.append(timespan)
         compound_scope._timespan_map = timespan_map
-        context_names = [_[0] for _ in timespan_map]
-        compound_scope._context_names = tuple(context_names)
+        voice_names = [_[0] for _ in timespan_map]
+        compound_scope._voice_names = tuple(voice_names)
         logical_ties = []
         if include_rests:
             prototype = (scoretools.Note, scoretools.Chord, scoretools.Rest)
@@ -536,26 +536,26 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
 
     ### PUBLIC METHODS ###
 
-    def copy_music_maker(self, _context_name, _stage, **kwargs):
-        r'''Gets music-maker with `_context_name` defined for `_stage`.
+    def copy_music_maker(self, _voice_name, _stage, **kwargs):
+        r'''Gets music-maker with `_voice_name` defined for `_stage`.
         Then makes new music-maker from this with optional `kwargs`.
 
         Short-cut for get-then-new.
 
-        Uses private positional argument names `_context_name` and `_stage` 
-        to avoid aliasing public keyword argument names `context_name`
+        Uses private positional argument names `_voice_name` and `_stage` 
+        to avoid aliasing public keyword argument names `voice_name`
         and `stage`.
 
         Returns music-maker.
         '''
-        music_maker = self.get_music_maker(_context_name, _stage)
+        music_maker = self.get_music_maker(_voice_name, _stage)
         music_maker = copy.deepcopy(music_maker)
         new_music_maker = new(music_maker, **kwargs)
         self.music_makers.append(new_music_maker)
         return new_music_maker
 
-    def get_music_maker(self, context_name, stage):
-        r'''Gets music-maker with `context_name` defined for `stage`.
+    def get_music_maker(self, voice_name, stage):
+        r'''Gets music-maker with `voice_name` defined for `stage`.
 
         Returns music-maker.
 
@@ -563,13 +563,13 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         '''
         music_makers = []
         for music_maker in self.music_makers:
-            if music_maker.context_name == context_name:
+            if music_maker.voice_name == voice_name:
                 start = music_maker.start_stage
                 stop = music_maker.stop_stage + 1
                 if stage in range(start, stop):
                     return music_maker
         message = 'no music-maker for {!r} found for stage {}.'
-        message = message.format(context_name, stage)
+        message = message.format(voice_name, stage)
         raise KeyError(message)
 
     def make_music_handler(
