@@ -606,7 +606,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         else:
             return music_handlers
 
-    def make_music_maker(self):
+    def make_rhythm(self):
         r'''Makes music-maker and appends music-maker to segment-maker's list
         of music-makers.
 
