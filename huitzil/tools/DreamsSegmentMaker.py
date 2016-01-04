@@ -368,7 +368,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         music_makers = music_makers or []
         music_makers = list(music_makers)
         for music_maker in music_makers:
-            assert isinstance(music_maker, huitzil.tools.MusicMaker)
+            assert isinstance(music_maker, huitzil.tools.RhythmMaker)
         self._music_makers = music_makers
 
     def _make_lilypond_file(self):
@@ -613,7 +613,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         Returns music-maker.
         '''
         import huitzil
-        music_maker = huitzil.tools.DreamsMusicMaker()
+        music_maker = huitzil.tools.DreamsRhythmMaker()
         self.music_makers.append(music_maker)
         return music_maker
 
