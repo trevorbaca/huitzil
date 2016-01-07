@@ -536,7 +536,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
 
     ### PUBLIC METHODS ###
 
-    def copy_rhythm_maker(self, _voice_name, _stage, **kwargs):
+    def copy_rhythm(self, _voice_name, _stage, **kwargs):
         r'''Gets music-maker with `_voice_name` defined for `_stage`.
         Then makes new music-maker from this with optional `kwargs`.
 
@@ -606,7 +606,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         else:
             return music_handlers
 
-    def make_rhythm_maker(self):
+    def define_rhythm(self):
         r'''Makes music-maker and appends music-maker to segment-maker's list
         of music-makers.
 

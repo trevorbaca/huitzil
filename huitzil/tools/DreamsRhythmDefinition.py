@@ -2,8 +2,8 @@
 from abjad import *
 
 
-class DreamsRhythmMaker(abctools.AbjadObject):
-    r'''Dreams music-maker.
+class DreamsRhythmDefinition(abctools.AbjadObject):
+    r'''Dreams rhythm definition.
 
     All properties can be configured at or after initialization.
     '''
