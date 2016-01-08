@@ -2,8 +2,8 @@
 from abjad import *
 
 
-class DreamsRhythmDefinition(abctools.AbjadObject):
-    r'''Dreams rhythm definition.
+class DreamsRhythmSpecifier(abctools.AbjadObject):
+    r'''Dreams rhythm specifier.
 
     All properties can be configured at or after initialization.
     '''
