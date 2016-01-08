@@ -285,6 +285,18 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         stop_offset = inspect_(stop_measure).get_timespan().stop_offset
         return start_offset, stop_offset
 
+    def _get_rhythm_specifier(self, voice_name, stage):
+        music_makers = []
+        for music_maker in self.music_makers:
+            if music_maker.voice_name == voice_name:
+                start = music_maker.start_stage
+                stop = music_maker.stop_stage + 1
+                if stage in range(start, stop):
+                    return music_maker
+        message = 'no music-maker for {!r} found for stage {}.'
+        message = message.format(voice_name, stage)
+        raise KeyError(message)
+
     def _interpret_music_makers(self):
         music_voice = self._score['Music Voice']
         self._make_music_for_voice(music_voice)
@@ -536,92 +548,15 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
 
     ### PUBLIC METHODS ###
 
-    def copy_rhythm(self, _voice_name, _stage, **kwargs):
-        r'''Gets music-maker with `_voice_name` defined for `_stage`.
-        Then makes new music-maker from this with optional `kwargs`.
-
-        Short-cut for get-then-new.
-
-        Uses private positional argument names `_voice_name` and `_stage` 
-        to avoid aliasing public keyword argument names `voice_name`
-        and `stage`.
-
-        Returns music-maker.
-        '''
-        music_maker = self.get_music_maker(_voice_name, _stage)
-        music_maker = copy.deepcopy(music_maker)
-        new_music_maker = new(music_maker, **kwargs)
-        self.music_makers.append(new_music_maker)
-        return new_music_maker
-
-    def get_music_maker(self, voice_name, stage):
-        r'''Gets music-maker with `voice_name` defined for `stage`.
-
-        Returns music-maker.
-
-        Raises key error when no such music-maker is found.
-        '''
-        music_makers = []
-        for music_maker in self.music_makers:
-            if music_maker.voice_name == voice_name:
-                start = music_maker.start_stage
-                stop = music_maker.stop_stage + 1
-                if stage in range(start, stop):
-                    return music_maker
-        message = 'no music-maker for {!r} found for stage {}.'
-        message = message.format(voice_name, stage)
-        raise KeyError(message)
-
-    def make_scoped_specifiers(
-        self, 
-        scope, 
-        specifiers,
-        ):
-        r'''Makes music-handler.
-
-        Returns music-handler.
-        '''
-        import huitzil
-        parser = huitzil.tools.ScopeTokenParser()
-        scope_tokens = []
-        if isinstance(scope, tuple):
-            simple_scopes = parser._to_simple_scopes(scope)
-            scope_tokens.extend(simple_scopes)
-        elif isinstance(scope, list):
-            for scope_token in scope:
-                simple_scopes = parser._to_simple_scopes(scope_token)
-                scope_tokens.extend(simple_scopes)
-        else:
-            raise TypeError(scope)
-        music_handlers = []
-        for scope_token in scope_tokens:
-            music_handler = huitzil.tools.ScopedSpecifier(
-                scope=scope_token,
-                specifiers=specifiers,
-                )
-            self._music_handlers.append(music_handler)
-            music_handlers.append(music_handler)
-        if len(music_handlers) == 1:
-            return music_handlers[0]
-        else:
-            return music_handlers
-
-    def define_rhythm(self):
-        r'''Makes music-maker and appends music-maker to segment-maker's list
-        of music-makers.
-
-        Returns music-maker.
-        '''
-        import huitzil
-        music_maker = huitzil.tools.DreamsRhythmMaker()
-        self.music_makers.append(music_maker)
-        return music_maker
-
     def make_pitch_handler(
         self,
         scope,
         specifiers,
         ):
+        r'''Makes pitch handler.
+
+        Returns pitch handler.
+        '''
         import huitzil
         assert isinstance(specifiers, list), repr(specifiers)
         pitch_handler = huitzil.tools.PitchHandler(
@@ -630,3 +565,31 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             )
         self._music_handlers.append(pitch_handler)
         return pitch_handler
+
+    def make_rhythm_specifier(self):
+        r'''Makes rhythm specifier.
+        
+        Appends rhythm specifier to segment-maker.
+
+        Returns rhythm specifier.
+        '''
+        import huitzil
+        rhythm_specifier = huitzil.tools.DreamsRhythmSpecifier()
+        self.music_makers.append(rhythm_specifier)
+        return music_maker
+
+    def make_scoped_specifiers(self, scope, specifiers):
+        r'''Makes scoped specifier.
+
+        Returns scoped specifier.
+        '''
+        scoped_specifiers = []
+        compound_scope = baca.tools.CompoundScope.from_token(scope)
+        for simple_scope in compound_scope.simple_scopes:
+            scoped_specifier = baca.tools.ScopedSpecifier(
+                simple_scope=simple_scope,
+                specifiers=specifiers,
+                )
+            self._scoped_specifiers.append(scoped_specifier)
+            scoped_specifiers.append(scoped_specifier)
+        return scoped_specifiers
