@@ -20,7 +20,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         '_page_breaks',
         '_score',
         '_show_leaf_indices',
-        '_show_stage_annotations',
+        '_label_stage_numbers',
         '_slurs',
         '_tuplet_bracket_tweaks',
         'final_barline',
@@ -40,7 +40,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         name=None,
         page_breaks=None,
         show_leaf_indices=None,
-        show_stage_annotations=False,
+        label_stage_numbers=False,
         slurs=None,
         tempo_map=None,
         tuplet_bracket_tweaks=None,
@@ -62,8 +62,8 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         self._page_breaks = page_breaks
         assert isinstance(show_leaf_indices, bool)
         self._show_leaf_indices = show_leaf_indices
-        assert isinstance(show_stage_annotations, bool)
-        self._show_stage_annotations = show_stage_annotations
+        assert isinstance(label_stage_numbers, bool)
+        self._label_stage_numbers = label_stage_numbers
         self._slurs = slurs or []
         self.tempo_map = tempo_map
         tuplet_bracket_tweaks = tuplet_bracket_tweaks or []
@@ -161,7 +161,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
                         raise ValueError(voice_number)
 
     def _annotate_stages(self):
-        if not self.show_stage_annotations:
+        if not self.label_stage_numbers:
             return
         context = self._score['Time Signature Context']
         for stage_index in range(self.stage_count):
@@ -523,12 +523,12 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         return self._show_leaf_indices
 
     @property
-    def show_stage_annotations(self):
+    def label_stage_numbers(self):
         r'''Is true when segment should annotate stages.
 
         Set to true or false.
         '''
-        return self._show_stage_annotations
+        return self._label_stage_numbers
 
     @property
     def slurs(self):
