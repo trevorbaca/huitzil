@@ -10,7 +10,7 @@ segment_maker = huitzil.tools.DreamsSegmentMaker(
     #calculate_duration=True,
     name='dreams',
     show_leaf_indices=False,
-    show_stage_annotations=False,
+    label_stage_numbers=False,
     )
 
 ### TEMPO MAP ###
