@@ -370,10 +370,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
     def _interpret_music_handlers(self):
         import huitzil
         for music_handler in self.music_handlers:
-            if isinstance(music_handler, huitzil.tools.PitchHandler):
-                self._interpret_pitch_handler(music_handler)
-            else:
-                self._interpret_music_handler(music_handler)
+            self._interpret_music_handler(music_handler)
 
     def _initialize_music_makers(self, music_makers):
         import huitzil
@@ -547,24 +544,6 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         return self._tuplet_bracket_tweaks
 
     ### PUBLIC METHODS ###
-
-    def make_pitch_handler(
-        self,
-        scope,
-        specifiers,
-        ):
-        r'''Makes pitch handler.
-
-        Returns pitch handler.
-        '''
-        import huitzil
-        assert isinstance(specifiers, list), repr(specifiers)
-        pitch_handler = huitzil.tools.PitchHandler(
-            scope=scope,
-            specifiers=specifiers,
-            )
-        self._music_handlers.append(pitch_handler)
-        return pitch_handler
 
     def make_rhythm_specifier(self):
         r'''Makes rhythm specifier.
