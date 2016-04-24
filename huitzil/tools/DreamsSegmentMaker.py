@@ -25,7 +25,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         '_tuplet_bracket_tweaks',
         'final_barline',
         'name',
-        'tempo_map',
+        'tempo_specifier',
         )
 
     ### INITIALIZER ###
@@ -42,7 +42,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         show_leaf_indices=None,
         label_stage_numbers=False,
         slurs=None,
-        tempo_map=None,
+        tempo_specifier=None,
         tuplet_bracket_tweaks=None,
         ):
         superclass = super(DreamsSegmentMaker, self)
@@ -65,7 +65,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         assert isinstance(label_stage_numbers, bool)
         self._label_stage_numbers = label_stage_numbers
         self._slurs = slurs or []
-        self.tempo_map = tempo_map
+        self.tempo_specifier = tempo_specifier
         tuplet_bracket_tweaks = tuplet_bracket_tweaks or []
         self._tuplet_bracket_tweaks = tuplet_bracket_tweaks
 
@@ -184,14 +184,14 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             attach(markup, leaf)
 
     def _attach_fermatas(self):
-        if not self.tempo_map:
+        if not self.tempo_specifier:
             return
         context = self._score['Time Signature Context']
         prototype = (
             indicatortools.Fermata,
             indicatortools.BreathMark,
             )
-        for stage_number, directive in self.tempo_map:
+        for stage_number, directive in self.tempo_specifier:
             if not isinstance(directive, prototype):
                 continue
             assert 0 < stage_number <= self.stage_count
@@ -216,12 +216,12 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
             attach(slur, slur_leaves)
 
     def _attach_tempo_indicators(self):
-        if not self.tempo_map:
+        if not self.tempo_specifier:
             return
         music_voice = self._score['Music Voice']
         logical_ties = iterate(music_voice).by_logical_tie()
         logical_ties = list(logical_ties)
-        for logical_tie_index, directive in self.tempo_map:
+        for logical_tie_index, directive in self.tempo_specifier:
             directive = copy.copy(directive)
             logical_tie = logical_ties[logical_tie_index]
             attach(directive, logical_tie.head)

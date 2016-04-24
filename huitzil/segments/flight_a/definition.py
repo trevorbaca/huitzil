@@ -128,7 +128,7 @@ segment_maker.glissando_break_indices = [
     42,
     ]
 
-segment_maker.tempo_map = [
+segment_maker.tempo_specifier = [
     (0, quarter_44),
     (39, Accelerando()),
     (42, quarter_66),

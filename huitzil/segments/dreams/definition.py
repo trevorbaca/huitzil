@@ -14,7 +14,7 @@ segment_maker = huitzil.tools.DreamsSegmentMaker(
     )
 
 ### TEMPO MAP ###
-segment_maker.tempo_map = [
+segment_maker.tempo_specifier = [
     (0, huitzil.materials.tempo_inventory[1]),
     ]
 

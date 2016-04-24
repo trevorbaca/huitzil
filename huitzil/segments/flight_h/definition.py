@@ -115,7 +115,7 @@ segment_maker.tremolo_map = [
     (40, trem_mod),
     ]
 
-segment_maker.tempo_map = [
+segment_maker.tempo_specifier = [
     (36, Ritardando()),
     (40, quarter_44),
     ]

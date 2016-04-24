@@ -42,7 +42,7 @@ segment_maker.notes = [
 segment_maker.tremolo_map = [
     ]
 
-segment_maker.tempo_map = [
+segment_maker.tempo_specifier = [
     (0, quarter_44),
     (0, Accelerando()),
     (1, quarter_88),
