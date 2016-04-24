@@ -68,7 +68,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         notes=None,
         staff_line_count=None,
         staff_positions=None,
-        tempo_map=None,
+        tempo_specifier=None,
         tremolo_map=None,
         underlying_dynamics=None,
         ):
@@ -83,7 +83,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         self.notes = notes
         self.staff_line_count = staff_line_count
         self.staff_positions = staff_positions
-        self.tempo_map = tempo_map
+        self.tempo_specifier = tempo_specifier
         self.tremolo_map = tremolo_map
         self.underlying_dynamics = underlying_dynamics
         self._lilypond_file = None
@@ -361,13 +361,13 @@ class FlightSegmentMaker(abctools.AbjadObject):
     def _populate_tempo_indicator_voice(self):
         if not self.notes:
             return
-        if not self.tempo_map:
+        if not self.tempo_specifier:
             return
         tempo_indicator_voice = self._score['Tempo Indicator Voice']
         durations = self._get_bow_location_durations()
         skips = scoretools.make_skips(Duration(1), durations)
         tempo_indicator_voice.extend(skips)
-        for index, indicator in self.tempo_map:
+        for index, indicator in self.tempo_specifier:
             skip = tempo_indicator_voice[index]
             indicator = copy.copy(indicator)
             attach(indicator, skip, is_annotation=True)
@@ -693,15 +693,15 @@ class FlightSegmentMaker(abctools.AbjadObject):
             raise TypeError(message)
 
     @property
-    def tempo_map(self):
+    def tempo_specifier(self):
         r'''Gets tempo indications of segment-maker.
 
         Returns list of pairs or none.
         '''
         return self._tempo_map
 
-    @tempo_map.setter
-    def tempo_map(self, expr):
+    @tempo_specifier.setter
+    def tempo_specifier(self, expr):
         if expr is None:
             self._tempo_map = expr
         elif isinstance(expr, list):

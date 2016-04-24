@@ -145,7 +145,7 @@ segment_maker.notes = [
 segment_maker.glissando_break_indices = [
     ]
 
-segment_maker.tempo_map = [
+segment_maker.tempo_specifier = [
     (0, quarter_66),
     (3, Accelerando()),
     (8, quarter_88),
