@@ -336,7 +336,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
                 spanner = copy.deepcopy(spanner)
                 leaves = self._logical_ties_to_leaves(logical_ties)
                 attach(spanner, leaves)
-            elif isinstance(specifier, handlertools.OverrideHandler):
+            elif isinstance(specifier, handlertools.OverrideSpecifier):
                 specifier(logical_ties_with_rests)
             else:
                 specifier(logical_ties, timespan)
