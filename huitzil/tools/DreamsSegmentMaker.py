@@ -23,7 +23,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         '_label_stage_numbers',
         '_slurs',
         '_tuplet_bracket_tweaks',
-        'final_barline',
+        'final_bar_line',
         'name',
         'tempo_specifier',
         )
@@ -33,7 +33,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
     def __init__(
         self,
         calculate_duration=False,
-        final_barline=False,
+        final_bar_line=False,
         final_markup=None,
         final_markup_extra_offset=None,
         music_makers=None,
@@ -49,7 +49,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         superclass.__init__()
         self._initialize_music_makers(music_makers)
         self._calculate_duration = calculate_duration
-        self.final_barline = final_barline
+        self.final_bar_line = final_bar_line
         if final_markup is not None:
             assert isinstance(final_markup, markuptools.Markup)
         self._final_markup = final_markup
@@ -94,7 +94,7 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
         self._interpret_music_handlers()
         self._attach_slurs()
         self._tweak_tuplet_brackets()
-        self._add_final_barline()
+        self._add_final_bar_line()
         self._add_final_markup()
         self._raise_duration()
         score_block = self.lilypond_file['score']
@@ -119,8 +119,8 @@ class DreamsSegmentMaker(makertools.SegmentMaker):
                     )
                 attach(command, measure)
 
-    def _add_final_barline(self):
-        if not self.final_barline:
+    def _add_final_bar_line(self):
+        if not self.final_bar_line:
             return
         self._score.add_final_bar_line(to_each_voice=True)
 
