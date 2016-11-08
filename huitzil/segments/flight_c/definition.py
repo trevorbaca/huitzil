@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 import huitzil
 from huitzil.segments.abbreviations import *
 
@@ -113,10 +113,10 @@ segment_maker.glissando_break_indices = [
 
 segment_maker.tempo_specifier = [
     #(0, quarter_44),
-    (39, Accelerando()),
+    (39, abjad.Accelerando()),
     (42, quarter_66),
     (43, quarter_44),
-    (43, Accelerando()),
+    (43, abjad.Accelerando()),
     (48, quarter_88),
     ]
 

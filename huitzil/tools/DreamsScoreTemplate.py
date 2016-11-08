@@ -1,9 +1,14 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
-class DreamsScoreTemplate(abctools.AbjadValueObject):
+class DreamsScoreTemplate(abjad.abctools.AbjadValueObject):
     r'''Huitzil dreams score template.
+
+    ::
+
+        >>> import huitzil
+
     '''
 
     ### SPECIAL METHODS ###
@@ -11,7 +16,6 @@ class DreamsScoreTemplate(abctools.AbjadValueObject):
     def __call__(self):
         r'''Calls Huitzil score template.
 
-        >>> import huitzil
         >>> template = huitzil.tools.DreamsScoreTemplate()
         >>> score = template()
         
@@ -32,33 +36,33 @@ class DreamsScoreTemplate(abctools.AbjadValueObject):
         '''
 
         # make time signature context
-        time_signature_context = scoretools.Context(
+        time_signature_context = abjad.scoretools.Context(
             context_name='TimeSignatureContext',
             name='Time Signature Context',
             )
 
         # make staff
-        staff = Staff(
+        staff = abjad.Staff(
             name='Staff',
             )
         staff.is_simultaneous = True
-        attach(Clef('bass'), staff)
+        abjad.attach(abjad.Clef('bass'), staff)
 
         # make text spanner voice
-        text_spanner_voice = Voice(
+        text_spanner_voice = abjad.Voice(
             context_name='TextSpannerVoice', 
             name='Text Spanner Voice',
             )
         staff.append(text_spanner_voice)
 
         # make music voice
-        music_voice = Voice(
+        music_voice = abjad.Voice(
             name='Music Voice',
             )
         staff.append(music_voice)
 
         # make score
-        score = Score(
+        score = abjad.Score(
             [
             time_signature_context,
             staff,

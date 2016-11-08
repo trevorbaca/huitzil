@@ -1,54 +1,54 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
-registration_inventory = pitchtools.RegistrationInventory(
+registration_inventory = abjad.pitchtools.RegistrationInventory(
     [
-        pitchtools.Registration(
+        abjad.pitchtools.Registration(
             [
-                pitchtools.RegistrationComponent(
-                    source_pitch_range=pitchtools.PitchRange(
+                abjad.pitchtools.RegistrationComponent(
+                    source_pitch_range=abjad.pitchtools.PitchRange(
                         range_string='[A0, C4)',
                         ),
-                    target_octave_start_pitch=pitchtools.NumberedPitch(-13),
+                    target_octave_start_pitch=abjad.pitchtools.NumberedPitch(-13),
                     ),
-                pitchtools.RegistrationComponent(
-                    source_pitch_range=pitchtools.PitchRange(
+                abjad.pitchtools.RegistrationComponent(
+                    source_pitch_range=abjad.pitchtools.PitchRange(
                         range_string='[C4, A8]',
                         ),
-                    target_octave_start_pitch=pitchtools.NumberedPitch(-9),
+                    target_octave_start_pitch=abjad.pitchtools.NumberedPitch(-9),
                     ),
                 ]
             ),
-        pitchtools.Registration(
+        abjad.pitchtools.Registration(
             [
-                pitchtools.RegistrationComponent(
-                    source_pitch_range=pitchtools.PitchRange(
+                abjad.pitchtools.RegistrationComponent(
+                    source_pitch_range=abjad.pitchtools.PitchRange(
                         range_string='[A0, C4)',
                         ),
-                    target_octave_start_pitch=pitchtools.NumberedPitch(-19),
+                    target_octave_start_pitch=abjad.pitchtools.NumberedPitch(-19),
                     ),
-                pitchtools.RegistrationComponent(
-                    source_pitch_range=pitchtools.PitchRange(
+                abjad.pitchtools.RegistrationComponent(
+                    source_pitch_range=abjad.pitchtools.PitchRange(
                         range_string='[C4, A8]',
                         ),
-                    target_octave_start_pitch=pitchtools.NumberedPitch(-15),
+                    target_octave_start_pitch=abjad.pitchtools.NumberedPitch(-15),
                     ),
                 ]
             ),
-        pitchtools.Registration(
+        abjad.pitchtools.Registration(
             [
-                pitchtools.RegistrationComponent(
-                    source_pitch_range=pitchtools.PitchRange(
+                abjad.pitchtools.RegistrationComponent(
+                    source_pitch_range=abjad.pitchtools.PitchRange(
                         range_string='[A0, C4)',
                         ),
-                    target_octave_start_pitch=pitchtools.NumberedPitch(-25),
+                    target_octave_start_pitch=abjad.pitchtools.NumberedPitch(-25),
                     ),
-                pitchtools.RegistrationComponent(
-                    source_pitch_range=pitchtools.PitchRange(
+                abjad.pitchtools.RegistrationComponent(
+                    source_pitch_range=abjad.pitchtools.PitchRange(
                         range_string='[C4, A8]',
                         ),
-                    target_octave_start_pitch=pitchtools.NumberedPitch(-21),
+                    target_octave_start_pitch=abjad.pitchtools.NumberedPitch(-21),
                     ),
                 ]
             ),
