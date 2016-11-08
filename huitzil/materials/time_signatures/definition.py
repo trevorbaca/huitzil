@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 import baca
 
 
 def make_numerators(numerators, addenda):
     numerators = baca.tools.helianthate(numerators, -1, 1)
-    numerators = sequencetools.flatten_sequence(numerators)
+    numerators = abjad.sequencetools.flatten_sequence(numerators)
     length = len(numerators)
-    addenda = sequencetools.repeat_sequence_to_length(addenda, length)
+    addenda = abjad.sequencetools.repeat_sequence_to_length(addenda, length)
     pairs = zip(numerators, addenda)
     numerators = [sum(_) for _ in pairs]
     return numerators
@@ -19,12 +19,12 @@ assert len(numerators) == 48
 assert sum(numerators) == 204
 
 def numerator_to_time_signature(numerator):
-    if mathtools.is_integer_equivalent_number(numerator):
+    if abjad.mathtools.is_integer_equivalent_number(numerator):
         numerator = int(numerator)
-        time_signature = TimeSignature((numerator, 8))
+        time_signature = abjad.TimeSignature((numerator, 8))
     else:
         numerator = int(2 * numerator)
-        time_signature = TimeSignature((numerator, 16))
+        time_signature = abjad.TimeSignature((numerator, 16))
     return time_signature
 
 time_signatures = []
@@ -36,9 +36,9 @@ stage_3_time_signatures = []
 for time_signature in time_signatures[10:15]:
     numerator, denominator = time_signature.pair
     denominator /= 2
-    assert mathtools.is_integer_equivalent_number(denominator)
+    assert abjad.mathtools.is_integer_equivalent_number(denominator)
     denominator = int(denominator)
-    stage_3_time_signature = TimeSignature((numerator, denominator))
+    stage_3_time_signature = abjad.TimeSignature((numerator, denominator))
     stage_3_time_signatures.append(stage_3_time_signature)
 assert len(stage_3_time_signatures) == 5
 

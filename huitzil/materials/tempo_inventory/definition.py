@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
-tempo_inventory = indicatortools.TempoInventory(
+tempo_inventory = abjad.indicatortools.TempoInventory(
     [
-        indicatortools.Tempo(
-            reference_duration=durationtools.Duration(1, 8),
+        abjad.Tempo(
+            reference_duration=abjad.Duration(1, 8),
             units_per_minute=52,
             ),
-        indicatortools.Tempo(
-            reference_duration=durationtools.Duration(1, 8),
+        abjad.Tempo(
+            reference_duration=abjad.Duration(1, 8),
             units_per_minute=78,
             ),
         ]

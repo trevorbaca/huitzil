@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
+import abjad
 import copy
 import os
-from abjad import *
 
 
-class FlightSegmentMaker(abctools.AbjadObject):
+class FlightSegmentMaker(abjad.abctools.AbjadObject):
     r'''Flight segment-maker.
+
+    ::
+
+        >>> import huitzil
+
     '''
 
     ### CLASS ATTRIBUTES ###
@@ -118,12 +123,12 @@ class FlightSegmentMaker(abctools.AbjadObject):
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         try:
-            duration = inspect_(score).get_duration(in_seconds=True)
+            duration = abjad.inspect_(score).get_duration(in_seconds=True)
         except MissingTempoError:
             duration = Duration(0)
         #raise Exception(float(duration))
-        if not inspect_(score).is_well_formed():
-            string = inspect_(score).tabulate_well_formedness_violations()
+        if not abjad.inspect_(score).is_well_formed():
+            string = abjad.inspect_(score).tabulate_well_formedness_violations()
             raise Exception(string)
         segment_metadata = None
         return self.lilypond_file, segment_metadata
@@ -151,17 +156,17 @@ class FlightSegmentMaker(abctools.AbjadObject):
             return
         self._score.add_final_bar_line()
         pitch_staff = self._score['Pitch Staff']
-        last_leaf = inspect_(pitch_staff).get_leaf(-1)
-        string = r'override Score.BarLine.transparent = ##f'
-        command = indicatortools.LilyPondCommand(string, format_slot='after')
+        last_leaf = abjad.inspect_(pitch_staff).get_leaf(-1)
+        string = r'abjad.override Score.BarLine.transparent = ##f'
+        command = abjad.LilyPondCommand(string, format_slot='after')
         attach(command, last_leaf)
-        string = r'override Score.SpanBar.transparent = ##f'
-        command = indicatortools.LilyPondCommand(string, format_slot='after')
+        string = r'abjad.override Score.SpanBar.transparent = ##f'
+        command = abjad.LilyPondCommand(string, format_slot='after')
         attach(command, last_leaf)
 
     def _attach_clefs(self):
         pitch_staff = self._score['Pitch Staff']
-        notes = iterate(pitch_staff).by_class(Note)
+        notes = iterate(pitch_staff).by_class(abjad.Note)
         pairs = sequencetools.iterate_sequence_nwise(notes, n=2)
         for left_note, right_note in pairs:
             left_clef = Clef.from_selection(left_note) 
@@ -206,20 +211,20 @@ class FlightSegmentMaker(abctools.AbjadObject):
 
     def _configure_score(self):
         bow_staff = self._score['Bow Staff']
-        override(bow_staff).staff_symbol.line_count = self.staff_line_count
+        abjad.override(bow_staff).staff_symbol.line_count = self.staff_line_count
         if self.name in ('flight E', 'flight F', 'flight I'):
             voice = self._score['Tempo Indicator Voice']
-            override(voice).text_script.staff_padding = 5
-            override(voice).text_spanner.staff_padding = 5.75
+            abjad.override(voice).text_script.staff_padding = 5
+            abjad.override(voice).text_spanner.staff_padding = 5.75
 
     def _format_altissimi_pitches(self):
         pitch_staff = self._score['Pitch Staff']
-        for note in iterate(pitch_staff).by_class(Note):
-            if note.written_pitch == NamedPitch('C6'):
-                override(note).note_head.no_ledgers = True
+        for note in iterate(pitch_staff).by_class(abjad.Note):
+            if note.written_pitch == abjad.NamedPitch('C6'):
+                abjad.override(note).note_head.no_ledgers = True
                 style = schemetools.SchemeSymbol('do')
-                override(note).note_head.style = style
-                override(note).note_head.duration_log = 2
+                abjad.override(note).note_head.style = style
+                abjad.override(note).note_head.duration_log = 2
 
     def _get_bow_location_durations(self):
         bow_location_voice = self._score['Bow Location Voice']
@@ -245,7 +250,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         if indication in ('-', '>'):
             indication = Articulation(indication)
             first_component = leaves[0]
-            first_leaf = inspect_(first_component).get_leaf(0)
+            first_leaf = abjad.inspect_(first_component).get_leaf(0)
             attach(indication, first_leaf)
         elif indication is None:
             pass
@@ -253,7 +258,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
             markup = Markup(indication, direction=Down)
             markup = markup.dynamic()
             first_component = leaves[0]
-            first_leaf = inspect_(first_component).get_leaf(0)
+            first_leaf = abjad.inspect_(first_component).get_leaf(0)
             attach(markup, first_leaf)
         else:
             message = 'unrecognized indication: {!r}.'
@@ -261,7 +266,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
             raise ValueError(message)
         for leaf in iterate(leaves).by_class(scoretools.Leaf):
             if Duration(1, 16) < leaf.written_duration:
-                tremolo = indicatortools.StemTremolo(16)
+                tremolo = abjad.indicatortools.StemTremolo(16)
                 attach(tremolo, leaf)
         return leaves
 
@@ -289,7 +294,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
             for index in self.glissando_break_indices:
                 indices.remove(index)
         glissando_break_indices = self.glissando_break_indices or []
-        notes = iterate(bow_location_voice).by_class(Note)
+        notes = iterate(bow_location_voice).by_class(abjad.Note)
         notes_in_spanner = []
         for i, note in enumerate(notes):
             notes_in_spanner.append(note)
@@ -308,9 +313,9 @@ class FlightSegmentMaker(abctools.AbjadObject):
             return
         if not self.pitches:
             bow_location_voice = self._score['Bow Location Voice']
-            total_duration = inspect_(bow_location_voice).get_duration()
+            total_duration = abjad.inspect_(bow_location_voice).get_duration()
             skip = scoretools.Skip(1)
-            multiplier = durationtools.Multiplier(total_duration)
+            multiplier = abjad.Multiplier(total_duration)
             attach(multiplier, skip)
             pitch_staff.append(skip)
         else:
@@ -342,19 +347,19 @@ class FlightSegmentMaker(abctools.AbjadObject):
                 if pitch.endswith('()'):
                     parenthesize = True
                     pitch = pitch.strip('()')
-                pitch = NamedPitch(pitch)
-                note = Note(pitch, Duration(1))
+                pitch = abjad.NamedPitch(pitch)
+                note = abjad.Note(pitch, Duration(1))
                 if parenthesize:
                     note.note_head.is_parenthesized = True
                 notes.append(note)
             for note, duration in zip(notes, durations):
-                multiplier = durationtools.Multiplier(duration)
+                multiplier = abjad.Multiplier(duration)
                 attach(multiplier, note)
             pitch_staff.extend(notes)
-        first_leaf = inspect_(pitch_staff).get_leaf(n=0)
+        first_leaf = abjad.inspect_(pitch_staff).get_leaf(n=0)
         clef = Clef('bass')
-        if isinstance(first_leaf, Note):
-            if NamedPitch('C4') < first_leaf.written_pitch:
+        if isinstance(first_leaf, abjad.Note):
+            if abjad.NamedPitch('C4') < first_leaf.written_pitch:
                 clef = Clef('treble')
             attach(clef, pitch_staff)
 
@@ -425,39 +430,39 @@ class FlightSegmentMaker(abctools.AbjadObject):
         for index, string in self.underlying_dynamics:
             skip = underlying_dynamics_voice[index]
             if string in ('<', '>'):
-                indicator = indicatortools.LilyPondCommand(
+                indicator = abjad.LilyPondCommand(
                     string, 
                     format_slot='right',
                     )
             elif string == '-|':
-                indicator = indicatortools.LilyPondCommand(
+                indicator = abjad.LilyPondCommand(
                     '<', 
                     format_slot='right',
                     )
                 stencil = schemetools.Scheme('constante-hairpin')
-                override(skip).hairpin.stencil = stencil
+                abjad.override(skip).hairpin.stencil = stencil
             elif string == '<!':
-                indicator = indicatortools.LilyPondCommand(
+                indicator = abjad.LilyPondCommand(
                     '<', 
                     format_slot='right',
                     )
                 stencil = schemetools.Scheme('flared-hairpin')
-                override(skip).hairpin.stencil = stencil
+                abjad.override(skip).hairpin.stencil = stencil
             elif string == '!>':
-                indicator = indicatortools.LilyPondCommand(
+                indicator = abjad.LilyPondCommand(
                     '>', 
                     format_slot='right',
                     )
                 stencil = schemetools.Scheme('flared-hairpin')
-                override(skip).hairpin.stencil = stencil
+                abjad.override(skip).hairpin.stencil = stencil
             else:
                 indicator = Dynamic(string)
             attach(indicator, skip)
         last_skip = skips[-1]
-        prototype = indicatortools.LilyPondCommand
-        if not inspect_(last_skip).has_indicator(prototype):
-            if not inspect_(last_skip).has_indicator(Dynamic):
-                indicator = indicatortools.LilyPondCommand(
+        prototype = abjad.LilyPondCommand
+        if not abjad.inspect_(last_skip).has_indicator(prototype):
+            if not abjad.inspect_(last_skip).has_indicator(Dynamic):
+                indicator = abjad.LilyPondCommand(
                     '!', 
                     format_slot='right',
                     )
@@ -470,7 +475,7 @@ class FlightSegmentMaker(abctools.AbjadObject):
         elif self.staff_line_count == 11:
             pitch_string = self.__tastiera_position_to_pitch_name[
                 staff_position]
-        pitch = NamedPitch(pitch_string)
+        pitch = abjad.NamedPitch(pitch_string)
         return pitch
 
     ### PUBLIC PROPERTIES ###

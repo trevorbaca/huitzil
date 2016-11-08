@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-from abjad import *
-from abjad.tools.rhythmmakertools import BooleanPattern
-from experimental import *
+import abjad
 import huitzil
 
 
@@ -72,10 +70,10 @@ music_maker.voice_map = [
 ### stage [2] (middle & lower) ###
 music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.materials.pitch_classes[2:8]
-music_maker.pc_operators = [pitchtools.Transposition(1)]
+music_maker.pc_operators = [abjad.pitchtools.Transposition(1)]
 music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
 music_maker.pc_displacement = [
-    BooleanPattern(indices=range(15), period=30),
+    patterntools.Pattern(indices=range(15), period=30),
     ]
 music_maker.voice_map = [
     [2, range(0, 99)],
@@ -87,8 +85,8 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.materials.pitch_classes[4:6]
 music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
 music_maker.pc_operators = [
-    pitchtools.Transposition(2), 
-    pitchtools.Inversion(),
+    abjad.pitchtools.Transposition(2), 
+    abjad.pitchtools.Inversion(),
     ]
 #music_maker.pc_displacement = [rhythmmakertools.silence_none()]
 music_maker.pc_displacement = []
@@ -101,7 +99,7 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.materials.pitch_classes[6:8]
 music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
 music_maker.pc_operators = [
-    pitchtools.Transposition(3), 
+    abjad.pitchtools.Transposition(3), 
     ]
 #music_maker.pc_displacement = [rhythmmakertools.silence_none()]
 music_maker.pc_displacement = []
@@ -115,10 +113,10 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.materials.pitch_classes[8:12]
 music_maker.extra_counts_per_division = [2, 4, 0, -2, 10]
 music_maker.pc_operators = [
-    pitchtools.Transposition(4), 
+    abjad.pitchtools.Transposition(4), 
     ]
 music_maker.pc_displacement = [
-    BooleanPattern(indices=range(10, 20), period=20),
+    abjad.patterntools.Pattern(indices=range(10, 20), period=20),
     ]
 music_maker.voice_map = [
     [1, range(0, 99)],
@@ -129,11 +127,11 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.materials.pitch_classes[10:13]
 music_maker.extra_counts_per_division = [2, 4, 0, -2, 10]
 music_maker.pc_operators = [
-    pitchtools.Transposition(5), 
-    pitchtools.Inversion(), 
+    abjad.pitchtools.Transposition(5), 
+    abjad.pitchtools.Inversion(), 
     ]
 music_maker.pc_displacement = [
-    BooleanPattern(indices=range(10), period=20),
+    abjad.patterntools.Pattern(indices=range(10), period=20),
     ]
 music_maker.voice_map = [
     [1, range(0, 99)],
@@ -145,10 +143,10 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.materials.pitch_classes[12:20]
 music_maker.extra_counts_per_division = [2, 4, 0, -2, 10]
 music_maker.pc_operators = [
-    pitchtools.Transposition(6), 
+    abjad.pitchtools.Transposition(6), 
     ]
 music_maker.pc_displacement = [
-    BooleanPattern(indices=range(10, 20), period=20),
+    abjad.patterntools.pattern(indices=range(10, 20), period=20),
     ]
 music_maker.voice_map = [
     [1, range(0, 99)],
@@ -161,7 +159,7 @@ music_maker.voice_map = [
 music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.materials.pitch_classes[14:18]
 music_maker.pc_operators = [
-    pitchtools.Transposition(7), 
+    abjad.pitchtools.Transposition(7), 
     ]
 music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
 music_maker.voice_map = [
@@ -173,12 +171,12 @@ music_maker.voice_map = [
 music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.materials.pitch_classes[16:20]
 music_maker.pc_operators = [
-    pitchtools.Transposition(8), 
-    pitchtools.Inversion(),
+    abjad.pitchtools.Transposition(8), 
+    abjad.pitchtools.Inversion(),
     ]
 music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
 music_maker.pc_displacement = [
-    BooleanPattern(indices=range(5), period=10),
+    abjad.patterntools.Pattern(indices=range(5), period=10),
     ]
 music_maker.voice_map = [
     [3, range(0, 99)],

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
-class DreamsRhythmSpecifier(abctools.AbjadObject):
+class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
     r'''Dreams rhythm specifier.
 
     All properties can be configured at or after initialization.
@@ -22,7 +22,7 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
         '_voice_map',
         )
 
-    unit_duration = Duration(1, 16)
+    unit_duration = abjad.Duration(1, 16)
 
     ### INITIALIZER ###    
 
@@ -59,11 +59,11 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
         self._respell_tuplets(music)
         self._displace_pitch_classes(music)
         self._register_voices(music)
-        self._attach_beams(music)
+        self._abjad.attach_beams(music)
         self._adjust_beams(music)
         self._apply_glissando_patterns(music)
-        self._attach_leaf_index_markup(music)
-        assert isinstance(music, (tuple, list, Voice)), repr(music)
+        self._abjad.attach_leaf_index_markup(music)
+        assert isinstance(music, (tuple, list, abjad.Voice)), repr(music)
         first_item = music[0]
         return music
 
@@ -71,8 +71,7 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
 
     @property
     def _storage_format_specification(self):
-        from abjad.tools import systemtools
-        manager = systemtools.StorageFormatManager
+        manager = abjad.systemtools.StorageFormatManager
         keyword_argument_names = \
             manager.get_signature_keyword_argument_names(self)
         if not self.rhythm_overwrites:
@@ -89,15 +88,15 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
         pass
 
     def _annotate_original_durations(self, note_lists):
-        notes = sequencetools.flatten_sequence(note_lists)
+        notes = abjad.sequencetools.flatten_sequence(note_lists)
         for note in notes:
-            attach(note.written_duration, note)
+            abjad.attach(note.written_duration, note)
 
     def _apply_glissando_patterns(self, music):
         if not self.glissando_patterns:
             return
-        notes = list(iterate(music).by_class(Note))
-        note_pairs = list(sequencetools.iterate_sequence_nwise(notes, n=2))
+        notes = list(abjad.iterate(music).by_class(abjad.Note))
+        note_pairs = list(abjad.sequencetools.abjad.iterate_sequence_nwise(notes, n=2))
         total_note_pairs = len(note_pairs)
         for i, note_pair in enumerate(note_pairs):
             has_glissando = False
@@ -106,27 +105,27 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
                     has_glissando = True
                     break
             if has_glissando:
-                attach(Glissando(), note_pair)
+                abjad.attach(Glissando(), note_pair)
 
     def _attach_beams(self, music):
         bass_clef = Clef('bass')
         down_beam_positions = (-4.5, -4.5)
         up_beam_positions = (5.5, 5.5)
-        tuplets = iterate(music).by_class(Tuplet)
+        tuplets = abjad.iterate(music).by_class(Tuplet)
         for tuplet in tuplets:
             voice_numbers = [inspect_(_).get_indicator(int) for _ in tuplet]
-            runs = sequencetools.partition_sequence_by_value_of_elements(
+            runs = abjad.sequencetools.partition_sequence_by_value_of_elements(
                 voice_numbers)
             counts = [len(_) for _ in runs]
-            note_groups = sequencetools.partition_sequence_by_counts(
+            note_groups = abjad.sequencetools.partition_sequence_by_counts(
                 tuplet[:],
                 counts,
                 )
             for note_group in note_groups:
                 beam = spannertools.DuratedComplexBeam()
-                attach(beam, note_group)
+                abjad.attach(beam, note_group)
                 first_note = note_group[0]
-                if Duration(1, 4) <= first_note.written_duration:
+                if abjad.Duration(1, 4) <= first_note.written_duration:
                     continue
                 staff_positions = [
                     _.written_pitch.to_staff_position(clef=bass_clef).number
@@ -145,40 +144,40 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
                 else:
                     stem_direction = Up
                 if stem_direction == Up:
-                    override(first_note).beam.positions = up_beam_positions
+                    abjad.override(first_note).beam.positions = up_beam_positions
                 else:
-                    override(first_note).beam.positions = down_beam_positions
+                    abjad.override(first_note).beam.positions = down_beam_positions
                 for note in note_group:
-                    override(note).stem.direction = stem_direction
+                    abjad.override(note).stem.direction = stem_direction
 
     def _attach_leaf_index_markup(self, music):
         if not self.index_logical_ties:
             return
-        logical_ties = iterate(music).by_logical_tie()
+        logical_ties = abjad.iterate(music).by_logical_tie()
         for i, logical_tie in enumerate(logical_ties):
             markup = Markup(i)
-            attach(markup, logical_tie.head)
+            abjad.attach(markup, logical_tie.head)
 
     def _attach_voice_numbers(self, note_lists):
         for component in self.voice_map:
             assert len(component) == 2
             voice_number = component[0]
             indices = component[1]
-            notes = sequencetools.flatten_sequence(note_lists)
+            notes = abjad.sequencetools.flatten_sequence(note_lists)
             for i, note in enumerate(notes):
                 if i in indices:
-                    detach(int, note)
-                    attach(voice_number, note)
-        notes = sequencetools.flatten_sequence(note_lists)
+                    abjad.detach(int, note)
+                    abjad.attach(voice_number, note)
+        notes = abjad.sequencetools.flatten_sequence(note_lists)
         for note in notes:
             assert inspect_(note).has_indicator(int), repr(note)
 
     def _displace_pitch_classes(self, music):
         if not self.pc_displacement:
             return
-        notes = list(iterate(music).by_class(Note))
+        notes = list(abjad.iterate(music).by_class(abjad.Note))
         total_notes = len(notes)
-        down_one_octave = pitchtools.Transposition(-12)
+        down_one_octave = abjad.pitchtools.Transposition(-12)
         for i, note in enumerate(notes):
             register = None
             for pattern in self.pc_displacement:
@@ -229,12 +228,12 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
                 is_diminution=is_diminution,
                 )
             #beam = spannertools.DuratedComplexBeam()
-            #attach(beam, inner_tuplet)
+            #abjad.attach(beam, inner_tuplet)
             for j, inner_tuplet_note in enumerate(inner_tuplet):
                 source_note = note_list[j]
                 inner_tuplet_note.written_pitch = source_note.written_pitch
                 voice_number = inspect_(source_note).get_indicator(int)
-                attach(voice_number, inner_tuplet_note)
+                abjad.attach(voice_number, inner_tuplet_note)
             inner_tuplets.append(inner_tuplet)
         return inner_tuplets
 
@@ -243,12 +242,12 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
         for pitch_class_tree in pitch_class_trees:
             assert pitch_class_tree.depth == 3
             assert 0 < len(pitch_class_tree)
-            for cell in pitch_class_tree.iterate_at_level(-2):
+            for cell in pitch_class_tree.abjad.iterate_at_level(-2):
                 note_list = []
                 for pitch_class in cell.manifest_payload:
                     for operator in self.pc_operators:
                         pitch_class = operator(pitch_class)
-                    note = Note(pitch_class, Duration(1, 4))
+                    note = abjad.Note(pitch_class, abjad.Duration(1, 4))
                     note_list.append(note)
                 note_lists.append(note_list)
         return note_lists
@@ -258,8 +257,8 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
         assert isinstance(pitch_class_trees, tuple)
         note_lists = self._make_note_lists(pitch_class_trees)
         self._annotate_original_durations(note_lists)
-        self._attach_voice_numbers(note_lists)
-        self._set_written_durations(note_lists)
+        self._abjad.attach_voice_numbers(note_lists)
+        self._abjad.set_written_durations(note_lists)
         inner_tuplets = self._make_inner_tuplets(note_lists)
         return inner_tuplets
     
@@ -268,34 +267,34 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
         voice_1_registration = materials.registration_inventory[0]
         voice_2_registration = materials.registration_inventory[1]
         voice_3_registration = materials.registration_inventory[2]
-        for note in iterate(music).by_class(Note):
+        for note in abjad.iterate(music).by_class(abjad.Note):
             voice_number = inspect_(note).get_indicator(int)
             if voice_number == 1:
                 color = 'red'
-                override(note).accidental.color = color
-                override(note).beam.color = color
-                override(note).dots.color = color
-                override(note).note_head.color = color
-                override(note).slur.color = color
-                override(note).stem.color = color
+                abjad.override(note).accidental.color = color
+                abjad.override(note).beam.color = color
+                abjad.override(note).dots.color = color
+                abjad.override(note).note_head.color = color
+                abjad.override(note).slur.color = color
+                abjad.override(note).stem.color = color
                 registration = voice_1_registration
             elif voice_number == 2:
                 #color = 'green'
-                #override(note).accidental.color = color
-                #override(note).beam.color = color
-                #override(note).dots.color = color
-                #override(note).note_head.color = color
-                #override(note).slur.color = color
-                #override(note).stem.color = color
+                #abjad.override(note).accidental.color = color
+                #abjad.override(note).beam.color = color
+                #abjad.override(note).dots.color = color
+                #abjad.override(note).note_head.color = color
+                #abjad.override(note).slur.color = color
+                #abjad.override(note).stem.color = color
                 registration = voice_2_registration
             elif voice_number == 3:
                 color = 'blue'
-                override(note).accidental.color = color
-                override(note).beam.color = color
-                override(note).dots.color = color
-                override(note).note_head.color = color
-                override(note).slur.color = color
-                override(note).stem.color = color
+                abjad.override(note).accidental.color = color
+                abjad.override(note).beam.color = color
+                abjad.override(note).dots.color = color
+                abjad.override(note).note_head.color = color
+                abjad.override(note).slur.color = color
+                abjad.override(note).stem.color = color
                 registration = voice_3_registration
             else:
                 raise ValueError(voice_number)
@@ -306,7 +305,7 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
 
     def _respell_tuplets(self, music):
         multiplier = durationtools.Multiplier(3, 2)
-        for tuplet in iterate(music).by_class(Tuplet):
+        for tuplet in abjad.iterate(music).by_class(Tuplet):
             if tuplet.multiplier == multiplier:
                 for note in tuplet:
                     new_written_duration = multiplier * note.written_duration
@@ -318,11 +317,11 @@ class DreamsRhythmSpecifier(abctools.AbjadObject):
             for note in note_list:
                 voice_number = inspect_(note).get_indicator(int)
                 if voice_number == 1:
-                    duration = Duration(1, 8)
+                    duration = abjad.Duration(1, 8)
                 elif voice_number == 2:
-                    duration = Duration(1, 16)
+                    duration = abjad.Duration(1, 16)
                 elif voice_number == 3:
-                    duration = Duration(1, 4)
+                    duration = abjad.Duration(1, 4)
                 else:
                     raise ValueError(voice_number)
                 note.written_duration = duration

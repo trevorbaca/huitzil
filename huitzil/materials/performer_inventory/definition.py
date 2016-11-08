@@ -1,50 +1,50 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
-performer_inventory = instrumenttools.PerformerInventory(
+performer_inventory = abjad.instrumenttools.PerformerInventory(
     [
-        instrumenttools.Performer(
+        abjad.instrumenttools.Performer(
             name='cellist',
-            instruments=instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentInventory(
                 [
-                    instrumenttools.Cello(
+                    abjad.instrumenttools.Cello(
                         instrument_name='cello',
                         short_instrument_name='vc.',
-                        instrument_name_markup=markuptools.Markup(
+                        instrument_name_markup=abjad.Markup(
                             contents=('Cello',),
                             ),
-                        short_instrument_name_markup=markuptools.Markup(
+                        short_instrument_name_markup=abjad.Markup(
                             contents=('Vc.',),
                             ),
-                        allowable_clefs=indicatortools.ClefInventory(
+                        allowable_clefs=abjad.indicatortools.ClefInventory(
                             [
-                                indicatortools.Clef(
+                                abjad.Clef(
                                     name='bass',
                                     ),
-                                indicatortools.Clef(
+                                abjad.Clef(
                                     name='tenor',
                                     ),
-                                indicatortools.Clef(
+                                abjad.Clef(
                                     name='treble',
                                     ),
                                 ]
                             ),
-                        default_tuning=indicatortools.Tuning(
-                            pitches=pitchtools.PitchSegment(
+                        default_tuning=abjad.indicatortools.Tuning(
+                            pitches=abjad.pitchtools.PitchSegment(
                                 (
-                                    pitchtools.NamedPitch('c,'),
-                                    pitchtools.NamedPitch('g,'),
-                                    pitchtools.NamedPitch('d'),
-                                    pitchtools.NamedPitch('a'),
+                                    abjad.pitchtools.NamedPitch('c,'),
+                                    abjad.pitchtools.NamedPitch('g,'),
+                                    abjad.pitchtools.NamedPitch('d'),
+                                    abjad.pitchtools.NamedPitch('a'),
                                     ),
-                                item_class=pitchtools.NamedPitch,
+                                item_class=abjad.pitchtools.NamedPitch,
                                 ),
                             ),
-                        pitch_range=pitchtools.PitchRange(
+                        pitch_range=abjad.pitchtools.PitchRange(
                             range_string='[C2, G5]',
                             ),
-                        sounding_pitch_of_written_middle_c=pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
                         ),
                     ]
                 ),
