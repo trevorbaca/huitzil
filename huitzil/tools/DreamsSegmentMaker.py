@@ -174,7 +174,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             result = self._stage_number_to_measure_indices(stage_number)
             start_measure_index, stop_measure_index = result
             string = '[{}{}]'.format(self.name, stage_number)
-            markup = Markup(string)
+            markup = abjad.Markup(string)
             markup = markup.with_color('blue')
             markup = markup.smaller()
             start_measure = context[start_measure_index]
@@ -185,7 +185,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             return
         voice = self._score['Music Voice']
         for i, leaf in enumerate(iterate(voice).by_leaf()):
-            markup = Markup(i)
+            markup = abjad.Markup(i)
             abjad.attach(markup, leaf)
 
     def _attach_fermatas(self):
