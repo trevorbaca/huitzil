@@ -36,9 +36,9 @@ f = 'f'
 ff = 'ff'
 fff = 'fff'
 
-quarter_44 = abjad.Tempo(Duration(1, 4), 44)
-quarter_66 = abjad.Tempo(Duration(1, 4), 66)
-quarter_88 = abjad.Tempo(Duration(1, 4), 88)
+quarter_44 = abjad.Tempo(abjad.Duration(1, 4), 44)
+quarter_66 = abjad.Tempo(abjad.Duration(1, 4), 66)
+quarter_88 = abjad.Tempo(abjad.Duration(1, 4), 88)
 
 molto_stretto = abjad.Markup('molto stretto').upright()
 piu_largo = abjad.Markup('più largo').upright()
