@@ -124,7 +124,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
                 counts,
                 )
             for note_group in note_groups:
-                beam = spannertools.DuratedComplexBeam()
+                beam = abjad.spannertools.DuratedComplexBeam()
                 abjad.attach(beam, note_group)
                 first_note = note_group[0]
                 if abjad.Duration(1, 4) <= first_note.written_duration:
@@ -229,7 +229,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
                 avoid_dots=True,
                 is_diminution=is_diminution,
                 )
-            #beam = spannertools.DuratedComplexBeam()
+            #beam = abjad.spannertools.DuratedComplexBeam()
             #abjad.attach(beam, inner_tuplet)
             for j, inner_tuplet_note in enumerate(inner_tuplet):
                 source_note = note_list[j]
@@ -306,7 +306,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
             note.written_pitch = transposed_pitch
 
     def _respell_tuplets(self, music):
-        multiplier = durationtools.Multiplier(3, 2)
+        multiplier = abjad.Multiplier(3, 2)
         for tuplet in abjad.iterate(music).by_class(abjad.Tuplet):
             if tuplet.multiplier == multiplier:
                 for note in tuplet:
