@@ -264,14 +264,6 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
 
     def _configure_lilypond_file(self):
         lilypond_file = self._lilypond_file
-        lilypond_file.use_relative_includes = True
-        path = os.path.join(
-            '..',
-            '..',
-            'stylesheets',
-            'stylesheet.ily',
-            )
-        lilypond_file.file_initial_user_includes.append(path)
         if not self.name == 'dreams':
             lilypond_file.header_block.title = None
             lilypond_file.header_block.composer = None
@@ -386,7 +378,17 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         self._music_makers = music_makers
 
     def _make_lilypond_file(self):
-        lilypond_file = lilypondfiletools.make_basic_lilypond_file(self._score)
+        path = os.path.join(
+            '..',
+            '..',
+            'stylesheets',
+            'stylesheet.ily',
+            )
+        lilypond_file = lilypondfiletools.make_basic_lilypond_file(
+            music=self._score,
+            includes=[path],
+            use_relative_includes=True,
+            )
         for item in lilypond_file.items[:]:
             if getattr(item, 'name', None) in ('layout', 'paper'):
                 lilypond_file.items.remove(item)
