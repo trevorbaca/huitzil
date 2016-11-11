@@ -128,8 +128,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             duration = abjad.Duration(0)
         #raise Exception(float(duration))
         if not abjad.inspect_(score).is_well_formed():
+
+            for container in abjad.iterate(score).by_class(abjad.Container):
+                if len(container) == 0:
+                    print(container)
+
             string = \
                 abjad.inspect_(score).tabulate_well_formedness_violations()
+            string = '\n' + string
             raise Exception(string)
         segment_metadata = None
         return self.lilypond_file, segment_metadata
