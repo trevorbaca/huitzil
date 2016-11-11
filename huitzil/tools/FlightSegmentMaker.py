@@ -414,20 +414,22 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         voice.extend(measures)
 
     def _populate_tremolo_indicator_voice(self):
-        if not self.notes:
-            return
-        if not self.tremolo_map:
-            return
         tremolo_indicator_voice = self._score['Tremolo Indicator Voice']
         durations = self._get_bow_location_durations()
         skips = abjad.scoretools.make_skips(abjad.Duration(1), durations)
         tremolo_indicator_voice.extend(skips)
+
+        if not self.notes:
+            return
+        if not self.tremolo_map:
+            return
+
         for index, indicator in self.tremolo_map:
             skip = tremolo_indicator_voice[index]
             indicator = copy.copy(indicator)
             abjad.attach(indicator, skip, is_annotation=True)
-        abjad.attach(
-            abjad.spannertools.TextSpanner(), tremolo_indicator_voice[:])
+        text_spanner = abjad.spannertools.TextSpanner()
+        abjad.attach(text_spanner, tremolo_indicator_voice[:])
 
     def _populate_underlying_dynamics_voice(self):
         if not self.notes:  
