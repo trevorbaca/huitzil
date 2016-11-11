@@ -410,13 +410,14 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         context = self._score['Time Signature Context']
         measure_durations = [abjad.inspect_(_).get_duration() for _ in context]
         music_voice = self._score['Music Voice']
-        component_durations = [abjad.inspect_(_).get_duration() for _ in music_voice]
-        measure_parts = sequencetools.partition_sequence_by_weights(
+        component_durations = [
+            abjad.inspect_(_).get_duration() for _ in music_voice]
+        measure_parts = abjad.sequencetools.partition_sequence_by_weights(
             component_durations,
             measure_durations,
             )
         measure_counts = [len(_) for _ in measure_parts]
-        parts = sequencetools.partition_sequence_by_counts(
+        parts = abjad.sequencetools.partition_sequence_by_counts(
             music_voice[:],
             measure_counts,
             )
