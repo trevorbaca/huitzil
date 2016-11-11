@@ -461,12 +461,12 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
                 stencil = abjad.schemetools.Scheme('flared-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             else:
-                indicator = Dynamic(string)
+                indicator = abjad.Dynamic(string)
             abjad.attach(indicator, skip)
         last_skip = skips[-1]
         prototype = abjad.LilyPondCommand
         if not abjad.inspect_(last_skip).has_indicator(prototype):
-            if not abjad.inspect_(last_skip).has_indicator(Dynamic):
+            if not abjad.inspect_(last_skip).has_indicator(abjad.Dynamic):
                 indicator = abjad.LilyPondCommand(
                     '!', 
                     format_slot='right',
