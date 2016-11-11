@@ -671,7 +671,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
     def staff_line_count(self, expr):
         if expr is None:
             self._staff_line_count = expr
-        elif mathtools.is_positive_integer(expr):
+        elif abjad.mathtools.is_positive_integer(expr):
             self._staff_line_count = expr
         else:
             message = 'must be positive integer: {!r}.'
@@ -690,7 +690,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
     def staff_positions(self, expr):
         if expr is None:
             self._staff_positions = expr
-        elif mathtools.all_are_positive_integers(expr):
+        elif abjad.mathtools.all_are_positive_integers(expr):
             self._staff_positions = expr
         else:
             message = 'must be list of positive integers: {!r}'
