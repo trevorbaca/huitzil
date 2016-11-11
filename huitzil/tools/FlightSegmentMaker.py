@@ -128,11 +128,6 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             duration = abjad.Duration(0)
         #raise Exception(float(duration))
         if not abjad.inspect_(score).is_well_formed():
-
-            for container in abjad.iterate(score).by_class(abjad.Container):
-                if len(container) == 0:
-                    print(container)
-
             string = \
                 abjad.inspect_(score).tabulate_well_formedness_violations()
             string = '\n' + string
@@ -418,12 +413,10 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         durations = self._get_bow_location_durations()
         skips = abjad.scoretools.make_skips(abjad.Duration(1), durations)
         tremolo_indicator_voice.extend(skips)
-
         if not self.notes:
             return
         if not self.tremolo_map:
             return
-
         for index, indicator in self.tremolo_map:
             skip = tremolo_indicator_voice[index]
             indicator = copy.copy(indicator)

@@ -109,6 +109,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             for container in abjad.iterate(score).by_class(abjad.Container):
                 if len(container) == 0:
                     print(container)
+                    abjad.f(container)
 
             string = \
                 abjad.inspect_(score).tabulate_well_formedness_violations()
