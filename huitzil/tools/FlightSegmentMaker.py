@@ -227,6 +227,12 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return durations
 
     def _make_lilypond_file(self):
+        path = os.path.join(
+            '..',
+            '..',
+            'stylesheets',
+            'flight-stylesheet.ily',
+            )
         lilypond_file = abjad.lilypondfiletools.make_basic_lilypond_file(
             music=self._score,
             includes=[path],
