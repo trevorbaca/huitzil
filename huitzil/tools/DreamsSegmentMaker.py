@@ -118,7 +118,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         for i, measure in enumerate(measures):
             measure_number = i + 1
             if measure_number in self.page_breaks:
-                command = indicatortools.LilyPondCommand(
+                command = abjad.LilyPondCommand(
                     'pageBreak',
                     format_slot='after',
                     )
@@ -193,8 +193,8 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             return
         context = self._score['Time Signature Context']
         prototype = (
-            indicatortools.Fermata,
-            indicatortools.BreathMark,
+            abjad.Fermata,
+            abjad.indicatortools.BreathMark,
             )
         for stage_number, directive in self.tempo_specifier:
             if not isinstance(directive, prototype):
