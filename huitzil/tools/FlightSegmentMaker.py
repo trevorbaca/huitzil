@@ -185,7 +185,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             leaves = abjad.iterate(pitch_staff).by_leaf()
             leaves = list(leaves)
             spanner_leaves = leaves[start_index:stop_index+1]
-            glissando = Glissando()
+            glissando = abjad.Glissando()
             abjad.attach(glissando, spanner_leaves)
 
     def _attach_leaf_index_markup(self):
@@ -302,10 +302,10 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         for i, note in enumerate(notes):
             notes_in_spanner.append(note)
             if i in glissando_break_indices:
-                abjad.attach(Glissando(), notes_in_spanner)
+                abjad.attach(abjad.Glissando(), notes_in_spanner)
                 notes_in_spanner = []
         if notes_in_spanner:
-            abjad.attach(Glissando(), notes_in_spanner)
+            abjad.attach(abjad.Glissando(), notes_in_spanner)
 
     def _populate_pitch_staff(self):
         pitch_staff = self._score['Pitch Staff']

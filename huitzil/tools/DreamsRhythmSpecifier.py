@@ -106,13 +106,13 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
                     has_glissando = True
                     break
             if has_glissando:
-                abjad.attach(Glissando(), note_pair)
+                abjad.attach(abjad.Glissando(), note_pair)
 
     def _attach_beams(self, music):
-        bass_clef = Clef('bass')
+        bass_clef = abjad.Clef('bass')
         down_beam_positions = (-4.5, -4.5)
         up_beam_positions = (5.5, 5.5)
-        tuplets = abjad.iterate(music).by_class(Tuplet)
+        tuplets = abjad.iterate(music).by_class(abjad.Tuplet)
         for tuplet in tuplets:
             voice_numbers = [
                 abjad.inspect_(_).get_indicator(int) for _ in tuplet]
@@ -223,7 +223,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
                 is_diminution = False
             else:
                 is_diminution = True
-            inner_tuplet = Tuplet.from_duration_and_ratio(
+            inner_tuplet = abjad.Tuplet.from_duration_and_ratio(
                 target_duration,
                 ratio,
                 avoid_dots=True,
@@ -307,7 +307,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
 
     def _respell_tuplets(self, music):
         multiplier = durationtools.Multiplier(3, 2)
-        for tuplet in abjad.iterate(music).by_class(Tuplet):
+        for tuplet in abjad.iterate(music).by_class(abjad.Tuplet):
             if tuplet.multiplier == multiplier:
                 for note in tuplet:
                     new_written_duration = multiplier * note.written_duration
