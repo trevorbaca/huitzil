@@ -21,7 +21,7 @@ install:
 
 script:
     - ajv doctest -x ./huitzil
-    - py.test -xrf
+    - py.test -xrf ./huitzil
     - python ./huitzil/test/test_segments.py
 
 notifications:
