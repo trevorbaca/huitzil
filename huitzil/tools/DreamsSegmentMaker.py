@@ -561,7 +561,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         import huitzil
         rhythm_specifier = huitzil.tools.DreamsRhythmSpecifier()
         self.music_makers.append(rhythm_specifier)
-        return music_maker
+        return rhythm_specifier
 
     def make_scoped_specifiers(self, scope, specifiers):
         r'''Makes scoped specifier.
