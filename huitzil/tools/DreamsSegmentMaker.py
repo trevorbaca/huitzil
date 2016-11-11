@@ -114,7 +114,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
 
     def _add_manual_page_breaks(self):
         time_signature_context = self._score['Time Signature Context']
-        measures = iterate(time_signature_context).by_class(Measure)
+        measures = abjad.iterate(time_signature_context).by_class(Measure)
         for i, measure in enumerate(measures):
             measure_number = i + 1
             if measure_number in self.page_breaks:
@@ -184,7 +184,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         if not self.show_leaf_indices:
             return
         voice = self._score['Music Voice']
-        for i, leaf in enumerate(iterate(voice).by_leaf()):
+        for i, leaf in enumerate(abjad.iterate(voice).by_leaf()):
             markup = abjad.Markup(i)
             abjad.attach(markup, leaf)
 
@@ -211,7 +211,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
 
     def _attach_slurs(self):
         voice = self._score['Music Voice']
-        leaves = iterate(voice).by_leaf()
+        leaves = abjad.iterate(voice).by_leaf()
         leaves = list(leaves)
         for slur in self.slurs:
             start_index, stop_number = slur
@@ -224,7 +224,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         if not self.tempo_specifier:
             return
         music_voice = self._score['Music Voice']
-        logical_ties = iterate(music_voice).by_logical_tie()
+        logical_ties = abjad.iterate(music_voice).by_logical_tie()
         logical_ties = list(logical_ties)
         for logical_tie_index, directive in self.tempo_specifier:
             directive = copy.copy(directive)
@@ -252,7 +252,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             prototype = (abjad.Note, abjad.Chord, abjad.Rest)
         else:
             prototype = (abjad.Note, abjad.Chord)
-        for note in iterate(self._score).by_timeline(prototype):
+        for note in abjad.iterate(self._score).by_timeline(prototype):
             if note in compound_scope:
                 logical_tie = abjad.inspect_(note).get_logical_tie()
                 if logical_tie.head is note:
@@ -441,7 +441,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         measures = abjad.scoretools.make_spacer_skip_measures(
             measure_durations)
         time_signature_context.extend(measures)
-        for measure in iterate(time_signature_context).by_class(Measure):
+        for measure in abjad.iterate(time_signature_context).by_class(Measure):
             time_signature = abjad.inspect_(measure).get_indicator(TimeSignature)
             if time_signature.denominator < 4:
                 fraction = abjad.mathtools.NonreducedFraction(
@@ -465,7 +465,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             measure_number, staff_padding = pair
             measure_index = measure_number - 1
             measure = measures[measure_index]
-            leaves = iterate(measure).by_leaf()
+            leaves = abjad.iterate(measure).by_leaf()
             for leaf in leaves:
                 abjad.override(leaf).tuplet_bracket.staff_padding = \
                     staff_padding
