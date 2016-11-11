@@ -105,7 +105,14 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         if not abjad.inspect_(score).is_well_formed():
-            string = abjad.inspect_(score).tabulate_well_formedness_violations()
+
+            for container in abjad.iterate(score).by_class(abjad.Container):
+                if len(container) == 0:
+                    print(container)
+
+            string = \
+                abjad.inspect_(score).tabulate_well_formedness_violations()
+            string = '\n' + string
             raise Exception(string)
         segment_metadata = None
         return self.lilypond_file, segment_metadata
