@@ -116,7 +116,7 @@ segment_maker.tremolo_map = [
     ]
 
 segment_maker.tempo_specifier = [
-    (36, Ritardando()),
+    (36, abjad.Ritardando()),
     (40, quarter_44),
     ]
 
