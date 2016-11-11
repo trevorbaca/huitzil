@@ -146,7 +146,7 @@ music_maker.pc_operators = [
     abjad.pitchtools.Transposition(6), 
     ]
 music_maker.pc_displacement = [
-    abjad.patterntools.pattern(indices=range(10, 20), period=20),
+    abjad.patterntools.Pattern(indices=range(10, 20), period=20),
     ]
 music_maker.voice_map = [
     [1, range(0, 99)],
