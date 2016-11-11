@@ -499,6 +499,14 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         return self._final_markup_extra_offset
 
     @property
+    def lilypond_file(self):
+        r'''Gets LilyPond file.
+
+        Returns LilyPond file.
+        '''
+        return self._lilypond_file
+
+    @property
     def music_makers(self):
         r'''Gets segment-maker's music-makers.
 
