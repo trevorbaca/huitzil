@@ -114,7 +114,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
 
     def _add_manual_page_breaks(self):
         time_signature_context = self._score['Time Signature Context']
-        measures = abjad.iterate(time_signature_context).by_class(Measure)
+        measures = abjad.iterate(time_signature_context).by_class(abjad.Measure)
         for i, measure in enumerate(measures):
             measure_number = i + 1
             if measure_number in self.page_breaks:
@@ -273,12 +273,12 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         result = self._stage_number_to_measure_indices(start_stage)
         start_measure_index, stop_measure_index = result
         start_measure = context[start_measure_index]
-        assert isinstance(start_measure, Measure), start_measure
+        assert isinstance(start_measure, abjad.Measure), start_measure
         start_offset = abjad.inspect_(start_measure).get_timespan().start_offset
         result = self._stage_number_to_measure_indices(stop_stage)
         start_measure_index, stop_measure_index = result
         stop_measure = context[stop_measure_index]
-        assert isinstance(stop_measure, Measure), stop_measure
+        assert isinstance(stop_measure, abjad.Measure), stop_measure
         stop_offset = abjad.inspect_(stop_measure).get_timespan().stop_offset
         return start_offset, stop_offset
 
@@ -441,14 +441,14 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         measures = abjad.scoretools.make_spacer_skip_measures(
             measure_durations)
         time_signature_context.extend(measures)
-        for measure in abjad.iterate(time_signature_context).by_class(Measure):
-            time_signature = abjad.inspect_(measure).get_indicator(TimeSignature)
+        for measure in abjad.iterate(time_signature_context).by_class(abjad.Measure):
+            time_signature = abjad.inspect_(measure).get_indicator(abjad.TimeSignature)
             if time_signature.denominator < 4:
                 fraction = abjad.mathtools.NonreducedFraction(
                     time_signature.pair)
                 fraction = fraction.with_multiple_of_denominator(4)
                 abjad.detach(time_signature, measure)
-                new_time_signature = TimeSignature(fraction)
+                new_time_signature = abjad.TimeSignature(fraction)
                 abjad.attach(new_time_signature, measure)
 
     def _raise_duration(self):

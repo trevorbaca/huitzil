@@ -124,7 +124,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         score = score_block['Score']
         try:
             duration = abjad.inspect_(score).get_duration(in_seconds=True)
-        except abjad.MissingTempoError:
+        except MissingTempoError:
             duration = abjad.Duration(0)
         #raise Exception(float(duration))
         if not abjad.inspect_(score).is_well_formed():
