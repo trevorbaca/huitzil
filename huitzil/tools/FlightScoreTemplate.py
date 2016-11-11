@@ -3,7 +3,7 @@ import abjad
 
 
 class FlightScoreTemplate(abjad.abctools.AbjadValueObject):
-    r'''Huitzil flight score template.
+    r'''Flight score template.
 
     ::
 

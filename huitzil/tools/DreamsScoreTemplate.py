@@ -3,7 +3,7 @@ import abjad
 
 
 class DreamsScoreTemplate(abjad.abctools.AbjadValueObject):
-    r'''Huitzil dreams score template.
+    r'''Dreams score template.
 
     ::
 
@@ -25,8 +25,6 @@ class DreamsScoreTemplate(abjad.abctools.AbjadValueObject):
             }
             \context Staff = "Staff" <<
                 \clef "bass"
-                \context TextSpannerVoice = "Text Spanner Voice" {
-                }
                 \context Voice = "Music Voice" {
                 }
             >>
@@ -48,12 +46,12 @@ class DreamsScoreTemplate(abjad.abctools.AbjadValueObject):
         staff.is_simultaneous = True
         abjad.attach(abjad.Clef('bass'), staff)
 
-        # make text spanner voice
-        text_spanner_voice = abjad.Voice(
-            context_name='TextSpannerVoice', 
-            name='Text Spanner Voice',
-            )
-        staff.append(text_spanner_voice)
+#        # make text spanner voice
+#        text_spanner_voice = abjad.Voice(
+#            context_name='TextSpannerVoice', 
+#            name='Text Spanner Voice',
+#            )
+#        staff.append(text_spanner_voice)
 
         # make music voice
         music_voice = abjad.Voice(
