@@ -21,6 +21,9 @@ install:
 
 script:
     - ajv doctest -x ./huitzil
+    # removes __pycache__ and .pyc files
+    # so duplicate test_materials.py files will work:
+    - ajv clean .
     - py.test -xrf
     - python ./huitzil/test/test_segments.py
 
