@@ -194,7 +194,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         voice = self._score['Bow Location Voice']
         logical_ties = iterate(voice).by_logical_tie()
         for i, logical_tie in enumerate(logical_ties):
-            markup = Markup(i)
+            markup = abjad.Markup(i)
             abjad.attach(markup, logical_tie.head)
 
     def _configure_lilypond_file(self):
@@ -258,7 +258,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         elif indication is None:
             pass
         elif indication.endswith('z'):
-            markup = Markup(indication, direction=Down)
+            markup = abjad.Markup(indication, direction=Down)
             markup = markup.dynamic()
             first_component = leaves[0]
             first_leaf = abjad.inspect_(first_component).get_leaf(0)
@@ -381,7 +381,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             abjad.attach(indicator, skip, is_annotation=True)
         tempo_spanner = spannertools.TempoSpanner(
             left_broken_padding=0,
-            left_broken_text=Markup.null(direction=None),
+            left_broken_text=abjad.Markup.null(direction=None),
             start_with_parenthesized_tempo=False,
             )
         abjad.attach(tempo_spanner, tempo_indicator_voice[:])

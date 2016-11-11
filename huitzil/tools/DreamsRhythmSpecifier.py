@@ -59,10 +59,10 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         self._respell_tuplets(music)
         self._displace_pitch_classes(music)
         self._register_voices(music)
-        self._abjad.attach_beams(music)
+        self._attach_beams(music)
         self._adjust_beams(music)
         self._apply_glissando_patterns(music)
-        self._abjad.attach_leaf_index_markup(music)
+        self._attach_leaf_index_markup(music)
         assert isinstance(music, (tuple, list, abjad.Voice)), repr(music)
         first_item = music[0]
         return music
@@ -96,7 +96,8 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         if not self.glissando_patterns:
             return
         notes = list(abjad.iterate(music).by_class(abjad.Note))
-        note_pairs = list(abjad.sequencetools.abjad.iterate_sequence_nwise(notes, n=2))
+        note_pairs = list(abjad.sequencetools.abjad.iterate_sequence_nwise(
+            notes, n=2))
         total_note_pairs = len(note_pairs)
         for i, note_pair in enumerate(note_pairs):
             has_glissando = False
@@ -113,7 +114,8 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         up_beam_positions = (5.5, 5.5)
         tuplets = abjad.iterate(music).by_class(Tuplet)
         for tuplet in tuplets:
-            voice_numbers = [inspect_(_).get_indicator(int) for _ in tuplet]
+            voice_numbers = [
+                abjad.inspect_(_).get_indicator(int) for _ in tuplet]
             runs = abjad.sequencetools.partition_sequence_by_value_of_elements(
                 voice_numbers)
             counts = [len(_) for _ in runs]
@@ -155,7 +157,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
             return
         logical_ties = abjad.iterate(music).by_logical_tie()
         for i, logical_tie in enumerate(logical_ties):
-            markup = Markup(i)
+            markup = abjad.Markup(i)
             abjad.attach(markup, logical_tie.head)
 
     def _attach_voice_numbers(self, note_lists):
@@ -170,7 +172,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
                     abjad.attach(voice_number, note)
         notes = abjad.sequencetools.flatten_sequence(note_lists)
         for note in notes:
-            assert inspect_(note).has_indicator(int), repr(note)
+            assert abjad.inspect_(note).has_indicator(int), repr(note)
 
     def _displace_pitch_classes(self, music):
         if not self.pc_displacement:
@@ -213,10 +215,10 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
             numerators = []
             for note in note_list:
                 duration = note.written_duration
-                fraction = mathtools.NonreducedFraction(duration)
+                fraction = abjad.mathtools.NonreducedFraction(duration)
                 fraction = fraction.with_denominator(128)
                 numerators.append(fraction.numerator)
-            ratio = mathtools.Ratio(numerators)
+            ratio = abjad.mathtools.Ratio(numerators)
             if 0 <= extra_count:
                 is_diminution = False
             else:
@@ -232,7 +234,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
             for j, inner_tuplet_note in enumerate(inner_tuplet):
                 source_note = note_list[j]
                 inner_tuplet_note.written_pitch = source_note.written_pitch
-                voice_number = inspect_(source_note).get_indicator(int)
+                voice_number = abjad.inspect_(source_note).get_indicator(int)
                 abjad.attach(voice_number, inner_tuplet_note)
             inner_tuplets.append(inner_tuplet)
         return inner_tuplets
@@ -242,7 +244,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         for pitch_class_tree in pitch_class_trees:
             assert pitch_class_tree.depth == 3
             assert 0 < len(pitch_class_tree)
-            for cell in pitch_class_tree.abjad.iterate_at_level(-2):
+            for cell in pitch_class_tree.iterate_at_level(-2):
                 note_list = []
                 for pitch_class in cell.manifest_payload:
                     for operator in self.pc_operators:
@@ -257,8 +259,8 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         assert isinstance(pitch_class_trees, tuple)
         note_lists = self._make_note_lists(pitch_class_trees)
         self._annotate_original_durations(note_lists)
-        self._abjad.attach_voice_numbers(note_lists)
-        self._abjad.set_written_durations(note_lists)
+        self._attach_voice_numbers(note_lists)
+        self._set_written_durations(note_lists)
         inner_tuplets = self._make_inner_tuplets(note_lists)
         return inner_tuplets
     
@@ -268,7 +270,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         voice_2_registration = materials.registration_inventory[1]
         voice_3_registration = materials.registration_inventory[2]
         for note in abjad.iterate(music).by_class(abjad.Note):
-            voice_number = inspect_(note).get_indicator(int)
+            voice_number = abjad.inspect_(note).get_indicator(int)
             if voice_number == 1:
                 color = 'red'
                 abjad.override(note).accidental.color = color
@@ -315,7 +317,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         durations = []
         for note_list in note_lists:
             for note in note_list:
-                voice_number = inspect_(note).get_indicator(int)
+                voice_number = abjad.inspect_(note).get_indicator(int)
                 if voice_number == 1:
                     duration = abjad.Duration(1, 8)
                 elif voice_number == 2:
