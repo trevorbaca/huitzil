@@ -7,7 +7,6 @@ python:
 before_install:
     - wget -q http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.19.50-1.linux-64.sh
     - sudo sh lilypond-2.19.50-1.linux-64.sh --batch
-    - ajv clean .
     - git clone https://github.com/Abjad/abjad.git; cd abjad; git checkout trevor/dev; pip install -e .[development]
     - echo `git branch`
     - cd ..
