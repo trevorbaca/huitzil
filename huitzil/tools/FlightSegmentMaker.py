@@ -167,8 +167,8 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
 
     def _attach_clefs(self):
         pitch_staff = self._score['Pitch Staff']
-        notes = iterate(pitch_staff).by_class(abjad.Note)
-        pairs = sequencetools.iterate_sequence_nwise(notes, n=2)
+        notes = abjad.iterate(pitch_staff).by_class(abjad.Note)
+        pairs = abjad.sequencetools.iterate_sequence_nwise(notes, n=2)
         for left_note, right_note in pairs:
             left_clef = abjad.Clef.from_selection(left_note) 
             right_clef = abjad.Clef.from_selection(right_note)
@@ -182,7 +182,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             return
         pitch_staff = self._score['Pitch Staff']
         for start_index, stop_index in self.lh_glissandi:
-            leaves = iterate(pitch_staff).by_leaf()
+            leaves = abjad.iterate(pitch_staff).by_leaf()
             leaves = list(leaves)
             spanner_leaves = leaves[start_index:stop_index+1]
             glissando = Glissando()
@@ -192,7 +192,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         if not self.markup_leaves:
             return
         voice = self._score['Bow Location Voice']
-        logical_ties = iterate(voice).by_logical_tie()
+        logical_ties = abjad.iterate(voice).by_logical_tie()
         for i, logical_tie in enumerate(logical_ties):
             markup = abjad.Markup(i)
             abjad.attach(markup, logical_tie.head)
@@ -212,7 +212,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
 
     def _format_altissimi_pitches(self):
         pitch_staff = self._score['Pitch Staff']
-        for note in iterate(pitch_staff).by_class(abjad.Note):
+        for note in abjad.iterate(pitch_staff).by_class(abjad.Note):
             if note.written_pitch == abjad.NamedPitch('C6'):
                 abjad.override(note).note_head.no_ledgers = True
                 style = abjad.schemetools.SchemeSymbol('do')
@@ -222,7 +222,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
     def _get_bow_location_durations(self):
         bow_location_voice = self._score['Bow Location Voice']
         durations = []
-        for logical_tie in iterate(bow_location_voice).by_logical_tie():
+        for logical_tie in abjad.iterate(bow_location_voice).by_logical_tie():
             duration = logical_tie.get_duration()
             durations.append(duration)
         return durations
@@ -267,7 +267,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             message = 'unrecognized indication: {!r}.'
             message = message.format(indication)
             raise ValueError(message)
-        for leaf in iterate(leaves).by_leaf():
+        for leaf in abjad.iterate(leaves).by_leaf():
             if abjad.Duration(1, 16) < leaf.written_duration:
                 tremolo = abjad.indicatortools.StemTremolo(16)
                 abjad.attach(tremolo, leaf)
@@ -297,7 +297,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             for index in self.glissando_break_indices:
                 indices.remove(index)
         glissando_break_indices = self.glissando_break_indices or []
-        notes = iterate(bow_location_voice).by_class(abjad.Note)
+        notes = abjad.iterate(bow_location_voice).by_class(abjad.Note)
         notes_in_spanner = []
         for i, note in enumerate(notes):
             notes_in_spanner.append(note)

@@ -199,7 +199,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
 
     def _make_inner_tuplets(self, note_lists):
         extra_counts_per_division = self.extra_counts_per_division or [0]
-        extra_counts_per_division = datastructuretools.CyclicTuple(
+        extra_counts_per_division = abjad.datastructuretools.CyclicTuple(
             extra_counts_per_division
             )
         inner_tuplets = []
