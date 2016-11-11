@@ -73,7 +73,7 @@ music_maker.pitch_class_trees = huitzil.materials.pitch_classes[2:8]
 music_maker.pc_operators = [abjad.pitchtools.Transposition(1)]
 music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
 music_maker.pc_displacement = [
-    patterntools.Pattern(indices=range(15), period=30),
+    abjad.patterntools.Pattern(indices=range(15), period=30),
     ]
 music_maker.voice_map = [
     [2, range(0, 99)],
