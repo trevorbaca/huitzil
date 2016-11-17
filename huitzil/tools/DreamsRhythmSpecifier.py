@@ -246,7 +246,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
             assert 0 < len(pitch_class_tree)
             for cell in pitch_class_tree.iterate_at_level(-2):
                 note_list = []
-                for pitch_class in cell.get_manifest_payload():
+                for pitch_class in cell.iterate_payload():
                     for operator in self.pc_operators:
                         pitch_class = operator(pitch_class)
                     note = abjad.Note(pitch_class, abjad.Duration(1, 4))
