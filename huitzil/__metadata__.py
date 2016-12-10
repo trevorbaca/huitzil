@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-import collections
+import abjad
 
 
-metadata = collections.OrderedDict([
+metadata = abjad.datastructuretools.TypedOrderedDict([
     ('catalog_number', 'AWN-009'),
     ('forces_tagline', 'for cello'),
     ('paper_size', '17 x 11 in'),
