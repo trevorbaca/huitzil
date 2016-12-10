@@ -20,7 +20,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         '_calculate_duration',
         '_final_markup',
         '_final_markup_extra_offset',
-        '_music_handlers',
+        '_music_specifiers',
         '_music_makers',
         '_page_breaks',
         '_score',
@@ -62,7 +62,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             assert isinstance(final_markup_extra_offset, tuple)
         self._final_markup_extra_offset = final_markup_extra_offset
         self.name = name
-        self._music_handlers = []
+        self._music_specifiers = []
         page_breaks = page_breaks or []
         self._page_breaks = page_breaks
         assert isinstance(show_leaf_indices, bool)
@@ -96,7 +96,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         self._add_manual_page_breaks()
         self._annotate_stages()
         self._annotate_leaf_indices()
-        self._interpret_music_handlers()
+        self._interpret_music_specifiers()
         self._attach_slurs()
         self._tweak_tuplet_brackets()
         self._add_final_bar_line()
@@ -306,9 +306,9 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         music_voice = self._score['Music Voice']
         self._make_music_for_voice(music_voice)
 
-    def _interpret_music_handler(self, music_handler):
+    def _interpret_music_specifier(self, music_specifier):
         import huitzil
-        simple_scope = music_handler.scope
+        simple_scope = music_specifier.scope
         assert isinstance(simple_scope, huitzil.tools.SimpleScope), simple_scope
         compound_scope = huitzil.tools.CompoundScope(simple_scope)
         result = self._compound_scope_to_logical_ties(compound_scope)
@@ -318,10 +318,10 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             include_rests=True
             )
         logical_ties_with_rests, timespan = result
-        if isinstance(music_handler.specifiers, (list, tuple)):
-            specifiers = tuple(music_handler.specifiers)
+        if isinstance(music_specifier.specifiers, (list, tuple)):
+            specifiers = tuple(music_specifier.specifiers)
         else:
-            specifiers = (music_handler.specifiers,)
+            specifiers = (music_specifier.specifiers,)
         note_indicators = (
             abjad.Dynamic,
             abjad.Markup,
@@ -365,17 +365,17 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         leaves.append(last_note)
         return leaves
 
-    def _interpret_pitch_handler(self, pitch_handler):
-        compound_scope = pitch_handler.scope
+    def _interpret_pitch_specifier(self, pitch_specifier):
+        compound_scope = pitch_specifier.scope
         result = self._compound_scope_to_logical_ties(compound_scope)
         logical_ties, timespan = result
-        for specifier in pitch_handler.specifiers:
+        for specifier in pitch_specifier.specifiers:
             specifier(logical_ties, timespan)
 
-    def _interpret_music_handlers(self):
+    def _interpret_music_specifiers(self):
         import huitzil
-        for music_handler in self.music_handlers:
-            self._interpret_music_handler(music_handler)
+        for music_specifier in self.music_specifiers:
+            self._interpret_music_specifier(music_specifier)
 
     def _initialize_music_makers(self, music_makers):
         import huitzil
@@ -523,12 +523,12 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         return self._music_makers
     
     @property
-    def music_handlers(self):
-        r'''Gets segment-maker's music-handlers.
+    def music_specifiers(self):
+        r'''Gets segment-maker's music-specifiers.
 
-        Returns tuples of music-handlers.
+        Returns tuples of music-specifiers.
         '''
-        return tuple(self._music_handlers)
+        return tuple(self._music_specifiers)
 
     @property
     def page_breaks(self):
