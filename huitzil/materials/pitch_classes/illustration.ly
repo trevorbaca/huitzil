@@ -3,7 +3,7 @@
 \version "2.19.13"
 \language "english"
 
-\include "/Users/trevorbaca/Documents/abjad/abjad/stylesheets/rhythm-letter-16.ily"
+\include "/Users/trevorbaca/abjad/abjad/stylesheets/rhythm-letter-16.ily"
 
 \header {}
 
