@@ -3,5 +3,5 @@ import abjad
 
 
 metadata = abjad.datastructuretools.TypedOrderedDict([
-    ('output_material_class_name', 'PitchClassTree'),
+    ('output_material_class_name', 'PitchTree'),
     ])
