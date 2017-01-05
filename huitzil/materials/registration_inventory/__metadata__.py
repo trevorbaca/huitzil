@@ -2,6 +2,4 @@
 import abjad
 
 
-metadata = abjad.datastructuretools.TypedOrderedDict([
-    ('output_material_class_name', 'RegistrationInventory'),
-    ])
+metadata = abjad.datastructuretools.TypedOrderedDict()
