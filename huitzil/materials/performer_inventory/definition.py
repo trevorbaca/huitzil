@@ -17,7 +17,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                         short_instrument_name_markup=abjad.Markup(
                             contents=('Vc.',),
                             ),
-                        allowable_clefs=abjad.indicatortools.ClefInventory(
+                        allowable_clefs=abjad.instrumenttools.ClefList(
                             [
                                 abjad.Clef(
                                     name='bass',
