@@ -179,7 +179,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
             return
         notes = list(abjad.iterate(music).by_class(abjad.Note))
         total_notes = len(notes)
-        down_one_octave = abjad.pitchtools.Transposition(-12)
+        down_one_octave = abjad.Transposition(-12)
         for i, note in enumerate(notes):
             register = None
             for pattern in self.pc_displacement:
