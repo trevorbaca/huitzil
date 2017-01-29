@@ -494,14 +494,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._accent_dynamics
 
     @accent_dynamics.setter
-    def accent_dynamics(self, expr):
-        if expr is None:
-            self._accent_dynamics = expr
-        elif isinstance(expr, list):
-            self._accent_dynamics = expr
+    def accent_dynamics(self, argument):
+        if argument is None:
+            self._accent_dynamics = argument
+        elif isinstance(argument, list):
+            self._accent_dynamics = argument
         else:
             message = 'must be list of strings: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -513,14 +513,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._clef
 
     @clef.setter
-    def clef(self, expr):
-        if expr is None:
-            self._clef = expr
-        elif isinstance(expr, str):
-            self._clef = expr
+    def clef(self, argument):
+        if argument is None:
+            self._clef = argument
+        elif isinstance(argument, str):
+            self._clef = argument
         else:
             message = 'must be string: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -532,14 +532,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._durations
 
     @durations.setter
-    def durations(self, expr):
-        if expr is None:
-            self._durations = expr
-        elif isinstance(expr, list):
-            self._durations = expr
+    def durations(self, argument):
+        if argument is None:
+            self._durations = argument
+        elif isinstance(argument, list):
+            self._durations = argument
         else:
             message = 'must be list of pairs: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -551,14 +551,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._glissando_break_indices
 
     @glissando_break_indices.setter
-    def glissando_break_indices(self, expr):
-        if expr is None:
-            self._glissando_break_indices = expr
-        elif isinstance(expr, list):
-            self._glissando_break_indices = expr
+    def glissando_break_indices(self, argument):
+        if argument is None:
+            self._glissando_break_indices = argument
+        elif isinstance(argument, list):
+            self._glissando_break_indices = argument
         else:
             message = 'must be list of integers: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -570,14 +570,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._lh_glissandi
 
     @lh_glissandi.setter
-    def lh_glissandi(self, expr):
-        if expr is None:
-            self._lh_glissandi = expr
-        elif isinstance(expr, list):
-            self._lh_glissandi = expr
+    def lh_glissandi(self, argument):
+        if argument is None:
+            self._lh_glissandi = argument
+        elif isinstance(argument, list):
+            self._lh_glissandi = argument
         else:
             message = 'must be list of pairs: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -597,14 +597,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._markup_leaves
 
     @markup_leaves.setter
-    def markup_leaves(self, expr):
-        if expr is None:
-            self._markup_leaves = expr
-        elif isinstance(expr, type(True)):
-            self._markup_leaves = expr
+    def markup_leaves(self, argument):
+        if argument is None:
+            self._markup_leaves = argument
+        elif isinstance(argument, type(True)):
+            self._markup_leaves = argument
         else:
             message = 'must be boolean: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -616,14 +616,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._name
 
     @name.setter
-    def name(self, expr):
-        if expr is None:
-            self._name = expr
-        elif isinstance(expr, str):
-            self._name = expr
+    def name(self, argument):
+        if argument is None:
+            self._name = argument
+        elif isinstance(argument, str):
+            self._name = argument
         else:
             message = 'must be string: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -635,14 +635,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._notes
 
     @notes.setter
-    def notes(self, expr):
-        if expr is None:
-            self._notes = expr
-        elif isinstance(expr, list):
-            self._notes = expr
+    def notes(self, argument):
+        if argument is None:
+            self._notes = argument
+        elif isinstance(argument, list):
+            self._notes = argument
         else:
             message = 'must be list of pairs: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -654,14 +654,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._pitches
 
     @pitches.setter
-    def pitches(self, expr):
-        if expr is None:
-            self._pitches = expr
-        elif isinstance(expr, list):
-            self._pitches = expr
+    def pitches(self, argument):
+        if argument is None:
+            self._pitches = argument
+        elif isinstance(argument, list):
+            self._pitches = argument
         else:
             message = 'must be list of pairs: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -673,14 +673,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._staff_line_count
 
     @staff_line_count.setter
-    def staff_line_count(self, expr):
-        if expr is None:
-            self._staff_line_count = expr
-        elif abjad.mathtools.is_positive_integer(expr):
-            self._staff_line_count = expr
+    def staff_line_count(self, argument):
+        if argument is None:
+            self._staff_line_count = argument
+        elif abjad.mathtools.is_positive_integer(argument):
+            self._staff_line_count = argument
         else:
             message = 'must be positive integer: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -692,14 +692,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._staff_positions
 
     @staff_positions.setter
-    def staff_positions(self, expr):
-        if expr is None:
-            self._staff_positions = expr
-        elif abjad.mathtools.all_are_positive_integers(expr):
-            self._staff_positions = expr
+    def staff_positions(self, argument):
+        if argument is None:
+            self._staff_positions = argument
+        elif abjad.mathtools.all_are_positive_integers(argument):
+            self._staff_positions = argument
         else:
             message = 'must be list of positive integers: {!r}'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -711,14 +711,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._tempo_map
 
     @tempo_specifier.setter
-    def tempo_specifier(self, expr):
-        if expr is None:
-            self._tempo_map = expr
-        elif isinstance(expr, list):
-            self._tempo_map = expr
+    def tempo_specifier(self, argument):
+        if argument is None:
+            self._tempo_map = argument
+        elif isinstance(argument, list):
+            self._tempo_map = argument
         else:
             message = 'must be list of pairs: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -730,14 +730,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._tremolo_map
 
     @tremolo_map.setter
-    def tremolo_map(self, expr):
-        if expr is None:
-            self._tremolo_map = expr
-        elif isinstance(expr, list):
-            self._tremolo_map = expr
+    def tremolo_map(self, argument):
+        if argument is None:
+            self._tremolo_map = argument
+        elif isinstance(argument, list):
+            self._tremolo_map = argument
         else:
             message = 'must be list of pairs: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -749,12 +749,12 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         return self._underlying_dynamics
 
     @underlying_dynamics.setter
-    def underlying_dynamics(self, expr):
-        if expr is None:
-            self._underlying_dynamics = expr
-        elif isinstance(expr, list):
-            self._underlying_dynamics = expr
+    def underlying_dynamics(self, argument):
+        if argument is None:
+            self._underlying_dynamics = argument
+        elif isinstance(argument, list):
+            self._underlying_dynamics = argument
         else:
             message = 'must be list of pairs: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)

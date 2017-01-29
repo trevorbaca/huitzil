@@ -339,14 +339,14 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         return self._extra_counts_per_division
 
     @extra_counts_per_division.setter
-    def extra_counts_per_division(self, expr):
-        if expr is None:
+    def extra_counts_per_division(self, argument):
+        if argument is None:
             self._extra_counts_per_division = []
-        elif isinstance(expr, list):
-            self._extra_counts_per_division = expr
+        elif isinstance(argument, list):
+            self._extra_counts_per_division = argument
         else:
             message = 'must be list or none: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -360,14 +360,14 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         return self._glissando_patterns
 
     @glissando_patterns.setter
-    def glissando_patterns(self, expr):
-        if expr is None:
+    def glissando_patterns(self, argument):
+        if argument is None:
             self._glissando_patterns = []
-        elif isinstance(expr, list):
-            self._glissando_patterns = expr
+        elif isinstance(argument, list):
+            self._glissando_patterns = argument
         else:
             message = 'must be list or none: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -380,14 +380,14 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         return self._index_logical_ties
 
     @index_logical_ties.setter
-    def index_logical_ties(self, expr):
-        if expr is None:
+    def index_logical_ties(self, argument):
+        if argument is None:
             self._index_logical_ties = []
-        elif isinstance(expr, type(True)):
-            self._index_logical_ties = expr
+        elif isinstance(argument, type(True)):
+            self._index_logical_ties = argument
         else:
             message = 'must be boolean or none: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
     
     @property
@@ -399,14 +399,14 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         return self._pc_operators
 
     @pc_operators.setter
-    def pc_operators(self, expr):
-        if expr is None:
+    def pc_operators(self, argument):
+        if argument is None:
             self._pc_operators = []
-        elif isinstance(expr, list):
-            self._pc_operators = expr
+        elif isinstance(argument, list):
+            self._pc_operators = argument
         else:
             message = 'must be list or none: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -421,14 +421,14 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         return self._pc_displacement
 
     @pc_displacement.setter
-    def pc_displacement(self, expr):
-        if expr is None:
+    def pc_displacement(self, argument):
+        if argument is None:
             self._pc_displacement = []
-        elif isinstance(expr, list):
-            self._pc_displacement = expr
+        elif isinstance(argument, list):
+            self._pc_displacement = argument
         else:
             message = 'must be list or none: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -440,14 +440,14 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         return self._pitch_class_trees
 
     @pitch_class_trees.setter
-    def pitch_class_trees(self, expr):
-        if expr is None:
+    def pitch_class_trees(self, argument):
+        if argument is None:
             self._pitch_class_trees = []
-        elif isinstance(expr, tuple):
-            self._pitch_class_trees = expr
+        elif isinstance(argument, tuple):
+            self._pitch_class_trees = argument
         else:
             message = 'must be tuple of pitch-class trees or none: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -459,14 +459,14 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         return self._start_tempo
 
     @start_tempo.setter
-    def start_tempo(self, expr):
-        if expr is None:
-            self._start_tempo = expr
-        elif isinstance(expr, Tempo):
-            self._start_tempo = expr
+    def start_tempo(self, argument):
+        if argument is None:
+            self._start_tempo = argument
+        elif isinstance(argument, Tempo):
+            self._start_tempo = argument
         else:
             message = 'must be tempo: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -478,14 +478,14 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         return self._stop_tempo
 
     @stop_tempo.setter
-    def stop_tempo(self, expr):
-        if expr is None:
-            self._stop_tempo = expr
-        elif isinstance(expr, Tempo):
-            self._stop_tempo = expr
+    def stop_tempo(self, argument):
+        if argument is None:
+            self._stop_tempo = argument
+        elif isinstance(argument, Tempo):
+            self._stop_tempo = argument
         else:
             message = 'must be tempo: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
 
     @property
@@ -497,12 +497,12 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         return self._voice_map
 
     @voice_map.setter
-    def voice_map(self, expr):
-        if expr is None:
+    def voice_map(self, argument):
+        if argument is None:
             self._voice_map = []
-        elif isinstance(expr, list):
-            self._voice_map = expr
+        elif isinstance(argument, list):
+            self._voice_map = argument
         else:
             message = 'must be list or none: {!r}.'
-            message = message.format(expr)
+            message = message.format(argument)
             raise TypeError(message)
