@@ -88,7 +88,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         pass
 
     def _annotate_original_durations(self, note_lists):
-        notes = abjad.sequencetools.flatten_sequence(note_lists)
+        notes = baca.Sequence(note_lists).flatten()
         for note in notes:
             abjad.attach(note.written_duration, note)
 
@@ -165,12 +165,12 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
             assert len(component) == 2
             voice_number = component[0]
             indices = component[1]
-            notes = abjad.sequencetools.flatten_sequence(note_lists)
+            notes = baca.Sequence(note_lists).flatten()
             for i, note in enumerate(notes):
                 if i in indices:
                     abjad.detach(int, note)
                     abjad.attach(voice_number, note)
-        notes = abjad.sequencetools.flatten_sequence(note_lists)
+        notes = baca.Sequence(note_lists).flatten()
         for note in notes:
             assert abjad.inspect_(note).has_indicator(int), repr(note)
 
