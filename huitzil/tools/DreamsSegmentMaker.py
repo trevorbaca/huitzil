@@ -425,8 +425,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             measure_durations,
             )
         measure_counts = [len(_) for _ in measure_parts]
-        parts = abjad.sequencetools.partition_sequence_by_counts(
-            music_voice[:],
+        parts = baca.Sequence(music_voice[:]).partition_by_counts(
             measure_counts,
             )
         return parts

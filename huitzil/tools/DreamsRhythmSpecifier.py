@@ -119,10 +119,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
             runs = abjad.sequencetools.partition_sequence_by_value_of_elements(
                 voice_numbers)
             counts = [len(_) for _ in runs]
-            note_groups = abjad.sequencetools.partition_sequence_by_counts(
-                tuplet[:],
-                counts,
-                )
+            note_groups = baca.Sequence(tuplet[:]).partition_by_counts(counts)
             for note_group in note_groups:
                 beam = abjad.spannertools.DuratedComplexBeam()
                 abjad.attach(beam, note_group)
