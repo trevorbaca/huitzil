@@ -116,8 +116,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         for tuplet in tuplets:
             voice_numbers = [
                 abjad.inspect_(_).get_indicator(int) for _ in tuplet]
-            runs = abjad.sequencetools.partition_sequence_by_value_of_elements(
-                voice_numbers)
+            runs = baca.Sequence(voice_numbers).group_by()
             counts = [len(_) for _ in runs]
             note_groups = baca.Sequence(tuplet[:]).partition_by_counts(counts)
             for note_group in note_groups:
