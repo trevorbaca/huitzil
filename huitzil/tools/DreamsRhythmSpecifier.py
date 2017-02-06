@@ -96,8 +96,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
         if not self.glissando_patterns:
             return
         notes = list(abjad.iterate(music).by_class(abjad.Note))
-        note_pairs = list(abjad.sequencetools.abjad.iterate_sequence_nwise(
-            notes, n=2))
+        note_pairs = abjad.Sequence(notes).nwise()
         total_note_pairs = len(note_pairs)
         for i, note_pair in enumerate(note_pairs):
             has_glissando = False
