@@ -103,7 +103,7 @@ music_maker.pc_operators = [
     abjad.Transposition(2), 
     abjad.Inversion(),
     ]
-#music_maker.pc_displacement = [rhythmmakertools.silence_none()]
+#music_maker.pc_displacement = [silence_none()]
 music_maker.pc_displacement = []
 music_maker.voice_map = [
     [3, range(0, 99)],
@@ -116,7 +116,7 @@ music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
 music_maker.pc_operators = [
     abjad.Transposition(3), 
     ]
-#music_maker.pc_displacement = [rhythmmakertools.silence_none()]
+#music_maker.pc_displacement = [silence_none()]
 music_maker.pc_displacement = []
 music_maker.voice_map = [
     [3, range(0, 99)],
