@@ -7,7 +7,7 @@ bar = '|'
 crescendo = '<'
 decrescendo = '>'
 
-dashed_arrow = abjad.indicatortools.Arrow(
+dashed_arrow = abjad.Arrow(
     dash_fraction=0.25,
     dash_period=1.5,
     left_broken_text=False,
