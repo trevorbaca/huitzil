@@ -202,7 +202,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         context = self._score['Time Signature Context']
         prototype = (
             abjad.Fermata,
-            abjad.indicatortools.BreathMark,
+            abjad.BreathMark,
             )
         for stage_number, directive in self.tempo_specifier:
             if not isinstance(directive, prototype):

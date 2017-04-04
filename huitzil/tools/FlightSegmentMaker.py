@@ -268,7 +268,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             raise ValueError(message)
         for leaf in abjad.iterate(leaves).by_leaf():
             if abjad.Duration(1, 16) < leaf.written_duration:
-                tremolo = abjad.indicatortools.StemTremolo(16)
+                tremolo = abjad.StemTremolo(16)
                 abjad.attach(tremolo, leaf)
         return leaves
 

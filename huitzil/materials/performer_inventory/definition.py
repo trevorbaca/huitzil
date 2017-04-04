@@ -30,7 +30,7 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                                     ),
                                 ]
                             ),
-                        default_tuning=abjad.indicatortools.Tuning(
+                        default_tuning=abjad.Tuning(
                             pitches=abjad.pitchtools.PitchSegment(
                                 (
                                     abjad.pitchtools.NamedPitch('c,'),
