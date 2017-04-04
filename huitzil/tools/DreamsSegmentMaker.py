@@ -392,7 +392,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             'stylesheets',
             'stylesheet.ily',
             )
-        lilypond_file = abjad.lilypondfiletools.make_basic_lilypond_file(
+        lilypond_file = abjad.LilyPondFile.new(
             music=self._score,
             includes=[path],
             use_relative_includes=True,
