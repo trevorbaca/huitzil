@@ -9,6 +9,8 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
 
     ::
 
+        >>> import abjad
+        >>> import baca
         >>> import huitzil
 
     '''
@@ -388,7 +390,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
     def _populate_time_signature_voice(self):
         if not self.notes:
             return
-        voice = self._score['Time Signature Voice']
+        context = self._score['Time Signature Context Skips']
         measure_durations = []
         current_measure_duration = abjad.Duration(0)
         for expression in self.notes:
@@ -404,7 +406,11 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             measure_durations.append(current_measure_duration)
         measures = abjad.scoretools.make_spacer_skip_measures(
             measure_durations)
-        voice.extend(measures)
+        context.extend(measures)
+        measures = abjad.scoretools.make_spacer_skip_measures(
+            measure_durations)
+        context = self._score['Time Signature Context Multimeasure Rests']
+        context.extend(measures)
 
     def _populate_tremolo_indicator_voice(self):
         tremolo_indicator_voice = self._score['Tremolo Indicator Voice']

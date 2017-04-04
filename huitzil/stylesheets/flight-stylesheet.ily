@@ -8,10 +8,8 @@
 \layout {
     indent = 0
     \context {
-        \Voice
-        \name TimeSignatureVoice
-        \type Engraver_group
-        \alias Voice
+        \TimeSignatureContext
+        \override TimeSignature.stencil = ##f
     }
     \context {
         \Voice

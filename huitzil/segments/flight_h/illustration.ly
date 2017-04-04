@@ -1,4 +1,4 @@
-% 2017-04-04 13:45
+% 2017-04-04 13:53
 
 \version "2.19.58"
 \language "english"
@@ -14,98 +14,187 @@
 
 \score {
     \context Score = "Score" <<
+        \context TimeSignatureContext = "Time Signature Context" <<
+            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    \time 4/3
+                    s1 * 4/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 8/5
+                    s1 * 8/5
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 4/3
+                    s1 * 4/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 8/5
+                    s1 * 8/5
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 4/3
+                    s1 * 4/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 8/5
+                    s1 * 8/5
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 4/3
+                    s1 * 4/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 8/5
+                    s1 * 8/5
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+            }
+            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                {
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    \time 4/3
+                    s1 * 4/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 8/5
+                    s1 * 8/5
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 4/3
+                    s1 * 4/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 8/5
+                    s1 * 8/5
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 4/3
+                    s1 * 4/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 8/5
+                    s1 * 8/5
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 4/3
+                    s1 * 4/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 8/5
+                    s1 * 8/5
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+            }
+        >>
         \context PianoStaff = "Piano Staff" <<
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol.line-count = #7
             } <<
-                \context TimeSignatureVoice = "Time Signature Voice" {
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        s1 * 1
-                    }
-                    {
-                        \time 4/3
-                        s1 * 4/3
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 8/5
-                        s1 * 8/5
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 4/3
-                        s1 * 4/3
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 8/5
-                        s1 * 8/5
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 4/3
-                        s1 * 4/3
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 8/5
-                        s1 * 8/5
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 4/3
-                        s1 * 4/3
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 8/5
-                        s1 * 8/5
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        s1 * 1
-                    }
-                    {
-                        s1 * 1
-                    }
-                    {
-                        s1 * 1
-                    }
-                    {
-                        s1 * 1
-                    }
-                    {
-                        s1 * 1
-                    }
-                }
                 \context TempoIndicatorVoice = "Tempo Indicator Voice" {
                     s1 * 1/4
                     s1 * 1/4

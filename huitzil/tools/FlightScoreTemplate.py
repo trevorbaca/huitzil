@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 import abjad
+import baca
 
 
-class FlightScoreTemplate(abjad.abctools.AbjadValueObject):
+class FlightScoreTemplate(baca.tools.ScoreTemplate):
     r'''Flight score template.
 
     ::
 
+        >>> import abjad
+        >>> import baca
         >>> import huitzil
 
     '''
@@ -14,7 +17,7 @@ class FlightScoreTemplate(abjad.abctools.AbjadValueObject):
     ### SPECIAL METHODS ###
 
     def __call__(self):
-        r'''Calls Huitzil score template.
+        r'''Calls score template.
 
         ::
 
@@ -25,10 +28,14 @@ class FlightScoreTemplate(abjad.abctools.AbjadValueObject):
         
             >>> f(score)
             \context Score = "Score" <<
+                \context TimeSignatureContext = "Time Signature Context" <<
+                    \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                    }
+                    \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                    }
+                >>
                 \context PianoStaff = "Piano Staff" <<
                     \context BowStaff = "Bow Staff" <<
-                        \context TimeSignatureVoice = "Time Signature Voice" {
-                        }
                         \context TempoIndicatorVoice = "Tempo Indicator Voice" {
                         }
                         \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
@@ -45,55 +52,35 @@ class FlightScoreTemplate(abjad.abctools.AbjadValueObject):
 
         Returns score.
         '''
-
-        # make bow staff
+        time_signature_context = self._make_time_signature_context()
         bow_staff = abjad.Staff(
             context_name='BowStaff',
             name='Bow Staff',
             )
         bow_staff.is_simultaneous = True
-
-        # make time signature voice
-        time_signature_voice = abjad.Voice(
-            context_name='TimeSignatureVoice', 
-            name='Time Signature Voice',
-            )
-        bow_staff.append(time_signature_voice)
-
-        # make tempo indicator voice
         tempo_indicator_voice = abjad.Voice(
             context_name='TempoIndicatorVoice', 
             name='Tempo Indicator Voice',
             )
         bow_staff.append(tempo_indicator_voice)
-
-        # make tremolo indicator voice
         tremolo_indicator_voice = abjad.Voice(
             context_name='TremoloIndicatorVoice', 
             name='Tremolo Indicator Voice',
             )
         bow_staff.append(tremolo_indicator_voice)
-
-        # make bow location voice
         bow_location_voice = abjad.Voice(
             context_name='BowLocationVoice',
             name='Bow Location Voice',
             )
         bow_staff.append(bow_location_voice)
-
-        # make underlying dynamics voice
         underlying_dynamics_voice = abjad.Voice(
             context_name='UnderlyingDynamicsVoice',
             name='Underlying Dynamics Voice',
             )
         bow_staff.append(underlying_dynamics_voice)
-
-        # make pitch staff
         pitch_staff = abjad.Staff(
             name='Pitch Staff',
             )
-
-        # make staff group
         staff_group = abjad.StaffGroup(
             context_name='PianoStaff',
             name='Piano Staff',
@@ -102,14 +89,10 @@ class FlightScoreTemplate(abjad.abctools.AbjadValueObject):
             bow_staff,
             pitch_staff,
             ])
-
-        # make score
-        score = abjad.Score(
-            [
+        score = abjad.Score([
+            time_signature_context,
             staff_group,
             ],
             name='Score',
             )
-        
-        # return score
         return score
