@@ -1,4 +1,4 @@
-% 2017-04-04 13:45
+% 2017-04-04 13:52
 
 \version "2.19.58"
 \language "english"
@@ -14,246 +14,484 @@
 
 \score {
     \context Score = "Score" <<
+        \context TimeSignatureContext = "Time Signature Context" <<
+            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+            }
+            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 1/3
+                    s1 * 1/3
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+            }
+        >>
         \context PianoStaff = "Piano Staff" <<
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol.line-count = #11
             } <<
-                \context TimeSignatureVoice = "Time Signature Voice" {
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/2
-                        s1 * 1/2
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/2
-                        s1 * 1/2
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/2
-                        s1 * 1/2
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/2
-                        s1 * 1/2
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/2
-                        s1 * 1/2
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/2
-                        s1 * 1/2
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/2
-                        s1 * 1/2
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/2
-                        s1 * 1/2
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/2
-                        s1 * 1/2
-                    }
-                    {
-                        \time 3/4
-                        s1 * 3/4
-                    }
-                    {
-                        \time 1/3
-                        s1 * 1/3
-                    }
-                    {
-                        \time 1/1
-                        s1 * 1
-                    }
-                }
                 \context TempoIndicatorVoice = "Tempo Indicator Voice" \with {
                     \override TextScript.staff-padding = #5
                     \override TextSpanner.staff-padding = #5.75
