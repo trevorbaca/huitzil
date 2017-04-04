@@ -233,7 +233,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         for scope in compound_scope.simple_scopes:
             start_stage, stop_stage = scope.stages
             offsets = self._get_offsets(start_stage, stop_stage)
-            timespan = abjad.timespantools.Timespan(*offsets)
+            timespan = abjad.Timespan(*offsets)
             timespan_map.append((scope.voice_name, timespan))
             timespans.append(timespan)
         compound_scope._timespan_map = timespan_map
@@ -251,7 +251,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
                     logical_ties.append(logical_tie)
         start_offset = min(_.start_offset for _ in timespans)
         stop_offset = max(_.stop_offset for _ in timespans)
-        timespan = abjad.timespantools.Timespan(start_offset, stop_offset)
+        timespan = abjad.Timespan(start_offset, stop_offset)
         return logical_ties, timespan
 
     def _configure_lilypond_file(self):
