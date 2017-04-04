@@ -1,6 +1,6 @@
-% 2015-09-09 13:11
+% 2017-04-04 13:27
 
-\version "2.19.23"
+\version "2.19.58"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -16,7 +16,7 @@
     \context Score = "Score" <<
         \context PianoStaff = "Piano Staff" <<
             \context BowStaff = "Bow Staff" \with {
-                \override StaffSymbol #'line-count = #7
+                \override StaffSymbol.line-count = #7
             } <<
                 \context TimeSignatureVoice = "Time Signature Voice" {
                     {
@@ -338,7 +338,7 @@
                             \dynamic
                                 ffz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         b'1 :16
                             _ \markup {
@@ -346,7 +346,7 @@
                                     fz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         b'1 :16
                             _ \markup {
@@ -359,7 +359,7 @@
                             \dynamic
                                 ffz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16
                             _ \markup {
@@ -367,7 +367,7 @@
                                     mfz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16
                             _ \markup {
@@ -375,7 +375,7 @@
                                     fz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16
                             _ \markup {
@@ -383,7 +383,7 @@
                                     ffz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16
                             _ \markup {
@@ -396,7 +396,7 @@
                             \dynamic
                                 ffz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         b'1 :16
                             _ \markup {
@@ -404,7 +404,7 @@
                                     fz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         b'1 :16
                             _ \markup {
@@ -417,7 +417,7 @@
                             \dynamic
                                 ffz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16
                             _ \markup {
@@ -425,7 +425,7 @@
                                     mfz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16
                             _ \markup {
@@ -433,7 +433,7 @@
                                     fz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16
                             _ \markup {
@@ -441,7 +441,7 @@
                                     ffz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16
                             _ \markup {
@@ -454,7 +454,7 @@
                             \dynamic
                                 ffz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         b'1 :16
                             _ \markup {
@@ -462,7 +462,7 @@
                                     fz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         b'1 :16
                             _ \markup {
@@ -475,7 +475,7 @@
                             \dynamic
                                 ffz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16
                             _ \markup {
@@ -483,7 +483,7 @@
                                     mfz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16
                             _ \markup {
@@ -491,7 +491,7 @@
                                     fz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16
                             _ \markup {
@@ -499,7 +499,7 @@
                                     ffz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         b'2 :16 \glissando
                             _ \markup {
@@ -512,7 +512,7 @@
                             \dynamic
                                 ffz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         a''1 :16
                             _ \markup {
@@ -520,7 +520,7 @@
                                     fz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         a''1 :16
                             _ \markup {
@@ -533,7 +533,7 @@
                             \dynamic
                                 ffz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         a''2 :16
                             _ \markup {
@@ -541,7 +541,7 @@
                                     mfz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         a''2 :16
                             _ \markup {
@@ -549,7 +549,7 @@
                                     fz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         a''2 :16
                             _ \markup {
@@ -557,7 +557,7 @@
                                     ffz
                                 }
                     }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
                         a''2 :16
                             _ \markup {
@@ -597,7 +597,7 @@
                             }
                 }
                 \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
-                    \once \override Hairpin #'stencil = #constante-hairpin
+                    \once \override Hairpin.stencil = #constante-hairpin
                     s1 * 1/4 \< \f
                     s1 * 1/4
                     s1 * 1/4
@@ -626,17 +626,17 @@
                     s1 * 2/5
                     s1 * 2/5 \< \p
                     s1 * 2/5
-                    \once \override Hairpin #'stencil = #constante-hairpin
+                    \once \override Hairpin.stencil = #constante-hairpin
                     s1 * 1 \< \mp
                     s1 * 2/3
                     s1 * 2/3
-                    \once \override Hairpin #'stencil = #constante-hairpin
+                    \once \override Hairpin.stencil = #constante-hairpin
                     s1 * 1 \< \p
                     s1 * 2/5
                     s1 * 2/5
                     s1 * 2/5
                     s1 * 2/5
-                    \once \override Hairpin #'stencil = #constante-hairpin
+                    \once \override Hairpin.stencil = #constante-hairpin
                     s1 * 1 \< \pp
                     s1 * 1
                     s1 * 1
@@ -651,9 +651,9 @@
                 \parenthesize
                 a,,1 * 107/15 \glissando
                 bf,,1 * 2/5 \glissando
-                \once \override NoteHead #'duration-log = #2
-                \once \override NoteHead #'no-ledgers = ##t
-                \once \override NoteHead #'style = #'do
+                \once \override NoteHead.duration-log = #2
+                \once \override NoteHead.no-ledgers = ##t
+                \once \override NoteHead.style = #'do
                 \clef "treble"
                 c'''1 * 164/15
             }

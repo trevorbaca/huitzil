@@ -1,6 +1,6 @@
-% 2015-09-09 13:11
+% 2017-04-04 13:27
 
-\version "2.19.23"
+\version "2.19.58"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -16,7 +16,7 @@
     \context Score = "Score" <<
         \context PianoStaff = "Piano Staff" <<
             \context BowStaff = "Bow Staff" \with {
-                \override StaffSymbol #'line-count = #11
+                \override StaffSymbol.line-count = #11
             } <<
                 \context TimeSignatureVoice = "Time Signature Voice" {
                     {
@@ -128,8 +128,8 @@
                     }
                 }
                 \context TempoIndicatorVoice = "Tempo Indicator Voice" \with {
-                    \override TextScript #'staff-padding = #5
-                    \override TextSpanner #'staff-padding = #5.75
+                    \override TextScript.staff-padding = #5
+                    \override TextSpanner.staff-padding = #5.75
                 } {
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.padding = 0
@@ -472,6 +472,38 @@
                         }
                 }
                 \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+                    s1 * 1
+                    s1 * 3/4
+                    s1 * 3/4
+                    s1 * 1
+                    s1 * 1
+                    s1 * 3/4
+                    s1 * 3/4
+                    s1 * 1
+                    s1 * 1
+                    s1 * 3/4
+                    s1 * 3/4
+                    s1 * 1
+                    s1 * 1
+                    s1 * 3/4
+                    s1 * 3/4
+                    s1 * 1
+                    s1 * 1
+                    s1 * 3/4
+                    s1 * 3/4
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
                 }
                 \context BowLocationVoice = "Bow Location Voice" {
                     f1 :16
