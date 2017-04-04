@@ -1,6 +1,6 @@
-% 2015-09-09 13:11
+% 2017-04-04 13:26
 
-\version "2.19.23"
+\version "2.19.58"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -16,7 +16,7 @@
     \context Score = "Score" <<
         \context PianoStaff = "Piano Staff" <<
             \context BowStaff = "Bow Staff" \with {
-                \override StaffSymbol #'line-count = #11
+                \override StaffSymbol.line-count = #11
             } <<
                 \context TimeSignatureVoice = "Time Signature Voice" {
                     {
@@ -255,8 +255,8 @@
                     }
                 }
                 \context TempoIndicatorVoice = "Tempo Indicator Voice" \with {
-                    \override TextScript #'staff-padding = #5
-                    \override TextSpanner #'staff-padding = #5.75
+                    \override TextScript.staff-padding = #5
+                    \override TextSpanner.staff-padding = #5.75
                 } {
                     s1 * 3/4 ^ \markup {
                         \fontsize
@@ -742,6 +742,65 @@
                     s1 * 1
                 }
                 \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 1/2
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 1/2
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 1
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 1/2
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 1
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 1/2
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 1/2
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 1
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 1/2
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 1
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 1/2
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 1
+                    s1 * 3/4
+                    s1 * 1/2
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 1
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 3/4
+                    s1 * 1/2
+                    s1 * 3/4
+                    s1 * 1/3
+                    s1 * 1
                 }
                 \context BowLocationVoice = "Bow Location Voice" {
                     e'''2. :16
@@ -749,7 +808,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         e'''2 :16
                             _ \markup {
@@ -767,7 +826,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         c'''2 :16
                             _ \markup {
@@ -781,7 +840,7 @@
                                 mfz
                             }
                     a''2 :16 \glissando
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         c'''2 :16 \glissando
                     }
@@ -795,7 +854,7 @@
                             \dynamic
                                 mfz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         c'''2 :16 \glissando
                     }
@@ -814,7 +873,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         f''2 :16
                             _ \markup {
@@ -833,7 +892,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         f''2 :16
                             _ \markup {
@@ -851,7 +910,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         d''2 :16
                             _ \markup {
@@ -869,7 +928,7 @@
                             \dynamic
                                 mfz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         b'2 :16
                             _ \markup {
@@ -883,7 +942,7 @@
                                 mfz
                             }
                     g'2 :16 \glissando
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         b'2 :16 \glissando
                     }
@@ -897,7 +956,7 @@
                             \dynamic
                                 mfz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         b'2 :16 \glissando
                     }
@@ -916,7 +975,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         e'2 :16
                             _ \markup {
@@ -935,7 +994,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         e'2 :16
                             _ \markup {
@@ -953,7 +1012,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         c'2 :16
                             _ \markup {
@@ -972,7 +1031,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         c'2 :16
                             _ \markup {
@@ -992,7 +1051,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         a2 :16
                             _ \markup {
@@ -1010,7 +1069,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         f2 :16
                             _ \markup {
@@ -1029,7 +1088,7 @@
                             \dynamic
                                 fz
                             }
-                    \tweak #'edge-height #'(0.7 . 0)
+                    \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
                         f2 :16
                             _ \markup {
