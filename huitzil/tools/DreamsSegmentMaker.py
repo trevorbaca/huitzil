@@ -23,7 +23,6 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         '_final_markup_extra_offset',
         '_music_specifiers',
         '_music_makers',
-        '_page_breaks',
         '_score',
         '_show_leaf_indices',
         '_label_stage_numbers',
@@ -44,7 +43,6 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         final_markup_extra_offset=None,
         music_makers=None,
         name=None,
-        page_breaks=None,
         show_leaf_indices=None,
         label_stages=False,
         slurs=None,
@@ -64,8 +62,6 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         self._final_markup_extra_offset = final_markup_extra_offset
         self.name = name
         self._music_specifiers = []
-        page_breaks = page_breaks or []
-        self._page_breaks = page_breaks
         assert isinstance(show_leaf_indices, bool)
         self._show_leaf_indices = show_leaf_indices
         assert isinstance(label_stages, bool)
@@ -94,7 +90,6 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         self._adjust_stems()
         self._attach_tempo_indicators()
         #self._attach_fermatas()
-        self._add_manual_page_breaks()
         self._annotate_stages()
         self._annotate_leaf_indices()
         self._interpret_music_specifiers()
@@ -102,7 +97,6 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         self._tweak_tuplet_brackets()
         self._add_final_bar_line()
         self._add_final_markup()
-        self._raise_duration()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         if not abjad.inspect_(score).is_well_formed():
@@ -120,18 +114,6 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         return self.lilypond_file, segment_metadata
 
     ### PRIVATE METHODS ###
-
-    def _add_manual_page_breaks(self):
-        time_signature_context = self._score['Time Signature Context']
-        measures = abjad.iterate(time_signature_context).by_class(abjad.Measure)
-        for i, measure in enumerate(measures):
-            measure_number = i + 1
-            if measure_number in self.page_breaks:
-                command = abjad.LilyPondCommand(
-                    'pageBreak',
-                    format_slot='after',
-                    )
-                abjad.attach(command, measure)
 
     def _add_final_bar_line(self):
         if not self.final_bar_line:
@@ -170,14 +152,15 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
                         abjad.override(note).beam.positions = up_beam_positions
                     elif voice_number == 3:
                         abjad.override(note).stem.direction = Down
-                        abjad.override(note).beam.positions = down_beam_positions
+                        abjad.override(note).beam.positions = \
+                            down_beam_positions
                     else:
                         raise ValueError(voice_number)
 
     def _annotate_stages(self):
         if not self.label_stages:
             return
-        context = self._score['Time Signature Context']
+        context = self._score['Time Signature Context Skips']
         for stage_index in range(self.stage_count):
             stage_number = stage_index + 1
             result = self._stage_number_to_measure_indices(stage_number)
@@ -200,7 +183,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
     def _attach_fermatas(self):
         if not self.tempo_specifier:
             return
-        context = self._score['Time Signature Context']
+        context = self._score['Time Signature Context Multimeasure Rests']
         prototype = (
             abjad.Fermata,
             abjad.BreathMark,
@@ -278,7 +261,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             lilypond_file.header_block.composer = None
 
     def _get_offsets(self, start_stage, stop_stage):
-        context = self._score['Time Signature Context']
+        context = self._score['Time Signature Context Skips']
         result = self._stage_number_to_measure_indices(start_stage)
         start_measure_index, stop_measure_index = result
         start_measure = context[start_measure_index]
@@ -416,7 +399,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         self._score = score
 
     def _partition_music_into_measures(self):
-        context = self._score['Time Signature Context']
+        context = self._score['Time Signature Context Skips']
         measure_durations = [abjad.inspect_(_).get_duration() for _ in context]
         music_voice = self._score['Music Voice']
         component_durations = [
@@ -430,7 +413,6 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         return parts
 
     def _populate_time_signature_context(self):
-        time_signature_context = self._score['Time Signature Context']
         music_voice = self._score['Music Voice']
         measure_durations = []
         current_duration = abjad.Duration(0)
@@ -447,9 +429,11 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         measure_durations.append(current_duration)
         measures = abjad.scoretools.make_spacer_skip_measures(
             measure_durations)
-        time_signature_context.extend(measures)
-        for measure in abjad.iterate(time_signature_context).by_class(abjad.Measure):
-            time_signature = abjad.inspect_(measure).get_indicator(abjad.TimeSignature)
+        context = self._score['Time Signature Context Skips']
+        context.extend(measures)
+        for measure in abjad.iterate(context).by_class(abjad.Measure):
+            agent = abjad.inspect_(measure)
+            time_signature = agent.get_indicator(abjad.TimeSignature)
             if time_signature.denominator < 4:
                 fraction = abjad.mathtools.NonreducedFraction(
                     time_signature.pair)
@@ -457,14 +441,10 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
                 abjad.detach(time_signature, measure)
                 new_time_signature = abjad.TimeSignature(fraction)
                 abjad.attach(new_time_signature, measure)
-
-    def _raise_duration(self):
-        if not self.calculate_duration:
-            return
-        music_voice = self._score['Music Voice']
-        duration = abjad.inspect_(music_voice).get_duration(in_seconds=True)
-        string = '%.2f seconds' % float(duration)
-        raise Exception(string)
+        measures = abjad.scoretools.make_spacer_skip_measures(
+            measure_durations)
+        context = self._score['Time Signature Context Multimeasure Rests']
+        context.extend(measures)
 
     def _tweak_tuplet_brackets(self):
         measures = self._partition_music_into_measures()
@@ -505,6 +485,14 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         return self._final_markup_extra_offset
 
     @property
+    def label_stages(self):
+        r'''Is true when segment should annotate stages.
+
+        Set to true or false.
+        '''
+        return self._label_stage_numbers
+
+    @property
     def lilypond_file(self):
         r'''Gets LilyPond file.
 
@@ -529,28 +517,12 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         return tuple(self._music_specifiers)
 
     @property
-    def page_breaks(self):
-        r'''Gets measure numbers of page breaks.
-
-        Returns list.
-        '''
-        return self._page_breaks
-    
-    @property
     def show_leaf_indices(self):
         r'''Is true when segment should annotate leaf indices.
 
         Set to true or false.
         '''
         return self._show_leaf_indices
-
-    @property
-    def label_stages(self):
-        r'''Is true when segment should annotate stages.
-
-        Set to true or false.
-        '''
-        return self._label_stage_numbers
 
     @property
     def slurs(self):

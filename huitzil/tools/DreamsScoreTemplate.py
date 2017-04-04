@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 import abjad
+import baca
 
 
-class DreamsScoreTemplate(abjad.abctools.AbjadValueObject):
+class DreamsScoreTemplate(baca.tools.ScoreTemplate):
     r'''Dreams score template.
 
     ::
 
+        >>> import abjad
+        >>> import baca
         >>> import huitzil
 
     '''
@@ -14,59 +17,48 @@ class DreamsScoreTemplate(abjad.abctools.AbjadValueObject):
     ### SPECIAL METHODS ###
 
     def __call__(self):
-        r'''Calls Huitzil score template.
+        r'''Calls score template.
 
-        >>> template = huitzil.tools.DreamsScoreTemplate()
-        >>> score = template()
+        ::
+
+            >>> template = huitzil.tools.DreamsScoreTemplate()
+            >>> score = template()
+
+        ::
+
         
-        >>> f(score)
-        \context Score = "Score" <<
-            \context TimeSignatureContext = "Time Signature Context" {
-            }
-            \context Staff = "Staff" <<
-                \clef "bass"
-                \context Voice = "Music Voice" {
-                }
+            >>> f(score)
+            \context Score = "Score" <<
+                \context TimeSignatureContext = "Time Signature Context" <<
+                    \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                    }
+                    \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                    }
+                >>
+                \context Staff = "Staff" <<
+                    \clef "bass"
+                    \context Voice = "Music Voice" {
+                    }
+                >>
             >>
-        >>
 
         Returns score.
         '''
-
-        # make time signature context
-        time_signature_context = abjad.Context(
-            context_name='TimeSignatureContext',
-            name='Time Signature Context',
-            )
-
-        # make staff
+        time_signature_context = self._make_time_signature_context()
         staff = abjad.Staff(
             name='Staff',
             )
         staff.is_simultaneous = True
         abjad.attach(abjad.Clef('bass'), staff)
-
-#        # make text spanner voice
-#        text_spanner_voice = abjad.Voice(
-#            context_name='TextSpannerVoice', 
-#            name='Text Spanner Voice',
-#            )
-#        staff.append(text_spanner_voice)
-
-        # make music voice
         music_voice = abjad.Voice(
             name='Music Voice',
             )
         staff.append(music_voice)
-
-        # make score
         score = abjad.Score(
             [
-            time_signature_context,
-            staff,
-            ],
+                time_signature_context,
+                staff,
+                ],
             name='Score',
             )
-        
-        # return score
         return score
