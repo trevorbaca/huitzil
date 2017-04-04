@@ -31,20 +31,20 @@ performer_inventory = abjad.instrumenttools.PerformerInventory(
                                 ]
                             ),
                         default_tuning=abjad.Tuning(
-                            pitches=abjad.pitchtools.PitchSegment(
+                            pitches=abjad.PitchSegment(
                                 (
-                                    abjad.pitchtools.NamedPitch('c,'),
-                                    abjad.pitchtools.NamedPitch('g,'),
-                                    abjad.pitchtools.NamedPitch('d'),
-                                    abjad.pitchtools.NamedPitch('a'),
+                                    abjad.NamedPitch('c,'),
+                                    abjad.NamedPitch('g,'),
+                                    abjad.NamedPitch('d'),
+                                    abjad.NamedPitch('a'),
                                     ),
-                                item_class=abjad.pitchtools.NamedPitch,
+                                item_class=abjad.NamedPitch,
                                 ),
                             ),
-                        pitch_range=abjad.pitchtools.PitchRange(
+                        pitch_range=abjad.PitchRange(
                             range_string='[C2, G5]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.pitchtools.NamedPitch("c'"),
+                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
                         ),
                     ]
                 ),
