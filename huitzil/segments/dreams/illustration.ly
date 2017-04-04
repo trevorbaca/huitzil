@@ -1,4 +1,4 @@
-% 2017-04-04 13:28
+% 2017-04-04 13:44
 
 \version "2.19.58"
 \language "english"
@@ -11,220 +11,436 @@
 
 \score {
     \context Score = "Score" <<
-        \context TimeSignatureContext = "Time Signature Context" {
-            {
-                \time 7/8
-                s1 * 7/8
+        \context TimeSignatureContext = "Time Signature Context" <<
+            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 15/16
+                    s1 * 15/16
+                }
+                {
+                    \time 11/16
+                    s1 * 11/16
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 15/16
+                    s1 * 15/16
+                }
+                {
+                    s1 * 15/16
+                }
+                {
+                    \time 3/8
+                    s1 * 3/8
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 3/2
+                    s1 * 3/2
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4
+                }
+                {
+                    \time 2/1
+                    s1 * 2
+                }
+                {
+                    \time 9/8
+                    s1 * 9/8
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 5/8
+                    s1 * 5/8
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    s1 * 3/4
+                }
+                {
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                }
+                {
+                    \time 13/16
+                    s1 * 13/16
+                }
+                {
+                    \time 5/8
+                    s1 * 5/8
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 5/16
+                    s1 * 5/16
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 9/16
+                    s1 * 9/16
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4
+                }
+                {
+                    \time 3/2
+                    s1 * 3/2
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    \time 9/4
+                    s1 * 9/4
+                }
+                {
+                    \time 3/2
+                    s1 * 3/2
+                }
+                {
+                    \time 1/1
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
             }
-            {
-                \time 15/16
-                s1 * 15/16
+            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 15/16
+                    s1 * 15/16
+                }
+                {
+                    \time 11/16
+                    s1 * 11/16
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 15/16
+                    s1 * 15/16
+                }
+                {
+                    s1 * 15/16
+                }
+                {
+                    \time 3/8
+                    s1 * 3/8
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 6/4
+                    s1 * 3/2
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4
+                }
+                {
+                    \time 8/4
+                    s1 * 2
+                }
+                {
+                    \time 9/8
+                    s1 * 9/8
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 5/8
+                    s1 * 5/8
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 2/4
+                    s1 * 1/2
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    \time 2/4
+                    s1 * 1/2
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    \time 2/4
+                    s1 * 1/2
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    s1 * 3/4
+                }
+                {
+                    \time 2/4
+                    s1 * 1/2
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                }
+                {
+                    \time 13/16
+                    s1 * 13/16
+                }
+                {
+                    \time 5/8
+                    s1 * 5/8
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    \time 5/16
+                    s1 * 5/16
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    \time 9/16
+                    s1 * 9/16
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4
+                }
+                {
+                    \time 6/4
+                    s1 * 3/2
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    \time 9/4
+                    s1 * 9/4
+                }
+                {
+                    \time 6/4
+                    s1 * 3/2
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
             }
-            {
-                \time 11/16
-                s1 * 11/16
-            }
-            {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
-                \time 15/16
-                s1 * 15/16
-            }
-            {
-                s1 * 15/16
-            }
-            {
-                \time 3/8
-                s1 * 3/8
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                \time 3/4
-                s1 * 3/4
-            }
-            {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                \time 3/4
-                s1 * 3/4
-            }
-            {
-                \time 6/4
-                s1 * 3/2
-            }
-            {
-                \time 5/4
-                s1 * 5/4
-            }
-            {
-                \time 1/4
-                s1 * 1/4
-            }
-            {
-                \time 8/4
-                s1 * 2
-            }
-            {
-                \time 9/8
-                s1 * 9/8
-            }
-            {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
-                \time 3/4
-                s1 * 3/4
-            }
-            {
-                \time 5/8
-                s1 * 5/8
-            }
-            {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 5/4
-                s1 * 5/4
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 5/4
-                s1 * 5/4
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                s1 * 1
-            }
-            {
-                \time 3/4
-                s1 * 3/4
-            }
-            {
-                s1 * 3/4
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 5/4
-                s1 * 5/4
-            }
-            {
-                \time 13/16
-                s1 * 13/16
-            }
-            {
-                \time 5/8
-                s1 * 5/8
-            }
-            {
-                \time 5/4
-                s1 * 5/4
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                \time 5/16
-                s1 * 5/16
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                \time 9/16
-                s1 * 9/16
-            }
-            {
-                \time 3/4
-                s1 * 3/4
-            }
-            {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
-                \time 3/4
-                s1 * 3/4
-            }
-            {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                \time 1/4
-                s1 * 1/4
-            }
-            {
-                \time 6/4
-                s1 * 3/2
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                s1 * 1
-            }
-            {
-                \time 9/4
-                s1 * 9/4
-            }
-            {
-                \time 6/4
-                s1 * 3/2
-            }
-            {
-                \time 4/4
-                s1 * 1
-            }
-            {
-                \time 3/4
-                s1 * 3/4
-            }
-        }
+        >>
         \context Staff = "Staff" <<
             \clef "bass"
             \context Voice = "Music Voice" {

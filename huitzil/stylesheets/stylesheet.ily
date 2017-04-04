@@ -1,5 +1,7 @@
 #(set-default-paper-size "11x17" 'landscape)
-#(set-global-staff-size 15)
+#(set-global-staff-size 14)
+
+\include "/Users/trevorbaca/baca/baca/stylesheets/scheme.ily"
 
 \paper {
     bottom-margin = 7\mm
@@ -87,6 +89,31 @@
     ragged-bottom = ##t
     ragged-last = ##t
     ragged-right = ##t
+    % TIME SIGNATURE CONTEXT
+    \context {
+        \name TimeSignatureContextSkips
+        \type Engraver_group
+        \consists Staff_symbol_engraver
+        \consists Script_engraver
+        \consists Text_engraver
+        \consists Text_spanner_engraver
+        \override StaffSymbol.stencil = ##f
+        \override TextScript.font-size = 6
+        \override TextScript.outside-staff-priority = 600
+        \override TextScript.staff-padding = 3
+        \override TextSpanner.bound-details.right.attach-dir = #LEFT
+        \override TextSpanner.font-size = 6
+        \override TextSpanner.staff-padding = 4
+        }
+    \context {
+        \name TimeSignatureContextMultimeasureRests
+        \type Engraver_group
+        \consists Multi_measure_rest_engraver
+        \override MultiMeasureRest.transparent = ##t
+        \override MultiMeasureRestText.font-size = 3
+        \override MultiMeasureRestText.outside-staff-priority = 0
+        \override MultiMeasureRestText.padding = 0
+        }
     \context {
         \name TimeSignatureContext
         \type Engraver_group
@@ -98,9 +125,10 @@
         \consists Text_engraver
         \consists Text_spanner_engraver
         \consists Time_signature_engraver
+        \accepts TimeSignatureContextSkips
+        \accepts TimeSignatureContextMultimeasureRests
         \override BarNumber.extra-offset = #'(-2 . -8)
         \override BarNumber.font-size = 0
-        \override BarNumber.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
         \override RehearsalMark.X-extent = #'(0 . 0)
         \override RehearsalMark.Y-offset = -2.25
         \override RehearsalMark.X-offset = 6
@@ -161,7 +189,6 @@
         \override TextScript.direction = #up
         \override Stem.length = 7
         \override TextSpanner.staff-padding = 2
-        %\override TupletBracket.staff-padding = 3
         \override TupletBracket.staff-padding = 4
         instrumentName = \markup { \fontsize #3 Cello \hspace #3.5 }
     }
@@ -170,14 +197,13 @@
         \accepts TimeSignatureContext
         \remove Bar_number_engraver
         \remove Mark_engraver
-        %\remove Metronome_mark_engraver
+        \remove System_start_delimiter_engraver
         \override BarLine.hair-thickness = 0.5
         \override BarNumber.extra-offset = #'(-6 . -4)
         \override BarNumber.font-size = 1
         \override BarNumber.padding = 4
         \override Beam.breakable = ##t
         \override Beam.damping = 99
-        %\override Beam.positions = #'(-6 . -6)
         \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5)
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 2
@@ -198,6 +224,7 @@
         \override TupletNumber.font-size = 0.333
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
+        barNumberFormatter = #format-oval-barnumbers
         markFormatter = #format-mark-box-alphabet
         proportionalNotationDuration = #(ly:make-moment 1 20)
         tupletFullLength = ##t
