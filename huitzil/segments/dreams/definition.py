@@ -4,33 +4,18 @@ import huitzil
 
 
 ###############################################################################
-################################ INITIALIZATION ###############################
+################################### [dreams] ##################################
 ###############################################################################
 
 segment_maker = huitzil.tools.DreamsSegmentMaker(
-    #calculate_duration=True,
     name='dreams',
     show_leaf_indices=False,
     label_stages=False,
     )
 
-###############################################################################
-################################## TEMPO MAP ##################################
-###############################################################################
-
 segment_maker.tempo_specifier = [
     (0, huitzil.materials.tempi[1]),
     ]
-
-###############################################################################
-################################ MANUAL BREAKS ################################
-###############################################################################
-
-segment_maker.page_breaks.append(11)
-
-###############################################################################
-############################ TUPLET BRACKET TWEAKS ############################
-###############################################################################
 
 segment_maker.tuplet_bracket_tweaks.extend([
     (2, 2.5),
@@ -47,28 +32,7 @@ segment_maker.tuplet_bracket_tweaks.extend([
     ])
 
 ###############################################################################
-#################################### SLURS ####################################
-###############################################################################
-
-#segment_maker.slurs.extend([
-#    (87, 90),
-#    (107, 109), (112, 113),
-#    (116, 119), (120, 124), (125, 129), (130, 134),
-#    (135, 139), (140, 144), (145, 148), (149, 150),
-#    (151, 154),
-#    (155, 156), (157, 160), (161, 163), (164, 169),
-#    (170, 171), (172, 175), (176, 177), (179, 180),
-#    (181, 184), 
-#    (185, 188), (192, 194), (195, 198), 
-#    (199, 202), (205, 206), (207, 210),
-#    (211, 212), (213, 215), (217, 218), (219, 223),
-#    (224, 225), (228, 230), (231, 235),
-#    (237, 241), (245, 249),
-#    (252, 256), 
-#    ])
-
-###############################################################################
-################################## SPECIFIERS #################################
+################################### COMMANDS ##################################
 ###############################################################################
 
 ### stage [1] (middle) ###
@@ -76,7 +40,7 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.materials.pitch_classes[:6]
 music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
 music_maker.pc_displacement = [
-    abjad.patterntools.Pattern(indices=range(15), period=30),
+    abjad.Pattern(indices=range(15), period=30),
     ]
 music_maker.voice_map = [
     [2, range(0, 99)],
@@ -88,7 +52,7 @@ music_maker.pitch_class_trees = huitzil.materials.pitch_classes[2:8]
 music_maker.pc_operators = [abjad.Transposition(1)]
 music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
 music_maker.pc_displacement = [
-    abjad.patterntools.Pattern(indices=range(15), period=30),
+    abjad.Pattern(indices=range(15), period=30),
     ]
 music_maker.voice_map = [
     [2, range(0, 99)],
@@ -131,7 +95,7 @@ music_maker.pc_operators = [
     abjad.Transposition(4), 
     ]
 music_maker.pc_displacement = [
-    abjad.patterntools.Pattern(indices=range(10, 20), period=20),
+    abjad.Pattern(indices=range(10, 20), period=20),
     ]
 music_maker.voice_map = [
     [1, range(0, 99)],
@@ -146,7 +110,7 @@ music_maker.pc_operators = [
     abjad.Inversion(), 
     ]
 music_maker.pc_displacement = [
-    abjad.patterntools.Pattern(indices=range(10), period=20),
+    abjad.Pattern(indices=range(10), period=20),
     ]
 music_maker.voice_map = [
     [1, range(0, 99)],
@@ -161,7 +125,7 @@ music_maker.pc_operators = [
     abjad.Transposition(6), 
     ]
 music_maker.pc_displacement = [
-    abjad.patterntools.Pattern(indices=range(10, 20), period=20),
+    abjad.Pattern(indices=range(10, 20), period=20),
     ]
 music_maker.voice_map = [
     [1, range(0, 99)],
@@ -191,7 +155,7 @@ music_maker.pc_operators = [
     ]
 music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
 music_maker.pc_displacement = [
-    abjad.patterntools.Pattern(indices=range(5), period=10),
+    abjad.Pattern(indices=range(5), period=10),
     ]
 music_maker.voice_map = [
     [3, range(0, 99)],

@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 import abjad
+import baca
+import collections
 
 
 class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
     r'''Dreams rhythm specifier.
-
-    All properties can be configured at or after initialization.
     '''
 
     ### CLASS ATTRIBUTES ###
@@ -237,7 +237,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
     def _make_note_lists(self, pitch_class_trees):
         note_lists = []
         for pitch_class_tree in pitch_class_trees:
-            assert pitch_class_tree.depth == 3
+            assert pitch_class_tree._get_depth() == 3
             assert 0 < len(pitch_class_tree)
             for cell in pitch_class_tree.iterate(level=-2):
                 note_list = []
@@ -438,10 +438,10 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
     def pitch_class_trees(self, argument):
         if argument is None:
             self._pitch_class_trees = []
-        elif isinstance(argument, tuple):
-            self._pitch_class_trees = argument
+        elif isinstance(argument, collections.Iterable):
+            self._pitch_class_trees = tuple(argument)
         else:
-            message = 'must be tuple of pitch-class trees or none: {!r}.'
+            message = 'must be collection of pitch-class trees or none: {!r}.'
             message = message.format(argument)
             raise TypeError(message)
 
