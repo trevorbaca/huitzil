@@ -2,11 +2,11 @@
 import abjad
 
 
-performer_inventory = abjad.instrumenttools.PerformerInventory(
+performer_inventory = abjad.instrumenttools.PerformerList(
     [
         abjad.instrumenttools.Performer(
             name='cellist',
-            instruments=abjad.instrumenttools.InstrumentInventory(
+            instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Cello(
                         instrument_name='cello',
