@@ -2,7 +2,7 @@
 import abjad
 
 
-registration_inventory = abjad.pitchtools.RegistrationInventory(
+registration_inventory = abjad.pitchtools.RegistrationList(
     [
         abjad.Registration(
             [
