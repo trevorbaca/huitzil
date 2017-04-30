@@ -4,9 +4,8 @@ import abjad
 
 metadata = abjad.TypedOrderedDict([
     ('catalog_number', 'AWN-009'),
+    ('composer', 'Trevor Bača'),
     ('forces_tagline', 'for cello'),
-    ('paper_size', '17 x 11 in'),
-    ('price', '\\euro 22 / \\$28'),
     ('title', 'Huitzil'),
     ('year', 2014),
     ])
