@@ -1,10 +1,10 @@
-% 2014-10-10 09:51
+% 2017-05-07 15:00
 
-\version "2.19.13"
+\version "2.19.59"
 \language "english"
 
 \header {
-    tagline = \markup {}
+    tagline = ##f
 }
 
 \layout {
@@ -14,14 +14,14 @@
 
 \score {
     \new Score \with {
-        \override BarLine #'transparent = ##t
-        \override BarNumber #'stencil = ##f
-        \override Clef #'stencil = ##f
-        \override NoteHead #'no-ledgers = ##t
-        \override NoteHead #'transparent = ##t
-        \override StaffSymbol #'transparent = ##t
-        \override Stem #'transparent = ##t
-        \override TimeSignature #'stencil = ##f
+        \override BarLine.transparent = ##t
+        \override BarNumber.stencil = ##f
+        \override Clef.stencil = ##f
+        \override NoteHead.no-ledgers = ##t
+        \override NoteHead.transparent = ##t
+        \override StaffSymbol.transparent = ##t
+        \override Stem.transparent = ##t
+        \override TimeSignature.stencil = ##f
     } <<
         \new Staff {
             \time 2/4
