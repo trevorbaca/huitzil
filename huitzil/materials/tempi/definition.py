@@ -2,7 +2,7 @@
 import abjad
 
 
-tempi = abjad.indicatortools.TempoList(
+tempi = abjad.TempoList(
     [
         abjad.Tempo(
             reference_duration=abjad.Duration(1, 8),
