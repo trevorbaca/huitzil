@@ -2,7 +2,7 @@
 import baca
 
 
-pitch_classes = baca.tools.ZaggedPitchClassMaker(
+pitch_classes = baca.ZaggedPitchClassMaker(
     pc_cells=[
         [6, 4, 5, 7, 8],
         [9, 3, 2, 4, 5],
