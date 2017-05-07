@@ -325,7 +325,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
                 spanner = copy.deepcopy(spanner)
                 leaves = self._logical_ties_to_leaves(logical_ties)
                 abjad.attach(spanner, leaves)
-            elif isinstance(specifier, baca.tools.OverrideSpecifier):
+            elif isinstance(specifier, baca.OverrideSpecifier):
                 specifier(logical_ties_with_rests)
             else:
                 specifier(logical_ties, timespan)
@@ -560,9 +560,9 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         Returns scoped specifier.
         '''
         scoped_specifiers = []
-        compound_scope = baca.tools.CompoundScope.from_token(scope)
+        compound_scope = baca.CompoundScope.from_token(scope)
         for simple_scope in compound_scope.simple_scopes:
-            scoped_specifier = baca.tools.ScopedSpecifier(
+            scoped_specifier = baca.ScopedSpecifier(
                 simple_scope=simple_scope,
                 specifiers=specifiers,
                 )

@@ -3,7 +3,7 @@ import abjad
 import baca
 
 
-class FlightScoreTemplate(baca.tools.ScoreTemplate):
+class FlightScoreTemplate(baca.ScoreTemplate):
     r'''Flight score template.
 
     ::

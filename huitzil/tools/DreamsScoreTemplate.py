@@ -3,7 +3,7 @@ import abjad
 import baca
 
 
-class DreamsScoreTemplate(baca.tools.ScoreTemplate):
+class DreamsScoreTemplate(baca.ScoreTemplate):
     r'''Dreams score template.
 
     ::
