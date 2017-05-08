@@ -2,11 +2,6 @@
 import abjad
 
 
-bar = '|'
-
-crescendo = '<'
-decrescendo = '>'
-
 dashed_arrow = abjad.Arrow(
     dash_fraction=0.25,
     dash_period=1.5,
@@ -16,8 +11,6 @@ dashed_arrow = abjad.Arrow(
     right_broken_padding=0,
     right_padding=1.75,
     )
-
-hold_dynamic = '-|'
 
 quarter_44 = abjad.Tempo(abjad.Duration(1, 4), 44)
 quarter_66 = abjad.Tempo(abjad.Duration(1, 4), 66)
