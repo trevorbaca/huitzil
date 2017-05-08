@@ -1,4 +1,4 @@
-% 2017-05-07 15:01
+% 2017-05-08 11:17
 
 \version "2.19.59"
 \language "english"
@@ -126,7 +126,7 @@
                 cs'8
                 bf'8 \stopGroup
                 s8
-                ef'8 \stopGroup \startGroup \stopGroup ^ \markup { 19 }
+                ef'8 \startGroup \stopGroup \stopGroup ^ \markup { 19 }
                 s8
                 d'8 \startGroup \startGroup ^ \markup { 20 }
                 e'8
@@ -324,7 +324,7 @@
                 fs'8
                 e'8 \stopGroup
                 s8
-                bf'8 \startGroup \stopGroup \stopGroup ^ \markup { 67 }
+                bf'8 \stopGroup \startGroup \stopGroup ^ \markup { 67 }
                 s8
                 a'8 \startGroup \startGroup ^ \markup { 68 }
                 b'8
