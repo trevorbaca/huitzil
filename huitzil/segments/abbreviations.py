@@ -19,23 +19,6 @@ dashed_arrow = abjad.Arrow(
 
 hold_dynamic = '-|'
 
-fz = 'fz'
-ffz = 'ffz'
-fffz = 'fffz'
-mfz = 'mfz'
-mpz = 'mpz'
-pz = 'pz'
-ppz = 'ppz'
-
-ppp = 'ppp'
-pp = 'pp'
-p = 'p'
-mp = 'mp'
-mf = 'mf'
-f = 'f'
-ff = 'ff'
-fff = 'fff'
-
 quarter_44 = abjad.Tempo(abjad.Duration(1, 4), 44)
 quarter_66 = abjad.Tempo(abjad.Duration(1, 4), 66)
 quarter_88 = abjad.Tempo(abjad.Duration(1, 4), 88)
