@@ -319,7 +319,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
                 abjad.attach(specifier, logical_ties[0].head)
             elif isinstance(specifier, leaf_indicators):
                 abjad.attach(specifier, logical_ties_with_rests[0].head)
-            elif isinstance(specifier, abjad.spannertools.Spanner):
+            elif isinstance(specifier, abjad.Spanner):
                 spanner = specifier
                 assert not len(spanner)
                 spanner = copy.deepcopy(spanner)

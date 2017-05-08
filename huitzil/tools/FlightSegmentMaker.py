@@ -381,7 +381,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             skip = tempo_indicator_voice[index]
             indicator = copy.copy(indicator)
             abjad.attach(indicator, skip, is_annotation=True)
-        tempo_spanner = abjad.spannertools.TempoSpanner(
+        tempo_spanner = abjad.TempoSpanner(
             left_broken_padding=0,
             left_broken_text=abjad.Markup.null(direction=None),
             start_with_parenthesized_tempo=False,
@@ -434,7 +434,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
                 assert isinstance(markup, abjad.Markup), repr(markup)
                 indicator = markup
             abjad.attach(indicator, skip, is_annotation=True)
-        text_spanner = abjad.spannertools.TextSpanner()
+        text_spanner = abjad.TextSpanner()
         abjad.attach(text_spanner, tremolo_indicator_voice[:])
 
     def _populate_underlying_dynamics_voice(self):
