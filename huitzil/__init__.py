@@ -11,3 +11,4 @@ del platform
 from huitzil import tools
 from huitzil import materials
 from huitzil import segments
+from huitzil.tools import MarkupLibrary as markup

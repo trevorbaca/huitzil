@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import abjad
 import huitzil
-from huitzil.segments.abbreviations import *
 
 
 segment_maker = huitzil.tools.FlightSegmentMaker(
@@ -112,37 +111,37 @@ segment_maker.glissando_break_indices = [
     ]
 
 segment_maker.tempo_specifier = [
-    #(0, quarter_44),
+    #(0, huitzil.materials.tempi[44]),
     (39, abjad.Accelerando()),
-    (42, quarter_66),
-    (43, quarter_44),
+    (42, huitzil.materials.tempi[66]),
+    (43, huitzil.materials.tempi[44]),
     (43, abjad.Accelerando()),
-    (48, quarter_88),
+    (48, huitzil.materials.tempi[88]),
     ]
 
 segment_maker.tremolo_map = [
-    (0, trem_moderato),
-    (30, trem_mod),
-    (30, dashed_arrow),
-    (34, trem_stretto),
-    (39, sub_trem_mod),
-    (39, dashed_arrow),
-    (40, piu_stretto),
-    (40, dashed_arrow),
-    (41, piu_largo),
-    (41, dashed_arrow),
-    (42, piu_stretto),
-    (43, sub_trem_mod),
-    (43, dashed_arrow),
-    (44, piu_stretto),
-    (44, dashed_arrow),
-    (45, piu_largo),
-    (45, dashed_arrow),
-    (46, piu_stretto),
-    (46, dashed_arrow),
-    (47, piu_largo),
-    (47, dashed_arrow),
-    (48, piu_stretto),
+    (0, huitzil.markup.trem_moderato()),
+    (30, huitzil.markup.trem_mod()),
+    (30, huitzil.tools.dashed_arrow()),
+    (34, huitzil.markup.trem_stretto()),
+    (39, huitzil.markup.sub_trem_mod()),
+    (39, huitzil.tools.dashed_arrow()),
+    (40, huitzil.markup.piu_stretto()),
+    (40, huitzil.tools.dashed_arrow()),
+    (41, huitzil.markup.piu_largo()),
+    (41, huitzil.tools.dashed_arrow()),
+    (42, huitzil.markup.piu_stretto()),
+    (43, huitzil.markup.sub_trem_mod()),
+    (43, huitzil.tools.dashed_arrow()),
+    (44, huitzil.markup.piu_stretto()),
+    (44, huitzil.tools.dashed_arrow()),
+    (45, huitzil.markup.piu_largo()),
+    (45, huitzil.tools.dashed_arrow()),
+    (46, huitzil.markup.piu_stretto()),
+    (46, huitzil.tools.dashed_arrow()),
+    (47, huitzil.markup.piu_largo()),
+    (47, huitzil.tools.dashed_arrow()),
+    (48, huitzil.markup.piu_stretto()),
     ]
 
 segment_maker.underlying_dynamics = [

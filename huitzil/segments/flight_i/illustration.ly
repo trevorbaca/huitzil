@@ -1,4 +1,4 @@
-% 2017-05-08 09:43
+% 2017-05-08 10:38
 
 \version "2.19.59"
 \language "english"
@@ -464,8 +464,8 @@
                 \clef "treble"
                 s1 * 12
                 \bar "|."
-                \abjad.override Score.BarLine.transparent = ##f
-                \abjad.override Score.SpanBar.transparent = ##f
+                \override Score.BarLine.transparent = ##f
+                \override Score.SpanBar.transparent = ##f
             }
         >>
     >>

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import abjad
 import huitzil
-from huitzil.segments.abbreviations import *
 
 
 segment_maker = huitzil.tools.FlightSegmentMaker(
@@ -146,31 +145,31 @@ segment_maker.glissando_break_indices = [
     ]
 
 segment_maker.tempo_specifier = [
-    (0, quarter_66),
+    (0, huitzil.materials.tempi[66]),
     (3, abjad.Accelerando()),
-    (8, quarter_88),
+    (8, huitzil.materials.tempi[88]),
     (8, abjad.Ritardando()),
-    (13, quarter_66),
+    (13, huitzil.materials.tempi[66]),
     (17, abjad.Accelerando()),
-    (19, quarter_88),
+    (19, huitzil.materials.tempi[88]),
     (19, abjad.Ritardando()),
-    (20, quarter_66),
+    (20, huitzil.materials.tempi[66]),
     (23, abjad.Accelerando()),
-    (28, quarter_88),
+    (28, huitzil.materials.tempi[88]),
     (28, abjad.Ritardando()),
-    (33, quarter_66),
+    (33, huitzil.materials.tempi[66]),
     (37, abjad.Accelerando()),
-    (39, quarter_88),
+    (39, huitzil.materials.tempi[88]),
     (39, abjad.Ritardando()),
-    (40, quarter_66),
+    (40, huitzil.materials.tempi[66]),
     (44, abjad.Accelerando()),
-    (46, quarter_88),
+    (46, huitzil.materials.tempi[88]),
     (46, abjad.Ritardando()),
-    (49, quarter_66),
+    (49, huitzil.materials.tempi[66]),
     (52, abjad.Accelerando()),
-    (54, quarter_88),
+    (54, huitzil.materials.tempi[88]),
     (54, abjad.Ritardando()),
-    (56, quarter_66),
+    (56, huitzil.materials.tempi[66]),
     ]
 
 segment_maker.tremolo_map = [

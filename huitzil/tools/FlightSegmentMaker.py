@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import abjad
+import baca
 import copy
 import os
 
@@ -160,10 +161,10 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         self._score.add_final_bar_line()
         pitch_staff = self._score['Pitch Staff']
         last_leaf = abjad.inspect_(pitch_staff).get_leaf(-1)
-        string = r'abjad.override Score.BarLine.transparent = ##f'
+        string = r'override Score.BarLine.transparent = ##f'
         command = abjad.LilyPondCommand(string, format_slot='after')
         abjad.attach(command, last_leaf)
-        string = r'abjad.override Score.SpanBar.transparent = ##f'
+        string = r'override Score.SpanBar.transparent = ##f'
         command = abjad.LilyPondCommand(string, format_slot='after')
         abjad.attach(command, last_leaf)
 
@@ -424,6 +425,14 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         for index, indicator in self.tremolo_map:
             skip = tremolo_indicator_voice[index]
             indicator = copy.copy(indicator)
+            if isinstance(indicator, abjad.Arrow):
+                pass
+            else:
+                assert isinstance(indicator, baca.AttachCommand)
+                assert len(indicator.arguments) == 1
+                markup = indicator.arguments[0]
+                assert isinstance(markup, abjad.Markup), repr(markup)
+                indicator = markup
             abjad.attach(indicator, skip, is_annotation=True)
         text_spanner = abjad.spannertools.TextSpanner()
         abjad.attach(text_spanner, tremolo_indicator_voice[:])

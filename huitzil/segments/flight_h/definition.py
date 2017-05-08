@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import abjad
 import huitzil
-from huitzil.segments.abbreviations import *
 
 
 segment_maker = huitzil.tools.FlightSegmentMaker(
@@ -103,21 +102,21 @@ segment_maker.notes = [
     ]
 
 segment_maker.tremolo_map = [
-    (0, trem_mod),
-    (36, sub_trem_piu_stretto),
-    (36, dashed_arrow),
-    (37, piu_largo),
-    (37, dashed_arrow),
-    (38, piu_stretto),
-    (38, dashed_arrow),
-    (39, piu_largo),
-    (39, dashed_arrow),
-    (40, trem_mod),
+    (0, huitzil.markup.trem_mod()),
+    (36, huitzil.markup.sub_trem_piu_stretto()),
+    (36, huitzil.tools.dashed_arrow()),
+    (37, huitzil.markup.piu_largo()),
+    (37, huitzil.tools.dashed_arrow()),
+    (38, huitzil.markup.piu_stretto()),
+    (38, huitzil.tools.dashed_arrow()),
+    (39, huitzil.markup.piu_largo()),
+    (39, huitzil.tools.dashed_arrow()),
+    (40, huitzil.markup.trem_mod()),
     ]
 
 segment_maker.tempo_specifier = [
     (36, abjad.Ritardando()),
-    (40, quarter_44),
+    (40, huitzil.materials.tempi[44]),
     ]
 
 segment_maker.underlying_dynamics = [
