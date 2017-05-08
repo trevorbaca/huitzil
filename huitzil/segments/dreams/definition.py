@@ -14,7 +14,7 @@ segment_maker = huitzil.tools.DreamsSegmentMaker(
     )
 
 segment_maker.tempo_specifier = [
-    (0, huitzil.materials.tempi[1]),
+    (0, huitzil.materials.tempi[78]),
     ]
 
 segment_maker.tuplet_bracket_tweaks.extend([

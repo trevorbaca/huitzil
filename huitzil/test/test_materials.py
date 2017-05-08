@@ -45,16 +45,6 @@ def test_materials_02():
     assert exit_status == 0
 
 
-def test_materials_03():
-    r'''Tests abbreviations file.
-    '''
-    if not os.path.exists(abbreviations_path):
-        return
-    command = 'python {}'.format(abbreviations_path)
-    exit_status = abjad.systemtools.IOManager.spawn_subprocess(command)
-    assert exit_status == 0
-
-
 #@pytest.mark.parametrize('material_path', material_paths)
 #def test_materials_04(material_path):
 #    r'''Illustrates materials.

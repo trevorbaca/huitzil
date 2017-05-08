@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import abjad
 import huitzil
-from huitzil.segments.abbreviations import *
 
 
 segment_maker = huitzil.tools.FlightSegmentMaker(
@@ -129,40 +128,40 @@ segment_maker.glissando_break_indices = [
     ]
 
 segment_maker.tempo_specifier = [
-    (0, quarter_44),
+    (0, huitzil.materials.tempi[44]),
     (39, abjad.Accelerando()),
-    (42, quarter_66),
-    (43, quarter_44),
+    (42, huitzil.materials.tempi[66]),
+    (43, huitzil.materials.tempi[44]),
     (52, abjad.Accelerando()),
-    (57, quarter_88),
+    (57, huitzil.materials.tempi[88]),
     ]
 
 segment_maker.tremolo_map = [
-    (0, trem_moderato),
-    (30, trem_mod),
-    (30, dashed_arrow),
-    (34, trem_stretto),
-    (39, sub_trem_mod),
-    (39, dashed_arrow),
-    (40, piu_stretto),
-    (40, dashed_arrow),
-    (41, piu_largo),
-    (41, dashed_arrow),
-    (42, piu_stretto),
-    (43, sub_trem_mod),
-    (43, dashed_arrow),
-    (47, trem_stretto),
-    (52, sub_trem_mod),
-    (52, dashed_arrow),
-    (53, piu_stretto),
-    (53, dashed_arrow),
-    (54, piu_largo),
-    (54, dashed_arrow),
-    (55, piu_stretto),
-    (55, dashed_arrow),
-    (56, piu_largo),
-    (56, dashed_arrow),
-    (57, piu_stretto),
+    (0, huitzil.markup.trem_moderato()),
+    (30, huitzil.markup.trem_mod()),
+    (30, huitzil.tools.dashed_arrow()),
+    (34, huitzil.markup.trem_stretto()),
+    (39, huitzil.markup.sub_trem_mod()),
+    (39, huitzil.tools.dashed_arrow()),
+    (40, huitzil.markup.piu_stretto()),
+    (40, huitzil.tools.dashed_arrow()),
+    (41, huitzil.markup.piu_largo()),
+    (41, huitzil.tools.dashed_arrow()),
+    (42, huitzil.markup.piu_stretto()),
+    (43, huitzil.markup.sub_trem_mod()),
+    (43, huitzil.tools.dashed_arrow()),
+    (47, huitzil.markup.trem_stretto()),
+    (52, huitzil.markup.sub_trem_mod()),
+    (52, huitzil.tools.dashed_arrow()),
+    (53, huitzil.markup.piu_stretto()),
+    (53, huitzil.tools.dashed_arrow()),
+    (54, huitzil.markup.piu_largo()),
+    (54, huitzil.tools.dashed_arrow()),
+    (55, huitzil.markup.piu_stretto()),
+    (55, huitzil.tools.dashed_arrow()),
+    (56, huitzil.markup.piu_largo()),
+    (56, huitzil.tools.dashed_arrow()),
+    (57, huitzil.markup.piu_stretto()),
     ]
 
 segment_maker.underlying_dynamics = [
