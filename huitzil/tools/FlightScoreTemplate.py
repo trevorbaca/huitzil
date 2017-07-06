@@ -36,7 +36,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
                 >>
                 \context PianoStaff = "Piano Staff" <<
                     \context BowStaff = "Bow Staff" <<
-                        \context TempoIndicatorVoice = "Tempo Indicator Voice" {
+                        \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" {
                         }
                         \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
                         }
@@ -60,7 +60,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         bow_staff.is_simultaneous = True
         tempo_indicator_voice = abjad.Voice(
             context_name='TempoIndicatorVoice', 
-            name='Tempo Indicator Voice',
+            name='MetronomeMark Indicator Voice',
             )
         bow_staff.append(tempo_indicator_voice)
         tremolo_indicator_voice = abjad.Voice(
