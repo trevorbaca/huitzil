@@ -208,7 +208,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         bow_staff = self._score['Bow Staff']
         abjad.override(bow_staff).staff_symbol.line_count = self.staff_line_count
         if self.name in ('flight E', 'flight F', 'flight I'):
-            voice = self._score['Tempo Indicator Voice']
+            voice = self._score['MetronomeMark Indicator Voice']
             abjad.override(voice).text_script.staff_padding = 5
             abjad.override(voice).text_spanner.staff_padding = 5.75
 
@@ -373,7 +373,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             return
         if not self.tempo_specifier:
             return
-        tempo_indicator_voice = self._score['Tempo Indicator Voice']
+        tempo_indicator_voice = self._score['MetronomeMark Indicator Voice']
         durations = self._get_bow_location_durations()
         skips = abjad.scoretools.make_skips(abjad.Duration(1), durations)
         tempo_indicator_voice.extend(skips)
@@ -381,7 +381,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             skip = tempo_indicator_voice[index]
             indicator = copy.copy(indicator)
             abjad.attach(indicator, skip, is_annotation=True)
-        tempo_spanner = abjad.TempoSpanner(
+        tempo_spanner = abjad.MetronomeMarkSpanner(
             left_broken_padding=0,
             left_broken_text=abjad.Markup.null(direction=None),
             start_with_parenthesized_tempo=False,

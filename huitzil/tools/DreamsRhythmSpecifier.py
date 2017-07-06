@@ -457,7 +457,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
     def start_tempo(self, argument):
         if argument is None:
             self._start_tempo = argument
-        elif isinstance(argument, Tempo):
+        elif isinstance(argument, MetronomeMark):
             self._start_tempo = argument
         else:
             message = 'must be tempo: {!r}.'
@@ -476,7 +476,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
     def stop_tempo(self, argument):
         if argument is None:
             self._stop_tempo = argument
-        elif isinstance(argument, Tempo):
+        elif isinstance(argument, MetronomeMark):
             self._stop_tempo = argument
         else:
             message = 'must be tempo: {!r}.'
