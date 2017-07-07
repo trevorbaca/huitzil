@@ -126,13 +126,13 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         try:
-            duration = abjad.inspect_(score).get_duration(in_seconds=True)
+            duration = abjad.inspect(score).get_duration(in_seconds=True)
         except MissingTempoError:
             duration = abjad.Duration(0)
         #raise Exception(float(duration))
-        if not abjad.inspect_(score).is_well_formed():
+        if not abjad.inspect(score).is_well_formed():
             string = \
-                abjad.inspect_(score).tabulate_well_formedness_violations()
+                abjad.inspect(score).tabulate_well_formedness_violations()
             string = '\n' + string
             raise Exception(string)
         segment_metadata = None
@@ -160,7 +160,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             return
         self._score.add_final_bar_line()
         pitch_staff = self._score['Pitch Staff']
-        last_leaf = abjad.inspect_(pitch_staff).get_leaf(-1)
+        last_leaf = abjad.inspect(pitch_staff).get_leaf(-1)
         string = r'override Score.BarLine.transparent = ##f'
         command = abjad.LilyPondCommand(string, format_slot='after')
         abjad.attach(command, last_leaf)
@@ -255,7 +255,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         if indication in ('-', '>'):
             indication = Articulation(indication)
             first_component = leaves[0]
-            first_leaf = abjad.inspect_(first_component).get_leaf(0)
+            first_leaf = abjad.inspect(first_component).get_leaf(0)
             abjad.attach(indication, first_leaf)
         elif indication is None:
             pass
@@ -263,7 +263,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             markup = abjad.Markup(indication, direction=Down)
             markup = markup.dynamic()
             first_component = leaves[0]
-            first_leaf = abjad.inspect_(first_component).get_leaf(0)
+            first_leaf = abjad.inspect(first_component).get_leaf(0)
             abjad.attach(markup, first_leaf)
         else:
             message = 'unrecognized indication: {!r}.'
@@ -318,7 +318,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             return
         if not self.pitches:
             bow_location_voice = self._score['Bow Location Voice']
-            total_duration = abjad.inspect_(bow_location_voice).get_duration()
+            total_duration = abjad.inspect(bow_location_voice).get_duration()
             skip = abjad.Skip(1)
             multiplier = abjad.Multiplier(total_duration)
             abjad.attach(multiplier, skip)
@@ -361,7 +361,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
                 multiplier = abjad.Multiplier(duration)
                 abjad.attach(multiplier, note)
             pitch_staff.extend(notes)
-        first_leaf = abjad.inspect_(pitch_staff).get_leaf(n=0)
+        first_leaf = abjad.inspect(pitch_staff).get_leaf(n=0)
         clef = abjad.Clef('bass')
         if isinstance(first_leaf, abjad.Note):
             if abjad.NamedPitch('C4') < first_leaf.written_pitch:
@@ -479,8 +479,8 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             abjad.attach(indicator, skip)
         last_skip = skips[-1]
         prototype = abjad.LilyPondCommand
-        if not abjad.inspect_(last_skip).has_indicator(prototype):
-            if not abjad.inspect_(last_skip).has_indicator(abjad.Dynamic):
+        if not abjad.inspect(last_skip).has_indicator(prototype):
+            if not abjad.inspect(last_skip).has_indicator(abjad.Dynamic):
                 indicator = abjad.LilyPondCommand(
                     '!', 
                     format_slot='right',

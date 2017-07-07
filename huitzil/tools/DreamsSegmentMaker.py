@@ -99,7 +99,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         self._add_final_markup()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
-        if not abjad.inspect_(score).is_well_formed():
+        if not abjad.inspect(score).is_well_formed():
 
             for container in abjad.iterate(score).by_class(abjad.Container):
                 if len(container) == 0:
@@ -107,7 +107,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
                     abjad.f(container)
 
             string = \
-                abjad.inspect_(score).tabulate_well_formedness_violations()
+                abjad.inspect(score).tabulate_well_formedness_violations()
             string = '\n' + string
             raise Exception(string)
         segment_metadata = None
@@ -137,13 +137,13 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             for component in measure:
                 for note in component:
                     assert isinstance(note, abjad.Note), repr(note)
-                    voice_number = abjad.inspect_(note).get_indicator(int)
+                    voice_number = abjad.inspect(note).get_indicator(int)
                     voice_numbers.append(voice_number)
             if len(set(voice_numbers)) == 1:
                 continue
             for component in measure:
                 for note in component:
-                    voice_number = abjad.inspect_(note).get_indicator(int)
+                    voice_number = abjad.inspect(note).get_indicator(int)
                     if voice_number == 1:
                         abjad.override(note).stem.direction = Up
                         abjad.override(note).beam.positions = up_beam_positions
@@ -246,7 +246,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             prototype = (abjad.Note, abjad.Chord)
         for note in abjad.iterate(self._score).by_timeline(prototype):
             if note in compound_scope:
-                logical_tie = abjad.inspect_(note).get_logical_tie()
+                logical_tie = abjad.inspect(note).get_logical_tie()
                 if logical_tie.head is note:
                     logical_ties.append(logical_tie)
         start_offset = min(_.start_offset for _ in timespans)
@@ -266,12 +266,12 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         start_measure_index, stop_measure_index = result
         start_measure = context[start_measure_index]
         assert isinstance(start_measure, abjad.Measure), start_measure
-        start_offset = abjad.inspect_(start_measure).get_timespan().start_offset
+        start_offset = abjad.inspect(start_measure).get_timespan().start_offset
         result = self._stage_number_to_measure_indices(stop_stage)
         start_measure_index, stop_measure_index = result
         stop_measure = context[stop_measure_index]
         assert isinstance(stop_measure, abjad.Measure), stop_measure
-        stop_offset = abjad.inspect_(stop_measure).get_timespan().stop_offset
+        stop_offset = abjad.inspect(stop_measure).get_timespan().stop_offset
         return start_offset, stop_offset
 
     def _get_rhythm_specifier(self, voice_name, stage):
@@ -345,7 +345,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         current_leaf = first_note
         while current_leaf is not last_note:
             leaves.append(current_leaf)
-            current_leaf = abjad.inspect_(current_leaf).get_leaf(1)
+            current_leaf = abjad.inspect(current_leaf).get_leaf(1)
         leaves.append(last_note)
         return leaves
 
@@ -400,10 +400,10 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
 
     def _partition_music_into_measures(self):
         context = self._score['Time Signature Context Skips']
-        measure_durations = [abjad.inspect_(_).get_duration() for _ in context]
+        measure_durations = [abjad.inspect(_).get_duration() for _ in context]
         music_voice = self._score['Music Voice']
         component_durations = [
-            abjad.inspect_(_).get_duration() for _ in music_voice]
+            abjad.inspect(_).get_duration() for _ in music_voice]
         measure_parts = baca.Sequence(component_durations)
         measure_parts = measure_parts.partition_by_weights(measure_durations)
         measure_counts = [len(_) for _ in measure_parts]
@@ -418,7 +418,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         current_duration = abjad.Duration(0)
         ideal_measure_duration = abjad.Duration(4, 4)
         for component in music_voice:
-            component_duration = abjad.inspect_(component).get_duration()
+            component_duration = abjad.inspect(component).get_duration()
             candidate_duration = current_duration + component_duration
             if ideal_measure_duration < candidate_duration:
                 if 0 < current_duration:
@@ -432,7 +432,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         context = self._score['Time Signature Context Skips']
         context.extend(measures)
         for measure in abjad.iterate(context).by_class(abjad.Measure):
-            agent = abjad.inspect_(measure)
+            agent = abjad.inspect(measure)
             time_signature = agent.get_indicator(abjad.TimeSignature)
             if time_signature.denominator < 4:
                 fraction = abjad.mathtools.NonreducedFraction(
