@@ -248,10 +248,8 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
 
     def _make_leaf(self, pitch, duration_string, indication):
         duration = abjad.Duration(duration_string)
-        leaves = abjad.scoretools.make_leaves(
-            [pitch], 
-            [duration],
-            )
+        maker = abjad.LeafMaker()
+        leaves = maker([pitch], [duration])
         if indication in ('-', '>'):
             indication = Articulation(indication)
             first_component = leaves[0]
@@ -375,7 +373,8 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             return
         tempo_indicator_voice = self._score['MetronomeMark Indicator Voice']
         durations = self._get_bow_location_durations()
-        skips = abjad.scoretools.make_skips(abjad.Duration(1), durations)
+        maker = abjad.rhythmmakertools.SkipRhythmMaker()
+        skips = maker(abjad.Duration(1), durations)
         tempo_indicator_voice.extend(skips)
         for index, indicator in self.tempo_specifier:
             skip = tempo_indicator_voice[index]
@@ -416,7 +415,8 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
     def _populate_tremolo_indicator_voice(self):
         tremolo_indicator_voice = self._score['Tremolo Indicator Voice']
         durations = self._get_bow_location_durations()
-        skips = abjad.scoretools.make_skips(abjad.Duration(1), durations)
+        maker = abjad.rhythmmakertools.SkipRhythmMaker()
+        skips = maker(abjad.Duration(1), durations)
         tremolo_indicator_voice.extend(skips)
         if not self.notes:
             return
@@ -442,7 +442,8 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             return
         underlying_dynamics_voice = self._score['Underlying Dynamics Voice']
         durations = self._get_bow_location_durations()
-        skips = abjad.scoretools.make_skips(abjad.Duration(1), durations)
+        maker = abjad.rhythmmakertools.SkipRhythmMaker()
+        skips = maker(abjad.Duration(1), durations)
         underlying_dynamics_voice.extend(skips)
         if not self.underlying_dynamics:
             return
