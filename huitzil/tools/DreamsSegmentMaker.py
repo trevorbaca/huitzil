@@ -427,8 +427,8 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             else:
                 current_duration = candidate_duration
         measure_durations.append(current_duration)
-        measures = abjad.scoretools.make_spacer_skip_measures(
-            measure_durations)
+        maker = abjad.MeasureMaker()
+        measures = maker(measure_durations)
         context = self._score['Time Signature Context Skips']
         context.extend(measures)
         for measure in abjad.iterate(context).by_class(abjad.Measure):
@@ -441,8 +441,8 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
                 abjad.detach(time_signature, measure)
                 new_time_signature = abjad.TimeSignature(fraction)
                 abjad.attach(new_time_signature, measure)
-        measures = abjad.scoretools.make_spacer_skip_measures(
-            measure_durations)
+        maker = abjad.MeasureMaker()
+        measures = maker(measure_durations)
         context = self._score['Time Signature Context Multimeasure Rests']
         context.extend(measures)
 

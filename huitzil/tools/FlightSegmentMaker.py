@@ -404,11 +404,10 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             current_measure_duration += duration
         if 0 < current_measure_duration:
             measure_durations.append(current_measure_duration)
-        measures = abjad.scoretools.make_spacer_skip_measures(
-            measure_durations)
+        maker = abjad.MeasureMaker()
+        measures = maker(measure_durations)
         context.extend(measures)
-        measures = abjad.scoretools.make_spacer_skip_measures(
-            measure_durations)
+        measures = maker(measure_durations)
         context = self._score['Time Signature Context Multimeasure Rests']
         context.extend(measures)
 
