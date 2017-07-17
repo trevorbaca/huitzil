@@ -36,7 +36,6 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
                     }
                 >>
                 \context Staff = "Staff" <<
-                    \clef "bass"
                     \context Voice = "Music Voice" {
                     }
                 >>
