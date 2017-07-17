@@ -49,7 +49,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
             name='Staff',
             )
         staff.is_simultaneous = True
-        abjad.attach(abjad.Clef('bass'), staff)
+        #abjad.attach(abjad.Clef('bass'), staff)
         music_voice = abjad.Voice(
             name='Music Voice',
             )
