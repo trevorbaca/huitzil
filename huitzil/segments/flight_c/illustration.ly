@@ -1,6 +1,6 @@
-% 2017-05-08 10:37
+% 2017-08-02 11:40
 
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -8,8 +8,8 @@
 \include "../../stylesheets/flight-stylesheet.ily"
 
 \header {
-    composer = ##f
     title = ##f
+    composer = ##f
 }
 
 \score {
@@ -175,7 +175,7 @@
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol.line-count = #7
             } <<
-                \context TempoIndicatorVoice = "Tempo Indicator Voice" {
+                \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" {
                     s1 * 1/2
                     s1 * 1/4
                     s1 * 1/4
@@ -843,7 +843,7 @@
                 }
                 \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1/2 \< \mp
+                    s1 * 1/2 \mp \<
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/2
@@ -853,44 +853,44 @@
                     s1 * 1/4
                     s1 * 1/4
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 2/3 \< \p
+                    s1 * 2/3 \p \<
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/2
-                    s1 * 1/3 \< \pp
+                    s1 * 1/3 \pp \<
                     s1 * 1/3
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1/5 \mf
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1/2 \< \p
+                    s1 * 1/2 \p \<
                     s1 * 1/3
                     s1 * 1/3
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/4
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1 \< \mf
+                    s1 * 1 \mf \<
                     s1 * 1/2
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/2
                     s1 * 1/4
-                    s1 * 1/3 \> \mp
+                    s1 * 1/3 \mp \>
                     s1 * 1/3
                     s1 * 1/3
                     s1 * 1/3
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1/5 \< \ppp
+                    s1 * 1/5 \ppp \<
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1
-                    s1 * 1 \< \p
+                    s1 * 1 \p \<
                     s1 * 1
                     s1 * 1
                     s1 * 1 \mf
-                    s1 * 1 \< \p
+                    s1 * 1 \p \<
                     s1 * 1
                     s1 * 1
                     s1 * 1
@@ -898,8 +898,8 @@
                     s1 * 1 \f
                 }
             >>
+            \clef "bass"
             \context Staff = "Pitch Staff" {
-                \clef "bass"
                 bf,,1 * 1429/60
             }
         >>

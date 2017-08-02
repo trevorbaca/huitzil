@@ -184,8 +184,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
             return
         pitch_staff = self._score['Pitch Staff']
         for start_index, stop_index in self.lh_glissandi:
-            leaves = abjad.iterate(pitch_staff).by_leaf()
-            leaves = list(leaves)
+            leaves = abjad.select(pitch_staff).by_leaf()
             spanner_leaves = leaves[start_index:stop_index+1]
             glissando = abjad.Glissando()
             abjad.attach(glissando, spanner_leaves)
@@ -302,9 +301,11 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         for i, note in enumerate(notes):
             notes_in_spanner.append(note)
             if i in glissando_break_indices:
+                notes_in_spanner = abjad.select(notes_in_spanner)
                 abjad.attach(abjad.Glissando(), notes_in_spanner)
                 notes_in_spanner = []
         if notes_in_spanner:
+            notes_in_spanner = abjad.select(notes_in_spanner)
             abjad.attach(abjad.Glissando(), notes_in_spanner)
 
     def _populate_pitch_staff(self):
@@ -374,18 +375,19 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         tempo_indicator_voice = self._score['MetronomeMark Indicator Voice']
         durations = self._get_bow_location_durations()
         maker = abjad.rhythmmakertools.SkipRhythmMaker()
-        skips = maker(abjad.Duration(1), durations)
-        tempo_indicator_voice.extend(skips)
-        for index, indicator in self.tempo_specifier:
-            skip = tempo_indicator_voice[index]
-            indicator = copy.copy(indicator)
-            abjad.attach(indicator, skip, is_annotation=True)
+        selections = maker(durations)
+        tempo_indicator_voice.extend(selections)
+        skips = abjad.select(tempo_indicator_voice).by_leaf()
         tempo_spanner = abjad.MetronomeMarkSpanner(
             left_broken_padding=0,
             left_broken_text=abjad.Markup.null(direction=None),
             start_with_parenthesized_tempo=False,
             )
-        abjad.attach(tempo_spanner, tempo_indicator_voice[:])
+        abjad.attach(tempo_spanner, skips)
+        for index, indicator in self.tempo_specifier:
+            skip = tempo_indicator_voice[index]
+            indicator = copy.copy(indicator)
+            tempo_spanner.attach(indicator, skip)
 
     def _populate_time_signature_voice(self):
         if not self.notes:
@@ -415,16 +417,19 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         tremolo_indicator_voice = self._score['Tremolo Indicator Voice']
         durations = self._get_bow_location_durations()
         maker = abjad.rhythmmakertools.SkipRhythmMaker()
-        skips = maker(abjad.Duration(1), durations)
+        skips = maker(durations)
         tremolo_indicator_voice.extend(skips)
         if not self.notes:
             return
         if not self.tremolo_map:
             return
+        text_spanner = abjad.TextSpanner()
+        skips = abjad.select(tremolo_indicator_voice).by_leaf()
+        abjad.attach(text_spanner, skips)
         for index, indicator in self.tremolo_map:
             skip = tremolo_indicator_voice[index]
             indicator = copy.copy(indicator)
-            if isinstance(indicator, abjad.Arrow):
+            if isinstance(indicator, abjad.ArrowLineSegment):
                 pass
             else:
                 assert isinstance(indicator, baca.AttachCommand)
@@ -432,9 +437,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
                 markup = indicator.arguments[0]
                 assert isinstance(markup, abjad.Markup), repr(markup)
                 indicator = markup
-            abjad.attach(indicator, skip, is_annotation=True)
-        text_spanner = abjad.TextSpanner()
-        abjad.attach(text_spanner, tremolo_indicator_voice[:])
+            text_spanner.attach(indicator, skip)
 
     def _populate_underlying_dynamics_voice(self):
         if not self.notes:  
@@ -442,8 +445,9 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         underlying_dynamics_voice = self._score['Underlying Dynamics Voice']
         durations = self._get_bow_location_durations()
         maker = abjad.rhythmmakertools.SkipRhythmMaker()
-        skips = maker(abjad.Duration(1), durations)
-        underlying_dynamics_voice.extend(skips)
+        selections = maker(durations)
+        underlying_dynamics_voice.extend(selections)
+        skips = abjad.select(underlying_dynamics_voice).by_leaf()
         if not self.underlying_dynamics:
             return
         for index, string in self.underlying_dynamics:

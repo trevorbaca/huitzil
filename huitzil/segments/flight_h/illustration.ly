@@ -1,6 +1,6 @@
-% 2017-05-08 10:38
+% 2017-08-02 11:40
 
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -8,8 +8,8 @@
 \include "../../stylesheets/flight-stylesheet.ily"
 
 \header {
-    composer = ##f
     title = ##f
+    composer = ##f
 }
 
 \score {
@@ -195,7 +195,7 @@
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol.line-count = #7
             } <<
-                \context TempoIndicatorVoice = "Tempo Indicator Voice" {
+                \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" {
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/4
@@ -687,46 +687,46 @@
                 }
                 \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1/4 \< \f
+                    s1 * 1/4 \f \<
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/4
-                    s1 * 1 \> \mp
+                    s1 * 1 \mp \>
                     s1 * 2/3
-                    s1 * 2/3 \< \p
-                    s1 * 1 \> \mp
+                    s1 * 2/3 \p \<
+                    s1 * 1 \mp \>
                     s1 * 2/5
                     s1 * 2/5
-                    s1 * 2/5 \< \p
+                    s1 * 2/5 \p \<
                     s1 * 2/5
-                    s1 * 1 \> \mp
+                    s1 * 1 \mp \>
                     s1 * 2/3
-                    s1 * 2/3 \< \p
-                    s1 * 1 \> \mp
+                    s1 * 2/3 \p \<
+                    s1 * 1 \mp \>
                     s1 * 2/5
                     s1 * 2/5
-                    s1 * 2/5 \< \p
+                    s1 * 2/5 \p \<
                     s1 * 2/5
-                    s1 * 1 \> \mp
+                    s1 * 1 \mp \>
                     s1 * 2/3
-                    s1 * 2/3 \< \p
-                    s1 * 1 \> \mp
+                    s1 * 2/3 \p \<
+                    s1 * 1 \mp \>
                     s1 * 2/5
                     s1 * 2/5
-                    s1 * 2/5 \< \p
+                    s1 * 2/5 \p \<
                     s1 * 2/5
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1 \< \mp
+                    s1 * 1 \mp \<
                     s1 * 2/3
                     s1 * 2/3
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1 \< \p
+                    s1 * 1 \p \<
                     s1 * 2/5
                     s1 * 2/5
                     s1 * 2/5
                     s1 * 2/5
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1 \< \pp
+                    s1 * 1 \pp \<
                     s1 * 1
                     s1 * 1
                     s1 * 1
@@ -734,16 +734,16 @@
                     s1 * 1 \!
                 }
             >>
+            \clef "bass"
             \context Staff = "Pitch Staff" {
-                \clef "bass"
                 s1 * 124/15
                 \parenthesize
                 a,,1 * 107/15 \glissando
                 bf,,1 * 2/5 \glissando
+                \clef "treble"
                 \once \override NoteHead.duration-log = #2
                 \once \override NoteHead.no-ledgers = ##t
                 \once \override NoteHead.style = #'do
-                \clef "treble"
                 c'''1 * 164/15
             }
         >>

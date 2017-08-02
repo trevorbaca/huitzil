@@ -1,6 +1,6 @@
-% 2017-05-08 10:38
+% 2017-08-02 11:40
 
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -8,8 +8,8 @@
 \include "../../stylesheets/flight-stylesheet.ily"
 
 \header {
-    composer = ##f
     title = ##f
+    composer = ##f
 }
 
 \score {
@@ -492,7 +492,7 @@
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol.line-count = #11
             } <<
-                \context TempoIndicatorVoice = "Tempo Indicator Voice" \with {
+                \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" \with {
                     \override TextScript.staff-padding = #5
                     \override TextSpanner.staff-padding = #5.75
                 } {
@@ -1341,69 +1341,69 @@
                             }
                 }
                 \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
-                    s1 * 3/4 \< \p
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 3/4 \> \mp
-                    s1 * 3/4 \< \p
+                    s1 * 3/4 \mp \>
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 3/4 \> \mp
+                    s1 * 3/4 \mp \>
                     s1 * 1/2
                     s1 * 1/3
-                    s1 * 3/4 \< \p
-                    s1 * 1/2 \> \mp
+                    s1 * 3/4 \p \<
+                    s1 * 1/2 \mp \>
                     s1 * 1/3
-                    s1 * 3/4 \< \p
-                    s1 * 1 \> \mp
-                    s1 * 3/4 \< \p
+                    s1 * 3/4 \p \<
+                    s1 * 1 \mp \>
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 3/4 \> \mp
+                    s1 * 3/4 \mp \>
                     s1 * 1/2
-                    s1 * 3/4 \< \p
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 1 \> \mp
-                    s1 * 3/4 \< \p
+                    s1 * 1 \mp \>
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 3/4 \> \mp
-                    s1 * 3/4 \< \p
+                    s1 * 3/4 \mp \>
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 3/4 \> \mp
+                    s1 * 3/4 \mp \>
                     s1 * 1/2
                     s1 * 1/3
-                    s1 * 3/4 \< \p
-                    s1 * 1/2 \> \mp
+                    s1 * 3/4 \p \<
+                    s1 * 1/2 \mp \>
                     s1 * 1/3
-                    s1 * 3/4 \< \p
-                    s1 * 1 \> \mp
-                    s1 * 3/4 \< \p
+                    s1 * 3/4 \p \<
+                    s1 * 1 \mp \>
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 3/4 \> \mp
+                    s1 * 3/4 \mp \>
                     s1 * 1/2
-                    s1 * 3/4 \< \p
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 1 \> \mp
-                    s1 * 3/4 \< \p
+                    s1 * 1 \mp \>
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 3/4 \> \mp
+                    s1 * 3/4 \mp \>
                     s1 * 1/2
-                    s1 * 3/4 \< \p
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 1 \> \mp
+                    s1 * 1 \mp \>
                     s1 * 3/4
                     s1 * 1/2
-                    s1 * 3/4 \< \p
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 1 \> \mp
-                    s1 * 3/4 \< \p
+                    s1 * 1 \mp \>
+                    s1 * 3/4 \p \<
                     s1 * 1/3
-                    s1 * 3/4 \> \mp
+                    s1 * 3/4 \mp \>
                     s1 * 1/2
-                    s1 * 3/4 \< \p
+                    s1 * 3/4 \p \<
                     s1 * 1/3
                     s1 * 1 \mp
                 }
             >>
+            \clef "bass"
             \context Staff = "Pitch Staff" {
-                \clef "bass"
                 a,1 * 110/3
             }
         >>
