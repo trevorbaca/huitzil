@@ -1,6 +1,6 @@
-% 2017-05-08 10:37
+% 2017-08-02 11:39
 
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -26,27 +26,28 @@
                     s1 * 11/16
                 }
                 {
-                    \time 7/8
-                    s1 * 7/8
+                    \time 31/32
+                    s1 * 31/32
                 }
                 {
                     \time 15/16
                     s1 * 15/16
                 }
                 {
-                    s1 * 15/16
+                    \time 17/32
+                    s1 * 17/32
                 }
                 {
-                    \time 3/8
-                    s1 * 3/8
+                    \time 7/8
+                    s1 * 7/8
                 }
                 {
                     \time 1/1
                     s1 * 1
                 }
                 {
-                    \time 3/4
-                    s1 * 3/4
+                    \time 15/16
+                    s1 * 15/16
                 }
                 {
                     \time 7/8
@@ -61,8 +62,8 @@
                     s1 * 3/4
                 }
                 {
-                    \time 3/2
-                    s1 * 3/2
+                    \time 9/4
+                    s1 * 9/4
                 }
                 {
                     \time 5/4
@@ -105,12 +106,16 @@
                     s1 * 5/4
                 }
                 {
-                    \time 1/1
-                    s1 * 1
+                    \time 9/16
+                    s1 * 9/16
                 }
                 {
-                    \time 1/2
-                    s1 * 1/2
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 3/8
+                    s1 * 3/8
                 }
                 {
                     \time 5/4
@@ -132,11 +137,12 @@
                     s1 * 1
                 }
                 {
-                    \time 3/4
-                    s1 * 3/4
+                    \time 15/16
+                    s1 * 15/16
                 }
                 {
-                    s1 * 3/4
+                    \time 9/8
+                    s1 * 9/8
                 }
                 {
                     \time 1/2
@@ -175,12 +181,16 @@
                     s1 * 9/16
                 }
                 {
-                    \time 3/4
-                    s1 * 3/4
+                    \time 9/8
+                    s1 * 9/8
                 }
                 {
-                    \time 7/8
-                    s1 * 7/8
+                    \time 1/2
+                    s1 * 1/2
+                }
+                {
+                    \time 9/16
+                    s1 * 9/16
                 }
                 {
                     \time 3/4
@@ -240,27 +250,28 @@
                     s1 * 11/16
                 }
                 {
-                    \time 7/8
-                    s1 * 7/8
+                    \time 31/32
+                    s1 * 31/32
                 }
                 {
                     \time 15/16
                     s1 * 15/16
                 }
                 {
-                    s1 * 15/16
+                    \time 17/32
+                    s1 * 17/32
                 }
                 {
-                    \time 3/8
-                    s1 * 3/8
+                    \time 7/8
+                    s1 * 7/8
                 }
                 {
                     \time 4/4
                     s1 * 1
                 }
                 {
-                    \time 3/4
-                    s1 * 3/4
+                    \time 15/16
+                    s1 * 15/16
                 }
                 {
                     \time 7/8
@@ -275,8 +286,8 @@
                     s1 * 3/4
                 }
                 {
-                    \time 6/4
-                    s1 * 3/2
+                    \time 9/4
+                    s1 * 9/4
                 }
                 {
                     \time 5/4
@@ -319,12 +330,16 @@
                     s1 * 5/4
                 }
                 {
-                    \time 4/4
-                    s1 * 1
+                    \time 9/16
+                    s1 * 9/16
                 }
                 {
-                    \time 2/4
-                    s1 * 1/2
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 3/8
+                    s1 * 3/8
                 }
                 {
                     \time 5/4
@@ -346,11 +361,12 @@
                     s1 * 1
                 }
                 {
-                    \time 3/4
-                    s1 * 3/4
+                    \time 15/16
+                    s1 * 15/16
                 }
                 {
-                    s1 * 3/4
+                    \time 9/8
+                    s1 * 9/8
                 }
                 {
                     \time 2/4
@@ -389,12 +405,16 @@
                     s1 * 9/16
                 }
                 {
-                    \time 3/4
-                    s1 * 3/4
+                    \time 9/8
+                    s1 * 9/8
                 }
                 {
-                    \time 7/8
-                    s1 * 7/8
+                    \time 2/4
+                    s1 * 1/2
+                }
+                {
+                    \time 9/16
+                    s1 * 9/16
                 }
                 {
                     \time 3/4
@@ -442,57 +462,56 @@
             }
         >>
         \context Staff = "Staff" <<
-            \clef "bass"
             \context Voice = "Music Voice" {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 6/5 {
-                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                    \once \override Stem.direction = #down
+                    \tempo 8=78
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    \tempo 8=78
+                    \once \override Beam.positions = #'(-4.5 . -4.5)
+                    \once \override Stem.direction = #down
                     fs16 [
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #down
                     e16
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #down
                     f16
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    g16
                     \once \override Stem.direction = #down
+                    g16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #down
                     af16 ]
                 }
                 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
-                    a,8 [
+                    \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    a,8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     ef8 ]
                 }
                 {
-                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    d16 [
+                    \once \override Beam.positions = #'(-4.5 . -4.5)
                     \once \override Stem.direction = #down
+                    d16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    e16
                     \once \override Stem.direction = #down
+                    e16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #down
                     f16 ]
                 }
                 {
@@ -502,225 +521,224 @@
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 9/8 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     bf,8 [
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
+                    \once \override Stem.direction = #up
                     a,8
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
-                    b,8
                     \once \override Stem.direction = #up
+                    b,8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     c8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 6/5 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     f,16 [
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #up
                     a,16
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #up
                     ef16
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    d16
                     \once \override Stem.direction = #up
+                    d16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     e16 ]
                 }
                 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
-                    c8 [
+                    \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    c8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     cs8 ]
                 }
                 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    bf,16 [
+                    \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    bf,16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    a,16
                     \once \override Stem.direction = #up
+                    a,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     b,16 ]
                 }
                 \times 4/5 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     af,16 [
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #up
                     fs,16
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #up
                     e16
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    f,16
                     \once \override Stem.direction = #up
+                    f,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     g,16 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/4 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
-                    b,8 [
+                    \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    b,8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     c8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 4/3 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    cs16 [
+                    \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    cs16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    bf,16
                     \once \override Stem.direction = #up
+                    bf,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     a,16 ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 3/2 {
                     \once \override Beam.positions = #'(-4.5 . -4.5)
                     \once \override Stem.direction = #down
                     g8.
                 }
                 {
-                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(-4.5 . -4.5)
+                    \once \override Stem.direction = #down
                     af16 [
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #down
                     fs16
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    e16
                     \once \override Stem.direction = #down
+                    e16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #down
                     f16 ]
                 }
                 \times 4/5 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     e16 [
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #up
                     f16
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #up
                     a,16
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    ef16
                     \once \override Stem.direction = #up
+                    ef16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     d16 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/4 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
-                    f,8 [
+                    \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    f,8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     g,8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 4/3 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    af,16 [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    af,16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    fs,16
-                    \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    fs,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     e16 ]
                 }
-                {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 3/2 {
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    cs16. [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    cs16. [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     d16. ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 4/3 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    b,16 [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    b,16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     bf,16 ]
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -733,50 +751,55 @@
                     c4
                 }
                 {
-                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     a,16 [
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     g16
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     f16
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     fs16
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     af16 ]
                 }
                 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #3
-                    c32 [
+                    \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    c32 [
                     \set stemLeftBeamCount = #3
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     cs32 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 11/6 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    d16 [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    d16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     b,16 ]
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -800,57 +823,58 @@
                     \once \override Stem.direction = #down
                     af,4
                 }
-                {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 3/2 {
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     a,16. [
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #up
                     g,16.
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    f,16.
                     \once \override Stem.direction = #up
+                    f,16.
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     fs,16. ]
                 }
                 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     f,16 [
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #up
                     fs,16
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #up
                     bf,16
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    e16
                     \once \override Stem.direction = #up
+                    e16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     ef16 ]
                 }
                 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #3
-                    fs,32 [
+                    \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    fs,32 [
                     \set stemLeftBeamCount = #3
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     af,32 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -879,30 +903,30 @@
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 6/5 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     ef16 [
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     f16
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     fs16
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    bf,16
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    bf,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     e16 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -927,20 +951,20 @@
                     c4
                 }
                 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    cs16 [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    cs16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    d16
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    d16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     b,16 ]
                 }
                 {
@@ -959,7 +983,8 @@
                     \once \override Stem.direction = #down
                     ef,2
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 3/2 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Dots.color = #blue
@@ -1027,6 +1052,8 @@
                     af,4
                 }
                 {
+                    \set stemLeftBeamCount = #0
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1035,9 +1062,9 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #up
-                    \set stemLeftBeamCount = #0
-                    \set stemRightBeamCount = #1
                     f,8 [
+                    \set stemLeftBeamCount = #1
+                    \set stemRightBeamCount = #0
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Dots.color = #blue
@@ -1045,8 +1072,6 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #up
-                    \set stemLeftBeamCount = #1
-                    \set stemRightBeamCount = #0
                     ef,8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -1084,17 +1109,8 @@
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
                     f,4
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
-                    g8 [
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1103,9 +1119,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    g8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
-                    af8
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1114,8 +1130,17 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    af8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #up
                     c'8 ]
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -1190,6 +1215,8 @@
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 5/4 {
+                    \set stemLeftBeamCount = #0
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1198,9 +1225,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #0
-                    \set stemRightBeamCount = #1
                     fs8 [
+                    \set stemLeftBeamCount = #1
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1208,19 +1235,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #1
-                    \set stemRightBeamCount = #1
                     af8
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
-                    a8
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1228,12 +1245,22 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
+                    a8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #down
                     cs8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/5 {
+                    \set stemLeftBeamCount = #0
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1242,9 +1269,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #0
-                    \set stemRightBeamCount = #1
                     d8 [
+                    \set stemLeftBeamCount = #1
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1252,9 +1279,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #1
-                    \set stemRightBeamCount = #1
                     cs8
+                    \set stemLeftBeamCount = #1
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1262,19 +1289,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #1
-                    \set stemRightBeamCount = #1
                     ef8
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
-                    e8
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1282,11 +1299,21 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
+                    e8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #down
                     f8 ]
                 }
                 {
+                    \set stemLeftBeamCount = #0
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1295,9 +1322,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #0
-                    \set stemRightBeamCount = #1
                     af8 [
+                    \set stemLeftBeamCount = #1
+                    \set stemRightBeamCount = #0
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1305,11 +1332,11 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #1
-                    \set stemRightBeamCount = #0
                     a8 ]
                 }
                 \times 2/3 {
+                    \set stemLeftBeamCount = #0
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1318,19 +1345,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #0
-                    \set stemRightBeamCount = #1
                     b8 [
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
-                    c'8
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1338,8 +1355,16 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
+                    c'8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #down
                     bf8 ]
                 }
                 {
@@ -1379,7 +1404,10 @@
                     \once \override Stem.color = #red
                     e4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 3/2 {
+                    \set stemLeftBeamCount = #0
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1388,9 +1416,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #0
-                    \set stemRightBeamCount = #1
                     bf8. [
+                    \set stemLeftBeamCount = #1
+                    \set stemRightBeamCount = #0
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1398,12 +1426,12 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #1
-                    \set stemRightBeamCount = #0
                     af8. ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 5/3 {
+                    \set stemLeftBeamCount = #0
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1412,19 +1440,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #0
-                    \set stemRightBeamCount = #1
                     a8 [
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
-                    b,8
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1432,8 +1450,16 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
+                    b,8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #down
                     c8 ]
                 }
                 {
@@ -1449,6 +1475,8 @@
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 3/4 {
+                    \set stemLeftBeamCount = #0
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1457,9 +1485,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #0
-                    \set stemRightBeamCount = #1
                     g8 [
+                    \set stemLeftBeamCount = #1
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1467,19 +1495,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #1
-                    \set stemRightBeamCount = #1
                     fs8
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
-                    af8
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1487,8 +1505,16 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
+                    af8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #down
                     a8 ]
                 }
                 {
@@ -1530,25 +1556,25 @@
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 4/3 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     fs16 [
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     a,16
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    bf,16
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    bf,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     af16 ]
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -1581,6 +1607,8 @@
                     ef4
                 }
                 {
+                    \set stemLeftBeamCount = #0
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1589,19 +1617,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #0
-                    \set stemRightBeamCount = #1
                     d'8 [
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
-                    c'8
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1609,8 +1627,16 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
+                    c'8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #down
                     b8 ]
                 }
                 {
@@ -1644,38 +1670,38 @@
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
                     f4
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
-                    ef8 [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    ef8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     d8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 4/3 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     b,16 [
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     cs16
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    ef16
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    ef16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     d16 ]
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -1708,6 +1734,8 @@
                     bf4
                 }
                 {
+                    \set stemLeftBeamCount = #0
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1716,19 +1744,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
-                    \set stemLeftBeamCount = #0
-                    \set stemRightBeamCount = #1
                     e8 [
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #down
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
-                    f8
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1736,11 +1754,22 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
+                    f8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #down
                     ef8 ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 3/2 {
+                    \set stemLeftBeamCount = #0
+                    \set stemRightBeamCount = #1
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1749,9 +1778,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
-                    \set stemLeftBeamCount = #0
-                    \set stemRightBeamCount = #1
                     b,8. [
+                    \set stemLeftBeamCount = #1
+                    \set stemRightBeamCount = #0
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1759,11 +1788,10 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
-                    \set stemLeftBeamCount = #1
-                    \set stemRightBeamCount = #0
                     ef8. ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 3/2 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1773,17 +1801,8 @@
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
                     a,4.
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
-                    af8. [
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1792,30 +1811,39 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    af8. [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #up
                     bf8. ]
                 }
                 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     fs,16 [
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     g,16
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    e16
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    e16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     ef16 ]
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -1828,17 +1856,8 @@
                     f8
                 }
                 {
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    bf16 [
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1847,8 +1866,17 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    bf16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #up
                     b16 ]
                 }
                 {
@@ -1893,20 +1921,20 @@
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 9/5 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    fs16 [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    fs16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    g16
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    g16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     e16 ]
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -1919,17 +1947,8 @@
                     ef8
                 }
                 {
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
-                    cs8 [
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1938,9 +1957,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    cs8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
-                    d8
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1949,30 +1968,39 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    d8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
-                    c8 ]
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    c8 ]
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    bf,16 [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    bf,16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     b,16 ]
                 }
                 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    ef16 [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    ef16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     f,16 ]
                 }
                 {
@@ -2015,25 +2043,25 @@
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
                     b8
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     cs16 [
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     d16
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    c16
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    c16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     bf,16 ]
                 }
                 {
@@ -2057,20 +2085,20 @@
                     bf4
                 }
                 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    b,16 [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    b,16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    ef16
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    ef16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     a,16 ]
                 }
                 {
@@ -2104,45 +2132,36 @@
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
                     cs4
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
-                    d8 [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    d8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     c8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 9/7 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    a,16 [
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    a,16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    af,16
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    af,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
-                    bf,16 ]
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    bf,16 ]
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
-                    b,8 [
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -2151,11 +2170,21 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    b,8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #up
                     ef8 ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 3/2 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Dots.color = #blue
@@ -2172,17 +2201,8 @@
                     ef,4.
                 }
                 {
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Slur.color = #red
-                    \once \override Stem.color = #red
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
-                    f8 [
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -2191,9 +2211,9 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    f8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
-                    fs8
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -2202,8 +2222,17 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    fs8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
+                    \once \override Accidental.color = #red
+                    \once \override Beam.color = #red
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Dots.color = #red
+                    \once \override NoteHead.color = #red
+                    \once \override Slur.color = #red
+                    \once \override Stem.color = #red
+                    \once \override Stem.direction = #up
                     g8 ]
                 }
                 {
@@ -2211,26 +2240,24 @@
                     \once \override Stem.direction = #up
                     fs8
                 }
-                {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 3/2 {
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(-4.5 . -4.5)
+                    \once \override Stem.direction = #down
                     g16. [
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #down
                     af16.
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Stem.direction = #down
                     f16.
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #down
                     e16. ]
                 }
                 {
@@ -2243,25 +2270,25 @@
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
                     d4
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     ef16 [
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     cs16
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    b,16
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    b,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     c16 ]
                 }
                 \times 4/5 {
@@ -2304,25 +2331,25 @@
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 9/8 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     c16 [
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     d16
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    ef16
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    ef16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Beam.positions = #'(5.5 . 5.5)
+                    \once \override Stem.direction = #up
                     cs16 ]
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -2350,18 +2377,18 @@
                     b,16
                 }
                 {
-                    \once \override Beam.positions = #'(5.5 . 5.5)
-                    \once \override Stem.direction = #up
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #2
-                    c16 [
+                    \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    c16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
-                    e16
                     \once \override Stem.direction = #up
+                    e16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
+                    \once \override Stem.direction = #up
                     bf,16 ]
                 }
                 {

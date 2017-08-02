@@ -1,6 +1,6 @@
-% 2017-05-08 10:38
+% 2017-08-02 11:40
 
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -8,8 +8,8 @@
 \include "../../stylesheets/flight-stylesheet.ily"
 
 \header {
-    composer = ##f
     title = ##f
+    composer = ##f
 }
 
 \score {
@@ -97,7 +97,7 @@
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol.line-count = #7
             } <<
-                \context TempoIndicatorVoice = "Tempo Indicator Voice" \with {
+                \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" \with {
                     \override TextScript.staff-padding = #5
                     \override TextSpanner.staff-padding = #5.75
                 } {
@@ -446,22 +446,22 @@
                     a''1 :16
                 }
                 \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
-                    s1 * 1 \> \mp
-                    s1 * 1 \< \pp
-                    s1 * 1 \> \mp
-                    s1 * 1 \< \pp
-                    s1 * 1 \> \mp
-                    s1 * 1 \< \pp
-                    s1 * 1 \> \mp
-                    s1 * 1 \< \pp
-                    s1 * 1 \> \mp
+                    s1 * 1 \mp \>
+                    s1 * 1 \pp \<
+                    s1 * 1 \mp \>
+                    s1 * 1 \pp \<
+                    s1 * 1 \mp \>
+                    s1 * 1 \pp \<
+                    s1 * 1 \mp \>
+                    s1 * 1 \pp \<
+                    s1 * 1 \mp \>
                     s1 * 1 \pp
                     s1 * 1
                     s1 * 1 \!
                 }
             >>
+            \clef "treble"
             \context Staff = "Pitch Staff" {
-                \clef "treble"
                 s1 * 12
                 \bar "|."
                 \override Score.BarLine.transparent = ##f
