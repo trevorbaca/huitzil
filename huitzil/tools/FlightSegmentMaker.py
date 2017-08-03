@@ -5,7 +5,7 @@ import copy
 import os
 
 
-class FlightSegmentMaker(abjad.abctools.AbjadObject):
+class FlightSegmentMaker(abjad.AbjadObject):
     r'''Flight segment-maker.
 
     ::
@@ -142,13 +142,13 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
 
     @property
     def _storage_format_specification(self):
-        manager = abjad.systemtools.StorageFormatManager
+        manager = abjad.StorageFormatManager
         keyword_argument_names = \
             manager.get_signature_keyword_argument_names(self)
         if not self.rhythm_overwrites:
             keyword_argument_names = list(keyword_argument_names)
             keyword_argument_names.remove('rhythm_overwrites')
-        return abjad.systemtools.StorageFormatSpecification(
+        return abjad.StorageFormatSpecification(
             self,
             keyword_argument_names=keyword_argument_names,
             )
@@ -216,7 +216,7 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
         for note in abjad.iterate(pitch_staff).by_class(abjad.Note):
             if note.written_pitch == abjad.NamedPitch('C6'):
                 abjad.override(note).note_head.no_ledgers = True
-                style = abjad.schemetools.SchemeSymbol('do')
+                style = abjad.SchemeSymbol('do')
                 abjad.override(note).note_head.style = style
                 abjad.override(note).note_head.duration_log = 2
 
@@ -462,21 +462,21 @@ class FlightSegmentMaker(abjad.abctools.AbjadObject):
                     '<', 
                     format_slot='right',
                     )
-                stencil = abjad.schemetools.Scheme('constante-hairpin')
+                stencil = abjad.Scheme('constante-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             elif string == '<!':
                 indicator = abjad.LilyPondCommand(
                     '<', 
                     format_slot='right',
                     )
-                stencil = abjad.schemetools.Scheme('flared-hairpin')
+                stencil = abjad.Scheme('flared-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             elif string == '!>':
                 indicator = abjad.LilyPondCommand(
                     '>', 
                     format_slot='right',
                     )
-                stencil = abjad.schemetools.Scheme('flared-hairpin')
+                stencil = abjad.Scheme('flared-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             else:
                 indicator = abjad.Dynamic(string)

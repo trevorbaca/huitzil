@@ -4,7 +4,7 @@ import baca
 import collections
 
 
-class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
+class DreamsRhythmSpecifier(abjad.AbjadObject):
     r'''Dreams rhythm specifier.
     '''
 
@@ -71,7 +71,7 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
 
     @property
     def _storage_format_specification(self):
-        manager = abjad.systemtools.StorageFormatManager
+        manager = abjad.StorageFormatManager
         keyword_argument_names = \
             manager.get_signature_keyword_argument_names(self)
         if not self.rhythm_overwrites:
@@ -211,10 +211,10 @@ class DreamsRhythmSpecifier(abjad.abctools.AbjadObject):
             numerators = []
             for note in note_list:
                 duration = note.written_duration
-                fraction = abjad.mathtools.NonreducedFraction(duration)
+                fraction = abjad.NonreducedFraction(duration)
                 fraction = fraction.with_denominator(128)
                 numerators.append(fraction.numerator)
-            ratio = abjad.mathtools.Ratio(numerators)
+            ratio = abjad.Ratio(numerators)
             if 0 <= extra_count:
                 is_diminution = False
             else:
