@@ -312,7 +312,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             )
         leaf_indicators = (
             abjad.Clef,
-            abjad.instrumenttools.Instrument,
+            abjad.Instrument,
             )
         for specifier in specifiers:
             if isinstance(specifier, note_indicators):
@@ -435,7 +435,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             agent = abjad.inspect(measure)
             time_signature = agent.get_indicator(abjad.TimeSignature)
             if time_signature.denominator < 4:
-                fraction = abjad.mathtools.NonreducedFraction(
+                fraction = abjad.NonreducedFraction(
                     time_signature.pair)
                 fraction = fraction.with_multiple_of_denominator(4)
                 abjad.detach(time_signature, measure)
