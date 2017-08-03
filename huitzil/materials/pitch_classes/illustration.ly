@@ -1,6 +1,6 @@
-% 2017-05-08 11:17
+% 2017-08-03 18:08
 
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(set-global-staff-size 16)
@@ -60,7 +60,7 @@
                 e'8
                 f'8 \stopGroup
                 s8
-                cs'8 \stopGroup \startGroup \stopGroup ^ \markup { 3 }
+                cs'8 \stopGroup \stopGroup \startGroup ^ \markup { 3 }
                 s8
                 bf'8 \startGroup \startGroup ^ \markup { 4 }
                 a'8
@@ -93,7 +93,7 @@
                 bf'8
                 a'8 \stopGroup \stopGroup
                 s8
-                g'8 \startGroup \stopGroup \startGroup \stopGroup ^ \markup { 11 }
+                g'8 \stopGroup \stopGroup \startGroup \startGroup ^ \markup { 11 }
                 s8
                 af'8 \startGroup \startGroup ^ \markup { 12 }
                 fs'8
@@ -126,7 +126,7 @@
                 cs'8
                 bf'8 \stopGroup
                 s8
-                ef'8 \startGroup \stopGroup \stopGroup ^ \markup { 19 }
+                ef'8 \stopGroup \stopGroup \startGroup ^ \markup { 19 }
                 s8
                 d'8 \startGroup \startGroup ^ \markup { 20 }
                 e'8
@@ -159,7 +159,7 @@
                 g'8
                 af'8 \stopGroup
                 s8
-                a'8 \startGroup \stopGroup \stopGroup ^ \markup { 27 }
+                a'8 \stopGroup \stopGroup \startGroup ^ \markup { 27 }
                 s8
                 ef'8 \startGroup \startGroup ^ \markup { 28 }
                 d'8
@@ -192,7 +192,7 @@
                 ef'8
                 d'8 \stopGroup \stopGroup
                 s8
-                b'8 \startGroup \stopGroup \startGroup \stopGroup ^ \markup { 35 }
+                b'8 \stopGroup \stopGroup \startGroup \startGroup ^ \markup { 35 }
                 s8
                 c'8 \startGroup \startGroup ^ \markup { 36 }
                 cs'8
@@ -225,7 +225,7 @@
                 a'8
                 ef'8 \stopGroup
                 s8
-                e'8 \stopGroup \startGroup \stopGroup ^ \markup { 43 }
+                e'8 \stopGroup \stopGroup \startGroup ^ \markup { 43 }
                 s8
                 f'8 \startGroup \startGroup ^ \markup { 44 }
                 g'8
@@ -258,7 +258,7 @@
                 b'8
                 c'8 \stopGroup
                 s8
-                fs'8 \stopGroup \startGroup \stopGroup ^ \markup { 51 }
+                fs'8 \stopGroup \stopGroup \startGroup ^ \markup { 51 }
                 s8
                 e'8 \startGroup \startGroup ^ \markup { 52 }
                 f'8
@@ -291,7 +291,7 @@
                 e'8
                 f'8 \stopGroup \stopGroup
                 s8
-                e'8 \startGroup \stopGroup \startGroup \stopGroup ^ \markup { 59 }
+                e'8 \stopGroup \stopGroup \startGroup \startGroup ^ \markup { 59 }
                 s8
                 f'8 \startGroup \startGroup ^ \markup { 60 }
                 a'8
@@ -324,7 +324,7 @@
                 fs'8
                 e'8 \stopGroup
                 s8
-                bf'8 \stopGroup \startGroup \stopGroup ^ \markup { 67 }
+                bf'8 \stopGroup \stopGroup \startGroup ^ \markup { 67 }
                 s8
                 a'8 \startGroup \startGroup ^ \markup { 68 }
                 b'8
