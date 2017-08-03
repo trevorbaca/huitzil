@@ -171,7 +171,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
     def _attach_clefs(self):
         pitch_staff = self._score['Pitch Staff']
         notes = abjad.iterate(pitch_staff).by_class(abjad.Note)
-        for left_note, right_note in abjad.Sequence(notes).nwise(n=2):
+        for left_note, right_note in abjad.sequence(notes).nwise(n=2):
             left_clef = abjad.Clef.from_selection(left_note) 
             right_clef = abjad.Clef.from_selection(right_note)
             if left_clef != right_clef:

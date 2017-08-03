@@ -5,9 +5,9 @@ import baca
 
 def make_numerators(numerators, addenda):
     numerators = baca.helianthate(numerators, -1, 1)
-    numerators = baca.Sequence(numerators).flatten()
+    numerators = baca.sequence(numerators).flatten()
     length = len(numerators)
-    addenda = baca.Sequence(addenda).repeat_to_length(length)
+    addenda = baca.sequence(addenda).repeat_to_length(length)
     pairs = zip(numerators, addenda)
     numerators = [sum(_) for _ in pairs]
     return numerators

@@ -404,10 +404,10 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         music_voice = self._score['Music Voice']
         component_durations = [
             abjad.inspect(_).get_duration() for _ in music_voice]
-        measure_parts = baca.Sequence(component_durations)
+        measure_parts = baca.sequence(component_durations)
         measure_parts = measure_parts.partition_by_weights(measure_durations)
         measure_counts = [len(_) for _ in measure_parts]
-        parts = baca.Sequence(music_voice[:]).partition_by_counts(
+        parts = baca.sequence(music_voice[:]).partition_by_counts(
             measure_counts,
             )
         return parts

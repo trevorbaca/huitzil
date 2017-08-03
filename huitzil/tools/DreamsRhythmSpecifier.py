@@ -88,7 +88,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         pass
 
     def _annotate_original_durations(self, note_lists):
-        notes = baca.Sequence(note_lists).flatten()
+        notes = baca.sequence(note_lists).flatten()
         for note in notes:
             abjad.attach(note.written_duration, note)
 
@@ -96,7 +96,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         if not self.glissando_patterns:
             return
         notes = list(abjad.iterate(music).by_class(abjad.Note))
-        note_pairs = abjad.Sequence(notes).nwise()
+        note_pairs = abjad.sequence(notes).nwise()
         total_note_pairs = len(note_pairs)
         for i, note_pair in enumerate(note_pairs):
             has_glissando = False
@@ -115,9 +115,9 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         for tuplet in tuplets:
             voice_numbers = [
                 abjad.inspect(_).get_indicator(int) for _ in tuplet]
-            runs = baca.Sequence(voice_numbers).group_by()
+            runs = baca.sequence(voice_numbers).group_by()
             counts = [len(_) for _ in runs]
-            note_groups = baca.Sequence(tuplet[:]).partition_by_counts(counts)
+            note_groups = baca.sequence(tuplet[:]).partition_by_counts(counts)
             for note_group in note_groups:
                 beam = abjad.DuratedComplexBeam()
                 note_group = abjad.select(note_group)
@@ -161,12 +161,12 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
             assert len(component) == 2
             voice_number = component[0]
             indices = component[1]
-            notes = baca.Sequence(note_lists).flatten()
+            notes = baca.sequence(note_lists).flatten()
             for i, note in enumerate(notes):
                 if i in indices:
                     abjad.detach(int, note)
                     abjad.attach(voice_number, note)
-        notes = baca.Sequence(note_lists).flatten()
+        notes = baca.sequence(note_lists).flatten()
         for note in notes:
             assert abjad.inspect(note).has_indicator(int), repr(note)
 
