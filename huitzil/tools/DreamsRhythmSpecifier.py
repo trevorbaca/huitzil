@@ -95,7 +95,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
     def _apply_glissando_patterns(self, music):
         if not self.glissando_patterns:
             return
-        notes = list(abjad.iterate(music).by_class(abjad.Note))
+        notes = abjad.select(music).by_leaf(pitched=True)
         note_pairs = abjad.sequence(notes).nwise()
         total_note_pairs = len(note_pairs)
         for i, note_pair in enumerate(note_pairs):
@@ -173,7 +173,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
     def _displace_pitch_classes(self, music):
         if not self.pc_displacement:
             return
-        notes = list(abjad.iterate(music).by_class(abjad.Note))
+        notes = abjad.select(music).by_leaf(pitched=True)
         total_notes = len(notes)
         down_one_octave = abjad.Transposition(-12)
         for i, note in enumerate(notes):
