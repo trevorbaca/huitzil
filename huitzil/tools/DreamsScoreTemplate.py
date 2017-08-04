@@ -21,7 +21,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
 
         ::
 
-            >>> template = huitzil.tools.DreamsScoreTemplate()
+            >>> template = huitzil.DreamsScoreTemplate()
             >>> score = template()
 
         ::

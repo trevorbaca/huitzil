@@ -8,7 +8,7 @@ if not (
     raise ImportError('Requires Python 3.5.')
 del distutils
 del platform
-from huitzil import tools
-from huitzil import materials
+from huitzil.tools import *
+from huitzil.materials import *
 from huitzil import segments
-from huitzil.tools import MarkupLibrary as markup
+from huitzil import MarkupLibrary as markup

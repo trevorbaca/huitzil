@@ -1,4 +1,4 @@
-% 2017-08-03 09:36
+% 2017-08-04 13:22
 
 \version "2.19.64"
 \language "english"
@@ -734,16 +734,16 @@
                     s1 * 1 \!
                 }
             >>
-            \clef "bass"
             \context Staff = "Pitch Staff" {
+                \clef "bass"
                 s1 * 124/15
                 \parenthesize
                 bf,,1 * 107/15 \glissando
                 cf,1 * 2/5 \glissando
-                \clef "treble"
                 \once \override NoteHead.duration-log = #2
                 \once \override NoteHead.no-ledgers = ##t
                 \once \override NoteHead.style = #'do
+                \clef "treble"
                 c'''1 * 164/15
             }
         >>

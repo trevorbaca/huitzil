@@ -2,6 +2,7 @@
 import abjad
 import baca
 import copy
+import huitzil
 import os
 
 
@@ -273,8 +274,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         return leaves
 
     def _make_score(self):
-        import huitzil
-        template = huitzil.tools.FlightScoreTemplate()
+        template = huitzil.FlightScoreTemplate()
         score = template()
         self._score = score
 
@@ -310,9 +310,6 @@ class FlightSegmentMaker(abjad.AbjadObject):
 
     def _populate_pitch_staff(self):
         pitch_staff = self._score['Pitch Staff']
-        if self.clef is not None:
-            clef = abjad.Clef(self.clef)
-            abjad.attach(clef, pitch_staff)
         if not self.notes:
             return
         if not self.pitches:
@@ -360,12 +357,12 @@ class FlightSegmentMaker(abjad.AbjadObject):
                 multiplier = abjad.Multiplier(duration)
                 abjad.attach(multiplier, note)
             pitch_staff.extend(notes)
-        first_leaf = abjad.inspect(pitch_staff).get_leaf(n=0)
+        leaf = abjad.inspect(pitch_staff).get_leaf(0)
         clef = abjad.Clef('bass')
-        if isinstance(first_leaf, abjad.Note):
-            if abjad.NamedPitch('C4') < first_leaf.written_pitch:
-                clef = abjad.Clef('treble')
-            abjad.attach(clef, pitch_staff)
+        if (isinstance(leaf, abjad.Note) and
+            abjad.NamedPitch('C4') < leaf.written_pitch):
+            clef = abjad.Clef('treble')
+        abjad.attach(clef, leaf)
 
     def _populate_tempo_indicator_voice(self):
         if not self.notes:

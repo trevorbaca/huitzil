@@ -1,4 +1,4 @@
-% 2017-08-03 09:36
+% 2017-08-04 13:22
 
 \version "2.19.64"
 \language "english"
@@ -460,8 +460,8 @@
                     s1 * 1 \!
                 }
             >>
-            \clef "treble"
             \context Staff = "Pitch Staff" {
+                \clef "bass"
                 s1 * 12
                 \bar "|."
                 \override Score.BarLine.transparent = ##f

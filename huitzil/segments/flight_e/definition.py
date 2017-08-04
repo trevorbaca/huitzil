@@ -3,7 +3,7 @@ import abjad
 import huitzil
 
 
-segment_maker = huitzil.tools.FlightSegmentMaker(
+segment_maker = huitzil.FlightSegmentMaker(
     markup_leaves=False,
     name='flight E',
     pitches=[
@@ -145,31 +145,31 @@ segment_maker.glissando_break_indices = [
     ]
 
 segment_maker.tempo_specifier = [
-    (0, huitzil.materials.tempi[66]),
+    (0, huitzil.tempi[66]),
     (3, abjad.Accelerando()),
-    (8, huitzil.materials.tempi[88]),
+    (8, huitzil.tempi[88]),
     (8, abjad.Ritardando()),
-    (13, huitzil.materials.tempi[66]),
+    (13, huitzil.tempi[66]),
     (17, abjad.Accelerando()),
-    (19, huitzil.materials.tempi[88]),
+    (19, huitzil.tempi[88]),
     (19, abjad.Ritardando()),
-    (20, huitzil.materials.tempi[66]),
+    (20, huitzil.tempi[66]),
     (23, abjad.Accelerando()),
-    (28, huitzil.materials.tempi[88]),
+    (28, huitzil.tempi[88]),
     (28, abjad.Ritardando()),
-    (33, huitzil.materials.tempi[66]),
+    (33, huitzil.tempi[66]),
     (37, abjad.Accelerando()),
-    (39, huitzil.materials.tempi[88]),
+    (39, huitzil.tempi[88]),
     (39, abjad.Ritardando()),
-    (40, huitzil.materials.tempi[66]),
+    (40, huitzil.tempi[66]),
     (44, abjad.Accelerando()),
-    (46, huitzil.materials.tempi[88]),
+    (46, huitzil.tempi[88]),
     (46, abjad.Ritardando()),
-    (49, huitzil.materials.tempi[66]),
+    (49, huitzil.tempi[66]),
     (52, abjad.Accelerando()),
-    (54, huitzil.materials.tempi[88]),
+    (54, huitzil.tempi[88]),
     (54, abjad.Ritardando()),
-    (56, huitzil.materials.tempi[66]),
+    (56, huitzil.tempi[66]),
     ]
 
 segment_maker.tremolo_map = [

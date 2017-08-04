@@ -3,10 +3,11 @@ import abjad
 import baca
 import copy
 import experimental
+import huitzil
 import os
 
 
-class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
+class DreamsSegmentMaker(experimental.SegmentMaker):
     r'''Dreams segment-maker.
 
     ::
@@ -86,6 +87,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         self._make_lilypond_file()
         self._configure_lilypond_file()
         self._interpret_music_makers()
+        self._configure_score()
         self._populate_time_signature_context()
         self._adjust_stems()
         self._attach_tempo_indicators()
@@ -100,12 +102,10 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         if not abjad.inspect(score).is_well_formed():
-
             for container in abjad.iterate(score).by_class(abjad.Container):
                 if len(container) == 0:
                     print(container)
                     abjad.f(container)
-
             string = \
                 abjad.inspect(score).tabulate_well_formedness_violations()
             string = '\n' + string
@@ -228,7 +228,6 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         compound_scope,
         include_rests=False,
         ):
-        import huitzil
         timespan_map, timespans = [], []
         for scope in compound_scope.simple_scopes:
             start_stage, stop_stage = scope.stages
@@ -259,6 +258,10 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         if not self.name == 'dreams':
             lilypond_file.header_block.title = None
             lilypond_file.header_block.composer = None
+
+    def _configure_score(self):
+        leaf = abjad.inspect(self._score['Music Voice']).get_leaf(0)
+        abjad.attach(abjad.Clef('bass'), leaf)
 
     def _get_offsets(self, start_stage, stop_stage):
         context = self._score['Time Signature Context Skips']
@@ -291,10 +294,9 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
         self._make_music_for_voice(music_voice)
 
     def _interpret_music_specifier(self, music_specifier):
-        import huitzil
         simple_scope = music_specifier.scope
-        assert isinstance(simple_scope, huitzil.tools.SimpleScope), simple_scope
-        compound_scope = huitzil.tools.CompoundScope(simple_scope)
+        assert isinstance(simple_scope, huitzil.SimpleScope), simple_scope
+        compound_scope = huitzil.CompoundScope(simple_scope)
         result = self._compound_scope_to_logical_ties(compound_scope)
         logical_ties, timespan = result
         result = self._compound_scope_to_logical_ties(
@@ -357,16 +359,14 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             specifier(logical_ties, timespan)
 
     def _interpret_music_specifiers(self):
-        import huitzil
         for music_specifier in self.music_specifiers:
             self._interpret_music_specifier(music_specifier)
 
     def _initialize_music_makers(self, music_makers):
-        import huitzil
         music_makers = music_makers or []
         music_makers = list(music_makers)
         for music_maker in music_makers:
-            assert isinstance(music_maker, huitzil.tools.RhythmMaker)
+            assert isinstance(music_maker, huitzil.RhythmMaker)
         self._music_makers = music_makers
 
     def _make_lilypond_file(self):
@@ -393,10 +393,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
             voice.extend(music)
 
     def _make_score(self):
-        import huitzil
-        template = huitzil.tools.DreamsScoreTemplate()
-        score = template()
-        self._score = score
+        self._score = huitzil.DreamsScoreTemplate()()
 
     def _partition_music_into_measures(self):
         context = self._score['Time Signature Context Skips']
@@ -549,8 +546,7 @@ class DreamsSegmentMaker(experimental.makertools.SegmentMaker):
 
         Returns rhythm specifier.
         '''
-        import huitzil
-        rhythm_specifier = huitzil.tools.DreamsRhythmSpecifier()
+        rhythm_specifier = huitzil.DreamsRhythmSpecifier()
         self.music_makers.append(rhythm_specifier)
         return rhythm_specifier
 

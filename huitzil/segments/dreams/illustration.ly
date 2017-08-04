@@ -1,4 +1,4 @@
-% 2017-08-03 09:36
+% 2017-08-04 13:22
 
 \version "2.19.64"
 \language "english"
@@ -470,6 +470,7 @@
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(-4.5 . -4.5)
                     \once \override Stem.direction = #down
+                    \clef "bass"
                     fs16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2

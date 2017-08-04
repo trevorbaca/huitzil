@@ -21,7 +21,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
 
         ::
 
-            >>> template = huitzil.tools.FlightScoreTemplate()
+            >>> template = huitzil.FlightScoreTemplate()
             >>> score = template()
 
         ::
