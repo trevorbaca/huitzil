@@ -3,7 +3,7 @@ import abjad
 import huitzil
 
 
-segment_maker = huitzil.tools.FlightSegmentMaker(
+segment_maker = huitzil.FlightSegmentMaker(
     markup_leaves=False,
     name='flight C',
     pitches=[
@@ -111,36 +111,36 @@ segment_maker.glissando_break_indices = [
     ]
 
 segment_maker.tempo_specifier = [
-    #(0, huitzil.materials.tempi[44]),
+    #(0, huitzil.tempi[44]),
     (39, abjad.Accelerando()),
-    (42, huitzil.materials.tempi[66]),
-    (43, huitzil.materials.tempi[44]),
+    (42, huitzil.tempi[66]),
+    (43, huitzil.tempi[44]),
     (43, abjad.Accelerando()),
-    (48, huitzil.materials.tempi[88]),
+    (48, huitzil.tempi[88]),
     ]
 
 segment_maker.tremolo_map = [
     (0, huitzil.markup.trem_moderato()),
     (30, huitzil.markup.trem_mod()),
-    (30, huitzil.tools.dashed_arrow()),
+    (30, huitzil.dashed_arrow()),
     (34, huitzil.markup.trem_stretto()),
     (39, huitzil.markup.sub_trem_mod()),
-    (39, huitzil.tools.dashed_arrow()),
+    (39, huitzil.dashed_arrow()),
     (40, huitzil.markup.piu_stretto()),
-    (40, huitzil.tools.dashed_arrow()),
+    (40, huitzil.dashed_arrow()),
     (41, huitzil.markup.piu_largo()),
-    (41, huitzil.tools.dashed_arrow()),
+    (41, huitzil.dashed_arrow()),
     (42, huitzil.markup.piu_stretto()),
     (43, huitzil.markup.sub_trem_mod()),
-    (43, huitzil.tools.dashed_arrow()),
+    (43, huitzil.dashed_arrow()),
     (44, huitzil.markup.piu_stretto()),
-    (44, huitzil.tools.dashed_arrow()),
+    (44, huitzil.dashed_arrow()),
     (45, huitzil.markup.piu_largo()),
-    (45, huitzil.tools.dashed_arrow()),
+    (45, huitzil.dashed_arrow()),
     (46, huitzil.markup.piu_stretto()),
-    (46, huitzil.tools.dashed_arrow()),
+    (46, huitzil.dashed_arrow()),
     (47, huitzil.markup.piu_largo()),
-    (47, huitzil.tools.dashed_arrow()),
+    (47, huitzil.dashed_arrow()),
     (48, huitzil.markup.piu_stretto()),
     ]
 

@@ -1,4 +1,4 @@
-% 2017-08-03 09:36
+% 2017-08-04 13:22
 
 \version "2.19.64"
 \language "english"
@@ -760,8 +760,8 @@
                     s1 * 1 \pp
                 }
             >>
-            \clef "bass"
             \context Staff = "Pitch Staff" {
+                \clef "bass"
                 a,1 * 35/2 \glissando
                 g,1 * 4
                 \parenthesize
