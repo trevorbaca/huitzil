@@ -1,16 +1,9 @@
-% 2017-08-04 13:22
-
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
 
 \include "../../stylesheets/flight-stylesheet.ily"
-
-\header {
-    title = ##f
-    composer = ##f
-}
 
 \score {
     \context Score = "Score" <<
@@ -1062,9 +1055,11 @@
                     s1 * 1 \f
                 }
             >>
-            \context Staff = "Pitch Staff" {
-                \clef "bass"
-                s1 * 539/20
+            \context PitchStaff = "Pitch Staff" {
+                \context PitchVoice = "Pitch Voice" {
+                    \clef "bass"
+                    s1 * 539/20
+                }
             }
         >>
     >>

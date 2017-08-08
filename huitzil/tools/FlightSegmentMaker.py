@@ -112,13 +112,13 @@ class FlightSegmentMaker(abjad.AbjadObject):
         self._make_score()
         self._configure_score()
         self._make_lilypond_file()
-        self._configure_lilypond_file()
+#        self._configure_lilypond_file()
         self._populate_bow_location_voice()
         self._populate_time_signature_voice()
         self._populate_tempo_indicator_voice()
         self._populate_tremolo_indicator_voice()
         self._populate_underlying_dynamics_voice()
-        self._populate_pitch_staff()
+        self._populate_pitch_voice()
         self._attach_clefs()
         self._format_altissimi_pitches()
         self._attach_lh_glissandi()
@@ -160,8 +160,8 @@ class FlightSegmentMaker(abjad.AbjadObject):
         if not self.name == 'flight I':
             return
         self._score.add_final_bar_line()
-        pitch_staff = self._score['Pitch Staff']
-        last_leaf = abjad.inspect(pitch_staff).get_leaf(-1)
+        pitch_voice = self._score['Pitch Voice']
+        last_leaf = abjad.inspect(pitch_voice).get_leaf(-1)
         string = r'override Score.BarLine.transparent = ##f'
         command = abjad.LilyPondCommand(string, format_slot='after')
         abjad.attach(command, last_leaf)
@@ -170,8 +170,8 @@ class FlightSegmentMaker(abjad.AbjadObject):
         abjad.attach(command, last_leaf)
 
     def _attach_clefs(self):
-        pitch_staff = self._score['Pitch Staff']
-        notes = abjad.iterate(pitch_staff).by_class(abjad.Note)
+        pitch_voice = self._score['Pitch Voice']
+        notes = abjad.iterate(pitch_voice).by_class(abjad.Note)
         for left_note, right_note in abjad.sequence(notes).nwise(n=2):
             left_clef = abjad.Clef.from_selection(left_note) 
             right_clef = abjad.Clef.from_selection(right_note)
@@ -183,9 +183,9 @@ class FlightSegmentMaker(abjad.AbjadObject):
             return
         if not self.lh_glissandi:
             return
-        pitch_staff = self._score['Pitch Staff']
+        pitch_voice = self._score['Pitch Voice']
         for start_index, stop_index in self.lh_glissandi:
-            leaves = abjad.select(pitch_staff).by_leaf()
+            leaves = abjad.select(pitch_voice).by_leaf()
             spanner_leaves = leaves[start_index:stop_index+1]
             glissando = abjad.Glissando()
             abjad.attach(glissando, spanner_leaves)
@@ -199,10 +199,10 @@ class FlightSegmentMaker(abjad.AbjadObject):
             markup = abjad.Markup(i)
             abjad.attach(markup, logical_tie.head)
 
-    def _configure_lilypond_file(self):
-        lilypond_file = self._lilypond_file
-        lilypond_file.header_block.title = None
-        lilypond_file.header_block.composer = None
+#    def _configure_lilypond_file(self):
+#        lilypond_file = self._lilypond_file
+#        lilypond_file.header_block.title = None
+#        lilypond_file.header_block.composer = None
 
     def _configure_score(self):
         bow_staff = self._score['Bow Staff']
@@ -213,8 +213,8 @@ class FlightSegmentMaker(abjad.AbjadObject):
             abjad.override(voice).text_spanner.staff_padding = 5.75
 
     def _format_altissimi_pitches(self):
-        pitch_staff = self._score['Pitch Staff']
-        for note in abjad.iterate(pitch_staff).by_class(abjad.Note):
+        pitch_voice = self._score['Pitch Voice']
+        for note in abjad.iterate(pitch_voice).by_class(abjad.Note):
             if note.written_pitch == abjad.NamedPitch('C6'):
                 abjad.override(note).note_head.no_ledgers = True
                 style = abjad.SchemeSymbol('do')
@@ -238,11 +238,12 @@ class FlightSegmentMaker(abjad.AbjadObject):
             )
         lilypond_file = abjad.LilyPondFile.new(
             music=self._score,
+            date_time_token=False,
             includes=[path],
             use_relative_includes=True,
             )
         for item in lilypond_file.items[:]:
-            if getattr(item, 'name', None) in ('layout', 'paper'):
+            if getattr(item, 'name', None) in ('header', 'layout', 'paper'):
                 lilypond_file.items.remove(item)
         self._lilypond_file = lilypond_file
 
@@ -308,8 +309,8 @@ class FlightSegmentMaker(abjad.AbjadObject):
             notes_in_spanner = abjad.select(notes_in_spanner)
             abjad.attach(abjad.Glissando(), notes_in_spanner)
 
-    def _populate_pitch_staff(self):
-        pitch_staff = self._score['Pitch Staff']
+    def _populate_pitch_voice(self):
+        pitch_voice = self._score['Pitch Voice']
         if not self.notes:
             return
         if not self.pitches:
@@ -318,7 +319,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
             skip = abjad.Skip(1)
             multiplier = abjad.Multiplier(total_duration)
             abjad.attach(multiplier, skip)
-            pitch_staff.append(skip)
+            pitch_voice.append(skip)
         else:
             durations = []
             current_duration = abjad.Duration(0)
@@ -356,8 +357,8 @@ class FlightSegmentMaker(abjad.AbjadObject):
             for note, duration in zip(notes, durations):
                 multiplier = abjad.Multiplier(duration)
                 abjad.attach(multiplier, note)
-            pitch_staff.extend(notes)
-        leaf = abjad.inspect(pitch_staff).get_leaf(0)
+            pitch_voice.extend(notes)
+        leaf = abjad.inspect(pitch_voice).get_leaf(0)
         clef = abjad.Clef('bass')
         if (isinstance(leaf, abjad.Note) and
             abjad.NamedPitch('C4') < leaf.written_pitch):

@@ -8,25 +8,29 @@ class FlightScoreTemplate(baca.ScoreTemplate):
 
     ::
 
-        >>> import abjad
-        >>> import baca
         >>> import huitzil
+        >>> import pathlib
 
-    '''
 
-    ### SPECIAL METHODS ###
-
-    def __call__(self):
-        r'''Calls score template.
-
+    ..  container:: example
+    
         ::
 
             >>> template = huitzil.FlightScoreTemplate()
-            >>> score = template()
+            >>> lilypond_file = template.__illustrate__()
+            >>> path = pathlib.Path(huitzil.__path__[0], 'stylesheets')
+            >>> path_1 = path.joinpath('context-definitions.ily')
+            >>> path_2 = path.joinpath('flight-context-definitions.ily')
+            >>> lilypond_file = abjad.new(
+            ...     lilypond_file,
+            ...     global_staff_size=16,
+            ...     includes=[str(path_1), str(path_2)],
+            ...     )
+            >>> show(lilypond_file) # doctest: +SKIP
 
         ::
         
-            >>> f(score)
+            >>> f(lilypond_file[abjad.Score])
             \context Score = "Score" <<
                 \context TimeSignatureContext = "Time Signature Context" <<
                     \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -37,18 +41,32 @@ class FlightScoreTemplate(baca.ScoreTemplate):
                 \context PianoStaff = "Piano Staff" <<
                     \context BowStaff = "Bow Staff" <<
                         \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" {
+                            s1
                         }
                         \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+                            s1
                         }
                         \context BowLocationVoice = "Bow Location Voice" {
+                            s1
                         }
                         \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
+                            s1
                         }
                     >>
-                    \context Staff = "Pitch Staff" {
+                    \context PitchStaff = "Pitch Staff" {
+                        \context PitchVoice = "Pitch Voice" {
+                            s1
+                        }
                     }
                 >>
             >>
+
+    '''
+
+    ### SPECIAL METHODS ###
+
+    def __call__(self):
+        r'''Calls score template.
 
         Returns score.
         '''
@@ -79,8 +97,14 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             )
         bow_staff.append(underlying_dynamics_voice)
         pitch_staff = abjad.Staff(
+            context_name='PitchStaff',
             name='Pitch Staff',
             )
+        pitch_voice = abjad.Voice(
+            context_name='PitchVoice',
+            name='Pitch Voice',
+            )
+        pitch_staff.append(pitch_voice)
         staff_group = abjad.StaffGroup(
             context_name='PianoStaff',
             name='Piano Staff',

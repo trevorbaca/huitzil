@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import abjad
 import baca
+import huitzil
 
 
 class DreamsScoreTemplate(baca.ScoreTemplate):
@@ -8,26 +9,27 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
 
     ::
 
-        >>> import abjad
-        >>> import baca
         >>> import huitzil
+        >>> import pathlib
 
-    '''
-
-    ### SPECIAL METHODS ###
-
-    def __call__(self):
-        r'''Calls score template.
+    ..  container:: example
 
         ::
 
             >>> template = huitzil.DreamsScoreTemplate()
-            >>> score = template()
+            >>> lilypond_file = template.__illustrate__()
+            >>> path = pathlib.Path(huitzil.__path__[0], 'stylesheets')
+            >>> path = path.joinpath('context-definitions.ily')
+            >>> lilypond_file = abjad.new(
+            ...     lilypond_file,
+            ...     global_staff_size=15,
+            ...     includes=[path],
+            ...     )
+            >>> show(lilypond_file) # doctest: +SKIP
 
         ::
 
-        
-            >>> f(score)
+            >>> f(lilypond_file[abjad.Score])
             \context Score = "Score" <<
                 \context TimeSignatureContext = "Time Signature Context" <<
                     \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -37,9 +39,28 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
                 >>
                 \context Staff = "Staff" <<
                     \context Voice = "Music Voice" {
+                        \set Staff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Cello
+                            }
+                        \set Staff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                Vc.
+                            }
+                        \clef "bass"
+                        s1
                     }
                 >>
             >>
+
+    '''
+
+    ### SPECIAL METHODS ###
+
+    def __call__(self):
+        r'''Calls score template.
 
         Returns score.
         '''
@@ -48,7 +69,16 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
             name='Staff',
             )
         staff.is_simultaneous = True
-        #abjad.attach(abjad.Clef('bass'), staff)
+        abjad.annotate(
+            staff,
+            'default_instrument',
+            huitzil.materials.instruments['cello'],
+            )
+        abjad.annotate(
+            staff,
+            'default_clef',
+            abjad.Clef('bass'),
+            )
         music_voice = abjad.Voice(
             name='Music Voice',
             )
