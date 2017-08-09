@@ -44,7 +44,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                         pitch_range=abjad.PitchRange(
                             range_string='[C2, G5]',
                             ),
-                        sounding_pitch_of_written_middle_c=abjad.NamedPitch("c'"),
+                        middle_c_sounding_pitch=abjad.NamedPitch("c'"),
                         ),
                     ]
                 ),
