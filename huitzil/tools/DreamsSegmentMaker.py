@@ -76,8 +76,8 @@ class DreamsSegmentMaker(experimental.SegmentMaker):
 
     def __call__(
         self,
-        segment_metadata=None,
-        previous_segment_metadata=None,
+        metadata=None,
+        previous_metadata=None,
         ):
         r'''Calls segment-maker.
 
@@ -110,8 +110,8 @@ class DreamsSegmentMaker(experimental.SegmentMaker):
                 abjad.inspect(score).tabulate_well_formedness_violations()
             string = '\n' + string
             raise Exception(string)
-        segment_metadata = None
-        return self.lilypond_file, segment_metadata
+        metadata = None
+        return self.lilypond_file, metadata
 
     ### PRIVATE METHODS ###
 
