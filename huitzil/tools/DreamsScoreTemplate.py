@@ -31,10 +31,10 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
 
             >>> f(lilypond_file[abjad.Score])
             \context Score = "Score" <<
-                \context TimeSignatureContext = "Time Signature Context" <<
-                    \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                \context GlobalContext = "Global Context" <<
+                    \context GlobalRests = "Global Rests" {
                     }
-                    \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                    \context GlobalSkips = "Global Skips" {
                     }
                 >>
                 \context Staff = "Staff" <<

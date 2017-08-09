@@ -1,6 +1,6 @@
 \layout {
     \context {
-        \TimeSignatureContext
+        \GlobalContext
         \override TimeSignature.stencil = ##f
     }
     \context {
