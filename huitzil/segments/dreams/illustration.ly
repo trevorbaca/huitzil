@@ -11,8 +11,8 @@
 
 \score {
     \context Score = "Score" <<
-        \context TimeSignatureContext = "Time Signature Context" <<
-            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+        \context GlobalContext = "Global Context" <<
+            \context GlobalRests = "Global Rests" {
                 {
                     \time 7/8
                     s1 * 7/8
@@ -236,7 +236,7 @@
                     s1 * 3/4
                 }
             }
-            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+            \context GlobalSkips = "Global Skips" {
                 {
                     \time 7/8
                     s1 * 7/8
