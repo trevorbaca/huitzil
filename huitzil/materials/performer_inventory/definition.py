@@ -9,7 +9,7 @@ performer_inventory = abjad.instrumenttools.PerformerList(
             instruments=abjad.instrumenttools.InstrumentList(
                 [
                     abjad.instrumenttools.Cello(
-                        instrument_name='cello',
+                        name='cello',
                         short_name='vc.',
                         name_markup=abjad.Markup(
                             contents=('Cello',),
