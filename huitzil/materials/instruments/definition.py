@@ -5,13 +5,11 @@ import baca
 
 instruments = abjad.TypedOrderedDict([
     (
-        'cello', 
+        'cello',
         abjad.instrumenttools.Cello(
-            instrument_name_markup=\
-                baca.markup.instrument_name('Cello'),
+            name_markup=baca.markup.instrument('Cello'),
             pitch_range='[A1, G5]',
-            short_instrument_name_markup=\
-                baca.markup.short_instrument_name('Vc.'),
+            short_name_markup=baca.markup.short_instrument('Vc.'),
             )
         ),
     ])
