@@ -10,11 +10,11 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                 [
                     abjad.instrumenttools.Cello(
                         instrument_name='cello',
-                        short_instrument_name='vc.',
-                        instrument_name_markup=abjad.Markup(
+                        short_name='vc.',
+                        name_markup=abjad.Markup(
                             contents=('Cello',),
                             ),
-                        short_instrument_name_markup=abjad.Markup(
+                        short_name_markup=abjad.Markup(
                             contents=('Vc.',),
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
