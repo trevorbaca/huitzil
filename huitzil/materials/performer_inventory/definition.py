@@ -19,15 +19,9 @@ performer_inventory = abjad.instrumenttools.PerformerList(
                             ),
                         allowable_clefs=abjad.instrumenttools.ClefList(
                             [
-                                abjad.Clef(
-                                    name='bass',
-                                    ),
-                                abjad.Clef(
-                                    name='tenor',
-                                    ),
-                                abjad.Clef(
-                                    name='treble',
-                                    ),
+                                abjad.Clef(name='bass'),
+                                abjad.Clef(name='tenor'),
+                                abjad.Clef(name='treble'),
                                 ]
                             ),
                         default_tuning=abjad.Tuning(

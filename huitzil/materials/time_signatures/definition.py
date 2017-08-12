@@ -12,11 +12,13 @@ def make_numerators(numerators, addenda):
     numerators = [sum(_) for _ in pairs]
     return numerators
 
+
 numerators = [[3, 3, 4], [3, 5, 6], [3, 7]]
 addenda = [0, 0, 0.5, 0.5, 1, 1, 0, 0, -0.5, -0.5, -1, -1]
 numerators = make_numerators(numerators, addenda)
 assert len(numerators) == 48
 assert sum(numerators) == 204
+
 
 def numerator_to_time_signature(numerator):
     if abjad.mathtools.is_integer_equivalent_number(numerator):
@@ -26,6 +28,7 @@ def numerator_to_time_signature(numerator):
         numerator = int(2 * numerator)
         time_signature = abjad.TimeSignature((numerator, 16))
     return time_signature
+
 
 time_signatures = []
 for numerator in numerators:

@@ -64,7 +64,7 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.pitch_classes[4:6]
 music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
 music_maker.pc_operators = [
-    abjad.Transposition(2), 
+    abjad.Transposition(2),
     abjad.Inversion(),
     ]
 #music_maker.pc_displacement = [silence_none()]
@@ -78,7 +78,7 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.pitch_classes[6:8]
 music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
 music_maker.pc_operators = [
-    abjad.Transposition(3), 
+    abjad.Transposition(3),
     ]
 #music_maker.pc_displacement = [silence_none()]
 music_maker.pc_displacement = []
@@ -92,7 +92,7 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.pitch_classes[8:12]
 music_maker.extra_counts_per_division = [2, 4, 0, -2, 10]
 music_maker.pc_operators = [
-    abjad.Transposition(4), 
+    abjad.Transposition(4),
     ]
 music_maker.pc_displacement = [
     abjad.Pattern(indices=range(10, 20), period=20),
@@ -106,8 +106,8 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.pitch_classes[10:13]
 music_maker.extra_counts_per_division = [2, 4, 0, -2, 10]
 music_maker.pc_operators = [
-    abjad.Transposition(5), 
-    abjad.Inversion(), 
+    abjad.Transposition(5),
+    abjad.Inversion(),
     ]
 music_maker.pc_displacement = [
     abjad.Pattern(indices=range(10), period=20),
@@ -122,14 +122,14 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.pitch_classes[12:20]
 music_maker.extra_counts_per_division = [2, 4, 0, -2, 10]
 music_maker.pc_operators = [
-    abjad.Transposition(6), 
+    abjad.Transposition(6),
     ]
 music_maker.pc_displacement = [
     abjad.Pattern(indices=range(10, 20), period=20),
     ]
 music_maker.voice_map = [
     [1, range(0, 99)],
-    [2, (5, 6, 7, 8, 16, 17, 18, 23, 24, 25, 26, 
+    [2, (5, 6, 7, 8, 16, 17, 18, 23, 24, 25, 26,
         31, 32, 33, 34, 37, 38, 39, 43, 44, 45, 46, 47)],
     [3, (2, 13, 14, 27, 28, 40, 50, 51)],
     ]
@@ -138,7 +138,7 @@ music_maker.voice_map = [
 music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.pitch_classes[14:18]
 music_maker.pc_operators = [
-    abjad.Transposition(7), 
+    abjad.Transposition(7),
     ]
 music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
 music_maker.voice_map = [
@@ -150,7 +150,7 @@ music_maker.voice_map = [
 music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.pitch_classes[16:20]
 music_maker.pc_operators = [
-    abjad.Transposition(8), 
+    abjad.Transposition(8),
     abjad.Inversion(),
     ]
 music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]

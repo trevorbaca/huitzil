@@ -13,7 +13,7 @@ segment_maker = huitzil.FlightSegmentMaker(
         (27, 'Cb2'),
         (28, 'C6'),
         ],
-    staff_line_count = 7
+    staff_line_count=7
     )
 
 segment_maker.lh_glissandi = [

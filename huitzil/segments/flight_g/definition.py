@@ -119,7 +119,7 @@ segment_maker.notes = [
     '|',
     (1, '1/1', 'ffz'),
     '|',
-    
+
     ]
 
 segment_maker.glissando_break_indices = [
