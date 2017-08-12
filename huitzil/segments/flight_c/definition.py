@@ -9,7 +9,7 @@ segment_maker = huitzil.FlightSegmentMaker(
     pitches=[
         (0, 'Bb1'),
         ],
-    staff_line_count = 7
+    staff_line_count=7
     )
 
 segment_maker.notes = [
@@ -103,7 +103,7 @@ segment_maker.notes = [
     '|',
     (1, '1/1', 'ffz'),
     '|',
-    
+
     ]
 
 segment_maker.glissando_break_indices = [
