@@ -23,7 +23,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     unit_duration = abjad.Duration(1, 16)
 
-    ### INITIALIZER ###    
+    ### INITIALIZER ###
 
     def __init__(
         self,
@@ -63,7 +63,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         self._apply_glissando_patterns(music)
         self._attach_leaf_index_markup(music)
         assert isinstance(music, (tuple, list, abjad.Voice)), repr(music)
-        first_item = music[0]
+        #first_item = music[0]
         return music
 
     ### PRIVATE PROPERTIES ###
@@ -76,7 +76,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         if not self.rhythm_overwrites:
             keyword_argument_names = list(keyword_argument_names)
             keyword_argument_names.remove('rhythm_overwrites')
-        return systemtools.StorageFormatSpecification(
+        return abjad.StorageFormatSpecification(
             self,
             keyword_argument_names=keyword_argument_names,
             )
@@ -199,7 +199,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
             )
         inner_tuplets = []
         for i, note_list in enumerate(note_lists):
-            leaf_count = len(note_list)
+            #leaf_count = len(note_list)
             start_duration = sum(_.written_duration for _ in note_list)
             extra_count = extra_counts_per_division[i]
             extra_duration = extra_count * self.unit_duration
@@ -258,7 +258,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         self._set_written_durations(note_lists)
         inner_tuplets = self._make_inner_tuplets(note_lists)
         return inner_tuplets
-    
+
     def _register_voices(self, music):
         from huitzil import materials
         voice_1_registration = materials.registration_inventory[0]
@@ -309,7 +309,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
                     note.written_duration = new_written_duration
 
     def _set_written_durations(self, note_lists):
-        durations = []
+        #durations = []
         for note_list in note_lists:
             for note in note_list:
                 voice_number = abjad.inspect(note).get_indicator(int)
@@ -384,7 +384,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
             message = 'must be boolean or none: {!r}.'
             message = message.format(argument)
             raise TypeError(message)
-    
+
     @property
     def pc_operators(self):
         r'''Gets pc operators of music-maker.
@@ -457,7 +457,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
     def start_tempo(self, argument):
         if argument is None:
             self._start_tempo = argument
-        elif isinstance(argument, MetronomeMark):
+        elif isinstance(argument, abjad.MetronomeMark):
             self._start_tempo = argument
         else:
             message = 'must be tempo: {!r}.'
@@ -476,7 +476,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
     def stop_tempo(self, argument):
         if argument is None:
             self._stop_tempo = argument
-        elif isinstance(argument, MetronomeMark):
+        elif isinstance(argument, abjad.MetronomeMark):
             self._stop_tempo = argument
         else:
             message = 'must be tempo: {!r}.'
