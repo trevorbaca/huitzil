@@ -197,7 +197,7 @@ class DreamsSegmentMaker(experimental.SegmentMaker):
             assert isinstance(start_measure, abjad.Measure), start_measure
             start_skip = start_measure[0]
             assert isinstance(start_skip, abjad.Skip), start_skip
-            directive = new(directive)
+            directive = abjad.new(directive)
             abjad.attach(directive, start_skip)
 
     def _attach_slurs(self):
@@ -208,7 +208,7 @@ class DreamsSegmentMaker(experimental.SegmentMaker):
             start_index, stop_number = slur
             stop_index = stop_number + 1
             slur_leaves = leaves[start_index:stop_index]
-            slur = Slur()
+            slur = abjad.Slur()
             abjad.attach(slur, slur_leaves)
 
     def _attach_tempo_indicators(self):
@@ -223,7 +223,7 @@ class DreamsSegmentMaker(experimental.SegmentMaker):
             abjad.attach(directive, logical_tie.head)
 
     def _compound_scope_to_logical_ties(
-        self, 
+        self,
         compound_scope,
         include_rests=False,
         ):
@@ -277,7 +277,7 @@ class DreamsSegmentMaker(experimental.SegmentMaker):
         return start_offset, stop_offset
 
     def _get_rhythm_specifier(self, voice_name, stage):
-        music_makers = []
+        #music_makers = []
         for music_maker in self.music_makers:
             if music_maker.voice_name == voice_name:
                 start = music_maker.start_stage
@@ -384,7 +384,7 @@ class DreamsSegmentMaker(experimental.SegmentMaker):
             if getattr(item, 'name', None) in ('layout', 'paper'):
                 lilypond_file.items.remove(item)
         self._lilypond_file = lilypond_file
-            
+
     def _make_music_for_voice(self, voice):
         assert not len(voice), repr(voice)
         for music_maker in self.music_makers:
@@ -503,7 +503,7 @@ class DreamsSegmentMaker(experimental.SegmentMaker):
         Returns tuple of music-makers.
         '''
         return self._music_makers
-    
+
     @property
     def music_specifiers(self):
         r'''Gets segment-maker's music-specifiers.
@@ -540,7 +540,7 @@ class DreamsSegmentMaker(experimental.SegmentMaker):
 
     def make_rhythm_specifier(self):
         r'''Makes rhythm specifier.
-        
+
         Appends rhythm specifier to segment-maker.
 
         Returns rhythm specifier.

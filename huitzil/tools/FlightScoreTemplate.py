@@ -12,7 +12,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
 
 
     ..  container:: example
-    
+
         ::
 
             >>> template = huitzil.FlightScoreTemplate()
@@ -28,7 +28,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             >>> show(lilypond_file) # doctest: +SKIP
 
         ::
-        
+
             >>> f(lilypond_file[abjad.Score])
             \context Score = "Score" <<
                 \context GlobalContext = "Global Context" <<
@@ -76,12 +76,12 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             )
         bow_staff.is_simultaneous = True
         tempo_indicator_voice = abjad.Voice(
-            context_name='TempoIndicatorVoice', 
+            context_name='TempoIndicatorVoice',
             name='MetronomeMark Indicator Voice',
             )
         bow_staff.append(tempo_indicator_voice)
         tremolo_indicator_voice = abjad.Voice(
-            context_name='TremoloIndicatorVoice', 
+            context_name='TremoloIndicatorVoice',
             name='Tremolo Indicator Voice',
             )
         bow_staff.append(tremolo_indicator_voice)
