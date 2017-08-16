@@ -1,0 +1,3 @@
+[submodule "huitzil/test"]
+	path = huitzil/test
+	url = https://github.com/trevorbaca/test.git
