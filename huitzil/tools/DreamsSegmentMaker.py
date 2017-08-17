@@ -1,12 +1,11 @@
 import abjad
 import baca
 import copy
-import experimental
 import huitzil
 import os
 
 
-class DreamsSegmentMaker(experimental.SegmentMaker):
+class DreamsSegmentMaker(abjad.SegmentMaker):
     r'''Dreams segment-maker.
 
     ::
