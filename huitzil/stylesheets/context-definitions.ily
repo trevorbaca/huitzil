@@ -129,6 +129,7 @@
         \override SpacingSpanner.uniform-stretching = ##t
         \override StemTremolo.beam-width = 1.5
         \override StemTremolo.slope = 0.5
+        \override TextScript.font-name = #"Palatino"
         \override TextScript.Y-extent = #'(-1.5 . 1.5)
         \override TupletBracket.breakable = ##t
         \override TupletBracket.direction = #down
