@@ -5,6 +5,12 @@
     }
     \context {
         \Voice
+        \name PitchVoice
+        \type Engraver_group
+        \alias Voice
+    }
+    \context {
+        \Voice
         \name TempoIndicatorVoice
         \type Engraver_group
         \alias Voice
@@ -63,6 +69,7 @@
         \name PitchStaff
         \type Engraver_group
         \alias Staff
+        \accepts PitchVoice
     }
     \context {
         \Score

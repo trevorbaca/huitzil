@@ -2,7 +2,6 @@ import abjad
 import baca
 import copy
 import huitzil
-import os
 
 
 class DreamsSegmentMaker(abjad.SegmentMaker):
@@ -368,12 +367,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         self._music_makers = music_makers
 
     def _make_lilypond_file(self):
-        path = os.path.join(
-            '..',
-            '..',
-            'stylesheets',
-            'stylesheet.ily',
-            )
+        path = '../../stylesheets/stylesheet.ily'
         lilypond_file = abjad.LilyPondFile.new(
             music=self._score,
             includes=[path],
