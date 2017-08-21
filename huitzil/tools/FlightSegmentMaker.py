@@ -2,7 +2,6 @@ import abjad
 import baca
 import copy
 import huitzil
-import os
 
 
 class FlightSegmentMaker(abjad.AbjadObject):
@@ -229,12 +228,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         return durations
 
     def _make_lilypond_file(self):
-        path = os.path.join(
-            '..',
-            '..',
-            'stylesheets',
-            'flight-stylesheet.ily',
-            )
+        path = '../../stylesheets/flight-stylesheet.ily'
         lilypond_file = abjad.LilyPondFile.new(
             music=self._score,
             date_time_token=False,

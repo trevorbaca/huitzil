@@ -1,5 +1,3 @@
-% 2017-08-21 08:51
-
 \version "2.19.65"
 \language "english"
 
