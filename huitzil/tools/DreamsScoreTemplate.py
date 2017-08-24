@@ -16,11 +16,9 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         ::
 
             >>> template = huitzil.DreamsScoreTemplate()
-            >>> lilypond_file = template.__illustrate__()
-            >>> path = pathlib.Path(huitzil.__path__[0], 'stylesheets')
-            >>> path = path.joinpath('context-definitions.ily')
-            >>> lilypond_file = abjad.new(
-            ...     lilypond_file,
+            >>> path = pathlib.Path(huitzil.__path__[0])
+            >>> path = path / 'stylesheets' / 'context-definitions.ily'
+            >>> lilypond_file = template.__illustrate__(
             ...     global_staff_size=15,
             ...     includes=[path],
             ...     )
@@ -64,6 +62,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         Returns score.
         '''
         time_signature_context = self._make_time_signature_context()
+        # CELLO
         staff = abjad.Staff(
             name='Staff',
             )
@@ -73,15 +72,11 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             huitzil.instruments['cello'],
             )
-        abjad.annotate(
-            staff,
-            'default_clef',
-            abjad.Clef('bass'),
-            )
         music_voice = abjad.Voice(
             name='Music Voice',
             )
         staff.append(music_voice)
+        # SCORE
         score = abjad.Score(
             [
                 time_signature_context,
