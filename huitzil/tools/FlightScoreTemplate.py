@@ -16,14 +16,12 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         ::
 
             >>> template = huitzil.FlightScoreTemplate()
-            >>> lilypond_file = template.__illustrate__()
             >>> path = pathlib.Path(huitzil.__path__[0], 'stylesheets')
-            >>> path_1 = path.joinpath('context-definitions.ily')
-            >>> path_2 = path.joinpath('flight-context-definitions.ily')
-            >>> lilypond_file = abjad.new(
-            ...     lilypond_file,
+            >>> path_1 = path / 'context-definitions.ily'
+            >>> path_2 = path / 'flight-context-definitions.ily'
+            >>> lilypond_file = template.__illustrate__(
             ...     global_staff_size=16,
-            ...     includes=[str(path_1), str(path_2)],
+            ...     includes=[path_1, path_2],
             ...     )
             >>> show(lilypond_file) # doctest: +SKIP
 
@@ -70,6 +68,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         Returns score.
         '''
         time_signature_context = self._make_time_signature_context()
+        # BOW STAFF
         bow_staff = abjad.Staff(
             context_name='BowStaff',
             name='Bow Staff',
@@ -95,6 +94,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             name='Underlying Dynamics Voice',
             )
         bow_staff.append(underlying_dynamics_voice)
+        # PITCH STAFF
         pitch_staff = abjad.Staff(
             context_name='PitchStaff',
             name='Pitch Staff',
@@ -104,6 +104,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             name='Pitch Voice',
             )
         pitch_staff.append(pitch_voice)
+        # SCORE
         staff_group = abjad.StaffGroup(
             context_name='PianoStaff',
             name='Piano Staff',
