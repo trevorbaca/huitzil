@@ -6,8 +6,8 @@ def make_lilypond_file():
     r'''Reimplement for material-specific illustration logic.
     '''
     import definition
-    material_directory_path = pathlib.Path(__file__).parent
-    material_name = material_directory_path.name
+    material_directory = pathlib.Path(__file__).parent
+    material_name = material_directory.name
     title = material_name.replace('_', ' ').capitalize()
     title = abjad.Markup(title)
     title = title.override(('font-name', 'Palatino'))
