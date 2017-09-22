@@ -1,7 +1,7 @@
 #(set-default-paper-size "11x17landscape")
 
 \include "/Users/trevorbaca/baca/baca/stylesheets/scheme.ily"
-\include "context-definitions.ily"
+\include "contexts.ily"
 
 \paper {
     bottom-margin = 7\mm
