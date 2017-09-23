@@ -5,7 +5,10 @@
 
 \include "../../stylesheets/stylesheet.ily"
 
-\header {}
+\header {
+    title = ##f
+    composer = ##f
+}
 
 \score {
     \context Score = "Score" <<
