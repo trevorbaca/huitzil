@@ -261,9 +261,9 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     def _register_voices(self, music):
         from huitzil import materials
-        voice_1_registration = materials.registration_inventory[0]
-        voice_2_registration = materials.registration_inventory[1]
-        voice_3_registration = materials.registration_inventory[2]
+        voice_1_registration = materials.registrations['middle']
+        voice_2_registration = materials.registrations['low']
+        voice_3_registration = materials.registrations['lowest']
         for note in abjad.iterate(music).by_class(abjad.Note):
             voice_number = abjad.inspect(note).get_indicator(int)
             if voice_number == 1:
