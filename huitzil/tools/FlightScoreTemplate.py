@@ -8,7 +8,6 @@ class FlightScoreTemplate(baca.ScoreTemplate):
     ::
 
         >>> import huitzil
-        >>> import pathlib
 
 
     ..  container:: example
@@ -16,9 +15,8 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         ::
 
             >>> template = huitzil.FlightScoreTemplate()
-            >>> path = pathlib.Path(huitzil.__path__[0], 'stylesheets')
-            >>> path_1 = path / 'contexts.ily'
-            >>> path_2 = path / 'flight-contexts.ily'
+            >>> path_1 = abjad.Path('huitzil', 'stylesheets', 'contexts.ily')
+            >>> path_2 = path_1.with_name('flight-contexts.ily')
             >>> lilypond_file = template.__illustrate__(
             ...     global_staff_size=16,
             ...     includes=[path_1, path_2],

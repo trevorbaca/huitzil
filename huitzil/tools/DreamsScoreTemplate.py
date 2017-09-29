@@ -9,15 +9,13 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
     ::
 
         >>> import huitzil
-        >>> import pathlib
 
     ..  container:: example
 
         ::
 
             >>> template = huitzil.DreamsScoreTemplate()
-            >>> path = pathlib.Path(huitzil.__path__[0])
-            >>> path = path / 'stylesheets' / 'contexts.ily'
+            >>> path = abjad.Path('huitzil', 'stylesheets', 'contexts.ily')
             >>> lilypond_file = template.__illustrate__(
             ...     global_staff_size=15,
             ...     includes=[path],
