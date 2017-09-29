@@ -13,7 +13,7 @@ segment_maker = huitzil.DreamsSegmentMaker(
     )
 
 segment_maker.tempo_specifier = [
-    (0, huitzil.tempi[78]),
+    (0, huitzil.metronome_marks[78]),
     ]
 
 segment_maker.tuplet_bracket_tweaks.extend([
