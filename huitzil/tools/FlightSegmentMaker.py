@@ -131,7 +131,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         #raise Exception(float(duration))
         if not abjad.inspect(score).is_well_formed():
             string = \
-                abjad.inspect(score).tabulate_well_formedness_violations()
+                abjad.inspect(score).tabulate_wellformedness()
             string = '\n' + string
             raise Exception(string)
         metadata = None
