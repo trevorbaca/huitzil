@@ -104,7 +104,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
                     print(container)
                     abjad.f(container)
             string = \
-                abjad.inspect(score).tabulate_well_formedness_violations()
+                abjad.inspect(score).tabulate_wellformedness()
             string = '\n' + string
             raise Exception(string)
         metadata = None
