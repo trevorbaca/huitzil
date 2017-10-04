@@ -1,4 +1,5 @@
 import abjad
+import baca
 
 
 def final_markup():
@@ -19,37 +20,33 @@ def final_markup():
 
             >>> f(markup)
             _ \markup {
-                \italic
-                    \right-column
-                        {
-                            \line
+                \whiteout
+                    \upright
+                        \with-color
+                            #black
+                            \right-column
                                 {
-                                    "Cambridge, MA."
+                                    \line
+                                        {
+                                            "Cambridge, MA."
+                                        }
+                                    \line
+                                        {
+                                            September
+                                            \hspace
+                                                #0.75
+                                            –
+                                            \hspace
+                                                #0.75
+                                            October
+                                            2014.
+                                        }
                                 }
-                            \line
-                                {
-                                    September
-                                    \hspace
-                                        #0.75
-                                    –
-                                    \hspace
-                                        #0.75
-                                    October
-                                    2014.
-                                }
-                        }
                 }
 
     '''
-    place = ['Cambridge, MA.']
-    place = r' \hspace #0.75 – \hspace #0.75 '.join(place)
-    place = abjad.Markup(place)
-    place = abjad.Markup.line([place])
-    date = ['September', 'October 2014.']
-    date = r' \hspace #0.75 – \hspace #0.75 '.join(date)
-    date = abjad.Markup(date)
-    date = abjad.Markup.line([date])
-    markup = abjad.Markup.right_column([place, date])
-    markup = markup.italic()
-    markup = abjad.new(markup, direction=abjad.Down)
-    return markup
+    command = baca.markup.final_markup(
+        ['Cambridge, MA.'],
+        ['September', 'October 2014.'],
+        )
+    return command.arguments[0]
