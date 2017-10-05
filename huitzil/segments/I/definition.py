@@ -41,7 +41,7 @@ segment_maker.notes = [
 segment_maker.tremolo_map = [
     ]
 
-segment_maker.tempo_specifier = [
+segment_maker.metronome_mark_measure_map = [
     (0, huitzil.metronome_marks[44]),
     (0, abjad.Accelerando()),
     (1, huitzil.metronome_marks[88]),

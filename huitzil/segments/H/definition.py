@@ -113,7 +113,7 @@ segment_maker.tremolo_map = [
     (40, huitzil.markup.trem_mod()),
     ]
 
-segment_maker.tempo_specifier = [
+segment_maker.metronome_mark_measure_map = [
     (36, abjad.Ritardando()),
     (40, huitzil.metronome_marks[44]),
     ]
