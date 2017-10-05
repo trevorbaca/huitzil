@@ -143,7 +143,7 @@ segment_maker.notes = [
 segment_maker.glissando_break_indices = [
     ]
 
-segment_maker.tempo_specifier = [
+segment_maker.metronome_mark_measure_map = [
     (0, huitzil.metronome_marks[66]),
     (3, abjad.Accelerando()),
     (8, huitzil.metronome_marks[88]),

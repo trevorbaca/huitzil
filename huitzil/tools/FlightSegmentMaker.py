@@ -75,7 +75,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         notes=None,
         staff_line_count=None,
         staff_positions=None,
-        tempo_specifier=None,
+        metronome_mark_measure_map=None,
         tremolo_map=None,
         underlying_dynamics=None,
         ):
@@ -90,7 +90,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         self.notes = notes
         self.staff_line_count = staff_line_count
         self.staff_positions = staff_positions
-        self.tempo_specifier = tempo_specifier
+        self.metronome_mark_measure_map = metronome_mark_measure_map
         self.tremolo_map = tremolo_map
         self.underlying_dynamics = underlying_dynamics
         self._lilypond_file = None
@@ -361,7 +361,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
     def _populate_tempo_indicator_voice(self):
         if not self.notes:
             return
-        if not self.tempo_specifier:
+        if not self.metronome_mark_measure_map:
             return
         tempo_indicator_voice = self._score['MetronomeMark Indicator Voice']
         durations = self._get_bow_location_durations()
@@ -375,7 +375,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
             start_with_parenthesized_tempo=False,
             )
         abjad.attach(tempo_spanner, skips)
-        for index, indicator in self.tempo_specifier:
+        for index, indicator in self.metronome_mark_measure_map:
             skip = tempo_indicator_voice[index]
             indicator = copy.copy(indicator)
             tempo_spanner.attach(indicator, skip)
@@ -712,15 +712,15 @@ class FlightSegmentMaker(abjad.AbjadObject):
             raise TypeError(message)
 
     @property
-    def tempo_specifier(self):
+    def metronome_mark_measure_map(self):
         r'''Gets tempo indications of segment-maker.
 
         Returns list of pairs or none.
         '''
         return self._tempo_map
 
-    @tempo_specifier.setter
-    def tempo_specifier(self, argument):
+    @metronome_mark_measure_map.setter
+    def metronome_mark_measure_map(self, argument):
         if argument is None:
             self._tempo_map = argument
         elif isinstance(argument, list):

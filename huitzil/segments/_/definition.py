@@ -12,7 +12,7 @@ segment_maker = huitzil.DreamsSegmentMaker(
     label_stages=False,
     )
 
-segment_maker.tempo_specifier = [
+segment_maker.metronome_mark_measure_map = [
     (0, huitzil.metronome_marks[78]),
     ]
 

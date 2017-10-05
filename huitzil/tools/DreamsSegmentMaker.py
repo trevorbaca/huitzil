@@ -28,7 +28,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         '_tuplet_bracket_tweaks',
         'final_bar_line',
         'name',
-        'tempo_specifier',
+        'metronome_mark_measure_map',
         )
 
     ### INITIALIZER ###
@@ -44,7 +44,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         show_leaf_indices=None,
         label_stages=False,
         slurs=None,
-        tempo_specifier=None,
+        metronome_mark_measure_map=None,
         tuplet_bracket_tweaks=None,
         ):
         superclass = super(DreamsSegmentMaker, self)
@@ -65,7 +65,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         assert isinstance(label_stages, bool)
         self._label_stage_numbers = label_stages
         self._slurs = slurs or []
-        self.tempo_specifier = tempo_specifier
+        self.metronome_mark_measure_map = metronome_mark_measure_map
         tuplet_bracket_tweaks = tuplet_bracket_tweaks or []
         self._tuplet_bracket_tweaks = tuplet_bracket_tweaks
 
@@ -178,14 +178,14 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             abjad.attach(markup, leaf)
 
     def _attach_fermatas(self):
-        if not self.tempo_specifier:
+        if not self.metronome_mark_measure_map:
             return
         context = self._score['Global Rests']
         prototype = (
             abjad.Fermata,
             abjad.BreathMark,
             )
-        for stage_number, directive in self.tempo_specifier:
+        for stage_number, directive in self.metronome_mark_measure_map:
             if not isinstance(directive, prototype):
                 continue
             assert 0 < stage_number <= self.stage_count
@@ -210,12 +210,12 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             abjad.attach(slur, slur_leaves)
 
     def _attach_tempo_indicators(self):
-        if not self.tempo_specifier:
+        if not self.metronome_mark_measure_map:
             return
         music_voice = self._score['Music Voice']
         logical_ties = abjad.iterate(music_voice).by_logical_tie()
         logical_ties = list(logical_ties)
-        for logical_tie_index, directive in self.tempo_specifier:
+        for logical_tie_index, directive in self.metronome_mark_measure_map:
             directive = copy.copy(directive)
             logical_tie = logical_ties[logical_tie_index]
             abjad.attach(directive, logical_tie.head)
