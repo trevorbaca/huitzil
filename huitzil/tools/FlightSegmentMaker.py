@@ -258,9 +258,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
             first_leaf = abjad.inspect(first_component).get_leaf(0)
             abjad.attach(markup, first_leaf)
         else:
-            message = 'unrecognized indication: {!r}.'
-            message = message.format(indication)
-            raise ValueError(message)
+            raise ValueError(f'unrecognized indication: {indication!r}.')
         for leaf in abjad.iterate(leaves).by_leaf():
             if abjad.Duration(1, 16) < leaf.written_duration:
                 tremolo = abjad.StemTremolo(16)
@@ -509,9 +507,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._accent_dynamics = argument
         else:
-            message = 'must be list of strings: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list of strings: {argument!r}.')
 
     @property
     def clef(self):
@@ -528,9 +524,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, str):
             self._clef = argument
         else:
-            message = 'must be string: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError('string only: {argument!r}.')
 
     @property
     def durations(self):
@@ -547,9 +541,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._durations = argument
         else:
-            message = 'must be list of pairs: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list of pairs only: {argument!r}.')
 
     @property
     def glissando_break_indices(self):
@@ -566,9 +558,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._glissando_break_indices = argument
         else:
-            message = 'must be list of integers: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list of integers only: {argument!r}.')
 
     @property
     def lh_glissandi(self):
@@ -585,9 +575,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._lh_glissandi = argument
         else:
-            message = 'must be list of pairs: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list of pairs only: {argument!r}.')
 
     @property
     def lilypond_file(self):
@@ -612,9 +600,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, type(True)):
             self._markup_leaves = argument
         else:
-            message = 'must be boolean: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'boolean only: {!r}.')
 
     @property
     def name(self):
@@ -631,9 +617,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, str):
             self._name = argument
         else:
-            message = 'must be string: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'string only: {argument!r}.')
 
     @property
     def notes(self):
@@ -650,9 +634,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._notes = argument
         else:
-            message = 'must be list of pairs: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list of pairs only: {argument!r}.')
 
     @property
     def pitches(self):
@@ -669,9 +651,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._pitches = argument
         else:
-            message = 'must be list of pairs: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list of pairs: {argument!r}.')
 
     @property
     def staff_line_count(self):
@@ -688,9 +668,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif abjad.mathtools.is_positive_integer(argument):
             self._staff_line_count = argument
         else:
-            message = 'must be positive integer: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'positive integer only: {argument!r}.')
 
     @property
     def staff_positions(self):
@@ -707,9 +685,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif abjad.mathtools.all_are_positive_integers(argument):
             self._staff_positions = argument
         else:
-            message = 'must be list of positive integers: {!r}'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list of positive integers: {argument!r}.')
 
     @property
     def metronome_mark_measure_map(self):
@@ -726,9 +702,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._tempo_map = argument
         else:
-            message = 'must be list of pairs: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list of pairs: {argument!r}.')
 
     @property
     def tremolo_map(self):
@@ -745,9 +719,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._tremolo_map = argument
         else:
-            message = 'must be list of pairs: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list of pairs: {argument!r}.')
 
     @property
     def underlying_dynamics(self):
@@ -764,6 +736,4 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._underlying_dynamics = argument
         else:
-            message = 'must be list of pairs: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list of pairs: {argument!r}.')
