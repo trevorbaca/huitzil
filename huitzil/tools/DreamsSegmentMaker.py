@@ -162,7 +162,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             stage_number = stage_index + 1
             result = self._stage_number_to_measure_indices(stage_number)
             start_measure_index, stop_measure_index = result
-            string = '[{}{}]'.format(self.name, stage_number)
+            string = f'[{self.name}{stage_number}]'
             markup = abjad.Markup(string)
             markup = markup.with_color('blue')
             markup = markup.smaller()
@@ -282,9 +282,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
                 stop = music_maker.stop_stage + 1
                 if stage in range(start, stop):
                     return music_maker
-        message = 'no music-maker for {!r} found for stage {}.'
-        message = message.format(voice_name, stage)
-        raise KeyError(message)
+        raise KeyError(f'no {voice_name!r} maker for stage {stage}.')
 
     def _interpret_music_makers(self):
         music_voice = self._score['Music Voice']

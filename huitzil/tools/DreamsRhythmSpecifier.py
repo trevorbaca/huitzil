@@ -340,9 +340,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._extra_counts_per_division = argument
         else:
-            message = 'must be list or none: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list or none: {argument!r}.')
 
     @property
     def glissando_patterns(self):
@@ -361,9 +359,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._glissando_patterns = argument
         else:
-            message = 'must be list or none: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list or none: {argument!r}.')
 
     @property
     def index_logical_ties(self):
@@ -381,9 +377,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         elif isinstance(argument, type(True)):
             self._index_logical_ties = argument
         else:
-            message = 'must be boolean or none: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'boolean or none: {argument!r}.')
 
     @property
     def pc_operators(self):
@@ -400,9 +394,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._pc_operators = argument
         else:
-            message = 'must be list or none: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list or none: {argument!r}.')
 
     @property
     def pc_displacement(self):
@@ -422,9 +414,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._pc_displacement = argument
         else:
-            message = 'must be list or none: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list or none: {argument!r}.')
 
     @property
     def pitch_class_trees(self):
@@ -441,9 +431,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         elif isinstance(argument, collections.Iterable):
             self._pitch_class_trees = tuple(argument)
         else:
-            message = 'must be collection of pitch-class trees or none: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'pitch-class trees or none: {argument!r}.')
 
     @property
     def start_tempo(self):
@@ -460,9 +448,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         elif isinstance(argument, abjad.MetronomeMark):
             self._start_tempo = argument
         else:
-            message = 'must be tempo: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'metronome mark only: {argument!r}.')
 
     @property
     def stop_tempo(self):
@@ -479,9 +465,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         elif isinstance(argument, abjad.MetronomeMark):
             self._stop_tempo = argument
         else:
-            message = 'must be tempo: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'metronome mark only: {!r}.')
 
     @property
     def voice_map(self):
@@ -498,6 +482,4 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         elif isinstance(argument, list):
             self._voice_map = argument
         else:
-            message = 'must be list or none: {!r}.'
-            message = message.format(argument)
-            raise TypeError(message)
+            raise TypeError(f'list or none: {argument!r}.')
