@@ -115,7 +115,7 @@ segment_maker.tremolo_map = [
 
 segment_maker.metronome_mark_measure_map = [
     (36, abjad.Ritardando()),
-    (40, huitzil.metronome_marks[44]),
+    (40, huitzil.metronome_marks['44']),
     ]
 
 segment_maker.underlying_dynamics = [

@@ -127,12 +127,12 @@ segment_maker.glissando_break_indices = [
     ]
 
 segment_maker.metronome_mark_measure_map = [
-    (0, huitzil.metronome_marks[44]),
+    (0, huitzil.metronome_marks['44']),
     (39, abjad.Accelerando()),
-    (42, huitzil.metronome_marks[66]),
-    (43, huitzil.metronome_marks[44]),
+    (42, huitzil.metronome_marks['66']),
+    (43, huitzil.metronome_marks['44']),
     (52, abjad.Accelerando()),
-    (57, huitzil.metronome_marks[88]),
+    (57, huitzil.metronome_marks['88']),
     ]
 
 segment_maker.tremolo_map = [

@@ -42,25 +42,25 @@ segment_maker.tremolo_map = [
     ]
 
 segment_maker.metronome_mark_measure_map = [
-    (0, huitzil.metronome_marks[44]),
+    (0, huitzil.metronome_marks['44']),
     (0, abjad.Accelerando()),
-    (1, huitzil.metronome_marks[88]),
+    (1, huitzil.metronome_marks['88']),
     (1, abjad.Ritardando()),
-    (2, huitzil.metronome_marks[44]),
+    (2, huitzil.metronome_marks['44']),
     (2, abjad.Accelerando()),
-    (3, huitzil.metronome_marks[88]),
+    (3, huitzil.metronome_marks['88']),
     (3, abjad.Ritardando()),
-    (4, huitzil.metronome_marks[44]),
+    (4, huitzil.metronome_marks['44']),
     (4, abjad.Accelerando()),
-    (5, huitzil.metronome_marks[88]),
+    (5, huitzil.metronome_marks['88']),
     (5, abjad.Ritardando()),
-    (6, huitzil.metronome_marks[44]),
+    (6, huitzil.metronome_marks['44']),
     (6, abjad.Accelerando()),
-    (7, huitzil.metronome_marks[88]),
+    (7, huitzil.metronome_marks['88']),
     (7, abjad.Ritardando()),
-    (8, huitzil.metronome_marks[44]),
+    (8, huitzil.metronome_marks['44']),
     (8, abjad.Accelerando()),
-    (9, huitzil.metronome_marks[88]),
+    (9, huitzil.metronome_marks['88']),
     ]
 
 segment_maker.underlying_dynamics = [
