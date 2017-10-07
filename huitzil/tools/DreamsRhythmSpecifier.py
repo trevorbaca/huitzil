@@ -465,7 +465,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         elif isinstance(argument, abjad.MetronomeMark):
             self._stop_tempo = argument
         else:
-            raise TypeError(f'metronome mark only: {!r}.')
+            raise TypeError(f'metronome mark only: {argument!r}.')
 
     @property
     def voice_map(self):
