@@ -13,7 +13,7 @@ segment_maker = huitzil.DreamsSegmentMaker(
     )
 
 segment_maker.metronome_mark_measure_map = [
-    (0, huitzil.metronome_marks[78]),
+    (0, huitzil.metronome_marks['78']),
     ]
 
 segment_maker.tuplet_bracket_tweaks.extend([
