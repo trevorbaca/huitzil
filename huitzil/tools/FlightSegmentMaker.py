@@ -600,7 +600,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         elif isinstance(argument, type(True)):
             self._markup_leaves = argument
         else:
-            raise TypeError(f'boolean only: {!r}.')
+            raise TypeError(f'boolean only: {argument!r}.')
 
     @property
     def name(self):
