@@ -91,7 +91,6 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         #self._attach_fermatas()
         self._annotate_stages()
         self._annotate_leaf_indices()
-        self._interpret_music_specifiers()
         self._attach_slurs()
         self._tweak_tuplet_brackets()
         self._add_final_bar_line()
@@ -288,53 +287,6 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         music_voice = self._score['Music Voice']
         self._make_music_for_voice(music_voice)
 
-    def _interpret_music_specifier(self, music_specifier):
-        simple_scope = music_specifier.scope
-        assert isinstance(simple_scope, huitzil.SimpleScope), simple_scope
-        compound_scope = huitzil.CompoundScope(simple_scope)
-        result = self._compound_scope_to_logical_ties(compound_scope)
-        logical_ties, timespan = result
-        result = self._compound_scope_to_logical_ties(
-            compound_scope,
-            include_rests=True
-            )
-        logical_ties_with_rests, timespan = result
-        if isinstance(music_specifier.specifiers, (list, tuple)):
-            specifiers = tuple(music_specifier.specifiers)
-        else:
-            specifiers = (music_specifier.specifiers,)
-        note_indicators = (
-            abjad.Dynamic,
-            abjad.Markup,
-            )
-        leaf_indicators = (
-            abjad.Clef,
-            abjad.Instrument,
-            )
-        for specifier in specifiers:
-            if isinstance(specifier, note_indicators):
-                abjad.attach(specifier, logical_ties[0].head)
-            elif isinstance(specifier, leaf_indicators):
-                abjad.attach(specifier, logical_ties_with_rests[0].head)
-            elif isinstance(specifier, abjad.Spanner):
-                spanner = specifier
-                assert not len(spanner)
-                spanner = copy.deepcopy(spanner)
-                leaves = self._logical_ties_to_leaves(logical_ties)
-                abjad.attach(spanner, leaves)
-            elif isinstance(specifier, baca.OverrideSpecifier):
-                specifier(logical_ties_with_rests)
-            else:
-                specifier(logical_ties, timespan)
-            if getattr(specifier, '_mutates_score', False):
-                result = self._compound_scope_to_logical_ties(compound_scope)
-                logical_ties, timespan = result
-                result = self._compound_scope_to_logical_ties(
-                    compound_scope,
-                    include_rests=True
-                    )
-                logical_ties_with_rests, timespan = result
-
     def _logical_ties_to_leaves(self, logical_ties):
         first_note = logical_ties[0].head
         last_note = logical_ties[-1][-1]
@@ -352,10 +304,6 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         logical_ties, timespan = result
         for specifier in pitch_specifier.specifiers:
             specifier(logical_ties, timespan)
-
-    def _interpret_music_specifiers(self):
-        for music_specifier in self.music_specifiers:
-            self._interpret_music_specifier(music_specifier)
 
     def _initialize_music_makers(self, music_makers):
         music_makers = music_makers or []
