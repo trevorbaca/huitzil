@@ -546,7 +546,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         Returns scoped specifier.
         '''
         scoped_specifiers = []
-        compound_scope = baca.CompoundScope.from_token(scope)
+        compound_scope = baca.CompoundScope._to_compound_scope(scope)
         for simple_scope in compound_scope.simple_scopes:
             scoped_specifier = baca.ScopedSpecifier(
                 simple_scope=simple_scope,
