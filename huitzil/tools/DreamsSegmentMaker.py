@@ -69,46 +69,6 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         tuplet_bracket_tweaks = tuplet_bracket_tweaks or []
         self._tuplet_bracket_tweaks = tuplet_bracket_tweaks
 
-    ### SPECIAL METHODS ###
-
-    def __call__(
-        self,
-        metadata=None,
-        previous_metadata=None,
-        ):
-        r'''Calls segment-maker.
-
-        Returns LilyPond file.
-        '''
-        self._make_score()
-        self._make_lilypond_file()
-        self._configure_lilypond_file()
-        self._interpret_music_makers()
-        self._configure_score()
-        self._populate_time_signature_context()
-        self._adjust_stems()
-        self._attach_tempo_indicators()
-        #self._attach_fermatas()
-        self._annotate_stages()
-        self._annotate_leaf_indices()
-        self._attach_slurs()
-        self._tweak_tuplet_brackets()
-        self._add_final_bar_line()
-        self._add_final_markup()
-        score_block = self.lilypond_file['score']
-        score = score_block['Score']
-        if not abjad.inspect(score).is_well_formed():
-            for container in abjad.iterate(score).by_class(abjad.Container):
-                if len(container) == 0:
-                    print(container)
-                    abjad.f(container)
-            string = \
-                abjad.inspect(score).tabulate_wellformedness()
-            string = '\n' + string
-            raise Exception(string)
-        metadata = None
-        return self.lilypond_file, metadata
-
     ### PRIVATE METHODS ###
 
     def _add_final_bar_line(self):
@@ -487,3 +447,41 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         rhythm_specifier = huitzil.DreamsRhythmSpecifier()
         self.music_makers.append(rhythm_specifier)
         return rhythm_specifier
+
+    def run(
+        self,
+        metadata=None,
+        previous_metadata=None,
+        ):
+        r'''Runs segment-maker.
+
+        Returns LilyPond file.
+        '''
+        self._make_score()
+        self._make_lilypond_file()
+        self._configure_lilypond_file()
+        self._interpret_music_makers()
+        self._configure_score()
+        self._populate_time_signature_context()
+        self._adjust_stems()
+        self._attach_tempo_indicators()
+        #self._attach_fermatas()
+        self._annotate_stages()
+        self._annotate_leaf_indices()
+        self._attach_slurs()
+        self._tweak_tuplet_brackets()
+        self._add_final_bar_line()
+        self._add_final_markup()
+        score_block = self.lilypond_file['score']
+        score = score_block['Score']
+        if not abjad.inspect(score).is_well_formed():
+            for container in abjad.iterate(score).by_class(abjad.Container):
+                if len(container) == 0:
+                    print(container)
+                    abjad.f(container)
+            string = \
+                abjad.inspect(score).tabulate_wellformedness()
+            string = '\n' + string
+            raise Exception(string)
+        metadata = None
+        return self.lilypond_file, metadata
