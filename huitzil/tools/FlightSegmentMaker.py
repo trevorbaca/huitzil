@@ -96,47 +96,6 @@ class FlightSegmentMaker(abjad.AbjadObject):
         self._lilypond_file = None
         self._score = None
 
-    ### SPECIAL METHODS ###
-
-    def __call__(
-        self,
-        metadata=None,
-        previous_metadata=None,
-        ):
-        r'''Calls segment-maker.
-
-        Returns LilyPond file.
-        '''
-        self._make_score()
-        self._configure_score()
-        self._make_lilypond_file()
-#        self._configure_lilypond_file()
-        self._populate_bow_location_voice()
-        self._populate_time_signature_voice()
-        self._populate_tempo_indicator_voice()
-        self._populate_tremolo_indicator_voice()
-        self._populate_underlying_dynamics_voice()
-        self._populate_pitch_voice()
-        self._attach_clefs()
-        self._format_altissimi_pitches()
-        self._attach_lh_glissandi()
-        self._attach_final_bar_line()
-        self._attach_leaf_index_markup()
-        score_block = self.lilypond_file['score']
-        score = score_block['Score']
-        #try:
-        #    duration = abjad.inspect(score).get_duration(in_seconds=True)
-        #except abjad.MissingMetronomeMarkError:
-        #    duration = abjad.Duration(0)
-        #raise Exception(float(duration))
-        if not abjad.inspect(score).is_well_formed():
-            string = \
-                abjad.inspect(score).tabulate_wellformedness()
-            string = '\n' + string
-            raise Exception(string)
-        metadata = None
-        return self.lilypond_file, metadata
-
     ### PRIVATE PROPERTIES ###
 
     @property
@@ -737,3 +696,44 @@ class FlightSegmentMaker(abjad.AbjadObject):
             self._underlying_dynamics = argument
         else:
             raise TypeError(f'list of pairs: {argument!r}.')
+
+    ### PUBLIC METHODS ###
+
+    def run(
+        self,
+        metadata=None,
+        previous_metadata=None,
+        ):
+        r'''Runs segment-maker.
+
+        Returns LilyPond file.
+        '''
+        self._make_score()
+        self._configure_score()
+        self._make_lilypond_file()
+#        self._configure_lilypond_file()
+        self._populate_bow_location_voice()
+        self._populate_time_signature_voice()
+        self._populate_tempo_indicator_voice()
+        self._populate_tremolo_indicator_voice()
+        self._populate_underlying_dynamics_voice()
+        self._populate_pitch_voice()
+        self._attach_clefs()
+        self._format_altissimi_pitches()
+        self._attach_lh_glissandi()
+        self._attach_final_bar_line()
+        self._attach_leaf_index_markup()
+        score_block = self.lilypond_file['score']
+        score = score_block['Score']
+        #try:
+        #    duration = abjad.inspect(score).get_duration(in_seconds=True)
+        #except abjad.MissingMetronomeMarkError:
+        #    duration = abjad.Duration(0)
+        #raise Exception(float(duration))
+        if not abjad.inspect(score).is_well_formed():
+            string = \
+                abjad.inspect(score).tabulate_wellformedness()
+            string = '\n' + string
+            raise Exception(string)
+        metadata = None
+        return self.lilypond_file, metadata
