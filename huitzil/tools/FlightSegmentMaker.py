@@ -113,6 +113,15 @@ class FlightSegmentMaker(abjad.AbjadObject):
 
     ### PRIVATE METHODS ###
 
+    def _attach_clefs(self):
+        pitch_voice = self._score['Pitch Voice']
+        notes = abjad.iterate(pitch_voice).by_class(abjad.Note)
+        for left_note, right_note in abjad.sequence(notes).nwise(n=2):
+            left_clef = abjad.Clef.from_selection(left_note)
+            right_clef = abjad.Clef.from_selection(right_note)
+            if left_clef != right_clef:
+                abjad.attach(right_clef, right_note)
+
     def _attach_final_bar_line(self):
         if not self.name == 'flight I':
             return
@@ -126,14 +135,14 @@ class FlightSegmentMaker(abjad.AbjadObject):
         command = abjad.LilyPondCommand(string, format_slot='after')
         abjad.attach(command, last_leaf)
 
-    def _attach_clefs(self):
-        pitch_voice = self._score['Pitch Voice']
-        notes = abjad.iterate(pitch_voice).by_class(abjad.Note)
-        for left_note, right_note in abjad.sequence(notes).nwise(n=2):
-            left_clef = abjad.Clef.from_selection(left_note)
-            right_clef = abjad.Clef.from_selection(right_note)
-            if left_clef != right_clef:
-                abjad.attach(right_clef, right_note)
+    def _attach_leaf_index_markup(self):
+        if not self.markup_leaves:
+            return
+        voice = self._score['Bow Location Voice']
+        logical_ties = abjad.iterate(voice).by_logical_tie()
+        for i, logical_tie in enumerate(logical_ties):
+            markup = abjad.Markup(i)
+            abjad.attach(markup, logical_tie.head)
 
     def _attach_lh_glissandi(self):
         if not self.notes:
@@ -146,15 +155,6 @@ class FlightSegmentMaker(abjad.AbjadObject):
             spanner_leaves = leaves[start_index:stop_index+1]
             glissando = abjad.Glissando()
             abjad.attach(glissando, spanner_leaves)
-
-    def _attach_leaf_index_markup(self):
-        if not self.markup_leaves:
-            return
-        voice = self._score['Bow Location Voice']
-        logical_ties = abjad.iterate(voice).by_logical_tie()
-        for i, logical_tie in enumerate(logical_ties):
-            markup = abjad.Markup(i)
-            abjad.attach(markup, logical_tie.head)
 
 #    def _configure_lilypond_file(self):
 #        lilypond_file = self._lilypond_file
@@ -186,19 +186,6 @@ class FlightSegmentMaker(abjad.AbjadObject):
             durations.append(duration)
         return durations
 
-    def _make_lilypond_file(self):
-        path = '../../stylesheets/flight-stylesheet.ily'
-        lilypond_file = abjad.LilyPondFile.new(
-            music=self._score,
-            date_time_token=False,
-            includes=[path],
-            use_relative_includes=True,
-            )
-        for item in lilypond_file.items[:]:
-            if getattr(item, 'name', None) in ('header', 'layout', 'paper'):
-                lilypond_file.items.remove(item)
-        self._lilypond_file = lilypond_file
-
     def _make_leaf(self, pitch, duration_string, indication):
         duration = abjad.Duration(duration_string)
         maker = abjad.LeafMaker()
@@ -223,6 +210,19 @@ class FlightSegmentMaker(abjad.AbjadObject):
                 tremolo = abjad.StemTremolo(16)
                 abjad.attach(tremolo, leaf)
         return leaves
+
+    def _make_lilypond_file(self):
+        path = '../../stylesheets/flight-stylesheet.ily'
+        lilypond_file = abjad.LilyPondFile.new(
+            music=self._score,
+            date_time_token=False,
+            includes=[path],
+            use_relative_includes=True,
+            )
+        for item in lilypond_file.items[:]:
+            if getattr(item, 'name', None) in ('header', 'layout', 'paper'):
+                lilypond_file.items.remove(item)
+        self._lilypond_file = lilypond_file
 
     def _make_score(self):
         template = huitzil.FlightScoreTemplate()
@@ -562,6 +562,23 @@ class FlightSegmentMaker(abjad.AbjadObject):
             raise TypeError(f'boolean only: {argument!r}.')
 
     @property
+    def metronome_mark_measure_map(self):
+        r'''Gets tempo indications of segment-maker.
+
+        Returns list of pairs or none.
+        '''
+        return self._tempo_map
+
+    @metronome_mark_measure_map.setter
+    def metronome_mark_measure_map(self, argument):
+        if argument is None:
+            self._tempo_map = argument
+        elif isinstance(argument, list):
+            self._tempo_map = argument
+        else:
+            raise TypeError(f'list of pairs: {argument!r}.')
+
+    @property
     def name(self):
         r'''Gets name of segment-maker.
 
@@ -645,23 +662,6 @@ class FlightSegmentMaker(abjad.AbjadObject):
             self._staff_positions = argument
         else:
             raise TypeError(f'list of positive integers: {argument!r}.')
-
-    @property
-    def metronome_mark_measure_map(self):
-        r'''Gets tempo indications of segment-maker.
-
-        Returns list of pairs or none.
-        '''
-        return self._tempo_map
-
-    @metronome_mark_measure_map.setter
-    def metronome_mark_measure_map(self, argument):
-        if argument is None:
-            self._tempo_map = argument
-        elif isinstance(argument, list):
-            self._tempo_map = argument
-        else:
-            raise TypeError(f'list of pairs: {argument!r}.')
 
     @property
     def tremolo_map(self):

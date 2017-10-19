@@ -380,23 +380,6 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
             raise TypeError(f'boolean or none: {argument!r}.')
 
     @property
-    def pc_operators(self):
-        r'''Gets pc operators of music-maker.
-
-        Returns list.
-        '''
-        return self._pc_operators
-
-    @pc_operators.setter
-    def pc_operators(self, argument):
-        if argument is None:
-            self._pc_operators = []
-        elif isinstance(argument, list):
-            self._pc_operators = argument
-        else:
-            raise TypeError(f'list or none: {argument!r}.')
-
-    @property
     def pc_displacement(self):
         r'''Gets displacement map of music-maker.
 
@@ -413,6 +396,23 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
             self._pc_displacement = []
         elif isinstance(argument, list):
             self._pc_displacement = argument
+        else:
+            raise TypeError(f'list or none: {argument!r}.')
+
+    @property
+    def pc_operators(self):
+        r'''Gets pc operators of music-maker.
+
+        Returns list.
+        '''
+        return self._pc_operators
+
+    @pc_operators.setter
+    def pc_operators(self, argument):
+        if argument is None:
+            self._pc_operators = []
+        elif isinstance(argument, list):
+            self._pc_operators = argument
         else:
             raise TypeError(f'list or none: {argument!r}.')
 
