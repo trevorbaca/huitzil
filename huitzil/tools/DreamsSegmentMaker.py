@@ -113,6 +113,14 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
                     else:
                         raise ValueError(voice_number)
 
+    def _annotate_leaf_indices(self):
+        if not self.show_leaf_indices:
+            return
+        voice = self._score['Music Voice']
+        for i, leaf in enumerate(abjad.iterate(voice).by_leaf()):
+            markup = abjad.Markup(i)
+            abjad.attach(markup, leaf)
+
     def _annotate_stages(self):
         if not self.label_stages:
             return
@@ -127,14 +135,6 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             markup = markup.smaller()
             start_measure = context[start_measure_index]
             abjad.attach(markup, start_measure)
-
-    def _annotate_leaf_indices(self):
-        if not self.show_leaf_indices:
-            return
-        voice = self._score['Music Voice']
-        for i, leaf in enumerate(abjad.iterate(voice).by_leaf()):
-            markup = abjad.Markup(i)
-            abjad.attach(markup, leaf)
 
     def _attach_fermatas(self):
         if not self.metronome_mark_measure_map:
@@ -243,9 +243,23 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
                     return music_maker
         raise KeyError(f'no {voice_name!r} maker for stage {stage}.')
 
+    def _initialize_music_makers(self, music_makers):
+        music_makers = music_makers or []
+        music_makers = list(music_makers)
+        for music_maker in music_makers:
+            assert isinstance(music_maker, huitzil.RhythmMaker)
+        self._music_makers = music_makers
+
     def _interpret_music_makers(self):
         music_voice = self._score['Music Voice']
         self._make_music_for_voice(music_voice)
+
+    def _interpret_pitch_specifier(self, pitch_specifier):
+        compound_scope = pitch_specifier.scope
+        result = self._compound_scope_to_logical_ties(compound_scope)
+        logical_ties, timespan = result
+        for specifier in pitch_specifier.specifiers:
+            specifier(logical_ties, timespan)
 
     def _logical_ties_to_leaves(self, logical_ties):
         first_note = logical_ties[0].head
@@ -257,20 +271,6 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             current_leaf = abjad.inspect(current_leaf).get_leaf(1)
         leaves.append(last_note)
         return leaves
-
-    def _interpret_pitch_specifier(self, pitch_specifier):
-        compound_scope = pitch_specifier.scope
-        result = self._compound_scope_to_logical_ties(compound_scope)
-        logical_ties, timespan = result
-        for specifier in pitch_specifier.specifiers:
-            specifier(logical_ties, timespan)
-
-    def _initialize_music_makers(self, music_makers):
-        music_makers = music_makers or []
-        music_makers = list(music_makers)
-        for music_maker in music_makers:
-            assert isinstance(music_maker, huitzil.RhythmMaker)
-        self._music_makers = music_makers
 
     def _make_lilypond_file(self):
         path = '../../stylesheets/stylesheet.ily'

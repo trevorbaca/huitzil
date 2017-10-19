@@ -28,11 +28,6 @@ class MarkupLibrary(abjad.AbjadObject):
         markup = abjad.Markup(string).upright()
         return baca.markup(markup)
 
-    def poco_piu_stretto():
-        string = 'poco più stretto'
-        markup = abjad.Markup(string).upright()
-        return baca.markup(markup)
-
     def poco_piu_largo():
         string = 'poco più largo'
         markup = abjad.Markup(string).upright()
@@ -43,13 +38,13 @@ class MarkupLibrary(abjad.AbjadObject):
         markup = abjad.Markup(string).upright()
         return baca.markup(markup)
 
-    def sub_trem_moderato():
-        string = 'sub. trem. moderato'
+    def sub_trem_mod():
+        string = 'sub. trem. mod.'
         markup = abjad.Markup(string).upright()
         return baca.markup(markup)
 
-    def sub_trem_mod():
-        string = 'sub. trem. mod.'
+    def sub_trem_moderato():
+        string = 'sub. trem. moderato'
         markup = abjad.Markup(string).upright()
         return baca.markup(markup)
 
@@ -68,11 +63,6 @@ class MarkupLibrary(abjad.AbjadObject):
         markup = abjad.Markup(string).upright()
         return baca.markup(markup)
 
-    def trem_molto_stretto():
-        string = 'trem. molto stretto'
-        markup = abjad.Markup(string).upright()
-        return baca.markup(markup)
-
     def trem_mod():
         string = 'trem. mod.'
         markup = abjad.Markup(string).upright()
@@ -80,6 +70,11 @@ class MarkupLibrary(abjad.AbjadObject):
 
     def trem_moderato():
         string = 'trem. moderato'
+        markup = abjad.Markup(string).upright()
+        return baca.markup(markup)
+
+    def trem_molto_stretto():
+        string = 'trem. molto stretto'
         markup = abjad.Markup(string).upright()
         return baca.markup(markup)
 
