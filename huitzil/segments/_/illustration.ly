@@ -527,18 +527,22 @@
                     \set stemRightBeamCount = #1
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     bf,8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     a,8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     b,8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     c8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -547,22 +551,27 @@
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     f,16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     a,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     ef16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     d16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     e16 ]
                 }
                 {
@@ -570,10 +579,12 @@
                     \set stemRightBeamCount = #1
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     c8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     cs8 ]
                 }
                 {
@@ -581,14 +592,17 @@
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     bf,16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     a,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     b,16 ]
                 }
                 \times 4/5 {
@@ -596,22 +610,27 @@
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     af,16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     fs,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     e16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     f,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     g,16 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -620,10 +639,12 @@
                     \set stemRightBeamCount = #1
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     b,8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     c8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -632,20 +653,24 @@
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     cs16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     bf,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     a,16 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 3/2 {
                     \once \override Beam.positions = #'(-4.5 . -4.5)
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2.5
                     g8.
                 }
                 {
@@ -653,18 +678,22 @@
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(-4.5 . -4.5)
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2.5
                     af16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2.5
                     fs16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2.5
                     e16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2.5
                     f16 ]
                 }
                 \times 4/5 {
@@ -672,22 +701,27 @@
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     e16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     f16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     a,16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     ef16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     d16 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -696,10 +730,12 @@
                     \set stemRightBeamCount = #1
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     f,8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2.5
                     g,8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -1084,6 +1120,7 @@
                     \once \override NoteHead.color = #blue
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
+                    \once \override TupletBracket.staff-padding = #3
                     d2
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -1091,6 +1128,7 @@
                     \once \override NoteHead.color = #blue
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
+                    \once \override TupletBracket.staff-padding = #3
                     e,2
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -1098,6 +1136,7 @@
                     \once \override NoteHead.color = #blue
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
+                    \once \override TupletBracket.staff-padding = #3
                     fs,2
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -1110,6 +1149,7 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #6
                     f,4
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
@@ -1121,6 +1161,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #6
                     g8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
@@ -1132,6 +1173,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #6
                     af8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
@@ -1143,6 +1185,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #6
                     c'8 ]
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -1152,6 +1195,7 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #6
                     fs,4
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -1164,6 +1208,7 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #6
                     c2
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -1173,6 +1218,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #6
                     d'4
                 }
                 {
@@ -1526,6 +1572,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
+                    \once \override TupletBracket.staff-padding = #2
                     c4
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -1533,6 +1580,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
+                    \once \override TupletBracket.staff-padding = #2
                     bf4
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -1540,6 +1588,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
+                    \once \override TupletBracket.staff-padding = #2
                     af4
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -1547,6 +1596,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
+                    \once \override TupletBracket.staff-padding = #2
                     a4
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -1554,6 +1604,7 @@
                     \once \override NoteHead.color = #red
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
+                    \once \override TupletBracket.staff-padding = #2
                     b4
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -1619,6 +1670,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2
                     d'8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #1
@@ -1629,6 +1681,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2
                     c'8
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
@@ -1639,6 +1692,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2
                     b8 ]
                 }
                 {
@@ -1650,6 +1704,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2
                     bf8
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -1662,6 +1717,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     e4
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -1671,16 +1727,19 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     f4
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     ef8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     d8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -1890,6 +1949,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     ef4
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -1899,6 +1959,7 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2
                     a,2
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -1908,6 +1969,7 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2
                     af,2
                 }
                 {
@@ -2014,6 +2076,7 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2
                     fs,2
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -2023,6 +2086,7 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2
                     g,2
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -2032,6 +2096,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     e4
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -2091,16 +2156,19 @@
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     b,16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     ef16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     a,16 ]
                 }
                 {
@@ -2112,6 +2180,7 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2
                     bf,8
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -2124,6 +2193,7 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     b,4
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
@@ -2133,16 +2203,19 @@
                     \once \override Slur.color = #red
                     \once \override Stem.color = #red
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     cs4
                     \set stemLeftBeamCount = #0
                     \set stemRightBeamCount = #1
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     d8 [
                     \set stemLeftBeamCount = #1
                     \set stemRightBeamCount = #0
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     c8 ]
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -2337,21 +2410,25 @@
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     c16 [
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     d16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #2
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     ef16
                     \set stemLeftBeamCount = #2
                     \set stemRightBeamCount = #0
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     cs16 ]
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -2361,6 +2438,7 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2
                     b,4
                 }
                 \tweak text #tuplet-number::calc-fraction-text
@@ -2373,9 +2451,11 @@
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
                     \once \override Stem.direction = #down
+                    \once \override TupletBracket.staff-padding = #2
                     a,4
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
+                    \once \override TupletBracket.staff-padding = #2
                     b,16
                 }
                 {
@@ -2443,6 +2523,7 @@
                     \once \override NoteHead.color = #blue
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
+                    \once \override TupletBracket.staff-padding = #2
                     d,2
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
@@ -2450,6 +2531,7 @@
                     \once \override NoteHead.color = #blue
                     \once \override Slur.color = #blue
                     \once \override Stem.color = #blue
+                    \once \override TupletBracket.staff-padding = #2
                     c,2
                 }
                 {
