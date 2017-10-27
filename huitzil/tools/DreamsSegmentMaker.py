@@ -326,7 +326,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         measures = maker(measure_durations)
         context = self._score['Global Skips']
         context.extend(measures)
-        for measure in abjad.iterate(context).by_class(abjad.Measure):
+        for measure in abjad.iterate(context).components(abjad.Measure):
             agent = abjad.inspect(measure)
             time_signature = agent.get_indicator(abjad.TimeSignature)
             if time_signature.denominator < 4:
@@ -475,7 +475,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         if not abjad.inspect(score).is_well_formed():
-            for container in abjad.iterate(score).by_class(abjad.Container):
+            for container in abjad.iterate(score).components(abjad.Container):
                 if len(container) == 0:
                     print(container)
                     abjad.f(container)

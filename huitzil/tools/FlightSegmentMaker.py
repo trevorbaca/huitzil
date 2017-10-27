@@ -115,7 +115,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
 
     def _attach_clefs(self):
         pitch_voice = self._score['Pitch Voice']
-        notes = abjad.iterate(pitch_voice).by_class(abjad.Note)
+        notes = abjad.iterate(pitch_voice).components(abjad.Note)
         for left_note, right_note in abjad.sequence(notes).nwise(n=2):
             left_clef = abjad.Clef.from_selection(left_note)
             right_clef = abjad.Clef.from_selection(right_note)
@@ -171,7 +171,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
 
     def _format_altissimi_pitches(self):
         pitch_voice = self._score['Pitch Voice']
-        for note in abjad.iterate(pitch_voice).by_class(abjad.Note):
+        for note in abjad.iterate(pitch_voice).components(abjad.Note):
             if note.written_pitch == abjad.NamedPitch('C6'):
                 abjad.override(note).note_head.no_ledgers = True
                 style = abjad.SchemeSymbol('do')
@@ -247,7 +247,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
             for index in self.glissando_break_indices:
                 indices.remove(index)
         glissando_break_indices = self.glissando_break_indices or []
-        notes = abjad.iterate(bow_location_voice).by_class(abjad.Note)
+        notes = abjad.iterate(bow_location_voice).components(abjad.Note)
         notes_in_spanner = []
         for i, note in enumerate(notes):
             notes_in_spanner.append(note)
