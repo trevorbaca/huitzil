@@ -110,7 +110,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         bass_clef = abjad.Clef('bass')
         down_beam_positions = (-4.5, -4.5)
         up_beam_positions = (5.5, 5.5)
-        tuplets = abjad.iterate(music).by_class(abjad.Tuplet)
+        tuplets = abjad.iterate(music).components(abjad.Tuplet)
         for tuplet in tuplets:
             voice_numbers = [
                 abjad.inspect(_).get_indicator(int) for _ in tuplet]
@@ -264,7 +264,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         voice_1_registration = materials.registrations['middle']
         voice_2_registration = materials.registrations['low']
         voice_3_registration = materials.registrations['lowest']
-        for note in abjad.iterate(music).by_class(abjad.Note):
+        for note in abjad.iterate(music).components(abjad.Note):
             voice_number = abjad.inspect(note).get_indicator(int)
             if voice_number == 1:
                 color = 'red'
@@ -302,7 +302,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     def _respell_tuplets(self, music):
         multiplier = abjad.Multiplier(3, 2)
-        for tuplet in abjad.iterate(music).by_class(abjad.Tuplet):
+        for tuplet in abjad.iterate(music).components(abjad.Tuplet):
             if tuplet.multiplier == multiplier:
                 for note in tuplet:
                     new_written_duration = multiplier * note.written_duration
