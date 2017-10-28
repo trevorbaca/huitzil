@@ -151,7 +151,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
             return
         pitch_voice = self._score['Pitch Voice']
         for start_index, stop_index in self.lh_glissandi:
-            leaves = abjad.select(pitch_voice).by_leaf()
+            leaves = abjad.select(pitch_voice).leaves()
             spanner_leaves = leaves[start_index:stop_index+1]
             glissando = abjad.Glissando()
             abjad.attach(glissando, spanner_leaves)
@@ -205,7 +205,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
             abjad.attach(markup, first_leaf)
         else:
             raise ValueError(f'unrecognized indication: {indication!r}.')
-        for leaf in abjad.iterate(leaves).by_leaf():
+        for leaf in abjad.iterate(leaves).leaves():
             if abjad.Duration(1, 16) < leaf.written_duration:
                 tremolo = abjad.StemTremolo(16)
                 abjad.attach(tremolo, leaf)
@@ -325,7 +325,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         maker = abjad.rhythmmakertools.SkipRhythmMaker()
         selections = maker(durations)
         tempo_indicator_voice.extend(selections)
-        skips = abjad.select(tempo_indicator_voice).by_leaf()
+        skips = abjad.select(tempo_indicator_voice).leaves()
         tempo_spanner = abjad.MetronomeMarkSpanner(
             left_broken_padding=0,
             left_broken_text=abjad.Markup.null(direction=None),
@@ -372,7 +372,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         if not self.tremolo_map:
             return
         text_spanner = abjad.TextSpanner()
-        skips = abjad.select(tremolo_indicator_voice).by_leaf()
+        skips = abjad.select(tremolo_indicator_voice).leaves()
         abjad.attach(text_spanner, skips)
         for index, indicator in self.tremolo_map:
             skip = tremolo_indicator_voice[index]
@@ -395,7 +395,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         maker = abjad.rhythmmakertools.SkipRhythmMaker()
         selections = maker(durations)
         underlying_dynamics_voice.extend(selections)
-        skips = abjad.select(underlying_dynamics_voice).by_leaf()
+        skips = abjad.select(underlying_dynamics_voice).leaves()
         if not self.underlying_dynamics:
             return
         for index, string in self.underlying_dynamics:

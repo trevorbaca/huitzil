@@ -117,7 +117,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         if not self.show_leaf_indices:
             return
         voice = self._score['Music Voice']
-        for i, leaf in enumerate(abjad.iterate(voice).by_leaf()):
+        for i, leaf in enumerate(abjad.iterate(voice).leaves()):
             markup = abjad.Markup(i)
             abjad.attach(markup, leaf)
 
@@ -159,7 +159,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
 
     def _attach_slurs(self):
         voice = self._score['Music Voice']
-        leaves = abjad.iterate(voice).by_leaf()
+        leaves = abjad.iterate(voice).leaves()
         leaves = list(leaves)
         for slur in self.slurs:
             start_index, stop_number = slur
@@ -347,7 +347,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             measure_number, staff_padding = pair
             measure_index = measure_number - 1
             measure = measures[measure_index]
-            leaves = abjad.iterate(measure).by_leaf()
+            leaves = abjad.iterate(measure).leaves()
             for leaf in leaves:
                 abjad.override(leaf).tuplet_bracket.staff_padding = \
                     staff_padding
