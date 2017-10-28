@@ -172,7 +172,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         if not self.metronome_mark_measure_map:
             return
         music_voice = self._score['Music Voice']
-        logical_ties = abjad.iterate(music_voice).by_logical_tie()
+        logical_ties = abjad.iterate(music_voice).logical_ties()
         logical_ties = list(logical_ties)
         for logical_tie_index, directive in self.metronome_mark_measure_map:
             directive = copy.copy(directive)

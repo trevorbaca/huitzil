@@ -139,7 +139,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         if not self.markup_leaves:
             return
         voice = self._score['Bow Location Voice']
-        logical_ties = abjad.iterate(voice).by_logical_tie()
+        logical_ties = abjad.iterate(voice).logical_ties()
         for i, logical_tie in enumerate(logical_ties):
             markup = abjad.Markup(i)
             abjad.attach(markup, logical_tie.head)
@@ -181,7 +181,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
     def _get_bow_location_durations(self):
         bow_location_voice = self._score['Bow Location Voice']
         durations = []
-        for logical_tie in abjad.iterate(bow_location_voice).by_logical_tie():
+        for logical_tie in abjad.iterate(bow_location_voice).logical_ties():
             duration = logical_tie.get_duration()
             durations.append(duration)
         return durations
