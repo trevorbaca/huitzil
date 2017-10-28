@@ -150,7 +150,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
     def _attach_leaf_index_markup(self, music):
         if not self.index_logical_ties:
             return
-        logical_ties = abjad.iterate(music).by_logical_tie()
+        logical_ties = abjad.iterate(music).logical_ties()
         for i, logical_tie in enumerate(logical_ties):
             markup = abjad.Markup(i)
             abjad.attach(markup, logical_tie.head)
