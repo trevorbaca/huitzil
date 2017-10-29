@@ -199,7 +199,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             prototype = (abjad.Note, abjad.Chord, abjad.Rest)
         else:
             prototype = (abjad.Note, abjad.Chord)
-        for note in abjad.iterate(self._score).by_timeline(prototype):
+        for note in abjad.iterate(self._score).timeline(prototype):
             if note in compound_scope:
                 logical_tie = abjad.inspect(note).get_logical_tie()
                 if logical_tie.head is note:
