@@ -182,7 +182,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         bow_location_voice = self._score['Bow Location Voice']
         durations = []
         for logical_tie in abjad.iterate(bow_location_voice).logical_ties():
-            duration = logical_tie.get_duration()
+            duration = abjad.inspect(logical_tie).get_duration()
             durations.append(duration)
         return durations
 
