@@ -7,11 +7,7 @@ import huitzil
 class FlightSegmentMaker(abjad.AbjadObject):
     r'''Flight segment-maker.
 
-    ::
-
-        >>> import abjad
-        >>> import baca
-        >>> import huitzil
+    >>> import huitzil
 
     '''
 

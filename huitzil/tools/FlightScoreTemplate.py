@@ -5,56 +5,50 @@ import baca
 class FlightScoreTemplate(baca.ScoreTemplate):
     r'''Flight score template.
 
-    ::
-
-        >>> import huitzil
+    >>> import huitzil
 
 
     ..  container:: example
 
-        ::
+        >>> template = huitzil.FlightScoreTemplate()
+        >>> path_1 = abjad.Path('huitzil', 'stylesheets', 'contexts.ily')
+        >>> path_2 = path_1.with_name('flight-contexts.ily')
+        >>> lilypond_file = template.__illustrate__(
+        ...     global_staff_size=16,
+        ...     includes=[path_1, path_2],
+        ...     )
+        >>> abjad.show(lilypond_file) # doctest: +SKIP
 
-            >>> template = huitzil.FlightScoreTemplate()
-            >>> path_1 = abjad.Path('huitzil', 'stylesheets', 'contexts.ily')
-            >>> path_2 = path_1.with_name('flight-contexts.ily')
-            >>> lilypond_file = template.__illustrate__(
-            ...     global_staff_size=16,
-            ...     includes=[path_1, path_2],
-            ...     )
-            >>> show(lilypond_file) # doctest: +SKIP
-
-        ::
-
-            >>> f(lilypond_file[abjad.Score])
-            \context Score = "Score" <<
-                \context GlobalContext = "Global Context" <<
-                    \context GlobalRests = "Global Rests" {
-                    }
-                    \context GlobalSkips = "Global Skips" {
-                    }
-                >>
-                \context PianoStaff = "Piano Staff" <<
-                    \context BowStaff = "Bow Staff" <<
-                        \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" {
-                            s1
-                        }
-                        \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
-                            s1
-                        }
-                        \context BowLocationVoice = "Bow Location Voice" {
-                            s1
-                        }
-                        \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
-                            s1
-                        }
-                    >>
-                    \context PitchStaff = "Pitch Staff" {
-                        \context PitchVoice = "Pitch Voice" {
-                            s1
-                        }
-                    }
-                >>
+        >>> abjad.f(lilypond_file[abjad.Score])
+        \context Score = "Score" <<
+            \context GlobalContext = "Global Context" <<
+                \context GlobalRests = "Global Rests" {
+                }
+                \context GlobalSkips = "Global Skips" {
+                }
             >>
+            \context PianoStaff = "Piano Staff" <<
+                \context BowStaff = "Bow Staff" <<
+                    \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" {
+                        s1
+                    }
+                    \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+                        s1
+                    }
+                    \context BowLocationVoice = "Bow Location Voice" {
+                        s1
+                    }
+                    \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
+                        s1
+                    }
+                >>
+                \context PitchStaff = "Pitch Staff" {
+                    \context PitchVoice = "Pitch Voice" {
+                        s1
+                    }
+                }
+            >>
+        >>
 
     '''
 

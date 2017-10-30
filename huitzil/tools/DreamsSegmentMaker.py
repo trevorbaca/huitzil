@@ -7,9 +7,7 @@ import huitzil
 class DreamsSegmentMaker(abjad.SegmentMaker):
     r'''Dreams segment-maker.
 
-    ::
-
-        >>> import huitzil
+    >>> import huitzil
 
     '''
 
