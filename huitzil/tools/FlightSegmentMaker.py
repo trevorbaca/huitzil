@@ -380,7 +380,6 @@ class FlightSegmentMaker(abjad.AbjadObject):
             if isinstance(indicator, abjad.ArrowLineSegment):
                 pass
             else:
-                assert isinstance(indicator, baca.AttachCommand)
                 assert len(indicator.arguments) == 1
                 markup = indicator.arguments[0]
                 assert isinstance(markup, abjad.Markup), repr(markup)
