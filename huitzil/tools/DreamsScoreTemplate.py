@@ -6,49 +6,43 @@ import huitzil
 class DreamsScoreTemplate(baca.ScoreTemplate):
     r'''Dreams score template.
 
-    ::
-
-        >>> import huitzil
+    >>> import huitzil
 
     ..  container:: example
 
-        ::
+        >>> template = huitzil.DreamsScoreTemplate()
+        >>> path = abjad.Path('huitzil', 'stylesheets', 'contexts.ily')
+        >>> lilypond_file = template.__illustrate__(
+        ...     global_staff_size=15,
+        ...     includes=[path],
+        ...     )
+        >>> abjad.show(lilypond_file) # doctest: +SKIP
 
-            >>> template = huitzil.DreamsScoreTemplate()
-            >>> path = abjad.Path('huitzil', 'stylesheets', 'contexts.ily')
-            >>> lilypond_file = template.__illustrate__(
-            ...     global_staff_size=15,
-            ...     includes=[path],
-            ...     )
-            >>> show(lilypond_file) # doctest: +SKIP
-
-        ::
-
-            >>> f(lilypond_file[abjad.Score])
-            \context Score = "Score" <<
-                \context GlobalContext = "Global Context" <<
-                    \context GlobalRests = "Global Rests" {
-                    }
-                    \context GlobalSkips = "Global Skips" {
-                    }
-                >>
-                \context Staff = "Staff" <<
-                    \context Voice = "Music Voice" {
-                        \set Staff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Cello
-                            }
-                        \set Staff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Vc.
-                            }
-                        \clef "bass"
-                        s1
-                    }
-                >>
+        >>> abjad.f(lilypond_file[abjad.Score])
+        \context Score = "Score" <<
+            \context GlobalContext = "Global Context" <<
+                \context GlobalRests = "Global Rests" {
+                }
+                \context GlobalSkips = "Global Skips" {
+                }
             >>
+            \context Staff = "Staff" <<
+                \context Voice = "Music Voice" {
+                    \set Staff.instrumentName = \markup {
+                        \hcenter-in
+                            #16
+                            Cello
+                        }
+                    \set Staff.shortInstrumentName = \markup {
+                        \hcenter-in
+                            #10
+                            Vc.
+                        }
+                    \clef "bass"
+                    s1
+                }
+            >>
+        >>
 
     '''
 

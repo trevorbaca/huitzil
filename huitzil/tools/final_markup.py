@@ -5,20 +5,16 @@ import baca
 def final_markup():
     r'''Makes final markup.
 
-    ::
-
-        >>> import huitzil
+    >>> import huitzil
 
     ..  container:: example
 
-        ::
-
-            >>> markup = huitzil.final_markup()
-            >>> show(markup) # doctest: +SKIP
+        >>> markup = huitzil.final_markup()
+        >>> abjad.show(markup) # doctest: +SKIP
 
         ..  docs::
 
-            >>> f(markup)
+            >>> abjad.f(markup)
             _ \markup {
                 \whiteout
                     \upright
