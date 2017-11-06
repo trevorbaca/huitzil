@@ -38,9 +38,7 @@ segment_maker.tuplet_bracket_tweaks.extend([
 music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.pitch_classes[:6]
 music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
-music_maker.pc_displacement = [
-    abjad.Pattern(indices=range(15), period=30),
-    ]
+music_maker.pc_displacement = [abjad.index(list(range(15)), 30)]
 music_maker.voice_map = [
     [2, range(0, 99)],
     ]
@@ -50,9 +48,7 @@ music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.pitch_classes[2:8]
 music_maker.pc_operators = [abjad.Transposition(1)]
 music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
-music_maker.pc_displacement = [
-    abjad.Pattern(indices=range(15), period=30),
-    ]
+music_maker.pc_displacement = [abjad.index(list(range(15)), 30)]
 music_maker.voice_map = [
     [2, range(0, 99)],
     [3, (4, 14, 15, 28, 29, 35, 36)],
@@ -93,9 +89,7 @@ music_maker.extra_counts_per_division = [2, 4, 0, -2, 10]
 music_maker.pc_operators = [
     abjad.Transposition(4),
     ]
-music_maker.pc_displacement = [
-    abjad.Pattern(indices=range(10, 20), period=20),
-    ]
+music_maker.pc_displacement = [abjad.index(list(range(10, 20)), 20)]
 music_maker.voice_map = [
     [1, range(0, 99)],
     ]
@@ -108,9 +102,7 @@ music_maker.pc_operators = [
     abjad.Transposition(5),
     abjad.Inversion(),
     ]
-music_maker.pc_displacement = [
-    abjad.Pattern(indices=range(10), period=20),
-    ]
+music_maker.pc_displacement = [abjad.index(list(range(10)), 20)]
 music_maker.voice_map = [
     [1, range(0, 99)],
     [2, (0, 1, 2, 3, 13, 14, 15, 16, 17, 18)],
@@ -120,12 +112,8 @@ music_maker.voice_map = [
 music_maker = segment_maker.make_rhythm_specifier()
 music_maker.pitch_class_trees = huitzil.pitch_classes[12:20]
 music_maker.extra_counts_per_division = [2, 4, 0, -2, 10]
-music_maker.pc_operators = [
-    abjad.Transposition(6),
-    ]
-music_maker.pc_displacement = [
-    abjad.Pattern(indices=range(10, 20), period=20),
-    ]
+music_maker.pc_operators = [abjad.Transposition(6)]
+music_maker.pc_displacement = [abjad.index(list(range(10, 20)), 20)]
 music_maker.voice_map = [
     [1, range(0, 99)],
     [2, (5, 6, 7, 8, 16, 17, 18, 23, 24, 25, 26,
@@ -153,9 +141,7 @@ music_maker.pc_operators = [
     abjad.Inversion(),
     ]
 music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
-music_maker.pc_displacement = [
-    abjad.Pattern(indices=range(5), period=10),
-    ]
+music_maker.pc_displacement = [abjad.index(list(range(5)), 10)]
 music_maker.voice_map = [
     [3, range(0, 99)],
     ]
