@@ -376,8 +376,8 @@ class FlightSegmentMaker(abjad.AbjadObject):
             if isinstance(indicator, abjad.ArrowLineSegment):
                 pass
             else:
-                assert len(indicator.arguments) == 1
-                markup = indicator.arguments[0]
+                assert len(indicator.indicators) == 1
+                markup = indicator.indicators[0]
                 assert isinstance(markup, abjad.Markup), repr(markup)
                 indicator = markup
             text_spanner.attach(indicator, skip)
