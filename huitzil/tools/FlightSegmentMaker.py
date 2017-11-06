@@ -2,6 +2,7 @@ import abjad
 import baca
 import copy
 import huitzil
+from abjad import rhythmmakertools as rhythmos
 
 
 class FlightSegmentMaker(abjad.AbjadObject):
@@ -318,7 +319,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
             return
         tempo_indicator_voice = self._score['MetronomeMark Indicator Voice']
         durations = self._get_bow_location_durations()
-        maker = abjad.rhythmmakertools.SkipRhythmMaker()
+        maker = rhythmos.SkipRhythmMaker()
         selections = maker(durations)
         tempo_indicator_voice.extend(selections)
         skips = abjad.select(tempo_indicator_voice).leaves()
@@ -360,7 +361,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
     def _populate_tremolo_indicator_voice(self):
         tremolo_indicator_voice = self._score['Tremolo Indicator Voice']
         durations = self._get_bow_location_durations()
-        maker = abjad.rhythmmakertools.SkipRhythmMaker()
+        maker = rhythmos.SkipRhythmMaker()
         skips = maker(durations)
         tremolo_indicator_voice.extend(skips)
         if not self.notes:
@@ -387,7 +388,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
             return
         underlying_dynamics_voice = self._score['Underlying Dynamics Voice']
         durations = self._get_bow_location_durations()
-        maker = abjad.rhythmmakertools.SkipRhythmMaker()
+        maker = rhythmos.SkipRhythmMaker()
         selections = maker(durations)
         underlying_dynamics_voice.extend(selections)
         skips = abjad.select(underlying_dynamics_voice).leaves()
