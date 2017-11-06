@@ -45,4 +45,4 @@ def final_markup():
         ['Cambridge, MA.'],
         ['September', 'October 2014.'],
         )
-    return command.arguments[0]
+    return command.indicators[0]
