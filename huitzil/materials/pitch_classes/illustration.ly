@@ -1,15 +1,9 @@
-\version "2.19.65"
+\version "2.19.80"
 \language "english"
 
 #(set-global-staff-size 16)
 
-\header {
-    title = \markup {
-        \override
-            #'(font-name . "Palatino")
-            "Pitch classes"
-        }
-}
+\header {}
 
 \layout {
     \accidentalStyle dodecaphonic
