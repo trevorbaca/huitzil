@@ -270,8 +270,10 @@
                 }
                 \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
                     s1 * 1/4 ^ \markup {
-                        \upright
-                            "trem. mod."
+                        \whiteout
+                            \upright
+                                \upright
+                                    "trem. mod."
                         }
                     s1 * 1/4
                     s1 * 1/4
@@ -314,8 +316,10 @@
                     \once \override TextSpanner.bound-details.left.text = \markup {
                         \concat
                             {
-                                \upright
-                                    "sub. trem. più stretto"
+                                \whiteout
+                                    \upright
+                                        \upright
+                                            "sub. trem. più stretto"
                                 \hspace
                                     #0.5
                             }
@@ -334,8 +338,10 @@
                     \once \override TextSpanner.bound-details.left.text = \markup {
                         \concat
                             {
-                                \upright
-                                    "più largo"
+                                \whiteout
+                                    \upright
+                                        \upright
+                                            "più largo"
                                 \hspace
                                     #0.5
                             }
@@ -354,8 +360,10 @@
                     \once \override TextSpanner.bound-details.left.text = \markup {
                         \concat
                             {
-                                \upright
-                                    "più stretto"
+                                \whiteout
+                                    \upright
+                                        \upright
+                                            "più stretto"
                                 \hspace
                                     #0.5
                             }
@@ -374,8 +382,10 @@
                     \once \override TextSpanner.bound-details.left.text = \markup {
                         \concat
                             {
-                                \upright
-                                    "più largo"
+                                \whiteout
+                                    \upright
+                                        \upright
+                                            "più largo"
                                 \hspace
                                     #0.5
                             }
@@ -389,8 +399,10 @@
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 1 \stopTextSpan \startTextSpan
                     s1 * 1 \stopTextSpan ^ \markup {
-                        \upright
-                            "trem. mod."
+                        \whiteout
+                            \upright
+                                \upright
+                                    "trem. mod."
                         }
                     s1 * 1
                 }
