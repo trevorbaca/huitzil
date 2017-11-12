@@ -2,7 +2,7 @@ import abjad
 import huitzil
 
 
-segment_maker = huitzil.FlightSegmentMaker(
+maker = huitzil.FlightSegmentMaker(
     clef='bass',
     markup_leaves=False,
     name='flight B',
@@ -15,12 +15,12 @@ segment_maker = huitzil.FlightSegmentMaker(
     staff_line_count=7
     )
 
-segment_maker.lh_glissandi = [
+maker.lh_glissandi = [
     (1, 2),
     (2, 3),
     ]
 
-segment_maker.notes = [
+maker.notes = [
     # ascent
     (1, '1/4', 'ffz'),
     (2, '1/4', 'ffz'),
@@ -100,7 +100,7 @@ segment_maker.notes = [
 
     ]
 
-segment_maker.tremolo_map = [
+maker.tremolo_map = [
     (0, huitzil.markup.trem_mod()),
     (36, huitzil.markup.sub_trem_piu_stretto()),
     (36, huitzil.dashed_arrow()),
@@ -113,12 +113,12 @@ segment_maker.tremolo_map = [
     (40, huitzil.markup.trem_mod()),
     ]
 
-segment_maker.metronome_mark_measure_map = [
+maker.metronome_mark_measure_map = [
     (36, abjad.Ritardando()),
     (40, huitzil.metronome_marks['44']),
     ]
 
-segment_maker.underlying_dynamics = [
+maker.underlying_dynamics = [
     (0, 'f'),
     (0, '-|'),
     (4, 'mp'),

@@ -2,14 +2,14 @@ import abjad
 import huitzil
 
 
-segment_maker = huitzil.FlightSegmentMaker(
+maker = huitzil.FlightSegmentMaker(
     clef='treble',
     markup_leaves=False,
     name='flight I',
     staff_line_count=7
     )
 
-segment_maker.notes = [
+maker.notes = [
     # swells
     (7, '1/1', None),
     '|',
@@ -38,10 +38,10 @@ segment_maker.notes = [
     '|',
     ]
 
-segment_maker.tremolo_map = [
+maker.tremolo_map = [
     ]
 
-segment_maker.metronome_mark_measure_map = [
+maker.metronome_mark_measure_map = [
     (0, huitzil.metronome_marks['44']),
     (0, abjad.Accelerando()),
     (1, huitzil.metronome_marks['88']),
@@ -63,7 +63,7 @@ segment_maker.metronome_mark_measure_map = [
     (9, huitzil.metronome_marks['88']),
     ]
 
-segment_maker.underlying_dynamics = [
+maker.underlying_dynamics = [
     (0, 'mp'),
     (0, '>'),
     (1, 'pp'),
