@@ -2,7 +2,7 @@ import abjad
 import huitzil
 
 
-segment_maker = huitzil.FlightSegmentMaker(
+maker = huitzil.FlightSegmentMaker(
     markup_leaves=False,
     name='flight E',
     pitches=[
@@ -11,7 +11,7 @@ segment_maker = huitzil.FlightSegmentMaker(
     staff_line_count=11
     )
 
-segment_maker.notes = [
+maker.notes = [
     (1, '3/4', 'fz'),
     '|',
     (1, '1/3', 'mfz'),
@@ -140,10 +140,10 @@ segment_maker.notes = [
     '|',
     ]
 
-segment_maker.glissando_break_indices = [
+maker.glissando_break_indices = [
     ]
 
-segment_maker.metronome_mark_measure_map = [
+maker.metronome_mark_measure_map = [
     (0, huitzil.metronome_marks['66']),
     (3, abjad.Accelerando()),
     (8, huitzil.metronome_marks['88']),
@@ -171,10 +171,10 @@ segment_maker.metronome_mark_measure_map = [
     (56, huitzil.metronome_marks['66']),
     ]
 
-segment_maker.tremolo_map = [
+maker.tremolo_map = [
     ]
 
-segment_maker.underlying_dynamics = [
+maker.underlying_dynamics = [
     (0, 'p'),
     (0, '<'),
     (2, 'mp'),
