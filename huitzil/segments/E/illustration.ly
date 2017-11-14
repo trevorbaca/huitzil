@@ -9,476 +9,476 @@
     \context Score = "Score" <<
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
-                {
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
+                } % measure
             }
             \context GlobalSkips = "Global Skips" {
-                {
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/3
                     s1 * 1/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
+                } % measure
             }
         >>
         \context PianoStaff = "Piano Staff" <<

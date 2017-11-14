@@ -9,159 +9,159 @@
     \context Score = "Score" <<
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
-                {
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 13/12
                     s1 * 13/12
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/6
                     s1 * 7/6
-                }
-                {
+                } % measure
+                { % measure
                     \time 53/30
                     s1 * 53/30
-                }
-                {
+                } % measure
+                { % measure
                     \time 23/12
                     s1 * 23/12
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 2/3
                     s1 * 2/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 22/15
                     s1 * 22/15
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 2/1
                     s1 * 2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
+                } % measure
             }
             \context GlobalSkips = "Global Skips" {
-                {
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 13/12
                     s1 * 13/12
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/6
                     s1 * 7/6
-                }
-                {
+                } % measure
+                { % measure
                     \time 53/30
                     s1 * 53/30
-                }
-                {
+                } % measure
+                { % measure
                     \time 23/12
                     s1 * 23/12
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 2/3
                     s1 * 2/3
-                }
-                {
+                } % measure
+                { % measure
                     \time 22/15
                     s1 * 22/15
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 2/1
                     s1 * 2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
+                } % measure
             }
         >>
         \context PianoStaff = "Piano Staff" <<
