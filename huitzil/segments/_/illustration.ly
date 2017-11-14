@@ -14,452 +14,452 @@
     \context Score = "Score" <<
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
-                {
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 15/16
                     s1 * 15/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 11/16
                     s1 * 11/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 31/32
                     s1 * 31/32
-                }
-                {
+                } % measure
+                { % measure
                     \time 15/16
                     s1 * 15/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 17/32
                     s1 * 17/32
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 15/16
                     s1 * 15/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/4
                     s1 * 9/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/4
                     s1 * 5/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/4
                     s1 * 1/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 2/1
                     s1 * 2
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/8
                     s1 * 9/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/8
                     s1 * 5/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/4
                     s1 * 5/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/16
                     s1 * 9/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/8
                     s1 * 3/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/4
                     s1 * 5/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 15/16
                     s1 * 15/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/8
                     s1 * 9/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/4
                     s1 * 5/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 13/16
                     s1 * 13/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/8
                     s1 * 5/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/4
                     s1 * 5/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/16
                     s1 * 5/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/16
                     s1 * 9/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/8
                     s1 * 9/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/2
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/16
                     s1 * 9/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/4
                     s1 * 1/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/2
                     s1 * 3/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/4
                     s1 * 9/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/2
                     s1 * 3/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/1
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
+                } % measure
             }
             \context GlobalSkips = "Global Skips" {
-                {
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 15/16
                     s1 * 15/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 11/16
                     s1 * 11/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 31/32
                     s1 * 31/32
-                }
-                {
+                } % measure
+                { % measure
                     \time 15/16
                     s1 * 15/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 17/32
                     s1 * 17/32
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 4/4
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 15/16
                     s1 * 15/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 4/4
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/4
                     s1 * 9/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/4
                     s1 * 5/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/4
                     s1 * 1/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 8/4
                     s1 * 2
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/8
                     s1 * 9/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/8
                     s1 * 5/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 2/4
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/4
                     s1 * 5/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/16
                     s1 * 9/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/8
                     s1 * 3/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/4
                     s1 * 5/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 4/4
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 2/4
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 4/4
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 15/16
                     s1 * 15/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/8
                     s1 * 9/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 2/4
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/4
                     s1 * 5/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 13/16
                     s1 * 13/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/8
                     s1 * 5/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/4
                     s1 * 5/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 4/4
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 5/16
                     s1 * 5/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 4/4
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/16
                     s1 * 9/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/8
                     s1 * 9/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 2/4
                     s1 * 1/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/16
                     s1 * 9/16
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 7/8
                     s1 * 7/8
-                }
-                {
+                } % measure
+                { % measure
                     \time 4/4
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 1/4
                     s1 * 1/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 6/4
                     s1 * 3/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 4/4
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 9/4
                     s1 * 9/4
-                }
-                {
+                } % measure
+                { % measure
                     \time 6/4
                     s1 * 3/2
-                }
-                {
+                } % measure
+                { % measure
                     \time 4/4
                     s1 * 1
-                }
-                {
+                } % measure
+                { % measure
                     \time 3/4
                     s1 * 3/4
-                }
+                } % measure
             }
         >>
         \context Staff = "Staff" <<
