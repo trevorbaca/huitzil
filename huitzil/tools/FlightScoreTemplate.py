@@ -59,7 +59,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
-        time_signature_context = self._make_time_signature_context()
+        global_context = self._make_global_context()
         # BOW STAFF
         bow_staff = abjad.Staff(
             context_name='BowStaff',
@@ -106,7 +106,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             pitch_staff,
             ])
         score = abjad.Score([
-            time_signature_context,
+            global_context,
             staff_group,
             ],
             name='Score',

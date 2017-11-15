@@ -305,7 +305,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             )
         return parts
 
-    def _populate_time_signature_context(self):
+    def _populate_global_context(self):
         music_voice = self._score['Music Voice']
         measure_durations = []
         current_duration = abjad.Duration(0)
@@ -460,7 +460,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         self._configure_lilypond_file()
         self._interpret_music_makers()
         self._configure_score()
-        self._populate_time_signature_context()
+        self._populate_global_context()
         self._adjust_stems()
         self._attach_tempo_indicators()
         #self._attach_fermatas()
