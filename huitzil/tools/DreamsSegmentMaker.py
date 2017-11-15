@@ -17,6 +17,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         '_calculate_duration',
         '_final_markup',
         '_final_markup_extra_offset',
+        '_metadata',
         '_music_specifiers',
         '_music_makers',
         '_score',
@@ -394,6 +395,12 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         return self._lilypond_file
 
     @property
+    def metadata(self):
+        r'''Gets metadata after run.
+        '''
+        return self._metadata
+
+    @property
     def music_makers(self):
         r'''Gets segment-maker's music-makers.
 
@@ -455,6 +462,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
 
         Returns LilyPond file.
         '''
+        self._metadata = metadata
         self._make_score()
         self._make_lilypond_file()
         self._configure_lilypond_file()
@@ -477,9 +485,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
                 if len(container) == 0:
                     print(container)
                     abjad.f(container)
-            string = \
-                abjad.inspect(score).tabulate_wellformedness()
+            string = abjad.inspect(score).tabulate_wellformedness()
             string = '\n' + string
             raise Exception(string)
-        metadata = None
-        return self.lilypond_file, metadata
+        return self.lilypond_file
