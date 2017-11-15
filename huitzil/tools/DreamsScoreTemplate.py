@@ -53,7 +53,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
-        time_signature_context = self._make_time_signature_context()
+        global_context = self._make_global_context()
         # CELLO
         staff = abjad.Staff(
             name='Staff',
@@ -71,7 +71,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         # SCORE
         score = abjad.Score(
             [
-                time_signature_context,
+                global_context,
                 staff,
                 ],
             name='Score',
