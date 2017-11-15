@@ -32,6 +32,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         '_lh_glissandi',
         '_lilypond_file',
         '_markup_leaves',
+        '_metadata',
         '_name',
         '_pitches',
         '_score',
@@ -558,6 +559,12 @@ class FlightSegmentMaker(abjad.AbjadObject):
             raise TypeError(f'boolean only: {argument!r}.')
 
     @property
+    def metadata(self):
+        r'''Gets metadata after run.
+        '''
+        return self._metadata
+
+    @property
     def metronome_mark_measure_map(self):
         r'''Gets tempo indications of segment-maker.
 
@@ -704,6 +711,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
 
         Returns LilyPond file.
         '''
+        self._metadata = metadata
         self._make_score()
         self._configure_score()
         self._make_lilypond_file()
@@ -721,15 +729,8 @@ class FlightSegmentMaker(abjad.AbjadObject):
         self._attach_leaf_index_markup()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
-        #try:
-        #    duration = abjad.inspect(score).get_duration(in_seconds=True)
-        #except abjad.MissingMetronomeMarkError:
-        #    duration = abjad.Duration(0)
-        #raise Exception(float(duration))
         if not abjad.inspect(score).is_well_formed():
-            string = \
-                abjad.inspect(score).tabulate_wellformedness()
+            string = abjad.inspect(score).tabulate_wellformedness()
             string = '\n' + string
             raise Exception(string)
-        metadata = None
-        return self.lilypond_file, metadata
+        return self.lilypond_file
