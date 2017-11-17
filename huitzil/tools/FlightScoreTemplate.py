@@ -20,7 +20,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
 
         >>> abjad.f(lilypond_file[abjad.Score])
         \context Score = "Score" <<
-            \context GlobalContext = "Global Context" <<
+            \context GlobalContext = "GlobalContext" <<
                 \context GlobalRests = "GlobalRests" {
                 }
                 \context GlobalSkips = "GlobalSkips" {
