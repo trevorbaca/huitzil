@@ -387,7 +387,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
     def _populate_underlying_dynamics_voice(self):
         if not self.notes:
             return
-        underlying_dynamics_voice = self._score['Underlying Dynamics Voice']
+        underlying_dynamics_voice = self._score['Underlying DynamicsVoice']
         durations = self._get_bow_location_durations()
         maker = rhythmos.SkipRhythmMaker()
         selections = maker(durations)

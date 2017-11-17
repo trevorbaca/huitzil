@@ -718,7 +718,7 @@
                                 fffz
                             }
                 }
-                \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
+                \context UnderlyingDynamicsVoice = "Underlying DynamicsVoice" {
                     s1 * 1 \p \<
                     s1 * 3/4
                     s1 * 3/4

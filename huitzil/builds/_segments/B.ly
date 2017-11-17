@@ -670,7 +670,7 @@
                             mpz
                         }
             }
-            \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
+            \context UnderlyingDynamicsVoice = "Underlying DynamicsVoice" {
                 \once \override Hairpin.stencil = #constante-hairpin
                 s1 * 1/4 \f \<
                 s1 * 1/4
