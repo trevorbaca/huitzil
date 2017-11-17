@@ -1,7 +1,7 @@
 
     \context Score = "Score" <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalRests = "Global Rests" {
+            \context GlobalRests = "GlobalRests" {
                 {
                     \time 7/8
                     s1 * 7/8
@@ -225,7 +225,7 @@
                     s1 * 3/4
                 }
             }
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 {
                     \time 7/8
                     s1 * 7/8

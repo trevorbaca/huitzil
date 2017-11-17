@@ -21,9 +21,9 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         >>> abjad.f(lilypond_file[abjad.Score])
         \context Score = "Score" <<
             \context GlobalContext = "Global Context" <<
-                \context GlobalRests = "Global Rests" {
+                \context GlobalRests = "GlobalRests" {
                 }
-                \context GlobalSkips = "Global Skips" {
+                \context GlobalSkips = "GlobalSkips" {
                 }
             >>
             \context Staff = "Staff" <<

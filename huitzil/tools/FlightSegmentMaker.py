@@ -338,7 +338,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
     def _populate_time_signature_voice(self):
         if not self.notes:
             return
-        context = self._score['Global Skips']
+        context = self._score['GlobalSkips']
         measure_durations = []
         current_measure_duration = abjad.Duration(0)
         for expression in self.notes:
@@ -356,7 +356,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         measures = maker(measure_durations)
         context.extend(measures)
         measures = maker(measure_durations)
-        context = self._score['Global Rests']
+        context = self._score['GlobalRests']
         context.extend(measures)
 
     def _populate_tremolo_indicator_voice(self):
