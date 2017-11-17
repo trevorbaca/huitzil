@@ -12,7 +12,7 @@
 
 \score {
     \context Score = "Score" <<
-        \context GlobalContext = "Global Context" <<
+        \context GlobalContext = "GlobalContext" <<
             \context GlobalRests = "GlobalRests" {
                 { % measure
                     \time 7/8

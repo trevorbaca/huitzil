@@ -1,5 +1,5 @@
 \context Score = "Score" <<
-    \context GlobalContext = "Global Context" <<
+    \context GlobalContext = "GlobalContext" <<
         \context GlobalRests = "GlobalRests" {
             {
                 \time 3/4
