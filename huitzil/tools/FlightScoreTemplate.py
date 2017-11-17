@@ -38,7 +38,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
                     \context BowLocationVoice = "Bow Location Voice" {
                         s1
                     }
-                    \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
+                    \context UnderlyingDynamicsVoice = "Underlying DynamicsVoice" {
                         s1
                     }
                 >>
@@ -83,7 +83,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         bow_staff.append(bow_location_voice)
         underlying_dynamics_voice = abjad.Voice(
             context_name='UnderlyingDynamicsVoice',
-            name='Underlying Dynamics Voice',
+            name='Underlying DynamicsVoice',
             )
         bow_staff.append(underlying_dynamics_voice)
         # PITCH STAFF

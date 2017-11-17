@@ -438,7 +438,7 @@
                     a''1 :16
                     a''1 :16
                 }
-                \context UnderlyingDynamicsVoice = "Underlying Dynamics Voice" {
+                \context UnderlyingDynamicsVoice = "Underlying DynamicsVoice" {
                     s1 * 1 \mp \>
                     s1 * 1 \pp \<
                     s1 * 1 \mp \>
