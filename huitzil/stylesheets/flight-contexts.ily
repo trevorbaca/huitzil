@@ -11,7 +11,7 @@
     }
     \context {
         \Voice
-        \name TempoIndicatorVoice
+        \name MetronomeMarkVoice
         \type Engraver_group
         \alias Voice
         \override TextScript.staff-padding = 9
@@ -19,7 +19,7 @@
     }
     \context {
         \Voice
-        \name TremoloIndicatorVoice
+        \name TremoloVoice
         \type Engraver_group
         \alias Voice
         \override TextScript.staff-padding = 5
@@ -27,7 +27,7 @@
     }
     \context {
         \Voice
-        \name BowLocationVoice
+        \name StringContactPointVoice
         \type Engraver_group
         \alias Voice
         \override TextScript.staff-padding = 3.5
@@ -56,9 +56,9 @@
         \type Engraver_group
         \alias Staff
         \accepts TimeSignatureVoice
-        \accepts TempoIndicatorVoice
-        \accepts TremoloIndicatorVoice
-        \accepts BowLocationVoice
+        \accepts MetronomeMarkVoice
+        \accepts TremoloVoice
+        \accepts StringContactPointVoice
         \accepts UnderlyingDynamicsVoice
         \override Clef.transparent = ##t
         \override TupletBracket.direction = #up

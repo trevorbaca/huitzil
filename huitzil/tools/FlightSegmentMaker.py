@@ -112,7 +112,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
     ### PRIVATE METHODS ###
 
     def _attach_clefs(self):
-        pitch_voice = self._score['Pitch Voice']
+        pitch_voice = self._score['PitchVoice']
         notes = abjad.iterate(pitch_voice).components(abjad.Note)
         for left_note, right_note in abjad.sequence(notes).nwise(n=2):
             left_clef = abjad.Clef.from_selection(left_note)
@@ -124,7 +124,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         if not self.name == 'flight I':
             return
         self._score.add_final_bar_line()
-        pitch_voice = self._score['Pitch Voice']
+        pitch_voice = self._score['PitchVoice']
         last_leaf = abjad.inspect(pitch_voice).get_leaf(-1)
         string = r'override Score.BarLine.transparent = ##f'
         command = abjad.LilyPondCommand(string, format_slot='after')
@@ -136,7 +136,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
     def _attach_leaf_index_markup(self):
         if not self.markup_leaves:
             return
-        voice = self._score['Bow Location Voice']
+        voice = self._score['StringContactPointVoice']
         logical_ties = abjad.iterate(voice).logical_ties()
         for i, logical_tie in enumerate(logical_ties):
             markup = abjad.Markup(i)
@@ -147,7 +147,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
             return
         if not self.lh_glissandi:
             return
-        pitch_voice = self._score['Pitch Voice']
+        pitch_voice = self._score['PitchVoice']
         for start_index, stop_index in self.lh_glissandi:
             leaves = abjad.select(pitch_voice).leaves()
             spanner_leaves = leaves[start_index:stop_index+1]
@@ -163,12 +163,12 @@ class FlightSegmentMaker(abjad.AbjadObject):
         bow_staff = self._score['Bow Staff']
         abjad.override(bow_staff).staff_symbol.line_count = self.staff_line_count
         if self.name in ('flight E', 'flight F', 'flight I'):
-            voice = self._score['MetronomeMark Indicator Voice']
+            voice = self._score['MetronomeMarkVoice']
             abjad.override(voice).text_script.staff_padding = 5
             abjad.override(voice).text_spanner.staff_padding = 5.75
 
     def _format_altissimi_pitches(self):
-        pitch_voice = self._score['Pitch Voice']
+        pitch_voice = self._score['PitchVoice']
         for note in abjad.iterate(pitch_voice).components(abjad.Note):
             if note.written_pitch == abjad.NamedPitch('C6'):
                 abjad.override(note).note_head.no_ledgers = True
@@ -177,7 +177,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
                 abjad.override(note).note_head.duration_log = 2
 
     def _get_bow_location_durations(self):
-        bow_location_voice = self._score['Bow Location Voice']
+        bow_location_voice = self._score['StringContactPointVoice']
         durations = []
         for logical_tie in abjad.iterate(bow_location_voice).logical_ties():
             duration = abjad.inspect(logical_tie).get_duration()
@@ -238,7 +238,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
             pitch = self._staff_position_to_pitch(staff_position)
             components = self._make_leaf(pitch, duration_string, indication)
             notes.extend(components)
-        bow_location_voice = self._score['Bow Location Voice']
+        bow_location_voice = self._score['StringContactPointVoice']
         bow_location_voice.extend(notes)
         indices = list(range(len(notes)))
         if self.glissando_break_indices is not None:
@@ -258,11 +258,11 @@ class FlightSegmentMaker(abjad.AbjadObject):
             abjad.attach(abjad.Glissando(), notes_in_spanner)
 
     def _populate_pitch_voice(self):
-        pitch_voice = self._score['Pitch Voice']
+        pitch_voice = self._score['PitchVoice']
         if not self.notes:
             return
         if not self.pitches:
-            bow_location_voice = self._score['Bow Location Voice']
+            bow_location_voice = self._score['StringContactPointVoice']
             total_duration = abjad.inspect(bow_location_voice).get_duration()
             skip = abjad.Skip(1)
             multiplier = abjad.Multiplier(total_duration)
@@ -318,7 +318,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
             return
         if not self.metronome_mark_measure_map:
             return
-        tempo_indicator_voice = self._score['MetronomeMark Indicator Voice']
+        tempo_indicator_voice = self._score['MetronomeMarkVoice']
         durations = self._get_bow_location_durations()
         maker = rhythmos.SkipRhythmMaker()
         selections = maker(durations)
@@ -360,7 +360,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
         context.extend(measures)
 
     def _populate_tremolo_indicator_voice(self):
-        tremolo_indicator_voice = self._score['Tremolo Indicator Voice']
+        tremolo_indicator_voice = self._score['TremoloVoice']
         durations = self._get_bow_location_durations()
         maker = rhythmos.SkipRhythmMaker()
         skips = maker(durations)
@@ -387,7 +387,7 @@ class FlightSegmentMaker(abjad.AbjadObject):
     def _populate_underlying_dynamics_voice(self):
         if not self.notes:
             return
-        underlying_dynamics_voice = self._score['Underlying DynamicsVoice']
+        underlying_dynamics_voice = self._score['UnderlyingDynamicsVoice']
         durations = self._get_bow_location_durations()
         maker = rhythmos.SkipRhythmMaker()
         selections = maker(durations)

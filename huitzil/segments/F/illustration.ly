@@ -230,7 +230,7 @@
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol.line-count = #11
             } <<
-                \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" \with {
+                \context MetronomeMarkVoice = "MetronomeMarkVoice" \with {
                     \override TextScript.staff-padding = #5
                     \override TextSpanner.staff-padding = #5.75
                 } {
@@ -574,7 +574,7 @@
                             }
                         }
                 }
-                \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+                \context TremoloVoice = "TremoloVoice" {
                     s1 * 1
                     s1 * 3/4
                     s1 * 3/4
@@ -608,7 +608,7 @@
                     s1 * 1
                     s1 * 1
                 }
-                \context BowLocationVoice = "Bow Location Voice" {
+                \context StringContactPointVoice = "StringContactPointVoice" {
                     f1 :16
                         _ \markup {
                             \dynamic
@@ -718,7 +718,7 @@
                                 fffz
                             }
                 }
-                \context UnderlyingDynamicsVoice = "Underlying DynamicsVoice" {
+                \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice" {
                     s1 * 1 \p \<
                     s1 * 3/4
                     s1 * 3/4
@@ -753,8 +753,8 @@
                     s1 * 1 \pp
                 }
             >>
-            \context PitchStaff = "Pitch Staff" {
-                \context PitchVoice = "Pitch Voice" {
+            \context PitchStaff = "PitchStaff" {
+                \context PitchVoice = "PitchVoice" {
                     \clef "bass"
                     a,1 * 35/2 \glissando
                     g,1 * 4
