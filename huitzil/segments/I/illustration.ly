@@ -8,7 +8,7 @@
 \score {
     \context Score = "Score" <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalRests = "Global Rests" {
+            \context GlobalRests = "GlobalRests" {
                 { % measure
                     \time 1/1
                     s1 * 1
@@ -47,7 +47,7 @@
                     s1 * 1
                 } % measure
             }
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 { % measure
                     s1 * 1
                 } % measure

@@ -123,7 +123,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
     def _annotate_stages(self):
         if not self.label_stages:
             return
-        context = self._score['Global Skips']
+        context = self._score['GlobalSkips']
         for stage_index in range(self.stage_count):
             stage_number = stage_index + 1
             result = self._stage_number_to_measure_indices(stage_number)
@@ -138,7 +138,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
     def _attach_fermatas(self):
         if not self.metronome_mark_measure_map:
             return
-        context = self._score['Global Rests']
+        context = self._score['GlobalRests']
         prototype = (
             abjad.Fermata,
             abjad.BreathMark,
@@ -219,7 +219,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         abjad.attach(abjad.Clef('bass'), leaf)
 
     def _get_offsets(self, start_stage, stop_stage):
-        context = self._score['Global Skips']
+        context = self._score['GlobalSkips']
         result = self._stage_number_to_measure_indices(start_stage)
         start_measure_index, stop_measure_index = result
         start_measure = context[start_measure_index]
@@ -293,7 +293,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         self._score = huitzil.DreamsScoreTemplate()()
 
     def _partition_music_into_measures(self):
-        context = self._score['Global Skips']
+        context = self._score['GlobalSkips']
         measure_durations = [abjad.inspect(_).get_duration() for _ in context]
         music_voice = self._score['Voice']
         component_durations = [
@@ -323,7 +323,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         measure_durations.append(current_duration)
         maker = abjad.MeasureMaker()
         measures = maker(measure_durations)
-        context = self._score['Global Skips']
+        context = self._score['GlobalSkips']
         context.extend(measures)
         for measure in abjad.iterate(context).components(abjad.Measure):
             agent = abjad.inspect(measure)
@@ -337,7 +337,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
                 abjad.attach(new_time_signature, measure)
         maker = abjad.MeasureMaker()
         measures = maker(measure_durations)
-        context = self._score['Global Rests']
+        context = self._score['GlobalRests']
         context.extend(measures)
 
     def _tweak_tuplet_brackets(self):
