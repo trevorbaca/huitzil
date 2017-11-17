@@ -168,7 +168,7 @@
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol.line-count = #7
             } <<
-                \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" {
+                \context MetronomeMarkVoice = "MetronomeMarkVoice" {
                     s1 * 1/2
                     s1 * 1/4
                     s1 * 1/4
@@ -302,7 +302,7 @@
                             }
                         }
                 }
-                \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+                \context TremoloVoice = "TremoloVoice" {
                     s1 * 1/2 ^ \markup {
                         \whiteout
                             \upright
@@ -562,7 +562,7 @@
                                     "più stretto"
                         }
                 }
-                \context BowLocationVoice = "Bow Location Voice" {
+                \context StringContactPointVoice = "StringContactPointVoice" {
                     a''2 :16
                         _ \markup {
                             \dynamic
@@ -860,7 +860,7 @@
                                 ffz
                             }
                 }
-                \context UnderlyingDynamicsVoice = "Underlying DynamicsVoice" {
+                \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice" {
                     \once \override Hairpin.stencil = #constante-hairpin
                     s1 * 1/2 \mp \<
                     s1 * 1/4
@@ -917,8 +917,8 @@
                     s1 * 1 \f
                 }
             >>
-            \context PitchStaff = "Pitch Staff" {
-                \context PitchVoice = "Pitch Voice" {
+            \context PitchStaff = "PitchStaff" {
+                \context PitchVoice = "PitchVoice" {
                     \clef "bass"
                     bf,,1 * 1429/60
                 }

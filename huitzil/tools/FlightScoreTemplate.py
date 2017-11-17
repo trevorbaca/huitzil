@@ -7,7 +7,6 @@ class FlightScoreTemplate(baca.ScoreTemplate):
 
     >>> import huitzil
 
-
     ..  container:: example
 
         >>> template = huitzil.FlightScoreTemplate()
@@ -29,21 +28,21 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             >>
             \context PianoStaff = "Piano Staff" <<
                 \context BowStaff = "Bow Staff" <<
-                    \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" {
+                    \context MetronomeMarkVoice = "MetronomeMarkVoice" {
                         s1
                     }
-                    \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+                    \context TremoloVoice = "TremoloVoice" {
                         s1
                     }
-                    \context BowLocationVoice = "Bow Location Voice" {
+                    \context StringContactPointVoice = "StringContactPointVoice" {
                         s1
                     }
-                    \context UnderlyingDynamicsVoice = "Underlying DynamicsVoice" {
+                    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice" {
                         s1
                     }
                 >>
-                \context PitchStaff = "Pitch Staff" {
-                    \context PitchVoice = "Pitch Voice" {
+                \context PitchStaff = "PitchStaff" {
+                    \context PitchVoice = "PitchVoice" {
                         s1
                     }
                 }
@@ -67,33 +66,33 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             )
         bow_staff.is_simultaneous = True
         tempo_indicator_voice = abjad.Voice(
-            context_name='TempoIndicatorVoice',
-            name='MetronomeMark Indicator Voice',
+            context_name='MetronomeMarkVoice',
+            name='MetronomeMarkVoice',
             )
         bow_staff.append(tempo_indicator_voice)
         tremolo_indicator_voice = abjad.Voice(
-            context_name='TremoloIndicatorVoice',
-            name='Tremolo Indicator Voice',
+            context_name='TremoloVoice',
+            name='TremoloVoice',
             )
         bow_staff.append(tremolo_indicator_voice)
         bow_location_voice = abjad.Voice(
-            context_name='BowLocationVoice',
-            name='Bow Location Voice',
+            context_name='StringContactPointVoice',
+            name='StringContactPointVoice',
             )
         bow_staff.append(bow_location_voice)
         underlying_dynamics_voice = abjad.Voice(
             context_name='UnderlyingDynamicsVoice',
-            name='Underlying DynamicsVoice',
+            name='UnderlyingDynamicsVoice',
             )
         bow_staff.append(underlying_dynamics_voice)
         # PITCH STAFF
         pitch_staff = abjad.Staff(
             context_name='PitchStaff',
-            name='Pitch Staff',
+            name='PitchStaff',
             )
         pitch_voice = abjad.Voice(
             context_name='PitchVoice',
-            name='Pitch Voice',
+            name='PitchVoice',
             )
         pitch_staff.append(pitch_voice)
         # SCORE

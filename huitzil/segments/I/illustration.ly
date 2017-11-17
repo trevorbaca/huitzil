@@ -90,7 +90,7 @@
             \context BowStaff = "Bow Staff" \with {
                 \override StaffSymbol.line-count = #7
             } <<
-                \context TempoIndicatorVoice = "MetronomeMark Indicator Voice" \with {
+                \context MetronomeMarkVoice = "MetronomeMarkVoice" \with {
                     \override TextScript.staff-padding = #5
                     \override TextSpanner.staff-padding = #5.75
                 } {
@@ -410,7 +410,7 @@
                     s1 * 1
                     s1 * 1
                 }
-                \context TremoloIndicatorVoice = "Tremolo Indicator Voice" {
+                \context TremoloVoice = "TremoloVoice" {
                     s1 * 1
                     s1 * 1
                     s1 * 1
@@ -424,7 +424,7 @@
                     s1 * 1
                     s1 * 1
                 }
-                \context BowLocationVoice = "Bow Location Voice" {
+                \context StringContactPointVoice = "StringContactPointVoice" {
                     a''1 :16
                     a''1 :16
                     a''1 :16
@@ -438,7 +438,7 @@
                     a''1 :16
                     a''1 :16
                 }
-                \context UnderlyingDynamicsVoice = "Underlying DynamicsVoice" {
+                \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice" {
                     s1 * 1 \mp \>
                     s1 * 1 \pp \<
                     s1 * 1 \mp \>
@@ -453,8 +453,8 @@
                     s1 * 1 \!
                 }
             >>
-            \context PitchStaff = "Pitch Staff" {
-                \context PitchVoice = "Pitch Voice" {
+            \context PitchStaff = "PitchStaff" {
+                \context PitchVoice = "PitchVoice" {
                     \clef "bass"
                     s1 * 12
                     \bar "|."

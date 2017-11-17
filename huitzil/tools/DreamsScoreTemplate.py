@@ -27,7 +27,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
                 }
             >>
             \context Staff = "Staff" <<
-                \context Voice = "Music Voice" {
+                \context Voice = "Voice" {
                     \set Staff.instrumentName = \markup {
                         \hcenter-in
                             #16
@@ -65,7 +65,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
             huitzil.instruments['cello'],
             )
         music_voice = abjad.Voice(
-            name='Music Voice',
+            name='Voice',
             )
         staff.append(music_voice)
         # SCORE

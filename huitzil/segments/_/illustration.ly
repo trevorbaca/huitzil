@@ -463,7 +463,7 @@
             }
         >>
         \context Staff = "Staff" <<
-            \context Voice = "Music Voice" {
+            \context Voice = "Voice" {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 6/5 {
                     \tempo 8=78
