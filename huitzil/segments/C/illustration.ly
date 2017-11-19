@@ -229,10 +229,13 @@
                     \once \override TextSpanner.bound-details.right.text = ##f
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \startTextSpan
+                    s1 * 1
+                    \startTextSpan
                     s1 * 1
                     s1 * 1
-                    s1 * 1 \stopTextSpan ^ \markup {
+                    s1 * 1
+                    \stopTextSpan
+                    ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -280,12 +283,15 @@
                     \once \override TextSpanner.bound-details.right.text = ##f
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \startTextSpan
+                    s1 * 1
+                    \startTextSpan
                     s1 * 1
                     s1 * 1
                     s1 * 1
                     s1 * 1
-                    s1 * 1 \stopTextSpan ^ \markup {
+                    s1 * 1
+                    \stopTextSpan
+                    ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -303,7 +309,8 @@
                         }
                 }
                 \context TremoloVoice = "TremoloVoice" {
-                    s1 * 1/2 ^ \markup {
+                    s1 * 1/2
+                    ^ \markup {
                         \whiteout
                             \upright
                                 \upright
@@ -359,11 +366,14 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1/3 \startTextSpan
+                    s1 * 1/3
+                    \startTextSpan
                     s1 * 1/3
                     s1 * 1/3
                     s1 * 1/3
-                    s1 * 1/5 \stopTextSpan ^ \markup {
+                    s1 * 1/5
+                    \stopTextSpan
+                    ^ \markup {
                         \whiteout
                             \upright
                                 \upright
@@ -394,7 +404,8 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \startTextSpan
+                    s1 * 1
+                    \startTextSpan
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -416,7 +427,9 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \stopTextSpan \startTextSpan
+                    s1 * 1
+                    \stopTextSpan
+                    \startTextSpan
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -438,8 +451,12 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \stopTextSpan \startTextSpan
-                    s1 * 1 \stopTextSpan ^ \markup {
+                    s1 * 1
+                    \stopTextSpan
+                    \startTextSpan
+                    s1 * 1
+                    \stopTextSpan
+                    ^ \markup {
                         \whiteout
                             \upright
                                 \upright
@@ -466,7 +483,8 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \startTextSpan
+                    s1 * 1
+                    \startTextSpan
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -488,7 +506,9 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \stopTextSpan \startTextSpan
+                    s1 * 1
+                    \stopTextSpan
+                    \startTextSpan
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -510,7 +530,9 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \stopTextSpan \startTextSpan
+                    s1 * 1
+                    \stopTextSpan
+                    \startTextSpan
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -532,7 +554,9 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \stopTextSpan \startTextSpan
+                    s1 * 1
+                    \stopTextSpan
+                    \startTextSpan
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -554,8 +578,12 @@
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \stopTextSpan \startTextSpan
-                    s1 * 1 \stopTextSpan ^ \markup {
+                    s1 * 1
+                    \stopTextSpan
+                    \startTextSpan
+                    s1 * 1
+                    \stopTextSpan
+                    ^ \markup {
                         \whiteout
                             \upright
                                 \upright
@@ -563,306 +591,388 @@
                         }
                 }
                 \context StringContactPointVoice = "StringContactPointVoice" {
-                    a''2 :16
-                        _ \markup {
-                            \dynamic
-                                mfz
-                            }
-                    a''4 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                mfz
-                            }
-                    f''4 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                mfz
-                            }
-                    a''2 :16
-                        _ \markup {
-                            \dynamic
-                                mfz
-                            }
-                    a''4 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                mfz
-                            }
+                    a''2
+                    :16
+                    _ \markup {
+                        \dynamic
+                            mfz
+                        }
+                    a''4
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            mfz
+                        }
+                    f''4
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            mfz
+                        }
+                    a''2
+                    :16
+                    _ \markup {
+                        \dynamic
+                            mfz
+                        }
+                    a''4
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            mfz
+                        }
                     \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        f''2 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mfz
-                                }
+                        f''2
+                        :16
+                        \glissando
+                        _ \markup {
+                            \dynamic
+                                mfz
+                            }
                     }
-                    a''2 :16
-                        _ \markup {
-                            \dynamic
-                                mfz
-                            }
-                    a''4 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                mfz
-                            }
-                    f''4 :16
-                        _ \markup {
-                            \dynamic
-                                mfz
-                            }
+                    a''2
+                    :16
+                    _ \markup {
+                        \dynamic
+                            mfz
+                        }
+                    a''4
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            mfz
+                        }
+                    f''4
+                    :16
+                    _ \markup {
+                        \dynamic
+                            mfz
+                        }
                     \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        f''1 :16
-                            _ \markup {
-                                \dynamic
-                                    fz
-                                }
+                        f''1
+                        :16
+                        _ \markup {
+                            \dynamic
+                                fz
+                            }
                     }
-                    f''4 :16 \glissando
+                    f''4
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            mpz
+                        }
+                    d''4
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            mpz
+                        }
+                    f''2
+                    :16
+                    _ \markup {
+                        \dynamic
+                            mpz
+                        }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 2/3 {
+                        f''2
+                        :16
+                        \glissando
                         _ \markup {
                             \dynamic
                                 mpz
                             }
-                    d''4 :16 \glissando
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 2/3 {
+                        d''2
+                        :16
+                        \glissando
                         _ \markup {
                             \dynamic
                                 mpz
                             }
-                    f''2 :16
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/5 {
+                        a''4
+                        :16
+                        \glissando
+                        _ \markup {
+                            \dynamic
+                                mfz
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/5 {
+                        f''4
+                        :16
+                        \glissando
+                        _ \markup {
+                            \dynamic
+                                mfz
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/5 {
+                        d''4
+                        :16
+                        \glissando
+                        _ \markup {
+                            \dynamic
+                                mfz
+                            }
+                    }
+                    f''2
+                    :16
+                    _ \markup {
+                        \dynamic
+                            fz
+                        }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 2/3 {
+                        f''2
+                        :16
+                        \glissando
                         _ \markup {
                             \dynamic
                                 mpz
                             }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 2/3 {
-                        f''2 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mpz
-                                }
                     }
                     \tweak edge-height #'(0.7 . 0)
                     \times 2/3 {
-                        d''2 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mpz
-                                }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 4/5 {
-                        a''4 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mfz
-                                }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 4/5 {
-                        f''4 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mfz
-                                }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 4/5 {
-                        d''4 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mfz
-                                }
-                    }
-                    f''2 :16
-                        _ \markup {
-                            \dynamic
-                                fz
-                            }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 2/3 {
-                        f''2 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mpz
-                                }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 2/3 {
-                        d''2 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mpz
-                                }
-                    }
-                    a''4 :16 \glissando
+                        d''2
+                        :16
+                        \glissando
                         _ \markup {
                             \dynamic
                                 mpz
                             }
-                    f''4 :16 \glissando
+                    }
+                    a''4
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            mpz
+                        }
+                    f''4
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            mpz
+                        }
+                    d''4
+                    :16
+                    _ \markup {
+                        \dynamic
+                            mpz
+                        }
+                    d''1
+                    :16
+                    _ \markup {
+                        \dynamic
+                            fz
+                        }
+                    d''2
+                    :16
+                    _ \markup {
+                        \dynamic
+                            fz
+                        }
+                    d''4
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            fz
+                        }
+                    b'4
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            fz
+                        }
+                    d''2
+                    :16
+                    _ \markup {
+                        \dynamic
+                            fz
+                        }
+                    d''4
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            fz
+                        }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 2/3 {
+                        b'2
+                        :16
+                        \glissando
+                        _ \markup {
+                            \dynamic
+                                mfz
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 2/3 {
+                        a''2
+                        :16
+                        \glissando
+                        _ \markup {
+                            \dynamic
+                                mfz
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 2/3 {
+                        f''2
+                        :16
+                        \glissando
+                        _ \markup {
+                            \dynamic
+                                mfz
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 2/3 {
+                        d''2
+                        :16
+                        \glissando
+                        _ \markup {
+                            \dynamic
+                                mfz
+                            }
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/5 {
+                        a''4
+                        :16
+                        \glissando
                         _ \markup {
                             \dynamic
                                 mpz
                             }
-                    d''4 :16
+                    }
+                    \tweak edge-height #'(0.7 . 0)
+                    \times 4/5 {
+                        f''4
+                        :16
+                        \glissando
                         _ \markup {
                             \dynamic
                                 mpz
                             }
-                    d''1 :16
-                        _ \markup {
-                            \dynamic
-                                fz
-                            }
-                    d''2 :16
-                        _ \markup {
-                            \dynamic
-                                fz
-                            }
-                    d''4 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                fz
-                            }
-                    b'4 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                fz
-                            }
-                    d''2 :16
-                        _ \markup {
-                            \dynamic
-                                fz
-                            }
-                    d''4 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                fz
-                            }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 2/3 {
-                        b'2 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mfz
-                                }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 2/3 {
-                        a''2 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mfz
-                                }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 2/3 {
-                        f''2 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mfz
-                                }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 2/3 {
-                        d''2 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mfz
-                                }
                     }
                     \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
-                        a''4 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mpz
-                                }
+                        d''4
+                        :16
+                        \glissando
+                        _ \markup {
+                            \dynamic
+                                mpz
+                            }
                     }
                     \tweak edge-height #'(0.7 . 0)
                     \times 4/5 {
-                        f''4 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mpz
-                                }
+                        b'4
+                        :16
+                        _ \markup {
+                            \dynamic
+                                mpz
+                            }
                     }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 4/5 {
-                        d''4 :16 \glissando
-                            _ \markup {
-                                \dynamic
-                                    mpz
-                                }
-                    }
-                    \tweak edge-height #'(0.7 . 0)
-                    \times 4/5 {
-                        b'4 :16
-                            _ \markup {
-                                \dynamic
-                                    mpz
-                                }
-                    }
-                    b'1 :16
-                        _ \markup {
-                            \dynamic
-                                ffz
-                            }
-                    b'1 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                ffz
-                            }
-                    g'1 :16
-                        _ \markup {
-                            \dynamic
-                                ffz
-                            }
-                    g'1 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                ffz
-                            }
-                    e'1 :16
-                        _ \markup {
-                            \dynamic
-                                ffz
-                            }
-                    b'1 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                ffz
-                            }
-                    g'1 :16
-                        _ \markup {
-                            \dynamic
-                                ffz
-                            }
-                    g'1 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                ffz
-                            }
-                    e'1 :16
-                        _ \markup {
-                            \dynamic
-                                ffz
-                            }
-                    e'1 :16 \glissando
-                        _ \markup {
-                            \dynamic
-                                ffz
-                            }
-                    c'1 :16
-                        _ \markup {
-                            \dynamic
-                                ffz
-                            }
+                    b'1
+                    :16
+                    _ \markup {
+                        \dynamic
+                            ffz
+                        }
+                    b'1
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            ffz
+                        }
+                    g'1
+                    :16
+                    _ \markup {
+                        \dynamic
+                            ffz
+                        }
+                    g'1
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            ffz
+                        }
+                    e'1
+                    :16
+                    _ \markup {
+                        \dynamic
+                            ffz
+                        }
+                    b'1
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            ffz
+                        }
+                    g'1
+                    :16
+                    _ \markup {
+                        \dynamic
+                            ffz
+                        }
+                    g'1
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            ffz
+                        }
+                    e'1
+                    :16
+                    _ \markup {
+                        \dynamic
+                            ffz
+                        }
+                    e'1
+                    :16
+                    \glissando
+                    _ \markup {
+                        \dynamic
+                            ffz
+                        }
+                    c'1
+                    :16
+                    _ \markup {
+                        \dynamic
+                            ffz
+                        }
                 }
                 \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice" {
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1/2 \mp \<
+                    s1 * 1/2
+                    \mp
+                    \<
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/2
@@ -872,49 +982,68 @@
                     s1 * 1/4
                     s1 * 1/4
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 2/3 \p \<
+                    s1 * 2/3
+                    \p
+                    \<
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/2
-                    s1 * 1/3 \pp \<
+                    s1 * 1/3
+                    \pp
+                    \<
                     s1 * 1/3
                     s1 * 1/5
                     s1 * 1/5
-                    s1 * 1/5 \mf
+                    s1 * 1/5
+                    \mf
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1/2 \p \<
+                    s1 * 1/2
+                    \p
+                    \<
                     s1 * 1/3
                     s1 * 1/3
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/4
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1 \mf \<
+                    s1 * 1
+                    \mf
+                    \<
                     s1 * 1/2
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/2
                     s1 * 1/4
-                    s1 * 1/3 \mp \>
+                    s1 * 1/3
+                    \mp
+                    \>
                     s1 * 1/3
                     s1 * 1/3
                     s1 * 1/3
                     \once \override Hairpin.stencil = #constante-hairpin
-                    s1 * 1/5 \ppp \<
+                    s1 * 1/5
+                    \ppp
+                    \<
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1
-                    s1 * 1 \p \<
                     s1 * 1
-                    s1 * 1
-                    s1 * 1 \mf
-                    s1 * 1 \p \<
-                    s1 * 1
+                    \p
+                    \<
                     s1 * 1
                     s1 * 1
                     s1 * 1
-                    s1 * 1 \f
+                    \mf
+                    s1 * 1
+                    \p
+                    \<
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    s1 * 1
+                    \f
                 }
             >>
             \context PitchStaff = "PitchStaff" {
