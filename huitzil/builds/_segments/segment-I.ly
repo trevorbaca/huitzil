@@ -1,81 +1,81 @@
 \context Score = "Score" <<
     \context GlobalContext = "GlobalContext" <<
         \context GlobalRests = "GlobalRests" {
-            {
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
+            } % measure
         }
         \context GlobalSkips = "GlobalSkips" {
-            {
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
+            } % measure
         }
     >>
     \context PianoStaff = "Piano Staff" <<
@@ -118,7 +118,8 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \startTextSpan
+                s1 * 1
+                \startTextSpan
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -151,7 +152,9 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \stopTextSpan \startTextSpan
+                s1 * 1
+                \stopTextSpan
+                \startTextSpan
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -184,7 +187,9 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \stopTextSpan \startTextSpan
+                s1 * 1
+                \stopTextSpan
+                \startTextSpan
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -217,7 +222,9 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \stopTextSpan \startTextSpan
+                s1 * 1
+                \stopTextSpan
+                \startTextSpan
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -250,7 +257,9 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \stopTextSpan \startTextSpan
+                s1 * 1
+                \stopTextSpan
+                \startTextSpan
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -283,7 +292,9 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \stopTextSpan \startTextSpan
+                s1 * 1
+                \stopTextSpan
+                \startTextSpan
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -316,7 +327,9 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \stopTextSpan \startTextSpan
+                s1 * 1
+                \stopTextSpan
+                \startTextSpan
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -349,7 +362,9 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \stopTextSpan \startTextSpan
+                s1 * 1
+                \stopTextSpan
+                \startTextSpan
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -382,8 +397,12 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \stopTextSpan \startTextSpan
-                s1 * 1 \stopTextSpan ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                \startTextSpan
+                s1 * 1
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -417,32 +436,64 @@
                 s1 * 1
             }
             \context StringContactPointVoice = "StringContactPointVoice" {
-                a''1 :16
-                a''1 :16
-                a''1 :16
-                a''1 :16
-                a''1 :16
-                a''1 :16
-                a''1 :16
-                a''1 :16
-                a''1 :16
-                a''1 :16
-                a''1 :16
-                a''1 :16
+                a''1
+                :16
+                a''1
+                :16
+                a''1
+                :16
+                a''1
+                :16
+                a''1
+                :16
+                a''1
+                :16
+                a''1
+                :16
+                a''1
+                :16
+                a''1
+                :16
+                a''1
+                :16
+                a''1
+                :16
+                a''1
+                :16
             }
             \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice" {
-                s1 * 1 \mp \>
-                s1 * 1 \pp \<
-                s1 * 1 \mp \>
-                s1 * 1 \pp \<
-                s1 * 1 \mp \>
-                s1 * 1 \pp \<
-                s1 * 1 \mp \>
-                s1 * 1 \pp \<
-                s1 * 1 \mp \>
-                s1 * 1 \pp
                 s1 * 1
-                s1 * 1 \!
+                \mp
+                \>
+                s1 * 1
+                \pp
+                \<
+                s1 * 1
+                \mp
+                \>
+                s1 * 1
+                \pp
+                \<
+                s1 * 1
+                \mp
+                \>
+                s1 * 1
+                \pp
+                \<
+                s1 * 1
+                \mp
+                \>
+                s1 * 1
+                \pp
+                \<
+                s1 * 1
+                \mp
+                \>
+                s1 * 1
+                \pp
+                s1 * 1
+                s1 * 1
+                \!
             }
         >>
         \context PitchStaff = "PitchStaff" {

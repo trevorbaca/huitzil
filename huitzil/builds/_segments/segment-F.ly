@@ -1,221 +1,221 @@
 \context Score = "Score" <<
     \context GlobalContext = "GlobalContext" <<
         \context GlobalRests = "GlobalRests" {
-            {
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 \time 3/4
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 \time 3/4
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 \time 3/4
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 \time 3/4
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 \time 3/4
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
+            } % measure
         }
         \context GlobalSkips = "GlobalSkips" {
-            {
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 \time 3/4
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 \time 3/4
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 \time 3/4
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 \time 3/4
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 \time 3/4
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 3/4
-            }
-            {
+            } % measure
+            { % measure
                 \time 1/1
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
-            {
+            } % measure
+            { % measure
                 s1 * 1
-            }
+            } % measure
         }
     >>
     \context PianoStaff = "Piano Staff" <<
@@ -247,10 +247,13 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \startTextSpan
+                s1 * 1
+                \startTextSpan
                 s1 * 3/4
                 s1 * 3/4
-                s1 * 1 \stopTextSpan ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -298,10 +301,13 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \startTextSpan
+                s1 * 1
+                \startTextSpan
                 s1 * 3/4
                 s1 * 3/4
-                s1 * 1 \stopTextSpan ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -349,10 +355,13 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \startTextSpan
+                s1 * 1
+                \startTextSpan
                 s1 * 3/4
                 s1 * 3/4
-                s1 * 1 \stopTextSpan ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -400,10 +409,13 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \startTextSpan
+                s1 * 1
+                \startTextSpan
                 s1 * 3/4
                 s1 * 3/4
-                s1 * 1 \stopTextSpan ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -451,10 +463,13 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \startTextSpan
+                s1 * 1
+                \startTextSpan
                 s1 * 3/4
                 s1 * 3/4
-                s1 * 1 \stopTextSpan ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -506,10 +521,13 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \startTextSpan
+                s1 * 1
+                \startTextSpan
                 s1 * 1
                 s1 * 1
-                s1 * 1 \stopTextSpan ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -546,10 +564,13 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                s1 * 1 \startTextSpan
+                s1 * 1
+                \startTextSpan
                 s1 * 1
                 s1 * 1
-                s1 * 1 \stopTextSpan ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -601,157 +622,225 @@
                 s1 * 1
             }
             \context StringContactPointVoice = "StringContactPointVoice" {
-                f1 :16
-                    _ \markup {
-                        \dynamic
-                            fz
-                        }
-                f2. :16 \glissando
-                a2. :16
-                    _ \markup {
-                        \dynamic
-                            fz
-                        }
-                a1 :16 \glissando
-                c'1 :16
-                    _ \markup {
-                        \dynamic
-                            fz
-                        }
-                c'2. :16 \glissando
-                e'2. :16
-                    _ \markup {
-                        \dynamic
-                            fz
-                        }
-                e'1 :16 \glissando
-                g'1 :16
-                    _ \markup {
-                        \dynamic
-                            fz
-                        }
-                g'2. :16 \glissando
-                b'2. :16
-                    _ \markup {
-                        \dynamic
-                            fz
-                        }
-                b'1 :16 \glissando
-                d''1 :16
-                    _ \markup {
-                        \dynamic
-                            fz
-                        }
-                d''2. :16 \glissando
-                f''2. :16
-                    _ \markup {
-                        \dynamic
-                            fz
-                        }
-                f''1 :16 \glissando
-                a''1 :16
-                    _ \markup {
-                        \dynamic
-                            fz
-                        }
-                a''2. :16 \glissando
-                c'''2. :16
-                    _ \markup {
-                        \dynamic
-                            fz
-                        }
-                c'''1 :16 \glissando
-                e'''1 :16
-                    _ \markup {
-                        \dynamic
-                            fffz
-                        }
-                e'''1 :16
-                    _ \markup {
-                        \dynamic
-                            fffz
-                        }
-                e'''1 :16
-                    _ \markup {
-                        \dynamic
-                            fffz
-                        }
-                e'''1 :16
-                    _ \markup {
-                        \dynamic
-                            fffz
-                        }
-                e'''1 :16
-                    _ \markup {
-                        \dynamic
-                            fffz
-                        }
-                e'''1 :16
-                e'''1 :16
-                e'''1 :16
-                e'''1 :16
-                    _ \markup {
-                        \dynamic
-                            fffz
-                        }
-                e'''1 :16
-                    _ \markup {
-                        \dynamic
-                            fffz
-                        }
-                e'''1 :16
-                    _ \markup {
-                        \dynamic
-                            fffz
-                        }
-                e'''1 :16
-                    _ \markup {
-                        \dynamic
-                            fffz
-                        }
+                f1
+                :16
+                _ \markup {
+                    \dynamic
+                        fz
+                    }
+                f2.
+                :16
+                \glissando
+                a2.
+                :16
+                _ \markup {
+                    \dynamic
+                        fz
+                    }
+                a1
+                :16
+                \glissando
+                c'1
+                :16
+                _ \markup {
+                    \dynamic
+                        fz
+                    }
+                c'2.
+                :16
+                \glissando
+                e'2.
+                :16
+                _ \markup {
+                    \dynamic
+                        fz
+                    }
+                e'1
+                :16
+                \glissando
+                g'1
+                :16
+                _ \markup {
+                    \dynamic
+                        fz
+                    }
+                g'2.
+                :16
+                \glissando
+                b'2.
+                :16
+                _ \markup {
+                    \dynamic
+                        fz
+                    }
+                b'1
+                :16
+                \glissando
+                d''1
+                :16
+                _ \markup {
+                    \dynamic
+                        fz
+                    }
+                d''2.
+                :16
+                \glissando
+                f''2.
+                :16
+                _ \markup {
+                    \dynamic
+                        fz
+                    }
+                f''1
+                :16
+                \glissando
+                a''1
+                :16
+                _ \markup {
+                    \dynamic
+                        fz
+                    }
+                a''2.
+                :16
+                \glissando
+                c'''2.
+                :16
+                _ \markup {
+                    \dynamic
+                        fz
+                    }
+                c'''1
+                :16
+                \glissando
+                e'''1
+                :16
+                _ \markup {
+                    \dynamic
+                        fffz
+                    }
+                e'''1
+                :16
+                _ \markup {
+                    \dynamic
+                        fffz
+                    }
+                e'''1
+                :16
+                _ \markup {
+                    \dynamic
+                        fffz
+                    }
+                e'''1
+                :16
+                _ \markup {
+                    \dynamic
+                        fffz
+                    }
+                e'''1
+                :16
+                _ \markup {
+                    \dynamic
+                        fffz
+                    }
+                e'''1
+                :16
+                e'''1
+                :16
+                e'''1
+                :16
+                e'''1
+                :16
+                _ \markup {
+                    \dynamic
+                        fffz
+                    }
+                e'''1
+                :16
+                _ \markup {
+                    \dynamic
+                        fffz
+                    }
+                e'''1
+                :16
+                _ \markup {
+                    \dynamic
+                        fffz
+                    }
+                e'''1
+                :16
+                _ \markup {
+                    \dynamic
+                        fffz
+                    }
             }
             \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice" {
-                s1 * 1 \p \<
+                s1 * 1
+                \p
+                \<
                 s1 * 3/4
                 s1 * 3/4
-                s1 * 1 \mf \>
-                s1 * 1 \p \<
+                s1 * 1
+                \mf
+                \>
+                s1 * 1
+                \p
+                \<
                 s1 * 3/4
                 s1 * 3/4
-                s1 * 1 \mf \>
-                s1 * 1 \p \<
+                s1 * 1
+                \mf
+                \>
+                s1 * 1
+                \p
+                \<
                 s1 * 3/4
                 s1 * 3/4
-                s1 * 1 \mf \>
-                s1 * 1 \p \<
+                s1 * 1
+                \mf
+                \>
+                s1 * 1
+                \p
+                \<
                 s1 * 3/4
                 s1 * 3/4
-                s1 * 1 \mf \>
-                s1 * 1 \p \<
+                s1 * 1
+                \mf
+                \>
+                s1 * 1
+                \p
+                \<
                 s1 * 3/4
                 s1 * 3/4
                 s1 * 1
                 s1 * 1
                 s1 * 1
-                s1 * 1 \ff
                 s1 * 1
-                s1 * 1 \mf \<
-                s1 * 1
+                \ff
                 s1 * 1
                 s1 * 1
-                s1 * 1 \ff \>
+                \mf
+                \<
                 s1 * 1
                 s1 * 1
-                s1 * 1 \pp
+                s1 * 1
+                s1 * 1
+                \ff
+                \>
+                s1 * 1
+                s1 * 1
+                s1 * 1
+                \pp
             }
         >>
         \context PitchStaff = "PitchStaff" {
             \context PitchVoice = "PitchVoice" {
                 \clef "bass"
-                a,1 * 35/2 \glissando
+                a,1 * 35/2
+                \glissando
                 g,1 * 4
                 \parenthesize
-                g,1 * 4 \glissando
+                g,1 * 4
+                \glissando
                 a,,1 * 4
             }
         }
