@@ -5,7 +5,7 @@ import huitzil
 from abjad import rhythmmakertools as rhythmos
 
 
-class FlightSegmentMaker(abjad.AbjadObject):
+class FlightSegmentMaker(abjad.SegmentMaker):
     r'''Flight segment-maker.
 
     >>> import huitzil
