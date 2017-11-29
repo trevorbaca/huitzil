@@ -41,7 +41,6 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         music_makers=None,
         name=None,
         show_leaf_indices=None,
-        label_stages=False,
         slurs=None,
         metronome_mark_measure_map=None,
         tuplet_bracket_tweaks=None,
@@ -61,8 +60,6 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         self._music_specifiers = []
         assert isinstance(show_leaf_indices, bool)
         self._show_leaf_indices = show_leaf_indices
-        assert isinstance(label_stages, bool)
-        self._label_stage_numbers = label_stages
         self._slurs = slurs or []
         self.metronome_mark_measure_map = metronome_mark_measure_map
         tuplet_bracket_tweaks = tuplet_bracket_tweaks or []
@@ -120,9 +117,9 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             markup = abjad.Markup(i)
             abjad.attach(markup, leaf)
 
+    # TODO: make this work
     def _annotate_stages(self):
-        if not self.label_stages:
-            return
+        return
         context = self._score['GlobalSkips']
         for stage_index in range(self.stage_count):
             stage_number = stage_index + 1
@@ -377,14 +374,6 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         Set to pair or none.
         '''
         return self._final_markup_extra_offset
-
-    @property
-    def label_stages(self):
-        r'''Is true when segment should annotate stages.
-
-        Set to true or false.
-        '''
-        return self._label_stage_numbers
 
     @property
     def lilypond_file(self):

@@ -9,7 +9,6 @@ import huitzil
 maker = huitzil.DreamsSegmentMaker(
     name='_',
     show_leaf_indices=False,
-    label_stages=False,
     )
 
 maker.metronome_mark_measure_map = [
