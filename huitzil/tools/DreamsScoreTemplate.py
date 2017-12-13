@@ -46,6 +46,10 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
 
     '''
 
+    ### CLASS VARIABLES ###
+
+    __documentation_section__ = None
+
     ### SPECIAL METHODS ###
 
     def __call__(self):
@@ -53,12 +57,15 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
+
+        # GLOBAL CONTEXT
         global_context = self._make_global_context()
+
         # CELLO
         staff = abjad.Staff(
+            is_simultaneous=True,
             name='Staff',
             )
-        staff.is_simultaneous = True
         abjad.annotate(
             staff,
             'default_instrument',
@@ -68,6 +75,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
             name='Voice',
             )
         staff.append(music_voice)
+
         # SCORE
         score = abjad.Score(
             [
@@ -76,4 +84,5 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
                 ],
             name='Score',
             )
+
         return score

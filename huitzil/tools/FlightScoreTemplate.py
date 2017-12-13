@@ -51,6 +51,10 @@ class FlightScoreTemplate(baca.ScoreTemplate):
 
     '''
 
+    ### CLASS VARIABLES ###
+
+    __documentation_section__ = None
+
     ### SPECIAL METHODS ###
 
     def __call__(self):
@@ -58,13 +62,16 @@ class FlightScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
+
+        # GLOBAL CONTEXT
         global_context = self._make_global_context()
+
         # BOW STAFF
         bow_staff = abjad.Staff(
             context_name='BowStaff',
+            is_simultaneous=True,
             name='Bow Staff',
             )
-        bow_staff.is_simultaneous = True
         tempo_indicator_voice = abjad.Voice(
             context_name='MetronomeMarkVoice',
             name='MetronomeMarkVoice',
@@ -85,6 +92,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             name='UnderlyingDynamicsVoice',
             )
         bow_staff.append(underlying_dynamics_voice)
+
         # PITCH STAFF
         pitch_staff = abjad.Staff(
             context_name='PitchStaff',
@@ -95,19 +103,21 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             name='PitchVoice',
             )
         pitch_staff.append(pitch_voice)
+
         # SCORE
         staff_group = abjad.StaffGroup(
+            [
+                bow_staff,
+                pitch_staff,
+                ],
             context_name='PianoStaff',
             name='Piano Staff',
             )
-        staff_group.extend([
-            bow_staff,
-            pitch_staff,
-            ])
-        score = abjad.Score([
-            global_context,
-            staff_group,
-            ],
+        score = abjad.Score(
+            [
+                global_context,
+                staff_group,
+                ],
             name='Score',
             )
         return score

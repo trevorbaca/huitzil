@@ -14,6 +14,8 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     ### CLASS ATTRIBUTES ###
 
+    __documentation_section__ = None
+
     __frontiera_position_to_pitch_name = {
         7: 'A5',
         6: 'F5',

@@ -13,6 +13,8 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
 
     ### CLASS ATTRIBUTES ###
 
+    __documentation_section__ = None
+
     __slots__ = (
         '_calculate_duration',
         '_final_markup',
