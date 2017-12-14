@@ -1,7 +1,5 @@
-import abjad
-
-
-abjad.ImportManager.import_material_packages(
-    __path__[0],
-    globals(),
-    )
+from .instruments.definition import instruments
+from .metronome_marks.definition import metronome_marks
+from .pitch_classes.definition import pitch_classes
+from .registrations.definition import registrations
+from .time_signatures.definition import time_signatures
