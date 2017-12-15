@@ -156,13 +156,8 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             glissando = abjad.Glissando()
             abjad.attach(glissando, spanner_leaves)
 
-#    def _configure_lilypond_file(self):
-#        lilypond_file = self._lilypond_file
-#        lilypond_file.header_block.title = None
-#        lilypond_file.header_block.composer = None
-
     def _configure_score(self):
-        bow_staff = self._score['Bow Staff']
+        bow_staff = self._score['BowStaff']
         abjad.override(bow_staff).staff_symbol.line_count = self.staff_line_count
         if self.name in ('flight E', 'flight F', 'flight I'):
             voice = self._score['MetronomeMarkVoice']

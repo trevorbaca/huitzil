@@ -86,8 +86,8 @@
                 } % measure
             }
         >>
-        \context PianoStaff = "Piano Staff" <<
-            \context BowStaff = "Bow Staff" \with {
+        \context PianoStaff = "PianoStaff" <<
+            \context BowStaff = "BowStaff" \with {
                 \override StaffSymbol.line-count = #7
             } <<
                 \context MetronomeMarkVoice = "MetronomeMarkVoice" \with {
