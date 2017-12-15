@@ -78,11 +78,10 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
 
         # SCORE
         score = abjad.Score(
-            [
-                global_context,
-                staff,
-                ],
+            [global_context, staff],
             name='Score',
             )
-
+        self._assert_lilypond_identifiers(score)
+        self._assert_unique_context_names(score)
+        self._assert_matching_custom_context_names(score)
         return score

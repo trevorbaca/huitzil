@@ -26,8 +26,8 @@ class FlightScoreTemplate(baca.ScoreTemplate):
                 \context GlobalSkips = "GlobalSkips" {
                 }
             >>
-            \context PianoStaff = "Piano Staff" <<
-                \context BowStaff = "Bow Staff" <<
+            \context PianoStaff = "PianoStaff" <<
+                \context BowStaff = "BowStaff" <<
                     \context MetronomeMarkVoice = "MetronomeMarkVoice" {
                         s1
                     }
@@ -70,7 +70,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         bow_staff = abjad.Staff(
             context_name='BowStaff',
             is_simultaneous=True,
-            name='Bow Staff',
+            name='BowStaff',
             )
         tempo_indicator_voice = abjad.Voice(
             context_name='MetronomeMarkVoice',
@@ -111,13 +111,13 @@ class FlightScoreTemplate(baca.ScoreTemplate):
                 pitch_staff,
                 ],
             context_name='PianoStaff',
-            name='Piano Staff',
+            name='PianoStaff',
             )
         score = abjad.Score(
-            [
-                global_context,
-                staff_group,
-                ],
+            [global_context, staff_group],
             name='Score',
             )
+        self._assert_lilypond_identifiers(score)
+        self._assert_unique_context_names(score)
+        self._assert_matching_custom_context_names(score)
         return score
