@@ -99,13 +99,13 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
                 for note in component:
                     voice_number = abjad.inspect(note).get_indicator(int)
                     if voice_number == 1:
-                        abjad.override(note).stem.direction = Up
+                        abjad.override(note).stem.direction = abjad.Up
                         abjad.override(note).beam.positions = up_beam_positions
                     elif voice_number == 2:
-                        abjad.override(note).stem.direction = Up
+                        abjad.override(note).stem.direction = abjad.Up
                         abjad.override(note).beam.positions = up_beam_positions
                     elif voice_number == 3:
-                        abjad.override(note).stem.direction = Down
+                        abjad.override(note).stem.direction = abjad.Down
                         abjad.override(note).beam.positions = \
                             down_beam_positions
                     else:
