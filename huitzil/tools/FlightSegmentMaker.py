@@ -193,7 +193,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         elif indication is None:
             pass
         elif indication.endswith('z'):
-            markup = abjad.Markup(indication, direction=Down)
+            markup = abjad.Markup(indication, direction=abjad.Down)
             markup = markup.dynamic()
             first_component = leaves[0]
             first_leaf = abjad.inspect(first_component).get_leaf(0)

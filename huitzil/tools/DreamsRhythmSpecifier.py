@@ -131,16 +131,16 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
                 highest_staff_position = max(staff_positions)
                 lowest_staff_position = min(staff_positions)
                 if 0 <= lowest_staff_position:
-                    stem_direction = Down
+                    stem_direction = abjad.Down
                 elif highest_staff_position <= 0:
-                    stem_direction = Up
+                    stem_direction = abjad.Up
                 elif abs(lowest_staff_position) < abs(highest_staff_position):
-                    stem_direction = Down
+                    stem_direction = abjad.Down
                 elif abs(highest_staff_position) < abs(lowest_staff_position):
-                    stem_direction = Up
+                    stem_direction = abjad.Up
                 else:
-                    stem_direction = Up
-                if stem_direction == Up:
+                    stem_direction = abjad.Up
+                if stem_direction == abjad.Up:
                     abjad.override(first_note).beam.positions = up_beam_positions
                 else:
                     abjad.override(first_note).beam.positions = down_beam_positions
