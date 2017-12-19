@@ -69,7 +69,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             staff,
             'default_instrument',
-            huitzil.instruments['cello'],
+            huitzil.instruments['Cello'],
             )
         music_voice = abjad.Voice(
             name='Voice',
