@@ -62,7 +62,9 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         global_context = self._make_global_context()
 
         # CELLO
+        music_voice = abjad.Voice(name='Voice')
         staff = abjad.Staff(
+            [music_voice],
             is_simultaneous=True,
             name='Staff',
             )
@@ -71,10 +73,11 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             huitzil.instruments['Cello'],
             )
-        music_voice = abjad.Voice(
-            name='Voice',
+        abjad.annotate(
+            staff,
+            'default_clef',
+            abjad.Clef('bass'),
             )
-        staff.append(music_voice)
 
         # SCORE
         score = abjad.Score(
