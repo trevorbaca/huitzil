@@ -28,17 +28,17 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
             >>
             \context Staff = "Staff" <<
                 \context Voice = "Voice" {
-                    \set Staff.instrumentName = \markup {
-                        \hcenter-in
-                            #16
-                            Cello
-                        }
-                    \set Staff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #10
-                            Vc.
-                        }
-                    \clef "bass"
+                    \set Staff.instrumentName = \markup {      %! ST1
+                        \hcenter-in                            %! ST1
+                            #16                                %! ST1
+                            Cello                              %! ST1
+                        }                                      %! ST1
+                    \set Staff.shortInstrumentName = \markup { %! ST1
+                        \hcenter-in                            %! ST1
+                            #10                                %! ST1
+                            Vc.                                %! ST1
+                        }                                      %! ST1
+                    \clef "bass" %! ST3
                     s1
                 }
             >>
