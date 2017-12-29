@@ -508,7 +508,7 @@
                 \context PitchVoice = "PitchVoice" {
                     \clef "bass"
                     s1 * 12
-                    \bar "|."
+                    \bar "|."                                                            %! SCORE1
                     \override Score.BarLine.transparent = ##f
                     \override Score.SpanBar.transparent = ##f
                 }
