@@ -100,7 +100,8 @@
                         \null
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -134,7 +135,8 @@
                         \null
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -169,7 +171,8 @@
                         \null
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -204,7 +207,8 @@
                         \null
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -239,7 +243,8 @@
                         \null
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -274,7 +279,8 @@
                         \null
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -309,7 +315,8 @@
                         \null
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -344,7 +351,8 @@
                         \null
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -379,7 +387,8 @@
                         \null
                         }
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
