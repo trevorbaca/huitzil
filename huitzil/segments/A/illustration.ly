@@ -195,8 +195,14 @@
                 \override StaffSymbol.line-count = #7
             } <<
                 \context MetronomeMarkVoice = "MetronomeMarkVoice" {
-                    s1 * 1/2
-                    ^ \markup {
+                    \once \override TextSpanner.Y-extent = ##f
+                    \once \override TextSpanner.bound-details.left-broken.text = ##f
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -211,7 +217,16 @@
                                 =
                                 44
                             }
+                        \hspace
+                            #1
                         }
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.padding = 1
+                    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                    \once \override TextSpanner.dash-period = 0
+                    s1 * 1/2
+                    \startTextSpan
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/2
@@ -250,34 +265,41 @@
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left-broken.text = \markup {
                         \null
                         }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
                     \once \override TextSpanner.bound-details.left.text = \markup {
                         \large
                             \upright
                                 accel.
                         \hspace
-                            #0.75
+                            #1
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
                     \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.bound-details.right.padding = 1
+                    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 1
+                    \stopTextSpan
                     \startTextSpan
                     s1 * 1
                     s1 * 1
-                    s1 * 1
-                    \stopTextSpan
-                    ^ \markup {
+                    \once \override TextSpanner.Y-extent = ##f
+                    \once \override TextSpanner.bound-details.left-broken.text = ##f
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -292,9 +314,25 @@
                                 =
                                 66
                             }
+                        \hspace
+                            #1
                         }
-                    s1 * 1/3
-                    ^ \markup {
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.padding = 1
+                    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                    \once \override TextSpanner.dash-period = 0
+                    s1 * 1
+                    \stopTextSpan
+                    \startTextSpan
+                    \once \override TextSpanner.Y-extent = ##f
+                    \once \override TextSpanner.bound-details.left-broken.text = ##f
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                    \once \override TextSpanner.bound-details.left.text =
+                    \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -309,7 +347,17 @@
                                 =
                                 44
                             }
+                        \hspace
+                            #1
                         }
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.padding = 1
+                    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                    \once \override TextSpanner.dash-period = 0
+                    s1 * 1/3
+                    \stopTextSpan
+                    \startTextSpan
                     s1 * 1/3
                     s1 * 1/3
                     s1 * 1/3
@@ -318,60 +366,88 @@
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left-broken.text = \markup {
                         \null
                         }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
                     \once \override TextSpanner.bound-details.left.text = \markup {
                         \large
                             \upright
                                 accel.
                         \hspace
-                            #0.75
+                            #1
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
                     \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.bound-details.right.padding = 1
+                    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                    \once \override TextSpanner.bound-details.right.text =
+                    \markup {
+                        \concat
+                            {
+                                \hspace
+                                    #0.5
+                                \line
+                                    {
+                                        \fontsize
+                                            #-6
+                                            \general-align
+                                                #Y
+                                                #DOWN
+                                                \note-by-number
+                                                    #2
+                                                    #0
+                                                    #1
+                                        \upright
+                                            {
+                                                =
+                                                88
+                                            }
+                                    }
+                            }
+                        }
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 1
+                    \stopTextSpan
                     \startTextSpan
                     s1 * 1
                     s1 * 1
                     s1 * 1
                     s1 * 1
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
                     s1 * 1
                     \stopTextSpan
-                    ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                88
-                            }
-                        }
                 }
                 \context TremoloVoice = "TremoloVoice" {
-                    s1 * 1/2
-                    ^ \markup {
-                        \whiteout
-                            \upright
-                                \upright
-                                    "trem. moderato"
+                    \once \override TextSpanner.Y-extent = ##f
+                    \once \override TextSpanner.bound-details.left-broken.text = ##f
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \concat
+                            {
+                                \whiteout
+                                    \upright
+                                        \upright
+                                            "trem. moderato"
+                                \hspace
+                                    #0.25
+                            }
                         }
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.padding = 1.5
+                    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                    \once \override TextSpanner.dash-period = 0
+                    s1 * 1/2
+                    \startTextSpan
                     s1 * 1/4
                     s1 * 1/4
                     s1 * 1/2
@@ -401,6 +477,7 @@
                     s1 * 1/4
                     s1 * 1/2
                     s1 * 1/4
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -417,28 +494,45 @@
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
                     \once \override TextSpanner.bound-details.right.padding = 1.75
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 1/3
+                    \stopTextSpan
                     \startTextSpan
                     s1 * 1/3
                     s1 * 1/3
                     s1 * 1/3
+                    \once \override TextSpanner.Y-extent = ##f
+                    \once \override TextSpanner.bound-details.left-broken.text = ##f
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \concat
+                            {
+                                \whiteout
+                                    \upright
+                                        \upright
+                                            "trem. stretto"
+                                \hspace
+                                    #0.25
+                            }
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.padding = 1.5
+                    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                    \once \override TextSpanner.dash-period = 0
                     s1 * 1/5
                     \stopTextSpan
-                    ^ \markup {
-                        \whiteout
-                            \upright
-                                \upright
-                                    "trem. stretto"
-                        }
+                    \startTextSpan
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -455,13 +549,16 @@
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
                     \once \override TextSpanner.bound-details.right.padding = 1.75
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 1
+                    \stopTextSpan
                     \startTextSpan
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -478,6 +575,7 @@
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
                     \once \override TextSpanner.bound-details.right.padding = 1.75
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
@@ -486,6 +584,7 @@
                     s1 * 1
                     \stopTextSpan
                     \startTextSpan
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -502,6 +601,7 @@
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
                     \once \override TextSpanner.bound-details.right.padding = 1.75
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
@@ -510,14 +610,29 @@
                     s1 * 1
                     \stopTextSpan
                     \startTextSpan
+                    \once \override TextSpanner.Y-extent = ##f
+                    \once \override TextSpanner.bound-details.left-broken.text = ##f
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \concat
+                            {
+                                \whiteout
+                                    \upright
+                                        \upright
+                                            "più stretto"
+                                \hspace
+                                    #0.25
+                            }
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.padding = 1.5
+                    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                    \once \override TextSpanner.dash-period = 0
                     s1 * 1
                     \stopTextSpan
-                    ^ \markup {
-                        \whiteout
-                            \upright
-                                \upright
-                                    "più stretto"
-                        }
+                    \startTextSpan
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -534,28 +649,45 @@
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
                     \once \override TextSpanner.bound-details.right.padding = 1.75
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 1/3
+                    \stopTextSpan
                     \startTextSpan
                     s1 * 1/3
                     s1 * 1/3
                     s1 * 1/3
+                    \once \override TextSpanner.Y-extent = ##f
+                    \once \override TextSpanner.bound-details.left-broken.text = ##f
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \concat
+                            {
+                                \whiteout
+                                    \upright
+                                        \upright
+                                            "trem. stretto"
+                                \hspace
+                                    #0.25
+                            }
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.padding = 1.5
+                    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                    \once \override TextSpanner.dash-period = 0
                     s1 * 1/5
                     \stopTextSpan
-                    ^ \markup {
-                        \whiteout
-                            \upright
-                                \upright
-                                    "trem. stretto"
-                        }
+                    \startTextSpan
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1/5
                     s1 * 1
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -572,13 +704,16 @@
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
                     \once \override TextSpanner.bound-details.right.padding = 1.75
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 1
+                    \stopTextSpan
                     \startTextSpan
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -595,6 +730,7 @@
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
                     \once \override TextSpanner.bound-details.right.padding = 1.75
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
@@ -603,6 +739,7 @@
                     s1 * 1
                     \stopTextSpan
                     \startTextSpan
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -619,6 +756,7 @@
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
                     \once \override TextSpanner.bound-details.right.padding = 1.75
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
@@ -627,6 +765,7 @@
                     s1 * 1
                     \stopTextSpan
                     \startTextSpan
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -643,6 +782,7 @@
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
                     \once \override TextSpanner.bound-details.right.padding = 1.75
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
@@ -651,6 +791,7 @@
                     s1 * 1
                     \stopTextSpan
                     \startTextSpan
+                    \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -667,9 +808,21 @@
                         }
                     \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                     \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
                     \once \override TextSpanner.bound-details.right.arrow = ##t
                     \once \override TextSpanner.bound-details.right.padding = 1.75
                     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                    \once \override TextSpanner.bound-details.right.text = \markup {
+                        \concat
+                            {
+                                \hspace
+                                    #1.25
+                                \whiteout
+                                    \upright
+                                        \upright
+                                            "più stretto"
+                            }
+                        }
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 1
@@ -677,12 +830,6 @@
                     \startTextSpan
                     s1 * 1
                     \stopTextSpan
-                    ^ \markup {
-                        \whiteout
-                            \upright
-                                \upright
-                                    "più stretto"
-                        }
                 }
                 \context StringContactPointVoice = "StringContactPointVoice" {
                     a''2

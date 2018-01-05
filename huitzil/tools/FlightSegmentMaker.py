@@ -324,7 +324,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         tempo_spanner = abjad.MetronomeMarkSpanner(
             left_broken_padding=0,
             left_broken_text=abjad.Markup.null(direction=None),
-            start_with_parenthesized_metronome_mark=False,
+            parenthesize=False,
             )
         abjad.attach(tempo_spanner, skips)
         for index, indicator in self.metronome_mark_measure_map:
