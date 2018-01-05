@@ -1,46 +1,57 @@
 \documentclass[11pt]{report}
-\usepackage[papersize={17in, 11in}, margin=1in]{geometry}
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{palatino}
+\usepackage[papersize={17in, 11in}, margin=0.5in]{geometry}
+\usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{xltxtra,fontspec,xunicode}
 \usetikzlibrary{calc}
-% uncomment for use with xelatex
-%\usepackage{xltxtra,fontspec,xunicode}
-%\defaultfontfeatures{Scale=MatchLowercase}
-%\setromanfont[Numbers=Uppercase]{Didot}
+\defaultfontfeatures{Scale=MatchLowercase}
 \newlength{\drop}
+\pagenumbering{gobble}
 \parindent=0pt
+\setmainfont{Adobe Garamond Pro Bold}
 
 \begin{document}
     \begin{titlepage}
+
         \begin{tikzpicture}[remember picture, overlay]
-            \draw[line width = 1.6pt]
-                ($(current page.north west) + (1in,-1in)$)
+            \draw[line width = 6pt]
+                ($(current page.north west) + (1.0in,-1.0in)$)
                 rectangle
-                ($(current page.south east) + (-1in,1in)$);
-            \draw[line width = 0.4pt]
-                ($(current page.north west) + (1in,-1in) + (2.8pt,-2.8pt)$)
-                rectangle
-                ($(current page.south east) + (-1in,1in) + (-2.8pt,2.8pt)$);
+                ($(current page.south east) + (-1.0in,1.0in)$);
         \end{tikzpicture}
+
         \drop=0.1\textheight
         \centering
-        % must leave blank line below for vspace to work
 
-        {\vspace{0.2in}}
-        {\fontsize{4.5cm}{2em}\selectfont HUITZIL}
-        \\
-        \vspace{1.5 in}
+        \vspace*{4\baselineskip}
         {
-            \Huge
-            \textit{for cello}
-            \vspace*{0.5\baselineskip}
-            \\
-            \textit{(2014)}
+            \scalebox{1}[2]
+            {\fontsize{2.15cm}{1em}\selectfont HUITZIL}
         }
-        \\
-        \vspace{3 in}
-        {\fontsize{4.5cm}{2em}\selectfont TREVOR BAČA}
+
+        \vspace*{6\baselineskip}
+
+        {
+            \scalebox{1}[2]
+            {\fontsize{0.6cm}{1em}\selectfont \itshape for cello}
+        }
+
+        \vspace*{1\baselineskip}
+
+        {
+            \scalebox{1}[2]
+            {\fontsize{0.6cm}{1em}\selectfont \itshape (2014)}
+        }
+
+        \vfill
+
+        {
+            \scalebox{1}[2]
+            {\fontsize{2.15cm}{1em}\selectfont TREVOR \hspace{1pt} BA\v{C}A}
+        }
+
+        \vspace*{4\baselineskip}
+
     \end{titlepage}
-\end{document}
+\end{document}end{document}
