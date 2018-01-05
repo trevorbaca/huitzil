@@ -2,7 +2,8 @@
 
 
 \layout {
-    % TIME SIGNATURE CONTEXT
+
+    % GLOBAL SKIPS
     \context {
         \name GlobalSkips
         \type Engraver_group
@@ -18,6 +19,8 @@
         \override TextSpanner.font-size = 6
         \override TextSpanner.staff-padding = 4
         }
+
+    % GLOBAL RESTS
     \context {
         \name GlobalRests
         \type Engraver_group
@@ -27,6 +30,8 @@
         \override MultiMeasureRestText.outside-staff-priority = 0
         \override MultiMeasureRestText.padding = 0
         }
+
+    % GLOBAL CONGTEXT
     \context {
         \name GlobalContext
         \type Engraver_group
@@ -43,8 +48,7 @@
         \override BarNumber.extra-offset = #'(-2 . -8)
         \override BarNumber.font-size = 0
         \override RehearsalMark.X-extent = #'(0 . 0)
-        \override RehearsalMark.Y-offset = -2.25
-        \override RehearsalMark.X-offset = 6
+        \override RehearsalMark.Y-extent = #'(0 . 0)
         \override RehearsalMark.break-align-symbols = #'(time-signature)
         \override RehearsalMark.break-visibility = #end-of-line-invisible
         \override RehearsalMark.font-name = "Didot"
@@ -69,14 +73,20 @@
             (stretchability . 0)
         )
     }
+
+    % STAFF
     \context {
         \Staff
         \remove Time_signature_engraver
     }
+
+    % VOICE
     \context {
         \Voice
         \remove Forbid_line_break_engraver
     }
+
+    % TEXT SPANNER VOICE
     \context {
         \Voice
         \name TextSpannerVoice
@@ -96,6 +106,8 @@
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
     }
+
+    % STAFF
     \context {
         \Staff
         \accepts TextSpannerVoice
@@ -105,6 +117,8 @@
         \override TupletBracket.staff-padding = 4
         instrumentName = \markup { \fontsize #3 Cello \hspace #3.5 }
     }
+
+    % SCORE
     \context {
         \Score
         \accepts GlobalContext
