@@ -128,11 +128,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         self._score.add_final_bar_line()
         pitch_voice = self._score['PitchVoice']
         last_leaf = abjad.inspect(pitch_voice).get_leaf(-1)
-        string = r'override Score.BarLine.transparent = ##f'
-        command = abjad.LilyPondCommand(string, format_slot='after')
+        string = r'\override Score.BarLine.transparent = ##f'
+        command = abjad.LilyPondLiteral(string, 'after')
         abjad.attach(command, last_leaf)
-        string = r'override Score.SpanBar.transparent = ##f'
-        command = abjad.LilyPondCommand(string, format_slot='after')
+        string = r'\override Score.SpanBar.transparent = ##f'
+        command = abjad.LilyPondLiteral(string, 'after')
         abjad.attach(command, last_leaf)
 
     def _attach_leaf_index_markup(self):
@@ -395,42 +395,27 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         for index, string in self.underlying_dynamics:
             skip = underlying_dynamics_voice[index]
             if string in ('<', '>'):
-                indicator = abjad.LilyPondCommand(
-                    string,
-                    format_slot='right',
-                    )
+                indicator = abjad.LilyPondLiteral('\\' + string, 'after')
             elif string == '-|':
-                indicator = abjad.LilyPondCommand(
-                    '<',
-                    format_slot='right',
-                    )
+                indicator = abjad.LilyPondCommand(r'\<', 'right')
                 stencil = abjad.Scheme('constante-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             elif string == '<!':
-                indicator = abjad.LilyPondCommand(
-                    '<',
-                    format_slot='right',
-                    )
+                indicator = abjad.LilyPondCommand(r'\<', 'right')
                 stencil = abjad.Scheme('flared-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             elif string == '!>':
-                indicator = abjad.LilyPondCommand(
-                    '>',
-                    format_slot='right',
-                    )
+                indicator = abjad.LilyPondCommand(r'\>', 'right')
                 stencil = abjad.Scheme('flared-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             else:
                 indicator = abjad.Dynamic(string)
             abjad.attach(indicator, skip)
         last_skip = skips[-1]
-        prototype = abjad.LilyPondCommand
+        prototype = abjad.LilyPondLiteral
         if not abjad.inspect(last_skip).has_indicator(prototype):
             if not abjad.inspect(last_skip).has_indicator(abjad.Dynamic):
-                indicator = abjad.LilyPondCommand(
-                    '!',
-                    format_slot='right',
-                    )
+                indicator = abjad.LilyPondLiteral(r'\!', 'right')
                 abjad.attach(indicator, last_skip)
 
     def _staff_position_to_pitch(self, staff_position):
