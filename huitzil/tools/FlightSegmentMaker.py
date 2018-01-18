@@ -686,7 +686,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     def run(
         self,
-        builds_metadata=None,
+        documents_metadata=None,
         metadata=None,
         previous_metadata=None,
         ):
@@ -694,7 +694,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
         Returns LilyPond file.
         '''
-        self._builds_metadata = abjad.TypedOrderedDict(builds_metadata)
+        self._documents_metadata = abjad.TypedOrderedDict(documents_metadata)
         self._metadata = abjad.TypedOrderedDict(metadata)
         self._previous_metadata = abjad.TypedOrderedDict(previous_metadata)
         self._make_score()
