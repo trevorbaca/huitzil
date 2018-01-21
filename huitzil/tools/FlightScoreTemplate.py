@@ -68,38 +68,38 @@ class FlightScoreTemplate(baca.ScoreTemplate):
 
         # BOW STAFF
         bow_staff = abjad.Staff(
-            context_name='BowStaff',
+            lilypond_type='BowStaff',
             is_simultaneous=True,
             name='BowStaff',
             )
         tempo_indicator_voice = abjad.Voice(
-            context_name='MetronomeMarkVoice',
+            lilypond_type='MetronomeMarkVoice',
             name='MetronomeMarkVoice',
             )
         bow_staff.append(tempo_indicator_voice)
         tremolo_indicator_voice = abjad.Voice(
-            context_name='TremoloVoice',
+            lilypond_type='TremoloVoice',
             name='TremoloVoice',
             )
         bow_staff.append(tremolo_indicator_voice)
         bow_location_voice = abjad.Voice(
-            context_name='StringContactPointVoice',
+            lilypond_type='StringContactPointVoice',
             name='StringContactPointVoice',
             )
         bow_staff.append(bow_location_voice)
         underlying_dynamics_voice = abjad.Voice(
-            context_name='UnderlyingDynamicsVoice',
+            lilypond_type='UnderlyingDynamicsVoice',
             name='UnderlyingDynamicsVoice',
             )
         bow_staff.append(underlying_dynamics_voice)
 
         # PITCH STAFF
         pitch_staff = abjad.Staff(
-            context_name='PitchStaff',
+            lilypond_type='PitchStaff',
             name='PitchStaff',
             )
         pitch_voice = abjad.Voice(
-            context_name='PitchVoice',
+            lilypond_type='PitchVoice',
             name='PitchVoice',
             )
         pitch_staff.append(pitch_voice)
@@ -110,7 +110,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
                 bow_staff,
                 pitch_staff,
                 ],
-            context_name='PianoStaff',
+            lilypond_type='PianoStaff',
             name='PianoStaff',
             )
         score = abjad.Score(
