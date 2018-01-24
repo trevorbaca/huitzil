@@ -492,7 +492,8 @@
                     af16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 1
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -505,7 +506,8 @@
                     ef8
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -522,7 +524,8 @@
                     f16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
                     cs16
@@ -584,7 +587,8 @@
                     e16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 1
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -599,7 +603,8 @@
                     cs8
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -693,7 +698,8 @@
                     \once \override TupletBracket.staff-padding = #2.5
                     g8.
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -820,7 +826,8 @@
                     \once \override Stem.direction = #down
                     c4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -849,7 +856,8 @@
                     af16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 3
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -921,7 +929,8 @@
                     fs,16.
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -946,7 +955,8 @@
                     ef16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 3
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1034,7 +1044,8 @@
                     \once \override Stem.direction = #down
                     c4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1053,12 +1064,14 @@
                     b,16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
                     e16
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1100,7 +1113,8 @@
                     \once \override Stem.color = #blue
                     f,4.
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Dots.color = #blue
@@ -1137,7 +1151,8 @@
                     \once \override Stem.color = #blue
                     af,4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 1
                     \once \override Accidental.color = #blue
@@ -1273,7 +1288,8 @@
                     \once \override TupletBracket.staff-padding = #6
                     d'4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1302,7 +1318,8 @@
                     \once \override Stem.direction = #down
                     cs4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1415,7 +1432,8 @@
                     f8
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 1
                     \once \override Accidental.color = #red
@@ -1475,7 +1493,8 @@
                     bf8
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1574,7 +1593,8 @@
                     c8
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1631,7 +1651,8 @@
                     a8
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Dots.color = #red
@@ -1707,7 +1728,8 @@
                     \once \override Stem.direction = #up
                     g8
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1727,7 +1749,8 @@
                     \once \override Stem.direction = #up
                     ef4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 1
                     \once \override Accidental.color = #red
@@ -1765,7 +1788,8 @@
                     b8
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1848,7 +1872,8 @@
                     \once \override Stem.direction = #up
                     c8
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1868,7 +1893,8 @@
                     \once \override Stem.direction = #up
                     bf4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 1
                     \once \override Accidental.color = #red
@@ -1965,7 +1991,8 @@
                     bf8.
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1998,7 +2025,8 @@
                     \once \override Stem.direction = #up
                     f8
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Accidental.color = #red
@@ -2024,7 +2052,8 @@
                     b16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -2056,7 +2085,8 @@
                     \once \override TupletBracket.staff-padding = #2
                     af,2
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -2096,7 +2126,8 @@
                     \once \override Stem.direction = #up
                     ef8
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 1
                     \once \override Accidental.color = #red
@@ -2145,7 +2176,8 @@
                     b,16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -2159,7 +2191,8 @@
                     f,16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -2225,7 +2258,8 @@
                     bf,16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #red
                     \once \override Beam.color = #red
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -2245,7 +2279,8 @@
                     \once \override Stem.direction = #up
                     bf4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -2267,7 +2302,8 @@
                     a,16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -2377,7 +2413,8 @@
                     \once \override Stem.color = #blue
                     ef,4.
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 1
                     \once \override Accidental.color = #red
@@ -2414,7 +2451,8 @@
                     g8
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
                     fs8
@@ -2441,7 +2479,8 @@
                     e16.
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -2568,7 +2607,8 @@
                     \once \override TupletBracket.staff-padding = #2
                     b,16
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Beam.positions = #'(5.5 . 5.5)
@@ -2585,7 +2625,8 @@
                     bf,16
                     ]
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Beam.positions = #'(5.5 . 5.5)
                     \once \override Stem.direction = #up
                     b,16
@@ -2628,7 +2669,8 @@
                     \once \override Stem.color = #blue
                     c4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Dots.color = #blue
@@ -2646,7 +2688,8 @@
                     \once \override TupletBracket.staff-padding = #2
                     c,2
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Dots.color = #blue
@@ -2669,7 +2712,8 @@
                     \once \override Stem.color = #blue
                     cs,4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Dots.color = #blue
@@ -2747,7 +2791,8 @@
                     \once \override Stem.color = #blue
                     g,4
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Dots.color = #blue
@@ -2763,7 +2808,8 @@
                     \once \override Stem.color = #blue
                     g,2
                 }
-                {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     \once \override Accidental.color = #blue
                     \once \override Beam.color = #blue
                     \once \override Dots.color = #blue
