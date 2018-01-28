@@ -688,6 +688,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         self,
         metadata=None,
         previous_metadata=None,
+        segment_directory=None,
         ):
         r'''Runs segment-maker.
 
