@@ -6,9 +6,12 @@
 \include "../../stylesheets/flight-stylesheet.ily"
 
 \score {
-    \context Score = "Score" <<
-        \context GlobalContext = "GlobalContext" <<
-            \context GlobalRests = "GlobalRests" {
+    \context Score = "Score"
+    <<
+        \context GlobalContext = "GlobalContext"
+        <<
+            \context GlobalRests = "GlobalRests"
+            {
                 { % measure
                     \time 3/4
                     s1 * 3/4
@@ -244,7 +247,8 @@
                     s1 * 1
                 } % measure
             }
-            \context GlobalSkips = "GlobalSkips" {
+            \context GlobalSkips = "GlobalSkips"
+            {
                 { % measure
                     \time 3/4
                     s1 * 3/4
@@ -481,14 +485,21 @@
                 } % measure
             }
         >>
-        \context PianoStaff = "PianoStaff" <<
-            \context BowStaff = "BowStaff" \with {
+        \context PianoStaff = "PianoStaff"
+        <<
+            \context BowStaff = "BowStaff"
+            \with
+            {
                 \override StaffSymbol.line-count = #11
-            } <<
-                \context MetronomeMarkVoice = "MetronomeMarkVoice" \with {
+            }
+            <<
+                \context MetronomeMarkVoice = "MetronomeMarkVoice"
+                \with
+                {
                     \override TextScript.staff-padding = #5
                     \override TextSpanner.staff-padding = #5.75
-                } {
+                }
+                {
                     \once \override TextSpanner.Y-extent = ##f
                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                     \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -1133,7 +1144,8 @@
                     s1 * 1
                     \stopTextSpan
                 }
-                \context TremoloVoice = "TremoloVoice" {
+                \context TremoloVoice = "TremoloVoice"
+                {
                     s1 * 3/4
                     s1 * 1/3
                     s1 * 3/4
@@ -1194,7 +1206,8 @@
                     s1 * 1/3
                     s1 * 1
                 }
-                \context StringContactPointVoice = "StringContactPointVoice" {
+                \context StringContactPointVoice = "StringContactPointVoice"
+                {
                     e'''2.
                     :16
                     _ \markup {
@@ -1581,7 +1594,8 @@
                             fz
                         }
                 }
-                \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice" {
+                \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
+                {
                     s1 * 3/4
                     \p
                     \<
@@ -1710,8 +1724,10 @@
                     \mp
                 }
             >>
-            \context PitchStaff = "PitchStaff" {
-                \context PitchVoice = "PitchVoice" {
+            \context PitchStaff = "PitchStaff"
+            {
+                \context PitchVoice = "PitchVoice"
+                {
                     \clef "bass"
                     a,1 * 110/3
                 }

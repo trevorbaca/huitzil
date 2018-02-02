@@ -11,9 +11,12 @@
 }
 
 \score {
-    \context Score = "Score" <<
-        \context GlobalContext = "GlobalContext" <<
-            \context GlobalRests = "GlobalRests" {
+    \context Score = "Score"
+    <<
+        \context GlobalContext = "GlobalContext"
+        <<
+            \context GlobalRests = "GlobalRests"
+            {
                 { % measure
                     \time 7/8
                     s1 * 7/8
@@ -237,7 +240,8 @@
                     s1 * 3/4
                 } % measure
             }
-            \context GlobalSkips = "GlobalSkips" {
+            \context GlobalSkips = "GlobalSkips"
+            {
                 { % measure
                     \time 7/8
                     s1 * 7/8
@@ -462,8 +466,10 @@
                 } % measure
             }
         >>
-        \context Staff = "Staff" <<
-            \context Voice = "Voice" {
+        \context Staff = "Staff"
+        <<
+            \context Voice = "Voice"
+            {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 6/5 {
                     \tempo 8=78
