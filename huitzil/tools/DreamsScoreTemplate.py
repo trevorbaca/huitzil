@@ -19,15 +19,21 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         >>> abjad.show(lilypond_file) # doctest: +SKIP
 
         >>> abjad.f(lilypond_file[abjad.Score])
-        \context Score = "Score" <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalRests = "GlobalRests" {
+        \context Score = "Score"
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalRests = "GlobalRests"
+                {
                 }
-                \context GlobalSkips = "GlobalSkips" {
+                \context GlobalSkips = "GlobalSkips"
+                {
                 }
             >>
-            \context Staff = "Staff" <<
-                \context Voice = "Voice" {
+            \context Staff = "Staff"
+            <<
+                \context Voice = "MusicVoice"
+                {
                     \set Staff.instrumentName = \markup {      %! ST1
                         \hcenter-in                            %! ST1
                             #16                                %! ST1
