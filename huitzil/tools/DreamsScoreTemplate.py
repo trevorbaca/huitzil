@@ -57,12 +57,11 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
-
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
         # CELLO
-        music_voice = abjad.Voice(name='Voice')
+        music_voice = abjad.Voice(name='MusicVoice')
         staff = abjad.Staff(
             [music_voice],
             is_simultaneous=True,

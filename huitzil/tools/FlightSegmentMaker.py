@@ -95,6 +95,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         self.underlying_dynamics = underlying_dynamics
         self._lilypond_file = None
         self._score = None
+        self._segment_directory = None
 
     ### PRIVATE PROPERTIES ###
 
@@ -696,6 +697,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         '''
         self._metadata = abjad.OrderedDict(metadata)
         self._previous_metadata = abjad.OrderedDict(previous_metadata)
+        self._segment_directory = segment_directory
         self._make_score()
         self._configure_score()
         self._make_lilypond_file()
@@ -711,6 +713,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         self._attach_lh_glissandi()
         self._attach_final_bar_line()
         self._attach_leaf_index_markup()
+        self._add_parse_handles()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         if not abjad.inspect(score).is_well_formed():
