@@ -1,4 +1,4 @@
-AGlobalRests = {
+A_GlobalRests = {
     {   % measure
         \time 1/1
         s1 * 1
@@ -91,7 +91,7 @@ AGlobalRests = {
 }
 
 
-AGlobalSkips = {
+A_GlobalSkips = {
     {   % measure
         s1 * 1
     }   % measure
@@ -183,7 +183,7 @@ AGlobalSkips = {
 }
 
 
-AMetronomeMarkVoice = {
+A_MetronomeMarkVoice = {
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.bound-details.left-broken.text = ##f
     \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -417,7 +417,7 @@ AMetronomeMarkVoice = {
 }
 
 
-ATremoloVoice = {
+A_TremoloVoice = {
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.bound-details.left-broken.text = ##f
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -824,7 +824,7 @@ ATremoloVoice = {
 }
 
 
-AStringContactPointVoice = {
+A_StringContactPointVoice = {
     a''2
     :16
     _ \markup {
@@ -1289,7 +1289,7 @@ AStringContactPointVoice = {
 }
 
 
-AUnderlyingDynamicsVoice = {
+A_UnderlyingDynamicsVoice = {
     \once \override Hairpin.stencil = #constante-hairpin
     s1 * 1/2
     \mp
@@ -1382,7 +1382,7 @@ AUnderlyingDynamicsVoice = {
 }
 
 
-APitchVoice = {
+A_PitchVoice = {
     \clef "bass"
     b,,1 * 539/20
 }

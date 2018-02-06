@@ -13,9 +13,9 @@
         \context GlobalContext = "GlobalContext"
         <<
             \context GlobalRests = "GlobalRests"
-            \FGlobalRests
+            \F_GlobalRests
             \context GlobalSkips = "GlobalSkips"
-            \FGlobalSkips
+            \F_GlobalSkips
         >>
         \context PianoStaff = "PianoStaff"
         <<
@@ -31,18 +31,18 @@
                     \override TextScript.staff-padding = #5
                     \override TextSpanner.staff-padding = #5.75
                 }
-                \FMetronomeMarkVoice
+                \F_MetronomeMarkVoice
                 \context TremoloVoice = "TremoloVoice"
-                \FTremoloVoice
+                \F_TremoloVoice
                 \context StringContactPointVoice = "StringContactPointVoice"
-                \FStringContactPointVoice
+                \F_StringContactPointVoice
                 \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
-                \FUnderlyingDynamicsVoice
+                \F_UnderlyingDynamicsVoice
             >>
             \context PitchStaff = "PitchStaff"
             {
                 \context PitchVoice = "PitchVoice"
-                \FPitchVoice
+                \F_PitchVoice
             }
         >>
     >>

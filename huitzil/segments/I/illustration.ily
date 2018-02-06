@@ -1,4 +1,4 @@
-IGlobalRests = {
+I_GlobalRests = {
     {   % measure
         \time 1/1
         s1 * 1
@@ -39,7 +39,7 @@ IGlobalRests = {
 }
 
 
-IGlobalSkips = {
+I_GlobalSkips = {
     {   % measure
         s1 * 1
     }   % measure
@@ -79,7 +79,7 @@ IGlobalSkips = {
 }
 
 
-IMetronomeMarkVoice = {
+I_MetronomeMarkVoice = {
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -451,7 +451,7 @@ IMetronomeMarkVoice = {
 }
 
 
-ITremoloVoice = {
+I_TremoloVoice = {
     s1 * 1
     s1 * 1
     s1 * 1
@@ -467,7 +467,7 @@ ITremoloVoice = {
 }
 
 
-IStringContactPointVoice = {
+I_StringContactPointVoice = {
     a''1
     :16
     a''1
@@ -495,7 +495,7 @@ IStringContactPointVoice = {
 }
 
 
-IUnderlyingDynamicsVoice = {
+I_UnderlyingDynamicsVoice = {
     s1 * 1
     \mp
     \>
@@ -531,7 +531,7 @@ IUnderlyingDynamicsVoice = {
 }
 
 
-IPitchVoice = {
+I_PitchVoice = {
     \clef "bass"
     s1 * 12
     \bar "|."                                                            %! SCORE1

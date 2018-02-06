@@ -1,4 +1,4 @@
-EGlobalRests = {
+E_GlobalRests = {
     {   % measure
         \time 3/4
         s1 * 3/4
@@ -236,7 +236,7 @@ EGlobalRests = {
 }
 
 
-EGlobalSkips = {
+E_GlobalSkips = {
     {   % measure
         \time 3/4
         s1 * 3/4
@@ -474,7 +474,7 @@ EGlobalSkips = {
 }
 
 
-EMetronomeMarkVoice = {
+E_MetronomeMarkVoice = {
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.bound-details.left-broken.text = ##f
     \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -1121,7 +1121,7 @@ EMetronomeMarkVoice = {
 }
 
 
-ETremoloVoice = {
+E_TremoloVoice = {
     s1 * 3/4
     s1 * 1/3
     s1 * 3/4
@@ -1184,7 +1184,7 @@ ETremoloVoice = {
 }
 
 
-EStringContactPointVoice = {
+E_StringContactPointVoice = {
     e'''2.
     :16
     _ \markup {
@@ -1573,7 +1573,7 @@ EStringContactPointVoice = {
 }
 
 
-EUnderlyingDynamicsVoice = {
+E_UnderlyingDynamicsVoice = {
     s1 * 3/4
     \p
     \<
@@ -1703,7 +1703,7 @@ EUnderlyingDynamicsVoice = {
 }
 
 
-EPitchVoice = {
+E_PitchVoice = {
     \clef "bass"
     a,1 * 110/3
 }
