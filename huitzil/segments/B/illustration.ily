@@ -1,4 +1,4 @@
-BGlobalRests = {
+B_GlobalRests = {
     {   % measure
         \time 1/1
         s1 * 1
@@ -88,7 +88,7 @@ BGlobalRests = {
 }
 
 
-BGlobalSkips = {
+B_GlobalSkips = {
     {   % measure
         s1 * 1
     }   % measure
@@ -177,7 +177,7 @@ BGlobalSkips = {
 }
 
 
-BMetronomeMarkVoice = {
+B_MetronomeMarkVoice = {
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.bound-details.left-broken.text = ##f
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -289,7 +289,7 @@ BMetronomeMarkVoice = {
 }
 
 
-BTremoloVoice = {
+B_TremoloVoice = {
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.bound-details.left-broken.text = ##f
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -477,7 +477,7 @@ BTremoloVoice = {
 }
 
 
-BStringContactPointVoice = {
+B_StringContactPointVoice = {
     c'4
     :16
     \glissando
@@ -809,7 +809,7 @@ BStringContactPointVoice = {
 }
 
 
-BUnderlyingDynamicsVoice = {
+B_UnderlyingDynamicsVoice = {
     \once \override Hairpin.stencil = #constante-hairpin
     s1 * 1/4
     \f
@@ -893,7 +893,7 @@ BUnderlyingDynamicsVoice = {
 }
 
 
-BPitchVoice = {
+B_PitchVoice = {
     \clef "bass"
     s1 * 124/15
     \parenthesize

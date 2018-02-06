@@ -1,4 +1,4 @@
-FGlobalRests = {
+F_GlobalRests = {
     {   % measure
         \time 1/1
         s1 * 1
@@ -109,7 +109,7 @@ FGlobalRests = {
 }
 
 
-FGlobalSkips = {
+F_GlobalSkips = {
     {   % measure
         s1 * 1
     }   % measure
@@ -219,7 +219,7 @@ FGlobalSkips = {
 }
 
 
-FMetronomeMarkVoice = {
+F_MetronomeMarkVoice = {
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -703,7 +703,7 @@ FMetronomeMarkVoice = {
 }
 
 
-FTremoloVoice = {
+F_TremoloVoice = {
     s1 * 1
     s1 * 3/4
     s1 * 3/4
@@ -739,7 +739,7 @@ FTremoloVoice = {
 }
 
 
-FStringContactPointVoice = {
+F_StringContactPointVoice = {
     f1
     :16
     _ \markup {
@@ -893,7 +893,7 @@ FStringContactPointVoice = {
 }
 
 
-FUnderlyingDynamicsVoice = {
+F_UnderlyingDynamicsVoice = {
     s1 * 1
     \p
     \<
@@ -953,7 +953,7 @@ FUnderlyingDynamicsVoice = {
 }
 
 
-FPitchVoice = {
+F_PitchVoice = {
     \clef "bass"
     a,1 * 35/2
     \glissando

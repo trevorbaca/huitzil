@@ -13,9 +13,9 @@
         \context GlobalContext = "GlobalContext"
         <<
             \context GlobalRests = "GlobalRests"
-            \CGlobalRests
+            \C_GlobalRests
             \context GlobalSkips = "GlobalSkips"
-            \CGlobalSkips
+            \C_GlobalSkips
         >>
         \context PianoStaff = "PianoStaff"
         <<
@@ -26,18 +26,18 @@
             }
             <<
                 \context MetronomeMarkVoice = "MetronomeMarkVoice"
-                \CMetronomeMarkVoice
+                \C_MetronomeMarkVoice
                 \context TremoloVoice = "TremoloVoice"
-                \CTremoloVoice
+                \C_TremoloVoice
                 \context StringContactPointVoice = "StringContactPointVoice"
-                \CStringContactPointVoice
+                \C_StringContactPointVoice
                 \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
-                \CUnderlyingDynamicsVoice
+                \C_UnderlyingDynamicsVoice
             >>
             \context PitchStaff = "PitchStaff"
             {
                 \context PitchVoice = "PitchVoice"
-                \CPitchVoice
+                \C_PitchVoice
             }
         >>
     >>

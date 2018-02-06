@@ -1,4 +1,4 @@
-HGlobalRests = {
+H_GlobalRests = {
     {   % measure
         \time 1/1
         s1 * 1
@@ -88,7 +88,7 @@ HGlobalRests = {
 }
 
 
-HGlobalSkips = {
+H_GlobalSkips = {
     {   % measure
         s1 * 1
     }   % measure
@@ -177,7 +177,7 @@ HGlobalSkips = {
 }
 
 
-HMetronomeMarkVoice = {
+H_MetronomeMarkVoice = {
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.bound-details.left-broken.text = ##f
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -289,7 +289,7 @@ HMetronomeMarkVoice = {
 }
 
 
-HTremoloVoice = {
+H_TremoloVoice = {
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.bound-details.left-broken.text = ##f
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -477,7 +477,7 @@ HTremoloVoice = {
 }
 
 
-HStringContactPointVoice = {
+H_StringContactPointVoice = {
     c'4
     :16
     \glissando
@@ -809,7 +809,7 @@ HStringContactPointVoice = {
 }
 
 
-HUnderlyingDynamicsVoice = {
+H_UnderlyingDynamicsVoice = {
     \once \override Hairpin.stencil = #constante-hairpin
     s1 * 1/4
     \f
@@ -893,7 +893,7 @@ HUnderlyingDynamicsVoice = {
 }
 
 
-HPitchVoice = {
+H_PitchVoice = {
     \clef "bass"
     s1 * 124/15
     \parenthesize

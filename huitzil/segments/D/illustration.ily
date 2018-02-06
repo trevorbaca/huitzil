@@ -1,4 +1,4 @@
-DGlobalRests = {
+D_GlobalRests = {
     {   % measure
         \time 1/1
         s1 * 1
@@ -88,7 +88,7 @@ DGlobalRests = {
 }
 
 
-DGlobalSkips = {
+D_GlobalSkips = {
     {   % measure
         s1 * 1
     }   % measure
@@ -177,7 +177,7 @@ DGlobalSkips = {
 }
 
 
-DMetronomeMarkVoice = {
+D_MetronomeMarkVoice = {
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.bound-details.left-broken.text = ##f
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -289,7 +289,7 @@ DMetronomeMarkVoice = {
 }
 
 
-DTremoloVoice = {
+D_TremoloVoice = {
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.bound-details.left-broken.text = ##f
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -477,7 +477,7 @@ DTremoloVoice = {
 }
 
 
-DStringContactPointVoice = {
+D_StringContactPointVoice = {
     c'4
     :16
     \glissando
@@ -809,7 +809,7 @@ DStringContactPointVoice = {
 }
 
 
-DUnderlyingDynamicsVoice = {
+D_UnderlyingDynamicsVoice = {
     \once \override Hairpin.stencil = #constante-hairpin
     s1 * 1/4
     \f
@@ -893,7 +893,7 @@ DUnderlyingDynamicsVoice = {
 }
 
 
-DPitchVoice = {
+D_PitchVoice = {
     \clef "bass"
     s1 * 124/15
     \parenthesize
