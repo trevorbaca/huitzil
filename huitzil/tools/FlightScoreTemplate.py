@@ -19,30 +19,42 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         >>> abjad.show(lilypond_file) # doctest: +SKIP
 
         >>> abjad.f(lilypond_file[abjad.Score])
-        \context Score = "Score" <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalRests = "GlobalRests" {
+        \context Score = "Score"
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalRests = "GlobalRests"
+                {
                 }
-                \context GlobalSkips = "GlobalSkips" {
+                \context GlobalSkips = "GlobalSkips"
+                {
                 }
             >>
-            \context PianoStaff = "PianoStaff" <<
-                \context BowStaff = "BowStaff" <<
-                    \context MetronomeMarkVoice = "MetronomeMarkVoice" {
+            \context PianoStaff = "PianoStaff"
+            <<
+                \context BowStaff = "BowStaff"
+                <<
+                    \context MetronomeMarkVoice = "MetronomeMarkVoice"
+                    {
                         s1
                     }
-                    \context TremoloVoice = "TremoloVoice" {
+                    \context TremoloVoice = "TremoloVoice"
+                    {
                         s1
                     }
-                    \context StringContactPointVoice = "StringContactPointVoice" {
+                    \context StringContactPointVoice = "StringContactPointVoice"
+                    {
                         s1
                     }
-                    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice" {
+                    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
+                    {
                         s1
                     }
                 >>
-                \context PitchStaff = "PitchStaff" {
-                    \context PitchVoice = "PitchVoice" {
+                \context PitchStaff = "PitchStaff"
+                {
+                    \context PitchVoice = "PitchVoice"
+                    {
                         s1
                     }
                 }
