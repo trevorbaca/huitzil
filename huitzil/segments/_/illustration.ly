@@ -23,9 +23,6 @@
             \GlobalSkips
         >>
         \context Staff = "Staff"
-        <<
-            \context Voice = "MusicVoice"
-            \MusicVoice
-        >>
+        \Staff
     >>
 }

@@ -893,6 +893,18 @@ B_UnderlyingDynamicsVoice = {
 }
 
 
+B_BowStaff = <<
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"
+    \B_MetronomeMarkVoice
+    \context TremoloVoice = "TremoloVoice"
+    \B_TremoloVoice
+    \context StringContactPointVoice = "StringContactPointVoice"
+    \B_StringContactPointVoice
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
+    \B_UnderlyingDynamicsVoice
+>>
+
+
 B_PitchVoice = {
     \clef "bass"
     s1 * 124/15
@@ -906,4 +918,10 @@ B_PitchVoice = {
     \once \override NoteHead.style = #'do
     \clef "treble"
     c'''1 * 164/15
+}
+
+
+B_PitchStaff = {
+    \context PitchVoice = "PitchVoice"
+    \B_PitchVoice
 }

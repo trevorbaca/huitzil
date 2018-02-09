@@ -893,6 +893,18 @@ H_UnderlyingDynamicsVoice = {
 }
 
 
+H_BowStaff = <<
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"
+    \H_MetronomeMarkVoice
+    \context TremoloVoice = "TremoloVoice"
+    \H_TremoloVoice
+    \context StringContactPointVoice = "StringContactPointVoice"
+    \H_StringContactPointVoice
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
+    \H_UnderlyingDynamicsVoice
+>>
+
+
 H_PitchVoice = {
     \clef "bass"
     s1 * 124/15
@@ -906,4 +918,10 @@ H_PitchVoice = {
     \once \override NoteHead.style = #'do
     \clef "treble"
     c'''1 * 164/15
+}
+
+
+H_PitchStaff = {
+    \context PitchVoice = "PitchVoice"
+    \H_PitchVoice
 }

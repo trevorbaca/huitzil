@@ -953,6 +953,23 @@ F_UnderlyingDynamicsVoice = {
 }
 
 
+F_BowStaff = <<
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"
+    \with
+    {
+        \override TextScript.staff-padding = #5
+        \override TextSpanner.staff-padding = #5.75
+    }
+    \F_MetronomeMarkVoice
+    \context TremoloVoice = "TremoloVoice"
+    \F_TremoloVoice
+    \context StringContactPointVoice = "StringContactPointVoice"
+    \F_StringContactPointVoice
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
+    \F_UnderlyingDynamicsVoice
+>>
+
+
 F_PitchVoice = {
     \clef "bass"
     a,1 * 35/2
@@ -962,4 +979,10 @@ F_PitchVoice = {
     g,1 * 4
     \glissando
     a,,1 * 4
+}
+
+
+F_PitchStaff = {
+    \context PitchVoice = "PitchVoice"
+    \F_PitchVoice
 }

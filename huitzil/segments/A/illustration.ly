@@ -24,21 +24,9 @@
             {
                 \override StaffSymbol.line-count = #7
             }
-            <<
-                \context MetronomeMarkVoice = "MetronomeMarkVoice"
-                \A_MetronomeMarkVoice
-                \context TremoloVoice = "TremoloVoice"
-                \A_TremoloVoice
-                \context StringContactPointVoice = "StringContactPointVoice"
-                \A_StringContactPointVoice
-                \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
-                \A_UnderlyingDynamicsVoice
-            >>
+            \A_BowStaff
             \context PitchStaff = "PitchStaff"
-            {
-                \context PitchVoice = "PitchVoice"
-                \A_PitchVoice
-            }
+            \A_PitchStaff
         >>
     >>
 }

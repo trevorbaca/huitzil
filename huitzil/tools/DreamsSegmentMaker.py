@@ -471,7 +471,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         self._tweak_tuplet_brackets()
         self._add_final_bar_line()
         self._add_final_markup()
-        self._add_parse_handles()
+        self._add_container_identifiers()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         if not abjad.inspect(score).is_well_formed():
