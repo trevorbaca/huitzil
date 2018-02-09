@@ -1151,7 +1151,25 @@ C_UnderlyingDynamicsVoice = {
 }
 
 
+C_BowStaff = <<
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"
+    \C_MetronomeMarkVoice
+    \context TremoloVoice = "TremoloVoice"
+    \C_TremoloVoice
+    \context StringContactPointVoice = "StringContactPointVoice"
+    \C_StringContactPointVoice
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
+    \C_UnderlyingDynamicsVoice
+>>
+
+
 C_PitchVoice = {
     \clef "bass"
     bf,,1 * 1429/60
+}
+
+
+C_PitchStaff = {
+    \context PitchVoice = "PitchVoice"
+    \C_PitchVoice
 }

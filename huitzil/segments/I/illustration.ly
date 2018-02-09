@@ -24,26 +24,9 @@
             {
                 \override StaffSymbol.line-count = #7
             }
-            <<
-                \context MetronomeMarkVoice = "MetronomeMarkVoice"
-                \with
-                {
-                    \override TextScript.staff-padding = #5
-                    \override TextSpanner.staff-padding = #5.75
-                }
-                \I_MetronomeMarkVoice
-                \context TremoloVoice = "TremoloVoice"
-                \I_TremoloVoice
-                \context StringContactPointVoice = "StringContactPointVoice"
-                \I_StringContactPointVoice
-                \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
-                \I_UnderlyingDynamicsVoice
-            >>
+            \I_BowStaff
             \context PitchStaff = "PitchStaff"
-            {
-                \context PitchVoice = "PitchVoice"
-                \I_PitchVoice
-            }
+            \I_PitchStaff
         >>
     >>
 }

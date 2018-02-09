@@ -1382,7 +1382,25 @@ G_UnderlyingDynamicsVoice = {
 }
 
 
+G_BowStaff = <<
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"
+    \G_MetronomeMarkVoice
+    \context TremoloVoice = "TremoloVoice"
+    \G_TremoloVoice
+    \context StringContactPointVoice = "StringContactPointVoice"
+    \G_StringContactPointVoice
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
+    \G_UnderlyingDynamicsVoice
+>>
+
+
 G_PitchVoice = {
     \clef "bass"
     s1 * 539/20
+}
+
+
+G_PitchStaff = {
+    \context PitchVoice = "PitchVoice"
+    \G_PitchVoice
 }

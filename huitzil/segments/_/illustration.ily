@@ -2820,3 +2820,9 @@ MusicVoice = {
         ef,4
     }
 }
+
+
+Staff = <<
+    \context Voice = "MusicVoice"
+    \MusicVoice
+>>

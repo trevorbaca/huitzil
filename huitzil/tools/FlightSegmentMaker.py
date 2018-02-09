@@ -713,7 +713,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         self._attach_lh_glissandi()
         self._attach_final_bar_line()
         self._attach_leaf_index_markup()
-        self._add_parse_handles()
+        self._add_container_identifiers()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
         if not abjad.inspect(score).is_well_formed():

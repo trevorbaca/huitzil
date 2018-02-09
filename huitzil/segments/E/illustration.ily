@@ -1703,7 +1703,30 @@ E_UnderlyingDynamicsVoice = {
 }
 
 
+E_BowStaff = <<
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"
+    \with
+    {
+        \override TextScript.staff-padding = #5
+        \override TextSpanner.staff-padding = #5.75
+    }
+    \E_MetronomeMarkVoice
+    \context TremoloVoice = "TremoloVoice"
+    \E_TremoloVoice
+    \context StringContactPointVoice = "StringContactPointVoice"
+    \E_StringContactPointVoice
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
+    \E_UnderlyingDynamicsVoice
+>>
+
+
 E_PitchVoice = {
     \clef "bass"
     a,1 * 110/3
+}
+
+
+E_PitchStaff = {
+    \context PitchVoice = "PitchVoice"
+    \E_PitchVoice
 }
