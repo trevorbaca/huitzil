@@ -159,7 +159,6 @@ C_GlobalSkips = {
 
 C_MetronomeMarkVoice = {
     \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text = ##f
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
     \once \override TextSpanner.bound-details.right-broken.padding = 0
     \once \override TextSpanner.bound-details.right-broken.text = ##f
@@ -208,12 +207,13 @@ C_MetronomeMarkVoice = {
     s1 * 1
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text = ##f
-    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+    \once \override TextSpanner.bound-details.left-broken.text =
+    \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text = \markup {
+    \once \override TextSpanner.bound-details.left.text =
+    \markup {
         \large
             \upright
                 accel.
@@ -234,8 +234,8 @@ C_MetronomeMarkVoice = {
     s1 * 1
     s1 * 1
     \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text = ##f
-    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+    \once \override TextSpanner.bound-details.left-broken.text =
+    \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -268,8 +268,8 @@ C_MetronomeMarkVoice = {
     \startTextSpan
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text = ##f
-    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+    \once \override TextSpanner.bound-details.left-broken.text =
+    \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -332,7 +332,8 @@ C_MetronomeMarkVoice = {
     s1 * 1
     s1 * 1
     s1 * 1
-    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+    \once \override TextSpanner.bound-details.left-broken.text =
+    \markup {
         \null
         }
     s1 * 1
