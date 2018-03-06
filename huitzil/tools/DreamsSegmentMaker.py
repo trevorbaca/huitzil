@@ -47,8 +47,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         metronome_mark_measure_map=None,
         tuplet_bracket_tweaks=None,
         ):
-        superclass = super(DreamsSegmentMaker, self)
-        superclass.__init__()
+        super(DreamsSegmentMaker, self).__init__()
         self._initialize_music_makers(music_makers)
         self._calculate_duration = calculate_duration
         self.final_bar_line = final_bar_line
