@@ -79,6 +79,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         tremolo_map=None,
         underlying_dynamics=None,
         ):
+        super(FlightSegmentMaker, self).__init__()
         self.accent_dynamics = accent_dynamics
         self.clef = clef
         self.durations = durations
