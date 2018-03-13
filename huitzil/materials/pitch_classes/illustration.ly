@@ -19,7 +19,9 @@
 }
 
 \score {
-    \new Score \with {
+    \new Score
+    \with
+    {
         \override BarLine.transparent = ##t
         \override BarNumber.stencil = ##f
         \override Beam.stencil = ##f
@@ -33,11 +35,16 @@
         \override TextScript.staff-padding = #2
         \override TimeSignature.stencil = ##f
         proportionalNotationDuration = #(ly:make-moment 1 16)
-    } <<
-        \new Staff {
-            \new Voice \with {
+    }
+    <<
+        \new Staff
+        {
+            \new Voice
+            \with
+            {
                 \consists Horizontal_bracket_engraver
-            } {
+            }
+            {
                 \time 1/8
                 fs'8
                 \startGroup
@@ -612,7 +619,7 @@
                 \stopGroup
                 \stopGroup
                 s8
-                \bar "|."
+                \bar "|."                                                                %! SCORE1
                 \override Score.BarLine.transparent = ##f
             }
         }
