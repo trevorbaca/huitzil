@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-registrations = baca.RegistrationDictionary(
+registrations = abjad.OrderedDict(
     [
         (
             'middle',
