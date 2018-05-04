@@ -290,10 +290,9 @@ B_MetronomeMarkVoice = {
 
 
 B_TremoloVoice = {
-    \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text = ##f
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text = \markup {
+    s1 * 1/4
+    -\tweak Y-extent ##f
+    -\tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -304,12 +303,13 @@ B_TremoloVoice = {
                     #0.25
             }
         }
-    \once \override TextSpanner.bound-details.right-broken.padding = 0
-    \once \override TextSpanner.bound-details.right-broken.text = ##f
-    \once \override TextSpanner.bound-details.right.padding = 1.5
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-    \once \override TextSpanner.dash-period = 0
-    s1 * 1/4
+    -\tweak dash-period 0
+    -\tweak bound-details.left-broken.text ##f
+    -\tweak bound-details.left.stencil-align-dir-y #center
+    -\tweak bound-details.right-broken.padding 0
+    -\tweak bound-details.right-broken.text ##f
+    -\tweak bound-details.right.padding 1.5
+    -\tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1/4
     s1 * 1/4
@@ -346,11 +346,10 @@ B_TremoloVoice = {
     s1 * 2/5
     s1 * 2/5
     s1 * 2/5
-    \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text = ##f
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text = \markup {
+    s1 * 1
+    \stopTextSpan
+    -\tweak Y-extent ##f
+    -\tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -361,22 +360,22 @@ B_TremoloVoice = {
                     #0.5
             }
         }
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-    \once \override TextSpanner.bound-details.right-broken.padding = 0
-    \once \override TextSpanner.bound-details.right-broken.text = ##f
-    \once \override TextSpanner.bound-details.right.arrow = ##t
-    \once \override TextSpanner.bound-details.right.padding = 1.75
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-    \once \override TextSpanner.dash-fraction = 0.25
-    \once \override TextSpanner.dash-period = 1.5
+    -\tweak arrow-width 0.25
+    -\tweak dash-fraction 0.25
+    -\tweak dash-period 1.5
+    -\tweak bound-details.left-broken.text ##f
+    -\tweak bound-details.left.stencil-align-dir-y #center
+    -\tweak bound-details.right.arrow ##t
+    -\tweak bound-details.right-broken.arrow ##f
+    -\tweak bound-details.right-broken.padding 0
+    -\tweak bound-details.right-broken.text ##f
+    -\tweak bound-details.right.padding 1.75
+    -\tweak bound-details.right.stencil-align-dir-y #center
+    \startTextSpan
     s1 * 1
     \stopTextSpan
-    \startTextSpan
-    \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text = ##f
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text = \markup {
+    -\tweak Y-extent ##f
+    -\tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -387,22 +386,22 @@ B_TremoloVoice = {
                     #0.5
             }
         }
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-    \once \override TextSpanner.bound-details.right-broken.padding = 0
-    \once \override TextSpanner.bound-details.right-broken.text = ##f
-    \once \override TextSpanner.bound-details.right.arrow = ##t
-    \once \override TextSpanner.bound-details.right.padding = 1.75
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-    \once \override TextSpanner.dash-fraction = 0.25
-    \once \override TextSpanner.dash-period = 1.5
+    -\tweak arrow-width 0.25
+    -\tweak dash-fraction 0.25
+    -\tweak dash-period 1.5
+    -\tweak bound-details.left-broken.text ##f
+    -\tweak bound-details.left.stencil-align-dir-y #center
+    -\tweak bound-details.right.arrow ##t
+    -\tweak bound-details.right-broken.arrow ##f
+    -\tweak bound-details.right-broken.padding 0
+    -\tweak bound-details.right-broken.text ##f
+    -\tweak bound-details.right.padding 1.75
+    -\tweak bound-details.right.stencil-align-dir-y #center
+    \startTextSpan
     s1 * 1
     \stopTextSpan
-    \startTextSpan
-    \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text = ##f
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text = \markup {
+    -\tweak Y-extent ##f
+    -\tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -413,22 +412,22 @@ B_TremoloVoice = {
                     #0.5
             }
         }
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-    \once \override TextSpanner.bound-details.right-broken.padding = 0
-    \once \override TextSpanner.bound-details.right-broken.text = ##f
-    \once \override TextSpanner.bound-details.right.arrow = ##t
-    \once \override TextSpanner.bound-details.right.padding = 1.75
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-    \once \override TextSpanner.dash-fraction = 0.25
-    \once \override TextSpanner.dash-period = 1.5
+    -\tweak arrow-width 0.25
+    -\tweak dash-fraction 0.25
+    -\tweak dash-period 1.5
+    -\tweak bound-details.left-broken.text ##f
+    -\tweak bound-details.left.stencil-align-dir-y #center
+    -\tweak bound-details.right.arrow ##t
+    -\tweak bound-details.right-broken.arrow ##f
+    -\tweak bound-details.right-broken.padding 0
+    -\tweak bound-details.right-broken.text ##f
+    -\tweak bound-details.right.padding 1.75
+    -\tweak bound-details.right.stencil-align-dir-y #center
+    \startTextSpan
     s1 * 1
     \stopTextSpan
-    \startTextSpan
-    \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text = ##f
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text = \markup {
+    -\tweak Y-extent ##f
+    -\tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -439,21 +438,22 @@ B_TremoloVoice = {
                     #0.5
             }
         }
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-    \once \override TextSpanner.bound-details.right-broken.padding = 0
-    \once \override TextSpanner.bound-details.right-broken.text = ##f
-    \once \override TextSpanner.bound-details.right.arrow = ##t
-    \once \override TextSpanner.bound-details.right.padding = 1.75
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-    \once \override TextSpanner.dash-fraction = 0.25
-    \once \override TextSpanner.dash-period = 1.5
+    -\tweak arrow-width 0.25
+    -\tweak dash-fraction 0.25
+    -\tweak dash-period 1.5
+    -\tweak bound-details.left-broken.text ##f
+    -\tweak bound-details.left.stencil-align-dir-y #center
+    -\tweak bound-details.right.arrow ##t
+    -\tweak bound-details.right-broken.arrow ##f
+    -\tweak bound-details.right-broken.padding 0
+    -\tweak bound-details.right-broken.text ##f
+    -\tweak bound-details.right.padding 1.75
+    -\tweak bound-details.right.stencil-align-dir-y #center
+    \startTextSpan
     s1 * 1
     \stopTextSpan
-    \startTextSpan
-    \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text = ##f
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text = \markup {
+    -\tweak Y-extent ##f
+    -\tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -464,13 +464,13 @@ B_TremoloVoice = {
                     #0.25
             }
         }
-    \once \override TextSpanner.bound-details.right-broken.padding = 0
-    \once \override TextSpanner.bound-details.right-broken.text = ##f
-    \once \override TextSpanner.bound-details.right.padding = 1.5
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-    \once \override TextSpanner.dash-period = 0
-    s1 * 1
-    \stopTextSpan
+    -\tweak dash-period 0
+    -\tweak bound-details.left-broken.text ##f
+    -\tweak bound-details.left.stencil-align-dir-y #center
+    -\tweak bound-details.right-broken.padding 0
+    -\tweak bound-details.right-broken.text ##f
+    -\tweak bound-details.right.padding 1.5
+    -\tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
