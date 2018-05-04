@@ -651,17 +651,6 @@ C_TremoloVoice = {
     -\tweak bound-details.right.padding 1.75
     -\tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #1.25
-                \whiteout
-                    \upright
-                        \upright
-                            "più stretto"
-            }
-        }
     s1 * 1
     \stopTextSpan
     -\tweak Y-extent ##f
@@ -687,6 +676,17 @@ C_TremoloVoice = {
     -\tweak bound-details.right-broken.text ##f
     -\tweak bound-details.right.padding 1.75
     -\tweak bound-details.right.stencil-align-dir-y #center
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #1.25
+                \whiteout
+                    \upright
+                        \upright
+                            "più stretto"
+            }
+        }
     \startTextSpan
     s1 * 1
     \stopTextSpan
