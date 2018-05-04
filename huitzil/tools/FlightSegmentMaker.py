@@ -216,6 +216,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             includes=[path],
             use_relative_includes=True,
             )
+        delattr(lilypond_file.header_block, 'tagline')
         for item in lilypond_file.items[:]:
             if getattr(item, 'name', None) in ('header', 'layout', 'paper'):
                 lilypond_file.items.remove(item)
