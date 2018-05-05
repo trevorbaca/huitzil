@@ -291,8 +291,8 @@ H_MetronomeMarkVoice = {
 
 H_TremoloVoice = {
     s1 * 1/4
-    -\tweak Y-extent ##f
-    -\tweak bound-details.left.text \markup {
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -303,13 +303,13 @@ H_TremoloVoice = {
                     #0.25
             }
         }
-    -\tweak dash-period 0
-    -\tweak bound-details.left-broken.text ##f
-    -\tweak bound-details.left.stencil-align-dir-y #center
-    -\tweak bound-details.right-broken.padding 0
-    -\tweak bound-details.right-broken.text ##f
-    -\tweak bound-details.right.padding 1.5
-    -\tweak bound-details.right.stencil-align-dir-y #center
+    - \tweak dash-period 0
+    - \tweak bound-details.left-broken.text ##f
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 1.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1/4
     s1 * 1/4
@@ -348,8 +348,8 @@ H_TremoloVoice = {
     s1 * 2/5
     s1 * 1
     \stopTextSpan
-    -\tweak Y-extent ##f
-    -\tweak bound-details.left.text \markup {
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -360,22 +360,22 @@ H_TremoloVoice = {
                     #0.5
             }
         }
-    -\tweak arrow-width 0.25
-    -\tweak dash-fraction 0.25
-    -\tweak dash-period 1.5
-    -\tweak bound-details.left-broken.text ##f
-    -\tweak bound-details.left.stencil-align-dir-y #center
-    -\tweak bound-details.right.arrow ##t
-    -\tweak bound-details.right-broken.arrow ##f
-    -\tweak bound-details.right-broken.padding 0
-    -\tweak bound-details.right-broken.text ##f
-    -\tweak bound-details.right.padding 1.75
-    -\tweak bound-details.right.stencil-align-dir-y #center
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 0.25
+    - \tweak dash-period 1.5
+    - \tweak bound-details.left-broken.text ##f
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.arrow ##f
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 1.75
+    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    -\tweak Y-extent ##f
-    -\tweak bound-details.left.text \markup {
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -386,22 +386,22 @@ H_TremoloVoice = {
                     #0.5
             }
         }
-    -\tweak arrow-width 0.25
-    -\tweak dash-fraction 0.25
-    -\tweak dash-period 1.5
-    -\tweak bound-details.left-broken.text ##f
-    -\tweak bound-details.left.stencil-align-dir-y #center
-    -\tweak bound-details.right.arrow ##t
-    -\tweak bound-details.right-broken.arrow ##f
-    -\tweak bound-details.right-broken.padding 0
-    -\tweak bound-details.right-broken.text ##f
-    -\tweak bound-details.right.padding 1.75
-    -\tweak bound-details.right.stencil-align-dir-y #center
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 0.25
+    - \tweak dash-period 1.5
+    - \tweak bound-details.left-broken.text ##f
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.arrow ##f
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 1.75
+    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    -\tweak Y-extent ##f
-    -\tweak bound-details.left.text \markup {
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -412,22 +412,22 @@ H_TremoloVoice = {
                     #0.5
             }
         }
-    -\tweak arrow-width 0.25
-    -\tweak dash-fraction 0.25
-    -\tweak dash-period 1.5
-    -\tweak bound-details.left-broken.text ##f
-    -\tweak bound-details.left.stencil-align-dir-y #center
-    -\tweak bound-details.right.arrow ##t
-    -\tweak bound-details.right-broken.arrow ##f
-    -\tweak bound-details.right-broken.padding 0
-    -\tweak bound-details.right-broken.text ##f
-    -\tweak bound-details.right.padding 1.75
-    -\tweak bound-details.right.stencil-align-dir-y #center
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 0.25
+    - \tweak dash-period 1.5
+    - \tweak bound-details.left-broken.text ##f
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.arrow ##f
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 1.75
+    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    -\tweak Y-extent ##f
-    -\tweak bound-details.left.text \markup {
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -438,22 +438,22 @@ H_TremoloVoice = {
                     #0.5
             }
         }
-    -\tweak arrow-width 0.25
-    -\tweak dash-fraction 0.25
-    -\tweak dash-period 1.5
-    -\tweak bound-details.left-broken.text ##f
-    -\tweak bound-details.left.stencil-align-dir-y #center
-    -\tweak bound-details.right.arrow ##t
-    -\tweak bound-details.right-broken.arrow ##f
-    -\tweak bound-details.right-broken.padding 0
-    -\tweak bound-details.right-broken.text ##f
-    -\tweak bound-details.right.padding 1.75
-    -\tweak bound-details.right.stencil-align-dir-y #center
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 0.25
+    - \tweak dash-period 1.5
+    - \tweak bound-details.left-broken.text ##f
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.arrow ##f
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 1.75
+    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    -\tweak Y-extent ##f
-    -\tweak bound-details.left.text \markup {
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
         \concat
             {
                 \whiteout
@@ -464,13 +464,13 @@ H_TremoloVoice = {
                     #0.25
             }
         }
-    -\tweak dash-period 0
-    -\tweak bound-details.left-broken.text ##f
-    -\tweak bound-details.left.stencil-align-dir-y #center
-    -\tweak bound-details.right-broken.padding 0
-    -\tweak bound-details.right-broken.text ##f
-    -\tweak bound-details.right.padding 1.5
-    -\tweak bound-details.right.stencil-align-dir-y #center
+    - \tweak dash-period 0
+    - \tweak bound-details.left-broken.text ##f
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 1.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
