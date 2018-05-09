@@ -3,7 +3,9 @@
 
 #(set-global-staff-size 16)
 
-\header {}
+\header {
+    tagline = ##f
+}
 
 \layout {
     \accidentalStyle dodecaphonic
