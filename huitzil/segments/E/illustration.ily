@@ -476,13 +476,11 @@ E_GlobalSkips = {
 
 E_MetronomeMarkVoice = {
     \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -511,13 +509,11 @@ E_MetronomeMarkVoice = {
     s1 * 3/4
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \large
             \upright
                 accel.
@@ -541,13 +537,11 @@ E_MetronomeMarkVoice = {
     s1 * 1/3
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -581,13 +575,11 @@ E_MetronomeMarkVoice = {
     s1 * 3/4
     s1 * 1
     \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -618,13 +610,11 @@ E_MetronomeMarkVoice = {
     s1 * 1/2
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \large
             \upright
                 accel.
@@ -645,13 +635,11 @@ E_MetronomeMarkVoice = {
     s1 * 1/3
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -681,13 +669,11 @@ E_MetronomeMarkVoice = {
     \stopTextSpan
     \startTextSpan
     \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -717,13 +703,11 @@ E_MetronomeMarkVoice = {
     s1 * 3/4
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \large
             \upright
                 accel.
@@ -747,13 +731,11 @@ E_MetronomeMarkVoice = {
     s1 * 1/3
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -787,13 +769,11 @@ E_MetronomeMarkVoice = {
     s1 * 3/4
     s1 * 1
     \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -824,13 +804,11 @@ E_MetronomeMarkVoice = {
     s1 * 1/2
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \large
             \upright
                 accel.
@@ -851,13 +829,11 @@ E_MetronomeMarkVoice = {
     s1 * 1/3
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -887,13 +863,11 @@ E_MetronomeMarkVoice = {
     \stopTextSpan
     \startTextSpan
     \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -924,13 +898,11 @@ E_MetronomeMarkVoice = {
     s1 * 1/2
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \large
             \upright
                 accel.
@@ -951,13 +923,11 @@ E_MetronomeMarkVoice = {
     s1 * 1/3
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -989,13 +959,11 @@ E_MetronomeMarkVoice = {
     s1 * 3/4
     s1 * 1/2
     \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -1025,13 +993,11 @@ E_MetronomeMarkVoice = {
     s1 * 1
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \large
             \upright
                 accel.
@@ -1052,13 +1018,11 @@ E_MetronomeMarkVoice = {
     s1 * 1/3
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
@@ -1089,13 +1053,11 @@ E_MetronomeMarkVoice = {
     \startTextSpan
     s1 * 1/2
     \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align

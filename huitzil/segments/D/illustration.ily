@@ -224,13 +224,11 @@ D_MetronomeMarkVoice = {
     s1 * 2/5
     \once \override TextSpanner.Y-extent = ##f
     \once \override TextSpanner.arrow-width = 0.25
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \large
             \upright
                 rit.
@@ -252,13 +250,11 @@ D_MetronomeMarkVoice = {
     s1 * 1
     s1 * 1
     \once \override TextSpanner.Y-extent = ##f
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left-broken.text = \markup {
         \null
         }
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-    \once \override TextSpanner.bound-details.left.text =
-    \markup {
+    \once \override TextSpanner.bound-details.left.text = \markup {
         \fontsize
             #-6
             \general-align
