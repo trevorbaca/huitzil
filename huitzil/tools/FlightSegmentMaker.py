@@ -400,15 +400,15 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             if string in ('<', '>'):
                 indicator = abjad.LilyPondLiteral('\\' + string, 'after')
             elif string == '-|':
-                indicator = abjad.LilyPondCommand(r'\<', 'right')
+                indicator = abjad.LilyPondLiteral(r'\<', 'right')
                 stencil = abjad.Scheme('constante-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             elif string == '<!':
-                indicator = abjad.LilyPondCommand(r'\<', 'right')
+                indicator = abjad.LilyPondLiteral(r'\<', 'right')
                 stencil = abjad.Scheme('flared-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             elif string == '!>':
-                indicator = abjad.LilyPondCommand(r'\>', 'right')
+                indicator = abjad.LilyPondLiteral(r'\>', 'right')
                 stencil = abjad.Scheme('flared-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             else:
