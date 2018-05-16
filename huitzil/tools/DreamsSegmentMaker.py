@@ -5,11 +5,12 @@ import huitzil
 
 
 class DreamsSegmentMaker(abjad.SegmentMaker):
-    r'''Dreams segment-maker.
+    """
+    Dreams segment-maker.
 
     >>> import huitzil
 
-    '''
+    """
 
     ### CLASS ATTRIBUTES ###
 
@@ -354,92 +355,103 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
 
     @property
     def calculate_duration(self):
-        r'''Is true when segment-maker should calculate and then raise duration
+        """
+        Is true when segment-maker should calculate and then raise duration
         of piece.
 
         Set to true or false.
-        '''
+        """
         return self._calculate_duration
 
     @property
     def final_markup(self):
-        r'''Gets final markup of segment.
+        """
+        Gets final markup of segment.
 
         Set to markup or none.
-        '''
+        """
         return self._final_markup
 
     @property
     def final_markup_extra_offset(self):
-        r'''Gets extra offset of segment final markup.
+        """
+        Gets extra offset of segment final markup.
 
         Set to pair or none.
-        '''
+        """
         return self._final_markup_extra_offset
 
     @property
     def lilypond_file(self):
-        r'''Gets LilyPond file.
+        """
+        Gets LilyPond file.
 
         Returns LilyPond file.
-        '''
+        """
         return self._lilypond_file
 
     @property
     def metadata(self):
-        r'''Gets metadata after run.
-        '''
+        """
+        Gets metadata after run.
+        """
         return self._metadata
 
     @property
     def music_makers(self):
-        r'''Gets segment-maker's music-makers.
+        """
+        Gets segment-maker's music-makers.
 
         Returns tuple of music-makers.
-        '''
+        """
         return self._music_makers
 
     @property
     def music_specifiers(self):
-        r'''Gets segment-maker's music-specifiers.
+        """
+        Gets segment-maker's music-specifiers.
 
         Returns tuples of music-specifiers.
-        '''
+        """
         return tuple(self._music_specifiers)
 
     @property
     def show_leaf_indices(self):
-        r'''Is true when segment should annotate leaf indices.
+        """
+        Is true when segment should annotate leaf indices.
 
         Set to true or false.
-        '''
+        """
         return self._show_leaf_indices
 
     @property
     def slurs(self):
-        r'''Gets slur pairs.
+        """
+        Gets slur pairs.
 
         Returns list of pairs.
-        '''
+        """
         return self._slurs
 
     @property
     def tuplet_bracket_tweaks(self):
-        r'''Gets list of tuplet bracket tweaks.
+        """
+        Gets list of tuplet bracket tweaks.
 
         Returns list of pairs.
-        '''
+        """
         return self._tuplet_bracket_tweaks
 
     ### PUBLIC METHODS ###
 
     def make_rhythm_specifier(self):
-        r'''Makes rhythm specifier.
+        """
+        Makes rhythm specifier.
 
         Appends rhythm specifier to segment-maker.
 
         Returns rhythm specifier.
-        '''
+        """
         rhythm_specifier = huitzil.DreamsRhythmSpecifier()
         self.music_makers.append(rhythm_specifier)
         return rhythm_specifier
@@ -450,10 +462,11 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         previous_metadata=None,
         segment_directory=None,
         ):
-        r'''Runs segment-maker.
+        """
+        Runs segment-maker.
 
         Returns LilyPond file.
-        '''
+        """
         self._metadata = abjad.OrderedDict(metadata)
         self._previous_metadata = abjad.OrderedDict(previous_metadata)
         self._make_score()

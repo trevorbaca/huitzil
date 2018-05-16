@@ -6,11 +6,12 @@ from abjad import rhythmmakertools as rhythmos
 
 
 class FlightSegmentMaker(abjad.SegmentMaker):
-    r'''Flight segment-maker.
+    """
+    Flight segment-maker.
 
     >>> import huitzil
 
-    '''
+    """
 
     ### CLASS ATTRIBUTES ###
 
@@ -435,10 +436,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def accent_dynamics(self):
-        r'''Gets accent dynamics of segment-maker.
+        """
+        Gets accent dynamics of segment-maker.
 
         Returns list of strings or none.
-        '''
+        """
         return self._accent_dynamics
 
     @accent_dynamics.setter
@@ -452,10 +454,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def clef(self):
-        r'''Gets clef of segment-maker.
+        """
+        Gets clef of segment-maker.
 
         Returns string or none.
-        '''
+        """
         return self._clef
 
     @clef.setter
@@ -469,10 +472,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def durations(self):
-        r'''Gets durations of segment-maker.
+        """
+        Gets durations of segment-maker.
 
         Returns list of durations or none.
-        '''
+        """
         return self._durations
 
     @durations.setter
@@ -486,10 +490,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def glissando_break_indices(self):
-        r'''Gets glissando break indices of segment-maker.
+        """
+        Gets glissando break indices of segment-maker.
 
         Returns list of integers or none.
-        '''
+        """
         return self._glissando_break_indices
 
     @glissando_break_indices.setter
@@ -503,10 +508,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def lh_glissandi(self):
-        r'''Gets LH glissandi of segment-maker.
+        """
+        Gets LH glissandi of segment-maker.
 
         Returns list of pairs or none.
-        '''
+        """
         return self._lh_glissandi
 
     @lh_glissandi.setter
@@ -520,18 +526,20 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def lilypond_file(self):
-        r'''Gets LilyPond file.
+        """
+        Gets LilyPond file.
 
         Returns LilyPond file.
-        '''
+        """
         return self._lilypond_file
 
     @property
     def markup_leaves(self):
-        r'''Is true when leaf index markup should attach to leaves.
+        """
+        Is true when leaf index markup should attach to leaves.
 
         Returns string or none.
-        '''
+        """
         return self._markup_leaves
 
     @markup_leaves.setter
@@ -545,16 +553,18 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def metadata(self):
-        r'''Gets metadata after run.
-        '''
+        """
+        Gets metadata after run.
+        """
         return self._metadata
 
     @property
     def metronome_mark_measure_map(self):
-        r'''Gets tempo indications of segment-maker.
+        """
+        Gets tempo indications of segment-maker.
 
         Returns list of pairs or none.
-        '''
+        """
         return self._tempo_map
 
     @metronome_mark_measure_map.setter
@@ -568,10 +578,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def name(self):
-        r'''Gets name of segment-maker.
+        """
+        Gets name of segment-maker.
 
         Returns string or none.
-        '''
+        """
         return self._name
 
     @name.setter
@@ -585,10 +596,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def notes(self):
-        r'''Gets notes of segment-maker.
+        """
+        Gets notes of segment-maker.
 
         Returns list of pairs or none.
-        '''
+        """
         return self._notes
 
     @notes.setter
@@ -602,10 +614,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def pitches(self):
-        r'''Gets pitches of segment-maker.
+        """
+        Gets pitches of segment-maker.
 
         Returns list of pairs or none.
-        '''
+        """
         return self._pitches
 
     @pitches.setter
@@ -619,10 +632,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def staff_line_count(self):
-        r'''Gets staff line count of segment-maker.
+        """
+        Gets staff line count of segment-maker.
 
         Returns positive integer or none.
-        '''
+        """
         return self._staff_line_count
 
     @staff_line_count.setter
@@ -636,10 +650,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def staff_positions(self):
-        r'''Gets staff positions of segment-maker.
+        """
+        Gets staff positions of segment-maker.
 
         Returns positive integer or none.
-        '''
+        """
         return self._staff_positions
 
     @staff_positions.setter
@@ -653,10 +668,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def tremolo_map(self):
-        r'''Gets tremolo rate indications of segment-maker.
+        """
+        Gets tremolo rate indications of segment-maker.
 
         Returns list of pairs or none.
-        '''
+        """
         return self._tremolo_map
 
     @tremolo_map.setter
@@ -670,10 +686,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
 
     @property
     def underlying_dynamics(self):
-        r'''Gets underlying dynamics of segment-maker.
+        """
+        Gets underlying dynamics of segment-maker.
 
         Returns list of pairs or none.
-        '''
+        """
         return self._underlying_dynamics
 
     @underlying_dynamics.setter
@@ -693,10 +710,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         previous_metadata=None,
         segment_directory=None,
         ):
-        r'''Runs segment-maker.
+        """
+        Runs segment-maker.
 
         Returns LilyPond file.
-        '''
+        """
         self._metadata = abjad.OrderedDict(metadata)
         self._previous_metadata = abjad.OrderedDict(previous_metadata)
         self._segment_directory = segment_directory
