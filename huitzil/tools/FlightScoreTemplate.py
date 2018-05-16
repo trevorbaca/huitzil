@@ -3,7 +3,8 @@ import baca
 
 
 class FlightScoreTemplate(baca.ScoreTemplate):
-    r'''Flight score template.
+    r"""
+    Flight score template.
 
     >>> import huitzil
 
@@ -61,7 +62,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             >>
         >>
 
-    '''
+    """
 
     ### CLASS VARIABLES ###
 
@@ -70,8 +71,9 @@ class FlightScoreTemplate(baca.ScoreTemplate):
     ### SPECIAL METHODS ###
 
     def __call__(self) -> abjad.Score:
-        r'''Calls score template.
-        '''
+        """
+        Calls score template.
+        """
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 

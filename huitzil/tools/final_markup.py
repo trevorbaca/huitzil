@@ -3,7 +3,8 @@ import baca
 
 
 def final_markup():
-    r'''Makes final markup.
+    r"""
+    Makes final markup.
 
     >>> import huitzil
 
@@ -42,7 +43,7 @@ def final_markup():
                                     }
                 }
 
-    '''
+    """
     command = baca.markup.final_markup(
         ['Cambridge, MA.'],
         ['September', 'October 2014.'],

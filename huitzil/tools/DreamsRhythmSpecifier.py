@@ -4,8 +4,9 @@ import collections
 
 
 class DreamsRhythmSpecifier(abjad.AbjadObject):
-    r'''Dreams rhythm specifier.
-    '''
+    """
+    Dreams rhythm specifier.
+    """
 
     ### CLASS ATTRIBUTES ###
 
@@ -50,10 +51,11 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
     ### SPECIAL METHODS ###
 
     def __call__(self):
-        r'''Calls music-maker.
+        """
+        Calls music-maker.
 
         Returns selection.
-        '''
+        """
         music = self._make_rhythm()
         self._respell_tuplets(music)
         self._displace_pitch_classes(music)
@@ -327,10 +329,11 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     @property
     def extra_counts_per_division(self):
-        r'''Gets extra counts per division of music-maker.
+        """
+        Gets extra counts per division of music-maker.
 
         Returns list.
-        '''
+        """
         return self._extra_counts_per_division
 
     @extra_counts_per_division.setter
@@ -344,12 +347,13 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     @property
     def glissando_patterns(self):
-        r'''Gets glissando patterns of music-maker.
+        """
+        Gets glissando patterns of music-maker.
 
         Set to list of boolean pattern objects or none.
 
         Returns list or none.
-        '''
+        """
         return self._glissando_patterns
 
     @glissando_patterns.setter
@@ -363,11 +367,11 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     @property
     def index_logical_ties(self):
-        r'''Is true when leaf indices should appear in score as markup.
-        Otherwise false.
+        """
+        Is true when leaf indices should appear in score as markup.
 
         Set to true or false.
-        '''
+        """
         return self._index_logical_ties
 
     @index_logical_ties.setter
@@ -381,13 +385,14 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     @property
     def pc_displacement(self):
-        r'''Gets displacement map of music-maker.
+        """
+        Gets displacement map of music-maker.
 
         Boolean pattern that specifies whether pitch-classes should be
         registered as high pitches or low pitches.
 
         Returns list.
-        '''
+        """
         return self._pc_displacement
 
     @pc_displacement.setter
@@ -401,10 +406,11 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     @property
     def pc_operators(self):
-        r'''Gets pc operators of music-maker.
+        """
+        Gets pc operators of music-maker.
 
         Returns list.
-        '''
+        """
         return self._pc_operators
 
     @pc_operators.setter
@@ -418,10 +424,11 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     @property
     def pitch_class_trees(self):
-        r'''Gets pitch-class trees of music-maker.
+        """
+        Gets pitch-class trees of music-maker.
 
         Returns tuple.
-        '''
+        """
         return self._pitch_class_trees
 
     @pitch_class_trees.setter
@@ -435,10 +442,11 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     @property
     def start_tempo(self):
-        r'''Gets start tempo of music-maker.
+        """
+        Gets start tempo of music-maker.
 
         Returns tempo or none.
-        '''
+        """
         return self._start_tempo
 
     @start_tempo.setter
@@ -452,10 +460,11 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     @property
     def stop_tempo(self):
-        r'''Gets stop tempo of music-maker.
+        """
+        Gets stop tempo of music-maker.
 
         Returns tempo or none.
-        '''
+        """
         return self._stop_tempo
 
     @stop_tempo.setter
@@ -469,10 +478,11 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
 
     @property
     def voice_map(self):
-        r'''Gets voice map of music-maker.
+        """
+        Gets voice map of music-maker.
 
         Returns list.
-        '''
+        """
         return self._voice_map
 
     @voice_map.setter

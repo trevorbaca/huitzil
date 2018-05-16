@@ -4,7 +4,8 @@ import huitzil
 
 
 class DreamsScoreTemplate(baca.ScoreTemplate):
-    r'''Dreams score template.
+    r"""
+    Dreams score template.
 
     >>> import huitzil
 
@@ -50,7 +51,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
             >>
         >>
 
-    '''
+    """
 
     ### CLASS VARIABLES ###
 
@@ -59,8 +60,9 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
     ### SPECIAL METHODS ###
 
     def __call__(self) -> abjad.Score:
-        r'''Calls score template.
-        '''
+        """
+        Calls score template.
+        """
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
