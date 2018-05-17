@@ -2,7 +2,7 @@ import abjad
 import baca
 import copy
 import huitzil
-from abjad import rhythmmakertools as rhythmos
+from abjad import rhythmos
 
 
 class FlightSegmentMaker(abjad.SegmentMaker):
