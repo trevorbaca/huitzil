@@ -106,9 +106,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         manager = abjad.StorageFormatManager
         keyword_argument_names = \
             manager.get_signature_keyword_argument_names(self)
-        if not self.rhythm_overwrites:
-            keyword_argument_names = list(keyword_argument_names)
-            keyword_argument_names.remove('rhythm_overwrites')
+        keyword_argument_names = list(keyword_argument_names)
         return abjad.StorageFormatSpecification(
             self,
             keyword_argument_names=keyword_argument_names,
