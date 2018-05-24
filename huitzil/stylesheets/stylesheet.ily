@@ -1,6 +1,6 @@
 #(set-default-paper-size "11x17landscape")
 
-\include "/Users/trevorbaca/baca/baca/stylesheets/baca.ily"
+\include "/Users/trevorbaca/baca/baca/lilypond/baca.ily"
 \include "contexts.ily"
 
 \paper {
