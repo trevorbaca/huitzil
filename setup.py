@@ -23,7 +23,7 @@ if __name__ == '__main__':
         author_email='trevor.baca@gmail.com',
         install_requires=install_requires,
         keywords=keywords,
-        name='Huitzil',
+        name='huitzil',
         packages=['huitzil'],
         platforms='Any',
         url='https://github.com/trevorbaca/huitzil',
