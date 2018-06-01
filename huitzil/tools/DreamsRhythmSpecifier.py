@@ -214,15 +214,10 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
                 fraction = fraction.with_denominator(128)
                 numerators.append(fraction.numerator)
             ratio = abjad.Ratio(numerators)
-            if 0 <= extra_count:
-                diminution = False
-            else:
-                diminution = True
             inner_tuplet = abjad.Tuplet.from_duration_and_ratio(
                 target_duration,
                 ratio,
                 avoid_dots=True,
-                diminution=diminution,
                 )
             #beam = abjad.DuratedComplexBeam()
             #abjad.attach(beam, inner_tuplet)
