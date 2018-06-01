@@ -431,32 +431,31 @@ GlobalSkips = {
 
 
 MusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 4/5 {
         \tempo 8=78
         \set stemLeftBeamCount = 0
-        \set stemRightBeamCount = 1
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Stem.direction = #down
         \clef "bass"
-        fs8
+        fs16.
         [
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Stem.direction = #down
-        e8
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        e16.
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Stem.direction = #down
-        f8
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        f16.
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Stem.direction = #down
-        g8
-        \set stemLeftBeamCount = 1
+        g16.
+        \set stemLeftBeamCount = 2
         \set stemRightBeamCount = 0
         \once \override Stem.direction = #down
-        af8
+        af16.
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -498,45 +497,59 @@ MusicVoice = {
         cs16
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16 {
-        \once \override TupletBracket.staff-padding = #2.5
-        bf,4
-        \once \override TupletBracket.staff-padding = #2.5
-        a,4
-        \once \override TupletBracket.staff-padding = #2.5
-        b,4
-        \once \override TupletBracket.staff-padding = #2.5
-        c4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/4 {
         \set stemLeftBeamCount = 0
         \set stemRightBeamCount = 1
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
-        f,8
+        c,8.
         [
         \set stemLeftBeamCount = 1
         \set stemRightBeamCount = 1
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
-        a,8
+        c,8.
         \set stemLeftBeamCount = 1
         \set stemRightBeamCount = 1
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
-        ef8
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
-        \once \override Stem.direction = #up
-        \once \override TupletBracket.staff-padding = #2.5
-        d8
+        c,8.
         \set stemLeftBeamCount = 1
         \set stemRightBeamCount = 0
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
-        e8
+        c8.
+        ]
+    }
+    \times 4/5 {
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 2
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        \once \override TupletBracket.staff-padding = #2.5
+        f,16.
+        [
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        \once \override Stem.direction = #up
+        \once \override TupletBracket.staff-padding = #2.5
+        a,16.
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        \once \override Stem.direction = #up
+        \once \override TupletBracket.staff-padding = #2.5
+        ef16.
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        \once \override Stem.direction = #up
+        \once \override TupletBracket.staff-padding = #2.5
+        d16.
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 0
+        \once \override Stem.direction = #up
+        \once \override TupletBracket.staff-padding = #2.5
+        e16.
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -607,11 +620,20 @@ MusicVoice = {
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 1/1 {
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 1
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
-        b,4
+        b,8..
+        [
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 0
+        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
-        c4
+        c8..
+        ]
     }
     \times 2/3 {
         \set stemLeftBeamCount = 0
@@ -634,9 +656,11 @@ MusicVoice = {
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 1/1 {
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
         \once \override TupletBracket.staff-padding = #2.5
-        g4
+        g8.
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -695,11 +719,20 @@ MusicVoice = {
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 1/1 {
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 1
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
-        f,4
+        f,8..
+        [
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 0
+        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
-        g,4
+        g,8..
+        ]
     }
     \times 2/3 {
         \set stemLeftBeamCount = 0
@@ -721,18 +754,18 @@ MusicVoice = {
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 1/1 {
         \set stemLeftBeamCount = 0
-        \set stemRightBeamCount = 1
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        cs8
+        cs16.
         [
-        \set stemLeftBeamCount = 1
+        \set stemLeftBeamCount = 2
         \set stemRightBeamCount = 0
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        d8
+        d16.
         ]
     }
     \times 2/3 {
@@ -799,18 +832,18 @@ MusicVoice = {
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 11/12 {
+    \times 11/18 {
         \set stemLeftBeamCount = 0
         \set stemRightBeamCount = 1
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        d8
+        d8.
         [
         \set stemLeftBeamCount = 1
         \set stemRightBeamCount = 0
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        b,8
+        b,8.
         ]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -820,10 +853,10 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
-        bf,2
+        bf,2.
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    \times 5/6 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -832,28 +865,28 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
-        af,2
+        af,4.
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 1/1 {
         \set stemLeftBeamCount = 0
-        \set stemRightBeamCount = 1
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        a,8
+        a,16.
         [
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Stem.direction = #up
-        g,8
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        g,16.
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Stem.direction = #up
-        f,8
-        \set stemLeftBeamCount = 1
+        f,16.
+        \set stemLeftBeamCount = 2
         \set stemRightBeamCount = 0
         \once \override Stem.direction = #up
-        fs,8
+        fs,16.
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -896,11 +929,10 @@ MusicVoice = {
         af,32
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    \times 8/9 {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        a,8
+        a,16..
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -909,7 +941,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
-        g,2
+        g,4..
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -918,40 +950,39 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
-        f,2
+        f,4..
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 4/5 {
         \set stemLeftBeamCount = 0
-        \set stemRightBeamCount = 1
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        ef8
+        ef16.
         [
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        f8
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        f16.
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        fs8
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        fs16.
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        bf,8
-        \set stemLeftBeamCount = 1
+        bf,16.
+        \set stemLeftBeamCount = 2
         \set stemRightBeamCount = 0
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        e8
+        e16.
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    \times 5/6 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -960,7 +991,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
-        bf,2
+        bf,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -969,7 +1000,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
-        c2
+        c4.
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -1010,35 +1041,35 @@ MusicVoice = {
         ef,2
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 1/1 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        d2
+        d4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        e,2
+        e,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        fs,2
+        fs,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        f,2
+        f,4.
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -1131,7 +1162,7 @@ MusicVoice = {
         fs,1
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/14 {
+    \times 6/7 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1141,7 +1172,9 @@ MusicVoice = {
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
         \once \override TupletBracket.staff-padding = #6
-        f,2
+        f,4.
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1151,7 +1184,10 @@ MusicVoice = {
         \once \override Stem.color = #red
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #6
-        g4
+        g8.
+        [
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1161,7 +1197,9 @@ MusicVoice = {
         \once \override Stem.color = #red
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #6
-        af4
+        af8.
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 0
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1171,7 +1209,8 @@ MusicVoice = {
         \once \override Stem.color = #red
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #6
-        c'4
+        c'8.
+        ]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1181,10 +1220,9 @@ MusicVoice = {
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
         \once \override TupletBracket.staff-padding = #6
-        fs,2
+        fs,4.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    \times 2/3 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1194,7 +1232,7 @@ MusicVoice = {
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
         \once \override TupletBracket.staff-padding = #6
-        c1
+        c2..
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1204,7 +1242,7 @@ MusicVoice = {
         \once \override Stem.color = #red
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #6
-        d'2
+        d'4..
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -1249,73 +1287,105 @@ MusicVoice = {
         fs8
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    \times 5/6 {
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 1
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        fs8.
+        [
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        fs4
+        \once \override Stem.direction = #down
+        af8.
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        af4
+        \once \override Stem.direction = #down
+        a8.
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 0
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        a4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Slur.color = #red
-        \once \override Stem.color = #red
-        cs4
+        \once \override Stem.direction = #down
+        cs8.
+        ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/10 {
+    \times 4/5 {
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 1
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        d8..
+        [
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        d4
+        \once \override Stem.direction = #down
+        cs8..
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        cs4
+        \once \override Stem.direction = #down
+        ef8..
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        ef4
+        \once \override Stem.direction = #down
+        e8..
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 0
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        e4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Slur.color = #red
-        \once \override Stem.color = #red
-        f4
+        \once \override Stem.direction = #down
+        f8..
+        ]
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -1417,45 +1487,54 @@ MusicVoice = {
         e4
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 1/1 {
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 1
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        bf8.
+        [
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 0
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        bf4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Slur.color = #red
-        \once \override Stem.color = #red
-        af4
+        \once \override Stem.direction = #down
+        af8.
+        ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \times 5/9 {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        a4
+        a4.
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        b,4
+        b,4.
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        c4
+        c4.
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -1470,9 +1549,9 @@ MusicVoice = {
         cs8
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 1/1 {
         \set stemLeftBeamCount = 0
-        \set stemRightBeamCount = 1
+        \set stemRightBeamCount = 2
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1481,10 +1560,10 @@ MusicVoice = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Stem.direction = #down
-        g8
+        g16.
         [
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1492,9 +1571,9 @@ MusicVoice = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Stem.direction = #down
-        fs8
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        fs16.
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1502,8 +1581,8 @@ MusicVoice = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Stem.direction = #down
-        af8
-        \set stemLeftBeamCount = 1
+        af16.
+        \set stemLeftBeamCount = 2
         \set stemRightBeamCount = 0
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1512,7 +1591,7 @@ MusicVoice = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Stem.direction = #down
-        a8
+        a16.
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1790,24 +1869,33 @@ MusicVoice = {
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 1/1 {
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 1
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #up
+        b,8.
+        [
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 0
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        b,4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Slur.color = #red
-        \once \override Stem.color = #red
-        ef4
+        \once \override Stem.direction = #up
+        ef8.
+        ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 1/1 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1816,7 +1904,9 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
-        a,2
+        a,4.
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1825,7 +1915,10 @@ MusicVoice = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Stem.direction = #up
-        af4
+        af8.
+        [
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 0
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1834,7 +1927,8 @@ MusicVoice = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Stem.direction = #up
-        bf4
+        bf8.
+        ]
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -1941,26 +2035,26 @@ MusicVoice = {
         f4
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/10 {
+    \times 3/5 {
         \set stemLeftBeamCount = 0
         \set stemRightBeamCount = 1
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2
-        fs8
+        fs8.
         [
         \set stemLeftBeamCount = 1
         \set stemRightBeamCount = 1
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2
-        g8
+        g8.
         \set stemLeftBeamCount = 1
         \set stemRightBeamCount = 0
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2
-        e8
+        e8.
         ]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1971,7 +2065,7 @@ MusicVoice = {
         \once \override Stem.color = #red
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2
-        ef4
+        ef4.
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2192,27 +2286,29 @@ MusicVoice = {
         c4
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/14 {
+    \times 6/7 {
         \set stemLeftBeamCount = 0
-        \set stemRightBeamCount = 1
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2
-        a,8
+        a,16.
         [
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2
-        af,8
-        \set stemLeftBeamCount = 1
+        af,16.
+        \set stemLeftBeamCount = 2
         \set stemRightBeamCount = 0
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2
-        bf,8
+        bf,16.
         ]
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 1
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -2222,7 +2318,10 @@ MusicVoice = {
         \once \override Stem.color = #red
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2
-        b,4
+        b,8.
+        [
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 0
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -2232,24 +2331,25 @@ MusicVoice = {
         \once \override Stem.color = #red
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2
-        ef4
+        ef8.
+        ]
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 1/1 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        e,2
+        e,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        ef,2
+        ef,4.
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2296,28 +2396,28 @@ MusicVoice = {
         fs8
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 1/1 {
         \set stemLeftBeamCount = 0
-        \set stemRightBeamCount = 1
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        g8
+        g16.
         [
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        af8
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        af16.
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        f8
-        \set stemLeftBeamCount = 1
+        f16.
+        \set stemLeftBeamCount = 2
         \set stemRightBeamCount = 0
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        e8
+        e16.
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2368,8 +2468,7 @@ MusicVoice = {
         \once \override Stem.direction = #down
         fs,4
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    \times 8/9 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -2378,7 +2477,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
-        g,2
+        g,4..
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -2387,34 +2486,34 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
-        af,2
+        af,4..
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        f8
+        f16..
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16 {
+    \times 3/4 {
         \set stemLeftBeamCount = 0
-        \set stemRightBeamCount = 1
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        c8
+        c16.
         [
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        d8
-        \set stemLeftBeamCount = 1
-        \set stemRightBeamCount = 1
+        d16.
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        ef8
-        \set stemLeftBeamCount = 1
+        ef16.
+        \set stemLeftBeamCount = 2
         \set stemRightBeamCount = 0
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        cs8
+        cs16.
         ]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2424,10 +2523,9 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
-        b,2
+        b,4.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/10 {
+    \times 4/5 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -2436,10 +2534,10 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Stem.direction = #down
-        a,2
+        a,4..
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
-        b,8
+        b,16..
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2465,8 +2563,7 @@ MusicVoice = {
         \once \override Stem.direction = #up
         b,16
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 4/5 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2474,7 +2571,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override TupletBracket.staff-padding = #2
-        b,2
+        b,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2482,7 +2579,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override TupletBracket.staff-padding = #2
-        a,2
+        a,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2490,7 +2587,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override TupletBracket.staff-padding = #2
-        af,2
+        af,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2498,7 +2595,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override TupletBracket.staff-padding = #2
-        bf,2
+        bf,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2506,7 +2603,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override TupletBracket.staff-padding = #2
-        c2
+        c4.
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2560,7 +2657,7 @@ MusicVoice = {
         c4
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16 {
+    \times 3/4 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2568,7 +2665,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override TupletBracket.staff-padding = #2
-        b,1
+        b,2.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2576,7 +2673,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override TupletBracket.staff-padding = #2
-        a,1
+        a,2.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2584,7 +2681,7 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override TupletBracket.staff-padding = #2
-        af,1
+        af,2.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2592,45 +2689,44 @@ MusicVoice = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override TupletBracket.staff-padding = #2
-        bf,1
+        bf,2.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 4/5 {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        cs,2
+        cs,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        d,2
+        d,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        c,2
+        c,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        b,,2
+        b,,4.
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        g,2
+        g,4.
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
