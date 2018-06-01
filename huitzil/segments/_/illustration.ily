@@ -503,18 +503,18 @@ MusicVoice = {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
-        c,8.
+        bf,8.
         [
         \set stemLeftBeamCount = 1
         \set stemRightBeamCount = 1
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
-        c,8.
+        a,8.
         \set stemLeftBeamCount = 1
         \set stemRightBeamCount = 1
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
-        c,8.
+        b,8.
         \set stemLeftBeamCount = 1
         \set stemRightBeamCount = 0
         \once \override Stem.direction = #up
