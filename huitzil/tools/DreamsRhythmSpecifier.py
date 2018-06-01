@@ -217,7 +217,6 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
             inner_tuplet = abjad.Tuplet.from_duration_and_ratio(
                 target_duration,
                 ratio,
-                avoid_dots=True,
                 )
             #beam = abjad.DuratedComplexBeam()
             #abjad.attach(beam, inner_tuplet)
