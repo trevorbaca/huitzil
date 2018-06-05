@@ -16,31 +16,29 @@ def final_markup():
         ..  docs::
 
             >>> abjad.f(markup)
-            _ \markup {
-                \whiteout
-                    \upright
-                        \override
-                            #'(font-name . "Palatino")
-                            \with-color
-                                #black
-                                \right-column
+            \markup {
+                \override
+                    #'(font-name . "Palatino")
+                    \with-color
+                        #black
+                        \right-column
+                            {
+                                \line
                                     {
-                                        \line
-                                            {
-                                                "Cambridge, MA."
-                                            }
-                                        \line
-                                            {
-                                                September
-                                                \hspace
-                                                    #0.75
-                                                –
-                                                \hspace
-                                                    #0.75
-                                                October
-                                                2014.
-                                            }
+                                        "Cambridge, MA."
                                     }
+                                \line
+                                    {
+                                        September
+                                        \hspace
+                                            #0.75
+                                        –
+                                        \hspace
+                                            #0.75
+                                        October
+                                        2014.
+                                    }
+                            }
                 }
 
     """
