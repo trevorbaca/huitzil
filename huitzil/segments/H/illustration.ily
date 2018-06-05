@@ -291,10 +291,8 @@ H_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "trem. mod."
+                \upright
+                    "trem. mod."
                 \hspace
                     #0.25
             }
@@ -348,10 +346,8 @@ H_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "sub. trem. più stretto"
+                \upright
+                    "sub. trem. più stretto"
                 \hspace
                     #0.5
             }
@@ -374,10 +370,8 @@ H_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "più largo"
+                \upright
+                    "più largo"
                 \hspace
                     #0.5
             }
@@ -400,10 +394,8 @@ H_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "più stretto"
+                \upright
+                    "più stretto"
                 \hspace
                     #0.5
             }
@@ -426,10 +418,8 @@ H_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "più largo"
+                \upright
+                    "più largo"
                 \hspace
                     #0.5
             }
@@ -452,10 +442,8 @@ H_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "trem. mod."
+                \upright
+                    "trem. mod."
                 \hspace
                     #0.25
             }

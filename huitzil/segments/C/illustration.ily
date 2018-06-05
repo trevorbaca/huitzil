@@ -336,10 +336,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "trem. moderato"
+                \upright
+                    "trem. moderato"
                 \hspace
                     #0.25
             }
@@ -387,10 +385,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "trem. mod."
+                \upright
+                    "trem. mod."
                 \hspace
                     #0.5
             }
@@ -416,10 +412,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "trem. stretto"
+                \upright
+                    "trem. stretto"
                 \hspace
                     #0.25
             }
@@ -442,10 +436,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "sub. trem. mod."
+                \upright
+                    "sub. trem. mod."
                 \hspace
                     #0.5
             }
@@ -468,10 +460,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "più stretto"
+                \upright
+                    "più stretto"
                 \hspace
                     #0.5
             }
@@ -494,10 +484,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "più largo"
+                \upright
+                    "più largo"
                 \hspace
                     #0.5
             }
@@ -520,10 +508,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "più stretto"
+                \upright
+                    "più stretto"
                 \hspace
                     #0.25
             }
@@ -542,10 +528,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "sub. trem. mod."
+                \upright
+                    "sub. trem. mod."
                 \hspace
                     #0.5
             }
@@ -568,10 +552,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "più stretto"
+                \upright
+                    "più stretto"
                 \hspace
                     #0.5
             }
@@ -594,10 +576,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "più largo"
+                \upright
+                    "più largo"
                 \hspace
                     #0.5
             }
@@ -620,10 +600,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "più stretto"
+                \upright
+                    "più stretto"
                 \hspace
                     #0.5
             }
@@ -646,10 +624,8 @@ C_TremoloVoice = {
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \whiteout
-                    \upright
-                        \upright
-                            "più largo"
+                \upright
+                    "più largo"
                 \hspace
                     #0.5
             }
@@ -670,10 +646,8 @@ C_TremoloVoice = {
             {
                 \hspace
                     #1.25
-                \whiteout
-                    \upright
-                        \upright
-                            "più stretto"
+                \upright
+                    "più stretto"
             }
         }
     \startTextSpan
