@@ -44,7 +44,7 @@ def final_markup():
                 }
 
     """
-    command = baca.markup.final_markup(
+    command = baca.markups.final_markup(
         ['Cambridge, MA.'],
         ['September', 'October 2014.'],
         )
