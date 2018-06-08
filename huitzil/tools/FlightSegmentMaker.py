@@ -319,7 +319,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             return
         tempo_indicator_voice = self._score['MetronomeMarkVoice']
         durations = self._get_bow_location_durations()
-        maker = rmakers.SkipRhythmMaker()
+        maker = baca.SkipRhythmMaker()
         selections = maker(durations)
         tempo_indicator_voice.extend(selections)
         skips = abjad.select(tempo_indicator_voice).leaves()
@@ -361,7 +361,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
     def _populate_tremolo_indicator_voice(self):
         tremolo_indicator_voice = self._score['TremoloVoice']
         durations = self._get_bow_location_durations()
-        maker = rmakers.SkipRhythmMaker()
+        maker = baca.SkipRhythmMaker()
         skips = maker(durations)
         tremolo_indicator_voice.extend(skips)
         if not self.notes:
@@ -388,7 +388,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             return
         underlying_dynamics_voice = self._score['UnderlyingDynamicsVoice']
         durations = self._get_bow_location_durations()
-        maker = rmakers.SkipRhythmMaker()
+        maker = baca.SkipRhythmMaker()
         selections = maker(durations)
         underlying_dynamics_voice.extend(selections)
         skips = abjad.select(underlying_dynamics_voice).leaves()
