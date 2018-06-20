@@ -3,8 +3,9 @@ import baca
 
 
 def make_numerators(numerators, addenda):
-    numerators = baca.helianthate(numerators, -1, 1)
-    numerators = baca.sequence(numerators).flatten()
+    numerators = baca.sequence(numerators)
+    numerators = numerators.helianthate(-1, 1)
+    numerators = numerators.flatten()
     length = len(numerators)
     addenda = baca.sequence(addenda).repeat_to_length(length)
     pairs = zip(numerators, addenda)
