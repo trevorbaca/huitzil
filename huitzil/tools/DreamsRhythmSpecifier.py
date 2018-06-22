@@ -119,7 +119,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
             note_groups = baca.sequence(tuplet[:]).partition_by_counts(counts)
             for note_group in note_groups:
                 note_group = abjad.select(note_group)
-                abjad.attach(abjad.DuratedComplexBeam(), note_group)
+                abjad.attach(abjad.Beam(), note_group)
                 first_note = note_group[0]
                 if abjad.Duration(1, 4) <= first_note.written_duration:
                     continue
