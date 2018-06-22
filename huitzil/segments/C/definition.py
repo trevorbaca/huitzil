@@ -1,4 +1,5 @@
 import abjad
+import baca
 import huitzil
 
 
@@ -111,10 +112,10 @@ maker.glissando_break_indices = [
 
 maker.metronome_mark_measure_map = [
     #(0, huitzil.metronome_marks['44']),
-    (39, abjad.Accelerando()),
+    (39, baca.Accelerando()),
     (42, huitzil.metronome_marks['66']),
     (43, huitzil.metronome_marks['44']),
-    (43, abjad.Accelerando()),
+    (43, baca.Accelerando()),
     (48, huitzil.metronome_marks['88']),
     ]
 
