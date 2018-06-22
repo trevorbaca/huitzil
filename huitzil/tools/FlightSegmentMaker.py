@@ -323,7 +323,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         selections = maker(durations)
         tempo_indicator_voice.extend(selections)
         skips = abjad.select(tempo_indicator_voice).leaves()
-        tempo_spanner = abjad.MetronomeMarkSpanner(
+        tempo_spanner = baca.MetronomeMarkSpanner(
             left_broken_padding=0,
             left_broken_text=abjad.Markup.null(direction=None),
             parenthesize=False,
