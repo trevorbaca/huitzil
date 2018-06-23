@@ -791,18 +791,18 @@ G_StringContactPointVoice = {
         }
     a''4
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     f''4
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     a''2
     :16
     _ \markup {
@@ -811,20 +811,20 @@ G_StringContactPointVoice = {
         }
     a''4
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         f''2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mfz
             }
+        \glissando
     }
     a''2
     :16
@@ -834,11 +834,11 @@ G_StringContactPointVoice = {
         }
     a''4
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     f''4
     :16
     _ \markup {
@@ -856,18 +856,18 @@ G_StringContactPointVoice = {
     }
     f''4
     :16
-    \glissando
     _ \markup {
         \dynamic
             mpz
         }
+    \glissando
     d''4
     :16
-    \glissando
     _ \markup {
         \dynamic
             mpz
         }
+    \glissando
     f''2
     :16
     _ \markup {
@@ -878,51 +878,51 @@ G_StringContactPointVoice = {
     \times 2/3 {
         f''2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mpz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         d''2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mpz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         a''4
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mfz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         f''4
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mfz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         d''4
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mfz
             }
+        \glissando
     }
     f''2
     :16
@@ -934,36 +934,36 @@ G_StringContactPointVoice = {
     \times 2/3 {
         f''2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mpz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         d''2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mpz
             }
+        \glissando
     }
     a''4
     :16
-    \glissando
     _ \markup {
         \dynamic
             mpz
         }
+    \glissando
     f''4
     :16
-    \glissando
     _ \markup {
         \dynamic
             mpz
         }
+    \glissando
     d''4
     :16
     _ \markup {
@@ -984,18 +984,18 @@ G_StringContactPointVoice = {
         }
     d''4
     :16
-    \glissando
     _ \markup {
         \dynamic
             fz
         }
+    \glissando
     b'4
     :16
-    \glissando
     _ \markup {
         \dynamic
             fz
         }
+    \glissando
     d''2
     :16
     _ \markup {
@@ -1004,80 +1004,80 @@ G_StringContactPointVoice = {
         }
     d''4
     :16
-    \glissando
     _ \markup {
         \dynamic
             fz
         }
+    \glissando
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         b'2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mfz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         a''2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mfz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         f''2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mfz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         d''2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mfz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         a''4
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mpz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         f''4
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mpz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         d''4
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mpz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -1096,11 +1096,11 @@ G_StringContactPointVoice = {
         }
     b'1
     :16
-    \glissando
     _ \markup {
         \dynamic
             ffz
         }
+    \glissando
     g'1
     :16
     _ \markup {
@@ -1109,11 +1109,11 @@ G_StringContactPointVoice = {
         }
     g'1
     :16
-    \glissando
     _ \markup {
         \dynamic
             ffz
         }
+    \glissando
     e'1
     :16
     _ \markup {
@@ -1124,71 +1124,71 @@ G_StringContactPointVoice = {
     \times 2/3 {
         b'2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 fz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         a''2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mfz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         f''2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mfz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         d''2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mfz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         a''4
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mpz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         f''4
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mpz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
         d''4
         :16
-        \glissando
         _ \markup {
             \dynamic
                 mpz
             }
+        \glissando
     }
     \tweak edge-height #'(0.7 . 0)
     \times 4/5 {
@@ -1207,11 +1207,11 @@ G_StringContactPointVoice = {
         }
     b'1
     :16
-    \glissando
     _ \markup {
         \dynamic
             ffz
         }
+    \glissando
     g'1
     :16
     _ \markup {
@@ -1220,11 +1220,11 @@ G_StringContactPointVoice = {
         }
     g'1
     :16
-    \glissando
     _ \markup {
         \dynamic
             ffz
         }
+    \glissando
     e'1
     :16
     _ \markup {
@@ -1233,11 +1233,11 @@ G_StringContactPointVoice = {
         }
     e'1
     :16
-    \glissando
     _ \markup {
         \dynamic
             ffz
         }
+    \glissando
     c'1
     :16
     _ \markup {

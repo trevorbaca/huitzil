@@ -399,15 +399,15 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             if string in ('<', '>'):
                 indicator = abjad.LilyPondLiteral('\\' + string, 'after')
             elif string == '-|':
-                indicator = abjad.LilyPondLiteral(r'\<', 'right')
+                indicator = abjad.LilyPondLiteral(r'\<', 'after')
                 stencil = abjad.Scheme('constante-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             elif string == '<!':
-                indicator = abjad.LilyPondLiteral(r'\<', 'right')
+                indicator = abjad.LilyPondLiteral(r'\<', 'after')
                 stencil = abjad.Scheme('flared-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             elif string == '!>':
-                indicator = abjad.LilyPondLiteral(r'\>', 'right')
+                indicator = abjad.LilyPondLiteral(r'\>', 'after')
                 stencil = abjad.Scheme('flared-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             else:
@@ -417,7 +417,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         prototype = abjad.LilyPondLiteral
         if not abjad.inspect(last_skip).has_indicator(prototype):
             if not abjad.inspect(last_skip).has_indicator(abjad.Dynamic):
-                indicator = abjad.LilyPondLiteral(r'\!', 'right')
+                indicator = abjad.LilyPondLiteral(r'\!', 'after')
                 abjad.attach(indicator, last_skip)
 
     def _staff_position_to_pitch(self, staff_position):
