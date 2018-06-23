@@ -1170,11 +1170,11 @@ E_StringContactPointVoice = {
     }
     e'''2.
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     c'''2.
     :16
     _ \markup {
@@ -1192,11 +1192,11 @@ E_StringContactPointVoice = {
     }
     c'''2.
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     a''2
     :16
     \glissando
@@ -1214,11 +1214,11 @@ E_StringContactPointVoice = {
         }
     a''2
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         c'''2
@@ -1233,11 +1233,11 @@ E_StringContactPointVoice = {
         }
     a''1
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     f''2.
     :16
     _ \markup {
@@ -1255,11 +1255,11 @@ E_StringContactPointVoice = {
     }
     f''2.
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     a''2
     :16
     \glissando
@@ -1280,11 +1280,11 @@ E_StringContactPointVoice = {
     }
     f''1
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     d''2.
     :16
     _ \markup {
@@ -1302,11 +1302,11 @@ E_StringContactPointVoice = {
     }
     d''2.
     :16
-    \glissando
     _ \markup {
         \dynamic
             fz
         }
+    \glissando
     b'2.
     :16
     _ \markup {
@@ -1324,11 +1324,11 @@ E_StringContactPointVoice = {
     }
     b'2.
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     g'2
     :16
     \glissando
@@ -1346,11 +1346,11 @@ E_StringContactPointVoice = {
         }
     g'2
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         b'2
@@ -1365,11 +1365,11 @@ E_StringContactPointVoice = {
         }
     g'1
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     e'2.
     :16
     _ \markup {
@@ -1387,11 +1387,11 @@ E_StringContactPointVoice = {
     }
     e'2.
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     g'2
     :16
     \glissando
@@ -1412,11 +1412,11 @@ E_StringContactPointVoice = {
     }
     e'1
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     c'2.
     :16
     _ \markup {
@@ -1434,11 +1434,11 @@ E_StringContactPointVoice = {
     }
     c'2.
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     e'2
     :16
     \glissando
@@ -1459,11 +1459,11 @@ E_StringContactPointVoice = {
     }
     c'1
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     a2.
     :16
     \glissando
@@ -1487,11 +1487,11 @@ E_StringContactPointVoice = {
     }
     a1
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     f2.
     :16
     _ \markup {
@@ -1509,11 +1509,11 @@ E_StringContactPointVoice = {
     }
     f2.
     :16
-    \glissando
     _ \markup {
         \dynamic
             mfz
         }
+    \glissando
     a2
     :16
     \glissando

@@ -464,25 +464,25 @@ H_TremoloVoice = {
 H_StringContactPointVoice = {
     c'4
     :16
-    \glissando
     _ \markup {
         \dynamic
             ffz
         }
+    \glissando
     e'4
     :16
-    \glissando
     _ \markup {
         \dynamic
             ffz
         }
+    \glissando
     g'4
     :16
-    \glissando
     _ \markup {
         \dynamic
             ffz
         }
+    \glissando
     b'4
     :16
     _ \markup {
@@ -682,11 +682,11 @@ H_StringContactPointVoice = {
     \times 4/5 {
         b'2
         :16
-        \glissando
         _ \markup {
             \dynamic
                 fffz
             }
+        \glissando
     }
     a''1
     :16
