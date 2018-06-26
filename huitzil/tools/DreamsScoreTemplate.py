@@ -35,16 +35,6 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
             <<
                 \context Voice = "MusicVoice"
                 {
-                    \set Staff.instrumentName = \markup {      %! ST1
-                        \hcenter-in                            %! ST1
-                            #16                                %! ST1
-                            Cello                              %! ST1
-                        }                                      %! ST1
-                    \set Staff.shortInstrumentName = \markup { %! ST1
-                        \hcenter-in                            %! ST1
-                            #10                                %! ST1
-                            Vc.                                %! ST1
-                        }                                      %! ST1
                     \clef "bass" %! ST3
                     s1
                 }
