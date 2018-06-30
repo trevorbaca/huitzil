@@ -495,12 +495,8 @@ E_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
@@ -595,12 +591,8 @@ E_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
@@ -689,12 +681,8 @@ E_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
@@ -789,12 +777,8 @@ E_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
@@ -883,12 +867,8 @@ E_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
@@ -979,12 +959,8 @@ E_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
@@ -1073,12 +1049,8 @@ E_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
