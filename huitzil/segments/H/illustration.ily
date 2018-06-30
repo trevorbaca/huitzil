@@ -180,12 +180,8 @@ H_GlobalSkips = {
 H_MetronomeMarkVoice = {
     s1 * 1/4
     - \tweak Y-extent ##f
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1/4
     s1 * 1/4
@@ -270,12 +266,8 @@ H_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
@@ -297,13 +289,7 @@ H_TremoloVoice = {
                     #0.25
             }
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
+    - \abjad_start_text_span_invisible
     \startTextSpan
     s1 * 1/4
     s1 * 1/4
@@ -448,13 +434,7 @@ H_TremoloVoice = {
                     #0.25
             }
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
+    - \abjad_start_text_span_invisible
     \startTextSpan
     s1 * 1
     \stopTextSpan

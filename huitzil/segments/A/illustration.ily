@@ -204,12 +204,8 @@ A_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
@@ -299,12 +295,8 @@ A_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
@@ -330,12 +322,8 @@ A_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_invisible_line_segment
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
@@ -417,13 +405,7 @@ A_TremoloVoice = {
                     #0.25
             }
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
+    - \abjad_start_text_span_invisible
     \startTextSpan
     s1 * 1/4
     s1 * 1/4
@@ -493,13 +475,7 @@ A_TremoloVoice = {
                     #0.25
             }
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
+    - \abjad_start_text_span_invisible
     \startTextSpan
     s1 * 1/5
     s1 * 1/5
@@ -589,13 +565,7 @@ A_TremoloVoice = {
                     #0.25
             }
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
+    - \abjad_start_text_span_invisible
     \startTextSpan
     s1 * 1/3
     \stopTextSpan
@@ -636,13 +606,7 @@ A_TremoloVoice = {
                     #0.25
             }
         }
-    - \tweak dash-period 0
-    - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
+    - \abjad_start_text_span_invisible
     \startTextSpan
     s1 * 1/5
     s1 * 1/5
