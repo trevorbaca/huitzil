@@ -279,7 +279,7 @@ C_TremoloVoice = {
                     #0.25
             }
         }
-    - \abjad_start_text_span_invisible
+    - \abjad_invisible_line_segment
     \startTextSpan
     s1 * 1/4
     s1 * 1/4
@@ -349,7 +349,7 @@ C_TremoloVoice = {
                     #0.25
             }
         }
-    - \abjad_start_text_span_invisible
+    - \abjad_invisible_line_segment
     \startTextSpan
     s1 * 1/5
     s1 * 1/5
@@ -439,7 +439,7 @@ C_TremoloVoice = {
                     #0.25
             }
         }
-    - \abjad_start_text_span_invisible
+    - \abjad_invisible_line_segment
     \startTextSpan
     s1 * 1
     \stopTextSpan
