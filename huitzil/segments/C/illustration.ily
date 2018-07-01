@@ -231,20 +231,7 @@ C_MetronomeMarkVoice = {
     \stopTextSpan
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
-        \fontsize
-            #-6
-            \general-align
-                #Y
-                #DOWN
-                \note-by-number
-                    #2
-                    #0
-                    #1
-        \upright
-            {
-                =
-                66
-            }
+        \abjad-metronome-mark-markup #2 #0 #1 #"66"
         \hspace
             #1
         }
@@ -258,20 +245,7 @@ C_MetronomeMarkVoice = {
     \stopTextSpan
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
-        \fontsize
-            #-6
-            \general-align
-                #Y
-                #DOWN
-                \note-by-number
-                    #2
-                    #0
-                    #1
-        \upright
-            {
-                =
-                44
-            }
+        \abjad-metronome-mark-markup #2 #0 #1 #"44"
         \hspace
             #1
         }
@@ -292,20 +266,7 @@ C_MetronomeMarkVoice = {
                     #0.5
                 \line
                     {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                88
-                            }
+                        \abjad-metronome-mark-markup #2 #0 #1 #"88"
                     }
             }
         }

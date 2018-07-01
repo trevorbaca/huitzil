@@ -249,20 +249,7 @@ H_MetronomeMarkVoice = {
     \stopTextSpan
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
-        \fontsize
-            #-6
-            \general-align
-                #Y
-                #DOWN
-                \note-by-number
-                    #2
-                    #0
-                    #1
-        \upright
-            {
-                =
-                44
-            }
+        \abjad-metronome-mark-markup #2 #0 #1 #"44"
         \hspace
             #1
         }
