@@ -211,16 +211,8 @@ C_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_dashed_arrow
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.left-broken.text \markup {
         \null
         }
@@ -249,16 +241,8 @@ C_MetronomeMarkVoice = {
         \hspace
             #1
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
+    - \baca_dashed_arrow
     - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.right.text \markup {
         \concat
             {
