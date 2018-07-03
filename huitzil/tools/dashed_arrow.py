@@ -2,7 +2,7 @@ import abjad
 
 
 def dashed_arrow():
-    return abjad.ArrowLineSegment(
+    return baca.ArrowLineSegment(
         dash_fraction=0.25,
         dash_period=1.5,
         left_broken_text=False,

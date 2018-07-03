@@ -374,7 +374,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         for index, indicator in self.tremolo_map:
             skip = tremolo_indicator_voice[index]
             indicator = copy.copy(indicator)
-            if isinstance(indicator, abjad.ArrowLineSegment):
+            if isinstance(indicator, baca.ArrowLineSegment):
                 pass
             else:
                 assert len(indicator.indicators) == 1
