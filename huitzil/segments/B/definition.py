@@ -103,14 +103,10 @@ maker.notes = [
 
 maker.tremolo_map = [
     (0, huitzil.markup.trem_mod()),
-    (36, huitzil.markup.sub_trem_piu_stretto()),
-    (36, huitzil.dashed_arrow()),
-    (37, huitzil.markup.piu_largo()),
-    (37, huitzil.dashed_arrow()),
-    (38, huitzil.markup.piu_stretto()),
-    (38, huitzil.dashed_arrow()),
-    (39, huitzil.markup.piu_largo()),
-    (39, huitzil.dashed_arrow()),
+    (36, [huitzil.markup.sub_trem_piu_stretto()]),
+    (37, [huitzil.markup.piu_largo()]),
+    (38, [huitzil.markup.piu_stretto()]),
+    (39, [huitzil.markup.piu_largo()]),
     (40, huitzil.markup.trem_mod()),
     ]
 

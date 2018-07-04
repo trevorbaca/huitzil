@@ -154,7 +154,7 @@
         autoBeaming = ##f
         barNumberFormatter = #baca-oval-bar-numbers
         markFormatter = #format-mark-box-alphabet
-        proportionalNotationDuration = #(ly:make-moment 1 20)
+        proportionalNotationDuration = #(ly:make-moment 1 16)
         tupletFullLength = ##t
     }
 }

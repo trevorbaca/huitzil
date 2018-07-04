@@ -1,4 +1,5 @@
 #(set-default-paper-size "11x17landscape")
+#(set-global-staff-size 14)
 
 \include "/Users/trevorbaca/baca/baca/lilypond/baca.ily"
 \include "contexts.ily"

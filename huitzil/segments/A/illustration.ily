@@ -185,17 +185,16 @@ A_GlobalSkips = {
 
 A_MetronomeMarkVoice = {
     s1 * 1/2
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"44"
-        \hspace
-            #1
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"44"
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_invisible_line_segment
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/4
     s1 * 1/4
@@ -237,84 +236,69 @@ A_MetronomeMarkVoice = {
     s1 * 1
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
-        \large
-            \upright
-                accel.
-        \hspace
-            #1
-        }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
-    \startTextSpan
-    s1 * 1
-    s1 * 1
-    s1 * 1
-    \stopTextSpan
-    - \tweak Y-extent ##f
-    - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"66"
-        \hspace
-            #1
-        }
-    - \baca_invisible_line_segment
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
-    \startTextSpan
-    s1 * 1/3
-    \stopTextSpan
-    - \tweak Y-extent ##f
-    - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"44"
-        \hspace
-            #1
-        }
-    - \baca_invisible_line_segment
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
-    \startTextSpan
-    s1 * 1/3
-    s1 * 1/3
-    s1 * 1/3
-    s1 * 1/5
-    s1 * 1/5
-    s1 * 1/5
-    s1 * 1/5
-    s1 * 1
-    s1 * 1
-    \stopTextSpan
-    - \tweak Y-extent ##f
-    - \tweak bound-details.left.text \markup {
-        \large
-            \upright
-                accel.
-        \hspace
-            #1
-        }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.right.text \markup {
         \concat
             {
+                \large
+                    \upright
+                        accel.
                 \hspace
                     #0.5
-                \line
-                    {
-                        \abjad-metronome-mark-markup #2 #0 #1 #"88"
-                    }
             }
         }
-    - \tweak bound-details.left-broken.text \markup {
-        \null
+    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
+    s1 * 1
+    s1 * 1
+    s1 * 1
+    \stopTextSpan
+    - \abjad_invisible_line
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"66"
+                \hspace
+                    #0.5
+            }
         }
+    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
+    s1 * 1/3
+    \stopTextSpan
+    - \abjad_invisible_line
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"44"
+                \hspace
+                    #0.5
+            }
+        }
+    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
+    s1 * 1/3
+    s1 * 1/3
+    s1 * 1/3
+    s1 * 1/5
+    s1 * 1/5
+    s1 * 1/5
+    s1 * 1/5
+    s1 * 1
+    s1 * 1
+    \stopTextSpan
+    - \abjad_dashed_line_with_arrow
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \large
+                    \upright
+                        accel.
+                \hspace
+                    #0.5
+            }
+        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     s1 * 1
@@ -322,22 +306,33 @@ A_MetronomeMarkVoice = {
     s1 * 1
     s1 * 1
     \stopTextSpan
+    - \abjad_invisible_line
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"88"
+                \hspace
+                    #0.5
+            }
+        }
+    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
 }
 
 
 A_TremoloVoice = {
     s1 * 1/2
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
         \concat
             {
                 \upright
                     "trem. moderato"
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \abjad_invisible_line
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/4
     s1 * 1/4
@@ -370,7 +365,7 @@ A_TremoloVoice = {
     s1 * 1/4
     s1 * 1/3
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -380,34 +375,24 @@ A_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
     - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.75
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1/3
     s1 * 1/3
     s1 * 1/3
     s1 * 1/5
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
         \concat
             {
                 \upright
                     "trem. stretto"
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \abjad_invisible_line
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/5
     s1 * 1/5
@@ -415,7 +400,7 @@ A_TremoloVoice = {
     s1 * 1
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -425,21 +410,11 @@ A_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
     - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.75
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -449,21 +424,11 @@ A_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
     - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.75
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -473,35 +438,25 @@ A_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
     - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.75
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
         \concat
             {
                 \upright
                     "più stretto"
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \abjad_invisible_line
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -511,34 +466,24 @@ A_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
     - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.75
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1/3
     s1 * 1/3
     s1 * 1/3
     s1 * 1/5
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
         \concat
             {
                 \upright
                     "trem. stretto"
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \abjad_invisible_line
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/5
     s1 * 1/5
@@ -546,7 +491,7 @@ A_TremoloVoice = {
     s1 * 1
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -556,21 +501,11 @@ A_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
     - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.75
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -580,21 +515,11 @@ A_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
     - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.75
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -604,21 +529,11 @@ A_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
     - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.75
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -628,21 +543,11 @@ A_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
     - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.75
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -652,29 +557,22 @@ A_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 0.25
-    - \tweak dash-period 1.5
     - \tweak bound-details.left-broken.text ##f
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.arrow ##f
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 1.75
-    - \tweak bound-details.right.stencil-align-dir-y #center
-    - \tweak bound-details.right.text \markup {
-        \concat
-            {
-                \hspace
-                    #1.25
-                \upright
-                    "più stretto"
-            }
-        }
     \startTextSpan
     s1 * 1
     \stopTextSpan
+    - \abjad_invisible_line
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \upright
+                    "più stretto"
+                \hspace
+                    #0.5
+            }
+        }
+    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
 }
 
 
