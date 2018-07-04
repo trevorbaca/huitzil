@@ -476,137 +476,33 @@ E_GlobalSkips = {
 
 E_MetronomeMarkVoice = {
     s1 * 3/4
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"66"
-        \hspace
-            #1
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"66"
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_invisible_line_segment
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 3/4
     s1 * 3/4
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
-        \large
-            \upright
-                accel.
-        \hspace
-            #1
+        \concat
+            {
+                \large
+                    \upright
+                        accel.
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
-    \startTextSpan
-    s1 * 1/3
-    s1 * 3/4
-    s1 * 1/2
-    s1 * 1/3
-    s1 * 3/4
-    \stopTextSpan
-    - \tweak Y-extent ##f
-    - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"88"
-        \hspace
-            #1
-        }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
-    \startTextSpan
-    s1 * 1/2
-    s1 * 1/3
-    s1 * 3/4
-    s1 * 1
-    s1 * 3/4
-    \stopTextSpan
-    - \tweak Y-extent ##f
-    - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"66"
-        \hspace
-            #1
-        }
-    - \baca_invisible_line_segment
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
-    \startTextSpan
-    s1 * 1/3
-    s1 * 3/4
-    s1 * 1/2
-    s1 * 3/4
-    \stopTextSpan
-    - \tweak Y-extent ##f
-    - \tweak bound-details.left.text \markup {
-        \large
-            \upright
-                accel.
-        \hspace
-            #1
-        }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
-    \startTextSpan
-    s1 * 1/3
-    s1 * 1
-    \stopTextSpan
-    - \tweak Y-extent ##f
-    - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"88"
-        \hspace
-            #1
-        }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
-    \startTextSpan
-    s1 * 3/4
-    \stopTextSpan
-    - \tweak Y-extent ##f
-    - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"66"
-        \hspace
-            #1
-        }
-    - \baca_invisible_line_segment
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
-    \startTextSpan
-    s1 * 1/3
-    s1 * 3/4
-    s1 * 3/4
-    \stopTextSpan
-    - \tweak Y-extent ##f
-    - \tweak bound-details.left.text \markup {
-        \large
-            \upright
-                accel.
-        \hspace
-            #1
-        }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 3/4
@@ -614,17 +510,16 @@ E_MetronomeMarkVoice = {
     s1 * 1/3
     s1 * 3/4
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"88"
-        \hspace
-            #1
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"88"
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/2
     s1 * 1/3
@@ -632,163 +527,249 @@ E_MetronomeMarkVoice = {
     s1 * 1
     s1 * 3/4
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"66"
-        \hspace
-            #1
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"66"
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_invisible_line_segment
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 3/4
     s1 * 1/2
     s1 * 3/4
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
-        \large
-            \upright
-                accel.
-        \hspace
-            #1
+        \concat
+            {
+                \large
+                    \upright
+                        accel.
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"88"
-        \hspace
-            #1
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"88"
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 3/4
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"66"
-        \hspace
-            #1
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"66"
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_invisible_line_segment
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
+    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
+    s1 * 1/3
+    s1 * 3/4
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad_dashed_line_with_arrow
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \large
+                    \upright
+                        accel.
+                \hspace
+                    #0.5
+            }
         }
+    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
+    s1 * 1/3
+    s1 * 3/4
+    s1 * 1/2
+    s1 * 1/3
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad_dashed_line_with_arrow
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"88"
+                \hspace
+                    #0.5
+            }
+        }
+    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
+    s1 * 1/2
+    s1 * 1/3
+    s1 * 3/4
+    s1 * 1
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad_invisible_line
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"66"
+                \hspace
+                    #0.5
+            }
+        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 3/4
     s1 * 1/2
     s1 * 3/4
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
-        \large
-            \upright
-                accel.
-        \hspace
-            #1
+        \concat
+            {
+                \large
+                    \upright
+                        accel.
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 1
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"88"
-        \hspace
-            #1
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"88"
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
+    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad_invisible_line
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"66"
+                \hspace
+                    #0.5
+            }
         }
+    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
+    s1 * 1/3
+    s1 * 3/4
+    s1 * 1/2
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad_dashed_line_with_arrow
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \large
+                    \upright
+                        accel.
+                \hspace
+                    #0.5
+            }
+        }
+    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
+    s1 * 1/3
+    s1 * 1
+    \stopTextSpan
+    - \abjad_dashed_line_with_arrow
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"88"
+                \hspace
+                    #0.5
+            }
+        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 3/4
     s1 * 1/2
     s1 * 3/4
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"66"
-        \hspace
-            #1
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"66"
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_invisible_line_segment
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 1
     s1 * 3/4
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
-        \large
-            \upright
-                accel.
-        \hspace
-            #1
+        \concat
+            {
+                \large
+                    \upright
+                        accel.
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 3/4
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"88"
-        \hspace
-            #1
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"88"
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_dashed_arrow
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/2
     s1 * 3/4
     \stopTextSpan
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
-        \abjad-metronome-mark-markup #2 #0 #1 #"66"
-        \hspace
-            #1
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"66"
+                \hspace
+                    #0.5
+            }
         }
-    - \baca_invisible_line_segment
-    - \tweak bound-details.right.padding 1
-    - \tweak bound-details.left-broken.text \markup {
-        \null
-        }
+    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 1

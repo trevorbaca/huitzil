@@ -75,6 +75,6 @@
         \Score
         \override BarLine.transparent = ##t
         \override SpanBar.transparent = ##t
-        proportionalNotationDuration = #(ly:make-moment 1 20)
+        proportionalNotationDuration = #(ly:make-moment 1 16)
     }
 }

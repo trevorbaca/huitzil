@@ -323,16 +323,49 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         selections = maker(durations)
         tempo_indicator_voice.extend(selections)
         skips = abjad.select(tempo_indicator_voice).leaves()
-        tempo_spanner = baca.MetronomeMarkSpanner(
-            left_broken_padding=0,
-            left_broken_text=abjad.Markup.null(direction=None),
-            parenthesize=False,
-            )
-        abjad.attach(tempo_spanner, skips)
         for index, indicator in self.metronome_mark_measure_map:
             skip = tempo_indicator_voice[index]
             indicator = copy.copy(indicator)
-            tempo_spanner.attach(indicator, skip)
+            trend = None
+            if isinstance(indicator, list):
+                assert len(indicator) == 2, repr(indicator)
+                indicator, trend = indicator
+                trend = copy.copy(trend)
+            if isinstance(indicator, abjad.Fermata):
+                abjad.attach(indicator, skip)
+            elif isinstance(indicator, (baca.Accelerando, baca.Ritardando)):
+                left_text = indicator._get_markup()
+                start_text_span = abjad.StartTextSpan(
+                    left_broken_text=False,
+                    left_text=left_text,
+                    style='dashed_line_with_arrow',
+                    )
+                abjad.attach(start_text_span, skip)
+                indicator._hide = True
+                abjad.attach(indicator, skip)
+            else:
+                assert isinstance(indicator, abjad.MetronomeMark)
+                left_text = indicator._get_markup()
+                if trend:
+                    style = 'dashed_line_with_arrow'
+                else:
+                    style = 'invisible_line'
+                start_text_span = abjad.StartTextSpan(
+                    left_broken_text=False,
+                    left_text=left_text,
+                    style=style,
+                    )
+                abjad.attach(start_text_span, skip)
+                indicator._hide = True
+                abjad.attach(indicator, skip)
+                if trend:
+                    trend._hide = True
+                    abjad.attach(trend, skip)
+            if 0 < index and not isinstance(indicator, abjad.Fermata):
+                stop_text_span = abjad.StopTextSpan()
+                abjad.attach(stop_text_span, skip)
+        stop_text_span = abjad.StopTextSpan()
+        abjad.attach(stop_text_span, skips[-1])
 
     def _populate_time_signature_voice(self):
         if not self.notes:
@@ -368,20 +401,25 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             return
         if not self.tremolo_map:
             return
-        text_spanner = abjad.TextSpanner()
-        skips = abjad.select(tremolo_indicator_voice).leaves()
-        abjad.attach(text_spanner, skips)
-        for index, indicator in self.tremolo_map:
+        skips = baca.select(tremolo_indicator_voice).skips()
+        for index, markup in self.tremolo_map:
             skip = tremolo_indicator_voice[index]
-            indicator = copy.copy(indicator)
-            if isinstance(indicator, baca.ArrowLineSegment):
-                pass
+            if 0 < index:
+                stop_text_span = abjad.StopTextSpan()
+                abjad.attach(stop_text_span, skip)
+            if isinstance(markup, list):
+                markup = markup[0]
+                style = 'dashed_line_with_arrow'
             else:
-                assert len(indicator.indicators) == 1
-                markup = indicator.indicators[0]
-                assert isinstance(markup, abjad.Markup), repr(markup)
-                indicator = markup
-            text_spanner.attach(indicator, skip)
+                style = 'invisible_line'
+            start_text_span = abjad.StartTextSpan(
+                left_broken_text=False,
+                left_text=markup,
+                style=style,
+                )
+            abjad.attach(start_text_span, skip)
+        stop_text_span = abjad.StopTextSpan()
+        abjad.attach(stop_text_span, skips[-1])
 
     def _populate_underlying_dynamics_voice(self):
         if not self.notes:

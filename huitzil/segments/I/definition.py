@@ -43,24 +43,15 @@ maker.tremolo_map = [
     ]
 
 maker.metronome_mark_measure_map = [
-    (0, huitzil.metronome_marks['44']),
-    (0, baca.Accelerando()),
-    (1, huitzil.metronome_marks['88']),
-    (1, baca.Ritardando()),
-    (2, huitzil.metronome_marks['44']),
-    (2, baca.Accelerando()),
-    (3, huitzil.metronome_marks['88']),
-    (3, baca.Ritardando()),
-    (4, huitzil.metronome_marks['44']),
-    (4, baca.Accelerando()),
-    (5, huitzil.metronome_marks['88']),
-    (5, baca.Ritardando()),
-    (6, huitzil.metronome_marks['44']),
-    (6, baca.Accelerando()),
-    (7, huitzil.metronome_marks['88']),
-    (7, baca.Ritardando()),
-    (8, huitzil.metronome_marks['44']),
-    (8, baca.Accelerando()),
+    (0, [huitzil.metronome_marks['44'], baca.Accelerando()]),
+    (1, [huitzil.metronome_marks['88'], baca.Ritardando()]),
+    (2, [huitzil.metronome_marks['44'], baca.Accelerando()]),
+    (3, [huitzil.metronome_marks['88'], baca.Ritardando()]),
+    (4, [huitzil.metronome_marks['44'], baca.Accelerando()]),
+    (5, [huitzil.metronome_marks['88'], baca.Ritardando()]),
+    (6, [huitzil.metronome_marks['44'], baca.Accelerando()]),
+    (7, [huitzil.metronome_marks['88'], baca.Ritardando()]),
+    (8, [huitzil.metronome_marks['44'], baca.Accelerando()]),
     (9, huitzil.metronome_marks['88']),
     ]
 
