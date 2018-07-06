@@ -227,7 +227,6 @@ D_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     s1 * 1
@@ -243,7 +242,6 @@ D_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     \stopTextSpan
@@ -262,7 +260,6 @@ D_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/4
     s1 * 1/4
@@ -311,7 +308,6 @@ D_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     \stopTextSpan
@@ -325,7 +321,6 @@ D_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     \stopTextSpan
@@ -339,7 +334,6 @@ D_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     \stopTextSpan
@@ -353,7 +347,6 @@ D_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     \stopTextSpan
@@ -367,7 +360,6 @@ D_TremoloVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     \stopTextSpan

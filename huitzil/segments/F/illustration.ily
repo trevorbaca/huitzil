@@ -232,7 +232,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 3/4
     s1 * 3/4
@@ -247,7 +246,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     \stopTextSpan
@@ -260,7 +258,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 3/4
     s1 * 3/4
@@ -275,7 +272,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     \stopTextSpan
@@ -288,7 +284,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 3/4
     s1 * 3/4
@@ -303,7 +298,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     \stopTextSpan
@@ -316,7 +310,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 3/4
     s1 * 3/4
@@ -331,7 +324,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     \stopTextSpan
@@ -344,7 +336,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 3/4
     s1 * 3/4
@@ -359,7 +350,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     s1 * 1
@@ -376,7 +366,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     s1 * 1
@@ -391,7 +380,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     \stopTextSpan
@@ -406,7 +394,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1
     s1 * 1
@@ -421,7 +408,6 @@ F_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
 }
 

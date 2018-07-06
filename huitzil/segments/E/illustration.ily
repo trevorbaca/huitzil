@@ -485,7 +485,6 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 3/4
@@ -502,7 +501,6 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 3/4
@@ -519,7 +517,6 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/2
     s1 * 1/3
@@ -536,103 +533,6 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
-    \startTextSpan
-    s1 * 1/3
-    s1 * 3/4
-    s1 * 1/2
-    s1 * 3/4
-    \stopTextSpan
-    - \abjad_dashed_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \large
-                    \upright
-                        accel.
-                \hspace
-                    #0.5
-            }
-        }
-    - \tweak bound-details.left-broken.text ##f
-    \startTextSpan
-    s1 * 1/3
-    s1 * 1
-    \stopTextSpan
-    - \abjad_dashed_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \abjad-metronome-mark-markup #2 #0 #1 #"88"
-                \hspace
-                    #0.5
-            }
-        }
-    - \tweak bound-details.left-broken.text ##f
-    \startTextSpan
-    s1 * 3/4
-    \stopTextSpan
-    - \abjad_invisible_line
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \abjad-metronome-mark-markup #2 #0 #1 #"66"
-                \hspace
-                    #0.5
-            }
-        }
-    - \tweak bound-details.left-broken.text ##f
-    \startTextSpan
-    s1 * 1/3
-    s1 * 3/4
-    s1 * 3/4
-    \stopTextSpan
-    - \abjad_dashed_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \large
-                    \upright
-                        accel.
-                \hspace
-                    #0.5
-            }
-        }
-    - \tweak bound-details.left-broken.text ##f
-    \startTextSpan
-    s1 * 1/3
-    s1 * 3/4
-    s1 * 1/2
-    s1 * 1/3
-    s1 * 3/4
-    \stopTextSpan
-    - \abjad_dashed_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \abjad-metronome-mark-markup #2 #0 #1 #"88"
-                \hspace
-                    #0.5
-            }
-        }
-    - \tweak bound-details.left-broken.text ##f
-    \startTextSpan
-    s1 * 1/2
-    s1 * 1/3
-    s1 * 3/4
-    s1 * 1
-    s1 * 3/4
-    \stopTextSpan
-    - \abjad_invisible_line
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \abjad-metronome-mark-markup #2 #0 #1 #"66"
-                \hspace
-                    #0.5
-            }
-        }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 3/4
@@ -650,7 +550,6 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 1
@@ -664,7 +563,6 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 3/4
     \stopTextSpan
@@ -677,7 +575,54 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
+    s1 * 1/3
+    s1 * 3/4
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad_dashed_line_with_arrow
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \large
+                    \upright
+                        accel.
+                \hspace
+                    #0.5
+            }
+        }
+    \startTextSpan
+    s1 * 1/3
+    s1 * 3/4
+    s1 * 1/2
+    s1 * 1/3
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad_dashed_line_with_arrow
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"88"
+                \hspace
+                    #0.5
+            }
+        }
+    \startTextSpan
+    s1 * 1/2
+    s1 * 1/3
+    s1 * 3/4
+    s1 * 1
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad_invisible_line
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"66"
+                \hspace
+                    #0.5
+            }
+        }
     \startTextSpan
     s1 * 1/3
     s1 * 3/4
@@ -695,7 +640,6 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 1
@@ -709,7 +653,48 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
+    \startTextSpan
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad_invisible_line
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"66"
+                \hspace
+                    #0.5
+            }
+        }
+    \startTextSpan
+    s1 * 1/3
+    s1 * 3/4
+    s1 * 1/2
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad_dashed_line_with_arrow
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \large
+                    \upright
+                        accel.
+                \hspace
+                    #0.5
+            }
+        }
+    \startTextSpan
+    s1 * 1/3
+    s1 * 1
+    \stopTextSpan
+    - \abjad_dashed_line_with_arrow
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"88"
+                \hspace
+                    #0.5
+            }
+        }
     \startTextSpan
     s1 * 3/4
     s1 * 1/2
@@ -724,7 +709,6 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 1
@@ -741,7 +725,6 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 3/4
@@ -755,7 +738,6 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/2
     s1 * 3/4
@@ -769,7 +751,6 @@ E_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \startTextSpan
     s1 * 1/3
     s1 * 1
