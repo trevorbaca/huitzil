@@ -336,7 +336,6 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             elif isinstance(indicator, (baca.Accelerando, baca.Ritardando)):
                 left_text = indicator._get_markup()
                 start_text_span = abjad.StartTextSpan(
-                    left_broken_text=False,
                     left_text=left_text,
                     style='dashed_line_with_arrow',
                     )
@@ -351,7 +350,6 @@ class FlightSegmentMaker(abjad.SegmentMaker):
                 else:
                     style = 'invisible_line'
                 start_text_span = abjad.StartTextSpan(
-                    left_broken_text=False,
                     left_text=left_text,
                     style=style,
                     )
@@ -413,7 +411,6 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             else:
                 style = 'invisible_line'
             start_text_span = abjad.StartTextSpan(
-                left_broken_text=False,
                 left_text=markup,
                 style=style,
                 )
