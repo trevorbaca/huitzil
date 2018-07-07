@@ -305,7 +305,7 @@ I_BowStaff = <<
 I_PitchVoice = {
     \clef "bass"
     s1 * 12
-    \bar "|."                                                            %! SCORE1
+    \bar "|."                                                                      %! SCORE1
     \override Score.BarLine.transparent = ##f
     \override Score.SpanBar.transparent = ##f
 }
