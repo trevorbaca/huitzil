@@ -113,7 +113,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         tuplets = abjad.iterate(music).components(abjad.Tuplet)
         for tuplet in tuplets:
             voice_numbers = [
-                abjad.inspect(_).get_indicator(int) for _ in tuplet]
+                abjad.inspect(_).indicator(int) for _ in tuplet]
             runs = baca.sequence(voice_numbers).group_by()
             counts = [len(_) for _ in runs]
             note_groups = baca.sequence(tuplet[:]).partition_by_counts(counts)
@@ -220,7 +220,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
             for j, inner_tuplet_note in enumerate(inner_tuplet):
                 source_note = note_list[j]
                 inner_tuplet_note.written_pitch = source_note.written_pitch
-                voice_number = abjad.inspect(source_note).get_indicator(int)
+                voice_number = abjad.inspect(source_note).indicator(int)
                 abjad.attach(voice_number, inner_tuplet_note)
             inner_tuplets.append(inner_tuplet)
         return inner_tuplets
@@ -256,7 +256,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         voice_2_registration = materials.registrations['low']
         voice_3_registration = materials.registrations['lowest']
         for note in abjad.iterate(music).components(abjad.Note):
-            voice_number = abjad.inspect(note).get_indicator(int)
+            voice_number = abjad.inspect(note).indicator(int)
             if voice_number == 1:
                 color = 'red'
                 abjad.override(note).accidental.color = color
@@ -303,7 +303,7 @@ class DreamsRhythmSpecifier(abjad.AbjadObject):
         #durations = []
         for note_list in note_lists:
             for note in note_list:
-                voice_number = abjad.inspect(note).get_indicator(int)
+                voice_number = abjad.inspect(note).indicator(int)
                 if voice_number == 1:
                     duration = abjad.Duration(1, 8)
                 elif voice_number == 2:
