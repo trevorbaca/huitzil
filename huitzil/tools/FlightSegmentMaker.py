@@ -128,7 +128,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             return
         self._score.add_final_bar_line()
         pitch_voice = self._score['PitchVoice']
-        last_leaf = abjad.inspect(pitch_voice).get_leaf(-1)
+        last_leaf = abjad.inspect(pitch_voice).leaf(-1)
         string = r'\override Score.BarLine.transparent = ##f'
         command = abjad.LilyPondLiteral(string, 'after')
         abjad.attach(command, last_leaf)
@@ -178,7 +178,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         bow_location_voice = self._score['StringContactPointVoice']
         durations = []
         for logical_tie in abjad.iterate(bow_location_voice).logical_ties():
-            duration = abjad.inspect(logical_tie).get_duration()
+            duration = abjad.inspect(logical_tie).duration()
             durations.append(duration)
         return durations
 
@@ -189,7 +189,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         if indication in ('-', '>'):
             indication = abjad.Articulation(indication)
             first_component = leaves[0]
-            first_leaf = abjad.inspect(first_component).get_leaf(0)
+            first_leaf = abjad.inspect(first_component).leaf(0)
             abjad.attach(indication, first_leaf)
         elif indication is None:
             pass
@@ -197,7 +197,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             markup = abjad.Markup(indication, direction=abjad.Down)
             markup = markup.dynamic()
             first_component = leaves[0]
-            first_leaf = abjad.inspect(first_component).get_leaf(0)
+            first_leaf = abjad.inspect(first_component).leaf(0)
             abjad.attach(markup, first_leaf)
         else:
             raise ValueError(f'unrecognized indication: {indication!r}.')
@@ -262,7 +262,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             return
         if not self.pitches:
             bow_location_voice = self._score['StringContactPointVoice']
-            total_duration = abjad.inspect(bow_location_voice).get_duration()
+            total_duration = abjad.inspect(bow_location_voice).duration()
             skip = abjad.Skip(1)
             multiplier = abjad.Multiplier(total_duration)
             abjad.attach(multiplier, skip)
@@ -305,7 +305,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
                 multiplier = abjad.Multiplier(duration)
                 abjad.attach(multiplier, note)
             pitch_voice.extend(notes)
-        leaf = abjad.inspect(pitch_voice).get_leaf(0)
+        leaf = abjad.inspect(pitch_voice).leaf(0)
         clef = abjad.Clef('bass')
         if (isinstance(leaf, abjad.Note) and
             abjad.NamedPitch('C4') < leaf.written_pitch):

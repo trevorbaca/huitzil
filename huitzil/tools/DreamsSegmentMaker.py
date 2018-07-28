@@ -91,13 +91,13 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             for component in measure:
                 for note in component:
                     assert isinstance(note, abjad.Note), repr(note)
-                    voice_number = abjad.inspect(note).get_indicator(int)
+                    voice_number = abjad.inspect(note).indicator(int)
                     voice_numbers.append(voice_number)
             if len(set(voice_numbers)) == 1:
                 continue
             for component in measure:
                 for note in component:
-                    voice_number = abjad.inspect(note).get_indicator(int)
+                    voice_number = abjad.inspect(note).indicator(int)
                     if voice_number == 1:
                         abjad.override(note).stem.direction = abjad.Up
                         abjad.override(note).beam.positions = up_beam_positions
@@ -199,7 +199,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             prototype = (abjad.Note, abjad.Chord)
         for note in abjad.iterate(self._score).timeline(prototype):
             if note in compound_scope:
-                logical_tie = abjad.inspect(note).get_logical_tie()
+                logical_tie = abjad.inspect(note).logical_tie()
                 if logical_tie.head is note:
                     logical_ties.append(logical_tie)
         start_offset = min(_.start_offset for _ in timespans)
@@ -214,7 +214,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             lilypond_file.header_block.composer = None
 
     def _configure_score(self):
-        leaf = abjad.inspect(self._score['MusicVoice']).get_leaf(0)
+        leaf = abjad.inspect(self._score['MusicVoice']).leaf(0)
         abjad.attach(abjad.Clef('bass'), leaf)
 
     def _get_offsets(self, start_stage, stop_stage):
@@ -223,12 +223,12 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         start_measure_index, stop_measure_index = result
         start_measure = context[start_measure_index]
         assert isinstance(start_measure, abjad.Measure), start_measure
-        start_offset = abjad.inspect(start_measure).get_timespan().start_offset
+        start_offset = abjad.inspect(start_measure).timespan().start_offset
         result = self._stage_number_to_measure_indices(stop_stage)
         start_measure_index, stop_measure_index = result
         stop_measure = context[stop_measure_index]
         assert isinstance(stop_measure, abjad.Measure), stop_measure
-        stop_offset = abjad.inspect(stop_measure).get_timespan().stop_offset
+        stop_offset = abjad.inspect(stop_measure).timespan().stop_offset
         return start_offset, stop_offset
 
     def _get_rhythm_specifier(self, voice_name, stage):
@@ -266,7 +266,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         current_leaf = first_note
         while current_leaf is not last_note:
             leaves.append(current_leaf)
-            current_leaf = abjad.inspect(current_leaf).get_leaf(1)
+            current_leaf = abjad.inspect(current_leaf).leaf(1)
         leaves.append(last_note)
         return leaves
 
@@ -294,10 +294,10 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
 
     def _partition_music_into_measures(self):
         context = self._score['GlobalSkips']
-        measure_durations = [abjad.inspect(_).get_duration() for _ in context]
+        measure_durations = [abjad.inspect(_).duration() for _ in context]
         music_voice = self._score['MusicVoice']
         component_durations = [
-            abjad.inspect(_).get_duration() for _ in music_voice]
+            abjad.inspect(_).duration() for _ in music_voice]
         measure_parts = baca.sequence(component_durations)
         measure_parts = measure_parts.partition_by_weights(measure_durations)
         measure_counts = [len(_) for _ in measure_parts]
@@ -312,7 +312,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         current_duration = abjad.Duration(0)
         ideal_measure_duration = abjad.Duration(4, 4)
         for component in music_voice:
-            component_duration = abjad.inspect(component).get_duration()
+            component_duration = abjad.inspect(component).duration()
             candidate_duration = current_duration + component_duration
             if ideal_measure_duration < candidate_duration:
                 if 0 < current_duration:
@@ -327,7 +327,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         context.extend(measures)
         for measure in abjad.iterate(context).components(abjad.Measure):
             agent = abjad.inspect(measure)
-            time_signature = agent.get_indicator(abjad.TimeSignature)
+            time_signature = agent.indicator(abjad.TimeSignature)
             if time_signature.denominator < 4:
                 fraction = abjad.NonreducedFraction(
                     time_signature.pair)
