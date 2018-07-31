@@ -487,7 +487,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         self._add_container_identifiers()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
-        if not abjad.inspect(score).is_well_formed():
+        if not abjad.inspect(score).is_wellformed():
             for container in abjad.iterate(score).components(abjad.Container):
                 if len(container) == 0:
                     print(container)
