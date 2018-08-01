@@ -198,7 +198,6 @@ C_MetronomeMarkVoice = {
     s1 * 1/5
     s1 * 1
     s1 * 1
-    \stopTextSpan
     - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat

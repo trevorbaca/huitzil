@@ -331,6 +331,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             add_right_text_to_me = skips[penultimate_index]
         else:
             add_right_text_to_me = None
+        found_metronome_mark = False
         for index, item in self.metronome_mark_measure_map:
             skip = metronome_mark_voice[index]
             metronome_mark, trend, fermata = None, None, None
@@ -351,6 +352,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             if metronome_mark is not None or trend is not None:
                 if metronome_mark is not None:
                     left_text = metronome_mark._get_markup()
+                    found_metronome_mark = True
                 else:
                     left_text = trend._get_markup()
                 if trend is not None:
@@ -370,7 +372,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
                 if metronome_mark is not None:
                     metronome_mark._hide = True
                     abjad.attach(metronome_mark, skip)
-                if 0 < index:
+                if 0 < index and found_metronome_mark:
                     stop_text_span = abjad.StopTextSpan()
                     abjad.attach(stop_text_span, skip)
         stop_text_span = abjad.StopTextSpan()
@@ -796,7 +798,9 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         self._add_container_identifiers()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
-        if not abjad.inspect(score).is_wellformed():
+        if not abjad.inspect(score).is_wellformed(
+            check_empty_containers=False,
+            ):
             string = abjad.inspect(score).tabulate_wellformedness()
             string = '\n' + string
             raise Exception(string)
