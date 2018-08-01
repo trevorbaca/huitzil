@@ -294,6 +294,9 @@ A_MetronomeMarkVoice = {
                     #0.5
             }
         }
+    - \tweak bound-details.right.text \markup {
+        \abjad-metronome-mark-markup #2 #0 #1 #"88"
+        }
     \startTextSpan
     s1 * 1
     s1 * 1
@@ -301,16 +304,6 @@ A_MetronomeMarkVoice = {
     s1 * 1
     s1 * 1
     \stopTextSpan
-    - \abjad_invisible_line
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \abjad-metronome-mark-markup #2 #0 #1 #"88"
-                \hspace
-                    #0.5
-            }
-        }
-    \startTextSpan
 }
 
 
