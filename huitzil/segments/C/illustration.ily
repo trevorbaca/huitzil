@@ -440,20 +440,13 @@ C_TremoloVoice = {
                     #0.5
             }
         }
+    - \tweak bound-details.right.text \markup {
+        \upright
+            "più stretto"
+        }
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \abjad_invisible_line
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    "più stretto"
-                \hspace
-                    #0.5
-            }
-        }
-    \startTextSpan
 }
 
 

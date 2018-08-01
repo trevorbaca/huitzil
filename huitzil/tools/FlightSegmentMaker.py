@@ -411,7 +411,17 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         if not self.tremolo_map:
             return
         skips = baca.select(tremolo_indicator_voice).skips()
+        last_index = self.tremolo_map[-1][0]
+        last_indication = self.tremolo_map[-1][1]
+        penultimate_index = self.tremolo_map[-2][0]
+        penultimate_indication = self.tremolo_map[-2][1]
+        if last_index == len(skips) - 1:
+            has_last_indication = True
+        else:
+            has_last_indication = False
         for index, markup in self.tremolo_map:
+            if index == len(skips) - 1:
+                continue
             skip = tremolo_indicator_voice[index]
             if 0 < index:
                 stop_text_span = abjad.StopTextSpan()
@@ -421,8 +431,15 @@ class FlightSegmentMaker(abjad.SegmentMaker):
                 style = 'dashed_line_with_arrow'
             else:
                 style = 'invisible_line'
+            if has_last_indication and index == penultimate_index:
+                right_text = last_indication
+                if isinstance(right_text, list):
+                    right_text = right_text[0]
+            else:
+                right_text = None
             start_text_span = abjad.StartTextSpan(
                 left_text=markup,
+                right_text=right_text,
                 style=style,
                 )
             abjad.attach(start_text_span, skip)
