@@ -312,56 +312,67 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             clef = abjad.Clef('treble')
         abjad.attach(clef, leaf)
 
-    def _populate_tempo_indicator_voice(self):
+    def _populate_metronome_mark_voice(self):
         if not self.notes:
             return
         if not self.metronome_mark_measure_map:
             return
-        tempo_indicator_voice = self._score['MetronomeMarkVoice']
+        metronome_mark_voice = self._score['MetronomeMarkVoice']
         durations = self._get_bow_location_durations()
         maker = baca.SkipRhythmMaker()
         selections = maker(durations)
-        tempo_indicator_voice.extend(selections)
-        skips = abjad.select(tempo_indicator_voice).leaves()
-        for index, indicator in self.metronome_mark_measure_map:
-            skip = tempo_indicator_voice[index]
-            indicator = copy.copy(indicator)
-            trend = None
-            if isinstance(indicator, list):
-                assert len(indicator) == 2, repr(indicator)
-                indicator, trend = indicator
-                trend = copy.copy(trend)
-            if isinstance(indicator, abjad.Fermata):
-                abjad.attach(indicator, skip)
-            elif isinstance(indicator, (baca.Accelerando, baca.Ritardando)):
-                left_text = indicator._get_markup()
-                start_text_span = abjad.StartTextSpan(
-                    left_text=left_text,
-                    style='dashed_line_with_arrow',
-                    )
-                abjad.attach(start_text_span, skip)
-                indicator._hide = True
-                abjad.attach(indicator, skip)
+        metronome_mark_voice.extend(selections)
+        skips = abjad.select(metronome_mark_voice).leaves()
+        last_entry = self.metronome_mark_measure_map[-1]
+        last_index = last_entry[0]
+        if last_index == len(skips) - 1:
+            last_leaf_metronome_mark = last_entry[1]
+            penultimate_index = self.metronome_mark_measure_map[-2][0]
+            add_right_text_to_me = skips[penultimate_index]
+        else:
+            add_right_text_to_me = None
+        for index, item in self.metronome_mark_measure_map:
+            skip = metronome_mark_voice[index]
+            metronome_mark, trend, fermata = None, None, None
+            if isinstance(item, list):
+                metronome_mark, trend = item
+            elif isinstance(item, abjad.MetronomeMark):
+                metronome_mark = item
+            elif isinstance(item, (baca.Accelerando, baca.Ritardando)):
+                trend = item
             else:
-                assert isinstance(indicator, abjad.MetronomeMark)
-                left_text = indicator._get_markup()
-                if trend:
+                assert isinstance(item, abjad.Fermata), repr(item)
+                fermata = item
+            metronome_mark = copy.copy(metronome_mark)
+            if index == len(skips) - 1:
+                metronome_mark = None
+            if fermata is not None:
+                abjad.attach(fermata, skip)
+            if metronome_mark is not None or trend is not None:
+                if metronome_mark is not None:
+                    left_text = metronome_mark._get_markup()
+                else:
+                    left_text = trend._get_markup()
+                if trend is not None:
                     style = 'dashed_line_with_arrow'
                 else:
                     style = 'invisible_line'
+                if add_right_text_to_me is skip:
+                    right_text = last_leaf_metronome_mark._get_markup()
+                else:
+                    right_text = None
                 start_text_span = abjad.StartTextSpan(
                     left_text=left_text,
+                    right_text=right_text,
                     style=style,
                     )
                 abjad.attach(start_text_span, skip)
-                indicator._hide = True
-                abjad.attach(indicator, skip)
-                if trend:
-                    trend._hide = True
-                    abjad.attach(trend, skip)
-            if 0 < index and not isinstance(indicator, abjad.Fermata):
-                stop_text_span = abjad.StopTextSpan()
-                abjad.attach(stop_text_span, skip)
+                if metronome_mark is not None:
+                    metronome_mark._hide = True
+                    abjad.attach(metronome_mark, skip)
+                if 0 < index:
+                    stop_text_span = abjad.StopTextSpan()
+                    abjad.attach(stop_text_span, skip)
         stop_text_span = abjad.StopTextSpan()
         abjad.attach(stop_text_span, skips[-1])
 
@@ -754,10 +765,9 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         self._make_score()
         self._configure_score()
         self._make_lilypond_file()
-#        self._configure_lilypond_file()
         self._populate_bow_location_voice()
         self._populate_time_signature_voice()
-        self._populate_tempo_indicator_voice()
+        self._populate_metronome_mark_voice()
         self._populate_tremolo_indicator_voice()
         self._populate_underlying_dynamics_voice()
         self._populate_pitch_voice()

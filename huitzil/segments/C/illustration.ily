@@ -227,7 +227,7 @@ C_MetronomeMarkVoice = {
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \abjad_invisible_line
+    - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -236,17 +236,8 @@ C_MetronomeMarkVoice = {
                     #0.5
             }
         }
-    \startTextSpan
-    - \abjad_dashed_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \large
-                    \upright
-                        accel.
-                \hspace
-                    #0.5
-            }
+    - \tweak bound-details.right.text \markup {
+        \abjad-metronome-mark-markup #2 #0 #1 #"88"
         }
     \startTextSpan
     s1 * 1
@@ -255,16 +246,6 @@ C_MetronomeMarkVoice = {
     s1 * 1
     s1 * 1
     \stopTextSpan
-    - \abjad_invisible_line
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \abjad-metronome-mark-markup #2 #0 #1 #"88"
-                \hspace
-                    #0.5
-            }
-        }
-    \startTextSpan
 }
 
 

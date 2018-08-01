@@ -111,11 +111,9 @@ maker.glissando_break_indices = [
     ]
 
 maker.metronome_mark_measure_map = [
-    #(0, huitzil.metronome_marks['44']),
     (39, baca.Accelerando()),
     (42, huitzil.metronome_marks['66']),
-    (43, huitzil.metronome_marks['44']),
-    (43, baca.Accelerando()),
+    (43, [huitzil.metronome_marks['44'], baca.Accelerando()]),
     (48, huitzil.metronome_marks['88']),
     ]
 
