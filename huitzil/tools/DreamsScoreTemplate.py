@@ -35,7 +35,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
             <<
                 \context Voice = "MusicVoice"
                 {
-                    \clef "bass" %! ST3
+                    \clef "bass" %! ST_3
                     s1
                 }
             >>
