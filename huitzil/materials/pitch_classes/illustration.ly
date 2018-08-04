@@ -623,7 +623,7 @@
                 \stopGroup
                 \stopGroup
                 s8
-                \bar "|."                                                                %! SCORE1
+                \bar "|."                                                                %! SCORE_1
                 \override Score.BarLine.transparent = ##f
             }
         }
