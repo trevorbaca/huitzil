@@ -662,13 +662,13 @@ F_BowStaff = <<
         \override TextScript.staff-padding = #5
         \override TextSpanner.staff-padding = #5.75
     }
-    \F_MetronomeMarkVoice
+    \F_MetronomeMarkVoice                                                                          %! extern
     \context TremoloVoice = "TremoloVoice"
-    \F_TremoloVoice
+    \F_TremoloVoice                                                                                %! extern
     \context StringContactPointVoice = "StringContactPointVoice"
-    \F_StringContactPointVoice
+    \F_StringContactPointVoice                                                                     %! extern
     \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
-    \F_UnderlyingDynamicsVoice
+    \F_UnderlyingDynamicsVoice                                                                     %! extern
 >>
 
 
@@ -686,5 +686,5 @@ F_PitchVoice = {
 
 F_PitchStaff = {
     \context PitchVoice = "PitchVoice"
-    \F_PitchVoice
+    \F_PitchVoice                                                                                  %! extern
 }

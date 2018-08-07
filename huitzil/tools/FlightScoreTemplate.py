@@ -22,41 +22,41 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         >>> abjad.f(lilypond_file[abjad.Score])
         \context Score = "Score"
         <<
-            \context GlobalContext = "GlobalContext"
-            <<
-                \context GlobalRests = "GlobalRests"
-                {
-                }
-                \context GlobalSkips = "GlobalSkips"
-                {
-                }
-            >>
+            \context GlobalContext = "GlobalContext" %! _make_global_context
+            <<                                       %! _make_global_context
+                \context GlobalRests = "GlobalRests" %! _make_global_context
+                {                                    %! _make_global_context
+                } %! _make_global_context
+                \context GlobalSkips = "GlobalSkips" %! _make_global_context
+                {                                    %! _make_global_context
+                } %! _make_global_context
+            >> %! _make_global_context
             \context PianoStaff = "PianoStaff"
             <<
                 \context BowStaff = "BowStaff"
                 <<
                     \context MetronomeMarkVoice = "MetronomeMarkVoice"
                     {
-                        s1
+                        s1 %! ScoreTemplate.__illustrate__
                     }
                     \context TremoloVoice = "TremoloVoice"
                     {
-                        s1
+                        s1 %! ScoreTemplate.__illustrate__
                     }
                     \context StringContactPointVoice = "StringContactPointVoice"
                     {
-                        s1
+                        s1 %! ScoreTemplate.__illustrate__
                     }
                     \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
                     {
-                        s1
+                        s1 %! ScoreTemplate.__illustrate__
                     }
                 >>
                 \context PitchStaff = "PitchStaff"
                 {
                     \context PitchVoice = "PitchVoice"
                     {
-                        s1
+                        s1 %! ScoreTemplate.__illustrate__
                     }
                 }
             >>

@@ -1347,13 +1347,13 @@ E_BowStaff = <<
         \override TextScript.staff-padding = #5
         \override TextSpanner.staff-padding = #5.75
     }
-    \E_MetronomeMarkVoice
+    \E_MetronomeMarkVoice                                                                          %! extern
     \context TremoloVoice = "TremoloVoice"
-    \E_TremoloVoice
+    \E_TremoloVoice                                                                                %! extern
     \context StringContactPointVoice = "StringContactPointVoice"
-    \E_StringContactPointVoice
+    \E_StringContactPointVoice                                                                     %! extern
     \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
-    \E_UnderlyingDynamicsVoice
+    \E_UnderlyingDynamicsVoice                                                                     %! extern
 >>
 
 
@@ -1365,5 +1365,5 @@ E_PitchVoice = {
 
 E_PitchStaff = {
     \context PitchVoice = "PitchVoice"
-    \E_PitchVoice
+    \E_PitchVoice                                                                                  %! extern
 }

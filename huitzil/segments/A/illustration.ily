@@ -1101,13 +1101,13 @@ A_UnderlyingDynamicsVoice = {
 
 A_BowStaff = <<
     \context MetronomeMarkVoice = "MetronomeMarkVoice"
-    \A_MetronomeMarkVoice
+    \A_MetronomeMarkVoice                                                                          %! extern
     \context TremoloVoice = "TremoloVoice"
-    \A_TremoloVoice
+    \A_TremoloVoice                                                                                %! extern
     \context StringContactPointVoice = "StringContactPointVoice"
-    \A_StringContactPointVoice
+    \A_StringContactPointVoice                                                                     %! extern
     \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
-    \A_UnderlyingDynamicsVoice
+    \A_UnderlyingDynamicsVoice                                                                     %! extern
 >>
 
 
@@ -1119,5 +1119,5 @@ A_PitchVoice = {
 
 A_PitchStaff = {
     \context PitchVoice = "PitchVoice"
-    \A_PitchVoice
+    \A_PitchVoice                                                                                  %! extern
 }

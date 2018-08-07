@@ -1101,13 +1101,13 @@ G_UnderlyingDynamicsVoice = {
 
 G_BowStaff = <<
     \context MetronomeMarkVoice = "MetronomeMarkVoice"
-    \G_MetronomeMarkVoice
+    \G_MetronomeMarkVoice                                                                          %! extern
     \context TremoloVoice = "TremoloVoice"
-    \G_TremoloVoice
+    \G_TremoloVoice                                                                                %! extern
     \context StringContactPointVoice = "StringContactPointVoice"
-    \G_StringContactPointVoice
+    \G_StringContactPointVoice                                                                     %! extern
     \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
-    \G_UnderlyingDynamicsVoice
+    \G_UnderlyingDynamicsVoice                                                                     %! extern
 >>
 
 
@@ -1119,5 +1119,5 @@ G_PitchVoice = {
 
 G_PitchStaff = {
     \context PitchVoice = "PitchVoice"
-    \G_PitchVoice
+    \G_PitchVoice                                                                                  %! extern
 }

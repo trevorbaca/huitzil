@@ -292,20 +292,20 @@ I_BowStaff = <<
         \override TextScript.staff-padding = #5
         \override TextSpanner.staff-padding = #5.75
     }
-    \I_MetronomeMarkVoice
+    \I_MetronomeMarkVoice                                                                          %! extern
     \context TremoloVoice = "TremoloVoice"
-    \I_TremoloVoice
+    \I_TremoloVoice                                                                                %! extern
     \context StringContactPointVoice = "StringContactPointVoice"
-    \I_StringContactPointVoice
+    \I_StringContactPointVoice                                                                     %! extern
     \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
-    \I_UnderlyingDynamicsVoice
+    \I_UnderlyingDynamicsVoice                                                                     %! extern
 >>
 
 
 I_PitchVoice = {
     \clef "bass"
     s1 * 12
-    \bar "|."                                                                      %! SCORE_1
+    \bar "|."                                                                                      %! SCORE_1
     \override Score.BarLine.transparent = ##f
     \override Score.SpanBar.transparent = ##f
 }
@@ -313,5 +313,5 @@ I_PitchVoice = {
 
 I_PitchStaff = {
     \context PitchVoice = "PitchVoice"
-    \I_PitchVoice
+    \I_PitchVoice                                                                                  %! extern
 }
