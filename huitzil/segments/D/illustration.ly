@@ -10,13 +10,13 @@
 \score {
     \context Score = "Score"
     <<
-        \context GlobalContext = "GlobalContext"
-        <<
-            \context GlobalRests = "GlobalRests"
-            \D_GlobalRests
-            \context GlobalSkips = "GlobalSkips"
-            \D_GlobalSkips
-        >>
+        \context GlobalContext = "GlobalContext"                                                   %! _make_global_context
+        <<                                                                                         %! _make_global_context
+            \context GlobalRests = "GlobalRests"                                                   %! _make_global_context
+            \D_GlobalRests                                                                         %! extern
+            \context GlobalSkips = "GlobalSkips"                                                   %! _make_global_context
+            \D_GlobalSkips                                                                         %! extern
+        >>                                                                                         %! _make_global_context
         \context PianoStaff = "PianoStaff"
         <<
             \context BowStaff = "BowStaff"
@@ -24,9 +24,9 @@
             {
                 \override StaffSymbol.line-count = #7
             }
-            \D_BowStaff
+            \D_BowStaff                                                                            %! extern
             \context PitchStaff = "PitchStaff"
-            \D_PitchStaff
+            \D_PitchStaff                                                                          %! extern
         >>
     >>
 }

@@ -2436,5 +2436,5 @@ MusicVoice = {
 
 Staff = <<
     \context Voice = "MusicVoice"
-    \MusicVoice
+    \MusicVoice                                                                                    %! extern
 >>

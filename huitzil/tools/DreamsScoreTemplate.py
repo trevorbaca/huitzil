@@ -22,21 +22,21 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         >>> abjad.f(lilypond_file[abjad.Score])
         \context Score = "Score"
         <<
-            \context GlobalContext = "GlobalContext"
-            <<
-                \context GlobalRests = "GlobalRests"
-                {
-                }
-                \context GlobalSkips = "GlobalSkips"
-                {
-                }
-            >>
+            \context GlobalContext = "GlobalContext" %! _make_global_context
+            <<                                       %! _make_global_context
+                \context GlobalRests = "GlobalRests" %! _make_global_context
+                {                                    %! _make_global_context
+                } %! _make_global_context
+                \context GlobalSkips = "GlobalSkips" %! _make_global_context
+                {                                    %! _make_global_context
+                } %! _make_global_context
+            >> %! _make_global_context
             \context Staff = "Staff"
             <<
                 \context Voice = "MusicVoice"
                 {
-                    \clef "bass" %! ScoreTemplate(3)
-                    s1
+                    \clef "bass" %! attach_defaults
+                    s1 %! ScoreTemplate.__illustrate__
                 }
             >>
         >>

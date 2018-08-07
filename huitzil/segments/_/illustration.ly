@@ -15,14 +15,14 @@
 \score {
     \context Score = "Score"
     <<
-        \context GlobalContext = "GlobalContext"
-        <<
-            \context GlobalRests = "GlobalRests"
-            \GlobalRests
-            \context GlobalSkips = "GlobalSkips"
-            \GlobalSkips
-        >>
+        \context GlobalContext = "GlobalContext"                                                   %! _make_global_context
+        <<                                                                                         %! _make_global_context
+            \context GlobalRests = "GlobalRests"                                                   %! _make_global_context
+            \GlobalRests                                                                           %! extern
+            \context GlobalSkips = "GlobalSkips"                                                   %! _make_global_context
+            \GlobalSkips                                                                           %! extern
+        >>                                                                                         %! _make_global_context
         \context Staff = "Staff"
-        \Staff
+        \Staff                                                                                     %! extern
     >>
 }
