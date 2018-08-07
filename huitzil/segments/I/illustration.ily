@@ -286,18 +286,18 @@ I_UnderlyingDynamicsVoice = {
 
 
 I_BowStaff = <<
-    \context MetronomeMarkVoice = "MetronomeMarkVoice"
-    \with
-    {
-        \override TextScript.staff-padding = #5
-        \override TextSpanner.staff-padding = #5.75
-    }
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"                                             %! ScoreTemplate
+    \with                                                                                          %! ScoreTemplate
+    {                                                                                              %! ScoreTemplate
+        \override TextScript.staff-padding = #5                                                    %! ScoreTemplate
+        \override TextSpanner.staff-padding = #5.75                                                %! ScoreTemplate
+    }                                                                                              %! ScoreTemplate
     \I_MetronomeMarkVoice                                                                          %! extern
-    \context TremoloVoice = "TremoloVoice"
+    \context TremoloVoice = "TremoloVoice"                                                         %! ScoreTemplate
     \I_TremoloVoice                                                                                %! extern
-    \context StringContactPointVoice = "StringContactPointVoice"
+    \context StringContactPointVoice = "StringContactPointVoice"                                   %! ScoreTemplate
     \I_StringContactPointVoice                                                                     %! extern
-    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"                                   %! ScoreTemplate
     \I_UnderlyingDynamicsVoice                                                                     %! extern
 >>
 
@@ -312,6 +312,6 @@ I_PitchVoice = {
 
 
 I_PitchStaff = {
-    \context PitchVoice = "PitchVoice"
+    \context PitchVoice = "PitchVoice"                                                             %! ScoreTemplate
     \I_PitchVoice                                                                                  %! extern
 }

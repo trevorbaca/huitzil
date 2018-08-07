@@ -1100,13 +1100,13 @@ A_UnderlyingDynamicsVoice = {
 
 
 A_BowStaff = <<
-    \context MetronomeMarkVoice = "MetronomeMarkVoice"
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"                                             %! ScoreTemplate
     \A_MetronomeMarkVoice                                                                          %! extern
-    \context TremoloVoice = "TremoloVoice"
+    \context TremoloVoice = "TremoloVoice"                                                         %! ScoreTemplate
     \A_TremoloVoice                                                                                %! extern
-    \context StringContactPointVoice = "StringContactPointVoice"
+    \context StringContactPointVoice = "StringContactPointVoice"                                   %! ScoreTemplate
     \A_StringContactPointVoice                                                                     %! extern
-    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"                                   %! ScoreTemplate
     \A_UnderlyingDynamicsVoice                                                                     %! extern
 >>
 
@@ -1118,6 +1118,6 @@ A_PitchVoice = {
 
 
 A_PitchStaff = {
-    \context PitchVoice = "PitchVoice"
+    \context PitchVoice = "PitchVoice"                                                             %! ScoreTemplate
     \A_PitchVoice                                                                                  %! extern
 }

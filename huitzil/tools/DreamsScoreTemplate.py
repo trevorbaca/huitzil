@@ -19,27 +19,27 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         ...     )
         >>> abjad.show(lilypond_file) # doctest: +SKIP
 
-        >>> abjad.f(lilypond_file[abjad.Score])
-        \context Score = "Score"
-        <<
-            \context GlobalContext = "GlobalContext" %! _make_global_context
-            <<                                       %! _make_global_context
-                \context GlobalRests = "GlobalRests" %! _make_global_context
-                {                                    %! _make_global_context
-                } %! _make_global_context
-                \context GlobalSkips = "GlobalSkips" %! _make_global_context
-                {                                    %! _make_global_context
-                } %! _make_global_context
-            >> %! _make_global_context
-            \context Staff = "Staff"
-            <<
-                \context Voice = "MusicVoice"
-                {
-                    \clef "bass" %! attach_defaults
-                    s1 %! ScoreTemplate.__illustrate__
-                }
-            >>
-        >>
+        >>> abjad.f(lilypond_file[abjad.Score], strict=89)
+        \context Score = "Score"                                                                 %! ScoreTemplate
+        <<                                                                                       %! ScoreTemplate
+            \context GlobalContext = "GlobalContext"                                             %! _make_global_context
+            <<                                                                                   %! _make_global_context
+                \context GlobalRests = "GlobalRests"                                             %! _make_global_context
+                {                                                                                %! _make_global_context
+                }                                                                                %! _make_global_context
+                \context GlobalSkips = "GlobalSkips"                                             %! _make_global_context
+                {                                                                                %! _make_global_context
+                }                                                                                %! _make_global_context
+            >>                                                                                   %! _make_global_context
+            \context Staff = "Staff"                                                             %! ScoreTemplate
+            <<                                                                                   %! ScoreTemplate
+                \context Voice = "MusicVoice"                                                    %! ScoreTemplate
+                {                                                                                %! ScoreTemplate
+                    \clef "bass"                                                                 %! attach_defaults
+                    s1                                                                           %! ScoreTemplate.__illustrate__
+                }                                                                                %! ScoreTemplate
+            >>                                                                                   %! ScoreTemplate
+        >>                                                                                       %! ScoreTemplate
 
     """
 
@@ -54,14 +54,16 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         Calls score template.
         """
         # GLOBAL CONTEXT
+        tag = 'ScoreTemplate'
         global_context = self._make_global_context()
 
         # CELLO
-        music_voice = abjad.Voice(name='MusicVoice')
+        music_voice = abjad.Voice(name='MusicVoice', tag=tag)
         staff = abjad.Staff(
             [music_voice],
             is_simultaneous=True,
             name='Staff',
+            tag=tag,
             )
         abjad.annotate(
             staff,
@@ -78,6 +80,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         score = abjad.Score(
             [global_context, staff],
             name='Score',
+            tag=tag,
             )
         self._assert_lilypond_identifiers(score)
         self._assert_unique_context_names(score)
