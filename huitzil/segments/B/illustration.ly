@@ -8,8 +8,8 @@
 
 
 \score {
-    \context Score = "Score"
-    <<
+    \context Score = "Score"                                                                       %! ScoreTemplate
+    <<                                                                                             %! ScoreTemplate
         \context GlobalContext = "GlobalContext"                                                   %! _make_global_context
         <<                                                                                         %! _make_global_context
             \context GlobalRests = "GlobalRests"                                                   %! _make_global_context
@@ -17,16 +17,16 @@
             \context GlobalSkips = "GlobalSkips"                                                   %! _make_global_context
             \B_GlobalSkips                                                                         %! extern
         >>                                                                                         %! _make_global_context
-        \context PianoStaff = "PianoStaff"
-        <<
-            \context BowStaff = "BowStaff"
-            \with
-            {
-                \override StaffSymbol.line-count = #7
-            }
+        \context PianoStaff = "PianoStaff"                                                         %! ScoreTemplate
+        <<                                                                                         %! ScoreTemplate
+            \context BowStaff = "BowStaff"                                                         %! ScoreTemplate
+            \with                                                                                  %! ScoreTemplate
+            {                                                                                      %! ScoreTemplate
+                \override StaffSymbol.line-count = #7                                              %! ScoreTemplate
+            }                                                                                      %! ScoreTemplate
             \B_BowStaff                                                                            %! extern
-            \context PitchStaff = "PitchStaff"
+            \context PitchStaff = "PitchStaff"                                                     %! ScoreTemplate
             \B_PitchStaff                                                                          %! extern
-        >>
-    >>
+        >>                                                                                         %! ScoreTemplate
+    >>                                                                                             %! ScoreTemplate
 }

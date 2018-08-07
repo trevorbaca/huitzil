@@ -13,8 +13,8 @@
 
 
 \score {
-    \context Score = "Score"
-    <<
+    \context Score = "Score"                                                                       %! ScoreTemplate
+    <<                                                                                             %! ScoreTemplate
         \context GlobalContext = "GlobalContext"                                                   %! _make_global_context
         <<                                                                                         %! _make_global_context
             \context GlobalRests = "GlobalRests"                                                   %! _make_global_context
@@ -22,7 +22,7 @@
             \context GlobalSkips = "GlobalSkips"                                                   %! _make_global_context
             \GlobalSkips                                                                           %! extern
         >>                                                                                         %! _make_global_context
-        \context Staff = "Staff"
+        \context Staff = "Staff"                                                                   %! ScoreTemplate
         \Staff                                                                                     %! extern
-    >>
+    >>                                                                                             %! ScoreTemplate
 }

@@ -19,48 +19,48 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         ...     )
         >>> abjad.show(lilypond_file) # doctest: +SKIP
 
-        >>> abjad.f(lilypond_file[abjad.Score])
-        \context Score = "Score"
-        <<
-            \context GlobalContext = "GlobalContext" %! _make_global_context
-            <<                                       %! _make_global_context
-                \context GlobalRests = "GlobalRests" %! _make_global_context
-                {                                    %! _make_global_context
-                } %! _make_global_context
-                \context GlobalSkips = "GlobalSkips" %! _make_global_context
-                {                                    %! _make_global_context
-                } %! _make_global_context
-            >> %! _make_global_context
-            \context PianoStaff = "PianoStaff"
-            <<
-                \context BowStaff = "BowStaff"
-                <<
-                    \context MetronomeMarkVoice = "MetronomeMarkVoice"
-                    {
-                        s1 %! ScoreTemplate.__illustrate__
-                    }
-                    \context TremoloVoice = "TremoloVoice"
-                    {
-                        s1 %! ScoreTemplate.__illustrate__
-                    }
-                    \context StringContactPointVoice = "StringContactPointVoice"
-                    {
-                        s1 %! ScoreTemplate.__illustrate__
-                    }
-                    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"
-                    {
-                        s1 %! ScoreTemplate.__illustrate__
-                    }
-                >>
-                \context PitchStaff = "PitchStaff"
-                {
-                    \context PitchVoice = "PitchVoice"
-                    {
-                        s1 %! ScoreTemplate.__illustrate__
-                    }
-                }
-            >>
-        >>
+        >>> abjad.f(lilypond_file[abjad.Score], strict=89)
+        \context Score = "Score"                                                                 %! ScoreTemplate
+        <<                                                                                       %! ScoreTemplate
+            \context GlobalContext = "GlobalContext"                                             %! _make_global_context
+            <<                                                                                   %! _make_global_context
+                \context GlobalRests = "GlobalRests"                                             %! _make_global_context
+                {                                                                                %! _make_global_context
+                }                                                                                %! _make_global_context
+                \context GlobalSkips = "GlobalSkips"                                             %! _make_global_context
+                {                                                                                %! _make_global_context
+                }                                                                                %! _make_global_context
+            >>                                                                                   %! _make_global_context
+            \context PianoStaff = "PianoStaff"                                                   %! ScoreTemplate
+            <<                                                                                   %! ScoreTemplate
+                \context BowStaff = "BowStaff"                                                   %! ScoreTemplate
+                <<                                                                               %! ScoreTemplate
+                    \context MetronomeMarkVoice = "MetronomeMarkVoice"                           %! ScoreTemplate
+                    {                                                                            %! ScoreTemplate
+                        s1                                                                       %! ScoreTemplate.__illustrate__
+                    }                                                                            %! ScoreTemplate
+                    \context TremoloVoice = "TremoloVoice"                                       %! ScoreTemplate
+                    {                                                                            %! ScoreTemplate
+                        s1                                                                       %! ScoreTemplate.__illustrate__
+                    }                                                                            %! ScoreTemplate
+                    \context StringContactPointVoice = "StringContactPointVoice"                 %! ScoreTemplate
+                    {                                                                            %! ScoreTemplate
+                        s1                                                                       %! ScoreTemplate.__illustrate__
+                    }                                                                            %! ScoreTemplate
+                    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"                 %! ScoreTemplate
+                    {                                                                            %! ScoreTemplate
+                        s1                                                                       %! ScoreTemplate.__illustrate__
+                    }                                                                            %! ScoreTemplate
+                >>                                                                               %! ScoreTemplate
+                \context PitchStaff = "PitchStaff"                                               %! ScoreTemplate
+                {                                                                                %! ScoreTemplate
+                    \context PitchVoice = "PitchVoice"                                           %! ScoreTemplate
+                    {                                                                            %! ScoreTemplate
+                        s1                                                                       %! ScoreTemplate.__illustrate__
+                    }                                                                            %! ScoreTemplate
+                }                                                                                %! ScoreTemplate
+            >>                                                                                   %! ScoreTemplate
+        >>                                                                                       %! ScoreTemplate
 
     """
 
@@ -74,6 +74,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         """
         Calls score template.
         """
+        tag = 'ScoreTemplate'
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
@@ -82,25 +83,30 @@ class FlightScoreTemplate(baca.ScoreTemplate):
             lilypond_type='BowStaff',
             is_simultaneous=True,
             name='BowStaff',
+            tag=tag,
             )
         tempo_indicator_voice = abjad.Voice(
             lilypond_type='MetronomeMarkVoice',
             name='MetronomeMarkVoice',
+            tag=tag,
             )
         bow_staff.append(tempo_indicator_voice)
         tremolo_indicator_voice = abjad.Voice(
             lilypond_type='TremoloVoice',
             name='TremoloVoice',
+            tag=tag,
             )
         bow_staff.append(tremolo_indicator_voice)
         bow_location_voice = abjad.Voice(
             lilypond_type='StringContactPointVoice',
             name='StringContactPointVoice',
+            tag=tag,
             )
         bow_staff.append(bow_location_voice)
         underlying_dynamics_voice = abjad.Voice(
             lilypond_type='UnderlyingDynamicsVoice',
             name='UnderlyingDynamicsVoice',
+            tag=tag,
             )
         bow_staff.append(underlying_dynamics_voice)
 
@@ -108,10 +114,12 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         pitch_staff = abjad.Staff(
             lilypond_type='PitchStaff',
             name='PitchStaff',
+            tag=tag,
             )
         pitch_voice = abjad.Voice(
             lilypond_type='PitchVoice',
             name='PitchVoice',
+            tag=tag,
             )
         pitch_staff.append(pitch_voice)
 
@@ -123,10 +131,12 @@ class FlightScoreTemplate(baca.ScoreTemplate):
                 ],
             lilypond_type='PianoStaff',
             name='PianoStaff',
+            tag=tag,
             )
         score = abjad.Score(
             [global_context, staff_group],
             name='Score',
+            tag=tag,
             )
         self._assert_lilypond_identifiers(score)
         self._assert_unique_context_names(score)
