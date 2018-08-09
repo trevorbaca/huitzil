@@ -1,4 +1,4 @@
-H_GlobalRests = {
+H_GlobalRests = {                                                              %! extern
     {   % measure
         \time 1/1
         s1 * 1
@@ -85,10 +85,10 @@ H_GlobalRests = {
     {   % measure
         s1 * 1
     }   % measure
-}
+}                                                                              %! extern
 
 
-H_GlobalSkips = {
+H_GlobalSkips = {                                                              %! extern
     {   % measure
         s1 * 1
     }   % measure
@@ -174,10 +174,10 @@ H_GlobalSkips = {
     {   % measure
         s1 * 1
     }   % measure
-}
+}                                                                              %! extern
 
 
-H_MetronomeMarkVoice = {
+H_MetronomeMarkVoice = {                                                       %! extern
     s1 * 1/4
     s1 * 1/4
     s1 * 1/4
@@ -244,10 +244,10 @@ H_MetronomeMarkVoice = {
     \startTextSpan
     s1 * 1
     \stopTextSpan
-}
+}                                                                              %! extern
 
 
-H_TremoloVoice = {
+H_TremoloVoice = {                                                             %! extern
     s1 * 1/4
     - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
@@ -362,10 +362,10 @@ H_TremoloVoice = {
     \startTextSpan
     s1 * 1
     \stopTextSpan
-}
+}                                                                              %! extern
 
 
-H_StringContactPointVoice = {
+H_StringContactPointVoice = {                                                  %! extern
     c'4
     :16
     _ \markup {
@@ -694,10 +694,10 @@ H_StringContactPointVoice = {
         \dynamic
             mpz
         }
-}
+}                                                                              %! extern
 
 
-H_UnderlyingDynamicsVoice = {
+H_UnderlyingDynamicsVoice = {                                                  %! extern
     \once \override Hairpin.stencil = #constante-hairpin
     s1 * 1/4
     \f
@@ -778,10 +778,10 @@ H_UnderlyingDynamicsVoice = {
     \p
     s1 * 1
     \!
-}
+}                                                                              %! extern
 
 
-H_BowStaff = <<
+H_BowStaff = <<                                                                %! extern
     \context MetronomeMarkVoice = "MetronomeMarkVoice"                         %! ScoreTemplate
     \H_MetronomeMarkVoice                                                      %! extern
     \context TremoloVoice = "TremoloVoice"                                     %! ScoreTemplate
@@ -790,10 +790,10 @@ H_BowStaff = <<
     \H_StringContactPointVoice                                                 %! extern
     \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"               %! ScoreTemplate
     \H_UnderlyingDynamicsVoice                                                 %! extern
->>
+>>                                                                             %! extern
 
 
-H_PitchVoice = {
+H_PitchVoice = {                                                               %! extern
     \clef "bass"
     s1 * 124/15
     \parenthesize
@@ -806,10 +806,10 @@ H_PitchVoice = {
     \once \override NoteHead.style = #'do
     \clef "treble"
     c'''1 * 164/15
-}
+}                                                                              %! extern
 
 
-H_PitchStaff = {
+H_PitchStaff = {                                                               %! extern
     \context PitchVoice = "PitchVoice"                                         %! ScoreTemplate
     \H_PitchVoice                                                              %! extern
-}
+}                                                                              %! extern

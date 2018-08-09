@@ -1,4 +1,4 @@
-C_GlobalRests = {
+C_GlobalRests = {                                                              %! extern
     {   % measure
         \time 1/1
         s1 * 1
@@ -75,10 +75,10 @@ C_GlobalRests = {
     {   % measure
         s1 * 1
     }   % measure
-}
+}                                                                              %! extern
 
 
-C_GlobalSkips = {
+C_GlobalSkips = {                                                              %! extern
     {   % measure
         s1 * 1
     }   % measure
@@ -154,10 +154,10 @@ C_GlobalSkips = {
     {   % measure
         s1 * 1
     }   % measure
-}
+}                                                                              %! extern
 
 
-C_MetronomeMarkVoice = {
+C_MetronomeMarkVoice = {                                                       %! extern
     s1 * 1/2
     s1 * 1/4
     s1 * 1/4
@@ -245,10 +245,10 @@ C_MetronomeMarkVoice = {
     s1 * 1
     s1 * 1
     \stopTextSpan
-}
+}                                                                              %! extern
 
 
-C_TremoloVoice = {
+C_TremoloVoice = {                                                             %! extern
     s1 * 1/2
     - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
@@ -446,10 +446,10 @@ C_TremoloVoice = {
     \startTextSpan
     s1 * 1
     \stopTextSpan
-}
+}                                                                              %! extern
 
 
-C_StringContactPointVoice = {
+C_StringContactPointVoice = {                                                  %! extern
     a''2
     :16
     _ \markup {
@@ -826,10 +826,10 @@ C_StringContactPointVoice = {
         \dynamic
             ffz
         }
-}
+}                                                                              %! extern
 
 
-C_UnderlyingDynamicsVoice = {
+C_UnderlyingDynamicsVoice = {                                                  %! extern
     \once \override Hairpin.stencil = #constante-hairpin
     s1 * 1/2
     \mp
@@ -905,10 +905,10 @@ C_UnderlyingDynamicsVoice = {
     s1 * 1
     s1 * 1
     \f
-}
+}                                                                              %! extern
 
 
-C_BowStaff = <<
+C_BowStaff = <<                                                                %! extern
     \context MetronomeMarkVoice = "MetronomeMarkVoice"                         %! ScoreTemplate
     \C_MetronomeMarkVoice                                                      %! extern
     \context TremoloVoice = "TremoloVoice"                                     %! ScoreTemplate
@@ -917,16 +917,16 @@ C_BowStaff = <<
     \C_StringContactPointVoice                                                 %! extern
     \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"               %! ScoreTemplate
     \C_UnderlyingDynamicsVoice                                                 %! extern
->>
+>>                                                                             %! extern
 
 
-C_PitchVoice = {
+C_PitchVoice = {                                                               %! extern
     \clef "bass"
     bf,,1 * 1429/60
-}
+}                                                                              %! extern
 
 
-C_PitchStaff = {
+C_PitchStaff = {                                                               %! extern
     \context PitchVoice = "PitchVoice"                                         %! ScoreTemplate
     \C_PitchVoice                                                              %! extern
-}
+}                                                                              %! extern

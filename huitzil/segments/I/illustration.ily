@@ -1,4 +1,4 @@
-I_GlobalRests = {
+I_GlobalRests = {                                                              %! extern
     {   % measure
         \time 1/1
         s1 * 1
@@ -36,10 +36,10 @@ I_GlobalRests = {
     {   % measure
         s1 * 1
     }   % measure
-}
+}                                                                              %! extern
 
 
-I_GlobalSkips = {
+I_GlobalSkips = {                                                              %! extern
     {   % measure
         s1 * 1
     }   % measure
@@ -76,10 +76,10 @@ I_GlobalSkips = {
     {   % measure
         s1 * 1
     }   % measure
-}
+}                                                                              %! extern
 
 
-I_MetronomeMarkVoice = {
+I_MetronomeMarkVoice = {                                                       %! extern
     s1 * 1
     - \abjad_dashed_line_with_arrow
     - \tweak bound-details.left.text \markup {
@@ -202,10 +202,10 @@ I_MetronomeMarkVoice = {
     s1 * 1
     s1 * 1
     \stopTextSpan
-}
+}                                                                              %! extern
 
 
-I_TremoloVoice = {
+I_TremoloVoice = {                                                             %! extern
     s1 * 1
     s1 * 1
     s1 * 1
@@ -218,10 +218,10 @@ I_TremoloVoice = {
     s1 * 1
     s1 * 1
     s1 * 1
-}
+}                                                                              %! extern
 
 
-I_StringContactPointVoice = {
+I_StringContactPointVoice = {                                                  %! extern
     a''1
     :16
     a''1
@@ -246,10 +246,10 @@ I_StringContactPointVoice = {
     :16
     a''1
     :16
-}
+}                                                                              %! extern
 
 
-I_UnderlyingDynamicsVoice = {
+I_UnderlyingDynamicsVoice = {                                                  %! extern
     s1 * 1
     \mp
     \>
@@ -282,10 +282,10 @@ I_UnderlyingDynamicsVoice = {
     s1 * 1
     s1 * 1
     \!
-}
+}                                                                              %! extern
 
 
-I_BowStaff = <<
+I_BowStaff = <<                                                                %! extern
     \context MetronomeMarkVoice = "MetronomeMarkVoice"                         %! ScoreTemplate
     \with                                                                      %! ScoreTemplate
     {                                                                          %! ScoreTemplate
@@ -299,19 +299,19 @@ I_BowStaff = <<
     \I_StringContactPointVoice                                                 %! extern
     \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"               %! ScoreTemplate
     \I_UnderlyingDynamicsVoice                                                 %! extern
->>
+>>                                                                             %! extern
 
 
-I_PitchVoice = {
+I_PitchVoice = {                                                               %! extern
     \clef "bass"
     s1 * 12
     \bar "|."                                                                  %! SCORE_1
     \override Score.BarLine.transparent = ##f
     \override Score.SpanBar.transparent = ##f
-}
+}                                                                              %! extern
 
 
-I_PitchStaff = {
+I_PitchStaff = {                                                               %! extern
     \context PitchVoice = "PitchVoice"                                         %! ScoreTemplate
     \I_PitchVoice                                                              %! extern
-}
+}                                                                              %! extern
