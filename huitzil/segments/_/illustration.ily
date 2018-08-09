@@ -1,4 +1,4 @@
-GlobalRests = {
+GlobalRests = {                                                                %! extern
     {   % measure
         \time 7/8
         s1 * 7/8
@@ -211,10 +211,10 @@ GlobalRests = {
         \time 3/4
         s1 * 3/4
     }   % measure
-}
+}                                                                              %! extern
 
 
-GlobalSkips = {
+GlobalSkips = {                                                                %! extern
     {   % measure
         \time 7/8
         s1 * 7/8
@@ -427,10 +427,10 @@ GlobalSkips = {
         \time 3/4
         s1 * 3/4
     }   % measure
-}
+}                                                                              %! extern
 
 
-MusicVoice = {
+MusicVoice = {                                                                 %! extern
     \times 4/5 {
         \tempo 8=78
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -2431,10 +2431,10 @@ MusicVoice = {
         \once \override Stem.color = #blue
         ef,4
     }
-}
+}                                                                              %! extern
 
 
-Staff = <<
+Staff = <<                                                                     %! extern
     \context Voice = "MusicVoice"                                              %! ScoreTemplate
     \MusicVoice                                                                %! extern
->>
+>>                                                                             %! extern

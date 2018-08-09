@@ -1,4 +1,4 @@
-E_GlobalRests = {
+E_GlobalRests = {                                                              %! extern
     {   % measure
         \time 3/4
         s1 * 3/4
@@ -233,10 +233,10 @@ E_GlobalRests = {
         \time 1/1
         s1 * 1
     }   % measure
-}
+}                                                                              %! extern
 
 
-E_GlobalSkips = {
+E_GlobalSkips = {                                                              %! extern
     {   % measure
         \time 3/4
         s1 * 3/4
@@ -471,10 +471,10 @@ E_GlobalSkips = {
         \time 1/1
         s1 * 1
     }   % measure
-}
+}                                                                              %! extern
 
 
-E_MetronomeMarkVoice = {
+E_MetronomeMarkVoice = {                                                       %! extern
     s1 * 3/4
     - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
@@ -755,10 +755,10 @@ E_MetronomeMarkVoice = {
     s1 * 1/3
     s1 * 1
     \stopTextSpan
-}
+}                                                                              %! extern
 
 
-E_TremoloVoice = {
+E_TremoloVoice = {                                                             %! extern
     s1 * 3/4
     s1 * 1/3
     s1 * 3/4
@@ -818,10 +818,10 @@ E_TremoloVoice = {
     s1 * 3/4
     s1 * 1/3
     s1 * 1
-}
+}                                                                              %! extern
 
 
-E_StringContactPointVoice = {
+E_StringContactPointVoice = {                                                  %! extern
     e'''2.
     :16
     _ \markup {
@@ -1207,10 +1207,10 @@ E_StringContactPointVoice = {
         \dynamic
             fz
         }
-}
+}                                                                              %! extern
 
 
-E_UnderlyingDynamicsVoice = {
+E_UnderlyingDynamicsVoice = {                                                  %! extern
     s1 * 3/4
     \p
     \<
@@ -1337,10 +1337,10 @@ E_UnderlyingDynamicsVoice = {
     s1 * 1/3
     s1 * 1
     \mp
-}
+}                                                                              %! extern
 
 
-E_BowStaff = <<
+E_BowStaff = <<                                                                %! extern
     \context MetronomeMarkVoice = "MetronomeMarkVoice"                         %! ScoreTemplate
     \with                                                                      %! ScoreTemplate
     {                                                                          %! ScoreTemplate
@@ -1354,16 +1354,16 @@ E_BowStaff = <<
     \E_StringContactPointVoice                                                 %! extern
     \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"               %! ScoreTemplate
     \E_UnderlyingDynamicsVoice                                                 %! extern
->>
+>>                                                                             %! extern
 
 
-E_PitchVoice = {
+E_PitchVoice = {                                                               %! extern
     \clef "bass"
     a,1 * 110/3
-}
+}                                                                              %! extern
 
 
-E_PitchStaff = {
+E_PitchStaff = {                                                               %! extern
     \context PitchVoice = "PitchVoice"                                         %! ScoreTemplate
     \E_PitchVoice                                                              %! extern
-}
+}                                                                              %! extern
