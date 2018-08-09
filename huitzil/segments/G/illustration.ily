@@ -1100,14 +1100,14 @@ G_UnderlyingDynamicsVoice = {
 
 
 G_BowStaff = <<
-    \context MetronomeMarkVoice = "MetronomeMarkVoice"                                             %! ScoreTemplate
-    \G_MetronomeMarkVoice                                                                          %! extern
-    \context TremoloVoice = "TremoloVoice"                                                         %! ScoreTemplate
-    \G_TremoloVoice                                                                                %! extern
-    \context StringContactPointVoice = "StringContactPointVoice"                                   %! ScoreTemplate
-    \G_StringContactPointVoice                                                                     %! extern
-    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"                                   %! ScoreTemplate
-    \G_UnderlyingDynamicsVoice                                                                     %! extern
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"                         %! ScoreTemplate
+    \G_MetronomeMarkVoice                                                      %! extern
+    \context TremoloVoice = "TremoloVoice"                                     %! ScoreTemplate
+    \G_TremoloVoice                                                            %! extern
+    \context StringContactPointVoice = "StringContactPointVoice"               %! ScoreTemplate
+    \G_StringContactPointVoice                                                 %! extern
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"               %! ScoreTemplate
+    \G_UnderlyingDynamicsVoice                                                 %! extern
 >>
 
 
@@ -1118,6 +1118,6 @@ G_PitchVoice = {
 
 
 G_PitchStaff = {
-    \context PitchVoice = "PitchVoice"                                                             %! ScoreTemplate
-    \G_PitchVoice                                                                                  %! extern
+    \context PitchVoice = "PitchVoice"                                         %! ScoreTemplate
+    \G_PitchVoice                                                              %! extern
 }

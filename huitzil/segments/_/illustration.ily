@@ -2435,6 +2435,6 @@ MusicVoice = {
 
 
 Staff = <<
-    \context Voice = "MusicVoice"                                                                  %! ScoreTemplate
-    \MusicVoice                                                                                    %! extern
+    \context Voice = "MusicVoice"                                              %! ScoreTemplate
+    \MusicVoice                                                                %! extern
 >>

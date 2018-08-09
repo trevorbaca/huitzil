@@ -782,14 +782,14 @@ B_UnderlyingDynamicsVoice = {
 
 
 B_BowStaff = <<
-    \context MetronomeMarkVoice = "MetronomeMarkVoice"                                             %! ScoreTemplate
-    \B_MetronomeMarkVoice                                                                          %! extern
-    \context TremoloVoice = "TremoloVoice"                                                         %! ScoreTemplate
-    \B_TremoloVoice                                                                                %! extern
-    \context StringContactPointVoice = "StringContactPointVoice"                                   %! ScoreTemplate
-    \B_StringContactPointVoice                                                                     %! extern
-    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"                                   %! ScoreTemplate
-    \B_UnderlyingDynamicsVoice                                                                     %! extern
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"                         %! ScoreTemplate
+    \B_MetronomeMarkVoice                                                      %! extern
+    \context TremoloVoice = "TremoloVoice"                                     %! ScoreTemplate
+    \B_TremoloVoice                                                            %! extern
+    \context StringContactPointVoice = "StringContactPointVoice"               %! ScoreTemplate
+    \B_StringContactPointVoice                                                 %! extern
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"               %! ScoreTemplate
+    \B_UnderlyingDynamicsVoice                                                 %! extern
 >>
 
 
@@ -810,6 +810,6 @@ B_PitchVoice = {
 
 
 B_PitchStaff = {
-    \context PitchVoice = "PitchVoice"                                                             %! ScoreTemplate
-    \B_PitchVoice                                                                                  %! extern
+    \context PitchVoice = "PitchVoice"                                         %! ScoreTemplate
+    \B_PitchVoice                                                              %! extern
 }

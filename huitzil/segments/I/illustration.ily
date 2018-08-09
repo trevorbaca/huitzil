@@ -286,32 +286,32 @@ I_UnderlyingDynamicsVoice = {
 
 
 I_BowStaff = <<
-    \context MetronomeMarkVoice = "MetronomeMarkVoice"                                             %! ScoreTemplate
-    \with                                                                                          %! ScoreTemplate
-    {                                                                                              %! ScoreTemplate
-        \override TextScript.staff-padding = #5                                                    %! ScoreTemplate
-        \override TextSpanner.staff-padding = #5.75                                                %! ScoreTemplate
-    }                                                                                              %! ScoreTemplate
-    \I_MetronomeMarkVoice                                                                          %! extern
-    \context TremoloVoice = "TremoloVoice"                                                         %! ScoreTemplate
-    \I_TremoloVoice                                                                                %! extern
-    \context StringContactPointVoice = "StringContactPointVoice"                                   %! ScoreTemplate
-    \I_StringContactPointVoice                                                                     %! extern
-    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"                                   %! ScoreTemplate
-    \I_UnderlyingDynamicsVoice                                                                     %! extern
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"                         %! ScoreTemplate
+    \with                                                                      %! ScoreTemplate
+    {                                                                          %! ScoreTemplate
+        \override TextScript.staff-padding = #5                                %! ScoreTemplate
+        \override TextSpanner.staff-padding = #5.75                            %! ScoreTemplate
+    }                                                                          %! ScoreTemplate
+    \I_MetronomeMarkVoice                                                      %! extern
+    \context TremoloVoice = "TremoloVoice"                                     %! ScoreTemplate
+    \I_TremoloVoice                                                            %! extern
+    \context StringContactPointVoice = "StringContactPointVoice"               %! ScoreTemplate
+    \I_StringContactPointVoice                                                 %! extern
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"               %! ScoreTemplate
+    \I_UnderlyingDynamicsVoice                                                 %! extern
 >>
 
 
 I_PitchVoice = {
     \clef "bass"
     s1 * 12
-    \bar "|."                                                                                      %! SCORE_1
+    \bar "|."                                                                  %! SCORE_1
     \override Score.BarLine.transparent = ##f
     \override Score.SpanBar.transparent = ##f
 }
 
 
 I_PitchStaff = {
-    \context PitchVoice = "PitchVoice"                                                             %! ScoreTemplate
-    \I_PitchVoice                                                                                  %! extern
+    \context PitchVoice = "PitchVoice"                                         %! ScoreTemplate
+    \I_PitchVoice                                                              %! extern
 }
