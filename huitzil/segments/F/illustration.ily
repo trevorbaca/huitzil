@@ -656,19 +656,19 @@ F_UnderlyingDynamicsVoice = {
 
 
 F_BowStaff = <<
-    \context MetronomeMarkVoice = "MetronomeMarkVoice"                                             %! ScoreTemplate
-    \with                                                                                          %! ScoreTemplate
-    {                                                                                              %! ScoreTemplate
-        \override TextScript.staff-padding = #5                                                    %! ScoreTemplate
-        \override TextSpanner.staff-padding = #5.75                                                %! ScoreTemplate
-    }                                                                                              %! ScoreTemplate
-    \F_MetronomeMarkVoice                                                                          %! extern
-    \context TremoloVoice = "TremoloVoice"                                                         %! ScoreTemplate
-    \F_TremoloVoice                                                                                %! extern
-    \context StringContactPointVoice = "StringContactPointVoice"                                   %! ScoreTemplate
-    \F_StringContactPointVoice                                                                     %! extern
-    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"                                   %! ScoreTemplate
-    \F_UnderlyingDynamicsVoice                                                                     %! extern
+    \context MetronomeMarkVoice = "MetronomeMarkVoice"                         %! ScoreTemplate
+    \with                                                                      %! ScoreTemplate
+    {                                                                          %! ScoreTemplate
+        \override TextScript.staff-padding = #5                                %! ScoreTemplate
+        \override TextSpanner.staff-padding = #5.75                            %! ScoreTemplate
+    }                                                                          %! ScoreTemplate
+    \F_MetronomeMarkVoice                                                      %! extern
+    \context TremoloVoice = "TremoloVoice"                                     %! ScoreTemplate
+    \F_TremoloVoice                                                            %! extern
+    \context StringContactPointVoice = "StringContactPointVoice"               %! ScoreTemplate
+    \F_StringContactPointVoice                                                 %! extern
+    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"               %! ScoreTemplate
+    \F_UnderlyingDynamicsVoice                                                 %! extern
 >>
 
 
@@ -685,6 +685,6 @@ F_PitchVoice = {
 
 
 F_PitchStaff = {
-    \context PitchVoice = "PitchVoice"                                                             %! ScoreTemplate
-    \F_PitchVoice                                                                                  %! extern
+    \context PitchVoice = "PitchVoice"                                         %! ScoreTemplate
+    \F_PitchVoice                                                              %! extern
 }
