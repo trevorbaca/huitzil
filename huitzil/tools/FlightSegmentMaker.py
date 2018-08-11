@@ -356,9 +356,9 @@ class FlightSegmentMaker(abjad.SegmentMaker):
                 else:
                     left_text = trend._get_markup()
                 if trend is not None:
-                    style = 'dashed_line_with_arrow'
+                    style = 'dashed-line-with-arrow'
                 else:
-                    style = 'invisible_line'
+                    style = 'invisible-line'
                 if add_right_text_to_me is skip:
                     right_text = last_leaf_metronome_mark._get_markup()
                 else:
@@ -430,9 +430,9 @@ class FlightSegmentMaker(abjad.SegmentMaker):
                 abjad.attach(stop_text_span, skip)
             if isinstance(markup, list):
                 markup = markup[0]
-                style = 'dashed_line_with_arrow'
+                style = 'dashed-line-with-arrow'
             else:
-                style = 'invisible_line'
+                style = 'invisible-line'
             if has_last_indication and index == penultimate_index:
                 right_text = last_indication
                 if isinstance(right_text, list):

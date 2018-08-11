@@ -476,7 +476,7 @@ E_GlobalSkips = {                                                              %
 
 E_MetronomeMarkVoice = {                                                       %! extern
     s1 * 3/4
-    - \abjad_invisible_line
+    - \abjad-invisible-line
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -490,7 +490,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 3/4
     s1 * 3/4
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -508,7 +508,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1/3
     s1 * 3/4
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -524,7 +524,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1
     s1 * 3/4
     \stopTextSpan
-    - \abjad_invisible_line
+    - \abjad-invisible-line
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -539,7 +539,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1/2
     s1 * 3/4
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -554,7 +554,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1/3
     s1 * 1
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -566,7 +566,7 @@ E_MetronomeMarkVoice = {                                                       %
     \startTextSpan
     s1 * 3/4
     \stopTextSpan
-    - \abjad_invisible_line
+    - \abjad-invisible-line
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -580,7 +580,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 3/4
     s1 * 3/4
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -598,7 +598,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1/3
     s1 * 3/4
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -614,49 +614,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1
     s1 * 3/4
     \stopTextSpan
-    - \abjad_invisible_line
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \abjad-metronome-mark-markup #2 #0 #1 #"66"
-                \hspace
-                    #0.5
-            }
-        }
-    \startTextSpan
-    s1 * 1/3
-    s1 * 3/4
-    s1 * 1/2
-    s1 * 3/4
-    \stopTextSpan
-    - \abjad_dashed_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \large
-                    \upright
-                        accel.
-                \hspace
-                    #0.5
-            }
-        }
-    \startTextSpan
-    s1 * 1/3
-    s1 * 1
-    \stopTextSpan
-    - \abjad_dashed_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \abjad-metronome-mark-markup #2 #0 #1 #"88"
-                \hspace
-                    #0.5
-            }
-        }
-    \startTextSpan
-    s1 * 3/4
-    \stopTextSpan
-    - \abjad_invisible_line
+    - \abjad-invisible-line
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -671,7 +629,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1/2
     s1 * 3/4
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -686,7 +644,49 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1/3
     s1 * 1
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"88"
+                \hspace
+                    #0.5
+            }
+        }
+    \startTextSpan
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad-invisible-line
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"66"
+                \hspace
+                    #0.5
+            }
+        }
+    \startTextSpan
+    s1 * 1/3
+    s1 * 3/4
+    s1 * 1/2
+    s1 * 3/4
+    \stopTextSpan
+    - \abjad-dashed-line-with-arrow
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \large
+                    \upright
+                        accel.
+                \hspace
+                    #0.5
+            }
+        }
+    \startTextSpan
+    s1 * 1/3
+    s1 * 1
+    \stopTextSpan
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -700,7 +700,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1/2
     s1 * 3/4
     \stopTextSpan
-    - \abjad_invisible_line
+    - \abjad-invisible-line
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -714,7 +714,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1
     s1 * 3/4
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -729,7 +729,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1/3
     s1 * 3/4
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -742,7 +742,7 @@ E_MetronomeMarkVoice = {                                                       %
     s1 * 1/2
     s1 * 3/4
     \stopTextSpan
-    - \abjad_invisible_line
+    - \abjad-invisible-line
     - \tweak bound-details.left.text \markup {
         \concat
             {

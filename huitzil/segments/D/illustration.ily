@@ -215,7 +215,7 @@ D_MetronomeMarkVoice = {                                                       %
     s1 * 2/5
     s1 * 2/5
     s1 * 1
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -232,7 +232,7 @@ D_MetronomeMarkVoice = {                                                       %
     s1 * 1
     s1 * 1
     \stopTextSpan
-    - \abjad_invisible_line
+    - \abjad-invisible-line
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -249,7 +249,7 @@ D_MetronomeMarkVoice = {                                                       %
 
 D_TremoloVoice = {                                                             %! extern
     s1 * 1/4
-    - \abjad_invisible_line
+    - \abjad-invisible-line
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -297,7 +297,7 @@ D_TremoloVoice = {                                                             %
     s1 * 2/5
     s1 * 1
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -310,7 +310,7 @@ D_TremoloVoice = {                                                             %
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -323,7 +323,7 @@ D_TremoloVoice = {                                                             %
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -336,7 +336,7 @@ D_TremoloVoice = {                                                             %
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \abjad_dashed_line_with_arrow
+    - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
@@ -349,7 +349,7 @@ D_TremoloVoice = {                                                             %
     \startTextSpan
     s1 * 1
     \stopTextSpan
-    - \abjad_invisible_line
+    - \abjad-invisible-line
     - \tweak bound-details.left.text \markup {
         \concat
             {
