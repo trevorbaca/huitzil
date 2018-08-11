@@ -1,13 +1,13 @@
-\version "2.19.82"
-\language "english"
+\version "2.19.82"                                                             %! LilyPondFile
+\language "english"                                                            %! LilyPondFile
 
 #(ly:set-option 'relative-includes #t)
 
-\include "../../stylesheets/flight-stylesheet.ily"
+\include "../../stylesheets/flight-stylesheet.ily"                             %! LilyPondFile
 \include "illustration.ily"                                                    %! extern
 
 
-\score {
+\score {                                                                       %! LilyPondFile
     \context Score = "Score"                                                   %! ScoreTemplate
     <<                                                                         %! ScoreTemplate
         \context GlobalContext = "GlobalContext"                               %! _make_global_context
@@ -29,4 +29,4 @@
             \A_PitchStaff                                                      %! extern
         >>                                                                     %! ScoreTemplate
     >>                                                                         %! ScoreTemplate
-}
+}                                                                              %! LilyPondFile
