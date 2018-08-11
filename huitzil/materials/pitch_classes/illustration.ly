@@ -1,28 +1,28 @@
-\version "2.19.82"
-\language "english"
+\version "2.19.82"                                                                       %! LilyPondFile
+\language "english"                                                                      %! LilyPondFile
 
-\include "/Users/trevorbaca/baca/lilypond/baca.ily"
+\include "/Users/trevorbaca/baca/lilypond/baca.ily"                                      %! LilyPondFile
 
-#(set-global-staff-size 16)
+#(set-global-staff-size 16)                                                              %! LilyPondFile
 
-\header {
+\header {                                                                                %! LilyPondFile
     tagline = ##f
-}
+}                                                                                        %! LilyPondFile
 
-\layout {
+\layout {                                                                                %! LilyPondFile
     \accidentalStyle dodecaphonic
     indent = #0
     line-width = #287.5
     ragged-right = ##t
-}
+}                                                                                        %! LilyPondFile
 
-\paper {
+\paper {                                                                                 %! LilyPondFile
     markup-system-spacing.padding = 8
     system-system-spacing.padding = 10
     top-markup-spacing.padding = 4
-}
+}                                                                                        %! LilyPondFile
 
-\score {
+\score {                                                                                 %! LilyPondFile
     \new Score
     \with
     {
@@ -628,4 +628,4 @@
             }
         }
     >>
-}
+}                                                                                        %! LilyPondFile
