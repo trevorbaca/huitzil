@@ -469,11 +469,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
                 abjad.override(skip).hairpin.stencil = stencil
             elif string == '<!':
                 indicator = abjad.LilyPondLiteral(r'\<', 'after')
-                stencil = abjad.Scheme('flared-hairpin')
+                stencil = abjad.Scheme('abjad-flared-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             elif string == '!>':
                 indicator = abjad.LilyPondLiteral(r'\>', 'after')
-                stencil = abjad.Scheme('flared-hairpin')
+                stencil = abjad.Scheme('abjad-flared-hairpin')
                 abjad.override(skip).hairpin.stencil = stencil
             else:
                 indicator = abjad.Dynamic(string)
