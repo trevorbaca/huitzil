@@ -40,6 +40,8 @@
         \consists Mark_engraver
         \consists Metronome_mark_engraver
         \consists Script_engraver
+        % prevents LilyPond cyclic chain in pure-Y-offset callbacks warning:
+        \consists Staff_collecting_engraver
         \consists Text_engraver
         \consists Text_spanner_engraver
         \consists Time_signature_engraver
