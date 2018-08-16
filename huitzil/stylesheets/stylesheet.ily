@@ -27,7 +27,6 @@
         }
     }
     oddHeaderMarkup = \markup \null
-    page-breaking = #ly:page-turn-breaking
     print-first-page-number = ##f
     print-page-number = ##t
     ragged-bottom = ##t
