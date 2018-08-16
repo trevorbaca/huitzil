@@ -4,6 +4,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -15,18 +16,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
-        \time 1/3
-        s1 * 1/3
-    }   % measure
-    {   % measure
-        \time 3/4
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        \time 1/2
-        s1 * 1/2
-    }   % measure
-    {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -39,6 +29,20 @@ E_GlobalRests = {                                                              %
         s1 * 1/2
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
+        \time 1/3
+        s1 * 1/3
+    }   % measure
+    {   % measure
+        \time 3/4
+        s1 * 3/4
+    }   % measure
+    {   % measure
+        \time 1/2
+        s1 * 1/2
+    }   % measure
+    {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -55,6 +59,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -71,6 +76,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -83,6 +89,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -94,18 +101,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
-        \time 1/3
-        s1 * 1/3
-    }   % measure
-    {   % measure
-        \time 3/4
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        \time 1/2
-        s1 * 1/2
-    }   % measure
-    {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -118,6 +114,20 @@ E_GlobalRests = {                                                              %
         s1 * 1/2
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
+        \time 1/3
+        s1 * 1/3
+    }   % measure
+    {   % measure
+        \time 3/4
+        s1 * 3/4
+    }   % measure
+    {   % measure
+        \time 1/2
+        s1 * 1/2
+    }   % measure
+    {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -134,6 +144,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -150,6 +161,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -162,6 +174,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -178,6 +191,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -198,6 +212,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -210,6 +225,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -226,6 +242,7 @@ E_GlobalRests = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -242,6 +259,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -253,18 +271,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
-        \time 1/3
-        s1 * 1/3
-    }   % measure
-    {   % measure
-        \time 3/4
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        \time 1/2
-        s1 * 1/2
-    }   % measure
-    {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -277,6 +284,20 @@ E_GlobalSkips = {                                                              %
         s1 * 1/2
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
+        \time 1/3
+        s1 * 1/3
+    }   % measure
+    {   % measure
+        \time 3/4
+        s1 * 3/4
+    }   % measure
+    {   % measure
+        \time 1/2
+        s1 * 1/2
+    }   % measure
+    {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -293,6 +314,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -309,6 +331,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -321,6 +344,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -332,18 +356,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
-        \time 1/3
-        s1 * 1/3
-    }   % measure
-    {   % measure
-        \time 3/4
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        \time 1/2
-        s1 * 1/2
-    }   % measure
-    {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -356,6 +369,20 @@ E_GlobalSkips = {                                                              %
         s1 * 1/2
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
+        \time 1/3
+        s1 * 1/3
+    }   % measure
+    {   % measure
+        \time 3/4
+        s1 * 3/4
+    }   % measure
+    {   % measure
+        \time 1/2
+        s1 * 1/2
+    }   % measure
+    {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -372,6 +399,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -388,6 +416,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -400,6 +429,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -416,6 +446,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -436,6 +467,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -448,6 +480,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
@@ -464,6 +497,7 @@ E_GlobalSkips = {                                                              %
         s1 * 3/4
     }   % measure
     {   % measure
+        #(ly:expect-warning "strange time signature found")
         \time 1/3
         s1 * 1/3
     }   % measure
