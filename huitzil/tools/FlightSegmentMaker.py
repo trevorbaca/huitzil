@@ -398,9 +398,17 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         maker = abjad.MeasureMaker()
         measures = maker(measure_durations)
         context.extend(measures)
-        measures = maker(measure_durations)
+        rests = []
+        for measure_duration in measure_durations:
+            rest = abjad.MultimeasureRest(
+                abjad.Duration(1),
+                tag='_make_global_rests',
+                )
+            multiplier = abjad.Multiplier(measure_duration)
+            abjad.attach(multiplier, rest, tag=None)
+            rests.append(rest)
         context = self._score['GlobalRests']
-        context.extend(measures)
+        context.extend(rests)
 
     def _populate_tremolo_indicator_voice(self):
         tremolo_indicator_voice = self._score['TremoloVoice']

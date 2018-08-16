@@ -1,116 +1,42 @@
 F_GlobalRests = {                                                              %! extern
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        \time 3/4
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        \time 3/4
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        \time 3/4
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        \time 3/4
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        \time 3/4
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
 }                                                                              %! extern
 
 
 F_GlobalSkips = {                                                              %! extern
     {   % measure
+        \time 1/1
         s1 * 1
     }   % measure
     {   % measure
