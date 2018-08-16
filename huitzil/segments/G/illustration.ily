@@ -1,106 +1,34 @@
 G_GlobalRests = {                                                              %! extern
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        #(ly:expect-warning "strange time signature found")
-        \time 13/12
-        s1 * 13/12
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        #(ly:expect-warning "strange time signature found")
-        \time 7/6
-        s1 * 7/6
-    }   % measure
-    {   % measure
-        #(ly:expect-warning "strange time signature found")
-        \time 53/30
-        s1 * 53/30
-    }   % measure
-    {   % measure
-        #(ly:expect-warning "strange time signature found")
-        \time 23/12
-        s1 * 23/12
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        \time 3/4
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        #(ly:expect-warning "strange time signature found")
-        \time 2/3
-        s1 * 2/3
-    }   % measure
-    {   % measure
-        #(ly:expect-warning "strange time signature found")
-        \time 22/15
-        s1 * 22/15
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        \time 2/1
-        s1 * 2
-    }   % measure
-    {   % measure
-        #(ly:expect-warning "strange time signature found")
-        \time 1/3
-        s1 * 1/3
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        #(ly:expect-warning "strange time signature found")
-        \time 4/5
-        s1 * 4/5
-    }   % measure
-    {   % measure
-        \time 2/1
-        s1 * 2
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 13/12                                                                 %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 7/6                                                                   %! _make_global_rests
+    R1 * 53/30                                                                 %! _make_global_rests
+    R1 * 23/12                                                                 %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 2/3                                                                   %! _make_global_rests
+    R1 * 22/15                                                                 %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 2                                                                     %! _make_global_rests
+    R1 * 1/3                                                                   %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 4/5                                                                   %! _make_global_rests
+    R1 * 2                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
 }                                                                              %! extern
 
 
 G_GlobalSkips = {                                                              %! extern
     {   % measure
+        \time 1/1
         s1 * 1
     }   % measure
     {   % measure

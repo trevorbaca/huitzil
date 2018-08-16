@@ -1,46 +1,22 @@
 I_GlobalRests = {                                                              %! extern
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests
 }                                                                              %! extern
 
 
 I_GlobalSkips = {                                                              %! extern
     {   % measure
+        \time 1/1
         s1 * 1
     }   % measure
     {   % measure
