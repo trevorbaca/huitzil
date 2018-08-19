@@ -149,7 +149,6 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             result = self._stage_number_to_measure_indices(stage_number)
             start_measure_index, stop_measure_index = result
             start_measure = context[start_measure_index]
-            assert isinstance(start_measure, abjad.Measure), start_measure
             start_skip = start_measure[0]
             assert isinstance(start_skip, abjad.Skip), start_skip
             directive = abjad.new(directive)
@@ -222,12 +221,10 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         result = self._stage_number_to_measure_indices(start_stage)
         start_measure_index, stop_measure_index = result
         start_measure = context[start_measure_index]
-        assert isinstance(start_measure, abjad.Measure), start_measure
         start_offset = abjad.inspect(start_measure).timespan().start_offset
         result = self._stage_number_to_measure_indices(stop_stage)
         start_measure_index, stop_measure_index = result
         stop_measure = context[stop_measure_index]
-        assert isinstance(stop_measure, abjad.Measure), stop_measure
         stop_offset = abjad.inspect(stop_measure).timespan().stop_offset
         return start_offset, stop_offset
 
@@ -325,7 +322,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         measures = maker(measure_durations)
         context = self._score['GlobalSkips']
         context.extend(measures)
-        for measure in abjad.iterate(context).components(abjad.Measure):
+        for measure in context[:]:
             agent = abjad.inspect(measure)
             time_signature = agent.indicator(abjad.TimeSignature)
             if time_signature.denominator < 4:
