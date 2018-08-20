@@ -26,100 +26,106 @@ H_GlobalRests = {                                                              %
 
 
 H_GlobalSkips = {                                                              %! extern
-    {   % measure
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 4/3
         s1 * 4/3
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 8/5
         s1 * 8/5
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 4/3
         s1 * 4/3
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 8/5
         s1 * 8/5
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 4/3
         s1 * 4/3
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 8/5
         s1 * 8/5
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 4/3
         s1 * 4/3
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 8/5
         s1 * 8/5
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
+    }
 }                                                                              %! extern
 
 

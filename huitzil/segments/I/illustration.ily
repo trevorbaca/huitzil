@@ -15,43 +15,54 @@ I_GlobalRests = {                                                              %
 
 
 I_GlobalSkips = {                                                              %! extern
-    {   % measure
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
+    }
 }                                                                              %! extern
 
 

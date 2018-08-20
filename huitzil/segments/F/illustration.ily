@@ -35,113 +35,134 @@ F_GlobalRests = {                                                              %
 
 
 F_GlobalSkips = {                                                              %! extern
-    {   % measure
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         \time 3/4
         s1 * 3/4
-    }   % measure
-    {   % measure
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         \time 3/4
         s1 * 3/4
-    }   % measure
-    {   % measure
-        s1 * 3/4
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         \time 3/4
         s1 * 3/4
-    }   % measure
-    {   % measure
-        s1 * 3/4
-    }   % measure
-    {   % measure
-        \time 1/1
-        s1 * 1
-    }   % measure
-    {   % measure
-        s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         \time 3/4
         s1 * 3/4
-    }   % measure
-    {   % measure
-        s1 * 3/4
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         \time 3/4
         s1 * 3/4
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 3/4
         s1 * 3/4
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 3/4
+        s1 * 3/4
+    }
+    {
+        \time 3/4
+        s1 * 3/4
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 3/4
+        s1 * 3/4
+    }
+    {
+        \time 3/4
+        s1 * 3/4
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
+    }
+    {
+        \time 1/1
+        s1 * 1
+    }
+    {
+        \time 1/1
+        s1 * 1
+    }
+    {
+        \time 1/1
+        s1 * 1
+    }
+    {
+        \time 1/1
+        s1 * 1
+    }
 }                                                                              %! extern
 
 

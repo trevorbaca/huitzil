@@ -395,8 +395,15 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             current_measure_duration += duration
         if 0 < current_measure_duration:
             measure_durations.append(current_measure_duration)
-        maker = abjad.MeasureMaker()
-        measures = maker(measure_durations)
+        measures = []
+        for item in measure_durations:
+            skip = abjad.Skip(1)
+            multiplier = abjad.Multiplier(item)
+            abjad.attach(multiplier, skip)
+            time_signature = abjad.TimeSignature(item)
+            abjad.attach(time_signature, skip, context='Score')
+            measure = abjad.Container([skip])
+            measures.append(measure)
         context.extend(measures)
         rests = []
         for measure_duration in measure_durations:
