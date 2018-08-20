@@ -318,24 +318,34 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             else:
                 current_duration = candidate_duration
         measure_durations.append(current_duration)
-        maker = abjad.MeasureMaker()
-        measures = maker(measure_durations)
+        skips = []
+        for item in measure_durations:
+            skip = abjad.Skip(1)
+            multiplier = abjad.Multiplier(item)
+            abjad.attach(multiplier, skip)
+            time_signature = abjad.TimeSignature(item)
+            abjad.attach(time_signature, skip, context='Score')
+            skips.append(skip)
         context = self._score['GlobalSkips']
-        context.extend(measures)
-        for measure in context[:]:
-            agent = abjad.inspect(measure)
+        context.extend(skips)
+        for skip in context[:]:
+            agent = abjad.inspect(skip)
             time_signature = agent.indicator(abjad.TimeSignature)
             if time_signature.denominator < 4:
                 fraction = abjad.NonreducedFraction(
                     time_signature.pair)
                 fraction = fraction.with_multiple_of_denominator(4)
-                abjad.detach(time_signature, measure)
+                abjad.detach(time_signature, skip)
                 new_time_signature = abjad.TimeSignature(fraction)
-                abjad.attach(new_time_signature, measure)
-        maker = abjad.MeasureMaker()
-        measures = maker(measure_durations)
+                abjad.attach(new_time_signature, skip, context='Score')
+        rests = []
+        for item in measure_durations:
+            rest = abjad.MultimeasureRest(1)
+            multiplier = abjad.Multiplier(item)
+            abjad.attach(multiplier, rest)
+            rests.append(rest)
         context = self._score['GlobalRests']
-        context.extend(measures)
+        context.extend(rests)
 
     def _tweak_tuplet_brackets(self):
         measures = self._partition_music_into_measures()

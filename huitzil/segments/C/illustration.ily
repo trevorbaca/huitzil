@@ -24,88 +24,96 @@ C_GlobalRests = {                                                              %
 
 
 C_GlobalSkips = {                                                              %! extern
-    {   % measure
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 13/12
         s1 * 13/12
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 7/6
         s1 * 7/6
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 53/30
         s1 * 53/30
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 23/12
         s1 * 23/12
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         \time 3/4
         s1 * 3/4
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 2/3
         s1 * 2/3
-    }   % measure
-    {   % measure
+    }
+    {
         #(ly:expect-warning "strange time signature found")
         \time 22/15
         s1 * 22/15
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
         \time 2/1
         s1 * 2
-    }   % measure
-    {   % measure
+    }
+    {
         \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
-    {   % measure
+    }
+    {
+        \time 1/1
         s1 * 1
-    }   % measure
+    }
 }                                                                              %! extern
 
 
