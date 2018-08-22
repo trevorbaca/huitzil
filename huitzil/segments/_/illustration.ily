@@ -1,4 +1,4 @@
-GlobalRests = {                                                                %! extern
+Global_Rests = {                                                               %! extern
     R1 * 7/8
     R1 * 15/16
     R1 * 11/16
@@ -56,7 +56,7 @@ GlobalRests = {                                                                %
 }                                                                              %! extern
 
 
-GlobalSkips = {                                                                %! extern
+Global_Skips = {                                                               %! extern
     \time 7/8
     s1 * 7/8
     \time 15/16
