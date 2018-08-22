@@ -1,4 +1,4 @@
-C_GlobalRests = {                                                              %! extern
+C_Global_Rests = {                                                             %! extern
     R1 * 1                                                                     %! _make_global_rests
     R1 * 13/12                                                                 %! _make_global_rests
     R1 * 1                                                                     %! _make_global_rests
@@ -23,7 +23,7 @@ C_GlobalRests = {                                                              %
 }                                                                              %! extern
 
 
-C_GlobalSkips = {                                                              %! extern
+C_Global_Skips = {                                                             %! extern
     {
         \time 1/1
         s1 * 1

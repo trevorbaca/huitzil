@@ -1,4 +1,4 @@
-E_GlobalRests = {                                                              %! extern
+E_Global_Rests = {                                                             %! extern
     R1 * 3/4                                                                   %! _make_global_rests
     R1 * 1/3                                                                   %! _make_global_rests
     R1 * 3/4                                                                   %! _make_global_rests
@@ -61,7 +61,7 @@ E_GlobalRests = {                                                              %
 }                                                                              %! extern
 
 
-E_GlobalSkips = {                                                              %! extern
+E_Global_Skips = {                                                             %! extern
     {
         \time 3/4
         s1 * 3/4
