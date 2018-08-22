@@ -168,7 +168,7 @@ GlobalSkips = {                                                                %
 }                                                                              %! extern
 
 
-MusicVoice = {                                                                 %! extern
+Music_Voice = {                                                                %! extern
     \times 4/5 {
         \tempo 8=78
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -2173,6 +2173,6 @@ MusicVoice = {                                                                 %
 
 
 Staff = <<                                                                     %! extern
-    \context Voice = "MusicVoice"                                              %! ScoreTemplate
-    \MusicVoice                                                                %! extern
+    \context Voice = "Music_Voice"                                             %! ScoreTemplate
+    \Music_Voice                                                               %! extern
 >>                                                                             %! extern

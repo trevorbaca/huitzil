@@ -114,7 +114,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
     def _annotate_leaf_indices(self):
         if not self.show_leaf_indices:
             return
-        voice = self._score['MusicVoice']
+        voice = self._score['Music_Voice']
         for i, leaf in enumerate(abjad.iterate(voice).leaves()):
             markup = abjad.Markup(i)
             abjad.attach(markup, leaf)
@@ -155,7 +155,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             abjad.attach(directive, start_skip)
 
     def _attach_slurs(self):
-        voice = self._score['MusicVoice']
+        voice = self._score['Music_Voice']
         leaves = abjad.iterate(voice).leaves()
         leaves = list(leaves)
         for slur in self.slurs:
@@ -168,7 +168,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
     def _attach_tempo_indicators(self):
         if not self.metronome_mark_measure_map:
             return
-        music_voice = self._score['MusicVoice']
+        music_voice = self._score['Music_Voice']
         logical_ties = abjad.iterate(music_voice).logical_ties()
         logical_ties = list(logical_ties)
         for logical_tie_index, directive in self.metronome_mark_measure_map:
@@ -213,7 +213,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             lilypond_file.header_block.composer = None
 
     def _configure_score(self):
-        leaf = abjad.inspect(self._score['MusicVoice']).leaf(0)
+        leaf = abjad.inspect(self._score['Music_Voice']).leaf(0)
         abjad.attach(abjad.Clef('bass'), leaf)
 
     def _get_offsets(self, start_stage, stop_stage):
@@ -246,7 +246,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         self._music_makers = music_makers
 
     def _interpret_music_makers(self):
-        music_voice = self._score['MusicVoice']
+        music_voice = self._score['Music_Voice']
         self._make_music_for_voice(music_voice)
 
     def _interpret_pitch_specifier(self, pitch_specifier):
@@ -292,7 +292,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
     def _partition_music_into_measures(self):
         context = self._score['GlobalSkips']
         measure_durations = [abjad.inspect(_).duration() for _ in context]
-        music_voice = self._score['MusicVoice']
+        music_voice = self._score['Music_Voice']
         component_durations = [
             abjad.inspect(_).duration() for _ in music_voice]
         measure_parts = baca.sequence(component_durations)
@@ -304,7 +304,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         return parts
 
     def _populate_global_context(self):
-        music_voice = self._score['MusicVoice']
+        music_voice = self._score['Music_Voice']
         measure_durations = []
         current_duration = abjad.Duration(0)
         ideal_measure_duration = abjad.Duration(4, 4)

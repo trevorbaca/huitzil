@@ -31,30 +31,30 @@ class FlightScoreTemplate(baca.ScoreTemplate):
                 {                                                                                %! _make_global_context
                 }                                                                                %! _make_global_context
             >>                                                                                   %! _make_global_context
-            \context PianoStaff = "PianoStaff"                                                   %! ScoreTemplate
+            \context PianoStaff = "Piano_Staff"                                                  %! ScoreTemplate
             <<                                                                                   %! ScoreTemplate
-                \context BowStaff = "BowStaff"                                                   %! ScoreTemplate
+                \context BowStaff = "Bow_Staff"                                                  %! ScoreTemplate
                 <<                                                                               %! ScoreTemplate
-                    \context MetronomeMarkVoice = "MetronomeMarkVoice"                           %! ScoreTemplate
+                    \context MetronomeMarkVoice = "Metronome_Mark_Voice"                         %! ScoreTemplate
                     {                                                                            %! ScoreTemplate
                         s1                                                                       %! ScoreTemplate.__illustrate__
                     }                                                                            %! ScoreTemplate
-                    \context TremoloVoice = "TremoloVoice"                                       %! ScoreTemplate
+                    \context TremoloVoice = "Tremolo_Voice"                                      %! ScoreTemplate
                     {                                                                            %! ScoreTemplate
                         s1                                                                       %! ScoreTemplate.__illustrate__
                     }                                                                            %! ScoreTemplate
-                    \context StringContactPointVoice = "StringContactPointVoice"                 %! ScoreTemplate
+                    \context StringContactPointVoice = "String_Contact_Point_Voice"              %! ScoreTemplate
                     {                                                                            %! ScoreTemplate
                         s1                                                                       %! ScoreTemplate.__illustrate__
                     }                                                                            %! ScoreTemplate
-                    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"                 %! ScoreTemplate
+                    \context UnderlyingDynamicsVoice = "Underlying_Dynamics_Voice"               %! ScoreTemplate
                     {                                                                            %! ScoreTemplate
                         s1                                                                       %! ScoreTemplate.__illustrate__
                     }                                                                            %! ScoreTemplate
                 >>                                                                               %! ScoreTemplate
-                \context PitchStaff = "PitchStaff"                                               %! ScoreTemplate
+                \context PitchStaff = "Pitch_Staff"                                              %! ScoreTemplate
                 {                                                                                %! ScoreTemplate
-                    \context PitchVoice = "PitchVoice"                                           %! ScoreTemplate
+                    \context PitchVoice = "Pitch_Voice"                                          %! ScoreTemplate
                     {                                                                            %! ScoreTemplate
                         s1                                                                       %! ScoreTemplate.__illustrate__
                     }                                                                            %! ScoreTemplate
@@ -82,30 +82,30 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         bow_staff = abjad.Staff(
             lilypond_type='BowStaff',
             is_simultaneous=True,
-            name='BowStaff',
+            name='Bow_Staff',
             tag=tag,
             )
         tempo_indicator_voice = abjad.Voice(
             lilypond_type='MetronomeMarkVoice',
-            name='MetronomeMarkVoice',
+            name='Metronome_Mark_Voice',
             tag=tag,
             )
         bow_staff.append(tempo_indicator_voice)
         tremolo_indicator_voice = abjad.Voice(
             lilypond_type='TremoloVoice',
-            name='TremoloVoice',
+            name='Tremolo_Voice',
             tag=tag,
             )
         bow_staff.append(tremolo_indicator_voice)
         bow_location_voice = abjad.Voice(
             lilypond_type='StringContactPointVoice',
-            name='StringContactPointVoice',
+            name='String_Contact_Point_Voice',
             tag=tag,
             )
         bow_staff.append(bow_location_voice)
         underlying_dynamics_voice = abjad.Voice(
             lilypond_type='UnderlyingDynamicsVoice',
-            name='UnderlyingDynamicsVoice',
+            name='Underlying_Dynamics_Voice',
             tag=tag,
             )
         bow_staff.append(underlying_dynamics_voice)
@@ -113,12 +113,12 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         # PITCH STAFF
         pitch_staff = abjad.Staff(
             lilypond_type='PitchStaff',
-            name='PitchStaff',
+            name='Pitch_Staff',
             tag=tag,
             )
         pitch_voice = abjad.Voice(
             lilypond_type='PitchVoice',
-            name='PitchVoice',
+            name='Pitch_Voice',
             tag=tag,
             )
         pitch_staff.append(pitch_voice)
@@ -130,7 +130,7 @@ class FlightScoreTemplate(baca.ScoreTemplate):
                 pitch_staff,
                 ],
             lilypond_type='PianoStaff',
-            name='PianoStaff',
+            name='Piano_Staff',
             tag=tag,
             )
         score = abjad.Score(

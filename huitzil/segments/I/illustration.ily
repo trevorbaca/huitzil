@@ -66,7 +66,7 @@ I_GlobalSkips = {                                                              %
 }                                                                              %! extern
 
 
-I_MetronomeMarkVoice = {                                                       %! extern
+I_Metronome_Mark_Voice = {                                                     %! extern
     s1 * 1
     - \abjad-dashed-line-with-arrow
     - \tweak bound-details.left.text \markup {
@@ -192,7 +192,7 @@ I_MetronomeMarkVoice = {                                                       %
 }                                                                              %! extern
 
 
-I_TremoloVoice = {                                                             %! extern
+I_Tremolo_Voice = {                                                            %! extern
     s1 * 1
     s1 * 1
     s1 * 1
@@ -208,7 +208,7 @@ I_TremoloVoice = {                                                             %
 }                                                                              %! extern
 
 
-I_StringContactPointVoice = {                                                  %! extern
+I_String_Contact_Point_Voice = {                                               %! extern
     a''1
     :16
     a''1
@@ -236,7 +236,7 @@ I_StringContactPointVoice = {                                                  %
 }                                                                              %! extern
 
 
-I_UnderlyingDynamicsVoice = {                                                  %! extern
+I_Underlying_Dynamics_Voice = {                                                %! extern
     s1 * 1
     \mp
     \>
@@ -272,24 +272,24 @@ I_UnderlyingDynamicsVoice = {                                                  %
 }                                                                              %! extern
 
 
-I_BowStaff = <<                                                                %! extern
-    \context MetronomeMarkVoice = "MetronomeMarkVoice"                         %! ScoreTemplate
+I_Bow_Staff = <<                                                               %! extern
+    \context MetronomeMarkVoice = "Metronome_Mark_Voice"                       %! ScoreTemplate
     \with                                                                      %! ScoreTemplate
     {                                                                          %! ScoreTemplate
         \override TextScript.staff-padding = #5                                %! ScoreTemplate
         \override TextSpanner.staff-padding = #5.75                            %! ScoreTemplate
     }                                                                          %! ScoreTemplate
-    \I_MetronomeMarkVoice                                                      %! extern
-    \context TremoloVoice = "TremoloVoice"                                     %! ScoreTemplate
-    \I_TremoloVoice                                                            %! extern
-    \context StringContactPointVoice = "StringContactPointVoice"               %! ScoreTemplate
-    \I_StringContactPointVoice                                                 %! extern
-    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"               %! ScoreTemplate
-    \I_UnderlyingDynamicsVoice                                                 %! extern
+    \I_Metronome_Mark_Voice                                                    %! extern
+    \context TremoloVoice = "Tremolo_Voice"                                    %! ScoreTemplate
+    \I_Tremolo_Voice                                                           %! extern
+    \context StringContactPointVoice = "String_Contact_Point_Voice"            %! ScoreTemplate
+    \I_String_Contact_Point_Voice                                              %! extern
+    \context UnderlyingDynamicsVoice = "Underlying_Dynamics_Voice"             %! ScoreTemplate
+    \I_Underlying_Dynamics_Voice                                               %! extern
 >>                                                                             %! extern
 
 
-I_PitchVoice = {                                                               %! extern
+I_Pitch_Voice = {                                                              %! extern
     \clef "bass"
     s1 * 12
     \bar "|."                                                                  %! SCORE_1
@@ -298,7 +298,7 @@ I_PitchVoice = {                                                               %
 }                                                                              %! extern
 
 
-I_PitchStaff = {                                                               %! extern
-    \context PitchVoice = "PitchVoice"                                         %! ScoreTemplate
-    \I_PitchVoice                                                              %! extern
+I_Pitch_Staff = {                                                              %! extern
+    \context PitchVoice = "Pitch_Voice"                                        %! ScoreTemplate
+    \I_Pitch_Voice                                                             %! extern
 }                                                                              %! extern
