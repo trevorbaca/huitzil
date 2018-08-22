@@ -129,7 +129,7 @@ D_GlobalSkips = {                                                              %
 }                                                                              %! extern
 
 
-D_MetronomeMarkVoice = {                                                       %! extern
+D_Metronome_Mark_Voice = {                                                     %! extern
     s1 * 1/4
     s1 * 1/4
     s1 * 1/4
@@ -199,7 +199,7 @@ D_MetronomeMarkVoice = {                                                       %
 }                                                                              %! extern
 
 
-D_TremoloVoice = {                                                             %! extern
+D_Tremolo_Voice = {                                                            %! extern
     s1 * 1/4
     - \abjad-invisible-line
     - \tweak bound-details.left.text \markup {
@@ -317,7 +317,7 @@ D_TremoloVoice = {                                                             %
 }                                                                              %! extern
 
 
-D_StringContactPointVoice = {                                                  %! extern
+D_String_Contact_Point_Voice = {                                               %! extern
     c'4
     :16
     _ \markup {
@@ -649,7 +649,7 @@ D_StringContactPointVoice = {                                                  %
 }                                                                              %! extern
 
 
-D_UnderlyingDynamicsVoice = {                                                  %! extern
+D_Underlying_Dynamics_Voice = {                                                %! extern
     \once \override Hairpin.stencil = #constante-hairpin
     s1 * 1/4
     \f
@@ -733,19 +733,19 @@ D_UnderlyingDynamicsVoice = {                                                  %
 }                                                                              %! extern
 
 
-D_BowStaff = <<                                                                %! extern
-    \context MetronomeMarkVoice = "MetronomeMarkVoice"                         %! ScoreTemplate
-    \D_MetronomeMarkVoice                                                      %! extern
-    \context TremoloVoice = "TremoloVoice"                                     %! ScoreTemplate
-    \D_TremoloVoice                                                            %! extern
-    \context StringContactPointVoice = "StringContactPointVoice"               %! ScoreTemplate
-    \D_StringContactPointVoice                                                 %! extern
-    \context UnderlyingDynamicsVoice = "UnderlyingDynamicsVoice"               %! ScoreTemplate
-    \D_UnderlyingDynamicsVoice                                                 %! extern
+D_Bow_Staff = <<                                                               %! extern
+    \context MetronomeMarkVoice = "Metronome_Mark_Voice"                       %! ScoreTemplate
+    \D_Metronome_Mark_Voice                                                    %! extern
+    \context TremoloVoice = "Tremolo_Voice"                                    %! ScoreTemplate
+    \D_Tremolo_Voice                                                           %! extern
+    \context StringContactPointVoice = "String_Contact_Point_Voice"            %! ScoreTemplate
+    \D_String_Contact_Point_Voice                                              %! extern
+    \context UnderlyingDynamicsVoice = "Underlying_Dynamics_Voice"             %! ScoreTemplate
+    \D_Underlying_Dynamics_Voice                                               %! extern
 >>                                                                             %! extern
 
 
-D_PitchVoice = {                                                               %! extern
+D_Pitch_Voice = {                                                              %! extern
     \clef "bass"
     s1 * 124/15
     \parenthesize
@@ -761,7 +761,7 @@ D_PitchVoice = {                                                               %
 }                                                                              %! extern
 
 
-D_PitchStaff = {                                                               %! extern
-    \context PitchVoice = "PitchVoice"                                         %! ScoreTemplate
-    \D_PitchVoice                                                              %! extern
+D_Pitch_Staff = {                                                              %! extern
+    \context PitchVoice = "Pitch_Voice"                                        %! ScoreTemplate
+    \D_Pitch_Voice                                                             %! extern
 }                                                                              %! extern

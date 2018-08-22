@@ -17,16 +17,16 @@
             \context GlobalSkips = "GlobalSkips"                               %! _make_global_context
             \C_GlobalSkips                                                     %! extern
         >>                                                                     %! _make_global_context
-        \context PianoStaff = "PianoStaff"                                     %! ScoreTemplate
+        \context PianoStaff = "Piano_Staff"                                    %! ScoreTemplate
         <<                                                                     %! ScoreTemplate
-            \context BowStaff = "BowStaff"                                     %! ScoreTemplate
+            \context BowStaff = "Bow_Staff"                                    %! ScoreTemplate
             \with                                                              %! ScoreTemplate
             {                                                                  %! ScoreTemplate
                 \override StaffSymbol.line-count = #7                          %! ScoreTemplate
             }                                                                  %! ScoreTemplate
-            \C_BowStaff                                                        %! extern
-            \context PitchStaff = "PitchStaff"                                 %! ScoreTemplate
-            \C_PitchStaff                                                      %! extern
+            \C_Bow_Staff                                                       %! extern
+            \context PitchStaff = "Pitch_Staff"                                %! ScoreTemplate
+            \C_Pitch_Staff                                                     %! extern
         >>                                                                     %! ScoreTemplate
     >>                                                                         %! ScoreTemplate
 }                                                                              %! LilyPondFile

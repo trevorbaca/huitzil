@@ -33,7 +33,7 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
             >>                                                                                   %! _make_global_context
             \context Staff = "Staff"                                                             %! ScoreTemplate
             <<                                                                                   %! ScoreTemplate
-                \context Voice = "MusicVoice"                                                    %! ScoreTemplate
+                \context Voice = "Music_Voice"                                                   %! ScoreTemplate
                 {                                                                                %! ScoreTemplate
                     \clef "bass"                                                                 %! attach_defaults
                     s1                                                                           %! ScoreTemplate.__illustrate__
@@ -58,7 +58,10 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         global_context = self._make_global_context()
 
         # CELLO
-        music_voice = abjad.Voice(name='MusicVoice', tag=tag)
+        music_voice = abjad.Voice(
+            name='Music_Voice',
+            tag=tag,
+            )
         staff = abjad.Staff(
             [music_voice],
             is_simultaneous=True,
