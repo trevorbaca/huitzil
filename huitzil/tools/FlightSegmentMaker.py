@@ -813,7 +813,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         self._add_container_identifiers()
         score_block = self.lilypond_file['score']
         score = score_block['Score']
-        if not abjad.inspect(score).is_wellformed(
+        if not abjad.inspect(score).wellformed(
             check_empty_containers=False,
             ):
             string = abjad.inspect(score).tabulate_wellformedness()
