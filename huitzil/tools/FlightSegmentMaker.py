@@ -263,9 +263,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         if not self.pitches:
             bow_location_voice = self._score['String_Contact_Point_Voice']
             total_duration = abjad.inspect(bow_location_voice).duration()
-            skip = abjad.Skip(1)
-            multiplier = abjad.Multiplier(total_duration)
-            abjad.attach(multiplier, skip)
+            skip = abjad.Skip(1, multiplier=total_duration)
             pitch_voice.append(skip)
         else:
             durations = []
@@ -303,7 +301,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
                 notes.append(note)
             for note, duration in zip(notes, durations):
                 multiplier = abjad.Multiplier(duration)
-                abjad.attach(multiplier, note)
+                note.multiplier = multiplier
             pitch_voice.extend(notes)
         leaf = abjad.inspect(pitch_voice).leaf(0)
         clef = abjad.Clef('bass')
@@ -397,9 +395,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             measure_durations.append(current_measure_duration)
         measures = []
         for item in measure_durations:
-            skip = abjad.Skip(1)
-            multiplier = abjad.Multiplier(item)
-            abjad.attach(multiplier, skip)
+            skip = abjad.Skip(1, multiplier=item)
             time_signature = abjad.TimeSignature(item)
             abjad.attach(time_signature, skip, context='Score')
             measure = abjad.Container([skip])
@@ -409,10 +405,9 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         for measure_duration in measure_durations:
             rest = abjad.MultimeasureRest(
                 abjad.Duration(1),
+                multiplier=measure_duration,
                 tag='_make_global_rests',
                 )
-            multiplier = abjad.Multiplier(measure_duration)
-            abjad.attach(multiplier, rest, tag=None)
             rests.append(rest)
         context = self._score['Global_Rests']
         context.extend(rests)
