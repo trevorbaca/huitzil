@@ -320,9 +320,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         measure_durations.append(current_duration)
         skips = []
         for item in measure_durations:
-            skip = abjad.Skip(1)
-            multiplier = abjad.Multiplier(item)
-            abjad.attach(multiplier, skip)
+            skip = abjad.Skip(1, multiplier=item)
             time_signature = abjad.TimeSignature(item)
             abjad.attach(time_signature, skip, context='Score')
             skips.append(skip)
@@ -340,9 +338,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
                 abjad.attach(new_time_signature, skip, context='Score')
         rests = []
         for item in measure_durations:
-            rest = abjad.MultimeasureRest(1)
-            multiplier = abjad.Multiplier(item)
-            abjad.attach(multiplier, rest)
+            rest = abjad.MultimeasureRest(1, multiplier=item)
             rests.append(rest)
         context = self._score['Global_Rests']
         context.extend(rests)
