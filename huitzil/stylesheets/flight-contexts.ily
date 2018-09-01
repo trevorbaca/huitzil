@@ -17,6 +17,7 @@
         \name MetronomeMarkVoice
         \type Engraver_group
         \alias Voice
+
         \override TextScript.staff-padding = 9
         \override TextSpanner.staff-padding = 9.75
     }
@@ -25,6 +26,7 @@
         \name TremoloVoice
         \type Engraver_group
         \alias Voice
+
         \override TextScript.staff-padding = 5
         \override TextSpanner.staff-padding = 5.5
     }
@@ -33,6 +35,7 @@
         \name StringContactPointVoice
         \type Engraver_group
         \alias Voice
+
         \override TextScript.staff-padding = 3.5
         \override TextScript.self-alignment-X = -0.375
     }
@@ -41,6 +44,7 @@
         \name UnderlyingDynamicsVoice
         \type Engraver_group
         \alias Voice
+
         \override DynamicLineSpanner.staff-padding = 6
     }
     \context {
@@ -51,6 +55,7 @@
         \PianoStaff
         \accepts BowStaff
         \accepts PitchStaff
+
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 14
     }
     \context {
@@ -63,7 +68,9 @@
         \accepts TremoloVoice
         \accepts StringContactPointVoice
         \accepts UnderlyingDynamicsVoice
+
         \override Clef.transparent = ##t
+
         \override TupletBracket.direction = #up
         \override TupletBracket.staff-padding = 1
     }
@@ -76,8 +83,11 @@
     }
     \context {
         \Score
+
         \override BarLine.transparent = ##t
+
         \override SpanBar.transparent = ##t
+
         proportionalNotationDuration = #(ly:make-moment 1 16)
     }
 }
