@@ -3,7 +3,7 @@ import baca
 import collections
 
 
-class DreamsRhythmSpecifier(abjad.AbjadObject):
+class DreamsRhythmSpecifier(object):
     """
     Dreams rhythm specifier.
     """
