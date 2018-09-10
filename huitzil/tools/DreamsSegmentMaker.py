@@ -162,8 +162,7 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
             start_index, stop_number = slur
             stop_index = stop_number + 1
             slur_leaves = leaves[start_index:stop_index]
-            slur = abjad.Slur()
-            abjad.attach(slur, slur_leaves)
+            abjad.slur(slur_leaves)
 
     def _attach_tempo_indicators(self):
         if not self.metronome_mark_measure_map:
