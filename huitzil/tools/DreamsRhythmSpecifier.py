@@ -104,7 +104,7 @@ class DreamsRhythmSpecifier(object):
                     has_glissando = True
                     break
             if has_glissando:
-                abjad.attach(abjad.Glissando(), note_pair)
+                abjad.glissando(note_pair)
 
     def _attach_beams(self, music):
         bass_clef = abjad.Clef('bass')

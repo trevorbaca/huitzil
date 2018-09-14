@@ -154,8 +154,7 @@ class FlightSegmentMaker(abjad.SegmentMaker):
         for start_index, stop_index in self.lh_glissandi:
             leaves = abjad.select(pitch_voice).leaves()
             spanner_leaves = leaves[start_index:stop_index+1]
-            glissando = abjad.Glissando()
-            abjad.attach(glissando, spanner_leaves)
+            abjad.glissando(spanner_leaves)
 
     def _configure_score(self):
         bow_staff = self._score['Bow_Staff']
@@ -250,11 +249,11 @@ class FlightSegmentMaker(abjad.SegmentMaker):
             notes_in_spanner.append(note)
             if i in glissando_break_indices:
                 notes_in_spanner = abjad.select(notes_in_spanner)
-                abjad.attach(abjad.Glissando(), notes_in_spanner)
+                abjad.glissando(notes_in_spanner)
                 notes_in_spanner = []
         if notes_in_spanner:
             notes_in_spanner = abjad.select(notes_in_spanner)
-            abjad.attach(abjad.Glissando(), notes_in_spanner)
+            abjad.glissando(notes_in_spanner)
 
     def _populate_pitch_voice(self):
         pitch_voice = self._score['Pitch_Voice']
