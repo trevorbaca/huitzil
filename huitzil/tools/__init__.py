@@ -1,4 +1,4 @@
-from .DreamsRhythmSpecifier import DreamsRhythmSpecifier
+from .DreamsMusicMaker import DreamsMusicMaker
 from .DreamsScoreTemplate import DreamsScoreTemplate
 from .DreamsSegmentMaker import DreamsSegmentMaker
 from .FlightScoreTemplate import FlightScoreTemplate
