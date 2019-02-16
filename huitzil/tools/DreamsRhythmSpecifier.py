@@ -217,6 +217,8 @@ class DreamsRhythmSpecifier(object):
                 target_duration,
                 ratio,
                 )
+            if inner_tuplet.multiplier == 1:
+                inner_tuplet.hide = True
             for j, inner_tuplet_note in enumerate(inner_tuplet):
                 source_note = note_list[j]
                 inner_tuplet_note.written_pitch = source_note.written_pitch

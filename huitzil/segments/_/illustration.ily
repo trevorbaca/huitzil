@@ -186,8 +186,7 @@ Music_Voice = {                                                                %
         af16.
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         a,8
@@ -196,8 +195,7 @@ Music_Voice = {                                                                %
         ef8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Stem.direction = #down
         d16
@@ -208,8 +206,7 @@ Music_Voice = {                                                                %
         f16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         cs16
@@ -252,8 +249,7 @@ Music_Voice = {                                                                %
         e16.
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
@@ -264,8 +260,7 @@ Music_Voice = {                                                                %
         cs8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
@@ -299,8 +294,7 @@ Music_Voice = {                                                                %
         g,16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
@@ -325,15 +319,13 @@ Music_Voice = {                                                                %
         a,8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Stem.direction = #down
         \once \override TupletBracket.staff-padding = #2.5
         g8.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Stem.direction = #down
         \once \override TupletBracket.staff-padding = #2.5
@@ -370,8 +362,7 @@ Music_Voice = {                                                                %
         d16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
@@ -395,8 +386,7 @@ Music_Voice = {                                                                %
         e8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         cs16.
@@ -425,8 +415,7 @@ Music_Voice = {                                                                %
         \once \override Stem.direction = #down
         c2
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Stem.direction = #down
         a,16
@@ -441,8 +430,7 @@ Music_Voice = {                                                                %
         af16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         c32
@@ -483,8 +471,7 @@ Music_Voice = {                                                                %
         \once \override Stem.direction = #down
         af,4.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         a,16.
@@ -497,8 +484,7 @@ Music_Voice = {                                                                %
         fs,16.
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         f,16
@@ -513,8 +499,7 @@ Music_Voice = {                                                                %
         ef16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         fs,32
@@ -586,8 +571,7 @@ Music_Voice = {                                                                %
         \once \override Stem.direction = #down
         c4.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         cs16
@@ -600,14 +584,12 @@ Music_Voice = {                                                                %
         b,16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         e16
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -618,8 +600,7 @@ Music_Voice = {                                                                %
         \once \override Stem.direction = #down
         ef,2
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -649,8 +630,7 @@ Music_Voice = {                                                                %
         \once \override Stem.color = #blue
         f,4.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -687,8 +667,7 @@ Music_Voice = {                                                                %
         \once \override Stem.color = #blue
         af,4
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -812,8 +791,7 @@ Music_Voice = {                                                                %
         \once \override TupletBracket.staff-padding = #6
         d'4..
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -842,8 +820,7 @@ Music_Voice = {                                                                %
         \once \override Stem.direction = #down
         cs4
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -937,8 +914,7 @@ Music_Voice = {                                                                %
         f8..
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -988,8 +964,7 @@ Music_Voice = {                                                                %
         bf8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1026,8 +1001,7 @@ Music_Voice = {                                                                %
         \once \override Stem.color = #red
         e4
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1072,8 +1046,7 @@ Music_Voice = {                                                                %
         \once \override Stem.color = #red
         c4.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1084,8 +1057,7 @@ Music_Voice = {                                                                %
         \once \override Stem.direction = #up
         cs8
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1122,8 +1094,7 @@ Music_Voice = {                                                                %
         a16.
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1190,8 +1161,7 @@ Music_Voice = {                                                                %
         \once \override TupletBracket.staff-padding = #2
         g4
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1213,8 +1183,7 @@ Music_Voice = {                                                                %
         \once \override TupletBracket.staff-padding = #2
         ef4
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1243,8 +1212,7 @@ Music_Voice = {                                                                %
         b8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1315,8 +1283,7 @@ Music_Voice = {                                                                %
         \once \override TupletBracket.staff-padding = #2
         c4
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1338,8 +1305,7 @@ Music_Voice = {                                                                %
         \once \override TupletBracket.staff-padding = #2
         bf4
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1368,8 +1334,7 @@ Music_Voice = {                                                                %
         ef8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1390,8 +1355,7 @@ Music_Voice = {                                                                %
         ef8.
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1422,8 +1386,7 @@ Music_Voice = {                                                                %
         bf8.
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         fs,16
@@ -1448,8 +1411,7 @@ Music_Voice = {                                                                %
         \once \override Stem.direction = #up
         f8
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1471,8 +1433,7 @@ Music_Voice = {                                                                %
         b16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1501,8 +1462,7 @@ Music_Voice = {                                                                %
         \once \override Stem.direction = #down
         af,2
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1541,8 +1501,7 @@ Music_Voice = {                                                                %
         \once \override TupletBracket.staff-padding = #2
         ef4.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1581,8 +1540,7 @@ Music_Voice = {                                                                %
         b,16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         ef16
@@ -1592,8 +1550,7 @@ Music_Voice = {                                                                %
         f,16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1652,8 +1609,7 @@ Music_Voice = {                                                                %
         bf,8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1675,8 +1631,7 @@ Music_Voice = {                                                                %
         \once \override TupletBracket.staff-padding = #2
         bf4
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         b,16
@@ -1689,8 +1644,7 @@ Music_Voice = {                                                                %
         a,16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1770,8 +1724,7 @@ Music_Voice = {                                                                %
         ef8.
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -1787,8 +1740,7 @@ Music_Voice = {                                                                %
         \once \override Stem.color = #blue
         ef,4.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Beam.positions = #'(5.5 . 5.5)
@@ -1819,14 +1771,12 @@ Music_Voice = {                                                                %
         g8
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         fs8
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         g16.
@@ -1842,8 +1792,7 @@ Music_Voice = {                                                                %
         e16.
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1945,8 +1894,7 @@ Music_Voice = {                                                                %
         \once \override Stem.direction = #up
         b,16..
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         c16
@@ -1957,8 +1905,7 @@ Music_Voice = {                                                                %
         bf,16
         ]
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Stem.direction = #up
         b,16
@@ -2005,8 +1952,7 @@ Music_Voice = {                                                                %
         \once \override TupletBracket.staff-padding = #2
         c4.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2022,8 +1968,7 @@ Music_Voice = {                                                                %
         \once \override Stem.color = #blue
         c,2
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2046,8 +1991,7 @@ Music_Voice = {                                                                %
         \once \override Stem.color = #blue
         cs,4
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2128,8 +2072,7 @@ Music_Voice = {                                                                %
         \once \override Stem.color = #blue
         g,4.
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2145,8 +2088,7 @@ Music_Voice = {                                                                %
         \once \override Stem.color = #blue
         g,2
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
