@@ -39,62 +39,22 @@
         \override TextSpanner.font-size = 6
         }
 
-    % GLOBAL CONGTEXT
+    % GLOBAL CONTEXT
     \context {
         \name GlobalContext
         \type Engraver_group
         \consists Axis_group_engraver
         \consists Bar_number_engraver
-        \consists Mark_engraver
-        \consists Metronome_mark_engraver
-        \consists Script_engraver
         % prevents LilyPond cyclic chain in pure-Y-offset callbacks warning:
         \consists Staff_collecting_engraver
-        \consists Text_engraver
-        \consists Text_spanner_engraver
-        \consists Time_signature_engraver
         \accepts GlobalSkips
         \accepts GlobalRests
         \accepts PageLayout
 
-        \override BarNumber.extra-offset = #'(-2 . -8)
-        \override BarNumber.font-size = 0
+        \override BarNumber.Y-extent = ##f
+        \override BarNumber.extra-offset = #'(-4 . -12)
+        \override BarNumber.font-size = 1
 
-        \override RehearsalMark.X-extent = #'(0 . 0)
-        \override RehearsalMark.Y-extent = #'(0 . 0)
-        \override RehearsalMark.break-align-symbols = #'(time-signature)
-        \override RehearsalMark.break-visibility = #end-of-line-invisible
-        \override RehearsalMark.font-name = "Didot"
-        \override RehearsalMark.font-size = 10
-        \override RehearsalMark.outside-staff-priority = 500
-        \override RehearsalMark.self-alignment-X = #center
-
-        \override TextScript.extra-offset = #'(0 . -2)
-        \override TextScript.font-size = 3
-        \override TextScript.outside-staff-priority = 600
-
-        \override TextSpanner.bound-details.right.attach-dir = #LEFT
-        \override TextSpanner.padding = 6.75
-
-        \override TimeSignature.X-extent = #'(0 . 0)
-        \override TimeSignature.break-align-symbol = #'left-edge
-        \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = 3
-        \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
-        \override TimeSignature.style = #'numbered
-
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'(
-            (basic-distance . 0)
-            (minimum-distance . 12)
-            (padding . 0)
-            (stretchability . 0)
-        )
-    }
-
-    % STAFF
-    \context {
-        \Staff
-        \remove Time_signature_engraver
     }
 
     % VOICE
@@ -136,6 +96,16 @@
     % STAFF
     \context {
         \Staff
+
+        \override TimeSignature.break-visibility = #end-of-line-invisible
+        \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
+        \override TimeSignature.style = #'numbered
+    }
+
+    % STAFF
+    \context {
+        \Staff
+        \accepts GlobalRests
         \accepts TextSpannerVoice
 
         \override Stem.length = 7
@@ -165,6 +135,7 @@
         \accepts MusicContext
         \remove Bar_number_engraver
         \remove Mark_engraver
+        \remove Metronome_mark_engraver
         \remove System_start_delimiter_engraver
 
         \override BarLine.hair-thickness = 0.5
@@ -206,8 +177,6 @@
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
 
         autoBeaming = ##f
-        barNumberFormatter = #baca-oval-bar-numbers
-        markFormatter = #format-mark-box-alphabet
         proportionalNotationDuration = #(ly:make-moment 1 24)
         tupletFullLength = ##t
     }
