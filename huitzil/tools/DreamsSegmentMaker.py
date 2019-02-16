@@ -446,17 +446,17 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
 
     ### PUBLIC METHODS ###
 
-    def make_rhythm_specifier(self):
+    def make_music_maker(self):
         """
-        Makes rhythm specifier.
+        Makes music-maker.
 
-        Appends rhythm specifier to segment-maker.
+        Appends music-maker to segment-maker.
 
-        Returns rhythm specifier.
+        Returns music-maker.
         """
-        rhythm_specifier = huitzil.DreamsRhythmSpecifier()
-        self.music_makers.append(rhythm_specifier)
-        return rhythm_specifier
+        music_maker = huitzil.DreamsMusicMaker()
+        self.music_makers.append(music_maker)
+        return music_maker
 
     def run(
         self,

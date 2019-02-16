@@ -3,9 +3,9 @@ import baca
 import collections
 
 
-class DreamsRhythmSpecifier(object):
+class DreamsMusicMaker(object):
     """
-    Dreams rhythm specifier.
+    Dreams music-maker.
     """
 
     ### CLASS ATTRIBUTES ###
