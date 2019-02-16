@@ -29,6 +29,16 @@
         \override MultiMeasureRestText.padding = 0
         }
 
+    % PAGE LAYOUT
+    \context {
+        \name PageLayout
+        \type Engraver_group
+        \consists Text_engraver
+        \consists \alternateTextSpannerEngraver
+
+        \override TextSpanner.font-size = 6
+        }
+
     % GLOBAL CONGTEXT
     \context {
         \name GlobalContext
@@ -45,6 +55,7 @@
         \consists Time_signature_engraver
         \accepts GlobalSkips
         \accepts GlobalRests
+        \accepts PageLayout
 
         \override BarNumber.extra-offset = #'(-2 . -8)
         \override BarNumber.font-size = 0
@@ -138,10 +149,20 @@
         instrumentName = \markup { \fontsize #3 Cello \hspace #3.5 }
     }
 
+    % MUSIC CONTEXT
+    \context {
+        \ChoirStaff
+        \name MusicContext
+        \type Engraver_group
+        \alias ChoirStaff
+        systemStartDelimiter = #'SystemStartBar
+    }
+
     % SCORE
     \context {
         \Score
         \accepts GlobalContext
+        \accepts MusicContext
         \remove Bar_number_engraver
         \remove Mark_engraver
         \remove System_start_delimiter_engraver

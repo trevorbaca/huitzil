@@ -16,12 +16,905 @@ J_Global_Skips = {                                                             %
     - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 3 0 1 "78" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-%@% - \baca-start-ct-both "[0'00'']" "[0'05'']"                                %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[0'00'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 2]                                               %! _comment_measure_numbers
+    \time 15/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 15/16                                                                 %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "1"                                            %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "2"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "2"                                             %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'00'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 3]                                               %! _comment_measure_numbers
+    \time 11/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 11/16                                                                 %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "2"                                            %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "3"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "3"                                             %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'05'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 4]                                               %! _comment_measure_numbers
+    \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 7/8                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "3"                                            %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "4"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "4"                                             %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'05'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 5]                                               %! _comment_measure_numbers
+    \time 15/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 15/16                                                                 %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "4"                                            %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "5"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "5"                                             %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'11'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 6]                                               %! _comment_measure_numbers
+    s1 * 15/16                                                                 %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "5"                                            %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "6"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "6"                                             %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'11'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 7]                                               %! _comment_measure_numbers
+    \time 3/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/8                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "6"                                            %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "7"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "7"                                             %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'15'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 8]                                               %! _comment_measure_numbers
+    \time 1/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "7"                                            %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "8"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "8"                                             %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'15'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 9]                                               %! _comment_measure_numbers
+    \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "8"                                            %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "9"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "9"                                             %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'20'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 10]                                              %! _comment_measure_numbers
+    \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 7/8                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "9"                                            %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "10"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "10"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'20'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 11]                                              %! _comment_measure_numbers
+    \time 1/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "10"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "11"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "11"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'26'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 12]                                              %! _comment_measure_numbers
+    \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "11"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "12"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "12"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'26'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 13]                                              %! _comment_measure_numbers
+    \time 3/2                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/2                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "12"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "13"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "13"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'32'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 14]                                              %! _comment_measure_numbers
+    \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 5/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "13"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "14"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "14"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'32'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 15]                                              %! _comment_measure_numbers
+    \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "14"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "15"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "15"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'34'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 16]                                              %! _comment_measure_numbers
+    \time 2/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 2                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "15"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "16"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "16"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'34'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 17]                                              %! _comment_measure_numbers
+    \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 9/8                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "16"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "17"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "17"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'40'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 18]                                              %! _comment_measure_numbers
+    \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 7/8                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "17"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "18"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "18"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'40'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 19]                                              %! _comment_measure_numbers
+    \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "18"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "19"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "19"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'45'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 20]                                              %! _comment_measure_numbers
+    \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 5/8                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "19"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "20"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "20"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'45'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 21]                                              %! _comment_measure_numbers
+    \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 7/8                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "20"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "21"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "21"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'50'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 22]                                              %! _comment_measure_numbers
+    \time 1/2                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/2                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "21"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "22"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "22"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'50'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 23]                                              %! _comment_measure_numbers
+    \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 5/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "22"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "23"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "23"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'56'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 24]                                              %! _comment_measure_numbers
+    \time 1/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "23"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "24"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "24"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[0'56'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 25]                                              %! _comment_measure_numbers
+    \time 1/2                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/2                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "24"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "25"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "25"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'01'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 26]                                              %! _comment_measure_numbers
+    \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 5/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "25"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "26"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "26"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'01'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 27]                                              %! _comment_measure_numbers
+    \time 1/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "26"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "27"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "27"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'10'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 28]                                              %! _comment_measure_numbers
+    \time 1/2                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/2                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "27"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "28"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "28"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'10'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 29]                                              %! _comment_measure_numbers
+    \time 1/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "28"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "29"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "29"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'18'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 30]                                              %! _comment_measure_numbers
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "29"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "30"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "30"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'18'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 31]                                              %! _comment_measure_numbers
+    \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "30"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "31"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "31"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'20'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 32]                                              %! _comment_measure_numbers
+    s1 * 3/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "31"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "32"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "32"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'20'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 33]                                              %! _comment_measure_numbers
+    \time 1/2                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/2                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "32"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "33"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "33"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'32'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 34]                                              %! _comment_measure_numbers
+    \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 5/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "33"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "34"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "34"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'32'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 35]                                              %! _comment_measure_numbers
+    \time 13/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 13/16                                                                 %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "34"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "35"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "35"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'39'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 36]                                              %! _comment_measure_numbers
+    \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 5/8                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "35"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "36"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "36"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'39'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 37]                                              %! _comment_measure_numbers
+    \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 5/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "36"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "37"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "37"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'44'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 38]                                              %! _comment_measure_numbers
+    \time 1/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "37"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "38"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "38"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'44'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 39]                                              %! _comment_measure_numbers
+    \time 5/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 5/16                                                                  %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "38"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "39"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "39"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'49'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 40]                                              %! _comment_measure_numbers
+    \time 1/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "39"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "40"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "40"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'49'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 41]                                              %! _comment_measure_numbers
+    \time 9/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 9/16                                                                  %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "40"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "41"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "41"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'53'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 42]                                              %! _comment_measure_numbers
+    \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "41"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "42"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "42"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'53'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 43]                                              %! _comment_measure_numbers
+    \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 7/8                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "42"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "43"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "43"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'58'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 44]                                              %! _comment_measure_numbers
+    \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "43"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "44"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "44"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[1'58'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 45]                                              %! _comment_measure_numbers
+    \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 7/8                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "44"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "45"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "45"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[2'01'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 46]                                              %! _comment_measure_numbers
+    \time 1/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "45"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "46"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "46"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[2'01'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 47]                                              %! _comment_measure_numbers
+    \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "46"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "47"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "47"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[2'09'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 48]                                              %! _comment_measure_numbers
+    \time 3/2                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/2                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "47"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "48"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "48"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[2'09'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 49]                                              %! _comment_measure_numbers
+    \time 1/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "48"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "49"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "49"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[2'15'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 50]                                              %! _comment_measure_numbers
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "49"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "50"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "50"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[2'15'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 51]                                              %! _comment_measure_numbers
+    \time 9/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 9/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "50"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "51"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "51"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[2'18'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 52]                                              %! _comment_measure_numbers
+    \time 3/2                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/2                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "51"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "52"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "52"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[2'18'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 53]                                              %! _comment_measure_numbers
+    \time 1/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                     %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "52"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "53"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "53"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-left-only "[2'26'']"                                      %! CLOCK_TIME_MARKUP
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+
+    % [J Global_Skips measure 54]                                              %! _comment_measure_numbers
+    \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/4                                                                   %! _make_global_skips(1)
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
+    \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% - \baca-start-lmi-left-only "53"                                           %! LOCAL_MEASURE_INDEX_MARKUP
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
+    - \baca-start-lmn-left-only "54"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
+    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
+%@% - \baca-start-mn-left-only "54"                                            %! MEASURE_NUMBER_MARKUP
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-ct-both "[2'26'']" "[5'05'']"                                %! CLOCK_TIME_MARKUP
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
-    % [J Global_Skips measure 2]                                               %! PHANTOM:_style_phantom_measures(1):_comment_measure_numbers
+    % [J Global_Skips measure 55]                                              %! PHANTOM:_style_phantom_measures(1):_comment_measure_numbers
     \time 1/4                                                                  %! PHANTOM:_style_phantom_measures(1):EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(3)
     \baca-time-signature-transparent                                           %! PHANTOM:_style_phantom_measures(2)
     s1 * 1/4                                                                   %! PHANTOM:_make_global_skips(3)
@@ -41,7 +934,166 @@ J_Global_Rests = {                                                             %
     % [J Global_Rests measure 1]                                               %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 2]                                               %! PHANTOM:_style_phantom_measures(4):_comment_measure_numbers
+    % [J Global_Rests measure 2]                                               %! _comment_measure_numbers
+    R1 * 15/16                                                                 %! _make_global_rests(1)
+
+    % [J Global_Rests measure 3]                                               %! _comment_measure_numbers
+    R1 * 11/16                                                                 %! _make_global_rests(1)
+
+    % [J Global_Rests measure 4]                                               %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 5]                                               %! _comment_measure_numbers
+    R1 * 15/16                                                                 %! _make_global_rests(1)
+
+    % [J Global_Rests measure 6]                                               %! _comment_measure_numbers
+    R1 * 15/16                                                                 %! _make_global_rests(1)
+
+    % [J Global_Rests measure 7]                                               %! _comment_measure_numbers
+    R1 * 3/8                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 8]                                               %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 9]                                               %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 10]                                              %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 11]                                              %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 12]                                              %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 13]                                              %! _comment_measure_numbers
+    R1 * 3/2                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 14]                                              %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 15]                                              %! _comment_measure_numbers
+    R1 * 1/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 16]                                              %! _comment_measure_numbers
+    R1 * 2                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 17]                                              %! _comment_measure_numbers
+    R1 * 9/8                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 18]                                              %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 19]                                              %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 20]                                              %! _comment_measure_numbers
+    R1 * 5/8                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 21]                                              %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 22]                                              %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 23]                                              %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 24]                                              %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 25]                                              %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 26]                                              %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 27]                                              %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 28]                                              %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 29]                                              %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 30]                                              %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 31]                                              %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 32]                                              %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 33]                                              %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 34]                                              %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 35]                                              %! _comment_measure_numbers
+    R1 * 13/16                                                                 %! _make_global_rests(1)
+
+    % [J Global_Rests measure 36]                                              %! _comment_measure_numbers
+    R1 * 5/8                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 37]                                              %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 38]                                              %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 39]                                              %! _comment_measure_numbers
+    R1 * 5/16                                                                  %! _make_global_rests(1)
+
+    % [J Global_Rests measure 40]                                              %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 41]                                              %! _comment_measure_numbers
+    R1 * 9/16                                                                  %! _make_global_rests(1)
+
+    % [J Global_Rests measure 42]                                              %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 43]                                              %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 44]                                              %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 45]                                              %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 46]                                              %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 47]                                              %! _comment_measure_numbers
+    R1 * 1/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 48]                                              %! _comment_measure_numbers
+    R1 * 3/2                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 49]                                              %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 50]                                              %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 51]                                              %! _comment_measure_numbers
+    R1 * 9/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 52]                                              %! _comment_measure_numbers
+    R1 * 3/2                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 53]                                              %! _comment_measure_numbers
+    R1 * 1                                                                     %! _make_global_rests(1)
+
+    % [J Global_Rests measure 54]                                              %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _make_global_rests(1)
+
+    % [J Global_Rests measure 55]                                              %! PHANTOM:_style_phantom_measures(4):_comment_measure_numbers
     R1 * 1/4                                                                   %! PHANTOM:_make_global_rests(2)
 
 }                                                                              %! extern
@@ -49,21 +1101,2255 @@ J_Global_Rests = {                                                             %
 
 J_Cello_Music_Voice = {                                                        %! extern
 
-    % [J Cello_Music_Voice measure 1]                                          %! _comment_measure_numbers
-    \clef "bass"                                                               %! DEFAULT_CLEF:_set_status_tag:attach_defaults
-    \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
-%@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):attach_defaults
-    R1 * 7/8                                                                   %! _call_rhythm_commands
-    ^ \baca-default-indicator-markup "(“Cello”)"                               %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    \override Staff.Clef.color = #(x11-color 'violet)                          %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+    \times 4/5 {
+
+        % [J Cello_Music_Voice measure 1]                                      %! _comment_measure_numbers
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        \clef "bass"                                                           %! DEFAULT_CLEF:_set_status_tag:attach_defaults
+        \once \override Staff.Clef.color = #(x11-color 'DarkViolet)            %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
+    %@% \override Staff.Clef.color = ##f                                       %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+        \set Staff.forceClef = ##t                                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):attach_defaults
+        fs!16.
+        ^ \baca-default-indicator-markup "(“Cello”)"                           %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+        [
+        \override Staff.Clef.color = #(x11-color 'violet)                      %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
+        \once \override Stem.direction = #down
+        e16.
+
+        \once \override Stem.direction = #down
+        f16.
+
+        \once \override Stem.direction = #down
+        g16.
+
+        \once \override Stem.direction = #down
+        af!16.
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        a,8
+        [
+
+        \once \override Stem.direction = #up
+        ef!8
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        d16
+        [
+
+        \once \override Stem.direction = #down
+        e16
+
+        \once \override Stem.direction = #down
+        f16
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        cs!16
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
+
+        % [J Cello_Music_Voice measure 2]                                      %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        bf,!8.
+        [
+
+        \once \override Stem.direction = #up
+        a,8.
+
+        \once \override Stem.direction = #up
+        b,8.
+
+        \once \override Stem.direction = #up
+        c8.
+        ]
+
+    }
+
+    \times 4/5 {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        f,16.
+        [
+
+        \once \override Stem.direction = #up
+        a,16.
+
+        \once \override Stem.direction = #up
+        ef!16.
+
+        \once \override Stem.direction = #up
+        d16.
+
+        \once \override Stem.direction = #up
+        e16.
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 3]                                      %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        c8
+        [
+
+        \once \override Stem.direction = #up
+        cs!8
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        bf,!16
+        [
+
+        \once \override Stem.direction = #up
+        a,16
+
+        \once \override Stem.direction = #up
+        b,16
+        ]
+
+    }
+
+    \times 4/5 {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        af,!16
+        [
+
+        \once \override Stem.direction = #up
+        fs,!16
+
+        \once \override Stem.direction = #up
+        e16
+
+        \once \override Stem.direction = #up
+        f,16
+
+        \once \override Stem.direction = #up
+        g,16
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 4]                                      %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        b,8..
+        [
+
+        \once \override Stem.direction = #up
+        c8..
+        ]
+
+    }
+
+    \times 2/3 {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        cs!8
+        [
+
+        \once \override Stem.direction = #up
+        bf,!8
+
+        \once \override Stem.direction = #up
+        a,8
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        g8.
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 5]                                      %! _comment_measure_numbers
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        af!16
+        [
+
+        \once \override Stem.direction = #down
+        fs!16
+
+        \once \override Stem.direction = #down
+        e16
+
+        \once \override Stem.direction = #down
+        f16
+        ]
+
+    }
+
+    \times 4/5 {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        e16
+        [
+
+        \once \override Stem.direction = #up
+        f16
+
+        \once \override Stem.direction = #up
+        a,16
+
+        \once \override Stem.direction = #up
+        ef!16
+
+        \once \override Stem.direction = #up
+        d16
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        f,8..
+        [
+
+        \once \override Stem.direction = #up
+        g,8..
+        ]
+
+    }
+
+    \times 2/3 {
+
+        % [J Cello_Music_Voice measure 6]                                      %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        af,!8
+        [
+
+        \once \override Stem.direction = #up
+        fs,!8
+
+        \once \override Stem.direction = #up
+        e8
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        cs!16.
+        [
+
+        \once \override Stem.direction = #up
+        d16.
+        ]
+
+    }
+
+    \times 2/3 {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        b,8
+        [
+
+        \once \override Stem.direction = #up
+        bf,!8
+        ]
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        c2
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 7]                                      %! _comment_measure_numbers
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        a,16
+        [
+
+        \once \override Stem.direction = #down
+        g16
+
+        \once \override Stem.direction = #down
+        f16
+
+        \once \override Stem.direction = #down
+        fs!16
+
+        \once \override Stem.direction = #down
+        af!16
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        c32
+        [
+
+        \once \override Stem.direction = #up
+        cs!32
+        ]
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 11/18 {
+
+        % [J Cello_Music_Voice measure 8]                                      %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        d8.
+        [
+
+        \once \override Stem.direction = #up
+        b,8.
+        ]
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        bf,!2.
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 5/6 {
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        af,!4.
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 9]                                      %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        a,16.
+        [
+
+        \once \override Stem.direction = #up
+        g,16.
+
+        \once \override Stem.direction = #up
+        f,16.
+
+        \once \override Stem.direction = #up
+        fs,!16.
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        f,16
+        [
+
+        \once \override Stem.direction = #up
+        fs,!16
+
+        \once \override Stem.direction = #up
+        bf,!16
+
+        \once \override Stem.direction = #up
+        e16
+
+        \once \override Stem.direction = #up
+        ef!16
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        fs,!32
+        [
+
+        \once \override Stem.direction = #up
+        af,!32
+        ]
+
+    }
+
+    \times 8/9 {
+
+        % [J Cello_Music_Voice measure 10]                                     %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        a,16..
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        g,4..
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        f,4..
+
+    }
+
+    \times 4/5 {
+
+        % [J Cello_Music_Voice measure 11]                                     %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        ef!16.
+        [
+
+        \once \override Stem.direction = #up
+        f16.
+
+        \once \override Stem.direction = #up
+        fs!16.
+
+        \once \override Stem.direction = #up
+        bf,!16.
+
+        \once \override Stem.direction = #up
+        e16.
+        ]
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 5/6 {
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        bf,!4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        c4.
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 12]                                     %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        cs!16
+        [
+
+        \once \override Stem.direction = #up
+        d16
+
+        \once \override Stem.direction = #up
+        b,16
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        e16
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        ef,!2
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 13]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        d4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        e,4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        fs,!4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        f,4.
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 14]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        fs,!4
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        f,4
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        cs!4
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        g,4
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        af,!4
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 15]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        \once \override Stem.direction = #up
+        f,8
+        [
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        \once \override Stem.direction = #up
+        ef,!8
+        ]
+
+    }
+
+    \times 2/3 {
+
+        % [J Cello_Music_Voice measure 16]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        d1
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        e,1
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        fs,!1
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 6/7 {
+
+        % [J Cello_Music_Voice measure 17]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        f,4.
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        g8.
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        af!8.
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        c'8.
+        ]
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        fs,!4.
+
+    }
+
+    \times 2/3 {
+
+        % [J Cello_Music_Voice measure 18]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        c2..
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        d'4..
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 19]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        ef!8
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        e,4
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        cs!4
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
+        fs!8
+        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
+        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 5/6 {
+
+        % [J Cello_Music_Voice measure 20]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
+        fs!8.
+        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
+        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        af!8.
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        a8.
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        cs!8.
+        ]
+
+    }
+
+    \times 4/5 {
+
+        % [J Cello_Music_Voice measure 21]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        d8..
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        cs!8..
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        ef!8..
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        e8..
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        f8..
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 22]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        af!8
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        a8
+        ]
+
+    }
+
+    \times 2/3 {
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        b8
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        c'8
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        bf!8
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 23]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        f4
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        d'4
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        cs'!4
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        ef!4
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        e4
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 24]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        bf!8.
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        af!8.
+        ]
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 5/9 {
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        a4.
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        b,4.
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        c4.
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 25]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #up
+        cs!8
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        g16.
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        fs!16.
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        af!16.
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        a16.
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 26]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        c4
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        bf!4
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        af!4
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        a4
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        b4
+
+    }
+
+    \times 2/3 {
+
+        % [J Cello_Music_Voice measure 27]                                     %! _comment_measure_numbers
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        fs!8
+        [
+
+        \once \override Stem.direction = #down
+        a,8
+
+        \once \override Stem.direction = #down
+        bf,!8
+
+        \once \override Stem.direction = #down
+        af!8
+        ]
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        g4
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        cs'!4
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        ef!4
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 28]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        d'8
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        c'8
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        b8
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        bf!8
+
+    }
+
+    \times 2/3 {
+
+        % [J Cello_Music_Voice measure 29]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        e2
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        f2
+
+        ef!4
+
+        d4
+
+    }
+
+    \times 2/3 {
+
+        % [J Cello_Music_Voice measure 30]                                     %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        b,8
+        [
+
+        \once \override Stem.direction = #up
+        cs!8
+
+        \once \override Stem.direction = #up
+        ef!8
+
+        \once \override Stem.direction = #up
+        d8
+        ]
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        c4
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        d'4
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        bf!4
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 31]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        e8
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        f8
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        ef!8
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #up
+        b,8.
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #up
+        ef!8.
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 32]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        a,4.
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        af!8.
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        bf!8.
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 33]                                     %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        fs,!16
+        [
+
+        \once \override Stem.direction = #up
+        g,16
+
+        \once \override Stem.direction = #up
+        e16
+
+        \once \override Stem.direction = #up
+        ef!16
+        ]
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        f8
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        bf!16
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        b16
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 34]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        ef!4
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        a,2
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        af,!2
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 35]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        f4
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/5 {
+
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        fs!8.
+        [
+
+        \once \override Stem.direction = #down
+        g8.
+
+        \once \override Stem.direction = #down
+        e8.
+        ]
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        ef!4.
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 36]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #up
+        cs!8
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #up
+        d8
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #up
+        c8
+        ]
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        bf,!16
+        [
+
+        \once \override Stem.direction = #up
+        b,16
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        ef!16
+        [
+
+        \once \override Stem.direction = #up
+        f,16
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 37]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        fs,!2
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        g,2
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        e4
+
+    }
+
+    \times 2/3 {
+
+        % [J Cello_Music_Voice measure 38]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        b4
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        cs!8
+        [
+
+        \once \override Stem.direction = #up
+        d8
+
+        \once \override Stem.direction = #up
+        c8
+
+        \once \override Stem.direction = #up
+        bf,!8
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        af!4
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        bf!4
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 39]                                     %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        b,16
+        [
+
+        \once \override Stem.direction = #up
+        ef!16
+
+        \once \override Stem.direction = #up
+        a,16
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        \once \override Stem.direction = #up
+        bf,!8
+
+    }
+
+    \times 2/3 {
+
+        % [J Cello_Music_Voice measure 40]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        b,2
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        cs!2
+
+        d4
+
+        c4
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 6/7 {
+
+        % [J Cello_Music_Voice measure 41]                                     %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        a,16.
+        [
+
+        \once \override Stem.direction = #up
+        af,!16.
+
+        \once \override Stem.direction = #up
+        bf,!16.
+        ]
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #up
+        b,8.
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #up
+        ef!8.
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 42]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        e,4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        ef,!4.
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 43]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        f8
+        [
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        fs!8
+
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Stem.direction = #down
+        g8
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        fs!8
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        g16.
+        [
+
+        \once \override Stem.direction = #down
+        af!16.
+
+        \once \override Stem.direction = #down
+        f16.
+
+        \once \override Stem.direction = #down
+        e16.
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 44]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        d4
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        ef!16
+        [
+
+        \once \override Stem.direction = #up
+        cs!16
+
+        \once \override Stem.direction = #up
+        b,16
+
+        \once \override Stem.direction = #up
+        c16
+        ]
+
+    }
+
+    \times 4/5 {
+
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        e16
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        fs,!4
+
+    }
+
+    \times 8/9 {
+
+        % [J Cello_Music_Voice measure 45]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        g,4..
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        af,!4..
+
+        \once \override Beam.positions = #'(-4.5 . -4.5)
+        \once \override Stem.direction = #down
+        f16..
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
+
+        % [J Cello_Music_Voice measure 46]                                     %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        c16.
+        [
+
+        \once \override Stem.direction = #up
+        d16.
+
+        \once \override Stem.direction = #up
+        ef!16.
+
+        \once \override Stem.direction = #up
+        cs!16.
+        ]
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        b,4.
+
+    }
+
+    \times 4/5 {
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        a,4..
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        b,16..
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 47]                                     %! _comment_measure_numbers
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        c16
+        [
+
+        \once \override Stem.direction = #up
+        e16
+
+        \once \override Stem.direction = #up
+        bf,!16
+        ]
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Beam.positions = #'(5.5 . 5.5)
+        \once \override Stem.direction = #up
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
+        b,16
+        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
+        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
+    }
+
+    \times 4/5 {
+
+        % [J Cello_Music_Voice measure 48]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
+        b,4.
+        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
+        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        a,4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        af,!4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        bf,!4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        c4.
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 49]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        d,2
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        c,2
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 50]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        b,,4
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        g,4
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        cs,!4
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        c4
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
+
+        % [J Cello_Music_Voice measure 51]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        b,2.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        a,2.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        af,!2.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        bf,!2.
+
+    }
+
+    \times 4/5 {
+
+        % [J Cello_Music_Voice measure 52]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        cs,!4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        d,4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        c,4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        b,,4.
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        g,4.
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 53]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        fs,!2
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        g,2
+
+    }
+
+    \scaleDurations #'(1 . 1) {
+
+        % [J Cello_Music_Voice measure 54]                                     %! _comment_measure_numbers
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        f,4
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        e,4
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        ef,!4
+
+    }
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
         \context Voice = "Cello_Music_Voice"                                   %! PHANTOM:_make_multimeasure_rest_container
         {                                                                      %! PHANTOM:_make_multimeasure_rest_container
 
-            % [J Cello_Music_Voice measure 2]                                  %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
+            % [J Cello_Music_Voice measure 55]                                 %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
             c'1 * 1/4                                                          %! PHANTOM:_make_multimeasure_rest_container
 
@@ -72,7 +3358,7 @@ J_Cello_Music_Voice = {                                                        %
         \context Voice = "Cello_Rest_Voice"                                    %! PHANTOM:_make_multimeasure_rest_container
         {                                                                      %! PHANTOM:_make_multimeasure_rest_container
 
-            % [J Cello_Rest_Voice measure 2]                                   %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
+            % [J Cello_Rest_Voice measure 55]                                  %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \once \override Score.TimeSignature.X-extent = ##f                 %! PHANTOM:_style_phantom_measures(6)
             \once \override MultiMeasureRest.transparent = ##t                 %! PHANTOM:_style_phantom_measures(7)
             \stopStaff                                                         %! PHANTOM:_style_phantom_measures(8)
