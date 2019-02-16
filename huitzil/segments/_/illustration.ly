@@ -5,10 +5,7 @@
 
 \include "../../stylesheets/stylesheet.ily"                                    %! LilyPondFile
 
-\header {                                                                      %! LilyPondFile
-    title = ##f
-    composer = ##f
-}                                                                              %! LilyPondFile
+\header {}
 \include "illustration.ily"                                                    %! extern
 
 

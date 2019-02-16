@@ -29,14 +29,14 @@
             " "
     }
     evenHeaderMarkup = \markup \null
-    left-margin = 15\mm
+    left-margin = 20\mm
     oddFooterMarkup = \evenFooterMarkup
     oddHeaderMarkup = \markup \null
     print-first-page-number = ##f
     print-page-number = ##t
     ragged-bottom = ##t
     ragged-last-bottom = ##t
-    right-margin = 15\mm
+    right-margin = 20\mm
     markup-system-spacing = #'(
         (basic-distance . 0)
         (minimum-distance . 56)
@@ -70,7 +70,7 @@
         \fontsize #5 "Trevor Bača"
         \hspace #1
         \fontsize #3.5 "(*1975)"
-        \hspace #15
+        %%%%\hspace #15
     }
     tagline = \markup \null
     title = \markup \column {

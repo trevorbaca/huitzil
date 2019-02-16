@@ -54,8 +54,6 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     _do_not_require_margin_markup = True
 
-    _global_rests_in_topmost_staff = True
-
     ### INITIALIZER ###
 
     def __init__(self):

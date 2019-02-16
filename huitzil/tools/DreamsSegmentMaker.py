@@ -207,7 +207,8 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
 
     def _configure_lilypond_file(self):
         lilypond_file = self._lilypond_file
-        if not self.name == 'dreams':
+        #if not self.name == 'dreams':
+        if not self.name == '_':
             lilypond_file.header_block.title = None
             lilypond_file.header_block.composer = None
 

@@ -160,18 +160,22 @@ for component in music:
     else:
         current_duration = candidate_duration
 measure_durations.append(current_duration)
+time_signatures = []
+for measure_duration in measure_durations:
+    duration = measure_duration.with_denominator(4)
+    time_signatures.append(duration)
 
 ### SEGMENT-MAKER ###
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.Tags().LOCAL_MEASURE_NUMBER_MARKUP,
-        abjad.Tags().STAGE_NUMBER_MARKUP,
+        #abjad.Tags().LOCAL_MEASURE_NUMBER_MARKUP,
+        #abjad.Tags().STAGE_NUMBER_MARKUP,
         ],
     first_segment=True,
     phantom=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
-    time_signatures=measure_durations,
+    time_signatures=time_signatures,
     validate_measure_count=54,
     )
 
