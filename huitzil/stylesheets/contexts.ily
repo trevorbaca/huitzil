@@ -188,6 +188,7 @@
         barNumberFormatter = #baca-oval-bar-numbers
         markFormatter = #format-mark-box-alphabet
         proportionalNotationDuration = #(ly:make-moment 1 16)
+        %%%proportionalNotationDuration = #(ly:make-moment 1 28)
         tupletFullLength = ##t
     }
 }
