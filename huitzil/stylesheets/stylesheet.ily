@@ -1,37 +1,42 @@
 #(set-default-paper-size "11x17landscape")
-#(set-global-staff-size 14)
+#(set-global-staff-size 13)
 
 \include "/Users/trevorbaca/baca/lilypond/baca.ily"
 \include "contexts.ily"
 
 \paper {
     bottom-margin = 7\mm
-    evenFooterMarkup = \markup \fill-line {
-        " "
-        \concat {
-            \bold \fontsize #3
-            \on-the-fly #print-page-number-check-first
-            \fromproperty #'page:page-number-string
-            \hspace #15
-        }
+    evenFooterMarkup = \markup
+        \on-the-fly #print-page-number-check-first
+        \fill-line {
+            " "
+            \bold
+            \fontsize #3
+            \override #'(font-name . "Palatino")
+            \concat {
+                \override #'(font-name . "Palatino Italic")
+                Huitzil
+                \hspace #3
+                —
+                \hspace #3
+                \on-the-fly #print-page-number-check-first
+                \fromproperty #'page:page-number-string
+                \hspace #3
+                —
+                \hspace #3
+                Bača
+            }
+            " "
     }
     evenHeaderMarkup = \markup \null
     left-margin = 15\mm
-    oddFooterMarkup = \markup \fill-line {
-        " "
-        \concat {
-            \bold \fontsize #3
-            \on-the-fly #print-page-number-check-first
-            \fromproperty #'page:page-number-string
-            \hspace #15
-        }
-    }
+    oddFooterMarkup = \evenFooterMarkup
     oddHeaderMarkup = \markup \null
     print-first-page-number = ##f
     print-page-number = ##t
     ragged-bottom = ##t
     ragged-last-bottom = ##t
-    right-margin = 0\mm
+    right-margin = 15\mm
     markup-system-spacing = #'(
         (basic-distance . 0)
         (minimum-distance . 56)
@@ -88,5 +93,5 @@
     indent = 11.5
     ragged-bottom = ##t
     ragged-last = ##t
-    ragged-right = ##t
+    %%%ragged-right = ##t
 }
