@@ -227,16 +227,6 @@ class DreamsSegmentMaker(abjad.SegmentMaker):
         stop_offset = abjad.inspect(stop_measure).timespan().stop_offset
         return start_offset, stop_offset
 
-    def _get_rhythm_specifier(self, voice_name, stage):
-        #music_makers = []
-        for music_maker in self.music_makers:
-            if music_maker.voice_name == voice_name:
-                start = music_maker.start_stage
-                stop = music_maker.stop_stage + 1
-                if stage in range(start, stop):
-                    return music_maker
-        raise KeyError(f'no {voice_name!r} maker for stage {stage}.')
-
     def _initialize_music_makers(self, music_makers):
         music_makers = music_makers or []
         music_makers = list(music_makers)
