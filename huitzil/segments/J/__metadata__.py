@@ -36,11 +36,6 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='Cello_Music_Voice',
-                                manifest='instruments',
-                                value='Cello',
-                                ),
-                            abjad.Momento(
-                                context='Cello_Music_Voice',
                                 prototype='abjad.Clef',
                                 value='bass',
                                 ),

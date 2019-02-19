@@ -22,21 +22,21 @@ class DreamsScoreTemplate(baca.ScoreTemplate):
         >>> abjad.f(lilypond_file[abjad.Score], strict=89)
         \context Score = "Score"                                                                 %! ScoreTemplate
         <<                                                                                       %! ScoreTemplate
-            \context GlobalContext = "Global_Context"                                            %! _make_global_context
-            <<                                                                                   %! _make_global_context
-                \context GlobalRests = "Global_Rests"                                            %! _make_global_context
-                {                                                                                %! _make_global_context
-                }                                                                                %! _make_global_context
-                \context GlobalSkips = "Global_Skips"                                            %! _make_global_context
-                {                                                                                %! _make_global_context
-                }                                                                                %! _make_global_context
-            >>                                                                                   %! _make_global_context
+            \context GlobalContext = "Global_Context"                                            %! abjad.ScoreTemplate._make_global_context
+            <<                                                                                   %! abjad.ScoreTemplate._make_global_context
+                \context GlobalRests = "Global_Rests"                                            %! abjad.ScoreTemplate._make_global_context
+                {                                                                                %! abjad.ScoreTemplate._make_global_context
+                }                                                                                %! abjad.ScoreTemplate._make_global_context
+                \context GlobalSkips = "Global_Skips"                                            %! abjad.ScoreTemplate._make_global_context
+                {                                                                                %! abjad.ScoreTemplate._make_global_context
+                }                                                                                %! abjad.ScoreTemplate._make_global_context
+            >>                                                                                   %! abjad.ScoreTemplate._make_global_context
             \context Staff = "Staff"                                                             %! ScoreTemplate
             <<                                                                                   %! ScoreTemplate
                 \context Voice = "Music_Voice"                                                   %! ScoreTemplate
                 {                                                                                %! ScoreTemplate
-                    \clef "bass"                                                                 %! attach_defaults
-                    s1                                                                           %! ScoreTemplate.__illustrate__
+                    \clef "bass"                                                                 %! abjad.ScoreTemplate.attach_defaults
+                    s1                                                                           %! abjad.ScoreTemplate.__illustrate__
                 }                                                                                %! ScoreTemplate
             >>                                                                                   %! ScoreTemplate
         >>                                                                                       %! ScoreTemplate
