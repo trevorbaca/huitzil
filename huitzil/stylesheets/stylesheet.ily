@@ -1,4 +1,4 @@
-#(set-default-paper-size "11x17landscape")
+#(set-default-paper-size "ledger")
 #(set-global-staff-size 13)
 
 \include "/Users/trevorbaca/baca/lilypond/baca.ily"
@@ -70,7 +70,6 @@
         \fontsize #5 "Trevor Bača"
         \hspace #1
         \fontsize #3.5 "(*1975)"
-        %%%%\hspace #15
     }
     tagline = \markup \null
     title = \markup \column {

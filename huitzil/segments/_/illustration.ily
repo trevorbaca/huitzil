@@ -171,204 +171,142 @@ Global_Skips = {                                                               %
 Music_Voice = {                                                                %! extern
     \times 4/5 {
         \tempo 8=78
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         \clef "bass"
         fs16.
         [
-        \once \override Stem.direction = #down
         e16.
-        \once \override Stem.direction = #down
         f16.
-        \once \override Stem.direction = #down
         g16.
-        \once \override Stem.direction = #down
         af16.
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         a,8
         [
-        \once \override Stem.direction = #up
         ef8
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         d16
         [
-        \once \override Stem.direction = #down
         e16
-        \once \override Stem.direction = #down
         f16
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         cs16
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         bf,8.
         [
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         a,8.
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         b,8.
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         c8.
         ]
     }
     \times 4/5 {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         f,16.
         [
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         a,16.
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         ef16.
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         d16.
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         e16.
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         c8
         [
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         cs8
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         bf,16
         [
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         a,16
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         b,16
         ]
     }
     \times 4/5 {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         af,16
         [
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         fs,16
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         e16
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         f,16
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         g,16
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         b,8..
         [
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         c8..
         ]
     }
     \times 2/3 {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         cs8
         [
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         bf,8
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         a,8
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         \once \override TupletBracket.staff-padding = #2.5
         g8.
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         \once \override TupletBracket.staff-padding = #2.5
         af16
         [
-        \once \override Stem.direction = #down
         \once \override TupletBracket.staff-padding = #2.5
         fs16
-        \once \override Stem.direction = #down
         \once \override TupletBracket.staff-padding = #2.5
         e16
-        \once \override Stem.direction = #down
         \once \override TupletBracket.staff-padding = #2.5
         f16
         ]
     }
     \times 4/5 {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         e16
         [
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         f16
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         a,16
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         ef16
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         d16
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         f,8..
         [
-        \once \override Stem.direction = #up
         \once \override TupletBracket.staff-padding = #2.5
         g,8..
         ]
@@ -416,26 +354,17 @@ Music_Voice = {                                                                %
         c2
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         a,16
         [
-        \once \override Stem.direction = #down
         g16
-        \once \override Stem.direction = #down
         f16
-        \once \override Stem.direction = #down
         fs16
-        \once \override Stem.direction = #down
         af16
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         c32
         [
-        \once \override Stem.direction = #up
         cs32
         ]
     }
@@ -472,39 +401,25 @@ Music_Voice = {                                                                %
         af,4.
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         a,16.
         [
-        \once \override Stem.direction = #up
         g,16.
-        \once \override Stem.direction = #up
         f,16.
-        \once \override Stem.direction = #up
         fs,16.
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         f,16
         [
-        \once \override Stem.direction = #up
         fs,16
-        \once \override Stem.direction = #up
         bf,16
-        \once \override Stem.direction = #up
         e16
-        \once \override Stem.direction = #up
         ef16
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         fs,32
         [
-        \once \override Stem.direction = #up
         af,32
         ]
     }
@@ -670,12 +585,10 @@ Music_Voice = {                                                                %
     \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
-        \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        \once \override Stem.direction = #up
         f,8
         [
         \once \override Accidental.color = #blue
@@ -684,7 +597,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        \once \override Stem.direction = #up
         ef,8
         ]
     }
@@ -835,12 +747,10 @@ Music_Voice = {                                                                %
     \times 5/6 {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         fs8.
         [
         \once \override Accidental.color = #red
@@ -849,7 +759,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         af8.
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -857,7 +766,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         a8.
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -865,19 +773,16 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         cs8.
         ]
     }
     \times 4/5 {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         d8..
         [
         \once \override Accidental.color = #red
@@ -886,7 +791,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         cs8..
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -894,7 +798,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         ef8..
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -902,7 +805,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         e8..
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -910,19 +812,16 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         f8..
         ]
     }
     \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         af8
         [
         \once \override Accidental.color = #red
@@ -931,19 +830,16 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         a8
         ]
     }
     \times 2/3 {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         b8
         [
         \once \override Accidental.color = #red
@@ -952,7 +848,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         c'8
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -960,7 +855,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         bf8
         ]
     }
@@ -1004,12 +898,10 @@ Music_Voice = {                                                                %
     \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         bf8.
         [
         \once \override Accidental.color = #red
@@ -1018,7 +910,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         af8.
         ]
     }
@@ -1049,23 +940,19 @@ Music_Voice = {                                                                %
     \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #up
         cs8
     }
     \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         g16.
         [
         \once \override Accidental.color = #red
@@ -1074,7 +961,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         fs16.
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1082,7 +968,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         af16.
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1090,7 +975,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         a16.
         ]
     }
@@ -1186,12 +1070,10 @@ Music_Voice = {                                                                %
     \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         d'8
         [
         \once \override Accidental.color = #red
@@ -1200,7 +1082,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         c'8
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1208,19 +1089,16 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         b8
         ]
     }
     \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         bf8
     }
     \times 2/3 {
@@ -1308,12 +1186,10 @@ Music_Voice = {                                                                %
     \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         e8
         [
         \once \override Accidental.color = #red
@@ -1322,7 +1198,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         f8
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1330,19 +1205,16 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         ef8
         ]
     }
     \scaleDurations #'(1 . 1) {
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #up
         b,8.
         [
         \once \override Accidental.color = #red
@@ -1351,7 +1223,6 @@ Music_Voice = {                                                                %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #up
         ef8.
         ]
     }
@@ -1895,19 +1766,13 @@ Music_Voice = {                                                                %
         b,16..
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         c16
         [
-        \once \override Stem.direction = #up
         e16
-        \once \override Stem.direction = #up
         bf,16
         ]
     }
     \scaleDurations #'(1 . 1) {
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         b,16
     }
     \times 4/5 {
