@@ -107,9 +107,6 @@ class DreamsMusicMaker(object):
                 abjad.glissando(note_pair)
 
     def _attach_beams(self, music):
-        bass_clef = abjad.Clef('bass')
-        down_beam_positions = (-4.5, -4.5)
-        up_beam_positions = (5.5, 5.5)
         tuplets = abjad.iterate(music).components(abjad.Tuplet)
         for tuplet in tuplets:
             voice_numbers = [
@@ -120,31 +117,6 @@ class DreamsMusicMaker(object):
             for note_group in note_groups:
                 note_group = abjad.select(note_group)
                 abjad.beam(note_group)
-                first_note = note_group[0]
-                if abjad.Duration(1, 4) <= first_note.written_duration:
-                    continue
-                staff_positions = [
-                    _.written_pitch.to_staff_position(clef=bass_clef).number
-                    for _ in note_group
-                    ]
-                highest_staff_position = max(staff_positions)
-                lowest_staff_position = min(staff_positions)
-                if 0 <= lowest_staff_position:
-                    stem_direction = abjad.Down
-                elif highest_staff_position <= 0:
-                    stem_direction = abjad.Up
-                elif abs(lowest_staff_position) < abs(highest_staff_position):
-                    stem_direction = abjad.Down
-                elif abs(highest_staff_position) < abs(lowest_staff_position):
-                    stem_direction = abjad.Up
-                else:
-                    stem_direction = abjad.Up
-                if stem_direction == abjad.Up:
-                    abjad.override(first_note).beam.positions = up_beam_positions
-                else:
-                    abjad.override(first_note).beam.positions = down_beam_positions
-                for note in note_group:
-                    abjad.override(note).stem.direction = stem_direction
 
     def _attach_leaf_index_markup(self, music):
         if not self.index_logical_ties:

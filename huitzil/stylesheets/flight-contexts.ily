@@ -48,10 +48,6 @@
         \override DynamicLineSpanner.staff-padding = 6
     }
     \context {
-        \Staff
-        instrumentName = \markup \null
-    }
-    \context {
         \PianoStaff
         \accepts BowStaff
         \accepts PitchStaff

@@ -1311,26 +1311,21 @@ J_Cello_Music_Voice = {                                                        %
     \times 4/5 {
 
         % [J Cello_Music_Voice measure 1]                                      %! _comment_measure_numbers
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         \clef "bass"                                                           %! DEFAULT_CLEF:_set_status_tag:attach_defaults
         \once \override Staff.Clef.color = #(x11-color 'DarkViolet)            %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):attach_defaults
         fs!16.
+        ^ \baca-default-indicator-markup "(“Cello”)"                           %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         [
         \override Staff.Clef.color = #(x11-color 'violet)                      %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        \once \override Stem.direction = #down
         e16.
 
-        \once \override Stem.direction = #down
         f16.
 
-        \once \override Stem.direction = #down
         g16.
 
-        \once \override Stem.direction = #down
         af!16.
         ]
 
@@ -1338,12 +1333,9 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         a,8
         [
 
-        \once \override Stem.direction = #up
         ef!8
         ]
 
@@ -1351,15 +1343,11 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         d16
         [
 
-        \once \override Stem.direction = #down
         e16
 
-        \once \override Stem.direction = #down
         f16
         ]
 
@@ -1367,8 +1355,6 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         cs!16
 
     }
@@ -1377,18 +1363,13 @@ J_Cello_Music_Voice = {                                                        %
     \times 3/4 {
 
         % [J Cello_Music_Voice measure 2]                                      %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         bf,!8.
         [
 
-        \once \override Stem.direction = #up
         a,8.
 
-        \once \override Stem.direction = #up
         b,8.
 
-        \once \override Stem.direction = #up
         c8.
         ]
 
@@ -1396,21 +1377,15 @@ J_Cello_Music_Voice = {                                                        %
 
     \times 4/5 {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         f,16.
         [
 
-        \once \override Stem.direction = #up
         a,16.
 
-        \once \override Stem.direction = #up
         ef!16.
 
-        \once \override Stem.direction = #up
         d16.
 
-        \once \override Stem.direction = #up
         e16.
         ]
 
@@ -1419,12 +1394,9 @@ J_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1) {
 
         % [J Cello_Music_Voice measure 3]                                      %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         c8
         [
 
-        \once \override Stem.direction = #up
         cs!8
         ]
 
@@ -1432,15 +1404,11 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         bf,!16
         [
 
-        \once \override Stem.direction = #up
         a,16
 
-        \once \override Stem.direction = #up
         b,16
         ]
 
@@ -1448,21 +1416,15 @@ J_Cello_Music_Voice = {                                                        %
 
     \times 4/5 {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         af,!16
         [
 
-        \once \override Stem.direction = #up
         fs,!16
 
-        \once \override Stem.direction = #up
         e16
 
-        \once \override Stem.direction = #up
         f,16
 
-        \once \override Stem.direction = #up
         g,16
         ]
 
@@ -1471,12 +1433,9 @@ J_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1) {
 
         % [J Cello_Music_Voice measure 4]                                      %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         b,8..
         [
 
-        \once \override Stem.direction = #up
         c8..
         ]
 
@@ -1484,15 +1443,11 @@ J_Cello_Music_Voice = {                                                        %
 
     \times 2/3 {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         cs!8
         [
 
-        \once \override Stem.direction = #up
         bf,!8
 
-        \once \override Stem.direction = #up
         a,8
         ]
 
@@ -1500,8 +1455,6 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         g8.
 
     }
@@ -1509,18 +1462,13 @@ J_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1) {
 
         % [J Cello_Music_Voice measure 5]                                      %! _comment_measure_numbers
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         af!16
         [
 
-        \once \override Stem.direction = #down
         fs!16
 
-        \once \override Stem.direction = #down
         e16
 
-        \once \override Stem.direction = #down
         f16
         ]
 
@@ -1528,21 +1476,15 @@ J_Cello_Music_Voice = {                                                        %
 
     \times 4/5 {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         e16
         [
 
-        \once \override Stem.direction = #up
         f16
 
-        \once \override Stem.direction = #up
         a,16
 
-        \once \override Stem.direction = #up
         ef!16
 
-        \once \override Stem.direction = #up
         d16
         ]
 
@@ -1550,12 +1492,9 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         f,8..
         [
 
-        \once \override Stem.direction = #up
         g,8..
         ]
 
@@ -1564,15 +1503,11 @@ J_Cello_Music_Voice = {                                                        %
     \times 2/3 {
 
         % [J Cello_Music_Voice measure 6]                                      %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         af,!8
         [
 
-        \once \override Stem.direction = #up
         fs,!8
 
-        \once \override Stem.direction = #up
         e8
         ]
 
@@ -1580,12 +1515,9 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         cs!16.
         [
 
-        \once \override Stem.direction = #up
         d16.
         ]
 
@@ -1593,12 +1525,9 @@ J_Cello_Music_Voice = {                                                        %
 
     \times 2/3 {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         b,8
         [
 
-        \once \override Stem.direction = #up
         bf,!8
         ]
 
@@ -1615,21 +1544,15 @@ J_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1) {
 
         % [J Cello_Music_Voice measure 7]                                      %! _comment_measure_numbers
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         a,16
         [
 
-        \once \override Stem.direction = #down
         g16
 
-        \once \override Stem.direction = #down
         f16
 
-        \once \override Stem.direction = #down
         fs!16
 
-        \once \override Stem.direction = #down
         af!16
         ]
 
@@ -1637,12 +1560,9 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         c32
         [
 
-        \once \override Stem.direction = #up
         cs!32
         ]
 
@@ -1652,12 +1572,9 @@ J_Cello_Music_Voice = {                                                        %
     \times 11/18 {
 
         % [J Cello_Music_Voice measure 8]                                      %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         d8.
         [
 
-        \once \override Stem.direction = #up
         b,8.
         ]
 
@@ -1687,18 +1604,13 @@ J_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1) {
 
         % [J Cello_Music_Voice measure 9]                                      %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         a,16.
         [
 
-        \once \override Stem.direction = #up
         g,16.
 
-        \once \override Stem.direction = #up
         f,16.
 
-        \once \override Stem.direction = #up
         fs,!16.
         ]
 
@@ -1706,21 +1618,15 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         f,16
         [
 
-        \once \override Stem.direction = #up
         fs,!16
 
-        \once \override Stem.direction = #up
         bf,!16
 
-        \once \override Stem.direction = #up
         e16
 
-        \once \override Stem.direction = #up
         ef!16
         ]
 
@@ -1728,12 +1634,9 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         fs,!32
         [
 
-        \once \override Stem.direction = #up
         af,!32
         ]
 
@@ -1742,8 +1645,6 @@ J_Cello_Music_Voice = {                                                        %
     \times 8/9 {
 
         % [J Cello_Music_Voice measure 10]                                     %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         a,16..
 
         \once \override Accidental.color = #blue
@@ -1767,21 +1668,15 @@ J_Cello_Music_Voice = {                                                        %
     \times 4/5 {
 
         % [J Cello_Music_Voice measure 11]                                     %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         ef!16.
         [
 
-        \once \override Stem.direction = #up
         f16.
 
-        \once \override Stem.direction = #up
         fs!16.
 
-        \once \override Stem.direction = #up
         bf,!16.
 
-        \once \override Stem.direction = #up
         e16.
         ]
 
@@ -1811,15 +1706,11 @@ J_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1) {
 
         % [J Cello_Music_Voice measure 12]                                     %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         cs!16
         [
 
-        \once \override Stem.direction = #up
         d16
 
-        \once \override Stem.direction = #up
         b,16
         ]
 
@@ -1827,8 +1718,6 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         e16
 
     }
@@ -1932,12 +1821,10 @@ J_Cello_Music_Voice = {                                                        %
         % [J Cello_Music_Voice measure 15]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
-        \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        \once \override Stem.direction = #up
         f,8
         [
 
@@ -1947,7 +1834,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        \once \override Stem.direction = #up
         ef,!8
         ]
 
@@ -1996,12 +1882,10 @@ J_Cello_Music_Voice = {                                                        %
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         g8.
         [
 
@@ -2011,7 +1895,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         af!8.
 
         \once \override Accidental.color = #red
@@ -2020,7 +1903,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         c'8.
         ]
 
@@ -2060,12 +1942,10 @@ J_Cello_Music_Voice = {                                                        %
         % [J Cello_Music_Voice measure 19]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         ef!8
 
         \once \override Accidental.color = #blue
@@ -2090,12 +1970,10 @@ J_Cello_Music_Voice = {                                                        %
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs!8
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -2109,12 +1987,10 @@ J_Cello_Music_Voice = {                                                        %
         % [J Cello_Music_Voice measure 20]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs!8.
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -2127,7 +2003,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         af!8.
 
         \once \override Accidental.color = #red
@@ -2136,7 +2011,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         a8.
 
         \once \override Accidental.color = #red
@@ -2145,7 +2019,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         cs!8.
         ]
 
@@ -2156,12 +2029,10 @@ J_Cello_Music_Voice = {                                                        %
         % [J Cello_Music_Voice measure 21]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         d8..
         [
 
@@ -2171,7 +2042,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         cs!8..
 
         \once \override Accidental.color = #red
@@ -2180,7 +2050,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         ef!8..
 
         \once \override Accidental.color = #red
@@ -2189,7 +2058,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         e8..
 
         \once \override Accidental.color = #red
@@ -2198,7 +2066,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         f8..
         ]
 
@@ -2209,12 +2076,10 @@ J_Cello_Music_Voice = {                                                        %
         % [J Cello_Music_Voice measure 22]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         af!8
         [
 
@@ -2224,7 +2089,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         a8
         ]
 
@@ -2234,12 +2098,10 @@ J_Cello_Music_Voice = {                                                        %
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         b8
         [
 
@@ -2249,7 +2111,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         c'8
 
         \once \override Accidental.color = #red
@@ -2258,7 +2119,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         bf!8
         ]
 
@@ -2314,12 +2174,10 @@ J_Cello_Music_Voice = {                                                        %
         % [J Cello_Music_Voice measure 24]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         bf!8.
         [
 
@@ -2329,7 +2187,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         af!8.
         ]
 
@@ -2369,12 +2226,10 @@ J_Cello_Music_Voice = {                                                        %
         % [J Cello_Music_Voice measure 25]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #up
         cs!8
 
     }
@@ -2383,12 +2238,10 @@ J_Cello_Music_Voice = {                                                        %
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         g16.
         [
 
@@ -2398,7 +2251,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         fs!16.
 
         \once \override Accidental.color = #red
@@ -2407,7 +2259,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         af!16.
 
         \once \override Accidental.color = #red
@@ -2416,7 +2267,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         a16.
         ]
 
@@ -2470,18 +2320,13 @@ J_Cello_Music_Voice = {                                                        %
     \times 2/3 {
 
         % [J Cello_Music_Voice measure 27]                                     %! _comment_measure_numbers
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         fs!8
         [
 
-        \once \override Stem.direction = #down
         a,8
 
-        \once \override Stem.direction = #down
         bf,!8
 
-        \once \override Stem.direction = #down
         af!8
         ]
 
@@ -2520,12 +2365,10 @@ J_Cello_Music_Voice = {                                                        %
         % [J Cello_Music_Voice measure 28]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         d'8
         [
 
@@ -2535,7 +2378,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         c'8
 
         \once \override Accidental.color = #red
@@ -2544,7 +2386,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         b8
         ]
 
@@ -2554,12 +2395,10 @@ J_Cello_Music_Voice = {                                                        %
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         bf!8
 
     }
@@ -2592,18 +2431,13 @@ J_Cello_Music_Voice = {                                                        %
     \times 2/3 {
 
         % [J Cello_Music_Voice measure 30]                                     %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         b,8
         [
 
-        \once \override Stem.direction = #up
         cs!8
 
-        \once \override Stem.direction = #up
         ef!8
 
-        \once \override Stem.direction = #up
         d8
         ]
 
@@ -2642,12 +2476,10 @@ J_Cello_Music_Voice = {                                                        %
         % [J Cello_Music_Voice measure 31]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         e8
         [
 
@@ -2657,7 +2489,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         f8
 
         \once \override Accidental.color = #red
@@ -2666,7 +2497,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         ef!8
         ]
 
@@ -2676,12 +2506,10 @@ J_Cello_Music_Voice = {                                                        %
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #up
         b,8.
         [
 
@@ -2691,7 +2519,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #up
         ef!8.
         ]
 
@@ -2710,12 +2537,10 @@ J_Cello_Music_Voice = {                                                        %
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         af!8.
         [
 
@@ -2725,7 +2550,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         bf!8.
         ]
 
@@ -2734,29 +2558,22 @@ J_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1) {
 
         % [J Cello_Music_Voice measure 33]                                     %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         fs,!16
         [
 
-        \once \override Stem.direction = #up
         g,16
 
-        \once \override Stem.direction = #up
         e16
 
-        \once \override Stem.direction = #up
         ef!16
         ]
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         f8
 
     }
@@ -2765,12 +2582,10 @@ J_Cello_Music_Voice = {                                                        %
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         bf!16
         [
 
@@ -2780,7 +2595,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         b16
         ]
 
@@ -2831,15 +2645,11 @@ J_Cello_Music_Voice = {                                                        %
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
 
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         fs!8.
         [
 
-        \once \override Stem.direction = #down
         g8.
 
-        \once \override Stem.direction = #down
         e8.
         ]
 
@@ -2858,12 +2668,10 @@ J_Cello_Music_Voice = {                                                        %
         % [J Cello_Music_Voice measure 36]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #up
         cs!8
         [
 
@@ -2873,7 +2681,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #up
         d8
 
         \once \override Accidental.color = #red
@@ -2882,16 +2689,12 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #up
         c8
         ]
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         bf,!16
         [
 
-        \once \override Stem.direction = #up
         b,16
         ]
 
@@ -2899,12 +2702,9 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         ef!16
         [
 
-        \once \override Stem.direction = #up
         f,16
         ]
 
@@ -2950,18 +2750,13 @@ J_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #red
         b4
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         cs!8
         [
 
-        \once \override Stem.direction = #up
         d8
 
-        \once \override Stem.direction = #up
         c8
 
-        \once \override Stem.direction = #up
         bf,!8
         ]
 
@@ -2990,15 +2785,11 @@ J_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1) {
 
         % [J Cello_Music_Voice measure 39]                                     %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         b,16
         [
 
-        \once \override Stem.direction = #up
         ef!16
 
-        \once \override Stem.direction = #up
         a,16
         ]
 
@@ -3008,12 +2799,10 @@ J_Cello_Music_Voice = {                                                        %
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
-        \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        \once \override Stem.direction = #up
         bf,!8
 
     }
@@ -3047,26 +2836,20 @@ J_Cello_Music_Voice = {                                                        %
     \times 6/7 {
 
         % [J Cello_Music_Voice measure 41]                                     %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         a,16.
         [
 
-        \once \override Stem.direction = #up
         af,!16.
 
-        \once \override Stem.direction = #up
         bf,!16.
         ]
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(5.5 . 5.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #up
         b,8.
         [
 
@@ -3076,7 +2859,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #up
         ef!8.
         ]
 
@@ -3108,12 +2890,10 @@ J_Cello_Music_Voice = {                                                        %
         % [J Cello_Music_Voice measure 43]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
-        \once \override Beam.positions = #'(-4.5 . -4.5)
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         f8
         [
 
@@ -3123,7 +2903,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         fs!8
 
         \once \override Accidental.color = #red
@@ -3132,7 +2911,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \once \override Stem.direction = #down
         g8
         ]
 
@@ -3140,26 +2918,19 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         fs!8
 
     }
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         g16.
         [
 
-        \once \override Stem.direction = #down
         af!16.
 
-        \once \override Stem.direction = #down
         f16.
 
-        \once \override Stem.direction = #down
         e16.
         ]
 
@@ -3176,18 +2947,13 @@ J_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #blue
         d4
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         ef!16
         [
 
-        \once \override Stem.direction = #up
         cs!16
 
-        \once \override Stem.direction = #up
         b,16
 
-        \once \override Stem.direction = #up
         c16
         ]
 
@@ -3195,8 +2961,6 @@ J_Cello_Music_Voice = {                                                        %
 
     \times 4/5 {
 
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         e16
 
         \once \override Accidental.color = #blue
@@ -3228,8 +2992,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #blue
         af,!4..
 
-        \once \override Beam.positions = #'(-4.5 . -4.5)
-        \once \override Stem.direction = #down
         f16..
 
     }
@@ -3238,18 +3000,13 @@ J_Cello_Music_Voice = {                                                        %
     \times 3/4 {
 
         % [J Cello_Music_Voice measure 46]                                     %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         c16.
         [
 
-        \once \override Stem.direction = #up
         d16.
 
-        \once \override Stem.direction = #up
         ef!16.
 
-        \once \override Stem.direction = #up
         cs!16.
         ]
 
@@ -3273,8 +3030,6 @@ J_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #blue
         a,4..
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         b,16..
 
     }
@@ -3282,15 +3037,11 @@ J_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1) {
 
         % [J Cello_Music_Voice measure 47]                                     %! _comment_measure_numbers
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         c16
         [
 
-        \once \override Stem.direction = #up
         e16
 
-        \once \override Stem.direction = #up
         bf,!16
         ]
 
@@ -3298,8 +3049,6 @@ J_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \once \override Beam.positions = #'(5.5 . 5.5)
-        \once \override Stem.direction = #up
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         b,16
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_

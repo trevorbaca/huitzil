@@ -3,7 +3,7 @@
 
 
 \paper {
-    first-page-number = #6
+    first-page-number = #3
     print-first-page-number= ##t
 }
 
