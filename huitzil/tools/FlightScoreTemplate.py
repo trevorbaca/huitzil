@@ -22,41 +22,41 @@ class FlightScoreTemplate(baca.ScoreTemplate):
         >>> abjad.f(lilypond_file[abjad.Score], strict=89)
         \context Score = "Score"                                                                 %! ScoreTemplate
         <<                                                                                       %! ScoreTemplate
-            \context GlobalContext = "Global_Context"                                            %! _make_global_context
-            <<                                                                                   %! _make_global_context
-                \context GlobalRests = "Global_Rests"                                            %! _make_global_context
-                {                                                                                %! _make_global_context
-                }                                                                                %! _make_global_context
-                \context GlobalSkips = "Global_Skips"                                            %! _make_global_context
-                {                                                                                %! _make_global_context
-                }                                                                                %! _make_global_context
-            >>                                                                                   %! _make_global_context
+            \context GlobalContext = "Global_Context"                                            %! abjad.ScoreTemplate._make_global_context
+            <<                                                                                   %! abjad.ScoreTemplate._make_global_context
+                \context GlobalRests = "Global_Rests"                                            %! abjad.ScoreTemplate._make_global_context
+                {                                                                                %! abjad.ScoreTemplate._make_global_context
+                }                                                                                %! abjad.ScoreTemplate._make_global_context
+                \context GlobalSkips = "Global_Skips"                                            %! abjad.ScoreTemplate._make_global_context
+                {                                                                                %! abjad.ScoreTemplate._make_global_context
+                }                                                                                %! abjad.ScoreTemplate._make_global_context
+            >>                                                                                   %! abjad.ScoreTemplate._make_global_context
             \context PianoStaff = "Piano_Staff"                                                  %! ScoreTemplate
             <<                                                                                   %! ScoreTemplate
                 \context BowStaff = "Bow_Staff"                                                  %! ScoreTemplate
                 <<                                                                               %! ScoreTemplate
                     \context MetronomeMarkVoice = "Metronome_Mark_Voice"                         %! ScoreTemplate
                     {                                                                            %! ScoreTemplate
-                        s1                                                                       %! ScoreTemplate.__illustrate__
+                        s1                                                                       %! abjad.ScoreTemplate.__illustrate__
                     }                                                                            %! ScoreTemplate
                     \context TremoloVoice = "Tremolo_Voice"                                      %! ScoreTemplate
                     {                                                                            %! ScoreTemplate
-                        s1                                                                       %! ScoreTemplate.__illustrate__
+                        s1                                                                       %! abjad.ScoreTemplate.__illustrate__
                     }                                                                            %! ScoreTemplate
                     \context StringContactPointVoice = "String_Contact_Point_Voice"              %! ScoreTemplate
                     {                                                                            %! ScoreTemplate
-                        s1                                                                       %! ScoreTemplate.__illustrate__
+                        s1                                                                       %! abjad.ScoreTemplate.__illustrate__
                     }                                                                            %! ScoreTemplate
                     \context UnderlyingDynamicsVoice = "Underlying_Dynamics_Voice"               %! ScoreTemplate
                     {                                                                            %! ScoreTemplate
-                        s1                                                                       %! ScoreTemplate.__illustrate__
+                        s1                                                                       %! abjad.ScoreTemplate.__illustrate__
                     }                                                                            %! ScoreTemplate
                 >>                                                                               %! ScoreTemplate
                 \context PitchStaff = "Pitch_Staff"                                              %! ScoreTemplate
                 {                                                                                %! ScoreTemplate
                     \context PitchVoice = "Pitch_Voice"                                          %! ScoreTemplate
                     {                                                                            %! ScoreTemplate
-                        s1                                                                       %! ScoreTemplate.__illustrate__
+                        s1                                                                       %! abjad.ScoreTemplate.__illustrate__
                     }                                                                            %! ScoreTemplate
                 }                                                                                %! ScoreTemplate
             >>                                                                                   %! ScoreTemplate
