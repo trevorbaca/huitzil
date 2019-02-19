@@ -42,13 +42,18 @@ metadata = abjad.OrderedDict(
                             ],
                         ),
                     (
-                        'RH_Music_Staff',
+                        'Cello_Staff_Group',
                         [
                             abjad.Momento(
                                 context='RH_Music_Voice',
                                 manifest='instruments',
                                 value='Cello',
                                 ),
+                            ],
+                        ),
+                    (
+                        'RH_Music_Staff',
+                        [
                             abjad.Momento(
                                 context='RH_Music_Voice',
                                 prototype='abjad.Clef',

@@ -113,11 +113,6 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_clef',
             abjad.Clef('bass'),
             )
-#        abjad.annotate(
-#            cello_music_staff,
-#            'default_instrument',
-#            huitzil.instruments['Cello'],
-#            )
         cello_staff_group = abjad.StaffGroup(
             [
                 rh_music_staff,
