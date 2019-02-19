@@ -31,8 +31,16 @@
             \context MusicContext = "Music_Context"                            %! ScoreTemplate
             {                                                                  %! ScoreTemplate
 
-                \context Staff = "Cello_Music_Staff"                           %! ScoreTemplate
-                \J_Cello_Music_Staff                                           %! extern
+                \context PianoStaff = "Cello_Staff_Group"                      %! ScoreTemplate
+                <<                                                             %! ScoreTemplate
+
+                    \context Staff = "RH_Music_Staff"                          %! ScoreTemplate
+                    \J_RH_Music_Staff                                          %! extern
+
+                    \context Staff = "Cello_Music_Staff"                       %! ScoreTemplate
+                    \J_Cello_Music_Staff                                       %! extern
+
+                >>                                                             %! ScoreTemplate
 
             }                                                                  %! ScoreTemplate
 

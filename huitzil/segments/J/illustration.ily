@@ -1099,6 +1099,213 @@ J_Global_Skips = {                                                             %
 }                                                                              %! extern
 
 
+J_RH_Music_Voice = {                                                           %! extern
+
+    % [J RH_Music_Voice measure 1]                                             %! _comment_measure_numbers
+    \clef "percussion"                                                         %! DEFAULT_CLEF:_set_status_tag:attach_defaults
+    \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
+%@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set Staff.forceClef = ##t                                                 %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):attach_defaults
+    R1 * 7/8                                                                   %! _call_rhythm_commands
+    ^ \baca-default-indicator-markup "(“Cello”)"                               %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+    \override Staff.Clef.color = #(x11-color 'violet)                          %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
+    % [J RH_Music_Voice measure 2]                                             %! _comment_measure_numbers
+    R1 * 15/16                                                                 %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 3]                                             %! _comment_measure_numbers
+    R1 * 11/16                                                                 %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 4]                                             %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 5]                                             %! _comment_measure_numbers
+    R1 * 15/16                                                                 %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 6]                                             %! _comment_measure_numbers
+    R1 * 15/16                                                                 %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 7]                                             %! _comment_measure_numbers
+    R1 * 3/8                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 8]                                             %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 9]                                             %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 10]                                            %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 11]                                            %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 12]                                            %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 13]                                            %! _comment_measure_numbers
+    R1 * 3/2                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 14]                                            %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 15]                                            %! _comment_measure_numbers
+    R1 * 1/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 16]                                            %! _comment_measure_numbers
+    R1 * 2/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 17]                                            %! _comment_measure_numbers
+    R1 * 9/8                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 18]                                            %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 19]                                            %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 20]                                            %! _comment_measure_numbers
+    R1 * 5/8                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 21]                                            %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 22]                                            %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 23]                                            %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 24]                                            %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 25]                                            %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 26]                                            %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 27]                                            %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 28]                                            %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 29]                                            %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 30]                                            %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 31]                                            %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 32]                                            %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 33]                                            %! _comment_measure_numbers
+    R1 * 1/2                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 34]                                            %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 35]                                            %! _comment_measure_numbers
+    R1 * 13/16                                                                 %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 36]                                            %! _comment_measure_numbers
+    R1 * 5/8                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 37]                                            %! _comment_measure_numbers
+    R1 * 5/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 38]                                            %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 39]                                            %! _comment_measure_numbers
+    R1 * 5/16                                                                  %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 40]                                            %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 41]                                            %! _comment_measure_numbers
+    R1 * 9/16                                                                  %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 42]                                            %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 43]                                            %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 44]                                            %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 45]                                            %! _comment_measure_numbers
+    R1 * 7/8                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 46]                                            %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 47]                                            %! _comment_measure_numbers
+    R1 * 1/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 48]                                            %! _comment_measure_numbers
+    R1 * 3/2                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 49]                                            %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 50]                                            %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 51]                                            %! _comment_measure_numbers
+    R1 * 9/4                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 52]                                            %! _comment_measure_numbers
+    R1 * 3/2                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 53]                                            %! _comment_measure_numbers
+    R1 * 1/1                                                                   %! _call_rhythm_commands
+
+    % [J RH_Music_Voice measure 54]                                            %! _comment_measure_numbers
+    R1 * 3/4                                                                   %! _call_rhythm_commands
+
+    <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
+
+        \context Voice = "RH_Music_Voice"                                      %! PHANTOM:_make_multimeasure_rest_container
+        {                                                                      %! PHANTOM:_make_multimeasure_rest_container
+
+            % [J RH_Music_Voice measure 55]                                    %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
+            \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
+            c'1 * 1/4                                                          %! PHANTOM:_make_multimeasure_rest_container
+
+        }                                                                      %! PHANTOM:_make_multimeasure_rest_container
+
+        \context Voice = "RH_Rest_Voice"                                       %! PHANTOM:_make_multimeasure_rest_container
+        {                                                                      %! PHANTOM:_make_multimeasure_rest_container
+
+            % [J RH_Rest_Voice measure 55]                                     %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
+            \once \override Score.TimeSignature.X-extent = ##f                 %! PHANTOM:_style_phantom_measures(6)
+            \once \override MultiMeasureRest.transparent = ##t                 %! PHANTOM:_style_phantom_measures(7)
+            \stopStaff                                                         %! PHANTOM:_style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t                %! PHANTOM:_style_phantom_measures(8)
+            \startStaff                                                        %! PHANTOM:_style_phantom_measures(8)
+            R1 * 1/4                                                           %! PHANTOM:_make_multimeasure_rest_container
+
+        }                                                                      %! PHANTOM:_make_multimeasure_rest_container
+
+    >>                                                                         %! PHANTOM:_make_multimeasure_rest_container
+
+}                                                                              %! extern
+
+
+J_RH_Music_Staff = {                                                           %! extern
+
+    \context Voice = "RH_Music_Voice"                                          %! ScoreTemplate
+    \J_RH_Music_Voice                                                          %! extern
+
+}                                                                              %! extern
+
+
 J_Cello_Music_Voice = {                                                        %! extern
 
     \times 4/5 {
@@ -1111,7 +1318,6 @@ J_Cello_Music_Voice = {                                                        %
     %@% \override Staff.Clef.color = ##f                                       %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):attach_defaults
         fs!16.
-        ^ \baca-default-indicator-markup "(“Cello”)"                           %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         [
         \override Staff.Clef.color = #(x11-color 'violet)                      %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 

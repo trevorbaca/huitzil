@@ -33,14 +33,25 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>                                                                         %! _make_global_context
             \context MusicContext = "Music_Context"                                    %! ScoreTemplate
             {                                                                          %! ScoreTemplate
-                \context Staff = "Cello_Music_Staff"                                   %! ScoreTemplate
-                {                                                                      %! ScoreTemplate
-                    \context Voice = "Cello_Music_Voice"                               %! ScoreTemplate
+                \context PianoStaff = "Cello_Staff_Group"                              %! ScoreTemplate
+                <<                                                                     %! ScoreTemplate
+                    \context Staff = "RH_Music_Staff"                                  %! ScoreTemplate
                     {                                                                  %! ScoreTemplate
-                        \clef "bass"                                                   %! attach_defaults
-                        s1                                                             %! ScoreTemplate.__illustrate__
+                        \context Voice = "RH_Music_Voice"                              %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
+                            \clef "percussion"                                         %! attach_defaults
+                            s1                                                         %! ScoreTemplate.__illustrate__
+                        }                                                              %! ScoreTemplate
                     }                                                                  %! ScoreTemplate
-                }                                                                      %! ScoreTemplate
+                    \context Staff = "Cello_Music_Staff"                               %! ScoreTemplate
+                    {                                                                  %! ScoreTemplate
+                        \context Voice = "Cello_Music_Voice"                           %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
+                            \clef "bass"                                               %! attach_defaults
+                            s1                                                         %! ScoreTemplate.__illustrate__
+                        }                                                              %! ScoreTemplate
+                    }                                                                  %! ScoreTemplate
+                >>                                                                     %! ScoreTemplate
             }                                                                          %! ScoreTemplate
         >>                                                                             %! ScoreTemplate
 
@@ -73,7 +84,21 @@ class ScoreTemplate(baca.ScoreTemplate):
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
-        # cello
+        # CELLO
+        rh_music_voice = abjad.Voice(
+            name='RH_Music_Voice',
+            tag=tag,
+            )
+        rh_music_staff = abjad.Staff(
+            [rh_music_voice],
+            name='RH_Music_Staff',
+            tag=tag,
+            )
+        abjad.annotate(
+            rh_music_staff,
+            'default_clef',
+            abjad.Clef('percussion'),
+            )
         cello_music_voice = abjad.Voice(
             name='Cello_Music_Voice',
             tag=tag,
@@ -85,18 +110,27 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         abjad.annotate(
             cello_music_staff,
-            'default_instrument',
-            huitzil.instruments['Cello'],
-            )
-        abjad.annotate(
-            cello_music_staff,
             'default_clef',
             abjad.Clef('bass'),
+            )
+        cello_staff_group = abjad.StaffGroup(
+            [
+                rh_music_staff,
+                cello_music_staff,
+                ],
+            lilypond_type='PianoStaff',
+            name='Cello_Staff_Group',
+            tag=tag,
+            )
+        abjad.annotate(
+            cello_staff_group,
+            'default_instrument',
+            huitzil.instruments['Cello'],
             )
 
         # SCORE
         music_context = abjad.Context(
-            [cello_music_staff],
+            [cello_staff_group],
             lilypond_type='MusicContext',
             name='Music_Context',
             tag=tag,
