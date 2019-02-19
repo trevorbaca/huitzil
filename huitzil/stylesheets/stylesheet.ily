@@ -89,7 +89,7 @@
 
 \layout {
     \accidentalStyle neo-modern
-    indent = 11.5
+    indent = 0
     ragged-bottom = ##t
     ragged-last = ##t
     %%%ragged-right = ##t

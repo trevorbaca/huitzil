@@ -66,18 +66,30 @@
     % STAFF
     \context {
         \Staff
+        \accepts GlobalRests
 
         \override TimeSignature.break-visibility = #end-of-line-invisible
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
-    }
-
-    % STAFF
-    \context {
-        \Staff
-        \accepts GlobalRests
 
         \override TupletBracket.staff-padding = 4
+    }
+
+    % RH STAFF
+    \context {
+        \Staff
+        \name RHStaff
+        \type Engraver_group
+        \alias Staff
+        \override Clef.stencil = ##f
+        \RemoveAllEmptyStaves
+    }
+
+    % PIANO STAFF 
+    \context {
+        \PianoStaff
+        \accepts RHStaff
+        \remove "Keep_alive_together_engraver" 
     }
 
     % MUSIC CONTEXT
