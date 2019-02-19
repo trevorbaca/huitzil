@@ -11,6 +11,10 @@ metadata = abjad.OrderedDict(
                 'Global_Rests',
                 'Global_Skips',
                 'Music_Context',
+                'Cello_Staff_Group',
+                'RH_Music_Staff',
+                'RH_Music_Voice',
+                'RH_Rest_Voice',
                 'Cello_Music_Staff',
                 'Cello_Music_Voice',
                 'Cello_Rest_Voice',
@@ -32,13 +36,23 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='Cello_Music_Voice',
+                                prototype='abjad.Clef',
+                                value='bass',
+                                ),
+                            ],
+                        ),
+                    (
+                        'RH_Music_Staff',
+                        [
+                            abjad.Momento(
+                                context='RH_Music_Voice',
                                 manifest='instruments',
                                 value='Cello',
                                 ),
                             abjad.Momento(
-                                context='Cello_Music_Voice',
+                                context='RH_Music_Voice',
                                 prototype='abjad.Clef',
-                                value='bass',
+                                value='percussion',
                                 ),
                             ],
                         ),
