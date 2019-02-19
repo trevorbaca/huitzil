@@ -20,8 +20,8 @@ class ScoreTemplate(baca.ScoreTemplate):
         >>> abjad.show(lilypond_file) # doctest: +SKIP
 
         >>> abjad.f(lilypond_file[abjad.Score], strict=79)
-        \context Score = "Score"                                                       %! huitzil.ScoreTemplate
-        <<                                                                             %! huitzil.ScoreTemplate
+        \context Score = "Score"                                                       %! huitzil.ScoreTemplate.__call__
+        <<                                                                             %! huitzil.ScoreTemplate.__call__
             \context GlobalContext = "Global_Context"                                  %! abjad.ScoreTemplate._make_global_context
             <<                                                                         %! abjad.ScoreTemplate._make_global_context
                 \context GlobalRests = "Global_Rests"                                  %! abjad.ScoreTemplate._make_global_context
@@ -31,29 +31,29 @@ class ScoreTemplate(baca.ScoreTemplate):
                 {                                                                      %! abjad.ScoreTemplate._make_global_context
                 }                                                                      %! abjad.ScoreTemplate._make_global_context
             >>                                                                         %! abjad.ScoreTemplate._make_global_context
-            \context MusicContext = "Music_Context"                                    %! huitzil.ScoreTemplate
-            {                                                                          %! huitzil.ScoreTemplate
-                \context PianoStaff = "Cello_Staff_Group"                              %! huitzil.ScoreTemplate
-                <<                                                                     %! huitzil.ScoreTemplate
-                    \context Staff = "RH_Music_Staff"                                  %! huitzil.ScoreTemplate
-                    {                                                                  %! huitzil.ScoreTemplate
-                        \context Voice = "RH_Music_Voice"                              %! huitzil.ScoreTemplate
-                        {                                                              %! huitzil.ScoreTemplate
+            \context MusicContext = "Music_Context"                                    %! huitzil.ScoreTemplate.__call__
+            {                                                                          %! huitzil.ScoreTemplate.__call__
+                \context PianoStaff = "Cello_Staff_Group"                              %! huitzil.ScoreTemplate.__call__
+                <<                                                                     %! huitzil.ScoreTemplate.__call__
+                    \context RHStaff = "RH_Music_Staff"                                %! huitzil.ScoreTemplate.__call__
+                    {                                                                  %! huitzil.ScoreTemplate.__call__
+                        \context Voice = "RH_Music_Voice"                              %! huitzil.ScoreTemplate.__call__
+                        {                                                              %! huitzil.ScoreTemplate.__call__
                             \clef "percussion"                                         %! abjad.ScoreTemplate.attach_defaults
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__
-                        }                                                              %! huitzil.ScoreTemplate
-                    }                                                                  %! huitzil.ScoreTemplate
-                    \context Staff = "Cello_Music_Staff"                               %! huitzil.ScoreTemplate
-                    {                                                                  %! huitzil.ScoreTemplate
-                        \context Voice = "Cello_Music_Voice"                           %! huitzil.ScoreTemplate
-                        {                                                              %! huitzil.ScoreTemplate
+                        }                                                              %! huitzil.ScoreTemplate.__call__
+                    }                                                                  %! huitzil.ScoreTemplate.__call__
+                    \context Staff = "Cello_Music_Staff"                               %! huitzil.ScoreTemplate.__call__
+                    {                                                                  %! huitzil.ScoreTemplate.__call__
+                        \context Voice = "Cello_Music_Voice"                           %! huitzil.ScoreTemplate.__call__
+                        {                                                              %! huitzil.ScoreTemplate.__call__
                             \clef "bass"                                               %! abjad.ScoreTemplate.attach_defaults
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__
-                        }                                                              %! huitzil.ScoreTemplate
-                    }                                                                  %! huitzil.ScoreTemplate
-                >>                                                                     %! huitzil.ScoreTemplate
-            }                                                                          %! huitzil.ScoreTemplate
-        >>                                                                             %! huitzil.ScoreTemplate
+                        }                                                              %! huitzil.ScoreTemplate.__call__
+                    }                                                                  %! huitzil.ScoreTemplate.__call__
+                >>                                                                     %! huitzil.ScoreTemplate.__call__
+            }                                                                          %! huitzil.ScoreTemplate.__call__
+        >>                                                                             %! huitzil.ScoreTemplate.__call__
 
     """
 
@@ -79,7 +79,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         """
         Calls score template.
         """
-        tag = 'huitzil.ScoreTemplate'
+        tag = 'huitzil.ScoreTemplate.__call__'
 
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
@@ -91,6 +91,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         rh_music_staff = abjad.Staff(
             [rh_music_voice],
+            lilypond_type='RHStaff',
             name='RH_Music_Staff',
             tag=tag,
             )
@@ -98,6 +99,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             rh_music_staff,
             'default_clef',
             abjad.Clef('percussion'),
+            )
+        abjad.annotate(
+            rh_music_staff,
+            abjad.const.REMOVE_ALL_EMPTY_STAVES,
+            True,
             )
         cello_music_voice = abjad.Voice(
             name='Cello_Music_Voice',
@@ -142,7 +148,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         self._assert_lilypond_identifiers(score)
         self._assert_unique_context_names(score)
-        self._assert_matching_custom_context_names(score)
+        #self._assert_matching_custom_context_names(score)
         return score
 
     ### PUBLIC PROPERTIES ###

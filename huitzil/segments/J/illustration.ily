@@ -1103,12 +1103,12 @@ J_RH_Music_Voice = {                                                           %
 
     % [J RH_Music_Voice measure 1]                                             %! _comment_measure_numbers
     \clef "percussion"                                                         %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
-    \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
-%@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
+    \once \override RHStaff.Clef.color = #(x11-color 'DarkViolet)              %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
+%@% \override RHStaff.Clef.color = ##f                                         %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set RHStaff.forceClef = ##t                                               %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
     R1 * 7/8                                                                   %! _call_rhythm_commands
     ^ \baca-default-indicator-markup "(“Cello”)"                               %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    \override Staff.Clef.color = #(x11-color 'violet)                          %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+    \override RHStaff.Clef.color = #(x11-color 'violet)                        %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [J RH_Music_Voice measure 2]                                             %! _comment_measure_numbers
     R1 * 15/16                                                                 %! _call_rhythm_commands
@@ -1300,7 +1300,7 @@ J_RH_Music_Voice = {                                                           %
 
 J_RH_Music_Staff = {                                                           %! extern
 
-    \context Voice = "RH_Music_Voice"                                          %! huitzil.ScoreTemplate
+    \context Voice = "RH_Music_Voice"                                          %! huitzil.ScoreTemplate.__call__
     \J_RH_Music_Voice                                                          %! extern
 
 }                                                                              %! extern
@@ -3329,7 +3329,7 @@ J_Cello_Music_Voice = {                                                        %
 
 J_Cello_Music_Staff = {                                                        %! extern
 
-    \context Voice = "Cello_Music_Voice"                                       %! huitzil.ScoreTemplate
+    \context Voice = "Cello_Music_Voice"                                       %! huitzil.ScoreTemplate.__call__
     \J_Cello_Music_Voice                                                       %! extern
 
 }                                                                              %! extern
