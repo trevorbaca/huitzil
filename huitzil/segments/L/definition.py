@@ -16,7 +16,6 @@ time_signatures = [
     ]
 
 maker = baca.SegmentMaker(
-    do_not_check_persistence=True,
     first_segment=False,
     phantom=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
@@ -34,10 +33,14 @@ maker(
 
 maker(
     ('Cello_Music_Voice', 1),
+    baca.literal(r'\override Staff.TimeSignature.stencil = ##f'),
+    baca.pitch('B1'),
     baca.rhythm("{ c'1 }"),
     )
 
 maker(
     ('RH_Music_Voice', 1),
-    baca.rhythm("{ c'1 }"),
+    baca.literal(r'\override Staff.StaffSymbol.line-count = #7'),
+    baca.rhythm("{ c1 }"),
+    baca.staff_position(6),
     )
