@@ -81,6 +81,7 @@
         \name RHStaff
         \type Engraver_group
         \alias Staff
+        \remove Time_signature_engraver
         \override Clef.stencil = ##f
         \RemoveAllEmptyStaves
     }
