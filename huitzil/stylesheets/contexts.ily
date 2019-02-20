@@ -82,8 +82,12 @@
         \type Engraver_group
         \alias Staff
         \remove Time_signature_engraver
-        \override Clef.stencil = ##f
         \RemoveAllEmptyStaves
+
+        \override Clef.stencil = ##f
+
+        \override TupletBracket.direction = #up
+        \override TupletBracket.staff-padding = 2
     }
 
     % PIANO STAFF 
