@@ -45,7 +45,7 @@ metadata = abjad.OrderedDict(
                         'Cello_Staff_Group',
                         [
                             abjad.Momento(
-                                context='RH_Music_Voice',
+                                context='Cello_Music_Voice',
                                 manifest='instruments',
                                 value='Cello',
                                 ),
