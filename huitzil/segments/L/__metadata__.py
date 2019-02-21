@@ -62,6 +62,16 @@ metadata = abjad.OrderedDict(
                             ],
                         ),
                     (
+                        'RH_Music_Voice',
+                        [
+                            abjad.Momento(
+                                context='RH_Music_Voice',
+                                prototype='abjad.Dynamic',
+                                value='f',
+                                ),
+                            ],
+                        ),
+                    (
                         'Score',
                         [
                             abjad.Momento(
