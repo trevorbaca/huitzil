@@ -14,7 +14,7 @@ from abjadext import rmakers
 time_signatures = [
     (1, 1), (13, 12), (1, 1), (7, 6), (53, 30), (23, 12),
     (1, 1), (1, 1), (3, 4), (2, 3), (22, 15), (1, 1), (1, 1), (1, 1),
-    (2, 1), (1, 3), (1, 1), (4, 5), (2, 1), (1, 1), (1, 1),
+    (1, 1), (1, 1), (1, 3), (1, 1), (4, 5), (1, 1), (1, 1), (1, 1), (1, 1),
     (1, 1), (1, 1), (1, 1),
     ]
 
@@ -25,7 +25,7 @@ maker = baca.SegmentMaker(
     phantom=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
-    validate_measure_count=24,
+    validate_measure_count=26,
     )
 
 maker(
@@ -34,6 +34,46 @@ maker(
         '44',
         selector=baca.leaf(1 - 1),
         ),
+    baca.metronome_mark(
+        '44',
+        selector=baca.leaf(13 - 1),
+        ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.leaf(13 - 1),
+        ),
+    baca.metronome_mark(
+        '66',
+        selector=baca.leaf(16 - 1),
+        ),
+    baca.metronome_mark(
+        '44',
+        selector=baca.leaf(17 - 1),
+        ),
+    baca.metronome_mark(
+        '44',
+        selector=baca.leaf(21 - 1),
+        ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.leaf(21 - 1),
+        ),
+    baca.metronome_mark(
+        '88',
+        selector=baca.leaf(26 - 1),
+        ),
+    )
+
+# vc
+
+maker(
+    'vc',
+    baca.new(
+        baca.bar_line_transparent(),
+        baca.span_bar_transparent(),
+        selector=baca.leaves(),
+        ),
+    baca.literal(r'\override Staff.TimeSignature.stencil = ##f'),
     )
 
 maker(
@@ -51,6 +91,8 @@ maker(
     ('vcr', 2),
     baca.literal(r'\override MultiMeasureRest.transparent = ##t'),
     )
+
+# rh
 
 maker(
     'rh',
@@ -85,6 +127,15 @@ maker(
         direction=abjad.Down,
         literal=True,
         selector=baca.leaves(),
+        ),
+    )
+
+maker(
+    ('rh', (1, 9)),
+    baca.text_spanner(
+        'trem. moderato ||',
+        abjad.tweak(6).staff_padding,
+        bookend=False,
         ),
     )
 
@@ -247,6 +298,11 @@ maker(
         literal=True,
         selector=baca.leaves()[4:],
         ),
+    baca.text_spanner(
+        '(trem. mod.) => trem. stretto',
+        abjad.tweak(6).staff_padding,
+        selector=baca.leaves()[:4].rleak(),
+        ),
     )
 
 maker(
@@ -278,7 +334,7 @@ maker(
     )
 
 maker(
-    ('rh', (12, 15)),
+    ('rh', (12, 16)),
     baca.markup(
         r'\baca-ffz-markup',
         direction=abjad.Down,
@@ -297,9 +353,14 @@ maker(
     )
 
 maker(
-    ('rh', (13, 15)),
+    ('rh', (13, 16)),
     baca.hairpin(
         'p < mf',
+        ),
+    baca.text_spanner(
+        'sub. trem. mod. => più stretto => più largo => più stretto',
+        abjad.tweak(6).staff_padding,
+        pieces=baca.lparts([1, 1, 2]),
         ),
     )
 
@@ -314,15 +375,24 @@ maker(
 
 maker(
     ('rh', 15),
-    baca.make_monads('1  1'),
+    baca.make_monads('1'),
     baca.staff_positions(
-        [-2, -4],
+        [-2],
         allow_repeats=True,
         ),
     )
 
 maker(
     ('rh', 16),
+    baca.make_monads('1'),
+    baca.staff_positions(
+        [-4],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 17),
     baca.make_monads('1/3'),
     baca.markup(
         r'\baca-fz-markup',
@@ -336,16 +406,20 @@ maker(
     )
 
 maker(
-    ('rh', (16, 17)),
+    ('rh', (17, 18)),
     baca.hairpin(
         'mp >',
         bookend=False,
         ),
+    baca.text_spanner(
+        'sub. trem. mod. => trem. stretto',
+        abjad.tweak(6).staff_padding,
+        selector=baca.leaves().rleak(),
+        ),
     )
 
-
 maker(
-    ('rh', 17),
+    ('rh', 18),
     baca.make_monads('1/3  1/3  1/3'),
     baca.markup(
         r'\baca-mfz-markup',
@@ -360,7 +434,7 @@ maker(
     )
 
 maker(
-    ('rh', 18),
+    ('rh', 19),
     baca.hairpin(
         'ppp -- !',
         selector=baca.leaves().rleak().rleak(),
@@ -379,8 +453,8 @@ maker(
     )
 
 maker(
-    ('rh', 19),
-    baca.make_monads('1  1'),
+    ('rh', 20),
+    baca.make_monads('1'),
     baca.staff_positions(
         [0],
         allow_repeats=True,
@@ -388,7 +462,16 @@ maker(
     )
 
 maker(
-    ('rh', (19, 24)),
+    ('rh', 21),
+    baca.make_monads('1'),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', (20, 26)),
     baca.hairpin(
         'p < f',
         selector=baca.leaves()[1:],
@@ -402,20 +485,12 @@ maker(
     )
 
 maker(
-    ('rh', 20),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [-2],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 21),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [-2],
-        allow_repeats=True,
+    ('rh', (21, 26)),
+    baca.text_spanner(
+        'sub. trem. mod. => più stretto => più largo => più stretto =>'
+            ' più largo => più stretto',
+        abjad.tweak(6).staff_padding,
+        pieces=baca.lparts([1, 1, 1, 1, 2]),
         ),
     )
 
@@ -423,7 +498,7 @@ maker(
     ('rh', 22),
     baca.make_monads('1'),
     baca.staff_positions(
-        [-4],
+        [-2],
         allow_repeats=True,
         ),
     )
@@ -432,13 +507,31 @@ maker(
     ('rh', 23),
     baca.make_monads('1'),
     baca.staff_positions(
-        [-4],
+        [-2],
         allow_repeats=True,
         ),
     )
 
 maker(
     ('rh', 24),
+    baca.make_monads('1'),
+    baca.staff_positions(
+        [-4],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 25),
+    baca.make_monads('1'),
+    baca.staff_positions(
+        [-4],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 26),
     baca.make_monads('1'),
     baca.staff_positions(
         [-6],
