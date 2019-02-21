@@ -59,6 +59,21 @@ metadata = abjad.OrderedDict(
                                 prototype='abjad.Clef',
                                 value='percussion',
                                 ),
+                            abjad.Momento(
+                                context='RH_Music_Voice',
+                                prototype='abjad.PersistentOverride',
+                                value=abjad.PersistentOverride(
+                                    attribute='bar_extent',
+                                    context='Staff',
+                                    grob='bar_line',
+                                    value=(-3, 3),
+                                    ),
+                                ),
+                            abjad.Momento(
+                                context='RH_Music_Voice',
+                                prototype='baca.StaffLines',
+                                value=7,
+                                ),
                             ],
                         ),
                     (

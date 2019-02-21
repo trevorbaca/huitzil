@@ -107,8 +107,9 @@ maker(
 
 maker(
     ('rh', 1),
-    baca.literal(r'\override Staff.StaffSymbol.line-count = #7'),
+    baca.bar_extent_persistent((-3, 3)),
     baca.make_monads('1/2  1/4  1/4'),
+    baca.staff_lines(7),
     baca.staff_positions(
         [6, 6, 4],
         allow_repeats=True,
