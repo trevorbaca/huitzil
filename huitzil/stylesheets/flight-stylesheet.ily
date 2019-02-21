@@ -3,15 +3,10 @@
 
 
 \paper {
-    first-page-number = #3
-    print-first-page-number= ##t
+    print-page-number = ##f
 }
 
 \header {
     composer = ##f
     title = ##f
-}
-
-\layout {
-    indent = 0
 }
