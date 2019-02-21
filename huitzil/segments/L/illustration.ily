@@ -505,8 +505,11 @@ L_Global_Skips = {                                                             %
 L_RH_Music_Voice = {                                                           %! extern
 
     % [L RH_Music_Voice measure 55 / measure 1]                                %! _comment_measure_numbers
+    \override DynamicLineSpanner.staff-padding = #7                            %! baca_dls_staff_padding:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                               %! baca_text_script_parent_alignment_x:OverrideCommand(1)
+    \override TextScript.self-alignment-X = #0                                 %! baca_text_script_self_alignment_x:OverrideCommand(1)
+    \override TextScript.staff-padding = #4                                    %! baca_script_staff_padding:OverrideCommand(1)
     \override Staff.StaffSymbol.line-count = #7                                %! baca_literal:IndicatorCommand
-    \override DynamicLineSpanner.staff-padding = #6                            %! baca_dls_staff_padding:OverrideCommand(1)
     \clef "percussion"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)                  %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                         %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -516,7 +519,7 @@ L_RH_Music_Voice = {                                                           %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    ^ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
+    _ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -525,22 +528,22 @@ L_RH_Music_Voice = {                                                           %
 
     b'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    ^ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
+    _ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     g'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    ^ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
+    _ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [L RH_Music_Voice measure 56 / measure 2]                                %! _comment_measure_numbers
     b'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    ^ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
+    _ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
 
     b'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    ^ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
+    _ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     \tweak edge-height #'(0.7 . 0)
@@ -548,7 +551,7 @@ L_RH_Music_Voice = {                                                           %
 
         g'2
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ^ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -556,16 +559,16 @@ L_RH_Music_Voice = {                                                           %
     % [L RH_Music_Voice measure 57 / measure 3]                                %! _comment_measure_numbers
     b'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    ^ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
+    _ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
 
     b'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    ^ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
+    _ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     g'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    ^ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
+    _ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -576,6 +579,7 @@ L_RH_Music_Voice = {                                                           %
         \!                                                                     %! baca_hairpin:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        _ \baca-fz-markup                                                      %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         - \tweak stencil #constante-hairpin                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -584,15 +588,18 @@ L_RH_Music_Voice = {                                                           %
 
     g'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-mpz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     e'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-mpz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [L RH_Music_Voice measure 59 / measure 5]                                %! _comment_measure_numbers
     g'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-mpz-markup                                                         %! baca_markup:IndicatorCommand
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -602,6 +609,7 @@ L_RH_Music_Voice = {                                                           %
         \!                                                                     %! baca_hairpin:PiecewiseCommand(2)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
@@ -613,6 +621,7 @@ L_RH_Music_Voice = {                                                           %
 
         e'2
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -622,6 +631,7 @@ L_RH_Music_Voice = {                                                           %
 
         b'4
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -631,6 +641,7 @@ L_RH_Music_Voice = {                                                           %
 
         g'4
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -642,6 +653,7 @@ L_RH_Music_Voice = {                                                           %
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+        _ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -652,6 +664,7 @@ L_RH_Music_Voice = {                                                           %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -662,6 +675,7 @@ L_RH_Music_Voice = {                                                           %
 
         g'2
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -671,20 +685,24 @@ L_RH_Music_Voice = {                                                           %
 
         e'2
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
 
     b'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-mpz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     g'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-mpz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     e'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-mpz-markup                                                         %! baca_markup:IndicatorCommand
 
     % [L RH_Music_Voice measure 61 / measure 7]                                %! _comment_measure_numbers
     e'1
@@ -693,6 +711,7 @@ L_RH_Music_Voice = {                                                           %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -701,21 +720,26 @@ L_RH_Music_Voice = {                                                           %
     % [L RH_Music_Voice measure 62 / measure 8]                                %! _comment_measure_numbers
     e'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
 
     e'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     c'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [L RH_Music_Voice measure 63 / measure 9]                                %! _comment_measure_numbers
     e'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
 
     e'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -727,6 +751,7 @@ L_RH_Music_Voice = {                                                           %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        _ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -739,6 +764,7 @@ L_RH_Music_Voice = {                                                           %
 
         b'2
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -749,6 +775,7 @@ L_RH_Music_Voice = {                                                           %
         % [L RH_Music_Voice measure 65 / measure 11]                           %! _comment_measure_numbers
         g'2
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -758,6 +785,7 @@ L_RH_Music_Voice = {                                                           %
 
         e'2
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -770,6 +798,7 @@ L_RH_Music_Voice = {                                                           %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak stencil #constante-hairpin                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -783,6 +812,7 @@ L_RH_Music_Voice = {                                                           %
 
         g'4
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -792,6 +822,7 @@ L_RH_Music_Voice = {                                                           %
 
         e'4
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -801,12 +832,14 @@ L_RH_Music_Voice = {                                                           %
 
         c'4
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
 
     }
 
     % [L RH_Music_Voice measure 66 / measure 12]                               %! _comment_measure_numbers
     c'1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
 
     % [L RH_Music_Voice measure 67 / measure 13]                               %! _comment_measure_numbers
     c'1
@@ -814,6 +847,7 @@ L_RH_Music_Voice = {                                                           %
     \!                                                                         %! baca_hairpin:PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \glissando                                                                 %! baca_glissando
@@ -821,16 +855,19 @@ L_RH_Music_Voice = {                                                           %
     % [L RH_Music_Voice measure 68 / measure 14]                               %! _comment_measure_numbers
     a1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
 
     % [L RH_Music_Voice measure 69 / measure 15]                               %! _comment_measure_numbers
     a1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     f1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     \tweak edge-height #'(0.7 . 0)
@@ -841,6 +878,7 @@ L_RH_Music_Voice = {                                                           %
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        _ \baca-fz-markup                                                      %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
@@ -853,6 +891,7 @@ L_RH_Music_Voice = {                                                           %
         % [L RH_Music_Voice measure 71 / measure 17]                           %! _comment_measure_numbers
         b'2
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -862,6 +901,7 @@ L_RH_Music_Voice = {                                                           %
 
         g'2
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -871,6 +911,7 @@ L_RH_Music_Voice = {                                                           %
 
         e'2
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -883,6 +924,7 @@ L_RH_Music_Voice = {                                                           %
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         - \tweak stencil #constante-hairpin                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -895,6 +937,7 @@ L_RH_Music_Voice = {                                                           %
 
         g'4
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -904,6 +947,7 @@ L_RH_Music_Voice = {                                                           %
 
         e'4
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
     }
@@ -913,18 +957,21 @@ L_RH_Music_Voice = {                                                           %
 
         c'4
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        _ \baca-mpz-markup                                                     %! baca_markup:IndicatorCommand
 
     }
 
     % [L RH_Music_Voice measure 73 / measure 19]                               %! _comment_measure_numbers
     c'1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
 
     c'1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \!                                                                         %! baca_hairpin:PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \glissando                                                                 %! baca_glissando
@@ -932,19 +979,23 @@ L_RH_Music_Voice = {                                                           %
     % [L RH_Music_Voice measure 74 / measure 20]                               %! _comment_measure_numbers
     a1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
 
     % [L RH_Music_Voice measure 75 / measure 21]                               %! _comment_measure_numbers
     a1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [L RH_Music_Voice measure 76 / measure 22]                               %! _comment_measure_numbers
     f1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
 
     % [L RH_Music_Voice measure 77 / measure 23]                               %! _comment_measure_numbers
     f1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [L RH_Music_Voice measure 78 / measure 24]                               %! _comment_measure_numbers
@@ -952,7 +1003,11 @@ L_RH_Music_Voice = {                                                           %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_alignment_x:OverrideCommand(2)
+    \revert TextScript.self-alignment-X                                        %! baca_text_script_self_alignment_x:OverrideCommand(2)
+    \revert TextScript.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
