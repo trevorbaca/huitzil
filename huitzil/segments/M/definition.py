@@ -54,11 +54,12 @@ maker(
         selector=baca.leaves(),
         ),
     baca.literal(r'\override MultiMeasureRest.transparent = ##t'),
-    #baca.literal(r'\override Staff.TimeSignature.stencil = ##f'),
+    baca.literal(r'\override Staff.TimeSignature.stencil = ##f'),
     )
 
 maker(
     ('vc', (8, 13)),
+    baca.literal(r'\parenthesize'),
     baca.pitches('B1 C2'),
     baca.rhythm("{ c'1 * 107/15 c'1 * 2/5 }"),
     )

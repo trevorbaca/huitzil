@@ -986,6 +986,7 @@ M_Cello_Music_Voice = {                                                        %
             \override Score.BarLine.transparent = ##t                          %! baca_bar_line_transparent:OverrideCommand(1)
             \override Score.SpanBar.transparent = ##t                          %! baca_span_bar_transparent:OverrideCommand(1)
             \override MultiMeasureRest.transparent = ##t                       %! baca_literal:IndicatorCommand
+            \override Staff.TimeSignature.stencil = ##f                        %! baca_literal:IndicatorCommand
             \clef "bass"                                                       %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \once \override Staff.Clef.color = #(x11-color 'green4)            %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -1028,6 +1029,7 @@ M_Cello_Music_Voice = {                                                        %
     {
 
         % [M Cello_Music_Voice measure 88 / measure 8]                         %! _comment_measure_numbers
+        \parenthesize                                                          %! baca_literal:IndicatorCommand
         b,,1 * 107/15
         \glissando                                                             %! baca_glissando
 
