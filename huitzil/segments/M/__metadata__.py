@@ -22,9 +22,9 @@ metadata = abjad.OrderedDict(
             ),
         (
             'bol_measure_numbers',
-            [81, 87, 95, 103],
+            [81, 88, 95, 102],
             ),
-        ('duration', "1'12''"),
+        ('duration', "1'18''"),
         ('final_measure_number', 103),
         ('first_measure_number', 81),
         (
@@ -37,7 +37,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='Cello_Music_Voice',
                                 prototype='abjad.Clef',
-                                value='bass',
+                                value='treble',
                                 ),
                             ],
                         ),
@@ -59,6 +59,21 @@ metadata = abjad.OrderedDict(
                                 prototype='abjad.Clef',
                                 value='percussion',
                                 ),
+                            abjad.Momento(
+                                context='RH_Music_Voice',
+                                prototype='abjad.PersistentOverride',
+                                value=abjad.PersistentOverride(
+                                    attribute='bar_extent',
+                                    context='Staff',
+                                    grob='bar_line',
+                                    value=(-3, 3),
+                                    ),
+                                ),
+                            abjad.Momento(
+                                context='RH_Music_Voice',
+                                prototype='baca.StaffLines',
+                                value=7,
+                                ),
                             ],
                         ),
                     (
@@ -66,8 +81,8 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='RH_Music_Voice',
-                                prototype='abjad.Dynamic',
-                                value='f',
+                                prototype='abjad.StartHairpin',
+                                value='--',
                                 ),
                             ],
                         ),
@@ -77,7 +92,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='Global_Skips',
                                 manifest='metronome_marks',
-                                value='88',
+                                value='44',
                                 ),
                             abjad.Momento(
                                 context='Global_Skips',
@@ -93,7 +108,7 @@ metadata = abjad.OrderedDict(
         ('segment_name', 'M'),
         ('segment_number', 13),
         ('start_clock_time', "7'27''"),
-        ('stop_clock_time', "8'39''"),
+        ('stop_clock_time', "8'45''"),
         (
             'time_signatures',
             [
