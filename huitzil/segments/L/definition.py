@@ -37,23 +37,34 @@ maker(
     )
 
 maker(
-    ('Cello_Music_Voice', 1),
+    ('vc', 1),
     baca.pitch('B1'),
     baca.rhythm("{ c'1 }"),
     )
 
 maker(
-    ('Cello_Music_Voice', 2),
+    ('vc', 2),
     baca.literal(r'\override MultiMeasureRest.transparent = ##t'),
     )
 
 maker(
-    ('Cello_Rest_Voice', 2),
+    ('vcr', 2),
     baca.literal(r'\override MultiMeasureRest.transparent = ##t'),
     )
 
 maker(
-    ('RH_Music_Voice', 1),
+    'rh',
+    baca.dls_staff_padding(7),
+    baca.stem_tremolo(
+        selector=baca.pleaves(),
+        ),
+    baca.text_script_parent_alignment_x(0),
+    baca.text_script_self_alignment_x(0),
+    baca.text_script_staff_padding(4),
+    )
+
+maker(
+    ('rh', 1),
     baca.literal(r'\override Staff.StaffSymbol.line-count = #7'),
     baca.make_monads('1/2  1/4  1/4'),
     baca.staff_positions(
@@ -63,7 +74,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', (1, 3)),
+    ('rh', (1, 3)),
     baca.hairpin(
         'mp -- !',
         abjad.tweak(True).to_barline,
@@ -71,13 +82,14 @@ maker(
         ),
     baca.markup(
         r'\baca-mfz-markup',
+        direction=abjad.Down,
         literal=True,
         selector=baca.leaves(),
         ),
     )
 
 maker(
-    ('RH_Music_Voice', 2),
+    ('rh', 2),
     baca.make_monads('1/2  1/4  1/3'),
     baca.staff_positions(
         [6, 6, 4],
@@ -86,7 +98,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 3),
+    ('rh', 3),
     baca.make_monads('1/2  1/4  1/4'),
     baca.staff_positions(
         [6, 6, 4],
@@ -95,7 +107,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 4),
+    ('rh', 4),
     baca.hairpin(
         'p -- !',
         selector=baca.leaves().rleak().rleak(),
@@ -108,7 +120,28 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 5),
+    ('rh', (4, 5)),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.markup(
+        r'\baca-mpz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.pleaves()[1:-3],
+        ),
+    baca.markup(
+        r'\baca-mfz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.pleaves()[-3:],
+        ),
+    )
+
+maker(
+    ('rh', 5),
     baca.hairpin(
         'pp < mf',
         selector=baca.leaves()[1:],
@@ -121,13 +154,24 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 6),
+    ('rh', 6),
     baca.hairpin(
         'p -- !',
         abjad.tweak(True).to_barline,
         selector=baca.leaves().rleak(),
         ),
     baca.make_monads('1/2  1/3  1/3  1/4  1/4  1/4'),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.markup(
+        r'\baca-mpz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.pleaves()[1:],
+        ),
     baca.staff_positions(
         [4, 4, 2, 6, 4, 2],
         allow_repeats=True,
@@ -135,7 +179,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 7),
+    ('rh', 7),
     baca.make_monads('1'),
     baca.staff_positions(
         [2],
@@ -144,7 +188,17 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', (7, 9)),
+    ('rh', (7, 9)),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaves(),
+        ),
+    )
+
+maker(
+    ('rh', (7, 9)),
     baca.hairpin(
         'mf -- !',
         abjad.tweak(True).to_barline,
@@ -153,7 +207,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 8),
+    ('rh', 8),
     baca.make_monads('1/2  1/4  1/4'),
     baca.staff_positions(
         [2, 2, 0],
@@ -162,7 +216,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 9),
+    ('rh', 9),
     baca.make_monads('1/2  1/4'),
     baca.staff_positions(
         [2],
@@ -171,7 +225,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 10),
+    ('rh', 10),
     baca.make_monads('1/3  1/3'),
     baca.staff_positions(
         [2, 6],
@@ -179,9 +233,24 @@ maker(
         ),
     )
 
+maker(
+    ('rh', (10, 11)),
+    baca.markup(
+        r'\baca-mfz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaves()[:4],
+        ),
+    baca.markup(
+        r'\baca-mpz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaves()[4:],
+        ),
+    )
 
 maker(
-    ('RH_Music_Voice', (10, 12)),
+    ('rh', (10, 12)),
     baca.hairpin(
         'mp > ppp -- !',
         abjad.tweak(True).to_barline,
@@ -191,7 +260,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 11),
+    ('rh', 11),
     baca.make_monads('1/3  1/3  1/5  1/5  1/5  1/5'),
     baca.staff_positions(
         [4, 2, 6, 4, 2, 0],
@@ -200,7 +269,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 12),
+    ('rh', 12),
     baca.make_monads('1'),
     baca.staff_positions(
         [0],
@@ -209,7 +278,17 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 13),
+    ('rh', (12, 15)),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaves(),
+        ),
+    )
+
+maker(
+    ('rh', 13),
     baca.make_monads('1'),
     baca.staff_positions(
         [0],
@@ -218,14 +297,14 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', (13, 15)),
+    ('rh', (13, 15)),
     baca.hairpin(
         'p < mf',
         ),
     )
 
 maker(
-    ('RH_Music_Voice', 14),
+    ('rh', 14),
     baca.make_monads('1'),
     baca.staff_positions(
         [-2],
@@ -234,7 +313,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 15),
+    ('rh', 15),
     baca.make_monads('1  1'),
     baca.staff_positions(
         [-2, -4],
@@ -243,8 +322,13 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 16),
+    ('rh', 16),
     baca.make_monads('1/3'),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
@@ -252,7 +336,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', (16, 17)),
+    ('rh', (16, 17)),
     baca.hairpin(
         'mp >',
         bookend=False,
@@ -261,8 +345,14 @@ maker(
 
 
 maker(
-    ('RH_Music_Voice', 17),
+    ('rh', 17),
     baca.make_monads('1/3  1/3  1/3'),
+    baca.markup(
+        r'\baca-mfz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaves(),
+        ),
     baca.staff_positions(
         [6, 4, 2],
         allow_repeats=True,
@@ -270,12 +360,18 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 18),
+    ('rh', 18),
     baca.hairpin(
         'ppp -- !',
         selector=baca.leaves().rleak().rleak(),
         ),
     baca.make_monads('1/5  1/5  1/5  1/5'),
+    baca.markup(
+        r'\baca-mpz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaves(),
+        ),
     baca.staff_positions(
         [6, 4, 2, 0],
         allow_repeats=True,
@@ -283,7 +379,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 19),
+    ('rh', 19),
     baca.make_monads('1  1'),
     baca.staff_positions(
         [0],
@@ -292,15 +388,21 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', (19, 24)),
+    ('rh', (19, 24)),
     baca.hairpin(
         'p < f',
         selector=baca.leaves()[1:],
         ),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaves(),
+        ),
     )
 
 maker(
-    ('RH_Music_Voice', 20),
+    ('rh', 20),
     baca.make_monads('1'),
     baca.staff_positions(
         [-2],
@@ -309,7 +411,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 21),
+    ('rh', 21),
     baca.make_monads('1'),
     baca.staff_positions(
         [-2],
@@ -318,7 +420,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 22),
+    ('rh', 22),
     baca.make_monads('1'),
     baca.staff_positions(
         [-4],
@@ -327,7 +429,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 23),
+    ('rh', 23),
     baca.make_monads('1'),
     baca.staff_positions(
         [-4],
@@ -336,7 +438,7 @@ maker(
     )
 
 maker(
-    ('RH_Music_Voice', 24),
+    ('rh', 24),
     baca.make_monads('1'),
     baca.staff_positions(
         [-6],
@@ -347,15 +449,8 @@ maker(
 # stage 2 (after staff position settings)
 
 maker(
-    'RH_Music_Voice',
-    baca.dls_staff_padding(6),
+    'rh',
     baca.glissando(
         selector=baca.leaves(),
         ),
-    baca.stem_tremolo(
-        selector=baca.pleaves(),
-        ),
-#    baca.text_script_down(
-#        selector=baca.leaves(),
-#        ),
     )

@@ -70,7 +70,9 @@ class ScoreTemplate(baca.ScoreTemplate):
     def __init__(self):
         super(ScoreTemplate, self).__init__()
         self.voice_abbreviations.update({
+            'rh': 'RH_Music_Voice',
             'vc': 'Cello_Music_Voice',
+            'vcr': 'Cello_Rest_Voice',
             })
 
     ### SPECIAL METHODS ###
@@ -177,7 +179,9 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>> abjad.f(score_template.voice_abbreviations)
             abjad.OrderedDict(
                 [
+                    ('rh', 'RH_Music_Voice'),
                     ('vc', 'Cello_Music_Voice'),
+                    ('vcr', 'Cello_Rest_Voice'),
                     ]
                 )
 
