@@ -62,16 +62,19 @@ maker(
         ),
     )
 
-#maker(
-#    ('RH_Music_Voice', (1, 3)),
-#    baca.glissando(
-#        allow_repeats=True,
-#        selector=baca.leaves(),
-#        ),
-#    baca.stem_tremolo(
-#        selector=baca.pleaves(),
-#        ),
-#    )
+maker(
+    ('RH_Music_Voice', (1, 3)),
+    baca.hairpin(
+        'mp -- !',
+        abjad.tweak(True).to_barline,
+        selector=baca.leaves().rleak(),
+        ),
+    baca.markup(
+        r'\baca-mfz-markup',
+        literal=True,
+        selector=baca.leaves(),
+        ),
+    )
 
 maker(
     ('RH_Music_Voice', 2),
@@ -93,6 +96,10 @@ maker(
 
 maker(
     ('RH_Music_Voice', 4),
+    baca.hairpin(
+        'p -- !',
+        selector=baca.leaves().rleak().rleak(),
+        ),
     baca.make_monads('2/3  1/4  1/4'),
     baca.staff_positions(
         [4, 4, 2],
@@ -102,6 +109,10 @@ maker(
 
 maker(
     ('RH_Music_Voice', 5),
+    baca.hairpin(
+        'pp < mf',
+        selector=baca.leaves()[1:],
+        ),
     baca.make_monads('1/2  1/3  1/3  1/5  1/5  1/5'),
     baca.staff_positions(
         [4, 4, 2, 6, 4, 2],
@@ -111,6 +122,11 @@ maker(
 
 maker(
     ('RH_Music_Voice', 6),
+    baca.hairpin(
+        'p -- !',
+        abjad.tweak(True).to_barline,
+        selector=baca.leaves().rleak(),
+        ),
     baca.make_monads('1/2  1/3  1/3  1/4  1/4  1/4'),
     baca.staff_positions(
         [4, 4, 2, 6, 4, 2],
@@ -124,6 +140,15 @@ maker(
     baca.staff_positions(
         [2],
         allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('RH_Music_Voice', (7, 9)),
+    baca.hairpin(
+        'mf -- !',
+        abjad.tweak(True).to_barline,
+        selector=baca.leaves().rleak(),
         ),
     )
 
@@ -151,6 +176,17 @@ maker(
     baca.staff_positions(
         [2, 6],
         allow_repeats=True,
+        ),
+    )
+
+
+maker(
+    ('RH_Music_Voice', (10, 12)),
+    baca.hairpin(
+        'mp > ppp -- !',
+        abjad.tweak(True).to_barline,
+        pieces=baca.lparts([4, 5 + 1]),
+        selector=baca.leaves().rleak(),
         ),
     )
 
@@ -182,6 +218,13 @@ maker(
     )
 
 maker(
+    ('RH_Music_Voice', (13, 15)),
+    baca.hairpin(
+        'p < mf',
+        ),
+    )
+
+maker(
     ('RH_Music_Voice', 14),
     baca.make_monads('1'),
     baca.staff_positions(
@@ -209,6 +252,15 @@ maker(
     )
 
 maker(
+    ('RH_Music_Voice', (16, 17)),
+    baca.hairpin(
+        'mp >',
+        bookend=False,
+        ),
+    )
+
+
+maker(
     ('RH_Music_Voice', 17),
     baca.make_monads('1/3  1/3  1/3'),
     baca.staff_positions(
@@ -219,6 +271,10 @@ maker(
 
 maker(
     ('RH_Music_Voice', 18),
+    baca.hairpin(
+        'ppp -- !',
+        selector=baca.leaves().rleak().rleak(),
+        ),
     baca.make_monads('1/5  1/5  1/5  1/5'),
     baca.staff_positions(
         [6, 4, 2, 0],
@@ -232,6 +288,14 @@ maker(
     baca.staff_positions(
         [0],
         allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('RH_Music_Voice', (19, 24)),
+    baca.hairpin(
+        'p < f',
+        selector=baca.leaves()[1:],
         ),
     )
 
@@ -278,4 +342,20 @@ maker(
         [-6],
         allow_repeats=True,
         ),
+    )
+
+# stage 2 (after staff position settings)
+
+maker(
+    'RH_Music_Voice',
+    baca.dls_staff_padding(6),
+    baca.glissando(
+        selector=baca.leaves(),
+        ),
+    baca.stem_tremolo(
+        selector=baca.pleaves(),
+        ),
+#    baca.text_script_down(
+#        selector=baca.leaves(),
+#        ),
     )
