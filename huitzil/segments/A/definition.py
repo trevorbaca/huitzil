@@ -9,540 +9,187 @@ from abjadext import rmakers
 ##################################### [A] #####################################
 ###############################################################################
 
-### SEGMENT-MAKER ###
+### MUSIC-MAKERS ###
 
-time_signatures = [
-    (1, 1), (13, 12), (1, 1), (7, 6), (53, 30), (23, 12),
-    (1, 1), (1, 1), (3, 4), (2, 3), (22, 15), (1, 1), (1, 1), (1, 1),
-    (1, 1), (1, 1), (1, 3), (1, 1), (4, 5), (1, 1), (1, 1), (1, 1), (1, 1),
-    (1, 1), (1, 1), (1, 1),
+music, music_makers = [], []
+
+### stage [1] (middle) ###
+
+music_maker = huitzil.DreamsMusicMaker()
+music_maker.pitch_class_trees = huitzil.pitch_classes[:6]
+music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
+music_maker.pc_displacement = [abjad.index(list(range(15)), 30)]
+music_maker.voice_map = [
+    [2, range(0, 99)],
     ]
+music_makers.append(music_maker)
+
+### stage [2] (middle & lower) ###
+
+music_maker = huitzil.DreamsMusicMaker()
+music_maker.pitch_class_trees = huitzil.pitch_classes[2:8]
+music_maker.pc_operators = [abjad.Transposition(n=1)]
+music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
+music_maker.pc_displacement = [abjad.index(list(range(15)), 30)]
+music_maker.voice_map = [
+    [2, range(0, 99)],
+    [3, (4, 14, 15, 28, 29, 35, 36)],
+    ]
+music_makers.append(music_maker)
+
+### stage [3] (lower) ###
+
+music_maker = huitzil.DreamsMusicMaker()
+music_maker.pitch_class_trees = huitzil.pitch_classes[4:6]
+music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
+music_maker.pc_operators = [
+    abjad.Transposition(n=2),
+    abjad.Inversion(),
+    ]
+music_maker.pc_displacement = []
+music_maker.voice_map = [
+    [3, range(0, 99)],
+    ]
+music_makers.append(music_maker)
+
+### stage [4] (lower & upper) ###
+
+music_maker = huitzil.DreamsMusicMaker()
+music_maker.pitch_class_trees = huitzil.pitch_classes[6:8]
+music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
+music_maker.pc_operators = [
+    abjad.Transposition(n=3),
+    ]
+music_maker.pc_displacement = []
+music_maker.voice_map = [
+    [3, range(0, 99)],
+    [1, (1, 2, 3, 6, 7, 10)],
+    ]
+music_makers.append(music_maker)
+
+### stage [5] (upper) ###
+
+music_maker = huitzil.DreamsMusicMaker()
+music_maker.pitch_class_trees = huitzil.pitch_classes[8:12]
+music_maker.extra_counts_per_division = [2, 4, 0, -2, 10]
+music_maker.pc_operators = [
+    abjad.Transposition(n=4),
+    ]
+music_maker.pc_displacement = [abjad.index(list(range(10, 20)), 20)]
+music_maker.voice_map = [
+    [1, range(0, 99)],
+    ]
+music_makers.append(music_maker)
+
+### stage [6] (upper & middle) ###
+
+music_maker = huitzil.DreamsMusicMaker()
+music_maker.pitch_class_trees = huitzil.pitch_classes[10:13]
+music_maker.extra_counts_per_division = [2, 4, 0, -2, 10]
+music_maker.pc_operators = [
+    abjad.Transposition(n=5),
+    abjad.Inversion(),
+    ]
+music_maker.pc_displacement = [abjad.index(list(range(10)), 20)]
+music_maker.voice_map = [
+    [1, range(0, 99)],
+    [2, (0, 1, 2, 3, 13, 14, 15, 16, 17, 18)],
+    ]
+music_makers.append(music_maker)
+
+### stage [7] (upper, middle, lower) ###
+
+music_maker = huitzil.DreamsMusicMaker()
+music_maker.pitch_class_trees = huitzil.pitch_classes[12:20]
+music_maker.extra_counts_per_division = [2, 4, 0, -2, 10]
+music_maker.pc_operators = [abjad.Transposition(n=6)]
+music_maker.pc_displacement = [abjad.index(list(range(10, 20)), 20)]
+music_maker.voice_map = [
+    [1, range(0, 99)],
+    [2, (5, 6, 7, 8, 16, 17, 18, 23, 24, 25, 26,
+        31, 32, 33, 34, 37, 38, 39, 43, 44, 45, 46, 47)],
+    [3, (2, 13, 14, 27, 28, 40, 50, 51)],
+    ]
+music_makers.append(music_maker)
+
+### stage [8] (middle & lower) ###
+
+music_maker = huitzil.DreamsMusicMaker()
+music_maker.pitch_class_trees = huitzil.pitch_classes[14:18]
+music_maker.pc_operators = [
+    abjad.Transposition(n=7),
+    ]
+music_maker.extra_counts_per_division = [1, 2, 0, -1, 5]
+music_maker.voice_map = [
+    [2, range(0, 99)],
+    [3, (5, 11, 12, 13, 19, 20)],
+    ]
+music_makers.append(music_maker)
+
+### stage [9] (lower) ###
+
+music_maker = huitzil.DreamsMusicMaker()
+music_maker.pitch_class_trees = huitzil.pitch_classes[16:20]
+music_maker.pc_operators = [
+    abjad.Transposition(n=8),
+    abjad.Inversion(),
+    ]
+music_maker.extra_counts_per_division = [4, 8, 0, -4, 20]
+music_maker.pc_displacement = [abjad.index(list(range(5)), 10)]
+music_maker.voice_map = [
+    [3, range(0, 99)],
+    ]
+music_makers.append(music_maker)
+
+### make music ###
+
+for music_maker in music_makers:
+    music_ = music_maker()
+    music.extend(music_)
+
+measure_durations = []
+current_duration = abjad.Duration(0)
+ideal_measure_duration = abjad.Duration(4, 4)
+for component in music:
+    component_duration = abjad.inspect(component).duration()
+    candidate_duration = current_duration + component_duration
+    if ideal_measure_duration < candidate_duration:
+        if 0 < current_duration:
+            measure_durations.append(current_duration)
+        current_duration = component_duration
+    else:
+        current_duration = candidate_duration
+measure_durations.append(current_duration)
+time_signatures = []
+for measure_duration in measure_durations:
+    duration = measure_duration.with_denominator(4)
+    time_signatures.append(duration)
+
+### SEGMENT-MAKER ###
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.Tags().LOCAL_MEASURE_NUMBER_MARKUP,
+        #abjad.Tags().LOCAL_MEASURE_NUMBER_MARKUP,
+        #abjad.Tags().STAGE_NUMBER_MARKUP,
         ],
+    first_segment=True,
     phantom=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
-    validate_measure_count=26,
+    validate_measure_count=54,
     )
 
 maker(
     'Global_Skips',
     baca.metronome_mark(
-        '44',
+        '78',
         selector=baca.leaf(1 - 1),
         ),
-    baca.metronome_mark(
-        '44',
-        selector=baca.leaf(13 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(13 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(16 - 1),
-        ),
-    baca.metronome_mark(
-        '44',
-        selector=baca.leaf(17 - 1),
-        ),
-    baca.metronome_mark(
-        '44',
-        selector=baca.leaf(21 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(21 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(26 - 1),
-        ),
     )
 
-# vc
+music = abjad.select(music)
 
 maker(
-    'vc',
-    baca.mmrest_transparent(),
-    baca.new(
-        baca.bar_line_transparent(),
-        baca.span_bar_transparent(),
-        selector=baca.leaves(),
-        ),
-    baca.time_signature_stencil_false(),
-    )
-
-maker(
-    ('vc', 1),
-    baca.pitch('B1'),
-    baca.rhythm("{ c'1 }"),
-    )
-
-# vcr
-
-maker(
-    ('vcr', 2),
-    baca.mmrest_transparent(),
-    )
-
-# rh
-
-maker(
-    'rh',
-    baca.dls_staff_padding(7),
-    baca.stem_tremolo(
-        selector=baca.pleaves(),
-        ),
-    baca.text_script_parent_alignment_x(0),
-    baca.text_script_self_alignment_x(0),
-    baca.text_script_staff_padding(4),
-    )
-
-maker(
-    ('rh', 1),
-    baca.bar_extent_persistent((-3, 3)),
-    baca.make_monads('1/2  1/4  1/4'),
-    baca.staff_lines(7),
-    baca.staff_positions(
-        [6, 6, 4],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (1, 3)),
-    baca.hairpin(
-        'mp -- !',
-        abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
-        ),
-    baca.markup(
-        r'\baca-mfz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.leaves(),
-        ),
-    )
-
-maker(
-    ('rh', (1, 9)),
-    baca.text_spanner(
-        'trem. moderato ||',
-        abjad.tweak(6).staff_padding,
-        bookend=False,
-        ),
-    )
-
-maker(
-    ('rh', 2),
-    baca.make_monads('1/2  1/4  1/3'),
-    baca.staff_positions(
-        [6, 6, 4],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 3),
-    baca.make_monads('1/2  1/4  1/4'),
-    baca.staff_positions(
-        [6, 6, 4],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 4),
-    baca.hairpin(
-        'p -- !',
-        selector=baca.leaves().rleak().rleak(),
-        ),
-    baca.make_monads('2/3  1/4  1/4'),
-    baca.staff_positions(
-        [4, 4, 2],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (4, 5)),
-    baca.markup(
-        r'\baca-fz-markup',
-        direction=abjad.Down,
-        literal=True,
-        ),
-    baca.markup(
-        r'\baca-mpz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.pleaves()[1:-3],
-        ),
-    baca.markup(
-        r'\baca-mfz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.pleaves()[-3:],
-        ),
-    )
-
-maker(
-    ('rh', 5),
-    baca.hairpin(
-        'pp < mf',
-        selector=baca.leaves()[1:],
-        ),
-    baca.make_monads('1/2  1/3  1/3  1/5  1/5  1/5'),
-    baca.staff_positions(
-        [4, 4, 2, 6, 4, 2],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 6),
-    baca.hairpin(
-        'p -- !',
-        abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
-        ),
-    baca.make_monads('1/2  1/3  1/3  1/4  1/4  1/4'),
-    baca.markup(
-        r'\baca-fz-markup',
-        direction=abjad.Down,
-        literal=True,
-        ),
-    baca.markup(
-        r'\baca-mpz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.pleaves()[1:],
-        ),
-    baca.staff_positions(
-        [4, 4, 2, 6, 4, 2],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 7),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [2],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (7, 9)),
-    baca.markup(
-        r'\baca-fz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.leaves(),
-        ),
-    )
-
-maker(
-    ('rh', (7, 9)),
-    baca.hairpin(
-        'mf -- !',
-        abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
-        ),
-    )
-
-maker(
-    ('rh', 8),
-    baca.make_monads('1/2  1/4  1/4'),
-    baca.staff_positions(
-        [2, 2, 0],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 9),
-    baca.make_monads('1/2  1/4'),
-    baca.staff_positions(
-        [2],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 10),
-    baca.make_monads('1/3  1/3'),
-    baca.staff_positions(
-        [2, 6],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (10, 11)),
-    baca.markup(
-        r'\baca-mfz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.leaves()[:4],
-        ),
-    baca.markup(
-        r'\baca-mpz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.leaves()[4:],
-        ),
-    baca.text_spanner(
-        '(trem. mod.) => trem. stretto',
-        abjad.tweak(6).staff_padding,
-        selector=baca.leaves()[:4].rleak(),
-        ),
-    )
-
-maker(
-    ('rh', (10, 12)),
-    baca.hairpin(
-        'mp > ppp -- !',
-        abjad.tweak(True).to_barline,
-        pieces=baca.lparts([4, 5 + 1]),
-        selector=baca.leaves().rleak(),
-        ),
-    )
-
-maker(
-    ('rh', 11),
-    baca.make_monads('1/3  1/3  1/5  1/5  1/5  1/5'),
-    baca.staff_positions(
-        [4, 2, 6, 4, 2, 0],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 12),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [0],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (12, 16)),
-    baca.markup(
-        r'\baca-ffz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.leaves(),
-        ),
-    )
-
-maker(
-    ('rh', 13),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [0],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (13, 16)),
-    baca.hairpin(
-        'p < mf',
-        ),
-    baca.text_spanner(
-        'sub. trem. mod. => più stretto => più largo => più stretto',
-        abjad.tweak(6).staff_padding,
-        pieces=baca.lparts([1, 1, 2]),
-        ),
-    )
-
-maker(
-    ('rh', 14),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [-2],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 15),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [-2],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 16),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [-4],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 17),
-    baca.make_monads('1/3'),
-    baca.markup(
-        r'\baca-fz-markup',
-        direction=abjad.Down,
-        literal=True,
-        ),
-    baca.staff_positions(
-        [0],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (17, 18)),
-    baca.hairpin(
-        'mp >',
-        bookend=False,
-        ),
-    baca.text_spanner(
-        'sub. trem. mod. => trem. stretto',
-        abjad.tweak(6).staff_padding,
-        selector=baca.leaves().rleak(),
-        ),
-    )
-
-maker(
-    ('rh', 18),
-    baca.make_monads('1/3  1/3  1/3'),
-    baca.markup(
-        r'\baca-mfz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.leaves(),
-        ),
-    baca.staff_positions(
-        [6, 4, 2],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 19),
-    baca.hairpin(
-        'ppp -- !',
-        selector=baca.leaves().rleak().rleak(),
-        ),
-    baca.make_monads('1/5  1/5  1/5  1/5'),
-    baca.markup(
-        r'\baca-mpz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.leaves(),
-        ),
-    baca.staff_positions(
-        [6, 4, 2, 0],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 20),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [0],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 21),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [0],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (20, 26)),
-    baca.hairpin(
-        'p < f',
-        selector=baca.leaves()[1:],
-        ),
-    baca.markup(
-        r'\baca-ffz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.leaves(),
-        ),
-    )
-
-maker(
-    ('rh', (21, 26)),
-    baca.text_spanner(
-        'sub. trem. mod. => più stretto => più largo => più stretto =>'
-            ' più largo => più stretto',
-        abjad.tweak(6).staff_padding,
-        pieces=baca.lparts([1, 1, 1, 1, 2]),
-        ),
-    )
-
-maker(
-    ('rh', 22),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [-2],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 23),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [-2],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 24),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [-4],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 25),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [-4],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', 26),
-    baca.make_monads('1'),
-    baca.staff_positions(
-        [-6],
-        allow_repeats=True,
-        ),
-    )
-
-# stage 2 (after staff position settings)
-
-maker(
-    'rh',
-    baca.glissando(
-        selector=baca.leaves(),
-        ),
+    ('Cello_Music_Voice', 1),
+    baca.rhythm(music),
     )
