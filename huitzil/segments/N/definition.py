@@ -61,12 +61,13 @@ maker(
 maker(
     'vc',
     baca.clef('bass'),
+    baca.mmrest_transparent(),
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
         selector=baca.leaves(),
         ),
-    baca.literal(r'\override Staff.TimeSignature.stencil = ##f'),
+    baca.time_signature_stencil_false(),
     )
 
 maker(
@@ -75,14 +76,11 @@ maker(
     baca.rhythm("{ c'1 }"),
     )
 
-maker(
-    ('vc', 2),
-    baca.literal(r'\override MultiMeasureRest.transparent = ##t'),
-    )
+# vcr
 
 maker(
     ('vcr', 2),
-    baca.literal(r'\override MultiMeasureRest.transparent = ##t'),
+    baca.mmrest_transparent(),
     )
 
 # rh
@@ -393,21 +391,14 @@ maker(
     )
 
 maker(
-    ('rh', (16, 22)),
-    baca.hairpin(
-        'p < f',
-        selector=baca.leaves()[1:],
-        ),
+    ('rh', (17, 22)),
+    baca.hairpin('p < f'),
     baca.markup(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaves(),
         ),
-    )
-
-maker(
-    ('rh', (17, 22)),
     baca.text_spanner(
         'sub. trem. mod. => più stretto => più largo => più stretto =>'
             ' più largo => più stretto',

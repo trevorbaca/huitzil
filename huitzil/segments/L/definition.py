@@ -68,12 +68,13 @@ maker(
 
 maker(
     'vc',
+    baca.mmrest_transparent(),
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
         selector=baca.leaves(),
         ),
-    baca.literal(r'\override Staff.TimeSignature.stencil = ##f'),
+    baca.time_signature_stencil_false(),
     )
 
 maker(
@@ -82,14 +83,11 @@ maker(
     baca.rhythm("{ c'1 }"),
     )
 
-maker(
-    ('vc', 2),
-    baca.literal(r'\override MultiMeasureRest.transparent = ##t'),
-    )
+# vcr
 
 maker(
     ('vcr', 2),
-    baca.literal(r'\override MultiMeasureRest.transparent = ##t'),
+    baca.mmrest_transparent(),
     )
 
 # rh
