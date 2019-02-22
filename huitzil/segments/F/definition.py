@@ -1,141 +1,264 @@
 import abjad
 import baca
 import huitzil
+import os
+from abjadext import rmakers
 
 
-maker = huitzil.FlightSegmentMaker(
-    markup_leaves=False,
-    name='flight F',
-    pitches=[
-        (0, 'A2'),
-        (20, 'G2'),
-        (24, 'G2()'),
-        (28, 'A1'),
+###############################################################################
+##################################### [F] #####################################
+###############################################################################
+
+time_signatures = [
+    (1, 1), (3, 4), (3, 4), (1, 1), (1, 1), (3, 4), (3, 4), (1, 1),
+    (1, 1), (3, 4), (3, 4), (1, 1), (1, 1), (3, 4), (3, 4), (1, 1),
+    (1, 1), (3, 4), (3, 4), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1),
+    (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1),
+    ]
+
+maker = baca.SegmentMaker(
+    activate=[
+        abjad.Tags().LOCAL_MEASURE_NUMBER_MARKUP,
         ],
-    staff_line_count=11
+    phantom=True,
+    segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    time_signatures=time_signatures,
+    validate_measure_count=32,
     )
 
-maker.lh_glissandi = [
-    (0, 1),
-    (2, 3),
-    ]
+maker(
+    'Global_Skips',
+    baca.metronome_mark(
+        '66',
+        selector=baca.leaf(1 - 1),
+        ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.leaf(1 - 1),
+        ),
+    baca.metronome_mark(
+        '88',
+        selector=baca.leaf(4 - 1),
+        ),
+    baca.metronome_mark(
+        '66',
+        selector=baca.leaf(5 - 1),
+        ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.leaf(5 - 1),
+        ),
+    baca.metronome_mark(
+        '88',
+        selector=baca.leaf(8 - 1),
+        ),
+    baca.metronome_mark(
+        '66',
+        selector=baca.leaf(9 - 1),
+        ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.leaf(9 - 1),
+        ),
+    baca.metronome_mark(
+        '88',
+        selector=baca.leaf(12 - 1),
+        ),
+    baca.metronome_mark(
+        '66',
+        selector=baca.leaf(13 - 1),
+        ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.leaf(13 - 1),
+        ),
+    baca.metronome_mark(
+        '88',
+        selector=baca.leaf(16 - 1),
+        ),
+    baca.metronome_mark(
+        '66',
+        selector=baca.leaf(17 - 1),
+        ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.leaf(17 - 1),
+        ),
+    baca.metronome_mark(
+        '88',
+        selector=baca.leaf(20 - 1),
+        ),
+    baca.metronome_mark(
+        '66',
+        selector=baca.leaf(25 - 1),
+        ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.leaf(25 - 1),
+        ),
+    baca.metronome_mark(
+        '88',
+        selector=baca.leaf(28 - 1),
+        ),
+    baca.metronome_mark(
+        '88',
+        selector=baca.leaf(29 - 1),
+        ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.leaf(29 - 1),
+        ),
+    baca.metronome_mark(
+        '66',
+        selector=baca.leaf(32 - 1),
+        ),
+    )
 
-maker.notes = [
-    (11, '1/1', 'fz'),
-    '|',
-    (11, '3/4', None),
-    '|',
-    (10, '3/4', 'fz'),
-    '|',
-    (10, '1/1', None),
-    '|',
-    (9, '1/1', 'fz'),
-    '|',
-    (9, '3/4', None),
-    '|',
-    (8, '3/4', 'fz'),
-    '|',
-    (8, '1/1', None),
-    '|',
-    (7, '1/1', 'fz'),
-    '|',
-    (7, '3/4', None),
-    '|',
-    (6, '3/4', 'fz'),
-    '|',
-    (6, '1/1', None),
-    '|',
-    (5, '1/1', 'fz'),
-    '|',
-    (5, '3/4', None),
-    '|',
-    (4, '3/4', 'fz'),
-    '|',
-    (4, '1/1', None),
-    '|',
-    (3, '1/1', 'fz'),
-    '|',
-    (3, '3/4', None),
-    '|',
-    (2, '3/4', 'fz'),
-    '|',
-    (2, '1/1', None),
-    '|',
-    # G2
-    (1, '1/1', 'fffz'),
-    '|',
-    (1, '1/1', 'fffz'),
-    '|',
-    (1, '1/1', 'fffz'),
-    '|',
-    (1, '1/1', 'fffz'),
-    '|',
-    # descent
-    (1, '1/1', 'fffz'),
-    '|',
-    (1, '1/1', None),
-    '|',
-    (1, '1/1', None),
-    '|',
-    (1, '1/1', None),
-    '|',
-    # A2
-    (1, '1/1', 'fffz'),
-    '|',
-    (1, '1/1', 'fffz'),
-    '|',
-    (1, '1/1', 'fffz'),
-    '|',
-    (1, '1/1', 'fffz'),
-    '|',
-    ]
+# vc
 
-maker.glissando_break_indices = [
-    ]
+maker(
+    'vc',
+    baca.mmrest_transparent(),
+    baca.new(
+        baca.bar_line_transparent(),
+        baca.span_bar_transparent(),
+        selector=baca.leaves(),
+        ),
+    baca.time_signature_stencil_false(),
+    )
 
-maker.metronome_mark_measure_map = [
-    (0, baca.Accelerando()),
-    (3, huitzil.metronome_marks['88']),
-    (4, [huitzil.metronome_marks['66'], baca.Accelerando()]),
-    (7, huitzil.metronome_marks['88']),
-    (8, [huitzil.metronome_marks['66'], baca.Accelerando()]),
-    (11, huitzil.metronome_marks['88']),
-    (12, [huitzil.metronome_marks['66'], baca.Accelerando()]),
-    (15, huitzil.metronome_marks['88']),
-    (16, [huitzil.metronome_marks['66'], baca.Accelerando()]),
-    (19, huitzil.metronome_marks['88']),
-    (24, [huitzil.metronome_marks['66'], baca.Accelerando()]),
-    (27, huitzil.metronome_marks['88']),
-    (28, baca.Ritardando()),
-    (31, huitzil.metronome_marks['66']),
-    ]
+maker(
+    ('vc', (1, 20)),
+    baca.pitch('A2'),
+    baca.rhythm("{ c'1 * 35/2 }"),
+    )
 
-maker.tremolo_map = [
-    ]
+maker(
+    ('vc', (21, 24)),
+    baca.pitch('G2'),
+    baca.rhythm("{ c'1 * 4 }"),
+    )
 
-maker.underlying_dynamics = [
-    (0, 'p'),
-    (0, '<'),
-    (3, 'mf'),
-    (3, '>'),
-    (4, 'p'),
-    (4, '<'),
-    (7, 'mf'),
-    (7, '>'),
-    (8, 'p'),
-    (8, '<'),
-    (11, 'mf'),
-    (11, '>'),
-    (12, 'p'),
-    (12, '<'),
-    (15, 'mf'),
-    (15, '>'),
-    (16, 'p'),
-    (16, '<'),
-    (22, 'ff'),
-    (24, 'mf'),
-    (24, '<'),
-    (28, 'ff'),
-    (28, '>'),
-    (31, 'pp'),
-    ]
+maker(
+    ('vc', (25, 28)),
+    baca.literal(r'\parenthesize'),
+    baca.pitch('G2'),
+    baca.rhythm("{ c'1 * 4 }"),
+    )
+
+maker(
+    ('vc', (29, 32)),
+    baca.pitch('A1'),
+    baca.rhythm("{ c'1 * 4 }"),
+    )
+
+# vcr
+
+#maker(
+#    ('vcr', 2),
+#    baca.mmrest_transparent(),
+#    )
+
+# rh
+
+maker(
+    'rh',
+    baca.dls_staff_padding(7),
+    baca.stem_tremolo(
+        selector=baca.pleaves(),
+        ),
+    baca.text_script_parent_alignment_x(0),
+    baca.text_script_self_alignment_x(0),
+    baca.text_script_staff_padding(4),
+    )
+
+maker(
+    ('rh', (1, 8)),
+    baca.make_monads('1 3/4 3/4 1 1 3/4 3/4 1'),
+    baca.staff_positions(
+        [-10, -10, -8, -8, -6, -6, -4, -4],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', (1, 20)),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaves()[abjad.index([0], 2)],
+        ),
+    )
+
+maker(
+    ('rh', (1, 23)),
+    baca.hairpin(
+        'p < mf > p < mf > p < mf > p < mf > p < ff',
+        pieces=baca.clparts([
+            3, 1, 3, 1,
+            3, 1, 3, 1,
+            7,
+            ]),
+        ),
+    )
+
+maker(
+    ('rh', (9, 16)),
+    baca.make_monads('1 3/4 3/4 1 1 3/4 3/4 1'),
+    baca.staff_positions(
+        [-2, -2, 0, 0, 2, 2, 4, 4],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', (17, 24)),
+    baca.make_monads('1 3/4 3/4 1 1 1 1 1'),
+    baca.staff_positions(
+        [6, 6, 8, 8, 10, 10, 10, 10],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', (21, 32)),
+    baca.markup(
+        r'\baca-fffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaves()[abjad.index([0, 1, 2, 3, 4, 8, 9, 10, 11])],
+        ),
+    )
+
+maker(
+    ('rh', (25, 32)),
+    baca.hairpin(
+        'mf < ff > pp',
+        pieces=baca.lparts([4, 4]),
+        ),
+    baca.make_monads('1 1 1 1 1 1 1 1'),
+    baca.staff_positions(
+        [10],
+        allow_repeats=True,
+        ),
+    )
+
+# stage 2 (after staff position settings)
+
+maker(
+    ('vc', (1, 21)),
+    baca.glissando(),
+    )
+
+maker(
+    ('vc', (25, 29)),
+    baca.glissando(),
+    )
+
+maker(
+    'rh',
+    baca.glissando(
+        selector=baca.leaves(),
+        ),
+    )
