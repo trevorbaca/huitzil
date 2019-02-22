@@ -113,7 +113,7 @@
         \accepts GlobalContext
         \accepts MusicContext
         \remove Bar_number_engraver
-        \remove Mark_engraver
+        %\remove Mark_engraver
         \remove Metronome_mark_engraver
         \remove System_start_delimiter_engraver
 
