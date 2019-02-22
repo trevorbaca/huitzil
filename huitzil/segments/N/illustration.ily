@@ -881,7 +881,6 @@ N_RH_Music_Voice = {                                                           %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
-    _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(2)
     \glissando                                                                 %! baca_glissando
 
@@ -1000,7 +999,7 @@ N_Cello_Music_Voice = {                                                        %
         % [N Cello_Music_Voice measure 104 / measure 1]                        %! _comment_measure_numbers
         \override Score.BarLine.transparent = ##t                              %! baca_bar_line_transparent:OverrideCommand(1)
         \override Score.SpanBar.transparent = ##t                              %! baca_span_bar_transparent:OverrideCommand(1)
-        \override Staff.TimeSignature.stencil = ##f                            %! baca_literal:IndicatorCommand
+        \override Score.TimeSignature.stencil = ##f                            %! baca_time_signature_stencil_false:OverrideCommand(1)
         \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1017,7 +1016,6 @@ N_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [N Cello_Music_Voice measure 105 / measure 2]                    %! _comment_measure_numbers
-            \override MultiMeasureRest.transparent = ##t                       %! baca_literal:IndicatorCommand
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 13/12                                                        %! _make_multimeasure_rest_container
 
@@ -1027,7 +1025,7 @@ N_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [N Cello_Rest_Voice measure 105 / measure 2]                     %! _comment_measure_numbers
-            \override MultiMeasureRest.transparent = ##t                       %! baca_literal:IndicatorCommand
+            \once \override MultiMeasureRest.transparent = ##t                 %! baca_mmrest_transparent:OverrideCommand(1)
             R1 * 13/12                                                         %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -1035,6 +1033,7 @@ N_Cello_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [N Cello_Music_Voice measure 106 / measure 3]                            %! _comment_measure_numbers
+    \override MultiMeasureRest.transparent = ##t                               %! baca_mmrest_transparent:OverrideCommand(1)
     R1 * 1                                                                     %! _make_measure_silences
 
     % [N Cello_Music_Voice measure 107 / measure 4]                            %! _comment_measure_numbers
@@ -1093,8 +1092,10 @@ N_Cello_Music_Voice = {                                                        %
 
     % [N Cello_Music_Voice measure 125 / measure 22]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
+    \revert MultiMeasureRest.transparent                                       %! baca_mmrest_transparent:OverrideCommand(2)
     \revert Score.BarLine.transparent                                          %! baca_bar_line_transparent:OverrideCommand(2)
     \revert Score.SpanBar.transparent                                          %! baca_span_bar_transparent:OverrideCommand(2)
+    \revert Score.TimeSignature.stencil                                        %! baca_time_signature_stencil_false:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 

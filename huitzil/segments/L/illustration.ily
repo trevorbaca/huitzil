@@ -1193,7 +1193,7 @@ L_Cello_Music_Voice = {                                                        %
         % [L Cello_Music_Voice measure 55 / measure 1]                         %! _comment_measure_numbers
         \override Score.BarLine.transparent = ##t                              %! baca_bar_line_transparent:OverrideCommand(1)
         \override Score.SpanBar.transparent = ##t                              %! baca_span_bar_transparent:OverrideCommand(1)
-        \override Staff.TimeSignature.stencil = ##f                            %! baca_literal:IndicatorCommand
+        \override Score.TimeSignature.stencil = ##f                            %! baca_time_signature_stencil_false:OverrideCommand(1)
         \clef "bass"                                                           %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1210,7 +1210,6 @@ L_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [L Cello_Music_Voice measure 56 / measure 2]                     %! _comment_measure_numbers
-            \override MultiMeasureRest.transparent = ##t                       %! baca_literal:IndicatorCommand
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 13/12                                                        %! _make_multimeasure_rest_container
 
@@ -1220,7 +1219,7 @@ L_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [L Cello_Rest_Voice measure 56 / measure 2]                      %! _comment_measure_numbers
-            \override MultiMeasureRest.transparent = ##t                       %! baca_literal:IndicatorCommand
+            \once \override MultiMeasureRest.transparent = ##t                 %! baca_mmrest_transparent:OverrideCommand(1)
             R1 * 13/12                                                         %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -1228,6 +1227,7 @@ L_Cello_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [L Cello_Music_Voice measure 57 / measure 3]                             %! _comment_measure_numbers
+    \override MultiMeasureRest.transparent = ##t                               %! baca_mmrest_transparent:OverrideCommand(1)
     R1 * 1                                                                     %! _make_measure_silences
 
     % [L Cello_Music_Voice measure 58 / measure 4]                             %! _comment_measure_numbers
@@ -1298,8 +1298,10 @@ L_Cello_Music_Voice = {                                                        %
 
     % [L Cello_Music_Voice measure 80 / measure 26]                            %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
+    \revert MultiMeasureRest.transparent                                       %! baca_mmrest_transparent:OverrideCommand(2)
     \revert Score.BarLine.transparent                                          %! baca_bar_line_transparent:OverrideCommand(2)
     \revert Score.SpanBar.transparent                                          %! baca_span_bar_transparent:OverrideCommand(2)
+    \revert Score.TimeSignature.stencil                                        %! baca_time_signature_stencil_false:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 

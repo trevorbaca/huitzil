@@ -985,8 +985,7 @@ O_Cello_Music_Voice = {                                                        %
             % [O Cello_Music_Voice measure 126 / measure 1]                    %! _comment_measure_numbers
             \override Score.BarLine.transparent = ##t                          %! baca_bar_line_transparent:OverrideCommand(1)
             \override Score.SpanBar.transparent = ##t                          %! baca_span_bar_transparent:OverrideCommand(1)
-            \override MultiMeasureRest.transparent = ##t                       %! baca_literal:IndicatorCommand
-            \override Staff.TimeSignature.stencil = ##f                        %! baca_literal:IndicatorCommand
+            \override Score.TimeSignature.stencil = ##f                        %! baca_time_signature_stencil_false:OverrideCommand(1)
             \clef "bass"                                                       %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \once \override Staff.Clef.color = #(x11-color 'green4)            %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -1002,7 +1001,7 @@ O_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [O Cello_Rest_Voice measure 126 / measure 1]                     %! _comment_measure_numbers
-            \override MultiMeasureRest.transparent = ##t                       %! baca_literal:IndicatorCommand
+            \once \override MultiMeasureRest.transparent = ##t                 %! baca_mmrest_transparent:OverrideCommand(1)
             R1 * 1                                                             %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -1010,6 +1009,7 @@ O_Cello_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [O Cello_Music_Voice measure 127 / measure 2]                            %! _comment_measure_numbers
+    \override MultiMeasureRest.transparent = ##t                               %! baca_mmrest_transparent:OverrideCommand(1)
     R1 * 1                                                                     %! _make_measure_silences
 
     % [O Cello_Music_Voice measure 128 / measure 3]                            %! _comment_measure_numbers
@@ -1069,7 +1069,7 @@ O_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [O Cello_Rest_Voice measure 140 / measure 15]                    %! _comment_measure_numbers
-            \override MultiMeasureRest.transparent = ##t                       %! baca_literal:IndicatorCommand
+            \once \override MultiMeasureRest.transparent = ##t                 %! baca_mmrest_transparent:OverrideCommand(1)
             R1 * 4/3                                                           %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
@@ -1099,8 +1099,10 @@ O_Cello_Music_Voice = {                                                        %
 
     % [O Cello_Music_Voice measure 148 / measure 23]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
+    \revert MultiMeasureRest.transparent                                       %! baca_mmrest_transparent:OverrideCommand(2)
     \revert Score.BarLine.transparent                                          %! baca_bar_line_transparent:OverrideCommand(2)
     \revert Score.SpanBar.transparent                                          %! baca_span_bar_transparent:OverrideCommand(2)
+    \revert Score.TimeSignature.stencil                                        %! baca_time_signature_stencil_false:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
