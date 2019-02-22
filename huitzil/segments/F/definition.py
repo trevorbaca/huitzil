@@ -9,11 +9,13 @@ from abjadext import rmakers
 ##################################### [F] #####################################
 ###############################################################################
 
+### SEGMENT-MAKER ###
+
 time_signatures = [
-    (1, 1), (3, 4), (3, 4), (1, 1), (1, 1), (3, 4), (3, 4), (1, 1),
-    (1, 1), (3, 4), (3, 4), (1, 1), (1, 1), (3, 4), (3, 4), (1, 1),
-    (1, 1), (3, 4), (3, 4), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1),
-    (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1),
+    (1, 1), (1, 1), (4, 3), (1, 1), (8, 5), (1, 1), (4, 3),
+    (1, 1), (8, 5), (1, 1), (4, 3), (1, 1), (8, 5), (1, 1),
+    (4, 3), (1, 1), (8, 5), (1, 1), (1, 1), (1, 1), (1, 1),
+    (1, 1), (1, 1),
     ]
 
 maker = baca.SegmentMaker(
@@ -23,94 +25,22 @@ maker = baca.SegmentMaker(
     phantom=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
-    validate_measure_count=32,
+    validate_measure_count=23,
     )
 
 maker(
     'Global_Skips',
     baca.metronome_mark(
-        '66',
-        selector=baca.leaf(1 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(1 - 1),
-        ),
-    baca.metronome_mark(
         '88',
-        selector=baca.leaf(4 - 1),
+        selector=baca.leaf(18 - 1),
         ),
     baca.metronome_mark(
-        '66',
-        selector=baca.leaf(5 - 1),
+        baca.Ritardando(),
+        selector=baca.leaf(18 - 1),
         ),
     baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(5 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(8 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(9 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(9 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(12 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(13 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(13 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(16 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(17 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(17 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(20 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(25 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(25 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(28 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(29 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(29 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(32 - 1),
+        '44',
+        selector=baca.leaf(22 - 1),
         ),
     )
 
@@ -128,36 +58,28 @@ maker(
     )
 
 maker(
-    ('vc', (1, 20)),
-    baca.pitch('A2'),
-    baca.rhythm("{ c'1 * 35/2 }"),
-    )
-
-maker(
-    ('vc', (21, 24)),
-    baca.pitch('G2'),
-    baca.rhythm("{ c'1 * 4 }"),
-    )
-
-maker(
-    ('vc', (25, 28)),
+    ('vc', (8, 13)),
     baca.literal(r'\parenthesize'),
-    baca.pitch('G2'),
-    baca.rhythm("{ c'1 * 4 }"),
+    baca.pitches('Bb1 Cb2'),
+    baca.rhythm("{ c'1 * 107/15 c'1 * 2/5 }"),
     )
 
 maker(
-    ('vc', (29, 32)),
-    baca.pitch('A1'),
-    baca.rhythm("{ c'1 * 4 }"),
+    ('vc', 14),
+    baca.clef('treble'),
+    baca.note_head_duration_log(2),
+    baca.note_head_no_ledgers(True),
+    baca.note_head_style('do'),
+    baca.rhythm("{ c'1 }"),
+    baca.staff_position(8),
     )
 
 # vcr
 
-#maker(
-#    ('vcr', 2),
-#    baca.mmrest_transparent(),
-#    )
+maker(
+    ('vcr', [1, 15]),
+    baca.mmrest_transparent(),
+    )
 
 # rh
 
@@ -173,73 +95,426 @@ maker(
     )
 
 maker(
-    ('rh', (1, 8)),
-    baca.make_monads('1 3/4 3/4 1 1 3/4 3/4 1'),
+    ('rh', 1),
+    baca.hairpin(
+        'f -- !',
+        abjad.tweak(True).to_barline,
+        selector=baca.leaves().rleak(),
+        ),
+    baca.make_monads('1/4  1/4  1/4  1/4'),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaves(),
+        ),
     baca.staff_positions(
-        [-10, -10, -8, -8, -6, -6, -4, -4],
+        [-6, -4, -2, 0],
         allow_repeats=True,
         ),
     )
 
 maker(
-    ('rh', (1, 20)),
+    ('rh', (1, 17)),
+    baca.text_spanner(
+        'trem. mod. ||',
+        abjad.tweak(6).staff_padding,
+        bookend=False,
+        ),
+    )
+
+maker(
+    ('rh', 2),
+    baca.make_monads('1'),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaves(),
+        ),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', (2, 13)),
+    baca.hairpin(
+        'mp > p <',
+        bookend=False,
+        pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
+        selector=baca.leaves().rleak(),
+        ),
+    )
+
+maker(
+    ('rh', 3),
+    baca.make_monads('2/3  2/3'),
     baca.markup(
         r'\baca-fz-markup',
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves()[abjad.index([0], 2)],
+        selector=baca.leaf(0),
         ),
-    )
-
-maker(
-    ('rh', (1, 23)),
-    baca.hairpin(
-        'p < mf > p < mf > p < mf > p < mf > p < ff',
-        pieces=baca.clparts([
-            3, 1, 3, 1,
-            3, 1, 3, 1,
-            7,
-            ]),
-        ),
-    )
-
-maker(
-    ('rh', (9, 16)),
-    baca.make_monads('1 3/4 3/4 1 1 3/4 3/4 1'),
-    baca.staff_positions(
-        [-2, -2, 0, 0, 2, 2, 4, 4],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (17, 24)),
-    baca.make_monads('1 3/4 3/4 1 1 1 1 1'),
-    baca.staff_positions(
-        [6, 6, 8, 8, 10, 10, 10, 10],
-        allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (21, 32)),
     baca.markup(
         r'\baca-fffz-markup',
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves()[abjad.index([0, 1, 2, 3, 4, 8, 9, 10, 11])],
+        selector=baca.leaf(1),
+        ),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
         ),
     )
 
 maker(
-    ('rh', (25, 32)),
-    baca.hairpin(
-        'mf < ff > pp',
-        pieces=baca.lparts([4, 4]),
+    ('rh', 4),
+    baca.make_monads('1'),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
         ),
-    baca.make_monads('1 1 1 1 1 1 1 1'),
     baca.staff_positions(
-        [10],
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 5),
+    baca.make_monads('2/5  2/5  2/5  2/5'),
+    baca.markup(
+        r'\baca-mfz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(0),
+        ),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(1),
+        ),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(2),
+        ),
+    baca.markup(
+        r'\baca-fffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(3),
+        ),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 6),
+    baca.make_monads('1'),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 7),
+    baca.make_monads('2/3  2/3'),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.markup(
+        r'\baca-fffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(1),
+        ),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 8),
+    baca.make_monads('1'),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 9),
+    baca.make_monads('2/5  2/5  2/5  2/5'),
+    baca.markup(
+        r'\baca-mfz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(1),
+        ),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(2),
+        ),
+    baca.markup(
+        r'\baca-fffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(3),
+        ),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 10),
+    baca.make_monads('1'),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 11),
+    baca.make_monads('2/3  2/3'),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.markup(
+        r'\baca-fffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(1),
+        ),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 12),
+    baca.make_monads('1'),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 13),
+    baca.make_monads('2/5  2/5  2/5  2/5'),
+    baca.markup(
+        r'\baca-mfz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(1),
+        ),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(2),
+        ),
+    baca.markup(
+        r'\baca-fffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(3),
+        ),
+    baca.staff_positions(
+        [0],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 14),
+    baca.make_monads('1'),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.staff_positions(
+        [6],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', (14, 23)),
+    baca.hairpin(
+        'mp -- p -- pp -- p -- !',
+        pieces=baca.mgroups([2, 2, 4, 2 + 1]),
+        selector=baca.leaves().rleak(),
+        ),
+    )
+
+maker(
+    ('rh', 15),
+    baca.make_monads('2/3  2/3'),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.markup(
+        r'\baca-fffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(1),
+        ),
+    baca.staff_positions(
+        [6],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 16),
+    baca.make_monads('1'),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.staff_positions(
+        [6],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', 17),
+    baca.make_monads('2/5  2/5  2/5  2/5'),
+    baca.markup(
+        r'\baca-mfz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(1),
+        ),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(2),
+        ),
+    baca.markup(
+        r'\baca-fffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(3),
+        ),
+    baca.staff_positions(
+        [6],
+        allow_repeats=True,
+        ),
+    )
+
+maker(
+    ('rh', (18, 22)),
+    baca.text_spanner(
+        'sub. trem. più stretto => più largo => più stretto => più largo =>'
+            ' trem. mod.',
+        abjad.tweak(6).staff_padding,
+        pieces=baca.lparts([1, 1, 1, 1 + 1]),
+        ),
+    )
+
+maker(
+    ('rh', (18, 23)),
+    baca.make_monads('1  1  1  1  1  1'),
+    baca.markup(
+        r'\baca-ffz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(1),
+        ),
+    baca.markup(
+        r'\baca-fz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(2),
+        ),
+    baca.markup(
+        r'\baca-mfz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(3),
+        ),
+    baca.markup(
+        r'\baca-mfz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(4),
+        ),
+    baca.markup(
+        r'\baca-mpz-markup',
+        direction=abjad.Down,
+        literal=True,
+        selector=baca.leaf(5),
+        ),
+    baca.staff_positions(
+        [6],
         allow_repeats=True,
         ),
     )
@@ -247,13 +522,10 @@ maker(
 # stage 2 (after staff position settings)
 
 maker(
-    ('vc', (1, 21)),
-    baca.glissando(),
-    )
-
-maker(
-    ('vc', (25, 29)),
-    baca.glissando(),
+    ('vc', (8, 14)),
+    baca.glissando(
+        selector=baca.leaves(),
+        ),
     )
 
 maker(

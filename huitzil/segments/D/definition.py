@@ -60,7 +60,7 @@ maker(
 maker(
     ('vc', (8, 13)),
     baca.literal(r'\parenthesize'),
-    baca.pitches('Bb1 Cb2'),
+    baca.pitches('B1 C2'),
     baca.rhythm("{ c'1 * 107/15 c'1 * 2/5 }"),
     )
 

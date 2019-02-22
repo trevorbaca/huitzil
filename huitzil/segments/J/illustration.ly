@@ -2,7 +2,9 @@
 \language "english"                                                            %! _make_lilypond_file:LilyPondFile
 
 \include "../../stylesheets/stylesheet.ily"                                    %! _make_lilypond_file:LilyPondFile
+\include "../../stylesheets/nonfirst-segment.ily"                              %! _make_lilypond_file:LilyPondFile
 \include "illustration.ily"                                                    %! extern
+\paper { first-page-number = #10 }                                             %! __make_segment_pdf__
 
 
 \score {                                                                       %! _make_lilypond_file:LilyPondFile
@@ -20,10 +22,10 @@
             <<                                                                 %! abjad.ScoreTemplate._make_global_context
 
                 \context GlobalRests = "Global_Rests"                          %! abjad.ScoreTemplate._make_global_context
-                \i_Global_Rests                                                %! extern
+                \J_Global_Rests                                                %! extern
 
                 \context GlobalSkips = "Global_Skips"                          %! abjad.ScoreTemplate._make_global_context
-                \i_Global_Skips                                                %! extern
+                \J_Global_Skips                                                %! extern
 
             >>                                                                 %! abjad.ScoreTemplate._make_global_context
 
@@ -34,10 +36,10 @@
                 <<                                                             %! huitzil.ScoreTemplate.__call__
 
                     \context RHStaff = "RH_Music_Staff"                        %! huitzil.ScoreTemplate.__call__
-                    \i_RH_Music_Staff                                          %! extern
+                    \J_RH_Music_Staff                                          %! extern
 
                     \context Staff = "Cello_Music_Staff"                       %! huitzil.ScoreTemplate.__call__
-                    \i_Cello_Music_Staff                                       %! extern
+                    \J_Cello_Music_Staff                                       %! extern
 
                 >>                                                             %! huitzil.ScoreTemplate.__call__
 
