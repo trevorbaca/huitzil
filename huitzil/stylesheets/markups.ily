@@ -7,7 +7,7 @@ huitzil-colophon-markup = \markup {
     \with-color #black
     \override #'(baseline-skip . 4)
     \right-column {
-        \line { Cambridge, MA \hspace #0.75 (Aug. - Oct. 2014). }
+        \line { Cambridge, MA \hspace #0.75 (Sep. - Oct. 2014). }
         \line { Madison, WI \hspace #0.75 (Feb. 2019). }
         }
     }
