@@ -190,6 +190,7 @@ maker(
 music = abjad.select(music)
 
 maker(
-    ('Cello_Music_Voice', 1),
+    ('vc', 1),
+    baca.clef('bass'),
     baca.rhythm(music),
     )
