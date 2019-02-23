@@ -580,10 +580,10 @@ C_RH_Music_Voice = {                                                           %
     \override TextScript.parent-alignment-X = #0                               %! baca_text_script_parent_alignment_x:OverrideCommand(1)
     \override TextScript.self-alignment-X = #0                                 %! baca_text_script_self_alignment_x:OverrideCommand(1)
     \override TextScript.staff-padding = #4                                    %! baca_script_staff_padding:OverrideCommand(1)
-    \clef "percussion"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
-    \once \override RHStaff.Clef.color = #(x11-color 'green4)                  %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
-%@% \override RHStaff.Clef.color = ##f                                         %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                               %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
+    \clef "percussion"                                                         %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
+    \once \override RHStaff.Clef.color = #(x11-color 'DeepPink1)               %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
+%@% \override RHStaff.Clef.color = ##f                                         %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set RHStaff.forceClef = ##t                                               %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)             %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     b'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
@@ -599,7 +599,7 @@ C_RH_Music_Voice = {                                                           %
     - \baca-text-spanner-left-text "trem. moderato"                            %! baca_text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
-    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+    \override RHStaff.Clef.color = #(x11-color 'DeepPink4)                     %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     b'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand

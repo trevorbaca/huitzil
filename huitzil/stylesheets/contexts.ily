@@ -52,7 +52,7 @@
         \accepts PageLayout
 
         \override BarNumber.Y-extent = ##f
-        \override BarNumber.extra-offset = #'(-4 . -12)
+        \override BarNumber.extra-offset = #'(-4 . -9)
         \override BarNumber.font-size = 1
 
     }
