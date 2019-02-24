@@ -94,7 +94,7 @@ D_Global_Skips = {                                                             %
     - \abjad-invisible-line                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "88" #'green4       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-%@% - \baca-start-ct-left-only "[7'27'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[7'29'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 82 / measure 2]                                  %! _comment_measure_numbers
@@ -109,7 +109,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "82"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'27'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[7'31'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 83 / measure 3]                                  %! _comment_measure_numbers
@@ -127,7 +127,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "83"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'29'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[7'34'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 84 / measure 4]                                  %! _comment_measure_numbers
@@ -144,7 +144,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "84"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'29'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[7'38'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 85 / measure 5]                                  %! _comment_measure_numbers
@@ -162,7 +162,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "85"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'32'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[7'40'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 86 / measure 6]                                  %! _comment_measure_numbers
@@ -179,7 +179,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "86"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'32'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[7'45'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 87 / measure 7]                                  %! _comment_measure_numbers
@@ -197,7 +197,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "87"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'36'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[7'47'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 88 / measure 8]                                  %! _comment_measure_numbers
@@ -214,7 +214,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "88"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'36'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[7'51'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 89 / measure 9]                                  %! _comment_measure_numbers
@@ -232,7 +232,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "89"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'38'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[7'54'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 90 / measure 10]                                 %! _comment_measure_numbers
@@ -249,7 +249,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "90"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'38'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[7'58'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 91 / measure 11]                                 %! _comment_measure_numbers
@@ -267,7 +267,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "91"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'43'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'01'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 92 / measure 12]                                 %! _comment_measure_numbers
@@ -284,7 +284,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "92"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'43'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'05'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 93 / measure 13]                                 %! _comment_measure_numbers
@@ -302,7 +302,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "93"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'45'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'07'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 94 / measure 14]                                 %! _comment_measure_numbers
@@ -319,7 +319,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "94"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'45'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'12'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 95 / measure 15]                                 %! _comment_measure_numbers
@@ -337,7 +337,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "95"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'49'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'14'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 96 / measure 16]                                 %! _comment_measure_numbers
@@ -354,7 +354,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "96"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'49'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'18'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 97 / measure 17]                                 %! _comment_measure_numbers
@@ -372,7 +372,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "97"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'52'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'21'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 98 / measure 18]                                 %! _comment_measure_numbers
@@ -396,7 +396,7 @@ D_Global_Skips = {                                                             %
     - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "88" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-%@% - \baca-start-ct-left-only "[7'52'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'25'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 99 / measure 19]                                 %! _comment_measure_numbers
@@ -411,7 +411,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "99"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'56'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'28'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 100 / measure 20]                                %! _comment_measure_numbers
@@ -426,7 +426,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "100"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'56'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'31'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 101 / measure 21]                                %! _comment_measure_numbers
@@ -441,7 +441,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "101"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-left-only "[7'59'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'33'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 102 / measure 22]                                %! _comment_measure_numbers
@@ -463,7 +463,7 @@ D_Global_Skips = {                                                             %
     - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-%@% - \baca-start-ct-left-only "[7'59'']"                                      %! CLOCK_TIME
+%@% - \baca-start-ct-left-only "[8'36'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [D Global_Skips measure 103 / measure 23]                                %! _comment_measure_numbers
@@ -478,7 +478,7 @@ D_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "103"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \baca-start-ct-both "[8'03'']" "[8'45'']"                                %! CLOCK_TIME
+%@% - \baca-start-ct-both "[8'41'']" "[8'47'']"                                %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
