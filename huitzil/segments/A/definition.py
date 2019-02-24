@@ -169,8 +169,8 @@ for measure_duration in measure_durations:
 
 maker = baca.SegmentMaker(
     activate=[
-        #abjad.Tags().LOCAL_MEASURE_NUMBER_MARKUP,
-        #abjad.Tags().STAGE_NUMBER_MARKUP,
+        #abjad.const.LOCAL_MEASURE_NUMBER,
+        #abjad.const.STAGE_NUMBER,
         ],
     first_segment=True,
     phantom=True,

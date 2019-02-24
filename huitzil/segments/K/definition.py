@@ -16,7 +16,7 @@ time_signatures = [
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.Tags().LOCAL_MEASURE_NUMBER_MARKUP,
+        abjad.const.LOCAL_MEASURE_NUMBER,
         ],
     final_segment=True,
     phantom=True,
