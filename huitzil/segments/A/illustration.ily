@@ -1,4 +1,4 @@
-A_Global_Rests = {                                                             %! extern
+A_Global_Rests = {                                                             %! abjad.Path.extern
 
     % [A Global_Rests measure 1]                                               %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_global_rests(1)
@@ -165,10 +165,10 @@ A_Global_Rests = {                                                             %
     % [A Global_Rests measure 55]                                              %! PHANTOM:_style_phantom_measures(4):_comment_measure_numbers
     R1 * 1/4                                                                   %! PHANTOM:_make_global_rests(2)
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-A_Global_Skips = {                                                             %! extern
+A_Global_Skips = {                                                             %! abjad.Path.extern
 
     % [A Global_Skips measure 1]                                               %! _comment_measure_numbers
     \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
@@ -1096,10 +1096,10 @@ A_Global_Skips = {                                                             %
     \once \override Score.BarLine.transparent = ##t                            %! PHANTOM:_style_phantom_measures(3)
     \once \override Score.SpanBar.transparent = ##t                            %! PHANTOM:_style_phantom_measures(3)
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-A_RH_Music_Voice = {                                                           %! extern
+A_RH_Music_Voice = {                                                           %! abjad.Path.extern
 
     % [A RH_Music_Voice measure 1]                                             %! _comment_measure_numbers
     \clef "percussion"                                                         %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
@@ -1294,18 +1294,18 @@ A_RH_Music_Voice = {                                                           %
 
     >>                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-A_RH_Music_Staff = {                                                           %! extern
+A_RH_Music_Staff = {                                                           %! abjad.Path.extern
 
     \context Voice = "RH_Music_Voice"                                          %! huitzil.ScoreTemplate.__call__
-    \A_RH_Music_Voice                                                          %! extern
+    \A_RH_Music_Voice                                                          %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-A_Cello_Music_Voice = {                                                        %! extern
+A_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
     \times 4/5 {
 
@@ -3324,12 +3324,12 @@ A_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-A_Cello_Music_Staff = {                                                        %! extern
+A_Cello_Music_Staff = {                                                        %! abjad.Path.extern
 
     \context Voice = "Cello_Music_Voice"                                       %! huitzil.ScoreTemplate.__call__
-    \A_Cello_Music_Voice                                                       %! extern
+    \A_Cello_Music_Voice                                                       %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern

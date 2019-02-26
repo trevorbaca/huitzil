@@ -1,4 +1,4 @@
-K_Global_Rests = {                                                             %! extern
+K_Global_Rests = {                                                             %! abjad.Path.extern
 
     % [K Global_Rests measure 289 / measure 1]                                 %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_global_rests(1)
@@ -39,10 +39,10 @@ K_Global_Rests = {                                                             %
     % [K Global_Rests measure 301 / measure 13]                                %! PHANTOM:_style_phantom_measures(4):_comment_measure_numbers
     R1 * 1/4                                                                   %! PHANTOM:_make_global_rests(2)
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-K_Global_Skips = {                                                             %! extern
+K_Global_Skips = {                                                             %! abjad.Path.extern
 
     % [K Global_Skips measure 289 / measure 1]                                 %! _comment_measure_numbers
     \time 1/1                                                                  %! REAPPLIED_TIME_SIGNATURE:_set_status_tag:_reapply_persistent_indicators(1):_make_global_skips(2)
@@ -306,10 +306,10 @@ K_Global_Skips = {                                                             %
     \once \override Score.BarLine.transparent = ##t                            %! PHANTOM:_style_phantom_measures(3)
     \once \override Score.SpanBar.transparent = ##t                            %! PHANTOM:_style_phantom_measures(3)
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-K_RH_Music_Voice = {                                                           %! extern
+K_RH_Music_Voice = {                                                           %! abjad.Path.extern
 
     % [K RH_Music_Voice measure 289 / measure 1]                               %! _comment_measure_numbers
     \override Staff.BarLine.bar-extent = #'(-3 . 3)                            %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:_reapply_persistent_indicators(3)
@@ -460,18 +460,18 @@ K_RH_Music_Voice = {                                                           %
 
     >>                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-K_RH_Music_Staff = {                                                           %! extern
+K_RH_Music_Staff = {                                                           %! abjad.Path.extern
 
     \context Voice = "RH_Music_Voice"                                          %! huitzil.ScoreTemplate.__call__
-    \K_RH_Music_Voice                                                          %! extern
+    \K_RH_Music_Voice                                                          %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-K_Cello_Music_Voice = {                                                        %! extern
+K_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
     % [K Cello_Music_Voice measure 289 / measure 1]                            %! _comment_measure_numbers
     \override MultiMeasureRest.transparent = ##t                               %! baca_mmrest_transparent:OverrideCommand(1)
@@ -553,12 +553,12 @@ K_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-K_Cello_Music_Staff = {                                                        %! extern
+K_Cello_Music_Staff = {                                                        %! abjad.Path.extern
 
     \context Voice = "Cello_Music_Voice"                                       %! huitzil.ScoreTemplate.__call__
-    \K_Cello_Music_Voice                                                       %! extern
+    \K_Cello_Music_Voice                                                       %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
