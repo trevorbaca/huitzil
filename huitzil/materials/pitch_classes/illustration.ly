@@ -1,28 +1,28 @@
-\version "2.19.82"                                                                       %! LilyPondFile
-\language "english"                                                                      %! LilyPondFile
+\version "2.19.82"                                                                       %! abjad.LilyPondFile
+\language "english"                                                                      %! abjad.LilyPondFile
 
-\include "/Users/trevorbaca/baca/lilypond/baca.ily"                                      %! LilyPondFile
+\include "/Users/trevorbaca/baca/lilypond/baca.ily"                                      %! abjad.LilyPondFile
 
-#(set-global-staff-size 16)                                                              %! LilyPondFile
+#(set-global-staff-size 16)                                                              %! abjad.LilyPondFile
 
-\header {                                                                                %! LilyPondFile
+\header {                                                                                %! abjad.LilyPondFile
     tagline = ##f
-}                                                                                        %! LilyPondFile
+}                                                                                        %! abjad.LilyPondFile
 
-\layout {                                                                                %! LilyPondFile
+\layout {                                                                                %! abjad.LilyPondFile
     \accidentalStyle dodecaphonic
     indent = #0
     line-width = #287.5
     ragged-right = ##t
-}                                                                                        %! LilyPondFile
+}                                                                                        %! abjad.LilyPondFile
 
-\paper {                                                                                 %! LilyPondFile
+\paper {                                                                                 %! abjad.LilyPondFile
     markup-system-spacing.padding = 8
     system-system-spacing.padding = 10
     top-markup-spacing.padding = 4
-}                                                                                        %! LilyPondFile
+}                                                                                        %! abjad.LilyPondFile
 
-\score {                                                                                 %! LilyPondFile
+\score {                                                                                 %! abjad.LilyPondFile
     \new Score
     \with
     {
@@ -628,4 +628,4 @@
             }
         }
     >>
-}                                                                                        %! LilyPondFile
+}                                                                                        %! abjad.LilyPondFile
