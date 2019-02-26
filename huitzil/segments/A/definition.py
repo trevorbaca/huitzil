@@ -172,6 +172,7 @@ maker = baca.SegmentMaker(
         #abjad.const.LOCAL_MEASURE_NUMBER,
         #abjad.const.STAGE_NUMBER,
         ],
+    clock_time_extra_offset=False,
     first_segment=True,
     phantom=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
