@@ -1,18 +1,18 @@
-\version "2.19.82"                                                             %! _make_lilypond_file:LilyPondFile
-\language "english"                                                            %! _make_lilypond_file:LilyPondFile
+\version "2.19.82"                                                             %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
+\language "english"                                                            %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
 
-\include "../../stylesheets/stylesheet.ily"                                    %! _make_lilypond_file:LilyPondFile
-clock-time-extra-offset = ##f                                                  %! _make_lilypond_file:LilyPondFile
-\include "illustration.ily"                                                    %! extern
+\include "../../stylesheets/stylesheet.ily"                                    %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
+clock-time-extra-offset = ##f                                                  %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
+\include "illustration.ily"                                                    %! abjad.Path.extern
 
 
-\score {                                                                       %! _make_lilypond_file:LilyPondFile
+\score {                                                                       %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
     
-    <<                                                                         %! _make_lilypond_file
+    <<                                                                         %! baca.SegmentMaker._make_lilypond_file
 
-        {                                                                      %! _make_lilypond_file
-            \include "layout.ly"                                               %! _make_lilypond_file
-        }                                                                      %! _make_lilypond_file
+        {                                                                      %! baca.SegmentMaker._make_lilypond_file
+            \include "layout.ly"                                               %! baca.SegmentMaker._make_lilypond_file
+        }                                                                      %! baca.SegmentMaker._make_lilypond_file
 
         \context Score = "Score"                                               %! huitzil.ScoreTemplate.__call__
         <<                                                                     %! huitzil.ScoreTemplate.__call__
@@ -21,10 +21,10 @@ clock-time-extra-offset = ##f                                                  %
             <<                                                                 %! abjad.ScoreTemplate._make_global_context
 
                 \context GlobalRests = "Global_Rests"                          %! abjad.ScoreTemplate._make_global_context
-                \A_Global_Rests                                                %! extern
+                \A_Global_Rests                                                %! abjad.Path.extern
 
                 \context GlobalSkips = "Global_Skips"                          %! abjad.ScoreTemplate._make_global_context
-                \A_Global_Skips                                                %! extern
+                \A_Global_Skips                                                %! abjad.Path.extern
 
             >>                                                                 %! abjad.ScoreTemplate._make_global_context
 
@@ -35,10 +35,10 @@ clock-time-extra-offset = ##f                                                  %
                 <<                                                             %! huitzil.ScoreTemplate.__call__
 
                     \context RHStaff = "RH_Music_Staff"                        %! huitzil.ScoreTemplate.__call__
-                    \A_RH_Music_Staff                                          %! extern
+                    \A_RH_Music_Staff                                          %! abjad.Path.extern
 
                     \context Staff = "Cello_Music_Staff"                       %! huitzil.ScoreTemplate.__call__
-                    \A_Cello_Music_Staff                                       %! extern
+                    \A_Cello_Music_Staff                                       %! abjad.Path.extern
 
                 >>                                                             %! huitzil.ScoreTemplate.__call__
 
@@ -46,6 +46,6 @@ clock-time-extra-offset = ##f                                                  %
 
         >>                                                                     %! huitzil.ScoreTemplate.__call__
 
-    >>                                                                         %! _make_lilypond_file
+    >>                                                                         %! baca.SegmentMaker._make_lilypond_file
     
-}                                                                              %! _make_lilypond_file:LilyPondFile
+}                                                                              %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
