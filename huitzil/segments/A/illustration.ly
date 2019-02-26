@@ -2,6 +2,7 @@
 \language "english"                                                            %! _make_lilypond_file:LilyPondFile
 
 \include "../../stylesheets/stylesheet.ily"                                    %! _make_lilypond_file:LilyPondFile
+clock-time-extra-offset = ##f                                                  %! _make_lilypond_file:LilyPondFile
 \include "illustration.ily"                                                    %! extern
 
 
