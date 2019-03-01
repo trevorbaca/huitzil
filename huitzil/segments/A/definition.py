@@ -194,6 +194,5 @@ music = abjad.select(music)
 
 maker(
     ('vc', 1),
-    baca.clef('bass'),
     baca.rhythm(music),
     )
