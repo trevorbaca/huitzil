@@ -95,7 +95,6 @@ maker(
 
 maker(
     'rh',
-    baca.clef('percussion'),
     baca.dls_staff_padding(7),
     baca.stem_tremolo(
         selector=baca.pleaves(),
