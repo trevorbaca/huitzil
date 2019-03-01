@@ -22,7 +22,9 @@ maker = baca.SegmentMaker(
     activate=[
         abjad.const.LOCAL_MEASURE_NUMBER,
         ],
+    clock_time_extra_offset=(0, 13),
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    spacing_extra_offset=(0, 16),
     time_signatures=time_signatures,
     validate_measure_count=26,
     )
