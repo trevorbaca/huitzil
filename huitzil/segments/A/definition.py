@@ -169,12 +169,15 @@ for measure_duration in measure_durations:
 
 maker = baca.SegmentMaker(
     activate=[
-        #abjad.const.LOCAL_MEASURE_NUMBER,
-        #abjad.const.STAGE_NUMBER,
+        abjad.const.CLOCK_TIME,
+        abjad.const.LOCAL_MEASURE_NUMBER,
+        #abjad.const.SPACING,
         ],
-    clock_time_extra_offset=False,
+    clock_time_extra_offset=(0, -2),
     first_segment=True,
+    local_measure_number_extra_offset=(0, -5),
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    spacing_extra_offset=(0, 1),
     time_signatures=time_signatures,
     validate_measure_count=54,
     )

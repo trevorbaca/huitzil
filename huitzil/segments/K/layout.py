@@ -1,10 +1,22 @@
 import baca
 
 
+top = 17
+staves = (10, 15)
+separation = 57
+
 breaks = baca.breaks(
     baca.page(
-        [1, 15, (10, 15)],
-        [8, 65, (10, 15)],
+        baca.system(
+            staves,
+            measure=1,
+            y_offset=top + 0 * separation,
+            ),
+        baca.system(
+            staves,
+            measure=8,
+            y_offset=top + 1 * separation,
+            ),
         ),
     )
 
