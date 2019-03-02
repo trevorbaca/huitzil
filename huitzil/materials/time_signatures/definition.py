@@ -1,5 +1,6 @@
 import abjad
 import baca
+import typing
 
 
 def make_numerators(numerators, addenda):
@@ -35,9 +36,10 @@ for numerator in numerators:
     time_signature = numerator_to_time_signature(numerator)
     time_signatures.append(time_signature)
 
-stage_3_time_signatures = []
+stage_3_time_signatures: typing.List[abjad.TimeSignature] = []
 for time_signature in time_signatures[10:15]:
     numerator, denominator = time_signature.pair
+    assert isinstance(numerator, int)
     denominator /= 2
     assert abjad.mathtools.is_integer_equivalent_number(denominator)
     denominator = int(denominator)
