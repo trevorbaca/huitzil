@@ -2,6 +2,7 @@ import abjad
 import baca
 import huitzil
 import os
+import typing
 from abjadext import rmakers
 
 
@@ -11,7 +12,8 @@ from abjadext import rmakers
 
 ### MUSIC-MAKERS ###
 
-music, music_makers = [], []
+music: typing.List[abjad.Tuplet] = []
+music_makers = []
 
 ### stage [1] (middle) ###
 
@@ -190,9 +192,9 @@ maker(
         ),
     )
 
-music = abjad.select(music)
+music_ = abjad.select(music)
 
 maker(
     ('vc', 1),
-    baca.rhythm(music),
+    baca.rhythm(music_),
     )
