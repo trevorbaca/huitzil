@@ -2,9 +2,11 @@
 \language "english"                                                            %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
 
 \include "../../stylesheets/stylesheet.ily"                                    %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
+clock-time-extra-offset = #'(0 . 13)                                           %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
+spacing-extra-offset = #'(0 . 16)                                              %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
 \include "../../stylesheets/nonfirst-segment.ily"                              %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
 \include "illustration.ily"                                                    %! abjad.Path.extern
-\paper { first-page-number = #5 }                                              %! __make_segment_pdf__
+\paper { first-page-number = #3 }                                              %! __make_segment_pdf__
 
 
 \score {                                                                       %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
@@ -22,10 +24,10 @@
             <<                                                                 %! abjad.ScoreTemplate._make_global_context
 
                 \context GlobalRests = "Global_Rests"                          %! abjad.ScoreTemplate._make_global_context
-                \D_Global_Rests                                                %! abjad.Path.extern
+                \B_Global_Rests                                                %! abjad.Path.extern
 
                 \context GlobalSkips = "Global_Skips"                          %! abjad.ScoreTemplate._make_global_context
-                \D_Global_Skips                                                %! abjad.Path.extern
+                \B_Global_Skips                                                %! abjad.Path.extern
 
             >>                                                                 %! abjad.ScoreTemplate._make_global_context
 
@@ -36,10 +38,10 @@
                 <<                                                             %! huitzil.ScoreTemplate.__call__
 
                     \context RHStaff = "RH_Music_Staff"                        %! huitzil.ScoreTemplate.__call__
-                    \D_RH_Music_Staff                                          %! abjad.Path.extern
+                    \B_RH_Music_Staff                                          %! abjad.Path.extern
 
                     \context Staff = "Cello_Music_Staff"                       %! huitzil.ScoreTemplate.__call__
-                    \D_Cello_Music_Staff                                       %! abjad.Path.extern
+                    \B_Cello_Music_Staff                                       %! abjad.Path.extern
 
                 >>                                                             %! huitzil.ScoreTemplate.__call__
 
