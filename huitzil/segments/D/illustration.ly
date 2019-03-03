@@ -2,6 +2,7 @@
 \language "english"                                                            %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
 
 \include "../../stylesheets/stylesheet.ily"                                    %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
+clock-time-extra-offset = #'(0 . 13)                                           %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
 \include "../../stylesheets/nonfirst-segment.ily"                              %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
 \include "illustration.ily"                                                    %! abjad.Path.extern
 \paper { first-page-number = #5 }                                              %! __make_segment_pdf__
