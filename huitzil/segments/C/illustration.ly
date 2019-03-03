@@ -6,7 +6,7 @@ clock-time-extra-offset = #'(0 . 13)                                           %
 spacing-extra-offset = #'(0 . 16)                                              %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
 \include "../../stylesheets/nonfirst-segment.ily"                              %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
 \include "illustration.ily"                                                    %! abjad.Path.extern
-\paper { first-page-number = #3 }                                              %! __make_segment_pdf__
+\paper { first-page-number = #4 }                                              %! __make_segment_pdf__
 
 
 \score {                                                                       %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile

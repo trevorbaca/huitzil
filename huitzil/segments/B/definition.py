@@ -1,0 +1,148 @@
+import abjad
+import baca
+import huitzil
+import os
+from abjadext import rmakers
+
+
+###############################################################################
+##################################### [B] #####################################
+###############################################################################
+
+time_signatures = [
+    (3, 4), (3, 4), (3, 4), (3, 4),
+    (3, 4), (3, 4), (3, 4), (3, 4),
+    (3, 4), (3, 4), (3, 4), (3, 4),
+    (2, 4), (2, 4), (2, 4),
+    (2, 4), (2, 4), (2, 4),
+    (2, 4), (2, 4),
+    (2, 4), (2, 4), (2, 4), (2, 4),
+    (4, 4),
+    ]
+
+maker = baca.SegmentMaker(
+    activate=[
+        abjad.const.CLOCK_TIME,
+        abjad.const.LOCAL_MEASURE_NUMBER,
+        ],
+    clock_time_extra_offset=(0, 13),
+    segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    spacing_extra_offset=(0, 16),
+    time_signatures=time_signatures,
+    validate_measure_count=25,
+    )
+
+maker(
+    'Global_Skips',
+    baca.metronome_mark(
+        '44',
+        selector=baca.leaf(1 - 1),
+        ),
+    )
+
+# vc
+
+maker(
+    'vc',
+    baca.mmrest_transparent(),
+    baca.new(
+        baca.bar_line_transparent(),
+        baca.span_bar_transparent(),
+        selector=baca.leaves(),
+        ),
+    baca.time_signature_stencil_false(),
+    )
+
+# rh
+
+maker(
+    'rh',
+    baca.alternate_bow_strokes(),
+    baca.chunk(
+        baca.bar_extent_persistent((-3, 3)),
+        baca.staff_lines(7),
+        ),
+    baca.dls_staff_padding(7),
+    baca.dynamic('"mf"-sempre'),
+    baca.staff_position(6),
+    baca.tuplet_bracket_down(),
+    )
+
+maker(
+    ('rh', (1, 4)),
+    baca.rhythm("{ c'4 r2 c'4 r2 c'4 r2 c'4 r2 }"),
+    )
+
+maker(
+    ('rh', (5, 8)),
+    baca.rhythm(
+        "{ c'4 c'16 r8. r4 c'4 c'16 r8. r4 c'4 c'16 r8. r4 c'4 c'16 r8. r4 }"
+        ),
+    )
+
+maker(
+    ('rh', (9, 12)),
+    baca.rhythm(
+        "{"
+        r" c'4 \times 2/3 { c'8 r4 } r4"
+        r" c'4 \times 2/3 { c'8 r4 } r4"
+        r" c'4 c'8 r8 r4"
+        r" c'4 c'8 r8 r4"
+        " }",
+        ),
+    )
+
+maker(
+    ('rh', (13, 15)),
+    baca.rhythm("{ c'4 c'4 c'4 c'4 c'4 c'4 }"),
+    )
+
+maker(
+    ('rh', (16, 18)),
+    baca.rhythm(
+        "{"
+        r" \times 2/3 { c'4 c'4 c'4 }"
+        r" \times 2/3 { c'4 c'4 c'4 }"
+        r" \times 2/3 { c'4 c'4 c'4 }"
+        " }",
+        ),
+    )
+
+maker(
+    ('rh', (19, 20)),
+    baca.rhythm(
+        "{"
+        r" c'8 c'8 c'8 c'8"
+        r" c'8 c'8 c'8 c'8"
+        " }",
+        ),
+    )
+
+maker(
+    ('rh', (21, 24)),
+    baca.rhythm(
+        "{"
+        r" \times 4/5 { c'8 c'8 c'8 c'8 c'8 }"
+        r" \times 4/6 { c'8 c'8 c'8 c'8 c'8 c'8 }"
+        r" \times 4/7 { c'8 c'8 c'8 c'8 c'8 c'8 c'8 }"
+        " c'16 c'16 c'16 c'16 c'16 c'16 c'16 c'16"
+        " }",
+        ),
+    )
+
+maker(
+    ('rh', (19, 24)),
+    baca.beam(),
+    )
+
+maker(
+    ('rh', 25),
+    baca.rhythm("{ c'1 }"),
+    baca.stem_tremolo(),
+    baca.text_spanner(
+        'trem. moderato ||',
+        abjad.tweak(6).staff_padding,
+        bookend=False,
+        selector=baca.leaves().rleak(),
+        ),
+    )
