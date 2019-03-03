@@ -62,9 +62,17 @@ maker(
         baca.bar_extent_persistent((-3, 3)),
         baca.staff_lines(7),
         ),
-    baca.dls_staff_padding(7),
-    baca.dynamic('"mf"-sempre'),
-    baca.staff_position(6),
+    baca.dls_staff_padding(4),
+    baca.dynamic(
+        'mp-sempre',
+        abjad.tweak(-0.75).self_alignment_X,
+        ),
+    baca.markup(
+        r'\huitzil-cadenza-markup',
+        abjad.tweak(6).staff_padding,
+        literal=True,
+        ),
+    baca.staff_position(7),
     baca.tuplet_bracket_down(),
     )
 
@@ -137,12 +145,20 @@ maker(
 
 maker(
     ('rh', 25),
-    baca.rhythm("{ c'1 }"),
-    baca.stem_tremolo(),
-    baca.text_spanner(
-        'trem. moderato ||',
-        abjad.tweak(6).staff_padding,
-        bookend=False,
+    baca.glissando(
+        right_broken=True,
         selector=baca.leaves().rleak(),
         ),
+    baca.markup(
+        r'\huitzil-slide-markup',
+        abjad.tweak(6).staff_padding,
+        literal=True,
+        ),
+    baca.markup(
+        r'trem. moderato',
+        abjad.tweak(2.5).staff_padding,
+        direction=abjad.Down,
+        ),
+    baca.rhythm("{ c'1 }"),
+    baca.stem_tremolo(),
     )
