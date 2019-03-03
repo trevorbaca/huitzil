@@ -20,6 +20,7 @@ time_signatures = [
 
 maker = baca.SegmentMaker(
     activate=[
+        abjad.const.CLOCK_TIME,
         abjad.const.LOCAL_MEASURE_NUMBER,
         ],
     clock_time_extra_offset=(0, 13),

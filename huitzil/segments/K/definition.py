@@ -16,8 +16,10 @@ time_signatures = [
 
 maker = baca.SegmentMaker(
     activate=[
+        abjad.const.CLOCK_TIME,
         abjad.const.LOCAL_MEASURE_NUMBER,
         ],
+    clock_time_extra_offset=(0, 13),
     final_segment=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
