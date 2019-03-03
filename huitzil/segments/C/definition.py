@@ -33,10 +33,6 @@ maker(
     'Global_Skips',
     baca.metronome_mark(
         '44',
-        selector=baca.leaf(1 - 1),
-        ),
-    baca.metronome_mark(
-        '44',
         selector=baca.leaf(13 - 1),
         ),
     baca.metronome_mark(
@@ -96,6 +92,12 @@ maker(
 maker(
     'rh',
     baca.dls_staff_padding(7),
+    baca.markup(
+        r'\huitzil-pitch-reenters-markup',
+        abjad.tweak(-1).self_alignment_X,
+        abjad.tweak(6).staff_padding,
+        literal=True,
+        ),
     baca.stem_tremolo(
         selector=baca.pleaves(),
         ),
@@ -106,9 +108,7 @@ maker(
 
 maker(
     ('rh', 1),
-    baca.bar_extent_persistent((-3, 3)),
     baca.make_monads('1/2  1/4  1/4'),
-    baca.staff_lines(7),
     baca.staff_positions(
         [6, 6, 4],
         allow_repeats=True,
@@ -127,15 +127,6 @@ maker(
         direction=abjad.Down,
         literal=True,
         selector=baca.leaves(),
-        ),
-    )
-
-maker(
-    ('rh', (1, 9)),
-    baca.text_spanner(
-        'trem. moderato ||',
-        abjad.tweak(6).staff_padding,
-        bookend=False,
         ),
     )
 
