@@ -498,7 +498,7 @@ K_Cello_Music_Voice = {                                                        %
             \once \override Score.RehearsalMark.self-alignment-X = #right      %! PHANTOM:_style_phantom_measures(5):baca_rehearsal_mark_self_alignment_x:OverrideCommand(1)
             \mark \huitzil-colophon-markup                                     %! PHANTOM:_style_phantom_measures(5):baca_mark:IndicatorCommand
             \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
-            c'1 * 1/4                                                          %! PHANTOM:_make_multimeasure_rest_container
+            R1 * 1/4                                                           %! PHANTOM:_make_multimeasure_rest_container
 
         }                                                                      %! PHANTOM:_make_multimeasure_rest_container
 
