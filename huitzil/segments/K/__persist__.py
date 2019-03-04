@@ -85,12 +85,12 @@ persist = abjad.OrderedDict(
                             abjad.Momento(
                                 context='Global_Skips',
                                 manifest='metronome_marks',
-                                value='88',
+                                value='44',
                                 ),
                             abjad.Momento(
                                 context='Global_Skips',
                                 prototype='abjad.TimeSignature',
-                                value='1/1',
+                                value='3/2',
                                 ),
                             ],
                         ),
