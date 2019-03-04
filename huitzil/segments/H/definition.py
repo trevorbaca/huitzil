@@ -10,10 +10,10 @@ from abjadext import rmakers
 ###############################################################################
 
 time_signatures = [
-    (1, 1), (3, 4), (3, 4), (1, 1), (1, 1), (3, 4), (3, 4), (1, 1),
-    (1, 1), (3, 4), (3, 4), (1, 1), (1, 1), (3, 4), (3, 4), (1, 1),
-    (1, 1), (3, 4), (3, 4), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1),
-    (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1),
+    (1, 2), (3, 8), (3, 8), (1, 2), (1, 2), (3, 8), (3, 8), (1, 2),
+    (1, 2), (3, 8), (3, 8), (1, 2), (1, 2), (3, 8), (3, 8), (1, 2),
+    (1, 2), (3, 8), (3, 8), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2),
+    (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2),
     ]
 
 maker = baca.SegmentMaker(
@@ -131,26 +131,26 @@ maker(
 maker(
     ('vc', (1, 20)),
     baca.pitch('A2'),
-    baca.rhythm("{ c'1 * 35/2 }"),
+    baca.rhythm("{ c'1 * 35/4 }"),
     )
 
 maker(
     ('vc', (21, 24)),
     baca.pitch('G2'),
-    baca.rhythm("{ c'1 * 4 }"),
+    baca.rhythm("{ c'1 * 2 }"),
     )
 
 maker(
     ('vc', (25, 28)),
     baca.literal(r'\parenthesize'),
     baca.pitch('G2'),
-    baca.rhythm("{ c'1 * 4 }"),
+    baca.rhythm("{ c'1 * 2 }"),
     )
 
 maker(
     ('vc', (29, 32)),
     baca.pitch('A1'),
-    baca.rhythm("{ c'1 * 4 }"),
+    baca.rhythm("{ c'1 * 2 }"),
     )
 
 # vcr
@@ -175,7 +175,7 @@ maker(
 
 maker(
     ('rh', (1, 8)),
-    baca.make_monads('1 3/4 3/4 1 1 3/4 3/4 1'),
+    baca.make_monads('1/2 3/8 3/8 1/2 1/2 3/8 3/8 1/2'),
     baca.staff_positions(
         [-10, -10, -8, -8, -6, -6, -4, -4],
         allow_repeats=True,
@@ -206,7 +206,7 @@ maker(
 
 maker(
     ('rh', (9, 16)),
-    baca.make_monads('1 3/4 3/4 1 1 3/4 3/4 1'),
+    baca.make_monads('1/2 3/8 3/8 1/2 1/2 3/8 3/8 1/2'),
     baca.staff_positions(
         [-2, -2, 0, 0, 2, 2, 4, 4],
         allow_repeats=True,
@@ -215,7 +215,7 @@ maker(
 
 maker(
     ('rh', (17, 24)),
-    baca.make_monads('1 3/4 3/4 1 1 1 1 1'),
+    baca.make_monads('1/2 3/8 3/8 1/2 1/2 1/2 1/2 1/2'),
     baca.staff_positions(
         [6, 6, 8, 8, 10, 10, 10, 10],
         allow_repeats=True,
@@ -238,7 +238,7 @@ maker(
         'mf < ff > pp',
         pieces=baca.lparts([4, 4]),
         ),
-    baca.make_monads('1 1 1 1 1 1 1 1'),
+    baca.make_monads('1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2'),
     baca.staff_positions(
         [10],
         allow_repeats=True,
