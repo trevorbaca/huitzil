@@ -2,8 +2,8 @@ import baca
 
 
 top = 17
-staves = (10, 15)
-separation = 57
+staves = (10, 17)
+separation = 70
 
 breaks = baca.breaks(
     baca.page(
@@ -14,18 +14,8 @@ breaks = baca.breaks(
             ),
         baca.system(
             staves,
-            measure=8,
+            measure=12,
             y_offset=top + 1 * separation,
-            ),
-        baca.system(
-            staves,
-            measure=15,
-            y_offset=top + 2 * separation,
-            ),
-        baca.system(
-            staves,
-            measure=22,
-            y_offset=top + 3 * separation,
             ),
         ),
     )
@@ -33,5 +23,5 @@ breaks = baca.breaks(
 spacing = baca.scorewide_spacing(
     __file__,
     breaks=breaks,
-    fallback_duration=(1, 20),
+    fallback_duration=(1, 32),
     )
