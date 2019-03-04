@@ -9,13 +9,11 @@ from abjadext import rmakers
 ##################################### [E] #####################################
 ###############################################################################
 
-### SEGMENT-MAKER ###
-
 time_signatures = [
-    (1, 1), (13, 12), (1, 1), (7, 6), (53, 30), (23, 12),
-    (1, 1), (1, 1), (3, 4), (2, 3), (22, 15), (1, 1), (1, 1), (1, 1),
-    (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1),
-    (1, 1),
+    (1, 2), (13, 24), (1, 2), (7, 12), (53, 60), (23, 24),
+    (1, 2), (1, 2), (3, 8), (1, 3), (11, 15), (1, 2), (1, 2), (1, 2),
+    (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2),
+    (1, 2),
     ]
 
 maker = baca.SegmentMaker(
@@ -74,7 +72,7 @@ maker(
 maker(
     ('vc', 1),
     baca.pitch('Bb1'),
-    baca.rhythm("{ c'1 }"),
+    baca.rhythm("{ c'1 * 1/2 }"),
     )
 
 # vcr
@@ -99,7 +97,7 @@ maker(
 
 maker(
     ('rh', 1),
-    baca.make_monads('1/2  1/4  1/4'),
+    baca.make_monads('1/4  1/8  1/8'),
     baca.staff_positions(
         [6, 6, 4],
         allow_repeats=True,
@@ -132,7 +130,7 @@ maker(
 
 maker(
     ('rh', 2),
-    baca.make_monads('1/2  1/4  1/3'),
+    baca.make_monads('1/4  1/8  1/6'),
     baca.staff_positions(
         [6, 6, 4],
         allow_repeats=True,
@@ -141,7 +139,7 @@ maker(
 
 maker(
     ('rh', 3),
-    baca.make_monads('1/2  1/4  1/4'),
+    baca.make_monads('1/4  1/8  1/8'),
     baca.staff_positions(
         [6, 6, 4],
         allow_repeats=True,
@@ -154,7 +152,7 @@ maker(
         'p -- !',
         selector=baca.leaves().rleak().rleak(),
         ),
-    baca.make_monads('2/3  1/4  1/4'),
+    baca.make_monads('1/3  1/8  1/8'),
     baca.staff_positions(
         [4, 4, 2],
         allow_repeats=True,
@@ -188,7 +186,7 @@ maker(
         'pp < mf',
         selector=baca.leaves()[1:],
         ),
-    baca.make_monads('1/2  1/3  1/3  1/5  1/5  1/5'),
+    baca.make_monads('1/4  1/6  1/6  1/10  1/10  1/10'),
     baca.staff_positions(
         [4, 4, 2, 6, 4, 2],
         allow_repeats=True,
@@ -202,7 +200,7 @@ maker(
         abjad.tweak(True).to_barline,
         selector=baca.leaves().rleak(),
         ),
-    baca.make_monads('1/2  1/3  1/3  1/4  1/4  1/4'),
+    baca.make_monads('1/4  1/6  1/6  1/8  1/8  1/8'),
     baca.markup(
         r'\baca-fz-markup',
         direction=abjad.Down,
@@ -222,7 +220,7 @@ maker(
 
 maker(
     ('rh', 7),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [2],
         allow_repeats=True,
@@ -250,7 +248,7 @@ maker(
 
 maker(
     ('rh', 8),
-    baca.make_monads('1/2  1/4  1/4'),
+    baca.make_monads('1/4  1/8  1/8'),
     baca.staff_positions(
         [2, 2, 0],
         allow_repeats=True,
@@ -259,7 +257,7 @@ maker(
 
 maker(
     ('rh', 9),
-    baca.make_monads('1/2  1/4'),
+    baca.make_monads('1/4  1/8'),
     baca.staff_positions(
         [2],
         allow_repeats=True,
@@ -268,7 +266,7 @@ maker(
 
 maker(
     ('rh', 10),
-    baca.make_monads('1/3  1/3'),
+    baca.make_monads('1/6  1/6'),
     baca.staff_positions(
         [2, 6],
         allow_repeats=True,
@@ -308,7 +306,7 @@ maker(
 
 maker(
     ('rh', 11),
-    baca.make_monads('1/3  1/3  1/5  1/5  1/5  1/5'),
+    baca.make_monads('1/6  1/6  1/10  1/10  1/10  1/10'),
     baca.staff_positions(
         [4, 2, 6, 4, 2, 0],
         allow_repeats=True,
@@ -317,7 +315,7 @@ maker(
 
 maker(
     ('rh', 12),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [0],
         allow_repeats=True,
@@ -336,7 +334,7 @@ maker(
 
 maker(
     ('rh', 13),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [0],
         allow_repeats=True,
@@ -357,7 +355,7 @@ maker(
 
 maker(
     ('rh', 14),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [-2],
         allow_repeats=True,
@@ -366,7 +364,7 @@ maker(
 
 maker(
     ('rh', 15),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [-2],
         allow_repeats=True,
@@ -375,7 +373,7 @@ maker(
 
 maker(
     ('rh', 16),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [-4],
         allow_repeats=True,
@@ -384,7 +382,7 @@ maker(
 
 maker(
     ('rh', 17),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [0],
         allow_repeats=True,
@@ -410,7 +408,7 @@ maker(
 
 maker(
     ('rh', 18),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [-2],
         allow_repeats=True,
@@ -419,7 +417,7 @@ maker(
 
 maker(
     ('rh', 19),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [-2],
         allow_repeats=True,
@@ -428,7 +426,7 @@ maker(
 
 maker(
     ('rh', 20),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [-4],
         allow_repeats=True,
@@ -437,7 +435,7 @@ maker(
 
 maker(
     ('rh', 21),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [-4],
         allow_repeats=True,
@@ -446,7 +444,7 @@ maker(
 
 maker(
     ('rh', 22),
-    baca.make_monads('1'),
+    baca.make_monads('1/2'),
     baca.staff_positions(
         [-6],
         allow_repeats=True,
