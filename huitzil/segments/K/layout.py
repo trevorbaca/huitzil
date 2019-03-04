@@ -12,16 +12,16 @@ breaks = baca.breaks(
             measure=1,
             y_offset=top + 0 * separation,
             ),
-        baca.system(
-            staves,
-            measure=8,
-            y_offset=top + 1 * separation,
-            ),
+#        baca.system(
+#            staves,
+#            measure=8,
+#            y_offset=top + 1 * separation,
+#            ),
         ),
     )
 
 spacing = baca.scorewide_spacing(
     __file__,
     breaks=breaks,
-    fallback_duration=(1, 20),
+    fallback_duration=(1, 32),
     )

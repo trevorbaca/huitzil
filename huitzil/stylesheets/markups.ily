@@ -4,14 +4,14 @@
 
 huitzil-colophon-markup = \markup
     \override #'(font-name . "Palatino")
+    \with-dimensions-from \null
     \with-color #black
     \override #'(baseline-skip . 4)
+    \general-align #X #right
     \right-column
     {
-        \line { Cambridge, MA }
-        \line { Sep. \hspace #0.5 - \hspace #0.5 Oct. 2014; }
-        \line { Madison, WI }
-        \line { Feb. 2019. }
+        \line { Cambridge, Mass. (Sep – Oct 2014); }
+        \line { Madison, Wisc. (Feb – Mar 2019). }
     }
 
 %%% DIRECTIVES %%%
