@@ -14,13 +14,8 @@ breaks = baca.breaks(
             ),
         baca.system(
             staves,
-            measure=20,
+            measure=18,
             y_offset=top + 1 * separation,
-            ),
-        baca.system(
-            staves,
-            measure=38,
-            y_offset=top + 2 * separation,
             ),
         ),
     )
@@ -28,5 +23,5 @@ breaks = baca.breaks(
 spacing = baca.scorewide_spacing(
     __file__,
     breaks=breaks,
-    fallback_duration=(1, 40),
+    fallback_duration=(1, 28),
     )

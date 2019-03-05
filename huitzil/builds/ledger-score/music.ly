@@ -15,7 +15,6 @@
 \include "_segments/segment-H.ily"
 \include "_segments/segment-I.ily"
 \include "_segments/segment-J.ily"
-\include "_segments/segment-K.ily"
 
 
 \score {
@@ -34,7 +33,6 @@
         \include "_segments/segment-H.ly"
         \include "_segments/segment-I.ly"
         \include "_segments/segment-J.ly"
-        \include "_segments/segment-K.ly"
         }
     >>
 }

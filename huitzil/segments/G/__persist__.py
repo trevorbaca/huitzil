@@ -75,7 +75,7 @@ persist = abjad.OrderedDict(
                             abjad.Momento(
                                 context='RH_Music_Voice',
                                 prototype='abjad.Dynamic',
-                                value='mp',
+                                value='pp',
                                 ),
                             ],
                         ),

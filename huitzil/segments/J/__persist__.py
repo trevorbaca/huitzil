@@ -74,8 +74,8 @@ persist = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='RH_Music_Voice',
-                                prototype='abjad.StartHairpin',
-                                value='--',
+                                prototype='abjad.Dynamic',
+                                value='pp',
                                 ),
                             ],
                         ),
@@ -90,7 +90,7 @@ persist = abjad.OrderedDict(
                             abjad.Momento(
                                 context='Global_Skips',
                                 prototype='abjad.TimeSignature',
-                                value='1/2',
+                                value='3/2',
                                 ),
                             ],
                         ),
