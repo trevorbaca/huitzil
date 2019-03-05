@@ -37,10 +37,6 @@ maker(
         baca.Ritardando(),
         selector=baca.leaf(18 - 1),
         ),
-    baca.metronome_mark(
-        '44',
-        selector=baca.leaf(22 - 1),
-        ),
     )
 
 # vc

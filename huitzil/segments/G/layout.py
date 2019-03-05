@@ -12,11 +12,6 @@ breaks = baca.breaks(
             measure=1,
             y_offset=top + 0 * separation,
             ),
-        baca.system(
-            staves,
-            measure=18,
-            y_offset=top + 1 * separation,
-            ),
         ),
     )
 
