@@ -68,15 +68,22 @@ maker(
 maker(
     'vc',
     baca.mmrest_transparent(),
+    baca.pitch('A1'),
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
         selector=baca.leaves(),
         ),
+    baca.rhythm("{ c'1 * 1/2 }"),
     baca.time_signature_stencil_false(),
     )
 
 # vcr
+
+maker(
+    ('vcr', 2),
+    baca.mmrest_transparent(),
+    )
 
 # rh
 
@@ -93,9 +100,11 @@ maker(
 
 maker(
     ('rh', 1),
-    baca.bar_extent_persistent((-3, 3)),
+    baca.chunk(
+        baca.bar_extent_persistent((-3, 3)),
+        baca.staff_lines(7),
+        ),
     baca.make_monads('1/4  1/8  1/8'),
-    #baca.staff_lines(7),
     baca.staff_positions(
         [6, 6, 4],
         allow_repeats=True,

@@ -36,7 +36,6 @@ metadata = abjad.OrderedDict(
                 240,
                 247,
                 255,
-                264,
                 ],
             ),
         ('paper_size', 'ledger'),
