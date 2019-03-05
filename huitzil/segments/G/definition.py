@@ -10,9 +10,9 @@ from abjadext import rmakers
 ###############################################################################
 
 time_signatures = [
-    (1, 2), (3, 8), (1, 2), (3, 8), (1, 2), (3, 8), (1, 2), (3, 8),
-    (1, 2), (3, 8), (1, 2), (3, 8), (1, 2), (3, 8), (1, 2), (3, 8),
-    (1, 2), (3, 8), (1, 2), (3, 8), (1, 2), (3, 8), (1, 2), (3, 8),
+    (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16),
+    (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16),
+    (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16),
     (1, 1), (1, 1),
     ]
 
@@ -32,6 +32,14 @@ maker(
     baca.metronome_mark(
         '88',
         selector=baca.leaf(1 - 1),
+        ),
+    baca.metronome_mark(
+        '88',
+        selector=baca.leaf(25 - 1),
+        ),
+    baca.metronome_mark(
+        baca.Ritardando(),
+        selector=baca.leaf(25 - 1),
         ),
     )
 
@@ -53,25 +61,27 @@ maker(
     ('vc', 1),
     baca.markup(
         baca.markups.string_number(3),
-        abjad.tweak(1.5).padding,
+        abjad.tweak(2.5).padding,
         direction=abjad.Down,
         ),
     baca.pitch('A2'),
-    baca.rhythm("{ c'1 * 1/2 }"),
+    baca.rhythm("{ c'1 * 1/4 }"),
     )
 
 maker(
     ('vc', (14, 24)),
     baca.literal(r'\parenthesize'),
     baca.pitch('A2'),
-    baca.rhythm("{ c'1 * 38/8 }"),
+    baca.rhythm("{ c'1 * 19/8 }"),
     )
 
 maker(
     ('vc', (25, 26)),
     baca.markup(
-        baca.markups.string_number(4),
-        abjad.tweak(1.5).padding,
+        'III→IV',
+        abjad.tweak(2.5).padding,
+        abjad.tweak(0).parent_alignment_X,
+        abjad.tweak(-0.05).self_alignment_X,
         direction=abjad.Down,
         ),
     baca.pitch('G2'),
@@ -98,6 +108,12 @@ maker(
         baca.staff_lines(14),
         ),
     baca.dls_staff_padding(7),
+    baca.markup(
+        r'\huitzil-ascending-fingerboard-markup',
+        abjad.tweak(-1).self_alignment_X,
+        abjad.tweak(2).staff_padding,
+        literal=True,
+        ),
     baca.stem_tremolo(
         selector=baca.pleaves(),
         ),
@@ -108,7 +124,7 @@ maker(
 
 maker(
     ('rh', (1, 8)),
-    baca.make_monads('1/2 3/8 1/2 3/8 1/2 3/8 1/2 3/8'),
+    baca.make_monads('1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16'),
     baca.staff_positions(
         [-6, -6, -8, -8, -10, -10, -12, -12],
         allow_repeats=True,
@@ -137,7 +153,7 @@ maker(
 
 maker(
     ('rh', (9, 16)),
-    baca.make_monads('1/2 3/8 1/2 3/8 1/2 3/8 1/2 3/8'),
+    baca.make_monads('1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16'),
     baca.staff_positions(
         [-14, -14, -16, -16, -18, -18, -16, -16],
         allow_out_of_range=True,
@@ -146,8 +162,28 @@ maker(
     )
 
 maker(
+    ('rh', 13),
+    baca.markup(
+        r'\huitzil-as-close-to-lh-markup',
+        abjad.tweak(-0.65).self_alignment_X,
+        abjad.tweak(2).staff_padding,
+        literal=True,
+        ),
+    )
+
+maker(
+    ('rh', 15),
+    baca.markup(
+        r'\huitzil-descending-fingerboard-markup',
+        abjad.tweak(-1).self_alignment_X,
+        abjad.tweak(2).staff_padding,
+        literal=True,
+        ),
+    )
+
+maker(
     ('rh', (17, 24)),
-    baca.make_monads('1/2 3/8 1/2 3/8 1/2 3/8 1/2 3/8'),
+    baca.make_monads('1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16'),
     baca.staff_positions(
         [-14, -14, -12, -12, -10, -10, -8, -8],
         allow_repeats=True,

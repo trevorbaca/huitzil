@@ -26,6 +26,16 @@ maker = baca.SegmentMaker(
     validate_measure_count=10,
     )
 
+# skips
+
+maker(
+    'Global_Skips',
+    baca.metronome_mark(
+        '66',
+        selector=baca.leaf(1 - 1),
+        ),
+    )
+
 # vc
 
 maker(
