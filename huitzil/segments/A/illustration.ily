@@ -1149,6 +1149,7 @@ A_Cello_Music_Voice = {                                                        %
     \times 3/5 {
 
         % [A Cello_Music_Voice measure 1]                                      %! _comment_measure_numbers
+        \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         \clef "bass"                                                           %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
         \once \override Staff.Clef.color = #(x11-color 'DarkViolet)            %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1371,8 +1372,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         c2
 
     }
@@ -1418,8 +1421,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         bf,!2
 
     }
@@ -1430,8 +1435,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         af,!4
         ~
 
@@ -1439,8 +1446,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         af,!16
 
     }
@@ -1497,16 +1506,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         g,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         f,2
 
     }
@@ -1536,16 +1549,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         bf,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         c2
 
     }
@@ -1575,8 +1592,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         ef,!2
 
     }
@@ -1589,32 +1608,40 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         d2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         e,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         fs,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         f,2
 
     }
@@ -1626,40 +1653,50 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         fs,!4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         f,4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         cs!4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         g,4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         af,!4
 
     }
@@ -1671,8 +1708,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         f,8
         [
 
@@ -1680,8 +1719,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         ef,!8
         ]
 
@@ -1694,24 +1735,30 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         d1
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         e,1
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         fs,!1
 
     }
@@ -1724,40 +1771,50 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         f,2
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         g4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         af!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         c'4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         fs,!2
 
     }
@@ -1770,16 +1827,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         c1
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         d'2
 
     }
@@ -1791,24 +1852,30 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         ef!8
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         e,4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         cs!4
 
     }
@@ -1819,12 +1886,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
+        \once \override Tie.color = #red
         fs!8
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
     }
 
@@ -1836,35 +1902,41 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
+        \once \override Tie.color = #red
         fs!4
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+        \repeatTie                                                             %! TieCorrectionCommand
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         af!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         a4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         cs!4
 
     }
@@ -1877,40 +1949,50 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         d4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         cs!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         ef!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         e4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         f4
 
     }
@@ -1922,8 +2004,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         af!8
         [
 
@@ -1931,8 +2015,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         a8
         ]
 
@@ -1944,8 +2030,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         b8
         [
 
@@ -1953,16 +2041,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         c'8
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         bf!8
         ]
 
@@ -1975,40 +2067,50 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         f4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         d'4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         cs'!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         ef!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         e4
 
     }
@@ -2021,16 +2123,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         bf!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         af!4
 
     }
@@ -2042,24 +2148,30 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         a4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         b,4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         c4
 
     }
@@ -2071,8 +2183,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         cs!8
 
     }
@@ -2084,8 +2198,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         g8
         [
 
@@ -2093,24 +2209,30 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         fs!8
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         af!8
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         a8
         ]
 
@@ -2123,40 +2245,50 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         c4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         bf!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         af!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         a4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         b4
 
     }
@@ -2178,8 +2310,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         g4
 
     }
@@ -2190,16 +2324,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         cs'!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         ef!4
 
     }
@@ -2211,8 +2349,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         d'8
         [
 
@@ -2220,16 +2360,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         c'8
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         b8
         ]
 
@@ -2241,8 +2385,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         bf!8
 
     }
@@ -2254,16 +2400,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         e2
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         f2
 
         ef!4
@@ -2289,8 +2439,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         c4
 
     }
@@ -2301,16 +2453,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         d'4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         bf!4
 
     }
@@ -2322,8 +2478,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         e8
         [
 
@@ -2331,16 +2489,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         f8
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         ef!8
         ]
 
@@ -2353,16 +2515,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         b,4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         ef!4
 
     }
@@ -2375,24 +2541,30 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         a,2
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         af!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         bf!4
 
     }
@@ -2414,8 +2586,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         f8
         ]
 
@@ -2427,8 +2601,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         bf!16
         [
 
@@ -2436,8 +2612,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         b16
         ]
 
@@ -2450,24 +2628,30 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         ef!4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         a,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         af,!2
 
     }
@@ -2479,8 +2663,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         f4
 
     }
@@ -2500,8 +2686,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         ef!4
 
     }
@@ -2513,8 +2701,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         cs!8
         [
 
@@ -2522,16 +2712,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         d8
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         c8
         ]
 
@@ -2560,24 +2754,30 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         fs,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         g,2
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         e4
 
     }
@@ -2589,8 +2789,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         b4
 
         cs!8
@@ -2611,16 +2813,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         af!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         bf!4
 
     }
@@ -2644,8 +2850,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         bf,!8
 
     }
@@ -2657,16 +2865,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         b,2
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         cs!2
 
         d4
@@ -2691,16 +2903,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         b,4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         ef!4
 
     }
@@ -2713,16 +2929,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         e,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         ef,!2
 
     }
@@ -2734,8 +2954,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         f8
         [
 
@@ -2743,16 +2965,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         fs!8
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
         \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
+        \once \override Tie.color = #red
         g8
         ]
 
@@ -2786,8 +3012,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         d4
 
         ef!16
@@ -2810,8 +3038,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         fs,!4
 
     }
@@ -2824,16 +3054,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         g,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         af,!2
 
         f8
@@ -2858,8 +3092,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         b,2
 
     }
@@ -2871,8 +3107,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         a,2
 
         b,8
@@ -2894,10 +3132,7 @@ A_Cello_Music_Voice = {                                                        %
 
     \scaleDurations #'(1 . 1) {
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         b,16
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
     }
 
@@ -2909,43 +3144,51 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
+        \once \override Tie.color = #blue
         b,2
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+        \repeatTie                                                             %! TieCorrectionCommand
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         a,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         af,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         bf,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         c2
 
     }
@@ -2957,16 +3200,20 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         d,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         c,2
 
     }
@@ -2978,24 +3225,30 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         b,,4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         g,4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         cs,!4
 
     }
@@ -3006,8 +3259,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         c4
 
     }
@@ -3020,33 +3275,42 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         b,1
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         a,1
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         af,!1
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         bf,!1
+        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }
 
@@ -3054,44 +3318,55 @@ A_Cello_Music_Voice = {                                                        %
     \times 3/5 {
 
         % [A Cello_Music_Voice measure 52]                                     %! _comment_measure_numbers
+        \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         cs,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         d,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         c,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         b,,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         g,2
 
     }
@@ -3103,17 +3378,22 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         fs,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         g,2
+        \breathe                                                               %! baca_breathe:IndicatorCommand
 
     }
 
@@ -3124,25 +3404,33 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         f,4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         e,4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
         \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
         ef,!4
+        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+        \breathe                                                               %! baca_breathe:IndicatorCommand
 
     }
 

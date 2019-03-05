@@ -208,8 +208,10 @@ class DreamsMusicMaker(object):
                 abjad.override(note).beam.color = color
                 abjad.override(note).dots.color = color
                 abjad.override(note).note_head.color = color
+                abjad.override(note).repeat_tie.color = color
                 abjad.override(note).slur.color = color
                 abjad.override(note).stem.color = color
+                abjad.override(note).tie.color = color
                 registration = voice_1_registration
             elif voice_number == 2:
                 registration = voice_2_registration
@@ -219,8 +221,10 @@ class DreamsMusicMaker(object):
                 abjad.override(note).beam.color = color
                 abjad.override(note).dots.color = color
                 abjad.override(note).note_head.color = color
+                abjad.override(note).repeat_tie.color = color
                 abjad.override(note).slur.color = color
                 abjad.override(note).stem.color = color
+                abjad.override(note).tie.color = color
                 registration = voice_3_registration
             else:
                 raise ValueError(voice_number)
