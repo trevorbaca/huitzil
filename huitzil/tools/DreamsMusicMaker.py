@@ -62,7 +62,6 @@ class DreamsMusicMaker(object):
         """
         tuplets = self._make_rhythm()
         assert all(isinstance(_, abjad.Tuplet) for _ in tuplets)
-        self._respell_tuplets(tuplets)
         self._displace_pitch_classes(tuplets)
         self._register_voices(tuplets)
         self._attach_beams(tuplets)
@@ -151,7 +150,9 @@ class DreamsMusicMaker(object):
             maker = rmakers.TupletRhythmMaker(
                 tuplet_ratios=[ratio],
                 tuplet_specifier=rmakers.TupletSpecifier(
-                    #rewrite_dots=True,
+                    diminution=True,
+                    rewrite_dots=True,
+                    rewrite_sustained=True,
                     ),
                 )
             selections = maker([target_duration])
@@ -161,11 +162,13 @@ class DreamsMusicMaker(object):
             inner_tuplet = selections[0][0]
             if inner_tuplet.multiplier == 1:
                 inner_tuplet.hide = True
-            for j, inner_tuplet_note in enumerate(inner_tuplet):
+            plts = baca.select(inner_tuplet).plts()
+            for j, plt in enumerate(plts):
                 source_note = note_list[j]
-                inner_tuplet_note.written_pitch = source_note.written_pitch
-                voice_number = abjad.inspect(source_note).indicator(int)
-                abjad.attach(voice_number, inner_tuplet_note)
+                for pleaf in plt:
+                    pleaf.written_pitch = source_note.written_pitch
+                    voice_number = abjad.inspect(source_note).indicator(int)
+                    abjad.attach(voice_number, pleaf)
             inner_tuplets.append(inner_tuplet)
         return inner_tuplets
 
@@ -225,14 +228,6 @@ class DreamsMusicMaker(object):
             transposed_pitches = registration(pitches)
             transposed_pitch = transposed_pitches[0]
             note.written_pitch = transposed_pitch
-
-    def _respell_tuplets(self, music):
-        multiplier = abjad.Multiplier(3, 2)
-        for tuplet in abjad.iterate(music).components(abjad.Tuplet):
-            if tuplet.multiplier == multiplier:
-                for note in tuplet:
-                    new_written_duration = multiplier * note.written_duration
-                    note.written_duration = new_written_duration
 
     def _set_written_durations(self, note_lists):
         for note_list in note_lists:

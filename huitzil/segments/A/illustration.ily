@@ -1145,25 +1145,26 @@ A_RH_Music_Staff = {                                                           %
 
 A_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
-    \times 4/5 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/5 {
 
         % [A Cello_Music_Voice measure 1]                                      %! _comment_measure_numbers
         \clef "bass"                                                           %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
         \once \override Staff.Clef.color = #(x11-color 'DarkViolet)            %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
-        fs!16.
+        fs!8
         ^ \baca-default-indicator-markup "(“Cello”)"                           %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         [
         \override Staff.Clef.color = #(x11-color 'violet)                      %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        e16.
+        e8
 
-        f16.
+        f8
 
-        g16.
+        g8
 
-        af!16.
+        af!8
         ]
 
     }
@@ -1197,33 +1198,32 @@ A_Cello_Music_Voice = {                                                        %
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 9/16 {
 
         % [A Cello_Music_Voice measure 2]                                      %! _comment_measure_numbers
-        bf,!8.
-        [
+        bf,!4
 
-        a,8.
+        a,4
 
-        b,8.
+        b,4
 
-        c8.
-        ]
+        c4
 
     }
 
-    \times 4/5 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/5 {
 
-        f,16.
+        f,8
         [
 
-        a,16.
+        a,8
 
-        ef!16.
+        ef!8
 
-        d16.
+        d8
 
-        e16.
+        e8
         ]
 
     }
@@ -1267,14 +1267,13 @@ A_Cello_Music_Voice = {                                                        %
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 7/8 {
 
         % [A Cello_Music_Voice measure 4]                                      %! _comment_measure_numbers
-        b,8..
-        [
+        b,4
 
-        c8..
-        ]
+        c4
 
     }
 
@@ -1327,13 +1326,12 @@ A_Cello_Music_Voice = {                                                        %
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 7/8 {
 
-        f,8..
-        [
+        f,4
 
-        g,8..
-        ]
+        g,4
 
     }
 
@@ -1350,12 +1348,13 @@ A_Cello_Music_Voice = {                                                        %
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
 
-        cs!16.
+        cs!8
         [
 
-        d16.
+        d8
         ]
 
     }
@@ -1406,13 +1405,13 @@ A_Cello_Music_Voice = {                                                        %
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 11/18 {
+    \times 11/12 {
 
         % [A Cello_Music_Voice measure 8]                                      %! _comment_measure_numbers
-        d8.
+        d8
         [
 
-        b,8.
+        b,8
         ]
 
         \once \override Accidental.color = #blue
@@ -1421,12 +1420,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        bf,!2.
+        bf,!2
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \scaleDurations #'(1 . 1) {
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1434,21 +1432,31 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        af,!4.
+        af,!4
+        ~
+
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        af,!16
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
 
         % [A Cello_Music_Voice measure 9]                                      %! _comment_measure_numbers
-        a,16.
+        a,8
         [
 
-        g,16.
+        g,8
 
-        f,16.
+        f,8
 
-        fs,!16.
+        fs,!8
         ]
 
     }
@@ -1479,10 +1487,11 @@ A_Cello_Music_Voice = {                                                        %
 
     }
 
-    \times 8/9 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 7/9 {
 
         % [A Cello_Music_Voice measure 10]                                     %! _comment_measure_numbers
-        a,16..
+        a,8
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1490,7 +1499,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        g,4..
+        g,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1498,29 +1507,30 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        f,4..
+        f,2
 
     }
 
-    \times 4/5 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/5 {
 
         % [A Cello_Music_Voice measure 11]                                     %! _comment_measure_numbers
-        ef!16.
+        ef!8
         [
 
-        f16.
+        f8
 
-        fs!16.
+        fs!8
 
-        bf,!16.
+        bf,!8
 
-        e16.
+        e8
         ]
 
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \times 5/8 {
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1528,7 +1538,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        bf,!4.
+        bf,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1536,7 +1546,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        c4.
+        c2
 
     }
 
@@ -1571,7 +1581,8 @@ A_Cello_Music_Voice = {                                                        %
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
 
         % [A Cello_Music_Voice measure 13]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -1580,7 +1591,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        d4.
+        d2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1588,7 +1599,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        e,4.
+        e,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1596,7 +1607,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        fs,!4.
+        fs,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1604,7 +1615,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        f,4.
+        f,2
 
     }
 
@@ -1706,7 +1717,7 @@ A_Cello_Music_Voice = {                                                        %
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 9/14 {
 
         % [A Cello_Music_Voice measure 17]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -1715,7 +1726,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        f,4.
+        f,2
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1723,8 +1734,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        g8.
-        [
+        g4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1732,7 +1742,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        af!8.
+        af!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1740,8 +1750,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        c'8.
-        ]
+        c'4
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1749,11 +1758,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        fs,!4.
+        fs,!2
 
     }
 
-    \times 2/3 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 7/12 {
 
         % [A Cello_Music_Voice measure 18]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -1762,7 +1772,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        c2..
+        c1
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1770,7 +1780,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        d'4..
+        d'2
 
     }
 
@@ -1819,7 +1829,7 @@ A_Cello_Music_Voice = {                                                        %
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \times 5/8 {
 
         % [A Cello_Music_Voice measure 20]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -1829,10 +1839,9 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs!8.
+        fs!4
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        [
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1840,7 +1849,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        af!8.
+        af!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1848,7 +1857,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        a8.
+        a4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1856,12 +1865,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        cs!8.
-        ]
+        cs!4
 
     }
 
-    \times 4/5 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 7/10 {
 
         % [A Cello_Music_Voice measure 21]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -1870,8 +1879,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        d8..
-        [
+        d4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1879,7 +1887,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        cs!8..
+        cs!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1887,7 +1895,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        ef!8..
+        ef!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1895,7 +1903,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        e8..
+        e4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1903,8 +1911,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        f8..
-        ]
+        f4
 
     }
 
@@ -2006,7 +2013,8 @@ A_Cello_Music_Voice = {                                                        %
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
 
         % [A Cello_Music_Voice measure 24]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2015,8 +2023,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        bf!8.
-        [
+        bf!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2024,13 +2031,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        af!8.
-        ]
+        af!4
 
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/9 {
+    \times 5/6 {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2038,7 +2044,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        a4.
+        a4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2046,7 +2052,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        b,4.
+        b,4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2054,7 +2060,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        c4.
+        c4
 
     }
 
@@ -2071,7 +2077,8 @@ A_Cello_Music_Voice = {                                                        %
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2079,7 +2086,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        g16.
+        g8
         [
 
         \once \override Accidental.color = #red
@@ -2088,7 +2095,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        fs!16.
+        fs!8
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2096,7 +2103,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        af!16.
+        af!8
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2104,7 +2111,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        a16.
+        a8
         ]
 
     }
@@ -2339,7 +2346,8 @@ A_Cello_Music_Voice = {                                                        %
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2347,8 +2355,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        b,8.
-        [
+        b,4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2356,12 +2363,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        ef!8.
-        ]
+        ef!4
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
 
         % [A Cello_Music_Voice measure 32]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -2370,7 +2377,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        a,4.
+        a,2
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2378,8 +2385,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        af!8.
-        [
+        af!4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2387,8 +2393,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        bf!8.
-        ]
+        bf!4
 
     }
 
@@ -2481,14 +2486,14 @@ A_Cello_Music_Voice = {                                                        %
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 9/10 {
 
-        fs!8.
+        fs!8
         [
 
-        g8.
+        g8
 
-        e8.
+        e8
         ]
 
         \once \override Accidental.color = #red
@@ -2497,7 +2502,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        ef!4.
+        ef!4
 
     }
 
@@ -2671,15 +2676,15 @@ A_Cello_Music_Voice = {                                                        %
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 9/14 {
 
         % [A Cello_Music_Voice measure 41]                                     %! _comment_measure_numbers
-        a,16.
+        a,8
         [
 
-        af,!16.
+        af,!8
 
-        bf,!16.
+        bf,!8
         ]
 
         \once \override Accidental.color = #red
@@ -2688,8 +2693,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        b,8.
-        [
+        b,4
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2697,12 +2701,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #red
         \once \override Slur.color = #red
         \once \override Stem.color = #red
-        ef!8.
-        ]
+        ef!4
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
 
         % [A Cello_Music_Voice measure 42]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -2711,7 +2715,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        e,4.
+        e,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2719,7 +2723,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        ef,!4.
+        ef,!2
 
     }
 
@@ -2760,16 +2764,17 @@ A_Cello_Music_Voice = {                                                        %
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/4 {
 
-        g16.
+        g8
         [
 
-        af!16.
+        af!8
 
-        f16.
+        f8
 
-        e16.
+        e8
         ]
 
     }
@@ -2811,7 +2816,8 @@ A_Cello_Music_Voice = {                                                        %
 
     }
 
-    \times 8/9 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 7/9 {
 
         % [A Cello_Music_Voice measure 45]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -2820,7 +2826,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        g,4..
+        g,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2828,24 +2834,24 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        af,!4..
+        af,!2
 
-        f16..
+        f8
 
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 9/16 {
 
         % [A Cello_Music_Voice measure 46]                                     %! _comment_measure_numbers
-        c16.
+        c8
         [
 
-        d16.
+        d8
 
-        ef!16.
+        ef!8
 
-        cs!16.
+        cs!8
         ]
 
         \once \override Accidental.color = #blue
@@ -2854,11 +2860,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        b,4.
+        b,2
 
     }
 
-    \times 4/5 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 7/10 {
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2866,9 +2873,9 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        a,4..
+        a,2
 
-        b,16..
+        b,8
 
     }
 
@@ -2894,7 +2901,8 @@ A_Cello_Music_Voice = {                                                        %
 
     }
 
-    \times 4/5 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/5 {
 
         % [A Cello_Music_Voice measure 48]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -2904,7 +2912,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        b,4.
+        b,2
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
@@ -2914,7 +2922,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        a,4.
+        a,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2922,7 +2930,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        af,!4.
+        af,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2930,7 +2938,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        bf,!4.
+        bf,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2938,7 +2946,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        c4.
+        c2
 
     }
 
@@ -3005,7 +3013,7 @@ A_Cello_Music_Voice = {                                                        %
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 9/16 {
 
         % [A Cello_Music_Voice measure 51]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -3014,7 +3022,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        b,2.
+        b,1
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3022,7 +3030,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        a,2.
+        a,1
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3030,7 +3038,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        af,!2.
+        af,!1
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3038,11 +3046,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        bf,!2.
+        bf,!1
 
     }
 
-    \times 4/5 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 3/5 {
 
         % [A Cello_Music_Voice measure 52]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -3051,7 +3060,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        cs,!4.
+        cs,!2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3059,7 +3068,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        d,4.
+        d,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3067,7 +3076,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        c,4.
+        c,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3075,7 +3084,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        b,,4.
+        b,,2
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3083,7 +3092,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.color = #blue
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
-        g,4.
+        g,2
 
     }
 
