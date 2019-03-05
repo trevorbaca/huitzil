@@ -2,7 +2,7 @@ import baca
 
 
 top = 17
-staves = (8, 20)
+staves = (8, 22)
 separation = 70
 
 breaks = baca.breaks(

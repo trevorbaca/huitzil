@@ -1,36 +1,36 @@
 J_Global_Rests = {                                                             %! abjad.Path.extern
 
-    % [J Global_Rests measure 255 / measure 1]                                 %! _comment_measure_numbers
+    % [J Global_Rests measure 249 / measure 1]                                 %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 256 / measure 2]                                 %! _comment_measure_numbers
+    % [J Global_Rests measure 250 / measure 2]                                 %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 257 / measure 3]                                 %! _comment_measure_numbers
+    % [J Global_Rests measure 251 / measure 3]                                 %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 258 / measure 4]                                 %! _comment_measure_numbers
+    % [J Global_Rests measure 252 / measure 4]                                 %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 259 / measure 5]                                 %! _comment_measure_numbers
+    % [J Global_Rests measure 253 / measure 5]                                 %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 260 / measure 6]                                 %! _comment_measure_numbers
+    % [J Global_Rests measure 254 / measure 6]                                 %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 261 / measure 7]                                 %! _comment_measure_numbers
+    % [J Global_Rests measure 255 / measure 7]                                 %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 262 / measure 8]                                 %! _comment_measure_numbers
+    % [J Global_Rests measure 256 / measure 8]                                 %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 263 / measure 9]                                 %! _comment_measure_numbers
+    % [J Global_Rests measure 257 / measure 9]                                 %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 264 / measure 10]                                %! _comment_measure_numbers
+    % [J Global_Rests measure 258 / measure 10]                                %! _comment_measure_numbers
     R1 * 3/2                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 265 / measure 11]                                %! PHANTOM:_style_phantom_measures(4):_comment_measure_numbers
+    % [J Global_Rests measure 259 / measure 11]                                %! PHANTOM:_style_phantom_measures(4):_comment_measure_numbers
     R1 * 1/4                                                                   %! PHANTOM:_make_global_rests(2)
 
 }                                                                              %! abjad.Path.extern
@@ -38,14 +38,14 @@ J_Global_Rests = {                                                             %
 
 J_Global_Skips = {                                                             %! abjad.Path.extern
 
-    % [J Global_Skips measure 255 / measure 1]                                 %! _comment_measure_numbers
+    % [J Global_Skips measure 249 / measure 1]                                 %! _comment_measure_numbers
     \time 1/2                                                                  %! REAPPLIED_TIME_SIGNATURE:_set_status_tag:_reapply_persistent_indicators(1):_make_global_skips(2)
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'green4                                        %! REAPPLIED_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/2                                                                   %! _make_global_skips(1)
     - \baca-start-lmn-left-only "1"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
-%@% - \baca-start-mn-left-only "255"                                           %! MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "249"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
 %@% - \abjad-invisible-line                                                    %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "44"                        %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
@@ -53,106 +53,106 @@ J_Global_Skips = {                                                             %
     - \abjad-invisible-line                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'green4       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca-start-ct-left-only "[10'06'']"                                     %! CLOCK_TIME
+    - \baca-start-ct-left-only "[10'00'']"                                     %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [J Global_Skips measure 256 / measure 2]                                 %! _comment_measure_numbers
+    % [J Global_Skips measure 250 / measure 2]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME
     - \baca-start-lmn-left-only "2"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
-%@% - \baca-start-mn-left-only "256"                                           %! MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "250"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[10'08'']"                                     %! CLOCK_TIME
+    - \baca-start-ct-left-only "[10'02'']"                                     %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [J Global_Skips measure 257 / measure 3]                                 %! _comment_measure_numbers
+    % [J Global_Skips measure 251 / measure 3]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME
     - \baca-start-lmn-left-only "3"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
-%@% - \baca-start-mn-left-only "257"                                           %! MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "251"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[10'11'']"                                     %! CLOCK_TIME
+    - \baca-start-ct-left-only "[10'05'']"                                     %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [J Global_Skips measure 258 / measure 4]                                 %! _comment_measure_numbers
+    % [J Global_Skips measure 252 / measure 4]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME
     - \baca-start-lmn-left-only "4"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
-%@% - \baca-start-mn-left-only "258"                                           %! MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "252"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[10'14'']"                                     %! CLOCK_TIME
+    - \baca-start-ct-left-only "[10'08'']"                                     %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [J Global_Skips measure 259 / measure 5]                                 %! _comment_measure_numbers
+    % [J Global_Skips measure 253 / measure 5]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME
     - \baca-start-lmn-left-only "5"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
-%@% - \baca-start-mn-left-only "259"                                           %! MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "253"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[10'16'']"                                     %! CLOCK_TIME
+    - \baca-start-ct-left-only "[10'10'']"                                     %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [J Global_Skips measure 260 / measure 6]                                 %! _comment_measure_numbers
+    % [J Global_Skips measure 254 / measure 6]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME
     - \baca-start-lmn-left-only "6"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
-%@% - \baca-start-mn-left-only "260"                                           %! MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "254"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[10'19'']"                                     %! CLOCK_TIME
+    - \baca-start-ct-left-only "[10'13'']"                                     %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [J Global_Skips measure 261 / measure 7]                                 %! _comment_measure_numbers
+    % [J Global_Skips measure 255 / measure 7]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME
     - \baca-start-lmn-left-only "7"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
-%@% - \baca-start-mn-left-only "261"                                           %! MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "255"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[10'22'']"                                     %! CLOCK_TIME
+    - \baca-start-ct-left-only "[10'16'']"                                     %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [J Global_Skips measure 262 / measure 8]                                 %! _comment_measure_numbers
+    % [J Global_Skips measure 256 / measure 8]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME
     - \baca-start-lmn-left-only "8"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
-%@% - \baca-start-mn-left-only "262"                                           %! MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "256"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[10'25'']"                                     %! CLOCK_TIME
+    - \baca-start-ct-left-only "[10'19'']"                                     %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [J Global_Skips measure 263 / measure 9]                                 %! _comment_measure_numbers
+    % [J Global_Skips measure 257 / measure 9]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME
     - \baca-start-lmn-left-only "9"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
-%@% - \baca-start-mn-left-only "263"                                           %! MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "257"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[10'27'']"                                     %! CLOCK_TIME
+    - \baca-start-ct-left-only "[10'21'']"                                     %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [J Global_Skips measure 264 / measure 10]                                %! _comment_measure_numbers
+    % [J Global_Skips measure 258 / measure 10]                                %! _comment_measure_numbers
     \time 3/2                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _make_global_skips(1)
@@ -161,14 +161,14 @@ J_Global_Skips = {                                                             %
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME
     - \baca-start-lmn-left-only "10"                                           %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
-%@% - \baca-start-mn-left-only "264"                                           %! MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "258"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-both "[10'30'']" "[10'38'']"                              %! CLOCK_TIME
+    - \baca-start-ct-both "[10'24'']" "[10'32'']"                              %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|."                                                                  %! _attach_final_bar_line
 
-    % [J Global_Skips measure 265 / measure 11]                                %! PHANTOM:_style_phantom_measures(1):_comment_measure_numbers
+    % [J Global_Skips measure 259 / measure 11]                                %! PHANTOM:_style_phantom_measures(1):_comment_measure_numbers
     \time 1/4                                                                  %! PHANTOM:_style_phantom_measures(1):EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(3)
     \baca-time-signature-transparent                                           %! PHANTOM:_style_phantom_measures(2)
     s1 * 1/4                                                                   %! PHANTOM:_make_global_skips(3)
@@ -184,7 +184,7 @@ J_Global_Skips = {                                                             %
 
 J_RH_Music_Voice = {                                                           %! abjad.Path.extern
 
-    % [J RH_Music_Voice measure 255 / measure 1]                               %! _comment_measure_numbers
+    % [J RH_Music_Voice measure 249 / measure 1]                               %! _comment_measure_numbers
     \override Staff.BarLine.bar-extent = #'(-3 . 3)                            %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:_reapply_persistent_indicators(3)
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 7                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -212,7 +212,7 @@ J_RH_Music_Voice = {                                                           %
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    % [J RH_Music_Voice measure 256 / measure 2]                               %! _comment_measure_numbers
+    % [J RH_Music_Voice measure 250 / measure 2]                               %! _comment_measure_numbers
     b'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -227,7 +227,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
-    % [J RH_Music_Voice measure 257 / measure 3]                               %! _comment_measure_numbers
+    % [J RH_Music_Voice measure 251 / measure 3]                               %! _comment_measure_numbers
     b'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -242,7 +242,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
-    % [J RH_Music_Voice measure 258 / measure 4]                               %! _comment_measure_numbers
+    % [J RH_Music_Voice measure 252 / measure 4]                               %! _comment_measure_numbers
     b'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -257,7 +257,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
-    % [J RH_Music_Voice measure 259 / measure 5]                               %! _comment_measure_numbers
+    % [J RH_Music_Voice measure 253 / measure 5]                               %! _comment_measure_numbers
     b'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -272,7 +272,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
-    % [J RH_Music_Voice measure 260 / measure 6]                               %! _comment_measure_numbers
+    % [J RH_Music_Voice measure 254 / measure 6]                               %! _comment_measure_numbers
     b'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -287,7 +287,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
-    % [J RH_Music_Voice measure 261 / measure 7]                               %! _comment_measure_numbers
+    % [J RH_Music_Voice measure 255 / measure 7]                               %! _comment_measure_numbers
     b'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -302,7 +302,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
-    % [J RH_Music_Voice measure 262 / measure 8]                               %! _comment_measure_numbers
+    % [J RH_Music_Voice measure 256 / measure 8]                               %! _comment_measure_numbers
     b'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -317,7 +317,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
-    % [J RH_Music_Voice measure 263 / measure 9]                               %! _comment_measure_numbers
+    % [J RH_Music_Voice measure 257 / measure 9]                               %! _comment_measure_numbers
     b'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -335,7 +335,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
-    % [J RH_Music_Voice measure 264 / measure 10]                              %! _comment_measure_numbers
+    % [J RH_Music_Voice measure 258 / measure 10]                              %! _comment_measure_numbers
     b'1.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -352,7 +352,7 @@ J_RH_Music_Voice = {                                                           %
         \context Voice = "RH_Music_Voice"                                      %! PHANTOM:_make_multimeasure_rest_container
         {                                                                      %! PHANTOM:_make_multimeasure_rest_container
 
-            % [J RH_Music_Voice measure 265 / measure 11]                      %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
+            % [J RH_Music_Voice measure 259 / measure 11]                      %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
             c'1 * 1/4                                                          %! PHANTOM:_make_multimeasure_rest_container
 
@@ -361,7 +361,7 @@ J_RH_Music_Voice = {                                                           %
         \context Voice = "RH_Rest_Voice"                                       %! PHANTOM:_make_multimeasure_rest_container
         {                                                                      %! PHANTOM:_make_multimeasure_rest_container
 
-            % [J RH_Rest_Voice measure 265 / measure 11]                       %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
+            % [J RH_Rest_Voice measure 259 / measure 11]                       %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \once \override Score.TimeSignature.X-extent = ##f                 %! PHANTOM:_style_phantom_measures(6)
             \once \override MultiMeasureRest.transparent = ##t                 %! PHANTOM:_style_phantom_measures(7)
             \stopStaff                                                         %! PHANTOM:_style_phantom_measures(8)
@@ -386,7 +386,7 @@ J_RH_Music_Staff = {                                                           %
 
 J_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
-    % [J Cello_Music_Voice measure 255 / measure 1]                            %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 249 / measure 1]                            %! _comment_measure_numbers
     \override MultiMeasureRest.transparent = ##t                               %! baca_mmrest_transparent:OverrideCommand(1)
     \override Score.BarLine.transparent = ##t                                  %! baca_bar_line_transparent:OverrideCommand(1)
     \override Score.SpanBar.transparent = ##t                                  %! baca_span_bar_transparent:OverrideCommand(1)
@@ -399,31 +399,31 @@ J_Cello_Music_Voice = {                                                        %
     ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    % [J Cello_Music_Voice measure 256 / measure 2]                            %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 250 / measure 2]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [J Cello_Music_Voice measure 257 / measure 3]                            %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 251 / measure 3]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [J Cello_Music_Voice measure 258 / measure 4]                            %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 252 / measure 4]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [J Cello_Music_Voice measure 259 / measure 5]                            %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 253 / measure 5]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [J Cello_Music_Voice measure 260 / measure 6]                            %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 254 / measure 6]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [J Cello_Music_Voice measure 261 / measure 7]                            %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 255 / measure 7]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [J Cello_Music_Voice measure 262 / measure 8]                            %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 256 / measure 8]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [J Cello_Music_Voice measure 263 / measure 9]                            %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 257 / measure 9]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [J Cello_Music_Voice measure 264 / measure 10]                           %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 258 / measure 10]                           %! _comment_measure_numbers
     R1 * 3/2                                                                   %! _call_rhythm_commands
     \revert MultiMeasureRest.transparent                                       %! baca_mmrest_transparent:OverrideCommand(2)
     \revert Score.BarLine.transparent                                          %! baca_bar_line_transparent:OverrideCommand(2)
@@ -435,7 +435,7 @@ J_Cello_Music_Voice = {                                                        %
         \context Voice = "Cello_Music_Voice"                                   %! PHANTOM:_make_multimeasure_rest_container
         {                                                                      %! PHANTOM:_make_multimeasure_rest_container
 
-            % [J Cello_Music_Voice measure 265 / measure 11]                   %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
+            % [J Cello_Music_Voice measure 259 / measure 11]                   %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \once \override Score.RehearsalMark.direction = #down              %! PHANTOM:_style_phantom_measures(5):baca_rehearsal_mark_down:OverrideCommand(1)
             \once \override Score.RehearsalMark.padding = #6                   %! PHANTOM:_style_phantom_measures(5):baca_rehearsal_padding:OverrideCommand(1)
             \mark \huitzil-colophon-markup                                     %! PHANTOM:_style_phantom_measures(5):baca_mark:IndicatorCommand
@@ -447,7 +447,7 @@ J_Cello_Music_Voice = {                                                        %
         \context Voice = "Cello_Rest_Voice"                                    %! PHANTOM:_make_multimeasure_rest_container
         {                                                                      %! PHANTOM:_make_multimeasure_rest_container
 
-            % [J Cello_Rest_Voice measure 265 / measure 11]                    %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
+            % [J Cello_Rest_Voice measure 259 / measure 11]                    %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \once \override Score.TimeSignature.X-extent = ##f                 %! PHANTOM:_style_phantom_measures(6)
             \once \override MultiMeasureRest.transparent = ##t                 %! PHANTOM:_style_phantom_measures(7)
             \stopStaff                                                         %! PHANTOM:_style_phantom_measures(8)
