@@ -95,7 +95,7 @@ maker(
     ('rh', 1),
     baca.bar_extent_persistent((-3, 3)),
     baca.make_monads('1/4  1/8  1/8'),
-    baca.staff_lines(7),
+    #baca.staff_lines(7),
     baca.staff_positions(
         [6, 6, 4],
         allow_repeats=True,
