@@ -173,9 +173,14 @@ maker = baca.SegmentMaker(
     activate=[
         abjad.const.CLOCK_TIME,
         abjad.const.LOCAL_MEASURE_NUMBER,
+        # TODO: make this work
         #abjad.const.SPACING,
         ],
     clock_time_extra_offset=(0, -2),
+    deactivate=[
+        # TODO: make this work
+        abjad.tags.DEFAULT_INSTRUMENT_ALERT,
+        ],
     first_segment=True,
     local_measure_number_extra_offset=(0, -5),
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
