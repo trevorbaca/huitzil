@@ -59,13 +59,13 @@ persist = abjad.OrderedDict(
                                     attribute='bar_extent',
                                     context='Staff',
                                     grob='bar_line',
-                                    value=(-5, 5),
+                                    value=(-4, 4),
                                     ),
                                 ),
                             abjad.Momento(
                                 context='RH_Music_Voice',
                                 prototype='baca.StaffLines',
-                                value=11,
+                                value=7,
                                 ),
                             ],
                         ),
@@ -75,7 +75,7 @@ persist = abjad.OrderedDict(
                             abjad.Momento(
                                 context='RH_Music_Voice',
                                 prototype='abjad.Dynamic',
-                                value='pp',
+                                value='mf',
                                 ),
                             ],
                         ),
@@ -85,7 +85,7 @@ persist = abjad.OrderedDict(
                             abjad.Momento(
                                 context='Global_Skips',
                                 manifest='metronome_marks',
-                                value='66',
+                                value='88',
                                 ),
                             abjad.Momento(
                                 context='Global_Skips',

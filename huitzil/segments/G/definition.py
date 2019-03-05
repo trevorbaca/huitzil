@@ -30,88 +30,8 @@ maker = baca.SegmentMaker(
 maker(
     'Global_Skips',
     baca.metronome_mark(
-        '66',
+        '88',
         selector=baca.leaf(1 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(1 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(4 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(5 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(5 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(8 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(9 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(9 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(12 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(13 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(13 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(16 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(17 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(17 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(20 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(25 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(25 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(28 - 1),
-        ),
-    baca.metronome_mark(
-        '88',
-        selector=baca.leaf(29 - 1),
-        ),
-    baca.metronome_mark(
-        baca.Accelerando(),
-        selector=baca.leaf(29 - 1),
-        ),
-    baca.metronome_mark(
-        '66',
-        selector=baca.leaf(32 - 1),
         ),
     )
 
@@ -154,20 +74,17 @@ maker(
     baca.rhythm("{ c'1 * 2 }"),
     )
 
-# vcr
-
-#maker(
-#    ('vcr', 2),
-#    baca.mmrest_transparent(),
-#    )
-
 # rh
 
 maker(
     'rh',
+    baca.dynamic('mf'),
     baca.chunk(
-        baca.bar_extent_persistent((-5, 5)),
-        baca.staff_lines(11),
+        baca.bar_extent_persistent((-4, 4)),
+        baca.literal(
+            r'\once \override RHStaff.StaffSymbol.line-positions ='
+            " #'(8.2 8 7.8 -5.8 -6 -6.2 -8 -10 -12 -14 -16 -17.8 -18 -18.2)"
+            ),
         ),
     baca.dls_staff_padding(7),
     baca.stem_tremolo(
@@ -182,7 +99,7 @@ maker(
     ('rh', (1, 8)),
     baca.make_monads('1/2 3/8 3/8 1/2 1/2 3/8 3/8 1/2'),
     baca.staff_positions(
-        [-10, -10, -8, -8, -6, -6, -4, -4],
+        [-6, -6, -8, -8, -10, -10, -12, -12],
         allow_repeats=True,
         ),
     )
@@ -193,19 +110,7 @@ maker(
         r'\baca-fz-markup',
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves()[abjad.index([0], 2)],
-        ),
-    )
-
-maker(
-    ('rh', (1, 23)),
-    baca.hairpin(
-        'p < mf > p < mf > p < mf > p < mf > p < ff',
-        pieces=baca.clparts([
-            3, 1, 3, 1,
-            3, 1, 3, 1,
-            7,
-            ]),
+        selector=baca.leaves(),
         ),
     )
 
@@ -213,7 +118,8 @@ maker(
     ('rh', (9, 16)),
     baca.make_monads('1/2 3/8 3/8 1/2 1/2 3/8 3/8 1/2'),
     baca.staff_positions(
-        [-2, -2, 0, 0, 2, 2, 4, 4],
+        [-14, -14, -16, -16, -18, -18, -16, -16],
+        allow_out_of_range=True,
         allow_repeats=True,
         ),
     )
@@ -222,32 +128,15 @@ maker(
     ('rh', (17, 24)),
     baca.make_monads('1/2 3/8 3/8 1/2 1/2 1/2 1/2 1/2'),
     baca.staff_positions(
-        [6, 6, 8, 8, 10, 10, 10, 10],
+        [-14, -14, -12, -12, -10, -10, -8, -8],
         allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (21, 32)),
-    baca.markup(
-        r'\baca-fffz-markup',
-        direction=abjad.Down,
-        literal=True,
-        selector=baca.leaves()[abjad.index([0, 1, 2, 3, 4, 8, 9, 10, 11])],
         ),
     )
 
 maker(
     ('rh', (25, 32)),
-    baca.hairpin(
-        'mf < ff > pp',
-        pieces=baca.lparts([4, 4]),
-        ),
     baca.make_monads('1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2'),
-    baca.staff_positions(
-        [10],
-        allow_repeats=True,
-        ),
+    baca.staff_position(-6),
     )
 
 # stage 2 (after staff position settings)
