@@ -59,7 +59,7 @@ persist = abjad.OrderedDict(
                                     attribute='bar_extent',
                                     context='Staff',
                                     grob='bar_line',
-                                    value=(-3, 3),
+                                    value=(-4, 4),
                                     ),
                                 ),
                             abjad.Momento(

@@ -72,24 +72,17 @@ maker(
     baca.time_signature_stencil_false(),
     )
 
-maker(
-    ('vc', 1),
-    baca.pitch('B1'),
-    baca.rhythm("{ c'1 * 1/2 }"),
-    )
-
-# vcr
-
-maker(
-    ('vcr', 2),
-    baca.mmrest_transparent(),
-    )
-
 # rh
 
 maker(
     'rh',
     baca.dls_staff_padding(7),
+    baca.literal([
+        r'\stopStaff',
+        r'\once \override RHStaff.StaffSymbol.line-positions ='
+        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)"
+        r'\startStaff',
+        ]),
     baca.stem_tremolo(
         selector=baca.pleaves(),
         ),
@@ -100,7 +93,6 @@ maker(
 
 maker(
     ('rh', 1),
-    baca.bar_extent_persistent((-3, 3)),
     baca.make_monads('1/4  1/8  1/8'),
     baca.staff_positions(
         [6, 6, 4],
@@ -111,7 +103,7 @@ maker(
 maker(
     ('rh', (1, 3)),
     baca.hairpin(
-        'mp -- !',
+        '(mp) -- !',
         abjad.tweak(True).to_barline,
         selector=baca.leaves().rleak(),
         ),
