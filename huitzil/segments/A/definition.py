@@ -167,6 +167,8 @@ for measure_duration in measure_durations:
     duration = measure_duration.with_denominator(4)
     time_signatures.append(duration)
 
+music_ = abjad.select(music)
+
 ### SEGMENT-MAKER ###
 
 maker = baca.SegmentMaker(
@@ -189,6 +191,8 @@ maker = baca.SegmentMaker(
     validate_measure_count=54,
     )
 
+# skips
+
 maker(
     'Global_Skips',
     baca.metronome_mark(
@@ -197,9 +201,40 @@ maker(
         ),
     )
 
-music_ = abjad.select(music)
+# vc
 
 maker(
     ('vc', 1),
     baca.rhythm(music_),
+    )
+
+maker(
+    ('vc', (1, 51)),
+    baca.tuplet_bracket_staff_padding(3),
+    )
+
+maker(
+    ('vc', 20),
+    baca.repeat_tie_to(),
+    )
+
+maker(
+    ('vc', 48),
+    baca.repeat_tie_to(),
+    )
+
+maker(
+    ('vc', (52, 54)),
+    baca.tuplet_bracket_staff_padding(4),
+    )
+
+
+maker(
+    ('vc', 53),
+    baca.breathe(),
+    )
+
+maker(
+    ('vc', 54),
+    baca.breathe(),
     )

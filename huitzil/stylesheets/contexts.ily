@@ -71,8 +71,6 @@
         \override TimeSignature.break-visibility = #end-of-line-invisible
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
-
-        \override TupletBracket.staff-padding = 4
     }
 
     % RH STAFF
