@@ -1,110 +1,82 @@
 import abjad
 import baca
 import collections
+import huitzil
+import typing
+from abjadext import rmakers
 
 
 class DreamsMusicMaker(object):
     """
     Dreams music-maker.
+
+    >>> import huitzil
+
+    ..  container:: example
+
+        >>> maker = huitzil.DreamsMusicMaker()
+        >>> abjad.f(maker)
+        huitzil.DreamsMusicMaker(
+            extra_counts_per_division=[],
+            pc_displacement=[],
+            pc_operators=[],
+            pitch_class_trees=[],
+            voice_map=[],
+            )
+
     """
 
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
         '_extra_counts_per_division',
-        '_glissando_patterns',
-        '_index_logical_ties',
         '_pc_displacement',
         '_pc_operators',
         '_pitch_class_trees',
-        '_start_tempo',
-        '_stop_tempo',
         '_voice_map',
         )
 
-    unit_duration = abjad.Duration(1, 16)
+    _publish_storage_format = True
 
     ### INITIALIZER ###
 
     def __init__(
         self,
-        extra_counts_per_division=None,
-        glissando_patterns=None,
-        index_logical_ties=None,
-        pc_displacement=None,
-        pc_operators=None,
-        pitch_class_trees=None,
-        start_tempo=None,
-        stop_tempo=None,
-        voice_map=None,
-        ):
+        extra_counts_per_division: typing.List[int] = None,
+        pc_displacement: typing.List[int] = None,
+        pc_operators: typing.List = None,
+        pitch_class_trees: typing.Tuple[baca.PitchTree] = None,
+        voice_map: typing.List[typing.List] = None,
+        ) -> None:
         self.pc_displacement = pc_displacement
         self.extra_counts_per_division = extra_counts_per_division
-        self.glissando_patterns = glissando_patterns
-        self.index_logical_ties = index_logical_ties
         self.pc_operators = pc_operators
         self.pitch_class_trees = pitch_class_trees
-        self.start_tempo = start_tempo
-        self.stop_tempo = stop_tempo
         self.voice_map = voice_map
 
     ### SPECIAL METHODS ###
 
-    def __call__(self):
+    def __call__(self) -> abjad.Selection:
         """
         Calls music-maker.
-
-        Returns selection.
         """
-        music = self._make_rhythm()
-        self._respell_tuplets(music)
-        self._displace_pitch_classes(music)
-        self._register_voices(music)
-        self._attach_beams(music)
-        self._adjust_beams(music)
-        self._apply_glissando_patterns(music)
-        self._attach_leaf_index_markup(music)
-        assert isinstance(music, (tuple, list, abjad.Voice)), repr(music)
-        #first_item = music[0]
-        return music
+        tuplets = self._make_rhythm()
+        assert all(isinstance(_, abjad.Tuplet) for _ in tuplets)
+        self._respell_tuplets(tuplets)
+        self._displace_pitch_classes(tuplets)
+        self._register_voices(tuplets)
+        self._attach_beams(tuplets)
+        selection = abjad.select(tuplets)
+        assert all(isinstance(_, abjad.Tuplet) for _ in tuplets)
+        return tuplets
 
-    ### PRIVATE PROPERTIES ###
-
-    @property
-    def _storage_format_specification(self):
-        manager = abjad.StorageFormatManager
-        keyword_argument_names = \
-            manager.get_signature_keyword_argument_names(self)
-        keyword_argument_names = list(keyword_argument_names)
-        return abjad.StorageFormatSpecification(
-            self,
-            keyword_argument_names=keyword_argument_names,
-            )
+    def __repr__(self) -> str:
+        """
+        Gets interpreter representation.
+        """
+        return abjad.StorageFormatManager(self).get_repr_format()
 
     ### PRIVATE METHODS ###
-
-    def _adjust_beams(self, music):
-        pass
-
-    def _annotate_original_durations(self, note_lists):
-        notes = baca.sequence(note_lists).flatten()
-        for note in notes:
-            abjad.attach(note.written_duration, note)
-
-    def _apply_glissando_patterns(self, music):
-        if not self.glissando_patterns:
-            return
-        notes = abjad.select(music).leaves(pitched=True)
-        note_pairs = abjad.sequence(notes).nwise()
-        total_note_pairs = len(note_pairs)
-        for i, note_pair in enumerate(note_pairs):
-            has_glissando = False
-            for pattern in self.glissando_patterns:
-                if pattern.matches_index(i, total_note_pairs):
-                    has_glissando = True
-                    break
-            if has_glissando:
-                abjad.glissando(note_pair)
 
     def _attach_beams(self, music):
         tuplets = abjad.iterate(music).components(abjad.Tuplet)
@@ -117,14 +89,6 @@ class DreamsMusicMaker(object):
             for note_group in note_groups:
                 note_group = abjad.select(note_group)
                 abjad.beam(note_group)
-
-    def _attach_leaf_index_markup(self, music):
-        if not self.index_logical_ties:
-            return
-        logical_ties = abjad.iterate(music).logical_ties()
-        for i, logical_tie in enumerate(logical_ties):
-            markup = abjad.Markup(i)
-            abjad.attach(markup, logical_tie.head)
 
     def _attach_voice_numbers(self, note_lists):
         for component in self.voice_map:
@@ -170,10 +134,9 @@ class DreamsMusicMaker(object):
             )
         inner_tuplets = []
         for i, note_list in enumerate(note_lists):
-            #leaf_count = len(note_list)
             start_duration = sum(_.written_duration for _ in note_list)
             extra_count = extra_counts_per_division[i]
-            extra_duration = extra_count * self.unit_duration
+            extra_duration = extra_count * abjad.Duration(1, 16)
             if 0 < start_duration + extra_duration:
                 target_duration = start_duration + extra_duration
             else:
@@ -185,10 +148,17 @@ class DreamsMusicMaker(object):
                 fraction = fraction.with_denominator(128)
                 numerators.append(fraction.numerator)
             ratio = abjad.Ratio(numerators)
-            inner_tuplet = abjad.Tuplet.from_duration_and_ratio(
-                target_duration,
-                ratio,
+            maker = rmakers.TupletRhythmMaker(
+                tuplet_ratios=[ratio],
+                tuplet_specifier=rmakers.TupletSpecifier(
+                    #rewrite_dots=True,
+                    ),
                 )
+            selections = maker([target_duration])
+            assert len(selections) == 1
+            assert isinstance(selections[0], abjad.Selection)
+            assert len(selections[0]) == 1, repr(selections[0])
+            inner_tuplet = selections[0][0]
             if inner_tuplet.multiplier == 1:
                 inner_tuplet.hide = True
             for j, inner_tuplet_note in enumerate(inner_tuplet):
@@ -218,17 +188,15 @@ class DreamsMusicMaker(object):
         pitch_class_trees = self.pitch_class_trees
         assert isinstance(pitch_class_trees, tuple)
         note_lists = self._make_note_lists(pitch_class_trees)
-        self._annotate_original_durations(note_lists)
         self._attach_voice_numbers(note_lists)
         self._set_written_durations(note_lists)
         inner_tuplets = self._make_inner_tuplets(note_lists)
         return inner_tuplets
 
     def _register_voices(self, music):
-        from huitzil import materials
-        voice_1_registration = materials.registrations['middle']
-        voice_2_registration = materials.registrations['low']
-        voice_3_registration = materials.registrations['lowest']
+        voice_1_registration = huitzil.registrations['middle']
+        voice_2_registration = huitzil.registrations['low']
+        voice_3_registration = huitzil.registrations['lowest']
         for note in abjad.iterate(music).components(abjad.Note):
             voice_number = abjad.inspect(note).indicator(int)
             if voice_number == 1:
@@ -241,13 +209,6 @@ class DreamsMusicMaker(object):
                 abjad.override(note).stem.color = color
                 registration = voice_1_registration
             elif voice_number == 2:
-                #color = 'green'
-                #abjad.override(note).accidental.color = color
-                #abjad.override(note).beam.color = color
-                #abjad.override(note).dots.color = color
-                #abjad.override(note).note_head.color = color
-                #abjad.override(note).slur.color = color
-                #abjad.override(note).stem.color = color
                 registration = voice_2_registration
             elif voice_number == 3:
                 color = 'blue'
@@ -274,7 +235,6 @@ class DreamsMusicMaker(object):
                     note.written_duration = new_written_duration
 
     def _set_written_durations(self, note_lists):
-        #durations = []
         for note_list in note_lists:
             for note in note_list:
                 voice_number = abjad.inspect(note).indicator(int)
@@ -291,11 +251,9 @@ class DreamsMusicMaker(object):
     ### PUBLIC PROPERTIES ###
 
     @property
-    def extra_counts_per_division(self):
+    def extra_counts_per_division(self) -> typing.List[int]:
         """
         Gets extra counts per division of music-maker.
-
-        Returns list.
         """
         return self._extra_counts_per_division
 
@@ -309,45 +267,7 @@ class DreamsMusicMaker(object):
             raise TypeError(f'list or none: {argument!r}.')
 
     @property
-    def glissando_patterns(self):
-        """
-        Gets glissando patterns of music-maker.
-
-        Set to list of boolean pattern objects or none.
-
-        Returns list or none.
-        """
-        return self._glissando_patterns
-
-    @glissando_patterns.setter
-    def glissando_patterns(self, argument):
-        if argument is None:
-            self._glissando_patterns = []
-        elif isinstance(argument, list):
-            self._glissando_patterns = argument
-        else:
-            raise TypeError(f'list or none: {argument!r}.')
-
-    @property
-    def index_logical_ties(self):
-        """
-        Is true when leaf indices should appear in score as markup.
-
-        Set to true or false.
-        """
-        return self._index_logical_ties
-
-    @index_logical_ties.setter
-    def index_logical_ties(self, argument):
-        if argument is None:
-            self._index_logical_ties = []
-        elif isinstance(argument, type(True)):
-            self._index_logical_ties = argument
-        else:
-            raise TypeError(f'boolean or none: {argument!r}.')
-
-    @property
-    def pc_displacement(self):
+    def pc_displacement(self) -> typing.List[int]:
         """
         Gets displacement map of music-maker.
 
@@ -368,7 +288,9 @@ class DreamsMusicMaker(object):
             raise TypeError(f'list or none: {argument!r}.')
 
     @property
-    def pc_operators(self):
+    def pc_operators(self) -> typing.List[
+        typing.Union[abjad.Inversion, abjad.Transposition]
+        ]:
         """
         Gets pc operators of music-maker.
 
@@ -386,7 +308,7 @@ class DreamsMusicMaker(object):
             raise TypeError(f'list or none: {argument!r}.')
 
     @property
-    def pitch_class_trees(self):
+    def pitch_class_trees(self) -> typing.Tuple[baca.PitchTree]:
         """
         Gets pitch-class trees of music-maker.
 
@@ -404,43 +326,7 @@ class DreamsMusicMaker(object):
             raise TypeError(f'pitch-class trees or none: {argument!r}.')
 
     @property
-    def start_tempo(self):
-        """
-        Gets start tempo of music-maker.
-
-        Returns tempo or none.
-        """
-        return self._start_tempo
-
-    @start_tempo.setter
-    def start_tempo(self, argument):
-        if argument is None:
-            self._start_tempo = argument
-        elif isinstance(argument, abjad.MetronomeMark):
-            self._start_tempo = argument
-        else:
-            raise TypeError(f'metronome mark only: {argument!r}.')
-
-    @property
-    def stop_tempo(self):
-        """
-        Gets stop tempo of music-maker.
-
-        Returns tempo or none.
-        """
-        return self._stop_tempo
-
-    @stop_tempo.setter
-    def stop_tempo(self, argument):
-        if argument is None:
-            self._stop_tempo = argument
-        elif isinstance(argument, abjad.MetronomeMark):
-            self._stop_tempo = argument
-        else:
-            raise TypeError(f'metronome mark only: {argument!r}.')
-
-    @property
-    def voice_map(self):
+    def voice_map(self) -> typing.List[typing.List]:
         """
         Gets voice map of music-maker.
 

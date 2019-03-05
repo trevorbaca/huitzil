@@ -2412,6 +2412,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         f8
+        ]
 
     }
 
