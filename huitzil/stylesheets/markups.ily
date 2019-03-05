@@ -32,7 +32,7 @@ huitzil-descending-fingerboard-markup = \markup
 huitzil-cadenza-markup = \markup
     \override #'(box-padding . 0.5)
     \box
-    "directly on bridge (no pitch): where IV crosses wood"
+    "directly on bridge where IV crosses wood"
 
 huitzil-pitch-reenters-markup = \markup
     \override #'(box-padding . 0.5)

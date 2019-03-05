@@ -494,11 +494,13 @@ C_Global_Skips = {                                                             %
 C_RH_Music_Voice = {                                                           %! abjad.Path.extern
 
     % [C RH_Music_Voice measure 80 / measure 1]                                %! _comment_measure_numbers
+    \override Staff.BarLine.bar-extent = #'(-4 . 4)                            %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:_reapply_persistent_indicators(3)
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 7                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override Staff.BarLine.bar-extent = #'(-3 . 3)                            %! REDUNDANT_PERSISTENT_OVERRIDE:_set_status_tag:baca_bar_extent_persistent:IndicatorCommand
     \override DynamicLineSpanner.staff-padding = #7                            %! baca_dls_staff_padding:OverrideCommand(1)
+    \stopStaff                                                                 %! baca_literal:IndicatorCommand
+    \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)\startStaff %! baca_literal:IndicatorCommand
     \override TextScript.parent-alignment-X = #0                               %! baca_text_script_parent_alignment_x:OverrideCommand(1)
     \override TextScript.self-alignment-X = #0                                 %! baca_text_script_self_alignment_x:OverrideCommand(1)
     \override TextScript.staff-padding = #4                                    %! baca_script_staff_padding:OverrideCommand(1)
@@ -511,7 +513,7 @@ C_RH_Music_Voice = {                                                           %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \baca-mp-parenthesized                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     _ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -1105,116 +1107,133 @@ C_RH_Music_Staff = {                                                           %
 
 C_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
-    {
+    % [C Cello_Music_Voice measure 80 / measure 1]                             %! _comment_measure_numbers
+    \override MultiMeasureRest.transparent = ##t                               %! baca_mmrest_transparent:OverrideCommand(1)
+    \override Score.BarLine.transparent = ##t                                  %! baca_bar_line_transparent:OverrideCommand(1)
+    \override Score.SpanBar.transparent = ##t                                  %! baca_span_bar_transparent:OverrideCommand(1)
+    \override Score.TimeSignature.stencil = ##f                                %! baca_time_signature_stencil_false:OverrideCommand(1)
+    \clef "bass"                                                               %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
+%@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
+    R1 * 1/2                                                                   %! _call_rhythm_commands
+    ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+    \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        % [C Cello_Music_Voice measure 80 / measure 1]                         %! _comment_measure_numbers
-        \override Score.BarLine.transparent = ##t                              %! baca_bar_line_transparent:OverrideCommand(1)
-        \override Score.SpanBar.transparent = ##t                              %! baca_span_bar_transparent:OverrideCommand(1)
-        \override Score.TimeSignature.stencil = ##f                            %! baca_time_signature_stencil_false:OverrideCommand(1)
-        \clef "bass"                                                           %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
-        \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
-    %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        b,,1 * 1/2
-        ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+    \tweak edge-height #'(0.7 . 0)
+    \times 2/3 {
+
+        % [C Cello_Music_Voice measure 81 / measure 2]                         %! _comment_measure_numbers
+        R1 * 13/16                                                             %! _call_rhythm_commands
 
     }
 
-    <<                                                                         %! _make_multimeasure_rest_container
-
-        \context Voice = "Cello_Music_Voice"                                   %! _make_multimeasure_rest_container
-        {                                                                      %! _make_multimeasure_rest_container
-
-            % [C Cello_Music_Voice measure 81 / measure 2]                     %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            c'1 * 13/24                                                        %! _make_multimeasure_rest_container
-
-        }                                                                      %! _make_multimeasure_rest_container
-
-        \context Voice = "Cello_Rest_Voice"                                    %! _make_multimeasure_rest_container
-        {                                                                      %! _make_multimeasure_rest_container
-
-            % [C Cello_Rest_Voice measure 81 / measure 2]                      %! _comment_measure_numbers
-            \once \override MultiMeasureRest.transparent = ##t                 %! baca_mmrest_transparent:OverrideCommand(1)
-            R1 * 13/24                                                         %! _make_multimeasure_rest_container
-
-        }                                                                      %! _make_multimeasure_rest_container
-
-    >>                                                                         %! _make_multimeasure_rest_container
-
     % [C Cello_Music_Voice measure 82 / measure 3]                             %! _comment_measure_numbers
-    \override MultiMeasureRest.transparent = ##t                               %! baca_mmrest_transparent:OverrideCommand(1)
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C Cello_Music_Voice measure 83 / measure 4]                             %! _comment_measure_numbers
-    R1 * 7/12                                                                  %! _make_measure_silences
+    \tweak edge-height #'(0.7 . 0)
+    \times 2/3 {
 
-    % [C Cello_Music_Voice measure 84 / measure 5]                             %! _comment_measure_numbers
-    R1 * 53/60                                                                 %! _make_measure_silences
+        % [C Cello_Music_Voice measure 83 / measure 4]                         %! _comment_measure_numbers
+        R1 * 7/8                                                               %! _call_rhythm_commands
 
-    % [C Cello_Music_Voice measure 85 / measure 6]                             %! _comment_measure_numbers
-    R1 * 23/24                                                                 %! _make_measure_silences
+    }
+
+    \tweak edge-height #'(0.7 . 0)
+    \times 8/15 {
+
+        % [C Cello_Music_Voice measure 84 / measure 5]                         %! _comment_measure_numbers
+        R1 * 53/32                                                             %! _call_rhythm_commands
+
+    }
+
+    \tweak edge-height #'(0.7 . 0)
+    \times 2/3 {
+
+        % [C Cello_Music_Voice measure 85 / measure 6]                         %! _comment_measure_numbers
+        R1 * 23/16                                                             %! _call_rhythm_commands
+
+    }
 
     % [C Cello_Music_Voice measure 86 / measure 7]                             %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 87 / measure 8]                             %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 88 / measure 9]                             %! _comment_measure_numbers
-    R1 * 3/8                                                                   %! _make_measure_silences
+    R1 * 3/8                                                                   %! _call_rhythm_commands
 
-    % [C Cello_Music_Voice measure 89 / measure 10]                            %! _comment_measure_numbers
-    R1 * 1/3                                                                   %! _make_measure_silences
+    \tweak edge-height #'(0.7 . 0)
+    \times 2/3 {
 
-    % [C Cello_Music_Voice measure 90 / measure 11]                            %! _comment_measure_numbers
-    R1 * 11/15                                                                 %! _make_measure_silences
+        % [C Cello_Music_Voice measure 89 / measure 10]                        %! _comment_measure_numbers
+        R1 * 1/2                                                               %! _call_rhythm_commands
+
+    }
+
+    \tweak edge-height #'(0.7 . 0)
+    \times 8/15 {
+
+        % [C Cello_Music_Voice measure 90 / measure 11]                        %! _comment_measure_numbers
+        R1 * 11/8                                                              %! _call_rhythm_commands
+
+    }
 
     % [C Cello_Music_Voice measure 91 / measure 12]                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 92 / measure 13]                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 93 / measure 14]                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 94 / measure 15]                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 95 / measure 16]                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C Cello_Music_Voice measure 96 / measure 17]                            %! _comment_measure_numbers
-    R1 * 1/6                                                                   %! _make_measure_silences
+    \tweak edge-height #'(0.7 . 0)
+    \times 2/3 {
+
+        % [C Cello_Music_Voice measure 96 / measure 17]                        %! _comment_measure_numbers
+        R1 * 1/4                                                               %! _call_rhythm_commands
+
+    }
 
     % [C Cello_Music_Voice measure 97 / measure 18]                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C Cello_Music_Voice measure 98 / measure 19]                            %! _comment_measure_numbers
-    R1 * 2/5                                                                   %! _make_measure_silences
+    \tweak edge-height #'(0.7 . 0)
+    \times 4/5 {
+
+        % [C Cello_Music_Voice measure 98 / measure 19]                        %! _comment_measure_numbers
+        R1 * 1/2                                                               %! _call_rhythm_commands
+
+    }
 
     % [C Cello_Music_Voice measure 99 / measure 20]                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 100 / measure 21]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 101 / measure 22]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 102 / measure 23]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 103 / measure 24]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 104 / measure 25]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [C Cello_Music_Voice measure 105 / measure 26]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
     \revert MultiMeasureRest.transparent                                       %! baca_mmrest_transparent:OverrideCommand(2)
     \revert Score.BarLine.transparent                                          %! baca_bar_line_transparent:OverrideCommand(2)
     \revert Score.SpanBar.transparent                                          %! baca_span_bar_transparent:OverrideCommand(2)

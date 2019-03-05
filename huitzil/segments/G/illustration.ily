@@ -478,7 +478,7 @@ G_Global_Skips = {                                                             %
 G_RH_Music_Voice = {                                                           %! abjad.Path.extern
 
     % [G RH_Music_Voice measure 174 / measure 1]                               %! _comment_measure_numbers
-    \override Staff.BarLine.bar-extent = #'(-4 . 4)                            %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:baca_bar_extent_persistent:IndicatorCommand
+    \override Staff.BarLine.bar-extent = #'(-4 . 4)                            %! REDUNDANT_PERSISTENT_OVERRIDE:_set_status_tag:baca_bar_extent_persistent:IndicatorCommand
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \once \override RHStaff.StaffSymbol.line-count = 14                        %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand

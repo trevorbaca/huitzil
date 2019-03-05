@@ -48,9 +48,22 @@ maker(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.leaves(),
+        selector=baca.leaves()[1:],
         ),
     baca.time_signature_stencil_false(),
+    )
+
+maker(
+    ('vc', 25),
+    baca.pitch('B1'),
+    baca.rhythm("{ c'1 }"),
+    )
+
+# vcr
+
+maker(
+    ('vcr', 1),
+    baca.mmrest_transparent(),
     )
 
 # rh
@@ -59,7 +72,11 @@ maker(
     'rh',
     baca.alternate_bow_strokes(),
     baca.chunk(
-        baca.bar_extent_persistent((-3, 3)),
+        baca.bar_extent_persistent((-4, 4)),
+        baca.literal([
+            r'\once \override RHStaff.StaffSymbol.line-positions ='
+            " #'(8.2 8 7.8 -5.8 -6 -6.2)"
+            ]),
         baca.staff_lines(7),
         ),
     baca.dls_staff_padding(4),
@@ -72,12 +89,13 @@ maker(
         abjad.tweak(6).staff_padding,
         literal=True,
         ),
-    baca.staff_position(7),
+    baca.staff_position(8),
     baca.tuplet_bracket_down(),
     )
 
 maker(
     ('rh', (1, 4)),
+    baca.rest_position(0),
     baca.rhythm("{ c'4 r2 c'4 r2 c'4 r2 c'4 r2 }"),
     )
 
@@ -149,6 +167,12 @@ maker(
         right_broken=True,
         selector=baca.leaves().rleak(),
         ),
+    baca.literal([
+        r'\stopStaff',
+        r'\once \override RHStaff.StaffSymbol.line-positions ='
+        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)"
+        r'\startStaff',
+        ]),
     baca.markup(
         r'\huitzil-slide-markup',
         abjad.tweak(6).staff_padding,
@@ -161,4 +185,12 @@ maker(
         ),
     baca.rhythm("{ c'1 }"),
     baca.stem_tremolo(),
+    )
+
+maker(
+    ('rh', 25),
+    baca.staff_position(
+        6,
+        selector=baca.leaves().rleak()[-1],
+        ),
     )
