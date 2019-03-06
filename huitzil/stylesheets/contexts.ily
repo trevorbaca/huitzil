@@ -84,6 +84,9 @@
 
         \override Clef.stencil = ##f
 
+        % force hairpins below text-script accent dynamics:
+        \override DynamicLineSpanner.outside-staff-priority = 1000
+
         \override TupletBracket.direction = #up
         \override TupletBracket.staff-padding = 2
     }
