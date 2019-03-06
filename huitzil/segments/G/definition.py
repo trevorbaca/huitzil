@@ -47,12 +47,22 @@ maker(
 
 maker(
     'vc',
-    baca.clef('bass'),
+    baca.chunk(
+        baca.clef('bass'),
+        # TODO: make this have no visual effect in segment:
+        baca.not_segment(
+            baca.clef_shift('bass'),
+            ),
+        ),
     baca.mmrest_transparent(),
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
         selector=baca.leaves(),
+        ),
+    baca.pitch(
+        'A1',
+        selector=baca.leaves().rleak()[-1],
         ),
     baca.time_signature_stencil_false(),
     )
@@ -191,7 +201,7 @@ maker(
     )
 
 maker(
-    ('rh', (25, 27)),
+    ('rh', (25, 26)),
     baca.hairpin(
         '>',
         right_broken=True,
@@ -200,11 +210,20 @@ maker(
     baca.literal([
         r'\stopStaff',
         r'\once \override RHStaff.StaffSymbol.line-positions ='
-        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2 -8 -10 -12 -14 -16 -17.8 -18 -18.2)"
+        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)"
         r'\startStaff',
         ]),
     baca.make_monads('1 1'),
-    baca.staff_position(-6),
+    baca.markup(
+        r'\huitzil-directly-above-end-of-fingerboard-markup',
+        abjad.tweak(-1).self_alignment_X,
+        abjad.tweak(2).staff_padding,
+        literal=True,
+        ),
+    baca.staff_positions(
+        [-6, 0, 6],
+        selector=baca.leaves().rleak(),
+        ),
     )
 
 # stage 2 (after staff position commands)

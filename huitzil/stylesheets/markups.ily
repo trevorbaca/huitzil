@@ -24,15 +24,21 @@ huitzil-ascending-fingerboard-markup = \markup
     \box
     "ascending fingerboard to LH ..."
 
+huitzil-cadenza-markup = \markup
+    \override #'(box-padding . 0.5)
+    \box
+    "directly on bridge where IV crosses wood"
+
 huitzil-descending-fingerboard-markup = \markup
     \override #'(box-padding . 0.5)
     \box
     "descending fingerboard to bridge ..."
 
-huitzil-cadenza-markup = \markup
-    \override #'(box-padding . 0.5)
-    \box
-    "directly on bridge where IV crosses wood"
+huitzil-directly-above-end-of-fingerboard-markup = \markup
+    "(directly above end of fingerboard)"
+
+huitzil-directly-on-bridge-markup = \markup
+    "(directly on bridge)"
 
 huitzil-pitch-reenters-markup = \markup
     \override #'(box-padding . 0.5)

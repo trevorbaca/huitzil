@@ -65,12 +65,15 @@ maker(
 
 maker(
     ('vc', 14),
-    baca.clef('treble'),
+    baca.chunk(
+        baca.clef('treble'),
+        baca.clef_shift('treble'),
+        ),
     baca.note_head_duration_log(2),
     baca.note_head_no_ledgers(True),
     baca.note_head_style('do'),
     baca.rhythm("{ c'2 }"),
-    baca.staff_position(8),
+    baca.staff_position(7),
     )
 
 # vcr
@@ -84,6 +87,9 @@ maker(
 
 maker(
     'rh',
+    baca.breathe(
+        abjad.tweak((0, 2)).extra_offset,
+        ),
     baca.dls_staff_padding(7),
     baca.literal([
         r'\stopStaff',
@@ -398,7 +404,13 @@ maker(
         pieces=baca.mgroups([2, 2, 4, 2 + 1]),
         selector=baca.leaves().rleak(),
         ),
-    baca.staff_position(7),
+    baca.literal([
+        r'\stopStaff',
+        r'\once \override RHStaff.StaffSymbol.line-positions ='
+        " #'(8.2 8 7.8 -5.8 -6 -6.2)"
+        r'\startStaff',
+        ]),
+    baca.staff_position(8),
     )
 
 maker(
@@ -502,6 +514,13 @@ maker(
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(5),
+        ),
+    )
+
+maker(
+    ('rh', 22),
+    baca.only_segment(
+        baca.hairpin_to_barline(),
         ),
     )
 

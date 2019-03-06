@@ -83,13 +83,13 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "129"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-%@% - \abjad-invisible-line                                                    %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
-%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "44"                        %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
-%@% \bacaStartTextSpanMM                                                       %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
-    - \abjad-invisible-line                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'green4       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    \bacaStartTextSpanMM                                                       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca-start-ct-left-only "[5'52'']"                                      %! CLOCK_TIME
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "44"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-start-ct-left-only "[5'49'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 130 / measure 2]                                 %! _comment_measure_numbers
@@ -104,7 +104,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "130"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[5'54'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[5'51'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 131 / measure 3]                                 %! _comment_measure_numbers
@@ -118,7 +118,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "131"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[5'57'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[5'54'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 132 / measure 4]                                 %! _comment_measure_numbers
@@ -133,7 +133,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "132"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'00'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[5'57'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 133 / measure 5]                                 %! _comment_measure_numbers
@@ -148,7 +148,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "133"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'03'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'00'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 134 / measure 6]                                 %! _comment_measure_numbers
@@ -163,7 +163,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "134"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'08'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'05'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 135 / measure 7]                                 %! _comment_measure_numbers
@@ -177,7 +177,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "135"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'13'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'10'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 136 / measure 8]                                 %! _comment_measure_numbers
@@ -189,7 +189,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "136"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'16'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'13'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 137 / measure 9]                                 %! _comment_measure_numbers
@@ -203,7 +203,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "137"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'19'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'16'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 138 / measure 10]                                %! _comment_measure_numbers
@@ -218,7 +218,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "138"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'21'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'18'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 139 / measure 11]                                %! _comment_measure_numbers
@@ -233,7 +233,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "139"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'22'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'19'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 140 / measure 12]                                %! _comment_measure_numbers
@@ -247,7 +247,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "140"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'26'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'23'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 141 / measure 13]                                %! _comment_measure_numbers
@@ -266,7 +266,7 @@ E_Global_Skips = {                                                             %
     - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca-start-ct-left-only "[6'29'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'26'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 142 / measure 14]                                %! _comment_measure_numbers
@@ -278,7 +278,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "142"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'32'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'29'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 143 / measure 15]                                %! _comment_measure_numbers
@@ -290,7 +290,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "143"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'35'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'32'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 144 / measure 16]                                %! _comment_measure_numbers
@@ -309,7 +309,7 @@ E_Global_Skips = {                                                             %
     - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "66" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca-start-ct-left-only "[6'37'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'34'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 145 / measure 17]                                %! _comment_measure_numbers
@@ -328,7 +328,7 @@ E_Global_Skips = {                                                             %
     - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca-start-ct-left-only "[6'39'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'36'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 146 / measure 18]                                %! _comment_measure_numbers
@@ -340,7 +340,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "146"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'42'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'39'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 147 / measure 19]                                %! _comment_measure_numbers
@@ -352,7 +352,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "147"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'45'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'42'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 148 / measure 20]                                %! _comment_measure_numbers
@@ -364,7 +364,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "148"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'47'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'44'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 149 / measure 21]                                %! _comment_measure_numbers
@@ -376,7 +376,7 @@ E_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "149"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[6'50'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-left-only "[6'47'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [E Global_Skips measure 150 / measure 22]                                %! _comment_measure_numbers
@@ -395,7 +395,7 @@ E_Global_Skips = {                                                             %
     - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "88" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca-start-ct-both "[6'53'']" "[6'54'']"                                %! CLOCK_TIME
+    - \baca-start-ct-both "[6'50'']" "[6'51'']"                                %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
@@ -442,10 +442,6 @@ E_RH_Music_Voice = {                                                           %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    - \abjad-invisible-line                                                    %! baca_text_spanner:PiecewiseCommand(1)
-    - \baca-text-spanner-left-text "trem. moderato"                            %! baca_text_spanner:PiecewiseCommand(1)
-    - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
-    \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     b'8
@@ -662,7 +658,6 @@ E_RH_Music_Voice = {                                                           %
     e'8
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(3)
 
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -930,104 +925,111 @@ E_RH_Music_Staff = {                                                           %
 
 E_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
-    {
+    % [E Cello_Music_Voice measure 129 / measure 1]                            %! _comment_measure_numbers
+    \override MultiMeasureRest.transparent = ##t                               %! baca_mmrest_transparent:OverrideCommand(1)
+    \override Score.BarLine.transparent = ##t                                  %! baca_bar_line_transparent:OverrideCommand(1)
+    \override Score.SpanBar.transparent = ##t                                  %! baca_span_bar_transparent:OverrideCommand(1)
+    \override Score.TimeSignature.stencil = ##f                                %! baca_time_signature_stencil_false:OverrideCommand(1)
+    \clef "bass"                                                               %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
+%@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
+    R1 * 1/2                                                                   %! _call_rhythm_commands
+    ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+    \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        % [E Cello_Music_Voice measure 129 / measure 1]                        %! _comment_measure_numbers
-        \override Score.BarLine.transparent = ##t                              %! baca_bar_line_transparent:OverrideCommand(1)
-        \override Score.SpanBar.transparent = ##t                              %! baca_span_bar_transparent:OverrideCommand(1)
-        \override Score.TimeSignature.stencil = ##f                            %! baca_time_signature_stencil_false:OverrideCommand(1)
-        \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
-        \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
-    %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        bf,,!1 * 1/2
-        ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+    \tweak edge-height #'(0.7 . 0)
+    \times 2/3 {
+
+        % [E Cello_Music_Voice measure 130 / measure 2]                        %! _comment_measure_numbers
+        R1 * 13/16                                                             %! _call_rhythm_commands
 
     }
 
-    <<                                                                         %! _make_multimeasure_rest_container
-
-        \context Voice = "Cello_Music_Voice"                                   %! _make_multimeasure_rest_container
-        {                                                                      %! _make_multimeasure_rest_container
-
-            % [E Cello_Music_Voice measure 130 / measure 2]                    %! _comment_measure_numbers
-            \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            c'1 * 13/24                                                        %! _make_multimeasure_rest_container
-
-        }                                                                      %! _make_multimeasure_rest_container
-
-        \context Voice = "Cello_Rest_Voice"                                    %! _make_multimeasure_rest_container
-        {                                                                      %! _make_multimeasure_rest_container
-
-            % [E Cello_Rest_Voice measure 130 / measure 2]                     %! _comment_measure_numbers
-            \once \override MultiMeasureRest.transparent = ##t                 %! baca_mmrest_transparent:OverrideCommand(1)
-            R1 * 13/24                                                         %! _make_multimeasure_rest_container
-
-        }                                                                      %! _make_multimeasure_rest_container
-
-    >>                                                                         %! _make_multimeasure_rest_container
-
     % [E Cello_Music_Voice measure 131 / measure 3]                            %! _comment_measure_numbers
-    \override MultiMeasureRest.transparent = ##t                               %! baca_mmrest_transparent:OverrideCommand(1)
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [E Cello_Music_Voice measure 132 / measure 4]                            %! _comment_measure_numbers
-    R1 * 7/12                                                                  %! _make_measure_silences
+    \tweak edge-height #'(0.7 . 0)
+    \times 2/3 {
 
-    % [E Cello_Music_Voice measure 133 / measure 5]                            %! _comment_measure_numbers
-    R1 * 53/60                                                                 %! _make_measure_silences
+        % [E Cello_Music_Voice measure 132 / measure 4]                        %! _comment_measure_numbers
+        R1 * 7/8                                                               %! _call_rhythm_commands
 
-    % [E Cello_Music_Voice measure 134 / measure 6]                            %! _comment_measure_numbers
-    R1 * 23/24                                                                 %! _make_measure_silences
+    }
+
+    \tweak edge-height #'(0.7 . 0)
+    \times 8/15 {
+
+        % [E Cello_Music_Voice measure 133 / measure 5]                        %! _comment_measure_numbers
+        R1 * 53/32                                                             %! _call_rhythm_commands
+
+    }
+
+    \tweak edge-height #'(0.7 . 0)
+    \times 2/3 {
+
+        % [E Cello_Music_Voice measure 134 / measure 6]                        %! _comment_measure_numbers
+        R1 * 23/16                                                             %! _call_rhythm_commands
+
+    }
 
     % [E Cello_Music_Voice measure 135 / measure 7]                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 136 / measure 8]                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 137 / measure 9]                            %! _comment_measure_numbers
-    R1 * 3/8                                                                   %! _make_measure_silences
+    R1 * 3/8                                                                   %! _call_rhythm_commands
 
-    % [E Cello_Music_Voice measure 138 / measure 10]                           %! _comment_measure_numbers
-    R1 * 1/3                                                                   %! _make_measure_silences
+    \tweak edge-height #'(0.7 . 0)
+    \times 2/3 {
 
-    % [E Cello_Music_Voice measure 139 / measure 11]                           %! _comment_measure_numbers
-    R1 * 11/15                                                                 %! _make_measure_silences
+        % [E Cello_Music_Voice measure 138 / measure 10]                       %! _comment_measure_numbers
+        R1 * 1/2                                                               %! _call_rhythm_commands
+
+    }
+
+    \tweak edge-height #'(0.7 . 0)
+    \times 8/15 {
+
+        % [E Cello_Music_Voice measure 139 / measure 11]                       %! _comment_measure_numbers
+        R1 * 11/8                                                              %! _call_rhythm_commands
+
+    }
 
     % [E Cello_Music_Voice measure 140 / measure 12]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 141 / measure 13]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 142 / measure 14]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 143 / measure 15]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 144 / measure 16]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 145 / measure 17]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 146 / measure 18]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 147 / measure 19]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 148 / measure 20]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 149 / measure 21]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 150 / measure 22]                           %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_measure_silences
+    R1 * 1/2                                                                   %! _call_rhythm_commands
     \revert MultiMeasureRest.transparent                                       %! baca_mmrest_transparent:OverrideCommand(2)
     \revert Score.BarLine.transparent                                          %! baca_bar_line_transparent:OverrideCommand(2)
     \revert Score.SpanBar.transparent                                          %! baca_span_bar_transparent:OverrideCommand(2)

@@ -37,10 +37,6 @@ maker(
         baca.Ritardando(),
         selector=baca.leaf(18 - 1),
         ),
-    baca.metronome_mark(
-        '44',
-        selector=baca.leaf(22 - 1),
-        ),
     )
 
 # vc
@@ -65,12 +61,25 @@ maker(
 
 maker(
     ('vc', 14),
-    baca.clef('treble'),
+    baca.chunk(
+        baca.clef('treble'),
+        baca.clef_shift('treble'),
+        ),
     baca.note_head_duration_log(2),
     baca.note_head_no_ledgers(True),
     baca.note_head_style('do'),
     baca.rhythm("{ c'2 }"),
-    baca.staff_position(8),
+    baca.staff_position(7),
+    )
+
+maker(
+    ('vc', 23),
+    baca.chunk(
+        baca.clef('bass'),
+        baca.clef_shift('bass'),
+        ),
+    baca.pitch('Bb1'),
+    baca.rhythm("{ c'1 * 1/2 }"),
     )
 
 # vcr
@@ -84,6 +93,7 @@ maker(
 
 maker(
     'rh',
+    # TODO: figure out why dls staff padding not obeyed in one system in score:
     baca.dls_staff_padding(7),
     baca.literal([
         r'\stopStaff',
@@ -398,7 +408,19 @@ maker(
         pieces=baca.mgroups([2, 2, 4, 2 + 1]),
         selector=baca.leaves().rleak(),
         ),
-    baca.staff_position(7),
+    baca.literal([
+        r'\stopStaff',
+        r'\once \override RHStaff.StaffSymbol.line-positions ='
+        " #'(8.2 8 7.8 -5.8 -6 -6.2)"
+        r'\startStaff',
+        ]),
+    baca.markup(
+        r'\huitzil-directly-on-bridge-markup',
+        abjad.tweak(-0.85).self_alignment_X,
+        abjad.tweak(2).staff_padding,
+        literal=True,
+        ),
+    baca.staff_position(8),
     )
 
 maker(
@@ -466,6 +488,19 @@ maker(
     )
 
 maker(
+    ('rh', (18, 21)),
+    # TODO: make +LEDGER_SCORE tag work
+    #baca.tag(
+    #    '+LEDGER_SCORE',
+    #    baca.hairpin_to_barline(),
+    #    ),
+    baca.tag(
+        '+SCORE',
+        baca.hairpin_to_barline(),
+        ),
+    )
+
+maker(
     ('rh', (18, 23)),
     baca.make_monads('1/2  1/2  1/2  1/2  1/2  1/2'),
     baca.markup(
@@ -505,6 +540,33 @@ maker(
         ),
     )
 
+maker(
+    ('rh', 22),
+    baca.only_segment(
+        baca.hairpin_to_barline(),
+        ),
+    )
+
+maker(
+    ('rh', 23),
+    baca.literal([
+        r'\stopStaff',
+        r'\once \override RHStaff.StaffSymbol.line-positions ='
+        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)"
+        r'\startStaff',
+        ]),
+    baca.markup(
+        r'\huitzil-slide-markup',
+        abjad.tweak(-0.85).self_alignment_X,
+        abjad.tweak(6).staff_padding,
+        literal=True,
+        ),
+    baca.staff_position(
+        6,
+        selector=baca.leaves().rleak()[-1],
+        ),
+    )
+
 # stage 2 (after staff position settings)
 
 maker(
@@ -517,6 +579,7 @@ maker(
 maker(
     'rh',
     baca.glissando(
-        selector=baca.leaves(),
+        right_broken=True,
+        selector=baca.leaves().rleak(),
         ),
     )

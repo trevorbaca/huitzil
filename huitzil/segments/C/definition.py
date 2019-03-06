@@ -509,6 +509,12 @@ maker(
 maker(
     ('rh', 26),
     baca.make_monads('1/2'),
+    baca.markup(
+        r'\huitzil-directly-above-end-of-fingerboard-markup',
+        abjad.tweak(-0.95).self_alignment_X,
+        abjad.tweak(2).staff_padding,
+        literal=True,
+        ),
     baca.staff_positions(
         [-6],
         allow_repeats=True,
