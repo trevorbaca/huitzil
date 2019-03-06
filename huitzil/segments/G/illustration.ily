@@ -650,6 +650,7 @@ G_RH_Music_Voice = {                                                           %
     \glissando                                                                 %! baca_glissando
 
     % [G RH_Music_Voice measure 199 / measure 26]                              %! _comment_measure_numbers
+    \parenthesize                                                              %! baca_literal:IndicatorCommand
     c'1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)

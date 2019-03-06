@@ -236,5 +236,18 @@ maker(
 
 maker(
     ('vc', 54),
-    baca.breathe(),
+    baca.breathe(
+        abjad.tweak(False).X_extent,
+        abjad.tweak((-1.5, 0)).extra_offset,
+        ),
+    )
+
+# rh
+
+maker(
+    'rh',
+    baca.literal(r'\stopStaff'),
+    baca.mmrest_transparent(
+        selector=baca.leaves(),
+        ),
     )

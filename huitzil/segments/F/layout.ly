@@ -1,4 +1,4 @@
-% first_page_number = 7
+% first_page_number = 6
 % page_count = 1
 % measure_count = 23 + 1
 % time_signatures = [
