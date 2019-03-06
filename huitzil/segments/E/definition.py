@@ -31,6 +31,10 @@ maker(
     'Global_Skips',
     baca.metronome_mark(
         '44',
+        selector=baca.leaf(1 - 1),
+        ),
+    baca.metronome_mark(
+        '44',
         selector=baca.leaf(13 - 1),
         ),
     baca.metronome_mark(
@@ -59,7 +63,6 @@ maker(
 
 maker(
     'vc',
-    baca.clef('bass'),
     baca.mmrest_transparent(),
     baca.new(
         baca.bar_line_transparent(),
@@ -67,19 +70,6 @@ maker(
         selector=baca.leaves(),
         ),
     baca.time_signature_stencil_false(),
-    )
-
-maker(
-    ('vc', 1),
-    baca.pitch('Bb1'),
-    baca.rhythm("{ c'1 * 1/2 }"),
-    )
-
-# vcr
-
-maker(
-    ('vcr', 2),
-    baca.mmrest_transparent(),
     )
 
 # rh
@@ -122,15 +112,6 @@ maker(
         direction=abjad.Down,
         literal=True,
         selector=baca.leaves(),
-        ),
-    )
-
-maker(
-    ('rh', (1, 9)),
-    baca.text_spanner(
-        'trem. moderato ||',
-        abjad.tweak(6).staff_padding,
-        bookend=False,
         ),
     )
 
