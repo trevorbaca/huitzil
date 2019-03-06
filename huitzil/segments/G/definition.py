@@ -207,6 +207,10 @@ maker(
         right_broken=True,
         selector=baca.leaves()[-1:].rleak(),
         ),
+    baca.literal(
+        r'\parenthesize',
+        selector=baca.pleaf(-1),
+        ),
     baca.literal([
         r'\stopStaff',
         r'\once \override RHStaff.StaffSymbol.line-positions ='

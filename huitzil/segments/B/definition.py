@@ -79,10 +79,10 @@ maker(
             ]),
         baca.staff_lines(7),
         ),
-    baca.dls_staff_padding(4),
+    baca.dls_staff_padding(2),
     baca.dynamic(
         'mp-sempre',
-        abjad.tweak(-0.75).self_alignment_X,
+        abjad.tweak(-0.9).self_alignment_X,
         ),
     baca.markup(
         r'\huitzil-cadenza-markup',

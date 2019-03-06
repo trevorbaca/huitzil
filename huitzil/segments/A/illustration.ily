@@ -940,6 +940,8 @@ A_Global_Skips = {                                                             %
 A_RH_Music_Voice = {                                                           %! abjad.Path.extern
 
     % [A RH_Music_Voice measure 1]                                             %! _comment_measure_numbers
+    \stopStaff                                                                 %! baca_literal:IndicatorCommand
+    \override MultiMeasureRest.transparent = ##t                               %! baca_mmrest_transparent:OverrideCommand(1)
     \clef "percussion"                                                         %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
     \once \override RHStaff.Clef.color = #(x11-color 'DarkViolet)              %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                         %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1105,6 +1107,7 @@ A_RH_Music_Voice = {                                                           %
 
     % [A RH_Music_Voice measure 54]                                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
+    \revert MultiMeasureRest.transparent                                       %! baca_mmrest_transparent:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -3430,6 +3433,8 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Tie.color = #blue
         ef,!4
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+        \tweak X-extent ##f                                                    %! baca_breathe:IndicatorCommand
+        \tweak extra-offset #'(-1.5 . 0)                                       %! baca_breathe:IndicatorCommand
         \breathe                                                               %! baca_breathe:IndicatorCommand
 
     }
