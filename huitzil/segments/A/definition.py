@@ -214,6 +214,18 @@ maker(
     )
 
 maker(
+    ('vc', 8),
+    baca.suite(
+        baca.untie_to(
+            selector=baca.pleaf(-1),
+            ),
+        baca.repeat_tie_to(
+            selector=baca.pleaf(-1),
+            ),
+        ),
+    )
+
+maker(
     ('vc', 20),
     baca.repeat_tie_to(),
     )

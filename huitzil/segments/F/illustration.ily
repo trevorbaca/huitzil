@@ -450,18 +450,10 @@ F_RH_Music_Voice = {                                                           %
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)           %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     d8
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:REDUNDANT_DYNAMIC:baca_hairpin:PiecewiseCommand(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:REDUNDANT_DYNAMIC:baca_hairpin:PiecewiseCommand(1)
     _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    - \abjad-invisible-line                                                    %! baca_text_spanner:PiecewiseCommand(1)
-    - \baca-text-spanner-left-text "trem. mod."                                %! baca_text_spanner:PiecewiseCommand(1)
-    - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
-    \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
+    - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    - \tweak stencil #constante-hairpin                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+    \<                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \glissando                                                                 %! baca_glissando
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
@@ -482,7 +474,6 @@ F_RH_Music_Voice = {                                                           %
     % [F RH_Music_Voice measure 152 / measure 2]                               %! _comment_measure_numbers
     c'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    \!                                                                         %! baca_hairpin:PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
@@ -735,6 +726,9 @@ F_RH_Music_Voice = {                                                           %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    - \tweak self-alignment-X #-0.9                                            %! baca_markup:IndicatorCommand
+    - \tweak staff-padding #2                                                  %! baca_markup:IndicatorCommand
+    ^ \huitzil-directly-on-bridge-markup                                       %! baca_markup:IndicatorCommand
     _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -803,7 +797,6 @@ F_RH_Music_Voice = {                                                           %
         d''4
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         _ \baca-fffz-markup                                                    %! baca_markup:IndicatorCommand
-        \stopTextSpan                                                          %! baca_text_spanner:PiecewiseCommand(3)
 
     }
 
@@ -817,7 +810,7 @@ F_RH_Music_Voice = {                                                           %
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca_text_spanner:PiecewiseCommand(1)
-    - \baca-text-spanner-left-text "sub. trem. più stretto"                    %! baca_text_spanner:PiecewiseCommand(1)
+    - \baca-text-spanner-left-text "(trem. mod.)"                              %! baca_text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
@@ -827,7 +820,7 @@ F_RH_Music_Voice = {                                                           %
     _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca_text_spanner:PiecewiseCommand(1)
-    - \baca-text-spanner-left-text "più largo"                                 %! baca_text_spanner:PiecewiseCommand(1)
+    - \baca-text-spanner-left-text "più stretto"                               %! baca_text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
@@ -837,7 +830,7 @@ F_RH_Music_Voice = {                                                           %
     _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca_text_spanner:PiecewiseCommand(1)
-    - \baca-text-spanner-left-text "più stretto"                               %! baca_text_spanner:PiecewiseCommand(1)
+    - \baca-text-spanner-left-text "più largo"                                 %! baca_text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
@@ -847,8 +840,8 @@ F_RH_Music_Voice = {                                                           %
     _ \baca-mfz-markup                                                         %! baca_markup:IndicatorCommand
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca_text_spanner:PiecewiseCommand(1)
-    - \baca-text-spanner-left-text "più largo"                                 %! baca_text_spanner:PiecewiseCommand(1)
-    - \baca-text-spanner-right-text "trem. mod."                               %! baca_text_spanner:PiecewiseCommand(1)
+    - \baca-text-spanner-left-text "più stretto"                               %! baca_text_spanner:PiecewiseCommand(1)
+    - \baca-text-spanner-right-text "mod."                                     %! baca_text_spanner:PiecewiseCommand(1)
     - \tweak bound-details.right.padding #0.5                                  %! baca_text_spanner:PiecewiseCommand(1)
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! baca_text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
@@ -867,9 +860,12 @@ F_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     _ \baca-mpz-markup                                                         %! baca_markup:IndicatorCommand
-    \tweak X-extent ##f                                                        %! baca_breathe:IndicatorCommand
-    \tweak extra-offset #'(-1.5 . 2)                                           %! baca_breathe:IndicatorCommand
-    \breathe                                                                   %! baca_breathe:IndicatorCommand
+%%% \tweak X-extent ##f                                                        %! baca_breathe:+SCORE:IndicatorCommand
+%%% \tweak extra-offset #'(0 . 5)                                              %! baca_breathe:+SCORE:IndicatorCommand
+%%% \breathe                                                                   %! baca_breathe:+SCORE:IndicatorCommand
+    \tweak X-extent ##f                                                        %! baca_breathe:+SEGMENT:IndicatorCommand
+    \tweak extra-offset #'(-1.5 . 2)                                           %! baca_breathe:+SEGMENT:IndicatorCommand
+    \breathe                                                                   %! baca_breathe:+SEGMENT:IndicatorCommand
     \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_alignment_x:OverrideCommand(2)
     \revert TextScript.self-alignment-X                                        %! baca_text_script_self_alignment_x:OverrideCommand(2)
     \revert TextScript.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
@@ -966,8 +962,8 @@ F_Cello_Music_Voice = {                                                        %
     {
 
         % [F Cello_Music_Voice measure 158 / measure 8]                        %! _comment_measure_numbers
-        \parenthesize                                                          %! baca_literal:IndicatorCommand
         bf,,!1 * 107/30
+        \repeatTie                                                             %! TieCorrectionCommand
         \glissando                                                             %! baca_glissando
 
         cf,!1 * 1/5
@@ -980,6 +976,8 @@ F_Cello_Music_Voice = {                                                        %
         % [F Cello_Music_Voice measure 164 / measure 14]                       %! _comment_measure_numbers
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_164:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_164:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+        \stopStaff                                                             %! baca_literal:IndicatorCommand
+        \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff %! baca_literal:IndicatorCommand
         \once \override NoteHead.duration-log = #2                             %! baca_note_head_color:OverrideCommand(1)
         \once \override NoteHead.no-ledgers = ##t                              %! baca_note_head_extra_offset:OverrideCommand(1)
         \once \override NoteHead.style = #'do                                  %! baca_note_head_stencil_false:OverrideCommand(1)

@@ -54,8 +54,8 @@ maker(
 
 maker(
     ('vc', (8, 13)),
-    baca.literal(r'\parenthesize'),
     baca.pitches('B1 C2'),
+    baca.repeat_tie_to(),
     baca.rhythm("{ c'1 * 107/30 c'1 * 1/5 }"),
     )
 
@@ -65,6 +65,11 @@ maker(
         baca.clef('treble'),
         baca.clef_shift('treble'),
         ),
+    baca.literal([
+        r'\stopStaff',
+        r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
+        r'\startStaff',
+        ]),
     baca.note_head_duration_log(2),
     baca.note_head_no_ledgers(True),
     baca.note_head_style('do'),
@@ -78,6 +83,11 @@ maker(
         baca.clef('bass'),
         baca.clef_shift('bass'),
         ),
+    baca.literal([
+        r'\stopStaff',
+        r"\once \override Staff.StaffSymbol.line-count = 5",
+        r'\startStaff',
+        ]),
     baca.pitch('Bb1'),
     baca.rhythm("{ c'1 * 1/2 }"),
     )
@@ -93,13 +103,17 @@ maker(
 
 maker(
     'rh',
-    baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
-    baca.literal([
-        r'\stopStaff',
-        r'\once \override RHStaff.StaffSymbol.line-positions ='
-        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-        r'\startStaff',
-        ]),
+    baca.only_segment(
+        baca.chunk(
+            baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
+            baca.literal([
+                r'\stopStaff',
+                r'\once \override RHStaff.StaffSymbol.line-positions ='
+                " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
+                r'\startStaff',
+                ]),
+            ),
+        ),
     baca.stem_tremolo(
         selector=baca.pleaves(),
         ),
@@ -110,11 +124,6 @@ maker(
 
 maker(
     ('rh', 1),
-    baca.hairpin(
-        'f -- !',
-        abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
-        ),
     baca.make_monads('1/8  1/8  1/8  1/8'),
     baca.markup(
         r'\baca-ffz-markup',
@@ -125,15 +134,6 @@ maker(
     baca.staff_positions(
         [-6, -4, -2, 0],
         allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (1, 17)),
-    baca.text_spanner(
-        'trem. mod. ||',
-        abjad.tweak(6).staff_padding,
-        bookend=False,
         ),
     )
 
@@ -402,8 +402,16 @@ maker(
 
 maker(
     ('rh', (14, 23)),
+    # FUTURE: use this when LilyPond fixes DynamicLine Spanner bug:
+    #baca.hairpin(
+    #    'mp -- p -- pp -- p -- !',
+    #    pieces=baca.mgroups([2, 2, 4, 2 + 1]),
+    #    selector=baca.leaves().rleak(),
+    #    ),
+    # FUTURE: replace this when LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
-        'mp -- p -- pp -- p -- !',
+        'mp -- p -- pp -- p',
+        bookend=False,
         pieces=baca.mgroups([2, 2, 4, 2 + 1]),
         selector=baca.leaves().rleak(),
         ),
@@ -479,8 +487,7 @@ maker(
 maker(
     ('rh', (18, 22)),
     baca.text_spanner(
-        'sub. trem. più stretto => più largo => più stretto => più largo =>'
-            ' trem. mod.',
+        '(trem. mod.) => più stretto => più largo => più stretto => mod.',
         abjad.tweak(6).staff_padding,
         pieces=baca.lparts([1, 1, 1, 1 + 1]),
         ),
@@ -555,7 +562,7 @@ maker(
         r'\startStaff',
         ]),
     baca.markup(
-        r'\huitzil-slide-markup',
+        r'\huitzil-sliding-back-onto-string-markup',
         abjad.tweak(-0.85).self_alignment_X,
         abjad.tweak(6).staff_padding,
         literal=True,

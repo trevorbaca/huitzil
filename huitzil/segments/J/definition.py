@@ -47,6 +47,14 @@ maker(
         baca.span_bar_transparent(),
         selector=baca.leaves(),
         ),
+    baca.only_segment(
+        baca.literal([
+            r'\stopStaff',
+            r'\once \override Staff.StaffSymbol.line-positions ='
+            " #'(4 -4)",
+            r'\startStaff',
+            ]),
+        ),
     baca.time_signature_stencil_false(),
     )
 
@@ -79,7 +87,7 @@ maker(
 
 maker(
     'rh',
-    baca.literal(r'\override DynamicLineSpanner.staff-padding = 5'),
+    baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
     baca.only_segment(
         baca.literal([
             r'\stopStaff',
@@ -98,6 +106,11 @@ maker(
 
 maker(
     ('rh', (1, 10)),
+    baca.markup(
+        r'\baca-mpz-markup',
+        direction=abjad.Down,
+        literal=True,
+        ),
     baca.hairpin(
         'mp > pp <',
         abjad.tweak(True).to_barline,
@@ -109,6 +122,9 @@ maker(
 maker(
     ('rh', (1, 12)),
     baca.make_monads('1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2'),
+    baca.repeat_tie_to(
+        selector=baca.pleaves()[1:],
+        ),
     baca.staff_position(8),
     baca.text_spanner(
         'larg. => strett. =>',

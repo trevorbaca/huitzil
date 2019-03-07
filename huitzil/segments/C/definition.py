@@ -76,13 +76,17 @@ maker(
 
 maker(
     'rh',
-    baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
-    baca.literal([
-        r'\stopStaff',
-        r'\once \override RHStaff.StaffSymbol.line-positions ='
-        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-        r'\startStaff',
-        ]),
+    baca.only_segment(
+        baca.chunk(
+            baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
+            baca.literal([
+                r'\stopStaff',
+                r'\once \override RHStaff.StaffSymbol.line-positions ='
+                " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
+                r'\startStaff',
+                ]),
+            ),
+        ),
     baca.stem_tremolo(
         selector=baca.pleaves(),
         ),
@@ -102,11 +106,6 @@ maker(
 
 maker(
     ('rh', (1, 3)),
-    baca.hairpin(
-        '(mp) -- !',
-        abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
-        ),
     baca.markup(
         r'\baca-mfz-markup',
         direction=abjad.Down,
@@ -449,8 +448,9 @@ maker(
 maker(
     ('rh', (20, 26)),
     baca.hairpin(
-        'p < f',
-        selector=baca.leaves()[1:],
+        'p < f -- !',
+        pieces=baca.lparts([5, 1 + 1]),
+        selector=baca.leaves()[1:].rleak(),
         ),
     baca.markup(
         r'\baca-ffz-markup',
@@ -464,7 +464,7 @@ maker(
     ('rh', (21, 26)),
     baca.text_spanner(
         'sub. trem. mod. => più stretto => più largo => più stretto =>'
-            ' più largo => più stretto',
+            ' più largo => trem. mod.',
         abjad.tweak(6).staff_padding,
         pieces=baca.lparts([1, 1, 1, 1, 2]),
         ),
@@ -511,7 +511,7 @@ maker(
     baca.make_monads('1/2'),
     baca.markup(
         r'\huitzil-directly-above-end-of-fingerboard-markup',
-        abjad.tweak(-0.15).self_alignment_X,
+        abjad.tweak(-0.75).self_alignment_X,
         abjad.tweak(2).staff_padding,
         literal=True,
         ),

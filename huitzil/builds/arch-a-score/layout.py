@@ -25,9 +25,9 @@ breaks = baca.breaks(
     baca.page( # 3
         [88, 15, (10, 17)],
         [93, 60, (10, 17)],
-        [99, 105, (10, 17)],
-        [106, 150, (10, 17)],
-        [112, 195, (10, 17)],
+        [100, 105, (10, 17)],
+        [107, 150, (10, 17)],
+        [113, 195, (10, 17)],
         [118, 240, (10, 17)],
         ),
     baca.page( # 4
@@ -35,7 +35,7 @@ breaks = baca.breaks(
         [129, 60, (10, 17)],
         [134, 105, (10, 17)],
         [141, 150, (10, 17)],
-        [151, 195, (10, 17)],
+        [152, 195, (10, 17)],
         [158, 240, (10, 17)],
         ),
     baca.page( # 5
@@ -67,10 +67,12 @@ spacing.override(33, (1, 16))
 spacing.override(37, (1, 16))
 spacing.override((55, 78), (1, 24))
 spacing.override((55, 58), (1, 16))
+spacing.override(86, (1, 16))
 spacing.override((135, 137), (1, 16))
 spacing.override(140, (1, 16))
+spacing.override((141, 150), (1, 32))
 spacing.override((198, 199), (1, 16))
 spacing.override((206, 208), (1, 16))
 spacing.override(211, (1, 16))
-spacing.override((212, 215), (1, 32))
-spacing.override(219, (1, 32))
+spacing.override((212, 215), (1, 20))
+spacing.override(219, (1, 20))

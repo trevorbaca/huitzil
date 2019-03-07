@@ -48,6 +48,11 @@ maker(
 maker(
     'vc',
     baca.clef('bass'),
+    baca.literal([
+        r'\stopStaff',
+        r"\once \override Staff.StaffSymbol.line-count = 5",
+        r'\startStaff',
+        ]),
     baca.mmrest_transparent(),
     baca.new(
         baca.bar_line_transparent(),
@@ -115,7 +120,13 @@ maker(
     baca.markup(
         r'\huitzil-ascending-fingerboard-markup',
         abjad.tweak(-1).self_alignment_X,
-        abjad.tweak(2).staff_padding,
+        abjad.tweak(4.5).staff_padding,
+        literal=True,
+        ),
+    baca.markup(
+        r'\huitzil-directly-above-end-of-fingerboard-markup',
+        abjad.tweak(-1).self_alignment_X,
+        abjad.tweak(1).staff_padding,
         literal=True,
         ),
     baca.stem_tremolo(
@@ -168,15 +179,15 @@ maker(
 maker(
     ('rh', 13),
     baca.markup(
-        r'\huitzil-as-close-to-lh-markup',
-        abjad.tweak(-0.65).self_alignment_X,
+        r'\huitzil-close-to-lh-markup',
+        abjad.tweak(-0.5).self_alignment_X,
         abjad.tweak(2).staff_padding,
         literal=True,
         ),
     )
 
 maker(
-    ('rh', 15),
+    ('rh', 14),
     baca.markup(
         r'\huitzil-descending-fingerboard-markup',
         abjad.tweak(-1).self_alignment_X,
@@ -213,8 +224,8 @@ maker(
         ]),
     baca.make_monads('1 1'),
     baca.markup(
-        r'\huitzil-directly-above-end-of-fingerboard-markup',
-        abjad.tweak(-1).self_alignment_X,
+        r'\huitzil-directly-above-end-of-fingerboard-column-markup',
+        abjad.tweak(-0.5).self_alignment_X,
         abjad.tweak(2).staff_padding,
         literal=True,
         ),

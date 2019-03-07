@@ -1443,7 +1443,6 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
         af,!4
-        ~
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1454,6 +1453,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
         af,!16
+        \repeatTie                                                             %! TieCorrectionCommand
 
     }
 
