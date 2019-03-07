@@ -117,10 +117,20 @@ maker(
 
 maker(
     ('rh', (1, 3)),
-    baca.hairpin(
-        'mp -- !',
-        abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
+    # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
+    #baca.hairpin(
+    #    'mp -- !',
+    #    abjad.tweak(True).to_barline,
+    #    selector=baca.leaves().rleak(),
+    #    ),
+    # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
+    baca.chunk(
+        baca.dynamic('mp'),
+        baca.hairpin(
+            'mp -- !',
+            abjad.tweak(True).to_barline,
+            selector=baca.leaves()[1:].rleak(),
+            ),
         ),
     baca.markup(
         r'\baca-mfz-markup',

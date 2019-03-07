@@ -515,6 +515,7 @@ B_RH_Music_Voice = {                                                           %
 
         \times 2/3 {
 
+        %%% \once \override TupletNumber.font-size = -2                        %! baca_literal:+SCORE:IndicatorCommand
             d''8
             - \upbow                                                           %! baca_alternate_bow_strokes:IndicatorCommand
 
@@ -530,6 +531,7 @@ B_RH_Music_Voice = {                                                           %
 
         \times 2/3 {
 
+        %%% \once \override TupletNumber.font-size = -2                        %! baca_literal:+SCORE:IndicatorCommand
             d''8
             - \upbow                                                           %! baca_alternate_bow_strokes:IndicatorCommand
 

@@ -511,7 +511,7 @@ maker(
     baca.make_monads('1/2'),
     baca.markup(
         r'\huitzil-directly-above-end-of-fingerboard-markup',
-        abjad.tweak(-0.95).self_alignment_X,
+        abjad.tweak(-0.15).self_alignment_X,
         abjad.tweak(2).staff_padding,
         literal=True,
         ),

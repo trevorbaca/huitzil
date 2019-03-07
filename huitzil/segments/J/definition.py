@@ -21,6 +21,7 @@ maker = baca.SegmentMaker(
         ],
     clock_time_extra_offset=(0, 13),
     final_segment=True,
+    remove_phantom_measure=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     validate_measure_count=10,
@@ -51,12 +52,25 @@ maker(
 
 maker(
     ('vc', -1),
-    baca.chunk(
-        baca.mark(r'\huitzil-colophon-markup'),
-        baca.rehearsal_mark_down(),
-        baca.rehearsal_mark_padding(6),
-        selector=baca.leaves().rleak()[-1],
+    #baca.chunk(
+    #    baca.mark(r'\huitzil-colophon-markup'),
+    #    baca.rehearsal_mark_down(),
+    #    baca.rehearsal_mark_padding(4),
+    #    selector=baca.leaves().rleak()[-1],
+    #    ),
+    baca.literal([
+        r'\once \override Score.RehearsalMark.direction = #down',
+        r'\once \override Score.RehearsalMark.padding = 4',
+        r'\mark \huitzil-colophon-markup',
+        ],
+        format_slot='after',
         ),
+    baca.literal([
+        r"\override Score.BarLine.X-extent = #'(0 . 8)",
+        r"\override Score.BarLine.extra-offset = #'(8 . 0)",
+        r"\override Score.RehearsalMark.extra-offset = #'(4 . 0)",
+        r"\override Score.SpanBar.extra-offset = #'(8 . 0)",
+        ]),
     )
 
 # vcr
