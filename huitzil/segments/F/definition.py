@@ -104,13 +104,17 @@ maker(
             abjad.tweak((-1.5, 2)).extra_offset,
             ),
         ),
-    baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
-    baca.literal([
-        r'\stopStaff',
-        r'\once \override RHStaff.StaffSymbol.line-positions ='
-        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-        r'\startStaff',
-        ]),
+    baca.only_segment(
+        baca.chunk(
+            baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
+            baca.literal([
+                r'\stopStaff',
+                r'\once \override RHStaff.StaffSymbol.line-positions ='
+                " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
+                r'\startStaff',
+                ]),
+            ),
+        ),
     baca.stem_tremolo(
         selector=baca.pleaves(),
         ),
@@ -121,11 +125,6 @@ maker(
 
 maker(
     ('rh', 1),
-#    baca.hairpin(
-#        'f -- !',
-#        abjad.tweak(True).to_barline,
-#        selector=baca.leaves().rleak(),
-#        ),
     baca.make_monads('1/8  1/8  1/8  1/8'),
     baca.markup(
         r'\baca-ffz-markup',
@@ -156,11 +155,19 @@ maker(
 
 maker(
     ('rh', (2, 13)),
+    # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
+    #baca.hairpin(
+    #    'mp > p <',
+    #    bookend=False,
+    #    pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
+    #    selector=baca.leaves().rleak(),
+    #    ),
+    # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
         'mp > p <',
-        bookend=False,
-        pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
-        selector=baca.leaves().rleak(),
+        #bookend=False,
+        pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
+        selector=baca.leaves()[:-1],
         ),
     )
 

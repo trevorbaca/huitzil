@@ -87,6 +87,8 @@ maker(
 
 maker(
     'rh',
+    # TODO: fix right-broken text spanners and replace this:
+    baca.literal(r'<> \stopTextSpan'),
     baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
     baca.only_segment(
         baca.literal([

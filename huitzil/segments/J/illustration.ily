@@ -170,6 +170,7 @@ J_RH_Music_Voice = {                                                           %
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 7                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    <> \stopTextSpan                                                           %! baca_literal:IndicatorCommand
     \override DynamicLineSpanner.staff-padding = 7                             %! baca_literal:IndicatorCommand
     \stopStaff                                                                 %! baca_literal:+SEGMENT:IndicatorCommand
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2) %! baca_literal:+SEGMENT:IndicatorCommand

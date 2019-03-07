@@ -845,9 +845,6 @@ I_RH_Music_Voice = {                                                           %
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca_text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "largo"                                     %! baca_text_spanner:PiecewiseCommand(1)
-    - \baca-text-spanner-right-text "stretto"                                  %! baca_text_spanner:PiecewiseCommand(1)
-    - \tweak bound-details.right.padding #0.5                                  %! baca_text_spanner:PiecewiseCommand(1)
-    - \tweak bound-details.right.stencil-align-dir-y #center                   %! baca_text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1)
     \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1)
 
@@ -856,6 +853,10 @@ I_RH_Music_Voice = {                                                           %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     _ \baca-mpz-markup                                                         %! baca_markup:IndicatorCommand
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(1):right_broken
+    - \abjad-dashed-line-with-arrow                                            %! baca_text_spanner:PiecewiseCommand(1):right_broken
+    - \baca-text-spanner-left-text "stretto"                                   %! baca_text_spanner:PiecewiseCommand(1):right_broken
+    - \tweak staff-padding #6                                                  %! baca_text_spanner:PiecewiseCommand(1):right_broken
+    \startTextSpan                                                             %! baca_text_spanner:PiecewiseCommand(1):right_broken
     \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_alignment_x:OverrideCommand(2)
     \revert TextScript.self-alignment-X                                        %! baca_text_script_self_alignment_x:OverrideCommand(2)
     \revert TextScript.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
@@ -869,6 +870,7 @@ I_RH_Music_Voice = {                                                           %
             \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
             c'1 * 1/4                                                          %! PHANTOM:_make_multimeasure_rest_container
             \!                                                                 %! PHANTOM:_style_phantom_measures(5):baca_hairpin:PiecewiseCommand(2)
+            \stopTextSpan                                                      %! PHANTOM:_style_phantom_measures(5):baca_text_spanner:PiecewiseCommand(3)
 
         }                                                                      %! PHANTOM:_make_multimeasure_rest_container
 
