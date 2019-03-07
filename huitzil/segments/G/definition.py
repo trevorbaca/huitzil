@@ -117,7 +117,7 @@ maker(
             ),
         baca.staff_lines(14),
         ),
-    baca.dls_staff_padding(7),
+    baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
     baca.markup(
         r'\huitzil-ascending-fingerboard-markup',
         abjad.tweak(-1).self_alignment_X,

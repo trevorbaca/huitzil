@@ -498,7 +498,7 @@ H_RH_Music_Voice = {                                                           %
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \once \override RHStaff.StaffSymbol.line-count = 7                         %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \override DynamicLineSpanner.staff-padding = #7                            %! baca_dls_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = 7                             %! baca_literal:IndicatorCommand
     \override TextScript.parent-alignment-X = #0                               %! baca_text_script_parent_alignment_x:OverrideCommand(1)
     \override TextScript.self-alignment-X = #0                                 %! baca_text_script_self_alignment_x:OverrideCommand(1)
     \override TextScript.staff-padding = #4                                    %! baca_script_staff_padding:OverrideCommand(1)
@@ -1067,7 +1067,6 @@ H_RH_Music_Voice = {                                                           %
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
     \stopTextSpan                                                              %! baca_text_spanner:PiecewiseCommand(2)
-    \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_alignment_x:OverrideCommand(2)
     \revert TextScript.self-alignment-X                                        %! baca_text_script_self_alignment_x:OverrideCommand(2)
     \revert TextScript.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)

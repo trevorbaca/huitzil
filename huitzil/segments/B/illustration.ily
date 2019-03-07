@@ -419,7 +419,7 @@ B_RH_Music_Voice = {                                                           %
         \once \override RHStaff.StaffSymbol.line-count = 7                     %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \startStaff                                                            %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2) %! baca_literal:IndicatorCommand
-        \override DynamicLineSpanner.staff-padding = #2                        %! baca_dls_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = 2                         %! baca_literal:IndicatorCommand
         \override TupletBracket.direction = #down                              %! baca_tuplet_bracket_down:OverrideCommand(1)
         \clef "percussion"                                                     %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override RHStaff.Clef.color = #(x11-color 'green4)              %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -778,7 +778,6 @@ B_RH_Music_Voice = {                                                           %
         - \tweak staff-padding #2.5                                            %! baca_markup:IndicatorCommand
         _ \markup { "trem. moderato" }                                         %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
-        \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.direction                                        %! baca_tuplet_bracket_down:OverrideCommand(2)
 
     }

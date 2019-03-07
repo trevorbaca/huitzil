@@ -429,7 +429,7 @@ I_RH_Music_Voice = {                                                           %
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 7                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override DynamicLineSpanner.staff-padding = #7                            %! baca_dls_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = 7                             %! baca_literal:IndicatorCommand
     \stopStaff                                                                 %! baca_literal:IndicatorCommand
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2) %! baca_literal:IndicatorCommand
     \startStaff                                                                %! baca_literal:IndicatorCommand
@@ -705,8 +705,6 @@ I_RH_Music_Voice = {                                                           %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         _ \baca-ffz-markup                                                     %! baca_markup:IndicatorCommand
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
     }
 
@@ -863,7 +861,6 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     _ \baca-mpz-markup                                                         %! baca_markup:IndicatorCommand
-    \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert TextScript.parent-alignment-X                                      %! baca_text_script_parent_alignment_x:OverrideCommand(2)
     \revert TextScript.self-alignment-X                                        %! baca_text_script_self_alignment_x:OverrideCommand(2)
     \revert TextScript.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)

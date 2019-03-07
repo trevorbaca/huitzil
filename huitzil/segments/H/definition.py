@@ -89,7 +89,7 @@ maker(
 
 maker(
     'rh',
-    baca.dls_staff_padding(7),
+    baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
     baca.stem_tremolo(
         selector=baca.pleaves(),
         ),

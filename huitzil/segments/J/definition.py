@@ -65,13 +65,15 @@ maker(
 
 maker(
     'rh',
-    baca.dls_staff_padding(5),
-    baca.literal([
-        r'\stopStaff',
-        r'\once \override RHStaff.StaffSymbol.line-positions ='
-        " #'(8.2 8 7.8 -5.8 -6 -6.2)",
-        r'\startStaff',
-        ]),
+    baca.literal(r'\override DynamicLineSpanner.staff-padding = 5'),
+    baca.only_segment(
+        baca.literal([
+            r'\stopStaff',
+            r'\once \override RHStaff.StaffSymbol.line-positions ='
+            " #'(8.2 8 7.8 -5.8 -6 -6.2)",
+            r'\startStaff',
+            ]),
+        ),
     baca.stem_tremolo(
         selector=baca.pleaves(),
         ),
