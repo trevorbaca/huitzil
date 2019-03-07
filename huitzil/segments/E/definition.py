@@ -76,7 +76,7 @@ maker(
 
 maker(
     'rh',
-    baca.dls_staff_padding(7),
+    baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
     baca.literal([
         r'\stopStaff',
         r'\once \override RHStaff.StaffSymbol.line-positions ='

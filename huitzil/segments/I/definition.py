@@ -83,7 +83,7 @@ maker(
 
 maker(
     'rh',
-    baca.dls_staff_padding(7),
+    baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
     baca.literal([
         r'\stopStaff',
         r'\once \override RHStaff.StaffSymbol.line-positions ='
@@ -142,11 +142,14 @@ maker(
         ),
     )
 
+# NOTE: final_hairpin=False can be removed once
+#       LilyPond fixes DynamicLineSpanner bug.
 maker(
     ('rh', (2, 13)),
     baca.hairpin(
         'mp > p <',
         bookend=False,
+        final_hairpin=False,
         pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
         selector=baca.leaves().rleak(),
         ),

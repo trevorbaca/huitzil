@@ -79,11 +79,11 @@ maker(
             ]),
         baca.staff_lines(7),
         ),
-    baca.dls_staff_padding(2),
     baca.dynamic(
         'mp-sempre',
         abjad.tweak(-0.9).self_alignment_X,
         ),
+    baca.literal(r'\override DynamicLineSpanner.staff-padding = 2'),
     baca.markup(
         r'\huitzil-cadenza-markup',
         abjad.tweak(6).staff_padding,
