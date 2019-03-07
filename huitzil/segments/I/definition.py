@@ -54,8 +54,8 @@ maker(
 
 maker(
     ('vc', (8, 13)),
-    baca.literal(r'\parenthesize'),
     baca.pitches('A1 Bb1'),
+    baca.repeat_tie_to(),
     baca.rhythm("{ c'1 * 107/30 c'1 * 1/5 }"),
     )
 
@@ -65,6 +65,11 @@ maker(
         baca.clef('treble'),
         baca.clef_shift('treble'),
         ),
+    baca.literal([
+        r'\stopStaff',
+        r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
+        r'\startStaff',
+        ]),
     baca.note_head_duration_log(2),
     baca.note_head_no_ledgers(True),
     baca.note_head_style('do'),
@@ -83,13 +88,17 @@ maker(
 
 maker(
     'rh',
-    baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
-    baca.literal([
-        r'\stopStaff',
-        r'\once \override RHStaff.StaffSymbol.line-positions ='
-        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-        r'\startStaff',
-        ]),
+    baca.only_segment(
+        baca.chunk(
+            baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
+            baca.literal([
+                r'\stopStaff',
+                r'\once \override RHStaff.StaffSymbol.line-positions ='
+                " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
+                r'\startStaff',
+                ]),
+            ),
+        ),
     baca.stem_tremolo(
         selector=baca.pleaves(),
         ),
@@ -100,11 +109,6 @@ maker(
 
 maker(
     ('rh', 1),
-    baca.hairpin(
-        'f -- !',
-        abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
-        ),
     baca.make_monads('1/8  1/8  1/8  1/8'),
     baca.markup(
         r'\baca-ffz-markup',
@@ -115,15 +119,6 @@ maker(
     baca.staff_positions(
         [-6, -4, -2, 0],
         allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (1, 17)),
-    baca.text_spanner(
-        'trem. mod. ||',
-        abjad.tweak(6).staff_padding,
-        bookend=False,
         ),
     )
 
@@ -464,12 +459,15 @@ maker(
     )
 
 maker(
-    ('rh', (18, 22)),
+    ('rh', (18, 23)),
     baca.text_spanner(
-        'sub. trem. più stretto => più largo => più stretto => più largo =>'
-            ' trem. mod.',
+        '(trem. mod.) => stretto => largo => stretto =>'
+            ' largo => stretto =>',
         abjad.tweak(6).staff_padding,
-        pieces=baca.lparts([1, 1, 1, 1 + 1]),
+        bookend=False,
+        pieces=baca.lparts([1, 1, 1, 1, 1, 1]),
+        right_broken=True,
+        selector=baca.leaves(),
         ),
     )
 

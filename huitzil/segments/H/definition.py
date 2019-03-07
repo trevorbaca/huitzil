@@ -141,15 +141,6 @@ maker(
     )
 
 maker(
-    ('rh', (1, 9)),
-    baca.text_spanner(
-        'trem. moderato ||',
-        abjad.tweak(6).staff_padding,
-        bookend=False,
-        ),
-    )
-
-maker(
     ('rh', 2),
     baca.make_monads('1/4  1/8  1/6'),
     baca.staff_positions(
@@ -483,8 +474,9 @@ maker(
 maker(
     ('rh', (20, 26)),
     baca.hairpin(
-        'p < f',
-        selector=baca.leaves()[1:],
+        'p < f -- !',
+        pieces=baca.lparts([5, 1 + 1]),
+        selector=baca.leaves()[1:].rleak(),
         ),
     baca.markup(
         r'\baca-ffz-markup',
@@ -498,7 +490,7 @@ maker(
     ('rh', (21, 26)),
     baca.text_spanner(
         'sub. trem. mod. => più stretto => più largo => più stretto =>'
-            ' più largo => più stretto',
+            ' più largo => mod.',
         abjad.tweak(6).staff_padding,
         pieces=baca.lparts([1, 1, 1, 1, 2]),
         ),

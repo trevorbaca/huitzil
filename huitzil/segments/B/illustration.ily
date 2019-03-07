@@ -419,7 +419,8 @@ B_RH_Music_Voice = {                                                           %
         \once \override RHStaff.StaffSymbol.line-count = 7                     %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \startStaff                                                            %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2) %! baca_literal:IndicatorCommand
-        \override DynamicLineSpanner.staff-padding = 2                         %! baca_literal:IndicatorCommand
+        \override DynamicLineSpanner.staff-padding = 2.5                       %! baca_literal:IndicatorCommand
+        \override Score.BarNumber.transparent = ##t                            %! baca_literal:IndicatorCommand
         \override TupletBracket.direction = #down                              %! baca_tuplet_bracket_down:OverrideCommand(1)
         \clef "percussion"                                                     %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override RHStaff.Clef.color = #(x11-color 'green4)              %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -431,8 +432,8 @@ B_RH_Music_Voice = {                                                           %
         - \tweak self-alignment-X #-0.9                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \baca-mp-sempre                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
-        - \tweak staff-padding #6                                              %! baca_markup:IndicatorCommand
-        ^ \huitzil-cadenza-markup                                              %! baca_markup:IndicatorCommand
+        - \tweak staff-padding #3                                              %! baca_markup:IndicatorCommand
+        ^ \huitzil-directly-on-bridge-markup                                   %! baca_markup:IndicatorCommand
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                 %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         \override Rest.staff-position = #0                                     %! baca_rest_position:OverrideCommand(1)
@@ -769,16 +770,22 @@ B_RH_Music_Voice = {                                                           %
     {
 
         % [B RH_Music_Voice measure 79 / measure 25]                           %! _comment_measure_numbers
+        \override DynamicLineSpanner.staff-padding = 7                         %! baca_literal:IndicatorCommand
         \stopStaff                                                             %! baca_literal:IndicatorCommand
         \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2) %! baca_literal:IndicatorCommand
         \startStaff                                                            %! baca_literal:IndicatorCommand
         d''1
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+        \baca-mp-parenthesized                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         - \tweak staff-padding #6                                              %! baca_markup:IndicatorCommand
-        ^ \huitzil-slide-markup                                                %! baca_markup:IndicatorCommand
-        - \tweak staff-padding #2.5                                            %! baca_markup:IndicatorCommand
+        ^ \huitzil-sliding-from-bridge-onto-string-markup                      %! baca_markup:IndicatorCommand
+        - \tweak staff-padding #3.5                                            %! baca_markup:IndicatorCommand
         _ \markup { "trem. moderato" }                                         %! baca_markup:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+        - \tweak stencil #constante-hairpin                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
         \revert TupletBracket.direction                                        %! baca_tuplet_bracket_down:OverrideCommand(2)
 
@@ -792,6 +799,7 @@ B_RH_Music_Voice = {                                                           %
             % [B RH_Music_Voice measure 80 / measure 26]                       %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
             \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
             b'1 * 1/4                                                          %! PHANTOM:_make_multimeasure_rest_container
+            \!                                                                 %! PHANTOM:_style_phantom_measures(5):baca_hairpin:PiecewiseCommand(2)
         %@% \glissando                                                         %! PHANTOM:_style_phantom_measures(5):SHOW_TO_JOIN_BROKEN_SPANNERS
 
         }                                                                      %! PHANTOM:_make_multimeasure_rest_container
@@ -830,6 +838,8 @@ B_Cello_Music_Voice = {                                                        %
         {                                                                      %! _make_multimeasure_rest_container
 
             % [B Cello_Music_Voice measure 55 / measure 1]                     %! _comment_measure_numbers
+            \stopStaff                                                         %! baca_literal:IndicatorCommand
+            \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff %! baca_literal:IndicatorCommand
             \override Score.TimeSignature.stencil = ##f                        %! baca_time_signature_stencil_false:OverrideCommand(1)
             \clef "bass"                                                       %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
@@ -929,6 +939,9 @@ B_Cello_Music_Voice = {                                                        %
     {
 
         % [B Cello_Music_Voice measure 79 / measure 25]                        %! _comment_measure_numbers
+        \stopStaff                                                             %! baca_literal:IndicatorCommand
+        \once \override Staff.StaffSymbol.line-count = 5                       %! baca_literal:IndicatorCommand
+        \startStaff                                                            %! baca_literal:IndicatorCommand
         b,,1
         \revert Score.BarLine.transparent                                      %! baca_bar_line_transparent:OverrideCommand(2)
         \revert Score.SpanBar.transparent                                      %! baca_span_bar_transparent:OverrideCommand(2)

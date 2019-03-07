@@ -334,7 +334,7 @@ maker(
         'p < mf',
         ),
     baca.text_spanner(
-        'sub. trem. mod. => più stretto => più largo => più stretto',
+        'sub. mod. => più stretto => più largo => più stretto',
         abjad.tweak(6).staff_padding,
         pieces=baca.lparts([1, 1, 2]),
         ),
@@ -378,7 +378,11 @@ maker(
 
 maker(
     ('rh', (17, 22)),
-    baca.hairpin('p < f'),
+    baca.hairpin(
+        'p < f -- !',
+        pieces=baca.lparts([5, 1 + 1]),
+        selector=baca.leaves().rleak(),
+        ),
     baca.markup(
         r'\baca-ffz-markup',
         direction=abjad.Down,
@@ -386,8 +390,8 @@ maker(
         selector=baca.leaves(),
         ),
     baca.text_spanner(
-        'sub. trem. mod. => più stretto => più largo => più stretto =>'
-            ' più largo => più stretto',
+        'sub. mod. => più stretto => più largo => più stretto =>'
+            ' più largo => trem. mod.',
         abjad.tweak(6).staff_padding,
         pieces=baca.lparts([1, 1, 1, 1, 2]),
         ),

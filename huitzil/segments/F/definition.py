@@ -58,8 +58,8 @@ maker(
 
 maker(
     ('vc', (8, 13)),
-    baca.literal(r'\parenthesize'),
     baca.pitches('Bb1 Cb2'),
+    baca.repeat_tie_to(),
     baca.rhythm("{ c'1 * 107/30 c'1 * 1/5 }"),
     )
 
@@ -69,6 +69,11 @@ maker(
         baca.clef('treble'),
         baca.clef_shift('treble'),
         ),
+    baca.literal([
+        r'\stopStaff',
+        r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
+        r'\startStaff',
+        ]),
     baca.note_head_duration_log(2),
     baca.note_head_no_ledgers(True),
     baca.note_head_style('do'),
@@ -87,9 +92,17 @@ maker(
 
 maker(
     'rh',
-    baca.breathe(
-        abjad.tweak(False).X_extent,
-        abjad.tweak((-1.5, 2)).extra_offset,
+    baca.only_score(
+        baca.breathe(
+            abjad.tweak(False).X_extent,
+            abjad.tweak((0, 5)).extra_offset,
+            ),
+        ),
+    baca.only_segment(
+        baca.breathe(
+            abjad.tweak(False).X_extent,
+            abjad.tweak((-1.5, 2)).extra_offset,
+            ),
         ),
     baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
     baca.literal([
@@ -108,11 +121,11 @@ maker(
 
 maker(
     ('rh', 1),
-    baca.hairpin(
-        'f -- !',
-        abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
-        ),
+#    baca.hairpin(
+#        'f -- !',
+#        abjad.tweak(True).to_barline,
+#        selector=baca.leaves().rleak(),
+#        ),
     baca.make_monads('1/8  1/8  1/8  1/8'),
     baca.markup(
         r'\baca-ffz-markup',
@@ -123,15 +136,6 @@ maker(
     baca.staff_positions(
         [-6, -4, -2, 0],
         allow_repeats=True,
-        ),
-    )
-
-maker(
-    ('rh', (1, 17)),
-    baca.text_spanner(
-        'trem. mod. ||',
-        abjad.tweak(6).staff_padding,
-        bookend=False,
         ),
     )
 
@@ -396,6 +400,12 @@ maker(
         direction=abjad.Down,
         literal=True,
         ),
+    baca.markup(
+        r'\huitzil-directly-on-bridge-markup',
+        abjad.tweak(-0.9).self_alignment_X,
+        abjad.tweak(2).staff_padding,
+        literal=True,
+        ),
     )
 
 maker(
@@ -479,8 +489,7 @@ maker(
 maker(
     ('rh', (18, 22)),
     baca.text_spanner(
-        'sub. trem. più stretto => più largo => più stretto => più largo =>'
-            ' trem. mod.',
+        '(trem. mod.) => più stretto => più largo => più stretto => mod.',
         abjad.tweak(6).staff_padding,
         pieces=baca.lparts([1, 1, 1, 1 + 1]),
         ),

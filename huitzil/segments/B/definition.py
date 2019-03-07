@@ -44,6 +44,11 @@ maker(
 
 maker(
     'vc',
+    baca.literal([
+        r'\stopStaff',
+        r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
+        r'\startStaff',
+        ]),
     baca.mmrest_transparent(),
     baca.new(
         baca.bar_line_transparent(),
@@ -55,6 +60,11 @@ maker(
 
 maker(
     ('vc', 25),
+    baca.literal([
+        r'\stopStaff',
+        r"\once \override Staff.StaffSymbol.line-count = 5",
+        r'\startStaff',
+        ]),
     baca.pitch('B1'),
     baca.rhythm("{ c'1 }"),
     )
@@ -83,10 +93,11 @@ maker(
         'mp-sempre',
         abjad.tweak(-0.9).self_alignment_X,
         ),
-    baca.literal(r'\override DynamicLineSpanner.staff-padding = 2'),
+    baca.literal(r'\override DynamicLineSpanner.staff-padding = 2.5'),
+    baca.literal(r'\override Score.BarNumber.transparent = ##t'),
     baca.markup(
-        r'\huitzil-cadenza-markup',
-        abjad.tweak(6).staff_padding,
+        r'\huitzil-directly-on-bridge-markup',
+        abjad.tweak(3).staff_padding,
         literal=True,
         ),
     baca.staff_position(8),
@@ -180,6 +191,13 @@ maker(
         right_broken=True,
         selector=baca.leaves().rleak(),
         ),
+    baca.hairpin(
+        '(mp) -- !',
+        selector=baca.leaves().rleak(),
+        ),
+    baca.literal(
+        r'\override DynamicLineSpanner.staff-padding = 7',
+        ),
     baca.literal([
         r'\stopStaff',
         r'\once \override RHStaff.StaffSymbol.line-positions ='
@@ -187,13 +205,13 @@ maker(
         r'\startStaff',
         ]),
     baca.markup(
-        r'\huitzil-slide-markup',
+        r'\huitzil-sliding-from-bridge-onto-string-markup',
         abjad.tweak(6).staff_padding,
         literal=True,
         ),
     baca.markup(
         r'trem. moderato',
-        abjad.tweak(2.5).staff_padding,
+        abjad.tweak(3.5).staff_padding,
         direction=abjad.Down,
         ),
     baca.rhythm("{ c'1 }"),

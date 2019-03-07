@@ -3,49 +3,57 @@
 %%% COLOPHON %%%
 
 huitzil-colophon-markup = \markup
-    \override #'(font-name . "Palatino")
+    \override #'(font-name . "Adobe Garamond Pro")
     \with-dimensions-from \null
     \with-color #black
+    \fontsize #-1
     \override #'(baseline-skip . 4)
     \general-align #X #right
     \right-column
     {
-        \line { Cambridge, Mass. (Sep – Oct 2014); }
-        \line { Madison, Wisc. (Feb – Mar 2019). }
+        \line { Cambridge, Mass. (September – October 2014); }
+        \line { Madison, Wisc. (February – March 2019). }
     }
 
 %%% DIRECTIVES %%%
 
-huitzil-as-close-to-lh-markup = \markup
-    "(as close to LH as poss.)"
+huitzil-close-to-lh-markup = \markup
+    "(close to LH as poss.)"
 
 huitzil-ascending-fingerboard-markup = \markup
     \override #'(box-padding . 0.5)
     \box
     "ascending fingerboard to LH ..."
 
-huitzil-cadenza-markup = \markup
-    \override #'(box-padding . 0.5)
-    \box
-    "directly on bridge where IV crosses wood"
-
 huitzil-descending-fingerboard-markup = \markup
     \override #'(box-padding . 0.5)
     \box
-    "descending fingerboard to bridge ..."
+    "descending fingerboard back to bridge ..."
 
 huitzil-directly-above-end-of-fingerboard-markup = \markup
     "(directly above end of fingerboard)"
 
+huitzil-directly-above-end-of-fingerboard-column-markup = \markup
+    \column
+    {
+        \line { (directly above }
+        \line { end of fingerboard) }
+    }
+
 huitzil-directly-on-bridge-markup = \markup
     "(directly on bridge)"
 
-huitzil-pitch-reenters-markup = \markup
+huitzil-sliding-back-onto-string-markup = \markup
     \override #'(box-padding . 0.5)
     \box
-    "pitch reenters"
+    "sliding back onto string ..."
 
-huitzil-slide-markup = \markup
+huitzil-sliding-from-bridge-onto-string-markup = \markup
     \override #'(box-padding . 0.5)
     \box
-    "slide onto string ..."
+    "sliding from bridge onto string ..."
+
+huitzil-sliding-onto-string-markup = \markup
+    \override #'(box-padding . 0.5)
+    \box
+    "sliding onto string ..."

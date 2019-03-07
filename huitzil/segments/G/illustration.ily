@@ -497,8 +497,11 @@ G_RH_Music_Voice = {                                                           %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak self-alignment-X #-1                                              %! baca_markup:IndicatorCommand
-    - \tweak staff-padding #2                                                  %! baca_markup:IndicatorCommand
+    - \tweak staff-padding #4.5                                                %! baca_markup:IndicatorCommand
     ^ \huitzil-ascending-fingerboard-markup                                    %! baca_markup:IndicatorCommand
+    - \tweak self-alignment-X #-1                                              %! baca_markup:IndicatorCommand
+    - \tweak staff-padding #1                                                  %! baca_markup:IndicatorCommand
+    ^ \huitzil-directly-above-end-of-fingerboard-markup                        %! baca_markup:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -570,9 +573,9 @@ G_RH_Music_Voice = {                                                           %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-    - \tweak self-alignment-X #-0.65                                           %! baca_markup:IndicatorCommand
+    - \tweak self-alignment-X #-0.5                                            %! baca_markup:IndicatorCommand
     - \tweak staff-padding #2                                                  %! baca_markup:IndicatorCommand
-    ^ \huitzil-as-close-to-lh-markup                                           %! baca_markup:IndicatorCommand
+    ^ \huitzil-close-to-lh-markup                                              %! baca_markup:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
 
     % [G RH_Music_Voice measure 187 / measure 14]                              %! _comment_measure_numbers
@@ -580,6 +583,9 @@ G_RH_Music_Voice = {                                                           %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-pp-parenthesized                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    - \tweak self-alignment-X #-1                                              %! baca_markup:IndicatorCommand
+    - \tweak staff-padding #2                                                  %! baca_markup:IndicatorCommand
+    ^ \huitzil-descending-fingerboard-markup                                   %! baca_markup:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -588,9 +594,6 @@ G_RH_Music_Voice = {                                                           %
     % [G RH_Music_Voice measure 188 / measure 15]                              %! _comment_measure_numbers
     a,,4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    - \tweak self-alignment-X #-1                                              %! baca_markup:IndicatorCommand
-    - \tweak staff-padding #2                                                  %! baca_markup:IndicatorCommand
-    ^ \huitzil-descending-fingerboard-markup                                   %! baca_markup:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca_markup:IndicatorCommand
 
     % [G RH_Music_Voice measure 189 / measure 16]                              %! _comment_measure_numbers
@@ -645,9 +648,9 @@ G_RH_Music_Voice = {                                                           %
     \startStaff                                                                %! baca_literal:IndicatorCommand
     d1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    - \tweak self-alignment-X #-1                                              %! baca_markup:IndicatorCommand
+    - \tweak self-alignment-X #-0.5                                            %! baca_markup:IndicatorCommand
     - \tweak staff-padding #2                                                  %! baca_markup:IndicatorCommand
-    ^ \huitzil-directly-above-end-of-fingerboard-markup                        %! baca_markup:IndicatorCommand
+    ^ \huitzil-directly-above-end-of-fingerboard-column-markup                 %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [G RH_Music_Voice measure 199 / measure 26]                              %! _comment_measure_numbers
@@ -707,6 +710,9 @@ G_Cello_Music_Voice = {                                                        %
     {
 
         % [G Cello_Music_Voice measure 174 / measure 1]                        %! _comment_measure_numbers
+        \stopStaff                                                             %! baca_literal:IndicatorCommand
+        \once \override Staff.StaffSymbol.line-count = 5                       %! baca_literal:IndicatorCommand
+        \startStaff                                                            %! baca_literal:IndicatorCommand
         \override Score.BarLine.transparent = ##t                              %! baca_bar_line_transparent:OverrideCommand(1)
         \override Score.SpanBar.transparent = ##t                              %! baca_span_bar_transparent:OverrideCommand(1)
         \override Score.TimeSignature.stencil = ##f                            %! baca_time_signature_stencil_false:OverrideCommand(1)
