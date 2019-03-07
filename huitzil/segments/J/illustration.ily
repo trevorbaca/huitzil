@@ -30,9 +30,6 @@ J_Global_Rests = {                                                             %
     % [J Global_Rests measure 258 / measure 10]                                %! _comment_measure_numbers
     R1 * 3/2                                                                   %! _make_global_rests(1)
 
-    % [J Global_Rests measure 259 / measure 11]                                %! PHANTOM:_style_phantom_measures(4):_comment_measure_numbers
-    R1 * 1/4                                                                   %! PHANTOM:_make_global_rests(2)
-
 }                                                                              %! abjad.Path.extern
 
 
@@ -149,7 +146,7 @@ J_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "257"                                           %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-left-only "[9'54'']"                                      %! CLOCK_TIME
+    - \baca-start-ct-both "[9'54'']" "[9'56'']"                                %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [J Global_Skips measure 258 / measure 10]                                %! _comment_measure_numbers
@@ -158,26 +155,10 @@ J_Global_Skips = {                                                             %
     s1 * 3/2                                                                   %! _make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+    \bacaStopTextSpanMM                                                        %! SEGMENT_FINAL_STOP_MM_SPANNER:_attach_metronome_marks(4)
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME
-    - \baca-start-lmn-left-only "10"                                           %! LOCAL_MEASURE_NUMBER
-    \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
-%@% - \baca-start-mn-left-only "258"                                           %! MEASURE_NUMBER
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
-    - \baca-start-ct-both "[9'56'']" "[10'01'']"                               %! CLOCK_TIME
-    \bacaStartTextSpanCT                                                       %! CLOCK_TIME
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|."                                                                  %! _attach_final_bar_line
-
-    % [J Global_Skips measure 259 / measure 11]                                %! PHANTOM:_style_phantom_measures(1):_comment_measure_numbers
-    \time 1/4                                                                  %! PHANTOM:_style_phantom_measures(1):EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(3)
-    \baca-time-signature-transparent                                           %! PHANTOM:_style_phantom_measures(2)
-    s1 * 1/4                                                                   %! PHANTOM:_make_global_skips(3)
-    \bacaStopTextSpanLMN                                                       %! PHANTOM:_style_phantom_measures(1):LOCAL_MEASURE_NUMBER
-%@% \bacaStopTextSpanMN                                                        %! PHANTOM:_style_phantom_measures(1):MEASURE_NUMBER
-    \bacaStopTextSpanMM                                                        %! PHANTOM:_style_phantom_measures(1):SEGMENT_FINAL_STOP_MM_SPANNER:_attach_metronome_marks(4)
-    \bacaStopTextSpanCT                                                        %! PHANTOM:_style_phantom_measures(1):CLOCK_TIME
-    \once \override Score.BarLine.transparent = ##t                            %! PHANTOM:_style_phantom_measures(3)
-    \once \override Score.SpanBar.transparent = ##t                            %! PHANTOM:_style_phantom_measures(3)
 
 }                                                                              %! abjad.Path.extern
 
@@ -349,32 +330,6 @@ J_RH_Music_Voice = {                                                           %
     \revert TextScript.self-alignment-X                                        %! baca_text_script_self_alignment_x:OverrideCommand(2)
     \revert TextScript.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
 
-    <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
-
-        \context Voice = "RH_Music_Voice"                                      %! PHANTOM:_make_multimeasure_rest_container
-        {                                                                      %! PHANTOM:_make_multimeasure_rest_container
-
-            % [J RH_Music_Voice measure 259 / measure 11]                      %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
-            \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
-            c'1 * 1/4                                                          %! PHANTOM:_make_multimeasure_rest_container
-
-        }                                                                      %! PHANTOM:_make_multimeasure_rest_container
-
-        \context Voice = "RH_Rest_Voice"                                       %! PHANTOM:_make_multimeasure_rest_container
-        {                                                                      %! PHANTOM:_make_multimeasure_rest_container
-
-            % [J RH_Rest_Voice measure 259 / measure 11]                       %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
-            \once \override Score.TimeSignature.X-extent = ##f                 %! PHANTOM:_style_phantom_measures(6)
-            \once \override MultiMeasureRest.transparent = ##t                 %! PHANTOM:_style_phantom_measures(7)
-            \stopStaff                                                         %! PHANTOM:_style_phantom_measures(8)
-            \once \override Staff.StaffSymbol.transparent = ##t                %! PHANTOM:_style_phantom_measures(8)
-            \startStaff                                                        %! PHANTOM:_style_phantom_measures(8)
-            R1 * 1/4                                                           %! PHANTOM:_make_multimeasure_rest_container
-
-        }                                                                      %! PHANTOM:_make_multimeasure_rest_container
-
-    >>                                                                         %! PHANTOM:_make_multimeasure_rest_container
-
 }                                                                              %! abjad.Path.extern
 
 
@@ -426,40 +381,18 @@ J_Cello_Music_Voice = {                                                        %
     R1 * 1/2                                                                   %! _call_rhythm_commands
 
     % [J Cello_Music_Voice measure 258 / measure 10]                           %! _comment_measure_numbers
+    \override Score.BarLine.X-extent = #'(0 . 8)                               %! baca_literal:IndicatorCommand
+    \override Score.BarLine.extra-offset = #'(8 . 0)                           %! baca_literal:IndicatorCommand
+    \override Score.RehearsalMark.extra-offset = #'(4 . 0)                     %! baca_literal:IndicatorCommand
+    \override Score.SpanBar.extra-offset = #'(8 . 0)                           %! baca_literal:IndicatorCommand
     R1 * 3/2                                                                   %! _call_rhythm_commands
     \revert MultiMeasureRest.transparent                                       %! baca_mmrest_transparent:OverrideCommand(2)
     \revert Score.BarLine.transparent                                          %! baca_bar_line_transparent:OverrideCommand(2)
     \revert Score.SpanBar.transparent                                          %! baca_span_bar_transparent:OverrideCommand(2)
     \revert Score.TimeSignature.stencil                                        %! baca_time_signature_stencil_false:OverrideCommand(2)
-
-    <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
-
-        \context Voice = "Cello_Music_Voice"                                   %! PHANTOM:_make_multimeasure_rest_container
-        {                                                                      %! PHANTOM:_make_multimeasure_rest_container
-
-            % [J Cello_Music_Voice measure 259 / measure 11]                   %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
-            \once \override Score.RehearsalMark.direction = #down              %! PHANTOM:_style_phantom_measures(5):baca_rehearsal_mark_down:OverrideCommand(1)
-            \once \override Score.RehearsalMark.padding = #6                   %! PHANTOM:_style_phantom_measures(5):baca_rehearsal_padding:OverrideCommand(1)
-            \mark \huitzil-colophon-markup                                     %! PHANTOM:_style_phantom_measures(5):baca_mark:IndicatorCommand
-            \baca-invisible-music                                              %! PHANTOM:_style_phantom_measures(5):_make_multimeasure_rest_container
-            R1 * 1/4                                                           %! PHANTOM:_make_multimeasure_rest_container
-
-        }                                                                      %! PHANTOM:_make_multimeasure_rest_container
-
-        \context Voice = "Cello_Rest_Voice"                                    %! PHANTOM:_make_multimeasure_rest_container
-        {                                                                      %! PHANTOM:_make_multimeasure_rest_container
-
-            % [J Cello_Rest_Voice measure 259 / measure 11]                    %! PHANTOM:_style_phantom_measures(5):_comment_measure_numbers
-            \once \override Score.TimeSignature.X-extent = ##f                 %! PHANTOM:_style_phantom_measures(6)
-            \once \override MultiMeasureRest.transparent = ##t                 %! PHANTOM:_style_phantom_measures(7)
-            \stopStaff                                                         %! PHANTOM:_style_phantom_measures(8)
-            \once \override Staff.StaffSymbol.transparent = ##t                %! PHANTOM:_style_phantom_measures(8)
-            \startStaff                                                        %! PHANTOM:_style_phantom_measures(8)
-            R1 * 1/4                                                           %! PHANTOM:_make_multimeasure_rest_container
-
-        }                                                                      %! PHANTOM:_make_multimeasure_rest_container
-
-    >>                                                                         %! PHANTOM:_make_multimeasure_rest_container
+    \once \override Score.RehearsalMark.direction = #down                      %! baca_literal:IndicatorCommand
+    \once \override Score.RehearsalMark.padding = 4                            %! baca_literal:IndicatorCommand
+    \mark \huitzil-colophon-markup                                             %! baca_literal:IndicatorCommand
 
 }                                                                              %! abjad.Path.extern
 

@@ -119,6 +119,19 @@ maker(
     )
 
 maker(
+    ('rh', [9, 10]),
+    baca.tag(
+        # TODO: make +ARCH_A_SCORE work
+        #'+ARCH_A_SCORE',
+        '+SCORE',
+        baca.literal(
+            r'\once \override TupletNumber.font-size = -2',
+            selector=baca.pleaf(1),
+            ),
+        ),
+    )
+
+maker(
     ('rh', (13, 15)),
     baca.rhythm("{ c'4 c'4 c'4 c'4 c'4 c'4 }"),
     )

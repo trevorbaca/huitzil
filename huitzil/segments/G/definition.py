@@ -47,13 +47,7 @@ maker(
 
 maker(
     'vc',
-    baca.chunk(
-        baca.clef('bass'),
-        # TODO: make this have no visual effect in segment:
-        baca.not_segment(
-            baca.clef_shift('bass'),
-            ),
-        ),
+    baca.clef('bass'),
     baca.mmrest_transparent(),
     baca.new(
         baca.bar_line_transparent(),

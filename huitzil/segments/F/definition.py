@@ -88,7 +88,8 @@ maker(
 maker(
     'rh',
     baca.breathe(
-        abjad.tweak((0, 2)).extra_offset,
+        abjad.tweak(False).X_extent,
+        abjad.tweak((-1.5, 2)).extra_offset,
         ),
     baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
     baca.literal([
@@ -399,8 +400,16 @@ maker(
 
 maker(
     ('rh', (14, 23)),
+    # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
+    #baca.hairpin(
+    #    'mp -- p -- pp -- p -- !',
+    #    pieces=baca.mgroups([2, 2, 4, 2 + 1]),
+    #    selector=baca.leaves().rleak(),
+    #    ),
+    # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
-        'mp -- p -- pp -- p -- !',
+        'mp -- p -- pp -- p',
+        bookend=False,
         pieces=baca.mgroups([2, 2, 4, 2 + 1]),
         selector=baca.leaves().rleak(),
         ),

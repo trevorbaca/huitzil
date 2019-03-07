@@ -1,11 +1,10 @@
-\documentclass[11pt]{report}
+\documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[papersize={17in, 11in}, margin=0.5in]{geometry}
+\usepackage[papersize={9in, 12in}, margin=0.5in]{geometry}
 \usepackage{fontspec,graphicx,nopageno,tikz,xltxtra,xunicode}
 \usetikzlibrary{calc}
 \defaultfontfeatures{Scale=MatchLowercase}
 \newlength{\drop}
-\pagenumbering{gobble}
 \parindent=0pt
 \setmainfont{Adobe Garamond Pro Bold}
 
@@ -14,15 +13,15 @@
 
         \begin{tikzpicture}[remember picture, overlay]
             \draw[line width = 6pt]
-                ($(current page.north west) + (1.0in,-1.0in)$)
+                ($(current page.north west) + (0.5in,-0.5in)$)
                 rectangle
-                ($(current page.south east) + (-1.0in,1.0in)$);
+                ($(current page.south east) + (-0.5in,0.5in)$);
         \end{tikzpicture}
 
         \drop=0.1\textheight
         \centering
 
-        \vspace*{4\baselineskip}
+        \vspace*{1\baselineskip}
         {
             \scalebox{1}[2]
             {\fontsize{2.15cm}{1em}\selectfont HUITZIL}
@@ -32,14 +31,14 @@
 
         {
             \scalebox{1}[2]
-            {\fontsize{0.6cm}{1em}\selectfont \itshape for cello}
+            {\fontsize{0.5cm}{1em}\selectfont \itshape for cello}
         }
 
         \vspace*{1\baselineskip}
 
         {
             \scalebox{1}[2]
-            {\fontsize{0.6cm}{1em}\selectfont \itshape (2014)}
+            {\fontsize{0.5cm}{1em}\selectfont \itshape (2014/19)}
         }
 
         \vfill
@@ -49,7 +48,7 @@
             {\fontsize{2.15cm}{1em}\selectfont TREVOR \hspace{1pt} BA\v{C}A}
         }
 
-        \vspace*{4\baselineskip}
+        \vspace*{2\baselineskip}
 
     \end{titlepage}
 \end{document}

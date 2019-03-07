@@ -707,8 +707,6 @@ G_Cello_Music_Voice = {                                                        %
     {
 
         % [G Cello_Music_Voice measure 174 / measure 1]                        %! _comment_measure_numbers
-        \once \override Staff.Clef.X-extent = ##f                              %! -SEGMENT:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
-        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! -SEGMENT:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \override Score.BarLine.transparent = ##t                              %! baca_bar_line_transparent:OverrideCommand(1)
         \override Score.SpanBar.transparent = ##t                              %! baca_span_bar_transparent:OverrideCommand(1)
         \override Score.TimeSignature.stencil = ##f                            %! baca_time_signature_stencil_false:OverrideCommand(1)

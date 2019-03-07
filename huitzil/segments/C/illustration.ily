@@ -1062,7 +1062,7 @@ C_RH_Music_Voice = {                                                           %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-    - \tweak self-alignment-X #-0.95                                           %! baca_markup:IndicatorCommand
+    - \tweak self-alignment-X #-0.15                                           %! baca_markup:IndicatorCommand
     - \tweak staff-padding #2                                                  %! baca_markup:IndicatorCommand
     ^ \huitzil-directly-above-end-of-fingerboard-markup                        %! baca_markup:IndicatorCommand
     _ \baca-ffz-markup                                                         %! baca_markup:IndicatorCommand
