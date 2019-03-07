@@ -768,7 +768,8 @@ B_RH_Music_Voice = {                                                           %
 
         % [B RH_Music_Voice measure 79 / measure 25]                           %! _comment_measure_numbers
         \stopStaff                                                             %! baca_literal:IndicatorCommand
-        \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)\startStaff %! baca_literal:IndicatorCommand
+        \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2) %! baca_literal:IndicatorCommand
+        \startStaff                                                            %! baca_literal:IndicatorCommand
         d''1
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand

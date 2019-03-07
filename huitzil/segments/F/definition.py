@@ -94,7 +94,7 @@ maker(
     baca.literal([
         r'\stopStaff',
         r'\once \override RHStaff.StaffSymbol.line-positions ='
-        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)"
+        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
         r'\startStaff',
         ]),
     baca.stem_tremolo(
@@ -407,7 +407,7 @@ maker(
     baca.literal([
         r'\stopStaff',
         r'\once \override RHStaff.StaffSymbol.line-positions ='
-        " #'(8.2 8 7.8 -5.8 -6 -6.2)"
+        " #'(8.2 8 7.8 -5.8 -6 -6.2)",
         r'\startStaff',
         ]),
     baca.staff_position(8),
