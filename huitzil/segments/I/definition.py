@@ -465,9 +465,9 @@ maker(
             ' largo => stretto =>',
         abjad.tweak(6).staff_padding,
         bookend=False,
-        pieces=baca.lparts([1, 1, 1, 1, 1, 1]),
+        pieces=baca.lparts([1, 1, 1, 1, 1, 1 + 1]),
         right_broken=True,
-        selector=baca.leaves(),
+        selector=baca.leaves().rleak(),
         ),
     )
 
