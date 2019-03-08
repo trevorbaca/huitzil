@@ -789,6 +789,7 @@ I_RH_Music_Voice = {                                                           %
     }
 
     % [I RH_Music_Voice measure 243 / measure 18]                              %! _comment_measure_numbers
+%%% \once \override Hairpin.to-barline = ##t                                   %! +SCORE:baca_hairpin_to_barline:OverrideCommand(1)
     d''2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)

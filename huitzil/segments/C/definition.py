@@ -18,10 +18,12 @@ time_signatures = [
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.const.CLOCK_TIME,
+        #abjad.const.CLOCK_TIME,
         abjad.const.LOCAL_MEASURE_NUMBER,
+        abjad.const.MEASURE_NUMBER,
         ],
-    clock_time_extra_offset=(0, 13),
+    #clock_time_extra_offset=(0, 13),
+    measure_number_extra_offset=(0, 13),
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     validate_measure_count=26,
@@ -421,6 +423,10 @@ maker(
         literal=True,
         selector=baca.leaves(),
         ),
+    # TODO: make +ARCH_A_SCORE work
+    baca.only_score(
+        baca.hairpin_to_barline(),
+        ),
     baca.staff_positions(
         [6, 4, 2, 0],
         allow_repeats=True,
@@ -514,6 +520,10 @@ maker(
         abjad.tweak(-0.75).self_alignment_X,
         abjad.tweak(2).staff_padding,
         literal=True,
+        ),
+    # TODO: make +ARCH_A_SCORE work
+    baca.only_score(
+        baca.hairpin_to_barline(),
         ),
     baca.staff_positions(
         [-6],

@@ -436,6 +436,10 @@ maker(
 maker(
     ('rh', 22),
     baca.make_monads('1/2'),
+    # TODO: make +ARCH_A_SCORE work
+    baca.only_score(
+        baca.hairpin_to_barline(),
+        ),
     baca.staff_positions(
         [-6],
         allow_repeats=True,

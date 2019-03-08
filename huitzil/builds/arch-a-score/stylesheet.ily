@@ -6,6 +6,12 @@
 
 \layout
 {
+    \context
+    {
+        \Staff
+        instrumentName = \markup \hcenter-in #12 \smallCaps Cello
+    }
+
     ragged-right = ##f
     %ragged-right = ##t
 }
