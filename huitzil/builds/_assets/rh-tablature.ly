@@ -18,15 +18,17 @@ note-head-extra-offset = #'(-2.5 . 0)
     {
         \line
             {
-            p \hspace #-0.4 o \hspace #-0.4 i \hspace #-0.4 n \hspace #-0.4 t
-            \hspace #0.35
-            #numerator \hspace #-0.2 / \hspace #-0.3 7
+            #numerator \hspace #-0.6 /7
+            \hspace #0.3
+            of
+            \hspace #0.3
+            d \hspace #-0.45
+            i \hspace #-0.45
+            s \hspace #-0.45
+            t.
             }
-        \line { of way from }
-        \line
-            {
-            finger \hspace #-0.4 board
-            }
+        \line { from end of }
+        \line { finger \hspace #-0.4 board }
         \line { to bridge. }
     }
     #}))
@@ -40,6 +42,32 @@ note-head-extra-offset = #'(-2.5 . 0)
     \override #'(circle-padding . 0.6)
     \override #'(font-size . -5)
     \circle #abbreviation
+    #}))
+
+#(define-markup-command
+    (huitzil-tasto-annotation layout props numerator)
+    (string?)
+    (interpret-markup layout props
+    #{
+    \markup
+    \override #'(baseline-skip . 2.2)
+    \column
+    {
+        \line
+            {
+            #numerator \hspace #-0.6 /6
+            \hspace #0.3
+            of
+            \hspace #0.3
+            d \hspace #-0.45
+            i \hspace #-0.45
+            s \hspace #-0.45
+            t.
+            }
+        \line { from end of }
+        \line { finger \hspace #-0.4 board }
+        \line { to LH. }
+    }
     #}))
 
 \new Staff
@@ -82,9 +110,9 @@ note-head-extra-offset = #'(-2.5 . 0)
             o \hspace #-0.4
             n
             }
-        \line { bridge \hspace #0.4 where }
+        \line { bridge (where }
         \line { string crosses }
-        \line { wood. }
+        \line { wood). }
     }
 
     \stopStaff
@@ -93,39 +121,39 @@ note-head-extra-offset = #'(-2.5 . 0)
         )
     \startStaff
     a''1
-    - \tweak staff-padding 4
+    _ \tweak staff-padding 4
     _ \markup \huitzil-scp-circle #"P6"
-    - \tweak staff-padding 8
+    _ \tweak staff-padding 8
     _ \markup \huitzil-ponticello-annotation #"6"
 
     f''1
-    - \tweak staff-padding 4
+    _ \tweak staff-padding 4
     _ \markup \huitzil-scp-circle #"P5"
-    - \tweak staff-padding 8
+    _ \tweak staff-padding 8
     _ \markup \huitzil-ponticello-annotation #"5"
 
     d''1
-    - \tweak staff-padding 4
+    _ \tweak staff-padding 4
     _ \markup \huitzil-scp-circle #"P4"
-    - \tweak staff-padding 8
+    _ \tweak staff-padding 8
     _ \markup \huitzil-ponticello-annotation #"4"
 
     b'1
-    - \tweak staff-padding 4
+    _ \tweak staff-padding 4
     _ \markup \huitzil-scp-circle #"P3"
-    - \tweak staff-padding 8
+    _ \tweak staff-padding 8
     _ \markup \huitzil-ponticello-annotation #"3"
 
     g'1
-    - \tweak staff-padding 4
+    _ \tweak staff-padding 4
     _ \markup \huitzil-scp-circle #"P2"
-    - \tweak staff-padding 8
+    _ \tweak staff-padding 8
     _ \markup \huitzil-ponticello-annotation #"2"
 
     e'1
-    - \tweak staff-padding 4
+    _ \tweak staff-padding 4
     _ \markup \huitzil-scp-circle #"P1"
-    - \tweak staff-padding 8
+    _ \tweak staff-padding 8
     _ \markup \huitzil-ponticello-annotation #"1"
     
     \stopStaff
@@ -138,17 +166,60 @@ note-head-extra-offset = #'(-2.5 . 0)
     \startStaff
     \once \override Staff.BarLine.color = #red
     c'1
+    _ \tweak staff-padding 4
+    _ \markup \huitzil-scp-circle #"T0"
+    _ \tweak staff-padding #8
+    _
+    \markup
+    \override #'(baseline-skip . 2)
+    \column
+    {
+        \line { directly \hspace #0.3 over }
+        \line { end of finger- }
+        \line { board. }
+    }
 
     a1
+    _ \tweak staff-padding 4
+    _ \markup \huitzil-scp-circle #"T1"
+    _ \tweak staff-padding 8
+    _ \markup \huitzil-tasto-annotation #"1"
 
     f1
+    _ \tweak staff-padding 4
+    _ \markup \huitzil-scp-circle #"T2"
+    _ \tweak staff-padding 8
+    _ \markup \huitzil-tasto-annotation #"2"
 
     d1
+    _ \tweak staff-padding 4
+    _ \markup \huitzil-scp-circle #"T3"
+    _ \tweak staff-padding 8
+    _ \markup \huitzil-tasto-annotation #"3"
 
     b,1
+    _ \tweak staff-padding 4
+    _ \markup \huitzil-scp-circle #"T4"
+    _ \tweak staff-padding 8
+    _ \markup \huitzil-tasto-annotation #"4"
 
     g,1
+    _ \tweak staff-padding 4
+    _ \markup \huitzil-scp-circle #"T5"
+    _ \tweak staff-padding 8
+    _ \markup \huitzil-tasto-annotation #"5"
 
     e,1
+    _ \tweak staff-padding 4
+    _ \markup \huitzil-scp-circle #"T+"
+    _ \tweak staff-padding 8
+    _
+    \markup
+    \override #'(baseline-skip . 2)
+    \column
+    {
+        \line { as \hspace #0.3 close \hspace #0.3 to }
+        \line { LH as poss. }
+    }
 
 }
