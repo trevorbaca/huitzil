@@ -876,6 +876,7 @@ E_RH_Music_Voice = {                                                           %
     \glissando                                                                 %! baca_glissando
 
     % [E RH_Music_Voice measure 150 / measure 22]                              %! _comment_measure_numbers
+%%% \once \override Hairpin.to-barline = ##t                                   %! +SCORE:baca_hairpin_to_barline:OverrideCommand(1)
     d2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)

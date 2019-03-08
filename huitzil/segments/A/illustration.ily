@@ -1159,6 +1159,8 @@ A_Cello_Music_Voice = {                                                        %
         \set Staff.forceClef = ##t                                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
         fs!8
         ^ \baca-default-indicator-markup "(“Cello”)"                           %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+        - \tweak staff-padding #9                                              %! baca_markup:IndicatorCommand
+        _ \huitzil-phrasing-dynamics-see-preface-markup                        %! baca_markup:IndicatorCommand
         [
         \override Staff.Clef.color = #(x11-color 'violet)                      %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
@@ -1444,6 +1446,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Tie.color = #blue
         af,!4
 
+        \once \override RepeatTie.extra-offset = #'(-1.5 . 0)                  %! baca_repeat_tie_extra_offset:OverrideCommand(1)
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3433,9 +3436,9 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Tie.color = #blue
         ef,!4
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
-        \tweak X-extent ##f                                                    %! baca_breathe:IndicatorCommand
-        \tweak extra-offset #'(-1.5 . 0)                                       %! baca_breathe:IndicatorCommand
-        \breathe                                                               %! baca_breathe:IndicatorCommand
+    %%% \tweak extra-offset #'(0 . 2)                                          %! baca_breathe:+SCORE:IndicatorCommand
+    %%% \breathe                                                               %! baca_breathe:+SCORE:IndicatorCommand
+        \breathe                                                               %! baca_breathe:+SEGMENT:IndicatorCommand
 
     }
 

@@ -58,8 +58,13 @@ maker(
 
 maker(
     ('vc', (8, 13)),
-    baca.pitches('Bb1 Cb2'),
-    baca.repeat_tie_to(),
+    baca.suite(
+        baca.pitches('Bb1 Cb2'),
+        baca.chunk(
+            baca.repeat_tie_to(),
+            baca.repeat_tie_extra_offset((-1.5, 0)),
+            ),
+        ),
     baca.rhythm("{ c'1 * 107/30 c'1 * 1/5 }"),
     )
 

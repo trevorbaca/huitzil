@@ -79,9 +79,11 @@ maker(
 
 maker(
     ('vc', (14, 24)),
-    baca.literal(r'\parenthesize'),
-    baca.pitch('A2'),
     baca.rhythm("{ c'1 * 19/8 }"),
+    baca.suite(
+        baca.pitch('A2'),
+        baca.repeat_tie_to(),
+        ),
     )
 
 maker(
@@ -212,10 +214,6 @@ maker(
         right_broken=True,
         selector=baca.leaves()[-1:].rleak(),
         ),
-    baca.literal(
-        r'\parenthesize',
-        selector=baca.pleaf(-1),
-        ),
     baca.literal([
         r'\stopStaff',
         r'\once \override RHStaff.StaffSymbol.line-positions ='
@@ -228,6 +226,9 @@ maker(
         abjad.tweak(-0.5).self_alignment_X,
         abjad.tweak(2).staff_padding,
         literal=True,
+        ),
+    baca.parenthesize(
+        selector=baca.pleaf(-1),
         ),
     baca.staff_positions(
         [-6, 0, 6],

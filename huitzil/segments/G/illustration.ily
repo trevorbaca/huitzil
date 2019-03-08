@@ -654,7 +654,7 @@ G_RH_Music_Voice = {                                                           %
     \glissando                                                                 %! baca_glissando
 
     % [G RH_Music_Voice measure 199 / measure 26]                              %! _comment_measure_numbers
-    \parenthesize                                                              %! baca_literal:IndicatorCommand
+    \parenthesize                                                              %! baca_parenthesize:IndicatorCommand
     c'1
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -788,8 +788,8 @@ G_Cello_Music_Voice = {                                                        %
     {
 
         % [G Cello_Music_Voice measure 187 / measure 14]                       %! _comment_measure_numbers
-        \parenthesize                                                          %! baca_literal:IndicatorCommand
         a,1 * 19/8
+        \repeatTie                                                             %! TieCorrectionCommand
         \glissando                                                             %! baca_glissando
 
     }

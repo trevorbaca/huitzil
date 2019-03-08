@@ -205,6 +205,12 @@ maker(
 
 maker(
     ('vc', 1),
+    baca.markup(
+        r'\huitzil-phrasing-dynamics-see-preface-markup',
+        abjad.tweak(9).staff_padding,
+        direction=abjad.Down,
+        literal=True,
+        ),
     baca.rhythm(music_),
     )
 
@@ -219,7 +225,9 @@ maker(
         baca.untie_to(
             selector=baca.pleaf(-1),
             ),
-        baca.repeat_tie_to(
+        baca.chunk(
+            baca.repeat_tie_to(),
+            baca.repeat_tie_extra_offset((-1.5, 0)),
             selector=baca.pleaf(-1),
             ),
         ),
@@ -248,9 +256,13 @@ maker(
 
 maker(
     ('vc', 54),
-    baca.breathe(
-        abjad.tweak(False).X_extent,
-        abjad.tweak((-1.5, 0)).extra_offset,
+    baca.only_score(
+        baca.breathe(
+            abjad.tweak((0, 2)).extra_offset,
+            ),
+        ),
+    baca.only_segment(
+        baca.breathe(),
         ),
     )
 

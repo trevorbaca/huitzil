@@ -154,11 +154,19 @@ maker(
 
 maker(
     ('rh', (2, 13)),
+    # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
+    #baca.hairpin(
+    #    'mp > p <',
+    #    bookend=False,
+    #    pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
+    #    selector=baca.leaves().rleak(),
+    #    ),
+    # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
         'mp > p <',
-        bookend=False,
-        pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
-        selector=baca.leaves().rleak(),
+        #bookend=False,
+        pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
+        selector=baca.leaves()[:-1],
         ),
     )
 
@@ -405,12 +413,14 @@ maker(
     # FUTURE: use this when LilyPond fixes DynamicLine Spanner bug:
     #baca.hairpin(
     #    'mp -- p -- pp -- p -- !',
+    #    abjad.tweak(True).to_barline,
     #    pieces=baca.mgroups([2, 2, 4, 2 + 1]),
     #    selector=baca.leaves().rleak(),
     #    ),
     # FUTURE: replace this when LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
         'mp -- p -- pp -- p',
+        abjad.tweak(True).to_barline,
         bookend=False,
         pieces=baca.mgroups([2, 2, 4, 2 + 1]),
         selector=baca.leaves().rleak(),

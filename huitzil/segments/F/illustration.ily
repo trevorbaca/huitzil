@@ -960,6 +960,7 @@ F_Cello_Music_Voice = {                                                        %
     {
 
         % [F Cello_Music_Voice measure 158 / measure 8]                        %! _comment_measure_numbers
+        \once \override RepeatTie.extra-offset = #'(-1.5 . 0)                  %! baca_repeat_tie_extra_offset:OverrideCommand(1)
         bf,,!1 * 107/30
         \repeatTie                                                             %! TieCorrectionCommand
         \glissando                                                             %! baca_glissando

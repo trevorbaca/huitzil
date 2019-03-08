@@ -447,6 +447,10 @@ maker(
         literal=True,
         selector=baca.leaves(),
         ),
+    # TODO: make +ARCH_A_SCORE work
+    baca.only_score(
+        baca.hairpin_to_barline(),
+        ),
     baca.staff_positions(
         [6, 4, 2, 0],
         allow_repeats=True,
@@ -535,6 +539,10 @@ maker(
 maker(
     ('rh', 26),
     baca.make_monads('1/2'),
+    # TODO: make +ARCH_A_SCORE work
+    baca.only_score(
+        baca.hairpin_to_barline(),
+        ),
     baca.staff_positions(
         [-6],
         allow_repeats=True,

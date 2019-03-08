@@ -43,6 +43,10 @@ huitzil-directly-above-end-of-fingerboard-column-markup = \markup
 huitzil-directly-on-bridge-markup = \markup
     "(directly on bridge)"
 
+huitzil-phrasing-dynamics-see-preface-markup = \markup
+    \italic
+    "phrasing, dynamics: see preface"
+
 huitzil-sliding-back-onto-string-markup = \markup
     \override #'(box-padding . 0.5)
     \box

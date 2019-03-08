@@ -459,6 +459,14 @@ maker(
     )
 
 maker(
+    ('rh', 18),
+    # TODO: make +ARCH_A_SCORE work
+    baca.only_score(
+        baca.hairpin_to_barline(),
+        ),
+    )
+
+maker(
     ('rh', (18, 23)),
     baca.text_spanner(
         '(trem. mod.) => stretto => largo => stretto =>'
