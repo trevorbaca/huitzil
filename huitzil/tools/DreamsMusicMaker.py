@@ -29,12 +29,12 @@ class DreamsMusicMaker(object):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
-        '_extra_counts_per_division',
-        '_pc_displacement',
-        '_pc_operators',
-        '_pitch_class_trees',
-        '_voice_map',
-        )
+        "_extra_counts_per_division",
+        "_pc_displacement",
+        "_pc_operators",
+        "_pitch_class_trees",
+        "_voice_map",
+    )
 
     _publish_storage_format = True
 
@@ -47,7 +47,7 @@ class DreamsMusicMaker(object):
         pc_operators: typing.List = None,
         pitch_class_trees: typing.Tuple[baca.PitchTree] = None,
         voice_map: typing.List[typing.List] = None,
-        ) -> None:
+    ) -> None:
         self.pc_displacement = pc_displacement
         self.extra_counts_per_division = extra_counts_per_division
         self.pc_operators = pc_operators
@@ -80,8 +80,7 @@ class DreamsMusicMaker(object):
     def _attach_beams(self, music):
         tuplets = abjad.iterate(music).components(abjad.Tuplet)
         for tuplet in tuplets:
-            voice_numbers = [
-                abjad.inspect(_).indicator(int) for _ in tuplet]
+            voice_numbers = [abjad.inspect(_).indicator(int) for _ in tuplet]
             runs = baca.sequence(voice_numbers).group_by()
             counts = [len(_) for _ in runs]
             note_groups = baca.sequence(tuplet[:]).partition_by_counts(counts)
@@ -113,13 +112,13 @@ class DreamsMusicMaker(object):
             register = None
             for pattern in self.pc_displacement:
                 if pattern.matches_index(i, total_notes):
-                    register = 'high'
+                    register = "high"
                     break
             else:
-                register = 'low'
-            if register == 'high':
+                register = "low"
+            if register == "high":
                 pass
-            elif register == 'low':
+            elif register == "low":
                 source_pitch = note.written_pitch
                 transposed_pitch = down_one_octave(source_pitch)
                 note.written_pitch = transposed_pitch
@@ -130,7 +129,7 @@ class DreamsMusicMaker(object):
         extra_counts_per_division = self.extra_counts_per_division or [0]
         extra_counts_per_division = abjad.CyclicTuple(
             extra_counts_per_division
-            )
+        )
         inner_tuplets = []
         for i, note_list in enumerate(note_lists):
             start_duration = sum(_.written_duration for _ in note_list)
@@ -150,11 +149,9 @@ class DreamsMusicMaker(object):
             maker = rmakers.TupletRhythmMaker(
                 tuplet_ratios=[ratio],
                 tuplet_specifier=rmakers.TupletSpecifier(
-                    diminution=True,
-                    rewrite_dots=True,
-                    rewrite_sustained=True,
-                    ),
-                )
+                    diminution=True, rewrite_dots=True, rewrite_sustained=True
+                ),
+            )
             selections = maker([target_duration])
             assert len(selections) == 1
             assert isinstance(selections[0], abjad.Selection)
@@ -197,13 +194,13 @@ class DreamsMusicMaker(object):
         return inner_tuplets
 
     def _register_voices(self, music):
-        voice_1_registration = huitzil.registrations['middle']
-        voice_2_registration = huitzil.registrations['low']
-        voice_3_registration = huitzil.registrations['lowest']
+        voice_1_registration = huitzil.registrations["middle"]
+        voice_2_registration = huitzil.registrations["low"]
+        voice_3_registration = huitzil.registrations["lowest"]
         for note in abjad.iterate(music).components(abjad.Note):
             voice_number = abjad.inspect(note).indicator(int)
             if voice_number == 1:
-                color = 'red'
+                color = "red"
                 abjad.override(note).accidental.color = color
                 abjad.override(note).beam.color = color
                 abjad.override(note).dots.color = color
@@ -216,7 +213,7 @@ class DreamsMusicMaker(object):
             elif voice_number == 2:
                 registration = voice_2_registration
             elif voice_number == 3:
-                color = 'blue'
+                color = "blue"
                 abjad.override(note).accidental.color = color
                 abjad.override(note).beam.color = color
                 abjad.override(note).dots.color = color
@@ -263,7 +260,7 @@ class DreamsMusicMaker(object):
         elif isinstance(argument, list):
             self._extra_counts_per_division = argument
         else:
-            raise TypeError(f'list or none: {argument!r}.')
+            raise TypeError(f"list or none: {argument!r}.")
 
     @property
     def pc_displacement(self) -> typing.List[int]:
@@ -284,12 +281,12 @@ class DreamsMusicMaker(object):
         elif isinstance(argument, list):
             self._pc_displacement = argument
         else:
-            raise TypeError(f'list or none: {argument!r}.')
+            raise TypeError(f"list or none: {argument!r}.")
 
     @property
-    def pc_operators(self) -> typing.List[
-        typing.Union[abjad.Inversion, abjad.Transposition]
-        ]:
+    def pc_operators(
+        self
+    ) -> typing.List[typing.Union[abjad.Inversion, abjad.Transposition]]:
         """
         Gets pc operators of music-maker.
 
@@ -304,7 +301,7 @@ class DreamsMusicMaker(object):
         elif isinstance(argument, list):
             self._pc_operators = argument
         else:
-            raise TypeError(f'list or none: {argument!r}.')
+            raise TypeError(f"list or none: {argument!r}.")
 
     @property
     def pitch_class_trees(self) -> typing.Tuple[baca.PitchTree]:
@@ -322,7 +319,7 @@ class DreamsMusicMaker(object):
         elif isinstance(argument, collections.abc.Iterable):
             self._pitch_class_trees = tuple(argument)
         else:
-            raise TypeError(f'pitch-class trees or none: {argument!r}.')
+            raise TypeError(f"pitch-class trees or none: {argument!r}.")
 
     @property
     def voice_map(self) -> typing.List[typing.List]:
@@ -340,4 +337,4 @@ class DreamsMusicMaker(object):
         elif isinstance(argument, list):
             self._voice_map = argument
         else:
-            raise TypeError(f'list or none: {argument!r}.')
+            raise TypeError(f"list or none: {argument!r}.")
