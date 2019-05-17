@@ -319,7 +319,7 @@ class DreamsMusicMaker(object):
     def pitch_class_trees(self, argument):
         if argument is None:
             self._pitch_class_trees = []
-        elif isinstance(argument, collections.Iterable):
+        elif isinstance(argument, collections.abc.Iterable):
             self._pitch_class_trees = tuple(argument)
         else:
             raise TypeError(f'pitch-class trees or none: {argument!r}.')
