@@ -940,8 +940,8 @@ A_Global_Skips = {                                                             %
 A_RH_Music_Voice = {                                                           %! abjad.Path.extern
 
     % [A RH_Music_Voice measure 1]                                             %! _comment_measure_numbers
-    \stopStaff                                                                 %! baca_literal:IndicatorCommand
-    \override MultiMeasureRest.transparent = ##t                               %! baca_mmrest_transparent:OverrideCommand(1)
+    \stopStaff                                                                 %! baca.literal:IndicatorCommand
+    \override MultiMeasureRest.transparent = ##t                               %! baca.mmrest_transparent:OverrideCommand(1)
     \clef "percussion"                                                         %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
     \once \override RHStaff.Clef.color = #(x11-color 'DarkViolet)              %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                         %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1107,7 +1107,7 @@ A_RH_Music_Voice = {                                                           %
 
     % [A RH_Music_Voice measure 54]                                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
-    \revert MultiMeasureRest.transparent                                       %! baca_mmrest_transparent:OverrideCommand(2)
+    \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1152,15 +1152,15 @@ A_Cello_Music_Voice = {                                                        %
     \times 3/5 {
 
         % [A Cello_Music_Voice measure 1]                                      %! _comment_measure_numbers
-        \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #3                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
         \clef "bass"                                                           %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
         \once \override Staff.Clef.color = #(x11-color 'DarkViolet)            %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
         fs!8
         ^ \baca-default-indicator-markup "(“Cello”)"                           %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        - \tweak staff-padding #9                                              %! baca_markup:IndicatorCommand
-        _ \huitzil-phrasing-dynamics-see-preface-markup                        %! baca_markup:IndicatorCommand
+        - \tweak staff-padding #9                                              %! baca.markup:IndicatorCommand
+        _ \huitzil-phrasing-dynamics-see-preface-markup                        %! baca.markup:IndicatorCommand
         [
         \override Staff.Clef.color = #(x11-color 'violet)                      %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
@@ -1446,7 +1446,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Tie.color = #blue
         af,!4
 
-        \once \override RepeatTie.extra-offset = #'(-1.5 . 0)                  %! baca_repeat_tie_extra_offset:OverrideCommand(1)
+        \once \override RepeatTie.extra-offset = #'(-1.5 . 0)                  %! baca.repeat_tie_extra_offset:OverrideCommand(1)
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3316,7 +3316,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
         bf,!1
-        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+        \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }
 
@@ -3324,7 +3324,7 @@ A_Cello_Music_Voice = {                                                        %
     \times 3/5 {
 
         % [A Cello_Music_Voice measure 52]                                     %! _comment_measure_numbers
-        \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #4                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3399,7 +3399,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
         g,2
-        \breathe                                                               %! baca_breathe:IndicatorCommand
+        \breathe                                                               %! baca.breathe:IndicatorCommand
 
     }
 
@@ -3435,10 +3435,10 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
         ef,!4
-        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
-    %%% \tweak extra-offset #'(0 . 2)                                          %! baca_breathe:+SCORE:IndicatorCommand
-    %%% \breathe                                                               %! baca_breathe:+SCORE:IndicatorCommand
-        \breathe                                                               %! baca_breathe:+SEGMENT:IndicatorCommand
+        \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
+    %%% \tweak extra-offset #'(0 . 2)                                          %! baca.breathe:+SCORE:IndicatorCommand
+    %%% \breathe                                                               %! baca.breathe:+SCORE:IndicatorCommand
+        \breathe                                                               %! baca.breathe:+SEGMENT:IndicatorCommand
 
     }
 
