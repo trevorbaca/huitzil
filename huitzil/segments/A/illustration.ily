@@ -2597,7 +2597,6 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #red
         \once \override Tie.color = #red
         f8
-        ]
 
     }
 
