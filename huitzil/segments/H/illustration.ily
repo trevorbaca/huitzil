@@ -501,7 +501,7 @@ H_RH_Music_Voice = {                                                           %
     \override DynamicLineSpanner.staff-padding = 7                             %! baca.literal:IndicatorCommand
     \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x:OverrideCommand(1)
     \override TextScript.self-alignment-X = #0                                 %! baca.text_script_self_alignment_x:OverrideCommand(1)
-    \override TextScript.staff-padding = #4                                    %! baca_script_staff_padding:OverrideCommand(1)
+    \override TextScript.staff-padding = #4                                    %! baca.text_script_staff_padding:OverrideCommand(1)
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2) %! baca.literal:IndicatorCommand
     \clef "percussion"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)                  %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -1072,7 +1072,7 @@ H_RH_Music_Voice = {                                                           %
     \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
     \revert TextScript.self-alignment-X                                        %! baca.text_script_self_alignment_x:OverrideCommand(2)
-    \revert TextScript.staff-padding                                           %! baca_script_staff_padding:OverrideCommand(2)
+    \revert TextScript.staff-padding                                           %! baca.text_script_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
