@@ -147,10 +147,10 @@ class DreamsMusicMaker(object):
                 numerators.append(fraction.numerator)
             ratio = abjad.Ratio(numerators)
             maker = rmakers.TupletRhythmMaker(
-                tuplet_ratios=[ratio],
-                tuplet_specifier=rmakers.TupletSpecifier(
+                rmakers.TupletSpecifier(
                     diminution=True, rewrite_dots=True, rewrite_sustained=True
                 ),
+                tuplet_ratios=[ratio],
             )
             selections = maker([target_duration])
             assert len(selections) == 1
