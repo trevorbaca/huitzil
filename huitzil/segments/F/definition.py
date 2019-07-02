@@ -61,7 +61,7 @@ maker(
     baca.suite(
         baca.pitches('Bb1 Cb2'),
         baca.chunk(
-            baca.repeat_tie_to(),
+            baca.repeat_tie_to(allow_rest=True),
             baca.repeat_tie_extra_offset((-1.5, 0)),
             ),
         ),
