@@ -82,7 +82,7 @@ maker(
     baca.rhythm("{ c'1 * 19/8 }"),
     baca.suite(
         baca.pitch('A2'),
-        baca.repeat_tie_to(),
+        baca.repeat_tie_to(allow_rest=True),
         ),
     )
 

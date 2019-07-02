@@ -55,7 +55,7 @@ maker(
 maker(
     ('vc', (8, 13)),
     baca.pitches('B1 C2'),
-    baca.repeat_tie_to(),
+    baca.repeat_tie_to(allow_rest=True),
     baca.rhythm("{ c'1 * 107/30 c'1 * 1/5 }"),
     )
 
