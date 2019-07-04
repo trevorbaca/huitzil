@@ -968,7 +968,7 @@ A_RH_Music_Voice = {                                                           %
     R1 * 3/8                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 8]                                             %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 9]                                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -977,13 +977,13 @@ A_RH_Music_Voice = {                                                           %
     R1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 11]                                            %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 12]                                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 13]                                            %! _comment_measure_numbers
-    R1 * 3/2                                                                   %! _call_rhythm_commands
+    R1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 14]                                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _call_rhythm_commands
@@ -992,7 +992,7 @@ A_RH_Music_Voice = {                                                           %
     R1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 16]                                            %! _comment_measure_numbers
-    R1 * 2/1                                                                   %! _call_rhythm_commands
+    R1 * 8/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 17]                                            %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _call_rhythm_commands
@@ -1010,31 +1010,31 @@ A_RH_Music_Voice = {                                                           %
     R1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 22]                                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _call_rhythm_commands
+    R1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 23]                                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 24]                                            %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 25]                                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _call_rhythm_commands
+    R1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 26]                                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 27]                                            %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 28]                                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _call_rhythm_commands
+    R1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 29]                                            %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 30]                                            %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 31]                                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
@@ -1043,7 +1043,7 @@ A_RH_Music_Voice = {                                                           %
     R1 * 3/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 33]                                            %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _call_rhythm_commands
+    R1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 34]                                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _call_rhythm_commands
@@ -1058,13 +1058,13 @@ A_RH_Music_Voice = {                                                           %
     R1 * 5/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 38]                                            %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 39]                                            %! _comment_measure_numbers
     R1 * 5/16                                                                  %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 40]                                            %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 41]                                            %! _comment_measure_numbers
     R1 * 9/16                                                                  %! _call_rhythm_commands
@@ -1082,28 +1082,28 @@ A_RH_Music_Voice = {                                                           %
     R1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 46]                                            %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 47]                                            %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 48]                                            %! _comment_measure_numbers
-    R1 * 3/2                                                                   %! _call_rhythm_commands
+    R1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 49]                                            %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 50]                                            %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 51]                                            %! _comment_measure_numbers
     R1 * 9/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 52]                                            %! _comment_measure_numbers
-    R1 * 3/2                                                                   %! _call_rhythm_commands
+    R1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 53]                                            %! _comment_measure_numbers
-    R1 * 1/1                                                                   %! _call_rhythm_commands
+    R1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [A RH_Music_Voice measure 54]                                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _call_rhythm_commands
