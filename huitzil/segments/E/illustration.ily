@@ -943,40 +943,20 @@ E_Cello_Music_Voice = {                                                        %
     ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [E Cello_Music_Voice measure 130 / measure 2]                        %! _comment_measure_numbers
-        R1 * 13/16                                                             %! _call_rhythm_commands
-
-    }
+    % [E Cello_Music_Voice measure 130 / measure 2]                            %! _comment_measure_numbers
+    R1 * 13/24                                                                 %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 131 / measure 3]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    % [E Cello_Music_Voice measure 132 / measure 4]                            %! _comment_measure_numbers
+    R1 * 7/12                                                                  %! _call_rhythm_commands
 
-        % [E Cello_Music_Voice measure 132 / measure 4]                        %! _comment_measure_numbers
-        R1 * 7/8                                                               %! _call_rhythm_commands
+    % [E Cello_Music_Voice measure 133 / measure 5]                            %! _comment_measure_numbers
+    R1 * 53/60                                                                 %! _call_rhythm_commands
 
-    }
-
-    \tweak edge-height #'(0.7 . 0)
-    \times 8/15 {
-
-        % [E Cello_Music_Voice measure 133 / measure 5]                        %! _comment_measure_numbers
-        R1 * 53/32                                                             %! _call_rhythm_commands
-
-    }
-
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
-
-        % [E Cello_Music_Voice measure 134 / measure 6]                        %! _comment_measure_numbers
-        R1 * 23/16                                                             %! _call_rhythm_commands
-
-    }
+    % [E Cello_Music_Voice measure 134 / measure 6]                            %! _comment_measure_numbers
+    R1 * 23/24                                                                 %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 135 / measure 7]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
@@ -987,21 +967,11 @@ E_Cello_Music_Voice = {                                                        %
     % [E Cello_Music_Voice measure 137 / measure 9]                            %! _comment_measure_numbers
     R1 * 3/8                                                                   %! _call_rhythm_commands
 
-    \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    % [E Cello_Music_Voice measure 138 / measure 10]                           %! _comment_measure_numbers
+    R1 * 1/3                                                                   %! _call_rhythm_commands
 
-        % [E Cello_Music_Voice measure 138 / measure 10]                       %! _comment_measure_numbers
-        R1 * 1/2                                                               %! _call_rhythm_commands
-
-    }
-
-    \tweak edge-height #'(0.7 . 0)
-    \times 8/15 {
-
-        % [E Cello_Music_Voice measure 139 / measure 11]                       %! _comment_measure_numbers
-        R1 * 11/8                                                              %! _call_rhythm_commands
-
-    }
+    % [E Cello_Music_Voice measure 139 / measure 11]                           %! _comment_measure_numbers
+    R1 * 11/15                                                                 %! _call_rhythm_commands
 
     % [E Cello_Music_Voice measure 140 / measure 12]                           %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _call_rhythm_commands
