@@ -211,7 +211,7 @@ maker(
         direction=abjad.Down,
         literal=True,
         ),
-    baca.rhythm(music_),
+    baca.rhythm(music_, do_not_check_total_duration=True),
     )
 
 maker(
