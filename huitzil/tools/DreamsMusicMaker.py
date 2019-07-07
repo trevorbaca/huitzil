@@ -152,11 +152,9 @@ class DreamsMusicMaker(object):
                 ),
                 tuplet_ratios=[ratio],
             )
-            selections = maker([target_duration])
-            assert len(selections) == 1
-            assert isinstance(selections[0], abjad.Selection)
-            assert len(selections[0]) == 1, repr(selections[0])
-            inner_tuplet = selections[0][0]
+            selection = maker([target_duration])
+            assert isinstance(selection, abjad.Selection)
+            inner_tuplet = selection[0]
             if inner_tuplet.multiplier == 1:
                 inner_tuplet.hide = True
             plts = baca.select(inner_tuplet).plts()
