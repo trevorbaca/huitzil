@@ -66,7 +66,7 @@ maker(
         r'\startStaff',
         ]),
     baca.pitch('B1'),
-    baca.rhythm("{ c'1 }"),
+    baca.skeleton("{ c'1 }"),
     )
 
 # vcr
@@ -107,19 +107,19 @@ maker(
 maker(
     ('rh', (1, 4)),
     baca.rest_position(0),
-    baca.rhythm("{ c'4 r2 c'4 r2 c'4 r2 c'4 r2 }"),
+    baca.skeleton("{ c'4 r2 c'4 r2 c'4 r2 c'4 r2 }"),
     )
 
 maker(
     ('rh', (5, 8)),
-    baca.rhythm(
+    baca.skeleton(
         "{ c'4 c'16 r8. r4 c'4 c'16 r8. r4 c'4 c'16 r8. r4 c'4 c'16 r8. r4 }"
         ),
     )
 
 maker(
     ('rh', (9, 12)),
-    baca.rhythm(
+    baca.skeleton(
         "{"
         r" c'4 \times 2/3 { c'8 r4 } r4"
         r" c'4 \times 2/3 { c'8 r4 } r4"
@@ -144,12 +144,12 @@ maker(
 
 maker(
     ('rh', (13, 15)),
-    baca.rhythm("{ c'4 c'4 c'4 c'4 c'4 c'4 }"),
+    baca.skeleton("{ c'4 c'4 c'4 c'4 c'4 c'4 }"),
     )
 
 maker(
     ('rh', (16, 18)),
-    baca.rhythm(
+    baca.skeleton(
         "{"
         r" \times 2/3 { c'4 c'4 c'4 }"
         r" \times 2/3 { c'4 c'4 c'4 }"
@@ -160,7 +160,7 @@ maker(
 
 maker(
     ('rh', (19, 20)),
-    baca.rhythm(
+    baca.skeleton(
         "{"
         r" c'8 c'8 c'8 c'8"
         r" c'8 c'8 c'8 c'8"
@@ -170,7 +170,7 @@ maker(
 
 maker(
     ('rh', (21, 24)),
-    baca.rhythm(
+    baca.skeleton(
         "{"
         r" \times 4/5 { c'8 c'8 c'8 c'8 c'8 }"
         r" \times 4/6 { c'8 c'8 c'8 c'8 c'8 c'8 }"
@@ -214,7 +214,7 @@ maker(
         abjad.tweak(3.5).staff_padding,
         direction=abjad.Down,
         ),
-    baca.rhythm("{ c'1 }"),
+    baca.skeleton("{ c'1 }"),
     baca.stem_tremolo(),
     )
 

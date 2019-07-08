@@ -56,7 +56,7 @@ maker(
     ('vc', (8, 13)),
     baca.pitches('A1 Bb1'),
     baca.repeat_tie_to(allow_rest=True),
-    baca.rhythm("{ c'1 * 107/30 c'1 * 1/5 }"),
+    baca.skeleton("{ c'1 * 107/30 c'1 * 1/5 }"),
     )
 
 maker(
@@ -73,7 +73,7 @@ maker(
     baca.note_head_duration_log(2),
     baca.note_head_no_ledgers(True),
     baca.note_head_style('do'),
-    baca.rhythm("{ c'2 }"),
+    baca.skeleton("{ c'2 }"),
     baca.staff_position(7),
     )
 
