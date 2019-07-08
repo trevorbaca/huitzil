@@ -74,12 +74,12 @@ maker(
         direction=abjad.Down,
         ),
     baca.pitch('A2'),
-    baca.rhythm("{ c'1 * 1/4 }"),
+    baca.skeleton("{ c'1 * 1/4 }"),
     )
 
 maker(
     ('vc', (14, 24)),
-    baca.rhythm("{ c'1 * 19/8 }"),
+    baca.skeleton("{ c'1 * 19/8 }"),
     baca.suite(
         baca.pitch('A2'),
         baca.repeat_tie_to(allow_rest=True),
@@ -96,7 +96,7 @@ maker(
         direction=abjad.Down,
         ),
     baca.pitch('G2'),
-    baca.rhythm("{ c'1 * 2 }"),
+    baca.skeleton("{ c'1 * 2 }"),
     )
 
 # vcr

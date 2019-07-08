@@ -74,7 +74,7 @@ maker(
         baca.span_bar_transparent(),
         selector=baca.leaves(),
         ),
-    baca.rhythm("{ c'1 * 1/2 }", do_not_check_total_duration=True),
+    baca.skeleton("{ c'1 * 1/2 }", do_not_check_total_duration=True),
     baca.time_signature_stencil_false(),
     )
 
