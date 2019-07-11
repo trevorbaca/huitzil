@@ -222,9 +222,7 @@ maker(
 maker(
     ('vc', 8),
     baca.suite(
-        baca.untie_to(
-            selector=baca.pleaf(-1),
-            ),
+        baca.untie(baca.pleaf(-2)),
         baca.chunk(
             baca.repeat_tie_to(),
             baca.repeat_tie_extra_offset((-1.5, 0)),
