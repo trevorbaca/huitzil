@@ -224,7 +224,7 @@ maker(
     baca.suite(
         baca.untie(baca.pleaf(-2)),
         baca.chunk(
-            baca.repeat_tie_to(),
+            baca.repeat_tie(baca.pleaf(0)),
             baca.repeat_tie_extra_offset((-1.5, 0)),
             selector=baca.pleaf(-1),
             ),
@@ -233,12 +233,12 @@ maker(
 
 maker(
     ('vc', 20),
-    baca.repeat_tie_to(),
+    baca.repeat_tie(baca.pleaf(0)),
     )
 
 maker(
     ('vc', 48),
-    baca.repeat_tie_to(),
+    baca.repeat_tie(baca.pleaf(0)),
     )
 
 maker(

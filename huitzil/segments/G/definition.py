@@ -82,7 +82,7 @@ maker(
     baca.skeleton("{ c'1 * 19/8 }"),
     baca.suite(
         baca.pitch('A2'),
-        baca.repeat_tie_to(allow_rest=True),
+        baca.repeat_tie(baca.pleaf(0), allow_rest=True),
         ),
     )
 

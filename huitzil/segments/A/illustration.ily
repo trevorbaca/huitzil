@@ -1456,7 +1456,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
         af,!16
-        \repeatTie                                                             %! TieCorrectionCommand
+        \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
 
     }
 
@@ -1913,7 +1913,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #red
         \once \override Tie.color = #red
         fs!4
-        \repeatTie                                                             %! TieCorrectionCommand
+        \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -3154,7 +3154,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
         b,2
-        \repeatTie                                                             %! TieCorrectionCommand
+        \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
