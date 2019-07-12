@@ -957,20 +957,20 @@ F_Cello_Music_Voice = {                                                        %
     % [F Cello_Music_Voice measure 157 / measure 7]                            %! _comment_measure_numbers
     R1 * 2/3                                                                   %! _make_measure_silences
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [F Cello_Music_Voice measure 158 / measure 8]                        %! _comment_measure_numbers
         \once \override RepeatTie.extra-offset = #'(-1.5 . 0)                  %! baca.repeat_tie_extra_offset:OverrideCommand(1)
-        bf,,!1 * 107/30
+        bf,,!1 * 107/30                                                        %! baca.skeleton
         \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-        cf,!1 * 1/5
+        cf,!1 * 1/5                                                            %! baca.skeleton
         \glissando                                                             %! baca.glissando
 
-    }
+    }                                                                          %! baca.skeleton
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [F Cello_Music_Voice measure 164 / measure 14]                       %! _comment_measure_numbers
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_164:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
@@ -984,10 +984,10 @@ F_Cello_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-        b''2
+        b''2                                                                   %! baca.skeleton
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    }
+    }                                                                          %! baca.skeleton
 
     <<                                                                         %! _make_multimeasure_rest_container
 

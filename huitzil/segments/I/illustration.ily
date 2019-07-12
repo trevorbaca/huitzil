@@ -953,19 +953,19 @@ I_Cello_Music_Voice = {                                                        %
     % [I Cello_Music_Voice measure 232 / measure 7]                            %! _comment_measure_numbers
     R1 * 2/3                                                                   %! _make_measure_silences
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [I Cello_Music_Voice measure 233 / measure 8]                        %! _comment_measure_numbers
-        a,,1 * 107/30
+        a,,1 * 107/30                                                          %! baca.skeleton
         \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-        bf,,!1 * 1/5
+        bf,,!1 * 1/5                                                           %! baca.skeleton
         \glissando                                                             %! baca.glissando
 
-    }
+    }                                                                          %! baca.skeleton
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [I Cello_Music_Voice measure 239 / measure 14]                       %! _comment_measure_numbers
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_239:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
@@ -979,10 +979,10 @@ I_Cello_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-        b''2
+        b''2                                                                   %! baca.skeleton
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    }
+    }                                                                          %! baca.skeleton
 
     <<                                                                         %! _make_multimeasure_rest_container
 
