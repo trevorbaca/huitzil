@@ -790,7 +790,7 @@ G_Cello_Music_Voice = {                                                        %
 
         % [G Cello_Music_Voice measure 187 / measure 14]                       %! _comment_measure_numbers
         a,1 * 19/8
-        \repeatTie                                                             %! TieCorrectionCommand
+        \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
     }

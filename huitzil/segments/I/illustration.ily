@@ -957,7 +957,7 @@ I_Cello_Music_Voice = {                                                        %
 
         % [I Cello_Music_Voice measure 233 / measure 8]                        %! _comment_measure_numbers
         a,,1 * 107/30
-        \repeatTie                                                             %! TieCorrectionCommand
+        \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
         bf,,!1 * 1/5

@@ -965,7 +965,7 @@ D_Cello_Music_Voice = {                                                        %
 
         % [D Cello_Music_Voice measure 113 / measure 8]                        %! _comment_measure_numbers
         b,,1 * 107/30
-        \repeatTie                                                             %! TieCorrectionCommand
+        \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
         c,1 * 1/5
