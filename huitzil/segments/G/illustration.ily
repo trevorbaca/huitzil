@@ -708,7 +708,7 @@ G_RH_Music_Staff = {                                                           %
 
 G_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [G Cello_Music_Voice measure 174 / measure 1]                        %! _comment_measure_numbers
         \stopStaff                                                             %! baca.literal:IndicatorCommand
@@ -721,13 +721,13 @@ G_Cello_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-        a,1 * 1/4
+        a,1 * 1/4                                                              %! baca.skeleton
         ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         - \tweak padding #2.5                                                  %! baca.markup:IndicatorCommand
         _ \markup { III }                                                      %! baca.markup:IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    }
+    }                                                                          %! baca.skeleton
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -786,19 +786,19 @@ G_Cello_Music_Voice = {                                                        %
     R1 * 1/4                                                                   %! _make_measure_silences
     \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent:OverrideCommand(2)
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [G Cello_Music_Voice measure 187 / measure 14]                       %! _comment_measure_numbers
-        a,1 * 19/8
+        a,1 * 19/8                                                             %! baca.skeleton
         \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-    }
+    }                                                                          %! baca.skeleton
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [G Cello_Music_Voice measure 198 / measure 25]                       %! _comment_measure_numbers
-        g,1 * 2
+        g,1 * 2                                                                %! baca.skeleton
         - \tweak padding #2.5                                                  %! baca.markup:IndicatorCommand
         - \tweak parent-alignment-X #0                                         %! baca.markup:IndicatorCommand
         - \tweak self-alignment-X #-0.05                                       %! baca.markup:IndicatorCommand
@@ -808,7 +808,7 @@ G_Cello_Music_Voice = {                                                        %
         \revert Score.SpanBar.transparent                                      %! baca.span_bar_transparent:OverrideCommand(2)
         \revert Score.TimeSignature.stencil                                    %! baca.time_signature_stencil_false:OverrideCommand(2)
 
-    }
+    }                                                                          %! baca.skeleton
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 

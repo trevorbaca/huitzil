@@ -961,19 +961,19 @@ D_Cello_Music_Voice = {                                                        %
     % [D Cello_Music_Voice measure 112 / measure 7]                            %! _comment_measure_numbers
     R1 * 2/3                                                                   %! _make_measure_silences
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [D Cello_Music_Voice measure 113 / measure 8]                        %! _comment_measure_numbers
-        b,,1 * 107/30
+        b,,1 * 107/30                                                          %! baca.skeleton
         \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-        c,1 * 1/5
+        c,1 * 1/5                                                              %! baca.skeleton
         \glissando                                                             %! baca.glissando
 
-    }
+    }                                                                          %! baca.skeleton
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [D Cello_Music_Voice measure 119 / measure 14]                       %! _comment_measure_numbers
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_119:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
@@ -987,10 +987,10 @@ D_Cello_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-        b''2
+        b''2                                                                   %! baca.skeleton
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    }
+    }                                                                          %! baca.skeleton
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1036,7 +1036,7 @@ D_Cello_Music_Voice = {                                                        %
     R1 * 1/2                                                                   %! _make_measure_silences
     \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent:OverrideCommand(2)
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [D Cello_Music_Voice measure 128 / measure 23]                       %! _comment_measure_numbers
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_128:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
@@ -1048,13 +1048,13 @@ D_Cello_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-        bf,,!1 * 1/2
+        bf,,!1 * 1/2                                                           %! baca.skeleton
         \revert Score.BarLine.transparent                                      %! baca.bar_line_transparent:OverrideCommand(2)
         \revert Score.SpanBar.transparent                                      %! baca.span_bar_transparent:OverrideCommand(2)
         \revert Score.TimeSignature.stencil                                    %! baca.time_signature_stencil_false:OverrideCommand(2)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    }
+    }                                                                          %! baca.skeleton
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 

@@ -1114,7 +1114,7 @@ H_RH_Music_Staff = {                                                           %
 
 H_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [H Cello_Music_Voice measure 200 / measure 1]                        %! _comment_measure_numbers
         \override Score.BarLine.transparent = ##t                              %! baca.bar_line_transparent:OverrideCommand(1)
@@ -1124,11 +1124,11 @@ H_Cello_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        a,,1 * 1/2
+        a,,1 * 1/2                                                             %! baca.skeleton
         ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    }
+    }                                                                          %! baca.skeleton
 
     <<                                                                         %! _make_multimeasure_rest_container
 

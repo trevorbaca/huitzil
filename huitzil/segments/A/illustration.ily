@@ -1148,8 +1148,8 @@ A_RH_Music_Staff = {                                                           %
 
 A_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/5 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 1]                                      %! _comment_measure_numbers
         \override TupletBracket.staff-padding = #3                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
@@ -1157,220 +1157,220 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'DarkViolet)            %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
-        fs!8
+        fs!8                                                                   %! baca.music
         ^ \baca-default-indicator-markup "(“Cello”)"                           %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         - \tweak staff-padding #9                                              %! baca.markup:IndicatorCommand
         _ \huitzil-phrasing-dynamics-see-preface-markup                        %! baca.markup:IndicatorCommand
         [
         \override Staff.Clef.color = #(x11-color 'violet)                      %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        e8
+        e8                                                                     %! baca.music
 
-        f8
+        f8                                                                     %! baca.music
 
-        g8
+        g8                                                                     %! baca.music
 
-        af!8
+        af!8                                                                   %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        a,8
+        a,8                                                                    %! baca.music
         [
 
-        ef!8
+        ef!8                                                                   %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        d16
+        d16                                                                    %! baca.music
         [
 
-        e16
+        e16                                                                    %! baca.music
 
-        f16
+        f16                                                                    %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        cs!16
+        cs!16                                                                  %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 9/16 {                                                              %! baca.music
 
         % [A Cello_Music_Voice measure 2]                                      %! _comment_measure_numbers
-        bf,!4
+        bf,!4                                                                  %! baca.music
 
-        a,4
+        a,4                                                                    %! baca.music
 
-        b,4
+        b,4                                                                    %! baca.music
 
-        c4
+        c4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/5 {                                                               %! baca.music
 
-        f,8
+        f,8                                                                    %! baca.music
         [
 
-        a,8
+        a,8                                                                    %! baca.music
 
-        ef!8
+        ef!8                                                                   %! baca.music
 
-        d8
+        d8                                                                     %! baca.music
 
-        e8
+        e8                                                                     %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 3]                                      %! _comment_measure_numbers
-        c8
+        c8                                                                     %! baca.music
         [
 
-        cs!8
+        cs!8                                                                   %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        bf,!16
+        bf,!16                                                                 %! baca.music
         [
 
-        a,16
+        a,16                                                                   %! baca.music
 
-        b,16
+        b,16                                                                   %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \times 4/5 {
+    \times 4/5 {                                                               %! baca.music
 
-        af,!16
+        af,!16                                                                 %! baca.music
         [
 
-        fs,!16
+        fs,!16                                                                 %! baca.music
 
-        e16
+        e16                                                                    %! baca.music
 
-        f,16
+        f,16                                                                   %! baca.music
 
-        g,16
+        g,16                                                                   %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 7/8 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 4]                                      %! _comment_measure_numbers
-        b,4
+        b,4                                                                    %! baca.music
 
-        c4
+        c4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \times 2/3 {
+    \times 2/3 {                                                               %! baca.music
 
-        cs!8
+        cs!8                                                                   %! baca.music
         [
 
-        bf,!8
+        bf,!8                                                                  %! baca.music
 
-        a,8
+        a,8                                                                    %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        g8.
+        g8.                                                                    %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 5]                                      %! _comment_measure_numbers
-        af!16
+        af!16                                                                  %! baca.music
         [
 
-        fs!16
+        fs!16                                                                  %! baca.music
 
-        e16
+        e16                                                                    %! baca.music
 
-        f16
+        f16                                                                    %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \times 4/5 {
+    \times 4/5 {                                                               %! baca.music
 
-        e16
+        e16                                                                    %! baca.music
         [
 
-        f16
+        f16                                                                    %! baca.music
 
-        a,16
+        a,16                                                                   %! baca.music
 
-        ef!16
+        ef!16                                                                  %! baca.music
 
-        d16
+        d16                                                                    %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 7/8 {                                                               %! baca.music
 
-        f,4
+        f,4                                                                    %! baca.music
 
-        g,4
+        g,4                                                                    %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \times 2/3 {
+    \times 2/3 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 6]                                      %! _comment_measure_numbers
-        af,!8
+        af,!8                                                                  %! baca.music
         [
 
-        fs,!8
+        fs,!8                                                                  %! baca.music
 
-        e8
+        e8                                                                     %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/4 {                                                               %! baca.music
 
-        cs!8
+        cs!8                                                                   %! baca.music
         [
 
-        d8
+        d8                                                                     %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \times 2/3 {
+    \times 2/3 {                                                               %! baca.music
 
-        b,8
+        b,8                                                                    %! baca.music
         [
 
-        bf,!8
+        bf,!8                                                                  %! baca.music
         ]
 
         \once \override Accidental.color = #blue
@@ -1381,45 +1381,45 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        c2
+        c2                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 7]                                      %! _comment_measure_numbers
-        a,16
+        a,16                                                                   %! baca.music
         [
 
-        g16
+        g16                                                                    %! baca.music
 
-        f16
+        f16                                                                    %! baca.music
 
-        fs!16
+        fs!16                                                                  %! baca.music
 
-        af!16
+        af!16                                                                  %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        c32
+        c32                                                                    %! baca.music
         [
 
-        cs!32
+        cs!32                                                                  %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 11/12 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 11/12 {                                                             %! baca.music
 
         % [A Cello_Music_Voice measure 8]                                      %! _comment_measure_numbers
-        d8
+        d8                                                                     %! baca.music
         [
 
-        b,8
+        b,8                                                                    %! baca.music
         ]
 
         \once \override Accidental.color = #blue
@@ -1430,11 +1430,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        bf,!2
+        bf,!2                                                                  %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1444,7 +1444,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        af,!4
+        af,!4                                                                  %! baca.music
 
         \once \override RepeatTie.extra-offset = #'(-1.5 . 0)                  %! baca.repeat_tie_extra_offset:OverrideCommand(1)
         \once \override Accidental.color = #blue
@@ -1455,58 +1455,58 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        af,!16
+        af,!16                                                                 %! baca.music
         \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/4 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 9]                                      %! _comment_measure_numbers
-        a,8
+        a,8                                                                    %! baca.music
         [
 
-        g,8
+        g,8                                                                    %! baca.music
 
-        f,8
+        f,8                                                                    %! baca.music
 
-        fs,!8
+        fs,!8                                                                  %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        f,16
+        f,16                                                                   %! baca.music
         [
 
-        fs,!16
+        fs,!16                                                                 %! baca.music
 
-        bf,!16
+        bf,!16                                                                 %! baca.music
 
-        e16
+        e16                                                                    %! baca.music
 
-        ef!16
+        ef!16                                                                  %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        fs,!32
+        fs,!32                                                                 %! baca.music
         [
 
-        af,!32
+        af,!32                                                                 %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 7/9 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 10]                                     %! _comment_measure_numbers
-        a,8
+        a,8                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1516,7 +1516,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        g,2
+        g,2                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1526,40 +1526,30 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        f,2
+        f,2                                                                    %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/5 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 11]                                     %! _comment_measure_numbers
-        ef!8
+        ef!8                                                                   %! baca.music
         [
 
-        f8
+        f8                                                                     %! baca.music
 
-        fs!8
+        fs!8                                                                   %! baca.music
 
-        bf,!8
+        bf,!8                                                                  %! baca.music
 
-        e8
+        e8                                                                     %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
-
-        \once \override Accidental.color = #blue
-        \once \override Beam.color = #blue
-        \once \override Dots.color = #blue
-        \once \override NoteHead.color = #blue
-        \once \override RepeatTie.color = #blue
-        \once \override Slur.color = #blue
-        \once \override Stem.color = #blue
-        \once \override Tie.color = #blue
-        bf,!2
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 5/8 {                                                               %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1569,30 +1559,40 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        c2
+        bf,!2                                                                  %! baca.music
 
-    }
+        \once \override Accidental.color = #blue
+        \once \override Beam.color = #blue
+        \once \override Dots.color = #blue
+        \once \override NoteHead.color = #blue
+        \once \override RepeatTie.color = #blue
+        \once \override Slur.color = #blue
+        \once \override Stem.color = #blue
+        \once \override Tie.color = #blue
+        c2                                                                     %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    }                                                                          %! baca.music
+
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 12]                                     %! _comment_measure_numbers
-        cs!16
+        cs!16                                                                  %! baca.music
         [
 
-        d16
+        d16                                                                    %! baca.music
 
-        b,16
+        b,16                                                                   %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        e16
+        e16                                                                    %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1602,12 +1602,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        ef,!2
+        ef,!2                                                                  %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/4 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 13]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -1618,7 +1618,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        d2
+        d2                                                                     %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1628,7 +1628,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        e,2
+        e,2                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1638,7 +1638,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        fs,!2
+        fs,!2                                                                  %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1648,11 +1648,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        f,2
+        f,2                                                                    %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 14]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -1663,7 +1663,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        fs,!4
+        fs,!4                                                                  %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1673,7 +1673,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        f,4
+        f,4                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1683,7 +1683,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        cs!4
+        cs!4                                                                   %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1693,7 +1693,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        g,4
+        g,4                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1703,11 +1703,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        af,!4
+        af,!4                                                                  %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 15]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -1718,7 +1718,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        f,8
+        f,8                                                                    %! baca.music
         [
 
         \once \override Accidental.color = #blue
@@ -1729,12 +1729,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        ef,!8
+        ef,!8                                                                  %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \times 2/3 {
+    \times 2/3 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 16]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -1745,7 +1745,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        d1
+        d1                                                                     %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1755,7 +1755,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        e,1
+        e,1                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1765,12 +1765,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        fs,!1
+        fs,!1                                                                  %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/14 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 9/14 {                                                              %! baca.music
 
         % [A Cello_Music_Voice measure 17]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -1781,7 +1781,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        f,2
+        f,2                                                                    %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1791,7 +1791,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        g4
+        g4                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1801,7 +1801,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        af!4
+        af!4                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1811,7 +1811,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        c'4
+        c'4                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1821,12 +1821,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        fs,!2
+        fs,!2                                                                  %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 7/12 {                                                              %! baca.music
 
         % [A Cello_Music_Voice measure 18]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -1837,7 +1837,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        c1
+        c1                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1847,11 +1847,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        d'2
+        d'2                                                                    %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 19]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -1862,7 +1862,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        ef!8
+        ef!8                                                                   %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1872,7 +1872,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        e,4
+        e,4                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1882,11 +1882,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        cs!4
+        cs!4                                                                   %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1896,12 +1896,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        fs!8
+        fs!8                                                                   %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 5/8 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 20]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -1912,7 +1912,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        fs!4
+        fs!4                                                                   %! baca.music
         \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
 
         \once \override Accidental.color = #red
@@ -1923,7 +1923,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        af!4
+        af!4                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1933,7 +1933,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        a4
+        a4                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1943,12 +1943,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        cs!4
+        cs!4                                                                   %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/10 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 7/10 {                                                              %! baca.music
 
         % [A Cello_Music_Voice measure 21]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -1959,7 +1959,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        d4
+        d4                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1969,7 +1969,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        cs!4
+        cs!4                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1979,7 +1979,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        ef!4
+        ef!4                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1989,7 +1989,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        e4
+        e4                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1999,11 +1999,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        f4
+        f4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 22]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2014,7 +2014,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        af!8
+        af!8                                                                   %! baca.music
         [
 
         \once \override Accidental.color = #red
@@ -2025,12 +2025,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        a8
+        a8                                                                     %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \times 2/3 {
+    \times 2/3 {                                                               %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2040,7 +2040,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        b8
+        b8                                                                     %! baca.music
         [
 
         \once \override Accidental.color = #red
@@ -2051,7 +2051,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        c'8
+        c'8                                                                    %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2061,12 +2061,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        bf!8
+        bf!8                                                                   %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 23]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2077,7 +2077,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        f4
+        f4                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2087,7 +2087,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        d'4
+        d'4                                                                    %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2097,7 +2097,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        cs'!4
+        cs'!4                                                                  %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2107,7 +2107,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        ef!4
+        ef!4                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2117,12 +2117,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        e4
+        e4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/4 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 24]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2133,7 +2133,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        bf!4
+        bf!4                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2143,22 +2143,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        af!4
+        af!4                                                                   %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
-
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override RepeatTie.color = #red
-        \once \override Slur.color = #red
-        \once \override Stem.color = #red
-        \once \override Tie.color = #red
-        a4
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 5/6 {                                                               %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2168,7 +2158,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        b,4
+        a4                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2178,11 +2168,21 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        c4
+        b,4                                                                    %! baca.music
 
-    }
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Tie.color = #red
+        c4                                                                     %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    }                                                                          %! baca.music
+
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 25]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2193,12 +2193,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        cs!8
+        cs!8                                                                   %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/4 {                                                               %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2208,7 +2208,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        g8
+        g8                                                                     %! baca.music
         [
 
         \once \override Accidental.color = #red
@@ -2219,7 +2219,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        fs!8
+        fs!8                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2229,7 +2229,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        af!8
+        af!8                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2239,12 +2239,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        a8
+        a8                                                                     %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 26]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2255,7 +2255,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        c4
+        c4                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2265,7 +2265,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        bf!4
+        bf!4                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2275,7 +2275,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        af!4
+        af!4                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2285,7 +2285,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        a4
+        a4                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2295,21 +2295,21 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        b4
+        b4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \times 2/3 {
+    \times 2/3 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 27]                                     %! _comment_measure_numbers
-        fs!8
+        fs!8                                                                   %! baca.music
         [
 
-        a,8
+        a,8                                                                    %! baca.music
 
-        bf,!8
+        bf,!8                                                                  %! baca.music
 
-        af!8
+        af!8                                                                   %! baca.music
         ]
 
         \once \override Accidental.color = #red
@@ -2320,21 +2320,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        g4
+        g4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
-
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override RepeatTie.color = #red
-        \once \override Slur.color = #red
-        \once \override Stem.color = #red
-        \once \override Tie.color = #red
-        cs'!4
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2344,11 +2334,21 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        ef!4
+        cs'!4                                                                  %! baca.music
 
-    }
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Tie.color = #red
+        ef!4                                                                   %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    }                                                                          %! baca.music
+
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 28]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2359,7 +2359,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        d'8
+        d'8                                                                    %! baca.music
         [
 
         \once \override Accidental.color = #red
@@ -2370,7 +2370,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        c'8
+        c'8                                                                    %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2380,12 +2380,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        b8
+        b8                                                                     %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2395,11 +2395,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        bf!8
+        bf!8                                                                   %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \times 2/3 {
+    \times 2/3 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 29]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2410,7 +2410,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        e2
+        e2                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2420,25 +2420,25 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        f2
+        f2                                                                     %! baca.music
 
-        ef!4
+        ef!4                                                                   %! baca.music
 
-        d4
+        d4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \times 2/3 {
+    \times 2/3 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 30]                                     %! _comment_measure_numbers
-        b,8
+        b,8                                                                    %! baca.music
         [
 
-        cs!8
+        cs!8                                                                   %! baca.music
 
-        ef!8
+        ef!8                                                                   %! baca.music
 
-        d8
+        d8                                                                     %! baca.music
         ]
 
         \once \override Accidental.color = #red
@@ -2449,21 +2449,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        c4
+        c4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
-
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override RepeatTie.color = #red
-        \once \override Slur.color = #red
-        \once \override Stem.color = #red
-        \once \override Tie.color = #red
-        d'4
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2473,11 +2463,21 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        bf!4
+        d'4                                                                    %! baca.music
 
-    }
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Tie.color = #red
+        bf!4                                                                   %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    }                                                                          %! baca.music
+
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 31]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2488,7 +2488,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        e8
+        e8                                                                     %! baca.music
         [
 
         \once \override Accidental.color = #red
@@ -2499,7 +2499,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        f8
+        f8                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2509,23 +2509,13 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        ef!8
+        ef!8                                                                   %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override RepeatTie.color = #red
-        \once \override Slur.color = #red
-        \once \override Stem.color = #red
-        \once \override Tie.color = #red
-        b,4
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/4 {                                                               %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2535,12 +2525,22 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        ef!4
+        b,4                                                                    %! baca.music
 
-    }
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Tie.color = #red
+        ef!4                                                                   %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    }                                                                          %! baca.music
+
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/4 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 32]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -2551,7 +2551,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        a,2
+        a,2                                                                    %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2561,7 +2561,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        af!4
+        af!4                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2571,21 +2571,21 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        bf!4
+        bf!4                                                                   %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 33]                                     %! _comment_measure_numbers
-        fs,!16
+        fs,!16                                                                 %! baca.music
         [
 
-        g,16
+        g,16                                                                   %! baca.music
 
-        e16
+        e16                                                                    %! baca.music
 
-        ef!16
+        ef!16                                                                  %! baca.music
         ]
 
         \once \override Accidental.color = #red
@@ -2596,11 +2596,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        f8
+        f8                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2610,7 +2610,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        bf!16
+        bf!16                                                                  %! baca.music
         [
 
         \once \override Accidental.color = #red
@@ -2621,12 +2621,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        b16
+        b16                                                                    %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 34]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2637,7 +2637,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        ef!4
+        ef!4                                                                   %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2647,7 +2647,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        a,2
+        a,2                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2657,11 +2657,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        af,!2
+        af,!2                                                                  %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 35]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2672,19 +2672,19 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        f4
+        f4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/10 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 9/10 {                                                              %! baca.music
 
-        fs!8
+        fs!8                                                                   %! baca.music
         [
 
-        g8
+        g8                                                                     %! baca.music
 
-        e8
+        e8                                                                     %! baca.music
         ]
 
         \once \override Accidental.color = #red
@@ -2695,11 +2695,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        ef!4
+        ef!4                                                                   %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 36]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2710,7 +2710,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        cs!8
+        cs!8                                                                   %! baca.music
         [
 
         \once \override Accidental.color = #red
@@ -2721,7 +2721,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        d8
+        d8                                                                     %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2731,28 +2731,28 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        c8
+        c8                                                                     %! baca.music
         ]
 
-        bf,!16
+        bf,!16                                                                 %! baca.music
         [
 
-        b,16
+        b,16                                                                   %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        ef!16
+        ef!16                                                                  %! baca.music
         [
 
-        f,16
+        f,16                                                                   %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 37]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -2763,7 +2763,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        fs,!2
+        fs,!2                                                                  %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2773,7 +2773,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        g,2
+        g,2                                                                    %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2783,11 +2783,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        e4
+        e4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \times 2/3 {
+    \times 2/3 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 38]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2798,31 +2798,21 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        b4
+        b4                                                                     %! baca.music
 
-        cs!8
+        cs!8                                                                   %! baca.music
         [
 
-        d8
+        d8                                                                     %! baca.music
 
-        c8
+        c8                                                                     %! baca.music
 
-        bf,!8
+        bf,!8                                                                  %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
-
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override RepeatTie.color = #red
-        \once \override Slur.color = #red
-        \once \override Stem.color = #red
-        \once \override Tie.color = #red
-        af!4
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2832,24 +2822,34 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        bf!4
+        af!4                                                                   %! baca.music
 
-    }
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override RepeatTie.color = #red
+        \once \override Slur.color = #red
+        \once \override Stem.color = #red
+        \once \override Tie.color = #red
+        bf!4                                                                   %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    }                                                                          %! baca.music
+
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 39]                                     %! _comment_measure_numbers
-        b,16
+        b,16                                                                   %! baca.music
         [
 
-        ef!16
+        ef!16                                                                  %! baca.music
 
-        a,16
+        a,16                                                                   %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2859,11 +2859,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        bf,!8
+        bf,!8                                                                  %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \times 2/3 {
+    \times 2/3 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 40]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2874,7 +2874,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        b,2
+        b,2                                                                    %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2884,24 +2884,24 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        cs!2
+        cs!2                                                                   %! baca.music
 
-        d4
+        d4                                                                     %! baca.music
 
-        c4
+        c4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/14 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 9/14 {                                                              %! baca.music
 
         % [A Cello_Music_Voice measure 41]                                     %! _comment_measure_numbers
-        a,8
+        a,8                                                                    %! baca.music
         [
 
-        af,!8
+        af,!8                                                                  %! baca.music
 
-        bf,!8
+        bf,!8                                                                  %! baca.music
         ]
 
         \once \override Accidental.color = #red
@@ -2912,7 +2912,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        b,4
+        b,4                                                                    %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2922,12 +2922,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        ef!4
+        ef!4                                                                   %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/4 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 42]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -2938,7 +2938,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        e,2
+        e,2                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2948,11 +2948,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        ef,!2
+        ef,!2                                                                  %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 43]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #red
@@ -2963,7 +2963,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        f8
+        f8                                                                     %! baca.music
         [
 
         \once \override Accidental.color = #red
@@ -2974,7 +2974,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        fs!8
+        fs!8                                                                   %! baca.music
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2984,33 +2984,33 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        g8
+        g8                                                                     %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        fs!8
+        fs!8                                                                   %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/4 {                                                               %! baca.music
 
-        g8
+        g8                                                                     %! baca.music
         [
 
-        af!8
+        af!8                                                                   %! baca.music
 
-        f8
+        f8                                                                     %! baca.music
 
-        e8
+        e8                                                                     %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 44]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -3021,23 +3021,23 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        d4
+        d4                                                                     %! baca.music
 
-        ef!16
+        ef!16                                                                  %! baca.music
         [
 
-        cs!16
+        cs!16                                                                  %! baca.music
 
-        b,16
+        b,16                                                                   %! baca.music
 
-        c16
+        c16                                                                    %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \times 4/5 {
+    \times 4/5 {                                                               %! baca.music
 
-        e16
+        e16                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3047,12 +3047,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        fs,!4
+        fs,!4                                                                  %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 7/9 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 45]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -3063,7 +3063,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        g,2
+        g,2                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3073,24 +3073,24 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        af,!2
+        af,!2                                                                  %! baca.music
 
-        f8
+        f8                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 9/16 {                                                              %! baca.music
 
         % [A Cello_Music_Voice measure 46]                                     %! _comment_measure_numbers
-        c8
+        c8                                                                     %! baca.music
         [
 
-        d8
+        d8                                                                     %! baca.music
 
-        ef!8
+        ef!8                                                                   %! baca.music
 
-        cs!8
+        cs!8                                                                   %! baca.music
         ]
 
         \once \override Accidental.color = #blue
@@ -3101,12 +3101,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        b,2
+        b,2                                                                    %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/10 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 7/10 {                                                              %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3116,33 +3116,33 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        a,2
+        a,2                                                                    %! baca.music
 
-        b,8
+        b,8                                                                    %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 47]                                     %! _comment_measure_numbers
-        c16
+        c16                                                                    %! baca.music
         [
 
-        e16
+        e16                                                                    %! baca.music
 
-        bf,!16
+        bf,!16                                                                 %! baca.music
         ]
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
-        b,16
+        b,16                                                                   %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/5 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 48]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -3153,7 +3153,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        b,2
+        b,2                                                                    %! baca.music
         \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
 
         \once \override Accidental.color = #blue
@@ -3164,7 +3164,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        a,2
+        a,2                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3174,7 +3174,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        af,!2
+        af,!2                                                                  %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3184,7 +3184,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        bf,!2
+        bf,!2                                                                  %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3194,11 +3194,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        c2
+        c2                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 49]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -3209,7 +3209,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        d,2
+        d,2                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3219,11 +3219,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        c,2
+        c,2                                                                    %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 50]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -3234,7 +3234,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        b,,4
+        b,,4                                                                   %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3244,7 +3244,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        g,4
+        g,4                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3254,11 +3254,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        cs,!4
+        cs,!4                                                                  %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3268,12 +3268,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        c4
+        c4                                                                     %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 9/16 {                                                              %! baca.music
 
         % [A Cello_Music_Voice measure 51]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -3284,7 +3284,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        b,1
+        b,1                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3294,7 +3294,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        a,1
+        a,1                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3304,7 +3304,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        af,!1
+        af,!1                                                                  %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3314,13 +3314,13 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        bf,!1
+        bf,!1                                                                  %! baca.music
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }
+    }                                                                          %! baca.music
 
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \tweak text #tuplet-number::calc-fraction-text                             %! baca.music
+    \times 3/5 {                                                               %! baca.music
 
         % [A Cello_Music_Voice measure 52]                                     %! _comment_measure_numbers
         \override TupletBracket.staff-padding = #4                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
@@ -3332,7 +3332,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        cs,!2
+        cs,!2                                                                  %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3342,7 +3342,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        d,2
+        d,2                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3352,7 +3352,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        c,2
+        c,2                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3362,7 +3362,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        b,,2
+        b,,2                                                                   %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3372,11 +3372,11 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        g,2
+        g,2                                                                    %! baca.music
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 53]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -3387,7 +3387,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        fs,!2
+        fs,!2                                                                  %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3397,12 +3397,12 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        g,2
+        g,2                                                                    %! baca.music
         \breathe                                                               %! baca.breathe:IndicatorCommand
 
-    }
+    }                                                                          %! baca.music
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1) {                                                %! baca.music
 
         % [A Cello_Music_Voice measure 54]                                     %! _comment_measure_numbers
         \once \override Accidental.color = #blue
@@ -3413,7 +3413,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        f,4
+        f,4                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3423,7 +3423,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        e,4
+        e,4                                                                    %! baca.music
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3433,13 +3433,13 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        ef,!4
+        ef,!4                                                                  %! baca.music
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
     %%% \tweak extra-offset #'(0 . 2)                                          %! baca.breathe:+SCORE:IndicatorCommand
     %%% \breathe                                                               %! baca.breathe:+SCORE:IndicatorCommand
         \breathe                                                               %! baca.breathe:+SEGMENT:IndicatorCommand
 
-    }
+    }                                                                          %! baca.music
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 

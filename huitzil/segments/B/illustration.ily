@@ -411,7 +411,7 @@ B_Global_Skips = {                                                             %
 
 B_RH_Music_Voice = {                                                           %! abjad.Path.extern
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [B RH_Music_Voice measure 55 / measure 1]                            %! _comment_measure_numbers
         \override Staff.BarLine.bar-extent = #'(-4 . 4)                        %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:baca.bar_extent_persistent:IndicatorCommand
@@ -427,7 +427,7 @@ B_RH_Music_Voice = {                                                           %
     %@% \override RHStaff.Clef.color = ##f                                     %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set RHStaff.forceClef = ##t                                           %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)         %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         - \tweak self-alignment-X #-0.9                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         \baca-mp-sempre                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -437,344 +437,344 @@ B_RH_Music_Voice = {                                                           %
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                 %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         \override Rest.staff-position = #0                                     %! baca.rest_position:OverrideCommand(1)
-        r2
+        r2                                                                     %! baca.skeleton
 
         % [B RH_Music_Voice measure 56 / measure 2]                            %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        r2
+        r2                                                                     %! baca.skeleton
 
         % [B RH_Music_Voice measure 57 / measure 3]                            %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        r2
+        r2                                                                     %! baca.skeleton
 
         % [B RH_Music_Voice measure 58 / measure 4]                            %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        r2
+        r2                                                                     %! baca.skeleton
         \revert Rest.staff-position                                            %! baca.rest_position:OverrideCommand(2)
 
-    }
+    }                                                                          %! baca.skeleton
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [B RH_Music_Voice measure 59 / measure 5]                            %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        r8.
+        r8.                                                                    %! baca.skeleton
 
-        r4
+        r4                                                                     %! baca.skeleton
 
         % [B RH_Music_Voice measure 60 / measure 6]                            %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        r8.
+        r8.                                                                    %! baca.skeleton
 
-        r4
+        r4                                                                     %! baca.skeleton
 
         % [B RH_Music_Voice measure 61 / measure 7]                            %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        r8.
+        r8.                                                                    %! baca.skeleton
 
-        r4
+        r4                                                                     %! baca.skeleton
 
         % [B RH_Music_Voice measure 62 / measure 8]                            %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        r8.
+        r8.                                                                    %! baca.skeleton
 
-        r4
+        r4                                                                     %! baca.skeleton
 
-    }
+    }                                                                          %! baca.skeleton
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [B RH_Music_Voice measure 63 / measure 9]                            %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        \times 2/3 {
+        \times 2/3 {                                                           %! baca.skeleton
 
         %%% \once \override TupletNumber.font-size = -2                        %! baca.literal:+SCORE:IndicatorCommand
-            d''8
+            d''8                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            r4
+            r4                                                                 %! baca.skeleton
 
-        }
+        }                                                                      %! baca.skeleton
 
-        r4
+        r4                                                                     %! baca.skeleton
 
         % [B RH_Music_Voice measure 64 / measure 10]                           %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        \times 2/3 {
+        \times 2/3 {                                                           %! baca.skeleton
 
         %%% \once \override TupletNumber.font-size = -2                        %! baca.literal:+SCORE:IndicatorCommand
-            d''8
+            d''8                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            r4
+            r4                                                                 %! baca.skeleton
 
-        }
+        }                                                                      %! baca.skeleton
 
-        r4
+        r4                                                                     %! baca.skeleton
 
         % [B RH_Music_Voice measure 65 / measure 11]                           %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''8
+        d''8                                                                   %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        r8
+        r8                                                                     %! baca.skeleton
 
-        r4
+        r4                                                                     %! baca.skeleton
 
         % [B RH_Music_Voice measure 66 / measure 12]                           %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''8
+        d''8                                                                   %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        r8
+        r8                                                                     %! baca.skeleton
 
-        r4
+        r4                                                                     %! baca.skeleton
 
-    }
+    }                                                                          %! baca.skeleton
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [B RH_Music_Voice measure 67 / measure 13]                           %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
         % [B RH_Music_Voice measure 68 / measure 14]                           %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
         % [B RH_Music_Voice measure 69 / measure 15]                           %! _comment_measure_numbers
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''4
+        d''4                                                                   %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-    }
+    }                                                                          %! baca.skeleton
 
-    {
+    {                                                                          %! baca.skeleton
 
-        \times 2/3 {
+        \times 2/3 {                                                           %! baca.skeleton
 
             % [B RH_Music_Voice measure 70 / measure 16]                       %! _comment_measure_numbers
-            d''4
+            d''4                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''4
+            d''4                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''4
+            d''4                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-        }
+        }                                                                      %! baca.skeleton
 
-        \times 2/3 {
+        \times 2/3 {                                                           %! baca.skeleton
 
             % [B RH_Music_Voice measure 71 / measure 17]                       %! _comment_measure_numbers
-            d''4
+            d''4                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''4
+            d''4                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''4
+            d''4                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-        }
+        }                                                                      %! baca.skeleton
 
-        \times 2/3 {
+        \times 2/3 {                                                           %! baca.skeleton
 
             % [B RH_Music_Voice measure 72 / measure 18]                       %! _comment_measure_numbers
-            d''4
+            d''4                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''4
+            d''4                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''4
+            d''4                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-        }
+        }                                                                      %! baca.skeleton
 
-    }
+    }                                                                          %! baca.skeleton
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [B RH_Music_Voice measure 73 / measure 19]                           %! _comment_measure_numbers
-        d''8
+        d''8                                                                   %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
         [                                                                      %! baca.beam:SpannerIndicatorCommand(1)
 
-        d''8
+        d''8                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''8
+        d''8                                                                   %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''8
+        d''8                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
         % [B RH_Music_Voice measure 74 / measure 20]                           %! _comment_measure_numbers
-        d''8
+        d''8                                                                   %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''8
+        d''8                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''8
+        d''8                                                                   %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''8
+        d''8                                                                   %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-    }
+    }                                                                          %! baca.skeleton
 
-    {
+    {                                                                          %! baca.skeleton
 
-        \times 4/5 {
+        \times 4/5 {                                                           %! baca.skeleton
 
             % [B RH_Music_Voice measure 75 / measure 21]                       %! _comment_measure_numbers
-            d''8
+            d''8                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-        }
+        }                                                                      %! baca.skeleton
 
-        \times 2/3 {
+        \times 2/3 {                                                           %! baca.skeleton
 
             % [B RH_Music_Voice measure 76 / measure 22]                       %! _comment_measure_numbers
-            d''8
+            d''8                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-        }
+        }                                                                      %! baca.skeleton
 
-        \times 4/7 {
+        \times 4/7 {                                                           %! baca.skeleton
 
             % [B RH_Music_Voice measure 77 / measure 23]                       %! _comment_measure_numbers
-            d''8
+            d''8                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \upbow                                                           %! baca.alternate_bow_strokes:IndicatorCommand
 
-            d''8
+            d''8                                                               %! baca.skeleton
             - \downbow                                                         %! baca.alternate_bow_strokes:IndicatorCommand
 
-        }
+        }                                                                      %! baca.skeleton
 
         % [B RH_Music_Voice measure 78 / measure 24]                           %! _comment_measure_numbers
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        d''16
+        d''16                                                                  %! baca.skeleton
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
         ]                                                                      %! baca.beam:SpannerIndicatorCommand(2)
 
-    }
+    }                                                                          %! baca.skeleton
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [B RH_Music_Voice measure 79 / measure 25]                           %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = 7                         %! baca.literal:IndicatorCommand
         \stopStaff                                                             %! baca.literal:IndicatorCommand
         \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2) %! baca.literal:IndicatorCommand
         \startStaff                                                            %! baca.literal:IndicatorCommand
-        d''1
+        d''1                                                                   %! baca.skeleton
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-mp-parenthesized                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -789,7 +789,7 @@ B_RH_Music_Voice = {                                                           %
         \glissando                                                             %! baca.glissando
         \revert TupletBracket.direction                                        %! baca.tuplet_bracket_down:OverrideCommand(2)
 
-    }
+    }                                                                          %! baca.skeleton
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -936,18 +936,18 @@ B_Cello_Music_Voice = {                                                        %
     R1 * 1/2                                                                   %! _make_measure_silences
     \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent:OverrideCommand(2)
 
-    {
+    {                                                                          %! baca.skeleton
 
         % [B Cello_Music_Voice measure 79 / measure 25]                        %! _comment_measure_numbers
         \stopStaff                                                             %! baca.literal:IndicatorCommand
         \once \override Staff.StaffSymbol.line-count = 5                       %! baca.literal:IndicatorCommand
         \startStaff                                                            %! baca.literal:IndicatorCommand
-        b,,1
+        b,,1                                                                   %! baca.skeleton
         \revert Score.BarLine.transparent                                      %! baca.bar_line_transparent:OverrideCommand(2)
         \revert Score.SpanBar.transparent                                      %! baca.span_bar_transparent:OverrideCommand(2)
         \revert Score.TimeSignature.stencil                                    %! baca.time_signature_stencil_false:OverrideCommand(2)
 
-    }
+    }                                                                          %! baca.skeleton
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
