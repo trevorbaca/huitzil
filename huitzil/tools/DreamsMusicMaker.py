@@ -42,17 +42,17 @@ class DreamsMusicMaker(object):
 
     def __init__(
         self,
-        extra_counts_per_division: typing.List[int] = None,
+        extra_counts_per_division: typing.List[int],
+        pitch_class_trees: typing.Tuple[baca.PitchTree],
+        voice_map: typing.List[typing.List],
         pc_displacement: typing.List[int] = None,
         pc_operators: typing.List = None,
-        pitch_class_trees: typing.Tuple[baca.PitchTree] = None,
-        voice_map: typing.List[typing.List] = None,
     ) -> None:
-        self.pc_displacement = pc_displacement
         self.extra_counts_per_division = extra_counts_per_division
-        self.pc_operators = pc_operators
         self.pitch_class_trees = pitch_class_trees
         self.voice_map = voice_map
+        self.pc_displacement = pc_displacement or []
+        self.pc_operators = pc_operators or []
 
     ### SPECIAL METHODS ###
 
