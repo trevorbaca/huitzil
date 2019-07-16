@@ -467,7 +467,7 @@ class DreamsMusicMaker(object):
                 numerators.append(fraction.numerator)
             ratio = abjad.Ratio(numerators)
             maker = rmakers.TupletRhythmMaker(
-                rmakers.rewrite_tuplet_dots(),
+                rmakers.rewrite_dots(),
                 rmakers.rewrite_sustained(),
                 rmakers.force_diminution(),
                 tuplet_ratios=[ratio],
