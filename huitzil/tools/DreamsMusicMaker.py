@@ -349,7 +349,7 @@ class DreamsMusicMaker(object):
     ### CLASS ATTRIBUTES ###
 
     __slots__ = (
-        "_extra_counts_per_division",
+        "_extra_counts",
         "_pc_displacement",
         "_pc_operators",
         "_pitch_class_trees",
@@ -362,13 +362,13 @@ class DreamsMusicMaker(object):
 
     def __init__(
         self,
-        extra_counts_per_division: typing.List[int],
+        extra_counts: typing.List[int],
         pitch_class_trees: typing.Tuple[baca.PitchTree],
         voice_map: typing.List[typing.List],
         pc_displacement: typing.List[int] = None,
         pc_operators: typing.List = None,
     ) -> None:
-        self._extra_counts_per_division = extra_counts_per_division
+        self._extra_counts = extra_counts
         self._pitch_class_trees = tuple(pitch_class_trees)
         self._voice_map = voice_map
         self._pc_displacement = pc_displacement or []
@@ -446,14 +446,12 @@ class DreamsMusicMaker(object):
                 raise ValueError(register)
 
     def _make_inner_tuplets(self, note_lists):
-        extra_counts_per_division = self.extra_counts_per_division or [0]
-        extra_counts_per_division = abjad.CyclicTuple(
-            extra_counts_per_division
-        )
+        extra_counts = self.extra_counts or [0]
+        extra_counts = abjad.CyclicTuple(extra_counts)
         inner_tuplets = []
         for i, note_list in enumerate(note_lists):
             start_duration = sum(_.written_duration for _ in note_list)
-            extra_count = extra_counts_per_division[i]
+            extra_count = extra_counts[i]
             extra_duration = extra_count * abjad.Duration(1, 16)
             if 0 < start_duration + extra_duration:
                 target_duration = start_duration + extra_duration
@@ -565,11 +563,11 @@ class DreamsMusicMaker(object):
     ### PUBLIC PROPERTIES ###
 
     @property
-    def extra_counts_per_division(self) -> typing.List[int]:
+    def extra_counts(self) -> typing.List[int]:
         """
         Gets extra counts per division of music-maker.
         """
-        return self._extra_counts_per_division
+        return self._extra_counts
 
     @property
     def pc_displacement(self) -> typing.List[int]:
