@@ -465,10 +465,10 @@ class DreamsMusicMaker(object):
                 numerators.append(fraction.numerator)
             ratio = abjad.Ratio(numerators)
             maker = rmakers.tuplet(
+                [ratio],
                 rmakers.rewrite_dots(),
                 rmakers.rewrite_sustained(),
                 rmakers.force_diminution(),
-                tuplet_ratios=[ratio],
             )
             selection = maker([target_duration])
             assert isinstance(selection, abjad.Selection)
