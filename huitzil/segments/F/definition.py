@@ -99,12 +99,14 @@ maker(
     'rh',
     baca.only_score(
         baca.breathe(
+            baca.pleaf(-1),
             abjad.tweak(False).X_extent,
             abjad.tweak((0, 5)).extra_offset,
             ),
         ),
     baca.only_segment(
         baca.breathe(
+            baca.pleaf(-1),
             abjad.tweak(False).X_extent,
             abjad.tweak((-1.5, 2)).extra_offset,
             ),
