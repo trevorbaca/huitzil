@@ -261,6 +261,7 @@ maker(
     ('vc', 54),
     baca.only_score(
         baca.breathe(
+            baca.pleaf(-1),
             abjad.tweak((0, 2)).extra_offset,
             ),
         ),
