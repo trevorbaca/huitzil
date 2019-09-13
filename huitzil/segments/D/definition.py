@@ -61,10 +61,7 @@ maker(
 
 maker(
     ('vc', 14),
-    baca.chunk(
-        baca.clef('treble'),
-        baca.clef_shift('treble'),
-        ),
+    baca.clef('treble'),
     baca.literal([
         r'\stopStaff',
         r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
@@ -79,10 +76,7 @@ maker(
 
 maker(
     ('vc', 23),
-    baca.chunk(
-        baca.clef('bass'),
-        baca.clef_shift('bass'),
-        ),
+    baca.clef('bass'),
     baca.literal([
         r'\stopStaff',
         r"\once \override Staff.StaffSymbol.line-count = 5",

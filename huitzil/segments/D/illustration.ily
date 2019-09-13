@@ -976,13 +976,13 @@ D_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.skeleton
 
         % [D Cello_Music_Voice measure 119 / measure 14]                       %! _comment_measure_numbers
-        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_119:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
-        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_119:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \stopStaff                                                             %! baca.literal:IndicatorCommand
         \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff %! baca.literal:IndicatorCommand
         \once \override NoteHead.duration-log = #2                             %! baca.note_head_color:OverrideCommand(1)
         \once \override NoteHead.no-ledgers = ##t                              %! baca.note_head_extra_offset:OverrideCommand(1)
         \once \override NoteHead.style = #'do                                  %! baca.note_head_stencil_false:OverrideCommand(1)
+        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_119:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_119:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1039,11 +1039,11 @@ D_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.skeleton
 
         % [D Cello_Music_Voice measure 128 / measure 23]                       %! _comment_measure_numbers
-        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_128:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
-        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! MEASURE_128:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \stopStaff                                                             %! baca.literal:IndicatorCommand
         \once \override Staff.StaffSymbol.line-count = 5                       %! baca.literal:IndicatorCommand
         \startStaff                                                            %! baca.literal:IndicatorCommand
+        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_128:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! MEASURE_128:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
