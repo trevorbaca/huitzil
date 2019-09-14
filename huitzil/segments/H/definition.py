@@ -101,7 +101,6 @@ maker(
 maker(
     ('rh', 1),
     baca.chunk(
-        baca.bar_extent_persistent((-4, 4)),
         baca.literal([
         r'\once \override RHStaff.StaffSymbol.line-positions ='
         " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)"
