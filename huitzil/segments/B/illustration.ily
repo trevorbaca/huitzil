@@ -414,7 +414,7 @@ B_RH_Music_Voice = {                                                           %
     {                                                                          %! baca.skeleton
 
         % [B RH_Music_Voice measure 55 / measure 1]                            %! _comment_measure_numbers
-        \override Staff.BarLine.bar-extent = #'(-4 . 4)                        %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:baca.bar_extent_persistent:IndicatorCommand
+        \override Staff.BarLine.bar-extent = #'(-2 . 4)                        %! EXPLICIT_BAR_EXTENT:_set_status_tag:-PARTS:IndicatorCommand
         \stopStaff                                                             %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
         \once \override RHStaff.StaffSymbol.line-count = 7                     %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
         \startStaff                                                            %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
