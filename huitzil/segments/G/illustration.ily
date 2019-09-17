@@ -1,84 +1,84 @@
 G_Global_Rests = {                                                             %! abjad.Path.extern
 
-    % [G Global_Rests measure 174 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 174 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 175 / measure 2]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 175 / measure 2]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 176 / measure 3]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 176 / measure 3]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 177 / measure 4]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 177 / measure 4]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 178 / measure 5]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 178 / measure 5]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 179 / measure 6]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 179 / measure 6]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 180 / measure 7]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 180 / measure 7]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 181 / measure 8]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 181 / measure 8]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 182 / measure 9]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 182 / measure 9]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 183 / measure 10]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 183 / measure 10]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 184 / measure 11]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 184 / measure 11]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 185 / measure 12]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 185 / measure 12]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 186 / measure 13]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 186 / measure 13]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 187 / measure 14]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 187 / measure 14]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 188 / measure 15]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 188 / measure 15]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 189 / measure 16]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 189 / measure 16]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 190 / measure 17]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 190 / measure 17]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 191 / measure 18]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 191 / measure 18]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 192 / measure 19]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 192 / measure 19]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 193 / measure 20]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 193 / measure 20]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 194 / measure 21]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 194 / measure 21]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 195 / measure 22]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 195 / measure 22]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 196 / measure 23]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 196 / measure 23]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 197 / measure 24]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 197 / measure 24]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 198 / measure 25]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 198 / measure 25]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 199 / measure 26]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 199 / measure 26]                                %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
-    % [G Global_Rests measure 200 / measure 27]                                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(4):baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Rests measure 200 / measure 27]                                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(4):baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! PHANTOM:baca.SegmentMaker._make_global_rests(2)
 
 }                                                                              %! abjad.Path.extern
@@ -86,7 +86,7 @@ G_Global_Rests = {                                                             %
 
 G_Global_Skips = {                                                             %! abjad.Path.extern
 
-    % [G Global_Skips measure 174 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 174 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \bar ""                                                                    %! baca.SegmentMaker._make_global_skips(4):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
@@ -104,7 +104,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'32'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 175 / measure 2]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 175 / measure 2]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -118,7 +118,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'32'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 176 / measure 3]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 176 / measure 3]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
@@ -132,7 +132,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'33'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 177 / measure 4]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 177 / measure 4]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -146,7 +146,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'33'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 178 / measure 5]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 178 / measure 5]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
@@ -160,7 +160,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'34'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 179 / measure 6]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 179 / measure 6]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -174,7 +174,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'35'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 180 / measure 7]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 180 / measure 7]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
@@ -188,7 +188,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'35'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 181 / measure 8]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 181 / measure 8]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -202,7 +202,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'36'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 182 / measure 9]                                 %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 182 / measure 9]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
@@ -216,7 +216,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'36'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 183 / measure 10]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 183 / measure 10]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -230,7 +230,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'37'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 184 / measure 11]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 184 / measure 11]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
@@ -244,7 +244,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'37'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 185 / measure 12]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 185 / measure 12]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -258,7 +258,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'38'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 186 / measure 13]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 186 / measure 13]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
@@ -272,7 +272,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'39'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 187 / measure 14]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 187 / measure 14]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -286,7 +286,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'39'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 188 / measure 15]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 188 / measure 15]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
@@ -300,7 +300,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'40'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 189 / measure 16]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 189 / measure 16]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -314,7 +314,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'41'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 190 / measure 17]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 190 / measure 17]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
@@ -328,7 +328,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'41'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 191 / measure 18]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 191 / measure 18]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -342,7 +342,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'42'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 192 / measure 19]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 192 / measure 19]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
@@ -356,7 +356,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'42'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 193 / measure 20]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 193 / measure 20]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -370,7 +370,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'43'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 194 / measure 21]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 194 / measure 21]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
@@ -384,7 +384,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'43'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 195 / measure 22]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 195 / measure 22]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -398,7 +398,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'44'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 196 / measure 23]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 196 / measure 23]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
@@ -412,7 +412,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'45'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 197 / measure 24]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 197 / measure 24]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 3/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
@@ -426,7 +426,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'45'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 198 / measure 25]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 198 / measure 25]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/1                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:baca.SegmentMaker._attach_color_literal(2)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
@@ -447,7 +447,7 @@ G_Global_Skips = {                                                             %
     - \baca-start-ct-left-only "[7'46'']"                                      %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
-    % [G Global_Skips measure 199 / measure 26]                                %! baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 199 / measure 26]                                %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
@@ -458,10 +458,10 @@ G_Global_Skips = {                                                             %
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
     - \baca-start-ct-both "[7'49'']" "[7'51'']"                                %! CLOCK_TIME
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME
-    \baca-bar-line-visible                                                     %! baca.SegmentMaker._attach_final_bar_line
-    \bar "|"                                                                   %! baca.SegmentMaker._attach_final_bar_line
+    \baca-bar-line-visible                                                     %! baca.SegmentMaker._attach_final_bar_line()
+    \bar "|"                                                                   %! baca.SegmentMaker._attach_final_bar_line()
 
-    % [G Global_Skips measure 200 / measure 27]                                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(1):baca.SegmentMaker._comment_measure_numbers
+    % [G Global_Skips measure 200 / measure 27]                                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(1):baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! PHANTOM:baca.SegmentMaker._style_phantom_measures(1):EXPLICIT_TIME_SIGNATURE:_set_status_tag:baca.SegmentMaker._make_global_skips(3)
     \baca-time-signature-transparent                                           %! PHANTOM:baca.SegmentMaker._style_phantom_measures(2)
     s1 * 1/4                                                                   %! PHANTOM:baca.SegmentMaker._make_global_skips(3)
@@ -477,7 +477,7 @@ G_Global_Skips = {                                                             %
 
 G_RH_Music_Voice = {                                                           %! abjad.Path.extern
 
-    % [G RH_Music_Voice measure 174 / measure 1]                               %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 174 / measure 1]                               %! baca.SegmentMaker._comment_measure_numbers()
     \override Staff.BarLine.bar-extent = #'(-2 . 4)                            %! EXPLICIT_BAR_EXTENT:_set_status_tag:-PARTS:IndicatorCommand
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \once \override RHStaff.StaffSymbol.line-count = 14                        %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
@@ -491,7 +491,7 @@ G_RH_Music_Voice = {                                                           %
     \clef "percussion"                                                         %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)                  %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                         %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                               %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
+    \set RHStaff.forceClef = ##t                                               %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)             %! EXPLICIT_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
     d4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
@@ -508,68 +508,68 @@ G_RH_Music_Voice = {                                                           %
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-    % [G RH_Music_Voice measure 175 / measure 2]                               %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 175 / measure 2]                               %! baca.SegmentMaker._comment_measure_numbers()
     d8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 176 / measure 3]                               %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 176 / measure 3]                               %! baca.SegmentMaker._comment_measure_numbers()
     b,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
 
-    % [G RH_Music_Voice measure 177 / measure 4]                               %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 177 / measure 4]                               %! baca.SegmentMaker._comment_measure_numbers()
     b,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 178 / measure 5]                               %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 178 / measure 5]                               %! baca.SegmentMaker._comment_measure_numbers()
     g,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
 
-    % [G RH_Music_Voice measure 179 / measure 6]                               %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 179 / measure 6]                               %! baca.SegmentMaker._comment_measure_numbers()
     g,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 180 / measure 7]                               %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 180 / measure 7]                               %! baca.SegmentMaker._comment_measure_numbers()
     e,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
 
-    % [G RH_Music_Voice measure 181 / measure 8]                               %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 181 / measure 8]                               %! baca.SegmentMaker._comment_measure_numbers()
     e,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 182 / measure 9]                               %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 182 / measure 9]                               %! baca.SegmentMaker._comment_measure_numbers()
     c,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
 
-    % [G RH_Music_Voice measure 183 / measure 10]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 183 / measure 10]                              %! baca.SegmentMaker._comment_measure_numbers()
     c,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 184 / measure 11]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 184 / measure 11]                              %! baca.SegmentMaker._comment_measure_numbers()
     a,,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
 
-    % [G RH_Music_Voice measure 185 / measure 12]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 185 / measure 12]                              %! baca.SegmentMaker._comment_measure_numbers()
     a,,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 186 / measure 13]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 186 / measure 13]                              %! baca.SegmentMaker._comment_measure_numbers()
     f,,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -579,7 +579,7 @@ G_RH_Music_Voice = {                                                           %
     ^ \huitzil-close-to-lh-markup                                              %! baca.markup:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
 
-    % [G RH_Music_Voice measure 187 / measure 14]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 187 / measure 14]                              %! baca.SegmentMaker._comment_measure_numbers()
     f,,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -592,58 +592,58 @@ G_RH_Music_Voice = {                                                           %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 188 / measure 15]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 188 / measure 15]                              %! baca.SegmentMaker._comment_measure_numbers()
     a,,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
 
-    % [G RH_Music_Voice measure 189 / measure 16]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 189 / measure 16]                              %! baca.SegmentMaker._comment_measure_numbers()
     a,,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 190 / measure 17]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 190 / measure 17]                              %! baca.SegmentMaker._comment_measure_numbers()
     c,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
 
-    % [G RH_Music_Voice measure 191 / measure 18]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 191 / measure 18]                              %! baca.SegmentMaker._comment_measure_numbers()
     c,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 192 / measure 19]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 192 / measure 19]                              %! baca.SegmentMaker._comment_measure_numbers()
     e,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
 
-    % [G RH_Music_Voice measure 193 / measure 20]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 193 / measure 20]                              %! baca.SegmentMaker._comment_measure_numbers()
     e,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 194 / measure 21]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 194 / measure 21]                              %! baca.SegmentMaker._comment_measure_numbers()
     g,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
 
-    % [G RH_Music_Voice measure 195 / measure 22]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 195 / measure 22]                              %! baca.SegmentMaker._comment_measure_numbers()
     g,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 196 / measure 23]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 196 / measure 23]                              %! baca.SegmentMaker._comment_measure_numbers()
     b,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
 
-    % [G RH_Music_Voice measure 197 / measure 24]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 197 / measure 24]                              %! baca.SegmentMaker._comment_measure_numbers()
     b,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 198 / measure 25]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 198 / measure 25]                              %! baca.SegmentMaker._comment_measure_numbers()
     \stopStaff                                                                 %! baca.literal:IndicatorCommand
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2) %! baca.literal:IndicatorCommand
     \startStaff                                                                %! baca.literal:IndicatorCommand
@@ -654,7 +654,7 @@ G_RH_Music_Voice = {                                                           %
     ^ \huitzil-directly-above-end-of-fingerboard-column-markup                 %! baca.markup:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    % [G RH_Music_Voice measure 199 / measure 26]                              %! baca.SegmentMaker._comment_measure_numbers
+    % [G RH_Music_Voice measure 199 / measure 26]                              %! baca.SegmentMaker._comment_measure_numbers()
     \parenthesize                                                              %! baca.parenthesize:IndicatorCommand
     c'1
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
@@ -667,33 +667,33 @@ G_RH_Music_Voice = {                                                           %
     \revert TextScript.self-alignment-X                                        %! baca.text_script_self_alignment_x:OverrideCommand(2)
     \revert TextScript.staff-padding                                           %! baca.text_script_staff_padding:OverrideCommand(2)
 
-    <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+    <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-        \context Voice = "RH_Music_Voice"                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
-        {                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+        \context Voice = "RH_Music_Voice"                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+        {                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-            % [G RH_Music_Voice measure 200 / measure 27]                      %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers
-            \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container
-            b'1 * 1/4                                                          %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+            % [G RH_Music_Voice measure 200 / measure 27]                      %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
+            \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
+            b'1 * 1/4                                                          %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% \glissando                                                         %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):SHOW_TO_JOIN_BROKEN_SPANNERS
             \!                                                                 %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.hairpin:HIDE_TO_JOIN_BROKEN_SPANNERS
 
-        }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+        }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-        \context Voice = "RH_Rest_Voice"                                       %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
-        {                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+        \context Voice = "RH_Rest_Voice"                                       %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+        {                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-            % [G RH_Rest_Voice measure 200 / measure 27]                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers
+            % [G RH_Rest_Voice measure 200 / measure 27]                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \once \override Score.TimeSignature.X-extent = ##f                 %! PHANTOM:baca.SegmentMaker._style_phantom_measures(6)
             \once \override MultiMeasureRest.transparent = ##t                 %! PHANTOM:baca.SegmentMaker._style_phantom_measures(7)
             \stopStaff                                                         %! PHANTOM:baca.SegmentMaker._style_phantom_measures(8)
             \once \override Staff.StaffSymbol.transparent = ##t                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(8)
             \startStaff                                                        %! PHANTOM:baca.SegmentMaker._style_phantom_measures(8)
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-        }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+        }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-    >>                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+    >>                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
 }                                                                              %! abjad.Path.extern
 
@@ -710,7 +710,7 @@ G_Cello_Music_Voice = {                                                        %
 
     {                                                                          %! baca.skeleton
 
-        % [G Cello_Music_Voice measure 174 / measure 1]                        %! baca.SegmentMaker._comment_measure_numbers
+        % [G Cello_Music_Voice measure 174 / measure 1]                        %! baca.SegmentMaker._comment_measure_numbers()
         \stopStaff                                                             %! baca.literal:IndicatorCommand
         \once \override Staff.StaffSymbol.line-count = 5                       %! baca.literal:IndicatorCommand
         \startStaff                                                            %! baca.literal:IndicatorCommand
@@ -722,75 +722,75 @@ G_Cello_Music_Voice = {                                                        %
         \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.clef:IndicatorCommand
         a,1 * 1/4                                                              %! baca.skeleton
-        ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert
+        ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
         - \tweak padding #2.5                                                  %! baca.markup:IndicatorCommand
         _ \markup { III }                                                      %! baca.markup:IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
     }                                                                          %! baca.skeleton
 
-    <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container
+    <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-        \context Voice = "Cello_Music_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container
-        {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container
+        \context Voice = "Cello_Music_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container()
+        {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-            % [G Cello_Music_Voice measure 175 / measure 2]                    %! baca.SegmentMaker._comment_measure_numbers
-            \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container
-            c'1 * 3/16                                                         %! baca.SegmentMaker._make_multimeasure_rest_container
+            % [G Cello_Music_Voice measure 175 / measure 2]                    %! baca.SegmentMaker._comment_measure_numbers()
+            \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 3/16                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-        }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container
+        }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-        \context Voice = "Cello_Rest_Voice"                                    %! baca.SegmentMaker._make_multimeasure_rest_container
-        {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container
+        \context Voice = "Cello_Rest_Voice"                                    %! baca.SegmentMaker._make_multimeasure_rest_container()
+        {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-            % [G Cello_Rest_Voice measure 175 / measure 2]                     %! baca.SegmentMaker._comment_measure_numbers
+            % [G Cello_Rest_Voice measure 175 / measure 2]                     %! baca.SegmentMaker._comment_measure_numbers()
             \once \override MultiMeasureRest.transparent = ##t                 %! baca.mmrest_transparent:OverrideCommand(1)
-            R1 * 3/16                                                          %! baca.SegmentMaker._make_multimeasure_rest_container
+            R1 * 3/16                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-        }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container
+        }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-    >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container
+    >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-    % [G Cello_Music_Voice measure 176 / measure 3]                            %! baca.SegmentMaker._comment_measure_numbers
+    % [G Cello_Music_Voice measure 176 / measure 3]                            %! baca.SegmentMaker._comment_measure_numbers()
     \override MultiMeasureRest.transparent = ##t                               %! baca.mmrest_transparent:OverrideCommand(1)
-    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences
+    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
-    % [G Cello_Music_Voice measure 177 / measure 4]                            %! baca.SegmentMaker._comment_measure_numbers
-    R1 * 3/16                                                                  %! baca.SegmentMaker._make_measure_silences
+    % [G Cello_Music_Voice measure 177 / measure 4]                            %! baca.SegmentMaker._comment_measure_numbers()
+    R1 * 3/16                                                                  %! baca.SegmentMaker._make_measure_silences()
 
-    % [G Cello_Music_Voice measure 178 / measure 5]                            %! baca.SegmentMaker._comment_measure_numbers
-    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences
+    % [G Cello_Music_Voice measure 178 / measure 5]                            %! baca.SegmentMaker._comment_measure_numbers()
+    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
-    % [G Cello_Music_Voice measure 179 / measure 6]                            %! baca.SegmentMaker._comment_measure_numbers
-    R1 * 3/16                                                                  %! baca.SegmentMaker._make_measure_silences
+    % [G Cello_Music_Voice measure 179 / measure 6]                            %! baca.SegmentMaker._comment_measure_numbers()
+    R1 * 3/16                                                                  %! baca.SegmentMaker._make_measure_silences()
 
-    % [G Cello_Music_Voice measure 180 / measure 7]                            %! baca.SegmentMaker._comment_measure_numbers
-    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences
+    % [G Cello_Music_Voice measure 180 / measure 7]                            %! baca.SegmentMaker._comment_measure_numbers()
+    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
-    % [G Cello_Music_Voice measure 181 / measure 8]                            %! baca.SegmentMaker._comment_measure_numbers
-    R1 * 3/16                                                                  %! baca.SegmentMaker._make_measure_silences
+    % [G Cello_Music_Voice measure 181 / measure 8]                            %! baca.SegmentMaker._comment_measure_numbers()
+    R1 * 3/16                                                                  %! baca.SegmentMaker._make_measure_silences()
 
-    % [G Cello_Music_Voice measure 182 / measure 9]                            %! baca.SegmentMaker._comment_measure_numbers
-    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences
+    % [G Cello_Music_Voice measure 182 / measure 9]                            %! baca.SegmentMaker._comment_measure_numbers()
+    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
-    % [G Cello_Music_Voice measure 183 / measure 10]                           %! baca.SegmentMaker._comment_measure_numbers
-    R1 * 3/16                                                                  %! baca.SegmentMaker._make_measure_silences
+    % [G Cello_Music_Voice measure 183 / measure 10]                           %! baca.SegmentMaker._comment_measure_numbers()
+    R1 * 3/16                                                                  %! baca.SegmentMaker._make_measure_silences()
 
-    % [G Cello_Music_Voice measure 184 / measure 11]                           %! baca.SegmentMaker._comment_measure_numbers
-    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences
+    % [G Cello_Music_Voice measure 184 / measure 11]                           %! baca.SegmentMaker._comment_measure_numbers()
+    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
-    % [G Cello_Music_Voice measure 185 / measure 12]                           %! baca.SegmentMaker._comment_measure_numbers
-    R1 * 3/16                                                                  %! baca.SegmentMaker._make_measure_silences
+    % [G Cello_Music_Voice measure 185 / measure 12]                           %! baca.SegmentMaker._comment_measure_numbers()
+    R1 * 3/16                                                                  %! baca.SegmentMaker._make_measure_silences()
 
-    % [G Cello_Music_Voice measure 186 / measure 13]                           %! baca.SegmentMaker._comment_measure_numbers
-    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences
+    % [G Cello_Music_Voice measure 186 / measure 13]                           %! baca.SegmentMaker._comment_measure_numbers()
+    R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
     \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent:OverrideCommand(2)
 
     {                                                                          %! baca.skeleton
 
-        % [G Cello_Music_Voice measure 187 / measure 14]                       %! baca.SegmentMaker._comment_measure_numbers
+        % [G Cello_Music_Voice measure 187 / measure 14]                       %! baca.SegmentMaker._comment_measure_numbers()
         a,1 * 19/8                                                             %! baca.skeleton
         \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
         \glissando                                                             %! baca.glissando
@@ -799,7 +799,7 @@ G_Cello_Music_Voice = {                                                        %
 
     {                                                                          %! baca.skeleton
 
-        % [G Cello_Music_Voice measure 198 / measure 25]                       %! baca.SegmentMaker._comment_measure_numbers
+        % [G Cello_Music_Voice measure 198 / measure 25]                       %! baca.SegmentMaker._comment_measure_numbers()
         g,1 * 2                                                                %! baca.skeleton
         - \tweak padding #2.5                                                  %! baca.markup:IndicatorCommand
         - \tweak parent-alignment-X #0                                         %! baca.markup:IndicatorCommand
@@ -812,32 +812,32 @@ G_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.skeleton
 
-    <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+    <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-        \context Voice = "Cello_Music_Voice"                                   %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
-        {                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+        \context Voice = "Cello_Music_Voice"                                   %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+        {                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-            % [G Cello_Music_Voice measure 200 / measure 27]                   %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers
-            \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container
-            a,,1 * 1/4                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+            % [G Cello_Music_Voice measure 200 / measure 27]                   %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
+            \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
+            a,,1 * 1/4                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% \glissando                                                         %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):SHOW_TO_JOIN_BROKEN_SPANNERS
 
-        }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+        }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-        \context Voice = "Cello_Rest_Voice"                                    %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
-        {                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+        \context Voice = "Cello_Rest_Voice"                                    %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+        {                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-            % [G Cello_Rest_Voice measure 200 / measure 27]                    %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers
+            % [G Cello_Rest_Voice measure 200 / measure 27]                    %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \once \override Score.TimeSignature.X-extent = ##f                 %! PHANTOM:baca.SegmentMaker._style_phantom_measures(6)
             \once \override MultiMeasureRest.transparent = ##t                 %! PHANTOM:baca.SegmentMaker._style_phantom_measures(7)
             \stopStaff                                                         %! PHANTOM:baca.SegmentMaker._style_phantom_measures(8)
             \once \override Staff.StaffSymbol.transparent = ##t                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(8)
             \startStaff                                                        %! PHANTOM:baca.SegmentMaker._style_phantom_measures(8)
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-        }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+        }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
-    >>                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container
+    >>                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
 }                                                                              %! abjad.Path.extern
 
