@@ -729,7 +729,7 @@ E_RH_Music_Voice = {                                                           %
         - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
         - \tweak stencil #constante-hairpin                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-        \stopTextSpan                                                          %! baca.text_spanner:PiecewiseCommand(2)
+        \stopTextSpan                                                          %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(2)
         \glissando                                                             %! baca.glissando
 
     }
@@ -787,7 +787,7 @@ E_RH_Music_Voice = {                                                           %
     a2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "più stretto"                               %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -797,7 +797,7 @@ E_RH_Music_Voice = {                                                           %
     a2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "più largo"                                 %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-right-text "più stretto"                              %! baca.text_spanner:PiecewiseCommand(1)
@@ -813,7 +813,7 @@ E_RH_Music_Voice = {                                                           %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(2)
     \glissando                                                                 %! baca.glissando
 
     % [E RH_Music_Voice measure 145 / measure 17]                              %! baca.SegmentMaker._comment_measure_numbers()
@@ -834,7 +834,7 @@ E_RH_Music_Voice = {                                                           %
     a2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "più stretto"                               %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -844,7 +844,7 @@ E_RH_Music_Voice = {                                                           %
     a2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "più largo"                                 %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -855,7 +855,7 @@ E_RH_Music_Voice = {                                                           %
     f2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "più stretto"                               %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -865,7 +865,7 @@ E_RH_Music_Voice = {                                                           %
     f2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "più largo"                                 %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-right-text "trem. mod."                               %! baca.text_spanner:PiecewiseCommand(1)
@@ -885,7 +885,7 @@ E_RH_Music_Voice = {                                                           %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(2)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(2)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
     \revert TextScript.self-alignment-X                                        %! baca.text_script_self_alignment_x:OverrideCommand(2)
     \revert TextScript.staff-padding                                           %! baca.text_script_staff_padding:OverrideCommand(2)

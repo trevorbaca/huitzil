@@ -807,7 +807,7 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "stretto"                                   %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -817,7 +817,7 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "largo"                                     %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -827,7 +827,7 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-mfz-markup                                                         %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "stretto"                                   %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -843,7 +843,7 @@ I_RH_Music_Voice = {                                                           %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "largo"                                     %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -853,7 +853,7 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-mpz-markup                                                         %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1):right_broken
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1):right_broken
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1):right_broken
     - \baca-text-spanner-left-text "stretto"                                   %! baca.text_spanner:PiecewiseCommand(1):right_broken
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1):right_broken
@@ -871,7 +871,7 @@ I_RH_Music_Voice = {                                                           %
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
             c'1 * 1/4                                                          %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
             \!                                                                 %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.hairpin:PiecewiseCommand(2)
-            \stopTextSpan                                                      %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.text_spanner:PiecewiseCommand(3)
+            \stopTextSpan                                                      %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(3)
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 

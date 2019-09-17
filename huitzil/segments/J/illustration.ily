@@ -208,7 +208,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "strett."                                   %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -224,7 +224,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "larg."                                     %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -240,7 +240,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "strett."                                   %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -256,7 +256,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "larg."                                     %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -272,7 +272,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "strett."                                   %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -288,7 +288,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "larg."                                     %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -304,7 +304,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "strett."                                   %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -320,7 +320,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "larg."                                     %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-right-text "strett."                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -336,7 +336,7 @@ J_RH_Music_Voice = {                                                           %
     - \tweak to-barline ##t                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie                                                                 %! baca.repeat_tie:IndicatorCommand
-    \stopTextSpan                                                              %! baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
     \revert TextScript.self-alignment-X                                        %! baca.text_script_self_alignment_x:OverrideCommand(2)
     \revert TextScript.staff-padding                                           %! baca.text_script_staff_padding:OverrideCommand(2)
