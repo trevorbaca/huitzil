@@ -1,20 +1,20 @@
-\version "2.19.83"                                                             %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
-\language "english"                                                            %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
+\version "2.19.83"                                                             %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile
+\language "english"                                                            %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile
 
-\include "../../stylesheets/stylesheet.ily"                                    %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
-clock-time-extra-offset = #'(0 . -2)                                           %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
-local-measure-number-extra-offset = #'(0 . -5)                                 %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
-spacing-extra-offset = #'(0 . 1)                                               %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
+\include "../../stylesheets/stylesheet.ily"                                    %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile
+clock-time-extra-offset = #'(0 . -2)                                           %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile
+local-measure-number-extra-offset = #'(0 . -5)                                 %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile
+spacing-extra-offset = #'(0 . 1)                                               %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile
 \include "illustration.ily"                                                    %! abjad.Path.extern
 
 
-\score {                                                                       %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
+\score {                                                                       %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile
     
-    <<                                                                         %! baca.SegmentMaker._make_lilypond_file
+    <<                                                                         %! baca.SegmentMaker._make_lilypond_file()
 
-        {                                                                      %! baca.SegmentMaker._make_lilypond_file
-            \include "layout.ly"                                               %! baca.SegmentMaker._make_lilypond_file
-        }                                                                      %! baca.SegmentMaker._make_lilypond_file
+        {                                                                      %! baca.SegmentMaker._make_lilypond_file()
+            \include "layout.ly"                                               %! baca.SegmentMaker._make_lilypond_file()
+        }                                                                      %! baca.SegmentMaker._make_lilypond_file()
 
         \context Score = "Score"                                               %! huitzil.ScoreTemplate.__call__
         <<                                                                     %! huitzil.ScoreTemplate.__call__
@@ -48,6 +48,6 @@ spacing-extra-offset = #'(0 . 1)                                               %
 
         >>                                                                     %! huitzil.ScoreTemplate.__call__
 
-    >>                                                                         %! baca.SegmentMaker._make_lilypond_file
+    >>                                                                         %! baca.SegmentMaker._make_lilypond_file()
     
-}                                                                              %! baca.SegmentMaker._make_lilypond_file:abjad.LilyPondFile
+}                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile
