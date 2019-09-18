@@ -496,7 +496,7 @@ G_RH_Music_Voice = {                                                           %
     d4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak self-alignment-X #-1                                              %! baca.markup:IndicatorCommand
     - \tweak staff-padding #4.5                                                %! baca.markup:IndicatorCommand
     ^ \huitzil-ascending-fingerboard-markup                                    %! baca.markup:IndicatorCommand
@@ -573,7 +573,7 @@ G_RH_Music_Voice = {                                                           %
     f,,4
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
+    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
     - \tweak self-alignment-X #-0.5                                            %! baca.markup:IndicatorCommand
     - \tweak staff-padding #2                                                  %! baca.markup:IndicatorCommand
     ^ \huitzil-close-to-lh-markup                                              %! baca.markup:IndicatorCommand
@@ -583,7 +583,7 @@ G_RH_Music_Voice = {                                                           %
     f,,8.
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \baca-pp-parenthesized                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \baca-pp-parenthesized                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak self-alignment-X #-1                                              %! baca.markup:IndicatorCommand
     - \tweak staff-padding #2                                                  %! baca.markup:IndicatorCommand
     ^ \huitzil-descending-fingerboard-markup                                   %! baca.markup:IndicatorCommand
@@ -659,7 +659,7 @@ G_RH_Music_Voice = {                                                           %
     c'1
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1):right_broken
     \glissando                                                                 %! baca.glissando
