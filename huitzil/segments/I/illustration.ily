@@ -468,7 +468,7 @@ I_RH_Music_Voice = {                                                           %
     c'2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -489,7 +489,7 @@ I_RH_Music_Voice = {                                                           %
         c'2
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
         _ \baca-fffz-markup                                                    %! baca.markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -500,7 +500,7 @@ I_RH_Music_Voice = {                                                           %
     c'2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -530,7 +530,7 @@ I_RH_Music_Voice = {                                                           %
         c'4
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
         _ \baca-ffz-markup                                                     %! baca.markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -550,7 +550,7 @@ I_RH_Music_Voice = {                                                           %
     c'2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -571,7 +571,7 @@ I_RH_Music_Voice = {                                                           %
         c'2
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
         _ \baca-fffz-markup                                                    %! baca.markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -582,7 +582,7 @@ I_RH_Music_Voice = {                                                           %
     c'2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -612,7 +612,7 @@ I_RH_Music_Voice = {                                                           %
         c'4
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
         _ \baca-ffz-markup                                                     %! baca.markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -632,7 +632,7 @@ I_RH_Music_Voice = {                                                           %
     c'2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -653,7 +653,7 @@ I_RH_Music_Voice = {                                                           %
         c'2
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
         _ \baca-fffz-markup                                                    %! baca.markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -664,7 +664,7 @@ I_RH_Music_Voice = {                                                           %
     c'2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -694,7 +694,7 @@ I_RH_Music_Voice = {                                                           %
         c'4
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
         _ \baca-ffz-markup                                                     %! baca.markup:IndicatorCommand
 
     }
@@ -716,7 +716,7 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -745,7 +745,7 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -793,7 +793,7 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -807,7 +807,7 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! SPANNER_STOP:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "stretto"                                   %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -817,7 +817,7 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! SPANNER_STOP:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "largo"                                     %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -827,7 +827,7 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-mfz-markup                                                         %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! SPANNER_STOP:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "stretto"                                   %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -838,12 +838,12 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     _ \baca-mfz-markup                                                         %! baca.markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1)
+    \stopTextSpan                                                              %! SPANNER_STOP:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "largo"                                     %! baca.text_spanner:PiecewiseCommand(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1)
@@ -853,7 +853,7 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     _ \baca-mpz-markup                                                         %! baca.markup:IndicatorCommand
-    \stopTextSpan                                                              %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(1):right_broken
+    \stopTextSpan                                                              %! SPANNER_STOP:baca.text_spanner:PiecewiseCommand(1):right_broken
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1):right_broken
     - \baca-text-spanner-left-text "stretto"                                   %! baca.text_spanner:PiecewiseCommand(1):right_broken
     - \tweak staff-padding #6                                                  %! baca.text_spanner:PiecewiseCommand(1):right_broken
@@ -870,8 +870,8 @@ I_RH_Music_Voice = {                                                           %
             % [I RH_Music_Voice measure 249 / measure 24]                      %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
             c'1 * 1/4                                                          %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
-            \!                                                                 %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.hairpin:PiecewiseCommand(2)
-            \stopTextSpan                                                      %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(3)
+            \!                                                                 %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
+            \stopTextSpan                                                      %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):SPANNER_STOP:baca.text_spanner:PiecewiseCommand(3)
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
