@@ -183,6 +183,7 @@ maker = baca.SegmentMaker(
         # TODO: make this work
         #abjad.const.SPACING,
         ],
+    check_all_are_pitched=True,
     clock_time_extra_offset=(0, -2),
     deactivate=[
         # TODO: make this work
