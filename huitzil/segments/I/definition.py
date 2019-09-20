@@ -14,31 +14,31 @@ time_signatures = [
     (1, 2), (4, 5), (1, 2), (2, 3), (1, 2), (4, 5), (1, 2),
     (2, 3), (1, 2), (4, 5), (1, 2), (1, 2), (1, 2), (1, 2),
     (1, 2), (1, 2),
-    ]
+]
 
 maker = baca.SegmentMaker(
     activate=[
         abjad.const.CLOCK_TIME,
         abjad.const.LOCAL_MEASURE_NUMBER,
-        ],
+    ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, 13),
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     validate_measure_count=23,
-    )
+)
 
 maker(
     'Global_Skips',
     baca.metronome_mark(
         '88',
         selector=baca.leaf(18 - 1),
-        ),
+    ),
     baca.metronome_mark(
         baca.Ritardando(),
         selector=baca.leaf(18 - 1),
-        ),
-    )
+    ),
+)
 
 # vc
 
@@ -49,16 +49,16 @@ maker(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
         selector=baca.leaves(),
-        ),
+    ),
     baca.time_signature_stencil_false(),
-    )
+)
 
 maker(
     ('vc', (8, 13)),
     baca.pitches('A1 Bb1'),
     baca.repeat_tie(baca.pleaf(0), allow_rest=True),
     baca.skeleton("{ c'1 * 107/30 c'1 * 1/5 }"),
-    )
+)
 
 maker(
     ('vc', 14),
@@ -73,14 +73,14 @@ maker(
     baca.note_head_style('do'),
     baca.skeleton("{ c'2 }"),
     baca.staff_position(7),
-    )
+)
 
 # vcr
 
 maker(
     ('vcr', [1, 15]),
     baca.mmrest_transparent(),
-    )
+)
 
 # rh
 
@@ -95,15 +95,15 @@ maker(
                 " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
                 r'\startStaff',
                 ]),
-            ),
         ),
+    ),
     baca.stem_tremolo(
         selector=baca.pleaves(),
-        ),
+    ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
     baca.text_script_staff_padding(4),
-    )
+)
 
 maker(
     ('rh', 1),
@@ -113,12 +113,12 @@ maker(
         direction=abjad.Down,
         literal=True,
         selector=baca.leaves(),
-        ),
+    ),
     baca.staff_positions(
         [-6, -4, -2, 0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 2),
@@ -128,12 +128,12 @@ maker(
         direction=abjad.Down,
         literal=True,
         selector=baca.leaves(),
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 # NOTE: final_hairpin=False can be removed once
 #       LilyPond fixes DynamicLineSpanner bug.
@@ -145,8 +145,8 @@ maker(
         final_hairpin=False,
         pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
         selector=baca.leaves().rleak(),
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 3),
@@ -156,18 +156,18 @@ maker(
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(0),
-        ),
+    ),
     baca.markup(
         r'\baca-fffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(1),
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 4),
@@ -176,12 +176,12 @@ maker(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 5),
@@ -191,30 +191,30 @@ maker(
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(0),
-        ),
+    ),
     baca.markup(
         r'\baca-fz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(1),
-        ),
+    ),
     baca.markup(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(2),
-        ),
+    ),
     baca.markup(
         r'\baca-fffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(3),
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 6),
@@ -223,12 +223,12 @@ maker(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 7),
@@ -237,18 +237,18 @@ maker(
         r'\baca-fz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.markup(
         r'\baca-fffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(1),
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 8),
@@ -257,12 +257,12 @@ maker(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 9),
@@ -271,30 +271,30 @@ maker(
         r'\baca-mfz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.markup(
         r'\baca-fz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(1),
-        ),
+    ),
     baca.markup(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(2),
-        ),
+    ),
     baca.markup(
         r'\baca-fffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(3),
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 10),
@@ -303,12 +303,12 @@ maker(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 11),
@@ -317,18 +317,18 @@ maker(
         r'\baca-fz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.markup(
         r'\baca-fffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(1),
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 12),
@@ -337,12 +337,12 @@ maker(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 13),
@@ -351,30 +351,30 @@ maker(
         r'\baca-mfz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.markup(
         r'\baca-fz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(1),
-        ),
+    ),
     baca.markup(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(2),
-        ),
+    ),
     baca.markup(
         r'\baca-fffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(3),
-        ),
+    ),
     baca.staff_positions(
         [0],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 14),
@@ -383,8 +383,8 @@ maker(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', (14, 23)),
@@ -392,7 +392,7 @@ maker(
         'mp -- p -- pp -- p -- !',
         pieces=baca.mgroups([2, 2, 4, 2 + 1]),
         selector=baca.leaves().rleak(),
-        ),
+    ),
     baca.literal([
         r'\stopStaff',
         r'\once \override RHStaff.StaffSymbol.line-positions ='
@@ -400,7 +400,7 @@ maker(
         r'\startStaff',
         ]),
     baca.staff_position(8),
-    )
+)
 
 maker(
     ('rh', 15),
@@ -409,14 +409,14 @@ maker(
         r'\baca-fz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.markup(
         r'\baca-fffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(1),
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 16),
@@ -425,8 +425,8 @@ maker(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 17),
@@ -435,34 +435,34 @@ maker(
         r'\baca-mfz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.markup(
         r'\baca-fz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(1),
-        ),
+    ),
     baca.markup(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(2),
-        ),
+    ),
     baca.markup(
         r'\baca-fffz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(3),
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 18),
     # TODO: make +ARCH_A_SCORE work
     baca.only_score(
         baca.hairpin_to_barline(),
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', (18, 23)),
@@ -474,8 +474,8 @@ maker(
         pieces=baca.lparts([1, 1, 1, 1, 1, 1 + 1]),
         right_broken=True,
         selector=baca.leaves().rleak(),
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', (18, 23)),
@@ -484,45 +484,45 @@ maker(
         r'\baca-ffz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.markup(
         r'\baca-fz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(1),
-        ),
+    ),
     baca.markup(
         r'\baca-fz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(2),
-        ),
+    ),
     baca.markup(
         r'\baca-mfz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(3),
-        ),
+    ),
     baca.markup(
         r'\baca-mfz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(4),
-        ),
+    ),
     baca.markup(
         r'\baca-mpz-markup',
         direction=abjad.Down,
         literal=True,
         selector=baca.leaf(5),
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 22),
     baca.only_segment(
         baca.hairpin_to_barline(),
-        ),
-    )
+    ),
+)
 
 # stage 2 (after staff position settings)
 
@@ -530,12 +530,12 @@ maker(
     ('vc', (8, 14)),
     baca.glissando(
         selector=baca.leaves(),
-        ),
-    )
+    ),
+)
 
 maker(
     'rh',
     baca.glissando(
         selector=baca.leaves(),
-        ),
-    )
+    ),
+)

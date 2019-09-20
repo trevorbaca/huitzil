@@ -14,35 +14,35 @@ time_signatures = [
     (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16),
     (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16),
     (1, 1), (1, 1),
-    ]
+]
 
 maker = baca.SegmentMaker(
     activate=[
         abjad.const.CLOCK_TIME,
         abjad.const.LOCAL_MEASURE_NUMBER,
-        ],
+    ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, 13),
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     validate_measure_count=26,
-    )
+)
 
 maker(
     'Global_Skips',
     baca.metronome_mark(
         '88',
         selector=baca.leaf(1 - 1),
-        ),
+    ),
     baca.metronome_mark(
         '88',
         selector=baca.leaf(25 - 1),
-        ),
+    ),
     baca.metronome_mark(
         baca.Ritardando(),
         selector=baca.leaf(25 - 1),
-        ),
-    )
+    ),
+)
 
 # vc
 
@@ -59,13 +59,13 @@ maker(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
         selector=baca.leaves(),
-        ),
+    ),
     baca.pitch(
         'A1',
         selector=baca.leaves().rleak()[-1],
-        ),
+    ),
     baca.time_signature_stencil_false(),
-    )
+)
 
 maker(
     ('vc', 1),
@@ -73,10 +73,10 @@ maker(
         baca.markups.string_number(3),
         abjad.tweak(2.5).padding,
         direction=abjad.Down,
-        ),
+    ),
     baca.pitch('A2'),
     baca.skeleton("{ c'1 * 1/4 }"),
-    )
+)
 
 maker(
     ('vc', (14, 24)),
@@ -84,8 +84,8 @@ maker(
     baca.suite(
         baca.pitch('A2'),
         baca.repeat_tie(baca.pleaf(0), allow_rest=True),
-        ),
-    )
+    ),
+)
 
 maker(
     ('vc', (25, 26)),
@@ -95,17 +95,17 @@ maker(
         abjad.tweak(0).parent_alignment_X,
         abjad.tweak(-0.05).self_alignment_X,
         direction=abjad.Down,
-        ),
+    ),
     baca.pitch('G2'),
     baca.skeleton("{ c'1 * 2 }"),
-    )
+)
 
 # vcr
 
 maker(
     ('vcr', 2),
     baca.mmrest_transparent(),
-    )
+)
 
 # rh
 
@@ -119,27 +119,27 @@ maker(
              "   #f  #f #f  #f   #f #f   #t #t  #t  #t  #t  #f    #f  #f)",
             ]),
         baca.staff_lines(14),
-        ),
+    ),
     baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
     baca.markup(
         r'\huitzil-ascending-fingerboard-markup',
         abjad.tweak(-1).self_alignment_X,
         abjad.tweak(4.5).staff_padding,
         literal=True,
-        ),
+    ),
     baca.markup(
         r'\huitzil-directly-above-end-of-fingerboard-markup',
         abjad.tweak(-1).self_alignment_X,
         abjad.tweak(1).staff_padding,
         literal=True,
-        ),
+    ),
     baca.stem_tremolo(
         selector=baca.pleaves(),
-        ),
+    ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
     baca.text_script_staff_padding(4),
-    )
+)
 
 maker(
     ('rh', (1, 8)),
@@ -147,8 +147,8 @@ maker(
     baca.staff_positions(
         [-6, -6, -8, -8, -10, -10, -12, -12],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', (1, 20)),
@@ -157,18 +157,18 @@ maker(
         direction=abjad.Down,
         literal=True,
         selector=baca.leaves(),
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', (1, 13)),
     baca.hairpin('mp > pp'),
-    )
+)
 
 maker(
     ('rh', (14, 26)),
     baca.hairpin('(pp) < ff'),
-    )
+)
 
 maker(
     ('rh', (9, 16)),
@@ -177,8 +177,8 @@ maker(
         [-14, -14, -16, -16, -18, -18, -16, -16],
         allow_out_of_range=True,
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 13),
@@ -187,8 +187,8 @@ maker(
         abjad.tweak(-0.5).self_alignment_X,
         abjad.tweak(2).staff_padding,
         literal=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', 14),
@@ -197,8 +197,8 @@ maker(
         abjad.tweak(-1).self_alignment_X,
         abjad.tweak(2).staff_padding,
         literal=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', (17, 24)),
@@ -206,8 +206,8 @@ maker(
     baca.staff_positions(
         [-14, -14, -12, -12, -10, -10, -8, -8],
         allow_repeats=True,
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', (25, 26)),
@@ -215,7 +215,7 @@ maker(
         '>',
         right_broken=True,
         selector=baca.leaves()[-1:].rleak(),
-        ),
+    ),
     baca.literal([
         r'\stopStaff',
         r'\once \override RHStaff.StaffSymbol.line-positions ='
@@ -228,15 +228,15 @@ maker(
         abjad.tweak(-0.5).self_alignment_X,
         abjad.tweak(2).staff_padding,
         literal=True,
-        ),
+    ),
     baca.parenthesize(
         selector=baca.pleaf(-1),
-        ),
+    ),
     baca.staff_positions(
         [-6, 0, 6],
         selector=baca.leaves().rleak(),
-        ),
-    )
+    ),
+)
 
 # stage 2 (after staff position commands)
 
@@ -244,21 +244,21 @@ maker(
     ('vc', (14, 24)),
     baca.glissando(
         selector=baca.leaves().rleak(),
-        ),
-    )
+    ),
+)
 
 maker(
     ('vc', (25, 26)),
     baca.glissando(
         right_broken=True,
         selector=baca.leaves().rleak(),
-        ),
-    )
+    ),
+)
 
 maker(
     'rh',
     baca.glissando(
         right_broken=True,
         selector=baca.leaves().rleak(),
-        ),
-    )
+    ),
+)
