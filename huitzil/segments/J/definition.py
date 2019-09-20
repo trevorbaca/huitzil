@@ -12,13 +12,13 @@ from abjadext import rmakers
 time_signatures = [
     (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2),
     (1, 2), (1, 2), (3, 2),
-    ]
+]
 
 maker = baca.SegmentMaker(
     activate=[
         abjad.const.CLOCK_TIME,
         abjad.const.LOCAL_MEASURE_NUMBER,
-        ],
+    ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, 13),
     final_segment=True,
@@ -26,7 +26,7 @@ maker = baca.SegmentMaker(
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     validate_measure_count=10,
-    )
+)
 
 # skips
 
@@ -35,8 +35,8 @@ maker(
     baca.metronome_mark(
         '66',
         selector=baca.leaf(1 - 1),
-        ),
-    )
+    ),
+)
 
 # vc
 
@@ -47,7 +47,7 @@ maker(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
         selector=baca.leaves(),
-        ),
+    ),
     baca.only_segment(
         baca.literal([
             r'\stopStaff',
@@ -55,9 +55,9 @@ maker(
             " #'(4 -4)",
             r'\startStaff',
             ]),
-        ),
+    ),
     baca.time_signature_stencil_false(),
-    )
+)
 
 maker(
     ('vc', -1),
@@ -66,21 +66,21 @@ maker(
     #    baca.rehearsal_mark_down(),
     #    baca.rehearsal_mark_padding(4),
     #    selector=baca.leaves().rleak()[-1],
-    #    ),
+    #),
     baca.literal([
         r'\once \override Score.RehearsalMark.direction = #down',
         r'\once \override Score.RehearsalMark.padding = 4',
         r'\mark \huitzil-colophon-markup',
         ],
         format_slot='after',
-        ),
+    ),
     baca.literal([
         r"\override Score.BarLine.X-extent = #'(0 . 8)",
         r"\override Score.BarLine.extra-offset = #'(8 . 0)",
         r"\override Score.RehearsalMark.extra-offset = #'(4 . 0)",
         r"\override Score.SpanBar.extra-offset = #'(8 . 0)",
         ]),
-    )
+)
 
 # vcr
 
@@ -98,14 +98,14 @@ maker(
             " #'(8.2 8 7.8 -5.8 -6 -6.2)",
             r'\startStaff',
             ]),
-        ),
+    ),
     baca.stem_tremolo(
         selector=baca.pleaves(),
-        ),
+    ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
     baca.text_script_staff_padding(4),
-    )
+)
 
 maker(
     ('rh', (1, 10)),
@@ -113,14 +113,14 @@ maker(
         r'\baca-mpz-markup',
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.hairpin(
         'mp > pp <',
         abjad.tweak(True).to_barline,
         final_hairpin=False,
         pieces=baca.clparts([1]),
-        ),
-    )
+    ),
+)
 
 maker(
     ('rh', (1, 12)),
@@ -131,5 +131,5 @@ maker(
         'larg. => strett. =>',
         abjad.tweak(6).staff_padding,
         pieces=baca.clparts([1]),
-        ),
-    )
+    ),
+)
