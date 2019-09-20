@@ -421,7 +421,7 @@ B_RH_Music_Voice = {                                                           %
         \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2) %! baca.literal:IndicatorCommand
         \override DynamicLineSpanner.staff-padding = 2.5                       %! baca.literal:IndicatorCommand
         \override Score.BarNumber.transparent = ##t                            %! baca.literal:IndicatorCommand
-        \override TupletBracket.direction = #down                              %! baca.tuplet_bracket_down:OverrideCommand(1)
+        \override TupletBracket.direction = #down                              %! baca.tuplet_bracket_down():OverrideCommand(1)
         \clef "percussion"                                                     %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
         \once \override RHStaff.Clef.color = #(x11-color 'green4)              %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
     %@% \override RHStaff.Clef.color = ##f                                     %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
@@ -436,7 +436,7 @@ B_RH_Music_Voice = {                                                           %
         ^ \huitzil-directly-on-bridge-markup                                   %! baca.markup:IndicatorCommand
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                 %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-        \override Rest.staff-position = #0                                     %! baca.rest_position:OverrideCommand(1)
+        \override Rest.staff-position = #0                                     %! baca.rest_position():OverrideCommand(1)
         r2                                                                     %! baca.skeleton
 
         % [B RH_Music_Voice measure 56 / measure 2]                            %! baca.SegmentMaker._comment_measure_numbers()
@@ -456,7 +456,7 @@ B_RH_Music_Voice = {                                                           %
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
         r2                                                                     %! baca.skeleton
-        \revert Rest.staff-position                                            %! baca.rest_position:OverrideCommand(2)
+        \revert Rest.staff-position                                            %! baca.rest_position():OverrideCommand(2)
 
     }                                                                          %! baca.skeleton
 
@@ -787,7 +787,7 @@ B_RH_Music_Voice = {                                                           %
         - \tweak stencil #constante-hairpin                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca.glissando
-        \revert TupletBracket.direction                                        %! baca.tuplet_bracket_down:OverrideCommand(2)
+        \revert TupletBracket.direction                                        %! baca.tuplet_bracket_down():OverrideCommand(2)
 
     }                                                                          %! baca.skeleton
 
@@ -840,7 +840,7 @@ B_Cello_Music_Voice = {                                                        %
             % [B Cello_Music_Voice measure 55 / measure 1]                     %! baca.SegmentMaker._comment_measure_numbers()
             \stopStaff                                                         %! baca.literal:IndicatorCommand
             \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff %! baca.literal:IndicatorCommand
-            \override Score.TimeSignature.stencil = ##f                        %! baca.time_signature_stencil_false:OverrideCommand(1)
+            \override Score.TimeSignature.stencil = ##f                        %! baca.time_signature_stencil_false():OverrideCommand(1)
             \clef "bass"                                                       %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             \once \override Staff.Clef.color = #(x11-color 'green4)            %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
@@ -856,7 +856,7 @@ B_Cello_Music_Voice = {                                                        %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
             % [B Cello_Rest_Voice measure 55 / measure 1]                      %! baca.SegmentMaker._comment_measure_numbers()
-            \once \override MultiMeasureRest.transparent = ##t                 %! baca.mmrest_transparent:OverrideCommand(1)
+            \once \override MultiMeasureRest.transparent = ##t                 %! baca.mmrest_transparent():OverrideCommand(1)
             R1 * 3/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -864,9 +864,9 @@ B_Cello_Music_Voice = {                                                        %
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
     % [B Cello_Music_Voice measure 56 / measure 2]                             %! baca.SegmentMaker._comment_measure_numbers()
-    \override MultiMeasureRest.transparent = ##t                               %! baca.mmrest_transparent:OverrideCommand(1)
-    \override Score.BarLine.transparent = ##t                                  %! baca.bar_line_transparent:OverrideCommand(1)
-    \override Score.SpanBar.transparent = ##t                                  %! baca.span_bar_transparent:OverrideCommand(1)
+    \override MultiMeasureRest.transparent = ##t                               %! baca.mmrest_transparent():OverrideCommand(1)
+    \override Score.BarLine.transparent = ##t                                  %! baca.bar_line_transparent():OverrideCommand(1)
+    \override Score.SpanBar.transparent = ##t                                  %! baca.span_bar_transparent():OverrideCommand(1)
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [B Cello_Music_Voice measure 57 / measure 3]                             %! baca.SegmentMaker._comment_measure_numbers()
@@ -934,7 +934,7 @@ B_Cello_Music_Voice = {                                                        %
 
     % [B Cello_Music_Voice measure 78 / measure 24]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
-    \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent:OverrideCommand(2)
+    \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent():OverrideCommand(2)
 
     {                                                                          %! baca.skeleton
 
@@ -943,9 +943,9 @@ B_Cello_Music_Voice = {                                                        %
         \once \override Staff.StaffSymbol.line-count = 5                       %! baca.literal:IndicatorCommand
         \startStaff                                                            %! baca.literal:IndicatorCommand
         b,,1                                                                   %! baca.skeleton
-        \revert Score.BarLine.transparent                                      %! baca.bar_line_transparent:OverrideCommand(2)
-        \revert Score.SpanBar.transparent                                      %! baca.span_bar_transparent:OverrideCommand(2)
-        \revert Score.TimeSignature.stencil                                    %! baca.time_signature_stencil_false:OverrideCommand(2)
+        \revert Score.BarLine.transparent                                      %! baca.bar_line_transparent():OverrideCommand(2)
+        \revert Score.SpanBar.transparent                                      %! baca.span_bar_transparent():OverrideCommand(2)
+        \revert Score.TimeSignature.stencil                                    %! baca.time_signature_stencil_false():OverrideCommand(2)
 
     }                                                                          %! baca.skeleton
 
