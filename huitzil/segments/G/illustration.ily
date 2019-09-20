@@ -485,9 +485,9 @@ G_RH_Music_Voice = {                                                           %
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8  7.8 -5.8 -6 -6.2 -8 -10 -12 -14 -16 -17.8 -18 -18.2) %! baca.literal:IndicatorCommand
     \morleyDashedStaffSymbolLines #'(   #f  #f #f  #f   #f #f   #t #t  #t  #t  #t  #f    #f  #f) %! baca.literal:IndicatorCommand
     \override DynamicLineSpanner.staff-padding = 7                             %! baca.literal:IndicatorCommand
-    \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x:OverrideCommand(1)
-    \override TextScript.self-alignment-X = #0                                 %! baca.text_script_self_alignment_x:OverrideCommand(1)
-    \override TextScript.staff-padding = #4                                    %! baca.text_script_staff_padding:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x():OverrideCommand(1)
+    \override TextScript.self-alignment-X = #0                                 %! baca.text_script_self_alignment_x():OverrideCommand(1)
+    \override TextScript.staff-padding = #4                                    %! baca.text_script_staff_padding():OverrideCommand(1)
     \clef "percussion"                                                         %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)                  %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                         %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
@@ -663,9 +663,9 @@ G_RH_Music_Voice = {                                                           %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1):right_broken
     \glissando                                                                 %! baca.glissando
-    \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x:OverrideCommand(2)
-    \revert TextScript.self-alignment-X                                        %! baca.text_script_self_alignment_x:OverrideCommand(2)
-    \revert TextScript.staff-padding                                           %! baca.text_script_staff_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x():OverrideCommand(2)
+    \revert TextScript.self-alignment-X                                        %! baca.text_script_self_alignment_x():OverrideCommand(2)
+    \revert TextScript.staff-padding                                           %! baca.text_script_staff_padding():OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -714,11 +714,11 @@ G_Cello_Music_Voice = {                                                        %
         \stopStaff                                                             %! baca.literal:IndicatorCommand
         \once \override Staff.StaffSymbol.line-count = 5                       %! baca.literal:IndicatorCommand
         \startStaff                                                            %! baca.literal:IndicatorCommand
-        \override Score.BarLine.transparent = ##t                              %! baca.bar_line_transparent:OverrideCommand(1)
-        \override Score.SpanBar.transparent = ##t                              %! baca.span_bar_transparent:OverrideCommand(1)
-        \override Score.TimeSignature.stencil = ##f                            %! baca.time_signature_stencil_false:OverrideCommand(1)
-    %%% \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_174:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
-    %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! MEASURE_174:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+        \override Score.BarLine.transparent = ##t                              %! baca.bar_line_transparent():OverrideCommand(1)
+        \override Score.SpanBar.transparent = ##t                              %! baca.span_bar_transparent():OverrideCommand(1)
+        \override Score.TimeSignature.stencil = ##f                            %! baca.time_signature_stencil_false():OverrideCommand(1)
+    %%% \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_174:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():OverrideCommand(1)
+    %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! MEASURE_174:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():OverrideCommand(1)
         \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
@@ -746,7 +746,7 @@ G_Cello_Music_Voice = {                                                        %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
             % [G Cello_Rest_Voice measure 175 / measure 2]                     %! baca.SegmentMaker._comment_measure_numbers()
-            \once \override MultiMeasureRest.transparent = ##t                 %! baca.mmrest_transparent:OverrideCommand(1)
+            \once \override MultiMeasureRest.transparent = ##t                 %! baca.mmrest_transparent():OverrideCommand(1)
             R1 * 3/16                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -754,7 +754,7 @@ G_Cello_Music_Voice = {                                                        %
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
     % [G Cello_Music_Voice measure 176 / measure 3]                            %! baca.SegmentMaker._comment_measure_numbers()
-    \override MultiMeasureRest.transparent = ##t                               %! baca.mmrest_transparent:OverrideCommand(1)
+    \override MultiMeasureRest.transparent = ##t                               %! baca.mmrest_transparent():OverrideCommand(1)
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [G Cello_Music_Voice measure 177 / measure 4]                            %! baca.SegmentMaker._comment_measure_numbers()
@@ -786,7 +786,7 @@ G_Cello_Music_Voice = {                                                        %
 
     % [G Cello_Music_Voice measure 186 / measure 13]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
-    \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent:OverrideCommand(2)
+    \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent():OverrideCommand(2)
 
     {                                                                          %! baca.skeleton
 
@@ -806,9 +806,9 @@ G_Cello_Music_Voice = {                                                        %
         - \tweak self-alignment-X #-0.05                                       %! baca.markup:IndicatorCommand
         _ \markup { III→IV }                                                   %! baca.markup:IndicatorCommand
         \glissando                                                             %! baca.glissando
-        \revert Score.BarLine.transparent                                      %! baca.bar_line_transparent:OverrideCommand(2)
-        \revert Score.SpanBar.transparent                                      %! baca.span_bar_transparent:OverrideCommand(2)
-        \revert Score.TimeSignature.stencil                                    %! baca.time_signature_stencil_false:OverrideCommand(2)
+        \revert Score.BarLine.transparent                                      %! baca.bar_line_transparent():OverrideCommand(2)
+        \revert Score.SpanBar.transparent                                      %! baca.span_bar_transparent():OverrideCommand(2)
+        \revert Score.TimeSignature.stencil                                    %! baca.time_signature_stencil_false():OverrideCommand(2)
 
     }                                                                          %! baca.skeleton
 
