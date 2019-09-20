@@ -34,9 +34,9 @@ maker = baca.SegmentMaker(
 )
 
 maker(
-    'Global_Skips',
+    "Global_Skips",
     baca.metronome_mark(
-        '44',
+        "44",
         selector=baca.leaf(1 - 1),
     ),
 )
@@ -44,11 +44,11 @@ maker(
 # vc
 
 maker(
-    'vc',
+    "vc",
     baca.literal([
-        r'\stopStaff',
+        r"\stopStaff",
         r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
-        r'\startStaff',
+        r"\startStaff",
         ]),
     baca.mmrest_transparent(),
     baca.new(
@@ -60,43 +60,43 @@ maker(
 )
 
 maker(
-    ('vc', 25),
+    ("vc", 25),
     baca.literal([
-        r'\stopStaff',
+        r"\stopStaff",
         r"\once \override Staff.StaffSymbol.line-count = 5",
-        r'\startStaff',
+        r"\startStaff",
         ]),
-    baca.pitch('B1'),
-    baca.skeleton("{ c'1 }"),
+    baca.pitch("B1"),
+    baca.skeleton("{ c1 }"),
 )
 
 # vcr
 
 maker(
-    ('vcr', 1),
+    ("vcr", 1),
     baca.mmrest_transparent(),
 )
 
 # rh
 
 maker(
-    'rh',
+    "rh",
     baca.alternate_bow_strokes(),
     baca.chunk(
         baca.literal([
-            r'\once \override RHStaff.StaffSymbol.line-positions ='
+            r"\once \override RHStaff.StaffSymbol.line-positions ="
             " #'(8.2 8 7.8 -5.8 -6 -6.2)"
             ]),
         baca.staff_lines(7),
     ),
     baca.dynamic(
-        'mp-sempre',
+        "mp-sempre",
         abjad.tweak(-0.9).self_alignment_X,
     ),
-    baca.literal(r'\override DynamicLineSpanner.staff-padding = 2.5'),
-    baca.literal(r'\override Score.BarNumber.transparent = ##t'),
+    baca.literal(r"\override DynamicLineSpanner.staff-padding = 2.5"),
+    baca.literal(r"\override Score.BarNumber.transparent = ##t"),
     baca.markup(
-        r'\huitzil-directly-on-bridge-markup',
+        r"\huitzil-directly-on-bridge-markup",
         abjad.tweak(3).staff_padding,
         literal=True,
     ),
@@ -105,121 +105,121 @@ maker(
 )
 
 maker(
-    ('rh', (1, 4)),
+    ("rh", (1, 4)),
     baca.rest_position(0),
-    baca.skeleton("{ c'4 r2 c'4 r2 c'4 r2 c'4 r2 }"),
+    baca.skeleton("{ c4 r2 c4 r2 c4 r2 c4 r2 }"),
 )
 
 maker(
-    ('rh', (5, 8)),
+    ("rh", (5, 8)),
     baca.skeleton(
-        "{ c'4 c'16 r8. r4 c'4 c'16 r8. r4 c'4 c'16 r8. r4 c'4 c'16 r8. r4 }"
+        "{ c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 }"
     ),
 )
 
 maker(
-    ('rh', (9, 12)),
+    ("rh", (9, 12)),
     baca.skeleton(
         "{"
-        r" c'4 \times 2/3 { c'8 r4 } r4"
-        r" c'4 \times 2/3 { c'8 r4 } r4"
-        r" c'4 c'8 r8 r4"
-        r" c'4 c'8 r8 r4"
+        r" c4 \times 2/3 { c8 r4 } r4"
+        r" c4 \times 2/3 { c8 r4 } r4"
+        r" c4 c8 r8 r4"
+        r" c4 c8 r8 r4"
         " }",
     ),
 )
 
 maker(
-    ('rh', [9, 10]),
+    ("rh", [9, 10]),
     baca.tag(
         # TODO: make +ARCH_A_SCORE work
-        #'+ARCH_A_SCORE',
-        '+SCORE',
+        #"+ARCH_A_SCORE",
+        "+SCORE",
         baca.literal(
-            r'\once \override TupletNumber.font-size = -2',
+            r"\once \override TupletNumber.font-size = -2",
             selector=baca.pleaf(1),
         ),
     ),
 )
 
 maker(
-    ('rh', (13, 15)),
-    baca.skeleton("{ c'4 c'4 c'4 c'4 c'4 c'4 }"),
+    ("rh", (13, 15)),
+    baca.skeleton("{ c4 c4 c4 c4 c4 c4 }"),
 )
 
 maker(
-    ('rh', (16, 18)),
+    ("rh", (16, 18)),
     baca.skeleton(
         "{"
-        r" \times 2/3 { c'4 c'4 c'4 }"
-        r" \times 2/3 { c'4 c'4 c'4 }"
-        r" \times 2/3 { c'4 c'4 c'4 }"
+        r" \times 2/3 { c4 c4 c4 }"
+        r" \times 2/3 { c4 c4 c4 }"
+        r" \times 2/3 { c4 c4 c4 }"
         " }",
     ),
 )
 
 maker(
-    ('rh', (19, 20)),
+    ("rh", (19, 20)),
     baca.skeleton(
         "{"
-        r" c'8 c'8 c'8 c'8"
-        r" c'8 c'8 c'8 c'8"
+        r" c8 c8 c8 c8"
+        r" c8 c8 c8 c8"
         " }",
     ),
 )
 
 maker(
-    ('rh', (21, 24)),
+    ("rh", (21, 24)),
     baca.skeleton(
         "{"
-        r" \times 4/5 { c'8 c'8 c'8 c'8 c'8 }"
-        r" \times 4/6 { c'8 c'8 c'8 c'8 c'8 c'8 }"
-        r" \times 4/7 { c'8 c'8 c'8 c'8 c'8 c'8 c'8 }"
-        " c'16 c'16 c'16 c'16 c'16 c'16 c'16 c'16"
+        r" \times 4/5 { c8 c8 c8 c8 c8 }"
+        r" \times 4/6 { c8 c8 c8 c8 c8 c8 }"
+        r" \times 4/7 { c8 c8 c8 c8 c8 c8 c8 }"
+        " c16 c16 c16 c16 c16 c16 c16 c16"
         " }",
     ),
 )
 
 maker(
-    ('rh', (19, 24)),
+    ("rh", (19, 24)),
     baca.beam(),
 )
 
 maker(
-    ('rh', 25),
+    ("rh", 25),
     baca.glissando(
         right_broken=True,
         selector=baca.leaves().rleak(),
     ),
     baca.hairpin(
-        '(mp) -- !',
+        "(mp) -- !",
         selector=baca.leaves().rleak(),
     ),
     baca.literal(
-        r'\override DynamicLineSpanner.staff-padding = 7',
+        r"\override DynamicLineSpanner.staff-padding = 7",
     ),
     baca.literal([
-        r'\stopStaff',
-        r'\once \override RHStaff.StaffSymbol.line-positions ='
+        r"\stopStaff",
+        r"\once \override RHStaff.StaffSymbol.line-positions ="
         " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-        r'\startStaff',
+        r"\startStaff",
         ]),
     baca.markup(
-        r'\huitzil-sliding-from-bridge-onto-string-markup',
+        r"\huitzil-sliding-from-bridge-onto-string-markup",
         abjad.tweak(6).staff_padding,
         literal=True,
     ),
     baca.markup(
-        r'trem. moderato',
+        r"trem. moderato",
         abjad.tweak(3.5).staff_padding,
         direction=abjad.Down,
     ),
-    baca.skeleton("{ c'1 }"),
+    baca.skeleton("{ c1 }"),
     baca.stem_tremolo(),
 )
 
 maker(
-    ('rh', 25),
+    ("rh", 25),
     baca.staff_position(
         6,
         selector=baca.leaves().rleak()[-1],
