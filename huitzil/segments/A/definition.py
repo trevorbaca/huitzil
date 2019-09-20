@@ -200,9 +200,9 @@ maker = baca.SegmentMaker(
 # skips
 
 maker(
-    'Global_Skips',
+    "Global_Skips",
     baca.metronome_mark(
-        '78',
+        "78",
         selector=baca.leaf(1 - 1),
         ),
     )
@@ -210,9 +210,9 @@ maker(
 # vc
 
 maker(
-    ('vc', 1),
+    ("vc", 1),
     baca.markup(
-        r'\huitzil-phrasing-dynamics-see-preface-markup',
+        r"\huitzil-phrasing-dynamics-see-preface-markup",
         abjad.tweak(9).staff_padding,
         direction=abjad.Down,
         literal=True,
@@ -221,12 +221,12 @@ maker(
     )
 
 maker(
-    ('vc', (1, 51)),
+    ("vc", (1, 51)),
     baca.tuplet_bracket_staff_padding(3),
     )
 
 maker(
-    ('vc', 8),
+    ("vc", 8),
     baca.suite(
         baca.untie(baca.pleaf(-2)),
         baca.chunk(
@@ -238,28 +238,28 @@ maker(
     )
 
 maker(
-    ('vc', 20),
+    ("vc", 20),
     baca.repeat_tie(baca.pleaf(0)),
     )
 
 maker(
-    ('vc', 48),
+    ("vc", 48),
     baca.repeat_tie(baca.pleaf(0)),
     )
 
 maker(
-    ('vc', (52, 54)),
+    ("vc", (52, 54)),
     baca.tuplet_bracket_staff_padding(4),
     )
 
 
 maker(
-    ('vc', 53),
+    ("vc", 53),
     baca.breathe(),
     )
 
 maker(
-    ('vc', 54),
+    ("vc", 54),
     baca.only_score(
         baca.breathe(
             baca.pleaf(-1),
@@ -274,8 +274,8 @@ maker(
 # rh
 
 maker(
-    'rh',
-    baca.literal(r'\stopStaff'),
+    "rh",
+    baca.literal(r"\stopStaff"),
     baca.mmrest_transparent(
         selector=baca.leaves(),
         ),

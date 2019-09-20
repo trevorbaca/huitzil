@@ -31,9 +31,9 @@ maker = baca.SegmentMaker(
 # skips
 
 maker(
-    'Global_Skips',
+    "Global_Skips",
     baca.metronome_mark(
-        '66',
+        "66",
         selector=baca.leaf(1 - 1),
     ),
 )
@@ -41,7 +41,7 @@ maker(
 # vc
 
 maker(
-    'vc',
+    "vc",
     baca.mmrest_transparent(),
     baca.new(
         baca.bar_line_transparent(),
@@ -50,29 +50,29 @@ maker(
     ),
     baca.only_segment(
         baca.literal([
-            r'\stopStaff',
-            r'\once \override Staff.StaffSymbol.line-positions ='
+            r"\stopStaff",
+            r"\once \override Staff.StaffSymbol.line-positions ="
             " #'(4 -4)",
-            r'\startStaff',
+            r"\startStaff",
             ]),
     ),
     baca.time_signature_stencil_false(),
 )
 
 maker(
-    ('vc', -1),
+    ("vc", -1),
     #baca.chunk(
-    #    baca.mark(r'\huitzil-colophon-markup'),
+    #    baca.mark(r"\huitzil-colophon-markup"),
     #    baca.rehearsal_mark_down(),
     #    baca.rehearsal_mark_padding(4),
     #    selector=baca.leaves().rleak()[-1],
     #),
     baca.literal([
-        r'\once \override Score.RehearsalMark.direction = #down',
-        r'\once \override Score.RehearsalMark.padding = 4',
-        r'\mark \huitzil-colophon-markup',
+        r"\once \override Score.RehearsalMark.direction = #down",
+        r"\once \override Score.RehearsalMark.padding = 4",
+        r"\mark \huitzil-colophon-markup",
         ],
-        format_slot='after',
+        format_slot="after",
     ),
     baca.literal([
         r"\override Score.BarLine.X-extent = #'(0 . 8)",
@@ -87,16 +87,16 @@ maker(
 # rh
 
 maker(
-    'rh',
+    "rh",
     # TODO: fix right-broken text spanners and replace this:
-    baca.literal(r'<> \stopTextSpan'),
-    baca.literal(r'\override DynamicLineSpanner.staff-padding = 7'),
+    baca.literal(r"<> \stopTextSpan"),
+    baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
     baca.only_segment(
         baca.literal([
-            r'\stopStaff',
-            r'\once \override RHStaff.StaffSymbol.line-positions ='
+            r"\stopStaff",
+            r"\once \override RHStaff.StaffSymbol.line-positions ="
             " #'(8.2 8 7.8 -5.8 -6 -6.2)",
-            r'\startStaff',
+            r"\startStaff",
             ]),
     ),
     baca.stem_tremolo(
@@ -108,14 +108,14 @@ maker(
 )
 
 maker(
-    ('rh', (1, 10)),
+    ("rh", (1, 10)),
     baca.markup(
-        r'\baca-mpz-markup',
+        r"\baca-mpz-markup",
         direction=abjad.Down,
         literal=True,
     ),
     baca.hairpin(
-        'mp > pp <',
+        "mp > pp <",
         abjad.tweak(True).to_barline,
         final_hairpin=False,
         pieces=baca.clparts([1]),
@@ -123,12 +123,12 @@ maker(
 )
 
 maker(
-    ('rh', (1, 12)),
-    baca.make_monads('1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2'),
+    ("rh", (1, 12)),
+    baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2"),
     baca.repeat_tie(baca.pleaves()[1:]),
     baca.staff_position(8),
     baca.text_spanner(
-        'larg. => strett. =>',
+        "larg. => strett. =>",
         abjad.tweak(6).staff_padding,
         pieces=baca.clparts([1]),
     ),
