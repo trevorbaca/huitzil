@@ -1158,7 +1158,7 @@ A_Cello_Music_Voice = {                                                        %
     %@% \override Staff.Clef.color = ##f                                       %! DEFAULT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! DEFAULT_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
         fs!8                                                                   %! baca.music
-        ^ \baca-default-indicator-markup "(“Cello”)"                           %! DEFAULT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
+    %@% ^ \baca-default-indicator-markup "(“Cello”)"                           %! DEFAULT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
         - \tweak staff-padding #9                                              %! baca.markup:IndicatorCommand
         _ \huitzil-phrasing-dynamics-see-preface-markup                        %! baca.markup:IndicatorCommand
         [

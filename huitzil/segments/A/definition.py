@@ -186,7 +186,6 @@ maker = baca.SegmentMaker(
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, -2),
     deactivate=[
-        # TODO: make this work
         abjad.tags.DEFAULT_INSTRUMENT_ALERT,
         ],
     first_segment=True,
