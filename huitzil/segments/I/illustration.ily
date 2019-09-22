@@ -429,10 +429,10 @@ I_RH_Music_Voice = {                                                           %
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 7                         %! REAPPLIED_STAFF_LINES:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
-    \override DynamicLineSpanner.staff-padding = 7                             %! baca.literal:+SEGMENT:IndicatorCommand
-    \stopStaff                                                                 %! baca.literal:+SEGMENT:IndicatorCommand
-    \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2) %! baca.literal:+SEGMENT:IndicatorCommand
-    \startStaff                                                                %! baca.literal:+SEGMENT:IndicatorCommand
+    \override DynamicLineSpanner.staff-padding = 7                             %! baca.literal():+SEGMENT:IndicatorCommand
+    \stopStaff                                                                 %! baca.literal():+SEGMENT:IndicatorCommand
+    \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2) %! baca.literal():+SEGMENT:IndicatorCommand
+    \startStaff                                                                %! baca.literal():+SEGMENT:IndicatorCommand
     \override TextScript.parent-alignment-X = #0                               %! baca.text_script_parent_alignment_x():OverrideCommand(1)
     \override TextScript.self-alignment-X = #0                                 %! baca.text_script_self_alignment_x():OverrideCommand(1)
     \override TextScript.staff-padding = #4                                    %! baca.text_script_staff_padding():OverrideCommand(1)
@@ -442,34 +442,34 @@ I_RH_Music_Voice = {                                                           %
     \set RHStaff.forceClef = ##t                                               %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)           %! REAPPLIED_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
     d8
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! REAPPLIED_DYNAMIC:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
     \<                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
-    \glissando                                                                 %! baca.glissando
+    \glissando                                                                 %! baca.glissando()
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                     %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
     f8
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
-    \glissando                                                                 %! baca.glissando
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
+    \glissando                                                                 %! baca.glissando()
 
     a8
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
-    \glissando                                                                 %! baca.glissando
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
+    \glissando                                                                 %! baca.glissando()
 
     c'8
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
 
     % [I RH_Music_Voice measure 227 / measure 2]                               %! baca.SegmentMaker._comment_measure_numbers()
     c'2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -478,8 +478,8 @@ I_RH_Music_Voice = {                                                           %
 
         % [I RH_Music_Voice measure 228 / measure 3]                           %! baca.SegmentMaker._comment_measure_numbers()
         c'2
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fz-markup                                                      %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fz-markup                                                      %! baca.markup():IndicatorCommand
 
     }
 
@@ -487,10 +487,10 @@ I_RH_Music_Voice = {                                                           %
     \times 2/3 {
 
         c'2
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        _ \baca-fffz-markup                                                    %! baca.markup:IndicatorCommand
+        _ \baca-fffz-markup                                                    %! baca.markup():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -498,10 +498,10 @@ I_RH_Music_Voice = {                                                           %
 
     % [I RH_Music_Voice measure 229 / measure 4]                               %! baca.SegmentMaker._comment_measure_numbers()
     c'2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -510,8 +510,8 @@ I_RH_Music_Voice = {                                                           %
 
         % [I RH_Music_Voice measure 230 / measure 5]                           %! baca.SegmentMaker._comment_measure_numbers()
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-mfz-markup                                                     %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca.markup():IndicatorCommand
 
     }
 
@@ -519,8 +519,8 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fz-markup                                                      %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fz-markup                                                      %! baca.markup():IndicatorCommand
 
     }
 
@@ -528,10 +528,10 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        _ \baca-ffz-markup                                                     %! baca.markup:IndicatorCommand
+        _ \baca-ffz-markup                                                     %! baca.markup():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -541,17 +541,17 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fffz-markup                                                    %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fffz-markup                                                    %! baca.markup():IndicatorCommand
 
     }
 
     % [I RH_Music_Voice measure 231 / measure 6]                               %! baca.SegmentMaker._comment_measure_numbers()
     c'2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -560,8 +560,8 @@ I_RH_Music_Voice = {                                                           %
 
         % [I RH_Music_Voice measure 232 / measure 7]                           %! baca.SegmentMaker._comment_measure_numbers()
         c'2
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fz-markup                                                      %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fz-markup                                                      %! baca.markup():IndicatorCommand
 
     }
 
@@ -569,10 +569,10 @@ I_RH_Music_Voice = {                                                           %
     \times 2/3 {
 
         c'2
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        _ \baca-fffz-markup                                                    %! baca.markup:IndicatorCommand
+        _ \baca-fffz-markup                                                    %! baca.markup():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -580,10 +580,10 @@ I_RH_Music_Voice = {                                                           %
 
     % [I RH_Music_Voice measure 233 / measure 8]                               %! baca.SegmentMaker._comment_measure_numbers()
     c'2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -592,8 +592,8 @@ I_RH_Music_Voice = {                                                           %
 
         % [I RH_Music_Voice measure 234 / measure 9]                           %! baca.SegmentMaker._comment_measure_numbers()
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-mfz-markup                                                     %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca.markup():IndicatorCommand
 
     }
 
@@ -601,8 +601,8 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fz-markup                                                      %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fz-markup                                                      %! baca.markup():IndicatorCommand
 
     }
 
@@ -610,10 +610,10 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        _ \baca-ffz-markup                                                     %! baca.markup:IndicatorCommand
+        _ \baca-ffz-markup                                                     %! baca.markup():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -623,17 +623,17 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fffz-markup                                                    %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fffz-markup                                                    %! baca.markup():IndicatorCommand
 
     }
 
     % [I RH_Music_Voice measure 235 / measure 10]                              %! baca.SegmentMaker._comment_measure_numbers()
     c'2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -642,8 +642,8 @@ I_RH_Music_Voice = {                                                           %
 
         % [I RH_Music_Voice measure 236 / measure 11]                          %! baca.SegmentMaker._comment_measure_numbers()
         c'2
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fz-markup                                                      %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fz-markup                                                      %! baca.markup():IndicatorCommand
 
     }
 
@@ -651,10 +651,10 @@ I_RH_Music_Voice = {                                                           %
     \times 2/3 {
 
         c'2
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        _ \baca-fffz-markup                                                    %! baca.markup:IndicatorCommand
+        _ \baca-fffz-markup                                                    %! baca.markup():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -662,10 +662,10 @@ I_RH_Music_Voice = {                                                           %
 
     % [I RH_Music_Voice measure 237 / measure 12]                              %! baca.SegmentMaker._comment_measure_numbers()
     c'2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
@@ -674,8 +674,8 @@ I_RH_Music_Voice = {                                                           %
 
         % [I RH_Music_Voice measure 238 / measure 13]                          %! baca.SegmentMaker._comment_measure_numbers()
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-mfz-markup                                                     %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca.markup():IndicatorCommand
 
     }
 
@@ -683,8 +683,8 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fz-markup                                                      %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fz-markup                                                      %! baca.markup():IndicatorCommand
 
     }
 
@@ -692,10 +692,10 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-        _ \baca-ffz-markup                                                     %! baca.markup:IndicatorCommand
+        _ \baca-ffz-markup                                                     %! baca.markup():IndicatorCommand
 
     }
 
@@ -703,21 +703,21 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         c'4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fffz-markup                                                    %! baca.markup:IndicatorCommand
-        \glissando                                                             %! baca.glissando
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fffz-markup                                                    %! baca.markup():IndicatorCommand
+        \glissando                                                             %! baca.glissando()
 
     }
 
     % [I RH_Music_Voice measure 239 / measure 14]                              %! baca.SegmentMaker._comment_measure_numbers()
-    \stopStaff                                                                 %! baca.literal:IndicatorCommand
-    \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2) %! baca.literal:IndicatorCommand
-    \startStaff                                                                %! baca.literal:IndicatorCommand
+    \stopStaff                                                                 %! baca.literal():IndicatorCommand
+    \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2) %! baca.literal():IndicatorCommand
+    \startStaff                                                                %! baca.literal():IndicatorCommand
     d''2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -727,8 +727,8 @@ I_RH_Music_Voice = {                                                           %
 
         % [I RH_Music_Voice measure 240 / measure 15]                          %! baca.SegmentMaker._comment_measure_numbers()
         d''2
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fz-markup                                                      %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fz-markup                                                      %! baca.markup():IndicatorCommand
 
     }
 
@@ -736,17 +736,17 @@ I_RH_Music_Voice = {                                                           %
     \times 2/3 {
 
         d''2
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fffz-markup                                                    %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fffz-markup                                                    %! baca.markup():IndicatorCommand
 
     }
 
     % [I RH_Music_Voice measure 241 / measure 16]                              %! baca.SegmentMaker._comment_measure_numbers()
     d''2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -756,8 +756,8 @@ I_RH_Music_Voice = {                                                           %
 
         % [I RH_Music_Voice measure 242 / measure 17]                          %! baca.SegmentMaker._comment_measure_numbers()
         d''4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-mfz-markup                                                     %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-mfz-markup                                                     %! baca.markup():IndicatorCommand
 
     }
 
@@ -765,8 +765,8 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         d''4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fz-markup                                                      %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fz-markup                                                      %! baca.markup():IndicatorCommand
 
     }
 
@@ -774,8 +774,8 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         d''4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-ffz-markup                                                     %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-ffz-markup                                                     %! baca.markup():IndicatorCommand
 
     }
 
@@ -783,18 +783,18 @@ I_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         d''4
-        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
-        _ \baca-fffz-markup                                                    %! baca.markup:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo():IndicatorCommand
+        _ \baca-fffz-markup                                                    %! baca.markup():IndicatorCommand
 
     }
 
     % [I RH_Music_Voice measure 243 / measure 18]                              %! baca.SegmentMaker._comment_measure_numbers()
 %%% \once \override Hairpin.to-barline = ##t                                   %! +SCORE:baca.hairpin_to_barline():OverrideCommand(1)
     d''2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    _ \baca-ffz-markup                                                         %! baca.markup:IndicatorCommand
+    _ \baca-ffz-markup                                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -805,8 +805,8 @@ I_RH_Music_Voice = {                                                           %
 
     % [I RH_Music_Voice measure 244 / measure 19]                              %! baca.SegmentMaker._comment_measure_numbers()
     d''2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
+    _ \baca-fz-markup                                                          %! baca.markup():IndicatorCommand
     \stopTextSpan                                                              %! SPANNER_STOP:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "stretto"                                   %! baca.text_spanner:PiecewiseCommand(1)
@@ -815,8 +815,8 @@ I_RH_Music_Voice = {                                                           %
 
     % [I RH_Music_Voice measure 245 / measure 20]                              %! baca.SegmentMaker._comment_measure_numbers()
     d''2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    _ \baca-fz-markup                                                          %! baca.markup:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
+    _ \baca-fz-markup                                                          %! baca.markup():IndicatorCommand
     \stopTextSpan                                                              %! SPANNER_STOP:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "largo"                                     %! baca.text_spanner:PiecewiseCommand(1)
@@ -825,8 +825,8 @@ I_RH_Music_Voice = {                                                           %
 
     % [I RH_Music_Voice measure 246 / measure 21]                              %! baca.SegmentMaker._comment_measure_numbers()
     d''2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    _ \baca-mfz-markup                                                         %! baca.markup:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
+    _ \baca-mfz-markup                                                         %! baca.markup():IndicatorCommand
     \stopTextSpan                                                              %! SPANNER_STOP:baca.text_spanner:PiecewiseCommand(1)
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1)
     - \baca-text-spanner-left-text "stretto"                                   %! baca.text_spanner:PiecewiseCommand(1)
@@ -836,10 +836,10 @@ I_RH_Music_Voice = {                                                           %
     % [I RH_Music_Voice measure 247 / measure 22]                              %! baca.SegmentMaker._comment_measure_numbers()
     \once \override Hairpin.to-barline = ##t                                   %! +SEGMENT:baca.hairpin_to_barline():OverrideCommand(1)
     d''2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
-    _ \baca-mfz-markup                                                         %! baca.markup:IndicatorCommand
+    _ \baca-mfz-markup                                                         %! baca.markup():IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     - \tweak stencil #constante-hairpin                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -851,8 +851,8 @@ I_RH_Music_Voice = {                                                           %
 
     % [I RH_Music_Voice measure 248 / measure 23]                              %! baca.SegmentMaker._comment_measure_numbers()
     d''2
-    :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    _ \baca-mpz-markup                                                         %! baca.markup:IndicatorCommand
+    :32                                                                        %! baca.stem_tremolo():IndicatorCommand
+    _ \baca-mpz-markup                                                         %! baca.markup():IndicatorCommand
     \stopTextSpan                                                              %! SPANNER_STOP:baca.text_spanner:PiecewiseCommand(1):right_broken
     - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner:PiecewiseCommand(1):right_broken
     - \baca-text-spanner-left-text "stretto"                                   %! baca.text_spanner:PiecewiseCommand(1):right_broken
@@ -953,36 +953,36 @@ I_Cello_Music_Voice = {                                                        %
     % [I Cello_Music_Voice measure 232 / measure 7]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 2/3                                                                   %! baca.SegmentMaker._make_measure_silences()
 
-    {                                                                          %! baca.skeleton
+    {                                                                          %! baca.skeleton()
 
         % [I Cello_Music_Voice measure 233 / measure 8]                        %! baca.SegmentMaker._comment_measure_numbers()
-        a,,1 * 107/30                                                          %! baca.skeleton
-        \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
-        \glissando                                                             %! baca.glissando
+        a,,1 * 107/30                                                          %! baca.skeleton()
+        \repeatTie                                                             %! baca.repeat_tie():IndicatorCommand
+        \glissando                                                             %! baca.glissando()
 
-        bf,,!1 * 1/5                                                           %! baca.skeleton
-        \glissando                                                             %! baca.glissando
+        bf,,!1 * 1/5                                                           %! baca.skeleton()
+        \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! baca.skeleton
+    }                                                                          %! baca.skeleton()
 
-    {                                                                          %! baca.skeleton
+    {                                                                          %! baca.skeleton()
 
         % [I Cello_Music_Voice measure 239 / measure 14]                       %! baca.SegmentMaker._comment_measure_numbers()
-        \stopStaff                                                             %! baca.literal:IndicatorCommand
-        \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff %! baca.literal:IndicatorCommand
+        \stopStaff                                                             %! baca.literal():IndicatorCommand
+        \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff %! baca.literal():IndicatorCommand
         \once \override NoteHead.duration-log = #2                             %! baca.note_head_duration_log():OverrideCommand(1)
         \once \override NoteHead.no-ledgers = ##t                              %! baca.note_head_no_ledgers():OverrideCommand(1)
         \once \override NoteHead.style = #'do                                  %! baca.note_head_style():OverrideCommand(1)
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_239:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():OverrideCommand(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_239:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():OverrideCommand(1)
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca.clef():IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-        b''2                                                                   %! baca.skeleton
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.clef():IndicatorCommand
+        b''2                                                                   %! baca.skeleton()
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-    }                                                                          %! baca.skeleton
+    }                                                                          %! baca.skeleton()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
