@@ -1083,6 +1083,7 @@ H_RH_Music_Voice = {                                                           %
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
             c'1 * 1/4                                                          %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
             \!                                                                 %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
+        %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1096,6 +1097,7 @@ H_RH_Music_Voice = {                                                           %
             \once \override Staff.StaffSymbol.transparent = ##t                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(8)
             \startStaff                                                        %! PHANTOM:baca.SegmentMaker._style_phantom_measures(8)
             R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+        %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1126,6 +1128,7 @@ H_Cello_Music_Voice = {                                                        %
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
         a,,1 * 1/2                                                             %! baca.skeleton()
         ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
+    %@% ^ \baca-duration-multiplier-markup #"1" #"2"                           %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
     }                                                                          %! baca.skeleton()
@@ -1138,6 +1141,7 @@ H_Cello_Music_Voice = {                                                        %
             % [H Cello_Music_Voice measure 201 / measure 2]                    %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             c'1 * 13/24                                                        %! baca.SegmentMaker._make_multimeasure_rest_container()
+        %@% ^ \baca-duration-multiplier-markup #"13" #"24"                     %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1147,6 +1151,7 @@ H_Cello_Music_Voice = {                                                        %
             % [H Cello_Rest_Voice measure 201 / measure 2]                     %! baca.SegmentMaker._comment_measure_numbers()
             \once \override MultiMeasureRest.transparent = ##t                 %! baca.mmrest_transparent():OverrideCommand(1)
             R1 * 13/24                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
+        %@% ^ \baca-duration-multiplier-markup #"13" #"24"                     %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1155,75 +1160,99 @@ H_Cello_Music_Voice = {                                                        %
     % [H Cello_Music_Voice measure 202 / measure 3]                            %! baca.SegmentMaker._comment_measure_numbers()
     \override MultiMeasureRest.transparent = ##t                               %! baca.mmrest_transparent():OverrideCommand(1)
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 203 / measure 4]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 7/12                                                                  %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"7" #"12"                              %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 204 / measure 5]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 53/60                                                                 %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"53" #"60"                             %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 205 / measure 6]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 23/24                                                                 %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"23" #"24"                             %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 206 / measure 7]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 207 / measure 8]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 208 / measure 9]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/8                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"3" #"8"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 209 / measure 10]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/3                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"3"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 210 / measure 11]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 11/15                                                                 %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"11" #"15"                             %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 211 / measure 12]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 212 / measure 13]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 213 / measure 14]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 214 / measure 15]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 215 / measure 16]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 216 / measure 17]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/6                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"6"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 217 / measure 18]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 218 / measure 19]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 2/5                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"2" #"5"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 219 / measure 20]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 220 / measure 21]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 221 / measure 22]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 222 / measure 23]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 223 / measure 24]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 224 / measure 25]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [H Cello_Music_Voice measure 225 / measure 26]                           %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_measure_silences()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
     \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent():OverrideCommand(2)
     \revert Score.BarLine.transparent                                          %! baca.bar_line_transparent():OverrideCommand(2)
     \revert Score.SpanBar.transparent                                          %! baca.span_bar_transparent():OverrideCommand(2)
@@ -1237,6 +1266,7 @@ H_Cello_Music_Voice = {                                                        %
             % [H Cello_Music_Voice measure 226 / measure 27]                   %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
             R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+        %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1250,6 +1280,7 @@ H_Cello_Music_Voice = {                                                        %
             \once \override Staff.StaffSymbol.transparent = ##t                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(8)
             \startStaff                                                        %! PHANTOM:baca.SegmentMaker._style_phantom_measures(8)
             R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+        %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
