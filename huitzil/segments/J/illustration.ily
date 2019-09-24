@@ -368,31 +368,40 @@ J_Cello_Music_Voice = {                                                        %
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
     R1 * 1/2                                                                   %! _call_rhythm_commands
     ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
     % [J Cello_Music_Voice measure 250 / measure 2]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! _call_rhythm_commands
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [J Cello_Music_Voice measure 251 / measure 3]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! _call_rhythm_commands
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [J Cello_Music_Voice measure 252 / measure 4]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! _call_rhythm_commands
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [J Cello_Music_Voice measure 253 / measure 5]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! _call_rhythm_commands
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [J Cello_Music_Voice measure 254 / measure 6]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! _call_rhythm_commands
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [J Cello_Music_Voice measure 255 / measure 7]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! _call_rhythm_commands
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [J Cello_Music_Voice measure 256 / measure 8]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! _call_rhythm_commands
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [J Cello_Music_Voice measure 257 / measure 9]                            %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1/2                                                                   %! _call_rhythm_commands
+%@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
 
     % [J Cello_Music_Voice measure 258 / measure 10]                           %! baca.SegmentMaker._comment_measure_numbers()
     \override Score.BarLine.X-extent = #'(0 . 8)                               %! baca.literal():IndicatorCommand
@@ -400,6 +409,7 @@ J_Cello_Music_Voice = {                                                        %
     \override Score.RehearsalMark.extra-offset = #'(4 . 0)                     %! baca.literal():IndicatorCommand
     \override Score.SpanBar.extra-offset = #'(8 . 0)                           %! baca.literal():IndicatorCommand
     R1 * 3/2                                                                   %! _call_rhythm_commands
+%@% ^ \baca-duration-multiplier-markup #"3" #"2"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_mutlipliers()
     \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent():OverrideCommand(2)
     \revert Score.BarLine.transparent                                          %! baca.bar_line_transparent():OverrideCommand(2)
     \revert Score.SpanBar.transparent                                          %! baca.span_bar_transparent():OverrideCommand(2)
