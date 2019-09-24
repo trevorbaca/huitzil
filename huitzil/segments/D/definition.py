@@ -18,8 +18,8 @@ time_signatures = [
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.const.CLOCK_TIME,
-        abjad.const.LOCAL_MEASURE_NUMBER,
+        abjad.tags.CLOCK_TIME,
+        abjad.tags.LOCAL_MEASURE_NUMBER,
     ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, 13),
@@ -502,11 +502,11 @@ maker(
     ("rh", (18, 21)),
     # TODO: make +LEDGER_SCORE tag work
     #baca.tag(
-    #    "+LEDGER_SCORE",
+    #    abjad.Tag("+LEDGER_SCORE"),
     #    baca.hairpin_to_barline(),
     #),
     baca.tag(
-        "+SCORE",
+        abjad.Tag("+SCORE"),
         baca.hairpin_to_barline(),
     ),
 )

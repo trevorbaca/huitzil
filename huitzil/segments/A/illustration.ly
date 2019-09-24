@@ -16,8 +16,8 @@ spacing-extra-offset = #'(0 . 1)                                               %
             \include "layout.ly"                                               %! baca.SegmentMaker._make_lilypond_file()
         }                                                                      %! baca.SegmentMaker._make_lilypond_file()
 
-        \context Score = "Score"                                               %! huitzil.ScoreTemplate.__call__
-        <<                                                                     %! huitzil.ScoreTemplate.__call__
+        \context Score = "Score"                                               %! huitzil.ScoreTemplate.__call__()
+        <<                                                                     %! huitzil.ScoreTemplate.__call__()
 
             \context GlobalContext = "Global_Context"                          %! abjad.ScoreTemplate._make_global_context()
             <<                                                                 %! abjad.ScoreTemplate._make_global_context()
@@ -30,23 +30,23 @@ spacing-extra-offset = #'(0 . 1)                                               %
 
             >>                                                                 %! abjad.ScoreTemplate._make_global_context()
 
-            \context MusicContext = "Music_Context"                            %! huitzil.ScoreTemplate.__call__
-            {                                                                  %! huitzil.ScoreTemplate.__call__
+            \context MusicContext = "Music_Context"                            %! huitzil.ScoreTemplate.__call__()
+            {                                                                  %! huitzil.ScoreTemplate.__call__()
 
-                \context PianoStaff = "Cello_Staff_Group"                      %! huitzil.ScoreTemplate.__call__
-                <<                                                             %! huitzil.ScoreTemplate.__call__
+                \context PianoStaff = "Cello_Staff_Group"                      %! huitzil.ScoreTemplate.__call__()
+                <<                                                             %! huitzil.ScoreTemplate.__call__()
 
-                    \context RHStaff = "RH_Music_Staff"                        %! huitzil.ScoreTemplate.__call__
+                    \context RHStaff = "RH_Music_Staff"                        %! huitzil.ScoreTemplate.__call__()
                     \A_RH_Music_Staff                                          %! abjad.Path.extern()
 
-                    \context Staff = "Cello_Music_Staff"                       %! huitzil.ScoreTemplate.__call__
+                    \context Staff = "Cello_Music_Staff"                       %! huitzil.ScoreTemplate.__call__()
                     \A_Cello_Music_Staff                                       %! abjad.Path.extern()
 
-                >>                                                             %! huitzil.ScoreTemplate.__call__
+                >>                                                             %! huitzil.ScoreTemplate.__call__()
 
-            }                                                                  %! huitzil.ScoreTemplate.__call__
+            }                                                                  %! huitzil.ScoreTemplate.__call__()
 
-        >>                                                                     %! huitzil.ScoreTemplate.__call__
+        >>                                                                     %! huitzil.ScoreTemplate.__call__()
 
     >>                                                                         %! baca.SegmentMaker._make_lilypond_file()
     

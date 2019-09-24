@@ -570,6 +570,7 @@ G_RH_Music_Voice = {                                                           %
     \glissando                                                                 %! baca.glissando()
 
     % [G RH_Music_Voice measure 186 / measure 13]                              %! baca.SegmentMaker._comment_measure_numbers()
+    \baca-out-of-range-coloring                                                %! OUT_OF_RANGE:baca.SegmentMaker._color_out_of_range()
     f,,4
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -580,6 +581,7 @@ G_RH_Music_Voice = {                                                           %
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
 
     % [G RH_Music_Voice measure 187 / measure 14]                              %! baca.SegmentMaker._comment_measure_numbers()
+    \baca-out-of-range-coloring                                                %! OUT_OF_RANGE:baca.SegmentMaker._color_out_of_range()
     f,,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -702,7 +704,7 @@ G_RH_Music_Voice = {                                                           %
 
 G_RH_Music_Staff = {                                                           %! abjad.Path.extern()
 
-    \context Voice = "RH_Music_Voice"                                          %! huitzil.ScoreTemplate.__call__
+    \context Voice = "RH_Music_Voice"                                          %! huitzil.ScoreTemplate.__call__()
     \G_RH_Music_Voice                                                          %! abjad.Path.extern()
 
 }                                                                              %! abjad.Path.extern()
@@ -864,7 +866,7 @@ G_Cello_Music_Voice = {                                                        %
 
 G_Cello_Music_Staff = {                                                        %! abjad.Path.extern()
 
-    \context Voice = "Cello_Music_Voice"                                       %! huitzil.ScoreTemplate.__call__
+    \context Voice = "Cello_Music_Voice"                                       %! huitzil.ScoreTemplate.__call__()
     \G_Cello_Music_Voice                                                       %! abjad.Path.extern()
 
 }                                                                              %! abjad.Path.extern()

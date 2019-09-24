@@ -1196,7 +1196,7 @@ A_RH_Music_Voice = {                                                           %
 
 A_RH_Music_Staff = {                                                           %! abjad.Path.extern()
 
-    \context Voice = "RH_Music_Voice"                                          %! huitzil.ScoreTemplate.__call__
+    \context Voice = "RH_Music_Voice"                                          %! huitzil.ScoreTemplate.__call__()
     \A_RH_Music_Voice                                                          %! abjad.Path.extern()
 
 }                                                                              %! abjad.Path.extern()
@@ -3530,7 +3530,7 @@ A_Cello_Music_Voice = {                                                        %
 
 A_Cello_Music_Staff = {                                                        %! abjad.Path.extern()
 
-    \context Voice = "Cello_Music_Voice"                                       %! huitzil.ScoreTemplate.__call__
+    \context Voice = "Cello_Music_Voice"                                       %! huitzil.ScoreTemplate.__call__()
     \A_Cello_Music_Voice                                                       %! abjad.Path.extern()
 
 }                                                                              %! abjad.Path.extern()

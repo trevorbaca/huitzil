@@ -1,28 +1,28 @@
-\version "2.19.82"                                                                       %! abjad.LilyPondFile
-\language "english"                                                                      %! abjad.LilyPondFile
+\version "2.19.83"                                                                       %! abjad.LilyPondFile._get_format_pieces()
+\language "english"                                                                      %! abjad.LilyPondFile._get_format_pieces()
 
-\include "/Users/trevorbaca/baca/lilypond/baca.ily"                                      %! abjad.LilyPondFile
+\include "/Users/trevorbaca/baca/lilypond/baca.ily"                                      %! abjad.LilyPondFile._get_formatted_includes()
 
-#(set-global-staff-size 16)                                                              %! abjad.LilyPondFile
+#(set-global-staff-size 16)                                                              %! abjad.LilyPondFile._get_formatted_scheme_settings()
 
-\header {                                                                                %! abjad.LilyPondFile
+\header {                                                                                %! abjad.LilyPondFile._get_formatted_blocks()
     tagline = ##f
-}                                                                                        %! abjad.LilyPondFile
+}                                                                                        %! abjad.LilyPondFile._get_formatted_blocks()
 
-\layout {                                                                                %! abjad.LilyPondFile
+\layout {                                                                                %! abjad.LilyPondFile._get_formatted_blocks()
     \accidentalStyle dodecaphonic
     indent = #0
     line-width = #287.5
     ragged-right = ##t
-}                                                                                        %! abjad.LilyPondFile
+}                                                                                        %! abjad.LilyPondFile._get_formatted_blocks()
 
-\paper {                                                                                 %! abjad.LilyPondFile
+\paper {                                                                                 %! abjad.LilyPondFile._get_formatted_blocks()
     markup-system-spacing.padding = 8
     system-system-spacing.padding = 10
     top-markup-spacing.padding = 4
-}                                                                                        %! abjad.LilyPondFile
+}                                                                                        %! abjad.LilyPondFile._get_formatted_blocks()
 
-\score {                                                                                 %! abjad.LilyPondFile
+\score {                                                                                 %! abjad.LilyPondFile._get_formatted_blocks()
     \new Score
     \with
     {
@@ -628,4 +628,4 @@
             }
         }
     >>
-}                                                                                        %! abjad.LilyPondFile
+}                                                                                        %! abjad.LilyPondFile._get_formatted_blocks()
