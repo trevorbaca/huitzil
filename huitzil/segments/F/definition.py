@@ -18,8 +18,8 @@ time_signatures = [
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.const.CLOCK_TIME,
-        abjad.const.LOCAL_MEASURE_NUMBER,
+        abjad.tags.CLOCK_TIME,
+        abjad.tags.LOCAL_MEASURE_NUMBER,
     ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, 13),

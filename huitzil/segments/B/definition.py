@@ -22,8 +22,8 @@ time_signatures = [
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.const.CLOCK_TIME,
-        abjad.const.LOCAL_MEASURE_NUMBER,
+        abjad.tags.CLOCK_TIME,
+        abjad.tags.LOCAL_MEASURE_NUMBER,
     ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, 13),
@@ -134,7 +134,7 @@ maker(
     baca.tag(
         # TODO: make +ARCH_A_SCORE work
         #"+ARCH_A_SCORE",
-        "+SCORE",
+        abjad.Tag("+SCORE"),
         baca.literal(
             r"\once \override TupletNumber.font-size = -2",
             selector=baca.pleaf(1),
