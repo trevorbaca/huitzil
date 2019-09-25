@@ -796,7 +796,7 @@ D_RH_Music_Voice = {                                                           %
     }
 
     % [D RH_Music_Voice measure 123 / measure 18]                              %! baca.SegmentMaker._comment_measure_numbers()
-%%% \override Hairpin.to-barline = ##t                                         %! +SCORE:baca.hairpin_to_barline():baca.OverrideCommand._call(1)
+%%% \override Hairpin.to-barline = ##t                                         %! baca.hairpin_to_barline():+SCORE:baca.OverrideCommand._call(1)
     d''2
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -844,10 +844,10 @@ D_RH_Music_Voice = {                                                           %
     - \tweak bound-details.right.stencil-align-dir-y #center                   %! baca.text_spanner():baca.PiecewiseCommand._call(1)
     - \tweak staff-padding #6                                                  %! baca.text_spanner():baca.PiecewiseCommand._call(1)
     \startTextSpan                                                             %! baca.text_spanner():baca.PiecewiseCommand._call(1)
-%%% \revert Hairpin.to-barline                                                 %! +SCORE:baca.hairpin_to_barline():baca.OverrideCommand._call(2)
+%%% \revert Hairpin.to-barline                                                 %! baca.hairpin_to_barline():+SCORE:baca.OverrideCommand._call(2)
 
     % [D RH_Music_Voice measure 127 / measure 22]                              %! baca.SegmentMaker._comment_measure_numbers()
-    \once \override Hairpin.to-barline = ##t                                   %! +SEGMENT:baca.hairpin_to_barline():baca.OverrideCommand._call(1)
+    \once \override Hairpin.to-barline = ##t                                   %! baca.hairpin_to_barline():+SEGMENT:baca.OverrideCommand._call(1)
     d''2
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -993,8 +993,8 @@ D_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.duration-log = #2                             %! baca.note_head_duration_log():baca.OverrideCommand._call(1)
         \once \override NoteHead.no-ledgers = ##t                              %! baca.note_head_no_ledgers():baca.OverrideCommand._call(1)
         \once \override NoteHead.style = #'do                                  %! baca.note_head_style():baca.OverrideCommand._call(1)
-        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_119:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():baca.OverrideCommand._call(1)
-        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_119:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():baca.OverrideCommand._call(1)
+        \once \override Staff.Clef.X-extent = ##f                              %! baca.clef_x_extent_false():baca.clef_shift():SHIFTED_CLEF:MEASURE_119:baca.OverrideCommand._call(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! baca.clef_extra_offset():baca.clef_shift():SHIFTED_CLEF:MEASURE_119:baca.OverrideCommand._call(1)
         \clef "treble"                                                         %! EXPLICIT_CLEF:baca.SegmentMaker._set_status_tag():baca.clef():baca.IndicatorCommand._call()
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
@@ -1063,8 +1063,8 @@ D_Cello_Music_Voice = {                                                        %
         \stopStaff                                                             %! baca.literal():baca.IndicatorCommand._call()
         \once \override Staff.StaffSymbol.line-count = 5                       %! baca.literal():baca.IndicatorCommand._call()
         \startStaff                                                            %! baca.literal():baca.IndicatorCommand._call()
-        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_128:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():baca.OverrideCommand._call(1)
-        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! MEASURE_128:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():baca.OverrideCommand._call(1)
+        \once \override Staff.Clef.X-extent = ##f                              %! baca.clef_x_extent_false():baca.clef_shift():SHIFTED_CLEF:MEASURE_128:baca.OverrideCommand._call(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! baca.clef_extra_offset():baca.clef_shift():SHIFTED_CLEF:MEASURE_128:baca.OverrideCommand._call(1)
         \clef "bass"                                                           %! EXPLICIT_CLEF:baca.SegmentMaker._set_status_tag():baca.clef():baca.IndicatorCommand._call()
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)

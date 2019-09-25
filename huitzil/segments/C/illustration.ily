@@ -945,7 +945,7 @@ C_RH_Music_Voice = {                                                           %
     \times 4/5 {
 
         % [C RH_Music_Voice measure 98 / measure 19]                           %! baca.SegmentMaker._comment_measure_numbers()
-    %%% \override Hairpin.to-barline = ##t                                     %! +SCORE:baca.hairpin_to_barline():baca.OverrideCommand._call(1)
+    %%% \override Hairpin.to-barline = ##t                                     %! baca.hairpin_to_barline():+SCORE:baca.OverrideCommand._call(1)
         b'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -985,7 +985,7 @@ C_RH_Music_Voice = {                                                           %
         c'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
         _ \baca-mpz-markup                                                     %! baca.markup():baca.IndicatorCommand._call()
-    %%% \revert Hairpin.to-barline                                             %! +SCORE:baca.hairpin_to_barline():baca.OverrideCommand._call(2)
+    %%% \revert Hairpin.to-barline                                             %! baca.hairpin_to_barline():+SCORE:baca.OverrideCommand._call(2)
 
     }
 
@@ -1055,7 +1055,7 @@ C_RH_Music_Voice = {                                                           %
     \glissando                                                                 %! baca.glissando()
 
     % [C RH_Music_Voice measure 105 / measure 26]                              %! baca.SegmentMaker._comment_measure_numbers()
-%%% \once \override Hairpin.to-barline = ##t                                   %! +SCORE:baca.hairpin_to_barline():baca.OverrideCommand._call(1)
+%%% \once \override Hairpin.to-barline = ##t                                   %! baca.hairpin_to_barline():+SCORE:baca.OverrideCommand._call(1)
     d2
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)

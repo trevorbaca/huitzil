@@ -846,7 +846,7 @@ F_RH_Music_Voice = {                                                           %
     \startTextSpan                                                             %! baca.text_spanner():baca.PiecewiseCommand._call(1)
 
     % [F RH_Music_Voice measure 172 / measure 22]                              %! baca.SegmentMaker._comment_measure_numbers()
-    \once \override Hairpin.to-barline = ##t                                   %! +SEGMENT:baca.hairpin_to_barline():baca.OverrideCommand._call(1)
+    \once \override Hairpin.to-barline = ##t                                   %! baca.hairpin_to_barline():+SEGMENT:baca.OverrideCommand._call(1)
     d''2
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -990,8 +990,8 @@ F_Cello_Music_Voice = {                                                        %
         \once \override NoteHead.duration-log = #2                             %! baca.note_head_duration_log():baca.OverrideCommand._call(1)
         \once \override NoteHead.no-ledgers = ##t                              %! baca.note_head_no_ledgers():baca.OverrideCommand._call(1)
         \once \override NoteHead.style = #'do                                  %! baca.note_head_style():baca.OverrideCommand._call(1)
-        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_164:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():baca.OverrideCommand._call(1)
-        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_164:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():baca.OverrideCommand._call(1)
+        \once \override Staff.Clef.X-extent = ##f                              %! baca.clef_x_extent_false():baca.clef_shift():SHIFTED_CLEF:MEASURE_164:baca.OverrideCommand._call(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! baca.clef_extra_offset():baca.clef_shift():SHIFTED_CLEF:MEASURE_164:baca.OverrideCommand._call(1)
         \clef "treble"                                                         %! EXPLICIT_CLEF:baca.SegmentMaker._set_status_tag():baca.clef():baca.IndicatorCommand._call()
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
