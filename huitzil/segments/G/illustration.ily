@@ -570,7 +570,6 @@ G_RH_Music_Voice = {                                                           %
     \glissando                                                                 %! baca.glissando()
 
     % [G RH_Music_Voice measure 186 / measure 13]                              %! baca.SegmentMaker._comment_measure_numbers()
-    \baca-out-of-range-coloring                                                %! baca.SegmentMaker._color_out_of_range():OUT_OF_RANGE
     f,,4
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -581,7 +580,6 @@ G_RH_Music_Voice = {                                                           %
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
 
     % [G RH_Music_Voice measure 187 / measure 14]                              %! baca.SegmentMaker._comment_measure_numbers()
-    \baca-out-of-range-coloring                                                %! baca.SegmentMaker._color_out_of_range():OUT_OF_RANGE
     f,,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
