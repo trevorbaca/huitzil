@@ -157,8 +157,7 @@ J_Global_Skips = {                                                             %
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
     \bacaStopTextSpanMM                                                        %! EOS_STOP_MM_SPANNER:baca.SegmentMaker._attach_metronome_marks(4)
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME:baca.SegmentMaker._label_clock_time()
-    \baca-bar-line-visible                                                     %! baca.SegmentMaker._attach_final_bar_line()
-    \bar "|."                                                                  %! baca.SegmentMaker._attach_final_bar_line()
+    \bar "|."                                                                  %! baca.bar_line():baca.IndicatorCommand._call()
 
 }                                                                              %! abjad.Path.extern()
 
