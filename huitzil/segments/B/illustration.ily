@@ -640,7 +640,7 @@ B_RH_Music_Voice = {                                                           %
         % [B RH_Music_Voice measure 73 / measure 19]                           %! baca.SegmentMaker._comment_measure_numbers()
         d''8                                                                   %! baca.skeleton()
         - \upbow                                                               %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
-        [                                                                      %! baca.beam():SpannerIndicatorCommand(1)
+        [                                                                      %! baca.beam():baca.SpannerIndicatorCommand._call(1)
 
         d''8                                                                   %! baca.skeleton()
         - \downbow                                                             %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
@@ -761,7 +761,7 @@ B_RH_Music_Voice = {                                                           %
 
         d''16                                                                  %! baca.skeleton()
         - \downbow                                                             %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
-        ]                                                                      %! baca.beam():SpannerIndicatorCommand(2):SPANNER_STOP
+        ]                                                                      %! baca.beam():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! baca.skeleton()
 
