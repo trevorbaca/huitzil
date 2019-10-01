@@ -851,11 +851,11 @@ I_RH_Music_Voice = {                                                           %
     d''2
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     _ \baca-mpz-markup                                                         %! baca.markup():baca.IndicatorCommand._call()
-    \stopTextSpan                                                              %! baca.text_spanner():baca.PiecewiseCommand._call(1):right_broken:SPANNER_STOP
-    - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner():baca.PiecewiseCommand._call(1):right_broken
-    - \baca-text-spanner-left-text "stretto"                                   %! baca.text_spanner():baca.PiecewiseCommand._call(1):right_broken
-    - \tweak staff-padding #6                                                  %! baca.text_spanner():baca.PiecewiseCommand._call(1):right_broken
-    \startTextSpan                                                             %! baca.text_spanner():baca.PiecewiseCommand._call(1):right_broken
+    \stopTextSpan                                                              %! baca.text_spanner():baca.PiecewiseCommand._call(1):RIGHT_BROKEN:SPANNER_STOP
+    - \abjad-dashed-line-with-arrow                                            %! baca.text_spanner():baca.PiecewiseCommand._call(1):RIGHT_BROKEN
+    - \baca-text-spanner-left-text "stretto"                                   %! baca.text_spanner():baca.PiecewiseCommand._call(1):RIGHT_BROKEN
+    - \tweak staff-padding #6                                                  %! baca.text_spanner():baca.PiecewiseCommand._call(1):RIGHT_BROKEN
+    \startTextSpan                                                             %! baca.text_spanner():baca.PiecewiseCommand._call(1):RIGHT_BROKEN
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x():baca.OverrideCommand._call(2)
     \revert TextScript.self-alignment-X                                        %! baca.text_script_self_alignment_x():baca.OverrideCommand._call(2)
     \revert TextScript.staff-padding                                           %! baca.text_script_staff_padding():baca.OverrideCommand._call(2)
