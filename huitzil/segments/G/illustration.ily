@@ -516,7 +516,7 @@ G_RH_Music_Voice = {                                                           %
     d8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [G RH_Music_Voice measure 176 / measure 3]                               %! baca.SegmentMaker._comment_measure_numbers()
     b,4
@@ -527,7 +527,7 @@ G_RH_Music_Voice = {                                                           %
     b,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [G RH_Music_Voice measure 178 / measure 5]                               %! baca.SegmentMaker._comment_measure_numbers()
     g,4
@@ -538,7 +538,7 @@ G_RH_Music_Voice = {                                                           %
     g,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [G RH_Music_Voice measure 180 / measure 7]                               %! baca.SegmentMaker._comment_measure_numbers()
     e,4
@@ -549,7 +549,7 @@ G_RH_Music_Voice = {                                                           %
     e,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(3):SPANNER_STOP
 
     % [G RH_Music_Voice measure 182 / measure 9]                               %! baca.SegmentMaker._comment_measure_numbers()
@@ -567,7 +567,7 @@ G_RH_Music_Voice = {                                                           %
     c,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [G RH_Music_Voice measure 184 / measure 11]                              %! baca.SegmentMaker._comment_measure_numbers()
     a,,4
@@ -578,7 +578,7 @@ G_RH_Music_Voice = {                                                           %
     a,,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [G RH_Music_Voice measure 186 / measure 13]                              %! baca.SegmentMaker._comment_measure_numbers()
     f,,4
@@ -601,7 +601,7 @@ G_RH_Music_Voice = {                                                           %
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [G RH_Music_Voice measure 188 / measure 15]                              %! baca.SegmentMaker._comment_measure_numbers()
     a,,4
@@ -612,7 +612,7 @@ G_RH_Music_Voice = {                                                           %
     a,,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(3):SPANNER_STOP
 
     % [G RH_Music_Voice measure 190 / measure 17]                              %! baca.SegmentMaker._comment_measure_numbers()
@@ -630,7 +630,7 @@ G_RH_Music_Voice = {                                                           %
     c,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [G RH_Music_Voice measure 192 / measure 19]                              %! baca.SegmentMaker._comment_measure_numbers()
     e,4
@@ -641,7 +641,7 @@ G_RH_Music_Voice = {                                                           %
     e,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     _ \baca-fz-markup                                                          %! baca.markup():baca.IndicatorCommand._call()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [G RH_Music_Voice measure 194 / measure 21]                              %! baca.SegmentMaker._comment_measure_numbers()
     g,4
@@ -650,7 +650,7 @@ G_RH_Music_Voice = {                                                           %
     % [G RH_Music_Voice measure 195 / measure 22]                              %! baca.SegmentMaker._comment_measure_numbers()
     g,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [G RH_Music_Voice measure 196 / measure 23]                              %! baca.SegmentMaker._comment_measure_numbers()
     b,4
@@ -659,7 +659,7 @@ G_RH_Music_Voice = {                                                           %
     % [G RH_Music_Voice measure 197 / measure 24]                              %! baca.SegmentMaker._comment_measure_numbers()
     b,8.
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(3):SPANNER_STOP
 
     % [G RH_Music_Voice measure 198 / measure 25]                              %! baca.SegmentMaker._comment_measure_numbers()
@@ -677,7 +677,7 @@ G_RH_Music_Voice = {                                                           %
     - \tweak color #darkcyan                                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(1)
     - \tweak staff-padding #8                                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(1)
     \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(1)
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [G RH_Music_Voice measure 199 / measure 26]                              %! baca.SegmentMaker._comment_measure_numbers()
     \parenthesize                                                              %! baca.parenthesize():baca.IndicatorCommand._call()
@@ -687,7 +687,7 @@ G_RH_Music_Voice = {                                                           %
     \ff                                                                        %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(1):RIGHT_BROKEN:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
     \revert TextScript.parent-alignment-X                                      %! baca.text_script_parent_alignment_x():baca.OverrideCommand._call(2)
     \revert TextScript.self-alignment-X                                        %! baca.text_script_self_alignment_x():baca.OverrideCommand._call(2)
     \revert TextScript.staff-padding                                           %! baca.text_script_staff_padding():baca.OverrideCommand._call(2)
@@ -703,7 +703,7 @@ G_RH_Music_Voice = {                                                           %
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:NOTE:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
             b'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
-        %@% \glissando                                                         %! SHOW_TO_JOIN_BROKEN_SPANNERS:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+        %@% \glissando                                                         %! baca.glissando():abjad.glissando(7):SHOW_TO_JOIN_BROKEN_SPANNERS:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \!                                                                 %! baca.hairpin():HIDE_TO_JOIN_BROKEN_SPANNERS:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
@@ -852,7 +852,7 @@ G_Cello_Music_Voice = {                                                        %
         - \tweak color #darkcyan                                               %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(1)
         - \tweak staff-padding #8                                              %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(1)
         \bacaStartTextSpanRhythmAnnotation                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(1)
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
         <> \bacaStopTextSpanRhythmAnnotation                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(3):SPANNER_STOP
 
     }                                                                          %! baca.skeleton()
@@ -872,7 +872,7 @@ G_Cello_Music_Voice = {                                                        %
         - \tweak color #darkcyan                                               %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(1)
         - \tweak staff-padding #8                                              %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(1)
         \bacaStartTextSpanRhythmAnnotation                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(1)
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
         \revert Score.BarLine.transparent                                      %! baca.bar_line_transparent():baca.OverrideCommand._call(2)
         \revert Score.SpanBar.transparent                                      %! baca.span_bar_transparent():baca.OverrideCommand._call(2)
         \revert Score.TimeSignature.stencil                                    %! baca.time_signature_stencil_false():baca.OverrideCommand._call(2)
@@ -890,7 +890,7 @@ G_Cello_Music_Voice = {                                                        %
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:NOTE:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
             a,,1 * 1/4                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
-        %@% \glissando                                                         %! SHOW_TO_JOIN_BROKEN_SPANNERS:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+        %@% \glissando                                                         %! baca.glissando():abjad.glissando(7):SHOW_TO_JOIN_BROKEN_SPANNERS:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
