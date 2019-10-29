@@ -583,7 +583,7 @@ class DreamsMusicMaker(object):
 
     @property
     def pc_operators(
-        self
+        self,
     ) -> typing.List[typing.Union[abjad.Inversion, abjad.Transposition]]:
         """
         Gets pc operators of music-maker.
