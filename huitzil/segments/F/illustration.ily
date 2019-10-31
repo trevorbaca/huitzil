@@ -1099,7 +1099,7 @@ F_Cello_Music_Voice = {                                                        %
 
         % [F Cello_Music_Voice measure 158 / measure 8]                        %! baca.SegmentMaker._comment_measure_numbers()
         \once \override RepeatTie.extra-offset = #'(-1.5 . 0)                  %! baca.repeat_tie_extra_offset():baca.OverrideCommand._call(1)
-        bf,,!1 * 107/30                                                        %! baca.skeleton()
+        bf,,1 * 107/30                                                         %! baca.skeleton()
     %@% ^ \baca-duration-multiplier-markup #"107" #"30"                        %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
         \repeatTie                                                             %! baca.repeat_tie():baca.IndicatorCommand._call()
         - \abjad-dashed-line-with-hook                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
