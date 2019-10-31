@@ -1506,6 +1506,8 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
         af,!4                                                                  %! baca.music()
+        - \tweak stencil ##f                                                   %! baca.SegmentMaker._attach_shadow_tie_indicators()
+        ~                                                                      %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
         \once \override RepeatTie.extra-offset = #'(-1.5 . 0)                  %! baca.repeat_tie_extra_offset():baca.OverrideCommand._call(1)
         \once \override Accidental.color = #blue
@@ -1516,7 +1518,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-        af,!16                                                                 %! baca.music()
+        af,16                                                                  %! baca.music()
         \repeatTie                                                             %! baca.repeat_tie():baca.IndicatorCommand._call()
 
     }                                                                          %! baca.music()
@@ -1958,6 +1960,8 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Stem.color = #red
         \once \override Tie.color = #red
         fs!8                                                                   %! baca.music()
+        - \tweak stencil ##f                                                   %! baca.SegmentMaker._attach_shadow_tie_indicators()
+        ~                                                                      %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     }                                                                          %! baca.music()
 
@@ -1973,7 +1977,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-        fs!4                                                                   %! baca.music()
+        fs4                                                                    %! baca.music()
         \repeatTie                                                             %! baca.repeat_tie():baca.IndicatorCommand._call()
 
         \once \override Accidental.color = #red
@@ -3199,6 +3203,8 @@ A_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1) {                                                %! baca.music()
 
         b,16                                                                   %! baca.music()
+        - \tweak stencil ##f                                                   %! baca.SegmentMaker._attach_shadow_tie_indicators()
+        ~                                                                      %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     }                                                                          %! baca.music()
 
