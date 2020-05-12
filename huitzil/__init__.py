@@ -8,6 +8,7 @@ if not (
     raise ImportError("Requires Python 3.7.")
 del distutils
 del platform
+from huitzil.ScoreTemplate import ScoreTemplate
 from huitzil.tools import *
 from huitzil.materials.instruments.definition import instruments
 from huitzil.materials.metronome_marks.definition import metronome_marks
