@@ -1,9 +1,9 @@
 import abjad
 import baca
 import collections
-import huitzil
 import typing
 from abjadext import rmakers
+from huitzil.materials import registrations
 
 
 class DreamsMusicMaker(object):
@@ -510,9 +510,9 @@ class DreamsMusicMaker(object):
         return inner_tuplets
 
     def _register_voices(self, music):
-        voice_1_registration = huitzil.registrations["middle"]
-        voice_2_registration = huitzil.registrations["low"]
-        voice_3_registration = huitzil.registrations["lowest"]
+        voice_1_registration = registrations["middle"]
+        voice_2_registration = registrations["low"]
+        voice_3_registration = registrations["lowest"]
         for note in abjad.iterate(music).components(abjad.Note):
             voice_number = abjad.inspect(note).indicator(int)
             if voice_number == 1:
