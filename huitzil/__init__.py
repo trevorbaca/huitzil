@@ -14,4 +14,3 @@ from huitzil.materials.metronome_marks.definition import metronome_marks
 from huitzil.materials.pitch_classes.definition import pitch_classes
 from huitzil.materials.registrations.definition import registrations
 from huitzil.materials.time_signatures.definition import time_signatures
-from huitzil import segments
