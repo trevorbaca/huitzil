@@ -1,7 +1,6 @@
 import abjad
 import baca
 
-
 registrations = abjad.OrderedDict(
     [
         (
