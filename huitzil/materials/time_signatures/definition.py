@@ -1,6 +1,7 @@
+import typing
+
 import abjad
 import baca
-import typing
 
 
 def make_numerators(numerators, addenda):

@@ -1,10 +1,10 @@
+import os
+import typing
+
 import abjad
 import baca
 import huitzil
-import os
-import typing
 from abjadext import rmakers
-
 
 ###############################################################################
 ##################################### [A] #####################################

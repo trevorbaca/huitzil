@@ -1,6 +1,5 @@
 import baca
 
-
 top = 17
 staves = (10, 17)
 separation = 70
