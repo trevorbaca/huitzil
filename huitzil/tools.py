@@ -1,4 +1,3 @@
-import collections
 import typing
 
 import abjad
@@ -386,7 +385,6 @@ class DreamsMusicMaker(object):
         self._displace_pitch_classes(tuplets)
         self._register_voices(tuplets)
         self._attach_beams(tuplets)
-        selection = abjad.select(tuplets)
         assert all(isinstance(_, abjad.Tuplet) for _ in tuplets)
         return tuplets
 

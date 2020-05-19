@@ -9,11 +9,11 @@ breaks = baca.breaks(
         [35, 158, (15,)],
         [45, 185, (15,)],
         [52, 212, (15,)],
-        ),
-    )
+    ),
+)
 
 spacing = baca.scorewide_spacing(
     __file__,
     breaks=breaks,
     fallback_duration=(1, 24),
-    )
+)

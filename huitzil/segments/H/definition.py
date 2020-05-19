@@ -2,8 +2,6 @@ import os
 
 import abjad
 import baca
-import huitzil
-from abjadext import rmakers
 
 ###############################################################################
 ##################################### [H] #####################################
@@ -103,9 +101,9 @@ maker(
     ("rh", 1),
     baca.chunk(
         baca.literal([
-        r"\once \override RHStaff.StaffSymbol.line-positions ="
-        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)"
-            ]),
+            r"\once \override RHStaff.StaffSymbol.line-positions ="
+            " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)"
+        ]),
         baca.staff_lines(7),
     ),
     baca.make_monads("1/4  1/8  1/8"),
@@ -118,11 +116,11 @@ maker(
 maker(
     ("rh", (1, 3)),
     # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
-    #baca.hairpin(
+    # baca.hairpin(
     #    "mp -- !",
     #    abjad.tweak(True).to_barline,
     #    selector=baca.leaves().rleak(),
-    #),
+    # ),
     # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
     baca.chunk(
         baca.dynamic("mp"),
@@ -494,7 +492,7 @@ maker(
     ("rh", (21, 26)),
     baca.text_spanner(
         "sub. trem. mod. => più stretto => più largo => più stretto =>"
-            " più largo => mod.",
+        " più largo => mod.",
         abjad.tweak(6).staff_padding,
         pieces=baca.lparts([1, 1, 1, 1, 2]),
     ),

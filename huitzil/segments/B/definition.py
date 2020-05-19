@@ -2,8 +2,6 @@ import os
 
 import abjad
 import baca
-import huitzil
-from abjadext import rmakers
 
 ###############################################################################
 ##################################### [B] #####################################
@@ -49,7 +47,7 @@ maker(
         r"\stopStaff",
         r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
         r"\startStaff",
-        ]),
+    ]),
     baca.mmrest_transparent(),
     baca.new(
         baca.bar_line_transparent(),
@@ -65,7 +63,7 @@ maker(
         r"\stopStaff",
         r"\once \override Staff.StaffSymbol.line-count = 5",
         r"\startStaff",
-        ]),
+    ]),
     baca.pitch("B1"),
     baca.skeleton("{ c1 }"),
 )
@@ -86,7 +84,7 @@ maker(
         baca.literal([
             r"\once \override RHStaff.StaffSymbol.line-positions ="
             " #'(8.2 8 7.8 -5.8 -6 -6.2)"
-            ]),
+        ]),
         baca.staff_lines(7),
     ),
     baca.dynamic(
@@ -133,7 +131,7 @@ maker(
     ("rh", [9, 10]),
     baca.tag(
         # TODO: make +ARCH_A_SCORE work
-        #"+ARCH_A_SCORE",
+        # "+ARCH_A_SCORE",
         abjad.Tag("+SCORE"),
         baca.literal(
             r"\once \override TupletNumber.font-size = -2",
@@ -203,7 +201,7 @@ maker(
         r"\once \override RHStaff.StaffSymbol.line-positions ="
         " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
         r"\startStaff",
-        ]),
+    ]),
     baca.markup(
         r"\huitzil-sliding-from-bridge-onto-string-markup",
         abjad.tweak(6).staff_padding,

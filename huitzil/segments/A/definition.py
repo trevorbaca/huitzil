@@ -4,7 +4,6 @@ import typing
 import abjad
 import baca
 import huitzil
-from abjadext import rmakers
 
 ###############################################################################
 ##################################### [A] #####################################
@@ -47,7 +46,7 @@ music_maker = huitzil.DreamsMusicMaker(
     [
         [3, range(0, 99)],
     ],
-    pc_operators = [
+    pc_operators=[
         abjad.Transposition(n=2),
         abjad.Inversion(),
     ],
@@ -63,7 +62,7 @@ music_maker = huitzil.DreamsMusicMaker(
         [3, range(0, 99)],
         [1, (1, 2, 3, 6, 7, 10)],
     ],
-    pc_operators = [
+    pc_operators=[
         abjad.Transposition(n=3),
     ],
 )
@@ -109,7 +108,7 @@ music_maker = huitzil.DreamsMusicMaker(
     [
         [1, range(0, 99)],
         [2, (5, 6, 7, 8, 16, 17, 18, 23, 24, 25, 26,
-            31, 32, 33, 34, 37, 38, 39, 43, 44, 45, 46, 47)],
+             31, 32, 33, 34, 37, 38, 39, 43, 44, 45, 46, 47)],
         [3, (2, 13, 14, 27, 28, 40, 50, 51)],
     ],
     pc_displacement=[abjad.index(list(range(10, 20)), 20)],
@@ -181,20 +180,20 @@ maker = baca.SegmentMaker(
         abjad.tags.CLOCK_TIME,
         abjad.tags.LOCAL_MEASURE_NUMBER,
         # TODO: make this work
-        #abjad.const.SPACING,
-        ],
+        # abjad.const.SPACING,
+    ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, -2),
     deactivate=[
         abjad.tags.DEFAULT_INSTRUMENT_ALERT,
-        ],
+    ],
     first_segment=True,
     local_measure_number_extra_offset=(0, -5),
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     spacing_extra_offset=(0, 1),
     time_signatures=time_signatures,
     validate_measure_count=54,
-    )
+)
 
 # skips
 
@@ -203,8 +202,8 @@ maker(
     baca.metronome_mark(
         "78",
         selector=baca.leaf(1 - 1),
-        ),
-    )
+    ),
+)
 
 # vc
 
@@ -215,14 +214,14 @@ maker(
         abjad.tweak(9).staff_padding,
         direction=abjad.Down,
         literal=True,
-        ),
+    ),
     baca.music(music_, do_not_check_total_duration=True),
-    )
+)
 
 maker(
     ("vc", (1, 51)),
     baca.tuplet_bracket_staff_padding(3),
-    )
+)
 
 maker(
     ("vc", 8),
@@ -232,30 +231,30 @@ maker(
             baca.repeat_tie(baca.pleaf(0)),
             baca.repeat_tie_extra_offset((-1.5, 0)),
             selector=baca.pleaf(-1),
-            ),
         ),
-    )
+    ),
+)
 
 maker(
     ("vc", 20),
     baca.repeat_tie(baca.pleaf(0)),
-    )
+)
 
 maker(
     ("vc", 48),
     baca.repeat_tie(baca.pleaf(0)),
-    )
+)
 
 maker(
     ("vc", (52, 54)),
     baca.tuplet_bracket_staff_padding(4),
-    )
+)
 
 
 maker(
     ("vc", 53),
     baca.breathe(),
-    )
+)
 
 maker(
     ("vc", 54),
@@ -263,12 +262,12 @@ maker(
         baca.breathe(
             baca.pleaf(-1),
             abjad.tweak((0, 2)).extra_offset,
-            ),
         ),
+    ),
     baca.only_segment(
         baca.breathe(),
-        ),
-    )
+    ),
+)
 
 # rh
 
@@ -277,5 +276,5 @@ maker(
     baca.literal(r"\stopStaff"),
     baca.mmrest_transparent(
         selector=baca.leaves(),
-        ),
-    )
+    ),
+)

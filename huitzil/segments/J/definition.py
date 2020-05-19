@@ -2,8 +2,6 @@ import os
 
 import abjad
 import baca
-import huitzil
-from abjadext import rmakers
 
 ###############################################################################
 ##################################### [J] #####################################
@@ -55,23 +53,24 @@ maker(
             r"\once \override Staff.StaffSymbol.line-positions ="
             " #'(4 -4)",
             r"\startStaff",
-            ]),
+        ]),
     ),
     baca.time_signature_stencil_false(),
 )
 
 maker(
     ("vc", -1),
-    #baca.chunk(
+    # baca.chunk(
     #    baca.mark(r"\huitzil-colophon-markup"),
     #    baca.rehearsal_mark_down(),
     #    baca.rehearsal_mark_padding(4),
     #    selector=baca.leaves().rleak()[-1],
-    #),
-    baca.literal([
-        r"\once \override Score.RehearsalMark.direction = #down",
-        r"\once \override Score.RehearsalMark.padding = 4",
-        r"\mark \huitzil-colophon-markup",
+    # ),
+    baca.literal(
+        [
+            r"\once \override Score.RehearsalMark.direction = #down",
+            r"\once \override Score.RehearsalMark.padding = 4",
+            r"\mark \huitzil-colophon-markup",
         ],
         format_slot="after",
     ),
@@ -80,7 +79,7 @@ maker(
         r"\override Score.BarLine.extra-offset = #'(8 . 0)",
         r"\override Score.RehearsalMark.extra-offset = #'(4 . 0)",
         r"\override Score.SpanBar.extra-offset = #'(8 . 0)",
-        ]),
+    ]),
 )
 
 # vcr
@@ -98,7 +97,7 @@ maker(
             r"\once \override RHStaff.StaffSymbol.line-positions ="
             " #'(8.2 8 7.8 -5.8 -6 -6.2)",
             r"\startStaff",
-            ]),
+        ]),
     ),
     baca.stem_tremolo(
         selector=baca.pleaves(),

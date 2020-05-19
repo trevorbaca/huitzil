@@ -2,8 +2,6 @@ import os
 
 import abjad
 import baca
-import huitzil
-from abjadext import rmakers
 
 ###############################################################################
 ##################################### [C] #####################################
@@ -18,13 +16,13 @@ time_signatures = [
 
 maker = baca.SegmentMaker(
     activate=[
-        #abjad.tags.CLOCK_TIME,
+        # abjad.tags.CLOCK_TIME,
         abjad.tags.LOCAL_MEASURE_NUMBER,
-        #abjad.const.MEASURE_NUMBER,
+        # abjad.const.MEASURE_NUMBER,
     ],
     check_all_are_pitched=True,
-    #clock_time_extra_offset=(0, 13),
-    #measure_number_extra_offset=(0, 13),
+    # clock_time_extra_offset=(0, 13),
+    # measure_number_extra_offset=(0, 13),
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     validate_measure_count=26,
@@ -87,7 +85,7 @@ maker(
                 r"\once \override RHStaff.StaffSymbol.line-positions ="
                 " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
                 r"\startStaff",
-                ]),
+            ]),
         ),
     ),
     baca.stem_tremolo(
@@ -471,7 +469,7 @@ maker(
     ("rh", (21, 26)),
     baca.text_spanner(
         "sub. trem. mod. => più stretto => più largo => più stretto =>"
-            " più largo => trem. mod.",
+        " più largo => trem. mod.",
         abjad.tweak(6).staff_padding,
         pieces=baca.lparts([1, 1, 1, 1, 2]),
     ),

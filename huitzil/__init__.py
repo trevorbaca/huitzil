@@ -1,13 +1,25 @@
 import distutils.version
 import platform
 
-from huitzil.ScoreTemplate import ScoreTemplate
-from huitzil.materials.instruments.definition import instruments
-from huitzil.materials.metronome_marks.definition import metronome_marks
-from huitzil.materials.pitch_classes.definition import pitch_classes
-from huitzil.materials.registrations.definition import registrations
-from huitzil.materials.time_signatures.definition import time_signatures
-from huitzil.tools import *
+from .ScoreTemplate import ScoreTemplate
+from .materials import (
+    instruments,
+    metronome_marks,
+    pitch_classes,
+    registrations,
+    time_signatures,
+)
+from .tools import DreamsMusicMaker
+
+__all__ = [
+    "ScoreTemplate",
+    "DreamsMusicMaker",
+    "instruments",
+    "metronome_marks",
+    "pitch_classes",
+    "registrations",
+    "time_signatures",
+]
 
 if not (
     distutils.version.LooseVersion("3.7")
