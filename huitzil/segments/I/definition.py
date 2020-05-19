@@ -2,8 +2,6 @@ import os
 
 import abjad
 import baca
-import huitzil
-from abjadext import rmakers
 
 ###############################################################################
 ##################################### [I] #####################################
@@ -67,7 +65,7 @@ maker(
         r"\stopStaff",
         r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
         r"\startStaff",
-        ]),
+    ]),
     baca.note_head_duration_log(2),
     baca.note_head_no_ledgers(True),
     baca.note_head_style("do"),
@@ -94,7 +92,7 @@ maker(
                 r"\once \override RHStaff.StaffSymbol.line-positions ="
                 " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
                 r"\startStaff",
-                ]),
+            ]),
         ),
     ),
     baca.stem_tremolo(
@@ -398,7 +396,7 @@ maker(
         r"\once \override RHStaff.StaffSymbol.line-positions ="
         " #'(8.2 8 7.8 -5.8 -6 -6.2)",
         r"\startStaff",
-        ]),
+    ]),
     baca.staff_position(8),
 )
 
@@ -468,7 +466,7 @@ maker(
     ("rh", (18, 23)),
     baca.text_spanner(
         "(trem. mod.) => stretto => largo => stretto =>"
-            " largo => stretto =>",
+        " largo => stretto =>",
         abjad.tweak(6).staff_padding,
         bookend=False,
         pieces=baca.lparts([1, 1, 1, 1, 1, 1 + 1]),

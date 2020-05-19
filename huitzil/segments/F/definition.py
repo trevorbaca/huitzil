@@ -2,8 +2,6 @@ import os
 
 import abjad
 import baca
-import huitzil
-from abjadext import rmakers
 
 ###############################################################################
 ##################################### [F] #####################################
@@ -76,7 +74,7 @@ maker(
         r"\stopStaff",
         r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
         r"\startStaff",
-        ]),
+    ]),
     baca.note_head_duration_log(2),
     baca.note_head_no_ledgers(True),
     baca.note_head_style("do"),
@@ -117,7 +115,7 @@ maker(
                 r"\once \override RHStaff.StaffSymbol.line-positions ="
                 " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
                 r"\startStaff",
-                ]),
+            ]),
         ),
     ),
     baca.stem_tremolo(
@@ -161,16 +159,16 @@ maker(
 maker(
     ("rh", (2, 13)),
     # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
-    #baca.hairpin(
+    # baca.hairpin(
     #    "mp > p <",
     #    bookend=False,
     #    pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
     #    selector=baca.leaves().rleak(),
-    #),
+    # ),
     # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
         "mp > p <",
-        #bookend=False,
+        # bookend=False,
         pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
         selector=baca.leaves()[:-1],
     ),
@@ -423,11 +421,11 @@ maker(
 maker(
     ("rh", (14, 23)),
     # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
-    #baca.hairpin(
+    # baca.hairpin(
     #    "mp -- p -- pp -- p -- !",
     #    pieces=baca.mgroups([2, 2, 4, 2 + 1]),
     #    selector=baca.leaves().rleak(),
-    #),
+    # ),
     # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
         "mp -- p -- pp -- p",
@@ -440,7 +438,7 @@ maker(
         r"\once \override RHStaff.StaffSymbol.line-positions ="
         " #'(8.2 8 7.8 -5.8 -6 -6.2)",
         r"\startStaff",
-        ]),
+    ]),
     baca.staff_position(8),
 )
 

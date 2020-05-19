@@ -2,8 +2,6 @@ import os
 
 import abjad
 import baca
-import huitzil
-from abjadext import rmakers
 
 ###############################################################################
 ##################################### [E] #####################################
@@ -83,7 +81,7 @@ maker(
         r"\once \override RHStaff.StaffSymbol.line-positions ="
         " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
         r"\startStaff",
-        ]),
+    ]),
     baca.stem_tremolo(
         selector=baca.pleaves(),
     ),
@@ -392,7 +390,7 @@ maker(
     ),
     baca.text_spanner(
         "sub. mod. => più stretto => più largo => più stretto =>"
-            " più largo => trem. mod.",
+        " più largo => trem. mod.",
         abjad.tweak(6).staff_padding,
         pieces=baca.lparts([1, 1, 1, 1, 2]),
     ),
