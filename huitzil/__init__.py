@@ -2,14 +2,13 @@ import distutils.version
 import platform
 
 from .ScoreTemplate import ScoreTemplate
-from .materials import (
+from .tools import (
+    DreamsMusicMaker,
     instruments,
     metronome_marks,
     pitch_classes,
     registrations,
-    time_signatures,
 )
-from .tools import DreamsMusicMaker
 
 __all__ = [
     "ScoreTemplate",
@@ -18,7 +17,6 @@ __all__ = [
     "metronome_marks",
     "pitch_classes",
     "registrations",
-    "time_signatures",
 ]
 
 if not (
