@@ -4,62 +4,19 @@ import huitzil
 
 
 class ScoreTemplate(baca.ScoreTemplate):
-    r"""
+    """
     Score template.
 
     >>> import huitzil
 
     ..  container:: example
 
-        >>> template = huitzil.ScoreTemplate()
-        >>> path = abjad.Path('huitzil', 'stylesheets', 'contexts.ily')
-        >>> lilypond_file = template.__illustrate__(
-        ...     global_staff_size=15,
-        ...     includes=[path],
-        ...     )
-        >>> abjad.show(lilypond_file) # doctest: +SKIP
-
-        >>> abjad.f(lilypond_file[abjad.Score], strict=79)
-        \context Score = "Score"                                                       %! huitzil.ScoreTemplate.__call__()
-        <<                                                                             %! huitzil.ScoreTemplate.__call__()
-            \context GlobalContext = "Global_Context"                                  %! abjad.ScoreTemplate._make_global_context()
-            <<                                                                         %! abjad.ScoreTemplate._make_global_context()
-                \context GlobalRests = "Global_Rests"                                  %! abjad.ScoreTemplate._make_global_context()
-                {                                                                      %! abjad.ScoreTemplate._make_global_context()
-                }                                                                      %! abjad.ScoreTemplate._make_global_context()
-                \context GlobalSkips = "Global_Skips"                                  %! abjad.ScoreTemplate._make_global_context()
-                {                                                                      %! abjad.ScoreTemplate._make_global_context()
-                }                                                                      %! abjad.ScoreTemplate._make_global_context()
-            >>                                                                         %! abjad.ScoreTemplate._make_global_context()
-            \context MusicContext = "Music_Context"                                    %! huitzil.ScoreTemplate.__call__()
-            {                                                                          %! huitzil.ScoreTemplate.__call__()
-                \context PianoStaff = "Cello_Staff_Group"                              %! huitzil.ScoreTemplate.__call__()
-                <<                                                                     %! huitzil.ScoreTemplate.__call__()
-                    \context RHStaff = "RH_Music_Staff"                                %! huitzil.ScoreTemplate.__call__()
-                    {                                                                  %! huitzil.ScoreTemplate.__call__()
-                        \context Voice = "RH_Music_Voice"                              %! huitzil.ScoreTemplate.__call__()
-                        {                                                              %! huitzil.ScoreTemplate.__call__()
-                            \clef "percussion"                                         %! abjad.ScoreTemplate.attach_defaults(3)
-                            s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! huitzil.ScoreTemplate.__call__()
-                    }                                                                  %! huitzil.ScoreTemplate.__call__()
-                    \context Staff = "Cello_Music_Staff"                               %! huitzil.ScoreTemplate.__call__()
-                    {                                                                  %! huitzil.ScoreTemplate.__call__()
-                        \context Voice = "Cello_Music_Voice"                           %! huitzil.ScoreTemplate.__call__()
-                        {                                                              %! huitzil.ScoreTemplate.__call__()
-                            \clef "bass"                                               %! abjad.ScoreTemplate.attach_defaults(3)
-                            s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! huitzil.ScoreTemplate.__call__()
-                    }                                                                  %! huitzil.ScoreTemplate.__call__()
-                >>                                                                     %! huitzil.ScoreTemplate.__call__()
-            }                                                                          %! huitzil.ScoreTemplate.__call__()
-        >>                                                                             %! huitzil.ScoreTemplate.__call__()
+        >>> huitzil.ScoreTemplate()
+        ScoreTemplate()
 
     """
 
     ### CLASS VARIABLES ###
-
-    __documentation_section__ = None
 
     _always_make_global_rests = True
 
@@ -134,38 +91,3 @@ class ScoreTemplate(baca.ScoreTemplate):
         self._assert_unique_context_names(score)
         # self._assert_matching_custom_context_names(score)
         return score
-
-    ### PUBLIC PROPERTIES ###
-
-    @property
-    def do_not_require_margin_markup(self):
-        """
-        Does not require margin markup.
-
-        ..  container:: example
-
-            >>> huitzil.ScoreTemplate().do_not_require_margin_markup
-            True
-
-        """
-        return super(ScoreTemplate, self).do_not_require_margin_markup
-
-    @property
-    def voice_abbreviations(self):
-        """
-        Gets voice abbreviations.
-
-        ..  container:: example
-
-            >>> score_template = huitzil.ScoreTemplate()
-            >>> abjad.f(score_template.voice_abbreviations)
-            abjad.OrderedDict(
-                [
-                    ('rh', 'RH_Music_Voice'),
-                    ('vc', 'Cello_Music_Voice'),
-                    ('vcr', 'Cello_Rest_Voice'),
-                    ]
-                )
-
-        """
-        return super(ScoreTemplate, self).voice_abbreviations

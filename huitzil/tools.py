@@ -3,347 +3,91 @@ import typing
 import abjad
 import baca
 from abjadext import rmakers
-from huitzil.materials import registrations
+
+# instruments
+
+instruments = abjad.OrderedDict(
+    [("Cello", abjad.Cello(context="StaffGroup", pitch_range="[A1, +inf]"))]
+)
+
+# metronome marks
+
+metronome_marks = abjad.OrderedDict(
+    [
+        ("44", abjad.MetronomeMark((1, 4), 44)),
+        ("66", abjad.MetronomeMark((1, 4), 66)),
+        ("78", abjad.MetronomeMark((1, 4), 78)),
+        ("88", abjad.MetronomeMark((1, 4), 88)),
+    ]
+)
+
+# pitch-classes
+
+maker = baca.ZaggedPitchClassMaker(
+    pc_cells=[[6, 4, 5, 7, 8], [9, 3, 2, 4, 5], [1, 10, 9, 11, 0]],
+    division_ratios=[(1,), (2, 3), (1, 4), (1,), (2, 3)],
+    grouping_counts=[4, 2, 2, 3, 1],
+)
+pitch_classes = maker()
+
+# registrations
+
+registrations = abjad.OrderedDict(
+    [
+        (
+            "middle",
+            baca.Registration(
+                components=[
+                    baca.RegistrationComponent(
+                        source_pitch_range=abjad.PitchRange("[A0, C4)"),
+                        target_octave_start_pitch=abjad.NumberedPitch(-13),
+                    ),
+                    baca.RegistrationComponent(
+                        source_pitch_range=abjad.PitchRange("[C4, A8]"),
+                        target_octave_start_pitch=abjad.NumberedPitch(-9),
+                    ),
+                ]
+            ),
+        ),
+        (
+            "low",
+            baca.Registration(
+                components=[
+                    baca.RegistrationComponent(
+                        source_pitch_range=abjad.PitchRange("[A0, C4)"),
+                        target_octave_start_pitch=abjad.NumberedPitch(-19),
+                    ),
+                    baca.RegistrationComponent(
+                        source_pitch_range=abjad.PitchRange("[C4, A8]"),
+                        target_octave_start_pitch=abjad.NumberedPitch(-15),
+                    ),
+                ]
+            ),
+        ),
+        (
+            "lowest",
+            baca.Registration(
+                components=[
+                    baca.RegistrationComponent(
+                        source_pitch_range=abjad.PitchRange("[A0, C4)"),
+                        target_octave_start_pitch=abjad.NumberedPitch(-25),
+                    ),
+                    baca.RegistrationComponent(
+                        source_pitch_range=abjad.PitchRange("[C4, A8]"),
+                        target_octave_start_pitch=abjad.NumberedPitch(-21),
+                    ),
+                ]
+            ),
+        ),
+    ]
+)
+
+# music-maker
 
 
 class DreamsMusicMaker(object):
-    r"""
+    """
     Dreams music-maker.
-
-    >>> import huitzil
-
-    ..  container:: example
-
-        >>> maker = huitzil.DreamsMusicMaker(
-        ...     [1, 2, 0, -1, 5],
-        ...     huitzil.pitch_classes[:6],
-        ...     [[2, range(0, 99)]],
-        ... )
-        >>> abjad.f(maker)
-        huitzil.DreamsMusicMaker(
-            [1, 2, 0, -1, 5],
-            (
-                baca.PitchTree(
-                    items=[
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(6),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(4),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(5),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(7),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(8),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(9),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(3),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(2),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(4),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(5),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(1),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        ],
-                    item_class=abjad.NumberedPitchClass,
-                    ),
-                baca.PitchTree(
-                    items=[
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(10),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(9),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(11),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(0),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(5),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(9),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(3),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(2),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(4),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        ],
-                    item_class=abjad.NumberedPitchClass,
-                    ),
-                baca.PitchTree(
-                    items=[
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(0),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(1),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(10),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(9),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(11),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        ],
-                    item_class=abjad.NumberedPitchClass,
-                    ),
-                baca.PitchTree(
-                    items=[
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(8),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(6),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(4),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(5),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(7),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(11),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(0),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(1),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(10),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(9),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        ],
-                    item_class=abjad.NumberedPitchClass,
-                    ),
-                baca.PitchTree(
-                    items=[
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(7),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        ],
-                    item_class=abjad.NumberedPitchClass,
-                    ),
-                baca.PitchTree(
-                    items=[
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(8),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(6),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(4),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(5),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(4),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(5),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(9),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(3),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(2),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(5),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(7),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        baca.PitchTree(
-                            items=[
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(8),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(6),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                baca.PitchTree(
-                                    items=abjad.NumberedPitchClass(4),
-                                    item_class=abjad.NumberedPitchClass,
-                                    ),
-                                ],
-                            item_class=abjad.NumberedPitchClass,
-                            ),
-                        ],
-                    item_class=abjad.NumberedPitchClass,
-                    ),
-                ),
-            [
-                [
-                    2,
-                    range(0, 99),
-                    ],
-                ],
-            pc_displacement=[],
-            pc_operators=[],
-            )
-
     """
 
     ### CLASS ATTRIBUTES ###
