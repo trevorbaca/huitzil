@@ -2,8 +2,8 @@ Huitzil
 =======
 
 [![Build Status](
-    https://travis-ci.org/trevorbaca/huitzil.svg)](
-    https://travis-ci.org/trevorbaca/huitzil)
+    https://api.travis-ci.org/trevorbaca/huitzil.svg)](
+    https://api.travis-ci.org/trevorbaca/huitzil)
 <!---
 [![Code style: black](
     https://img.shields.io/badge/code%20style-black-000000.svg)](
