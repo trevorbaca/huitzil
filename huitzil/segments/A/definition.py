@@ -1,4 +1,3 @@
-import os
 import typing
 
 import abjad
@@ -189,7 +188,7 @@ maker = baca.SegmentMaker(
     ],
     first_segment=True,
     local_measure_number_extra_offset=(0, -5),
-    segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    segment_directory=abjad.Path(__file__).resolve().parent,
     spacing_extra_offset=(0, 1),
     time_signatures=time_signatures,
     validate_measure_count=54,
