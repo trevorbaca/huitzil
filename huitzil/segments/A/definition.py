@@ -176,15 +176,15 @@ music_ = abjad.select(music)
 
 maker = baca.SegmentMaker(
     activate=[
-        abjad.tags.CLOCK_TIME,
-        abjad.tags.LOCAL_MEASURE_NUMBER,
+        baca.tags.CLOCK_TIME,
+        baca.tags.LOCAL_MEASURE_NUMBER,
         # TODO: make this work
         # abjad.const.SPACING,
     ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, -2),
     deactivate=[
-        abjad.tags.DEFAULT_INSTRUMENT_ALERT,
+        baca.tags.DEFAULT_INSTRUMENT_ALERT,
     ],
     first_segment=True,
     local_measure_number_extra_offset=(0, -5),
