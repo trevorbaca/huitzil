@@ -1,4 +1,4 @@
-B_Global_Rests = {                                                             %! abjad.Path.extern()
+B_Global_Rests = {                                                             %! ide.Path.extern()
 
     % [B Global_Rests measure 55 / measure 1]                                  %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
@@ -78,10 +78,10 @@ B_Global_Rests = {                                                             %
     % [B Global_Rests measure 80 / measure 26]                                 %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(4):PHANTOM
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-B_Global_Skips = {                                                             %! abjad.Path.extern()
+B_Global_Skips = {                                                             %! ide.Path.extern()
 
     % [B Global_Skips measure 55 / measure 1]                                  %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._reapply_persistent_indicators(1):baca.SegmentMaker._set_status_tag():REAPPLIED_TIME_SIGNATURE
@@ -404,10 +404,10 @@ B_Global_Skips = {                                                             %
     \once \override Score.BarLine.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
     \once \override Score.SpanBar.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-B_RH_Music_Voice = {                                                           %! abjad.Path.extern()
+B_RH_Music_Voice = {                                                           %! ide.Path.extern()
 
     {                                                                          %! baca.skeleton()
 
@@ -876,18 +876,18 @@ B_RH_Music_Voice = {                                                           %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-B_RH_Music_Staff = {                                                           %! abjad.Path.extern()
+B_RH_Music_Staff = {                                                           %! ide.Path.extern()
 
     \context Voice = "RH_Music_Voice"                                          %! huitzil.ScoreTemplate.__call__()
-    \B_RH_Music_Voice                                                          %! abjad.Path.extern()
+    \B_RH_Music_Voice                                                          %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-B_Cello_Music_Voice = {                                                        %! abjad.Path.extern()
+B_Cello_Music_Voice = {                                                        %! ide.Path.extern()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
@@ -1070,12 +1070,12 @@ B_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-B_Cello_Music_Staff = {                                                        %! abjad.Path.extern()
+B_Cello_Music_Staff = {                                                        %! ide.Path.extern()
 
     \context Voice = "Cello_Music_Voice"                                       %! huitzil.ScoreTemplate.__call__()
-    \B_Cello_Music_Voice                                                       %! abjad.Path.extern()
+    \B_Cello_Music_Voice                                                       %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
