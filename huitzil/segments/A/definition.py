@@ -179,7 +179,7 @@ maker = baca.SegmentMaker(
         baca.tags.CLOCK_TIME,
         baca.tags.LOCAL_MEASURE_NUMBER,
         # TODO: make this work
-        # abjad.const.SPACING,
+        # baca.const.SPACING,
     ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, -2),

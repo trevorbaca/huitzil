@@ -58,7 +58,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             rh_music_staff, "default_clef", abjad.Clef("percussion")
         )
         abjad.annotate(
-            rh_music_staff, abjad.const.REMOVE_ALL_EMPTY_STAVES, True
+            rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True
         )
         cello_music_voice = abjad.Voice(name="Cello_Music_Voice", tag=tag)
         cello_music_staff = abjad.Staff(
