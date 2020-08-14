@@ -156,7 +156,7 @@ measure_durations = []
 current_duration = abjad.Duration(0)
 ideal_measure_duration = abjad.Duration(4, 4)
 for component in music:
-    component_duration = abjad.inspect(component).duration()
+    component_duration = abjad.inspectx.duration(component)
     candidate_duration = current_duration + component_duration
     if ideal_measure_duration < candidate_duration:
         if 0 < current_duration:
