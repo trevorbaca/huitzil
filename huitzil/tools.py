@@ -143,7 +143,7 @@ class DreamsMusicMaker(object):
     def _attach_beams(self, music):
         tuplets = abjad.iterate(music).components(abjad.Tuplet)
         for tuplet in tuplets:
-            voice_numbers = [abjad.inspectx.indicator(_, int) for _ in tuplet]
+            voice_numbers = [abjad.get.indicator(_, int) for _ in tuplet]
             runs = baca.sequence(voice_numbers).group_by()
             counts = [len(_) for _ in runs]
             note_groups = baca.sequence(tuplet[:]).partition_by_counts(counts)
@@ -163,7 +163,7 @@ class DreamsMusicMaker(object):
                     abjad.attach(voice_number, note)
         notes = baca.sequence(note_lists).flatten()
         for note in notes:
-            assert abjad.inspectx.has_indicator(note, int), repr(note)
+            assert abjad.get.has_indicator(note, int), repr(note)
 
     def _displace_pitch_classes(self, music):
         if not self.pc_displacement:
@@ -223,7 +223,7 @@ class DreamsMusicMaker(object):
                 source_note = note_list[j]
                 for pleaf in plt:
                     pleaf.written_pitch = source_note.written_pitch
-                    voice_number = abjad.inspectx.indicator(source_note, int)
+                    voice_number = abjad.get.indicator(source_note, int)
                     abjad.attach(voice_number, pleaf)
             inner_tuplets.append(inner_tuplet)
         return inner_tuplets
@@ -257,7 +257,7 @@ class DreamsMusicMaker(object):
         voice_2_registration = registrations["low"]
         voice_3_registration = registrations["lowest"]
         for note in abjad.iterate(music).components(abjad.Note):
-            voice_number = abjad.inspectx.indicator(note, int)
+            voice_number = abjad.get.indicator(note, int)
             if voice_number == 1:
                 color = "red"
                 abjad.override(note).accidental.color = color
@@ -292,7 +292,7 @@ class DreamsMusicMaker(object):
     def _set_written_durations(self, note_lists):
         for note_list in note_lists:
             for note in note_list:
-                voice_number = abjad.inspectx.indicator(note, int)
+                voice_number = abjad.get.indicator(note, int)
                 if voice_number == 1:
                     duration = abjad.Duration(1, 8)
                 elif voice_number == 2:
