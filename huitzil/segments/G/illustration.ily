@@ -756,7 +756,7 @@ G_Cello_Music_Voice = {                                                        %
         ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"                           %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
         - \tweak padding #2.5                                                  %! baca.markup():baca.IndicatorCommand._call()
-        _ \markup { III }                                                      %! baca.markup():baca.IndicatorCommand._call()
+        _ \baca-string-iii                                                     %! baca.markup():baca.IndicatorCommand._call()
         - \abjad-dashed-line-with-hook                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
         - \baca-text-spanner-left-text "baca.skeleton()"                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
         - \tweak bound-details.right.padding #3.25                             %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
