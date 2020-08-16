@@ -66,9 +66,10 @@ maker(
 maker(
     ("vc", 1),
     baca.markup(
-        baca.markups.string_number(3),
+        r"\baca-string-iii",
         abjad.tweak(2.5).padding,
         direction=abjad.Down,
+        literal=True,
     ),
     baca.pitch("A2"),
     baca.skeleton("{ c1 * 1/4 }"),
