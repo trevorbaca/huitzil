@@ -829,7 +829,7 @@ B_RH_Music_Voice = {                                                           %
         - \tweak staff-padding #6                                              %! baca.markup():baca.IndicatorCommand._call()
         ^ \huitzil-sliding-from-bridge-onto-string-markup                      %! baca.markup():baca.IndicatorCommand._call()
         - \tweak staff-padding #3.5                                            %! baca.markup():baca.IndicatorCommand._call()
-        _ \markup { "trem. moderato" }                                         %! baca.markup():baca.IndicatorCommand._call()
+        _ \huitzil-trem-moderato-markup                                        %! baca.markup():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         - \tweak stencil #constante-hairpin                                    %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         \<                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC

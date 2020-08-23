@@ -87,11 +87,12 @@ maker(
 maker(
     ("vc", (25, 26)),
     baca.markup(
-        "III→IV",
+        r"\harmony-string-three-to-four-markup",
         abjad.tweak(2.5).padding,
         abjad.tweak(0).parent_alignment_X,
         abjad.tweak(-0.05).self_alignment_X,
         direction=abjad.Down,
+        literal=True,
     ),
     baca.pitch("G2"),
     baca.skeleton("{ c1 * 2 }"),

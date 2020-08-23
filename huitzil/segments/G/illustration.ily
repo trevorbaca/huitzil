@@ -865,7 +865,7 @@ G_Cello_Music_Voice = {                                                        %
         - \tweak padding #2.5                                                  %! baca.markup():baca.IndicatorCommand._call()
         - \tweak parent-alignment-X #0                                         %! baca.markup():baca.IndicatorCommand._call()
         - \tweak self-alignment-X #-0.05                                       %! baca.markup():baca.IndicatorCommand._call()
-        _ \markup { III→IV }                                                   %! baca.markup():baca.IndicatorCommand._call()
+        _ \harmony-string-three-to-four-markup                                 %! baca.markup():baca.IndicatorCommand._call()
         - \abjad-dashed-line-with-hook                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
         - \baca-text-spanner-left-text "baca.skeleton()"                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
         - \tweak bound-details.right.padding #2.75                             %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
