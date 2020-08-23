@@ -206,9 +206,10 @@ maker(
         literal=True,
     ),
     baca.markup(
-        r"trem. moderato",
+        r"\huitzil-trem-moderato-markup",
         abjad.tweak(3.5).staff_padding,
         direction=abjad.Down,
+        literal=True,
     ),
     baca.skeleton("{ c1 }"),
     baca.stem_tremolo(),
