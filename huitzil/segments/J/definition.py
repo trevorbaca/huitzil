@@ -6,8 +6,16 @@ import baca
 ###############################################################################
 
 time_signatures = [
-    (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2),
-    (1, 2), (1, 2), (3, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (3, 2),
 ]
 
 maker = baca.SegmentMaker(
@@ -46,12 +54,13 @@ maker(
         selector=baca.leaves(),
     ),
     baca.only_segment(
-        baca.literal([
-            r"\stopStaff",
-            r"\once \override Staff.StaffSymbol.line-positions ="
-            " #'(4 -4)",
-            r"\startStaff",
-        ]),
+        baca.literal(
+            [
+                r"\stopStaff",
+                r"\once \override Staff.StaffSymbol.line-positions =" " #'(4 -4)",
+                r"\startStaff",
+            ]
+        ),
     ),
     baca.time_signature_stencil_false(),
 )
@@ -72,12 +81,14 @@ maker(
         ],
         format_slot="after",
     ),
-    baca.literal([
-        r"\override Score.BarLine.X-extent = #'(0 . 8)",
-        r"\override Score.BarLine.extra-offset = #'(8 . 0)",
-        r"\override Score.RehearsalMark.extra-offset = #'(4 . 0)",
-        r"\override Score.SpanBar.extra-offset = #'(8 . 0)",
-    ]),
+    baca.literal(
+        [
+            r"\override Score.BarLine.X-extent = #'(0 . 8)",
+            r"\override Score.BarLine.extra-offset = #'(8 . 0)",
+            r"\override Score.RehearsalMark.extra-offset = #'(4 . 0)",
+            r"\override Score.SpanBar.extra-offset = #'(8 . 0)",
+        ]
+    ),
 )
 
 # vcr
@@ -90,12 +101,14 @@ maker(
     baca.literal(r"<> \stopTextSpan"),
     baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
     baca.only_segment(
-        baca.literal([
-            r"\stopStaff",
-            r"\once \override RHStaff.StaffSymbol.line-positions ="
-            " #'(8.2 8 7.8 -5.8 -6 -6.2)",
-            r"\startStaff",
-        ]),
+        baca.literal(
+            [
+                r"\stopStaff",
+                r"\once \override RHStaff.StaffSymbol.line-positions ="
+                " #'(8.2 8 7.8 -5.8 -6 -6.2)",
+                r"\startStaff",
+            ]
+        ),
     ),
     baca.stem_tremolo(
         selector=baca.pleaves(),

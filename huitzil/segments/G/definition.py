@@ -6,10 +6,32 @@ import baca
 ###############################################################################
 
 time_signatures = [
-    (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16),
-    (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16),
-    (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16), (1, 4), (3, 16),
-    (1, 1), (1, 1),
+    (1, 4),
+    (3, 16),
+    (1, 4),
+    (3, 16),
+    (1, 4),
+    (3, 16),
+    (1, 4),
+    (3, 16),
+    (1, 4),
+    (3, 16),
+    (1, 4),
+    (3, 16),
+    (1, 4),
+    (3, 16),
+    (1, 4),
+    (3, 16),
+    (1, 4),
+    (3, 16),
+    (1, 4),
+    (3, 16),
+    (1, 4),
+    (3, 16),
+    (1, 4),
+    (3, 16),
+    (1, 1),
+    (1, 1),
 ]
 
 maker = baca.SegmentMaker(
@@ -45,11 +67,13 @@ maker(
 maker(
     "vc",
     baca.clef("bass"),
-    baca.literal([
-        r"\stopStaff",
-        r"\once \override Staff.StaffSymbol.line-count = 5",
-        r"\startStaff",
-    ]),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override Staff.StaffSymbol.line-count = 5",
+            r"\startStaff",
+        ]
+    ),
     baca.mmrest_transparent(),
     baca.new(
         baca.bar_line_transparent(),
@@ -110,12 +134,14 @@ maker(
 maker(
     "rh",
     baca.chunk(
-        baca.literal([
-            r"\once \override RHStaff.StaffSymbol.line-positions ="
-            " #'(8.2 8  7.8 -5.8 -6 -6.2 -8 -10 -12 -14 -16 -17.8 -18 -18.2)",
-            r"\morleyDashedStaffSymbolLines #'("
-            "   #f  #f #f  #f   #f #f   #t #t  #t  #t  #t  #f    #f  #f)",
-        ]),
+        baca.literal(
+            [
+                r"\once \override RHStaff.StaffSymbol.line-positions ="
+                " #'(8.2 8  7.8 -5.8 -6 -6.2 -8 -10 -12 -14 -16 -17.8 -18 -18.2)",
+                r"\morleyDashedStaffSymbolLines #'("
+                "   #f  #f #f  #f   #f #f   #t #t  #t  #t  #t  #f    #f  #f)",
+            ]
+        ),
         baca.staff_lines(14),
     ),
     baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
@@ -214,12 +240,14 @@ maker(
         right_broken=True,
         selector=baca.leaves()[-1:].rleak(),
     ),
-    baca.literal([
-        r"\stopStaff",
-        r"\once \override RHStaff.StaffSymbol.line-positions ="
-        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-        r"\startStaff",
-    ]),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override RHStaff.StaffSymbol.line-positions ="
+            " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
+            r"\startStaff",
+        ]
+    ),
     baca.make_monads("1 1"),
     baca.markup(
         r"\huitzil-directly-above-end-of-fingerboard-column-markup",
