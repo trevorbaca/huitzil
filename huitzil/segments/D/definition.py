@@ -6,10 +6,29 @@ import baca
 ###############################################################################
 
 time_signatures = [
-    (1, 2), (1, 2), (2, 3), (1, 2), (4, 5), (1, 2), (2, 3),
-    (1, 2), (4, 5), (1, 2), (2, 3), (1, 2), (4, 5), (1, 2),
-    (2, 3), (1, 2), (4, 5), (1, 2), (1, 2), (1, 2), (1, 2),
-    (1, 2), (1, 2),
+    (1, 2),
+    (1, 2),
+    (2, 3),
+    (1, 2),
+    (4, 5),
+    (1, 2),
+    (2, 3),
+    (1, 2),
+    (4, 5),
+    (1, 2),
+    (2, 3),
+    (1, 2),
+    (4, 5),
+    (1, 2),
+    (2, 3),
+    (1, 2),
+    (4, 5),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
 ]
 
 maker = baca.SegmentMaker(
@@ -59,11 +78,13 @@ maker(
 maker(
     ("vc", 14),
     baca.clef("treble"),
-    baca.literal([
-        r"\stopStaff",
-        r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
-        r"\startStaff",
-    ]),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
+            r"\startStaff",
+        ]
+    ),
     baca.note_head_duration_log(2),
     baca.note_head_no_ledgers(True),
     baca.note_head_style("do"),
@@ -74,11 +95,13 @@ maker(
 maker(
     ("vc", 23),
     baca.clef("bass"),
-    baca.literal([
-        r"\stopStaff",
-        r"\once \override Staff.StaffSymbol.line-count = 5",
-        r"\startStaff",
-    ]),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override Staff.StaffSymbol.line-count = 5",
+            r"\startStaff",
+        ]
+    ),
     baca.pitch("Bb1"),
     baca.skeleton("{ c1 * 1/2 }"),
 )
@@ -97,12 +120,14 @@ maker(
     baca.only_segment(
         baca.chunk(
             baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
-            baca.literal([
-                r"\stopStaff",
-                r"\once \override RHStaff.StaffSymbol.line-positions ="
-                " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-                r"\startStaff",
-            ]),
+            baca.literal(
+                [
+                    r"\stopStaff",
+                    r"\once \override RHStaff.StaffSymbol.line-positions ="
+                    " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
+                    r"\startStaff",
+                ]
+            ),
         ),
     ),
     baca.stem_tremolo(
@@ -416,12 +441,14 @@ maker(
         pieces=baca.mgroups([2, 2, 4, 2 + 1]),
         selector=baca.leaves().rleak(),
     ),
-    baca.literal([
-        r"\stopStaff",
-        r"\once \override RHStaff.StaffSymbol.line-positions ="
-        " #'(8.2 8 7.8 -5.8 -6 -6.2)",
-        r"\startStaff",
-    ]),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override RHStaff.StaffSymbol.line-positions ="
+            " #'(8.2 8 7.8 -5.8 -6 -6.2)",
+            r"\startStaff",
+        ]
+    ),
     baca.markup(
         r"\huitzil-directly-on-bridge-markup",
         abjad.tweak(-0.85).self_alignment_X,
@@ -556,12 +583,14 @@ maker(
 
 maker(
     ("rh", 23),
-    baca.literal([
-        r"\stopStaff",
-        r"\once \override RHStaff.StaffSymbol.line-positions ="
-        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-        r"\startStaff",
-    ]),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override RHStaff.StaffSymbol.line-positions ="
+            " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
+            r"\startStaff",
+        ]
+    ),
     baca.markup(
         r"\huitzil-sliding-back-onto-string-markup",
         abjad.tweak(-0.85).self_alignment_X,

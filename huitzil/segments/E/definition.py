@@ -6,9 +6,27 @@ import baca
 ###############################################################################
 
 time_signatures = [
-    (1, 2), (13, 24), (1, 2), (7, 12), (53, 60), (23, 24),
-    (1, 2), (1, 2), (3, 8), (1, 3), (11, 15), (1, 2), (1, 2), (1, 2),
-    (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2),
+    (1, 2),
+    (13, 24),
+    (1, 2),
+    (7, 12),
+    (53, 60),
+    (23, 24),
+    (1, 2),
+    (1, 2),
+    (3, 8),
+    (1, 3),
+    (11, 15),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
+    (1, 2),
     (1, 2),
 ]
 
@@ -74,12 +92,14 @@ maker(
 maker(
     "rh",
     baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
-    baca.literal([
-        r"\stopStaff",
-        r"\once \override RHStaff.StaffSymbol.line-positions ="
-        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-        r"\startStaff",
-    ]),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override RHStaff.StaffSymbol.line-positions ="
+            " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
+            r"\startStaff",
+        ]
+    ),
     baca.stem_tremolo(
         selector=baca.pleaves(),
     ),
