@@ -4,7 +4,7 @@ import abjad
 metadata = abjad.OrderedDict(
     [
         (
-            'bol_measure_numbers',
+            "bol_measure_numbers",
             [
                 1,
                 10,
@@ -32,9 +32,9 @@ metadata = abjad.OrderedDict(
                 235,
                 245,
                 255,
-                ],
-            ),
-        ('paper_size', 'ledger'),
-        ('price', '\\$29 / \\euro 29'),
-        ]
-    )
+            ],
+        ),
+        ("paper_size", "ledger"),
+        ("price", "\\$29 / \\euro 29"),
+    ]
+)

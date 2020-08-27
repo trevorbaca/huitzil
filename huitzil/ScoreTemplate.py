@@ -54,12 +54,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             name="RH_Music_Staff",
             tag=tag,
         )
-        abjad.annotate(
-            rh_music_staff, "default_clef", abjad.Clef("percussion")
-        )
-        abjad.annotate(
-            rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True
-        )
+        abjad.annotate(rh_music_staff, "default_clef", abjad.Clef("percussion"))
+        abjad.annotate(rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True)
         cello_music_voice = abjad.Voice(name="Cello_Music_Voice", tag=tag)
         cello_music_staff = abjad.Staff(
             [cello_music_voice], name="Cello_Music_Staff", tag=tag
@@ -84,9 +80,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             name="Music_Context",
             tag=tag,
         )
-        score = abjad.Score(
-            [global_context, music_context], name="Score", tag=tag
-        )
+        score = abjad.Score([global_context, music_context], name="Score", tag=tag)
         self._assert_lilypond_identifiers(score)
         self._assert_unique_context_names(score)
         # self._assert_matching_custom_context_names(score)
