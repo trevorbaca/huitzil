@@ -1474,7 +1474,7 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 11/12 {                                                             %! baca.music()
+    \times 33/36 {                                                             %! baca.music()
 
         % [01 Cello_Music_Voice measure 8]                                     %! baca.SegmentMaker._comment_measure_numbers()
         d8                                                                     %! baca.music()
@@ -1612,7 +1612,7 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 5/8 {                                                               %! baca.music()
+    \times 15/24 {                                                             %! baca.music()
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1966,7 +1966,7 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 5/8 {                                                               %! baca.music()
+    \times 15/24 {                                                             %! baca.music()
 
         % [01 Cello_Music_Voice measure 20]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2213,7 +2213,7 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 5/6 {                                                               %! baca.music()
+    \times 15/18 {                                                             %! baca.music()
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
