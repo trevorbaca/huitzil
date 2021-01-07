@@ -736,7 +736,7 @@ b_RH_Music_Voice = {                                                           %
 
         }                                                                      %! baca.skeleton()
 
-        \times 2/3 {                                                           %! baca.skeleton()
+        \times 4/6 {                                                           %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 76 / measure 22]                      %! baca.SegmentMaker._comment_measure_numbers()
             d''8                                                               %! baca.skeleton()
