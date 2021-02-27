@@ -259,7 +259,7 @@ class DreamsMusicMaker(object):
         for note in abjad.iterate(music).components(abjad.Note):
             voice_number = abjad.get.indicator(note, int)
             if voice_number == 1:
-                color = "red"
+                color = "#red"
                 abjad.override(note).accidental.color = color
                 abjad.override(note).beam.color = color
                 abjad.override(note).dots.color = color
@@ -272,7 +272,7 @@ class DreamsMusicMaker(object):
             elif voice_number == 2:
                 registration = voice_2_registration
             elif voice_number == 3:
-                color = "blue"
+                color = "#blue"
                 abjad.override(note).accidental.color = color
                 abjad.override(note).beam.color = color
                 abjad.override(note).dots.color = color
