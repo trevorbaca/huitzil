@@ -96,7 +96,7 @@ maker(
     ),
     baca.note_head_duration_log(2),
     baca.note_head_no_ledgers(True),
-    baca.note_head_style("do"),
+    baca.note_head_style("#'do"),
     baca.skeleton("{ c2 }"),
     baca.staff_position(7),
 )
