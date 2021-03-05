@@ -85,7 +85,7 @@ registrations = abjad.OrderedDict(
 # music-maker
 
 
-class DreamsMusicMaker(object):
+class DreamsMusicMaker:
     """
     Dreams music-maker.
     """
