@@ -1,14 +1,11 @@
 Huitzil
 =======
 
-[![Build Status](
-    https://api.travis-ci.org/trevorbaca/huitzil.svg)](
-    https://api.travis-ci.org/trevorbaca/huitzil)
-<!---
+![Build Status](
+    https://github.com/trevorbaca/huitzil/actions/workflows/test.yml/badge.svg)
 [![Code style: black](
     https://img.shields.io/badge/code%20style-black-000000.svg)](
     https://github.com/ambv/black)
--->
 
 Huitzil (2014/19) for cello.
 
