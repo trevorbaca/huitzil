@@ -1,6 +1,102 @@
-% Huitzil (2014/19)
-\include "/Users/trevorbaca/baca/lilypond/baca.ily"
+#(set-default-paper-size "ledger")
+#(set-global-staff-size 13)
 
+\include "/Users/trevorbaca/baca/lilypond/baca.ily"
+\include "contexts.ily"
+\include "markups.ily"
+
+\paper {
+    bottom-margin = 7\mm
+    evenFooterMarkup = \markup
+        \on-the-fly #print-page-number-check-first
+        \fill-line {
+            " "
+            \bold
+            \fontsize #3
+            \override #'(font-name . "Palatino")
+            \concat {
+                \override #'(font-name . "Palatino Italic")
+                Huitzil
+                \hspace #3
+                —
+                \hspace #3
+                \on-the-fly #print-page-number-check-first
+                \fromproperty #'page:page-number-string
+                \hspace #3
+                —
+                \hspace #3
+                Bača
+            }
+            " "
+    }
+    evenHeaderMarkup = \markup \null
+    left-margin = 20\mm
+    oddFooterMarkup = \evenFooterMarkup
+    oddHeaderMarkup = \markup \null
+    print-first-page-number = ##f
+    print-page-number = ##t
+    ragged-bottom = ##t
+    ragged-last-bottom = ##t
+    right-margin = 20\mm
+    markup-system-spacing = #'(
+        (basic-distance . 0)
+        (minimum-distance . 56)
+        (padding . 0)
+        (stretchability . 0)
+    )
+    system-system-spacing = #'(
+        (basic-distance . 0)
+        (minimum-distance . 22)
+        (padding . 0)
+        (stretchability . 0)
+    )
+    top-markup-spacing = #'(
+        (basic-distance . 0)
+        (minimum-distance . 8)
+        (padding . 0)
+        (stretchability . 0)
+    )
+    top-system-spacing = #'(
+        (basic-distance . 0)
+        (minimum-distance . 14)
+        (padding . 0)
+        (stretchability . 0)
+    )
+    top-margin = 10\mm
+}
+
+\header {
+    composer = \markup {
+        \override #'(font-name . "Palatino")
+        \fontsize #5 "Trevor Bača"
+        \hspace #1
+        \fontsize #3.5 "(*1975)"
+    }
+    tagline = \markup \null
+    title = \markup \column {
+        \center-align {
+            \override #'(font-name . "Palatino")
+            \fontsize #16 {
+               \line { HUITZIL }
+            }
+            \null
+            \override #'(font-name . "Palatino Italic")
+            \fontsize #3 {
+               " for Alan Toda-Ambaras "
+            }
+        }
+    }
+}
+
+\layout {
+    \accidentalStyle neo-modern
+    indent = 0
+    ragged-bottom = ##t
+    ragged-last = ##t
+    ragged-right = ##t
+}
+
+%%% CONTEXT
 
 \layout {
 
@@ -154,3 +250,55 @@
         tupletFullLength = ##t
     }
 }
+
+%%% MARKUP
+
+huitzil-ascending-fingerboard-markup = \baca-boxed-markup
+  "ascending fingerboard to LH ..."
+
+huitzil-close-to-lh-markup = \markup
+  "(close to LH as poss.)"
+
+huitzil-colophon-markup = \markup
+  \override #'(font-name . "Adobe Garamond Pro")
+  \with-dimensions-from \null
+  \with-color #black
+  \fontsize #-1
+  \override #'(baseline-skip . 4)
+  \general-align #X #right
+  \right-column
+  {
+    \line { Cambridge, Mass. (September – October 2014); }
+    \line { Madison, Wisc. (February – March 2019). }
+    }
+
+huitzil-descending-fingerboard-markup = \baca-boxed-markup
+  "descending fingerboard back to bridge ..."
+
+huitzil-directly-above-end-of-fingerboard-markup = \baca-boxed-markup
+  "(directly above end of fingerboard)"
+
+huitzil-directly-above-end-of-fingerboard-column-markup = \markup
+  \column {
+    \line { (directly above }
+    \line { end of fingerboard) }
+    }
+
+huitzil-directly-on-bridge-markup = \markup
+  "(directly on bridge)"
+
+huitzil-phrasing-dynamics-see-preface-markup = \markup
+  \italic "phrasing, dynamics: see preface"
+
+huitzil-sliding-back-onto-string-markup = \baca-boxed-markup
+  "sliding back onto string ..."
+
+huitzil-sliding-from-bridge-onto-string-markup = \baca-boxed-markup
+  "sliding from bridge onto string ..."
+
+huitzil-sliding-onto-string-markup = \baca-boxed-markup
+  "sliding onto string ..."
+
+huitzil-trem-moderato-markup = \markup "trem. moderato"
+
+huitzil-string-three-to-four-markup = \markup "III→IV"
