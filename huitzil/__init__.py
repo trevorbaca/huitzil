@@ -1,9 +1,9 @@
 import distutils.version
 import platform
 
-from .ScoreTemplate import ScoreTemplate
 from .tools import (
     DreamsMusicMaker,
+    ScoreTemplate,
     instruments,
     metronome_marks,
     pitch_classes,
