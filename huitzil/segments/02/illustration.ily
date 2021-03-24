@@ -532,7 +532,8 @@ b_RH_Music_Voice = {                                                           %
         - \tweak staff-padding 8                                               %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
         \bacaStartTextSpanRhythmAnnotation                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
 
-        \times 2/3 {                                                           %! baca.skeleton()
+        \times 2/3                                                             %! baca.skeleton()
+        {                                                                      %! baca.skeleton()
 
         %%% \once \override TupletNumber.font-size = -2                        %! baca.literal():+SCORE:baca.IndicatorCommand._call()
             d''8                                                               %! baca.skeleton()
@@ -548,7 +549,8 @@ b_RH_Music_Voice = {                                                           %
         d''4                                                                   %! baca.skeleton()
         - \downbow                                                             %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
 
-        \times 2/3 {                                                           %! baca.skeleton()
+        \times 2/3                                                             %! baca.skeleton()
+        {                                                                      %! baca.skeleton()
 
         %%% \once \override TupletNumber.font-size = -2                        %! baca.literal():+SCORE:baca.IndicatorCommand._call()
             d''8                                                               %! baca.skeleton()
@@ -619,7 +621,8 @@ b_RH_Music_Voice = {                                                           %
 
     {                                                                          %! baca.skeleton()
 
-        \times 2/3 {                                                           %! baca.skeleton()
+        \times 2/3                                                             %! baca.skeleton()
+        {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 70 / measure 16]                      %! baca.SegmentMaker._comment_measure_numbers()
             d''4                                                               %! baca.skeleton()
@@ -639,7 +642,8 @@ b_RH_Music_Voice = {                                                           %
 
         }                                                                      %! baca.skeleton()
 
-        \times 2/3 {                                                           %! baca.skeleton()
+        \times 2/3                                                             %! baca.skeleton()
+        {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 71 / measure 17]                      %! baca.SegmentMaker._comment_measure_numbers()
             d''4                                                               %! baca.skeleton()
@@ -653,7 +657,8 @@ b_RH_Music_Voice = {                                                           %
 
         }                                                                      %! baca.skeleton()
 
-        \times 2/3 {                                                           %! baca.skeleton()
+        \times 2/3                                                             %! baca.skeleton()
+        {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 72 / measure 18]                      %! baca.SegmentMaker._comment_measure_numbers()
             d''4                                                               %! baca.skeleton()
@@ -710,7 +715,8 @@ b_RH_Music_Voice = {                                                           %
 
     {                                                                          %! baca.skeleton()
 
-        \times 4/5 {                                                           %! baca.skeleton()
+        \times 4/5                                                             %! baca.skeleton()
+        {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 75 / measure 21]                      %! baca.SegmentMaker._comment_measure_numbers()
             d''8                                                               %! baca.skeleton()
@@ -736,7 +742,8 @@ b_RH_Music_Voice = {                                                           %
 
         }                                                                      %! baca.skeleton()
 
-        \times 4/6 {                                                           %! baca.skeleton()
+        \times 4/6                                                             %! baca.skeleton()
+        {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 76 / measure 22]                      %! baca.SegmentMaker._comment_measure_numbers()
             d''8                                                               %! baca.skeleton()
@@ -759,7 +766,8 @@ b_RH_Music_Voice = {                                                           %
 
         }                                                                      %! baca.skeleton()
 
-        \times 4/7 {                                                           %! baca.skeleton()
+        \times 4/7                                                             %! baca.skeleton()
+        {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 77 / measure 23]                      %! baca.SegmentMaker._comment_measure_numbers()
             d''8                                                               %! baca.skeleton()

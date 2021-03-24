@@ -981,7 +981,8 @@ a_RH_Music_Staff = {
 a_Cello_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [01 Cello_Music_Voice measure 1]
         \override TupletBracket.staff-padding = 3
@@ -1011,7 +1012,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         a,8
         [
@@ -1021,7 +1023,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         d16
         [
@@ -1033,14 +1036,16 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         cs!16
 
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16 {
+    \times 9/16
+    {
 
         % [01 Cello_Music_Voice measure 2]
         bf,!4
@@ -1054,7 +1059,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         f,8
         [
@@ -1070,7 +1076,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 3]
         c8
@@ -1081,7 +1088,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         bf,!16
         [
@@ -1093,7 +1101,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         af,!16
         [
@@ -1110,7 +1119,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/8
+    {
 
         % [01 Cello_Music_Voice measure 4]
         b,4
@@ -1119,7 +1129,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         cs!8
         [
@@ -1131,13 +1142,15 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         g8.
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 5]
         af!16
@@ -1152,7 +1165,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         e16
         [
@@ -1169,7 +1183,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/8
+    {
 
         f,4
 
@@ -1177,7 +1192,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [01 Cello_Music_Voice measure 6]
         af,!8
@@ -1191,7 +1207,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         cs!8
         [
@@ -1201,7 +1218,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         b,8
         [
@@ -1221,7 +1239,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 7]
         a,16
@@ -1238,7 +1257,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         c32
         [
@@ -1249,7 +1269,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 33/36 {
+    \times 33/36
+    {
 
         % [01 Cello_Music_Voice measure 8]
         d8
@@ -1270,7 +1291,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1299,7 +1321,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         % [01 Cello_Music_Voice measure 9]
         a,8
@@ -1314,7 +1337,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         f,16
         [
@@ -1330,7 +1354,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         fs,!32
         [
@@ -1341,7 +1366,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    \times 7/9
+    {
 
         % [01 Cello_Music_Voice measure 10]
         a,8
@@ -1369,7 +1395,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [01 Cello_Music_Voice measure 11]
         ef!8
@@ -1387,7 +1414,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 15/24 {
+    \times 15/24
+    {
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1411,7 +1439,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 12]
         cs!16
@@ -1424,13 +1453,15 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         e16
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1445,7 +1476,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         % [01 Cello_Music_Voice measure 13]
         \once \override Accidental.color = #blue
@@ -1490,7 +1522,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 14]
         \once \override Accidental.color = #blue
@@ -1545,7 +1578,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 15]
         \once \override Accidental.color = #blue
@@ -1572,7 +1606,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [01 Cello_Music_Voice measure 16]
         \once \override Accidental.color = #blue
@@ -1608,7 +1643,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/14 {
+    \times 9/14
+    {
 
         % [01 Cello_Music_Voice measure 17]
         \once \override Accidental.color = #blue
@@ -1664,7 +1700,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    \times 7/12
+    {
 
         % [01 Cello_Music_Voice measure 18]
         \once \override Accidental.color = #blue
@@ -1689,7 +1726,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 19]
         \once \override Accidental.color = #red
@@ -1724,7 +1762,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1741,7 +1780,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 15/24 {
+    \times 15/24
+    {
 
         % [01 Cello_Music_Voice measure 20]
         \once \override Accidental.color = #red
@@ -1788,7 +1828,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/10 {
+    \times 7/10
+    {
 
         % [01 Cello_Music_Voice measure 21]
         \once \override Accidental.color = #red
@@ -1843,7 +1884,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 22]
         \once \override Accidental.color = #red
@@ -1870,7 +1912,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1906,7 +1949,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 23]
         \once \override Accidental.color = #red
@@ -1962,7 +2006,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         % [01 Cello_Music_Voice measure 24]
         \once \override Accidental.color = #red
@@ -1988,7 +2033,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 15/18 {
+    \times 15/18
+    {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2022,7 +2068,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 25]
         \once \override Accidental.color = #red
@@ -2038,7 +2085,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2084,7 +2132,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 26]
         \once \override Accidental.color = #red
@@ -2139,7 +2188,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [01 Cello_Music_Voice measure 27]
         fs!8
@@ -2164,7 +2214,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2188,7 +2239,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 28]
         \once \override Accidental.color = #red
@@ -2225,7 +2277,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2239,7 +2292,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [01 Cello_Music_Voice measure 29]
         \once \override Accidental.color = #red
@@ -2268,7 +2322,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [01 Cello_Music_Voice measure 30]
         b,8
@@ -2293,7 +2348,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2317,7 +2373,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 31]
         \once \override Accidental.color = #red
@@ -2355,7 +2412,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2380,7 +2438,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         % [01 Cello_Music_Voice measure 32]
         \once \override Accidental.color = #blue
@@ -2415,7 +2474,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 33]
         fs,!16
@@ -2440,7 +2500,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2466,7 +2527,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 34]
         \once \override Accidental.color = #red
@@ -2501,7 +2563,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 35]
         \once \override Accidental.color = #red
@@ -2517,7 +2580,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/10 {
+    \times 9/10
+    {
 
         fs!8
         [
@@ -2539,7 +2603,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 36]
         \once \override Accidental.color = #red
@@ -2582,7 +2647,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         ef!16
         [
@@ -2592,7 +2658,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 37]
         \once \override Accidental.color = #blue
@@ -2627,7 +2694,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [01 Cello_Music_Voice measure 38]
         \once \override Accidental.color = #red
@@ -2652,7 +2720,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2676,7 +2745,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 39]
         b,16
@@ -2689,7 +2759,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2703,7 +2774,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [01 Cello_Music_Voice measure 40]
         \once \override Accidental.color = #red
@@ -2733,7 +2805,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/14 {
+    \times 9/14
+    {
 
         % [01 Cello_Music_Voice measure 41]
         a,8
@@ -2767,7 +2840,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         % [01 Cello_Music_Voice measure 42]
         \once \override Accidental.color = #blue
@@ -2792,7 +2866,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 43]
         \once \override Accidental.color = #red
@@ -2829,14 +2904,16 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         fs!8
 
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         g8
         [
@@ -2850,7 +2927,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 44]
         \once \override Accidental.color = #blue
@@ -2875,7 +2953,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         e16
 
@@ -2892,7 +2971,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    \times 7/9
+    {
 
         % [01 Cello_Music_Voice measure 45]
         \once \override Accidental.color = #blue
@@ -2920,7 +3000,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16 {
+    \times 9/16
+    {
 
         % [01 Cello_Music_Voice measure 46]
         c8
@@ -2946,7 +3027,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/10 {
+    \times 7/10
+    {
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2962,7 +3044,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 47]
         c16
@@ -2975,7 +3058,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         b,16
         - \tweak stencil ##f
@@ -2984,7 +3068,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [01 Cello_Music_Voice measure 48]
         \once \override Accidental.color = #blue
@@ -3040,7 +3125,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 49]
         \once \override Accidental.color = #blue
@@ -3065,7 +3151,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 50]
         \once \override Accidental.color = #blue
@@ -3100,7 +3187,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3115,7 +3203,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16 {
+    \times 9/16
+    {
 
         % [01 Cello_Music_Voice measure 51]
         \once \override Accidental.color = #blue
@@ -3162,7 +3251,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [01 Cello_Music_Voice measure 52]
         \override TupletBracket.staff-padding = 4
@@ -3218,7 +3308,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 53]
         \once \override Accidental.color = #blue
@@ -3244,7 +3335,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \scaleDurations #'(1 . 1) {
+    \scaleDurations #'(1 . 1)
+    {
 
         % [01 Cello_Music_Voice measure 54]
         \once \override Accidental.color = #blue
