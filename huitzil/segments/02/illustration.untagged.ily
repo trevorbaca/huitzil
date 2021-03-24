@@ -453,7 +453,8 @@ b_RH_Music_Voice = {
         - \tweak staff-padding 8
         \bacaStartTextSpanRhythmAnnotation
 
-        \times 2/3 {
+        \times 2/3
+        {
 
         %%% \once \override TupletNumber.font-size = -2
             d''8
@@ -469,7 +470,8 @@ b_RH_Music_Voice = {
         d''4
         - \downbow
 
-        \times 2/3 {
+        \times 2/3
+        {
 
         %%% \once \override TupletNumber.font-size = -2
             d''8
@@ -540,7 +542,8 @@ b_RH_Music_Voice = {
 
     {
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             % [02 RH_Music_Voice measure 70 / measure 16]
             d''4
@@ -560,7 +563,8 @@ b_RH_Music_Voice = {
 
         }
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             % [02 RH_Music_Voice measure 71 / measure 17]
             d''4
@@ -574,7 +578,8 @@ b_RH_Music_Voice = {
 
         }
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             % [02 RH_Music_Voice measure 72 / measure 18]
             d''4
@@ -631,7 +636,8 @@ b_RH_Music_Voice = {
 
     {
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             % [02 RH_Music_Voice measure 75 / measure 21]
             d''8
@@ -657,7 +663,8 @@ b_RH_Music_Voice = {
 
         }
 
-        \times 4/6 {
+        \times 4/6
+        {
 
             % [02 RH_Music_Voice measure 76 / measure 22]
             d''8
@@ -680,7 +687,8 @@ b_RH_Music_Voice = {
 
         }
 
-        \times 4/7 {
+        \times 4/7
+        {
 
             % [02 RH_Music_Voice measure 77 / measure 23]
             d''8

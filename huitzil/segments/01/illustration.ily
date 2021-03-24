@@ -1204,7 +1204,8 @@ a_RH_Music_Staff = {                                                           %
 a_Cello_Music_Voice = {                                                        %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/5 {                                                               %! baca.music()
+    \times 3/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 1]                                     %! baca.SegmentMaker._comment_measure_numbers()
         \override TupletBracket.staff-padding = 3                              %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
@@ -1236,7 +1237,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         a,8                                                                    %! baca.music()
         [
@@ -1246,7 +1248,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         d16                                                                    %! baca.music()
         [
@@ -1258,14 +1261,16 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         cs!16                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 9/16 {                                                              %! baca.music()
+    \times 9/16                                                                %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 2]                                     %! baca.SegmentMaker._comment_measure_numbers()
         bf,!4                                                                  %! baca.music()
@@ -1279,7 +1284,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/5 {                                                               %! baca.music()
+    \times 3/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         f,8                                                                    %! baca.music()
         [
@@ -1295,7 +1301,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 3]                                     %! baca.SegmentMaker._comment_measure_numbers()
         c8                                                                     %! baca.music()
@@ -1306,7 +1313,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         bf,!16                                                                 %! baca.music()
         [
@@ -1318,7 +1326,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 4/5 {                                                               %! baca.music()
+    \times 4/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         af,!16                                                                 %! baca.music()
         [
@@ -1335,7 +1344,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 7/8 {                                                               %! baca.music()
+    \times 7/8                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 4]                                     %! baca.SegmentMaker._comment_measure_numbers()
         b,4                                                                    %! baca.music()
@@ -1344,7 +1354,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         cs!8                                                                   %! baca.music()
         [
@@ -1356,13 +1367,15 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         g8.                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 5]                                     %! baca.SegmentMaker._comment_measure_numbers()
         af!16                                                                  %! baca.music()
@@ -1377,7 +1390,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 4/5 {                                                               %! baca.music()
+    \times 4/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         e16                                                                    %! baca.music()
         [
@@ -1394,7 +1408,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 7/8 {                                                               %! baca.music()
+    \times 7/8                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         f,4                                                                    %! baca.music()
 
@@ -1402,7 +1417,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 6]                                     %! baca.SegmentMaker._comment_measure_numbers()
         af,!8                                                                  %! baca.music()
@@ -1416,7 +1432,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/4 {                                                               %! baca.music()
+    \times 3/4                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         cs!8                                                                   %! baca.music()
         [
@@ -1426,7 +1443,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         b,8                                                                    %! baca.music()
         [
@@ -1446,7 +1464,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 7]                                     %! baca.SegmentMaker._comment_measure_numbers()
         a,16                                                                   %! baca.music()
@@ -1463,7 +1482,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         c32                                                                    %! baca.music()
         [
@@ -1474,7 +1494,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 33/36 {                                                             %! baca.music()
+    \times 33/36                                                               %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 8]                                     %! baca.SegmentMaker._comment_measure_numbers()
         d8                                                                     %! baca.music()
@@ -1495,7 +1516,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1524,7 +1546,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/4 {                                                               %! baca.music()
+    \times 3/4                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 9]                                     %! baca.SegmentMaker._comment_measure_numbers()
         a,8                                                                    %! baca.music()
@@ -1539,7 +1562,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         f,16                                                                   %! baca.music()
         [
@@ -1555,7 +1579,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         fs,!32                                                                 %! baca.music()
         [
@@ -1566,7 +1591,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 7/9 {                                                               %! baca.music()
+    \times 7/9                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 10]                                    %! baca.SegmentMaker._comment_measure_numbers()
         a,8                                                                    %! baca.music()
@@ -1594,7 +1620,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/5 {                                                               %! baca.music()
+    \times 3/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 11]                                    %! baca.SegmentMaker._comment_measure_numbers()
         ef!8                                                                   %! baca.music()
@@ -1612,7 +1639,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 15/24 {                                                             %! baca.music()
+    \times 15/24                                                               %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1636,7 +1664,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 12]                                    %! baca.SegmentMaker._comment_measure_numbers()
         cs!16                                                                  %! baca.music()
@@ -1649,13 +1678,15 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         e16                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -1670,7 +1701,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/4 {                                                               %! baca.music()
+    \times 3/4                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 13]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -1715,7 +1747,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 14]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -1770,7 +1803,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 15]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -1797,7 +1831,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 16]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -1833,7 +1868,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 9/14 {                                                              %! baca.music()
+    \times 9/14                                                                %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 17]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -1889,7 +1925,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 7/12 {                                                              %! baca.music()
+    \times 7/12                                                                %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 18]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -1914,7 +1951,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 19]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -1949,7 +1987,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -1966,7 +2005,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 15/24 {                                                             %! baca.music()
+    \times 15/24                                                               %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 20]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2013,7 +2053,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 7/10 {                                                              %! baca.music()
+    \times 7/10                                                                %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 21]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2068,7 +2109,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 22]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2095,7 +2137,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2131,7 +2174,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 23]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2187,7 +2231,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/4 {                                                               %! baca.music()
+    \times 3/4                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 24]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2213,7 +2258,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 15/18 {                                                             %! baca.music()
+    \times 15/18                                                               %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2247,7 +2293,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 25]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2263,7 +2310,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/4 {                                                               %! baca.music()
+    \times 3/4                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2309,7 +2357,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 26]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2364,7 +2413,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 27]                                    %! baca.SegmentMaker._comment_measure_numbers()
         fs!8                                                                   %! baca.music()
@@ -2389,7 +2439,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2413,7 +2464,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 28]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2450,7 +2502,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2464,7 +2517,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 29]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2493,7 +2547,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 30]                                    %! baca.SegmentMaker._comment_measure_numbers()
         b,8                                                                    %! baca.music()
@@ -2518,7 +2573,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2542,7 +2598,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 31]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2580,7 +2637,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/4 {                                                               %! baca.music()
+    \times 3/4                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2605,7 +2663,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/4 {                                                               %! baca.music()
+    \times 3/4                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 32]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -2640,7 +2699,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 33]                                    %! baca.SegmentMaker._comment_measure_numbers()
         fs,!16                                                                 %! baca.music()
@@ -2665,7 +2725,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2691,7 +2752,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 34]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2726,7 +2788,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 35]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2742,7 +2805,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 9/10 {                                                              %! baca.music()
+    \times 9/10                                                                %! baca.music()
+    {                                                                          %! baca.music()
 
         fs!8                                                                   %! baca.music()
         [
@@ -2764,7 +2828,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 36]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2807,7 +2872,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         ef!16                                                                  %! baca.music()
         [
@@ -2817,7 +2883,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 37]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -2852,7 +2919,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 38]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2877,7 +2945,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
@@ -2901,7 +2970,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 39]                                    %! baca.SegmentMaker._comment_measure_numbers()
         b,16                                                                   %! baca.music()
@@ -2914,7 +2984,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -2928,7 +2999,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 2/3 {                                                               %! baca.music()
+    \times 2/3                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 40]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -2958,7 +3030,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 9/14 {                                                              %! baca.music()
+    \times 9/14                                                                %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 41]                                    %! baca.SegmentMaker._comment_measure_numbers()
         a,8                                                                    %! baca.music()
@@ -2992,7 +3065,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/4 {                                                               %! baca.music()
+    \times 3/4                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 42]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -3017,7 +3091,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 43]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #red
@@ -3054,14 +3129,16 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         fs!8                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/4 {                                                               %! baca.music()
+    \times 3/4                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         g8                                                                     %! baca.music()
         [
@@ -3075,7 +3152,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 44]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -3100,7 +3178,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \times 4/5 {                                                               %! baca.music()
+    \times 4/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         e16                                                                    %! baca.music()
 
@@ -3117,7 +3196,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 7/9 {                                                               %! baca.music()
+    \times 7/9                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 45]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -3145,7 +3225,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 9/16 {                                                              %! baca.music()
+    \times 9/16                                                                %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 46]                                    %! baca.SegmentMaker._comment_measure_numbers()
         c8                                                                     %! baca.music()
@@ -3171,7 +3252,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 7/10 {                                                              %! baca.music()
+    \times 7/10                                                                %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3187,7 +3269,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 47]                                    %! baca.SegmentMaker._comment_measure_numbers()
         c16                                                                    %! baca.music()
@@ -3200,7 +3283,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         b,16                                                                   %! baca.music()
         - \tweak stencil ##f                                                   %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -3209,7 +3293,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/5 {                                                               %! baca.music()
+    \times 3/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 48]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -3265,7 +3350,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 49]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -3290,7 +3376,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 50]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -3325,7 +3412,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3340,7 +3428,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 9/16 {                                                              %! baca.music()
+    \times 9/16                                                                %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 51]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -3387,7 +3476,8 @@ a_Cello_Music_Voice = {                                                        %
     }                                                                          %! baca.music()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! baca.music()
-    \times 3/5 {                                                               %! baca.music()
+    \times 3/5                                                                 %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 52]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \override TupletBracket.staff-padding = 4                              %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
@@ -3443,7 +3533,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 53]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue
@@ -3469,7 +3560,8 @@ a_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! baca.music()
 
-    \scaleDurations #'(1 . 1) {                                                %! baca.music()
+    \scaleDurations #'(1 . 1)                                                  %! baca.music()
+    {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 54]                                    %! baca.SegmentMaker._comment_measure_numbers()
         \once \override Accidental.color = #blue

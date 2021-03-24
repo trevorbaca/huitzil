@@ -410,7 +410,8 @@ i_RH_Music_Voice = {
     <> \bacaStopTextSpanRhythmAnnotation
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [09 RH_Music_Voice measure 228 / measure 3]
         c'2
@@ -426,7 +427,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         c'2
         :32
@@ -456,7 +458,8 @@ i_RH_Music_Voice = {
     <> \bacaStopTextSpanRhythmAnnotation
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [09 RH_Music_Voice measure 230 / measure 5]
         c'4
@@ -472,7 +475,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         c'4
         :32
@@ -481,7 +485,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         c'4
         :32
@@ -494,7 +499,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         c'4
         :32
@@ -520,7 +526,8 @@ i_RH_Music_Voice = {
     <> \bacaStopTextSpanRhythmAnnotation
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [09 RH_Music_Voice measure 232 / measure 7]
         c'2
@@ -536,7 +543,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         c'2
         :32
@@ -566,7 +574,8 @@ i_RH_Music_Voice = {
     <> \bacaStopTextSpanRhythmAnnotation
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [09 RH_Music_Voice measure 234 / measure 9]
         c'4
@@ -582,7 +591,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         c'4
         :32
@@ -591,7 +601,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         c'4
         :32
@@ -604,7 +615,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         c'4
         :32
@@ -630,7 +642,8 @@ i_RH_Music_Voice = {
     <> \bacaStopTextSpanRhythmAnnotation
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [09 RH_Music_Voice measure 236 / measure 11]
         c'2
@@ -646,7 +659,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         c'2
         :32
@@ -676,7 +690,8 @@ i_RH_Music_Voice = {
     <> \bacaStopTextSpanRhythmAnnotation
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [09 RH_Music_Voice measure 238 / measure 13]
         c'4
@@ -692,7 +707,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         c'4
         :32
@@ -701,7 +717,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         c'4
         :32
@@ -712,7 +729,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         c'4
         :32
@@ -743,7 +761,8 @@ i_RH_Music_Voice = {
     <> \bacaStopTextSpanRhythmAnnotation
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [09 RH_Music_Voice measure 240 / measure 15]
         d''2
@@ -759,7 +778,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         d''2
         :32
@@ -786,7 +806,8 @@ i_RH_Music_Voice = {
     <> \bacaStopTextSpanRhythmAnnotation
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [09 RH_Music_Voice measure 242 / measure 17]
         d''4
@@ -802,7 +823,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         d''4
         :32
@@ -811,7 +833,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         d''4
         :32
@@ -820,7 +843,8 @@ i_RH_Music_Voice = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         d''4
         :32

@@ -550,7 +550,8 @@ c_RH_Music_Voice = {                                                           %
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         g'4
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -582,7 +583,8 @@ c_RH_Music_Voice = {                                                           %
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [03 RH_Music_Voice measure 83 / measure 4]                           %! baca.SegmentMaker._comment_measure_numbers()
         g'2
@@ -625,7 +627,8 @@ c_RH_Music_Voice = {                                                           %
     \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         g'4
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -640,7 +643,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         e'4
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -650,7 +654,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         b'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -660,7 +665,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         g'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -670,7 +676,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         e'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -701,7 +708,8 @@ c_RH_Music_Voice = {                                                           %
     \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         g'4
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -711,7 +719,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         e'4
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -794,7 +803,8 @@ c_RH_Music_Voice = {                                                           %
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [03 RH_Music_Voice measure 89 / measure 10]                          %! baca.SegmentMaker._comment_measure_numbers()
         e'4
@@ -825,7 +835,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         b'4
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -836,7 +847,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [03 RH_Music_Voice measure 90 / measure 11]                          %! baca.SegmentMaker._comment_measure_numbers()
         g'4
@@ -853,7 +865,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         e'4
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -863,7 +876,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         b'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -881,7 +895,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         g'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -891,7 +906,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         e'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -901,7 +917,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         c'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -999,7 +1016,8 @@ c_RH_Music_Voice = {                                                           %
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [03 RH_Music_Voice measure 96 / measure 17]                          %! baca.SegmentMaker._comment_measure_numbers()
         c'4
@@ -1028,7 +1046,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [03 RH_Music_Voice measure 97 / measure 18]                          %! baca.SegmentMaker._comment_measure_numbers()
         b'4
@@ -1045,7 +1064,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         g'4
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -1055,7 +1075,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3 {
+    \times 2/3
+    {
 
         e'4
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -1066,7 +1087,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [03 RH_Music_Voice measure 98 / measure 19]                          %! baca.SegmentMaker._comment_measure_numbers()
     %%% \override Hairpin.to-barline = ##t                                     %! baca.hairpin_to_barline():+SCORE:baca.OverrideCommand._call(1)
@@ -1090,7 +1112,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         g'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -1100,7 +1123,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         e'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
@@ -1110,7 +1134,8 @@ c_RH_Music_Voice = {                                                           %
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5 {
+    \times 4/5
+    {
 
         c'8
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
