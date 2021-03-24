@@ -9,7 +9,8 @@ clock-time-extra-offset = #'(0 . 13)                                           %
 \paper { print-first-page-number = ##t }                                       %! baca.SegmentMaker._make_lilypond_file()
 \paper { first-page-number = #9 }                                              %! __make_segment_pdf__
 
-\score {                                                                       %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
+\score                                                                         %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
+{                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
 
     <<                                                                         %! baca.SegmentMaker._make_lilypond_file()
 
