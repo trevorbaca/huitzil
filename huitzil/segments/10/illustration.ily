@@ -40,6 +40,7 @@ j_Global_Rests = {                                                             %
     %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/2                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
+                                                                               %! abjad.ScoreTemplate._make_global_context()
 }                                                                              %! ide.Path.extern()
 
 
@@ -179,6 +180,7 @@ j_Global_Skips = {                                                             %
     \bacaStopTextSpanCT                                                        %! CLOCK_TIME:baca.SegmentMaker._label_clock_time()
     \bar "|."                                                                  %! baca.bar_line():baca.IndicatorCommand._call()
 
+                                                                               %! abjad.ScoreTemplate._make_global_context()
 }                                                                              %! ide.Path.extern()
 
 
@@ -385,14 +387,18 @@ j_RH_Music_Voice = {                                                           %
     \revert TextScript.staff-padding                                           %! baca.text_script_staff_padding():baca.OverrideCommand._call(2)
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+                                                                               %! huitzil.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 j_RH_Music_Staff = {                                                           %! ide.Path.extern()
 
+    %! huitzil.ScoreTemplate.__call__()
     \context Voice = "RH_Music_Voice"                                          %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.ScoreTemplate.__call__()
     \j_RH_Music_Voice                                                          %! ide.Path.extern()
 
+                                                                               %! huitzil.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
@@ -472,12 +478,16 @@ j_Cello_Music_Voice = {                                                        %
     \once \override Score.RehearsalMark.padding = 4                            %! baca.literal():baca.IndicatorCommand._call()
     \mark \huitzil-colophon-markup                                             %! baca.literal():baca.IndicatorCommand._call()
 
+                                                                               %! huitzil.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 j_Cello_Music_Staff = {                                                        %! ide.Path.extern()
 
+    %! huitzil.ScoreTemplate.__call__()
     \context Voice = "Cello_Music_Voice"                                       %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.ScoreTemplate.__call__()
     \j_Cello_Music_Voice                                                       %! ide.Path.extern()
 
+                                                                               %! huitzil.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()

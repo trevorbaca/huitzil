@@ -105,6 +105,7 @@ b_Global_Rests = {                                                             %
     %! PHANTOM
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
+                                                                               %! abjad.ScoreTemplate._make_global_context()
 }                                                                              %! ide.Path.extern()
 
 
@@ -458,11 +459,13 @@ b_Global_Skips = {                                                             %
     \once \override Score.BarLine.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
     \once \override Score.SpanBar.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
 
+                                                                               %! abjad.ScoreTemplate._make_global_context()
 }                                                                              %! ide.Path.extern()
 
 
 b_RH_Music_Voice = {                                                           %! ide.Path.extern()
 
+    %! baca.skeleton()
     {                                                                          %! baca.skeleton()
 
         % [02 RH_Music_Voice measure 55 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
@@ -525,8 +528,10 @@ b_RH_Music_Voice = {                                                           %
         \revert Rest.staff-position                                            %! baca.rest_position():baca.OverrideCommand._call(2)
         <> \bacaStopTextSpanRhythmAnnotation                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+    %! baca.skeleton()
     }                                                                          %! baca.skeleton()
 
+    %! baca.skeleton()
     {                                                                          %! baca.skeleton()
 
         % [02 RH_Music_Voice measure 59 / measure 5]                           %! baca.SegmentMaker._comment_measure_numbers()
@@ -596,8 +601,10 @@ b_RH_Music_Voice = {                                                           %
         r4                                                                     %! baca.skeleton()
         <> \bacaStopTextSpanRhythmAnnotation                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+    %! baca.skeleton()
     }                                                                          %! baca.skeleton()
 
+    %! baca.skeleton()
     {                                                                          %! baca.skeleton()
 
         % [02 RH_Music_Voice measure 63 / measure 9]                           %! baca.SegmentMaker._comment_measure_numbers()
@@ -611,7 +618,9 @@ b_RH_Music_Voice = {                                                           %
         - \tweak staff-padding 8                                               %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
         \bacaStartTextSpanRhythmAnnotation                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
 
+        %! baca.skeleton()
         \times 2/3                                                             %! baca.skeleton()
+        %! baca.skeleton()
         {                                                                      %! baca.skeleton()
 
         %%% \once \override TupletNumber.font-size = -2                        %! baca.literal():+SCORE:baca.IndicatorCommand._call()
@@ -622,6 +631,7 @@ b_RH_Music_Voice = {                                                           %
             %! baca.skeleton()
             r4                                                                 %! baca.skeleton()
 
+        %! baca.skeleton()
         }                                                                      %! baca.skeleton()
 
         %! baca.skeleton()
@@ -632,7 +642,9 @@ b_RH_Music_Voice = {                                                           %
         d''4                                                                   %! baca.skeleton()
         - \downbow                                                             %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
 
+        %! baca.skeleton()
         \times 2/3                                                             %! baca.skeleton()
+        %! baca.skeleton()
         {                                                                      %! baca.skeleton()
 
         %%% \once \override TupletNumber.font-size = -2                        %! baca.literal():+SCORE:baca.IndicatorCommand._call()
@@ -643,6 +655,7 @@ b_RH_Music_Voice = {                                                           %
             %! baca.skeleton()
             r4                                                                 %! baca.skeleton()
 
+        %! baca.skeleton()
         }                                                                      %! baca.skeleton()
 
         %! baca.skeleton()
@@ -679,8 +692,10 @@ b_RH_Music_Voice = {                                                           %
         r4                                                                     %! baca.skeleton()
         <> \bacaStopTextSpanRhythmAnnotation                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+    %! baca.skeleton()
     }                                                                          %! baca.skeleton()
 
+    %! baca.skeleton()
     {                                                                          %! baca.skeleton()
 
         % [02 RH_Music_Voice measure 67 / measure 13]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -717,11 +732,15 @@ b_RH_Music_Voice = {                                                           %
         - \upbow                                                               %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
         <> \bacaStopTextSpanRhythmAnnotation                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+    %! baca.skeleton()
     }                                                                          %! baca.skeleton()
 
+    %! baca.skeleton()
     {                                                                          %! baca.skeleton()
 
+        %! baca.skeleton()
         \times 2/3                                                             %! baca.skeleton()
+        %! baca.skeleton()
         {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 70 / measure 16]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -743,9 +762,12 @@ b_RH_Music_Voice = {                                                           %
             d''4                                                               %! baca.skeleton()
             - \downbow                                                         %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
 
+        %! baca.skeleton()
         }                                                                      %! baca.skeleton()
 
+        %! baca.skeleton()
         \times 2/3                                                             %! baca.skeleton()
+        %! baca.skeleton()
         {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 71 / measure 17]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -761,9 +783,12 @@ b_RH_Music_Voice = {                                                           %
             d''4                                                               %! baca.skeleton()
             - \upbow                                                           %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
 
+        %! baca.skeleton()
         }                                                                      %! baca.skeleton()
 
+        %! baca.skeleton()
         \times 2/3                                                             %! baca.skeleton()
+        %! baca.skeleton()
         {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 72 / measure 18]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -780,10 +805,13 @@ b_RH_Music_Voice = {                                                           %
             - \downbow                                                         %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
             <> \bacaStopTextSpanRhythmAnnotation                               %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+        %! baca.skeleton()
         }                                                                      %! baca.skeleton()
 
+    %! baca.skeleton()
     }                                                                          %! baca.skeleton()
 
+    %! baca.skeleton()
     {                                                                          %! baca.skeleton()
 
         % [02 RH_Music_Voice measure 73 / measure 19]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -828,11 +856,15 @@ b_RH_Music_Voice = {                                                           %
         - \downbow                                                             %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
         <> \bacaStopTextSpanRhythmAnnotation                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+    %! baca.skeleton()
     }                                                                          %! baca.skeleton()
 
+    %! baca.skeleton()
     {                                                                          %! baca.skeleton()
 
+        %! baca.skeleton()
         \times 4/5                                                             %! baca.skeleton()
+        %! baca.skeleton()
         {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 75 / measure 21]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -862,9 +894,12 @@ b_RH_Music_Voice = {                                                           %
             d''8                                                               %! baca.skeleton()
             - \upbow                                                           %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
 
+        %! baca.skeleton()
         }                                                                      %! baca.skeleton()
 
+        %! baca.skeleton()
         \times 4/6                                                             %! baca.skeleton()
+        %! baca.skeleton()
         {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 76 / measure 22]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -892,9 +927,12 @@ b_RH_Music_Voice = {                                                           %
             d''8                                                               %! baca.skeleton()
             - \upbow                                                           %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
 
+        %! baca.skeleton()
         }                                                                      %! baca.skeleton()
 
+        %! baca.skeleton()
         \times 4/7                                                             %! baca.skeleton()
+        %! baca.skeleton()
         {                                                                      %! baca.skeleton()
 
             % [02 RH_Music_Voice measure 77 / measure 23]                      %! baca.SegmentMaker._comment_measure_numbers()
@@ -926,6 +964,7 @@ b_RH_Music_Voice = {                                                           %
             d''8                                                               %! baca.skeleton()
             - \downbow                                                         %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
 
+        %! baca.skeleton()
         }                                                                      %! baca.skeleton()
 
         % [02 RH_Music_Voice measure 78 / measure 24]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -963,8 +1002,10 @@ b_RH_Music_Voice = {                                                           %
         ]                                                                      %! baca.beam():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         <> \bacaStopTextSpanRhythmAnnotation                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+    %! baca.skeleton()
     }                                                                          %! baca.skeleton()
 
+    %! baca.skeleton()
     {                                                                          %! baca.skeleton()
 
         % [02 RH_Music_Voice measure 79 / measure 25]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -995,11 +1036,18 @@ b_RH_Music_Voice = {                                                           %
         \revert TupletBracket.direction                                        %! baca.tuplet_bracket_down():baca.OverrideCommand._call(2)
         <> \bacaStopTextSpanRhythmAnnotation                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+    %! baca.skeleton()
     }                                                                          %! baca.skeleton()
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         \context Voice = "RH_Music_Voice"                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
             % [02 RH_Music_Voice measure 80 / measure 26]                      %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -1014,9 +1062,15 @@ b_RH_Music_Voice = {                                                           %
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
         %@% \glissando                                                         %! baca.glissando():abjad.glissando(7):SHOW_TO_JOIN_BROKEN_SPANNERS:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         \context Voice = "RH_Rest_Voice"                                       %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [02 RH_Rest_Voice measure 80 / measure 26]                       %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -1032,26 +1086,37 @@ b_RH_Music_Voice = {                                                           %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+                                                                               %! huitzil.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 b_RH_Music_Staff = {                                                           %! ide.Path.extern()
 
+    %! huitzil.ScoreTemplate.__call__()
     \context Voice = "RH_Music_Voice"                                          %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.ScoreTemplate.__call__()
     \b_RH_Music_Voice                                                          %! ide.Path.extern()
 
+                                                                               %! huitzil.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 b_Cello_Music_Voice = {                                                        %! ide.Path.extern()
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         \context Voice = "Cello_Music_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
             % [02 Cello_Music_Voice measure 55 / measure 1]                    %! baca.SegmentMaker._comment_measure_numbers()
@@ -1073,9 +1138,12 @@ b_Cello_Music_Voice = {                                                        %
         %@% ^ \baca-duration-multiplier-markup #"3" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
             \override Staff.Clef.color = #(x11-color 'OliveDrab)               %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         \context Voice = "Cello_Rest_Voice"                                    %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [02 Cello_Rest_Voice measure 55 / measure 1]                     %! baca.SegmentMaker._comment_measure_numbers()
@@ -1086,8 +1154,10 @@ b_Cello_Music_Voice = {                                                        %
             R1 * 3/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"3" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:REST_VOICE
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
     % [02 Cello_Music_Voice measure 56 / measure 2]                            %! baca.SegmentMaker._comment_measure_numbers()
@@ -1209,6 +1279,7 @@ b_Cello_Music_Voice = {                                                        %
 %@% ^ \baca-duration-multiplier-markup #"1" #"2"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
     \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent():baca.OverrideCommand._call(2)
 
+    %! baca.skeleton()
     {                                                                          %! baca.skeleton()
 
         % [02 Cello_Music_Voice measure 79 / measure 25]                       %! baca.SegmentMaker._comment_measure_numbers()
@@ -1228,11 +1299,18 @@ b_Cello_Music_Voice = {                                                        %
         \revert Score.TimeSignature.stencil                                    %! baca.time_signature_stencil_false():baca.OverrideCommand._call(2)
         <> \bacaStopTextSpanRhythmAnnotation                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
+    %! baca.skeleton()
     }                                                                          %! baca.skeleton()
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         \context Voice = "Cello_Music_Voice"                                   %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
             % [02 Cello_Music_Voice measure 80 / measure 26]                   %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -1246,9 +1324,15 @@ b_Cello_Music_Voice = {                                                        %
             d1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(4)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4):PHANTOM
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         \context Voice = "Cello_Rest_Voice"                                    %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [02 Cello_Rest_Voice measure 80 / measure 26]                    %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
@@ -1264,16 +1348,24 @@ b_Cello_Music_Voice = {                                                        %
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
+        %! baca.SegmentMaker._make_multimeasure_rest_container(6)
+        %! PHANTOM
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
+    %! baca.SegmentMaker._make_multimeasure_rest_container(7)
+    %! PHANTOM
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
+                                                                               %! huitzil.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()
 
 
 b_Cello_Music_Staff = {                                                        %! ide.Path.extern()
 
+    %! huitzil.ScoreTemplate.__call__()
     \context Voice = "Cello_Music_Voice"                                       %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.ScoreTemplate.__call__()
     \b_Cello_Music_Voice                                                       %! ide.Path.extern()
 
+                                                                               %! huitzil.ScoreTemplate.__call__()
 }                                                                              %! ide.Path.extern()

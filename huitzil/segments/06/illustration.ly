@@ -12,44 +12,68 @@ clock-time-extra-offset = #'(0 . 13)                                           %
 \score                                                                         %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
 {                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
 
+    %! baca.SegmentMaker._make_lilypond_file()
     <<                                                                         %! baca.SegmentMaker._make_lilypond_file()
 
+        %! baca.SegmentMaker._make_lilypond_file()
         {                                                                      %! baca.SegmentMaker._make_lilypond_file()
             \include "layout.ly"                                               %! baca.SegmentMaker._make_lilypond_file()
+        %! baca.SegmentMaker._make_lilypond_file()
         }                                                                      %! baca.SegmentMaker._make_lilypond_file()
 
+        %! huitzil.ScoreTemplate.__call__()
         \context Score = "Score"                                               %! huitzil.ScoreTemplate.__call__()
+        %! huitzil.ScoreTemplate.__call__()
         <<                                                                     %! huitzil.ScoreTemplate.__call__()
 
+            %! abjad.ScoreTemplate._make_global_context()
             \context GlobalContext = "Global_Context"                          %! abjad.ScoreTemplate._make_global_context()
+            %! abjad.ScoreTemplate._make_global_context()
             <<                                                                 %! abjad.ScoreTemplate._make_global_context()
 
+                %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalRests = "Global_Rests"                          %! abjad.ScoreTemplate._make_global_context()
+                %! abjad.ScoreTemplate._make_global_context()
                 \f_Global_Rests                                                %! ide.Path.extern()
 
+                %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalSkips = "Global_Skips"                          %! abjad.ScoreTemplate._make_global_context()
+                %! abjad.ScoreTemplate._make_global_context()
                 \f_Global_Skips                                                %! ide.Path.extern()
 
+            %! abjad.ScoreTemplate._make_global_context()
             >>                                                                 %! abjad.ScoreTemplate._make_global_context()
 
+            %! huitzil.ScoreTemplate.__call__()
             \context MusicContext = "Music_Context"                            %! huitzil.ScoreTemplate.__call__()
+            %! huitzil.ScoreTemplate.__call__()
             {                                                                  %! huitzil.ScoreTemplate.__call__()
 
+                %! huitzil.ScoreTemplate.__call__()
                 \context PianoStaff = "Cello_Staff_Group"                      %! huitzil.ScoreTemplate.__call__()
+                %! huitzil.ScoreTemplate.__call__()
                 <<                                                             %! huitzil.ScoreTemplate.__call__()
 
+                    %! huitzil.ScoreTemplate.__call__()
                     \context RHStaff = "RH_Music_Staff"                        %! huitzil.ScoreTemplate.__call__()
+                    %! huitzil.ScoreTemplate.__call__()
                     \f_RH_Music_Staff                                          %! ide.Path.extern()
 
+                    %! huitzil.ScoreTemplate.__call__()
                     \context Staff = "Cello_Music_Staff"                       %! huitzil.ScoreTemplate.__call__()
+                    %! huitzil.ScoreTemplate.__call__()
                     \f_Cello_Music_Staff                                       %! ide.Path.extern()
 
+                %! huitzil.ScoreTemplate.__call__()
                 >>                                                             %! huitzil.ScoreTemplate.__call__()
 
+            %! huitzil.ScoreTemplate.__call__()
             }                                                                  %! huitzil.ScoreTemplate.__call__()
 
+        %! huitzil.ScoreTemplate.__call__()
         >>                                                                     %! huitzil.ScoreTemplate.__call__()
 
+    %! baca.SegmentMaker._make_lilypond_file()
     >>                                                                         %! baca.SegmentMaker._make_lilypond_file()
 
 }                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
