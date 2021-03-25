@@ -1,168 +1,224 @@
 a_Global_Rests = {                                                             %! ide.Path.extern()
 
     % [01 Global_Rests measure 1]                                              %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 7/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 2]                                              %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 15/16                                                                 %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 3]                                              %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 11/16                                                                 %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 4]                                              %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 7/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 5]                                              %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 15/16                                                                 %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 6]                                              %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 15/16                                                                 %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 7]                                              %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 8]                                              %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 9]                                              %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 10]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 7/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 11]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 12]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 13]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/2                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 14]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 5/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 15]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 16]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 2                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 17]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 9/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 18]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 7/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 19]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 20]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 5/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 21]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 7/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 22]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 23]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 5/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 24]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 25]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 26]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 5/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 27]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 28]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 29]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 30]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 31]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 32]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 33]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1/2                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 34]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 5/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 35]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 13/16                                                                 %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 36]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 5/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 37]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 5/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 38]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 39]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 5/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 40]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 41]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 9/16                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 42]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 43]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 7/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 44]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 45]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 7/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 46]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 47]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 48]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/2                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 49]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 50]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 51]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 9/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 52]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/2                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 53]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 54]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [01 Global_Rests measure 55]                                             %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(4):PHANTOM
+    %! baca.SegmentMaker._make_global_rests(2)
+    %! PHANTOM
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
 }                                                                              %! ide.Path.extern()
@@ -173,6 +229,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 1]                                              %! baca.SegmentMaker._comment_measure_numbers()
     \time 7/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 7/8                                                                   %! baca.SegmentMaker._make_global_skips(1)
     - \baca-start-lmn-left-only "1"                                            %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -190,6 +247,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 2]                                              %! baca.SegmentMaker._comment_measure_numbers()
     \time 15/16                                                                %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 15/16                                                                 %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -204,6 +262,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 3]                                              %! baca.SegmentMaker._comment_measure_numbers()
     \time 11/16                                                                %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 11/16                                                                 %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -218,6 +277,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 4]                                              %! baca.SegmentMaker._comment_measure_numbers()
     \time 7/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 7/8                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -232,6 +292,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 5]                                              %! baca.SegmentMaker._comment_measure_numbers()
     \time 15/16                                                                %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 15/16                                                                 %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -244,6 +305,7 @@ a_Global_Skips = {                                                             %
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME:baca.SegmentMaker._label_clock_time()
 
     % [01 Global_Skips measure 6]                                              %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 15/16                                                                 %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -258,6 +320,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 7]                                              %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/8                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -272,6 +335,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 8]                                              %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -286,6 +350,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 9]                                              %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -300,6 +365,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 10]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 7/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 7/8                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -314,6 +380,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 11]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -328,6 +395,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 12]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -342,6 +410,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 13]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 6/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/2                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -356,6 +425,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 14]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 5/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 5/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -370,6 +440,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 15]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -384,6 +455,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 16]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 8/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 2                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -398,6 +470,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 17]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 9/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 9/8                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -412,6 +485,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 18]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 7/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 7/8                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -426,6 +500,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 19]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -440,6 +515,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 20]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 5/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 5/8                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -454,6 +530,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 21]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 7/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 7/8                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -468,6 +545,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 22]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 2/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1/2                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -482,6 +560,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 23]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 5/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 5/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -496,6 +575,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 24]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -510,6 +590,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 25]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 2/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1/2                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -524,6 +605,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 26]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 5/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 5/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -538,6 +620,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 27]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -552,6 +635,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 28]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 2/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1/2                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -566,6 +650,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 29]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -578,6 +663,7 @@ a_Global_Skips = {                                                             %
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME:baca.SegmentMaker._label_clock_time()
 
     % [01 Global_Skips measure 30]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -592,6 +678,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 31]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -604,6 +691,7 @@ a_Global_Skips = {                                                             %
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME:baca.SegmentMaker._label_clock_time()
 
     % [01 Global_Skips measure 32]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -618,6 +706,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 33]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 2/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1/2                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -632,6 +721,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 34]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 5/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 5/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -646,6 +736,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 35]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 13/16                                                                %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 13/16                                                                 %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -660,6 +751,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 36]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 5/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 5/8                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -674,6 +766,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 37]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 5/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 5/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -688,6 +781,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 38]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -702,6 +796,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 39]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 5/16                                                                 %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 5/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -716,6 +811,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 40]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -730,6 +826,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 41]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 9/16                                                                 %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 9/16                                                                  %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -744,6 +841,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 42]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -758,6 +856,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 43]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 7/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 7/8                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -772,6 +871,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 44]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -786,6 +886,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 45]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 7/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 7/8                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -800,6 +901,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 46]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -814,6 +916,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 47]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -828,6 +931,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 48]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 6/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/2                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -842,6 +946,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 49]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -854,6 +959,7 @@ a_Global_Skips = {                                                             %
     \bacaStartTextSpanCT                                                       %! CLOCK_TIME:baca.SegmentMaker._label_clock_time()
 
     % [01 Global_Skips measure 50]                                             %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -868,6 +974,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 51]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 9/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 9/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -882,6 +989,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 52]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 6/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/2                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -896,6 +1004,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 53]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -910,6 +1019,7 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 54]                                             %! baca.SegmentMaker._comment_measure_numbers()
     \time 3/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -924,6 +1034,8 @@ a_Global_Skips = {                                                             %
     % [01 Global_Skips measure 55]                                             %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(1):PHANTOM
     \time 1/4                                                                  %! baca.SegmentMaker._make_global_skips(3):PHANTOM:baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE:baca.SegmentMaker._style_phantom_measures(1)
     \baca-time-signature-transparent                                           %! baca.SegmentMaker._style_phantom_measures(2):PHANTOM
+    %! baca.SegmentMaker._make_global_skips(3)
+    %! PHANTOM
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(3):PHANTOM
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers():baca.SegmentMaker._style_phantom_measures(1):PHANTOM
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers():baca.SegmentMaker._style_phantom_measures(1):PHANTOM
@@ -944,219 +1056,273 @@ a_RH_Music_Voice = {                                                           %
     \once \override RHStaff.Clef.color = #(x11-color 'DarkViolet)              %! baca.SegmentMaker._attach_color_literal(2):DEFAULT_CLEF_COLOR
 %@% \override RHStaff.Clef.color = ##f                                         %! baca.SegmentMaker._attach_color_literal(1):DEFAULT_CLEF_COLOR_CANCELLATION
     \set RHStaff.forceClef = ##t                                               %! abjad.ScoreTemplate.attach_defaults(3):baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._set_status_tag():DEFAULT_CLEF
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 7/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"7" #"8"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
     \override RHStaff.Clef.color = #(x11-color 'violet)                        %! baca.SegmentMaker._attach_color_literal(2):DEFAULT_CLEF_REDRAW_COLOR
 
     % [01 RH_Music_Voice measure 2]                                            %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"15" #"16"                             %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 3]                                            %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 11/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"11" #"16"                             %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 4]                                            %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 7/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"7" #"8"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 5]                                            %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"15" #"16"                             %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 6]                                            %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"15" #"16"                             %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 7]                                            %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 3/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"3" #"8"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 8]                                            %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 9]                                            %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 3/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"3" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 10]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 7/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"7" #"8"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 11]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 12]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 3/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"3" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 13]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 6/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"6" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 14]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 5/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"5" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 15]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"1" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 16]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 8/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"8" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 17]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"9" #"8"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 18]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 7/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"7" #"8"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 19]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 3/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"3" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 20]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 5/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"5" #"8"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 21]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 7/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"7" #"8"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 22]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 2/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"2" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 23]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 5/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"5" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 24]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 25]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 2/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"2" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 26]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 5/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"5" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 27]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 28]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 2/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"2" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 29]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 30]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 31]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 3/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"3" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 32]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 3/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"3" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 33]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 2/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"2" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 34]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 5/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"5" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 35]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 13/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"13" #"16"                             %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 36]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 5/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"5" #"8"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 37]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 5/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"5" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 38]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 39]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 5/16                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"5" #"16"                              %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 40]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 41]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 9/16                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"9" #"16"                              %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 42]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 3/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"3" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 43]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 7/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"7" #"8"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 44]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 3/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"3" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 45]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 7/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"7" #"8"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 46]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 47]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"1" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 48]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 6/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"6" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 49]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 50]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 51]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 9/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"9" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 52]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 6/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"6" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 53]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"4" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [01 RH_Music_Voice measure 54]                                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     R1 * 3/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 %@% ^ \baca-duration-multiplier-markup #"3" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
     \revert MultiMeasureRest.transparent                                       %! baca.mmrest_transparent():baca.OverrideCommand._call(2)
@@ -1169,6 +1335,10 @@ a_RH_Music_Voice = {                                                           %
             % [01 RH_Music_Voice measure 55]                                   %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -1183,6 +1353,10 @@ a_RH_Music_Voice = {                                                           %
             \stopStaff                                                         %! baca.SegmentMaker._style_phantom_measures(8):PHANTOM
             \once \override Staff.StaffSymbol.transparent = ##t                %! baca.SegmentMaker._style_phantom_measures(8):PHANTOM
             \startStaff                                                        %! baca.SegmentMaker._style_phantom_measures(8):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -1213,6 +1387,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'DarkViolet)            %! baca.SegmentMaker._attach_color_literal(2):DEFAULT_CLEF_COLOR
     %@% \override Staff.Clef.color = ##f                                       %! baca.SegmentMaker._attach_color_literal(1):DEFAULT_CLEF_COLOR_CANCELLATION
         \set Staff.forceClef = ##t                                             %! abjad.ScoreTemplate.attach_defaults(3):baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._set_status_tag():DEFAULT_CLEF
+        %! baca.music()
         fs!8                                                                   %! baca.music()
     %@% ^ \baca-default-indicator-markup "(“Cello”)"                           %! DEFAULT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
         - \tweak staff-padding 9                                               %! baca.markup():baca.IndicatorCommand._call()
@@ -1226,12 +1401,16 @@ a_Cello_Music_Voice = {                                                        %
         \bacaStartTextSpanRhythmAnnotation                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
         \override Staff.Clef.color = #(x11-color 'violet)                      %! baca.SegmentMaker._attach_color_literal(2):DEFAULT_CLEF_REDRAW_COLOR
 
+        %! baca.music()
         e8                                                                     %! baca.music()
 
+        %! baca.music()
         f8                                                                     %! baca.music()
 
+        %! baca.music()
         g8                                                                     %! baca.music()
 
+        %! baca.music()
         af!8                                                                   %! baca.music()
         ]
 
@@ -1240,9 +1419,11 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         a,8                                                                    %! baca.music()
         [
 
+        %! baca.music()
         ef!8                                                                   %! baca.music()
         ]
 
@@ -1251,11 +1432,14 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         d16                                                                    %! baca.music()
         [
 
+        %! baca.music()
         e16                                                                    %! baca.music()
 
+        %! baca.music()
         f16                                                                    %! baca.music()
         ]
 
@@ -1264,6 +1448,7 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         cs!16                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1273,12 +1458,16 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 2]                                     %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         bf,!4                                                                  %! baca.music()
 
+        %! baca.music()
         a,4                                                                    %! baca.music()
 
+        %! baca.music()
         b,4                                                                    %! baca.music()
 
+        %! baca.music()
         c4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1287,15 +1476,20 @@ a_Cello_Music_Voice = {                                                        %
     \times 3/5                                                                 %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         f,8                                                                    %! baca.music()
         [
 
+        %! baca.music()
         a,8                                                                    %! baca.music()
 
+        %! baca.music()
         ef!8                                                                   %! baca.music()
 
+        %! baca.music()
         d8                                                                     %! baca.music()
 
+        %! baca.music()
         e8                                                                     %! baca.music()
         ]
 
@@ -1305,9 +1499,11 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 3]                                     %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         c8                                                                     %! baca.music()
         [
 
+        %! baca.music()
         cs!8                                                                   %! baca.music()
         ]
 
@@ -1316,11 +1512,14 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         bf,!16                                                                 %! baca.music()
         [
 
+        %! baca.music()
         a,16                                                                   %! baca.music()
 
+        %! baca.music()
         b,16                                                                   %! baca.music()
         ]
 
@@ -1329,15 +1528,20 @@ a_Cello_Music_Voice = {                                                        %
     \times 4/5                                                                 %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         af,!16                                                                 %! baca.music()
         [
 
+        %! baca.music()
         fs,!16                                                                 %! baca.music()
 
+        %! baca.music()
         e16                                                                    %! baca.music()
 
+        %! baca.music()
         f,16                                                                   %! baca.music()
 
+        %! baca.music()
         g,16                                                                   %! baca.music()
         ]
 
@@ -1348,8 +1552,10 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 4]                                     %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         b,4                                                                    %! baca.music()
 
+        %! baca.music()
         c4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1357,11 +1563,14 @@ a_Cello_Music_Voice = {                                                        %
     \times 2/3                                                                 %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         cs!8                                                                   %! baca.music()
         [
 
+        %! baca.music()
         bf,!8                                                                  %! baca.music()
 
+        %! baca.music()
         a,8                                                                    %! baca.music()
         ]
 
@@ -1370,6 +1579,7 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         g8.                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1378,13 +1588,17 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 5]                                     %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         af!16                                                                  %! baca.music()
         [
 
+        %! baca.music()
         fs!16                                                                  %! baca.music()
 
+        %! baca.music()
         e16                                                                    %! baca.music()
 
+        %! baca.music()
         f16                                                                    %! baca.music()
         ]
 
@@ -1393,15 +1607,20 @@ a_Cello_Music_Voice = {                                                        %
     \times 4/5                                                                 %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         e16                                                                    %! baca.music()
         [
 
+        %! baca.music()
         f16                                                                    %! baca.music()
 
+        %! baca.music()
         a,16                                                                   %! baca.music()
 
+        %! baca.music()
         ef!16                                                                  %! baca.music()
 
+        %! baca.music()
         d16                                                                    %! baca.music()
         ]
 
@@ -1411,8 +1630,10 @@ a_Cello_Music_Voice = {                                                        %
     \times 7/8                                                                 %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         f,4                                                                    %! baca.music()
 
+        %! baca.music()
         g,4                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1421,11 +1642,14 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 6]                                     %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         af,!8                                                                  %! baca.music()
         [
 
+        %! baca.music()
         fs,!8                                                                  %! baca.music()
 
+        %! baca.music()
         e8                                                                     %! baca.music()
         ]
 
@@ -1435,9 +1659,11 @@ a_Cello_Music_Voice = {                                                        %
     \times 3/4                                                                 %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         cs!8                                                                   %! baca.music()
         [
 
+        %! baca.music()
         d8                                                                     %! baca.music()
         ]
 
@@ -1446,9 +1672,11 @@ a_Cello_Music_Voice = {                                                        %
     \times 2/3                                                                 %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         b,8                                                                    %! baca.music()
         [
 
+        %! baca.music()
         bf,!8                                                                  %! baca.music()
         ]
 
@@ -1460,6 +1688,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         c2                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1468,15 +1697,20 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 7]                                     %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         a,16                                                                   %! baca.music()
         [
 
+        %! baca.music()
         g16                                                                    %! baca.music()
 
+        %! baca.music()
         f16                                                                    %! baca.music()
 
+        %! baca.music()
         fs!16                                                                  %! baca.music()
 
+        %! baca.music()
         af!16                                                                  %! baca.music()
         ]
 
@@ -1485,9 +1719,11 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         c32                                                                    %! baca.music()
         [
 
+        %! baca.music()
         cs!32                                                                  %! baca.music()
         ]
 
@@ -1498,9 +1734,11 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 8]                                     %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         d8                                                                     %! baca.music()
         [
 
+        %! baca.music()
         b,8                                                                    %! baca.music()
         ]
 
@@ -1512,6 +1750,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         bf,!2                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1527,6 +1766,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         af,!4                                                                  %! baca.music()
         - \tweak stencil ##f                                                   %! baca.SegmentMaker._attach_shadow_tie_indicators()
         ~                                                                      %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -1540,6 +1780,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         af,16                                                                  %! baca.music()
         \repeatTie                                                             %! baca.repeat_tie():baca.IndicatorCommand._call()
 
@@ -1550,13 +1791,17 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 9]                                     %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         a,8                                                                    %! baca.music()
         [
 
+        %! baca.music()
         g,8                                                                    %! baca.music()
 
+        %! baca.music()
         f,8                                                                    %! baca.music()
 
+        %! baca.music()
         fs,!8                                                                  %! baca.music()
         ]
 
@@ -1565,15 +1810,20 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         f,16                                                                   %! baca.music()
         [
 
+        %! baca.music()
         fs,!16                                                                 %! baca.music()
 
+        %! baca.music()
         bf,!16                                                                 %! baca.music()
 
+        %! baca.music()
         e16                                                                    %! baca.music()
 
+        %! baca.music()
         ef!16                                                                  %! baca.music()
         ]
 
@@ -1582,9 +1832,11 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         fs,!32                                                                 %! baca.music()
         [
 
+        %! baca.music()
         af,!32                                                                 %! baca.music()
         ]
 
@@ -1595,6 +1847,7 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 10]                                    %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         a,8                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1605,6 +1858,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         g,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1615,6 +1869,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         f,2                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1624,15 +1879,20 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 11]                                    %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         ef!8                                                                   %! baca.music()
         [
 
+        %! baca.music()
         f8                                                                     %! baca.music()
 
+        %! baca.music()
         fs!8                                                                   %! baca.music()
 
+        %! baca.music()
         bf,!8                                                                  %! baca.music()
 
+        %! baca.music()
         e8                                                                     %! baca.music()
         ]
 
@@ -1650,6 +1910,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         bf,!2                                                                  %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1660,6 +1921,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         c2                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1668,11 +1930,14 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 12]                                    %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         cs!16                                                                  %! baca.music()
         [
 
+        %! baca.music()
         d16                                                                    %! baca.music()
 
+        %! baca.music()
         b,16                                                                   %! baca.music()
         ]
 
@@ -1681,6 +1946,7 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         e16                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1696,6 +1962,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         ef,!2                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1713,6 +1980,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         d2                                                                     %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1723,6 +1991,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         e,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1733,6 +2002,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         fs,!2                                                                  %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1743,6 +2013,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         f,2                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1759,6 +2030,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         fs,!4                                                                  %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1769,6 +2041,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         f,4                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1779,6 +2052,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         cs!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1789,6 +2063,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         g,4                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1799,6 +2074,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         af,!4                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1815,6 +2091,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         f,8                                                                    %! baca.music()
         [
 
@@ -1826,6 +2103,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         ef,!8                                                                  %! baca.music()
         ]
 
@@ -1843,6 +2121,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         d1                                                                     %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1853,6 +2132,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         e,1                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1863,6 +2143,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         fs,!1                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1880,6 +2161,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         f,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #red
@@ -1890,6 +2172,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         g4                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -1900,6 +2183,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         af!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -1910,6 +2194,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         c'4                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1920,6 +2205,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         fs,!2                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1937,6 +2223,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         c1                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -1947,6 +2234,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         d'2                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1963,6 +2251,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         ef!8                                                                   %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1973,6 +2262,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         e,4                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -1983,6 +2273,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         cs!4                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -1998,6 +2289,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         fs!8                                                                   %! baca.music()
         - \tweak stencil ##f                                                   %! baca.SegmentMaker._attach_shadow_tie_indicators()
         ~                                                                      %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -2017,6 +2309,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         fs4                                                                    %! baca.music()
         \repeatTie                                                             %! baca.repeat_tie():baca.IndicatorCommand._call()
 
@@ -2028,6 +2321,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         af!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2038,6 +2332,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         a4                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2048,6 +2343,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         cs!4                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2065,6 +2361,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         d4                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2075,6 +2372,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         cs!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2085,6 +2383,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         ef!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2095,6 +2394,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         e4                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2105,6 +2405,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         f4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2121,6 +2422,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         af!8                                                                   %! baca.music()
         [
 
@@ -2132,6 +2434,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         a8                                                                     %! baca.music()
         ]
 
@@ -2148,6 +2451,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         b8                                                                     %! baca.music()
         [
 
@@ -2159,6 +2463,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         c'8                                                                    %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2169,6 +2474,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         bf!8                                                                   %! baca.music()
         ]
 
@@ -2186,6 +2492,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         f4                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2196,6 +2503,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         d'4                                                                    %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2206,6 +2514,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         cs'!4                                                                  %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2216,6 +2525,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         ef!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2226,6 +2536,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         e4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2243,6 +2554,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         bf!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2253,6 +2565,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         af!4                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2269,6 +2582,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         a4                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2279,6 +2593,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         b,4                                                                    %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2289,6 +2604,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         c4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2305,6 +2621,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         cs!8                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2321,6 +2638,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         g8                                                                     %! baca.music()
         [
 
@@ -2332,6 +2650,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         fs!8                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2342,6 +2661,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         af!8                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2352,6 +2672,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         a8                                                                     %! baca.music()
         ]
 
@@ -2369,6 +2690,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         c4                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2379,6 +2701,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         bf!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2389,6 +2712,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         af!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2399,6 +2723,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         a4                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2409,6 +2734,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         b4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2417,13 +2743,17 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 27]                                    %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         fs!8                                                                   %! baca.music()
         [
 
+        %! baca.music()
         a,8                                                                    %! baca.music()
 
+        %! baca.music()
         bf,!8                                                                  %! baca.music()
 
+        %! baca.music()
         af!8                                                                   %! baca.music()
         ]
 
@@ -2435,6 +2765,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         g4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2450,6 +2781,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         cs'!4                                                                  %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2460,6 +2792,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         ef!4                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2476,6 +2809,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         d'8                                                                    %! baca.music()
         [
 
@@ -2487,6 +2821,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         c'8                                                                    %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2497,6 +2832,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         b8                                                                     %! baca.music()
         ]
 
@@ -2513,6 +2849,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         bf!8                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2529,6 +2866,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         e2                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2539,10 +2877,13 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         f2                                                                     %! baca.music()
 
+        %! baca.music()
         ef!4                                                                   %! baca.music()
 
+        %! baca.music()
         d4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2551,13 +2892,17 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 30]                                    %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         b,8                                                                    %! baca.music()
         [
 
+        %! baca.music()
         cs!8                                                                   %! baca.music()
 
+        %! baca.music()
         ef!8                                                                   %! baca.music()
 
+        %! baca.music()
         d8                                                                     %! baca.music()
         ]
 
@@ -2569,6 +2914,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         c4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2584,6 +2930,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         d'4                                                                    %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2594,6 +2941,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         bf!4                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2610,6 +2958,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         e8                                                                     %! baca.music()
         [
 
@@ -2621,6 +2970,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         f8                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2631,6 +2981,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         ef!8                                                                   %! baca.music()
         ]
 
@@ -2648,6 +2999,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         b,4                                                                    %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2658,6 +3010,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         ef!4                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2675,6 +3028,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         a,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2685,6 +3039,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         af!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2695,6 +3050,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         bf!4                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2703,13 +3059,17 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 33]                                    %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         fs,!16                                                                 %! baca.music()
         [
 
+        %! baca.music()
         g,16                                                                   %! baca.music()
 
+        %! baca.music()
         e16                                                                    %! baca.music()
 
+        %! baca.music()
         ef!16                                                                  %! baca.music()
         ]
 
@@ -2721,6 +3081,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         f8                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2736,6 +3097,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         bf!16                                                                  %! baca.music()
         [
 
@@ -2747,6 +3109,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         b16                                                                    %! baca.music()
         ]
 
@@ -2764,6 +3127,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         ef!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -2774,6 +3138,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         a,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -2784,6 +3149,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         af,!2                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2800,6 +3166,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         f4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2808,11 +3175,14 @@ a_Cello_Music_Voice = {                                                        %
     \times 9/10                                                                %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         fs!8                                                                   %! baca.music()
         [
 
+        %! baca.music()
         g8                                                                     %! baca.music()
 
+        %! baca.music()
         e8                                                                     %! baca.music()
         ]
 
@@ -2824,6 +3194,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         ef!4                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2840,6 +3211,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         cs!8                                                                   %! baca.music()
         [
 
@@ -2851,6 +3223,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         d8                                                                     %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2861,12 +3234,15 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         c8                                                                     %! baca.music()
         ]
 
+        %! baca.music()
         bf,!16                                                                 %! baca.music()
         [
 
+        %! baca.music()
         b,16                                                                   %! baca.music()
         ]
 
@@ -2875,9 +3251,11 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         ef!16                                                                  %! baca.music()
         [
 
+        %! baca.music()
         f,16                                                                   %! baca.music()
         ]
 
@@ -2895,6 +3273,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         fs,!2                                                                  %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -2905,6 +3284,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         g,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2915,6 +3295,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         e4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2931,15 +3312,20 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         b4                                                                     %! baca.music()
 
+        %! baca.music()
         cs!8                                                                   %! baca.music()
         [
 
+        %! baca.music()
         d8                                                                     %! baca.music()
 
+        %! baca.music()
         c8                                                                     %! baca.music()
 
+        %! baca.music()
         bf,!8                                                                  %! baca.music()
         ]
 
@@ -2956,6 +3342,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         af!4                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -2966,6 +3353,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         bf!4                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -2974,11 +3362,14 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 39]                                    %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         b,16                                                                   %! baca.music()
         [
 
+        %! baca.music()
         ef!16                                                                  %! baca.music()
 
+        %! baca.music()
         a,16                                                                   %! baca.music()
         ]
 
@@ -2995,6 +3386,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         bf,!8                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3011,6 +3403,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         b,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #red
@@ -3021,10 +3414,13 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         cs!2                                                                   %! baca.music()
 
+        %! baca.music()
         d4                                                                     %! baca.music()
 
+        %! baca.music()
         c4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3034,11 +3430,14 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 41]                                    %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         a,8                                                                    %! baca.music()
         [
 
+        %! baca.music()
         af,!8                                                                  %! baca.music()
 
+        %! baca.music()
         bf,!8                                                                  %! baca.music()
         ]
 
@@ -3050,6 +3449,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         b,4                                                                    %! baca.music()
 
         \once \override Accidental.color = #red
@@ -3060,6 +3460,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         ef!4                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3077,6 +3478,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         e,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3087,6 +3489,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         ef,!2                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3103,6 +3506,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         f8                                                                     %! baca.music()
         [
 
@@ -3114,6 +3518,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         fs!8                                                                   %! baca.music()
 
         \once \override Accidental.color = #red
@@ -3124,6 +3529,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
+        %! baca.music()
         g8                                                                     %! baca.music()
         ]
 
@@ -3132,6 +3538,7 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         fs!8                                                                   %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3140,13 +3547,17 @@ a_Cello_Music_Voice = {                                                        %
     \times 3/4                                                                 %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         g8                                                                     %! baca.music()
         [
 
+        %! baca.music()
         af!8                                                                   %! baca.music()
 
+        %! baca.music()
         f8                                                                     %! baca.music()
 
+        %! baca.music()
         e8                                                                     %! baca.music()
         ]
 
@@ -3164,15 +3575,20 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         d4                                                                     %! baca.music()
 
+        %! baca.music()
         ef!16                                                                  %! baca.music()
         [
 
+        %! baca.music()
         cs!16                                                                  %! baca.music()
 
+        %! baca.music()
         b,16                                                                   %! baca.music()
 
+        %! baca.music()
         c16                                                                    %! baca.music()
         ]
 
@@ -3181,6 +3597,7 @@ a_Cello_Music_Voice = {                                                        %
     \times 4/5                                                                 %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         e16                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3191,6 +3608,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         fs,!4                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3208,6 +3626,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         g,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3218,8 +3637,10 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         af,!2                                                                  %! baca.music()
 
+        %! baca.music()
         f8                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3229,13 +3650,17 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 46]                                    %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         c8                                                                     %! baca.music()
         [
 
+        %! baca.music()
         d8                                                                     %! baca.music()
 
+        %! baca.music()
         ef!8                                                                   %! baca.music()
 
+        %! baca.music()
         cs!8                                                                   %! baca.music()
         ]
 
@@ -3247,6 +3672,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         b,2                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3263,8 +3689,10 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         a,2                                                                    %! baca.music()
 
+        %! baca.music()
         b,8                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3273,11 +3701,14 @@ a_Cello_Music_Voice = {                                                        %
     {                                                                          %! baca.music()
 
         % [01 Cello_Music_Voice measure 47]                                    %! baca.SegmentMaker._comment_measure_numbers()
+        %! baca.music()
         c16                                                                    %! baca.music()
         [
 
+        %! baca.music()
         e16                                                                    %! baca.music()
 
+        %! baca.music()
         bf,!16                                                                 %! baca.music()
         ]
 
@@ -3286,6 +3717,7 @@ a_Cello_Music_Voice = {                                                        %
     \scaleDurations #'(1 . 1)                                                  %! baca.music()
     {                                                                          %! baca.music()
 
+        %! baca.music()
         b,16                                                                   %! baca.music()
         - \tweak stencil ##f                                                   %! baca.SegmentMaker._attach_shadow_tie_indicators()
         ~                                                                      %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -3305,6 +3737,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         b,2                                                                    %! baca.music()
         \repeatTie                                                             %! baca.repeat_tie():baca.IndicatorCommand._call()
 
@@ -3316,6 +3749,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         a,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3326,6 +3760,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         af,!2                                                                  %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3336,6 +3771,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         bf,!2                                                                  %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3346,6 +3782,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         c2                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3362,6 +3799,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         d,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3372,6 +3810,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         c,2                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3388,6 +3827,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         b,,4                                                                   %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3398,6 +3838,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         g,4                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3408,6 +3849,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         cs,!4                                                                  %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3423,6 +3865,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         c4                                                                     %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3440,6 +3883,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         b,1                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3450,6 +3894,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         a,1                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3460,6 +3905,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         af,!1                                                                  %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3470,6 +3916,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         bf,!1                                                                  %! baca.music()
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 
@@ -3489,6 +3936,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         cs,!2                                                                  %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3499,6 +3947,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         d,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3509,6 +3958,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         c,2                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3519,6 +3969,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         b,,2                                                                   %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3529,6 +3980,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         g,2                                                                    %! baca.music()
 
     }                                                                          %! baca.music()
@@ -3545,6 +3997,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         fs,!2                                                                  %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3555,6 +4008,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         g,2                                                                    %! baca.music()
         \breathe                                                               %! baca.breathe():baca.IndicatorCommand._call()
 
@@ -3572,6 +4026,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         f,4                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3582,6 +4037,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         e,4                                                                    %! baca.music()
 
         \once \override Accidental.color = #blue
@@ -3592,6 +4048,7 @@ a_Cello_Music_Voice = {                                                        %
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
+        %! baca.music()
         ef,!4                                                                  %! baca.music()
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
     %%% \tweak extra-offset #'(0 . 2)                                          %! baca.breathe():+SCORE:baca.IndicatorCommand._call()
@@ -3610,6 +4067,10 @@ a_Cello_Music_Voice = {                                                        %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:NOTE:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:NOTE:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! NOTE
             d1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -3624,6 +4085,10 @@ a_Cello_Music_Voice = {                                                        %
             \stopStaff                                                         %! baca.SegmentMaker._style_phantom_measures(8):PHANTOM
             \once \override Staff.StaffSymbol.transparent = ##t                %! baca.SegmentMaker._style_phantom_measures(8):PHANTOM
             \startStaff                                                        %! baca.SegmentMaker._style_phantom_measures(8):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:MULTIMEASURE_REST:PHANTOM:REST_VOICE:baca.SegmentMaker._style_phantom_measures(5)
 
