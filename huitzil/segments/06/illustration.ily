@@ -1,3 +1,4 @@
+%! ide.Path.extern()
 f_Global_Rests = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -124,9 +125,11 @@ f_Global_Rests = { %! ide.Path.extern()
     R1 * 1/4 %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
 %! abjad.ScoreTemplate._make_global_context()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 f_Global_Skips = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -1126,9 +1129,11 @@ f_Global_Skips = { %! ide.Path.extern()
     \once \override Score.SpanBar.transparent = ##t %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
 
 %! abjad.ScoreTemplate._make_global_context()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 f_RH_Music_Voice = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -3151,20 +3156,25 @@ f_RH_Music_Voice = { %! ide.Path.extern()
     >> %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
 %! huitzil.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 f_RH_Music_Staff = { %! ide.Path.extern()
 
     %! huitzil.ScoreTemplate.__call__()
     \context Voice = "RH_Music_Voice" %! huitzil.ScoreTemplate.__call__()
     %! huitzil.ScoreTemplate.__call__()
+    %! ide.Path.extern()
     \f_RH_Music_Voice %! ide.Path.extern()
 
 %! huitzil.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 f_Cello_Music_Voice = { %! ide.Path.extern()
 
     %! baca.SegmentMaker._make_multimeasure_rest_container(7)
@@ -3710,15 +3720,19 @@ f_Cello_Music_Voice = { %! ide.Path.extern()
     >> %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
 %! huitzil.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
 
 
+%! ide.Path.extern()
 f_Cello_Music_Staff = { %! ide.Path.extern()
 
     %! huitzil.ScoreTemplate.__call__()
     \context Voice = "Cello_Music_Voice" %! huitzil.ScoreTemplate.__call__()
     %! huitzil.ScoreTemplate.__call__()
+    %! ide.Path.extern()
     \f_Cello_Music_Voice %! ide.Path.extern()
 
 %! huitzil.ScoreTemplate.__call__()
+%! ide.Path.extern()
 } %! ide.Path.extern()
