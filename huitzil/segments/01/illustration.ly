@@ -21,7 +21,6 @@ spacing-extra-offset = #'(0 . 1) %! baca.SegmentMaker._make_lilypond_file():abja
 
 %! baca.SegmentMaker._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_blocks()
-
 \score %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
 %! baca.SegmentMaker._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_blocks()
