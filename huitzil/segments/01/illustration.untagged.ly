@@ -6,7 +6,6 @@ clock-time-extra-offset = #'(0 . -2)
 local-measure-number-extra-offset = #'(0 . -5)
 spacing-extra-offset = #'(0 . 1)
 
-
 \score
 {
 

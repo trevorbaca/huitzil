@@ -10,7 +10,6 @@ spacing-extra-offset = #'(0 . 16)
 \paper { print-first-page-number = ##t }
 \paper { first-page-number = #2 }
 
-
 \score
 {
 
