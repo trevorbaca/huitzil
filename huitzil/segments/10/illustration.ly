@@ -7,14 +7,19 @@
 %! baca.SegmentMaker._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_includes()
 \include "../../stylesheet.ily" %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_includes()
+%! ide.Path.extern()
 \include "illustration.ily" %! ide.Path.extern()
 %! baca.SegmentMaker._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_includes()
 clock-time-extra-offset = #'(0 . 13) %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_includes()
 
+%! baca.SegmentMaker._make_lilypond_file()
 \header { composer = ##f poet = ##f title = ##f } %! baca.SegmentMaker._make_lilypond_file()
+%! baca.SegmentMaker._make_lilypond_file()
 \layout { indent = 0 } %! baca.SegmentMaker._make_lilypond_file()
+%! baca.SegmentMaker._make_lilypond_file()
 \paper { print-first-page-number = ##t } %! baca.SegmentMaker._make_lilypond_file()
+%! __make_segment_pdf__
 \paper { first-page-number = #10 } %! __make_segment_pdf__
 
 %! baca.SegmentMaker._make_lilypond_file()
@@ -48,11 +53,13 @@ clock-time-extra-offset = #'(0 . 13) %! baca.SegmentMaker._make_lilypond_file():
                 %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalRests = "Global_Rests" %! abjad.ScoreTemplate._make_global_context()
                 %! abjad.ScoreTemplate._make_global_context()
+                %! ide.Path.extern()
                 \j_Global_Rests %! ide.Path.extern()
 
                 %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalSkips = "Global_Skips" %! abjad.ScoreTemplate._make_global_context()
                 %! abjad.ScoreTemplate._make_global_context()
+                %! ide.Path.extern()
                 \j_Global_Skips %! ide.Path.extern()
 
             %! abjad.ScoreTemplate._make_global_context()
@@ -71,11 +78,13 @@ clock-time-extra-offset = #'(0 . 13) %! baca.SegmentMaker._make_lilypond_file():
                     %! huitzil.ScoreTemplate.__call__()
                     \context RHStaff = "RH_Music_Staff" %! huitzil.ScoreTemplate.__call__()
                     %! huitzil.ScoreTemplate.__call__()
+                    %! ide.Path.extern()
                     \j_RH_Music_Staff %! ide.Path.extern()
 
                     %! huitzil.ScoreTemplate.__call__()
                     \context Staff = "Cello_Music_Staff" %! huitzil.ScoreTemplate.__call__()
                     %! huitzil.ScoreTemplate.__call__()
+                    %! ide.Path.extern()
                     \j_Cello_Music_Staff %! ide.Path.extern()
 
                 %! huitzil.ScoreTemplate.__call__()
