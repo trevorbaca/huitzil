@@ -183,14 +183,14 @@ maker(
     # baca.hairpin(
     #    "mp > p <",
     #    bookend=False,
-    #    pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
+    #    pieces=baca.selectors.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
     #    selector=baca.leaves().rleak(),
     # ),
     # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
         "mp > p <",
         # bookend=False,
-        pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
+        pieces=baca.selectors.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
         selector=baca.leaves()[:-1],
     ),
 )
@@ -524,7 +524,7 @@ maker(
     baca.text_spanner(
         "(trem. mod.) => più stretto => più largo => più stretto => mod.",
         abjad.tweak(6).staff_padding,
-        pieces=baca.lparts([1, 1, 1, 1 + 1]),
+        pieces=baca.selectors.lparts([1, 1, 1, 1 + 1]),
     ),
 )
 

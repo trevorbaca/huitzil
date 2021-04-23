@@ -129,7 +129,7 @@ maker(
         "mp > pp <",
         abjad.tweak(True).to_barline,
         final_hairpin=False,
-        pieces=baca.clparts([1]),
+        pieces=baca.selectors.clparts([1]),
     ),
 )
 
@@ -141,6 +141,6 @@ maker(
     baca.text_spanner(
         "larg. => strett. =>",
         abjad.tweak(6).staff_padding,
-        pieces=baca.clparts([1]),
+        pieces=baca.selectors.clparts([1]),
     ),
 )
