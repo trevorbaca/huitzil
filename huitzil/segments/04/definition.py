@@ -430,7 +430,7 @@ maker(
     # baca.hairpin(
     #    "mp -- p -- pp -- p -- !",
     #    abjad.tweak(True).to_barline,
-    #    pieces=baca.mgroups([2, 2, 4, 2 + 1]),
+    #    pieces=lambda _: baca.Selection(_).mgroups([2, 2, 4, 2 + 1]),
     #    selector=baca.leaves().rleak(),
     # ),
     # FUTURE: replace this when LilyPond fixes DynamicLineSpanner bug:
@@ -438,7 +438,7 @@ maker(
         "mp -- p -- pp -- p",
         abjad.tweak(True).to_barline,
         bookend=False,
-        pieces=baca.mgroups([2, 2, 4, 2 + 1]),
+        pieces=lambda _: baca.Selection(_).mgroups([2, 2, 4, 2 + 1]),
         selector=baca.leaves().rleak(),
     ),
     baca.literal(
