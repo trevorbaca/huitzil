@@ -409,7 +409,7 @@ maker(
     ("rh", (14, 23)),
     baca.hairpin(
         "mp -- p -- pp -- p -- !",
-        pieces=baca.mgroups([2, 2, 4, 2 + 1]),
+        pieces=lambda _: baca.Selection(_).mgroups([2, 2, 4, 2 + 1]),
         selector=baca.leaves().rleak(),
     ),
     baca.literal(
