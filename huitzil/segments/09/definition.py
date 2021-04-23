@@ -162,7 +162,7 @@ maker(
         "mp > p <",
         bookend=False,
         final_hairpin=False,
-        pieces=baca.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
+        pieces=baca.selectors.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
         selector=baca.leaves().rleak(),
     ),
 )
@@ -491,7 +491,7 @@ maker(
         "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
         abjad.tweak(6).staff_padding,
         bookend=False,
-        pieces=baca.lparts([1, 1, 1, 1, 1, 1 + 1]),
+        pieces=baca.selectors.lparts([1, 1, 1, 1, 1, 1 + 1]),
         right_broken=True,
         selector=baca.leaves().rleak(),
     ),

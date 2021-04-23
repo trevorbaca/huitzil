@@ -331,7 +331,7 @@ maker(
     baca.hairpin(
         "mp > ppp -- !",
         abjad.tweak(True).to_barline,
-        pieces=baca.lparts([4, 5 + 1]),
+        pieces=baca.selectors.lparts([4, 5 + 1]),
         selector=baca.leaves().rleak(),
     ),
 )
@@ -381,7 +381,7 @@ maker(
     baca.text_spanner(
         "sub. trem. mod. => più stretto => più largo => più stretto",
         abjad.tweak(6).staff_padding,
-        pieces=baca.lparts([1, 1, 2]),
+        pieces=baca.selectors.lparts([1, 1, 2]),
     ),
 )
 
@@ -499,7 +499,7 @@ maker(
     ("rh", (20, 26)),
     baca.hairpin(
         "p < f -- !",
-        pieces=baca.lparts([5, 1 + 1]),
+        pieces=baca.selectors.lparts([5, 1 + 1]),
         selector=baca.leaves()[1:].rleak(),
     ),
     baca.markup(
@@ -516,7 +516,7 @@ maker(
         "sub. trem. mod. => più stretto => più largo => più stretto =>"
         " più largo => mod.",
         abjad.tweak(6).staff_padding,
-        pieces=baca.lparts([1, 1, 1, 1, 2]),
+        pieces=baca.selectors.lparts([1, 1, 1, 1, 2]),
     ),
 )
 
