@@ -50,15 +50,15 @@ maker(
     "Global_Skips",
     baca.metronome_mark(
         "88",
-        selector=baca.leaf(1 - 1),
+        selector=baca.selectors.leaf(1 - 1),
     ),
     baca.metronome_mark(
         "88",
-        selector=baca.leaf(25 - 1),
+        selector=baca.selectors.leaf(25 - 1),
     ),
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.leaf(25 - 1),
+        selector=baca.selectors.leaf(25 - 1),
     ),
 )
 
