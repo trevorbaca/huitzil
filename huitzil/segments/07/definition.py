@@ -104,7 +104,10 @@ maker(
     baca.skeleton("{ c1 * 19/8 }"),
     baca.suite(
         baca.pitch("A2"),
-        baca.repeat_tie(baca.pleaf(0), allow_rest=True),
+        baca.repeat_tie(
+            baca.selectors.pleaf(0),
+            allow_rest=True,
+        ),
     ),
 )
 
@@ -158,7 +161,7 @@ maker(
         literal=True,
     ),
     baca.stem_tremolo(
-        selector=baca.pleaves(),
+        selector=baca.selectors.pleaves(),
     ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
@@ -256,7 +259,7 @@ maker(
         literal=True,
     ),
     baca.parenthesize(
-        selector=baca.pleaf(-1),
+        selector=baca.selectors.pleaf(-1),
     ),
     baca.staff_positions(
         [-6, 0, 6],

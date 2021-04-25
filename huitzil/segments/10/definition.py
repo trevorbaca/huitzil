@@ -111,7 +111,7 @@ maker(
         ),
     ),
     baca.stem_tremolo(
-        selector=baca.pleaves(),
+        selector=baca.selectors.pleaves(),
     ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
@@ -136,7 +136,9 @@ maker(
 maker(
     ("rh", (1, 12)),
     baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2"),
-    baca.repeat_tie(baca.pleaves()[1:]),
+    baca.repeat_tie(
+        baca.selectors.pleaves((1, None)),
+    ),
     baca.staff_position(8),
     baca.text_spanner(
         "larg. => strett. =>",

@@ -252,23 +252,31 @@ maker(
 maker(
     ("vc", 8),
     baca.suite(
-        baca.untie(baca.pleaf(-2)),
+        baca.untie(
+            baca.selectors.pleaf(-2),
+        ),
         baca.chunk(
-            baca.repeat_tie(baca.pleaf(0)),
+            baca.repeat_tie(
+                baca.selectors.pleaf(0),
+            ),
             baca.repeat_tie_extra_offset((-1.5, 0)),
-            selector=baca.pleaf(-1),
+            selector=baca.selectors.pleaf(-1),
         ),
     ),
 )
 
 maker(
     ("vc", 20),
-    baca.repeat_tie(baca.pleaf(0)),
+    baca.repeat_tie(
+        baca.selectors.pleaf(0),
+    ),
 )
 
 maker(
     ("vc", 48),
-    baca.repeat_tie(baca.pleaf(0)),
+    baca.repeat_tie(
+        baca.selectors.pleaf(0),
+    ),
 )
 
 maker(
@@ -286,7 +294,7 @@ maker(
     ("vc", 54),
     baca.only_score(
         baca.breathe(
-            baca.pleaf(-1),
+            baca.selectors.pleaf(-1),
             abjad.tweak((0, 2)).extra_offset,
         ),
     ),

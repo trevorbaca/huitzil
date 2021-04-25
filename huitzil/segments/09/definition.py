@@ -71,7 +71,10 @@ maker(
 maker(
     ("vc", (8, 13)),
     baca.pitches("A1 Bb1"),
-    baca.repeat_tie(baca.pleaf(0), allow_rest=True),
+    baca.repeat_tie(
+        baca.selectors.pleaf(0),
+        allow_rest=True,
+    ),
     baca.skeleton("{ c1 * 107/30 c1 * 1/5 }"),
 )
 
@@ -117,7 +120,7 @@ maker(
         ),
     ),
     baca.stem_tremolo(
-        selector=baca.pleaves(),
+        selector=baca.selectors.pleaves(),
     ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
