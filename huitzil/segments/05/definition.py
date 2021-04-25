@@ -46,31 +46,31 @@ maker(
     "Global_Skips",
     baca.metronome_mark(
         "44",
-        selector=baca.leaf(1 - 1),
+        selector=baca.selectors.leaf(1 - 1),
     ),
     baca.metronome_mark(
         "44",
-        selector=baca.leaf(13 - 1),
+        selector=baca.selectors.leaf(13 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.leaf(13 - 1),
+        selector=baca.selectors.leaf(13 - 1),
     ),
     baca.metronome_mark(
         "66",
-        selector=baca.leaf(16 - 1),
+        selector=baca.selectors.leaf(16 - 1),
     ),
     baca.metronome_mark(
         "44",
-        selector=baca.leaf(17 - 1),
+        selector=baca.selectors.leaf(17 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.leaf(17 - 1),
+        selector=baca.selectors.leaf(17 - 1),
     ),
     baca.metronome_mark(
         "88",
-        selector=baca.leaf(22 - 1),
+        selector=baca.selectors.leaf(22 - 1),
     ),
 )
 

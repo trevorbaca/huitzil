@@ -38,7 +38,7 @@ maker(
     "Global_Skips",
     baca.metronome_mark(
         "66",
-        selector=baca.leaf(1 - 1),
+        selector=baca.selectors.leaf(1 - 1),
     ),
     baca.bar_line("|.", baca.skip(-1)),
 )
