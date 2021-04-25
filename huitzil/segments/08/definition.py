@@ -110,7 +110,7 @@ maker(
     "rh",
     baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
     baca.stem_tremolo(
-        selector=baca.pleaves(),
+        selector=baca.selectors.pleaves(),
     ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
@@ -202,13 +202,13 @@ maker(
         r"\baca-mpz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.pleaves()[1:-3],
+        selector=baca.selectors.pleaves((1, -3)),
     ),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.pleaves()[-3:],
+        selector=baca.selectors.pleaves((-3, None)),
     ),
 )
 
@@ -242,7 +242,7 @@ maker(
         r"\baca-mpz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.pleaves()[1:],
+        selector=baca.selectors.pleaves((1, None)),
     ),
     baca.staff_positions(
         [4, 4, 2, 6, 4, 2],

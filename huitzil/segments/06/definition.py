@@ -77,7 +77,10 @@ maker(
     baca.suite(
         baca.pitches("Bb1 Cb2"),
         baca.chunk(
-            baca.repeat_tie(baca.pleaf(0), allow_rest=True),
+            baca.repeat_tie(
+                baca.selectors.pleaf(0),
+                allow_rest=True,
+            ),
             baca.repeat_tie_extra_offset((-1.5, 0)),
         ),
     ),
@@ -114,14 +117,14 @@ maker(
     "rh",
     baca.only_score(
         baca.breathe(
-            baca.pleaf(-1),
+            baca.selectors.pleaf(-1),
             abjad.tweak(False).X_extent,
             abjad.tweak((0, 5)).extra_offset,
         ),
     ),
     baca.only_segment(
         baca.breathe(
-            baca.pleaf(-1),
+            baca.selectors.pleaf(-1),
             abjad.tweak(False).X_extent,
             abjad.tweak((-1.5, 2)).extra_offset,
         ),
@@ -140,7 +143,7 @@ maker(
         ),
     ),
     baca.stem_tremolo(
-        selector=baca.pleaves(),
+        selector=baca.selectors.pleaves(),
     ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
