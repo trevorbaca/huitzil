@@ -51,7 +51,7 @@ maker(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
     baca.only_segment(
         baca.literal(

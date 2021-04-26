@@ -63,7 +63,7 @@ maker(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
     baca.time_signature_stencil_false(),
 )
@@ -134,7 +134,7 @@ maker(
         r"\baca-ffz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
     baca.staff_positions(
         [-6, -4, -2, 0],
@@ -149,7 +149,7 @@ maker(
         r"\baca-ffz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
     baca.staff_positions(
         [0],
@@ -166,7 +166,7 @@ maker(
         bookend=False,
         final_hairpin=False,
         pieces=baca.selectors.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
 )
 
@@ -413,7 +413,7 @@ maker(
     baca.hairpin(
         "mp -- p -- pp -- p -- !",
         pieces=lambda _: baca.Selection(_).mgroups([2, 2, 4, 2 + 1]),
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
     baca.literal(
         [
@@ -496,7 +496,7 @@ maker(
         bookend=False,
         pieces=baca.selectors.lparts([1, 1, 1, 1, 1, 1 + 1]),
         right_broken=True,
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
 )
 
@@ -552,13 +552,13 @@ maker(
 maker(
     ("vc", (8, 14)),
     baca.glissando(
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )
 
 maker(
     "rh",
     baca.glissando(
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )

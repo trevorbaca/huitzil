@@ -309,6 +309,6 @@ maker(
     "rh",
     baca.literal(r"\stopStaff"),
     baca.mmrest_transparent(
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )
