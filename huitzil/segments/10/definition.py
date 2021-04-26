@@ -40,7 +40,7 @@ maker(
         "66",
         selector=baca.selectors.leaf(1 - 1),
     ),
-    baca.bar_line("|.", baca.skip(-1)),
+    baca.bar_line("|.", baca.selectors.skip(-1)),
 )
 
 # vc
