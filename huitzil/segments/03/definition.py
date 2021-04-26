@@ -88,7 +88,7 @@ maker(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
     baca.time_signature_stencil_false(),
 )
@@ -133,7 +133,7 @@ maker(
         r"\baca-mfz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )
 
@@ -207,7 +207,7 @@ maker(
     baca.hairpin(
         "p -- !",
         abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
     baca.make_monads("1/4  1/6  1/6  1/8  1/8  1/8"),
     baca.markup(
@@ -242,7 +242,7 @@ maker(
         r"\baca-fz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )
 
@@ -251,7 +251,7 @@ maker(
     baca.hairpin(
         "mf -- !",
         abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
 )
 
@@ -309,7 +309,7 @@ maker(
         "mp > ppp -- !",
         abjad.tweak(True).to_barline,
         pieces=baca.selectors.lparts([4, 5 + 1]),
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
 )
 
@@ -337,7 +337,7 @@ maker(
         r"\baca-ffz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )
 
@@ -412,7 +412,7 @@ maker(
     baca.text_spanner(
         "sub. trem. mod. => trem. stretto",
         abjad.tweak(6).staff_padding,
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
 )
 
@@ -423,7 +423,7 @@ maker(
         r"\baca-mfz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
     baca.staff_positions(
         [6, 4, 2],
@@ -442,7 +442,7 @@ maker(
         r"\baca-mpz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
     # TODO: make +ARCH_A_SCORE work
     baca.only_score(
@@ -483,7 +483,7 @@ maker(
         r"\baca-ffz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )
 
@@ -557,6 +557,6 @@ maker(
 maker(
     "rh",
     baca.glissando(
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )

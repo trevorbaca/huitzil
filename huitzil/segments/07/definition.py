@@ -78,7 +78,7 @@ maker(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
     baca.pitch(
         "A1",
@@ -183,7 +183,7 @@ maker(
         r"\baca-fz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )
 
@@ -263,7 +263,7 @@ maker(
     ),
     baca.staff_positions(
         [-6, 0, 6],
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
 )
 
@@ -272,7 +272,7 @@ maker(
 maker(
     ("vc", (14, 24)),
     baca.glissando(
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
 )
 
@@ -280,7 +280,7 @@ maker(
     ("vc", (25, 26)),
     baca.glissando(
         right_broken=True,
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
 )
 
@@ -288,6 +288,6 @@ maker(
     "rh",
     baca.glissando(
         right_broken=True,
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
 )

@@ -203,11 +203,11 @@ maker(
     ("rh", 25),
     baca.glissando(
         right_broken=True,
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
     baca.hairpin(
         "(mp) -- !",
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
     baca.literal(
         r"\override DynamicLineSpanner.staff-padding = 7",

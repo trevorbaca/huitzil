@@ -82,7 +82,7 @@ maker(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
     baca.time_signature_stencil_false(),
 )
@@ -122,13 +122,13 @@ maker(
     baca.hairpin(
         "mp -- !",
         abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )
 
@@ -202,7 +202,7 @@ maker(
     baca.hairpin(
         "p -- !",
         abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
     baca.make_monads("1/4  1/6  1/6  1/8  1/8  1/8"),
     baca.markup(
@@ -237,7 +237,7 @@ maker(
         r"\baca-fz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )
 
@@ -246,7 +246,7 @@ maker(
     baca.hairpin(
         "mf -- !",
         abjad.tweak(True).to_barline,
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
 )
 
@@ -304,7 +304,7 @@ maker(
         "mp > ppp -- !",
         abjad.tweak(True).to_barline,
         pieces=baca.selectors.lparts([4, 5 + 1]),
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
 )
 
@@ -332,7 +332,7 @@ maker(
         r"\baca-ffz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )
 
@@ -398,13 +398,13 @@ maker(
     baca.hairpin(
         "p < f -- !",
         pieces=baca.selectors.lparts([5, 1 + 1]),
-        selector=baca.leaves().rleak(),
+        selector=baca.selectors.rleaves(),
     ),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
     baca.text_spanner(
         "sub. mod. => più stretto => più largo => più stretto =>"
@@ -468,6 +468,6 @@ maker(
 maker(
     "rh",
     baca.glissando(
-        selector=baca.leaves(),
+        selector=baca.selectors.leaves(),
     ),
 )
