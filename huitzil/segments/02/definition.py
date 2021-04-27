@@ -69,7 +69,7 @@ maker(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.leaves()[1:],
+        selector=baca.selectors.leaves((1, None)),
     ),
     baca.time_signature_stencil_false(),
 )
@@ -239,6 +239,6 @@ maker(
     ("rh", 25),
     baca.staff_position(
         6,
-        selector=baca.leaves().rleak()[-1],
+        selector=baca.selectors.rleaf(-1),
     ),
 )

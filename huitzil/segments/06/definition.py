@@ -194,7 +194,7 @@ maker(
         "mp > p <",
         # bookend=False,
         pieces=baca.selectors.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
-        selector=baca.leaves()[:-1],
+        selector=baca.selectors.leaves((None, -1)),
     ),
 )
 

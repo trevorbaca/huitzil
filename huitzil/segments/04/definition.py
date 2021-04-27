@@ -185,7 +185,7 @@ maker(
         "mp > p <",
         # bookend=False,
         pieces=baca.selectors.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
-        selector=baca.leaves()[:-1],
+        selector=baca.selectors.leaves((None, -1)),
     ),
 )
 
@@ -602,7 +602,7 @@ maker(
     ),
     baca.staff_position(
         6,
-        selector=baca.leaves().rleak()[-1],
+        selector=baca.selectors.rleaf(-1),
     ),
 )
 
