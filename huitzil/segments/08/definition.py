@@ -149,7 +149,7 @@ maker(
         baca.hairpin(
             "mp -- !",
             abjad.tweak(True).to_barline,
-            selector=baca.leaves()[1:].rleak(),
+            selector=baca.selectors.leaves((1, None), rleak=True),
         ),
     ),
     baca.markup(
@@ -182,7 +182,7 @@ maker(
     ("rh", 4),
     baca.hairpin(
         "p -- !",
-        selector=baca.leaves().rleak().rleak(),
+        selector=lambda _: baca.Selection(_).leaves().rleak().rleak(),
     ),
     baca.make_monads("1/3  1/8  1/8"),
     baca.staff_positions(
@@ -216,7 +216,7 @@ maker(
     ("rh", 5),
     baca.hairpin(
         "pp < mf",
-        selector=baca.leaves()[1:],
+        selector=baca.selectors.leaves((1, None)),
     ),
     baca.make_monads("1/4  1/6  1/6  1/10  1/10  1/10"),
     baca.staff_positions(
@@ -311,18 +311,18 @@ maker(
         r"\baca-mfz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves()[:4],
+        selector=baca.selectors.leaves((None, 4)),
     ),
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.Down,
         literal=True,
-        selector=baca.leaves()[4:],
+        selector=baca.selectors.leaves((4, None)),
     ),
     baca.text_spanner(
         "(trem. mod.) => trem. stretto",
         abjad.tweak(6).staff_padding,
-        selector=baca.leaves()[:4].rleak(),
+        selector=baca.selectors.leaves((None, 4), rleak=True),
     ),
 )
 
@@ -458,7 +458,7 @@ maker(
     ("rh", 19),
     baca.hairpin(
         "ppp -- !",
-        selector=baca.leaves().rleak().rleak(),
+        selector=lambda _: baca.Selection(_).leaves().rleak().rleak(),
     ),
     baca.make_monads("1/10  1/10  1/10  1/10"),
     baca.markup(
@@ -500,7 +500,7 @@ maker(
     baca.hairpin(
         "p < f -- !",
         pieces=baca.selectors.lparts([5, 1 + 1]),
-        selector=baca.leaves()[1:].rleak(),
+        selector=baca.selectors.leaves((1, None), rleak=True),
     ),
     baca.markup(
         r"\baca-ffz-markup",

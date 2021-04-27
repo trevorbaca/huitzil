@@ -82,7 +82,7 @@ maker(
     ),
     baca.pitch(
         "A1",
-        selector=baca.leaves().rleak()[-1],
+        selector=baca.selectors.rleaf(-1),
     ),
     baca.time_signature_stencil_false(),
 )
@@ -241,7 +241,7 @@ maker(
     baca.hairpin(
         ">",
         right_broken=True,
-        selector=baca.leaves()[-1:].rleak(),
+        selector=baca.selectors.leaves((-1, None), rleak=True),
     ),
     baca.literal(
         [
