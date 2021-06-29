@@ -90,7 +90,7 @@ maker(
 maker(
     ("vc", 1),
     baca.markup(
-        r"\baca-string-iii",
+        r"\baca-string-iii-markup",
         abjad.tweak(2.5).padding,
         direction=abjad.Down,
         literal=True,
@@ -114,7 +114,7 @@ maker(
 maker(
     ("vc", (25, 26)),
     baca.markup(
-        r"\harmony-string-three-to-four-markup",
+        r"\huitzil-string-three-to-four-markup",
         abjad.tweak(2.5).padding,
         abjad.tweak(0).parent_alignment_X,
         abjad.tweak(-0.05).self_alignment_X,

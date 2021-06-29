@@ -10,7 +10,7 @@ metadata = abjad.OrderedDict(
             abjad.OrderedDict(
                 [
                     (
-                        "A",
+                        "01",
                         [
                             "7/8",
                             "15/16",
@@ -69,7 +69,7 @@ metadata = abjad.OrderedDict(
                         ],
                     ),
                     (
-                        "B",
+                        "02",
                         [
                             "3/4",
                             "3/4",
@@ -99,7 +99,7 @@ metadata = abjad.OrderedDict(
                         ],
                     ),
                     (
-                        "C",
+                        "03",
                         [
                             "1/2",
                             "13/24",
@@ -130,7 +130,7 @@ metadata = abjad.OrderedDict(
                         ],
                     ),
                     (
-                        "D",
+                        "04",
                         [
                             "1/2",
                             "1/2",
@@ -158,7 +158,7 @@ metadata = abjad.OrderedDict(
                         ],
                     ),
                     (
-                        "E",
+                        "05",
                         [
                             "1/2",
                             "13/24",
@@ -185,7 +185,7 @@ metadata = abjad.OrderedDict(
                         ],
                     ),
                     (
-                        "F",
+                        "06",
                         [
                             "1/2",
                             "1/2",
@@ -213,7 +213,7 @@ metadata = abjad.OrderedDict(
                         ],
                     ),
                     (
-                        "G",
+                        "07",
                         [
                             "1/4",
                             "3/16",
@@ -244,7 +244,7 @@ metadata = abjad.OrderedDict(
                         ],
                     ),
                     (
-                        "H",
+                        "08",
                         [
                             "1/2",
                             "13/24",
@@ -275,7 +275,7 @@ metadata = abjad.OrderedDict(
                         ],
                     ),
                     (
-                        "I",
+                        "09",
                         [
                             "1/2",
                             "1/2",
@@ -303,7 +303,7 @@ metadata = abjad.OrderedDict(
                         ],
                     ),
                     (
-                        "J",
+                        "10",
                         [
                             "1/2",
                             "1/2",

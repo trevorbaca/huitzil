@@ -2103,7 +2103,7 @@ g_Cello_Music_Voice = {
         - \tweak padding 2.5
         %! baca.markup()
         %! baca.IndicatorCommand._call()
-        _ \baca-string-iii
+        _ \baca-string-iii-markup
         %! baca.rhythm_annotation_spanner()
         %! RHYTHM_ANNOTATION_SPANNER
         %! baca.PiecewiseCommand._call(2)
@@ -2388,7 +2388,7 @@ g_Cello_Music_Voice = {
         - \tweak self-alignment-X -0.05
         %! baca.markup()
         %! baca.IndicatorCommand._call()
-        _ \harmony-string-three-to-four-markup
+        _ \huitzil-string-three-to-four-markup
         %! baca.rhythm_annotation_spanner()
         %! RHYTHM_ANNOTATION_SPANNER
         %! baca.PiecewiseCommand._call(2)
