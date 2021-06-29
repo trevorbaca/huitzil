@@ -665,7 +665,7 @@ g_Cello_Music_Voice = {
         a,1 * 1/4
         ^ \baca-reapplied-indicator-markup "(“Cello”)"
         - \tweak padding 2.5
-        _ \baca-string-iii
+        _ \baca-string-iii-markup
         - \abjad-dashed-line-with-hook
         - \baca-text-spanner-left-text "baca.skeleton()"
         - \tweak bound-details.right.padding 3.25
@@ -758,7 +758,7 @@ g_Cello_Music_Voice = {
         - \tweak padding 2.5
         - \tweak parent-alignment-X 0
         - \tweak self-alignment-X -0.05
-        _ \harmony-string-three-to-four-markup
+        _ \huitzil-string-three-to-four-markup
         - \abjad-dashed-line-with-hook
         - \baca-text-spanner-left-text "baca.skeleton()"
         - \tweak bound-details.right.padding 2.75
