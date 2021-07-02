@@ -1,4 +1,4 @@
-%! ide.Path.extern()
+%! baca.Path.extern()
 e_Global_Rests = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -120,11 +120,11 @@ e_Global_Rests = {
     R1 * 1/4
 
 %! abjad.ScoreTemplate._make_global_context()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 e_Global_Skips = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -1085,11 +1085,11 @@ e_Global_Skips = {
     \once \override Score.SpanBar.transparent = ##t
 
 %! abjad.ScoreTemplate._make_global_context()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 e_RH_Music_Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -3421,25 +3421,25 @@ e_RH_Music_Voice = {
     >>
 
 %! huitzil.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 e_RH_Music_Staff = {
 
     %! huitzil.ScoreTemplate.__call__()
     \context Voice = "RH_Music_Voice"
     %! huitzil.ScoreTemplate.__call__()
-    %! ide.Path.extern()
+    %! baca.Path.extern()
     \e_RH_Music_Voice
 
 %! huitzil.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 e_Cello_Music_Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -3755,19 +3755,19 @@ e_Cello_Music_Voice = {
     >>
 
 %! huitzil.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 e_Cello_Music_Staff = {
 
     %! huitzil.ScoreTemplate.__call__()
     \context Voice = "Cello_Music_Voice"
     %! huitzil.ScoreTemplate.__call__()
-    %! ide.Path.extern()
+    %! baca.Path.extern()
     \e_Cello_Music_Voice
 
 %! huitzil.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
