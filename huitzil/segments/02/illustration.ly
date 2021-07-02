@@ -7,7 +7,7 @@
 %! baca.SegmentMaker._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_includes()
 \include "../../stylesheet.ily"
-%! ide.Path.extern()
+%! baca.Path.extern()
 \include "illustration.ily"
 %! baca.SegmentMaker._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_includes()
@@ -55,13 +55,13 @@ spacing-extra-offset = #'(0 . 16)
                 %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalRests = "Global_Rests"
                 %! abjad.ScoreTemplate._make_global_context()
-                %! ide.Path.extern()
+                %! baca.Path.extern()
                 \b_Global_Rests
 
                 %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalSkips = "Global_Skips"
                 %! abjad.ScoreTemplate._make_global_context()
-                %! ide.Path.extern()
+                %! baca.Path.extern()
                 \b_Global_Skips
 
             %! abjad.ScoreTemplate._make_global_context()
@@ -80,13 +80,13 @@ spacing-extra-offset = #'(0 . 16)
                     %! huitzil.ScoreTemplate.__call__()
                     \context RHStaff = "RH_Music_Staff"
                     %! huitzil.ScoreTemplate.__call__()
-                    %! ide.Path.extern()
+                    %! baca.Path.extern()
                     \b_RH_Music_Staff
 
                     %! huitzil.ScoreTemplate.__call__()
                     \context Staff = "Cello_Music_Staff"
                     %! huitzil.ScoreTemplate.__call__()
-                    %! ide.Path.extern()
+                    %! baca.Path.extern()
                     \b_Cello_Music_Staff
 
                 %! huitzil.ScoreTemplate.__call__()
