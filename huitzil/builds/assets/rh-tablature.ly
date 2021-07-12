@@ -2,7 +2,7 @@
 
 \version "2.19.82"
 \language "english"
-\include "../../stylesheets/markups.ily"
+\include "../../markups.ily"
 \include "stylesheet.ily"
 
 note-head-extra-offset = #'(-2.5 . 0)
