@@ -43,7 +43,6 @@ maker = baca.SegmentMaker(
     segment_directory=baca.Path(__file__).resolve().parent,
     spacing_extra_offset=(0, 16),
     time_signatures=time_signatures,
-    validate_measure_count=25,
 )
 
 maker(
