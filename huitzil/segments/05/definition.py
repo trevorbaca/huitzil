@@ -472,3 +472,6 @@ maker(
         selector=baca.selectors.leaves(),
     ),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)
