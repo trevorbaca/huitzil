@@ -1,3 +1,5 @@
+import pathlib
+
 import abjad
 import baca
 
@@ -40,7 +42,7 @@ maker = baca.SegmentMaker(
     ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, 13),
-    segment_directory=baca.Path(__file__).resolve().parent,
+    segment_directory=pathlib.Path(__file__).resolve().parent,
     spacing_extra_offset=(0, 16),
     time_signatures=time_signatures,
 )
