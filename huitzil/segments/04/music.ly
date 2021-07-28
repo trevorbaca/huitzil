@@ -8,7 +8,10 @@
 %! abjad.LilyPondFile._get_formatted_includes()
 \include "../../stylesheet.ily"
 %! baca.Path.extern()
-\include "illustration.ily"
+\include "music.ily"
+%! baca.SegmentMaker._make_lilypond_file()
+%! abjad.LilyPondFile._get_formatted_includes()
+clock-time-extra-offset = #'(0 . 13)
 
 %! baca.SegmentMaker._make_lilypond_file()
 \header { composer = ##f poet = ##f title = ##f }
@@ -17,7 +20,7 @@
 %! baca.SegmentMaker._make_lilypond_file()
 \paper { print-first-page-number = ##t }
 %! __make_segment_pdf__
-\paper { first-page-number = #3 }
+\paper { first-page-number = #4 }
 
 %! baca.SegmentMaker._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_blocks()
@@ -50,13 +53,13 @@
                 \context GlobalRests = "Global_Rests"
                 %! abjad.ScoreTemplate._make_global_context()
                 %! baca.Path.extern()
-                \c_Global_Rests
+                \d_Global_Rests
 
                 %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalSkips = "Global_Skips"
                 %! abjad.ScoreTemplate._make_global_context()
                 %! baca.Path.extern()
-                \c_Global_Skips
+                \d_Global_Skips
 
             %! abjad.ScoreTemplate._make_global_context()
             >>
@@ -75,13 +78,13 @@
                     \context RHStaff = "RH_Music_Staff"
                     %! huitzil.ScoreTemplate.__call__()
                     %! baca.Path.extern()
-                    \c_RH_Music_Staff
+                    \d_RH_Music_Staff
 
                     %! huitzil.ScoreTemplate.__call__()
                     \context Staff = "Cello_Music_Staff"
                     %! huitzil.ScoreTemplate.__call__()
                     %! baca.Path.extern()
-                    \c_Cello_Music_Staff
+                    \d_Cello_Music_Staff
 
                 %! huitzil.ScoreTemplate.__call__()
                 >>

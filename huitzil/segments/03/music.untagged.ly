@@ -1,13 +1,12 @@
 \version "2.23.1"
 \language "english"
 \include "../../stylesheet.ily"
-\include "illustration.ily"
-clock-time-extra-offset = #'(0 . 13)
+\include "music.ily"
 
 \header { composer = ##f poet = ##f title = ##f }
 \layout { indent = 0 }
 \paper { print-first-page-number = ##t }
-\paper { first-page-number = #7 }
+\paper { first-page-number = #3 }
 
 \score
 {
@@ -25,10 +24,10 @@ clock-time-extra-offset = #'(0 . 13)
             <<
 
                 \context GlobalRests = "Global_Rests"
-                \g_Global_Rests
+                \c_Global_Rests
 
                 \context GlobalSkips = "Global_Skips"
-                \g_Global_Skips
+                \c_Global_Skips
 
             >>
 
@@ -39,10 +38,10 @@ clock-time-extra-offset = #'(0 . 13)
                 <<
 
                     \context RHStaff = "RH_Music_Staff"
-                    \g_RH_Music_Staff
+                    \c_RH_Music_Staff
 
                     \context Staff = "Cello_Music_Staff"
-                    \g_Cello_Music_Staff
+                    \c_Cello_Music_Staff
 
                 >>
 
