@@ -4,7 +4,7 @@ import typing
 import abjad
 import baca
 
-import huitzil
+from huitzil import library as huitzil
 
 ###############################################################################
 ##################################### [A] #####################################
