@@ -1,6 +1,8 @@
 import abjad
 import baca
 
+from huitzil import library as huitzil
+
 ###############################################################################
 ##################################### [B] #####################################
 ###############################################################################
@@ -40,6 +42,7 @@ maker = baca.SegmentMaker(
     ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, 13),
+    score_template=huitzil.ScoreTemplate(),
     spacing_extra_offset=(0, 16),
     time_signatures=time_signatures,
 )
