@@ -29,7 +29,6 @@ maker = baca.SegmentMaker(
     clock_time_extra_offset=(0, 13),
     final_segment=True,
     remove_phantom_measure=True,
-    segment_directory=pathlib.Path(__file__).resolve().parent,
     time_signatures=time_signatures,
 )
 

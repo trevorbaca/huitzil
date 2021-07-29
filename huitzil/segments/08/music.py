@@ -43,7 +43,6 @@ maker = baca.SegmentMaker(
     ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, 13),
-    segment_directory=pathlib.Path(__file__).resolve().parent,
     time_signatures=time_signatures,
 )
 
