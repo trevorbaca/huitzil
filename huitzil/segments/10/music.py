@@ -1,6 +1,8 @@
 import abjad
 import baca
 
+from huitzil import library as huitzil
+
 ###############################################################################
 ##################################### [J] #####################################
 ###############################################################################
@@ -27,6 +29,7 @@ maker = baca.SegmentMaker(
     clock_time_extra_offset=(0, 13),
     final_segment=True,
     remove_phantom_measure=True,
+    score_template=huitzil.ScoreTemplate(),
     time_signatures=time_signatures,
 )
 

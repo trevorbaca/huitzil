@@ -215,6 +215,7 @@ maker = baca.SegmentMaker(
     ],
     first_segment=True,
     local_measure_number_extra_offset=(0, -5),
+    score_template=huitzil.ScoreTemplate(),
     spacing_extra_offset=(0, 1),
     time_signatures=time_signatures,
 )
