@@ -1,7 +1,7 @@
 \version "2.23.1"
 \language "english"
 \include "../../stylesheet.ily"
-\include "music.ily"
+\include "music.ily.tagged"
 clock-time-extra-offset = #'(0 . 13)
 spacing-extra-offset = #'(0 . 16)
 
@@ -16,7 +16,7 @@ spacing-extra-offset = #'(0 . 16)
     <<
 
         {
-            \include "layout.ly"
+            \include "layout.ly.tagged"
         }
 
         \context Score = "Score"
