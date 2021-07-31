@@ -106,12 +106,12 @@ class DreamsMusicMaker:
 
     def __init__(
         self,
-        extra_counts: typing.List[int],
-        pitch_class_trees: typing.Tuple[baca.PitchTree],
-        voice_map: typing.List[typing.List],
-        pc_displacement: typing.List[int] = None,
-        pc_operators: typing.List = None,
-    ) -> None:
+        extra_counts,
+        pitch_class_trees,
+        voice_map,
+        pc_displacement=(),
+        pc_operators=(),
+    ):
         self._extra_counts = extra_counts
         self._pitch_class_trees = tuple(pitch_class_trees)
         self._voice_map = voice_map
