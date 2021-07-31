@@ -1,33 +1,33 @@
 j_Global_Rests = {
 
-    % [10 Global_Rests measure 249 / measure 1]
+    % [Global_Rests measure 249 / measure 1]
     R1 * 1/2
 
-    % [10 Global_Rests measure 250 / measure 2]
+    % [Global_Rests measure 250 / measure 2]
     R1 * 1/2
 
-    % [10 Global_Rests measure 251 / measure 3]
+    % [Global_Rests measure 251 / measure 3]
     R1 * 1/2
 
-    % [10 Global_Rests measure 252 / measure 4]
+    % [Global_Rests measure 252 / measure 4]
     R1 * 1/2
 
-    % [10 Global_Rests measure 253 / measure 5]
+    % [Global_Rests measure 253 / measure 5]
     R1 * 1/2
 
-    % [10 Global_Rests measure 254 / measure 6]
+    % [Global_Rests measure 254 / measure 6]
     R1 * 1/2
 
-    % [10 Global_Rests measure 255 / measure 7]
+    % [Global_Rests measure 255 / measure 7]
     R1 * 1/2
 
-    % [10 Global_Rests measure 256 / measure 8]
+    % [Global_Rests measure 256 / measure 8]
     R1 * 1/2
 
-    % [10 Global_Rests measure 257 / measure 9]
+    % [Global_Rests measure 257 / measure 9]
     R1 * 1/2
 
-    % [10 Global_Rests measure 258 / measure 10]
+    % [Global_Rests measure 258 / measure 10]
     R1 * 3/2
 
 }
@@ -35,7 +35,7 @@ j_Global_Rests = {
 
 j_Global_Skips = {
 
-    % [10 Global_Skips measure 249 / measure 1]
+    % [Global_Skips measure 249 / measure 1]
     \time 1/2
     \bar ""
     \baca-time-signature-color #'green4
@@ -48,7 +48,7 @@ j_Global_Skips = {
     - \baca-start-ct-left-only "[9'40'']"
     \bacaStartTextSpanCT
 
-    % [10 Global_Skips measure 250 / measure 2]
+    % [Global_Skips measure 250 / measure 2]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -57,7 +57,7 @@ j_Global_Skips = {
     - \baca-start-ct-left-only "[9'41'']"
     \bacaStartTextSpanCT
 
-    % [10 Global_Skips measure 251 / measure 3]
+    % [Global_Skips measure 251 / measure 3]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -66,7 +66,7 @@ j_Global_Skips = {
     - \baca-start-ct-left-only "[9'43'']"
     \bacaStartTextSpanCT
 
-    % [10 Global_Skips measure 252 / measure 4]
+    % [Global_Skips measure 252 / measure 4]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -75,7 +75,7 @@ j_Global_Skips = {
     - \baca-start-ct-left-only "[9'45'']"
     \bacaStartTextSpanCT
 
-    % [10 Global_Skips measure 253 / measure 5]
+    % [Global_Skips measure 253 / measure 5]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -84,7 +84,7 @@ j_Global_Skips = {
     - \baca-start-ct-left-only "[9'47'']"
     \bacaStartTextSpanCT
 
-    % [10 Global_Skips measure 254 / measure 6]
+    % [Global_Skips measure 254 / measure 6]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -93,7 +93,7 @@ j_Global_Skips = {
     - \baca-start-ct-left-only "[9'49'']"
     \bacaStartTextSpanCT
 
-    % [10 Global_Skips measure 255 / measure 7]
+    % [Global_Skips measure 255 / measure 7]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -102,7 +102,7 @@ j_Global_Skips = {
     - \baca-start-ct-left-only "[9'50'']"
     \bacaStartTextSpanCT
 
-    % [10 Global_Skips measure 256 / measure 8]
+    % [Global_Skips measure 256 / measure 8]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -111,7 +111,7 @@ j_Global_Skips = {
     - \baca-start-ct-left-only "[9'52'']"
     \bacaStartTextSpanCT
 
-    % [10 Global_Skips measure 257 / measure 9]
+    % [Global_Skips measure 257 / measure 9]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -120,7 +120,7 @@ j_Global_Skips = {
     - \baca-start-ct-both "[9'54'']" "[9'56'']"
     \bacaStartTextSpanCT
 
-    % [10 Global_Skips measure 258 / measure 10]
+    % [Global_Skips measure 258 / measure 10]
     \time 3/2
     \baca-time-signature-color #'blue
     s1 * 3/2
@@ -134,7 +134,7 @@ j_Global_Skips = {
 
 j_RH_Music_Voice = {
 
-    % [10 RH_Music_Voice measure 249 / measure 1]
+    % [RH_Music_Voice measure 249 / measure 1]
     \override Staff.BarLine.bar-extent = #'(-2 . 4)
     \stopStaff
     \once \override RHStaff.StaffSymbol.line-count = 7
@@ -174,7 +174,7 @@ j_RH_Music_Voice = {
     ~
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
 
-    % [10 RH_Music_Voice measure 250 / measure 2]
+    % [RH_Music_Voice measure 250 / measure 2]
     d''2
     :32
     - \tweak color #(x11-color 'blue)
@@ -192,7 +192,7 @@ j_RH_Music_Voice = {
     - \tweak stencil ##f
     ~
 
-    % [10 RH_Music_Voice measure 251 / measure 3]
+    % [RH_Music_Voice measure 251 / measure 3]
     d''2
     :32
     - \tweak color #(x11-color 'blue)
@@ -210,7 +210,7 @@ j_RH_Music_Voice = {
     - \tweak stencil ##f
     ~
 
-    % [10 RH_Music_Voice measure 252 / measure 4]
+    % [RH_Music_Voice measure 252 / measure 4]
     d''2
     :32
     - \tweak color #(x11-color 'blue)
@@ -228,7 +228,7 @@ j_RH_Music_Voice = {
     - \tweak stencil ##f
     ~
 
-    % [10 RH_Music_Voice measure 253 / measure 5]
+    % [RH_Music_Voice measure 253 / measure 5]
     d''2
     :32
     - \tweak color #(x11-color 'blue)
@@ -246,7 +246,7 @@ j_RH_Music_Voice = {
     - \tweak stencil ##f
     ~
 
-    % [10 RH_Music_Voice measure 254 / measure 6]
+    % [RH_Music_Voice measure 254 / measure 6]
     d''2
     :32
     - \tweak color #(x11-color 'blue)
@@ -264,7 +264,7 @@ j_RH_Music_Voice = {
     - \tweak stencil ##f
     ~
 
-    % [10 RH_Music_Voice measure 255 / measure 7]
+    % [RH_Music_Voice measure 255 / measure 7]
     d''2
     :32
     - \tweak color #(x11-color 'blue)
@@ -282,7 +282,7 @@ j_RH_Music_Voice = {
     - \tweak stencil ##f
     ~
 
-    % [10 RH_Music_Voice measure 256 / measure 8]
+    % [RH_Music_Voice measure 256 / measure 8]
     d''2
     :32
     - \tweak color #(x11-color 'blue)
@@ -300,7 +300,7 @@ j_RH_Music_Voice = {
     - \tweak stencil ##f
     ~
 
-    % [10 RH_Music_Voice measure 257 / measure 9]
+    % [RH_Music_Voice measure 257 / measure 9]
     d''2
     :32
     - \tweak color #(x11-color 'blue)
@@ -321,7 +321,7 @@ j_RH_Music_Voice = {
     - \tweak stencil ##f
     ~
 
-    % [10 RH_Music_Voice measure 258 / measure 10]
+    % [RH_Music_Voice measure 258 / measure 10]
     d''1.
     :32
     - \tweak color #(x11-color 'blue)
@@ -347,7 +347,7 @@ j_RH_Music_Staff = {
 
 j_Cello_Music_Voice = {
 
-    % [10 Cello_Music_Voice measure 249 / measure 1]
+    % [Cello_Music_Voice measure 249 / measure 1]
     \override MultiMeasureRest.transparent = ##t
     \override Score.BarLine.transparent = ##t
     \override Score.SpanBar.transparent = ##t
@@ -362,31 +362,31 @@ j_Cello_Music_Voice = {
     ^ \baca-reapplied-indicator-markup "(“Cello”)"
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
 
-    % [10 Cello_Music_Voice measure 250 / measure 2]
+    % [Cello_Music_Voice measure 250 / measure 2]
     R1 * 1/2
 
-    % [10 Cello_Music_Voice measure 251 / measure 3]
+    % [Cello_Music_Voice measure 251 / measure 3]
     R1 * 1/2
 
-    % [10 Cello_Music_Voice measure 252 / measure 4]
+    % [Cello_Music_Voice measure 252 / measure 4]
     R1 * 1/2
 
-    % [10 Cello_Music_Voice measure 253 / measure 5]
+    % [Cello_Music_Voice measure 253 / measure 5]
     R1 * 1/2
 
-    % [10 Cello_Music_Voice measure 254 / measure 6]
+    % [Cello_Music_Voice measure 254 / measure 6]
     R1 * 1/2
 
-    % [10 Cello_Music_Voice measure 255 / measure 7]
+    % [Cello_Music_Voice measure 255 / measure 7]
     R1 * 1/2
 
-    % [10 Cello_Music_Voice measure 256 / measure 8]
+    % [Cello_Music_Voice measure 256 / measure 8]
     R1 * 1/2
 
-    % [10 Cello_Music_Voice measure 257 / measure 9]
+    % [Cello_Music_Voice measure 257 / measure 9]
     R1 * 1/2
 
-    % [10 Cello_Music_Voice measure 258 / measure 10]
+    % [Cello_Music_Voice measure 258 / measure 10]
     \override Score.BarLine.X-extent = #'(0 . 8)
     \override Score.BarLine.extra-offset = #'(8 . 0)
     \override Score.RehearsalMark.extra-offset = #'(4 . 0)

@@ -1,168 +1,168 @@
 a_Global_Rests = {
 
-    % [01 Global_Rests measure 1]
+    % [Global_Rests measure 1]
     R1 * 7/8
 
-    % [01 Global_Rests measure 2]
+    % [Global_Rests measure 2]
     R1 * 15/16
 
-    % [01 Global_Rests measure 3]
+    % [Global_Rests measure 3]
     R1 * 11/16
 
-    % [01 Global_Rests measure 4]
+    % [Global_Rests measure 4]
     R1 * 7/8
 
-    % [01 Global_Rests measure 5]
+    % [Global_Rests measure 5]
     R1 * 15/16
 
-    % [01 Global_Rests measure 6]
+    % [Global_Rests measure 6]
     R1 * 15/16
 
-    % [01 Global_Rests measure 7]
+    % [Global_Rests measure 7]
     R1 * 3/8
 
-    % [01 Global_Rests measure 8]
+    % [Global_Rests measure 8]
     R1 * 1
 
-    % [01 Global_Rests measure 9]
+    % [Global_Rests measure 9]
     R1 * 3/4
 
-    % [01 Global_Rests measure 10]
+    % [Global_Rests measure 10]
     R1 * 7/8
 
-    % [01 Global_Rests measure 11]
+    % [Global_Rests measure 11]
     R1 * 1
 
-    % [01 Global_Rests measure 12]
+    % [Global_Rests measure 12]
     R1 * 3/4
 
-    % [01 Global_Rests measure 13]
+    % [Global_Rests measure 13]
     R1 * 3/2
 
-    % [01 Global_Rests measure 14]
+    % [Global_Rests measure 14]
     R1 * 5/4
 
-    % [01 Global_Rests measure 15]
+    % [Global_Rests measure 15]
     R1 * 1/4
 
-    % [01 Global_Rests measure 16]
+    % [Global_Rests measure 16]
     R1 * 2
 
-    % [01 Global_Rests measure 17]
+    % [Global_Rests measure 17]
     R1 * 9/8
 
-    % [01 Global_Rests measure 18]
+    % [Global_Rests measure 18]
     R1 * 7/8
 
-    % [01 Global_Rests measure 19]
+    % [Global_Rests measure 19]
     R1 * 3/4
 
-    % [01 Global_Rests measure 20]
+    % [Global_Rests measure 20]
     R1 * 5/8
 
-    % [01 Global_Rests measure 21]
+    % [Global_Rests measure 21]
     R1 * 7/8
 
-    % [01 Global_Rests measure 22]
+    % [Global_Rests measure 22]
     R1 * 1/2
 
-    % [01 Global_Rests measure 23]
+    % [Global_Rests measure 23]
     R1 * 5/4
 
-    % [01 Global_Rests measure 24]
+    % [Global_Rests measure 24]
     R1 * 1
 
-    % [01 Global_Rests measure 25]
+    % [Global_Rests measure 25]
     R1 * 1/2
 
-    % [01 Global_Rests measure 26]
+    % [Global_Rests measure 26]
     R1 * 5/4
 
-    % [01 Global_Rests measure 27]
+    % [Global_Rests measure 27]
     R1 * 1
 
-    % [01 Global_Rests measure 28]
+    % [Global_Rests measure 28]
     R1 * 1/2
 
-    % [01 Global_Rests measure 29]
+    % [Global_Rests measure 29]
     R1 * 1
 
-    % [01 Global_Rests measure 30]
+    % [Global_Rests measure 30]
     R1 * 1
 
-    % [01 Global_Rests measure 31]
+    % [Global_Rests measure 31]
     R1 * 3/4
 
-    % [01 Global_Rests measure 32]
+    % [Global_Rests measure 32]
     R1 * 3/4
 
-    % [01 Global_Rests measure 33]
+    % [Global_Rests measure 33]
     R1 * 1/2
 
-    % [01 Global_Rests measure 34]
+    % [Global_Rests measure 34]
     R1 * 5/4
 
-    % [01 Global_Rests measure 35]
+    % [Global_Rests measure 35]
     R1 * 13/16
 
-    % [01 Global_Rests measure 36]
+    % [Global_Rests measure 36]
     R1 * 5/8
 
-    % [01 Global_Rests measure 37]
+    % [Global_Rests measure 37]
     R1 * 5/4
 
-    % [01 Global_Rests measure 38]
+    % [Global_Rests measure 38]
     R1 * 1
 
-    % [01 Global_Rests measure 39]
+    % [Global_Rests measure 39]
     R1 * 5/16
 
-    % [01 Global_Rests measure 40]
+    % [Global_Rests measure 40]
     R1 * 1
 
-    % [01 Global_Rests measure 41]
+    % [Global_Rests measure 41]
     R1 * 9/16
 
-    % [01 Global_Rests measure 42]
+    % [Global_Rests measure 42]
     R1 * 3/4
 
-    % [01 Global_Rests measure 43]
+    % [Global_Rests measure 43]
     R1 * 7/8
 
-    % [01 Global_Rests measure 44]
+    % [Global_Rests measure 44]
     R1 * 3/4
 
-    % [01 Global_Rests measure 45]
+    % [Global_Rests measure 45]
     R1 * 7/8
 
-    % [01 Global_Rests measure 46]
+    % [Global_Rests measure 46]
     R1 * 1
 
-    % [01 Global_Rests measure 47]
+    % [Global_Rests measure 47]
     R1 * 1/4
 
-    % [01 Global_Rests measure 48]
+    % [Global_Rests measure 48]
     R1 * 3/2
 
-    % [01 Global_Rests measure 49]
+    % [Global_Rests measure 49]
     R1 * 1
 
-    % [01 Global_Rests measure 50]
+    % [Global_Rests measure 50]
     R1 * 1
 
-    % [01 Global_Rests measure 51]
+    % [Global_Rests measure 51]
     R1 * 9/4
 
-    % [01 Global_Rests measure 52]
+    % [Global_Rests measure 52]
     R1 * 3/2
 
-    % [01 Global_Rests measure 53]
+    % [Global_Rests measure 53]
     R1 * 1
 
-    % [01 Global_Rests measure 54]
+    % [Global_Rests measure 54]
     R1 * 3/4
 
-    % [01 Global_Rests measure 55]
+    % [Global_Rests measure 55]
     R1 * 1/4
 
 }
@@ -170,7 +170,7 @@ a_Global_Rests = {
 
 a_Global_Skips = {
 
-    % [01 Global_Skips measure 1]
+    % [Global_Skips measure 1]
     \time 7/8
     \baca-time-signature-color #'blue
     s1 * 7/8
@@ -182,7 +182,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'00'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 2]
+    % [Global_Skips measure 2]
     \time 15/16
     \baca-time-signature-color #'blue
     s1 * 15/16
@@ -193,7 +193,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'02'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 3]
+    % [Global_Skips measure 3]
     \time 11/16
     \baca-time-signature-color #'blue
     s1 * 11/16
@@ -204,7 +204,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'05'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 4]
+    % [Global_Skips measure 4]
     \time 7/8
     \baca-time-signature-color #'blue
     s1 * 7/8
@@ -215,7 +215,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'07'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 5]
+    % [Global_Skips measure 5]
     \time 15/16
     \baca-time-signature-color #'blue
     s1 * 15/16
@@ -226,7 +226,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'10'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 6]
+    % [Global_Skips measure 6]
     s1 * 15/16
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -235,7 +235,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'13'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 7]
+    % [Global_Skips measure 7]
     \time 3/8
     \baca-time-signature-color #'blue
     s1 * 3/8
@@ -246,7 +246,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'16'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 8]
+    % [Global_Skips measure 8]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -257,7 +257,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'17'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 9]
+    % [Global_Skips measure 9]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -268,7 +268,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'20'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 10]
+    % [Global_Skips measure 10]
     \time 7/8
     \baca-time-signature-color #'blue
     s1 * 7/8
@@ -279,7 +279,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'22'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 11]
+    % [Global_Skips measure 11]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -290,7 +290,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'25'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 12]
+    % [Global_Skips measure 12]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -301,7 +301,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'28'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 13]
+    % [Global_Skips measure 13]
     \time 6/4
     \baca-time-signature-color #'blue
     s1 * 3/2
@@ -312,7 +312,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'30'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 14]
+    % [Global_Skips measure 14]
     \time 5/4
     \baca-time-signature-color #'blue
     s1 * 5/4
@@ -323,7 +323,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'35'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 15]
+    % [Global_Skips measure 15]
     \time 1/4
     \baca-time-signature-color #'blue
     s1 * 1/4
@@ -334,7 +334,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'39'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 16]
+    % [Global_Skips measure 16]
     \time 8/4
     \baca-time-signature-color #'blue
     s1 * 2
@@ -345,7 +345,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'40'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 17]
+    % [Global_Skips measure 17]
     \time 9/8
     \baca-time-signature-color #'blue
     s1 * 9/8
@@ -356,7 +356,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'46'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 18]
+    % [Global_Skips measure 18]
     \time 7/8
     \baca-time-signature-color #'blue
     s1 * 7/8
@@ -367,7 +367,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'49'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 19]
+    % [Global_Skips measure 19]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -378,7 +378,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'52'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 20]
+    % [Global_Skips measure 20]
     \time 5/8
     \baca-time-signature-color #'blue
     s1 * 5/8
@@ -389,7 +389,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'54'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 21]
+    % [Global_Skips measure 21]
     \time 7/8
     \baca-time-signature-color #'blue
     s1 * 7/8
@@ -400,7 +400,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'56'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 22]
+    % [Global_Skips measure 22]
     \time 2/4
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -411,7 +411,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[0'59'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 23]
+    % [Global_Skips measure 23]
     \time 5/4
     \baca-time-signature-color #'blue
     s1 * 5/4
@@ -422,7 +422,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'00'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 24]
+    % [Global_Skips measure 24]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -433,7 +433,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'04'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 25]
+    % [Global_Skips measure 25]
     \time 2/4
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -444,7 +444,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'07'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 26]
+    % [Global_Skips measure 26]
     \time 5/4
     \baca-time-signature-color #'blue
     s1 * 5/4
@@ -455,7 +455,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'09'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 27]
+    % [Global_Skips measure 27]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -466,7 +466,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'13'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 28]
+    % [Global_Skips measure 28]
     \time 2/4
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -477,7 +477,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'16'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 29]
+    % [Global_Skips measure 29]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -488,7 +488,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'17'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 30]
+    % [Global_Skips measure 30]
     s1 * 1
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -497,7 +497,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'20'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 31]
+    % [Global_Skips measure 31]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -508,7 +508,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'23'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 32]
+    % [Global_Skips measure 32]
     s1 * 3/4
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -517,7 +517,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'26'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 33]
+    % [Global_Skips measure 33]
     \time 2/4
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -528,7 +528,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'28'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 34]
+    % [Global_Skips measure 34]
     \time 5/4
     \baca-time-signature-color #'blue
     s1 * 5/4
@@ -539,7 +539,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'30'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 35]
+    % [Global_Skips measure 35]
     \time 13/16
     \baca-time-signature-color #'blue
     s1 * 13/16
@@ -550,7 +550,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'33'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 36]
+    % [Global_Skips measure 36]
     \time 5/8
     \baca-time-signature-color #'blue
     s1 * 5/8
@@ -561,7 +561,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'36'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 37]
+    % [Global_Skips measure 37]
     \time 5/4
     \baca-time-signature-color #'blue
     s1 * 5/4
@@ -572,7 +572,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'38'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 38]
+    % [Global_Skips measure 38]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -583,7 +583,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'42'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 39]
+    % [Global_Skips measure 39]
     \time 5/16
     \baca-time-signature-color #'blue
     s1 * 5/16
@@ -594,7 +594,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'45'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 40]
+    % [Global_Skips measure 40]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -605,7 +605,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'46'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 41]
+    % [Global_Skips measure 41]
     \time 9/16
     \baca-time-signature-color #'blue
     s1 * 9/16
@@ -616,7 +616,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'49'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 42]
+    % [Global_Skips measure 42]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -627,7 +627,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'50'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 43]
+    % [Global_Skips measure 43]
     \time 7/8
     \baca-time-signature-color #'blue
     s1 * 7/8
@@ -638,7 +638,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'53'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 44]
+    % [Global_Skips measure 44]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -649,7 +649,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'55'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 45]
+    % [Global_Skips measure 45]
     \time 7/8
     \baca-time-signature-color #'blue
     s1 * 7/8
@@ -660,7 +660,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[1'58'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 46]
+    % [Global_Skips measure 46]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -671,7 +671,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[2'00'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 47]
+    % [Global_Skips measure 47]
     \time 1/4
     \baca-time-signature-color #'blue
     s1 * 1/4
@@ -682,7 +682,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[2'04'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 48]
+    % [Global_Skips measure 48]
     \time 6/4
     \baca-time-signature-color #'blue
     s1 * 3/2
@@ -693,7 +693,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[2'04'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 49]
+    % [Global_Skips measure 49]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -704,7 +704,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[2'09'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 50]
+    % [Global_Skips measure 50]
     s1 * 1
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -713,7 +713,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[2'12'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 51]
+    % [Global_Skips measure 51]
     \time 9/4
     \baca-time-signature-color #'blue
     s1 * 9/4
@@ -724,7 +724,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[2'15'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 52]
+    % [Global_Skips measure 52]
     \time 6/4
     \baca-time-signature-color #'blue
     s1 * 3/2
@@ -735,7 +735,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[2'22'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 53]
+    % [Global_Skips measure 53]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -746,7 +746,7 @@ a_Global_Skips = {
     - \baca-start-ct-left-only "[2'27'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 54]
+    % [Global_Skips measure 54]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -757,7 +757,7 @@ a_Global_Skips = {
     - \baca-start-ct-both "[2'30'']" "[2'32'']"
     \bacaStartTextSpanCT
 
-    % [01 Global_Skips measure 55]
+    % [Global_Skips measure 55]
     \time 1/4
     \baca-time-signature-transparent
     s1 * 1/4
@@ -772,7 +772,7 @@ a_Global_Skips = {
 
 a_RH_Music_Voice = {
 
-    % [01 RH_Music_Voice measure 1]
+    % [RH_Music_Voice measure 1]
     \stopStaff
     \override MultiMeasureRest.transparent = ##t
     \clef "percussion"
@@ -781,163 +781,163 @@ a_RH_Music_Voice = {
     R1 * 7/8
     \override RHStaff.Clef.color = #(x11-color 'violet)
 
-    % [01 RH_Music_Voice measure 2]
+    % [RH_Music_Voice measure 2]
     R1 * 15/16
 
-    % [01 RH_Music_Voice measure 3]
+    % [RH_Music_Voice measure 3]
     R1 * 11/16
 
-    % [01 RH_Music_Voice measure 4]
+    % [RH_Music_Voice measure 4]
     R1 * 7/8
 
-    % [01 RH_Music_Voice measure 5]
+    % [RH_Music_Voice measure 5]
     R1 * 15/16
 
-    % [01 RH_Music_Voice measure 6]
+    % [RH_Music_Voice measure 6]
     R1 * 15/16
 
-    % [01 RH_Music_Voice measure 7]
+    % [RH_Music_Voice measure 7]
     R1 * 3/8
 
-    % [01 RH_Music_Voice measure 8]
+    % [RH_Music_Voice measure 8]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 9]
+    % [RH_Music_Voice measure 9]
     R1 * 3/4
 
-    % [01 RH_Music_Voice measure 10]
+    % [RH_Music_Voice measure 10]
     R1 * 7/8
 
-    % [01 RH_Music_Voice measure 11]
+    % [RH_Music_Voice measure 11]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 12]
+    % [RH_Music_Voice measure 12]
     R1 * 3/4
 
-    % [01 RH_Music_Voice measure 13]
+    % [RH_Music_Voice measure 13]
     R1 * 6/4
 
-    % [01 RH_Music_Voice measure 14]
+    % [RH_Music_Voice measure 14]
     R1 * 5/4
 
-    % [01 RH_Music_Voice measure 15]
+    % [RH_Music_Voice measure 15]
     R1 * 1/4
 
-    % [01 RH_Music_Voice measure 16]
+    % [RH_Music_Voice measure 16]
     R1 * 8/4
 
-    % [01 RH_Music_Voice measure 17]
+    % [RH_Music_Voice measure 17]
     R1 * 9/8
 
-    % [01 RH_Music_Voice measure 18]
+    % [RH_Music_Voice measure 18]
     R1 * 7/8
 
-    % [01 RH_Music_Voice measure 19]
+    % [RH_Music_Voice measure 19]
     R1 * 3/4
 
-    % [01 RH_Music_Voice measure 20]
+    % [RH_Music_Voice measure 20]
     R1 * 5/8
 
-    % [01 RH_Music_Voice measure 21]
+    % [RH_Music_Voice measure 21]
     R1 * 7/8
 
-    % [01 RH_Music_Voice measure 22]
+    % [RH_Music_Voice measure 22]
     R1 * 2/4
 
-    % [01 RH_Music_Voice measure 23]
+    % [RH_Music_Voice measure 23]
     R1 * 5/4
 
-    % [01 RH_Music_Voice measure 24]
+    % [RH_Music_Voice measure 24]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 25]
+    % [RH_Music_Voice measure 25]
     R1 * 2/4
 
-    % [01 RH_Music_Voice measure 26]
+    % [RH_Music_Voice measure 26]
     R1 * 5/4
 
-    % [01 RH_Music_Voice measure 27]
+    % [RH_Music_Voice measure 27]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 28]
+    % [RH_Music_Voice measure 28]
     R1 * 2/4
 
-    % [01 RH_Music_Voice measure 29]
+    % [RH_Music_Voice measure 29]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 30]
+    % [RH_Music_Voice measure 30]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 31]
+    % [RH_Music_Voice measure 31]
     R1 * 3/4
 
-    % [01 RH_Music_Voice measure 32]
+    % [RH_Music_Voice measure 32]
     R1 * 3/4
 
-    % [01 RH_Music_Voice measure 33]
+    % [RH_Music_Voice measure 33]
     R1 * 2/4
 
-    % [01 RH_Music_Voice measure 34]
+    % [RH_Music_Voice measure 34]
     R1 * 5/4
 
-    % [01 RH_Music_Voice measure 35]
+    % [RH_Music_Voice measure 35]
     R1 * 13/16
 
-    % [01 RH_Music_Voice measure 36]
+    % [RH_Music_Voice measure 36]
     R1 * 5/8
 
-    % [01 RH_Music_Voice measure 37]
+    % [RH_Music_Voice measure 37]
     R1 * 5/4
 
-    % [01 RH_Music_Voice measure 38]
+    % [RH_Music_Voice measure 38]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 39]
+    % [RH_Music_Voice measure 39]
     R1 * 5/16
 
-    % [01 RH_Music_Voice measure 40]
+    % [RH_Music_Voice measure 40]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 41]
+    % [RH_Music_Voice measure 41]
     R1 * 9/16
 
-    % [01 RH_Music_Voice measure 42]
+    % [RH_Music_Voice measure 42]
     R1 * 3/4
 
-    % [01 RH_Music_Voice measure 43]
+    % [RH_Music_Voice measure 43]
     R1 * 7/8
 
-    % [01 RH_Music_Voice measure 44]
+    % [RH_Music_Voice measure 44]
     R1 * 3/4
 
-    % [01 RH_Music_Voice measure 45]
+    % [RH_Music_Voice measure 45]
     R1 * 7/8
 
-    % [01 RH_Music_Voice measure 46]
+    % [RH_Music_Voice measure 46]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 47]
+    % [RH_Music_Voice measure 47]
     R1 * 1/4
 
-    % [01 RH_Music_Voice measure 48]
+    % [RH_Music_Voice measure 48]
     R1 * 6/4
 
-    % [01 RH_Music_Voice measure 49]
+    % [RH_Music_Voice measure 49]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 50]
+    % [RH_Music_Voice measure 50]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 51]
+    % [RH_Music_Voice measure 51]
     R1 * 9/4
 
-    % [01 RH_Music_Voice measure 52]
+    % [RH_Music_Voice measure 52]
     R1 * 6/4
 
-    % [01 RH_Music_Voice measure 53]
+    % [RH_Music_Voice measure 53]
     R1 * 4/4
 
-    % [01 RH_Music_Voice measure 54]
+    % [RH_Music_Voice measure 54]
     R1 * 3/4
     \revert MultiMeasureRest.transparent
 
@@ -946,7 +946,7 @@ a_RH_Music_Voice = {
         \context Voice = "RH_Music_Voice"
         {
 
-            % [01 RH_Music_Voice measure 55]
+            % [RH_Music_Voice measure 55]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -955,7 +955,7 @@ a_RH_Music_Voice = {
         \context Voice = "RH_Rest_Voice"
         {
 
-            % [01 RH_Rest_Voice measure 55]
+            % [RH_Rest_Voice measure 55]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -984,7 +984,7 @@ a_Cello_Music_Voice = {
     \times 3/5
     {
 
-        % [01 Cello_Music_Voice measure 1]
+        % [Cello_Music_Voice measure 1]
         \override TupletBracket.staff-padding = 3
         \clef "bass"
         \once \override Staff.Clef.color = #(x11-color 'DarkViolet)
@@ -1047,7 +1047,7 @@ a_Cello_Music_Voice = {
     \times 9/16
     {
 
-        % [01 Cello_Music_Voice measure 2]
+        % [Cello_Music_Voice measure 2]
         bf,!4
 
         a,4
@@ -1079,7 +1079,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 3]
+        % [Cello_Music_Voice measure 3]
         c8
         [
 
@@ -1122,7 +1122,7 @@ a_Cello_Music_Voice = {
     \times 7/8
     {
 
-        % [01 Cello_Music_Voice measure 4]
+        % [Cello_Music_Voice measure 4]
         b,4
 
         c4
@@ -1152,7 +1152,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 5]
+        % [Cello_Music_Voice measure 5]
         af!16
         [
 
@@ -1195,7 +1195,7 @@ a_Cello_Music_Voice = {
     \times 2/3
     {
 
-        % [01 Cello_Music_Voice measure 6]
+        % [Cello_Music_Voice measure 6]
         af,!8
         [
 
@@ -1242,7 +1242,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 7]
+        % [Cello_Music_Voice measure 7]
         a,16
         [
 
@@ -1272,7 +1272,7 @@ a_Cello_Music_Voice = {
     \times 33/36
     {
 
-        % [01 Cello_Music_Voice measure 8]
+        % [Cello_Music_Voice measure 8]
         d8
         [
 
@@ -1324,7 +1324,7 @@ a_Cello_Music_Voice = {
     \times 3/4
     {
 
-        % [01 Cello_Music_Voice measure 9]
+        % [Cello_Music_Voice measure 9]
         a,8
         [
 
@@ -1369,7 +1369,7 @@ a_Cello_Music_Voice = {
     \times 7/9
     {
 
-        % [01 Cello_Music_Voice measure 10]
+        % [Cello_Music_Voice measure 10]
         a,8
 
         \once \override Accidental.color = #blue
@@ -1398,7 +1398,7 @@ a_Cello_Music_Voice = {
     \times 3/5
     {
 
-        % [01 Cello_Music_Voice measure 11]
+        % [Cello_Music_Voice measure 11]
         ef!8
         [
 
@@ -1442,7 +1442,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 12]
+        % [Cello_Music_Voice measure 12]
         cs!16
         [
 
@@ -1479,7 +1479,7 @@ a_Cello_Music_Voice = {
     \times 3/4
     {
 
-        % [01 Cello_Music_Voice measure 13]
+        % [Cello_Music_Voice measure 13]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -1525,7 +1525,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 14]
+        % [Cello_Music_Voice measure 14]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -1581,7 +1581,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 15]
+        % [Cello_Music_Voice measure 15]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -1609,7 +1609,7 @@ a_Cello_Music_Voice = {
     \times 2/3
     {
 
-        % [01 Cello_Music_Voice measure 16]
+        % [Cello_Music_Voice measure 16]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -1646,7 +1646,7 @@ a_Cello_Music_Voice = {
     \times 9/14
     {
 
-        % [01 Cello_Music_Voice measure 17]
+        % [Cello_Music_Voice measure 17]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -1703,7 +1703,7 @@ a_Cello_Music_Voice = {
     \times 7/12
     {
 
-        % [01 Cello_Music_Voice measure 18]
+        % [Cello_Music_Voice measure 18]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -1729,7 +1729,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 19]
+        % [Cello_Music_Voice measure 19]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1783,7 +1783,7 @@ a_Cello_Music_Voice = {
     \times 15/24
     {
 
-        % [01 Cello_Music_Voice measure 20]
+        % [Cello_Music_Voice measure 20]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1831,7 +1831,7 @@ a_Cello_Music_Voice = {
     \times 7/10
     {
 
-        % [01 Cello_Music_Voice measure 21]
+        % [Cello_Music_Voice measure 21]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1887,7 +1887,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 22]
+        % [Cello_Music_Voice measure 22]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -1952,7 +1952,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 23]
+        % [Cello_Music_Voice measure 23]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2009,7 +2009,7 @@ a_Cello_Music_Voice = {
     \times 3/4
     {
 
-        % [01 Cello_Music_Voice measure 24]
+        % [Cello_Music_Voice measure 24]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2071,7 +2071,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 25]
+        % [Cello_Music_Voice measure 25]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2135,7 +2135,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 26]
+        % [Cello_Music_Voice measure 26]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2191,7 +2191,7 @@ a_Cello_Music_Voice = {
     \times 2/3
     {
 
-        % [01 Cello_Music_Voice measure 27]
+        % [Cello_Music_Voice measure 27]
         fs!8
         [
 
@@ -2242,7 +2242,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 28]
+        % [Cello_Music_Voice measure 28]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2295,7 +2295,7 @@ a_Cello_Music_Voice = {
     \times 2/3
     {
 
-        % [01 Cello_Music_Voice measure 29]
+        % [Cello_Music_Voice measure 29]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2325,7 +2325,7 @@ a_Cello_Music_Voice = {
     \times 2/3
     {
 
-        % [01 Cello_Music_Voice measure 30]
+        % [Cello_Music_Voice measure 30]
         b,8
         [
 
@@ -2376,7 +2376,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 31]
+        % [Cello_Music_Voice measure 31]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2441,7 +2441,7 @@ a_Cello_Music_Voice = {
     \times 3/4
     {
 
-        % [01 Cello_Music_Voice measure 32]
+        % [Cello_Music_Voice measure 32]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2477,7 +2477,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 33]
+        % [Cello_Music_Voice measure 33]
         fs,!16
         [
 
@@ -2530,7 +2530,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 34]
+        % [Cello_Music_Voice measure 34]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2566,7 +2566,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 35]
+        % [Cello_Music_Voice measure 35]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2606,7 +2606,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 36]
+        % [Cello_Music_Voice measure 36]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2661,7 +2661,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 37]
+        % [Cello_Music_Voice measure 37]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2697,7 +2697,7 @@ a_Cello_Music_Voice = {
     \times 2/3
     {
 
-        % [01 Cello_Music_Voice measure 38]
+        % [Cello_Music_Voice measure 38]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2748,7 +2748,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 39]
+        % [Cello_Music_Voice measure 39]
         b,16
         [
 
@@ -2777,7 +2777,7 @@ a_Cello_Music_Voice = {
     \times 2/3
     {
 
-        % [01 Cello_Music_Voice measure 40]
+        % [Cello_Music_Voice measure 40]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2808,7 +2808,7 @@ a_Cello_Music_Voice = {
     \times 9/14
     {
 
-        % [01 Cello_Music_Voice measure 41]
+        % [Cello_Music_Voice measure 41]
         a,8
         [
 
@@ -2843,7 +2843,7 @@ a_Cello_Music_Voice = {
     \times 3/4
     {
 
-        % [01 Cello_Music_Voice measure 42]
+        % [Cello_Music_Voice measure 42]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2869,7 +2869,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 43]
+        % [Cello_Music_Voice measure 43]
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -2930,7 +2930,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 44]
+        % [Cello_Music_Voice measure 44]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -2974,7 +2974,7 @@ a_Cello_Music_Voice = {
     \times 7/9
     {
 
-        % [01 Cello_Music_Voice measure 45]
+        % [Cello_Music_Voice measure 45]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3003,7 +3003,7 @@ a_Cello_Music_Voice = {
     \times 9/16
     {
 
-        % [01 Cello_Music_Voice measure 46]
+        % [Cello_Music_Voice measure 46]
         c8
         [
 
@@ -3047,7 +3047,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 47]
+        % [Cello_Music_Voice measure 47]
         c16
         [
 
@@ -3071,7 +3071,7 @@ a_Cello_Music_Voice = {
     \times 3/5
     {
 
-        % [01 Cello_Music_Voice measure 48]
+        % [Cello_Music_Voice measure 48]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3128,7 +3128,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 49]
+        % [Cello_Music_Voice measure 49]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3154,7 +3154,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 50]
+        % [Cello_Music_Voice measure 50]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3206,7 +3206,7 @@ a_Cello_Music_Voice = {
     \times 9/16
     {
 
-        % [01 Cello_Music_Voice measure 51]
+        % [Cello_Music_Voice measure 51]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3254,7 +3254,7 @@ a_Cello_Music_Voice = {
     \times 3/5
     {
 
-        % [01 Cello_Music_Voice measure 52]
+        % [Cello_Music_Voice measure 52]
         \override TupletBracket.staff-padding = 4
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
@@ -3311,7 +3311,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 53]
+        % [Cello_Music_Voice measure 53]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3338,7 +3338,7 @@ a_Cello_Music_Voice = {
     \scaleDurations #'(1 . 1)
     {
 
-        % [01 Cello_Music_Voice measure 54]
+        % [Cello_Music_Voice measure 54]
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3381,7 +3381,7 @@ a_Cello_Music_Voice = {
         \context Voice = "Cello_Music_Voice"
         {
 
-            % [01 Cello_Music_Voice measure 55]
+            % [Cello_Music_Voice measure 55]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             d1 * 1/4
@@ -3391,7 +3391,7 @@ a_Cello_Music_Voice = {
         \context Voice = "Cello_Rest_Voice"
         {
 
-            % [01 Cello_Rest_Voice measure 55]
+            % [Cello_Rest_Voice measure 55]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
