@@ -40,6 +40,8 @@ maker = baca.SegmentMaker(
     ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, 13),
+    instruments=huitzil.instruments,
+    metronome_marks=huitzil.metronome_marks,
     score_template=huitzil.ScoreTemplate(),
     time_signatures=time_signatures,
 )
