@@ -1,75 +1,75 @@
 f_Global_Rests = {
 
-    % [06 Global_Rests measure 151 / measure 1]
+    % [Global_Rests measure 151 / measure 1]
     R1 * 1/2
 
-    % [06 Global_Rests measure 152 / measure 2]
+    % [Global_Rests measure 152 / measure 2]
     R1 * 1/2
 
-    % [06 Global_Rests measure 153 / measure 3]
+    % [Global_Rests measure 153 / measure 3]
     R1 * 2/3
 
-    % [06 Global_Rests measure 154 / measure 4]
+    % [Global_Rests measure 154 / measure 4]
     R1 * 1/2
 
-    % [06 Global_Rests measure 155 / measure 5]
+    % [Global_Rests measure 155 / measure 5]
     R1 * 4/5
 
-    % [06 Global_Rests measure 156 / measure 6]
+    % [Global_Rests measure 156 / measure 6]
     R1 * 1/2
 
-    % [06 Global_Rests measure 157 / measure 7]
+    % [Global_Rests measure 157 / measure 7]
     R1 * 2/3
 
-    % [06 Global_Rests measure 158 / measure 8]
+    % [Global_Rests measure 158 / measure 8]
     R1 * 1/2
 
-    % [06 Global_Rests measure 159 / measure 9]
+    % [Global_Rests measure 159 / measure 9]
     R1 * 4/5
 
-    % [06 Global_Rests measure 160 / measure 10]
+    % [Global_Rests measure 160 / measure 10]
     R1 * 1/2
 
-    % [06 Global_Rests measure 161 / measure 11]
+    % [Global_Rests measure 161 / measure 11]
     R1 * 2/3
 
-    % [06 Global_Rests measure 162 / measure 12]
+    % [Global_Rests measure 162 / measure 12]
     R1 * 1/2
 
-    % [06 Global_Rests measure 163 / measure 13]
+    % [Global_Rests measure 163 / measure 13]
     R1 * 4/5
 
-    % [06 Global_Rests measure 164 / measure 14]
+    % [Global_Rests measure 164 / measure 14]
     R1 * 1/2
 
-    % [06 Global_Rests measure 165 / measure 15]
+    % [Global_Rests measure 165 / measure 15]
     R1 * 2/3
 
-    % [06 Global_Rests measure 166 / measure 16]
+    % [Global_Rests measure 166 / measure 16]
     R1 * 1/2
 
-    % [06 Global_Rests measure 167 / measure 17]
+    % [Global_Rests measure 167 / measure 17]
     R1 * 4/5
 
-    % [06 Global_Rests measure 168 / measure 18]
+    % [Global_Rests measure 168 / measure 18]
     R1 * 1/2
 
-    % [06 Global_Rests measure 169 / measure 19]
+    % [Global_Rests measure 169 / measure 19]
     R1 * 1/2
 
-    % [06 Global_Rests measure 170 / measure 20]
+    % [Global_Rests measure 170 / measure 20]
     R1 * 1/2
 
-    % [06 Global_Rests measure 171 / measure 21]
+    % [Global_Rests measure 171 / measure 21]
     R1 * 1/2
 
-    % [06 Global_Rests measure 172 / measure 22]
+    % [Global_Rests measure 172 / measure 22]
     R1 * 1/2
 
-    % [06 Global_Rests measure 173 / measure 23]
+    % [Global_Rests measure 173 / measure 23]
     R1 * 1/2
 
-    % [06 Global_Rests measure 174 / measure 24]
+    % [Global_Rests measure 174 / measure 24]
     R1 * 1/4
 
 }
@@ -77,7 +77,7 @@ f_Global_Rests = {
 
 f_Global_Skips = {
 
-    % [06 Global_Skips measure 151 / measure 1]
+    % [Global_Skips measure 151 / measure 1]
     \time 1/2
     \bar ""
     \baca-time-signature-color #'green4
@@ -90,7 +90,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[6'52'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 152 / measure 2]
+    % [Global_Skips measure 152 / measure 2]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -99,7 +99,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[6'53'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 153 / measure 3]
+    % [Global_Skips measure 153 / measure 3]
     #(ly:expect-warning "strange time signature found")
     \time 2/3
     \baca-time-signature-color #'blue
@@ -111,7 +111,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[6'54'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 154 / measure 4]
+    % [Global_Skips measure 154 / measure 4]
     \time 1/2
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -122,7 +122,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[6'56'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 155 / measure 5]
+    % [Global_Skips measure 155 / measure 5]
     #(ly:expect-warning "strange time signature found")
     \time 4/5
     \baca-time-signature-color #'blue
@@ -134,7 +134,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[6'57'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 156 / measure 6]
+    % [Global_Skips measure 156 / measure 6]
     \time 1/2
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -145,7 +145,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'00'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 157 / measure 7]
+    % [Global_Skips measure 157 / measure 7]
     #(ly:expect-warning "strange time signature found")
     \time 2/3
     \baca-time-signature-color #'blue
@@ -157,7 +157,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'01'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 158 / measure 8]
+    % [Global_Skips measure 158 / measure 8]
     \time 1/2
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -168,7 +168,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'03'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 159 / measure 9]
+    % [Global_Skips measure 159 / measure 9]
     #(ly:expect-warning "strange time signature found")
     \time 4/5
     \baca-time-signature-color #'blue
@@ -180,7 +180,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'04'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 160 / measure 10]
+    % [Global_Skips measure 160 / measure 10]
     \time 1/2
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -191,7 +191,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'06'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 161 / measure 11]
+    % [Global_Skips measure 161 / measure 11]
     #(ly:expect-warning "strange time signature found")
     \time 2/3
     \baca-time-signature-color #'blue
@@ -203,7 +203,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'08'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 162 / measure 12]
+    % [Global_Skips measure 162 / measure 12]
     \time 1/2
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -214,7 +214,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'10'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 163 / measure 13]
+    % [Global_Skips measure 163 / measure 13]
     #(ly:expect-warning "strange time signature found")
     \time 4/5
     \baca-time-signature-color #'blue
@@ -226,7 +226,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'11'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 164 / measure 14]
+    % [Global_Skips measure 164 / measure 14]
     \time 1/2
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -237,7 +237,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'13'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 165 / measure 15]
+    % [Global_Skips measure 165 / measure 15]
     #(ly:expect-warning "strange time signature found")
     \time 2/3
     \baca-time-signature-color #'blue
@@ -249,7 +249,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'14'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 166 / measure 16]
+    % [Global_Skips measure 166 / measure 16]
     \time 1/2
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -260,7 +260,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'16'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 167 / measure 17]
+    % [Global_Skips measure 167 / measure 17]
     #(ly:expect-warning "strange time signature found")
     \time 4/5
     \baca-time-signature-color #'blue
@@ -272,7 +272,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'18'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 168 / measure 18]
+    % [Global_Skips measure 168 / measure 18]
     \time 1/2
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -287,7 +287,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'20'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 169 / measure 19]
+    % [Global_Skips measure 169 / measure 19]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -296,7 +296,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'21'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 170 / measure 20]
+    % [Global_Skips measure 170 / measure 20]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -305,7 +305,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'23'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 171 / measure 21]
+    % [Global_Skips measure 171 / measure 21]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -314,7 +314,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'24'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 172 / measure 22]
+    % [Global_Skips measure 172 / measure 22]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanMM
@@ -327,7 +327,7 @@ f_Global_Skips = {
     - \baca-start-ct-left-only "[7'25'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 173 / measure 23]
+    % [Global_Skips measure 173 / measure 23]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -336,7 +336,7 @@ f_Global_Skips = {
     - \baca-start-ct-both "[7'28'']" "[7'31'']"
     \bacaStartTextSpanCT
 
-    % [06 Global_Skips measure 174 / measure 24]
+    % [Global_Skips measure 174 / measure 24]
     \time 1/4
     \baca-time-signature-transparent
     s1 * 1/4
@@ -351,7 +351,7 @@ f_Global_Skips = {
 
 f_RH_Music_Voice = {
 
-    % [06 RH_Music_Voice measure 151 / measure 1]
+    % [RH_Music_Voice measure 151 / measure 1]
     \override Staff.BarLine.bar-extent = #'(-2 . 4)
     \stopStaff
     \once \override RHStaff.StaffSymbol.line-count = 7
@@ -397,7 +397,7 @@ f_RH_Music_Voice = {
     _ \baca-ffz-markup
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [06 RH_Music_Voice measure 152 / measure 2]
+    % [RH_Music_Voice measure 152 / measure 2]
     c'2
     :32
     - \tweak color #(x11-color 'blue)
@@ -417,7 +417,7 @@ f_RH_Music_Voice = {
     \times 2/3
     {
 
-        % [06 RH_Music_Voice measure 153 / measure 3]
+        % [RH_Music_Voice measure 153 / measure 3]
         c'2
         :32
         _ \baca-fz-markup
@@ -445,7 +445,7 @@ f_RH_Music_Voice = {
 
     }
 
-    % [06 RH_Music_Voice measure 154 / measure 4]
+    % [RH_Music_Voice measure 154 / measure 4]
     c'2
     :32
     - \tweak color #(x11-color 'blue)
@@ -465,7 +465,7 @@ f_RH_Music_Voice = {
     \times 4/5
     {
 
-        % [06 RH_Music_Voice measure 155 / measure 5]
+        % [RH_Music_Voice measure 155 / measure 5]
         c'4
         :32
         _ \baca-mfz-markup
@@ -513,7 +513,7 @@ f_RH_Music_Voice = {
 
     }
 
-    % [06 RH_Music_Voice measure 156 / measure 6]
+    % [RH_Music_Voice measure 156 / measure 6]
     c'2
     :32
     - \tweak color #(x11-color 'blue)
@@ -533,7 +533,7 @@ f_RH_Music_Voice = {
     \times 2/3
     {
 
-        % [06 RH_Music_Voice measure 157 / measure 7]
+        % [RH_Music_Voice measure 157 / measure 7]
         c'2
         :32
         _ \baca-fz-markup
@@ -561,7 +561,7 @@ f_RH_Music_Voice = {
 
     }
 
-    % [06 RH_Music_Voice measure 158 / measure 8]
+    % [RH_Music_Voice measure 158 / measure 8]
     c'2
     :32
     - \tweak color #(x11-color 'blue)
@@ -581,7 +581,7 @@ f_RH_Music_Voice = {
     \times 4/5
     {
 
-        % [06 RH_Music_Voice measure 159 / measure 9]
+        % [RH_Music_Voice measure 159 / measure 9]
         c'4
         :32
         _ \baca-mfz-markup
@@ -629,7 +629,7 @@ f_RH_Music_Voice = {
 
     }
 
-    % [06 RH_Music_Voice measure 160 / measure 10]
+    % [RH_Music_Voice measure 160 / measure 10]
     c'2
     :32
     - \tweak color #(x11-color 'blue)
@@ -649,7 +649,7 @@ f_RH_Music_Voice = {
     \times 2/3
     {
 
-        % [06 RH_Music_Voice measure 161 / measure 11]
+        % [RH_Music_Voice measure 161 / measure 11]
         c'2
         :32
         _ \baca-fz-markup
@@ -677,7 +677,7 @@ f_RH_Music_Voice = {
 
     }
 
-    % [06 RH_Music_Voice measure 162 / measure 12]
+    % [RH_Music_Voice measure 162 / measure 12]
     c'2
     :32
     - \tweak color #(x11-color 'blue)
@@ -697,7 +697,7 @@ f_RH_Music_Voice = {
     \times 4/5
     {
 
-        % [06 RH_Music_Voice measure 163 / measure 13]
+        % [RH_Music_Voice measure 163 / measure 13]
         c'4
         :32
         _ \baca-mfz-markup
@@ -744,7 +744,7 @@ f_RH_Music_Voice = {
 
     }
 
-    % [06 RH_Music_Voice measure 164 / measure 14]
+    % [RH_Music_Voice measure 164 / measure 14]
     \stopStaff
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2)
     \startStaff
@@ -771,7 +771,7 @@ f_RH_Music_Voice = {
     \times 2/3
     {
 
-        % [06 RH_Music_Voice measure 165 / measure 15]
+        % [RH_Music_Voice measure 165 / measure 15]
         d''2
         :32
         _ \baca-fz-markup
@@ -795,7 +795,7 @@ f_RH_Music_Voice = {
 
     }
 
-    % [06 RH_Music_Voice measure 166 / measure 16]
+    % [RH_Music_Voice measure 166 / measure 16]
     d''2
     :32
     - \tweak color #(x11-color 'blue)
@@ -816,7 +816,7 @@ f_RH_Music_Voice = {
     \times 4/5
     {
 
-        % [06 RH_Music_Voice measure 167 / measure 17]
+        % [RH_Music_Voice measure 167 / measure 17]
         d''4
         :32
         _ \baca-mfz-markup
@@ -860,7 +860,7 @@ f_RH_Music_Voice = {
 
     }
 
-    % [06 RH_Music_Voice measure 168 / measure 18]
+    % [RH_Music_Voice measure 168 / measure 18]
     d''2
     :32
     - \tweak color #(x11-color 'blue)
@@ -880,7 +880,7 @@ f_RH_Music_Voice = {
     - \tweak staff-padding 6
     \startTextSpan
 
-    % [06 RH_Music_Voice measure 169 / measure 19]
+    % [RH_Music_Voice measure 169 / measure 19]
     d''2
     :32
     _ \baca-fz-markup
@@ -890,7 +890,7 @@ f_RH_Music_Voice = {
     - \tweak staff-padding 6
     \startTextSpan
 
-    % [06 RH_Music_Voice measure 170 / measure 20]
+    % [RH_Music_Voice measure 170 / measure 20]
     d''2
     :32
     _ \baca-fz-markup
@@ -900,7 +900,7 @@ f_RH_Music_Voice = {
     - \tweak staff-padding 6
     \startTextSpan
 
-    % [06 RH_Music_Voice measure 171 / measure 21]
+    % [RH_Music_Voice measure 171 / measure 21]
     d''2
     :32
     _ \baca-mfz-markup
@@ -913,7 +913,7 @@ f_RH_Music_Voice = {
     - \tweak staff-padding 6
     \startTextSpan
 
-    % [06 RH_Music_Voice measure 172 / measure 22]
+    % [RH_Music_Voice measure 172 / measure 22]
     \once \override Hairpin.to-barline = ##t
     d''2
     :32
@@ -922,7 +922,7 @@ f_RH_Music_Voice = {
     _ \baca-mfz-markup
     \stopTextSpan
 
-    % [06 RH_Music_Voice measure 173 / measure 23]
+    % [RH_Music_Voice measure 173 / measure 23]
     d''2
     :32
     _ \baca-mpz-markup
@@ -942,7 +942,7 @@ f_RH_Music_Voice = {
         \context Voice = "RH_Music_Voice"
         {
 
-            % [06 RH_Music_Voice measure 174 / measure 24]
+            % [RH_Music_Voice measure 174 / measure 24]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             c'1 * 1/4
@@ -952,7 +952,7 @@ f_RH_Music_Voice = {
         \context Voice = "RH_Rest_Voice"
         {
 
-            % [06 RH_Rest_Voice measure 174 / measure 24]
+            % [RH_Rest_Voice measure 174 / measure 24]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -982,7 +982,7 @@ f_Cello_Music_Voice = {
         \context Voice = "Cello_Music_Voice"
         {
 
-            % [06 Cello_Music_Voice measure 151 / measure 1]
+            % [Cello_Music_Voice measure 151 / measure 1]
             \abjad-invisible-music-coloring
             \override Score.BarLine.transparent = ##t
             \override Score.SpanBar.transparent = ##t
@@ -1000,7 +1000,7 @@ f_Cello_Music_Voice = {
         \context Voice = "Cello_Rest_Voice"
         {
 
-            % [06 Cello_Rest_Voice measure 151 / measure 1]
+            % [Cello_Rest_Voice measure 151 / measure 1]
             \once \override MultiMeasureRest.transparent = ##t
             R1 * 1/2
 
@@ -1008,28 +1008,28 @@ f_Cello_Music_Voice = {
 
     >>
 
-    % [06 Cello_Music_Voice measure 152 / measure 2]
+    % [Cello_Music_Voice measure 152 / measure 2]
     \override MultiMeasureRest.transparent = ##t
     R1 * 1/2
 
-    % [06 Cello_Music_Voice measure 153 / measure 3]
+    % [Cello_Music_Voice measure 153 / measure 3]
     R1 * 2/3
 
-    % [06 Cello_Music_Voice measure 154 / measure 4]
+    % [Cello_Music_Voice measure 154 / measure 4]
     R1 * 1/2
 
-    % [06 Cello_Music_Voice measure 155 / measure 5]
+    % [Cello_Music_Voice measure 155 / measure 5]
     R1 * 4/5
 
-    % [06 Cello_Music_Voice measure 156 / measure 6]
+    % [Cello_Music_Voice measure 156 / measure 6]
     R1 * 1/2
 
-    % [06 Cello_Music_Voice measure 157 / measure 7]
+    % [Cello_Music_Voice measure 157 / measure 7]
     R1 * 2/3
 
     {
 
-        % [06 Cello_Music_Voice measure 158 / measure 8]
+        % [Cello_Music_Voice measure 158 / measure 8]
         \once \override RepeatTie.extra-offset = #'(-1.5 . 0)
         bf,,!1 * 107/30
         \repeatTie
@@ -1049,7 +1049,7 @@ f_Cello_Music_Voice = {
 
     {
 
-        % [06 Cello_Music_Voice measure 164 / measure 14]
+        % [Cello_Music_Voice measure 164 / measure 14]
         \stopStaff
         \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
         \once \override NoteHead.duration-log = 2
@@ -1077,7 +1077,7 @@ f_Cello_Music_Voice = {
         \context Voice = "Cello_Music_Voice"
         {
 
-            % [06 Cello_Music_Voice measure 165 / measure 15]
+            % [Cello_Music_Voice measure 165 / measure 15]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 2/3
@@ -1087,7 +1087,7 @@ f_Cello_Music_Voice = {
         \context Voice = "Cello_Rest_Voice"
         {
 
-            % [06 Cello_Rest_Voice measure 165 / measure 15]
+            % [Cello_Rest_Voice measure 165 / measure 15]
             \once \override MultiMeasureRest.transparent = ##t
             R1 * 2/3
 
@@ -1095,28 +1095,28 @@ f_Cello_Music_Voice = {
 
     >>
 
-    % [06 Cello_Music_Voice measure 166 / measure 16]
+    % [Cello_Music_Voice measure 166 / measure 16]
     R1 * 1/2
 
-    % [06 Cello_Music_Voice measure 167 / measure 17]
+    % [Cello_Music_Voice measure 167 / measure 17]
     R1 * 4/5
 
-    % [06 Cello_Music_Voice measure 168 / measure 18]
+    % [Cello_Music_Voice measure 168 / measure 18]
     R1 * 1/2
 
-    % [06 Cello_Music_Voice measure 169 / measure 19]
+    % [Cello_Music_Voice measure 169 / measure 19]
     R1 * 1/2
 
-    % [06 Cello_Music_Voice measure 170 / measure 20]
+    % [Cello_Music_Voice measure 170 / measure 20]
     R1 * 1/2
 
-    % [06 Cello_Music_Voice measure 171 / measure 21]
+    % [Cello_Music_Voice measure 171 / measure 21]
     R1 * 1/2
 
-    % [06 Cello_Music_Voice measure 172 / measure 22]
+    % [Cello_Music_Voice measure 172 / measure 22]
     R1 * 1/2
 
-    % [06 Cello_Music_Voice measure 173 / measure 23]
+    % [Cello_Music_Voice measure 173 / measure 23]
     R1 * 1/2
     \revert MultiMeasureRest.transparent
     \revert Score.BarLine.transparent
@@ -1128,7 +1128,7 @@ f_Cello_Music_Voice = {
         \context Voice = "Cello_Music_Voice"
         {
 
-            % [06 Cello_Music_Voice measure 174 / measure 24]
+            % [Cello_Music_Voice measure 174 / measure 24]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -1137,7 +1137,7 @@ f_Cello_Music_Voice = {
         \context Voice = "Cello_Rest_Voice"
         {
 
-            % [06 Cello_Rest_Voice measure 174 / measure 24]
+            % [Cello_Rest_Voice measure 174 / measure 24]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff

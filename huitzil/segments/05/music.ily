@@ -1,72 +1,72 @@
 e_Global_Rests = {
 
-    % [05 Global_Rests measure 129 / measure 1]
+    % [Global_Rests measure 129 / measure 1]
     R1 * 1/2
 
-    % [05 Global_Rests measure 130 / measure 2]
+    % [Global_Rests measure 130 / measure 2]
     R1 * 13/24
 
-    % [05 Global_Rests measure 131 / measure 3]
+    % [Global_Rests measure 131 / measure 3]
     R1 * 1/2
 
-    % [05 Global_Rests measure 132 / measure 4]
+    % [Global_Rests measure 132 / measure 4]
     R1 * 7/12
 
-    % [05 Global_Rests measure 133 / measure 5]
+    % [Global_Rests measure 133 / measure 5]
     R1 * 53/60
 
-    % [05 Global_Rests measure 134 / measure 6]
+    % [Global_Rests measure 134 / measure 6]
     R1 * 23/24
 
-    % [05 Global_Rests measure 135 / measure 7]
+    % [Global_Rests measure 135 / measure 7]
     R1 * 1/2
 
-    % [05 Global_Rests measure 136 / measure 8]
+    % [Global_Rests measure 136 / measure 8]
     R1 * 1/2
 
-    % [05 Global_Rests measure 137 / measure 9]
+    % [Global_Rests measure 137 / measure 9]
     R1 * 3/8
 
-    % [05 Global_Rests measure 138 / measure 10]
+    % [Global_Rests measure 138 / measure 10]
     R1 * 1/3
 
-    % [05 Global_Rests measure 139 / measure 11]
+    % [Global_Rests measure 139 / measure 11]
     R1 * 11/15
 
-    % [05 Global_Rests measure 140 / measure 12]
+    % [Global_Rests measure 140 / measure 12]
     R1 * 1/2
 
-    % [05 Global_Rests measure 141 / measure 13]
+    % [Global_Rests measure 141 / measure 13]
     R1 * 1/2
 
-    % [05 Global_Rests measure 142 / measure 14]
+    % [Global_Rests measure 142 / measure 14]
     R1 * 1/2
 
-    % [05 Global_Rests measure 143 / measure 15]
+    % [Global_Rests measure 143 / measure 15]
     R1 * 1/2
 
-    % [05 Global_Rests measure 144 / measure 16]
+    % [Global_Rests measure 144 / measure 16]
     R1 * 1/2
 
-    % [05 Global_Rests measure 145 / measure 17]
+    % [Global_Rests measure 145 / measure 17]
     R1 * 1/2
 
-    % [05 Global_Rests measure 146 / measure 18]
+    % [Global_Rests measure 146 / measure 18]
     R1 * 1/2
 
-    % [05 Global_Rests measure 147 / measure 19]
+    % [Global_Rests measure 147 / measure 19]
     R1 * 1/2
 
-    % [05 Global_Rests measure 148 / measure 20]
+    % [Global_Rests measure 148 / measure 20]
     R1 * 1/2
 
-    % [05 Global_Rests measure 149 / measure 21]
+    % [Global_Rests measure 149 / measure 21]
     R1 * 1/2
 
-    % [05 Global_Rests measure 150 / measure 22]
+    % [Global_Rests measure 150 / measure 22]
     R1 * 1/2
 
-    % [05 Global_Rests measure 151 / measure 23]
+    % [Global_Rests measure 151 / measure 23]
     R1 * 1/4
 
 }
@@ -74,7 +74,7 @@ e_Global_Rests = {
 
 e_Global_Skips = {
 
-    % [05 Global_Skips measure 129 / measure 1]
+    % [Global_Skips measure 129 / measure 1]
     \time 1/2
     \bar ""
     \baca-time-signature-color #'green4
@@ -87,7 +87,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[5'49'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 130 / measure 2]
+    % [Global_Skips measure 130 / measure 2]
     #(ly:expect-warning "strange time signature found")
     \time 13/24
     \baca-time-signature-color #'blue
@@ -99,7 +99,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[5'51'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 131 / measure 3]
+    % [Global_Skips measure 131 / measure 3]
     \time 1/2
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -110,7 +110,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[5'54'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 132 / measure 4]
+    % [Global_Skips measure 132 / measure 4]
     #(ly:expect-warning "strange time signature found")
     \time 7/12
     \baca-time-signature-color #'blue
@@ -122,7 +122,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[5'57'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 133 / measure 5]
+    % [Global_Skips measure 133 / measure 5]
     #(ly:expect-warning "strange time signature found")
     \time 53/60
     \baca-time-signature-color #'blue
@@ -134,7 +134,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'00'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 134 / measure 6]
+    % [Global_Skips measure 134 / measure 6]
     #(ly:expect-warning "strange time signature found")
     \time 23/24
     \baca-time-signature-color #'blue
@@ -146,7 +146,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'05'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 135 / measure 7]
+    % [Global_Skips measure 135 / measure 7]
     \time 1/2
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -157,7 +157,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'10'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 136 / measure 8]
+    % [Global_Skips measure 136 / measure 8]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -166,7 +166,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'13'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 137 / measure 9]
+    % [Global_Skips measure 137 / measure 9]
     \time 3/8
     \baca-time-signature-color #'blue
     s1 * 3/8
@@ -177,7 +177,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'16'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 138 / measure 10]
+    % [Global_Skips measure 138 / measure 10]
     #(ly:expect-warning "strange time signature found")
     \time 1/3
     \baca-time-signature-color #'blue
@@ -189,7 +189,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'18'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 139 / measure 11]
+    % [Global_Skips measure 139 / measure 11]
     #(ly:expect-warning "strange time signature found")
     \time 11/15
     \baca-time-signature-color #'blue
@@ -201,7 +201,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'19'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 140 / measure 12]
+    % [Global_Skips measure 140 / measure 12]
     \time 1/2
     \baca-time-signature-color #'blue
     s1 * 1/2
@@ -212,7 +212,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'23'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 141 / measure 13]
+    % [Global_Skips measure 141 / measure 13]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanMM
@@ -225,7 +225,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'26'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 142 / measure 14]
+    % [Global_Skips measure 142 / measure 14]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -234,7 +234,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'29'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 143 / measure 15]
+    % [Global_Skips measure 143 / measure 15]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -243,7 +243,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'32'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 144 / measure 16]
+    % [Global_Skips measure 144 / measure 16]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanMM
@@ -256,7 +256,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'34'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 145 / measure 17]
+    % [Global_Skips measure 145 / measure 17]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanMM
@@ -269,7 +269,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'36'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 146 / measure 18]
+    % [Global_Skips measure 146 / measure 18]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -278,7 +278,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'39'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 147 / measure 19]
+    % [Global_Skips measure 147 / measure 19]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -287,7 +287,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'42'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 148 / measure 20]
+    % [Global_Skips measure 148 / measure 20]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -296,7 +296,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'44'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 149 / measure 21]
+    % [Global_Skips measure 149 / measure 21]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanCT
@@ -305,7 +305,7 @@ e_Global_Skips = {
     - \baca-start-ct-left-only "[6'47'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 150 / measure 22]
+    % [Global_Skips measure 150 / measure 22]
     s1 * 1/2
     \bacaStopTextSpanLMN
     \bacaStopTextSpanMM
@@ -318,7 +318,7 @@ e_Global_Skips = {
     - \baca-start-ct-both "[6'50'']" "[6'51'']"
     \bacaStartTextSpanCT
 
-    % [05 Global_Skips measure 151 / measure 23]
+    % [Global_Skips measure 151 / measure 23]
     \time 1/4
     \baca-time-signature-transparent
     s1 * 1/4
@@ -333,7 +333,7 @@ e_Global_Skips = {
 
 e_RH_Music_Voice = {
 
-    % [05 RH_Music_Voice measure 129 / measure 1]
+    % [RH_Music_Voice measure 129 / measure 1]
     \override Staff.BarLine.bar-extent = #'(-2 . 4)
     \stopStaff
     \once \override RHStaff.StaffSymbol.line-count = 7
@@ -378,7 +378,7 @@ e_RH_Music_Voice = {
     \glissando
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 130 / measure 2]
+    % [RH_Music_Voice measure 130 / measure 2]
     b'4
     :32
     _ \baca-mfz-markup
@@ -406,7 +406,7 @@ e_RH_Music_Voice = {
 
     }
 
-    % [05 RH_Music_Voice measure 131 / measure 3]
+    % [RH_Music_Voice measure 131 / measure 3]
     b'4
     :32
     _ \baca-mfz-markup
@@ -431,7 +431,7 @@ e_RH_Music_Voice = {
     \times 2/3
     {
 
-        % [05 RH_Music_Voice measure 132 / measure 4]
+        % [RH_Music_Voice measure 132 / measure 4]
         g'2
         :32
         \!
@@ -461,7 +461,7 @@ e_RH_Music_Voice = {
     \glissando
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 133 / measure 5]
+    % [RH_Music_Voice measure 133 / measure 5]
     g'4
     :32
     _ \baca-mpz-markup
@@ -535,7 +535,7 @@ e_RH_Music_Voice = {
 
     }
 
-    % [05 RH_Music_Voice measure 134 / measure 6]
+    % [RH_Music_Voice measure 134 / measure 6]
     g'4
     :32
     - \tweak color #(x11-color 'blue)
@@ -590,7 +590,7 @@ e_RH_Music_Voice = {
     _ \baca-mpz-markup
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 135 / measure 7]
+    % [RH_Music_Voice measure 135 / measure 7]
     e'2
     :32
     \!
@@ -610,7 +610,7 @@ e_RH_Music_Voice = {
     \bacaStartTextSpanRhythmAnnotation
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 136 / measure 8]
+    % [RH_Music_Voice measure 136 / measure 8]
     e'4
     :32
     _ \baca-fz-markup
@@ -632,7 +632,7 @@ e_RH_Music_Voice = {
     \glissando
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 137 / measure 9]
+    % [RH_Music_Voice measure 137 / measure 9]
     e'4
     :32
     _ \baca-fz-markup
@@ -652,7 +652,7 @@ e_RH_Music_Voice = {
     \times 2/3
     {
 
-        % [05 RH_Music_Voice measure 138 / measure 10]
+        % [RH_Music_Voice measure 138 / measure 10]
         e'4
         :32
         \!
@@ -696,7 +696,7 @@ e_RH_Music_Voice = {
     \times 2/3
     {
 
-        % [05 RH_Music_Voice measure 139 / measure 11]
+        % [RH_Music_Voice measure 139 / measure 11]
         g'4
         :32
         _ \baca-mfz-markup
@@ -773,7 +773,7 @@ e_RH_Music_Voice = {
 
     }
 
-    % [05 RH_Music_Voice measure 140 / measure 12]
+    % [RH_Music_Voice measure 140 / measure 12]
     c'2
     :32
     _ \baca-ffz-markup
@@ -785,7 +785,7 @@ e_RH_Music_Voice = {
     \bacaStartTextSpanRhythmAnnotation
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 141 / measure 13]
+    % [RH_Music_Voice measure 141 / measure 13]
     c'2
     :32
     \!
@@ -807,7 +807,7 @@ e_RH_Music_Voice = {
     \glissando
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 142 / measure 14]
+    % [RH_Music_Voice measure 142 / measure 14]
     a2
     :32
     _ \baca-ffz-markup
@@ -824,7 +824,7 @@ e_RH_Music_Voice = {
     \startTextSpan
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 143 / measure 15]
+    % [RH_Music_Voice measure 143 / measure 15]
     a2
     :32
     _ \baca-ffz-markup
@@ -845,7 +845,7 @@ e_RH_Music_Voice = {
     \glissando
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 144 / measure 16]
+    % [RH_Music_Voice measure 144 / measure 16]
     f2
     :32
     - \tweak color #(x11-color 'blue)
@@ -861,7 +861,7 @@ e_RH_Music_Voice = {
     \glissando
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 145 / measure 17]
+    % [RH_Music_Voice measure 145 / measure 17]
     c'2
     :32
     - \tweak color #(x11-color 'blue)
@@ -882,7 +882,7 @@ e_RH_Music_Voice = {
     \glissando
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 146 / measure 18]
+    % [RH_Music_Voice measure 146 / measure 18]
     a2
     :32
     _ \baca-ffz-markup
@@ -899,7 +899,7 @@ e_RH_Music_Voice = {
     \startTextSpan
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 147 / measure 19]
+    % [RH_Music_Voice measure 147 / measure 19]
     a2
     :32
     _ \baca-ffz-markup
@@ -917,7 +917,7 @@ e_RH_Music_Voice = {
     \glissando
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 148 / measure 20]
+    % [RH_Music_Voice measure 148 / measure 20]
     f2
     :32
     _ \baca-ffz-markup
@@ -934,7 +934,7 @@ e_RH_Music_Voice = {
     \startTextSpan
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 149 / measure 21]
+    % [RH_Music_Voice measure 149 / measure 21]
     f2
     :32
     _ \baca-ffz-markup
@@ -955,7 +955,7 @@ e_RH_Music_Voice = {
     \glissando
     <> \bacaStopTextSpanRhythmAnnotation
 
-    % [05 RH_Music_Voice measure 150 / measure 22]
+    % [RH_Music_Voice measure 150 / measure 22]
 %%% \once \override Hairpin.to-barline = ##t
     d2
     :32
@@ -982,7 +982,7 @@ e_RH_Music_Voice = {
         \context Voice = "RH_Music_Voice"
         {
 
-            % [05 RH_Music_Voice measure 151 / measure 23]
+            % [RH_Music_Voice measure 151 / measure 23]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             c'1 * 1/4
@@ -993,7 +993,7 @@ e_RH_Music_Voice = {
         \context Voice = "RH_Rest_Voice"
         {
 
-            % [05 RH_Rest_Voice measure 151 / measure 23]
+            % [RH_Rest_Voice measure 151 / measure 23]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -1018,7 +1018,7 @@ e_RH_Music_Staff = {
 
 e_Cello_Music_Voice = {
 
-    % [05 Cello_Music_Voice measure 129 / measure 1]
+    % [Cello_Music_Voice measure 129 / measure 1]
     \override MultiMeasureRest.transparent = ##t
     \override Score.BarLine.transparent = ##t
     \override Score.SpanBar.transparent = ##t
@@ -1030,67 +1030,67 @@ e_Cello_Music_Voice = {
     ^ \baca-reapplied-indicator-markup "(“Cello”)"
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
 
-    % [05 Cello_Music_Voice measure 130 / measure 2]
+    % [Cello_Music_Voice measure 130 / measure 2]
     R1 * 13/24
 
-    % [05 Cello_Music_Voice measure 131 / measure 3]
+    % [Cello_Music_Voice measure 131 / measure 3]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 132 / measure 4]
+    % [Cello_Music_Voice measure 132 / measure 4]
     R1 * 7/12
 
-    % [05 Cello_Music_Voice measure 133 / measure 5]
+    % [Cello_Music_Voice measure 133 / measure 5]
     R1 * 53/60
 
-    % [05 Cello_Music_Voice measure 134 / measure 6]
+    % [Cello_Music_Voice measure 134 / measure 6]
     R1 * 23/24
 
-    % [05 Cello_Music_Voice measure 135 / measure 7]
+    % [Cello_Music_Voice measure 135 / measure 7]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 136 / measure 8]
+    % [Cello_Music_Voice measure 136 / measure 8]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 137 / measure 9]
+    % [Cello_Music_Voice measure 137 / measure 9]
     R1 * 3/8
 
-    % [05 Cello_Music_Voice measure 138 / measure 10]
+    % [Cello_Music_Voice measure 138 / measure 10]
     R1 * 1/3
 
-    % [05 Cello_Music_Voice measure 139 / measure 11]
+    % [Cello_Music_Voice measure 139 / measure 11]
     R1 * 11/15
 
-    % [05 Cello_Music_Voice measure 140 / measure 12]
+    % [Cello_Music_Voice measure 140 / measure 12]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 141 / measure 13]
+    % [Cello_Music_Voice measure 141 / measure 13]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 142 / measure 14]
+    % [Cello_Music_Voice measure 142 / measure 14]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 143 / measure 15]
+    % [Cello_Music_Voice measure 143 / measure 15]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 144 / measure 16]
+    % [Cello_Music_Voice measure 144 / measure 16]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 145 / measure 17]
+    % [Cello_Music_Voice measure 145 / measure 17]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 146 / measure 18]
+    % [Cello_Music_Voice measure 146 / measure 18]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 147 / measure 19]
+    % [Cello_Music_Voice measure 147 / measure 19]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 148 / measure 20]
+    % [Cello_Music_Voice measure 148 / measure 20]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 149 / measure 21]
+    % [Cello_Music_Voice measure 149 / measure 21]
     R1 * 1/2
 
-    % [05 Cello_Music_Voice measure 150 / measure 22]
+    % [Cello_Music_Voice measure 150 / measure 22]
     R1 * 1/2
     \revert MultiMeasureRest.transparent
     \revert Score.BarLine.transparent
@@ -1102,7 +1102,7 @@ e_Cello_Music_Voice = {
         \context Voice = "Cello_Music_Voice"
         {
 
-            % [05 Cello_Music_Voice measure 151 / measure 23]
+            % [Cello_Music_Voice measure 151 / measure 23]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -1111,7 +1111,7 @@ e_Cello_Music_Voice = {
         \context Voice = "Cello_Rest_Voice"
         {
 
-            % [05 Cello_Rest_Voice measure 151 / measure 23]
+            % [Cello_Rest_Voice measure 151 / measure 23]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
