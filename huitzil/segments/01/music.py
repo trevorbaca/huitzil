@@ -213,7 +213,6 @@ maker = baca.SegmentMaker(
     deactivate=[
         baca.tags.DEFAULT_INSTRUMENT_ALERT,
     ],
-    first_segment=True,
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
     local_measure_number_extra_offset=(0, -5),
