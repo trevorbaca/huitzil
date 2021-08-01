@@ -24,7 +24,7 @@ abjad.OrderedDict(
                     (
                         "Cello_Music_Staff",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="Cello_Music_Voice",
                                 prototype="abjad.Clef",
                                 value="bass",
@@ -34,7 +34,7 @@ abjad.OrderedDict(
                     (
                         "Cello_Staff_Group",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="Cello_Music_Voice",
                                 manifest="instruments",
                                 value="Cello",
@@ -44,7 +44,7 @@ abjad.OrderedDict(
                     (
                         "RH_Music_Staff",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="RH_Music_Voice",
                                 prototype="abjad.Clef",
                                 value="percussion",
@@ -54,12 +54,12 @@ abjad.OrderedDict(
                     (
                         "Score",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="Global_Skips",
                                 manifest="metronome_marks",
                                 value="78",
                             ),
-                            baca.Momento(
+                            baca.Memento(
                                 context="Global_Skips",
                                 prototype="abjad.TimeSignature",
                                 value="3/4",
