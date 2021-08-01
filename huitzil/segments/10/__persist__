@@ -22,7 +22,7 @@ abjad.OrderedDict(
                     (
                         "Cello_Music_Staff",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="Cello_Music_Voice",
                                 prototype="abjad.Clef",
                                 value="treble",
@@ -32,7 +32,7 @@ abjad.OrderedDict(
                     (
                         "Cello_Staff_Group",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="Cello_Music_Voice",
                                 manifest="instruments",
                                 value="Cello",
@@ -42,18 +42,18 @@ abjad.OrderedDict(
                     (
                         "RH_Music_Staff",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="RH_Music_Voice",
                                 edition=abjad.Tag("-PARTS"),
                                 prototype="baca.BarExtent",
                                 value=7,
                             ),
-                            baca.Momento(
+                            baca.Memento(
                                 context="RH_Music_Voice",
                                 prototype="abjad.Clef",
                                 value="percussion",
                             ),
-                            baca.Momento(
+                            baca.Memento(
                                 context="RH_Music_Voice",
                                 prototype="baca.StaffLines",
                                 value=7,
@@ -63,7 +63,7 @@ abjad.OrderedDict(
                     (
                         "RH_Music_Voice",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="RH_Music_Voice",
                                 prototype="abjad.Dynamic",
                                 value="pp",
@@ -73,12 +73,12 @@ abjad.OrderedDict(
                     (
                         "Score",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="Global_Skips",
                                 manifest="metronome_marks",
                                 value="66",
                             ),
-                            baca.Momento(
+                            baca.Memento(
                                 context="Global_Skips",
                                 prototype="abjad.TimeSignature",
                                 value="3/2",
