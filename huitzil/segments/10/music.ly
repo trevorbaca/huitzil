@@ -25,10 +25,10 @@ clock-time-extra-offset = #'(0 . 13)
             <<
 
                 \context GlobalRests = "Global_Rests"
-                \j_Global_Rests
+                { \segment.10.Global.Rests }
 
                 \context GlobalSkips = "Global_Skips"
-                \j_Global_Skips
+                { \segment.10.Global.Skips }
 
             >>
 
@@ -39,10 +39,10 @@ clock-time-extra-offset = #'(0 . 13)
                 <<
 
                     \context RHStaff = "RH_Music_Staff"
-                    \j_RH_Music_Staff
+                    { \segment.10.RH.Music.Staff }
 
                     \context Staff = "Cello_Music_Staff"
-                    \j_Cello_Music_Staff
+                    { \segment.10.Cello.Music.Staff }
 
                 >>
 

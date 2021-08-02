@@ -1,4 +1,4 @@
-b_Global_Rests = {
+segment.02.Global.Rests = {
 
     % [Global_Rests measure 55 / measure 1]
     R1 * 3/4
@@ -81,7 +81,7 @@ b_Global_Rests = {
 }
 
 
-b_Global_Skips = {
+segment.02.Global.Skips = {
 
     % [Global_Skips measure 55 / measure 1]
     \time 3/4
@@ -329,7 +329,7 @@ b_Global_Skips = {
 }
 
 
-b_RH_Music_Voice = {
+segment.02.RH.Music.Voice = {
 
     {
 
@@ -804,15 +804,15 @@ b_RH_Music_Voice = {
 }
 
 
-b_RH_Music_Staff = {
+segment.02.RH.Music.Staff = {
 
     \context Voice = "RH_Music_Voice"
-    \b_RH_Music_Voice
+    { \segment.02.RH.Music.Voice }
 
 }
 
 
-b_Cello_Music_Voice = {
+segment.02.Cello.Music.Voice = {
 
     <<
 
@@ -968,9 +968,9 @@ b_Cello_Music_Voice = {
 }
 
 
-b_Cello_Music_Staff = {
+segment.02.Cello.Music.Staff = {
 
     \context Voice = "Cello_Music_Voice"
-    \b_Cello_Music_Voice
+    { \segment.02.Cello.Music.Voice }
 
 }

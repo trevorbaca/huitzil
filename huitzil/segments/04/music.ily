@@ -1,4 +1,4 @@
-d_Global_Rests = {
+segment.04.Global.Rests = {
 
     % [Global_Rests measure 106 / measure 1]
     R1 * 1/2
@@ -75,7 +75,7 @@ d_Global_Rests = {
 }
 
 
-d_Global_Skips = {
+segment.04.Global.Skips = {
 
     % [Global_Skips measure 106 / measure 1]
     \time 1/2
@@ -345,7 +345,7 @@ d_Global_Skips = {
 }
 
 
-d_RH_Music_Voice = {
+segment.04.RH.Music.Voice = {
 
     % [RH_Music_Voice measure 106 / measure 1]
     \override Staff.BarLine.bar-extent = #'(-2 . 4)
@@ -972,15 +972,15 @@ d_RH_Music_Voice = {
 }
 
 
-d_RH_Music_Staff = {
+segment.04.RH.Music.Staff = {
 
     \context Voice = "RH_Music_Voice"
-    \d_RH_Music_Voice
+    { \segment.04.RH.Music.Voice }
 
 }
 
 
-d_Cello_Music_Voice = {
+segment.04.Cello.Music.Voice = {
 
     <<
 
@@ -1177,9 +1177,9 @@ d_Cello_Music_Voice = {
 }
 
 
-d_Cello_Music_Staff = {
+segment.04.Cello.Music.Staff = {
 
     \context Voice = "Cello_Music_Voice"
-    \d_Cello_Music_Voice
+    { \segment.04.Cello.Music.Voice }
 
 }

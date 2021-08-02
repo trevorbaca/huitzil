@@ -22,10 +22,10 @@ spacing-extra-offset = #'(0 . 1)
             <<
 
                 \context GlobalRests = "Global_Rests"
-                \a_Global_Rests
+                { \segment.01.Global.Rests }
 
                 \context GlobalSkips = "Global_Skips"
-                \a_Global_Skips
+                { \segment.01.Global.Skips }
 
             >>
 
@@ -36,10 +36,10 @@ spacing-extra-offset = #'(0 . 1)
                 <<
 
                     \context RHStaff = "RH_Music_Staff"
-                    \a_RH_Music_Staff
+                    { \segment.01.RH.Music.Staff }
 
                     \context Staff = "Cello_Music_Staff"
-                    \a_Cello_Music_Staff
+                    { \segment.01.Cello.Music.Staff }
 
                 >>
 
