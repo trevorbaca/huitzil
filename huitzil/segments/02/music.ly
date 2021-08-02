@@ -26,10 +26,10 @@ spacing-extra-offset = #'(0 . 16)
             <<
 
                 \context GlobalRests = "Global_Rests"
-                \b_Global_Rests
+                { \segment.02.Global.Rests }
 
                 \context GlobalSkips = "Global_Skips"
-                \b_Global_Skips
+                { \segment.02.Global.Skips }
 
             >>
 
@@ -40,10 +40,10 @@ spacing-extra-offset = #'(0 . 16)
                 <<
 
                     \context RHStaff = "RH_Music_Staff"
-                    \b_RH_Music_Staff
+                    { \segment.02.RH.Music.Staff }
 
                     \context Staff = "Cello_Music_Staff"
-                    \b_Cello_Music_Staff
+                    { \segment.02.Cello.Music.Staff }
 
                 >>
 

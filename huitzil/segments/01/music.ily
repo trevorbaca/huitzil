@@ -1,4 +1,4 @@
-a_Global_Rests = {
+segment.01.Global.Rests = {
 
     % [Global_Rests measure 1]
     R1 * 7/8
@@ -168,7 +168,7 @@ a_Global_Rests = {
 }
 
 
-a_Global_Skips = {
+segment.01.Global.Skips = {
 
     % [Global_Skips measure 1]
     \time 7/8
@@ -770,7 +770,7 @@ a_Global_Skips = {
 }
 
 
-a_RH_Music_Voice = {
+segment.01.RH.Music.Voice = {
 
     % [RH_Music_Voice measure 1]
     \stopStaff
@@ -970,15 +970,15 @@ a_RH_Music_Voice = {
 }
 
 
-a_RH_Music_Staff = {
+segment.01.RH.Music.Staff = {
 
     \context Voice = "RH_Music_Voice"
-    \a_RH_Music_Voice
+    { \segment.01.RH.Music.Voice }
 
 }
 
 
-a_Cello_Music_Voice = {
+segment.01.Cello.Music.Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5
@@ -3406,9 +3406,9 @@ a_Cello_Music_Voice = {
 }
 
 
-a_Cello_Music_Staff = {
+segment.01.Cello.Music.Staff = {
 
     \context Voice = "Cello_Music_Voice"
-    \a_Cello_Music_Voice
+    { \segment.01.Cello.Music.Voice }
 
 }

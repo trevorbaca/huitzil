@@ -1,5 +1,5 @@
-%! baca.Path.extern()
-e_Global_Rests = {
+%! baca.path.extern()
+segment.05.Global.Rests = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Global_Rests measure 129 / measure 1]
@@ -120,12 +120,12 @@ e_Global_Rests = {
     R1 * 1/4
 
 %! abjad.ScoreTemplate._make_global_context()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Global_Skips = {
+%! baca.path.extern()
+segment.05.Global.Skips = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Global_Skips measure 129 / measure 1]
@@ -1085,12 +1085,12 @@ e_Global_Skips = {
     \once \override Score.SpanBar.transparent = ##t
 
 %! abjad.ScoreTemplate._make_global_context()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_RH_Music_Voice = {
+%! baca.path.extern()
+segment.05.RH.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [RH_Music_Voice measure 129 / measure 1]
@@ -3421,26 +3421,26 @@ e_RH_Music_Voice = {
     >>
 
 %! huitzil.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_RH_Music_Staff = {
+%! baca.path.extern()
+segment.05.RH.Music.Staff = {
 
     %! huitzil.ScoreTemplate.__call__()
     \context Voice = "RH_Music_Voice"
     %! huitzil.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \e_RH_Music_Voice
+    %! baca.path.extern()
+    { \segment.05.RH.Music.Voice }
 
 %! huitzil.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Cello_Music_Voice = {
+%! baca.path.extern()
+segment.05.Cello.Music.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Cello_Music_Voice measure 129 / measure 1]
@@ -3755,19 +3755,19 @@ e_Cello_Music_Voice = {
     >>
 
 %! huitzil.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-e_Cello_Music_Staff = {
+%! baca.path.extern()
+segment.05.Cello.Music.Staff = {
 
     %! huitzil.ScoreTemplate.__call__()
     \context Voice = "Cello_Music_Voice"
     %! huitzil.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \e_Cello_Music_Voice
+    %! baca.path.extern()
+    { \segment.05.Cello.Music.Voice }
 
 %! huitzil.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
