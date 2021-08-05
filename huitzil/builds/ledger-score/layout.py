@@ -1,41 +1,46 @@
 import baca
 
 breaks = baca.breaks(
-    baca.page(  # 1
-        [1, 45, (10,)],
-        [10, 71, (10,)],
-        [17, 97, (10,)],
-        [26, 123, (10,)],
-        [35, 149, (10,)],
-        [45, 175, (10,)],
-        [52, 201, (15, 17)],
+    baca.page(
+        baca.system((10,), measure=1, y_offset=45),
+        baca.system((10,), measure=10, y_offset=71),
+        baca.system((10,), measure=17, y_offset=97),
+        baca.system((10,), measure=26, y_offset=123),
+        baca.system((10,), measure=35, y_offset=149),
+        baca.system((10,), measure=45, y_offset=175),
+        baca.system((15, 17), measure=1, y_offset=201),
+        number=1,
     ),
-    baca.page(  # 2
-        [63, 15, (10, 15)],
-        [79, 60, (10, 17)],
-        [86, 105, (10, 17)],
-        [96, 150, (10, 17)],
-        [107, 195, (10, 17)],
+    baca.page(
+        baca.system((10, 15), measure=63, y_offset=15),
+        baca.system((10, 17), measure=79, y_offset=60),
+        baca.system((10, 17), measure=86, y_offset=105),
+        baca.system((10, 17), measure=96, y_offset=150),
+        baca.system((10, 17), measure=107, y_offset=195),
+        number=2,
     ),
-    baca.page(  # 3
-        [115, 15, (10, 17)],
-        [124, 60, (10, 17)],
-        [134, 105, (10, 17)],
-        [144, 150, (10, 17)],
-        [154, 195, (10, 17)],
+    baca.page(
+        baca.system((10, 17), measure=115, y_offset=15),
+        baca.system((10, 17), measure=124, y_offset=60),
+        baca.system((10, 17), measure=134, y_offset=105),
+        baca.system((10, 17), measure=144, y_offset=150),
+        baca.system((10, 17), measure=154, y_offset=195),
+        number=3,
     ),
-    baca.page(  # 4
-        [164, 15, (10, 17)],
-        [174, 60, (10, 22)],
-        [198, 105, (10, 17)],
-        [205, 150, (10, 17)],
-        [215, 195, (10, 17)],
+    baca.page(
+        baca.system((10, 17), measure=164, y_offset=15),
+        baca.system((10, 22), measure=174, y_offset=60),
+        baca.system((10, 17), measure=198, y_offset=105),
+        baca.system((10, 17), measure=205, y_offset=150),
+        baca.system((10, 17), measure=215, y_offset=195),
+        number=4,
     ),
-    baca.page(  # 5
-        [226, 15, (10, 17)],
-        [235, 60, (10, 17)],
-        [245, 105, (10, 17)],
-        [255, 150, (10, 17)],
+    baca.page(
+        baca.system((10, 17), measure=226, y_offset=15),
+        baca.system((10, 22), measure=235, y_offset=60),
+        baca.system((10, 17), measure=245, y_offset=105),
+        baca.system((10, 17), measure=255, y_offset=150),
+        number=5,
     ),
 )
 
