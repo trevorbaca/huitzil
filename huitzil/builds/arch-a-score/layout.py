@@ -65,24 +65,26 @@ spacing = baca.spacing(
     __file__,
     breaks=breaks,
     fallback_duration=(1, 44),
+    overrides=(
+        baca.space((1, 54), (1, 24)),
+        baca.space([23, 26], (1, 16)),
+        baca.space(33, (1, 16)),
+        baca.space(37, (1, 16)),
+        baca.space((55, 78), (1, 24)),
+        baca.space((55, 58), (1, 16)),
+        baca.space(86, (1, 16)),
+        baca.space((93, 95), (1, 24)),
+        baca.space(99, (1, 24)),
+        baca.space((135, 137), (1, 16)),
+        baca.space(140, (1, 16)),
+        baca.space((141, 150), (1, 32)),
+        baca.space((198, 199), (1, 16)),
+        baca.space((205, 208), (1, 24)),
+        baca.space(211, (1, 16)),
+        baca.space((212, 215), (1, 20)),
+        baca.space(219, (1, 20)),
+    ),
 )
-spacing.override((1, 54), (1, 24))
-spacing.override([23, 26], (1, 16))
-spacing.override(33, (1, 16))
-spacing.override(37, (1, 16))
-spacing.override((55, 78), (1, 24))
-spacing.override((55, 58), (1, 16))
-spacing.override(86, (1, 16))
-spacing.override((93, 95), (1, 24))
-spacing.override(99, (1, 24))
-spacing.override((135, 137), (1, 16))
-spacing.override(140, (1, 16))
-spacing.override((141, 150), (1, 32))
-spacing.override((198, 199), (1, 16))
-spacing.override((205, 208), (1, 24))
-spacing.override(211, (1, 16))
-spacing.override((212, 215), (1, 20))
-spacing.override(219, (1, 20))
 
 if __name__ == "__main__":
     baca.build.make_layout_ly(__file__, breaks, spacing)
