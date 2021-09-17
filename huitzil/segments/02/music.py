@@ -40,7 +40,7 @@ maker = baca.SegmentMaker(
         baca.tags.CLOCK_TIME,
         baca.tags.LOCAL_MEASURE_NUMBER,
     ],
-    check_all_are_pitched=True,
+    error_on_not_yet_pitched=True,
     clock_time_extra_offset=(0, 13),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
