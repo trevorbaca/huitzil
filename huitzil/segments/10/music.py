@@ -27,10 +27,10 @@ maker = baca.SegmentMaker(
     ],
     check_all_are_pitched=True,
     clock_time_extra_offset=(0, 13),
+    do_not_append_phantom_measure=True,
     final_segment=True,
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
-    remove_phantom_measure=True,
     score_template=huitzil.ScoreTemplate(),
     time_signatures=time_signatures,
 )
