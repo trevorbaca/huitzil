@@ -208,7 +208,7 @@ maker = baca.SegmentMaker(
         # TODO: make this work
         # baca.const.SPACING,
     ],
-    check_all_are_pitched=True,
+    error_on_not_yet_pitched=True,
     clock_time_extra_offset=(0, -2),
     deactivate=[
         baca.tags.DEFAULT_INSTRUMENT_ALERT,
