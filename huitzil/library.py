@@ -141,7 +141,7 @@ class DreamsMusicMaker:
     ### PRIVATE METHODS ###
 
     def _attach_beams(self, music):
-        tuplets = abjad.iterate(music).components(abjad.Tuplet)
+        tuplets = abjad.iterate.components(music, abjad.Tuplet)
         for tuplet in tuplets:
             voice_numbers = [abjad.get.indicator(_, int) for _ in tuplet]
             runs = baca.Sequence(voice_numbers).group_by()
@@ -256,7 +256,7 @@ class DreamsMusicMaker:
         voice_1_registration = registrations["middle"]
         voice_2_registration = registrations["low"]
         voice_3_registration = registrations["lowest"]
-        for note in abjad.iterate(music).components(abjad.Note):
+        for note in abjad.iterate.components(music, abjad.Note):
             voice_number = abjad.get.indicator(note, int)
             if voice_number == 1:
                 color = "#red"
