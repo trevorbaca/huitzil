@@ -202,6 +202,7 @@ music_ = abjad.select(music)
 ### SEGMENT-MAKER ###
 
 maker = baca.SegmentMaker(
+    **baca.segments(),
     activate=[
         baca.tags.CLOCK_TIME,
         baca.tags.LOCAL_MEASURE_NUMBER,

@@ -21,6 +21,7 @@ time_signatures = [
 ]
 
 maker = baca.SegmentMaker(
+    **baca.segments(),
     activate=[
         baca.tags.CLOCK_TIME,
         baca.tags.LOCAL_MEASURE_NUMBER,
