@@ -100,8 +100,6 @@ class DreamsMusicMaker:
         "_voice_map",
     )
 
-    _publish_storage_format = True
-
     ### INITIALIZER ###
 
     def __init__(
