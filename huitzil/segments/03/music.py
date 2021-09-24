@@ -38,11 +38,6 @@ time_signatures = [
 
 maker = baca.SegmentMaker(
     **baca.segments(),
-    activate=[
-        # baca.tags.CLOCK_TIME,
-        baca.tags.LOCAL_MEASURE_NUMBER,
-        # baca.const.MEASURE_NUMBER,
-    ],
     error_on_not_yet_pitched=True,
     # clock_time_extra_offset=(0, 13),
     # measure_number_extra_offset=(0, 13),
@@ -566,4 +561,12 @@ maker(
 )
 
 if __name__ == "__main__":
-    baca.build.make_segment_pdf(maker, runtime=baca.segments(runtime=True))
+    baca.build.make_segment_pdf(
+        maker,
+        **baca.segments(runtime=True),
+        activate=[
+            # baca.tags.CLOCK_TIME,
+            baca.tags.LOCAL_MEASURE_NUMBER,
+            # baca.const.MEASURE_NUMBER,
+        ],
+    )

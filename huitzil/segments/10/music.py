@@ -25,10 +25,6 @@ segments.pop("append_phantom_measure")
 
 maker = baca.SegmentMaker(
     **segments,
-    activate=[
-        baca.tags.CLOCK_TIME,
-        baca.tags.LOCAL_MEASURE_NUMBER,
-    ],
     error_on_not_yet_pitched=True,
     clock_time_extra_offset=(0, 13),
     final_segment=True,
@@ -154,4 +150,11 @@ maker(
 )
 
 if __name__ == "__main__":
-    baca.build.make_segment_pdf(maker, runtime=baca.segments(runtime=True))
+    baca.build.make_segment_pdf(
+        maker,
+        **baca.segments(runtime=True),
+        activate=[
+            baca.tags.CLOCK_TIME,
+            baca.tags.LOCAL_MEASURE_NUMBER,
+        ],
+    )
