@@ -20,15 +20,17 @@ time_signatures = [
     (3, 2),
 ]
 
+segments = baca.segments()
+segments.pop("append_phantom_measure")
+
 maker = baca.SegmentMaker(
-    **baca.segments(),
+    **segments,
     activate=[
         baca.tags.CLOCK_TIME,
         baca.tags.LOCAL_MEASURE_NUMBER,
     ],
     error_on_not_yet_pitched=True,
     clock_time_extra_offset=(0, 13),
-    do_not_append_phantom_measure=True,
     final_segment=True,
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
