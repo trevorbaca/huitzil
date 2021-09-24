@@ -35,8 +35,6 @@ time_signatures = [
 
 maker = baca.SegmentMaker(
     **baca.segments(),
-    error_on_not_yet_pitched=True,
-    clock_time_extra_offset=(0, 13),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
     score_template=huitzil.ScoreTemplate(),
@@ -571,4 +569,6 @@ if __name__ == "__main__":
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
         ],
+        clock_time_extra_offset=(0, 13),
+        error_on_not_yet_pitched=True,
     )

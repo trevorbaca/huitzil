@@ -203,16 +203,9 @@ music_ = abjad.select(music)
 
 maker = baca.SegmentMaker(
     **baca.segments(),
-    error_on_not_yet_pitched=True,
-    clock_time_extra_offset=(0, -2),
-    deactivate=[
-        baca.tags.DEFAULT_INSTRUMENT_ALERT,
-    ],
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
-    local_measure_number_extra_offset=(0, -5),
     score_template=huitzil.ScoreTemplate(),
-    spacing_extra_offset=(0, 1),
     time_signatures=time_signatures,
 )
 
@@ -318,4 +311,11 @@ if __name__ == "__main__":
             # TODO: make this work
             # baca.const.SPACING,
         ],
+        clock_time_extra_offset=(0, -2),
+        deactivate=[
+            baca.tags.DEFAULT_INSTRUMENT_ALERT,
+        ],
+        error_on_not_yet_pitched=True,
+        local_measure_number_extra_offset=(0, -5),
+        spacing_extra_offset=(0, 1),
     )
