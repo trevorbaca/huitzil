@@ -203,12 +203,6 @@ music_ = abjad.select(music)
 
 maker = baca.SegmentMaker(
     **baca.segments(),
-    activate=[
-        baca.tags.CLOCK_TIME,
-        baca.tags.LOCAL_MEASURE_NUMBER,
-        # TODO: make this work
-        # baca.const.SPACING,
-    ],
     error_on_not_yet_pitched=True,
     clock_time_extra_offset=(0, -2),
     deactivate=[
@@ -315,4 +309,13 @@ maker(
 )
 
 if __name__ == "__main__":
-    baca.build.make_segment_pdf(maker, runtime=baca.segments(runtime=True))
+    baca.build.make_segment_pdf(
+        maker,
+        **baca.segments(runtime=True),
+        activate=[
+            baca.tags.CLOCK_TIME,
+            baca.tags.LOCAL_MEASURE_NUMBER,
+            # TODO: make this work
+            # baca.const.SPACING,
+        ],
+    )
