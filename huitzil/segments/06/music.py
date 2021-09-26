@@ -33,7 +33,7 @@ time_signatures = [
     (1, 2),
 ]
 
-maker = baca.SegmentMaker(
+maker = baca.CommandAccumulator(
     **baca.segments(),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
