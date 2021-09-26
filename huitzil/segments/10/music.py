@@ -23,7 +23,7 @@ time_signatures = [
 segments = baca.segments()
 segments.pop("append_phantom_measure")
 
-maker = baca.SegmentMaker(
+maker = baca.CommandAccumulator(
     **segments,
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
