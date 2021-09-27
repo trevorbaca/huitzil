@@ -20,7 +20,7 @@ time_signatures = [
     (3, 2),
 ]
 
-segments = baca.segments()
+segments = baca.segment_accumulation_defaults()
 segments.pop("append_phantom_measure")
 
 commands = baca.CommandAccumulator(
@@ -149,7 +149,7 @@ commands(
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
         commands,
-        **baca.segments(runtime=True),
+        **baca.segment_interpretation_defaults(),
         activate=[
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,

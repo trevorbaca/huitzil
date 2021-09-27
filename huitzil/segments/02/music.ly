@@ -9,12 +9,6 @@
 \include "../../stylesheet.ily"
 %! baca.path.extern()
 \include "music.ily"
-%! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_includes()
-clock-time-extra-offset = #'(0 . 13)
-%! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_includes()
-spacing-extra-offset = #'(0 . 16)
 
 %! baca._make_lilypond_file()
 \header { composer = ##f poet = ##f title = ##f }
@@ -22,6 +16,8 @@ spacing-extra-offset = #'(0 . 16)
 \layout { indent = 0 }
 %! baca._make_lilypond_file()
 \paper { print-first-page-number = ##t }
+clock-time-extra-offset = #'(0 . 13)
+spacing-extra-offset = #'(0 . 16)
 %! __make_segment_pdf__
 \paper { first-page-number = #2 }
 
