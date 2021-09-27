@@ -23,7 +23,7 @@ time_signatures = [
 segments = baca.segments()
 segments.pop("append_phantom_measure")
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **segments,
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
@@ -33,7 +33,7 @@ maker = baca.CommandAccumulator(
 
 # skips
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "66",
@@ -44,7 +44,7 @@ maker(
 
 # vc
 
-maker(
+commands(
     "vc",
     baca.mmrest_transparent(),
     baca.new(
@@ -64,7 +64,7 @@ maker(
     baca.time_signature_stencil_false(),
 )
 
-maker(
+commands(
     ("vc", -1),
     # baca.chunk(
     #    baca.mark(r"\huitzil-colophon-markup"),
@@ -94,7 +94,7 @@ maker(
 
 # rh
 
-maker(
+commands(
     "rh",
     # TODO: fix right-broken text spanners and replace this:
     baca.literal(r"<> \stopTextSpan"),
@@ -117,7 +117,7 @@ maker(
     baca.text_script_staff_padding(4),
 )
 
-maker(
+commands(
     ("rh", (1, 10)),
     baca.markup(
         r"\baca-mpz-markup",
@@ -132,7 +132,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (1, 12)),
     baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2"),
     baca.repeat_tie(
@@ -148,7 +148,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.CLOCK_TIME,

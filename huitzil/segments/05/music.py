@@ -32,7 +32,7 @@ time_signatures = [
     (1, 2),
 ]
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
@@ -40,7 +40,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "44",
@@ -74,7 +74,7 @@ maker(
 
 # vc
 
-maker(
+commands(
     "vc",
     baca.mmrest_transparent(),
     baca.new(
@@ -87,7 +87,7 @@ maker(
 
 # rh
 
-maker(
+commands(
     "rh",
     baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
     baca.literal(
@@ -106,7 +106,7 @@ maker(
     baca.text_script_staff_padding(4),
 )
 
-maker(
+commands(
     ("rh", 1),
     baca.make_monads("1/4  1/8  1/8"),
     baca.staff_positions(
@@ -115,7 +115,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (1, 3)),
     baca.hairpin(
         "mp -- !",
@@ -130,7 +130,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 2),
     baca.make_monads("1/4  1/8  1/6"),
     baca.staff_positions(
@@ -139,7 +139,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 3),
     baca.make_monads("1/4  1/8  1/8"),
     baca.staff_positions(
@@ -148,7 +148,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 4),
     baca.hairpin(
         "p -- !",
@@ -161,7 +161,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (4, 5)),
     baca.markup(
         r"\baca-fz-markup",
@@ -182,7 +182,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 5),
     baca.hairpin(
         "pp < mf",
@@ -195,7 +195,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 6),
     baca.hairpin(
         "p -- !",
@@ -220,7 +220,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 7),
     baca.make_monads("1/2"),
     baca.staff_positions(
@@ -229,7 +229,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (7, 9)),
     baca.markup(
         r"\baca-fz-markup",
@@ -239,7 +239,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (7, 9)),
     baca.hairpin(
         "mf -- !",
@@ -248,7 +248,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 8),
     baca.make_monads("1/4  1/8  1/8"),
     baca.staff_positions(
@@ -257,7 +257,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 9),
     baca.make_monads("1/4  1/8"),
     baca.staff_positions(
@@ -266,7 +266,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 10),
     baca.make_monads("1/6  1/6"),
     baca.staff_positions(
@@ -275,7 +275,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (10, 11)),
     baca.markup(
         r"\baca-mfz-markup",
@@ -296,7 +296,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (10, 12)),
     baca.hairpin(
         "mp > ppp -- !",
@@ -306,7 +306,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 11),
     baca.make_monads("1/6  1/6  1/10  1/10  1/10  1/10"),
     baca.staff_positions(
@@ -315,7 +315,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 12),
     baca.make_monads("1/2"),
     baca.staff_positions(
@@ -324,7 +324,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (12, 16)),
     baca.markup(
         r"\baca-ffz-markup",
@@ -334,7 +334,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 13),
     baca.make_monads("1/2"),
     baca.staff_positions(
@@ -343,7 +343,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (13, 16)),
     baca.hairpin(
         "p < mf",
@@ -355,7 +355,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 14),
     baca.make_monads("1/2"),
     baca.staff_positions(
@@ -364,7 +364,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 15),
     baca.make_monads("1/2"),
     baca.staff_positions(
@@ -373,7 +373,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 16),
     baca.make_monads("1/2"),
     baca.staff_positions(
@@ -382,7 +382,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 17),
     baca.make_monads("1/2"),
     baca.staff_positions(
@@ -391,7 +391,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (17, 22)),
     baca.hairpin(
         "p < f -- !",
@@ -412,7 +412,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 18),
     baca.make_monads("1/2"),
     baca.staff_positions(
@@ -421,7 +421,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 19),
     baca.make_monads("1/2"),
     baca.staff_positions(
@@ -430,7 +430,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 20),
     baca.make_monads("1/2"),
     baca.staff_positions(
@@ -439,7 +439,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 21),
     baca.make_monads("1/2"),
     baca.staff_positions(
@@ -448,7 +448,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 22),
     baca.make_monads("1/2"),
     # TODO: make +ARCH_A_SCORE work
@@ -463,7 +463,7 @@ maker(
 
 # stage 2 (after staff position settings)
 
-maker(
+commands(
     "rh",
     baca.glissando(
         selector=baca.selectors.leaves(),
@@ -472,7 +472,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.CLOCK_TIME,

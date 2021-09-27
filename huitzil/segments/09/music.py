@@ -33,7 +33,7 @@ time_signatures = [
     (1, 2),
 ]
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
@@ -41,7 +41,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "88",
@@ -55,7 +55,7 @@ maker(
 
 # vc
 
-maker(
+commands(
     "vc",
     baca.mmrest_transparent(),
     baca.new(
@@ -66,7 +66,7 @@ maker(
     baca.time_signature_stencil_false(),
 )
 
-maker(
+commands(
     ("vc", (8, 13)),
     baca.pitches("A1 Bb1"),
     baca.repeat_tie(
@@ -76,7 +76,7 @@ maker(
     baca.skeleton("{ c1 * 107/30 c1 * 1/5 }"),
 )
 
-maker(
+commands(
     ("vc", 14),
     baca.clef("treble"),
     baca.literal(
@@ -95,14 +95,14 @@ maker(
 
 # vcr
 
-maker(
+commands(
     ("vcr", [1, 15]),
     baca.mmrest_transparent(),
 )
 
 # rh
 
-maker(
+commands(
     "rh",
     baca.only_segment(
         baca.chunk(
@@ -125,7 +125,7 @@ maker(
     baca.text_script_staff_padding(4),
 )
 
-maker(
+commands(
     ("rh", 1),
     baca.make_monads("1/8  1/8  1/8  1/8"),
     baca.markup(
@@ -140,7 +140,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 2),
     baca.make_monads("1/2"),
     baca.markup(
@@ -157,7 +157,7 @@ maker(
 
 # NOTE: final_hairpin=False can be removed once
 #       LilyPond fixes DynamicLineSpanner bug.
-maker(
+commands(
     ("rh", (2, 13)),
     baca.hairpin(
         "mp > p <",
@@ -168,7 +168,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 3),
     baca.make_monads("1/3  1/3"),
     baca.markup(
@@ -189,7 +189,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 4),
     baca.make_monads("1/2"),
     baca.markup(
@@ -203,7 +203,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 5),
     baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
@@ -236,7 +236,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 6),
     baca.make_monads("1/2"),
     baca.markup(
@@ -250,7 +250,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 7),
     baca.make_monads("1/3  1/3"),
     baca.markup(
@@ -270,7 +270,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 8),
     baca.make_monads("1/2"),
     baca.markup(
@@ -284,7 +284,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 9),
     baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
@@ -316,7 +316,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 10),
     baca.make_monads("1/2"),
     baca.markup(
@@ -330,7 +330,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 11),
     baca.make_monads("1/3  1/3"),
     baca.markup(
@@ -350,7 +350,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 12),
     baca.make_monads("1/2"),
     baca.markup(
@@ -364,7 +364,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 13),
     baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
@@ -396,7 +396,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 14),
     baca.make_monads("1/2"),
     baca.markup(
@@ -406,7 +406,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (14, 23)),
     baca.hairpin(
         "mp -- p -- pp -- p -- !",
@@ -424,7 +424,7 @@ maker(
     baca.staff_position(8),
 )
 
-maker(
+commands(
     ("rh", 15),
     baca.make_monads("1/3  1/3"),
     baca.markup(
@@ -440,7 +440,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 16),
     baca.make_monads("1/2"),
     baca.markup(
@@ -450,7 +450,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 17),
     baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
@@ -478,7 +478,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 18),
     # TODO: make +ARCH_A_SCORE work
     baca.only_score(
@@ -486,7 +486,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (18, 23)),
     baca.text_spanner(
         "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
@@ -498,7 +498,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (18, 23)),
     baca.make_monads("1/2  1/2  1/2  1/2  1/2  1/2"),
     baca.markup(
@@ -538,7 +538,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 22),
     baca.only_segment(
         baca.hairpin_to_barline(),
@@ -547,14 +547,14 @@ maker(
 
 # stage 2 (after staff position settings)
 
-maker(
+commands(
     ("vc", (8, 14)),
     baca.glissando(
         selector=baca.selectors.leaves(),
     ),
 )
 
-maker(
+commands(
     "rh",
     baca.glissando(
         selector=baca.selectors.leaves(),
@@ -563,7 +563,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.CLOCK_TIME,

@@ -201,7 +201,7 @@ music_ = abjad.select(music)
 
 ### SEGMENT-MAKER ###
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
@@ -211,7 +211,7 @@ maker = baca.CommandAccumulator(
 
 # skips
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "78",
@@ -221,7 +221,7 @@ maker(
 
 # vc
 
-maker(
+commands(
     ("vc", 1),
     baca.markup(
         r"\huitzil-phrasing-dynamics-see-preface-markup",
@@ -232,12 +232,12 @@ maker(
     baca.music(music_, do_not_check_total_duration=True),
 )
 
-maker(
+commands(
     ("vc", (1, 51)),
     baca.tuplet_bracket_staff_padding(3),
 )
 
-maker(
+commands(
     ("vc", 8),
     baca.suite(
         baca.untie(
@@ -253,32 +253,32 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", 20),
     baca.repeat_tie(
         baca.selectors.pleaf(0),
     ),
 )
 
-maker(
+commands(
     ("vc", 48),
     baca.repeat_tie(
         baca.selectors.pleaf(0),
     ),
 )
 
-maker(
+commands(
     ("vc", (52, 54)),
     baca.tuplet_bracket_staff_padding(4),
 )
 
 
-maker(
+commands(
     ("vc", 53),
     baca.breathe(),
 )
 
-maker(
+commands(
     ("vc", 54),
     baca.only_score(
         baca.breathe(
@@ -293,7 +293,7 @@ maker(
 
 # rh
 
-maker(
+commands(
     "rh",
     baca.literal(r"\stopStaff"),
     baca.mmrest_transparent(
@@ -303,7 +303,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.CLOCK_TIME,
