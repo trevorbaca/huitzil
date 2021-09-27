@@ -36,7 +36,7 @@ time_signatures = [
     (1, 1),
 ]
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
@@ -44,7 +44,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "88",
@@ -62,7 +62,7 @@ maker(
 
 # vc
 
-maker(
+commands(
     "vc",
     baca.clef("bass"),
     baca.literal(
@@ -85,7 +85,7 @@ maker(
     baca.time_signature_stencil_false(),
 )
 
-maker(
+commands(
     ("vc", 1),
     baca.markup(
         r"\baca-string-iii-markup",
@@ -97,7 +97,7 @@ maker(
     baca.skeleton("{ c1 * 1/4 }"),
 )
 
-maker(
+commands(
     ("vc", (14, 24)),
     baca.skeleton("{ c1 * 19/8 }"),
     baca.suite(
@@ -109,7 +109,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", (25, 26)),
     baca.markup(
         r"\huitzil-string-three-to-four-markup",
@@ -125,14 +125,14 @@ maker(
 
 # vcr
 
-maker(
+commands(
     ("vcr", 2),
     baca.mmrest_transparent(),
 )
 
 # rh
 
-maker(
+commands(
     "rh",
     baca.chunk(
         baca.literal(
@@ -166,7 +166,7 @@ maker(
     baca.text_script_staff_padding(4),
 )
 
-maker(
+commands(
     ("rh", (1, 8)),
     baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
     baca.staff_positions(
@@ -175,7 +175,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (1, 20)),
     baca.markup(
         r"\baca-fz-markup",
@@ -185,17 +185,17 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (1, 13)),
     baca.hairpin("mp > pp"),
 )
 
-maker(
+commands(
     ("rh", (14, 26)),
     baca.hairpin("(pp) < ff"),
 )
 
-maker(
+commands(
     ("rh", (9, 16)),
     baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
     baca.staff_positions(
@@ -205,7 +205,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 13),
     baca.markup(
         r"\huitzil-close-to-lh-markup",
@@ -215,7 +215,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", 14),
     baca.markup(
         r"\huitzil-descending-fingerboard-markup",
@@ -225,7 +225,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (17, 24)),
     baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
     baca.staff_positions(
@@ -234,7 +234,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (25, 26)),
     baca.hairpin(
         ">",
@@ -267,14 +267,14 @@ maker(
 
 # stage 2 (after staff position commands)
 
-maker(
+commands(
     ("vc", (14, 24)),
     baca.glissando(
         selector=baca.selectors.rleaves(),
     ),
 )
 
-maker(
+commands(
     ("vc", (25, 26)),
     baca.glissando(
         right_broken=True,
@@ -282,7 +282,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     "rh",
     baca.glissando(
         right_broken=True,
@@ -292,7 +292,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.CLOCK_TIME,

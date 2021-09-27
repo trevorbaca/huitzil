@@ -35,7 +35,7 @@ time_signatures = [
     (4, 4),
 ]
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
@@ -43,7 +43,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "44",
@@ -53,7 +53,7 @@ maker(
 
 # vc
 
-maker(
+commands(
     "vc",
     baca.literal(
         [
@@ -71,7 +71,7 @@ maker(
     baca.time_signature_stencil_false(),
 )
 
-maker(
+commands(
     ("vc", 25),
     baca.literal(
         [
@@ -86,14 +86,14 @@ maker(
 
 # vcr
 
-maker(
+commands(
     ("vcr", 1),
     baca.mmrest_transparent(),
 )
 
 # rh
 
-maker(
+commands(
     "rh",
     baca.alternate_bow_strokes(),
     baca.chunk(
@@ -120,18 +120,18 @@ maker(
     baca.tuplet_bracket_down(),
 )
 
-maker(
+commands(
     ("rh", (1, 4)),
     baca.rest_position(0),
     baca.skeleton("{ c4 r2 c4 r2 c4 r2 c4 r2 }"),
 )
 
-maker(
+commands(
     ("rh", (5, 8)),
     baca.skeleton("{ c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 }"),
 )
 
-maker(
+commands(
     ("rh", (9, 12)),
     baca.skeleton(
         "{"
@@ -143,7 +143,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", [9, 10]),
     baca.tag(
         # TODO: make +ARCH_A_SCORE work
@@ -156,12 +156,12 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (13, 15)),
     baca.skeleton("{ c4 c4 c4 c4 c4 c4 }"),
 )
 
-maker(
+commands(
     ("rh", (16, 18)),
     baca.skeleton(
         "{"
@@ -172,14 +172,14 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (19, 20)),
     baca.skeleton(
         "{" r" c8 c8 c8 c8" r" c8 c8 c8 c8" " }",
     ),
 )
 
-maker(
+commands(
     ("rh", (21, 24)),
     baca.skeleton(
         "{"
@@ -191,12 +191,12 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("rh", (19, 24)),
     baca.beam(),
 )
 
-maker(
+commands(
     ("rh", 25),
     baca.glissando(
         right_broken=True,
@@ -232,7 +232,7 @@ maker(
     baca.stem_tremolo(),
 )
 
-maker(
+commands(
     ("rh", 25),
     baca.staff_position(
         6,
@@ -242,7 +242,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.CLOCK_TIME,
