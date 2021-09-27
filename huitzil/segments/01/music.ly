@@ -9,16 +9,10 @@
 \include "../../stylesheet.ily"
 %! baca.path.extern()
 \include "music.ily"
-%! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_includes()
-clock-time-extra-offset = #'(0 . -2)
-%! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_includes()
-local-measure-number-extra-offset = #'(0 . -5)
-%! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_includes()
-spacing-extra-offset = #'(0 . 1)
 
+clock-time-extra-offset = #'(0 . -2)
+local-measure-number-extra-offset = #'(0 . -5)
+spacing-extra-offset = #'(0 . 1)
 %! baca._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_blocks()
 \score

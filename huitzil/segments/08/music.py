@@ -37,7 +37,7 @@ time_signatures = [
 ]
 
 commands = baca.CommandAccumulator(
-    **baca.segments(),
+    **baca.segment_accumulation_defaults(),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
     score_template=huitzil.ScoreTemplate(),
@@ -579,7 +579,7 @@ commands(
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
         commands,
-        **baca.segments(runtime=True),
+        **baca.segment_interpretation_defaults(),
         activate=[
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
