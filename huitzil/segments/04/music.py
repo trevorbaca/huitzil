@@ -37,8 +37,9 @@ commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
-    score_template=huitzil.ScoreTemplate(),
+    score_template=huitzil.make_empty_score,
     time_signatures=time_signatures,
+    voice_abbreviations=huitzil.voice_abbreviations,
 )
 
 commands(
@@ -629,6 +630,8 @@ if __name__ == "__main__":
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
         ],
+        always_make_global_rests=True,
+        do_not_require_margin_markup=True,
         clock_time_extra_offset=(0, 13),
         error_on_not_yet_pitched=True,
     )
