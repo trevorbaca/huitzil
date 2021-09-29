@@ -5,9 +5,9 @@ import baca
 
 from huitzil import library as huitzil
 
-###############################################################################
-##################################### [A] #####################################
-###############################################################################
+#########################################################################################
+######################################### 01 [A] ########################################
+#########################################################################################
 
 ### MUSIC-MAKERS ###
 
@@ -201,13 +201,16 @@ music_ = abjad.select(music)
 
 ### SEGMENT-MAKER ###
 
+score = huitzil.make_empty_score()
+voice_names = baca.accumulator.get_voice_names(score)
+
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
-    score_template=huitzil.make_empty_score,
     time_signatures=time_signatures,
     voice_abbreviations=huitzil.voice_abbreviations,
+    voice_names=voice_names,
 )
 
 # skips
@@ -320,5 +323,6 @@ if __name__ == "__main__":
         ],
         error_on_not_yet_pitched=True,
         local_measure_number_extra_offset=(0, -5),
+        score=score,
         spacing_extra_offset=(0, 1),
     )
