@@ -3,9 +3,9 @@ import baca
 
 from huitzil import library as huitzil
 
-###############################################################################
-##################################### [E] #####################################
-###############################################################################
+#########################################################################################
+######################################### 05 [E] ########################################
+#########################################################################################
 
 time_signatures = [
     (1, 2),
@@ -32,13 +32,16 @@ time_signatures = [
     (1, 2),
 ]
 
+score = huitzil.make_empty_score()
+voice_names = baca.accumulator.get_voice_names(score)
+
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
     instruments=huitzil.instruments,
     metronome_marks=huitzil.metronome_marks,
-    score_template=huitzil.make_empty_score,
     time_signatures=time_signatures,
     voice_abbreviations=huitzil.voice_abbreviations,
+    voice_names=voice_names,
 )
 
 commands(
@@ -483,4 +486,5 @@ if __name__ == "__main__":
         do_not_require_margin_markup=True,
         clock_time_extra_offset=(0, 13),
         error_on_not_yet_pitched=True,
+        score=score,
     )
