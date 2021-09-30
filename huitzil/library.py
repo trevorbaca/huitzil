@@ -362,7 +362,7 @@ voice_abbreviations = {
 def make_empty_score():
     site = "huitzil.ScoreTemplate.__call__()"
     tag = abjad.Tag(site)
-    global_context = baca.templates.make_global_context()
+    global_context = baca.score.make_global_context()
     rh_music_voice = abjad.Voice(name="RH_Music_Voice", tag=tag)
     rh_music_staff = abjad.Staff(
         [rh_music_voice],
@@ -395,7 +395,7 @@ def make_empty_score():
         tag=tag,
     )
     score = abjad.Score([global_context, music_context], name="Score", tag=tag)
-    baca.templates.assert_lilypond_identifiers(score)
-    baca.templates.assert_unique_context_names(score)
-    # baca.templates.assert_matching_custom_context_names(score)
+    baca.score.assert_lilypond_identifiers(score)
+    baca.score.assert_unique_context_names(score)
+    # baca.score.assert_matching_custom_context_names(score)
     return score
