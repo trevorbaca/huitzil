@@ -2436,7 +2436,7 @@ segment.01.RH.Music.Voice = {
     %! baca.mmrest_transparent()
     %! baca.OverrideCommand._call(1)
     \override MultiMeasureRest.transparent = ##t
-    %! abjad.ScoreTemplate.attach_defaults(3)
+    %! baca._attach_default_indicators(3)
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
     \clef "percussion"
@@ -2446,7 +2446,7 @@ segment.01.RH.Music.Voice = {
     %! baca.attach_color_literal(1)
     %! DEFAULT_CLEF_COLOR_CANCELLATION
     %@% \override RHStaff.Clef.color = ##f
-    %! abjad.ScoreTemplate.attach_defaults(3)
+    %! baca._attach_default_indicators(3)
     %! baca.treat_persistent_wrapper(2)
     %! baca._set_status_tag()
     %! DEFAULT_CLEF
@@ -3012,7 +3012,7 @@ segment.01.Cello.Music.Voice = {
         %! baca.tuplet_bracket_staff_padding()
         %! baca.OverrideCommand._call(1)
         \override TupletBracket.staff-padding = 3
-        %! abjad.ScoreTemplate.attach_defaults(3)
+        %! baca._attach_default_indicators(3)
         %! baca._set_status_tag()
         %! DEFAULT_CLEF
         \clef "bass"
@@ -3022,7 +3022,7 @@ segment.01.Cello.Music.Voice = {
         %! baca.attach_color_literal(1)
         %! DEFAULT_CLEF_COLOR_CANCELLATION
         %@% \override Staff.Clef.color = ##f
-        %! abjad.ScoreTemplate.attach_defaults(3)
+        %! baca._attach_default_indicators(3)
         %! baca.treat_persistent_wrapper(2)
         %! baca._set_status_tag()
         %! DEFAULT_CLEF
