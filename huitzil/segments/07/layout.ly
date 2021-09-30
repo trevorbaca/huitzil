@@ -29,10 +29,10 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(1)
+            %! baca._apply_breaks(1)
             \autoPageBreaksOff
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! BREAK
             %! baca.IndicatorCommand._call()
@@ -55,7 +55,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -75,7 +75,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1/4
@@ -95,7 +95,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -115,7 +115,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1/4
@@ -135,7 +135,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -155,7 +155,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1/4
@@ -175,7 +175,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -195,7 +195,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1/4
@@ -215,7 +215,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -235,7 +235,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1/4
@@ -255,7 +255,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -275,7 +275,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1/4
@@ -295,7 +295,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -315,7 +315,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1/4
@@ -335,7 +335,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -355,7 +355,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1/4
@@ -375,7 +375,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -395,7 +395,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1/4
@@ -415,7 +415,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -435,7 +435,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1/4
@@ -455,7 +455,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -475,7 +475,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1/4
@@ -495,7 +495,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 3/16
@@ -515,7 +515,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1
@@ -535,7 +535,7 @@
             %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #28
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             \noBreak
             %! baca._make_global_skips(1)
             s1 * 1
@@ -559,7 +559,7 @@
             %! PHANTOM
             \baca-new-spacing-section #1 #4
             %! BREAK
-            %! baca.BreakMeasureMap.__call__(2)
+            %! baca._apply_breaks(2)
             %! baca._style_phantom_measures(1)
             %! PHANTOM
             \noBreak
