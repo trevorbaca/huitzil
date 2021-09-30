@@ -1229,7 +1229,7 @@ segment.10.RH.Music.Voice = {
     %! SPANNER_STOP
     <> \bacaStopTextSpanRhythmAnnotation
 
-%! huitzil.ScoreTemplate.__call__()
+%! huitzil.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -1237,13 +1237,13 @@ segment.10.RH.Music.Voice = {
 %! baca.path.extern()
 segment.10.RH.Music.Staff = {
 
-    %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.make_empty_score()
     \context Voice = "RH_Music_Voice"
-    %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.make_empty_score()
     %! baca.path.extern()
     { \segment.10.RH.Music.Voice }
 
-%! huitzil.ScoreTemplate.__call__()
+%! huitzil.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -1409,7 +1409,7 @@ segment.10.Cello.Music.Voice = {
     %! baca.IndicatorCommand._call()
     \mark \huitzil-colophon-markup
 
-%! huitzil.ScoreTemplate.__call__()
+%! huitzil.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -1417,12 +1417,12 @@ segment.10.Cello.Music.Voice = {
 %! baca.path.extern()
 segment.10.Cello.Music.Staff = {
 
-    %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.make_empty_score()
     \context Voice = "Cello_Music_Voice"
-    %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.make_empty_score()
     %! baca.path.extern()
     { \segment.10.Cello.Music.Voice }
 
-%! huitzil.ScoreTemplate.__call__()
+%! huitzil.make_empty_score()
 %! baca.path.extern()
 }

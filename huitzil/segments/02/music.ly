@@ -35,9 +35,9 @@ spacing-extra-offset = #'(0 . 16)
         %! baca._make_lilypond_file()
         }
 
-        %! huitzil.ScoreTemplate.__call__()
+        %! huitzil.make_empty_score()
         \context Score = "Score"
-        %! huitzil.ScoreTemplate.__call__()
+        %! huitzil.make_empty_score()
         <<
 
             %! abjad.ScoreTemplate._make_global_context()
@@ -60,35 +60,35 @@ spacing-extra-offset = #'(0 . 16)
             %! abjad.ScoreTemplate._make_global_context()
             >>
 
-            %! huitzil.ScoreTemplate.__call__()
+            %! huitzil.make_empty_score()
             \context MusicContext = "Music_Context"
-            %! huitzil.ScoreTemplate.__call__()
+            %! huitzil.make_empty_score()
             {
 
-                %! huitzil.ScoreTemplate.__call__()
+                %! huitzil.make_empty_score()
                 \context PianoStaff = "Cello_Staff_Group"
-                %! huitzil.ScoreTemplate.__call__()
+                %! huitzil.make_empty_score()
                 <<
 
-                    %! huitzil.ScoreTemplate.__call__()
+                    %! huitzil.make_empty_score()
                     \context RHStaff = "RH_Music_Staff"
-                    %! huitzil.ScoreTemplate.__call__()
+                    %! huitzil.make_empty_score()
                     %! baca.path.extern()
                     { \segment.02.RH.Music.Staff }
 
-                    %! huitzil.ScoreTemplate.__call__()
+                    %! huitzil.make_empty_score()
                     \context Staff = "Cello_Music_Staff"
-                    %! huitzil.ScoreTemplate.__call__()
+                    %! huitzil.make_empty_score()
                     %! baca.path.extern()
                     { \segment.02.Cello.Music.Staff }
 
-                %! huitzil.ScoreTemplate.__call__()
+                %! huitzil.make_empty_score()
                 >>
 
-            %! huitzil.ScoreTemplate.__call__()
+            %! huitzil.make_empty_score()
             }
 
-        %! huitzil.ScoreTemplate.__call__()
+        %! huitzil.make_empty_score()
         >>
 
     %! baca._make_lilypond_file()

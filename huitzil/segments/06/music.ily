@@ -3148,7 +3148,7 @@ segment.06.RH.Music.Voice = {
     %! PHANTOM
     >>
 
-%! huitzil.ScoreTemplate.__call__()
+%! huitzil.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3156,13 +3156,13 @@ segment.06.RH.Music.Voice = {
 %! baca.path.extern()
 segment.06.RH.Music.Staff = {
 
-    %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.make_empty_score()
     \context Voice = "RH_Music_Voice"
-    %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.make_empty_score()
     %! baca.path.extern()
     { \segment.06.RH.Music.Voice }
 
-%! huitzil.ScoreTemplate.__call__()
+%! huitzil.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3702,7 +3702,7 @@ segment.06.Cello.Music.Voice = {
     %! PHANTOM
     >>
 
-%! huitzil.ScoreTemplate.__call__()
+%! huitzil.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3710,12 +3710,12 @@ segment.06.Cello.Music.Voice = {
 %! baca.path.extern()
 segment.06.Cello.Music.Staff = {
 
-    %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.make_empty_score()
     \context Voice = "Cello_Music_Voice"
-    %! huitzil.ScoreTemplate.__call__()
+    %! huitzil.make_empty_score()
     %! baca.path.extern()
     { \segment.06.Cello.Music.Voice }
 
-%! huitzil.ScoreTemplate.__call__()
+%! huitzil.make_empty_score()
 %! baca.path.extern()
 }
