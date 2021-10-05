@@ -565,15 +565,19 @@ if __name__ == "__main__":
     baca.build.make_segment_pdf(
         commands,
         **baca.segment_interpretation_defaults(),
-        activate=[
+        activate=(
             # baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
             # baca.const.MEASURE_NUMBER,
-        ],
+        ),
         always_make_global_rests=True,
         do_not_require_margin_markup=True,
-        # clock_time_extra_offset=(0, 13),
         error_on_not_yet_pitched=True,
-        # measure_number_extra_offset=(0, 13),
+        lilypond_file_keywords=baca.make_lilypond_file_dictionary(
+            # clock_time_extra_offset=(0, 13),
+            include_layout_ly=True,
+            includes=["../../stylesheet.ily"],
+            # measure_number_extra_offset=(0, 13),
+        ),
         score=score,
     )

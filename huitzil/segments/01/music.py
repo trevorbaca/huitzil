@@ -309,20 +309,22 @@ if __name__ == "__main__":
     baca.build.make_segment_pdf(
         commands,
         **baca.segment_interpretation_defaults(),
-        activate=[
+        activate=(
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
             # TODO: make this work
             # baca.const.SPACING,
-        ],
+        ),
         always_make_global_rests=True,
         do_not_require_margin_markup=True,
-        clock_time_extra_offset=(0, -2),
-        deactivate=[
-            baca.tags.DEFAULT_INSTRUMENT_ALERT,
-        ],
+        deactivate=(baca.tags.DEFAULT_INSTRUMENT_ALERT,),
         error_on_not_yet_pitched=True,
-        local_measure_number_extra_offset=(0, -5),
+        lilypond_file_keywords=baca.make_lilypond_file_dictionary(
+            clock_time_extra_offset=(0, -2),
+            include_layout_ly=True,
+            includes=["../../stylesheet.ily"],
+            local_measure_number_extra_offset=(0, -5),
+            spacing_extra_offset=(0, 1),
+        ),
         score=score,
-        spacing_extra_offset=(0, 1),
     )
