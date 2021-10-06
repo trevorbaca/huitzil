@@ -306,8 +306,7 @@ commands(
 )
 
 if __name__ == "__main__":
-    baca.build.make_segment_pdf(
-        commands,
+    keywords = baca.interpret.make_keyword_dictionary(
         **baca.segment_interpretation_defaults(),
         activate=(
             baca.tags.CLOCK_TIME,
@@ -319,12 +318,21 @@ if __name__ == "__main__":
         do_not_require_margin_markup=True,
         deactivate=(baca.tags.DEFAULT_INSTRUMENT_ALERT,),
         error_on_not_yet_pitched=True,
-        lilypond_file_keywords=baca.make_lilypond_file_dictionary(
-            clock_time_extra_offset=(0, -2),
-            include_layout_ly=True,
-            includes=["../../stylesheet.ily"],
-            local_measure_number_extra_offset=(0, -5),
-            spacing_extra_offset=(0, 1),
-        ),
         score=score,
     )
+    lilypond_file_keywords = baca.make_lilypond_file_dictionary(
+        clock_time_extra_offset=(0, -2),
+        include_layout_ly=True,
+        includes=["../../stylesheet.ily"],
+        local_measure_number_extra_offset=(0, -5),
+        spacing_extra_offset=(0, 1),
+    )
+    metadata, persist, score, timing = baca.build.interpret_segment_revised(
+        commands,
+        **keywords,
+    )
+    lilypond_file = baca.build.make_segment_lilypond_file(
+        score,
+        lilypond_file_keywords=lilypond_file_keywords,
+    )
+    baca.build.make_segment_pdf_revised(lilypond_file, metadata, persist, timing)
