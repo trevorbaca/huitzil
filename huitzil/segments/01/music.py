@@ -306,7 +306,9 @@ commands(
 )
 
 if __name__ == "__main__":
-    keywords = baca.interpret.make_keyword_dictionary(
+    metadata, persist, score, timing = baca.build.interpret_segment(
+        score,
+        commands,
         **baca.score_interpretation_defaults(),
         activate=(
             baca.tags.CLOCK_TIME,
@@ -318,11 +320,6 @@ if __name__ == "__main__":
         do_not_require_margin_markup=True,
         deactivate=(baca.tags.DEFAULT_INSTRUMENT_ALERT,),
         error_on_not_yet_pitched=True,
-        score=score,
-    )
-    metadata, persist, score, timing = baca.build.interpret_segment(
-        commands,
-        **keywords,
     )
     lilypond_file = baca.make_lilypond_file(
         score,
@@ -330,6 +327,5 @@ if __name__ == "__main__":
         includes=["../../stylesheet.ily"],
         local_measure_number_extra_offset=(0, -5),
         spacing_extra_offset=(0, 1),
-    )
     )
     baca.build.make_segment_pdf(lilypond_file, metadata, persist, timing)
