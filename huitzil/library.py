@@ -217,7 +217,7 @@ class DreamsMusicMaker:
             inner_tuplet = selection[0]
             if inner_tuplet.multiplier == 1:
                 inner_tuplet.hide = True
-            plts = baca.select(inner_tuplet).plts()
+            plts = baca.Selection(inner_tuplet).plts()
             for j, plt in enumerate(plts):
                 source_note = note_list[j]
                 for pleaf in plt:
