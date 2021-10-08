@@ -7,13 +7,13 @@ from abjadext import rmakers
 
 # instruments
 
-instruments = abjad.OrderedDict(
+instruments = dict(
     [("Cello", abjad.Cello(context="StaffGroup", pitch_range="[A1, +inf]"))]
 )
 
 # metronome marks
 
-metronome_marks = abjad.OrderedDict(
+metronome_marks = dict(
     [
         ("44", abjad.MetronomeMark((1, 4), 44)),
         ("66", abjad.MetronomeMark((1, 4), 66)),
@@ -33,7 +33,7 @@ pitch_classes = maker()
 
 # registrations
 
-registrations = abjad.OrderedDict(
+registrations = dict(
     [
         (
             "middle",
