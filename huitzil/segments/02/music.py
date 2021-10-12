@@ -118,7 +118,6 @@ commands(
     baca.markup(
         r"\huitzil-directly-on-bridge-markup",
         abjad.tweak(3).staff_padding,
-        literal=True,
     ),
     baca.staff_position(8),
     baca.tuplet_bracket_down(),
@@ -224,13 +223,11 @@ commands(
     baca.markup(
         r"\huitzil-sliding-from-bridge-onto-string-markup",
         abjad.tweak(6).staff_padding,
-        literal=True,
     ),
     baca.markup(
         r"\huitzil-trem-moderato-markup",
         abjad.tweak(3.5).staff_padding,
         direction=abjad.Down,
-        literal=True,
     ),
     baca.skeleton("{ c1 }"),
     baca.stem_tremolo(),

@@ -126,7 +126,6 @@ commands(
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.hairpin(
         "mp > pp <",
