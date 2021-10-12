@@ -157,7 +157,6 @@ commands(
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaves(),
     ),
 )
@@ -198,18 +197,15 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.pleaves((1, -3)),
     ),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.pleaves((-3, None)),
     ),
 )
@@ -238,12 +234,10 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.pleaves((1, None)),
     ),
     baca.staff_positions(
@@ -266,7 +260,6 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaves(),
     ),
 )
@@ -312,13 +305,11 @@ commands(
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaves((None, 4)),
     ),
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaves((4, None)),
     ),
     baca.text_spanner(
@@ -361,7 +352,6 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaves(),
     ),
 )
@@ -420,7 +410,6 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.staff_positions(
         [0],
@@ -447,7 +436,6 @@ commands(
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaves(),
     ),
     baca.staff_positions(
@@ -466,7 +454,6 @@ commands(
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaves(),
     ),
     # TODO: make +ARCH_A_SCORE work
@@ -507,7 +494,6 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaves(),
     ),
 )

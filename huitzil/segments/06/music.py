@@ -158,7 +158,6 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaves(),
     ),
     baca.staff_positions(
@@ -173,7 +172,6 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaves(),
     ),
     baca.staff_positions(
@@ -206,13 +204,11 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(0),
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(1),
     ),
     baca.staff_positions(
@@ -227,7 +223,6 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.staff_positions(
         [0],
@@ -241,25 +236,21 @@ commands(
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(0),
     ),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(3),
     ),
     baca.staff_positions(
@@ -274,7 +265,6 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.staff_positions(
         [0],
@@ -288,12 +278,10 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(1),
     ),
     baca.staff_positions(
@@ -308,7 +296,6 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.staff_positions(
         [0],
@@ -322,24 +309,20 @@ commands(
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(3),
     ),
     baca.staff_positions(
@@ -354,7 +337,6 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.staff_positions(
         [0],
@@ -368,12 +350,10 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(1),
     ),
     baca.staff_positions(
@@ -388,7 +368,6 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.staff_positions(
         [0],
@@ -402,24 +381,20 @@ commands(
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(3),
     ),
     baca.staff_positions(
@@ -434,13 +409,11 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.markup(
         r"\huitzil-directly-on-bridge-markup",
         abjad.tweak(-0.9).self_alignment_X,
         abjad.tweak(2).staff_padding,
-        literal=True,
     ),
 )
 
@@ -476,12 +449,10 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(1),
     ),
 )
@@ -492,7 +463,6 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
 )
 
@@ -502,24 +472,20 @@ commands(
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(3),
     ),
 )
@@ -539,36 +505,30 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.Down,
-        literal=True,
     ),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(1),
     ),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(2),
     ),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(3),
     ),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(4),
     ),
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaf(5),
     ),
 )

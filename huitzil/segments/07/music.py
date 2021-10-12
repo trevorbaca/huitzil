@@ -95,7 +95,6 @@ commands(
         r"\baca-string-iii-markup",
         abjad.tweak(2.5).padding,
         direction=abjad.Down,
-        literal=True,
     ),
     baca.pitch("A2"),
     baca.skeleton("{ c1 * 1/4 }"),
@@ -121,7 +120,6 @@ commands(
         abjad.tweak(0).parent_alignment_X,
         abjad.tweak(-0.05).self_alignment_X,
         direction=abjad.Down,
-        literal=True,
     ),
     baca.pitch("G2"),
     baca.skeleton("{ c1 * 2 }"),
@@ -154,13 +152,11 @@ commands(
         r"\huitzil-ascending-fingerboard-markup",
         abjad.tweak(-1).self_alignment_X,
         abjad.tweak(4.5).staff_padding,
-        literal=True,
     ),
     baca.markup(
         r"\huitzil-directly-above-end-of-fingerboard-markup",
         abjad.tweak(-1).self_alignment_X,
         abjad.tweak(1).staff_padding,
-        literal=True,
     ),
     baca.stem_tremolo(
         selector=baca.selectors.pleaves(),
@@ -184,7 +180,6 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.Down,
-        literal=True,
         selector=baca.selectors.leaves(),
     ),
 )
@@ -215,7 +210,6 @@ commands(
         r"\huitzil-close-to-lh-markup",
         abjad.tweak(-0.5).self_alignment_X,
         abjad.tweak(2).staff_padding,
-        literal=True,
     ),
 )
 
@@ -225,7 +219,6 @@ commands(
         r"\huitzil-descending-fingerboard-markup",
         abjad.tweak(-1).self_alignment_X,
         abjad.tweak(2).staff_padding,
-        literal=True,
     ),
 )
 
@@ -258,7 +251,6 @@ commands(
         r"\huitzil-directly-above-end-of-fingerboard-column-markup",
         abjad.tweak(-0.5).self_alignment_X,
         abjad.tweak(2).staff_padding,
-        literal=True,
     ),
     baca.parenthesize(
         selector=baca.selectors.pleaf(-1),
