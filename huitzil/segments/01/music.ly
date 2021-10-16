@@ -4,8 +4,6 @@
 %! baca._make_lilypond_file()
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-%! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_includes()
 \include "../../stylesheet.ily"
 %! baca.path.extern()
 \include "music.ily"
@@ -13,10 +11,10 @@
 local-measure-number-extra-offset = #'(0 . -5)
 spacing-extra-offset = #'(0 . 1)
 %! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 \score
 %! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 {
 
     %! baca._make_lilypond_file()
@@ -89,5 +87,5 @@ spacing-extra-offset = #'(0 . 1)
     >>
 
 %! baca._make_lilypond_file()
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 }
