@@ -27,7 +27,5 @@ dict(
             245,
             255,
         ],
-        "paper_size": "ledger",
-        "price": "\\$29 / \\euro 29",
     }
 )
