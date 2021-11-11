@@ -51,7 +51,7 @@ segment.10.Global.Rests = {
     %! baca._make_global_rests(1)
     R1 * 3/2
 
-%! abjad.ScoreTemplate._make_global_context()
+%! baca.make_global_context()
 %! baca.path.extern()
 }
 
@@ -398,7 +398,7 @@ segment.10.Global.Skips = {
     %! baca.IndicatorCommand._call()
     \bar "|."
 
-%! abjad.ScoreTemplate._make_global_context()
+%! baca.make_global_context()
 %! baca.path.extern()
 }
 
