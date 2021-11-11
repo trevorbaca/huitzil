@@ -563,7 +563,7 @@ if __name__ == "__main__":
     lilypond_file = baca.make_lilypond_file(
         score,
         include_layout_ly=True,
-        includes=["../../stylesheet.ily"],
+        includes=["../stylesheet.ily"],
         # measure_number_extra_offset=(0, 13),
         preamble=baca.interpret.nonfirst_preamble.split("\n"),
     )
