@@ -14,4 +14,3 @@ in Cabot House on the campus of Harvard University.
 
 World premiere of revised version 3 June 2020 by Ashley Walters at Nief-Norf 2020
 broadcast from Knoxville, Tennessee.
-
