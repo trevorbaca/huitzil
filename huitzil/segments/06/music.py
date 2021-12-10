@@ -1,7 +1,7 @@
 import abjad
 import baca
 
-from huitzil import library as huitzil
+from huitzil import library
 
 #########################################################################################
 ######################################### 06 [F] ########################################
@@ -33,15 +33,15 @@ time_signatures = [
     (1, 2),
 ]
 
-score = huitzil.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=huitzil.instruments,
-    metronome_marks=huitzil.metronome_marks,
+    instruments=library.instruments,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=huitzil.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
