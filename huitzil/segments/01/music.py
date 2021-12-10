@@ -325,4 +325,4 @@ if __name__ == "__main__":
         local_measure_number_extra_offset=(0, -5),
         spacing_extra_offset=(0, 1),
     )
-    baca.build.make_segment_pdf(lilypond_file, metadata, persist, timing)
+    baca.build.persist(lilypond_file, metadata, persist, timing)

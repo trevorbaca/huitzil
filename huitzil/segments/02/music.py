@@ -261,4 +261,4 @@ if __name__ == "__main__":
         preamble=baca.interpret.nonfirst_preamble.split("\n"),
         spacing_extra_offset=(0, 16),
     )
-    baca.build.make_segment_pdf(lilypond_file, metadata, persist, timing)
+    baca.build.persist(lilypond_file, metadata, persist, timing)

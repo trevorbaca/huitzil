@@ -567,4 +567,4 @@ if __name__ == "__main__":
         # measure_number_extra_offset=(0, 13),
         preamble=baca.interpret.nonfirst_preamble.split("\n"),
     )
-    baca.build.make_segment_pdf(lilypond_file, metadata, persist, timing)
+    baca.build.persist(lilypond_file, metadata, persist, timing)
