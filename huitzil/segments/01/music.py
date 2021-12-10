@@ -1,9 +1,7 @@
-import typing
-
 import abjad
 import baca
 
-from huitzil import library as huitzil
+from huitzil import library
 
 #########################################################################################
 ######################################### 01 [A] ########################################
@@ -11,14 +9,14 @@ from huitzil import library as huitzil
 
 ### MUSIC-MAKERS ###
 
-music: typing.List[abjad.Tuplet] = []
+music = []
 music_makers = []
 
 ### stage [1] (middle) ###
 
-music_maker = huitzil.DreamsMusicMaker(
+music_maker = library.DreamsMusicMaker(
     [1, 2, 0, -1, 5],
-    huitzil.pitch_classes[:6],
+    library.pitch_classes[:6],
     [[2, range(0, 99)]],
     pc_displacement=[abjad.index(list(range(15)), 30)],
 )
@@ -26,9 +24,9 @@ music_makers.append(music_maker)
 
 ### stage [2] (middle & lower) ###
 
-music_maker = huitzil.DreamsMusicMaker(
+music_maker = library.DreamsMusicMaker(
     [1, 2, 0, -1, 5],
-    huitzil.pitch_classes[2:8],
+    library.pitch_classes[2:8],
     [
         [2, range(0, 99)],
         [3, (4, 14, 15, 28, 29, 35, 36)],
@@ -40,9 +38,9 @@ music_makers.append(music_maker)
 
 ### stage [3] (lower) ###
 
-music_maker = huitzil.DreamsMusicMaker(
+music_maker = library.DreamsMusicMaker(
     [4, 8, 0, -4, 20],
-    huitzil.pitch_classes[4:6],
+    library.pitch_classes[4:6],
     [
         [3, range(0, 99)],
     ],
@@ -55,9 +53,9 @@ music_makers.append(music_maker)
 
 ### stage [4] (lower & upper) ###
 
-music_maker = huitzil.DreamsMusicMaker(
+music_maker = library.DreamsMusicMaker(
     [4, 8, 0, -4, 20],
-    huitzil.pitch_classes[6:8],
+    library.pitch_classes[6:8],
     [
         [3, range(0, 99)],
         [1, (1, 2, 3, 6, 7, 10)],
@@ -70,9 +68,9 @@ music_makers.append(music_maker)
 
 ### stage [5] (upper) ###
 
-music_maker = huitzil.DreamsMusicMaker(
+music_maker = library.DreamsMusicMaker(
     [2, 4, 0, -2, 10],
-    huitzil.pitch_classes[8:12],
+    library.pitch_classes[8:12],
     [
         [1, range(0, 99)],
     ],
@@ -85,9 +83,9 @@ music_makers.append(music_maker)
 
 ### stage [6] (upper & middle) ###
 
-music_maker = huitzil.DreamsMusicMaker(
+music_maker = library.DreamsMusicMaker(
     [2, 4, 0, -2, 10],
-    huitzil.pitch_classes[10:13],
+    library.pitch_classes[10:13],
     [
         [1, range(0, 99)],
         [2, (0, 1, 2, 3, 13, 14, 15, 16, 17, 18)],
@@ -102,9 +100,9 @@ music_makers.append(music_maker)
 
 ### stage [7] (upper, middle, lower) ###
 
-music_maker = huitzil.DreamsMusicMaker(
+music_maker = library.DreamsMusicMaker(
     [2, 4, 0, -2, 10],
-    huitzil.pitch_classes[12:20],
+    library.pitch_classes[12:20],
     [
         [1, range(0, 99)],
         [
@@ -144,9 +142,9 @@ music_makers.append(music_maker)
 
 ### stage [8] (middle & lower) ###
 
-music_maker = huitzil.DreamsMusicMaker(
+music_maker = library.DreamsMusicMaker(
     [1, 2, 0, -1, 5],
-    huitzil.pitch_classes[14:18],
+    library.pitch_classes[14:18],
     [
         [2, range(0, 99)],
         [3, (5, 11, 12, 13, 19, 20)],
@@ -159,9 +157,9 @@ music_makers.append(music_maker)
 
 ### stage [9] (lower) ###
 
-music_maker = huitzil.DreamsMusicMaker(
+music_maker = library.DreamsMusicMaker(
     [4, 8, 0, -4, 20],
-    huitzil.pitch_classes[16:20],
+    library.pitch_classes[16:20],
     [
         [3, range(0, 99)],
     ],
@@ -201,15 +199,15 @@ music_ = abjad.select(music)
 
 ### SEGMENT-MAKER ###
 
-score = huitzil.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=huitzil.instruments,
-    metronome_marks=huitzil.metronome_marks,
+    instruments=library.instruments,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=huitzil.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
