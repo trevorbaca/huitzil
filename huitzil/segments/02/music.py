@@ -258,7 +258,6 @@ if __name__ == "__main__":
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily"],
-        preamble=baca.interpret.nonfirst_preamble.split("\n"),
         spacing_extra_offset=(0, 16),
     )
     baca.build.persist(lilypond_file, metadata, persist, timing)

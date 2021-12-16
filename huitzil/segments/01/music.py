@@ -321,7 +321,7 @@ if __name__ == "__main__":
     lilypond_file = baca.make_lilypond_file(
         score,
         include_layout_ly=True,
-        includes=["../stylesheet.ily"],
+        includes=["../stylesheet.ily", "header.ily"],
         local_measure_number_extra_offset=(0, -5),
         spacing_extra_offset=(0, 1),
     )
