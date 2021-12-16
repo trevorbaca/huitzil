@@ -63,29 +63,6 @@
     top-margin = 10\mm
 }
 
-\header {
-    composer = \markup {
-        \override #'(font-name . "Palatino")
-        \fontsize #5 "Trevor Bača"
-        \hspace #1
-        \fontsize #3.5 "(*1975)"
-    }
-    tagline = \markup \null
-    title = \markup \column {
-        \center-align {
-            \override #'(font-name . "Palatino")
-            \fontsize #16 {
-               \line { HUITZIL }
-            }
-            \null
-            \override #'(font-name . "Palatino Italic")
-            \fontsize #3 {
-               " for Alan Toda-Ambaras "
-            }
-        }
-    }
-}
-
 \layout {
     \accidentalStyle neo-modern
     indent = 0

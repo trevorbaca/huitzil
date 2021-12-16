@@ -565,6 +565,5 @@ if __name__ == "__main__":
         include_layout_ly=True,
         includes=["../stylesheet.ily"],
         # measure_number_extra_offset=(0, 13),
-        preamble=baca.interpret.nonfirst_preamble.split("\n"),
     )
     baca.build.persist(lilypond_file, metadata, persist, timing)
