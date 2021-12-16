@@ -6,9 +6,6 @@
 \include "music.ily"
 
 spacing-extra-offset = #'(0 . 16)
-%! baca._add_nonfirst_segment_preamble()
-\paper { first-page-number = #2 }
-
 %! baca._make_lilypond_file()
 %! abjad.LilyPondFile._get_format_pieces()
 \score
