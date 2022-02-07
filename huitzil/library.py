@@ -131,12 +131,6 @@ class DreamsMusicMaker:
         assert all(isinstance(_, abjad.Tuplet) for _ in tuplets)
         return tuplets
 
-    def __repr__(self) -> str:
-        """
-        Gets interpreter representation.
-        """
-        return abjad.StorageFormatManager(self).get_repr_format()
-
     ### PRIVATE METHODS ###
 
     def _attach_beams(self, music):
