@@ -1,69 +1,90 @@
-dict(
-    {
-        "alive_during_segment": [
-            "Score",
-            "Global_Context",
-            "Global_Rests",
-            "Global_Skips",
-            "Music_Context",
-            "Cello_Staff_Group",
-            "RH_Music_Staff",
-            "RH_Music_Voice",
-            "Cello_Music_Staff",
-            "Cello_Music_Voice",
+{
+    "alive_during_segment": [
+        "Score",
+        "Global_Context",
+        "Global_Rests",
+        "Global_Skips",
+        "Music_Context",
+        "Cello_Staff_Group",
+        "RH_Music_Staff",
+        "RH_Music_Voice",
+        "Cello_Music_Staff",
+        "Cello_Music_Voice",
+    ],
+    "persistent_indicators": {
+        "Cello_Music_Staff": [
+            baca.Memento(
+                context="Cello_Music_Voice",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Clef",
+                synthetic_offset=None,
+                value="treble",
+            )
         ],
-        "persistent_indicators": {
-            "Cello_Music_Staff": [
-                baca.Memento(
-                    context="Cello_Music_Voice",
-                    prototype="abjad.Clef",
-                    value="treble",
-                ),
-            ],
-            "Cello_Staff_Group": [
-                baca.Memento(
-                    context="Cello_Music_Voice",
-                    manifest="instruments",
-                    value="Cello",
-                ),
-            ],
-            "RH_Music_Staff": [
-                baca.Memento(
-                    context="RH_Music_Voice",
-                    edition=abjad.Tag("-PARTS"),
-                    prototype="baca.BarExtent",
-                    value=7,
-                ),
-                baca.Memento(
-                    context="RH_Music_Voice",
-                    prototype="abjad.Clef",
-                    value="percussion",
-                ),
-                baca.Memento(
-                    context="RH_Music_Voice",
-                    prototype="baca.StaffLines",
-                    value=7,
-                ),
-            ],
-            "RH_Music_Voice": [
-                baca.Memento(
-                    context="RH_Music_Voice",
-                    prototype="abjad.Dynamic",
-                    value="pp",
-                ),
-            ],
-            "Score": [
-                baca.Memento(
-                    context="Global_Skips",
-                    manifest="metronome_marks",
-                    value="66",
-                ),
-                baca.Memento(
-                    context="Global_Skips",
-                    prototype="abjad.TimeSignature",
-                    value="3/2",
-                ),
-            ],
-        },
-    }
-)
+        "Cello_Staff_Group": [
+            baca.Memento(
+                context="Cello_Music_Voice",
+                edition=None,
+                manifest="instruments",
+                prototype=None,
+                synthetic_offset=None,
+                value="Cello",
+            )
+        ],
+        "RH_Music_Staff": [
+            baca.Memento(
+                context="RH_Music_Voice",
+                edition=Tag("-PARTS"),
+                manifest=None,
+                prototype="baca.BarExtent",
+                synthetic_offset=None,
+                value=7,
+            ),
+            baca.Memento(
+                context="RH_Music_Voice",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Clef",
+                synthetic_offset=None,
+                value="percussion",
+            ),
+            baca.Memento(
+                context="RH_Music_Voice",
+                edition=None,
+                manifest=None,
+                prototype="baca.StaffLines",
+                synthetic_offset=None,
+                value=7,
+            ),
+        ],
+        "RH_Music_Voice": [
+            baca.Memento(
+                context="RH_Music_Voice",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Dynamic",
+                synthetic_offset=None,
+                value="pp",
+            )
+        ],
+        "Score": [
+            baca.Memento(
+                context="Global_Skips",
+                edition=None,
+                manifest="metronome_marks",
+                prototype=None,
+                synthetic_offset=None,
+                value="66",
+            ),
+            baca.Memento(
+                context="Global_Skips",
+                edition=None,
+                manifest=None,
+                prototype="abjad.TimeSignature",
+                synthetic_offset=None,
+                value="3/2",
+            ),
+        ],
+    },
+}
