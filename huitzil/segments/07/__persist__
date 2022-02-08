@@ -37,14 +37,6 @@
         "RH_Music_Staff": [
             baca.Memento(
                 context="RH_Music_Voice",
-                edition=Tag("-PARTS"),
-                manifest=None,
-                prototype="baca.BarExtent",
-                synthetic_offset=None,
-                value=14,
-            ),
-            baca.Memento(
-                context="RH_Music_Voice",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Clef",
@@ -56,6 +48,14 @@
                 edition=None,
                 manifest=None,
                 prototype="baca.StaffLines",
+                synthetic_offset=None,
+                value=14,
+            ),
+            baca.Memento(
+                context="RH_Music_Voice",
+                edition=Tag("-PARTS"),
+                manifest=None,
+                prototype="baca.BarExtent",
                 synthetic_offset=None,
                 value=14,
             ),
