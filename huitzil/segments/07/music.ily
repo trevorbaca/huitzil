@@ -1355,41 +1355,6 @@ segment.07.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \>
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \abjad-dashed-line-with-hook
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \baca-text-spanner-left-text "make_monads('1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16')"
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! AUTODETECT
-    %! SPANNER_START
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak bound-details.right.padding 2.75
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak color #darkcyan
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak staff-padding 8
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    \bacaStartTextSpanRhythmAnnotation
     %! baca.attach_color_literal(2)
     %! REAPPLIED_CLEF_REDRAW_COLOR
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
@@ -1475,11 +1440,6 @@ segment.07.RH.Music.Voice = {
     %! baca.glissando()
     %! abjad.glissando(7)
     \glissando
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(4)
-    %! SPANNER_STOP
-    <> \bacaStopTextSpanRhythmAnnotation
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 9]
@@ -1490,41 +1450,6 @@ segment.07.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     _ \baca-fz-markup
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \abjad-dashed-line-with-hook
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \baca-text-spanner-left-text "make_monads('1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16')"
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! AUTODETECT
-    %! SPANNER_START
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak bound-details.right.padding 2.75
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak color #darkcyan
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak staff-padding 8
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    \bacaStartTextSpanRhythmAnnotation
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 10]
@@ -1667,11 +1592,6 @@ segment.07.RH.Music.Voice = {
     %! baca.glissando()
     %! abjad.glissando(7)
     \glissando
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(4)
-    %! SPANNER_STOP
-    <> \bacaStopTextSpanRhythmAnnotation
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 17]
@@ -1682,41 +1602,6 @@ segment.07.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     _ \baca-fz-markup
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \abjad-dashed-line-with-hook
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \baca-text-spanner-left-text "make_monads('1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16')"
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! AUTODETECT
-    %! SPANNER_START
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak bound-details.right.padding 2.75
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak color #darkcyan
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak staff-padding 8
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    \bacaStartTextSpanRhythmAnnotation
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 18]
@@ -1787,11 +1672,6 @@ segment.07.RH.Music.Voice = {
     %! baca.glissando()
     %! abjad.glissando(7)
     \glissando
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(4)
-    %! SPANNER_STOP
-    <> \bacaStopTextSpanRhythmAnnotation
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 25]
@@ -1817,41 +1697,6 @@ segment.07.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \huitzil-directly-above-end-of-fingerboard-column-markup
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \abjad-dashed-line-with-hook
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \baca-text-spanner-left-text "make_monads('1 1')"
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! AUTODETECT
-    %! SPANNER_START
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak bound-details.right.padding 2.75
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak color #darkcyan
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    - \tweak staff-padding 8
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(2)
-    %! SPANNER_START
-    \bacaStartTextSpanRhythmAnnotation
     %! baca.glissando()
     %! abjad.glissando(7)
     \glissando
@@ -1907,11 +1752,6 @@ segment.07.RH.Music.Voice = {
     %! baca.text_script_staff_padding()
     %! baca.OverrideCommand._call(2)
     \revert TextScript.staff-padding
-    %! baca.rhythm_annotation_spanner()
-    %! RHYTHM_ANNOTATION_SPANNER
-    %! baca.PiecewiseCommand._call(4)
-    %! SPANNER_STOP
-    <> \bacaStopTextSpanRhythmAnnotation
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
