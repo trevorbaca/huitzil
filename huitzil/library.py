@@ -163,7 +163,6 @@ class DreamsMusicMaker:
             return
         notes = abjad.select(music).leaves(pitched=True)
         total_notes = len(notes)
-        down_one_octave = abjad.Transposition(n=-12)
         for i, note in enumerate(notes):
             register = None
             for pattern in self.pc_displacement:
@@ -176,7 +175,7 @@ class DreamsMusicMaker:
                 pass
             elif register == "low":
                 source_pitch = note.written_pitch
-                transposed_pitch = down_one_octave(source_pitch)
+                transposed_pitch = source_pitch.transpose(n=-12)
                 note.written_pitch = transposed_pitch
             else:
                 raise ValueError(register)
@@ -318,9 +317,7 @@ class DreamsMusicMaker:
         return self._pc_displacement
 
     @property
-    def pc_operators(
-        self,
-    ) -> typing.List[typing.Union[abjad.Inversion, abjad.Transposition]]:
+    def pc_operators(self):
         """
         Gets pc operators of music-maker.
 
@@ -329,7 +326,7 @@ class DreamsMusicMaker:
         return self._pc_operators
 
     @property
-    def pitch_class_trees(self) -> typing.Tuple[baca.PitchTree, ...]:
+    def pitch_class_trees(self):
         """
         Gets pitch-class trees of music-maker.
 

@@ -32,7 +32,7 @@ music_maker = library.DreamsMusicMaker(
         [3, (4, 14, 15, 28, 29, 35, 36)],
     ],
     pc_displacement=[abjad.index(list(range(15)), 30)],
-    pc_operators=[abjad.Transposition(n=1)],
+    pc_operators=[lambda _: _.transpose(n=1)],
 )
 music_makers.append(music_maker)
 
@@ -45,8 +45,8 @@ music_maker = library.DreamsMusicMaker(
         [3, range(0, 99)],
     ],
     pc_operators=[
-        abjad.Transposition(n=2),
-        abjad.Inversion(),
+        lambda _: _.transpose(n=2),
+        lambda _: _.invert(),
     ],
 )
 music_makers.append(music_maker)
@@ -61,7 +61,7 @@ music_maker = library.DreamsMusicMaker(
         [1, (1, 2, 3, 6, 7, 10)],
     ],
     pc_operators=[
-        abjad.Transposition(n=3),
+        lambda _: _.transpose(n=3),
     ],
 )
 music_makers.append(music_maker)
@@ -76,7 +76,7 @@ music_maker = library.DreamsMusicMaker(
     ],
     pc_displacement=[abjad.index(list(range(10, 20)), 20)],
     pc_operators=[
-        abjad.Transposition(n=4),
+        lambda _: _.transpose(n=4),
     ],
 )
 music_makers.append(music_maker)
@@ -92,8 +92,8 @@ music_maker = library.DreamsMusicMaker(
     ],
     pc_displacement=[abjad.index(list(range(10)), 20)],
     pc_operators=[
-        abjad.Transposition(n=5),
-        abjad.Inversion(),
+        lambda _: _.transpose(n=5),
+        lambda _: _.invert(),
     ],
 )
 music_makers.append(music_maker)
@@ -136,7 +136,7 @@ music_maker = library.DreamsMusicMaker(
         [3, (2, 13, 14, 27, 28, 40, 50, 51)],
     ],
     pc_displacement=[abjad.index(list(range(10, 20)), 20)],
-    pc_operators=[abjad.Transposition(n=6)],
+    pc_operators=[lambda _: _.transpose(n=6)],
 )
 music_makers.append(music_maker)
 
@@ -150,7 +150,7 @@ music_maker = library.DreamsMusicMaker(
         [3, (5, 11, 12, 13, 19, 20)],
     ],
     pc_operators=[
-        abjad.Transposition(n=7),
+        lambda _: _.transpose(n=7),
     ],
 )
 music_makers.append(music_maker)
@@ -165,8 +165,8 @@ music_maker = library.DreamsMusicMaker(
     ],
     pc_displacement=[abjad.index(list(range(5)), 10)],
     pc_operators=[
-        abjad.Transposition(n=8),
-        abjad.Inversion(),
+        lambda _: _.transpose(n=8),
+        lambda _: _.invert(),
     ],
 )
 music_makers.append(music_maker)
