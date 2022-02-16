@@ -141,7 +141,7 @@ class DreamsMusicMaker:
             counts = [len(_) for _ in runs]
             note_groups = baca.Sequence(tuplet[:]).partition_by_counts(counts)
             for note_group in note_groups:
-                note_group = abjad.select(note_group)
+                note_group = abjad.Selection(note_group)
                 abjad.beam(note_group)
 
     def _attach_voice_numbers(self, note_lists):
@@ -161,7 +161,7 @@ class DreamsMusicMaker:
     def _displace_pitch_classes(self, music):
         if not self.pc_displacement:
             return
-        notes = abjad.select(music).leaves(pitched=True)
+        notes = abjad.Selection(music).leaves(pitched=True)
         total_notes = len(notes)
         for i, note in enumerate(notes):
             register = None
