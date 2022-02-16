@@ -195,7 +195,7 @@ for measure_duration in measure_durations:
     duration = measure_duration.with_denominator(4)
     time_signatures.append(duration)
 
-music_ = abjad.select(music)
+music_ = abjad.Selection(music)
 
 ### SEGMENT-MAKER ###
 
