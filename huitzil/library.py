@@ -206,7 +206,7 @@ class DreamsMusicMaker:
                 rmakers.force_diminution(),
             )
             selection = maker([target_duration])
-            assert isinstance(selection, abjad.Selection)
+            assert isinstance(selection, list)
             inner_tuplet = selection[0]
             if inner_tuplet.multiplier == 1:
                 inner_tuplet.hide = True
