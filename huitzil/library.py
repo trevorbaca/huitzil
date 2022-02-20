@@ -137,9 +137,9 @@ class DreamsMusicMaker:
         tuplets = abjad.iterate.components(music, abjad.Tuplet)
         for tuplet in tuplets:
             voice_numbers = [abjad.get.indicator(_, int) for _ in tuplet]
-            runs = baca.Sequence(voice_numbers).group_by()
+            runs = abjad.Sequence(voice_numbers).group_by()
             counts = [len(_) for _ in runs]
-            note_groups = baca.Sequence(tuplet[:]).partition_by_counts(counts)
+            note_groups = abjad.Sequence(tuplet[:]).partition_by_counts(counts)
             for note_group in note_groups:
                 note_group = abjad.Selection(note_group)
                 abjad.beam(note_group)
@@ -149,12 +149,12 @@ class DreamsMusicMaker:
             assert len(component) == 2
             voice_number = component[0]
             indices = component[1]
-            notes = baca.Sequence(note_lists).flatten()
+            notes = abjad.Sequence(note_lists).flatten()
             for i, note in enumerate(notes):
                 if i in indices:
                     abjad.detach(int, note)
                     abjad.attach(voice_number, note)
-        notes = baca.Sequence(note_lists).flatten()
+        notes = abjad.Sequence(note_lists).flatten()
         for note in notes:
             assert abjad.get.has_indicator(note, int), repr(note)
 
