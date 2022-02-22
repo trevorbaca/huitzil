@@ -149,12 +149,12 @@ class DreamsMusicMaker:
             assert len(component) == 2
             voice_number = component[0]
             indices = component[1]
-            notes = abjad.Sequence(note_lists).flatten()
+            notes = abjad.sequence.flatten(note_lists)
             for i, note in enumerate(notes):
                 if i in indices:
                     abjad.detach(int, note)
                     abjad.attach(voice_number, note)
-        notes = abjad.Sequence(note_lists).flatten()
+        notes = abjad.sequence.flatten(note_lists)
         for note in notes:
             assert abjad.get.has_indicator(note, int), repr(note)
 
