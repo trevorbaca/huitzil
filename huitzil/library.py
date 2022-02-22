@@ -139,7 +139,7 @@ class DreamsMusicMaker:
             voice_numbers = [abjad.get.indicator(_, int) for _ in tuplet]
             runs = abjad.sequence.group_by(voice_numbers)
             counts = [len(_) for _ in runs]
-            note_groups = abjad.Sequence(tuplet[:]).partition_by_counts(counts)
+            note_groups = abjad.sequence.partition_by_counts(tuplet[:], counts)
             for note_group in note_groups:
                 note_group = abjad.Selection(note_group)
                 abjad.beam(note_group)
