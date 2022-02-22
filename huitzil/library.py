@@ -137,7 +137,7 @@ class DreamsMusicMaker:
         tuplets = abjad.iterate.components(music, abjad.Tuplet)
         for tuplet in tuplets:
             voice_numbers = [abjad.get.indicator(_, int) for _ in tuplet]
-            runs = abjad.Sequence(voice_numbers).group_by()
+            runs = abjad.sequence.group_by(voice_numbers)
             counts = [len(_) for _ in runs]
             note_groups = abjad.Sequence(tuplet[:]).partition_by_counts(counts)
             for note_group in note_groups:
