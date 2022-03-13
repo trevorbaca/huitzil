@@ -422,14 +422,14 @@ commands(
     # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
     # baca.hairpin(
     #    "mp -- p -- pp -- p -- !",
-    #    pieces=lambda _: baca.Selection(_).mgroups([2, 2, 4, 2 + 1]),
+    #    pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
     #    selector=baca.selectors.rleaves(),
     # ),
     # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
         "mp -- p -- pp -- p",
         bookend=False,
-        pieces=lambda _: baca.Selection(_).mgroups([2, 2, 4, 2 + 1]),
+        pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
         selector=baca.selectors.rleaves(),
     ),
     baca.literal(

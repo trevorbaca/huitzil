@@ -158,7 +158,7 @@ commands(
     ("rh", 4),
     baca.hairpin(
         "p -- !",
-        selector=lambda _: baca.Selection(_).leaves().rleak().rleak(),
+        selector=lambda _: baca.rleaves(_, count=2),
     ),
     baca.make_monads("1/3  1/8  1/8"),
     baca.staff_positions(
@@ -423,7 +423,7 @@ commands(
     ("rh", 19),
     baca.hairpin(
         "ppp -- !",
-        selector=lambda _: baca.Selection(_).leaves().rleak().rleak(),
+        selector=lambda _: baca.rleaves(_, count=2),
     ),
     baca.make_monads("1/10  1/10  1/10  1/10"),
     baca.markup(
