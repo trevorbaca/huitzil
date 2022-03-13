@@ -101,7 +101,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
         inner_tuplet = selection[0]
         if inner_tuplet.multiplier == 1:
             inner_tuplet.hide = True
-        plts = baca.Selection(inner_tuplet).plts()
+        plts = baca.plts(inner_tuplet)
         for j, plt in enumerate(plts):
             source_note = note_list[j]
             for pleaf in plt:
