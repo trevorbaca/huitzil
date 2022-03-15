@@ -29,7 +29,6 @@ def _attach_beams(music):
         counts = [len(_) for _ in runs]
         note_groups = abjad.sequence.partition_by_counts(tuplet[:], counts)
         for note_group in note_groups:
-            note_group = abjad.Selection(note_group)
             abjad.beam(note_group)
 
 
@@ -51,7 +50,7 @@ def _attach_voice_numbers(note_lists, voice_map):
 def _displace_pitch_classes(music, pc_displacement):
     if not pc_displacement:
         return
-    notes = abjad.Selection(music).leaves(pitched=True)
+    notes = abjad.select.leaves(music, pitched=True)
     total_notes = len(notes)
     for i, note in enumerate(notes):
         register = None
@@ -375,7 +374,7 @@ for measure_duration in measure_durations:
     duration = measure_duration.with_denominator(4)
     time_signatures.append(duration)
 
-music_ = abjad.Selection(music)
+music_ = music
 
 score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
