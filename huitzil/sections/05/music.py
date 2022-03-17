@@ -128,7 +128,7 @@ commands(
     ),
     baca.markup(
         r"\baca-mfz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaves(),
     ),
 )
@@ -168,16 +168,16 @@ commands(
     ("rh", (4, 5)),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.markup(
         r"\baca-mpz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.pleaves((1, -3)),
     ),
     baca.markup(
         r"\baca-mfz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.pleaves((-3, None)),
     ),
 )
@@ -205,11 +205,11 @@ commands(
     baca.make_monads("1/4  1/6  1/6  1/8  1/8  1/8"),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.markup(
         r"\baca-mpz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.pleaves((1, None)),
     ),
     baca.staff_positions(
@@ -231,7 +231,7 @@ commands(
     ("rh", (7, 9)),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaves(),
     ),
 )
@@ -276,12 +276,12 @@ commands(
     ("rh", (10, 11)),
     baca.markup(
         r"\baca-mfz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaves((None, 4)),
     ),
     baca.markup(
         r"\baca-mpz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaves((4, None)),
     ),
     baca.text_spanner(
@@ -323,7 +323,7 @@ commands(
     ("rh", (12, 16)),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaves(),
     ),
 )
@@ -394,7 +394,7 @@ commands(
     ),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaves(),
     ),
     baca.text_spanner(

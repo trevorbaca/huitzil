@@ -401,7 +401,7 @@ commands(
     baca.markup(
         r"\huitzil-phrasing-dynamics-see-preface-markup",
         abjad.tweak(9).staff_padding,
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.music(music_, do_not_check_total_duration=True),
 )

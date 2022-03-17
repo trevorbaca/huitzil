@@ -148,7 +148,7 @@ commands(
     baca.make_monads("1/8  1/8  1/8  1/8"),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaves(),
     ),
     baca.staff_positions(
@@ -162,7 +162,7 @@ commands(
     baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaves(),
     ),
     baca.staff_positions(
@@ -194,12 +194,12 @@ commands(
     baca.make_monads("1/3  1/3"),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(0),
     ),
     baca.markup(
         r"\baca-fffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(1),
     ),
     baca.staff_positions(
@@ -213,7 +213,7 @@ commands(
     baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.staff_positions(
         [0],
@@ -226,22 +226,22 @@ commands(
     baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
         r"\baca-mfz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(0),
     ),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(3),
     ),
     baca.staff_positions(
@@ -255,7 +255,7 @@ commands(
     baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.staff_positions(
         [0],
@@ -268,11 +268,11 @@ commands(
     baca.make_monads("1/3  1/3"),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.markup(
         r"\baca-fffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(1),
     ),
     baca.staff_positions(
@@ -286,7 +286,7 @@ commands(
     baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.staff_positions(
         [0],
@@ -299,21 +299,21 @@ commands(
     baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
         r"\baca-mfz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(3),
     ),
     baca.staff_positions(
@@ -327,7 +327,7 @@ commands(
     baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.staff_positions(
         [0],
@@ -340,11 +340,11 @@ commands(
     baca.make_monads("1/3  1/3"),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.markup(
         r"\baca-fffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(1),
     ),
     baca.staff_positions(
@@ -358,7 +358,7 @@ commands(
     baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.staff_positions(
         [0],
@@ -371,21 +371,21 @@ commands(
     baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
         r"\baca-mfz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(3),
     ),
     baca.staff_positions(
@@ -399,7 +399,7 @@ commands(
     baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
 )
 
@@ -441,11 +441,11 @@ commands(
     baca.make_monads("1/3  1/3"),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.markup(
         r"\baca-fffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(1),
     ),
 )
@@ -455,7 +455,7 @@ commands(
     baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
 )
 
@@ -464,21 +464,21 @@ commands(
     baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
         r"\baca-mfz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(3),
     ),
 )
@@ -510,31 +510,31 @@ commands(
     baca.make_monads("1/2  1/2  1/2  1/2  1/2  1/2"),
     baca.markup(
         r"\baca-ffz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(1),
     ),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(2),
     ),
     baca.markup(
         r"\baca-mfz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(3),
     ),
     baca.markup(
         r"\baca-mfz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(4),
     ),
     baca.markup(
         r"\baca-mpz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaf(5),
     ),
 )

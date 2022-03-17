@@ -94,7 +94,7 @@ commands(
     baca.markup(
         r"\baca-string-iii-markup",
         abjad.tweak(2.5).padding,
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.pitch("A2"),
     baca.skeleton("{ c1 * 1/4 }"),
@@ -119,7 +119,7 @@ commands(
         abjad.tweak(2.5).padding,
         abjad.tweak(0).parent_alignment_X,
         abjad.tweak(-0.05).self_alignment_X,
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.pitch("G2"),
     baca.skeleton("{ c1 * 2 }"),
@@ -179,7 +179,7 @@ commands(
     ("rh", (1, 20)),
     baca.markup(
         r"\baca-fz-markup",
-        direction=abjad.Down,
+        direction=abjad.DOWN,
         selector=baca.selectors.leaves(),
     ),
 )

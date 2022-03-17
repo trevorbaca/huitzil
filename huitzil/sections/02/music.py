@@ -227,7 +227,7 @@ commands(
     baca.markup(
         r"\huitzil-trem-moderato-markup",
         abjad.tweak(3.5).staff_padding,
-        direction=abjad.Down,
+        direction=abjad.DOWN,
     ),
     baca.skeleton("{ c1 }"),
     baca.stem_tremolo(),
