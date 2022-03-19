@@ -82,7 +82,7 @@ commands(
             r"\once \override Score.RehearsalMark.padding = 4",
             r"\mark \huitzil-colophon-markup",
         ],
-        format_slot="after",
+        site="after",
     ),
     baca.literal(
         [
