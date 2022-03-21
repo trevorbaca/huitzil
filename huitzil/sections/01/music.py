@@ -143,27 +143,27 @@ def _register_voices(music):
         voice_number = abjad.get.indicator(note, int)
         if voice_number == 1:
             color = "#red"
-            abjad.override(note).accidental.color = color
-            abjad.override(note).beam.color = color
-            abjad.override(note).dots.color = color
-            abjad.override(note).note_head.color = color
-            abjad.override(note).repeat_tie.color = color
-            abjad.override(note).slur.color = color
-            abjad.override(note).stem.color = color
-            abjad.override(note).tie.color = color
+            abjad.override(note).Accidental.color = color
+            abjad.override(note).Beam.color = color
+            abjad.override(note).Dots.color = color
+            abjad.override(note).NoteHead.color = color
+            abjad.override(note).RepeatTie.color = color
+            abjad.override(note).Slur.color = color
+            abjad.override(note).Stem.color = color
+            abjad.override(note).Tie.color = color
             registration = voice_1_registration
         elif voice_number == 2:
             registration = voice_2_registration
         elif voice_number == 3:
             color = "#blue"
-            abjad.override(note).accidental.color = color
-            abjad.override(note).beam.color = color
-            abjad.override(note).dots.color = color
-            abjad.override(note).note_head.color = color
-            abjad.override(note).repeat_tie.color = color
-            abjad.override(note).slur.color = color
-            abjad.override(note).stem.color = color
-            abjad.override(note).tie.color = color
+            abjad.override(note).Accidental.color = color
+            abjad.override(note).Beam.color = color
+            abjad.override(note).Dots.color = color
+            abjad.override(note).NoteHead.color = color
+            abjad.override(note).RepeatTie.color = color
+            abjad.override(note).Slur.color = color
+            abjad.override(note).Stem.color = color
+            abjad.override(note).Tie.color = color
             registration = voice_3_registration
         else:
             raise ValueError(voice_number)
