@@ -144,7 +144,7 @@ commands(
     baca.staff_position(8),
     baca.text_spanner(
         "larg. => strett. =>",
-        abjad.tweak(6).staff_padding,
+        abjad.Tweak(r"- \tweak staff-padding 6"),
         pieces=baca.selectors.clparts([1]),
     ),
 )
