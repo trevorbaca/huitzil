@@ -117,7 +117,7 @@ commands(
     baca.literal(r"\override Score.BarNumber.transparent = ##t"),
     baca.markup(
         r"\huitzil-directly-on-bridge-markup",
-        abjad.tweak(3).staff_padding,
+        abjad.Tweak(r"- \tweak staff-padding 3"),
     ),
     baca.staff_position(8),
     baca.tuplet_bracket_down(),
@@ -222,11 +222,11 @@ commands(
     ),
     baca.markup(
         r"\huitzil-sliding-from-bridge-onto-string-markup",
-        abjad.tweak(6).staff_padding,
+        abjad.Tweak(r"- \tweak staff-padding 6"),
     ),
     baca.markup(
         r"\huitzil-trem-moderato-markup",
-        abjad.tweak(3.5).staff_padding,
+        abjad.Tweak(r"- \tweak staff-padding 3.5"),
         direction=abjad.DOWN,
     ),
     baca.skeleton("{ c1 }"),
