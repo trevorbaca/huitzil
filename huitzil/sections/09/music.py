@@ -461,7 +461,7 @@ commands(
     ("rh", (18, 23)),
     baca.text_spanner(
         "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
-        abjad.tweak(6).staff_padding,
+        abjad.Tweak(r"- \tweak staff-padding 6"),
         bookend=False,
         pieces=baca.selectors.lparts([1, 1, 1, 1, 1, 1 + 1]),
         right_broken=True,

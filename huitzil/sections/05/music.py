@@ -286,7 +286,7 @@ commands(
     ),
     baca.text_spanner(
         "(trem. mod.) => trem. stretto",
-        abjad.tweak(6).staff_padding,
+        abjad.Tweak(r"- \tweak staff-padding 6"),
         selector=baca.selectors.leaves((None, 4), rleak=True),
     ),
 )
@@ -344,7 +344,7 @@ commands(
     ),
     baca.text_spanner(
         "sub. mod. => più stretto => più largo => più stretto",
-        abjad.tweak(6).staff_padding,
+        abjad.Tweak(r"- \tweak staff-padding 6"),
         pieces=baca.selectors.lparts([1, 1, 2]),
     ),
 )
@@ -400,7 +400,7 @@ commands(
     baca.text_spanner(
         "sub. mod. => più stretto => più largo => più stretto =>"
         " più largo => trem. mod.",
-        abjad.tweak(6).staff_padding,
+        abjad.Tweak(r"- \tweak staff-padding 6"),
         pieces=baca.selectors.lparts([1, 1, 1, 1, 2]),
     ),
 )
