@@ -93,7 +93,7 @@ commands(
     ("vc", 1),
     baca.markup(
         r"\baca-string-iii-markup",
-        abjad.tweak(2.5).padding,
+        abjad.Tweak(r"- \tweak padding 2.5"),
         direction=abjad.DOWN,
     ),
     baca.pitch("A2"),
@@ -116,9 +116,9 @@ commands(
     ("vc", (25, 26)),
     baca.markup(
         r"\huitzil-string-three-to-four-markup",
-        abjad.tweak(2.5).padding,
-        abjad.tweak(0).parent_alignment_X,
-        abjad.tweak(-0.05).self_alignment_X,
+        abjad.Tweak(r"- \tweak padding 2.5"),
+        abjad.Tweak(r"- \tweak parent-alignment-X 0"),
+        abjad.Tweak(r"- \tweak self-alignment-X -0.05"),
         direction=abjad.DOWN,
     ),
     baca.pitch("G2"),
@@ -150,13 +150,13 @@ commands(
     baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
     baca.markup(
         r"\huitzil-ascending-fingerboard-markup",
-        abjad.tweak(-1).self_alignment_X,
-        abjad.tweak(4.5).staff_padding,
+        abjad.Tweak(r"- \tweak self-alignment-X -1"),
+        abjad.Tweak(r"- \tweak staff-padding 4.5"),
     ),
     baca.markup(
         r"\huitzil-directly-above-end-of-fingerboard-markup",
-        abjad.tweak(-1).self_alignment_X,
-        abjad.tweak(1).staff_padding,
+        abjad.Tweak(r"- \tweak self-alignment-X -1"),
+        abjad.Tweak(r"- \tweak staff-padding 1"),
     ),
     baca.stem_tremolo(
         selector=baca.selectors.pleaves(),
@@ -208,8 +208,8 @@ commands(
     ("rh", 13),
     baca.markup(
         r"\huitzil-close-to-lh-markup",
-        abjad.tweak(-0.5).self_alignment_X,
-        abjad.tweak(2).staff_padding,
+        abjad.Tweak(r"- \tweak self-alignment-X -0.5"),
+        abjad.Tweak(r"- \tweak staff-padding 2"),
     ),
 )
 
@@ -217,8 +217,8 @@ commands(
     ("rh", 14),
     baca.markup(
         r"\huitzil-descending-fingerboard-markup",
-        abjad.tweak(-1).self_alignment_X,
-        abjad.tweak(2).staff_padding,
+        abjad.Tweak(r"- \tweak self-alignment-X -1"),
+        abjad.Tweak(r"- \tweak staff-padding 2"),
     ),
 )
 
@@ -249,8 +249,8 @@ commands(
     baca.make_monads("1 1"),
     baca.markup(
         r"\huitzil-directly-above-end-of-fingerboard-column-markup",
-        abjad.tweak(-0.5).self_alignment_X,
-        abjad.tweak(2).staff_padding,
+        abjad.Tweak(r"- \tweak self-alignment-X -0.5"),
+        abjad.Tweak(r"- \tweak staff-padding 2"),
     ),
     baca.parenthesize(
         selector=baca.selectors.pleaf(-1),

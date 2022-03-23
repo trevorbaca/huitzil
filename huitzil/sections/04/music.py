@@ -430,8 +430,8 @@ commands(
     ),
     baca.markup(
         r"\huitzil-directly-on-bridge-markup",
-        abjad.tweak(-0.85).self_alignment_X,
-        abjad.tweak(2).staff_padding,
+        abjad.Tweak(r"- \tweak self-alignment-X -0.85"),
+        abjad.Tweak(r"- \tweak staff-padding 2"),
     ),
     baca.staff_position(8),
 )
@@ -558,8 +558,8 @@ commands(
     ),
     baca.markup(
         r"\huitzil-sliding-back-onto-string-markup",
-        abjad.tweak(-0.85).self_alignment_X,
-        abjad.tweak(6).staff_padding,
+        abjad.Tweak(r"- \tweak self-alignment-X -0.85"),
+        abjad.Tweak(r"- \tweak staff-padding 6"),
     ),
     baca.staff_position(
         6,

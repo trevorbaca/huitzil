@@ -524,8 +524,8 @@ commands(
     baca.make_monads("1/2"),
     baca.markup(
         r"\huitzil-directly-above-end-of-fingerboard-markup",
-        abjad.tweak(-0.75).self_alignment_X,
-        abjad.tweak(2).staff_padding,
+        abjad.Tweak(r"- \tweak self-alignment-X -0.75"),
+        abjad.Tweak(r"- \tweak staff-padding 2"),
     ),
     # TODO: make +ARCH_A_SCORE work
     baca.only_score(

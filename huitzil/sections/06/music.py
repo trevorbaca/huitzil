@@ -412,8 +412,8 @@ commands(
     ),
     baca.markup(
         r"\huitzil-directly-on-bridge-markup",
-        abjad.tweak(-0.9).self_alignment_X,
-        abjad.tweak(2).staff_padding,
+        abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
+        abjad.Tweak(r"- \tweak staff-padding 2"),
     ),
 )
 
