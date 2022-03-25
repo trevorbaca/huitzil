@@ -120,15 +120,15 @@ commands(
     baca.only_score(
         baca.breathe(
             baca.selectors.pleaf(-1),
-            abjad.tweak(False).X_extent,
-            abjad.tweak((0, 5)).extra_offset,
+            abjad.Tweak(r"\tweak X-extent ##f"),
+            abjad.Tweak(r"\tweak extra-offset #'(0 . 5)"),
         ),
     ),
     baca.only_segment(
         baca.breathe(
             baca.selectors.pleaf(-1),
-            abjad.tweak(False).X_extent,
-            abjad.tweak((-1.5, 2)).extra_offset,
+            abjad.Tweak(r"\tweak X-extent ##f"),
+            abjad.Tweak(r"\tweak extra-offset #'(-1.5 . 2)"),
         ),
     ),
     baca.only_segment(
