@@ -202,7 +202,7 @@ commands(
     ("rh", 6),
     baca.hairpin(
         "p -- !",
-        abjad.tweak(True).to_barline,
+        abjad.Tweak(r"- \tweak to-barline ##t"),
         selector=baca.selectors.rleaves(),
     ),
     baca.make_monads("1/4  1/6  1/6  1/8  1/8  1/8"),
@@ -243,7 +243,7 @@ commands(
     ("rh", (7, 9)),
     baca.hairpin(
         "mf -- !",
-        abjad.tweak(True).to_barline,
+        abjad.Tweak(r"- \tweak to-barline ##t"),
         selector=baca.selectors.rleaves(),
     ),
 )
@@ -298,7 +298,7 @@ commands(
     ("rh", (10, 12)),
     baca.hairpin(
         "mp > ppp -- !",
-        abjad.tweak(True).to_barline,
+        abjad.Tweak(r"- \tweak to-barline ##t"),
         pieces=baca.selectors.lparts([4, 5 + 1]),
         selector=baca.selectors.rleaves(),
     ),

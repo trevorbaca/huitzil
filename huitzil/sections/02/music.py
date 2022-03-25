@@ -111,7 +111,7 @@ commands(
     ),
     baca.dynamic(
         "mp-sempre",
-        abjad.tweak(-0.9).self_alignment_X,
+        abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
     ),
     baca.literal(r"\override DynamicLineSpanner.staff-padding = 2.5"),
     baca.literal(r"\override Score.BarNumber.transparent = ##t"),

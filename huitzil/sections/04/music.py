@@ -408,14 +408,14 @@ commands(
     # FUTURE: use this when LilyPond fixes DynamicLine Spanner bug:
     # baca.hairpin(
     #    "mp -- p -- pp -- p -- !",
-    #    abjad.tweak(True).to_barline,
+    #    abjad.Tweak(r"- \tweak to-barline ##t"),
     #    pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
     #    selector=baca.selectors.rleaves(),
     # ),
     # FUTURE: replace this when LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
         "mp -- p -- pp -- p",
-        abjad.tweak(True).to_barline,
+        abjad.Tweak(r"- \tweak to-barline ##t"),
         bookend=False,
         pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
         selector=baca.selectors.rleaves(),

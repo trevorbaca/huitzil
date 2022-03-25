@@ -129,7 +129,7 @@ commands(
     ),
     baca.hairpin(
         "mp > pp <",
-        abjad.tweak(True).to_barline,
+        abjad.Tweak(r"- \tweak to-barline ##t"),
         final_hairpin=False,
         pieces=baca.selectors.clparts([1]),
     ),
