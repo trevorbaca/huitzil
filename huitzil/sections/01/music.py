@@ -457,7 +457,7 @@ commands(
     baca.only_score(
         baca.breathe(
             baca.selectors.pleaf(-1),
-            abjad.tweak((0, 2)).extra_offset,
+            abjad.Tweak(r"\tweak extra-offset #'(0 . 2)"),
         ),
     ),
     baca.only_segment(
