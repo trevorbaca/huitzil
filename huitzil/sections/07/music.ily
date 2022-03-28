@@ -1322,6 +1322,9 @@ segment.07.RH.Music.Voice = {
     \mp
     %! baca.markup()
     %! baca.IndicatorCommand._call()
+    _ \baca-fz-markup
+    %! baca.markup()
+    %! baca.IndicatorCommand._call()
     - \tweak self-alignment-X -1
     %! baca.markup()
     %! baca.IndicatorCommand._call()
@@ -1338,9 +1341,6 @@ segment.07.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \huitzil-directly-above-end-of-fingerboard-markup
-    %! baca.markup()
-    %! baca.IndicatorCommand._call()
-    _ \baca-fz-markup
     %! EXPLICIT_DYNAMIC_COLOR
     %! _treat_persistent_wrapper(1)
     %! baca.hairpin()
@@ -1509,6 +1509,9 @@ segment.07.RH.Music.Voice = {
     \pp
     %! baca.markup()
     %! baca.IndicatorCommand._call()
+    _ \baca-fz-markup
+    %! baca.markup()
+    %! baca.IndicatorCommand._call()
     - \tweak self-alignment-X -0.5
     %! baca.markup()
     %! baca.IndicatorCommand._call()
@@ -1516,9 +1519,6 @@ segment.07.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \huitzil-close-to-lh-markup
-    %! baca.markup()
-    %! baca.IndicatorCommand._call()
-    _ \baca-fz-markup
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 14]
@@ -1542,6 +1542,9 @@ segment.07.RH.Music.Voice = {
     \baca-pp-parenthesized
     %! baca.markup()
     %! baca.IndicatorCommand._call()
+    _ \baca-fz-markup
+    %! baca.markup()
+    %! baca.IndicatorCommand._call()
     - \tweak self-alignment-X -1
     %! baca.markup()
     %! baca.IndicatorCommand._call()
@@ -1549,9 +1552,6 @@ segment.07.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \huitzil-descending-fingerboard-markup
-    %! baca.markup()
-    %! baca.IndicatorCommand._call()
-    _ \baca-fz-markup
     %! EXPLICIT_DYNAMIC_COLOR
     %! _treat_persistent_wrapper(1)
     %! baca.hairpin()
