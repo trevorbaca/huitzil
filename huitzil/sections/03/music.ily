@@ -2809,6 +2809,9 @@ segment.03.RH.Music.Voice = {
     \f
     %! baca.markup()
     %! baca.IndicatorCommand._call()
+    _ \baca-ffz-markup
+    %! baca.markup()
+    %! baca.IndicatorCommand._call()
     - \tweak self-alignment-X -0.75
     %! baca.markup()
     %! baca.IndicatorCommand._call()
@@ -2816,9 +2819,6 @@ segment.03.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \huitzil-directly-above-end-of-fingerboard-markup
-    %! baca.markup()
-    %! baca.IndicatorCommand._call()
-    _ \baca-ffz-markup
     %! EXPLICIT_DYNAMIC_COLOR
     %! _treat_persistent_wrapper(1)
     %! baca.hairpin()

@@ -1914,6 +1914,9 @@ segment.04.RH.Music.Voice = {
     \mp
     %! baca.markup()
     %! baca.IndicatorCommand._call()
+    _ \baca-ffz-markup
+    %! baca.markup()
+    %! baca.IndicatorCommand._call()
     - \tweak self-alignment-X -0.85
     %! baca.markup()
     %! baca.IndicatorCommand._call()
@@ -1921,9 +1924,6 @@ segment.04.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \huitzil-directly-on-bridge-markup
-    %! baca.markup()
-    %! baca.IndicatorCommand._call()
-    _ \baca-ffz-markup
     %! EXPLICIT_DYNAMIC_COLOR
     %! _treat_persistent_wrapper(1)
     %! baca.hairpin()
@@ -2314,6 +2314,9 @@ segment.04.RH.Music.Voice = {
     :32
     %! baca.markup()
     %! baca.IndicatorCommand._call()
+    _ \baca-mpz-markup
+    %! baca.markup()
+    %! baca.IndicatorCommand._call()
     - \tweak self-alignment-X -0.85
     %! baca.markup()
     %! baca.IndicatorCommand._call()
@@ -2321,9 +2324,6 @@ segment.04.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \huitzil-sliding-back-onto-string-markup
-    %! baca.markup()
-    %! baca.IndicatorCommand._call()
-    _ \baca-mpz-markup
     %! baca.glissando()
     %! abjad.glissando(7)
     \glissando
