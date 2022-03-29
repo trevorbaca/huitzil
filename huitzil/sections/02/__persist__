@@ -53,7 +53,7 @@
             ),
             baca.Memento(
                 context="RH_Music_Voice",
-                edition=Tag("-PARTS"),
+                edition=Tag(string="-PARTS"),
                 manifest=None,
                 prototype="baca.BarExtent",
                 synthetic_offset=None,
