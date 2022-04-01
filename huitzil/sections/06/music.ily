@@ -1937,9 +1937,6 @@ segment.06.RH.Music.Voice = {
     \mp
     %! baca.markup()
     %! baca.IndicatorCommand._call()
-    _ \baca-ffz-markup
-    %! baca.markup()
-    %! baca.IndicatorCommand._call()
     - \tweak self-alignment-X -0.9
     %! baca.markup()
     %! baca.IndicatorCommand._call()
@@ -1947,6 +1944,9 @@ segment.06.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \huitzil-directly-on-bridge-markup
+    %! baca.markup()
+    %! baca.IndicatorCommand._call()
+    _ \baca-ffz-markup
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
