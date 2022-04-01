@@ -1372,7 +1372,7 @@ segment.03.RH.Music.Voice = {
     %! baca.IndicatorCommand._call()
     _ \baca-mfz-markup
     %! REAPPLIED_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
     %! REAPPLIED_DYNAMIC
@@ -1489,7 +1489,7 @@ segment.03.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         :32
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_STOP
@@ -1506,7 +1506,7 @@ segment.03.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         _ \baca-fz-markup
         %! REDUNDANT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_START
@@ -1573,7 +1573,7 @@ segment.03.RH.Music.Voice = {
         %! SPANNER_STOP
         \!
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_STOP
@@ -1590,7 +1590,7 @@ segment.03.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         _ \baca-mpz-markup
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_START
@@ -1669,7 +1669,7 @@ segment.03.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         :32
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(3)
         %! SPANNER_STOP
@@ -1698,7 +1698,7 @@ segment.03.RH.Music.Voice = {
     %! baca.IndicatorCommand._call()
     :32
     %! EXPLICIT_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
     %! baca.PiecewiseCommand._call(2)
     %! SPANNER_STOP
@@ -1715,7 +1715,7 @@ segment.03.RH.Music.Voice = {
     %! baca.IndicatorCommand._call()
     _ \baca-fz-markup
     %! EXPLICIT_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
     %! baca.PiecewiseCommand._call(2)
     %! SPANNER_START
@@ -1816,7 +1816,7 @@ segment.03.RH.Music.Voice = {
     %! SPANNER_STOP
     \!
     %! EXPLICIT_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
     %! baca.PiecewiseCommand._call(2)
     %! SPANNER_STOP
@@ -1833,7 +1833,7 @@ segment.03.RH.Music.Voice = {
     %! baca.IndicatorCommand._call()
     _ \baca-fz-markup
     %! EXPLICIT_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
     %! baca.PiecewiseCommand._call(2)
     %! SPANNER_START
@@ -1924,7 +1924,7 @@ segment.03.RH.Music.Voice = {
         %! SPANNER_STOP
         \!
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_STOP
@@ -1941,7 +1941,7 @@ segment.03.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         _ \baca-mfz-markup
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_START
@@ -2056,7 +2056,7 @@ segment.03.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         :32
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_STOP
@@ -2073,7 +2073,7 @@ segment.03.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         _ \baca-mpz-markup
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_START
@@ -2177,7 +2177,7 @@ segment.03.RH.Music.Voice = {
     %! SPANNER_STOP
     \!
     %! EXPLICIT_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
     %! baca.PiecewiseCommand._call(2)
     %! SPANNER_STOP
@@ -2194,7 +2194,7 @@ segment.03.RH.Music.Voice = {
     %! baca.IndicatorCommand._call()
     _ \baca-ffz-markup
     %! EXPLICIT_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
     %! baca.PiecewiseCommand._call(2)
     %! SPANNER_START
@@ -2309,7 +2309,7 @@ segment.03.RH.Music.Voice = {
     %! baca.IndicatorCommand._call()
     :32
     %! EXPLICIT_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
     %! baca.PiecewiseCommand._call(3)
     %! SPANNER_STOP
@@ -2344,7 +2344,7 @@ segment.03.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         :32
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_STOP
@@ -2361,7 +2361,7 @@ segment.03.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         _ \baca-fz-markup
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_START
@@ -2476,7 +2476,7 @@ segment.03.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         :32
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_STOP
@@ -2493,7 +2493,7 @@ segment.03.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         _ \baca-mpz-markup
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_START
@@ -2595,7 +2595,7 @@ segment.03.RH.Music.Voice = {
     %! SPANNER_STOP
     \!
     %! EXPLICIT_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
     %! baca.PiecewiseCommand._call(2)
     %! SPANNER_STOP
@@ -2612,7 +2612,7 @@ segment.03.RH.Music.Voice = {
     %! baca.IndicatorCommand._call()
     _ \baca-ffz-markup
     %! EXPLICIT_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
     %! baca.PiecewiseCommand._call(2)
     %! SPANNER_START
@@ -2794,7 +2794,7 @@ segment.03.RH.Music.Voice = {
     %! baca.IndicatorCommand._call()
     :32
     %! EXPLICIT_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
     %! baca.PiecewiseCommand._call(2)
     %! SPANNER_STOP
@@ -2820,7 +2820,7 @@ segment.03.RH.Music.Voice = {
     %! baca.IndicatorCommand._call()
     ^ \huitzil-directly-above-end-of-fingerboard-markup
     %! EXPLICIT_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
     %! baca.PiecewiseCommand._call(2)
     %! SPANNER_START

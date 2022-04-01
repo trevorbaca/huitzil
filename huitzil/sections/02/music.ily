@@ -1089,7 +1089,7 @@ segment.02.RH.Music.Voice = {
         %! baca.skeleton()
         d''4
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()
@@ -2095,7 +2095,7 @@ segment.02.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         :32
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_STOP
@@ -2124,7 +2124,7 @@ segment.02.RH.Music.Voice = {
         %! baca.IndicatorCommand._call()
         _ \huitzil-trem-moderato-markup
         %! EXPLICIT_DYNAMIC_COLOR
-        %! _treat_persistent_wrapper(1)
+        %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_START
