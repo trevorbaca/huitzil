@@ -1971,26 +1971,6 @@ segment.08.RH.Music.Voice = {
         %! baca.markup()
         %! baca.IndicatorCommand._call()
         _ \baca-mfz-markup
-        %! EXPLICIT_DYNAMIC_COLOR
-        %! baca.treat_persistent_wrapper()
-        %! baca.hairpin()
-        %! baca.PiecewiseCommand._call(2)
-        %! SPANNER_START
-        %! baca._set_status_tag()
-        %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
-        %! baca.hairpin()
-        %! baca.PiecewiseCommand._call(2)
-        %! SPANNER_START
-        %! baca._set_status_tag()
-        %! EXPLICIT_DYNAMIC
-        - \tweak to-barline ##t
-        %! baca.hairpin()
-        %! baca.PiecewiseCommand._call(2)
-        %! SPANNER_START
-        %! baca._set_status_tag()
-        %! EXPLICIT_DYNAMIC
-        \>
         %! baca.text_spanner()
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_START
@@ -2019,6 +1999,26 @@ segment.08.RH.Music.Voice = {
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_START
         \startTextSpan
+        %! EXPLICIT_DYNAMIC_COLOR
+        %! baca.treat_persistent_wrapper()
+        %! baca.hairpin()
+        %! baca.PiecewiseCommand._call(2)
+        %! SPANNER_START
+        %! baca._set_status_tag()
+        %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+        %! baca.hairpin()
+        %! baca.PiecewiseCommand._call(2)
+        %! SPANNER_START
+        %! baca._set_status_tag()
+        %! EXPLICIT_DYNAMIC
+        - \tweak to-barline ##t
+        %! baca.hairpin()
+        %! baca.PiecewiseCommand._call(2)
+        %! SPANNER_START
+        %! baca._set_status_tag()
+        %! EXPLICIT_DYNAMIC
+        \>
         %! baca.glissando()
         %! abjad.glissando(7)
         \glissando
@@ -2103,6 +2103,10 @@ segment.08.RH.Music.Voice = {
         %! baca.markup()
         %! baca.IndicatorCommand._call()
         _ \baca-mpz-markup
+        %! baca.text_spanner()
+        %! baca.PiecewiseCommand._call(3)
+        %! SPANNER_STOP
+        \stopTextSpan
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -2129,10 +2133,6 @@ segment.08.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \<
-        %! baca.text_spanner()
-        %! baca.PiecewiseCommand._call(3)
-        %! SPANNER_STOP
-        \stopTextSpan
         %! baca.glissando()
         %! abjad.glissando(7)
         \glissando
@@ -2523,6 +2523,10 @@ segment.08.RH.Music.Voice = {
         %! baca.markup()
         %! baca.IndicatorCommand._call()
         _ \baca-mpz-markup
+        %! baca.text_spanner()
+        %! baca.PiecewiseCommand._call(3)
+        %! SPANNER_STOP
+        \stopTextSpan
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -2543,10 +2547,6 @@ segment.08.RH.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \<
-        %! baca.text_spanner()
-        %! baca.PiecewiseCommand._call(3)
-        %! SPANNER_STOP
-        \stopTextSpan
         %! baca.glissando()
         %! abjad.glissando(7)
         \glissando
@@ -2841,6 +2841,10 @@ segment.08.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     _ \baca-ffz-markup
+    %! baca.text_spanner()
+    %! baca.PiecewiseCommand._call(3)
+    %! SPANNER_STOP
+    \stopTextSpan
     %! EXPLICIT_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca.hairpin()
@@ -2861,10 +2865,6 @@ segment.08.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \<
-    %! baca.text_spanner()
-    %! baca.PiecewiseCommand._call(3)
-    %! SPANNER_STOP
-    \stopTextSpan
     %! baca.text_script_parent_alignment_x()
     %! baca.OverrideCommand._call(2)
     \revert TextScript.parent-alignment-X
