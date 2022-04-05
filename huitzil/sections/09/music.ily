@@ -1115,6 +1115,12 @@ segment.09.RH.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 1]
+    %! -PARTS
+    %! baca._reapply_persistent_indicators(3)
+    %! baca._set_status_tag()
+    %! REAPPLIED_BAR_EXTENT
+    %! EXPLICIT_BAR_EXTENT
+    \override Staff.BarLine.bar-extent = #'(-2 . 4)
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
     %! REAPPLIED_STAFF_LINES
@@ -1127,12 +1133,6 @@ segment.09.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! REAPPLIED_STAFF_LINES
     \startStaff
-    %! -PARTS
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_BAR_EXTENT
-    %! EXPLICIT_BAR_EXTENT
-    \override Staff.BarLine.bar-extent = #'(-2 . 4)
     %! baca.literal()
     %! +SEGMENT
     %! baca.IndicatorCommand._call()
@@ -1183,6 +1183,9 @@ segment.09.RH.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     _ \baca-ffz-markup
+    %! baca.glissando()
+    %! abjad.glissando(7)
+    \glissando
     %! REAPPLIED_DYNAMIC_COLOR
     %! baca.treat_persistent_wrapper()
     %! baca._reapply_persistent_indicators(3)
@@ -1197,9 +1200,6 @@ segment.09.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! REAPPLIED_DYNAMIC
     \<
-    %! baca.glissando()
-    %! abjad.glissando(7)
-    \glissando
     %! baca.attach_color_literal(2)
     %! REAPPLIED_CLEF_REDRAW_COLOR
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
@@ -2608,6 +2608,12 @@ segment.09.Cello.Music.Voice = {
         %! baca._label_duration_multipliers()
         %! DURATION_MULTIPLIER
         %@% ^ \baca-duration-multiplier-markup #"107" #"30"
+        %! baca.glissando()
+        %! abjad.glissando(7)
+        \glissando
+        %! baca.repeat_tie()
+        %! baca.IndicatorCommand._call()
+        \repeatTie
         %! baca.rhythm_annotation_spanner()
         %! RHYTHM_ANNOTATION_SPANNER
         %! baca.PiecewiseCommand._call(2)
@@ -2643,12 +2649,6 @@ segment.09.Cello.Music.Voice = {
         %! baca.PiecewiseCommand._call(2)
         %! SPANNER_START
         \bacaStartTextSpanRhythmAnnotation
-        %! baca.repeat_tie()
-        %! baca.IndicatorCommand._call()
-        \repeatTie
-        %! baca.glissando()
-        %! abjad.glissando(7)
-        \glissando
 
         %! baca.skeleton()
         bf,,!1 * 1/5
