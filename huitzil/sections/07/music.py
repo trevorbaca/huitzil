@@ -84,7 +84,7 @@ commands(
     ),
     baca.pitch(
         "A1",
-        selector=baca.selectors.rleaf(-1),
+        selector=lambda _: baca.select.rleaf(_, -1),
     ),
     baca.time_signature_stencil_false(),
 )
