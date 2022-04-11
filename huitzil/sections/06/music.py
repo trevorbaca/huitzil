@@ -187,7 +187,7 @@ commands(
     #    "mp > p <",
     #    bookend=False,
     #    pieces=baca.selectors.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
-    #    selector=baca.selectors.rleaves(),
+    #    selector=lambda _: baca.select.rleaves(_),
     # ),
     # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
@@ -423,14 +423,14 @@ commands(
     # baca.hairpin(
     #    "mp -- p -- pp -- p -- !",
     #    pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
-    #    selector=baca.selectors.rleaves(),
+    #    selector=lambda _: baca.select.rleaves(_),
     # ),
     # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
         "mp -- p -- pp -- p",
         bookend=False,
         pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
     baca.literal(
         [

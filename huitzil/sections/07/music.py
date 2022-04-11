@@ -257,7 +257,7 @@ commands(
     ),
     baca.staff_positions(
         [-6, 0, 6],
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
 )
 
@@ -266,7 +266,7 @@ commands(
 commands(
     ("vc", (14, 24)),
     baca.glissando(
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
 )
 
@@ -274,7 +274,7 @@ commands(
     ("vc", (25, 26)),
     baca.glissando(
         right_broken=True,
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
 )
 
@@ -282,7 +282,7 @@ commands(
     "rh",
     baca.glissando(
         right_broken=True,
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
 )
 

@@ -203,7 +203,7 @@ commands(
     baca.hairpin(
         "p -- !",
         abjad.Tweak(r"- \tweak to-barline ##t"),
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
     baca.make_monads("1/4  1/6  1/6  1/8  1/8  1/8"),
     baca.markup(
@@ -244,7 +244,7 @@ commands(
     baca.hairpin(
         "mf -- !",
         abjad.Tweak(r"- \tweak to-barline ##t"),
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
 )
 
@@ -300,7 +300,7 @@ commands(
         "mp > ppp -- !",
         abjad.Tweak(r"- \tweak to-barline ##t"),
         pieces=baca.selectors.lparts([4, 5 + 1]),
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
 )
 
@@ -401,7 +401,7 @@ commands(
     baca.text_spanner(
         "sub. trem. mod. => trem. stretto",
         abjad.Tweak(r"- \tweak staff-padding 6"),
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
 )
 
