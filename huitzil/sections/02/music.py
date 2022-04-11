@@ -203,11 +203,11 @@ commands(
     ("rh", 25),
     baca.glissando(
         right_broken=True,
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
     baca.hairpin(
         "(mp) -- !",
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
     baca.literal(
         r"\override DynamicLineSpanner.staff-padding = 7",

@@ -178,7 +178,7 @@ commands(
     #    "mp > p <",
     #    bookend=False,
     #    pieces=baca.selectors.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
-    #    selector=baca.selectors.rleaves(),
+    #    selector=lambda _: baca.select.rleaves(_),
     # ),
     # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
@@ -410,7 +410,7 @@ commands(
     #    "mp -- p -- pp -- p -- !",
     #    abjad.Tweak(r"- \tweak to-barline ##t"),
     #    pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
-    #    selector=baca.selectors.rleaves(),
+    #    selector=lambda _: baca.select.rleaves(_),
     # ),
     # FUTURE: replace this when LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
@@ -418,7 +418,7 @@ commands(
         abjad.Tweak(r"- \tweak to-barline ##t"),
         bookend=False,
         pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
     baca.literal(
         [
@@ -580,7 +580,7 @@ commands(
     "rh",
     baca.glissando(
         right_broken=True,
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
 )
 
