@@ -186,7 +186,7 @@ commands(
     ("rh", 5),
     baca.hairpin(
         "pp < mf",
-        selector=baca.selectors.leaves((1, None)),
+        selector=lambda _: baca.select.leaves(_)[1:],
     ),
     baca.make_monads("1/4  1/6  1/6  1/10  1/10  1/10"),
     baca.staff_positions(
@@ -277,17 +277,17 @@ commands(
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaves((None, 4)),
+        selector=lambda _: baca.select.leaves(_)[:4],
     ),
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaves((4, None)),
+        selector=lambda _: baca.select.leaves(_)[4:],
     ),
     baca.text_spanner(
         "(trem. mod.) => trem. stretto",
         abjad.Tweak(r"- \tweak staff-padding 6"),
-        selector=baca.selectors.leaves((None, 4), rleak=True),
+        selector=lambda _: baca.select.rleak(baca.select.leaves(_)[:4]),
     ),
 )
 
