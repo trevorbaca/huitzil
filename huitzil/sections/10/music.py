@@ -41,7 +41,7 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "66",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
 )
@@ -54,7 +54,7 @@ commands(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.only_segment(
         baca.literal(

@@ -52,15 +52,15 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "88",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
     baca.metronome_mark(
         "88",
-        selector=baca.selectors.leaf(25 - 1),
+        selector=lambda _: abjad.select.leaf(_, 25 - 1),
     ),
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.selectors.leaf(25 - 1),
+        selector=lambda _: abjad.select.leaf(_, 25 - 1),
     ),
 )
 
@@ -80,7 +80,7 @@ commands(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.pitch(
         "A1",
@@ -180,7 +180,7 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
 )
 

@@ -51,7 +51,7 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "44",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
 )
 

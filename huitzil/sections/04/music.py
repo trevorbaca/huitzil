@@ -49,11 +49,11 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "88",
-        selector=baca.selectors.leaf(18 - 1),
+        selector=lambda _: abjad.select.leaf(_, 18 - 1),
     ),
     baca.metronome_mark(
         baca.Ritardando(),
-        selector=baca.selectors.leaf(18 - 1),
+        selector=lambda _: abjad.select.leaf(_, 18 - 1),
     ),
 )
 
@@ -65,7 +65,7 @@ commands(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.time_signature_stencil_false(),
 )
@@ -149,7 +149,7 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.staff_positions(
         [-6, -4, -2, 0],
@@ -163,7 +163,7 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.staff_positions(
         [0],
@@ -195,12 +195,12 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(0),
+        selector=lambda _: abjad.select.leaf(_, 0),
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(1),
+        selector=lambda _: abjad.select.leaf(_, 1),
     ),
     baca.staff_positions(
         [0],
@@ -227,22 +227,22 @@ commands(
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(0),
+        selector=lambda _: abjad.select.leaf(_, 0),
     ),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(1),
+        selector=lambda _: abjad.select.leaf(_, 1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(2),
+        selector=lambda _: abjad.select.leaf(_, 2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(3),
+        selector=lambda _: abjad.select.leaf(_, 3),
     ),
     baca.staff_positions(
         [0],
@@ -273,7 +273,7 @@ commands(
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(1),
+        selector=lambda _: abjad.select.leaf(_, 1),
     ),
     baca.staff_positions(
         [0],
@@ -304,17 +304,17 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(1),
+        selector=lambda _: abjad.select.leaf(_, 1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(2),
+        selector=lambda _: abjad.select.leaf(_, 2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(3),
+        selector=lambda _: abjad.select.leaf(_, 3),
     ),
     baca.staff_positions(
         [0],
@@ -345,7 +345,7 @@ commands(
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(1),
+        selector=lambda _: abjad.select.leaf(_, 1),
     ),
     baca.staff_positions(
         [0],
@@ -376,17 +376,17 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(1),
+        selector=lambda _: abjad.select.leaf(_, 1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(2),
+        selector=lambda _: abjad.select.leaf(_, 2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(3),
+        selector=lambda _: abjad.select.leaf(_, 3),
     ),
     baca.staff_positions(
         [0],
@@ -446,7 +446,7 @@ commands(
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(1),
+        selector=lambda _: abjad.select.leaf(_, 1),
     ),
 )
 
@@ -469,17 +469,17 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(1),
+        selector=lambda _: abjad.select.leaf(_, 1),
     ),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(2),
+        selector=lambda _: abjad.select.leaf(_, 2),
     ),
     baca.markup(
         r"\baca-fffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(3),
+        selector=lambda _: abjad.select.leaf(_, 3),
     ),
 )
 
@@ -515,27 +515,27 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(1),
+        selector=lambda _: abjad.select.leaf(_, 1),
     ),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(2),
+        selector=lambda _: abjad.select.leaf(_, 2),
     ),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(3),
+        selector=lambda _: abjad.select.leaf(_, 3),
     ),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(4),
+        selector=lambda _: abjad.select.leaf(_, 4),
     ),
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaf(5),
+        selector=lambda _: abjad.select.leaf(_, 5),
     ),
 )
 
@@ -572,7 +572,7 @@ commands(
 commands(
     ("vc", (8, 14)),
     baca.glissando(
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
 )
 
