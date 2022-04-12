@@ -415,14 +415,14 @@ commands(
     ("vc", 8),
     baca.suite(
         baca.untie(
-            baca.selectors.pleaf(-2),
+            lambda _: baca.select.pleaf(_, -2),
         ),
         baca.chunk(
             baca.repeat_tie(
-                baca.selectors.pleaf(0),
+                lambda _: baca.select.pleaf(_, 0),
             ),
             baca.repeat_tie_extra_offset((-1.5, 0)),
-            selector=baca.selectors.pleaf(-1),
+            selector=lambda _: baca.select.pleaf(_, -1),
         ),
     ),
 )
@@ -430,14 +430,14 @@ commands(
 commands(
     ("vc", 20),
     baca.repeat_tie(
-        baca.selectors.pleaf(0),
+        lambda _: baca.select.pleaf(_, 0),
     ),
 )
 
 commands(
     ("vc", 48),
     baca.repeat_tie(
-        baca.selectors.pleaf(0),
+        lambda _: baca.select.pleaf(_, 0),
     ),
 )
 
@@ -456,7 +456,7 @@ commands(
     ("vc", 54),
     baca.only_score(
         baca.breathe(
-            baca.selectors.pleaf(-1),
+            lambda _: baca.select.pleaf(_, -1),
             abjad.Tweak(r"\tweak extra-offset #'(0 . 2)"),
         ),
     ),

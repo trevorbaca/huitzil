@@ -154,7 +154,7 @@ commands(
         abjad.Tag("+SCORE"),
         baca.literal(
             r"\once \override TupletNumber.font-size = -2",
-            selector=baca.selectors.pleaf(1),
+            selector=lambda _: baca.select.pleaf(_, 1),
         ),
     ),
 )

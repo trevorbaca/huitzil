@@ -74,7 +74,7 @@ commands(
     ("vc", (8, 13)),
     baca.pitches("A1 Bb1"),
     baca.repeat_tie(
-        baca.selectors.pleaf(0),
+        lambda _: baca.select.pleaf(_, 0),
         allow_rest=True,
     ),
     baca.skeleton("{ c1 * 107/30 c1 * 1/5 }"),
@@ -122,7 +122,7 @@ commands(
         ),
     ),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(),
+        selector=lambda _: baca.select.pleaves(_),
     ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
@@ -165,7 +165,9 @@ commands(
         "mp > p <",
         bookend=False,
         final_hairpin=False,
-        pieces=baca.selectors.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
+        pieces=lambda _: baca.select.lparts(
+            _, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]
+        ),
         selector=lambda _: baca.select.rleaves(_),
     ),
 )
@@ -463,7 +465,7 @@ commands(
         "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
         abjad.Tweak(r"- \tweak staff-padding 6"),
         bookend=False,
-        pieces=baca.selectors.lparts([1, 1, 1, 1, 1, 1 + 1]),
+        pieces=lambda _: baca.select.lparts(_, [1, 1, 1, 1, 1, 1 + 1]),
         right_broken=True,
         selector=lambda _: baca.select.rleaves(_),
     ),

@@ -114,7 +114,7 @@ commands(
         ),
     ),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(),
+        selector=lambda _: baca.select.pleaves(_),
     ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
@@ -131,7 +131,7 @@ commands(
         "mp > pp <",
         abjad.Tweak(r"- \tweak to-barline ##t"),
         final_hairpin=False,
-        pieces=baca.selectors.clparts([1]),
+        pieces=lambda _: baca.select.clparts(_, [1]),
     ),
 )
 
@@ -145,7 +145,7 @@ commands(
     baca.text_spanner(
         "larg. => strett. =>",
         abjad.Tweak(r"- \tweak staff-padding 6"),
-        pieces=baca.selectors.clparts([1]),
+        pieces=lambda _: baca.select.clparts(_, [1]),
     ),
 )
 
