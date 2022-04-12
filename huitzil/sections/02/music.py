@@ -70,7 +70,7 @@ commands(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.selectors.leaves((1, None)),
+        selector=lambda _: baca.select.leaves(_)[1:],
     ),
     baca.time_signature_stencil_false(),
 )
