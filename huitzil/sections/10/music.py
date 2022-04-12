@@ -139,7 +139,7 @@ commands(
     ("rh", (1, 12)),
     baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2"),
     baca.repeat_tie(
-        baca.selectors.pleaves((1, None)),
+        lambda _: baca.select.pleaves(_)[1:],
     ),
     baca.staff_position(8),
     baca.text_spanner(
