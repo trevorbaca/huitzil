@@ -74,7 +74,7 @@ commands(
     ("vc", (8, 13)),
     baca.pitches("B1 C2"),
     baca.repeat_tie(
-        baca.selectors.pleaf(0),
+        lambda _: baca.select.pleaf(_, 0),
         allow_rest=True,
     ),
     baca.skeleton("{ c1 * 107/30 c1 * 1/5 }"),
@@ -136,7 +136,7 @@ commands(
         ),
     ),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(),
+        selector=lambda _: baca.select.pleaves(_),
     ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
@@ -177,14 +177,14 @@ commands(
     # baca.hairpin(
     #    "mp > p <",
     #    bookend=False,
-    #    pieces=baca.selectors.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
+    #    pieces=lambda _: baca.select.lparts(_, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
     #    selector=lambda _: baca.select.rleaves(_),
     # ),
     # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
     baca.hairpin(
         "mp > p <",
         # bookend=False,
-        pieces=baca.selectors.lparts([2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
+        pieces=lambda _: baca.select.lparts(_, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
         selector=baca.selectors.leaves((None, -1)),
     ),
 )
@@ -488,7 +488,7 @@ commands(
     baca.text_spanner(
         "(trem. mod.) => più stretto => più largo => più stretto => mod.",
         abjad.Tweak(r"- \tweak staff-padding 6"),
-        pieces=baca.selectors.lparts([1, 1, 1, 1 + 1]),
+        pieces=lambda _: baca.select.lparts(_, [1, 1, 1, 1 + 1]),
     ),
 )
 

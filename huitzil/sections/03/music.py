@@ -111,7 +111,7 @@ commands(
         ),
     ),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(),
+        selector=lambda _: baca.select.pleaves(_),
     ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
@@ -299,7 +299,7 @@ commands(
     baca.hairpin(
         "mp > ppp -- !",
         abjad.Tweak(r"- \tweak to-barline ##t"),
-        pieces=baca.selectors.lparts([4, 5 + 1]),
+        pieces=lambda _: baca.select.lparts(_, [4, 5 + 1]),
         selector=lambda _: baca.select.rleaves(_),
     ),
 )
@@ -348,7 +348,7 @@ commands(
     baca.text_spanner(
         "sub. trem. mod. => più stretto => più largo => più stretto",
         abjad.Tweak(r"- \tweak staff-padding 6"),
-        pieces=baca.selectors.lparts([1, 1, 2]),
+        pieces=lambda _: baca.select.lparts(_, [1, 1, 2]),
     ),
 )
 
@@ -463,7 +463,7 @@ commands(
     ("rh", (20, 26)),
     baca.hairpin(
         "p < f -- !",
-        pieces=baca.selectors.lparts([5, 1 + 1]),
+        pieces=lambda _: baca.select.lparts(_, [5, 1 + 1]),
         selector=baca.selectors.leaves((1, None), rleak=True),
     ),
     baca.markup(
@@ -479,7 +479,7 @@ commands(
         "sub. trem. mod. => più stretto => più largo => più stretto =>"
         " più largo => trem. mod.",
         abjad.Tweak(r"- \tweak staff-padding 6"),
-        pieces=baca.selectors.lparts([1, 1, 1, 1, 2]),
+        pieces=lambda _: baca.select.lparts(_, [1, 1, 1, 1, 2]),
     ),
 )
 

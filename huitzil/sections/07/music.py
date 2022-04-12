@@ -106,7 +106,7 @@ commands(
     baca.suite(
         baca.pitch("A2"),
         baca.repeat_tie(
-            baca.selectors.pleaf(0),
+            lambda _: baca.select.pleaf(_, 0),
             allow_rest=True,
         ),
     ),
@@ -159,7 +159,7 @@ commands(
         abjad.Tweak(r"- \tweak staff-padding 1"),
     ),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(),
+        selector=lambda _: baca.select.pleaves(_),
     ),
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
@@ -253,7 +253,7 @@ commands(
         abjad.Tweak(r"- \tweak staff-padding 2"),
     ),
     baca.parenthesize(
-        selector=baca.selectors.pleaf(-1),
+        selector=lambda _: baca.select.pleaf(_, -1),
     ),
     baca.staff_positions(
         [-6, 0, 6],
