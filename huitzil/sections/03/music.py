@@ -176,12 +176,12 @@ commands(
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.pleaves((1, -3)),
+        selector=lambda _: baca.select.pleaves(_)[1:-3],
     ),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.pleaves((-3, None)),
+        selector=lambda _: baca.select.pleaves(_)[-3:],
     ),
 )
 
@@ -213,7 +213,7 @@ commands(
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.pleaves((1, None)),
+        selector=lambda _: baca.select.pleaves(_)[1:],
     ),
     baca.staff_positions(
         [4, 4, 2, 6, 4, 2],
