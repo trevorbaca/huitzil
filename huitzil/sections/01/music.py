@@ -392,7 +392,7 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "78",
-        selector=baca.selectors.leaf(1 - 1),
+        selector=lambda _: abjad.select.leaf(_, 1 - 1),
     ),
 )
 
@@ -469,7 +469,7 @@ commands(
     "rh",
     baca.literal(r"\stopStaff"),
     baca.mmrest_transparent(
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
 )
 

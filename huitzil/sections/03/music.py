@@ -52,31 +52,31 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "44",
-        selector=baca.selectors.leaf(13 - 1),
+        selector=lambda _: abjad.select.leaf(_, 13 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(13 - 1),
+        selector=lambda _: abjad.select.leaf(_, 13 - 1),
     ),
     baca.metronome_mark(
         "66",
-        selector=baca.selectors.leaf(16 - 1),
+        selector=lambda _: abjad.select.leaf(_, 16 - 1),
     ),
     baca.metronome_mark(
         "44",
-        selector=baca.selectors.leaf(17 - 1),
+        selector=lambda _: abjad.select.leaf(_, 17 - 1),
     ),
     baca.metronome_mark(
         "44",
-        selector=baca.selectors.leaf(21 - 1),
+        selector=lambda _: abjad.select.leaf(_, 21 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(21 - 1),
+        selector=lambda _: abjad.select.leaf(_, 21 - 1),
     ),
     baca.metronome_mark(
         "88",
-        selector=baca.selectors.leaf(26 - 1),
+        selector=lambda _: abjad.select.leaf(_, 26 - 1),
     ),
 )
 
@@ -88,7 +88,7 @@ commands(
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.time_signature_stencil_false(),
 )
@@ -132,7 +132,7 @@ commands(
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
 )
 
@@ -235,7 +235,7 @@ commands(
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
 )
 
@@ -327,7 +327,7 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
 )
 
@@ -411,7 +411,7 @@ commands(
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     baca.staff_positions(
         [6, 4, 2],
@@ -429,7 +429,7 @@ commands(
     baca.markup(
         r"\baca-mpz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
     # TODO: make +ARCH_A_SCORE work
     baca.only_score(
@@ -469,7 +469,7 @@ commands(
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
 )
 
@@ -542,7 +542,7 @@ commands(
 commands(
     "rh",
     baca.glissando(
-        selector=baca.selectors.leaves(),
+        selector=lambda _: baca.select.leaves(_),
     ),
 )
 
