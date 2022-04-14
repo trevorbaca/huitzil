@@ -469,7 +469,7 @@ commands(
     "rh",
     baca.literal(r"\stopStaff"),
     baca.mmrest_transparent(
-        selector=lambda _: baca.select.leaves(_),
+        selector=lambda _: baca.select.mmrests(_),
     ),
 )
 

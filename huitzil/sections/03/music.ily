@@ -1368,6 +1368,9 @@ segment.03.RH.Music.Voice = {
     %! baca.stem_tremolo()
     %! baca.IndicatorCommand._call()
     :32
+    %! REAPPLIED_INSTRUMENT_ALERT
+    %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "(“Cello”)"
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     _ \baca-mfz-markup
@@ -2972,50 +2975,93 @@ segment.03.RH.Music.Staff = {
 %! baca.path.extern()
 segment.03.Cello.Music.Voice = {
 
-    %! baca._comment_measure_numbers()
-    % [Cello_Music_Voice measure 1]
-    %! baca.mmrest_transparent()
-    %! baca.OverrideCommand._call(1)
-    \override MultiMeasureRest.transparent = ##t
-    %! baca.bar_line_transparent()
-    %! baca.OverrideCommand._call(1)
-    \override Score.BarLine.transparent = ##t
-    %! baca.span_bar_transparent()
-    %! baca.OverrideCommand._call(1)
-    \override Score.SpanBar.transparent = ##t
-    %! baca.time_signature_stencil_false()
-    %! baca.OverrideCommand._call(1)
-    \override Score.TimeSignature.stencil = ##f
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \clef "bass"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_COLOR
-    \once \override Staff.Clef.color = #(x11-color 'green4)
-    %! baca._attach_color_literal(1)
-    %! REAPPLIED_CLEF_COLOR_CANCELLATION
-    %@% \override Staff.Clef.color = ##f
-    %! baca._reapply_persistent_indicators(3)
-    %! baca.treat_persistent_wrapper(2)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \set Staff.forceClef = ##t
-    %! baca._call_rhythm_commands()
-    R1 * 1/2
-    %! REAPPLIED_INSTRUMENT_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "(“Cello”)"
-    %! baca._label_duration_multipliers()
-    %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_REDRAW_COLOR
-    \override Staff.Clef.color = #(x11-color 'OliveDrab)
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "Cello_Music_Voice"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Cello_Music_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca.bar_line_transparent()
+            %! baca.OverrideCommand._call(1)
+            \override Score.BarLine.transparent = ##t
+            %! baca.span_bar_transparent()
+            %! baca.OverrideCommand._call(1)
+            \override Score.SpanBar.transparent = ##t
+            %! baca.time_signature_stencil_false()
+            %! baca.OverrideCommand._call(1)
+            \override Score.TimeSignature.stencil = ##f
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \clef "bass"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_COLOR
+            \once \override Staff.Clef.color = #(x11-color 'green4)
+            %! baca._attach_color_literal(1)
+            %! REAPPLIED_CLEF_COLOR_CANCELLATION
+            %@% \override Staff.Clef.color = ##f
+            %! baca._reapply_persistent_indicators(3)
+            %! baca.treat_persistent_wrapper(2)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \set Staff.forceClef = ##t
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            d1 * 1/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_REDRAW_COLOR
+            \override Staff.Clef.color = #(x11-color 'OliveDrab)
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "Cello_Rest_Voice"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Cello_Rest_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! MULTIMEASURE_REST
+            R1 * 1/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! MULTIMEASURE_REST
+            %! REST_VOICE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca.mmrest_transparent()
+    %! baca.OverrideCommand._call(1)
+    \override MultiMeasureRest.transparent = ##t
+    %! baca._make_measure_silences()
     R1 * 13/24
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3023,7 +3069,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3031,7 +3077,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 7/12
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3039,7 +3085,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 53/60
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3047,7 +3093,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 6]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 23/24
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3055,7 +3101,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3063,7 +3109,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3071,7 +3117,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 3/8
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3079,7 +3125,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 10]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/3
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3087,7 +3133,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 11/15
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3095,7 +3141,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3103,7 +3149,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3111,7 +3157,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 14]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3119,7 +3165,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3127,7 +3173,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 16]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3135,7 +3181,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/6
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3143,7 +3189,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3151,7 +3197,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 19]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 2/5
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3159,7 +3205,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 20]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3167,7 +3213,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3175,7 +3221,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 22]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3183,7 +3229,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 23]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3191,7 +3237,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 24]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3199,7 +3245,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 25]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -3207,7 +3253,7 @@ segment.03.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER

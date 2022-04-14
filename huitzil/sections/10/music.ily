@@ -489,6 +489,9 @@ segment.10.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \mp
+    %! REAPPLIED_INSTRUMENT_ALERT
+    %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "(“Cello”)"
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     _ \baca-mpz-markup
@@ -1151,62 +1154,105 @@ segment.10.RH.Music.Staff = {
 %! baca.path.extern()
 segment.10.Cello.Music.Voice = {
 
-    %! baca._comment_measure_numbers()
-    % [Cello_Music_Voice measure 1]
-    %! baca.mmrest_transparent()
-    %! baca.OverrideCommand._call(1)
-    \override MultiMeasureRest.transparent = ##t
-    %! baca.bar_line_transparent()
-    %! baca.OverrideCommand._call(1)
-    \override Score.BarLine.transparent = ##t
-    %! baca.span_bar_transparent()
-    %! baca.OverrideCommand._call(1)
-    \override Score.SpanBar.transparent = ##t
-    %! baca.literal()
-    %! +SEGMENT
-    %! baca.IndicatorCommand._call()
-    \stopStaff
-    %! baca.literal()
-    %! +SEGMENT
-    %! baca.IndicatorCommand._call()
-    \once \override Staff.StaffSymbol.line-positions = #'(4 -4)
-    %! baca.literal()
-    %! +SEGMENT
-    %! baca.IndicatorCommand._call()
-    \startStaff
-    %! baca.time_signature_stencil_false()
-    %! baca.OverrideCommand._call(1)
-    \override Score.TimeSignature.stencil = ##f
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \clef "treble"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_COLOR
-    \once \override Staff.Clef.color = #(x11-color 'green4)
-    %! baca._attach_color_literal(1)
-    %! REAPPLIED_CLEF_COLOR_CANCELLATION
-    %@% \override Staff.Clef.color = ##f
-    %! baca._reapply_persistent_indicators(3)
-    %! baca.treat_persistent_wrapper(2)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \set Staff.forceClef = ##t
-    %! baca._call_rhythm_commands()
-    R1 * 1/2
-    %! REAPPLIED_INSTRUMENT_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "(“Cello”)"
-    %! baca._label_duration_multipliers()
-    %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_REDRAW_COLOR
-    \override Staff.Clef.color = #(x11-color 'OliveDrab)
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "Cello_Music_Voice"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Cello_Music_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca.bar_line_transparent()
+            %! baca.OverrideCommand._call(1)
+            \override Score.BarLine.transparent = ##t
+            %! baca.span_bar_transparent()
+            %! baca.OverrideCommand._call(1)
+            \override Score.SpanBar.transparent = ##t
+            %! baca.literal()
+            %! +SEGMENT
+            %! baca.IndicatorCommand._call()
+            \stopStaff
+            %! baca.literal()
+            %! +SEGMENT
+            %! baca.IndicatorCommand._call()
+            \once \override Staff.StaffSymbol.line-positions = #'(4 -4)
+            %! baca.literal()
+            %! +SEGMENT
+            %! baca.IndicatorCommand._call()
+            \startStaff
+            %! baca.time_signature_stencil_false()
+            %! baca.OverrideCommand._call(1)
+            \override Score.TimeSignature.stencil = ##f
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \clef "treble"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_COLOR
+            \once \override Staff.Clef.color = #(x11-color 'green4)
+            %! baca._attach_color_literal(1)
+            %! REAPPLIED_CLEF_COLOR_CANCELLATION
+            %@% \override Staff.Clef.color = ##f
+            %! baca._reapply_persistent_indicators(3)
+            %! baca.treat_persistent_wrapper(2)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \set Staff.forceClef = ##t
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 1/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_REDRAW_COLOR
+            \override Staff.Clef.color = #(x11-color 'OliveDrab)
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "Cello_Rest_Voice"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Cello_Rest_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! MULTIMEASURE_REST
+            R1 * 1/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! MULTIMEASURE_REST
+            %! REST_VOICE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca.mmrest_transparent()
+    %! baca.OverrideCommand._call(1)
+    \override MultiMeasureRest.transparent = ##t
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1214,7 +1260,7 @@ segment.10.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1222,7 +1268,7 @@ segment.10.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1230,7 +1276,7 @@ segment.10.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1238,7 +1284,7 @@ segment.10.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 6]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1246,7 +1292,7 @@ segment.10.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1254,7 +1300,7 @@ segment.10.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1262,7 +1308,7 @@ segment.10.Cello.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -1282,7 +1328,7 @@ segment.10.Cello.Music.Voice = {
     %! baca.literal()
     %! baca.IndicatorCommand._call()
     \override Score.SpanBar.extra-offset = #'(8 . 0)
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 3/2
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
