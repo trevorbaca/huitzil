@@ -482,7 +482,7 @@ if __name__ == "__main__":
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
             # TODO: make this work
-            # baca.const.SPACING,
+            # baca.enums.SPACING,
         ),
         always_make_global_rests=True,
         do_not_require_margin_markup=True,

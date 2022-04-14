@@ -91,7 +91,7 @@ def make_empty_score():
         tag=tag,
     )
     abjad.annotate(rh_music_staff, "default_clef", abjad.Clef("percussion"))
-    abjad.annotate(rh_music_staff, baca.const.REMOVE_ALL_EMPTY_STAVES, True)
+    abjad.annotate(rh_music_staff, baca.enums.REMOVE_ALL_EMPTY_STAVES, True)
     cello_music_voice = abjad.Voice(name="Cello_Music_Voice", tag=tag)
     cello_music_staff = abjad.Staff(
         [cello_music_voice], name="Cello_Music_Staff", tag=tag

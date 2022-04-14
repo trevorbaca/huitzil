@@ -554,7 +554,7 @@ if __name__ == "__main__":
         activate=(
             # baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
-            # baca.const.MEASURE_NUMBER,
+            # baca.enums.MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
         do_not_require_margin_markup=True,
