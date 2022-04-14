@@ -1180,6 +1180,9 @@ segment.09.RH.Music.Voice = {
     %! baca.stem_tremolo()
     %! baca.IndicatorCommand._call()
     :32
+    %! REAPPLIED_INSTRUMENT_ALERT
+    %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "(“Cello”)"
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     _ \baca-ffz-markup
@@ -2506,9 +2509,6 @@ segment.09.Cello.Music.Voice = {
             %! HIDDEN
             %! NOTE
             d1 * 1/2
-            %! REAPPLIED_INSTRUMENT_ALERT
-            %! baca._attach_latent_indicator_alert()
-            ^ \baca-reapplied-indicator-markup "(“Cello”)"
             %! baca._label_duration_multipliers()
             %! DURATION_MULTIPLIER
             %! HIDDEN

@@ -1369,6 +1369,9 @@ segment.08.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
     \mp
+    %! REAPPLIED_INSTRUMENT_ALERT
+    %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "(“Cello”)"
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     _ \baca-mfz-markup
@@ -3025,9 +3028,6 @@ segment.08.Cello.Music.Voice = {
         \set Staff.forceClef = ##t
         %! baca.skeleton()
         a,,1 * 1/2
-        %! REAPPLIED_INSTRUMENT_ALERT
-        %! baca._attach_latent_indicator_alert()
-        ^ \baca-reapplied-indicator-markup "(“Cello”)"
         %! baca._label_duration_multipliers()
         %! DURATION_MULTIPLIER
         %@% ^ \baca-duration-multiplier-markup #"1" #"2"

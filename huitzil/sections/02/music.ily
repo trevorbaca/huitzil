@@ -1108,6 +1108,9 @@ segment.02.RH.Music.Voice = {
         %! baca.alternate_bow_strokes()
         %! baca.IndicatorCommand._call()
         - \downbow
+        %! REAPPLIED_INSTRUMENT_ALERT
+        %! baca._attach_latent_indicator_alert()
+        ^ \baca-reapplied-indicator-markup "(“Cello”)"
         %! baca.markup()
         %! baca.IndicatorCommand._call()
         - \tweak staff-padding 3
@@ -2369,9 +2372,6 @@ segment.02.Cello.Music.Voice = {
             %! HIDDEN
             %! NOTE
             d1 * 3/4
-            %! REAPPLIED_INSTRUMENT_ALERT
-            %! baca._attach_latent_indicator_alert()
-            ^ \baca-reapplied-indicator-markup "(“Cello”)"
             %! baca._label_duration_multipliers()
             %! DURATION_MULTIPLIER
             %! HIDDEN
