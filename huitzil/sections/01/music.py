@@ -398,12 +398,13 @@ commands(
 
 commands(
     ("vc", 1),
+    baca.music(music_, do_not_check_total_duration=True),
+    baca.attach_first_segment_default_indicators(),
     baca.markup(
         r"\huitzil-phrasing-dynamics-see-preface-markup",
         abjad.Tweak(r"- \tweak staff-padding 9"),
         direction=abjad.DOWN,
     ),
-    baca.music(music_, do_not_check_total_duration=True),
 )
 
 commands(
@@ -467,6 +468,8 @@ commands(
 
 commands(
     "rh",
+    baca.make_mmrests(),
+    baca.attach_first_segment_default_indicators(),
     baca.literal(r"\stopStaff"),
     baca.mmrest_transparent(
         selector=lambda _: baca.select.mmrests(_),
