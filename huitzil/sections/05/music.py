@@ -80,7 +80,9 @@ commands(
 
 commands(
     "vc",
+    baca.make_mmrests(),
     baca.mmrest_transparent(),
+    baca.reapply_persistent_indicators(),
     baca.new(
         baca.bar_line_transparent(),
         baca.span_bar_transparent(),
@@ -92,27 +94,9 @@ commands(
 # rh
 
 commands(
-    "rh",
-    baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
-    baca.literal(
-        [
-            r"\stopStaff",
-            r"\once \override RHStaff.StaffSymbol.line-positions ="
-            " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-            r"\startStaff",
-        ]
-    ),
-    baca.stem_tremolo(
-        selector=lambda _: baca.select.pleaves(_),
-    ),
-    baca.text_script_parent_alignment_x(0),
-    baca.text_script_self_alignment_x(0),
-    baca.text_script_staff_padding(4),
-)
-
-commands(
     ("rh", 1),
     baca.make_monads("1/4  1/8  1/8"),
+    baca.reapply_persistent_indicators(),
     baca.staff_positions(
         [6, 6, 4],
         allow_repeats=True,
@@ -452,6 +436,25 @@ commands(
         [-6],
         allow_repeats=True,
     ),
+)
+
+commands(
+    "rh",
+    baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override RHStaff.StaffSymbol.line-positions ="
+            " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
+            r"\startStaff",
+        ]
+    ),
+    baca.stem_tremolo(
+        selector=lambda _: baca.select.pleaves(_),
+    ),
+    baca.text_script_parent_alignment_x(0),
+    baca.text_script_self_alignment_x(0),
+    baca.text_script_staff_padding(4),
 )
 
 # stage 2 (after staff position settings)

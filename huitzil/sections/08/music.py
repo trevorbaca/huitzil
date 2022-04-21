@@ -88,6 +88,8 @@ commands(
 
 commands(
     "vc",
+    baca.skeleton("{ c1 * 1/2 }", do_not_check_total_duration=True),
+    baca.reapply_persistent_indicators(),
     baca.mmrest_transparent(),
     baca.pitch("A1"),
     baca.new(
@@ -95,7 +97,6 @@ commands(
         baca.span_bar_transparent(),
         selector=lambda _: baca.select.leaves(_),
     ),
-    baca.skeleton("{ c1 * 1/2 }", do_not_check_total_duration=True),
     baca.time_signature_stencil_false(),
 )
 
@@ -109,18 +110,9 @@ commands(
 # rh
 
 commands(
-    "rh",
-    baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
-    baca.stem_tremolo(
-        selector=lambda _: baca.select.pleaves(_),
-    ),
-    baca.text_script_parent_alignment_x(0),
-    baca.text_script_self_alignment_x(0),
-    baca.text_script_staff_padding(4),
-)
-
-commands(
     ("rh", 1),
+    baca.make_monads("1/4  1/8  1/8"),
+    baca.reapply_persistent_indicators(),
     baca.chunk(
         baca.literal(
             [
@@ -130,7 +122,6 @@ commands(
         ),
         baca.staff_lines(7),
     ),
-    baca.make_monads("1/4  1/8  1/8"),
     baca.staff_positions(
         [6, 6, 4],
         allow_repeats=True,
@@ -555,6 +546,17 @@ commands(
         [-6],
         allow_repeats=True,
     ),
+)
+
+commands(
+    "rh",
+    baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
+    baca.stem_tremolo(
+        selector=lambda _: baca.select.pleaves(_),
+    ),
+    baca.text_script_parent_alignment_x(0),
+    baca.text_script_self_alignment_x(0),
+    baca.text_script_staff_padding(4),
 )
 
 # stage 2 (after staff position settings)

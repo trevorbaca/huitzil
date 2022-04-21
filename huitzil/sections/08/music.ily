@@ -1322,6 +1322,9 @@ segment.08.RH.Music.Voice = {
     \startStaff
     %! baca.literal()
     %! baca.IndicatorCommand._call()
+    \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)
+    %! baca.literal()
+    %! baca.IndicatorCommand._call()
     \override DynamicLineSpanner.staff-padding = 7
     %! baca.text_script_parent_alignment_x()
     %! baca.OverrideCommand._call(1)
@@ -1332,9 +1335,6 @@ segment.08.RH.Music.Voice = {
     %! baca.text_script_staff_padding()
     %! baca.OverrideCommand._call(1)
     \override TextScript.staff-padding = 4
-    %! baca.literal()
-    %! baca.IndicatorCommand._call()
-    \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
     %! REAPPLIED_CLEF

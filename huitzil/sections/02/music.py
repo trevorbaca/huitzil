@@ -58,6 +58,12 @@ commands(
 # vc
 
 commands(
+    ("vc", (1, 24)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     "vc",
     baca.literal(
         [
@@ -98,35 +104,10 @@ commands(
 # rh
 
 commands(
-    "rh",
-    baca.alternate_bow_strokes(),
-    baca.chunk(
-        baca.literal(
-            [
-                r"\once \override RHStaff.StaffSymbol.line-positions ="
-                " #'(8.2 8 7.8 -5.8 -6 -6.2)"
-            ]
-        ),
-        baca.staff_lines(7),
-    ),
-    baca.dynamic(
-        "mp-sempre",
-        abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
-    ),
-    baca.literal(r"\override DynamicLineSpanner.staff-padding = 2.5"),
-    baca.literal(r"\override Score.BarNumber.transparent = ##t"),
-    baca.markup(
-        r"\huitzil-directly-on-bridge-markup",
-        abjad.Tweak(r"- \tweak staff-padding 3"),
-    ),
-    baca.staff_position(8),
-    baca.tuplet_bracket_down(),
-)
-
-commands(
     ("rh", (1, 4)),
-    baca.rest_position(0),
     baca.skeleton("{ c4 r2 c4 r2 c4 r2 c4 r2 }"),
+    baca.reapply_persistent_indicators(),
+    baca.rest_position(0),
 )
 
 commands(
@@ -239,6 +220,32 @@ commands(
         6,
         selector=lambda _: baca.select.rleaf(_, -1),
     ),
+)
+
+commands(
+    "rh",
+    baca.alternate_bow_strokes(),
+    baca.chunk(
+        baca.literal(
+            [
+                r"\once \override RHStaff.StaffSymbol.line-positions ="
+                " #'(8.2 8 7.8 -5.8 -6 -6.2)"
+            ]
+        ),
+        baca.staff_lines(7),
+    ),
+    baca.dynamic(
+        "mp-sempre",
+        abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
+    ),
+    baca.literal(r"\override DynamicLineSpanner.staff-padding = 2.5"),
+    baca.literal(r"\override Score.BarNumber.transparent = ##t"),
+    baca.markup(
+        r"\huitzil-directly-on-bridge-markup",
+        abjad.Tweak(r"- \tweak staff-padding 3"),
+    ),
+    baca.staff_position(8),
+    baca.tuplet_bracket_down(),
 )
 
 if __name__ == "__main__":
