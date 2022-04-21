@@ -2993,15 +2993,15 @@ segment.03.Cello.Music.Voice = {
             %! NOTE
             %! INVISIBLE_MUSIC_COMMAND
             %@% \abjad-invisible-music
+            %! baca.time_signature_stencil_false()
+            %! baca.OverrideCommand._call(1)
+            \override Score.TimeSignature.stencil = ##f
             %! baca.bar_line_transparent()
             %! baca.OverrideCommand._call(1)
             \override Score.BarLine.transparent = ##t
             %! baca.span_bar_transparent()
             %! baca.OverrideCommand._call(1)
             \override Score.SpanBar.transparent = ##t
-            %! baca.time_signature_stencil_false()
-            %! baca.OverrideCommand._call(1)
-            \override Score.TimeSignature.stencil = ##f
             %! baca._reapply_persistent_indicators(3)
             %! baca._set_status_tag()
             %! REAPPLIED_CLEF
@@ -3261,15 +3261,15 @@ segment.03.Cello.Music.Voice = {
     %! baca.mmrest_transparent()
     %! baca.OverrideCommand._call(2)
     \revert MultiMeasureRest.transparent
+    %! baca.time_signature_stencil_false()
+    %! baca.OverrideCommand._call(2)
+    \revert Score.TimeSignature.stencil
     %! baca.bar_line_transparent()
     %! baca.OverrideCommand._call(2)
     \revert Score.BarLine.transparent
     %! baca.span_bar_transparent()
     %! baca.OverrideCommand._call(2)
     \revert Score.SpanBar.transparent
-    %! baca.time_signature_stencil_false()
-    %! baca.OverrideCommand._call(2)
-    \revert Score.TimeSignature.stencil
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM

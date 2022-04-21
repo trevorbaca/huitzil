@@ -50,6 +50,8 @@ commands(
 
 commands(
     "vc",
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
     baca.mmrest_transparent(),
     baca.new(
         baca.bar_line_transparent(),
@@ -99,6 +101,36 @@ commands(
 # rh
 
 commands(
+    ("rh", (1, 12)),
+    baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2"),
+    baca.reapply_persistent_indicators(),
+    baca.repeat_tie(
+        lambda _: baca.select.pleaves(_)[1:],
+    ),
+    baca.staff_position(8),
+    baca.text_spanner(
+        "larg. => strett. =>",
+        abjad.Tweak(r"- \tweak staff-padding 6"),
+        pieces=lambda _: baca.select.clparts(_, [1]),
+    ),
+)
+
+
+commands(
+    ("rh", (1, 10)),
+    baca.markup(
+        r"\baca-mpz-markup",
+        direction=abjad.DOWN,
+    ),
+    baca.hairpin(
+        "mp > pp <",
+        abjad.Tweak(r"- \tweak to-barline ##t"),
+        final_hairpin=False,
+        pieces=lambda _: baca.select.clparts(_, [1]),
+    ),
+)
+
+commands(
     "rh",
     # TODO: fix right-broken text spanners and replace this:
     baca.literal(r"<> \stopTextSpan"),
@@ -119,34 +151,6 @@ commands(
     baca.text_script_parent_alignment_x(0),
     baca.text_script_self_alignment_x(0),
     baca.text_script_staff_padding(4),
-)
-
-commands(
-    ("rh", (1, 10)),
-    baca.markup(
-        r"\baca-mpz-markup",
-        direction=abjad.DOWN,
-    ),
-    baca.hairpin(
-        "mp > pp <",
-        abjad.Tweak(r"- \tweak to-barline ##t"),
-        final_hairpin=False,
-        pieces=lambda _: baca.select.clparts(_, [1]),
-    ),
-)
-
-commands(
-    ("rh", (1, 12)),
-    baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2"),
-    baca.repeat_tie(
-        lambda _: baca.select.pleaves(_)[1:],
-    ),
-    baca.staff_position(8),
-    baca.text_spanner(
-        "larg. => strett. =>",
-        abjad.Tweak(r"- \tweak staff-padding 6"),
-        pieces=lambda _: baca.select.clparts(_, [1]),
-    ),
 )
 
 if __name__ == "__main__":

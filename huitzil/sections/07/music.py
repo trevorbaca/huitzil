@@ -67,37 +67,15 @@ commands(
 # vc
 
 commands(
-    "vc",
-    baca.clef("bass"),
-    baca.literal(
-        [
-            r"\stopStaff",
-            r"\once \override Staff.StaffSymbol.line-count = 5",
-            r"\startStaff",
-        ]
-    ),
-    baca.mmrest_transparent(),
-    baca.new(
-        baca.bar_line_transparent(),
-        baca.span_bar_transparent(),
-        selector=lambda _: baca.select.leaves(_),
-    ),
-    baca.pitch(
-        "A1",
-        selector=lambda _: baca.select.rleaf(_, -1),
-    ),
-    baca.time_signature_stencil_false(),
-)
-
-commands(
     ("vc", 1),
+    baca.skeleton("{ c1 * 1/4 }"),
+    baca.reapply_persistent_indicators(),
     baca.markup(
         r"\baca-string-iii-markup",
         abjad.Tweak(r"- \tweak padding 2.5"),
         direction=abjad.DOWN,
     ),
     baca.pitch("A2"),
-    baca.skeleton("{ c1 * 1/4 }"),
 )
 
 commands(
@@ -125,6 +103,29 @@ commands(
     baca.skeleton("{ c1 * 2 }"),
 )
 
+commands(
+    "vc",
+    baca.clef("bass"),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override Staff.StaffSymbol.line-count = 5",
+            r"\startStaff",
+        ]
+    ),
+    baca.mmrest_transparent(),
+    baca.new(
+        baca.bar_line_transparent(),
+        baca.span_bar_transparent(),
+        selector=lambda _: baca.select.leaves(_),
+    ),
+    baca.pitch(
+        "A1",
+        selector=lambda _: baca.select.rleaf(_, -1),
+    ),
+    baca.time_signature_stencil_false(),
+)
+
 # vcr
 
 commands(
@@ -135,40 +136,9 @@ commands(
 # rh
 
 commands(
-    "rh",
-    baca.chunk(
-        baca.literal(
-            [
-                r"\once \override RHStaff.StaffSymbol.line-positions ="
-                " #'(8.2 8  7.8 -5.8 -6 -6.2 -8 -10 -12 -14 -16 -17.8 -18 -18.2)",
-                r"\morleyDashedStaffSymbolLines #'("
-                "   #f  #f #f  #f   #f #f   #t #t  #t  #t  #t  #f    #f  #f)",
-            ]
-        ),
-        baca.staff_lines(14),
-    ),
-    baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
-    baca.markup(
-        r"\huitzil-ascending-fingerboard-markup",
-        abjad.Tweak(r"- \tweak self-alignment-X -1"),
-        abjad.Tweak(r"- \tweak staff-padding 4.5"),
-    ),
-    baca.markup(
-        r"\huitzil-directly-above-end-of-fingerboard-markup",
-        abjad.Tweak(r"- \tweak self-alignment-X -1"),
-        abjad.Tweak(r"- \tweak staff-padding 1"),
-    ),
-    baca.stem_tremolo(
-        selector=lambda _: baca.select.pleaves(_),
-    ),
-    baca.text_script_parent_alignment_x(0),
-    baca.text_script_self_alignment_x(0),
-    baca.text_script_staff_padding(4),
-)
-
-commands(
     ("rh", (1, 8)),
     baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
+    baca.reapply_persistent_indicators(),
     baca.staff_positions(
         [-6, -6, -8, -8, -10, -10, -12, -12],
         allow_repeats=True,
@@ -285,6 +255,39 @@ commands(
         selector=lambda _: baca.select.rleaves(_),
     ),
 )
+
+commands(
+    "rh",
+    baca.chunk(
+        baca.literal(
+            [
+                r"\once \override RHStaff.StaffSymbol.line-positions ="
+                " #'(8.2 8  7.8 -5.8 -6 -6.2 -8 -10 -12 -14 -16 -17.8 -18 -18.2)",
+                r"\morleyDashedStaffSymbolLines #'("
+                "   #f  #f #f  #f   #f #f   #t #t  #t  #t  #t  #f    #f  #f)",
+            ]
+        ),
+        baca.staff_lines(14),
+    ),
+    baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
+    baca.markup(
+        r"\huitzil-ascending-fingerboard-markup",
+        abjad.Tweak(r"- \tweak self-alignment-X -1"),
+        abjad.Tweak(r"- \tweak staff-padding 4.5"),
+    ),
+    baca.markup(
+        r"\huitzil-directly-above-end-of-fingerboard-markup",
+        abjad.Tweak(r"- \tweak self-alignment-X -1"),
+        abjad.Tweak(r"- \tweak staff-padding 1"),
+    ),
+    baca.stem_tremolo(
+        selector=lambda _: baca.select.pleaves(_),
+    ),
+    baca.text_script_parent_alignment_x(0),
+    baca.text_script_self_alignment_x(0),
+    baca.text_script_staff_padding(4),
+)
+
 
 if __name__ == "__main__":
     metadata, persist, score, timing = baca.build.interpret_segment(
