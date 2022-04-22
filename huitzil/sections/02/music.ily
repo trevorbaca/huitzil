@@ -1315,15 +1315,15 @@ segment.02.RH.Music.Voice = {
           %! baca.dynamic()
         \baca-mp-sempre
         % MARKUP:
-          %! REAPPLIED_INSTRUMENT_ALERT
-          %! baca._attach_latent_indicator_alert()
-        ^ \baca-reapplied-indicator-markup "(“Cello”)"
           %! baca.IndicatorCommand._call()
           %! baca.markup()
         - \tweak staff-padding 3
           %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \huitzil-directly-on-bridge-markup
+          %! REAPPLIED_INSTRUMENT_ALERT
+          %! baca._attach_latent_indicator_alert()
+        ^ \baca-reapplied-indicator-markup "(“Cello”)"
         % SPANNER_STARTS:
           %! AUTODETECT
           %! RHYTHM_ANNOTATION_SPANNER
@@ -2768,16 +2768,16 @@ segment.02.RH.Music.Voice = {
         % MARKUP:
           %! baca.IndicatorCommand._call()
           %! baca.markup()
-        - \tweak staff-padding 6
-          %! baca.IndicatorCommand._call()
-          %! baca.markup()
-        ^ \huitzil-sliding-from-bridge-onto-string-markup
-          %! baca.IndicatorCommand._call()
-          %! baca.markup()
         - \tweak staff-padding 3.5
           %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \huitzil-trem-moderato-markup
+          %! baca.IndicatorCommand._call()
+          %! baca.markup()
+        - \tweak staff-padding 6
+          %! baca.IndicatorCommand._call()
+          %! baca.markup()
+        ^ \huitzil-sliding-from-bridge-onto-string-markup
         % SPANNER_STARTS:
           %! AUTODETECT
           %! RHYTHM_ANNOTATION_SPANNER

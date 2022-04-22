@@ -1576,18 +1576,6 @@ segment.07.RH.Music.Voice = {
       %! baca.hairpin()
     \mp
     % MARKUP:
-      %! REAPPLIED_INSTRUMENT_ALERT
-      %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "(“Cello”)"
-      %! baca.IndicatorCommand._call()
-      %! baca.markup()
-    - \tweak self-alignment-X -1
-      %! baca.IndicatorCommand._call()
-      %! baca.markup()
-    - \tweak staff-padding 4.5
-      %! baca.IndicatorCommand._call()
-      %! baca.markup()
-    ^ \huitzil-ascending-fingerboard-markup
       %! baca.IndicatorCommand._call()
       %! baca.markup()
     - \tweak self-alignment-X -1
@@ -1597,6 +1585,18 @@ segment.07.RH.Music.Voice = {
       %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \huitzil-directly-above-end-of-fingerboard-markup
+      %! baca.IndicatorCommand._call()
+      %! baca.markup()
+    - \tweak self-alignment-X -1
+      %! baca.IndicatorCommand._call()
+      %! baca.markup()
+    - \tweak staff-padding 4.5
+      %! baca.IndicatorCommand._call()
+      %! baca.markup()
+    ^ \huitzil-ascending-fingerboard-markup
+      %! REAPPLIED_INSTRUMENT_ALERT
+      %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "(“Cello”)"
       %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-fz-markup
@@ -2388,15 +2388,15 @@ segment.07.Cello.Music.Voice = {
         a,1 * 1/4
         % AFTER:
         % MARKUP:
-          %! DURATION_MULTIPLIER
-          %! baca._label_duration_multipliers()
-        %@% ^ \baca-duration-multiplier-markup #"1" #"4"
           %! baca.IndicatorCommand._call()
           %! baca.markup()
         - \tweak padding 2.5
           %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-string-iii-markup
+          %! DURATION_MULTIPLIER
+          %! baca._label_duration_multipliers()
+        %@% ^ \baca-duration-multiplier-markup #"1" #"4"
         % SPANNER_STARTS:
           %! AUTODETECT
           %! RHYTHM_ANNOTATION_SPANNER
@@ -2777,9 +2777,6 @@ segment.07.Cello.Music.Voice = {
         g,1 * 2
         % AFTER:
         % MARKUP:
-          %! DURATION_MULTIPLIER
-          %! baca._label_duration_multipliers()
-        %@% ^ \baca-duration-multiplier-markup #"2" #"1"
           %! baca.IndicatorCommand._call()
           %! baca.markup()
         - \tweak padding 2.5
@@ -2792,6 +2789,9 @@ segment.07.Cello.Music.Voice = {
           %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \huitzil-string-three-to-four-markup
+          %! DURATION_MULTIPLIER
+          %! baca._label_duration_multipliers()
+        %@% ^ \baca-duration-multiplier-markup #"2" #"1"
         % SPANNER_STARTS:
           %! AUTODETECT
           %! RHYTHM_ANNOTATION_SPANNER
