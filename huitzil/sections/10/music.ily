@@ -61,11 +61,6 @@ segment.10.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 1]
-    %! REAPPLIED_TIME_SIGNATURE
-    %! baca._make_global_skips(2)
-    %! baca._reapply_persistent_indicators(1)
-    %! baca._set_status_tag()
-    \time 1/2
     %! REAPPLIED_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'green4
@@ -73,6 +68,11 @@ segment.10.Global.Skips = {
     %! EMPTY_START_BAR
     %! baca._attach_nonfirst_empty_start_bar()
     \bar ""
+    %! REAPPLIED_TIME_SIGNATURE
+    %! baca._make_global_skips(2)
+    %! baca._reapply_persistent_indicators(1)
+    %! baca._set_status_tag()
+    \time 1/2
     %! baca._make_global_skips(1)
     s1 * 1/2
     %! LOCAL_MEASURE_NUMBER
@@ -373,13 +373,13 @@ segment.10.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 10]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 3/2
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 3/2
     %! LOCAL_MEASURE_NUMBER
@@ -408,12 +408,27 @@ segment.10.RH.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 1]
+    %! baca.IndicatorCommand._call()
+    %! baca.literal()
+    <> \stopTextSpan
+    %! baca.IndicatorCommand._call()
+    %! baca.literal()
+    \override DynamicLineSpanner.staff-padding = 7
     %! -PARTS
     %! EXPLICIT_BAR_EXTENT
     %! REAPPLIED_BAR_EXTENT
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 4)
+    %! baca.OverrideCommand._call(1)
+    %! baca.text_script_parent_alignment_x()
+    \override TextScript.parent-alignment-X = 0
+    %! baca.OverrideCommand._call(1)
+    %! baca.text_script_self_alignment_x()
+    \override TextScript.self-alignment-X = 0
+    %! baca.OverrideCommand._call(1)
+    %! baca.text_script_staff_padding()
+    \override TextScript.staff-padding = 4
     %! REAPPLIED_STAFF_LINES
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
@@ -426,12 +441,6 @@ segment.10.RH.Music.Voice = {
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
     \startStaff
-    %! baca.IndicatorCommand._call()
-    %! baca.literal()
-    <> \stopTextSpan
-    %! baca.IndicatorCommand._call()
-    %! baca.literal()
-    \override DynamicLineSpanner.staff-padding = 7
     %! +SEGMENT
     %! baca.IndicatorCommand._call()
     %! baca.literal()
@@ -444,15 +453,6 @@ segment.10.RH.Music.Voice = {
     %! baca.IndicatorCommand._call()
     %! baca.literal()
     \startStaff
-    %! baca.OverrideCommand._call(1)
-    %! baca.text_script_parent_alignment_x()
-    \override TextScript.parent-alignment-X = 0
-    %! baca.OverrideCommand._call(1)
-    %! baca.text_script_self_alignment_x()
-    \override TextScript.self-alignment-X = 0
-    %! baca.OverrideCommand._call(1)
-    %! baca.text_script_staff_padding()
-    \override TextScript.staff-padding = 4
     %! REAPPLIED_CLEF
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
@@ -460,6 +460,9 @@ segment.10.RH.Music.Voice = {
     %! REAPPLIED_CLEF_COLOR
     %! baca._attach_color_literal(2)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)
+    %! REAPPLIED_STAFF_LINES_COLOR
+    %! baca._attach_color_literal(2)
+    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
     %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %! baca._attach_color_literal(1)
     %@% \override RHStaff.Clef.color = ##f
@@ -468,9 +471,6 @@ segment.10.RH.Music.Voice = {
     %! baca._set_status_tag()
     %! baca.treat_persistent_wrapper(2)
     \set RHStaff.forceClef = ##t
-    %! REAPPLIED_STAFF_LINES_COLOR
-    %! baca._attach_color_literal(2)
-    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
     d''2
     %! baca.IndicatorCommand._call()
     %! baca.stem_tremolo()
@@ -1164,20 +1164,23 @@ segment.10.Cello.Music.Voice = {
 
             %! baca._comment_measure_numbers()
             % [Cello_Music_Voice measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! baca.OverrideCommand._call(1)
             %! baca.bar_line_transparent()
             \override Score.BarLine.transparent = ##t
             %! baca.OverrideCommand._call(1)
             %! baca.span_bar_transparent()
             \override Score.SpanBar.transparent = ##t
+            %! baca.OverrideCommand._call(1)
+            %! baca.time_signature_stencil_false()
+            \override Score.TimeSignature.stencil = ##f
             %! +SEGMENT
             %! baca.IndicatorCommand._call()
             %! baca.literal()
@@ -1190,9 +1193,6 @@ segment.10.Cello.Music.Voice = {
             %! baca.IndicatorCommand._call()
             %! baca.literal()
             \startStaff
-            %! baca.OverrideCommand._call(1)
-            %! baca.time_signature_stencil_false()
-            \override Score.TimeSignature.stencil = ##f
             %! REAPPLIED_CLEF
             %! baca._reapply_persistent_indicators(3)
             %! baca._set_status_tag()
@@ -1333,6 +1333,15 @@ segment.10.Cello.Music.Voice = {
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    %! baca.IndicatorCommand._call()
+    %! baca.literal()
+    \once \override Score.RehearsalMark.direction = #down
+    %! baca.IndicatorCommand._call()
+    %! baca.literal()
+    \once \override Score.RehearsalMark.padding = 4
+    %! baca.IndicatorCommand._call()
+    %! baca.literal()
+    \mark \huitzil-colophon-markup
     %! baca.OverrideCommand._call(2)
     %! baca.mmrest_transparent()
     \revert MultiMeasureRest.transparent
@@ -1345,15 +1354,6 @@ segment.10.Cello.Music.Voice = {
     %! baca.OverrideCommand._call(2)
     %! baca.time_signature_stencil_false()
     \revert Score.TimeSignature.stencil
-    %! baca.IndicatorCommand._call()
-    %! baca.literal()
-    \once \override Score.RehearsalMark.direction = #down
-    %! baca.IndicatorCommand._call()
-    %! baca.literal()
-    \once \override Score.RehearsalMark.padding = 4
-    %! baca.IndicatorCommand._call()
-    %! baca.literal()
-    \mark \huitzil-colophon-markup
 
 %! huitzil.make_empty_score()
 %! baca.path.extern()
