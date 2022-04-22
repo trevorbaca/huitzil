@@ -1,275 +1,385 @@
 %! baca.path.extern()
 segment.01.Global.Rests = {
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 1]
     %! baca._make_global_rests(1)
     R1 * 7/8
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 2]
     %! baca._make_global_rests(1)
     R1 * 15/16
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 3]
     %! baca._make_global_rests(1)
     R1 * 11/16
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 4]
     %! baca._make_global_rests(1)
     R1 * 7/8
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 5]
     %! baca._make_global_rests(1)
     R1 * 15/16
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 6]
     %! baca._make_global_rests(1)
     R1 * 15/16
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 7]
     %! baca._make_global_rests(1)
     R1 * 3/8
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 8]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 9]
     %! baca._make_global_rests(1)
     R1 * 3/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 10]
     %! baca._make_global_rests(1)
     R1 * 7/8
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 11]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 12]
     %! baca._make_global_rests(1)
     R1 * 3/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 13]
     %! baca._make_global_rests(1)
     R1 * 3/2
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 14]
     %! baca._make_global_rests(1)
     R1 * 5/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 15]
     %! baca._make_global_rests(1)
     R1 * 1/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 16]
     %! baca._make_global_rests(1)
     R1 * 2
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 17]
     %! baca._make_global_rests(1)
     R1 * 9/8
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 18]
     %! baca._make_global_rests(1)
     R1 * 7/8
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 19]
     %! baca._make_global_rests(1)
     R1 * 3/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 20]
     %! baca._make_global_rests(1)
     R1 * 5/8
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 21]
     %! baca._make_global_rests(1)
     R1 * 7/8
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 22]
     %! baca._make_global_rests(1)
     R1 * 1/2
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 23]
     %! baca._make_global_rests(1)
     R1 * 5/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 24]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 25]
     %! baca._make_global_rests(1)
     R1 * 1/2
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 26]
     %! baca._make_global_rests(1)
     R1 * 5/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 27]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 28]
     %! baca._make_global_rests(1)
     R1 * 1/2
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 29]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 30]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 31]
     %! baca._make_global_rests(1)
     R1 * 3/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 32]
     %! baca._make_global_rests(1)
     R1 * 3/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 33]
     %! baca._make_global_rests(1)
     R1 * 1/2
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 34]
     %! baca._make_global_rests(1)
     R1 * 5/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 35]
     %! baca._make_global_rests(1)
     R1 * 13/16
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 36]
     %! baca._make_global_rests(1)
     R1 * 5/8
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 37]
     %! baca._make_global_rests(1)
     R1 * 5/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 38]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 39]
     %! baca._make_global_rests(1)
     R1 * 5/16
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 40]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 41]
     %! baca._make_global_rests(1)
     R1 * 9/16
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 42]
     %! baca._make_global_rests(1)
     R1 * 3/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 43]
     %! baca._make_global_rests(1)
     R1 * 7/8
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 44]
     %! baca._make_global_rests(1)
     R1 * 3/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 45]
     %! baca._make_global_rests(1)
     R1 * 7/8
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 46]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 47]
     %! baca._make_global_rests(1)
     R1 * 1/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 48]
     %! baca._make_global_rests(1)
     R1 * 3/2
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 49]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 50]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 51]
     %! baca._make_global_rests(1)
     R1 * 9/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 52]
     %! baca._make_global_rests(1)
     R1 * 3/2
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 53]
     %! baca._make_global_rests(1)
     R1 * 1
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Rests measure 54]
     %! baca._make_global_rests(1)
     R1 * 3/4
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! PHANTOM
     %! baca._comment_measure_numbers()
@@ -278,7 +388,10 @@ segment.01.Global.Rests = {
     %! PHANTOM
     %! baca._make_global_rests(2)
     R1 * 1/4
+    % CLOSING:
+    % COMMANDS:
 
+% CLOSE_BRACKETS:
 %! baca.make_global_context()
 %! baca.path.extern()
 }
@@ -286,9 +399,13 @@ segment.01.Global.Rests = {
 
 %! baca.path.extern()
 segment.01.Global.Skips = {
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 1]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -298,6 +415,8 @@ segment.01.Global.Skips = {
     \time 7/8
     %! baca._make_global_skips(1)
     s1 * 7/8
+    % AFTER:
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "1"
@@ -337,9 +456,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 2]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -349,6 +472,8 @@ segment.01.Global.Skips = {
     \time 15/16
     %! baca._make_global_skips(1)
     s1 * 15/16
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -358,6 +483,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "2"
@@ -376,9 +502,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 3]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -388,6 +518,8 @@ segment.01.Global.Skips = {
     \time 11/16
     %! baca._make_global_skips(1)
     s1 * 11/16
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -397,6 +529,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "3"
@@ -415,9 +548,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 4]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -427,6 +564,8 @@ segment.01.Global.Skips = {
     \time 7/8
     %! baca._make_global_skips(1)
     s1 * 7/8
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -436,6 +575,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "4"
@@ -454,9 +594,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 5]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -466,6 +610,8 @@ segment.01.Global.Skips = {
     \time 15/16
     %! baca._make_global_skips(1)
     s1 * 15/16
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -475,6 +621,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "5"
@@ -493,11 +640,15 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 6]
     %! baca._make_global_skips(1)
     s1 * 15/16
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -507,6 +658,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "6"
@@ -525,9 +677,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 7]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -537,6 +693,8 @@ segment.01.Global.Skips = {
     \time 3/8
     %! baca._make_global_skips(1)
     s1 * 3/8
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -546,6 +704,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "7"
@@ -564,9 +723,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 8]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -576,6 +739,8 @@ segment.01.Global.Skips = {
     \time 4/4
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -585,6 +750,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "8"
@@ -603,9 +769,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 9]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -615,6 +785,8 @@ segment.01.Global.Skips = {
     \time 3/4
     %! baca._make_global_skips(1)
     s1 * 3/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -624,6 +796,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "9"
@@ -642,9 +815,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 10]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -654,6 +831,8 @@ segment.01.Global.Skips = {
     \time 7/8
     %! baca._make_global_skips(1)
     s1 * 7/8
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -663,6 +842,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "10"
@@ -681,9 +861,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 11]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -693,6 +877,8 @@ segment.01.Global.Skips = {
     \time 4/4
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -702,6 +888,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "11"
@@ -720,9 +907,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 12]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -732,6 +923,8 @@ segment.01.Global.Skips = {
     \time 3/4
     %! baca._make_global_skips(1)
     s1 * 3/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -741,6 +934,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "12"
@@ -759,9 +953,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 13]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -771,6 +969,8 @@ segment.01.Global.Skips = {
     \time 6/4
     %! baca._make_global_skips(1)
     s1 * 3/2
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -780,6 +980,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "13"
@@ -798,9 +999,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 14]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -810,6 +1015,8 @@ segment.01.Global.Skips = {
     \time 5/4
     %! baca._make_global_skips(1)
     s1 * 5/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -819,6 +1026,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "14"
@@ -837,9 +1045,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 15]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -849,6 +1061,8 @@ segment.01.Global.Skips = {
     \time 1/4
     %! baca._make_global_skips(1)
     s1 * 1/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -858,6 +1072,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "15"
@@ -876,9 +1091,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 16]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -888,6 +1107,8 @@ segment.01.Global.Skips = {
     \time 8/4
     %! baca._make_global_skips(1)
     s1 * 2
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -897,6 +1118,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "16"
@@ -915,9 +1137,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 17]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -927,6 +1153,8 @@ segment.01.Global.Skips = {
     \time 9/8
     %! baca._make_global_skips(1)
     s1 * 9/8
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -936,6 +1164,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "17"
@@ -954,9 +1183,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 18]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -966,6 +1199,8 @@ segment.01.Global.Skips = {
     \time 7/8
     %! baca._make_global_skips(1)
     s1 * 7/8
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -975,6 +1210,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "18"
@@ -993,9 +1229,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 19]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1005,6 +1245,8 @@ segment.01.Global.Skips = {
     \time 3/4
     %! baca._make_global_skips(1)
     s1 * 3/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1014,6 +1256,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "19"
@@ -1032,9 +1275,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 20]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1044,6 +1291,8 @@ segment.01.Global.Skips = {
     \time 5/8
     %! baca._make_global_skips(1)
     s1 * 5/8
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1053,6 +1302,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "20"
@@ -1071,9 +1321,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 21]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1083,6 +1337,8 @@ segment.01.Global.Skips = {
     \time 7/8
     %! baca._make_global_skips(1)
     s1 * 7/8
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1092,6 +1348,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "21"
@@ -1110,9 +1367,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 22]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1122,6 +1383,8 @@ segment.01.Global.Skips = {
     \time 2/4
     %! baca._make_global_skips(1)
     s1 * 1/2
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1131,6 +1394,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "22"
@@ -1149,9 +1413,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 23]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1161,6 +1429,8 @@ segment.01.Global.Skips = {
     \time 5/4
     %! baca._make_global_skips(1)
     s1 * 5/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1170,6 +1440,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "23"
@@ -1188,9 +1459,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 24]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1200,6 +1475,8 @@ segment.01.Global.Skips = {
     \time 4/4
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1209,6 +1486,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "24"
@@ -1227,9 +1505,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 25]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1239,6 +1521,8 @@ segment.01.Global.Skips = {
     \time 2/4
     %! baca._make_global_skips(1)
     s1 * 1/2
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1248,6 +1532,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "25"
@@ -1266,9 +1551,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 26]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1278,6 +1567,8 @@ segment.01.Global.Skips = {
     \time 5/4
     %! baca._make_global_skips(1)
     s1 * 5/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1287,6 +1578,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "26"
@@ -1305,9 +1597,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 27]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1317,6 +1613,8 @@ segment.01.Global.Skips = {
     \time 4/4
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1326,6 +1624,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "27"
@@ -1344,9 +1643,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 28]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1356,6 +1659,8 @@ segment.01.Global.Skips = {
     \time 2/4
     %! baca._make_global_skips(1)
     s1 * 1/2
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1365,6 +1670,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "28"
@@ -1383,9 +1689,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 29]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1395,6 +1705,8 @@ segment.01.Global.Skips = {
     \time 4/4
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1404,6 +1716,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "29"
@@ -1422,11 +1735,15 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 30]
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1436,6 +1753,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "30"
@@ -1454,9 +1772,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 31]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1466,6 +1788,8 @@ segment.01.Global.Skips = {
     \time 3/4
     %! baca._make_global_skips(1)
     s1 * 3/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1475,6 +1799,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "31"
@@ -1493,11 +1818,15 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 32]
     %! baca._make_global_skips(1)
     s1 * 3/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1507,6 +1836,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "32"
@@ -1525,9 +1855,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 33]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1537,6 +1871,8 @@ segment.01.Global.Skips = {
     \time 2/4
     %! baca._make_global_skips(1)
     s1 * 1/2
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1546,6 +1882,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "33"
@@ -1564,9 +1901,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 34]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1576,6 +1917,8 @@ segment.01.Global.Skips = {
     \time 5/4
     %! baca._make_global_skips(1)
     s1 * 5/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1585,6 +1928,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "34"
@@ -1603,9 +1947,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 35]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1615,6 +1963,8 @@ segment.01.Global.Skips = {
     \time 13/16
     %! baca._make_global_skips(1)
     s1 * 13/16
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1624,6 +1974,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "35"
@@ -1642,9 +1993,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 36]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1654,6 +2009,8 @@ segment.01.Global.Skips = {
     \time 5/8
     %! baca._make_global_skips(1)
     s1 * 5/8
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1663,6 +2020,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "36"
@@ -1681,9 +2039,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 37]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1693,6 +2055,8 @@ segment.01.Global.Skips = {
     \time 5/4
     %! baca._make_global_skips(1)
     s1 * 5/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1702,6 +2066,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "37"
@@ -1720,9 +2085,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 38]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1732,6 +2101,8 @@ segment.01.Global.Skips = {
     \time 4/4
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1741,6 +2112,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "38"
@@ -1759,9 +2131,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 39]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1771,6 +2147,8 @@ segment.01.Global.Skips = {
     \time 5/16
     %! baca._make_global_skips(1)
     s1 * 5/16
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1780,6 +2158,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "39"
@@ -1798,9 +2177,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 40]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1810,6 +2193,8 @@ segment.01.Global.Skips = {
     \time 4/4
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1819,6 +2204,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "40"
@@ -1837,9 +2223,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 41]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1849,6 +2239,8 @@ segment.01.Global.Skips = {
     \time 9/16
     %! baca._make_global_skips(1)
     s1 * 9/16
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1858,6 +2250,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "41"
@@ -1876,9 +2269,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 42]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1888,6 +2285,8 @@ segment.01.Global.Skips = {
     \time 3/4
     %! baca._make_global_skips(1)
     s1 * 3/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1897,6 +2296,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "42"
@@ -1915,9 +2315,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 43]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1927,6 +2331,8 @@ segment.01.Global.Skips = {
     \time 7/8
     %! baca._make_global_skips(1)
     s1 * 7/8
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1936,6 +2342,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "43"
@@ -1954,9 +2361,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 44]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1966,6 +2377,8 @@ segment.01.Global.Skips = {
     \time 3/4
     %! baca._make_global_skips(1)
     s1 * 3/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -1975,6 +2388,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "44"
@@ -1993,9 +2407,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 45]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -2005,6 +2423,8 @@ segment.01.Global.Skips = {
     \time 7/8
     %! baca._make_global_skips(1)
     s1 * 7/8
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -2014,6 +2434,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "45"
@@ -2032,9 +2453,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 46]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -2044,6 +2469,8 @@ segment.01.Global.Skips = {
     \time 4/4
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -2053,6 +2480,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "46"
@@ -2071,9 +2499,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 47]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -2083,6 +2515,8 @@ segment.01.Global.Skips = {
     \time 1/4
     %! baca._make_global_skips(1)
     s1 * 1/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -2092,6 +2526,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "47"
@@ -2110,9 +2545,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 48]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -2122,6 +2561,8 @@ segment.01.Global.Skips = {
     \time 6/4
     %! baca._make_global_skips(1)
     s1 * 3/2
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -2131,6 +2572,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "48"
@@ -2149,9 +2591,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 49]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -2161,6 +2607,8 @@ segment.01.Global.Skips = {
     \time 4/4
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -2170,6 +2618,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "49"
@@ -2188,11 +2637,15 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 50]
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -2202,6 +2655,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "50"
@@ -2220,9 +2674,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 51]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -2232,6 +2690,8 @@ segment.01.Global.Skips = {
     \time 9/4
     %! baca._make_global_skips(1)
     s1 * 9/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -2241,6 +2701,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "51"
@@ -2259,9 +2720,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 52]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -2271,6 +2736,8 @@ segment.01.Global.Skips = {
     \time 6/4
     %! baca._make_global_skips(1)
     s1 * 3/2
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -2280,6 +2747,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "52"
@@ -2298,9 +2766,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 53]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -2310,6 +2782,8 @@ segment.01.Global.Skips = {
     \time 4/4
     %! baca._make_global_skips(1)
     s1 * 1
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -2319,6 +2793,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "53"
@@ -2337,9 +2812,13 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 54]
+    % OPENING:
+    % COMMANDS:
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -2349,6 +2828,8 @@ segment.01.Global.Skips = {
     \time 3/4
     %! baca._make_global_skips(1)
     s1 * 3/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
@@ -2358,6 +2839,7 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStopTextSpanCT
+    % SPANNER_STARTS:
     %! LOCAL_MEASURE_NUMBER
     %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "54"
@@ -2376,11 +2858,15 @@ segment.01.Global.Skips = {
     %! CLOCK_TIME
     %! baca._label_clock_time()
     \bacaStartTextSpanCT
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! PHANTOM
     %! baca._comment_measure_numbers()
     %! baca._style_phantom_measures(1)
     % [Global_Skips measure 55]
+    % OPENING:
+    % COMMANDS:
     %! PHANTOM
     %! baca._style_phantom_measures(2)
     \baca-time-signature-transparent
@@ -2393,6 +2879,8 @@ segment.01.Global.Skips = {
     %! PHANTOM
     %! baca._make_global_skips(3)
     s1 * 1/4
+    % AFTER:
+    % SPANNER_STOPS:
     %! LOCAL_MEASURE_NUMBER
     %! PHANTOM
     %! baca._label_measure_numbers()
@@ -2413,13 +2901,17 @@ segment.01.Global.Skips = {
     %! baca._label_clock_time()
     %! baca._style_phantom_measures(1)
     \bacaStopTextSpanCT
+    % COMMANDS:
     %! PHANTOM
     %! baca._style_phantom_measures(3)
     \once \override Score.BarLine.transparent = ##t
     %! PHANTOM
     %! baca._style_phantom_measures(3)
     \once \override Score.SpanBar.transparent = ##t
+    % CLOSING:
+    % COMMANDS:
 
+% CLOSE_BRACKETS:
 %! baca.make_global_context()
 %! baca.path.extern()
 }
@@ -2427,17 +2919,27 @@ segment.01.Global.Skips = {
 
 %! baca.path.extern()
 segment.01.RH.Music.Voice = {
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca._make_multimeasure_rest_container(7)
     <<
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % OPEN_BRACKETS:
         %! baca._make_multimeasure_rest_container(4)
         \context Voice = "RH_Music_Voice"
         %! baca._make_multimeasure_rest_container(4)
         {
+            % ABSOLUTE_BEFORE:
+            % COMMANDS:
 
             %! baca._comment_measure_numbers()
             % [RH_Music_Voice measure 1]
+            % BEFORE:
+            % COMMANDS:
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
@@ -2449,6 +2951,8 @@ segment.01.RH.Music.Voice = {
             %! baca.IndicatorCommand._call()
             %! baca.literal()
             \stopStaff
+            % OPENING:
+            % COMMANDS:
             %! DEFAULT_CLEF
             %! baca._attach_default_indicators(3)
             %! baca._set_status_tag()
@@ -2468,6 +2972,8 @@ segment.01.RH.Music.Voice = {
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
             c'1 * 7/8
+            % AFTER:
+            % MARKUP:
             %! DEFAULT_INSTRUMENT_ALERT
             %! baca._attach_latent_indicator_alert()
             %@% ^ \baca-default-indicator-markup "(“Cello”)"
@@ -2476,17 +2982,27 @@ segment.01.RH.Music.Voice = {
             %! NOTE
             %! baca._label_duration_multipliers()
             %@% ^ \baca-duration-multiplier-markup #"7" #"8"
+            % ABSOLUTE_AFTER:
+            % COMMANDS:
             %! DEFAULT_CLEF_REDRAW_COLOR
             %! baca._attach_color_literal(2)
             \override RHStaff.Clef.color = #(x11-color 'violet)
+            % CLOSING:
+            % COMMANDS:
 
+        % CLOSE_BRACKETS:
         %! baca._make_multimeasure_rest_container(4)
         }
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % OPEN_BRACKETS:
         %! baca._make_multimeasure_rest_container(6)
         \context Voice = "RH_Rest_Voice"
         %! baca._make_multimeasure_rest_container(6)
         {
+            % ABSOLUTE_BEFORE:
+            % COMMANDS:
 
             %! baca._comment_measure_numbers()
             % [RH_Rest_Voice measure 1]
@@ -2494,463 +3010,696 @@ segment.01.RH.Music.Voice = {
             %! REST_VOICE
             %! baca._make_multimeasure_rest_container(5)
             R1 * 7/8
+            % AFTER:
+            % MARKUP:
             %! DURATION_MULTIPLIER
             %! MULTIMEASURE_REST
             %! REST_VOICE
             %! baca._label_duration_multipliers()
             %@% ^ \baca-duration-multiplier-markup #"7" #"8"
+            % CLOSING:
+            % COMMANDS:
 
+        % CLOSE_BRACKETS:
         %! baca._make_multimeasure_rest_container(6)
         }
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca._make_multimeasure_rest_container(7)
     >>
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 2]
+    % BEFORE:
+    % COMMANDS:
     %! baca.OverrideCommand._call(1)
     %! baca.mmrest_transparent()
     \override MultiMeasureRest.transparent = ##t
     %! baca._make_measure_silences()
     R1 * 15/16
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"15" #"16"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 3]
     %! baca._make_measure_silences()
     R1 * 11/16
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"11" #"16"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 4]
     %! baca._make_measure_silences()
     R1 * 7/8
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 5]
     %! baca._make_measure_silences()
     R1 * 15/16
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"15" #"16"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 6]
     %! baca._make_measure_silences()
     R1 * 15/16
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"15" #"16"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 7]
     %! baca._make_measure_silences()
     R1 * 3/8
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"8"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 8]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 9]
     %! baca._make_measure_silences()
     R1 * 3/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 10]
     %! baca._make_measure_silences()
     R1 * 7/8
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 11]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 12]
     %! baca._make_measure_silences()
     R1 * 3/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 13]
     %! baca._make_measure_silences()
     R1 * 3/2
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 14]
     %! baca._make_measure_silences()
     R1 * 5/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 15]
     %! baca._make_measure_silences()
     R1 * 1/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 16]
     %! baca._make_measure_silences()
     R1 * 2
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"2" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 17]
     %! baca._make_measure_silences()
     R1 * 9/8
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 18]
     %! baca._make_measure_silences()
     R1 * 7/8
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 19]
     %! baca._make_measure_silences()
     R1 * 3/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 20]
     %! baca._make_measure_silences()
     R1 * 5/8
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 21]
     %! baca._make_measure_silences()
     R1 * 7/8
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 22]
     %! baca._make_measure_silences()
     R1 * 1/2
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 23]
     %! baca._make_measure_silences()
     R1 * 5/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 24]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 25]
     %! baca._make_measure_silences()
     R1 * 1/2
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 26]
     %! baca._make_measure_silences()
     R1 * 5/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 27]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 28]
     %! baca._make_measure_silences()
     R1 * 1/2
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 29]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 30]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 31]
     %! baca._make_measure_silences()
     R1 * 3/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 32]
     %! baca._make_measure_silences()
     R1 * 3/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 33]
     %! baca._make_measure_silences()
     R1 * 1/2
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 34]
     %! baca._make_measure_silences()
     R1 * 5/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 35]
     %! baca._make_measure_silences()
     R1 * 13/16
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"13" #"16"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 36]
     %! baca._make_measure_silences()
     R1 * 5/8
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"8"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 37]
     %! baca._make_measure_silences()
     R1 * 5/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 38]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 39]
     %! baca._make_measure_silences()
     R1 * 5/16
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"16"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 40]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 41]
     %! baca._make_measure_silences()
     R1 * 9/16
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"16"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 42]
     %! baca._make_measure_silences()
     R1 * 3/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 43]
     %! baca._make_measure_silences()
     R1 * 7/8
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 44]
     %! baca._make_measure_silences()
     R1 * 3/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 45]
     %! baca._make_measure_silences()
     R1 * 7/8
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 46]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 47]
     %! baca._make_measure_silences()
     R1 * 1/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 48]
     %! baca._make_measure_silences()
     R1 * 3/2
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 49]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 50]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 51]
     %! baca._make_measure_silences()
     R1 * 9/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"4"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 52]
     %! baca._make_measure_silences()
     R1 * 3/2
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 53]
     %! baca._make_measure_silences()
     R1 * 1
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
     %! baca._comment_measure_numbers()
     % [RH_Music_Voice measure 54]
     %! baca._make_measure_silences()
     R1 * 3/4
+    % AFTER:
+    % MARKUP:
     %! DURATION_MULTIPLIER
     %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
+    % COMMANDS:
     %! baca.OverrideCommand._call(2)
     %! baca.mmrest_transparent()
     \revert MultiMeasureRest.transparent
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! PHANTOM
     %! baca._make_multimeasure_rest_container(7)
     <<
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % OPEN_BRACKETS:
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(4)
         \context Voice = "RH_Music_Voice"
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(4)
         {
+            % ABSOLUTE_BEFORE:
+            % COMMANDS:
 
             %! PHANTOM
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Music_Voice measure 55]
+            % BEFORE:
+            % COMMANDS:
             %! INVISIBLE_MUSIC_COMMAND
             %! MULTIMEASURE_REST
             %! PHANTOM
@@ -2968,6 +3717,8 @@ segment.01.RH.Music.Voice = {
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(1)
             R1 * 1/4
+            % AFTER:
+            % MARKUP:
             %! DURATION_MULTIPLIER
             %! HIDDEN
             %! MULTIMEASURE_REST
@@ -2975,22 +3726,32 @@ segment.01.RH.Music.Voice = {
             %! baca._label_duration_multipliers()
             %! baca._style_phantom_measures(5)
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
+            % CLOSING:
+            % COMMANDS:
 
+        % CLOSE_BRACKETS:
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(4)
         }
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % OPEN_BRACKETS:
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(6)
         \context Voice = "RH_Rest_Voice"
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(6)
         {
+            % ABSOLUTE_BEFORE:
+            % COMMANDS:
 
             %! PHANTOM
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Rest_Voice measure 55]
+            % OPENING:
+            % COMMANDS:
             %! PHANTOM
             %! baca._style_phantom_measures(7)
             \once \override MultiMeasureRest.transparent = ##t
@@ -3011,6 +3772,8 @@ segment.01.RH.Music.Voice = {
             %! REST_VOICE
             %! baca._make_multimeasure_rest_container(5)
             R1 * 1/4
+            % AFTER:
+            % MARKUP:
             %! DURATION_MULTIPLIER
             %! MULTIMEASURE_REST
             %! PHANTOM
@@ -3018,15 +3781,24 @@ segment.01.RH.Music.Voice = {
             %! baca._label_duration_multipliers()
             %! baca._style_phantom_measures(5)
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
+            % CLOSING:
+            % COMMANDS:
 
+        % CLOSE_BRACKETS:
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(6)
         }
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! PHANTOM
     %! baca._make_multimeasure_rest_container(7)
     >>
+    % CLOSING:
+    % COMMANDS:
 
+% CLOSE_BRACKETS:
 %! huitzil.make_empty_score()
 %! baca.path.extern()
 }
@@ -3034,13 +3806,19 @@ segment.01.RH.Music.Voice = {
 
 %! baca.path.extern()
 segment.01.RH.Music.Staff = {
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! huitzil.make_empty_score()
     \context Voice = "RH_Music_Voice"
     %! huitzil.make_empty_score()
     %! baca.path.extern()
     { \segment.01.RH.Music.Voice }
+    % CLOSING:
+    % COMMANDS:
 
+% CLOSE_BRACKETS:
 %! huitzil.make_empty_score()
 %! baca.path.extern()
 }
@@ -3048,19 +3826,28 @@ segment.01.RH.Music.Staff = {
 
 %! baca.path.extern()
 segment.01.Cello.Music.Voice = {
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/5
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 1]
+        % BEFORE:
+        % COMMANDS:
         %! baca.OverrideCommand._call(1)
         %! baca.tuplet_bracket_staff_padding()
         \override TupletBracket.staff-padding = 3
+        % OPENING:
+        % COMMANDS:
         %! DEFAULT_CLEF
         %! baca._attach_default_indicators(3)
         %! baca._set_status_tag()
@@ -3078,357 +3865,624 @@ segment.01.Cello.Music.Voice = {
         \set Staff.forceClef = ##t
         %! baca.music()
         fs!8
+        % AFTER:
+        % MARKUP:
         %! baca.IndicatorCommand._call()
         %! baca.markup()
         - \tweak staff-padding 9
         %! baca.IndicatorCommand._call()
         %! baca.markup()
         _ \huitzil-phrasing-dynamics-see-preface-markup
+        % START_BEAM:
         [
+        % ABSOLUTE_AFTER:
+        % COMMANDS:
         %! DEFAULT_CLEF_REDRAW_COLOR
         %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'violet)
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         g8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         af!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         a,8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         ef!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         d16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         cs!16
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 9/16
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 2]
         %! baca.music()
         bf,!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         a,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         b,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         c4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/5
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f,8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         a,8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         ef!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         d8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 3]
         %! baca.music()
         c8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         cs!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         bf,!16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         a,16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         b,16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 4/5
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         af,!16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         fs,!16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f,16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         g,16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 7/8
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 4]
         %! baca.music()
         b,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         c4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 2/3
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         cs!8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         bf,!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         a,8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         g8.
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 5]
         %! baca.music()
         af!16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         fs!16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 4/5
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         a,16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         ef!16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         d16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 7/8
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         g,4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 2/3
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 6]
         %! baca.music()
         af,!8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         fs,!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/4
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         cs!8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         d8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 2/3
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         b,8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         bf,!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3439,70 +4493,122 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         c2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 7]
         %! baca.music()
         a,16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         g16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         fs!16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         af!16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         c32
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         cs!32
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 33/36
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 8]
         %! baca.music()
         d8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         b,8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3513,15 +4619,25 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         bf,!2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3532,14 +4648,21 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         af,!4
+        % AFTER:
+        % SPANNER_STARTS:
         %! baca._attach_shadow_tie_indicators()
         - \tweak stencil ##f
         %! baca._attach_shadow_tie_indicators()
         ~
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % COMMANDS:
         %! baca.OverrideCommand._call(1)
         %! baca.repeat_tie_extra_offset()
         \once \override RepeatTie.extra-offset = #'(-1.5 . 0)
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3550,92 +4673,158 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         af,16
+        % AFTER:
+        % SPANNER_STARTS:
         %! baca.IndicatorCommand._call()
         %! baca.repeat_tie()
         \repeatTie
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/4
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 9]
         %! baca.music()
         a,8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         g,8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f,8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         fs,!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f,16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         fs,!16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         bf,!16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         ef!16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         fs,!32
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         af,!32
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 7/9
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 10]
         %! baca.music()
         a,8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3646,7 +4835,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         g,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3657,46 +4850,76 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         f,2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/5
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 11]
         %! baca.music()
         ef!8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         fs!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         bf,!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 15/24
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3707,7 +4930,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         bf,!2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3718,47 +4945,81 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         c2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 12]
         %! baca.music()
         cs!16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         d16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         b,16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e16
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3769,19 +5030,29 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         ef,!2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/4
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 13]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3792,7 +5063,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         d2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3803,7 +5078,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         e,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3814,7 +5093,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         fs,!2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3825,17 +5108,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         f,2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 14]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3846,7 +5139,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         fs,!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3857,7 +5154,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         f,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3868,7 +5169,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         cs!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3879,7 +5184,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         g,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3890,17 +5199,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         af,!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 15]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3911,8 +5230,14 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         f,8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3923,18 +5248,30 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         ef,!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 2/3
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 16]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3945,7 +5282,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         d1
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3956,7 +5297,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         e,1
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3967,19 +5312,29 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         fs,!1
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 9/14
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 17]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -3990,7 +5345,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         f,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4001,7 +5360,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         g4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4012,7 +5375,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         af!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4023,7 +5390,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         c'4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -4034,19 +5405,29 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         fs,!2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 7/12
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 18]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -4057,7 +5438,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         c1
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4068,17 +5453,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         d'2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 19]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4089,7 +5484,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         ef!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -4100,7 +5499,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         e,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -4111,15 +5514,25 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         cs!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4130,23 +5543,35 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         fs!8
+        % AFTER:
+        % SPANNER_STARTS:
         %! baca._attach_shadow_tie_indicators()
         - \tweak stencil ##f
         %! baca._attach_shadow_tie_indicators()
         ~
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 15/24
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 20]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4157,10 +5582,16 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         fs4
+        % AFTER:
+        % SPANNER_STARTS:
         %! baca.IndicatorCommand._call()
         %! baca.repeat_tie()
         \repeatTie
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4171,7 +5602,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         af!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4182,7 +5617,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         a4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4193,19 +5632,29 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         cs!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 7/10
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 21]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4216,7 +5665,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         d4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4227,7 +5680,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         cs!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4238,7 +5695,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         ef!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4249,7 +5710,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         e4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4260,17 +5725,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         f4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 22]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4281,8 +5756,14 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         af!8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4293,16 +5774,28 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         a8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 2/3
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4313,8 +5806,14 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         b8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4325,7 +5824,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         c'8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4336,18 +5839,30 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         bf!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 23]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4358,7 +5873,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         f4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4369,7 +5888,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         d'4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4380,7 +5903,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         cs'!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4391,7 +5918,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         ef!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4402,19 +5933,29 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         e4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/4
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 24]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4425,7 +5966,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         bf!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4436,17 +5981,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         af!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 15/18
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4457,7 +6012,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         a4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4468,7 +6027,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         b,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4479,17 +6042,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         c4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 25]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4500,17 +6073,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         cs!8
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/4
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4521,8 +6104,14 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         g8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4533,7 +6122,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         fs!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4544,7 +6137,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         af!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4555,18 +6152,30 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         a8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 26]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4577,7 +6186,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         c4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4588,7 +6201,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         bf!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4599,7 +6216,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         af!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4610,7 +6231,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         a4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4621,31 +6246,53 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         b4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 2/3
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 27]
         %! baca.music()
         fs!8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         a,8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         bf,!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         af!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4656,15 +6303,25 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         g4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4675,7 +6332,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         cs'!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4686,17 +6347,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         ef!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 28]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4707,8 +6378,14 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         d'8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4719,7 +6396,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         c'8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4730,16 +6411,28 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         b8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4750,17 +6443,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         bf!8
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 2/3
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 29]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4771,7 +6474,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         e2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4782,37 +6489,63 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         f2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         ef!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         d4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 2/3
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 30]
         %! baca.music()
         b,8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         cs!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         ef!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         d8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4823,15 +6556,25 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         c4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4842,7 +6585,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         d'4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4853,17 +6600,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         bf!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 31]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4874,8 +6631,14 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         e8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4886,7 +6649,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         f8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4897,18 +6664,30 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         ef!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/4
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4919,7 +6698,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         b,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4930,19 +6713,29 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         ef!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/4
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 32]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -4953,7 +6746,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         a,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4964,7 +6761,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         af!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -4975,31 +6776,53 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         bf!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 33]
         %! baca.music()
         fs,!16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         g,16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         ef!16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5010,15 +6833,25 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         f8
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5029,8 +6862,14 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         bf!16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5041,18 +6880,30 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         b16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 34]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5063,7 +6914,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         ef!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5074,7 +6929,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         a,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5085,17 +6944,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         af,!2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 35]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5106,28 +6975,48 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         f4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 9/10
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         fs!8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         g8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5138,17 +7027,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         ef!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 36]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5159,8 +7058,14 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         cs!8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5171,7 +7076,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         d8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5182,42 +7091,76 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         c8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         bf,!16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         b,16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         ef!16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f,16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 37]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5228,7 +7171,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         fs,!2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5239,7 +7186,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         g,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5250,17 +7201,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         e4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 2/3
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 38]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5271,29 +7232,51 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         b4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         cs!8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         d8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         c8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         bf,!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5304,7 +7287,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         af!4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5315,36 +7302,62 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         bf!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 39]
         %! baca.music()
         b,16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         ef!16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         a,16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5355,17 +7368,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         bf,!8
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 2/3
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 40]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5376,7 +7399,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         b,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5387,36 +7414,60 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         cs!2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         d4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         c4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 9/14
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 41]
         %! baca.music()
         a,8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         af,!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         bf,!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5427,7 +7478,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         b,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5438,19 +7493,29 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         ef!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/4
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 42]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5461,7 +7526,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         e,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5472,17 +7541,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         ef,!2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 43]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5493,8 +7572,14 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         f8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5505,7 +7590,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         fs!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #red
         \once \override Beam.color = #red
         \once \override Dots.color = #red
@@ -5516,53 +7605,91 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #red
         %! baca.music()
         g8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         fs!8
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/4
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         g8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         af!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 44]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5573,32 +7700,56 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         d4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         ef!16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         cs!16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         b,16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         c16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \times 4/5
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5609,19 +7760,29 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         fs,!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 7/9
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 45]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5632,7 +7793,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         g,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5643,36 +7808,60 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         af,!2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         f8
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 9/16
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 46]
         %! baca.music()
         c8
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         d8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         ef!8
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         cs!8
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5683,17 +7872,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         b,2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 7/10
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5704,58 +7903,96 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         a,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         b,8
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 47]
         %! baca.music()
         c16
+        % AFTER:
+        % START_BEAM:
         [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         e16
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         bf,!16
+        % AFTER:
+        % STOP_BEAM:
         ]
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca.music()
         b,16
+        % AFTER:
+        % SPANNER_STARTS:
         %! baca._attach_shadow_tie_indicators()
         - \tweak stencil ##f
         %! baca._attach_shadow_tie_indicators()
         ~
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/5
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 48]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5766,10 +8003,16 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         b,2
+        % AFTER:
+        % SPANNER_STARTS:
         %! baca.IndicatorCommand._call()
         %! baca.repeat_tie()
         \repeatTie
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5780,7 +8023,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         a,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5791,7 +8038,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         af,!2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5802,7 +8053,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         bf,!2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5813,17 +8068,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         c2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 49]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5834,7 +8099,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         d,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5845,17 +8114,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         c,2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 50]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5866,7 +8145,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         b,,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5877,7 +8160,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         g,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5888,15 +8175,25 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         cs,!4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5907,19 +8204,29 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         c4
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 9/16
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 51]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5930,7 +8237,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         b,1
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5941,7 +8252,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         a,1
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5952,7 +8267,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         af,!1
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5963,25 +8282,38 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         bf,!1
+        % AFTER:
+        % COMMANDS:
         %! baca.OverrideCommand._call(2)
         %! baca.tuplet_bracket_staff_padding()
         \revert TupletBracket.staff-padding
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \tweak text #tuplet-number::calc-fraction-text
     %! baca.music()
     \times 3/5
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 52]
+        % BEFORE:
+        % COMMANDS:
         %! baca.OverrideCommand._call(1)
         %! baca.tuplet_bracket_staff_padding()
         \override TupletBracket.staff-padding = 4
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -5992,7 +8324,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         cs,!2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -6003,7 +8339,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         d,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -6014,7 +8354,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         c,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -6025,7 +8369,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         b,,2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -6036,17 +8384,27 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         g,2
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 53]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -6057,7 +8415,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         fs,!2
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -6068,20 +8430,32 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         g,2
+        % AFTER:
+        % COMMANDS:
         %! baca.IndicatorCommand._call()
         %! baca.breathe()
         \breathe
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca.music()
     \scaleDurations #'(1 . 1)
     %! baca.music()
     {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
         %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 54]
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -6092,7 +8466,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         f,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -6103,7 +8481,11 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         e,4
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % BEFORE:
+        % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
         \once \override Beam.color = #blue
         \once \override Dots.color = #blue
@@ -6114,6 +8496,8 @@ segment.01.Cello.Music.Voice = {
         \once \override Tie.color = #blue
         %! baca.music()
         ef,!4
+        % AFTER:
+        % COMMANDS:
         %! +SEGMENT
         %! baca.IndicatorCommand._call()
         %! baca.breathe()
@@ -6129,25 +8513,38 @@ segment.01.Cello.Music.Voice = {
         %! baca.IndicatorCommand._call()
         %! baca.breathe()
     %%% \breathe
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca.music()
     }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! PHANTOM
     %! baca._make_multimeasure_rest_container(7)
     <<
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % OPEN_BRACKETS:
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(4)
         \context Voice = "Cello_Music_Voice"
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(4)
         {
+            % ABSOLUTE_BEFORE:
+            % COMMANDS:
 
             %! PHANTOM
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [Cello_Music_Voice measure 55]
+            % BEFORE:
+            % COMMANDS:
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
@@ -6165,6 +8562,8 @@ segment.01.Cello.Music.Voice = {
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(1)
             d1 * 1/4
+            % AFTER:
+            % MARKUP:
             %! DURATION_MULTIPLIER
             %! HIDDEN
             %! NOTE
@@ -6172,22 +8571,32 @@ segment.01.Cello.Music.Voice = {
             %! baca._label_duration_multipliers()
             %! baca._style_phantom_measures(5)
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
+            % CLOSING:
+            % COMMANDS:
 
+        % CLOSE_BRACKETS:
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(4)
         }
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % OPEN_BRACKETS:
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(6)
         \context Voice = "Cello_Rest_Voice"
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(6)
         {
+            % ABSOLUTE_BEFORE:
+            % COMMANDS:
 
             %! PHANTOM
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [Cello_Rest_Voice measure 55]
+            % OPENING:
+            % COMMANDS:
             %! PHANTOM
             %! baca._style_phantom_measures(7)
             \once \override MultiMeasureRest.transparent = ##t
@@ -6208,6 +8617,8 @@ segment.01.Cello.Music.Voice = {
             %! REST_VOICE
             %! baca._make_multimeasure_rest_container(5)
             R1 * 1/4
+            % AFTER:
+            % MARKUP:
             %! DURATION_MULTIPLIER
             %! MULTIMEASURE_REST
             %! PHANTOM
@@ -6215,15 +8626,24 @@ segment.01.Cello.Music.Voice = {
             %! baca._label_duration_multipliers()
             %! baca._style_phantom_measures(5)
             %@% ^ \baca-duration-multiplier-markup #"1" #"4"
+            % CLOSING:
+            % COMMANDS:
 
+        % CLOSE_BRACKETS:
         %! PHANTOM
         %! baca._make_multimeasure_rest_container(6)
         }
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! PHANTOM
     %! baca._make_multimeasure_rest_container(7)
     >>
+    % CLOSING:
+    % COMMANDS:
 
+% CLOSE_BRACKETS:
 %! huitzil.make_empty_score()
 %! baca.path.extern()
 }
@@ -6231,13 +8651,19 @@ segment.01.Cello.Music.Voice = {
 
 %! baca.path.extern()
 segment.01.Cello.Music.Staff = {
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! huitzil.make_empty_score()
     \context Voice = "Cello_Music_Voice"
     %! huitzil.make_empty_score()
     %! baca.path.extern()
     { \segment.01.Cello.Music.Voice }
+    % CLOSING:
+    % COMMANDS:
 
+% CLOSE_BRACKETS:
 %! huitzil.make_empty_score()
 %! baca.path.extern()
 }
