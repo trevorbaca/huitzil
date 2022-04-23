@@ -1368,6 +1368,9 @@ segment.10.Cello.Music.Voice = {
               %! baca.IndicatorCommand._call()
               %! baca.literal()
             \startStaff
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
             % OPENING:
             % COMMANDS:
               %! REAPPLIED_CLEF
