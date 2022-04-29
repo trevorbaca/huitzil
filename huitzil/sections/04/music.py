@@ -62,7 +62,27 @@ commands(
 commands(
     ("vc", (1, 7)),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vc", (8, 13)),
+    baca.skeleton("{ c1 * 107/30 c1 * 1/5 }"),
+)
+
+commands(
+    ("vc", 14),
+    baca.skeleton("{ c2 }"),
+)
+
+commands(
+    ("vc", (15, 22)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", 23),
+    baca.skeleton("{ c1 * 1/2 }"),
+    baca.append_phantom_measure(),
 )
 
 commands(
@@ -72,7 +92,6 @@ commands(
         lambda _: baca.select.pleaf(_, 0),
         allow_rest=True,
     ),
-    baca.skeleton("{ c1 * 107/30 c1 * 1/5 }"),
 )
 
 commands(
@@ -88,7 +107,6 @@ commands(
     baca.note_head_duration_log(2),
     baca.note_head_no_ledgers(True),
     baca.note_head_style("#'do"),
-    baca.skeleton("{ c2 }"),
     baca.staff_position(7),
 )
 
@@ -103,7 +121,6 @@ commands(
         ]
     ),
     baca.pitch("Bb1"),
-    baca.skeleton("{ c1 * 1/2 }"),
 )
 
 commands(
@@ -129,6 +146,15 @@ commands(
 commands(
     ("rh", 1),
     baca.make_monads("1/8  1/8  1/8  1/8"),
+)
+
+commands(
+    "vc",
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("rh", 1),
     baca.reapply_persistent_indicators(),
     baca.markup(
         r"\baca-ffz-markup",
@@ -144,6 +170,91 @@ commands(
 commands(
     ("rh", 2),
     baca.make_monads("1/2"),
+)
+
+commands(
+    ("rh", 3),
+    baca.make_monads("1/3  1/3"),
+)
+
+commands(
+    ("rh", 4),
+    baca.make_monads("1/2"),
+)
+
+commands(
+    ("rh", 5),
+    baca.make_monads("1/5  1/5  1/5  1/5"),
+)
+
+commands(
+    ("rh", 6),
+    baca.make_monads("1/2"),
+)
+
+commands(
+    ("rh", 7),
+    baca.make_monads("1/3  1/3"),
+)
+
+commands(
+    ("rh", 8),
+    baca.make_monads("1/2"),
+)
+
+commands(
+    ("rh", 9),
+    baca.make_monads("1/5  1/5  1/5  1/5"),
+)
+
+commands(
+    ("rh", 10),
+    baca.make_monads("1/2"),
+)
+
+commands(
+    ("rh", 11),
+    baca.make_monads("1/3  1/3"),
+)
+
+commands(
+    ("rh", 12),
+    baca.make_monads("1/2"),
+)
+
+commands(
+    ("rh", 13),
+    baca.make_monads("1/5  1/5  1/5  1/5"),
+)
+
+commands(
+    ("rh", 14),
+    baca.make_monads("1/2"),
+)
+
+commands(
+    ("rh", 15),
+    baca.make_monads("1/3  1/3"),
+)
+
+commands(
+    ("rh", 16),
+    baca.make_monads("1/2"),
+)
+
+commands(
+    ("rh", 17),
+    baca.make_monads("1/5  1/5  1/5  1/5"),
+)
+
+commands(
+    ("rh", (18, 23)),
+    baca.make_monads("1/2  1/2  1/2  1/2  1/2  1/2"),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    ("rh", 2),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
@@ -175,7 +286,6 @@ commands(
 
 commands(
     ("rh", 3),
-    baca.make_monads("1/3  1/3"),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
@@ -194,7 +304,6 @@ commands(
 
 commands(
     ("rh", 4),
-    baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
@@ -207,7 +316,6 @@ commands(
 
 commands(
     ("rh", 5),
-    baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.DOWN,
@@ -236,7 +344,6 @@ commands(
 
 commands(
     ("rh", 6),
-    baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
@@ -249,7 +356,6 @@ commands(
 
 commands(
     ("rh", 7),
-    baca.make_monads("1/3  1/3"),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
@@ -267,7 +373,6 @@ commands(
 
 commands(
     ("rh", 8),
-    baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
@@ -280,7 +385,6 @@ commands(
 
 commands(
     ("rh", 9),
-    baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.DOWN,
@@ -308,7 +412,6 @@ commands(
 
 commands(
     ("rh", 10),
-    baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
@@ -321,7 +424,6 @@ commands(
 
 commands(
     ("rh", 11),
-    baca.make_monads("1/3  1/3"),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
@@ -339,7 +441,6 @@ commands(
 
 commands(
     ("rh", 12),
-    baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
@@ -352,7 +453,6 @@ commands(
 
 commands(
     ("rh", 13),
-    baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.DOWN,
@@ -380,7 +480,6 @@ commands(
 
 commands(
     ("rh", 14),
-    baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
@@ -422,7 +521,6 @@ commands(
 
 commands(
     ("rh", 15),
-    baca.make_monads("1/3  1/3"),
     baca.markup(
         r"\baca-fz-markup",
         direction=abjad.DOWN,
@@ -436,7 +534,6 @@ commands(
 
 commands(
     ("rh", 16),
-    baca.make_monads("1/2"),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
@@ -445,7 +542,6 @@ commands(
 
 commands(
     ("rh", 17),
-    baca.make_monads("1/5  1/5  1/5  1/5"),
     baca.markup(
         r"\baca-mfz-markup",
         direction=abjad.DOWN,
@@ -491,7 +587,6 @@ commands(
 
 commands(
     ("rh", (18, 23)),
-    baca.make_monads("1/2  1/2  1/2  1/2  1/2  1/2"),
     baca.markup(
         r"\baca-ffz-markup",
         direction=abjad.DOWN,
@@ -601,8 +696,11 @@ if __name__ == "__main__":
             baca.tags.LOCAL_MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
         do_not_require_margin_markup=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
     )
     lilypond_file = baca.make_lilypond_file(
         score,

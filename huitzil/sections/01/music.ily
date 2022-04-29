@@ -3876,6 +3876,9 @@ segment.01.Cello.Music.Voice = {
           %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \huitzil-phrasing-dynamics-see-preface-markup
+          %! DEFAULT_INSTRUMENT_ALERT
+          %! baca._attach_latent_indicator_alert()
+        %@% ^ \baca-default-indicator-markup "(“Cello”)"
         % START_BEAM:
         [
         % ABSOLUTE_AFTER:

@@ -60,7 +60,12 @@ commands(
 commands(
     ("vc", (1, 24)),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vc", 25),
+    baca.skeleton("{ c1 }"),
+    baca.append_phantom_measure(),
 )
 
 commands(
@@ -91,7 +96,6 @@ commands(
         ]
     ),
     baca.pitch("B1"),
-    baca.skeleton("{ c1 }"),
 )
 
 # vcr
@@ -107,7 +111,11 @@ commands(
     ("rh", (1, 4)),
     baca.skeleton("{ c4 r2 c4 r2 c4 r2 c4 r2 }"),
     baca.reapply_persistent_indicators(),
-    baca.rest_position(0),
+)
+
+commands(
+    "vc",
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -124,19 +132,6 @@ commands(
         r" c4 c8 r8 r4"
         r" c4 c8 r8 r4"
         " }",
-    ),
-)
-
-commands(
-    ("rh", [9, 10]),
-    baca.tag(
-        # TODO: make +ARCH_A_SCORE work
-        # "+ARCH_A_SCORE",
-        abjad.Tag("+SCORE"),
-        baca.literal(
-            r"\once \override TupletNumber.font-size = -2",
-            selector=lambda _: baca.select.pleaf(_, 1),
-        ),
     ),
 )
 
@@ -176,8 +171,32 @@ commands(
 )
 
 commands(
+    ("rh", 25),
+    baca.skeleton("{ c1 }"),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    ("rh", (1, 4)),
+    baca.rest_position(0),
+)
+
+commands(
     ("rh", (19, 24)),
     baca.beam(),
+)
+
+commands(
+    ("rh", [9, 10]),
+    baca.tag(
+        # TODO: make +ARCH_A_SCORE work
+        # "+ARCH_A_SCORE",
+        abjad.Tag("+SCORE"),
+        baca.literal(
+            r"\once \override TupletNumber.font-size = -2",
+            selector=lambda _: baca.select.pleaf(_, 1),
+        ),
+    ),
 )
 
 commands(
@@ -210,7 +229,6 @@ commands(
         abjad.Tweak(r"- \tweak staff-padding 3.5"),
         direction=abjad.DOWN,
     ),
-    baca.skeleton("{ c1 }"),
     baca.stem_tremolo(),
 )
 
@@ -258,8 +276,11 @@ if __name__ == "__main__":
             baca.tags.LOCAL_MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
         do_not_require_margin_markup=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
     )
     lilypond_file = baca.make_lilypond_file(
         score,
