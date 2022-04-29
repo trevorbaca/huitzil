@@ -69,7 +69,26 @@ commands(
 commands(
     ("vc", 1),
     baca.skeleton("{ c1 * 1/4 }"),
-    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vc", (2, 13)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (14, 24)),
+    baca.skeleton("{ c1 * 19/8 }"),
+)
+
+commands(
+    ("vc", (25, 26)),
+    baca.skeleton("{ c1 * 2 }"),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    ("vc", 1),
     baca.markup(
         r"\baca-string-iii-markup",
         abjad.Tweak(r"- \tweak padding 2.5"),
@@ -80,7 +99,6 @@ commands(
 
 commands(
     ("vc", (14, 24)),
-    baca.skeleton("{ c1 * 19/8 }"),
     baca.suite(
         baca.pitch("A2"),
         baca.repeat_tie(
@@ -100,7 +118,6 @@ commands(
         direction=abjad.DOWN,
     ),
     baca.pitch("G2"),
-    baca.skeleton("{ c1 * 2 }"),
 )
 
 commands(
@@ -139,6 +156,31 @@ commands(
     ("rh", (1, 8)),
     baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
     baca.reapply_persistent_indicators(),
+)
+
+commands(
+    "vc",
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("rh", (9, 16)),
+    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
+)
+
+commands(
+    ("rh", (17, 24)),
+    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
+)
+
+commands(
+    ("rh", (25, 26)),
+    baca.make_monads("1 1"),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    ("rh", (1, 8)),
     baca.staff_positions(
         [-6, -6, -8, -8, -10, -10, -12, -12],
         allow_repeats=True,
@@ -166,7 +208,6 @@ commands(
 
 commands(
     ("rh", (9, 16)),
-    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
     baca.staff_positions(
         [-14, -14, -16, -16, -18, -18, -16, -16],
         allow_out_of_range=True,
@@ -194,7 +235,6 @@ commands(
 
 commands(
     ("rh", (17, 24)),
-    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
     baca.staff_positions(
         [-14, -14, -12, -12, -10, -10, -8, -8],
         allow_repeats=True,
@@ -216,7 +256,6 @@ commands(
             r"\startStaff",
         ]
     ),
-    baca.make_monads("1 1"),
     baca.markup(
         r"\huitzil-directly-above-end-of-fingerboard-column-markup",
         abjad.Tweak(r"- \tweak self-alignment-X -0.5"),
@@ -299,8 +338,11 @@ if __name__ == "__main__":
             baca.tags.LOCAL_MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
         do_not_require_margin_markup=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
     )
     lilypond_file = baca.make_lilypond_file(
         score,

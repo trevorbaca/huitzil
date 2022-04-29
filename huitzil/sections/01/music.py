@@ -396,20 +396,11 @@ commands(
     ),
 )
 
+# vc
+
 commands(
     ("vc", 1),
     baca.music(music_, do_not_check_total_duration=True),
-    baca.attach_first_segment_default_indicators(),
-    baca.markup(
-        r"\huitzil-phrasing-dynamics-see-preface-markup",
-        abjad.Tweak(r"- \tweak staff-padding 9"),
-        direction=abjad.DOWN,
-    ),
-)
-
-commands(
-    ("vc", (1, 51)),
-    baca.tuplet_bracket_staff_padding(3),
 )
 
 commands(
@@ -443,15 +434,35 @@ commands(
 )
 
 commands(
-    ("vc", (52, 54)),
-    baca.tuplet_bracket_staff_padding(4),
+    "vc",
+    baca.append_phantom_measure(),
 )
 
+commands(
+    "vc",
+    baca.attach_first_segment_default_indicators(),
+    baca.markup(
+        r"\huitzil-phrasing-dynamics-see-preface-markup",
+        abjad.Tweak(r"- \tweak staff-padding 9"),
+        direction=abjad.DOWN,
+    ),
+)
+
+commands(
+    ("vc", (1, 51)),
+    baca.tuplet_bracket_staff_padding(3),
+)
 
 commands(
     ("vc", 53),
     baca.breathe(),
 )
+
+commands(
+    ("vc", (52, 54)),
+    baca.tuplet_bracket_staff_padding(4),
+)
+
 
 commands(
     ("vc", 54),
@@ -466,9 +477,16 @@ commands(
     ),
 )
 
+# rh
+
 commands(
     "rh",
     baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    "rh",
     baca.attach_first_segment_default_indicators(),
     baca.literal(r"\stopStaff"),
     baca.mmrest_transparent(
@@ -488,9 +506,12 @@ if __name__ == "__main__":
             # baca.enums.SPACING,
         ),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
         do_not_require_margin_markup=True,
+        do_not_sort_commands=True,
         deactivate=(baca.tags.DEFAULT_INSTRUMENT_ALERT,),
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
     )
     lilypond_file = baca.make_lilypond_file(
         score,
