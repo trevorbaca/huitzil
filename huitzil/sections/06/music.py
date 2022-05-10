@@ -70,12 +70,12 @@ commands(
 
 commands(
     ("vc", (8, 13)),
-    baca.skeleton("{ c1 * 107/30 c1 * 1/5 }"),
+    baca.make_skeleton("{ c1 * 107/30 c1 * 1/5 }"),
 )
 
 commands(
     ("vc", 14),
-    baca.skeleton("{ c2 }"),
+    baca.make_skeleton("{ c2 }"),
 )
 
 commands(

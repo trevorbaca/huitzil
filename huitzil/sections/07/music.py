@@ -68,7 +68,7 @@ commands(
 
 commands(
     ("vc", 1),
-    baca.skeleton("{ c1 * 1/4 }"),
+    baca.make_skeleton("{ c1 * 1/4 }"),
 )
 
 commands(
@@ -78,12 +78,12 @@ commands(
 
 commands(
     ("vc", (14, 24)),
-    baca.skeleton("{ c1 * 19/8 }"),
+    baca.make_skeleton("{ c1 * 19/8 }"),
 )
 
 commands(
     ("vc", (25, 26)),
-    baca.skeleton("{ c1 * 2 }"),
+    baca.make_skeleton("{ c1 * 2 }"),
     baca.append_phantom_measure(),
 )
 
