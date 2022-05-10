@@ -88,7 +88,7 @@ commands(
 
 commands(
     "vc",
-    baca.skeleton("{ c1 * 1/2 }", do_not_check_total_duration=True),
+    baca.make_skeleton("{ c1 * 1/2 }", do_not_check_total_duration=True),
 )
 
 commands(

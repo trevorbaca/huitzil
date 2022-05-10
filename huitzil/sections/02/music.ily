@@ -1229,7 +1229,7 @@ segment.02.RH.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1290,7 +1290,7 @@ segment.02.RH.Music.Voice = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set RHStaff.forceClef = ##t
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1354,7 +1354,7 @@ segment.02.RH.Music.Voice = {
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca.rhythm_annotation_spanner()
-        - \baca-text-spanner-left-text "baca.skeleton()"
+        - \baca-text-spanner-left-text "baca.make_skeleton()"
           %! RHYTHM_ANNOTATION_SPANNER
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
@@ -1373,14 +1373,14 @@ segment.02.RH.Music.Voice = {
           %! baca.OverrideCommand._call(1)
           %! baca.rest_position()
         \override Rest.staff-position = 0
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 2]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1390,14 +1390,14 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 3]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1407,14 +1407,14 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 4]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1424,7 +1424,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r2
         % AFTER:
         % COMMANDS:
@@ -1447,20 +1447,20 @@ segment.02.RH.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 5]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1497,7 +1497,7 @@ segment.02.RH.Music.Voice = {
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca.rhythm_annotation_spanner()
-        - \baca-text-spanner-left-text "baca.skeleton()"
+        - \baca-text-spanner-left-text "baca.make_skeleton()"
           %! RHYTHM_ANNOTATION_SPANNER
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
@@ -1506,7 +1506,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -1516,19 +1516,19 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 6]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1538,7 +1538,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -1548,19 +1548,19 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 7]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1570,7 +1570,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -1580,19 +1580,19 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 8]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1602,7 +1602,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -1612,12 +1612,12 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r8.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r4
         % AFTER:
         % LEAK:
@@ -1636,20 +1636,20 @@ segment.02.RH.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 9]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1686,7 +1686,7 @@ segment.02.RH.Music.Voice = {
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca.rhythm_annotation_spanner()
-        - \baca-text-spanner-left-text "baca.skeleton()"
+        - \baca-text-spanner-left-text "baca.make_skeleton()"
           %! RHYTHM_ANNOTATION_SPANNER
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
@@ -1696,9 +1696,9 @@ segment.02.RH.Music.Voice = {
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         \times 2/3
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1709,7 +1709,7 @@ segment.02.RH.Music.Voice = {
               %! baca.IndicatorCommand._call()
               %! baca.literal()
         %%% \once \override TupletNumber.font-size = -2
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -1719,25 +1719,25 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             r4
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         }
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 10]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1748,9 +1748,9 @@ segment.02.RH.Music.Voice = {
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         \times 2/3
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1761,7 +1761,7 @@ segment.02.RH.Music.Voice = {
               %! baca.IndicatorCommand._call()
               %! baca.literal()
         %%% \once \override TupletNumber.font-size = -2
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -1771,25 +1771,25 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             r4
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         }
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 11]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1799,7 +1799,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''8
         % AFTER:
         % ARTICULATIONS:
@@ -1809,19 +1809,19 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 12]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1831,7 +1831,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''8
         % AFTER:
         % ARTICULATIONS:
@@ -1841,12 +1841,12 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         r4
         % AFTER:
         % LEAK:
@@ -1865,20 +1865,20 @@ segment.02.RH.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 13]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1915,7 +1915,7 @@ segment.02.RH.Music.Voice = {
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca.rhythm_annotation_spanner()
-        - \baca-text-spanner-left-text "baca.skeleton()"
+        - \baca-text-spanner-left-text "baca.make_skeleton()"
           %! RHYTHM_ANNOTATION_SPANNER
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
@@ -1924,7 +1924,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1936,7 +1936,7 @@ segment.02.RH.Music.Voice = {
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 14]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1946,7 +1946,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1958,7 +1958,7 @@ segment.02.RH.Music.Voice = {
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 15]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1968,7 +1968,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''4
         % AFTER:
         % ARTICULATIONS:
@@ -1991,28 +1991,28 @@ segment.02.RH.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         \times 2/3
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [RH_Music_Voice measure 16]
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''4
             % AFTER:
             % ARTICULATIONS:
@@ -2049,7 +2049,7 @@ segment.02.RH.Music.Voice = {
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca.rhythm_annotation_spanner()
-            - \baca-text-spanner-left-text "baca.skeleton()"
+            - \baca-text-spanner-left-text "baca.make_skeleton()"
               %! RHYTHM_ANNOTATION_SPANNER
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
@@ -2058,7 +2058,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''4
             % AFTER:
             % ARTICULATIONS:
@@ -2068,7 +2068,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''4
             % AFTER:
             % ARTICULATIONS:
@@ -2079,22 +2079,22 @@ segment.02.RH.Music.Voice = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         }
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         \times 2/3
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [RH_Music_Voice measure 17]
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''4
             % AFTER:
             % ARTICULATIONS:
@@ -2104,7 +2104,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''4
             % AFTER:
             % ARTICULATIONS:
@@ -2114,7 +2114,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''4
             % AFTER:
             % ARTICULATIONS:
@@ -2125,22 +2125,22 @@ segment.02.RH.Music.Voice = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         }
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         \times 2/3
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [RH_Music_Voice measure 18]
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''4
             % AFTER:
             % ARTICULATIONS:
@@ -2150,7 +2150,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''4
             % AFTER:
             % ARTICULATIONS:
@@ -2160,7 +2160,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''4
             % AFTER:
             % ARTICULATIONS:
@@ -2183,26 +2183,26 @@ segment.02.RH.Music.Voice = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 19]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''8
         % AFTER:
         % ARTICULATIONS:
@@ -2244,7 +2244,7 @@ segment.02.RH.Music.Voice = {
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca.rhythm_annotation_spanner()
-        - \baca-text-spanner-left-text "baca.skeleton()"
+        - \baca-text-spanner-left-text "baca.make_skeleton()"
           %! RHYTHM_ANNOTATION_SPANNER
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
@@ -2253,7 +2253,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''8
         % AFTER:
         % ARTICULATIONS:
@@ -2263,7 +2263,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''8
         % AFTER:
         % ARTICULATIONS:
@@ -2273,7 +2273,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''8
         % AFTER:
         % ARTICULATIONS:
@@ -2285,7 +2285,7 @@ segment.02.RH.Music.Voice = {
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 20]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''8
         % AFTER:
         % ARTICULATIONS:
@@ -2295,7 +2295,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''8
         % AFTER:
         % ARTICULATIONS:
@@ -2305,7 +2305,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''8
         % AFTER:
         % ARTICULATIONS:
@@ -2315,7 +2315,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''8
         % AFTER:
         % ARTICULATIONS:
@@ -2338,28 +2338,28 @@ segment.02.RH.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         \times 4/5
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [RH_Music_Voice measure 21]
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2396,7 +2396,7 @@ segment.02.RH.Music.Voice = {
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca.rhythm_annotation_spanner()
-            - \baca-text-spanner-left-text "baca.skeleton()"
+            - \baca-text-spanner-left-text "baca.make_skeleton()"
               %! RHYTHM_ANNOTATION_SPANNER
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
@@ -2405,7 +2405,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2415,7 +2415,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2425,7 +2425,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2435,7 +2435,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2446,22 +2446,22 @@ segment.02.RH.Music.Voice = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         }
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         \times 4/6
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [RH_Music_Voice measure 22]
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2471,7 +2471,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2481,7 +2481,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2491,7 +2491,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2501,7 +2501,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2511,7 +2511,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2522,22 +2522,22 @@ segment.02.RH.Music.Voice = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         }
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         \times 4/7
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [RH_Music_Voice measure 23]
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2547,7 +2547,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2557,7 +2557,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2567,7 +2567,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2577,7 +2577,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2587,7 +2587,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2597,7 +2597,7 @@ segment.02.RH.Music.Voice = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.skeleton()
+              %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
@@ -2608,14 +2608,14 @@ segment.02.RH.Music.Voice = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         }
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH_Music_Voice measure 24]
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -2625,7 +2625,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -2635,7 +2635,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -2645,7 +2645,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -2655,7 +2655,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -2665,7 +2665,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -2675,7 +2675,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -2685,7 +2685,7 @@ segment.02.RH.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -2713,13 +2713,13 @@ segment.02.RH.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2740,7 +2740,7 @@ segment.02.RH.Music.Voice = {
           %! baca.IndicatorCommand._call()
           %! baca.literal()
         \startStaff
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         d''1
         % AFTER:
         % STEM_TREMOLOS:
@@ -2808,7 +2808,7 @@ segment.02.RH.Music.Voice = {
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca.rhythm_annotation_spanner()
-        - \baca-text-spanner-left-text "baca.skeleton()"
+        - \baca-text-spanner-left-text "baca.make_skeleton()"
           %! RHYTHM_ANNOTATION_SPANNER
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
@@ -2857,7 +2857,7 @@ segment.02.RH.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3444,7 +3444,7 @@ segment.02.Cello.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3462,7 +3462,7 @@ segment.02.Cello.Music.Voice = {
           %! baca.IndicatorCommand._call()
           %! baca.literal()
         \startStaff
-          %! baca.skeleton()
+          %! baca.make_skeleton()
         b,,1
         % AFTER:
         % SPANNER_STARTS:
@@ -3495,7 +3495,7 @@ segment.02.Cello.Music.Voice = {
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca.rhythm_annotation_spanner()
-        - \baca-text-spanner-left-text "baca.skeleton()"
+        - \baca-text-spanner-left-text "baca.make_skeleton()"
           %! RHYTHM_ANNOTATION_SPANNER
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
@@ -3527,7 +3527,7 @@ segment.02.Cello.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.skeleton()
+      %! baca.make_skeleton()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
