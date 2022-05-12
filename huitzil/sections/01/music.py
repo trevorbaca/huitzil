@@ -400,7 +400,7 @@ commands(
 
 commands(
     ("vc", 1),
-    baca.music(music_, do_not_check_total_duration=True),
+    baca.make_music(music_, do_not_check_total_duration=True),
 )
 
 commands(
