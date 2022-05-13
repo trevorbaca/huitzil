@@ -164,7 +164,7 @@ commands(
 )
 
 if __name__ == "__main__":
-    metadata, persist, score, timing = baca.build.interpret_segment(
+    metadata, persist, score, timing = baca.build.interpret_section(
         score,
         commands,
         **baca.score_interpretation_defaults(),
@@ -174,10 +174,8 @@ if __name__ == "__main__":
         ),
         always_make_global_rests=True,
         do_not_require_margin_markup=True,
-        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         final_segment=True,
-        intercalate_mmrests_by_hand=True,
     )
     lilypond_file = baca.make_lilypond_file(
         score,
