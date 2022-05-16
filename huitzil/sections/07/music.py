@@ -64,7 +64,7 @@ commands(
     ),
 )
 
-# vc
+# VC
 
 commands(
     ("vc", 1),
@@ -86,10 +86,39 @@ commands(
     baca.make_skeleton("{ c1 * 2 }"),
 )
 
+# RH
+
 commands(
-    ("vc", (25, 26)),
-    baca.append_phantom_measure(),
+    ("rh", (1, 8)),
+    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
 )
+
+commands(
+    ("rh", (9, 16)),
+    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
+)
+
+commands(
+    ("rh", (17, 24)),
+    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
+)
+
+commands(
+    ("rh", (25, 26)),
+    baca.make_monads("1 1"),
+)
+
+# phantom & reapply
+
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
+
+commands(
+    music_voices,
+    baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
+)
+
+# vc
 
 commands(
     ("vc", 1),
@@ -155,41 +184,6 @@ commands(
 )
 
 # rh
-
-commands(
-    ("rh", (1, 8)),
-    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
-)
-
-commands(
-    ("rh", (1, 8)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    "vc",
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("rh", (9, 16)),
-    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
-)
-
-commands(
-    ("rh", (17, 24)),
-    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
-)
-
-commands(
-    ("rh", (25, 26)),
-    baca.make_monads("1 1"),
-)
-
-commands(
-    ("rh", (25, 26)),
-    baca.append_phantom_measure(),
-)
 
 commands(
     ("rh", (1, 8)),
