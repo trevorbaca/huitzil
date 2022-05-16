@@ -84,7 +84,7 @@ commands(
     ),
 )
 
-# vc
+# VC
 
 commands(
     "vc",
@@ -96,45 +96,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("vc", (2, 26)),
-    baca.append_phantom_measure(),
-)
-
-commands(
-    "vc",
-    baca.mmrest_transparent(),
-    baca.pitch("A1"),
-    baca.new(
-        baca.bar_line_transparent(),
-        baca.span_bar_transparent(),
-        selector=lambda _: baca.select.leaves(_),
-    ),
-    baca.time_signature_stencil_false(),
-)
-
-# vcr
-
-commands(
-    ("vcr", 2),
-    baca.mmrest_transparent(),
-)
-
-# rh
+# RH
 
 commands(
     ("rh", 1),
     baca.make_monads("1/4  1/8  1/8"),
-)
-
-commands(
-    ("rh", 1),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    "vc",
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -262,10 +228,38 @@ commands(
     baca.make_monads("1/2"),
 )
 
+# phantom & reapply
+
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
+
 commands(
-    ("rh", 26),
+    music_voices,
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
 )
+
+# vc
+
+commands(
+    "vc",
+    baca.mmrest_transparent(),
+    baca.pitch("A1"),
+    baca.new(
+        baca.bar_line_transparent(),
+        baca.span_bar_transparent(),
+        selector=lambda _: baca.select.leaves(_),
+    ),
+    baca.time_signature_stencil_false(),
+)
+
+# vcr
+
+commands(
+    ("vcr", 2),
+    baca.mmrest_transparent(),
+)
+
+# rh
 
 commands(
     ("rh", 1),

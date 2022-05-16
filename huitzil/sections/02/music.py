@@ -67,63 +67,11 @@ commands(
     baca.make_skeleton("{ c1 }"),
 )
 
-commands(
-    ("vc", 25),
-    baca.append_phantom_measure(),
-)
-
-commands(
-    "vc",
-    baca.literal(
-        [
-            r"\stopStaff",
-            r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
-            r"\startStaff",
-        ]
-    ),
-    baca.mmrest_transparent(),
-    baca.new(
-        baca.bar_line_transparent(),
-        baca.span_bar_transparent(),
-        selector=lambda _: baca.select.leaves(_)[1:],
-    ),
-    baca.time_signature_stencil_false(),
-)
-
-commands(
-    ("vc", 25),
-    baca.literal(
-        [
-            r"\stopStaff",
-            r"\once \override Staff.StaffSymbol.line-count = 5",
-            r"\startStaff",
-        ]
-    ),
-    baca.pitch("B1"),
-)
-
-# vcr
-
-commands(
-    ("vcr", 1),
-    baca.mmrest_transparent(),
-)
-
-# rh
+# RH
 
 commands(
     ("rh", (1, 4)),
     baca.make_skeleton("{ c4 r2 c4 r2 c4 r2 c4 r2 }"),
-)
-
-commands(
-    ("rh", (1, 4)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    "vc",
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -183,10 +131,56 @@ commands(
     baca.make_skeleton("{ c1 }"),
 )
 
+# phantom & reapply
+
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
+
 commands(
-    ("rh", 25),
+    music_voices,
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
 )
+
+# vc
+
+commands(
+    "vc",
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
+            r"\startStaff",
+        ]
+    ),
+    baca.mmrest_transparent(),
+    baca.new(
+        baca.bar_line_transparent(),
+        baca.span_bar_transparent(),
+        selector=lambda _: baca.select.leaves(_)[1:],
+    ),
+    baca.time_signature_stencil_false(),
+)
+
+commands(
+    ("vc", 25),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override Staff.StaffSymbol.line-count = 5",
+            r"\startStaff",
+        ]
+    ),
+    baca.pitch("B1"),
+)
+
+# vcr
+
+commands(
+    ("vcr", 1),
+    baca.mmrest_transparent(),
+)
+
+# rh
 
 commands(
     ("rh", (1, 4)),

@@ -46,12 +46,33 @@ commands(
     baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
 )
 
-# vc
+# VC
 
 commands(
     "vc",
     baca.make_mmrests(),
 )
+
+# RH
+
+commands(
+    ("rh", (1, 12)),
+    baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2"),
+    baca.repeat_tie(
+        lambda _: baca.select.pleaves(_)[1:],
+    ),
+)
+
+# reapply
+
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
+
+commands(
+    music_voices,
+    baca.reapply_persistent_indicators(),
+)
+
+# vc
 
 commands(
     "vc",
@@ -100,24 +121,6 @@ commands(
 )
 
 # rh
-
-commands(
-    ("rh", (1, 12)),
-    baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2"),
-    baca.repeat_tie(
-        lambda _: baca.select.pleaves(_)[1:],
-    ),
-)
-
-commands(
-    ("rh", (1, 12)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    "vc",
-    baca.reapply_persistent_indicators(),
-)
 
 commands(
     ("rh", (1, 12)),

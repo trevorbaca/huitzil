@@ -57,7 +57,7 @@ commands(
     ),
 )
 
-# vc
+# VC
 
 commands(
     ("vc", (1, 7)),
@@ -84,91 +84,11 @@ commands(
     baca.make_skeleton("{ c1 * 1/2 }"),
 )
 
-commands(
-    ("vc", 23),
-    baca.append_phantom_measure(),
-)
-
-commands(
-    ("vc", (8, 13)),
-    baca.pitches("B1 C2"),
-    baca.repeat_tie(
-        lambda _: baca.select.pleaf(_, 0),
-        allow_rest=True,
-    ),
-)
-
-commands(
-    ("vc", 14),
-    baca.clef("treble"),
-    baca.literal(
-        [
-            r"\stopStaff",
-            r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
-            r"\startStaff",
-        ]
-    ),
-    baca.note_head_duration_log(2),
-    baca.note_head_no_ledgers(True),
-    baca.note_head_style("#'do"),
-    baca.staff_position(7),
-)
-
-commands(
-    ("vc", 23),
-    baca.clef("bass"),
-    baca.literal(
-        [
-            r"\stopStaff",
-            r"\once \override Staff.StaffSymbol.line-count = 5",
-            r"\startStaff",
-        ]
-    ),
-    baca.pitch("Bb1"),
-)
-
-commands(
-    "vc",
-    baca.mmrest_transparent(),
-    baca.new(
-        baca.bar_line_transparent(),
-        baca.span_bar_transparent(),
-        selector=lambda _: baca.select.leaves(_),
-    ),
-    baca.time_signature_stencil_false(),
-)
-
-# vcr
-
-commands(
-    ("vcr", [1, 15]),
-    baca.mmrest_transparent(),
-)
-
-# rh
+# RH
 
 commands(
     ("rh", 1),
     baca.make_monads("1/8  1/8  1/8  1/8"),
-)
-
-commands(
-    "vc",
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("rh", 1),
-    baca.reapply_persistent_indicators(),
-    baca.markup(
-        r"\baca-ffz-markup",
-        direction=abjad.DOWN,
-        selector=lambda _: baca.select.leaves(_),
-    ),
-    baca.staff_positions(
-        [-6, -4, -2, 0],
-        allow_repeats=True,
-    ),
 )
 
 commands(
@@ -256,9 +176,87 @@ commands(
     baca.make_monads("1/2  1/2  1/2  1/2  1/2  1/2"),
 )
 
+# phantom & reapply
+
+music_voices = [_ for _ in voice_names if "Music_Voice" in _]
+
 commands(
-    ("rh", (18, 23)),
+    music_voices,
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
+)
+
+# vc
+
+commands(
+    ("vc", (8, 13)),
+    baca.pitches("B1 C2"),
+    baca.repeat_tie(
+        lambda _: baca.select.pleaf(_, 0),
+        allow_rest=True,
+    ),
+)
+
+commands(
+    ("vc", 14),
+    baca.clef("treble"),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
+            r"\startStaff",
+        ]
+    ),
+    baca.note_head_duration_log(2),
+    baca.note_head_no_ledgers(True),
+    baca.note_head_style("#'do"),
+    baca.staff_position(7),
+)
+
+commands(
+    ("vc", 23),
+    baca.clef("bass"),
+    baca.literal(
+        [
+            r"\stopStaff",
+            r"\once \override Staff.StaffSymbol.line-count = 5",
+            r"\startStaff",
+        ]
+    ),
+    baca.pitch("Bb1"),
+)
+
+commands(
+    "vc",
+    baca.mmrest_transparent(),
+    baca.new(
+        baca.bar_line_transparent(),
+        baca.span_bar_transparent(),
+        selector=lambda _: baca.select.leaves(_),
+    ),
+    baca.time_signature_stencil_false(),
+)
+
+# vcr
+
+commands(
+    ("vcr", [1, 15]),
+    baca.mmrest_transparent(),
+)
+
+# rh
+
+commands(
+    ("rh", 1),
+    baca.markup(
+        r"\baca-ffz-markup",
+        direction=abjad.DOWN,
+        selector=lambda _: baca.select.leaves(_),
+    ),
+    baca.staff_positions(
+        [-6, -4, -2, 0],
+        allow_repeats=True,
+    ),
 )
 
 commands(
