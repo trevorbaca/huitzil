@@ -55,7 +55,7 @@ commands(
     ),
 )
 
-# vc
+# VC
 
 commands(
     ("vc", (1, 24)),
@@ -65,6 +65,10 @@ commands(
 commands(
     ("vc", 25),
     baca.make_skeleton("{ c1 }"),
+)
+
+commands(
+    ("vc", 25),
     baca.append_phantom_measure(),
 )
 
@@ -110,6 +114,10 @@ commands(
 commands(
     ("rh", (1, 4)),
     baca.make_skeleton("{ c4 r2 c4 r2 c4 r2 c4 r2 }"),
+)
+
+commands(
+    ("rh", (1, 4)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -173,6 +181,10 @@ commands(
 commands(
     ("rh", 25),
     baca.make_skeleton("{ c1 }"),
+)
+
+commands(
+    ("rh", 25),
     baca.append_phantom_measure(),
 )
 

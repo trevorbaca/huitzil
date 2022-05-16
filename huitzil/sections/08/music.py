@@ -94,6 +94,10 @@ commands(
 commands(
     ("vc", (2, 26)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (2, 26)),
     baca.append_phantom_measure(),
 )
 
@@ -121,6 +125,10 @@ commands(
 commands(
     ("rh", 1),
     baca.make_monads("1/4  1/8  1/8"),
+)
+
+commands(
+    ("rh", 1),
     baca.reapply_persistent_indicators(),
 )
 
@@ -252,6 +260,10 @@ commands(
 commands(
     ("rh", 26),
     baca.make_monads("1/2"),
+)
+
+commands(
+    ("rh", 26),
     baca.append_phantom_measure(),
 )
 

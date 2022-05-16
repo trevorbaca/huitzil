@@ -77,6 +77,10 @@ commands(
 commands(
     ("vc", (15, 23)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (15, 23)),
     baca.append_phantom_measure(),
 )
 
@@ -218,6 +222,10 @@ commands(
 commands(
     ("rh", (18, 23)),
     baca.make_monads("1/2  1/2  1/2  1/2  1/2  1/2"),
+)
+
+commands(
+    ("rh", (18, 23)),
     baca.append_phantom_measure(),
 )
 

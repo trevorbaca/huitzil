@@ -104,10 +104,14 @@ commands(
 commands(
     ("rh", (1, 12)),
     baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2"),
-    baca.reapply_persistent_indicators(),
     baca.repeat_tie(
         lambda _: baca.select.pleaves(_)[1:],
     ),
+)
+
+commands(
+    ("rh", (1, 12)),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
