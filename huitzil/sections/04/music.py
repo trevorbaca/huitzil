@@ -82,6 +82,10 @@ commands(
 commands(
     ("vc", 23),
     baca.make_skeleton("{ c1 * 1/2 }"),
+)
+
+commands(
+    ("vc", 23),
     baca.append_phantom_measure(),
 )
 
@@ -250,6 +254,10 @@ commands(
 commands(
     ("rh", (18, 23)),
     baca.make_monads("1/2  1/2  1/2  1/2  1/2  1/2"),
+)
+
+commands(
+    ("rh", (18, 23)),
     baca.append_phantom_measure(),
 )
 
