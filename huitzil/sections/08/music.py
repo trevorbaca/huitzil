@@ -4,7 +4,7 @@ import baca
 from huitzil import library
 
 #########################################################################################
-######################################### 08 [H] ########################################
+########################################### 08 ##########################################
 #########################################################################################
 
 time_signatures = [
@@ -93,7 +93,7 @@ commands(
 
 commands(
     ("vc", (2, 26)),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # RH
@@ -250,13 +250,6 @@ commands(
         selector=lambda _: baca.select.leaves(_),
     ),
     baca.time_signature_stencil_false(),
-)
-
-# vcr
-
-commands(
-    ("vcr", 2),
-    baca.mmrest_transparent(),
 )
 
 # rh
