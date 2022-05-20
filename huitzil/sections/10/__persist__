@@ -10,7 +10,6 @@
         "RH_Music_Voice",
         "Cello_Music_Staff",
         "Cello_Music_Voice",
-        "Cello_Rest_Voice",
     ],
     "persistent_indicators": {
         "Cello_Music_Staff": [
@@ -25,7 +24,7 @@
         ],
         "Cello_Staff_Group": [
             baca.Memento(
-                context="RH_Music_Voice",
+                context="Cello_Music_Voice",
                 edition=None,
                 manifest="instruments",
                 prototype=None,

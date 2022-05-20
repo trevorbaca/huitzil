@@ -4,7 +4,7 @@ import baca
 from huitzil import library
 
 #########################################################################################
-######################################### 09 [I] ########################################
+########################################### 09 ##########################################
 #########################################################################################
 
 time_signatures = [
@@ -61,7 +61,7 @@ commands(
 
 commands(
     ("vc", (1, 7)),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 commands(
@@ -76,7 +76,7 @@ commands(
 
 commands(
     ("vc", (15, 23)),
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
 )
 
 # RH
@@ -217,13 +217,6 @@ commands(
     baca.note_head_no_ledgers(True),
     baca.note_head_style("#'do"),
     baca.staff_position(7),
-)
-
-# vcr
-
-commands(
-    ("vcr", [1, 15]),
-    baca.mmrest_transparent(),
 )
 
 # rh

@@ -481,7 +481,7 @@ commands(
 
 commands(
     "rh",
-    baca.make_mmrests(),
+    baca.make_mmrests_flat(),
     baca.append_phantom_measure(),
 )
 
