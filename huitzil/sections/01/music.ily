@@ -2918,12 +2918,12 @@ segment.01.Global_Skips = {
 
 
   %! baca.path.extern()
-segment.01.RH_Music_Voice = {
+segment.01.RH.Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 1]
+    % [RH.Music_Voice measure 1]
     % BEFORE:
     % COMMANDS:
       %! baca.OverrideCommand._call(1)
@@ -2965,7 +2965,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 2]
+    % [RH.Music_Voice measure 2]
       %! baca._make_mmrests_flat()
     R1 * 15/16
     % AFTER:
@@ -2977,7 +2977,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 3]
+    % [RH.Music_Voice measure 3]
       %! baca._make_mmrests_flat()
     R1 * 11/16
     % AFTER:
@@ -2989,7 +2989,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 4]
+    % [RH.Music_Voice measure 4]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -3001,7 +3001,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 5]
+    % [RH.Music_Voice measure 5]
       %! baca._make_mmrests_flat()
     R1 * 15/16
     % AFTER:
@@ -3013,7 +3013,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 6]
+    % [RH.Music_Voice measure 6]
       %! baca._make_mmrests_flat()
     R1 * 15/16
     % AFTER:
@@ -3025,7 +3025,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 7]
+    % [RH.Music_Voice measure 7]
       %! baca._make_mmrests_flat()
     R1 * 3/8
     % AFTER:
@@ -3037,7 +3037,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 8]
+    % [RH.Music_Voice measure 8]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3049,7 +3049,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 9]
+    % [RH.Music_Voice measure 9]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -3061,7 +3061,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 10]
+    % [RH.Music_Voice measure 10]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -3073,7 +3073,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 11]
+    % [RH.Music_Voice measure 11]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3085,7 +3085,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 12]
+    % [RH.Music_Voice measure 12]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -3097,7 +3097,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 13]
+    % [RH.Music_Voice measure 13]
       %! baca._make_mmrests_flat()
     R1 * 3/2
     % AFTER:
@@ -3109,7 +3109,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 14]
+    % [RH.Music_Voice measure 14]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -3121,7 +3121,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 15]
+    % [RH.Music_Voice measure 15]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -3133,7 +3133,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 16]
+    % [RH.Music_Voice measure 16]
       %! baca._make_mmrests_flat()
     R1 * 2
     % AFTER:
@@ -3145,7 +3145,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 17]
+    % [RH.Music_Voice measure 17]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -3157,7 +3157,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 18]
+    % [RH.Music_Voice measure 18]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -3169,7 +3169,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 19]
+    % [RH.Music_Voice measure 19]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -3181,7 +3181,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 20]
+    % [RH.Music_Voice measure 20]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -3193,7 +3193,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 21]
+    % [RH.Music_Voice measure 21]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -3205,7 +3205,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 22]
+    % [RH.Music_Voice measure 22]
       %! baca._make_mmrests_flat()
     R1 * 1/2
     % AFTER:
@@ -3217,7 +3217,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 23]
+    % [RH.Music_Voice measure 23]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -3229,7 +3229,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 24]
+    % [RH.Music_Voice measure 24]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3241,7 +3241,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 25]
+    % [RH.Music_Voice measure 25]
       %! baca._make_mmrests_flat()
     R1 * 1/2
     % AFTER:
@@ -3253,7 +3253,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 26]
+    % [RH.Music_Voice measure 26]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -3265,7 +3265,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 27]
+    % [RH.Music_Voice measure 27]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3277,7 +3277,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 28]
+    % [RH.Music_Voice measure 28]
       %! baca._make_mmrests_flat()
     R1 * 1/2
     % AFTER:
@@ -3289,7 +3289,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 29]
+    % [RH.Music_Voice measure 29]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3301,7 +3301,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 30]
+    % [RH.Music_Voice measure 30]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3313,7 +3313,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 31]
+    % [RH.Music_Voice measure 31]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -3325,7 +3325,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 32]
+    % [RH.Music_Voice measure 32]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -3337,7 +3337,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 33]
+    % [RH.Music_Voice measure 33]
       %! baca._make_mmrests_flat()
     R1 * 1/2
     % AFTER:
@@ -3349,7 +3349,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 34]
+    % [RH.Music_Voice measure 34]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -3361,7 +3361,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 35]
+    % [RH.Music_Voice measure 35]
       %! baca._make_mmrests_flat()
     R1 * 13/16
     % AFTER:
@@ -3373,7 +3373,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 36]
+    % [RH.Music_Voice measure 36]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -3385,7 +3385,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 37]
+    % [RH.Music_Voice measure 37]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -3397,7 +3397,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 38]
+    % [RH.Music_Voice measure 38]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3409,7 +3409,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 39]
+    % [RH.Music_Voice measure 39]
       %! baca._make_mmrests_flat()
     R1 * 5/16
     % AFTER:
@@ -3421,7 +3421,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 40]
+    % [RH.Music_Voice measure 40]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3433,7 +3433,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 41]
+    % [RH.Music_Voice measure 41]
       %! baca._make_mmrests_flat()
     R1 * 9/16
     % AFTER:
@@ -3445,7 +3445,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 42]
+    % [RH.Music_Voice measure 42]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -3457,7 +3457,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 43]
+    % [RH.Music_Voice measure 43]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -3469,7 +3469,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 44]
+    % [RH.Music_Voice measure 44]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -3481,7 +3481,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 45]
+    % [RH.Music_Voice measure 45]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -3493,7 +3493,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 46]
+    % [RH.Music_Voice measure 46]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3505,7 +3505,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 47]
+    % [RH.Music_Voice measure 47]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -3517,7 +3517,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 48]
+    % [RH.Music_Voice measure 48]
       %! baca._make_mmrests_flat()
     R1 * 3/2
     % AFTER:
@@ -3529,7 +3529,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 49]
+    % [RH.Music_Voice measure 49]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3541,7 +3541,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 50]
+    % [RH.Music_Voice measure 50]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3553,7 +3553,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 51]
+    % [RH.Music_Voice measure 51]
       %! baca._make_mmrests_flat()
     R1 * 9/4
     % AFTER:
@@ -3565,7 +3565,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 52]
+    % [RH.Music_Voice measure 52]
       %! baca._make_mmrests_flat()
     R1 * 3/2
     % AFTER:
@@ -3577,7 +3577,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 53]
+    % [RH.Music_Voice measure 53]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3589,7 +3589,7 @@ segment.01.RH_Music_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH_Music_Voice measure 54]
+    % [RH.Music_Voice measure 54]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -3614,7 +3614,7 @@ segment.01.RH_Music_Voice = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(4)
-        \context Voice = "RH_Music_Voice"
+        \context Voice = "RH.Music_Voice"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(4)
         {
@@ -3624,7 +3624,7 @@ segment.01.RH_Music_Voice = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [RH_Music_Voice measure 55]
+            % [RH.Music_Voice measure 55]
             % BEFORE:
             % COMMANDS:
               %! INVISIBLE_MUSIC_COMMAND
@@ -3666,7 +3666,7 @@ segment.01.RH_Music_Voice = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "RH_Rest_Voice"
+        \context Voice = "RH.Rest_Voice"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -3676,7 +3676,7 @@ segment.01.RH_Music_Voice = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [RH_Rest_Voice measure 55]
+            % [RH.Rest_Voice measure 55]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
@@ -3738,10 +3738,10 @@ segment.01.RH.Music.Staff = {
 
     % OPEN_BRACKETS:
       %! huitzil.make_empty_score()
-    \context Voice = "RH_Music_Voice"
+    \context Voice = "RH.Music_Voice"
       %! huitzil.make_empty_score()
       %! baca.path.extern()
-    { \segment.01.RH_Music_Voice }
+    { \segment.01.RH.Music_Voice }
     % CLOSING:
     % COMMANDS:
 
@@ -3752,7 +3752,7 @@ segment.01.RH.Music.Staff = {
 
 
   %! baca.path.extern()
-segment.01.Cello_Music_Voice = {
+segment.01.Cello.Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3767,7 +3767,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 1]
+        % [Cello.Music_Voice measure 1]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -3937,7 +3937,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 2]
+        % [Cello.Music_Voice measure 2]
           %! baca.make_music()
         bf,!4
         % ABSOLUTE_BEFORE:
@@ -4020,7 +4020,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 3]
+        % [Cello.Music_Voice measure 3]
           %! baca.make_music()
         c8
         % AFTER:
@@ -4134,7 +4134,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 4]
+        % [Cello.Music_Voice measure 4]
           %! baca.make_music()
         b,4
         % ABSOLUTE_BEFORE:
@@ -4214,7 +4214,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 5]
+        % [Cello.Music_Voice measure 5]
           %! baca.make_music()
         af!16
         % AFTER:
@@ -4327,7 +4327,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 6]
+        % [Cello.Music_Voice measure 6]
           %! baca.make_music()
         af,!8
         % AFTER:
@@ -4441,7 +4441,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 7]
+        % [Cello.Music_Voice measure 7]
           %! baca.make_music()
         a,16
         % AFTER:
@@ -4520,7 +4520,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 8]
+        % [Cello.Music_Voice measure 8]
           %! baca.make_music()
         d8
         % AFTER:
@@ -4628,7 +4628,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 9]
+        % [Cello.Music_Voice measure 9]
           %! baca.make_music()
         a,8
         % AFTER:
@@ -4747,7 +4747,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 10]
+        % [Cello.Music_Voice measure 10]
           %! baca.make_music()
         a,8
         % ABSOLUTE_BEFORE:
@@ -4800,7 +4800,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 11]
+        % [Cello.Music_Voice measure 11]
           %! baca.make_music()
         ef!8
         % AFTER:
@@ -4893,7 +4893,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 12]
+        % [Cello.Music_Voice measure 12]
           %! baca.make_music()
         cs!16
         % AFTER:
@@ -4980,7 +4980,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 13]
+        % [Cello.Music_Voice measure 13]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -5056,7 +5056,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 14]
+        % [Cello.Music_Voice measure 14]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -5147,7 +5147,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 15]
+        % [Cello.Music_Voice measure 15]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -5199,7 +5199,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 16]
+        % [Cello.Music_Voice measure 16]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -5262,7 +5262,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 17]
+        % [Cello.Music_Voice measure 17]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -5355,7 +5355,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 18]
+        % [Cello.Music_Voice measure 18]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -5401,7 +5401,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 19]
+        % [Cello.Music_Voice measure 19]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -5499,7 +5499,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 20]
+        % [Cello.Music_Voice measure 20]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -5582,7 +5582,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 21]
+        % [Cello.Music_Voice measure 21]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -5673,7 +5673,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 22]
+        % [Cello.Music_Voice measure 22]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -5790,7 +5790,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 23]
+        % [Cello.Music_Voice measure 23]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -5883,7 +5883,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 24]
+        % [Cello.Music_Voice measure 24]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -5990,7 +5990,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 25]
+        % [Cello.Music_Voice measure 25]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -6103,7 +6103,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 26]
+        % [Cello.Music_Voice measure 26]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -6194,7 +6194,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 27]
+        % [Cello.Music_Voice measure 27]
           %! baca.make_music()
         fs!8
         % AFTER:
@@ -6295,7 +6295,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 28]
+        % [Cello.Music_Voice measure 28]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -6391,7 +6391,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 29]
+        % [Cello.Music_Voice measure 29]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -6447,7 +6447,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 30]
+        % [Cello.Music_Voice measure 30]
           %! baca.make_music()
         b,8
         % AFTER:
@@ -6548,7 +6548,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 31]
+        % [Cello.Music_Voice measure 31]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -6663,7 +6663,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 32]
+        % [Cello.Music_Voice measure 32]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -6724,7 +6724,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 33]
+        % [Cello.Music_Voice measure 33]
           %! baca.make_music()
         fs,!16
         % AFTER:
@@ -6831,7 +6831,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 34]
+        % [Cello.Music_Voice measure 34]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -6892,7 +6892,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 35]
+        % [Cello.Music_Voice measure 35]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -6975,7 +6975,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 36]
+        % [Cello.Music_Voice measure 36]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -7088,7 +7088,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 37]
+        % [Cello.Music_Voice measure 37]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -7149,7 +7149,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 38]
+        % [Cello.Music_Voice measure 38]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -7250,7 +7250,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 39]
+        % [Cello.Music_Voice measure 39]
           %! baca.make_music()
         b,16
         % AFTER:
@@ -7316,7 +7316,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 40]
+        % [Cello.Music_Voice measure 40]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -7374,7 +7374,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 41]
+        % [Cello.Music_Voice measure 41]
           %! baca.make_music()
         a,8
         % AFTER:
@@ -7443,7 +7443,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 42]
+        % [Cello.Music_Voice measure 42]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -7489,7 +7489,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 43]
+        % [Cello.Music_Voice measure 43]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #red
@@ -7617,7 +7617,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 44]
+        % [Cello.Music_Voice measure 44]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -7710,7 +7710,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 45]
+        % [Cello.Music_Voice measure 45]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -7763,7 +7763,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 46]
+        % [Cello.Music_Voice measure 46]
           %! baca.make_music()
         c8
         % AFTER:
@@ -7856,7 +7856,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 47]
+        % [Cello.Music_Voice measure 47]
           %! baca.make_music()
         c16
         % AFTER:
@@ -7920,7 +7920,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 48]
+        % [Cello.Music_Voice measure 48]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -8016,7 +8016,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 49]
+        % [Cello.Music_Voice measure 49]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -8062,7 +8062,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 50]
+        % [Cello.Music_Voice measure 50]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -8154,7 +8154,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 51]
+        % [Cello.Music_Voice measure 51]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -8237,7 +8237,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 52]
+        % [Cello.Music_Voice measure 52]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -8332,7 +8332,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 53]
+        % [Cello.Music_Voice measure 53]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -8383,7 +8383,7 @@ segment.01.Cello_Music_Voice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello_Music_Voice measure 54]
+        % [Cello.Music_Voice measure 54]
         % BEFORE:
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -8462,7 +8462,7 @@ segment.01.Cello_Music_Voice = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(4)
-        \context Voice = "Cello_Music_Voice"
+        \context Voice = "Cello.Music_Voice"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(4)
         {
@@ -8472,7 +8472,7 @@ segment.01.Cello_Music_Voice = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [Cello_Music_Voice measure 55]
+            % [Cello.Music_Voice measure 55]
             % BEFORE:
             % COMMANDS:
               %! INVISIBLE_MUSIC_COMMAND
@@ -8517,7 +8517,7 @@ segment.01.Cello_Music_Voice = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "Cello_Rest_Voice"
+        \context Voice = "Cello.Rest_Voice"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -8527,7 +8527,7 @@ segment.01.Cello_Music_Voice = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [Cello_Rest_Voice measure 55]
+            % [Cello.Rest_Voice measure 55]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
@@ -8589,10 +8589,10 @@ segment.01.Cello.Music.Staff = {
 
     % OPEN_BRACKETS:
       %! huitzil.make_empty_score()
-    \context Voice = "Cello_Music_Voice"
+    \context Voice = "Cello.Music_Voice"
       %! huitzil.make_empty_score()
       %! baca.path.extern()
-    { \segment.01.Cello_Music_Voice }
+    { \segment.01.Cello.Music_Voice }
     % CLOSING:
     % COMMANDS:
 

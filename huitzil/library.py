@@ -74,33 +74,33 @@ registrations = dict(
 
 
 voice_abbreviations = {
-    "rh": "RH_Music_Voice",
-    "vc": "Cello_Music_Voice",
-    "vcr": "Cello_Rest_Voice",
+    "rh": "RH.Music_Voice",
+    "vc": "Cello.Music_Voice",
+    "vcr": "Cello.Rest_Voice",
 }
 
 
 def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
-    rh_music_voice = abjad.Voice(name="RH_Music_Voice", tag=tag)
+    rh_music_voice = abjad.Voice(name="RH.Music_Voice", tag=tag)
     rh_music_staff = abjad.Staff(
         [rh_music_voice],
         lilypond_type="RHStaff",
-        name="RH_Music_Staff",
+        name="RH.Music_Staff",
         tag=tag,
     )
     abjad.annotate(rh_music_staff, "default_clef", abjad.Clef("percussion"))
     abjad.annotate(rh_music_staff, baca.enums.REMOVE_ALL_EMPTY_STAVES, True)
-    cello_music_voice = abjad.Voice(name="Cello_Music_Voice", tag=tag)
+    cello_music_voice = abjad.Voice(name="Cello.Music_Voice", tag=tag)
     cello_music_staff = abjad.Staff(
-        [cello_music_voice], name="Cello_Music_Staff", tag=tag
+        [cello_music_voice], name="Cello.Music_Staff", tag=tag
     )
     abjad.annotate(cello_music_staff, "default_clef", abjad.Clef("bass"))
     cello_staff_group = abjad.StaffGroup(
         [rh_music_staff, cello_music_staff],
         lilypond_type="PianoStaff",
-        name="Cello_Staff_Group",
+        name="Cello.Staff_Group",
         tag=tag,
     )
     abjad.annotate(
