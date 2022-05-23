@@ -1,5 +1,5 @@
   %! baca.path.extern()
-segment.03.Global.Rests = {
+segment.03.Global_Rests = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -202,7 +202,7 @@ segment.03.Global.Rests = {
 
 
   %! baca.path.extern()
-segment.03.Global.Skips = {
+segment.03.Global_Skips = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1525,7 +1525,7 @@ segment.03.Global.Skips = {
 
 
   %! baca.path.extern()
-segment.03.RH.Music.Voice = {
+segment.03.RH_Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3749,7 +3749,7 @@ segment.03.RH.Music.Staff = {
     \context Voice = "RH_Music_Voice"
       %! huitzil.make_empty_score()
       %! baca.path.extern()
-    { \segment.03.RH.Music.Voice }
+    { \segment.03.RH_Music_Voice }
     % CLOSING:
     % COMMANDS:
 
@@ -3760,7 +3760,7 @@ segment.03.RH.Music.Staff = {
 
 
   %! baca.path.extern()
-segment.03.Cello.Music.Voice = {
+segment.03.Cello_Music_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4265,7 +4265,7 @@ segment.03.Cello.Music.Staff = {
     \context Voice = "Cello_Music_Voice"
       %! huitzil.make_empty_score()
       %! baca.path.extern()
-    { \segment.03.Cello.Music.Voice }
+    { \segment.03.Cello_Music_Voice }
     % CLOSING:
     % COMMANDS:
 
