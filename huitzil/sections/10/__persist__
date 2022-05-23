@@ -5,16 +5,16 @@
         "Global_Rests",
         "Global_Skips",
         "Music_Context",
-        "Cello_Staff_Group",
-        "RH_Music_Staff",
-        "RH_Music_Voice",
-        "Cello_Music_Staff",
-        "Cello_Music_Voice",
+        "Cello.Staff_Group",
+        "RH.Music_Staff",
+        "RH.Music_Voice",
+        "Cello.Music_Staff",
+        "Cello.Music_Voice",
     ],
     "persistent_indicators": {
-        "Cello_Music_Staff": [
+        "Cello.Music_Staff": [
             baca.Memento(
-                context="Cello_Music_Voice",
+                context="Cello.Music_Voice",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Clef",
@@ -22,9 +22,9 @@
                 value="treble",
             )
         ],
-        "Cello_Staff_Group": [
+        "Cello.Staff_Group": [
             baca.Memento(
-                context="Cello_Music_Voice",
+                context="Cello.Music_Voice",
                 edition=None,
                 manifest="instruments",
                 prototype=None,
@@ -32,9 +32,9 @@
                 value="Cello",
             )
         ],
-        "RH_Music_Staff": [
+        "RH.Music_Staff": [
             baca.Memento(
-                context="RH_Music_Voice",
+                context="RH.Music_Voice",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Clef",
@@ -42,7 +42,7 @@
                 value="percussion",
             ),
             baca.Memento(
-                context="RH_Music_Voice",
+                context="RH.Music_Voice",
                 edition=None,
                 manifest=None,
                 prototype="baca.StaffLines",
@@ -50,7 +50,7 @@
                 value=7,
             ),
             baca.Memento(
-                context="RH_Music_Voice",
+                context="RH.Music_Voice",
                 edition=Tag(string="-PARTS"),
                 manifest=None,
                 prototype="baca.BarExtent",
@@ -58,9 +58,9 @@
                 value=7,
             ),
         ],
-        "RH_Music_Voice": [
+        "RH.Music_Voice": [
             baca.Memento(
-                context="RH_Music_Voice",
+                context="RH.Music_Voice",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Dynamic",
