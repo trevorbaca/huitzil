@@ -581,14 +581,14 @@ commands(
 
 commands(
     ("rh", 22),
-    baca.only_segment(
+    baca.only_section(
         baca.hairpin_to_barline(),
     ),
 )
 
 commands(
     "rh",
-    baca.only_segment(
+    baca.only_section(
         baca.chunk(
             baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
             baca.literal(
