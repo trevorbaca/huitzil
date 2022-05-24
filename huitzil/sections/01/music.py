@@ -472,7 +472,7 @@ commands(
             abjad.Tweak(r"\tweak extra-offset #'(0 . 2)"),
         ),
     ),
-    baca.only_segment(
+    baca.only_section(
         baca.breathe(),
     ),
 )

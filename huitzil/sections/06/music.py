@@ -595,7 +595,7 @@ commands(
 
 commands(
     ("rh", 22),
-    baca.only_segment(
+    baca.only_section(
         baca.hairpin_to_barline(),
     ),
 )
@@ -609,14 +609,14 @@ commands(
             abjad.Tweak(r"\tweak extra-offset #'(0 . 5)"),
         ),
     ),
-    baca.only_segment(
+    baca.only_section(
         baca.breathe(
             lambda _: baca.select.pleaf(_, -1),
             abjad.Tweak(r"\tweak X-extent ##f"),
             abjad.Tweak(r"\tweak extra-offset #'(-1.5 . 2)"),
         ),
     ),
-    baca.only_segment(
+    baca.only_section(
         baca.chunk(
             baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
             baca.literal(

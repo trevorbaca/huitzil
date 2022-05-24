@@ -82,7 +82,7 @@ commands(
         baca.span_bar_transparent(),
         selector=lambda _: baca.select.leaves(_),
     ),
-    baca.only_segment(
+    baca.only_section(
         baca.literal(
             [
                 r"\stopStaff",
@@ -152,7 +152,7 @@ commands(
     # TODO: fix right-broken text spanners and replace this:
     baca.literal(r"<> \stopTextSpan"),
     baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
-    baca.only_segment(
+    baca.only_section(
         baca.literal(
             [
                 r"\stopStaff",
