@@ -20,7 +20,7 @@ time_signatures = [
     (3, 2),
 ]
 
-segments = baca.segment_accumulation_defaults()
+segments = baca.section_accumulation_defaults()
 segments.pop("append_phantom_measure")
 
 score = library.make_empty_score()
