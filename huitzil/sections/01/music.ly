@@ -57,7 +57,7 @@ spacing-extra-offset = #'(0 . 1)
                 \context GlobalRests = "Global_Rests"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \segment.01.Global_Rests }
+                { \section_number.01.Global_Rests }
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
 
@@ -66,7 +66,7 @@ spacing-extra-offset = #'(0 . 1)
                 \context GlobalSkips = "Global_Skips"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \segment.01.Global_Skips }
+                { \section_number.01.Global_Skips }
                 % CLOSING:
                 % COMMANDS:
 
@@ -97,7 +97,7 @@ spacing-extra-offset = #'(0 . 1)
                     \context RHStaff = "RH.Music_Staff"
                       %! huitzil.make_empty_score()
                       %! baca.path.extern()
-                    { \segment.01.RH.Music.Staff }
+                    { \section_number.01.RH.Music_Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -106,7 +106,7 @@ spacing-extra-offset = #'(0 . 1)
                     \context Staff = "Cello.Music_Staff"
                       %! huitzil.make_empty_score()
                       %! baca.path.extern()
-                    { \segment.01.Cello.Music.Staff }
+                    { \section_number.01.Cello.Music_Staff }
                     % CLOSING:
                     % COMMANDS:
 
