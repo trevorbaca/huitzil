@@ -136,9 +136,9 @@ def _make_rhythm(segment_lists, voice_map, extra_counts, pc_operators):
 
 
 def _register_voices(music):
-    voice_1_registration = library.registrations["middle"]
-    voice_2_registration = library.registrations["low"]
-    voice_3_registration = library.registrations["lowest"]
+    voice_1_registration = library.registrations()["middle"]
+    voice_2_registration = library.registrations()["low"]
+    voice_3_registration = library.registrations()["lowest"]
     for note in abjad.iterate.components(music, abjad.Note):
         voice_number = abjad.get.indicator(note, int)
         if voice_number == 1:
@@ -200,7 +200,7 @@ music = []
 
 music_ = make_music(
     [1, 2, 0, -1, 5],
-    library.pitch_classes[:6],
+    library.pitch_classes()[:6],
     [[2, range(0, 99)]],
     pc_displacement=[abjad.index(list(range(15)), 30)],
 )
@@ -211,7 +211,7 @@ music.extend(music_)
 
 music_ = make_music(
     [1, 2, 0, -1, 5],
-    library.pitch_classes[2:8],
+    library.pitch_classes()[2:8],
     [
         [2, range(0, 99)],
         [3, (4, 14, 15, 28, 29, 35, 36)],
@@ -225,7 +225,7 @@ music.extend(music_)
 
 music_ = make_music(
     [4, 8, 0, -4, 20],
-    library.pitch_classes[4:6],
+    library.pitch_classes()[4:6],
     [
         [3, range(0, 99)],
     ],
@@ -240,7 +240,7 @@ music.extend(music_)
 
 music_ = make_music(
     [4, 8, 0, -4, 20],
-    library.pitch_classes[6:8],
+    library.pitch_classes()[6:8],
     [
         [3, range(0, 99)],
         [1, (1, 2, 3, 6, 7, 10)],
@@ -255,7 +255,7 @@ music.extend(music_)
 
 music_ = make_music(
     [2, 4, 0, -2, 10],
-    library.pitch_classes[8:12],
+    library.pitch_classes()[8:12],
     [
         [1, range(0, 99)],
     ],
@@ -270,7 +270,7 @@ music.extend(music_)
 
 music_ = make_music(
     [2, 4, 0, -2, 10],
-    library.pitch_classes[10:13],
+    library.pitch_classes()[10:13],
     [
         [1, range(0, 99)],
         [2, (0, 1, 2, 3, 13, 14, 15, 16, 17, 18)],
@@ -287,7 +287,7 @@ music.extend(music_)
 
 music_ = make_music(
     [2, 4, 0, -2, 10],
-    library.pitch_classes[12:20],
+    library.pitch_classes()[12:20],
     [
         [1, range(0, 99)],
         [
@@ -329,7 +329,7 @@ music.extend(music_)
 
 music_ = make_music(
     [1, 2, 0, -1, 5],
-    library.pitch_classes[14:18],
+    library.pitch_classes()[14:18],
     [
         [2, range(0, 99)],
         [3, (5, 11, 12, 13, 19, 20)],
@@ -344,7 +344,7 @@ music.extend(music_)
 
 music_ = make_music(
     [4, 8, 0, -4, 20],
-    library.pitch_classes[16:20],
+    library.pitch_classes()[16:20],
     [
         [3, range(0, 99)],
     ],
@@ -381,10 +381,10 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.section_accumulation_defaults(),
-    instruments=library.instruments,
-    metronome_marks=library.metronome_marks,
+    instruments=library.instruments(),
+    metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
 
