@@ -54,7 +54,7 @@
                 \context GlobalRests = "Global_Rests"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \section_number.4.Global_Rests }
+                { \number.4.Global_Rests }
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
 
@@ -63,7 +63,7 @@
                 \context GlobalSkips = "Global_Skips"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \section_number.4.Global_Skips }
+                { \number.4.Global_Skips }
                 % CLOSING:
                 % COMMANDS:
 
@@ -94,7 +94,7 @@
                     \context RHStaff = "RH.Music_Staff"
                       %! huitzil.make_empty_score()
                       %! baca.path.extern()
-                    { \section_number.4.RH.Music_Staff }
+                    { \number.4.RH.Music_Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -103,7 +103,7 @@
                     \context Staff = "Cello.Music_Staff"
                       %! huitzil.make_empty_score()
                       %! baca.path.extern()
-                    { \section_number.4.Cello.Music_Staff }
+                    { \number.4.Cello.Music_Staff }
                     % CLOSING:
                     % COMMANDS:
 
