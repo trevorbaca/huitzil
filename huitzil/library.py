@@ -14,7 +14,7 @@ def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
     _instruments = instruments()
     global_context = baca.score.make_global_context()
-    rh_music_voice = abjad.Voice(name="RH.Music_Voice", tag=tag)
+    rh_music_voice = abjad.Voice(name="RH.MusicVoice", tag=tag)
     rh_music_staff = abjad.Staff(
         [rh_music_voice],
         lilypond_type="RHStaff",
@@ -23,7 +23,7 @@ def make_empty_score():
     )
     abjad.annotate(rh_music_staff, "default_clef", abjad.Clef("percussion"))
     abjad.annotate(rh_music_staff, baca.enums.REMOVE_ALL_EMPTY_STAVES, True)
-    cello_music_voice = abjad.Voice(name="Cello.Music_Voice", tag=tag)
+    cello_music_voice = abjad.Voice(name="Cello.MusicVoice", tag=tag)
     cello_music_staff = abjad.Staff(
         [cello_music_voice], name="Cello.Music_Staff", tag=tag
     )
@@ -124,6 +124,6 @@ def registrations():
 
 def voice_abbreviations():
     return {
-        "rh": "RH.Music_Voice",
-        "vc": "Cello.Music_Voice",
+        "rh": "RH.MusicVoice",
+        "vc": "Cello.MusicVoice",
     }

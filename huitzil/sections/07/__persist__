@@ -7,16 +7,16 @@
         "Music_Context",
         "Cello.Staff_Group",
         "RH.Music_Staff",
-        "RH.Music_Voice",
+        "RH.MusicVoice",
         "RH.RestVoice",
         "Cello.Music_Staff",
-        "Cello.Music_Voice",
+        "Cello.MusicVoice",
         "Cello.RestVoice",
     ],
     "persistent_indicators": {
         "Cello.Music_Staff": [
             baca.Memento(
-                context="Cello.Music_Voice",
+                context="Cello.MusicVoice",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Clef",
@@ -26,7 +26,7 @@
         ],
         "Cello.Staff_Group": [
             baca.Memento(
-                context="Cello.Music_Voice",
+                context="Cello.MusicVoice",
                 edition=None,
                 manifest="instruments",
                 prototype=None,
@@ -34,9 +34,19 @@
                 value="Cello",
             )
         ],
+        "RH.MusicVoice": [
+            baca.Memento(
+                context="RH.MusicVoice",
+                edition=None,
+                manifest=None,
+                prototype="abjad.StartHairpin",
+                synthetic_offset=None,
+                value=">",
+            )
+        ],
         "RH.Music_Staff": [
             baca.Memento(
-                context="RH.Music_Voice",
+                context="RH.MusicVoice",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Clef",
@@ -44,7 +54,7 @@
                 value="percussion",
             ),
             baca.Memento(
-                context="RH.Music_Voice",
+                context="RH.MusicVoice",
                 edition=None,
                 manifest=None,
                 prototype="baca.StaffLines",
@@ -52,23 +62,13 @@
                 value=14,
             ),
             baca.Memento(
-                context="RH.Music_Voice",
+                context="RH.MusicVoice",
                 edition=Tag(string="-PARTS"),
                 manifest=None,
                 prototype="baca.BarExtent",
                 synthetic_offset=None,
                 value=14,
             ),
-        ],
-        "RH.Music_Voice": [
-            baca.Memento(
-                context="RH.Music_Voice",
-                edition=None,
-                manifest=None,
-                prototype="abjad.StartHairpin",
-                synthetic_offset=None,
-                value=">",
-            )
         ],
         "Score": [
             baca.Memento(
