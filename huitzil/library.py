@@ -34,11 +34,6 @@ def make_empty_score():
         name="Cello.Staff_Group",
         tag=tag,
     )
-    abjad.annotate(
-        cello_staff_group,
-        "default_instrument",
-        _instruments["Cello"],
-    )
     music_context = abjad.Context(
         [cello_staff_group],
         lilypond_type="MusicContext",

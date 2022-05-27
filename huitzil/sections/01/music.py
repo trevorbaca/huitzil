@@ -396,7 +396,7 @@ commands(
     ),
 )
 
-# vc
+# VC
 
 commands(
     ("vc", 1),
@@ -433,14 +433,28 @@ commands(
     ),
 )
 
+# RH
+
 commands(
-    "vc",
+    "rh",
+    baca.make_mmrests_flat(),
+)
+
+# phantom & reapply
+
+music_voices = [_ for _ in voice_names if "MusicVoice" in _]
+
+commands(
+    music_voices,
     baca.append_phantom_measure(),
+    baca.attach_first_section_default_indicators(
+        attach_instruments_by_hand=True,
+    ),
 )
 
 commands(
     "vc",
-    baca.attach_first_section_default_indicators(),
+    baca.instrument(commands.instruments["Cello"]),
     baca.markup(
         r"\huitzil-phrasing-dynamics-see-preface-markup",
         abjad.Tweak(r"- \tweak staff-padding 9"),
@@ -481,13 +495,6 @@ commands(
 
 commands(
     "rh",
-    baca.make_mmrests_flat(),
-    baca.append_phantom_measure(),
-)
-
-commands(
-    "rh",
-    baca.attach_first_section_default_indicators(),
     baca.literal(r"\stopStaff"),
     baca.mmrest_transparent(
         selector=lambda _: baca.select.mmrests(_),
