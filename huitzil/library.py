@@ -126,5 +126,4 @@ def voice_abbreviations():
     return {
         "rh": "RH.Music_Voice",
         "vc": "Cello.Music_Voice",
-        "vcr": "Cello.Rest_Voice",
     }
