@@ -8,10 +8,10 @@
         "Cello.Staff_Group",
         "RH.Music_Staff",
         "RH.Music_Voice",
-        "RH.Rest_Voice",
+        "RH.RestVoice",
         "Cello.Music_Staff",
         "Cello.Music_Voice",
-        "Cello.Rest_Voice",
+        "Cello.RestVoice",
     ],
     "persistent_indicators": {
         "Cello.Music_Staff": [
