@@ -46,7 +46,7 @@ spacing-extra-offset = #'(0 . 1)
 
             % OPEN_BRACKETS:
               %! baca.make_global_context()
-            \context GlobalContext = "Global_Context"
+            \context GlobalContext = "GlobalContext"
               %! baca.make_global_context()
             <<
                 % ABSOLUTE_BEFORE:
@@ -54,19 +54,19 @@ spacing-extra-offset = #'(0 . 1)
 
                 % OPEN_BRACKETS:
                   %! baca.make_global_context()
-                \context GlobalRests = "Global_Rests"
+                \context GlobalRests = "GlobalRests"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \number.1.Global_Rests }
+                { \number.1.GlobalRests }
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
 
                 % OPEN_BRACKETS:
                   %! baca.make_global_context()
-                \context GlobalSkips = "Global_Skips"
+                \context GlobalSkips = "GlobalSkips"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \number.1.Global_Skips }
+                { \number.1.GlobalSkips }
                 % CLOSING:
                 % COMMANDS:
 
