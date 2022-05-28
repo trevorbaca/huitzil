@@ -20,13 +20,11 @@ def make_empty_score():
         name="RH.Music_Staff",
         tag=tag,
     )
-    abjad.annotate(rh_music_staff, "default_clef", abjad.Clef("percussion"))
     abjad.annotate(rh_music_staff, baca.enums.REMOVE_ALL_EMPTY_STAVES, True)
     cello_music_voice = abjad.Voice(name="Cello.MusicVoice", tag=tag)
     cello_music_staff = abjad.Staff(
         [cello_music_voice], name="Cello.Music_Staff", tag=tag
     )
-    abjad.annotate(cello_music_staff, "default_clef", abjad.Clef("bass"))
     cello_staff_group = abjad.StaffGroup(
         [rh_music_staff, cello_music_staff],
         lilypond_type="PianoStaff",
