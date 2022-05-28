@@ -455,6 +455,7 @@ commands(
 commands(
     "vc",
     baca.instrument(commands.instruments["Cello"]),
+    baca.clef("bass"),
     baca.markup(
         r"\huitzil-phrasing-dynamics-see-preface-markup",
         abjad.Tweak(r"- \tweak staff-padding 9"),
@@ -499,6 +500,7 @@ commands(
     baca.mmrest_transparent(
         selector=lambda _: baca.select.mmrests(_),
     ),
+    baca.clef("percussion"),
 )
 
 if __name__ == "__main__":
