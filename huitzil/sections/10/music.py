@@ -96,16 +96,10 @@ commands(
 
 commands(
     ("vc", -1),
-    # baca.chunk(
-    #    baca.mark(r"\huitzil-colophon-markup"),
-    #    baca.rehearsal_mark_down(),
-    #    baca.rehearsal_mark_padding(4),
-    #    selector=lambda _: baca.select.rleaf(_, -1),
-    # ),
     baca.literal(
         [
             r"\once \override Score.RehearsalMark.direction = #down",
-            r"\once \override Score.RehearsalMark.padding = 4",
+            r"\once \override Score.RehearsalMark.padding = 6",
             r"\mark \huitzil-colophon-markup",
         ],
         site="after",
@@ -145,6 +139,11 @@ commands(
         final_hairpin=False,
         pieces=lambda _: baca.select.clparts(_, [1]),
     ),
+)
+
+commands(
+    ("rh", -1),
+    baca.literal(r"\override Staff.BarLine.bar-extent = #'(-4 . 4)", site="after"),
 )
 
 commands(
