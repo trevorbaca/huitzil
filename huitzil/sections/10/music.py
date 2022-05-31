@@ -20,14 +20,10 @@ time_signatures = [
     (3, 2),
 ]
 
-defaults = baca.section_accumulation_defaults()
-defaults.pop("append_phantom_measure")
-
 score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
-    **defaults,
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
