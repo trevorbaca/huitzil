@@ -1275,6 +1275,9 @@ number.10.RH.MusicVoice = {
       %! baca.repeat_tie()
     \repeatTie
     % COMMANDS:
+      %! baca.IndicatorCommand._call()
+      %! baca.literal()
+    \override Staff.BarLine.bar-extent = #'(-4 . 4)
       %! baca.OverrideCommand._call(2)
       %! baca.text_script_parent_alignment_x()
     \revert TextScript.parent-alignment-X
@@ -1506,7 +1509,7 @@ number.10.Cello.MusicVoice = {
     \once \override Score.RehearsalMark.direction = #down
       %! baca.IndicatorCommand._call()
       %! baca.literal()
-    \once \override Score.RehearsalMark.padding = 4
+    \once \override Score.RehearsalMark.padding = 6
       %! baca.IndicatorCommand._call()
       %! baca.literal()
     \mark \huitzil-colophon-markup
