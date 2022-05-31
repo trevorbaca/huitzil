@@ -40,7 +40,6 @@ score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
-    **baca.section_accumulation_defaults(),
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
