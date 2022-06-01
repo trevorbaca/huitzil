@@ -2148,21 +2148,21 @@ number.7.RH.MusicVoice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_notes()
     % [RH.MusicVoice measure 27]
     % BEFORE:
     % COMMANDS:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! INVISIBLE_MUSIC_COMMAND
       %! NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(3)
     %@% \abjad-invisible-music
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! INVISIBLE_MUSIC_COLORING
       %! NOTE
       %! PHANTOM
@@ -2171,22 +2171,22 @@ number.7.RH.MusicVoice = {
     \abjad-invisible-music-coloring
     % OPENING:
     % COMMANDS:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(4)
     \stopStaff
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(4)
     \once \override Staff.StaffSymbol.transparent = ##t
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(4)
     \startStaff
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! HIDDEN
       %! NOTE
       %! PHANTOM
@@ -2194,7 +2194,7 @@ number.7.RH.MusicVoice = {
     b'1 * 1/4
     % AFTER:
     % MARKUP:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! DURATION_MULTIPLIER
       %! HIDDEN
       %! NOTE
@@ -2203,7 +2203,7 @@ number.7.RH.MusicVoice = {
       %! baca._style_anchor_notes()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     % SPANNER_STARTS:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! SHOW_TO_JOIN_BROKEN_SPANNERS
       %! abjad.glissando(7)
@@ -2211,7 +2211,7 @@ number.7.RH.MusicVoice = {
       %! baca.glissando()
     %@% \glissando
     % COMMANDS:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! RIGHT_BROKEN
       %! baca.PiecewiseCommand._call(1)
@@ -2575,21 +2575,21 @@ number.7.Cello.MusicVoice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_notes()
     % [Cello.MusicVoice measure 27]
     % BEFORE:
     % COMMANDS:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! INVISIBLE_MUSIC_COMMAND
       %! NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(3)
     %@% \abjad-invisible-music
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! INVISIBLE_MUSIC_COLORING
       %! NOTE
       %! PHANTOM
@@ -2598,22 +2598,22 @@ number.7.Cello.MusicVoice = {
     \abjad-invisible-music-coloring
     % OPENING:
     % COMMANDS:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(4)
     \stopStaff
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(4)
     \once \override Staff.StaffSymbol.transparent = ##t
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(4)
     \startStaff
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! HIDDEN
       %! NOTE
       %! PHANTOM
@@ -2621,7 +2621,7 @@ number.7.Cello.MusicVoice = {
     a,,1 * 1/4
     % AFTER:
     % MARKUP:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! DURATION_MULTIPLIER
       %! HIDDEN
       %! NOTE
@@ -2630,7 +2630,7 @@ number.7.Cello.MusicVoice = {
       %! baca._style_anchor_notes()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     % SPANNER_STARTS:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! SHOW_TO_JOIN_BROKEN_SPANNERS
       %! abjad.glissando(7)
