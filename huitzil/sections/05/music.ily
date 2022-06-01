@@ -3006,28 +3006,28 @@ number.5.RH.MusicVoice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_notes()
     % [RH.MusicVoice measure 23]
     % BEFORE:
     % COMMANDS:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! INVISIBLE_MUSIC_COMMAND
       %! NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(3)
     %@% \abjad-invisible-music
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! INVISIBLE_MUSIC_COLORING
       %! NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(2)
     \abjad-invisible-music-coloring
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! HIDDEN
       %! NOTE
       %! NOT_YET_PITCHED_COLORING
@@ -3037,22 +3037,22 @@ number.5.RH.MusicVoice = {
     \baca-not-yet-pitched-coloring
     % OPENING:
     % COMMANDS:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(4)
     \stopStaff
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(4)
     \once \override Staff.StaffSymbol.transparent = ##t
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(4)
     \startStaff
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! HIDDEN
       %! NOTE
       %! PHANTOM
@@ -3060,7 +3060,7 @@ number.5.RH.MusicVoice = {
     c'1 * 1/4
     % AFTER:
     % ARTICULATIONS:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! PHANTOM
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(3)
@@ -3068,7 +3068,7 @@ number.5.RH.MusicVoice = {
       %! baca.hairpin()
     \!
     % MARKUP:
-      %! ANCHOR
+      %! ANCHOR_NOTE
       %! DURATION_MULTIPLIER
       %! HIDDEN
       %! NOTE
