@@ -6,7 +6,14 @@ import baca
 
 def instruments():
     return dict(
-        [("Cello", abjad.Cello(context="StaffGroup", pitch_range="[A1, +inf]"))]
+        [
+            (
+                "Cello",
+                abjad.Cello(
+                    context="StaffGroup", pitch_range=abjad.PitchRange("[A1, +inf]")
+                ),
+            )
+        ]
     )
 
 
