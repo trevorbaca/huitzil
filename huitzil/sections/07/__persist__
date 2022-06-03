@@ -2,8 +2,8 @@
     "alive_during_section": [
         "Score",
         "GlobalContext",
-        "GlobalRests",
-        "GlobalSkips",
+        "Rests",
+        "Skips",
         "MusicContext",
         "Cello.Staff_Group",
         "RH.Music_Staff",
@@ -70,7 +70,7 @@
         ],
         "Score": [
             baca.Memento(
-                context="GlobalSkips",
+                context="Skips",
                 edition=None,
                 manifest=None,
                 prototype="abjad.TimeSignature",
@@ -78,7 +78,7 @@
                 value="1/1",
             ),
             baca.Memento(
-                context="GlobalSkips",
+                context="Skips",
                 edition=None,
                 manifest=None,
                 prototype="baca.Ritardando",
