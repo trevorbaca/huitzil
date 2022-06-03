@@ -7,14 +7,14 @@
         "MusicContext",
         "Cello.Staff_Group",
         "RH.Music_Staff",
-        "RH.MusicVoice",
+        "RH.Music",
         "Cello.Music_Staff",
-        "Cello.MusicVoice",
+        "Cello.Music",
     ],
     "persistent_indicators": {
         "Cello.Music_Staff": [
             baca.Memento(
-                context="Cello.MusicVoice",
+                context="Cello.Music",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Clef",
@@ -24,7 +24,7 @@
         ],
         "Cello.Staff_Group": [
             baca.Memento(
-                context="Cello.MusicVoice",
+                context="Cello.Music",
                 edition=None,
                 manifest="instruments",
                 prototype=None,
@@ -32,9 +32,9 @@
                 value="Cello",
             )
         ],
-        "RH.MusicVoice": [
+        "RH.Music": [
             baca.Memento(
-                context="RH.MusicVoice",
+                context="RH.Music",
                 edition=None,
                 manifest=None,
                 prototype="abjad.StartHairpin",
@@ -44,7 +44,7 @@
         ],
         "RH.Music_Staff": [
             baca.Memento(
-                context="RH.MusicVoice",
+                context="RH.Music",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Clef",
@@ -52,7 +52,7 @@
                 value="percussion",
             ),
             baca.Memento(
-                context="RH.MusicVoice",
+                context="RH.Music",
                 edition=None,
                 manifest=None,
                 prototype="baca.StaffLines",
@@ -60,7 +60,7 @@
                 value=7,
             ),
             baca.Memento(
-                context="RH.MusicVoice",
+                context="RH.Music",
                 edition=Tag(string="-PARTS"),
                 manifest=None,
                 prototype="baca.BarExtent",
