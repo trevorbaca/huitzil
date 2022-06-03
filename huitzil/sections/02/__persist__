@@ -4,7 +4,7 @@
         "GlobalContext",
         "GlobalRests",
         "GlobalSkips",
-        "Music_Context",
+        "MusicContext",
         "Cello.Staff_Group",
         "RH.Music_Staff",
         "RH.MusicVoice",

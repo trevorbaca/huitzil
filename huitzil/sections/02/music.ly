@@ -76,7 +76,7 @@ spacing-extra-offset = #'(0 . 16)
 
             % OPEN_BRACKETS:
               %! huitzil.make_empty_score()
-            \context MusicContext = "Music_Context"
+            \context MusicContext = "MusicContext"
               %! huitzil.make_empty_score()
             {
                 % ABSOLUTE_BEFORE:
