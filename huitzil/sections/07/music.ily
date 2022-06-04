@@ -2317,7 +2317,7 @@ number.7.Cello.Music = {
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
-        ^ \baca-reapplied-indicator-markup "(“Cello”)"
+        ^ \baca-reapplied-instrument-markup "(“Cello”)"
         % ABSOLUTE_AFTER:
         % COMMANDS:
           %! EXPLICIT_CLEF_REDRAW_COLOR
