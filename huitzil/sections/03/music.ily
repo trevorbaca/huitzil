@@ -1461,7 +1461,7 @@ number.3.Skips = {
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_skip(1)
-    % [Skips measure 27]
+    % [anchor skip]
     % OPENING:
     % COMMANDS:
       %! ANCHOR_SKIP
@@ -3594,7 +3594,7 @@ number.3.RH.Music = {
       %! ANCHOR_NOTE
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_notes()
-    % [RH.Music measure 27]
+    % [RH.Music anchor note]
     % BEFORE:
     % COMMANDS:
       %! ANCHOR_NOTE
