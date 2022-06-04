@@ -3698,7 +3698,7 @@ number.1.Cello.Music = {
         _ \huitzil-phrasing-dynamics-see-preface-markup
           %! EXPLICIT_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
-        ^ \baca-explicit-indicator-markup "(“Cello”)"
+        ^ \baca-explicit-instrument-markup "(“Cello”)"
         % START_BEAM:
         [
         % ABSOLUTE_AFTER:
