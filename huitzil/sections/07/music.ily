@@ -174,14 +174,14 @@ number.7.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 25]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 1/1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 26]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 1/1
     % CLOSING:
     % COMMANDS:
 
@@ -1327,7 +1327,7 @@ number.7.Skips = {
       %! baca._set_status_tag()
     \time 1/1
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 1/1
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1387,7 +1387,7 @@ number.7.Skips = {
       %! baca._comment_measure_numbers()
     % [Skips measure 26]
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 1/1
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1424,7 +1424,7 @@ number.7.Skips = {
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_skip(1)
-    % [Skips measure 27]
+    % [anchor skip]
     % OPENING:
     % COMMANDS:
       %! ANCHOR_SKIP
@@ -2148,7 +2148,7 @@ number.7.RH.Music = {
       %! ANCHOR_NOTE
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_notes()
-    % [RH.Music measure 27]
+    % [RH.Music anchor note]
     % BEFORE:
     % COMMANDS:
       %! ANCHOR_NOTE
@@ -2569,7 +2569,7 @@ number.7.Cello.Music = {
       %! ANCHOR_NOTE
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_notes()
-    % [Cello.Music measure 27]
+    % [Cello.Music anchor note]
     % BEFORE:
     % COMMANDS:
       %! ANCHOR_NOTE
