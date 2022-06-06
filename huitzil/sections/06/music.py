@@ -53,21 +53,17 @@ baca.interpret.set_up_score(
     attach_nonfirst_empty_start_bar=True,
 )
 
-commands(
-    "Skips",
-    baca.metronome_mark(
-        "88",
-        selector=lambda _: abjad.select.leaf(_, 18 - 1),
-    ),
-    baca.metronome_mark(
-        baca.Ritardando(),
-        selector=lambda _: abjad.select.leaf(_, 18 - 1),
-    ),
-    baca.metronome_mark(
-        "44",
-        selector=lambda _: abjad.select.leaf(_, 22 - 1),
-    ),
-)
+skips = score["Skips"]
+manifests = commands.manifests()
+
+for index, item in (
+    (18 - 1, "88"),
+    (18 - 1, baca.Ritardando()),
+    (22 - 1, "44"),
+):
+    skip = skips[index]
+    indicator = commands.metronome_marks.get(item, item)
+    baca.commands._metronome_mark(skip, indicator, manifests)
 
 # VC
 
