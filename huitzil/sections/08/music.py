@@ -83,7 +83,7 @@ commands(
 
 commands(
     ("vc", (2, 26)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # RH
