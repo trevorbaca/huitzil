@@ -73,7 +73,7 @@ for index, item in (
 
 commands(
     "vc",
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # RH

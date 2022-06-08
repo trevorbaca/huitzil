@@ -443,7 +443,7 @@ commands(
 
 commands(
     "rh",
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # vc

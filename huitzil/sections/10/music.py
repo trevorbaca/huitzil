@@ -54,7 +54,7 @@ baca.bar_line(score["Skips"][10 - 1], "|.")
 
 commands(
     "vc",
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # RH

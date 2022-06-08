@@ -69,7 +69,7 @@ for index, item in (
 
 commands(
     ("vc", (1, 7)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -84,7 +84,7 @@ commands(
 
 commands(
     ("vc", (15, 23)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # RH
