@@ -1287,7 +1287,7 @@ number.10.RH.Music = {
 
 
   %! baca.path.extern()
-number.10.RH.Music_Staff = {
+number.10.RH.Staff = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1525,7 +1525,7 @@ number.10.Cello.Music = {
 
 
   %! baca.path.extern()
-number.10.Cello.Music_Staff = {
+number.10.Cello.Staff = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
