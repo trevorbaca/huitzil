@@ -86,7 +86,7 @@ spacing-extra-offset = #'(0 . 1)
 
                 % OPEN_BRACKETS:
                   %! huitzil.make_empty_score()
-                \context PianoStaff = "Cello.Staff_Group"
+                \context PianoStaff = "PianoStaff"
                   %! huitzil.make_empty_score()
                 <<
                     % ABSOLUTE_BEFORE:
@@ -94,19 +94,19 @@ spacing-extra-offset = #'(0 . 1)
 
                     % OPEN_BRACKETS:
                       %! huitzil.make_empty_score()
-                    \context RHStaff = "RH.Music_Staff"
+                    \context RHStaff = "RH.Staff"
                       %! huitzil.make_empty_score()
                       %! baca.path.extern()
-                    { \number.1.RH.Music_Staff }
+                    { \number.1.RH.Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
                     % OPEN_BRACKETS:
                       %! huitzil.make_empty_score()
-                    \context Staff = "Cello.Music_Staff"
+                    \context Staff = "Cello.Staff"
                       %! huitzil.make_empty_score()
                       %! baca.path.extern()
-                    { \number.1.Cello.Music_Staff }
+                    { \number.1.Cello.Staff }
                     % CLOSING:
                     % COMMANDS:
 

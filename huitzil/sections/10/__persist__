@@ -5,14 +5,14 @@
         "Rests",
         "Skips",
         "MusicContext",
-        "Cello.Staff_Group",
-        "RH.Music_Staff",
+        "PianoStaff",
+        "RH.Staff",
         "RH.Music",
-        "Cello.Music_Staff",
+        "Cello.Staff",
         "Cello.Music",
     ],
     "persistent_indicators": {
-        "Cello.Music_Staff": [
+        "Cello.Staff": [
             baca.Memento(
                 context="Cello.Music",
                 edition=None,
@@ -22,7 +22,7 @@
                 value="treble",
             )
         ],
-        "Cello.Staff_Group": [
+        "PianoStaff": [
             baca.Memento(
                 context="Cello.Music",
                 edition=None,
@@ -42,7 +42,7 @@
                 value="pp",
             )
         ],
-        "RH.Music_Staff": [
+        "RH.Staff": [
             baca.Memento(
                 context="RH.Music",
                 edition=None,
