@@ -3639,11 +3639,8 @@ number.1.Cello.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/5
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3686,7 +3683,6 @@ number.1.Cello.Music = {
           %! baca.clef()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! baca.make_music()
         fs!8
         % AFTER:
         % MARKUP:
@@ -3709,22 +3705,18 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         g8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         af!8
         % AFTER:
         % STOP_BEAM:
@@ -3733,20 +3725,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         a,8
         % AFTER:
         % START_BEAM:
@@ -3754,7 +3742,6 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         ef!8
         % AFTER:
         % STOP_BEAM:
@@ -3763,20 +3750,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         d16
         % AFTER:
         % START_BEAM:
@@ -3784,12 +3767,10 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f16
         % AFTER:
         % STOP_BEAM:
@@ -3798,79 +3779,62 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         cs!16
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 9/16
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 2]
-          %! baca.make_music()
         bf,!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         a,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         b,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         c4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/5
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f,8
         % AFTER:
         % START_BEAM:
@@ -3878,22 +3842,18 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         a,8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         ef!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         d8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e8
         % AFTER:
         % STOP_BEAM:
@@ -3902,22 +3862,18 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 3]
-          %! baca.make_music()
         c8
         % AFTER:
         % START_BEAM:
@@ -3925,7 +3881,6 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         cs!8
         % AFTER:
         % STOP_BEAM:
@@ -3934,20 +3889,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         bf,!16
         % AFTER:
         % START_BEAM:
@@ -3955,12 +3906,10 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         a,16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         b,16
         % AFTER:
         % STOP_BEAM:
@@ -3969,20 +3918,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 4/5
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         af,!16
         % AFTER:
         % START_BEAM:
@@ -3990,22 +3935,18 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         fs,!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f,16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         g,16
         % AFTER:
         % STOP_BEAM:
@@ -4014,48 +3955,38 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 7/8
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 4]
-          %! baca.make_music()
         b,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         c4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 2/3
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         cs!8
         % AFTER:
         % START_BEAM:
@@ -4063,12 +3994,10 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         bf,!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         a,8
         % AFTER:
         % STOP_BEAM:
@@ -4077,41 +4006,33 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         g8.
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 5]
-          %! baca.make_music()
         af!16
         % AFTER:
         % START_BEAM:
@@ -4119,17 +4040,14 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         fs!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f16
         % AFTER:
         % STOP_BEAM:
@@ -4138,20 +4056,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 4/5
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e16
         % AFTER:
         % START_BEAM:
@@ -4159,22 +4073,18 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         a,16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         ef!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         d16
         % AFTER:
         % STOP_BEAM:
@@ -4183,48 +4093,38 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 7/8
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         g,4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 2/3
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 6]
-          %! baca.make_music()
         af,!8
         % AFTER:
         % START_BEAM:
@@ -4232,12 +4132,10 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         fs,!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e8
         % AFTER:
         % STOP_BEAM:
@@ -4246,22 +4144,17 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/4
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         cs!8
         % AFTER:
         % START_BEAM:
@@ -4269,7 +4162,6 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         d8
         % AFTER:
         % STOP_BEAM:
@@ -4278,20 +4170,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 2/3
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         b,8
         % AFTER:
         % START_BEAM:
@@ -4299,7 +4187,6 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         bf,!8
         % AFTER:
         % STOP_BEAM:
@@ -4317,28 +4204,23 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         c2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 7]
-          %! baca.make_music()
         a,16
         % AFTER:
         % START_BEAM:
@@ -4346,22 +4228,18 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         g16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         fs!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         af!16
         % AFTER:
         % STOP_BEAM:
@@ -4370,20 +4248,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         c32
         % AFTER:
         % START_BEAM:
@@ -4391,7 +4265,6 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         cs!32
         % AFTER:
         % STOP_BEAM:
@@ -4400,24 +4273,19 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 33/36
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 8]
-          %! baca.make_music()
         d8
         % AFTER:
         % START_BEAM:
@@ -4425,7 +4293,6 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         b,8
         % AFTER:
         % STOP_BEAM:
@@ -4443,21 +4310,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         bf,!2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4472,7 +4335,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         af,!4
         % AFTER:
         % SPANNER_STARTS:
@@ -4497,7 +4359,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         af,16
         % AFTER:
         % SPANNER_STARTS:
@@ -4508,24 +4369,19 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/4
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 9]
-          %! baca.make_music()
         a,8
         % AFTER:
         % START_BEAM:
@@ -4533,17 +4389,14 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         g,8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f,8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         fs,!8
         % AFTER:
         % STOP_BEAM:
@@ -4552,20 +4405,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f,16
         % AFTER:
         % START_BEAM:
@@ -4573,22 +4422,18 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         fs,!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         bf,!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         ef!16
         % AFTER:
         % STOP_BEAM:
@@ -4597,20 +4442,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         fs,!32
         % AFTER:
         % START_BEAM:
@@ -4618,7 +4459,6 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         af,!32
         % AFTER:
         % STOP_BEAM:
@@ -4627,24 +4467,19 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 7/9
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 10]
-          %! baca.make_music()
         a,8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4659,7 +4494,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         g,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4674,30 +4508,24 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         f,2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/5
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 11]
-          %! baca.make_music()
         ef!8
         % AFTER:
         % START_BEAM:
@@ -4705,22 +4533,18 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         fs!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         bf,!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e8
         % AFTER:
         % STOP_BEAM:
@@ -4729,17 +4553,13 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 15/24
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4754,7 +4574,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         bf,!2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4769,28 +4588,23 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         c2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 12]
-          %! baca.make_music()
         cs!16
         % AFTER:
         % START_BEAM:
@@ -4798,12 +4612,10 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         d16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         b,16
         % AFTER:
         % STOP_BEAM:
@@ -4812,34 +4624,27 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e16
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4854,23 +4659,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         ef,!2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/4
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4887,7 +4687,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         d2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4902,7 +4701,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         e,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4917,7 +4715,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         fs,!2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4932,21 +4729,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         f,2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4963,7 +4756,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         fs,!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4978,7 +4770,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         f,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4993,7 +4784,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         cs!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5008,7 +4798,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         g,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5023,21 +4812,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         af,!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5054,7 +4839,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         f,8
         % AFTER:
         % START_BEAM:
@@ -5072,7 +4856,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         ef,!8
         % AFTER:
         % STOP_BEAM:
@@ -5081,15 +4864,12 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 2/3
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5106,7 +4886,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         d1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5121,7 +4900,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         e,1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5136,23 +4914,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         fs,!1
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 9/14
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5169,7 +4942,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         f,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5184,7 +4956,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         g4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5199,7 +4970,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         af!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5214,7 +4984,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         c'4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5229,23 +4998,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         fs,!2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 7/12
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5262,7 +5026,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         c1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5277,21 +5040,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         d'2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5308,7 +5067,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         ef!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5323,7 +5081,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         e,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5338,21 +5095,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         cs!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5367,7 +5120,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         fs!8
         % AFTER:
         % SPANNER_STARTS:
@@ -5379,17 +5131,13 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 15/24
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5406,7 +5154,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         fs4
         % AFTER:
         % SPANNER_STARTS:
@@ -5426,7 +5173,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         af!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5441,7 +5187,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         a4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5456,23 +5201,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         cs!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 7/10
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5489,7 +5229,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         d4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5504,7 +5243,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         cs!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5519,7 +5257,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         ef!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5534,7 +5271,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         e4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5549,21 +5285,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         f4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5580,7 +5312,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         af!8
         % AFTER:
         % START_BEAM:
@@ -5598,7 +5329,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         a8
         % AFTER:
         % STOP_BEAM:
@@ -5607,15 +5337,12 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 2/3
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5630,7 +5357,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         b8
         % AFTER:
         % START_BEAM:
@@ -5648,7 +5374,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         c'8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5663,7 +5388,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         bf!8
         % AFTER:
         % STOP_BEAM:
@@ -5672,15 +5396,12 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5697,7 +5418,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         f4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5712,7 +5432,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         d'4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5727,7 +5446,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         cs'!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5742,7 +5460,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         ef!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5757,23 +5474,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         e4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/4
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5790,7 +5502,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         bf!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5805,23 +5516,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         af!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 15/18
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5836,7 +5542,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         a4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5851,7 +5556,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         b,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5866,21 +5570,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         c4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5897,23 +5597,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         cs!8
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/4
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5928,7 +5623,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         g8
         % AFTER:
         % START_BEAM:
@@ -5946,7 +5640,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         fs!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5961,7 +5654,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         af!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5976,7 +5668,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         a8
         % AFTER:
         % STOP_BEAM:
@@ -5985,15 +5676,12 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6010,7 +5698,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         c4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6025,7 +5712,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         bf!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6040,7 +5726,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         af!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6055,7 +5740,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         a4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6070,28 +5754,23 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         b4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 2/3
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 27]
-          %! baca.make_music()
         fs!8
         % AFTER:
         % START_BEAM:
@@ -6099,17 +5778,14 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         a,8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         bf,!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         af!8
         % AFTER:
         % STOP_BEAM:
@@ -6127,21 +5803,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         g4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6156,7 +5828,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         cs'!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6171,21 +5842,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         ef!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6202,7 +5869,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         d'8
         % AFTER:
         % START_BEAM:
@@ -6220,7 +5886,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         c'8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6235,7 +5900,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         b8
         % AFTER:
         % STOP_BEAM:
@@ -6244,15 +5908,12 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6267,21 +5928,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         bf!8
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 2/3
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6298,7 +5955,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         e2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6313,38 +5969,31 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         f2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         ef!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         d4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 2/3
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 30]
-          %! baca.make_music()
         b,8
         % AFTER:
         % START_BEAM:
@@ -6352,17 +6001,14 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         cs!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         ef!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         d8
         % AFTER:
         % STOP_BEAM:
@@ -6380,21 +6026,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         c4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6409,7 +6051,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         d'4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6424,21 +6065,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         bf!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6455,7 +6092,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         e8
         % AFTER:
         % START_BEAM:
@@ -6473,7 +6109,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         f8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6488,7 +6123,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         ef!8
         % AFTER:
         % STOP_BEAM:
@@ -6497,17 +6131,13 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/4
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6522,7 +6152,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         b,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6537,23 +6166,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         ef!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/4
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6570,7 +6194,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         a,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6585,7 +6208,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         af!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6600,28 +6222,23 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         bf!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 33]
-          %! baca.make_music()
         fs,!16
         % AFTER:
         % START_BEAM:
@@ -6629,17 +6246,14 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         g,16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         ef!16
         % AFTER:
         % STOP_BEAM:
@@ -6657,21 +6271,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         f8
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6686,7 +6296,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         bf!16
         % AFTER:
         % START_BEAM:
@@ -6704,7 +6313,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         b16
         % AFTER:
         % STOP_BEAM:
@@ -6713,15 +6321,12 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6738,7 +6343,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         ef!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6753,7 +6357,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         a,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6768,21 +6371,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         af,!2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6799,28 +6398,22 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         f4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 9/10
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         fs!8
         % AFTER:
         % START_BEAM:
@@ -6828,12 +6421,10 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         g8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e8
         % AFTER:
         % STOP_BEAM:
@@ -6851,21 +6442,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         ef!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6882,7 +6469,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         cs!8
         % AFTER:
         % START_BEAM:
@@ -6900,7 +6486,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         d8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6915,7 +6500,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         c8
         % AFTER:
         % STOP_BEAM:
@@ -6923,7 +6507,6 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         bf,!16
         % AFTER:
         % START_BEAM:
@@ -6931,7 +6514,6 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         b,16
         % AFTER:
         % STOP_BEAM:
@@ -6940,20 +6522,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         ef!16
         % AFTER:
         % START_BEAM:
@@ -6961,7 +6539,6 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f,16
         % AFTER:
         % STOP_BEAM:
@@ -6970,15 +6547,12 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6995,7 +6569,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         fs,!2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7010,7 +6583,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         g,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7025,21 +6597,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         e4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 2/3
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7056,12 +6624,10 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         b4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         cs!8
         % AFTER:
         % START_BEAM:
@@ -7069,17 +6635,14 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         d8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         c8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         bf,!8
         % AFTER:
         % STOP_BEAM:
@@ -7088,15 +6651,12 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7111,7 +6671,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         af!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7126,28 +6685,23 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         bf!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 39]
-          %! baca.make_music()
         b,16
         % AFTER:
         % START_BEAM:
@@ -7155,12 +6709,10 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         ef!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         a,16
         % AFTER:
         % STOP_BEAM:
@@ -7169,15 +6721,12 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7192,21 +6741,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         bf,!8
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 2/3
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7223,7 +6768,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         b,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7238,40 +6782,32 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         cs!2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         d4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         c4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 9/14
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 41]
-          %! baca.make_music()
         a,8
         % AFTER:
         % START_BEAM:
@@ -7279,12 +6815,10 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         af,!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         bf,!8
         % AFTER:
         % STOP_BEAM:
@@ -7302,7 +6836,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         b,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7317,23 +6850,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         ef!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/4
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7350,7 +6878,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         e,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7365,21 +6892,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         ef,!2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7396,7 +6919,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         f8
         % AFTER:
         % START_BEAM:
@@ -7414,7 +6936,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         fs!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7429,7 +6950,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #red
         \once \override Stem.color = #red
         \once \override Tie.color = #red
-          %! baca.make_music()
         g8
         % AFTER:
         % STOP_BEAM:
@@ -7438,41 +6958,32 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         fs!8
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/4
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         g8
         % AFTER:
         % START_BEAM:
@@ -7480,17 +6991,14 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         af!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e8
         % AFTER:
         % STOP_BEAM:
@@ -7499,15 +7007,12 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7524,12 +7029,10 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         d4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         ef!16
         % AFTER:
         % START_BEAM:
@@ -7537,17 +7040,14 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         cs!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         b,16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         c16
         % AFTER:
         % STOP_BEAM:
@@ -7556,20 +7056,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \times 4/5
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7584,23 +7080,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         fs,!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 7/9
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7617,7 +7108,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         g,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7632,35 +7122,28 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         af,!2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         f8
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 9/16
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 46]
-          %! baca.make_music()
         c8
         % AFTER:
         % START_BEAM:
@@ -7668,17 +7151,14 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         d8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         ef!8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         cs!8
         % AFTER:
         % STOP_BEAM:
@@ -7696,23 +7176,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         b,2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 7/10
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7727,33 +7202,27 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         a,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         b,8
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 47]
-          %! baca.make_music()
         c16
         % AFTER:
         % START_BEAM:
@@ -7761,12 +7230,10 @@ number.1.Cello.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         e16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         bf,!16
         % AFTER:
         % STOP_BEAM:
@@ -7775,20 +7242,16 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! baca.make_music()
         b,16
         % AFTER:
         % SPANNER_STARTS:
@@ -7800,17 +7263,13 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/5
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7827,7 +7286,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         b,2
         % AFTER:
         % SPANNER_STARTS:
@@ -7847,7 +7305,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         a,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7862,7 +7319,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         af,!2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7877,7 +7333,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         bf,!2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7892,21 +7347,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         c2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7923,7 +7374,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         d,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7938,21 +7388,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         c,2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7969,7 +7415,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         b,,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7984,7 +7429,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         g,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7999,21 +7443,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         cs,!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8028,23 +7468,18 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         c4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 9/16
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8061,7 +7496,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         b,1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8076,7 +7510,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         a,1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8091,7 +7524,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         af,!1
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8106,7 +7538,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         bf,!1
         % AFTER:
         % COMMANDS:
@@ -8117,17 +7548,13 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \tweak text #tuplet-number::calc-fraction-text
-      %! baca.make_music()
     \times 3/5
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8148,7 +7575,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         cs,!2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8163,7 +7589,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         d,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8178,7 +7603,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         c,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8193,7 +7617,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         b,,2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8208,21 +7631,17 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         g,2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8239,7 +7658,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         fs,!2
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8254,7 +7672,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         g,2
         % AFTER:
         % COMMANDS:
@@ -8265,15 +7682,12 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     \scaleDurations #'(1 . 1)
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8290,7 +7704,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         f,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8305,7 +7718,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         e,4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8320,7 +7732,6 @@ number.1.Cello.Music = {
         \once \override Slur.color = #blue
         \once \override Stem.color = #blue
         \once \override Tie.color = #blue
-          %! baca.make_music()
         ef,!4
         % AFTER:
         % COMMANDS:
@@ -8343,7 +7754,6 @@ number.1.Cello.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % CLOSING:
     % COMMANDS:

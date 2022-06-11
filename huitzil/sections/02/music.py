@@ -63,79 +63,74 @@ baca.commands._metronome_mark(skips[1 - 1], commands.metronome_marks["44"], mani
 
 # VC
 
-commands(
-    ("vc", (1, 24)),
-    baca.make_mmrests(),
-)
+voice = score["Cello.Music"]
 
-commands(
-    ("vc", 25),
-    baca.make_skeleton("{ c1 }"),
-)
+music = baca.make_mmrests_function(commands.get(1, 24))
+voice.extend(music)
+
+# 25
+music = baca.make_skeleton_function("{ c1 }")
+voice.extend(music)
 
 # RH
 
-commands(
-    ("rh", (1, 4)),
-    baca.make_skeleton("{ c4 r2 c4 r2 c4 r2 c4 r2 }"),
-)
+voice = score["RH.Music"]
 
-commands(
-    ("rh", (5, 8)),
-    baca.make_skeleton("{ c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 }"),
-)
+# (1, 4)
+music = baca.make_skeleton_function("{ c4 r2 c4 r2 c4 r2 c4 r2 }")
+voice.extend(music)
 
-commands(
-    ("rh", (9, 12)),
-    baca.make_skeleton(
-        "{"
-        r" c4 \times 2/3 { c8 r4 } r4"
-        r" c4 \times 2/3 { c8 r4 } r4"
-        r" c4 c8 r8 r4"
-        r" c4 c8 r8 r4"
-        " }",
-    ),
+# (5, 8)
+music = baca.make_skeleton_function(
+    "{ c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 }"
 )
+voice.extend(music)
 
-commands(
-    ("rh", (13, 15)),
-    baca.make_skeleton("{ c4 c4 c4 c4 c4 c4 }"),
+# (9, 12)
+music = baca.make_skeleton_function(
+    "{"
+    r" c4 \times 2/3 { c8 r4 } r4"
+    r" c4 \times 2/3 { c8 r4 } r4"
+    r" c4 c8 r8 r4"
+    r" c4 c8 r8 r4"
+    " }",
 )
+voice.extend(music)
 
-commands(
-    ("rh", (16, 18)),
-    baca.make_skeleton(
-        "{"
-        r" \times 2/3 { c4 c4 c4 }"
-        r" \times 2/3 { c4 c4 c4 }"
-        r" \times 2/3 { c4 c4 c4 }"
-        " }",
-    ),
-)
+# (13, 15)
+music = baca.make_skeleton_function("{ c4 c4 c4 c4 c4 c4 }")
+voice.extend(music)
 
-commands(
-    ("rh", (19, 20)),
-    baca.make_skeleton(
-        "{" r" c8 c8 c8 c8" r" c8 c8 c8 c8" " }",
-    ),
+# (16, 18)
+music = baca.make_skeleton_function(
+    "{"
+    r" \times 2/3 { c4 c4 c4 }"
+    r" \times 2/3 { c4 c4 c4 }"
+    r" \times 2/3 { c4 c4 c4 }"
+    " }",
 )
+voice.extend(music)
 
-commands(
-    ("rh", (21, 24)),
-    baca.make_skeleton(
-        "{"
-        r" \times 4/5 { c8 c8 c8 c8 c8 }"
-        r" \times 4/6 { c8 c8 c8 c8 c8 c8 }"
-        r" \times 4/7 { c8 c8 c8 c8 c8 c8 c8 }"
-        " c16 c16 c16 c16 c16 c16 c16 c16"
-        " }",
-    ),
+# (19, 20)
+music = baca.make_skeleton_function(
+    "{" r" c8 c8 c8 c8" r" c8 c8 c8 c8" " }",
 )
+voice.extend(music)
 
-commands(
-    ("rh", 25),
-    baca.make_skeleton("{ c1 }"),
+# (21, 24)
+music = baca.make_skeleton_function(
+    "{"
+    r" \times 4/5 { c8 c8 c8 c8 c8 }"
+    r" \times 4/6 { c8 c8 c8 c8 c8 c8 }"
+    r" \times 4/7 { c8 c8 c8 c8 c8 c8 c8 }"
+    " c16 c16 c16 c16 c16 c16 c16 c16"
+    " }",
 )
+voice.extend(music)
+
+# 25
+music = baca.make_skeleton_function("{ c1 }")
+voice.extend(music)
 
 # anchor notes
 
