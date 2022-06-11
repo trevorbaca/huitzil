@@ -52,20 +52,20 @@ baca.bar_line(score["Skips"][10 - 1], "|.")
 
 # VC
 
-commands(
-    "vc",
-    baca.make_mmrests(),
-)
+voice = score["Cello.Music"]
+
+music = baca.make_mmrests_function(commands.get())
+voice.extend(music)
 
 # RH
 
-commands(
-    ("rh", (1, 12)),
-    baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2"),
-    baca.repeat_tie(
-        lambda _: baca.select.pleaves(_)[1:],
-    ),
-)
+voice = score["RH.Music"]
+
+# (1, 12)
+music = baca.make_monads_function("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2")
+for pleaf in baca.select.pleaves(music)[1:]:
+    baca.repeat_tie_function(pleaf)
+voice.extend(music)
 
 # reapply
 

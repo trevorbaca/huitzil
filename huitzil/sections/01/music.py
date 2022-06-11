@@ -404,10 +404,11 @@ baca.commands._metronome_mark(skips[1 - 1], commands.metronome_marks["78"], mani
 
 # VC
 
-commands(
-    ("vc", 1),
-    baca.make_music(music_, do_not_check_total_duration=True),
-)
+voice = score["Cello.Music"]
+
+voice = score["Cello.Music"]
+
+voice.extend(music_)
 
 commands(
     ("vc", 8),
@@ -441,10 +442,12 @@ commands(
 
 # RH
 
-commands(
-    "rh",
-    baca.make_mmrests(),
-)
+voice = score["RH.Music"]
+
+voice = score["RH.Music"]
+
+music = baca.make_mmrests_function(commands.get())
+voice.extend(music)
 
 # vc
 

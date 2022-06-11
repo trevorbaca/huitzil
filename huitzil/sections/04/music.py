@@ -67,122 +67,101 @@ for index, item in (
 
 # VC
 
-commands(
-    ("vc", (1, 7)),
-    baca.make_mmrests(),
-)
+voice = score["Cello.Music"]
 
-commands(
-    ("vc", (8, 13)),
-    baca.make_skeleton("{ c1 * 107/30 c1 * 1/5 }"),
-)
+music = baca.make_mmrests_function(commands.get(1, 7))
+voice.extend(music)
 
-commands(
-    ("vc", 14),
-    baca.make_skeleton("{ c2 }"),
-)
+# (8, 13)
+music = baca.make_skeleton_function("{ c1 * 107/30 c1 * 1/5 }")
+voice.extend(music)
 
-commands(
-    ("vc", (15, 22)),
-    baca.make_mmrests(),
-)
+# 14
+music = baca.make_skeleton_function("{ c2 }")
+voice.extend(music)
 
-commands(
-    ("vc", 23),
-    baca.make_skeleton("{ c1 * 1/2 }"),
-)
+music = baca.make_mmrests_function(commands.get(15, 22))
+voice.extend(music)
+
+# 23
+music = baca.make_skeleton_function("{ c1 * 1/2 }")
+voice.extend(music)
 
 # RH
 
-commands(
-    ("rh", 1),
-    baca.make_monads("1/8  1/8  1/8  1/8"),
-)
+voice = score["RH.Music"]
 
-commands(
-    ("rh", 2),
-    baca.make_monads("1/2"),
-)
+# 1
+music = baca.make_monads_function("1/8  1/8  1/8  1/8")
+voice.extend(music)
 
-commands(
-    ("rh", 3),
-    baca.make_monads("1/3  1/3"),
-)
+# 2
+music = baca.make_monads_function("1/2")
+voice.extend(music)
 
-commands(
-    ("rh", 4),
-    baca.make_monads("1/2"),
-)
+# 3
+music = baca.make_monads_function("1/3  1/3")
+voice.extend(music)
 
-commands(
-    ("rh", 5),
-    baca.make_monads("1/5  1/5  1/5  1/5"),
-)
+# 4
+music = baca.make_monads_function("1/2")
+voice.extend(music)
 
-commands(
-    ("rh", 6),
-    baca.make_monads("1/2"),
-)
+# 5
+music = baca.make_monads_function("1/5  1/5  1/5  1/5")
+voice.extend(music)
 
-commands(
-    ("rh", 7),
-    baca.make_monads("1/3  1/3"),
-)
+# 6
+music = baca.make_monads_function("1/2")
+voice.extend(music)
 
-commands(
-    ("rh", 8),
-    baca.make_monads("1/2"),
-)
+# 7
+music = baca.make_monads_function("1/3  1/3")
+voice.extend(music)
 
-commands(
-    ("rh", 9),
-    baca.make_monads("1/5  1/5  1/5  1/5"),
-)
+# 8
+music = baca.make_monads_function("1/2")
+voice.extend(music)
 
-commands(
-    ("rh", 10),
-    baca.make_monads("1/2"),
-)
+# 9
+music = baca.make_monads_function("1/5  1/5  1/5  1/5")
+voice.extend(music)
 
-commands(
-    ("rh", 11),
-    baca.make_monads("1/3  1/3"),
-)
+# 10
+music = baca.make_monads_function("1/2")
+voice.extend(music)
 
-commands(
-    ("rh", 12),
-    baca.make_monads("1/2"),
-)
+# 11
+music = baca.make_monads_function("1/3  1/3")
+voice.extend(music)
 
-commands(
-    ("rh", 13),
-    baca.make_monads("1/5  1/5  1/5  1/5"),
-)
+# 12
+music = baca.make_monads_function("1/2")
+voice.extend(music)
 
-commands(
-    ("rh", 14),
-    baca.make_monads("1/2"),
-)
+# 13
+music = baca.make_monads_function("1/5  1/5  1/5  1/5")
+voice.extend(music)
 
-commands(
-    ("rh", 15),
-    baca.make_monads("1/3  1/3"),
-)
+# 14
+music = baca.make_monads_function("1/2")
+voice.extend(music)
 
-commands(
-    ("rh", 16),
-    baca.make_monads("1/2"),
-)
+# 15
+music = baca.make_monads_function("1/3  1/3")
+voice.extend(music)
 
-commands(
-    ("rh", 17),
-    baca.make_monads("1/5  1/5  1/5  1/5"),
-)
+# 16
+music = baca.make_monads_function("1/2")
+voice.extend(music)
 
-commands(
-    ("rh", (18, 23)),
-    baca.make_monads("1/2  1/2  1/2  1/2  1/2  1/2"),
-)
+# 17
+music = baca.make_monads_function("1/5  1/5  1/5  1/5")
+voice.extend(music)
+
+# (18, 23)
+music = baca.make_monads_function("1/2  1/2  1/2  1/2  1/2  1/2")
+voice.extend(music)
 
 # anchor notes
 

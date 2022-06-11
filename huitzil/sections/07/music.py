@@ -71,47 +71,42 @@ for index, item in (
 
 # VC
 
-commands(
-    ("vc", 1),
-    baca.make_skeleton("{ c1 * 1/4 }"),
-)
+voice = score["Cello.Music"]
 
-commands(
-    ("vc", (2, 13)),
-    baca.make_mmrests(),
-)
+# 1
+music = baca.make_skeleton_function("{ c1 * 1/4 }")
+voice.extend(music)
 
-commands(
-    ("vc", (14, 24)),
-    baca.make_skeleton("{ c1 * 19/8 }"),
-)
+music = baca.make_mmrests_function(commands.get(2, 13))
+voice.extend(music)
 
-commands(
-    ("vc", (25, 26)),
-    baca.make_skeleton("{ c1 * 2 }"),
-)
+# (14, 24)
+music = baca.make_skeleton_function("{ c1 * 19/8 }")
+voice.extend(music)
+
+# (25, 26)
+music = baca.make_skeleton_function("{ c1 * 2 }")
+voice.extend(music)
 
 # RH
 
-commands(
-    ("rh", (1, 8)),
-    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
-)
+voice = score["RH.Music"]
 
-commands(
-    ("rh", (9, 16)),
-    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
-)
+# (1, 8))
+music = baca.make_monads_function("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16")
+voice.extend(music)
 
-commands(
-    ("rh", (17, 24)),
-    baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16"),
-)
+# (9, 16))
+music = baca.make_monads_function("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16")
+voice.extend(music)
 
-commands(
-    ("rh", (25, 26)),
-    baca.make_monads("1 1"),
-)
+# (17, 24))
+music = baca.make_monads_function("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16")
+voice.extend(music)
+
+# (25, 26))
+music = baca.make_monads_function("1 1")
+voice.extend(music)
 
 # anchor notes
 
