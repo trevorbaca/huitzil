@@ -65,7 +65,7 @@ baca.commands._metronome_mark(skips[1 - 1], commands.metronome_marks["44"], mani
 
 voice = score["Cello.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 24))
+music = baca.make_mmrests(commands.get(1, 24))
 voice.extend(music)
 
 # 25

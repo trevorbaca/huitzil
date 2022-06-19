@@ -82,7 +82,7 @@ voice = score["Cello.Music"]
 music = baca.make_skeleton_function("{ c1 * 1/2 }")
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(2, 26))
+music = baca.make_mmrests(commands.get(2, 26))
 voice.extend(music)
 
 # RH

@@ -70,7 +70,7 @@ for index, item in (
 
 voice = score["Cello.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 7))
+music = baca.make_mmrests(commands.get(1, 7))
 voice.extend(music)
 
 # 8, 13
@@ -81,7 +81,7 @@ voice.extend(music)
 music = baca.make_skeleton_function("{ c2 }")
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(15, 23))
+music = baca.make_mmrests(commands.get(15, 23))
 voice.extend(music)
 
 # RH
