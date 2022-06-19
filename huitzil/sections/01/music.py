@@ -446,7 +446,7 @@ voice = score["RH.Music"]
 
 voice = score["RH.Music"]
 
-music = baca.make_mmrests_function(commands.get())
+music = baca.make_mmrests(commands.get())
 voice.extend(music)
 
 # vc

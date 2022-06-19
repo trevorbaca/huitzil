@@ -1356,7 +1356,7 @@ number.10.Cello.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -1376,7 +1376,7 @@ number.10.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 2]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -1388,7 +1388,7 @@ number.10.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 3]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -1400,7 +1400,7 @@ number.10.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 4]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -1412,7 +1412,7 @@ number.10.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 5]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -1424,7 +1424,7 @@ number.10.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 6]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -1436,7 +1436,7 @@ number.10.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 7]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -1448,7 +1448,7 @@ number.10.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 8]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -1460,7 +1460,7 @@ number.10.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 9]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -1486,7 +1486,7 @@ number.10.Cello.Music = {
       %! baca.IndicatorCommand._call()
       %! baca.literal()
     \override Score.SpanBar.extra-offset = #'(8 . 0)
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 3/2
     % AFTER:
     % MARKUP:

@@ -3779,7 +3779,7 @@ number.8.Cello.Music = {
       %! baca.OverrideCommand._call(1)
       %! baca.mmrest_transparent()
     \override MultiMeasureRest.transparent = ##t
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 13/24
     % AFTER:
     % MARKUP:
@@ -3791,7 +3791,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 3]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -3803,7 +3803,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 4]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 7/12
     % AFTER:
     % MARKUP:
@@ -3815,7 +3815,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 5]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 53/60
     % AFTER:
     % MARKUP:
@@ -3827,7 +3827,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 6]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 23/24
     % AFTER:
     % MARKUP:
@@ -3839,7 +3839,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 7]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -3851,7 +3851,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 8]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -3863,7 +3863,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 9]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 3/8
     % AFTER:
     % MARKUP:
@@ -3875,7 +3875,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 10]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/3
     % AFTER:
     % MARKUP:
@@ -3887,7 +3887,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 11]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 11/15
     % AFTER:
     % MARKUP:
@@ -3899,7 +3899,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 12]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -3911,7 +3911,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 13]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -3923,7 +3923,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 14]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -3935,7 +3935,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 15]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -3947,7 +3947,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 16]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -3959,7 +3959,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 17]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/6
     % AFTER:
     % MARKUP:
@@ -3971,7 +3971,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 18]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -3983,7 +3983,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 19]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 2/5
     % AFTER:
     % MARKUP:
@@ -3995,7 +3995,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 20]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -4007,7 +4007,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 21]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -4019,7 +4019,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 22]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -4031,7 +4031,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 23]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -4043,7 +4043,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 24]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -4055,7 +4055,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 25]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -4067,7 +4067,7 @@ number.8.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 26]
-      %! baca.make_mmrests_function()
+      %! baca.make_mmrests(1)
     R1 * 1/2
     % AFTER:
     % MARKUP:
