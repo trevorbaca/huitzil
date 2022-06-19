@@ -62,7 +62,7 @@ voice.extend(music)
 voice = score["RH.Music"]
 
 # (1, 12)
-music = baca.make_monads_function("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2")
+music = baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2")
 for pleaf in baca.select.pleaves(music)[1:]:
     baca.repeat_tie_function(pleaf)
 voice.extend(music)
