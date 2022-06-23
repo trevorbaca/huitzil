@@ -3229,15 +3229,11 @@ number.4.Cello.Music = {
         \once \override NoteHead.style = #'do
           %! MEASURE_119
           %! SHIFTED_CLEF
-          %! baca.OverrideCommand._call(1)
-          %! baca.clef_shift()
-          %! baca.clef_x_extent_false()
+          %! baca.clef_x_extent_false_function(1)
         \once \override Staff.Clef.X-extent = ##f
           %! MEASURE_119
           %! SHIFTED_CLEF
-          %! baca.OverrideCommand._call(1)
-          %! baca.clef_extra_offset()
-          %! baca.clef_shift()
+          %! baca.clef_extra_offset_function(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
           %! baca.IndicatorCommand._call()
           %! baca.literal()
@@ -3392,15 +3388,11 @@ number.4.Cello.Music = {
         % COMMANDS:
           %! MEASURE_128
           %! SHIFTED_CLEF
-          %! baca.OverrideCommand._call(1)
-          %! baca.clef_shift()
-          %! baca.clef_x_extent_false()
+          %! baca.clef_x_extent_false_function(1)
         \once \override Staff.Clef.X-extent = ##f
           %! MEASURE_128
           %! SHIFTED_CLEF
-          %! baca.OverrideCommand._call(1)
-          %! baca.clef_extra_offset()
-          %! baca.clef_shift()
+          %! baca.clef_extra_offset_function(1)
         \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
           %! baca.IndicatorCommand._call()
           %! baca.literal()
