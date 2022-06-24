@@ -1529,6 +1529,7 @@ number.8.RH.Music = {
       %! EXPLICIT_BAR_EXTENT
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
+      %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 4)
       %! baca.OverrideCommand._call(1)
       %! baca.text_script_parent_alignment_x()
@@ -1542,17 +1543,17 @@ number.8.RH.Music = {
       %! EXPLICIT_STAFF_LINES
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
-      %! baca.staff_lines()
+      %! baca.staff_lines(2)
     \stopStaff
       %! EXPLICIT_STAFF_LINES
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
-      %! baca.staff_lines()
+      %! baca.staff_lines(2)
     \once \override RHStaff.StaffSymbol.line-count = 7
       %! EXPLICIT_STAFF_LINES
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
-      %! baca.staff_lines()
+      %! baca.staff_lines(2)
     \startStaff
     % OPENING:
     % COMMANDS:
