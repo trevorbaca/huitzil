@@ -177,6 +177,7 @@ commands(
     ),
     baca.pitch(
         "A1",
+        allow_hidden=True,
         selector=lambda _: baca.select.rleaf(_, -1),
     ),
     baca.time_signature_stencil_false(),
@@ -271,6 +272,7 @@ commands(
     ),
     baca.staff_positions(
         [-6, 0, 6],
+        allow_hidden=True,
         selector=lambda _: baca.select.rleaves(_),
     ),
 )

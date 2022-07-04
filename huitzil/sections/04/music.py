@@ -634,6 +634,7 @@ commands(
     ),
     baca.staff_position(
         6,
+        allow_hidden=True,
         selector=lambda _: baca.select.rleaf(_, -1),
     ),
 )
