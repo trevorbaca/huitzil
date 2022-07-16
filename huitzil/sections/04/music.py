@@ -36,7 +36,7 @@ time_signatures = [
 score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
-commands = baca.CommandAccumulator(
+accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
@@ -46,30 +46,30 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
-    commands,
-    commands.manifests(),
-    commands.time_signatures,
+    accumulator,
+    accumulator.manifests(),
+    accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
 )
 
 skips = score["Skips"]
-manifests = commands.manifests()
+manifests = accumulator.manifests()
 
 for index, item in (
     (18 - 1, "88"),
     (18 - 1, baca.Ritardando()),
 ):
     skip = skips[index]
-    indicator = commands.metronome_marks.get(item, item)
+    indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
 # VC
 
 voice = score["Cello.Music"]
 
-music = baca.make_mmrests(commands.get(1, 7))
+music = baca.make_mmrests(accumulator.get(1, 7))
 voice.extend(music)
 
 # (8, 13)
@@ -80,7 +80,7 @@ voice.extend(music)
 music = baca.make_skeleton("{ c2 }")
 voice.extend(music)
 
-music = baca.make_mmrests(commands.get(15, 22))
+music = baca.make_mmrests(accumulator.get(15, 22))
 voice.extend(music)
 
 # 23
@@ -165,7 +165,7 @@ voice.extend(music)
 
 # anchor notes
 
-commands(
+accumulator(
     "rh",
     baca.append_anchor_note(),
 )
@@ -174,14 +174,14 @@ commands(
 
 music_voices = [_ for _ in voice_names if "Music" in _]
 
-commands(
+accumulator(
     music_voices,
     baca.reapply_persistent_indicators(),
 )
 
 # vc
 
-commands(
+accumulator(
     ("vc", (8, 13)),
     baca.pitches("B1 C2"),
     baca.repeat_tie(
@@ -190,7 +190,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("vc", 14),
     baca.clef("treble"),
     baca.literal(
@@ -206,7 +206,7 @@ commands(
     baca.staff_position(7),
 )
 
-commands(
+accumulator(
     ("vc", 23),
     baca.clef("bass"),
     baca.literal(
@@ -219,7 +219,7 @@ commands(
     baca.pitch("Bb1"),
 )
 
-commands(
+accumulator(
     "vc",
     baca.mmrest_transparent(),
     baca.new(
@@ -232,7 +232,7 @@ commands(
 
 # rh
 
-commands(
+accumulator(
     ("rh", 1),
     baca.markup(
         r"\baca-ffz-markup",
@@ -245,7 +245,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 2),
     baca.markup(
         r"\baca-ffz-markup",
@@ -258,7 +258,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (2, 13)),
     # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
     # baca.hairpin(
@@ -276,7 +276,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 3),
     baca.markup(
         r"\baca-fz-markup",
@@ -294,7 +294,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 4),
     baca.markup(
         r"\baca-ffz-markup",
@@ -306,7 +306,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 5),
     baca.markup(
         r"\baca-mfz-markup",
@@ -334,7 +334,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 6),
     baca.markup(
         r"\baca-ffz-markup",
@@ -346,7 +346,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 7),
     baca.markup(
         r"\baca-fz-markup",
@@ -363,7 +363,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 8),
     baca.markup(
         r"\baca-ffz-markup",
@@ -375,7 +375,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 9),
     baca.markup(
         r"\baca-mfz-markup",
@@ -402,7 +402,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 10),
     baca.markup(
         r"\baca-ffz-markup",
@@ -414,7 +414,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 11),
     baca.markup(
         r"\baca-fz-markup",
@@ -431,7 +431,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 12),
     baca.markup(
         r"\baca-ffz-markup",
@@ -443,7 +443,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 13),
     baca.markup(
         r"\baca-mfz-markup",
@@ -470,7 +470,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 14),
     baca.markup(
         r"\baca-ffz-markup",
@@ -478,7 +478,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (14, 23)),
     # FUTURE: use this when LilyPond fixes DynamicLine Spanner bug:
     # baca.hairpin(
@@ -511,7 +511,7 @@ commands(
     baca.staff_position(8),
 )
 
-commands(
+accumulator(
     ("rh", 15),
     baca.markup(
         r"\baca-fz-markup",
@@ -524,7 +524,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 16),
     baca.markup(
         r"\baca-ffz-markup",
@@ -532,7 +532,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 17),
     baca.markup(
         r"\baca-mfz-markup",
@@ -555,7 +555,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (18, 22)),
     baca.text_spanner(
         "(trem. mod.) => più stretto => più largo => più stretto => mod.",
@@ -564,7 +564,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (18, 21)),
     # TODO: make +LEDGER_SCORE tag work
     # baca.tag(
@@ -577,7 +577,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (18, 23)),
     baca.markup(
         r"\baca-ffz-markup",
@@ -610,14 +610,14 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 22),
     baca.only_section(
         baca.hairpin_to_barline(),
     ),
 )
 
-commands(
+accumulator(
     ("rh", 23),
     baca.literal(
         [
@@ -639,7 +639,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     "rh",
     baca.only_section(
         baca.chunk(
@@ -664,14 +664,14 @@ commands(
 
 # stage 2 (after staff position settings)
 
-commands(
+accumulator(
     ("vc", (8, 14)),
     baca.glissando(
         selector=lambda _: baca.select.leaves(_),
     ),
 )
 
-commands(
+accumulator(
     "rh",
     baca.glissando(
         right_broken=True,
@@ -680,21 +680,21 @@ commands(
 )
 
 if __name__ == "__main__":
-    metadata, persist, score, timing = baca.build.interpret_section(
+    metadata, persist, score, timing = baca.build.section(
         score,
-        commands.manifests(),
-        commands.time_signatures,
-        **baca.score_interpretation_defaults(),
+        accumulator.manifests(),
+        accumulator.time_signatures,
+        **baca.interpret.section_defaults(),
         activate=(
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=commands,
+        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
-    lilypond_file = baca.make_lilypond_file(
+    lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily"],

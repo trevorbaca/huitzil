@@ -39,7 +39,7 @@ time_signatures = [
 score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
-commands = baca.CommandAccumulator(
+accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
@@ -49,16 +49,16 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
-    commands,
-    commands.manifests(),
-    commands.time_signatures,
+    accumulator,
+    accumulator.manifests(),
+    accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
 )
 
 skips = score["Skips"]
-manifests = commands.manifests()
+manifests = accumulator.manifests()
 
 for index, item in (
     (13 - 1, "44"),
@@ -70,14 +70,14 @@ for index, item in (
     (26 - 1, "88"),
 ):
     skip = skips[index]
-    indicator = commands.metronome_marks.get(item, item)
+    indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
 # VC
 
 voice = score["Cello.Music"]
 
-music = baca.make_mmrests(commands.get())
+music = baca.make_mmrests(accumulator.get())
 voice.extend(music)
 
 # RH
@@ -190,7 +190,7 @@ voice.extend(music)
 
 # anchor notes
 
-commands(
+accumulator(
     "rh",
     baca.append_anchor_note(),
 )
@@ -199,14 +199,14 @@ commands(
 
 music_voices = [_ for _ in voice_names if "Music" in _]
 
-commands(
+accumulator(
     music_voices,
     baca.reapply_persistent_indicators(),
 )
 
 # vc
 
-commands(
+accumulator(
     "vc",
     baca.mmrest_transparent(),
     baca.time_signature_stencil_false(),
@@ -219,7 +219,7 @@ commands(
 
 # rh
 
-commands(
+accumulator(
     ("rh", 1),
     baca.staff_positions(
         [6, 6, 4],
@@ -227,7 +227,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (1, 3)),
     baca.markup(
         r"\baca-mfz-markup",
@@ -236,7 +236,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 2),
     baca.staff_positions(
         [6, 6, 4],
@@ -244,7 +244,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 3),
     baca.staff_positions(
         [6, 6, 4],
@@ -252,7 +252,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 4),
     baca.hairpin(
         "p -- !",
@@ -264,7 +264,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (4, 5)),
     baca.markup(
         r"\baca-fz-markup",
@@ -282,7 +282,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 5),
     baca.hairpin(
         "pp < mf",
@@ -294,7 +294,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 6),
     baca.hairpin(
         "p -- !",
@@ -316,7 +316,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 7),
     baca.staff_positions(
         [2],
@@ -324,7 +324,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (7, 9)),
     baca.markup(
         r"\baca-fz-markup",
@@ -333,7 +333,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (7, 9)),
     baca.hairpin(
         "mf -- !",
@@ -342,7 +342,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 8),
     baca.staff_positions(
         [2, 2, 0],
@@ -350,7 +350,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 9),
     baca.staff_positions(
         [2],
@@ -358,7 +358,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 10),
     baca.staff_positions(
         [2, 6],
@@ -366,7 +366,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (10, 11)),
     baca.markup(
         r"\baca-mfz-markup",
@@ -385,7 +385,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (10, 12)),
     baca.hairpin(
         "mp > ppp -- !",
@@ -395,7 +395,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 11),
     baca.staff_positions(
         [4, 2, 6, 4, 2, 0],
@@ -403,7 +403,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 12),
     baca.staff_positions(
         [0],
@@ -411,7 +411,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (12, 16)),
     baca.markup(
         r"\baca-ffz-markup",
@@ -420,7 +420,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 13),
     baca.staff_positions(
         [0],
@@ -428,7 +428,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (13, 16)),
     baca.hairpin(
         "p < mf",
@@ -440,7 +440,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 14),
     baca.staff_positions(
         [-2],
@@ -448,7 +448,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 15),
     baca.staff_positions(
         [-2],
@@ -456,7 +456,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 16),
     baca.staff_positions(
         [-4],
@@ -464,7 +464,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 17),
     baca.markup(
         r"\baca-fz-markup",
@@ -476,7 +476,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (17, 18)),
     baca.hairpin(
         "mp >",
@@ -489,7 +489,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 18),
     baca.markup(
         r"\baca-mfz-markup",
@@ -502,7 +502,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 19),
     baca.hairpin(
         "ppp -- !",
@@ -523,7 +523,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 20),
     baca.staff_positions(
         [0],
@@ -531,7 +531,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 21),
     baca.staff_positions(
         [0],
@@ -539,7 +539,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (20, 26)),
     baca.hairpin(
         "p < f -- !",
@@ -553,7 +553,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", (21, 26)),
     baca.text_spanner(
         "sub. trem. mod. => più stretto => più largo => più stretto =>"
@@ -563,7 +563,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 22),
     baca.staff_positions(
         [-2],
@@ -571,7 +571,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 23),
     baca.staff_positions(
         [-2],
@@ -579,7 +579,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 24),
     baca.staff_positions(
         [-4],
@@ -587,7 +587,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 25),
     baca.staff_positions(
         [-4],
@@ -595,7 +595,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 26),
     baca.markup(
         r"\huitzil-directly-above-end-of-fingerboard-markup",
@@ -612,7 +612,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     "rh",
     baca.only_section(
         baca.chunk(
@@ -637,7 +637,7 @@ commands(
 
 # stage 2 (after staff position settings)
 
-commands(
+accumulator(
     "rh",
     baca.glissando(
         selector=lambda _: baca.select.leaves(_),
@@ -645,22 +645,22 @@ commands(
 )
 
 if __name__ == "__main__":
-    metadata, persist, score, timing = baca.build.interpret_section(
+    metadata, persist, score, timing = baca.build.section(
         score,
-        commands.manifests(),
-        commands.time_signatures,
-        **baca.score_interpretation_defaults(),
+        accumulator.manifests(),
+        accumulator.time_signatures,
+        **baca.interpret.section_defaults(),
         activate=(
             # baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
             # baca.enums.MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=commands,
+        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
-    lilypond_file = baca.make_lilypond_file(
+    lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily"],

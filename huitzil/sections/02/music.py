@@ -38,7 +38,7 @@ time_signatures = [
 score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
-commands = baca.CommandAccumulator(
+accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
@@ -48,24 +48,24 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
-    commands,
-    commands.manifests(),
-    commands.time_signatures,
+    accumulator,
+    accumulator.manifests(),
+    accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
 )
 
 skips = score["Skips"]
-manifests = commands.manifests()
+manifests = accumulator.manifests()
 
-baca.metronome_mark(skips[1 - 1], commands.metronome_marks["44"], manifests)
+baca.metronome_mark(skips[1 - 1], accumulator.metronome_marks["44"], manifests)
 
 # VC
 
 voice = score["Cello.Music"]
 
-music = baca.make_mmrests(commands.get(1, 24))
+music = baca.make_mmrests(accumulator.get(1, 24))
 voice.extend(music)
 
 # 25
@@ -134,7 +134,7 @@ voice.extend(music)
 
 # anchor notes
 
-commands(
+accumulator(
     "rh",
     baca.append_anchor_note(),
 )
@@ -143,14 +143,14 @@ commands(
 
 music_voices = [_ for _ in voice_names if "Music" in _]
 
-commands(
+accumulator(
     music_voices,
     baca.reapply_persistent_indicators(),
 )
 
 # vc
 
-commands(
+accumulator(
     "vc",
     baca.literal(
         [
@@ -168,7 +168,7 @@ commands(
     baca.time_signature_stencil_false(),
 )
 
-commands(
+accumulator(
     ("vc", 25),
     baca.literal(
         [
@@ -182,17 +182,17 @@ commands(
 
 # rh
 
-commands(
+accumulator(
     ("rh", (1, 4)),
     baca.rest_position(0),
 )
 
-commands(
+accumulator(
     ("rh", (19, 24)),
     baca.beam(),
 )
 
-commands(
+accumulator(
     ("rh", [9, 10]),
     baca.tag(
         # TODO: make +ARCH_A_SCORE work
@@ -205,7 +205,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", 25),
     baca.glissando(
         right_broken=True,
@@ -238,7 +238,7 @@ commands(
     baca.stem_tremolo(),
 )
 
-commands(
+accumulator(
     ("rh", 25),
     baca.staff_position(
         6,
@@ -247,7 +247,7 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     "rh",
     baca.alternate_bow_strokes(),
     baca.chunk(
@@ -274,21 +274,21 @@ commands(
 )
 
 if __name__ == "__main__":
-    metadata, persist, score, timing = baca.build.interpret_section(
+    metadata, persist, score, timing = baca.build.section(
         score,
-        commands.manifests(),
-        commands.time_signatures,
-        **baca.score_interpretation_defaults(),
+        accumulator.manifests(),
+        accumulator.time_signatures,
+        **baca.interpret.section_defaults(),
         activate=(
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=commands,
+        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
-    lilypond_file = baca.make_lilypond_file(
+    lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily"],

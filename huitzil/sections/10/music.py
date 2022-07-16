@@ -23,7 +23,7 @@ time_signatures = [
 score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
-commands = baca.CommandAccumulator(
+accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
@@ -33,19 +33,19 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
-    commands,
-    commands.manifests(),
-    commands.time_signatures,
+    accumulator,
+    accumulator.manifests(),
+    accumulator.time_signatures,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
 )
 
 skips = score["Skips"]
-manifests = commands.manifests()
+manifests = accumulator.manifests()
 
 for index, item in ((1 - 1, "66"),):
     skip = skips[index]
-    indicator = commands.metronome_marks.get(item, item)
+    indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
 baca.bar_line(score["Skips"][10 - 1], "|.")
@@ -54,7 +54,7 @@ baca.bar_line(score["Skips"][10 - 1], "|.")
 
 voice = score["Cello.Music"]
 
-music = baca.make_mmrests(commands.get())
+music = baca.make_mmrests(accumulator.get())
 voice.extend(music)
 
 # RH
@@ -71,14 +71,14 @@ voice.extend(music)
 
 music_voices = [_ for _ in voice_names if "Music" in _]
 
-commands(
+accumulator(
     music_voices,
     baca.reapply_persistent_indicators(),
 )
 
 # vc
 
-commands(
+accumulator(
     "vc",
     baca.mmrest_transparent(),
     baca.new(
@@ -98,7 +98,7 @@ commands(
     baca.time_signature_stencil_false(),
 )
 
-commands(
+accumulator(
     ("vc", -1),
     baca.literal(
         [
@@ -120,7 +120,7 @@ commands(
 
 # rh
 
-commands(
+accumulator(
     ("rh", (1, 12)),
     baca.staff_position(8),
     baca.text_spanner(
@@ -131,7 +131,7 @@ commands(
 )
 
 
-commands(
+accumulator(
     ("rh", (1, 10)),
     baca.markup(
         r"\baca-mpz-markup",
@@ -145,12 +145,12 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("rh", -1),
     baca.literal(r"\override Staff.BarLine.bar-extent = #'(-4 . 4)", site="after"),
 )
 
-commands(
+accumulator(
     "rh",
     # TODO: fix right-broken text spanners and replace this:
     baca.literal(r"<> \stopTextSpan"),
@@ -174,24 +174,24 @@ commands(
 )
 
 if __name__ == "__main__":
-    defaults = baca.score_interpretation_defaults()
+    defaults = baca.interpret.section_defaults()
     del defaults["append_anchor_skip"]
-    metadata, persist, score, timing = baca.build.interpret_section(
+    metadata, persist, score, timing = baca.build.section(
         score,
-        commands.manifests(),
-        commands.time_signatures,
+        accumulator.manifests(),
+        accumulator.time_signatures,
         **defaults,
         activate=(
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=commands,
+        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
         final_section=True,
     )
-    lilypond_file = baca.make_lilypond_file(
+    lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily"],
