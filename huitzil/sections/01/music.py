@@ -379,7 +379,7 @@ music_ = music
 score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
-commands = baca.CommandAccumulator(
+accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
@@ -389,18 +389,18 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
-    commands,
-    commands.manifests(),
-    commands.time_signatures,
+    accumulator,
+    accumulator.manifests(),
+    accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
 )
 
 skips = score["Skips"]
-manifests = commands.manifests()
+manifests = accumulator.manifests()
 
-baca.metronome_mark(skips[1 - 1], commands.metronome_marks["78"], manifests)
+baca.metronome_mark(skips[1 - 1], accumulator.metronome_marks["78"], manifests)
 
 # VC
 
@@ -410,7 +410,7 @@ voice = score["Cello.Music"]
 
 voice.extend(music_)
 
-commands(
+accumulator(
     ("vc", 8),
     baca.suite(
         baca.untie(
@@ -426,14 +426,14 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("vc", 20),
     baca.repeat_tie(
         lambda _: baca.select.pleaf(_, 0),
     ),
 )
 
-commands(
+accumulator(
     ("vc", 48),
     baca.repeat_tie(
         lambda _: baca.select.pleaf(_, 0),
@@ -446,14 +446,14 @@ voice = score["RH.Music"]
 
 voice = score["RH.Music"]
 
-music = baca.make_mmrests(commands.get())
+music = baca.make_mmrests(accumulator.get())
 voice.extend(music)
 
 # vc
 
-commands(
+accumulator(
     "vc",
-    baca.instrument(commands.instruments["Cello"]),
+    baca.instrument(accumulator.instruments["Cello"]),
     baca.clef("bass"),
     baca.markup(
         r"\huitzil-phrasing-dynamics-see-preface-markup",
@@ -462,23 +462,23 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     ("vc", (1, 51)),
     baca.tuplet_bracket_staff_padding(3),
 )
 
-commands(
+accumulator(
     ("vc", 53),
     baca.breathe(),
 )
 
-commands(
+accumulator(
     ("vc", (52, 54)),
     baca.tuplet_bracket_staff_padding(4),
 )
 
 
-commands(
+accumulator(
     ("vc", 54),
     baca.only_score(
         baca.breathe(
@@ -493,7 +493,7 @@ commands(
 
 # rh
 
-commands(
+accumulator(
     "rh",
     baca.literal(r"\stopStaff"),
     baca.mmrest_transparent(
@@ -503,11 +503,11 @@ commands(
 )
 
 if __name__ == "__main__":
-    metadata, persist, score, timing = baca.build.interpret_section(
+    metadata, persist, score, timing = baca.build.section(
         score,
-        commands.manifests(),
-        commands.time_signatures,
-        **baca.score_interpretation_defaults(),
+        accumulator.manifests(),
+        accumulator.time_signatures,
+        **baca.interpret.section_defaults(),
         activate=(
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
@@ -515,11 +515,11 @@ if __name__ == "__main__":
             # baca.enums.SPACING,
         ),
         always_make_global_rests=True,
-        commands=commands,
+        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
-    lilypond_file = baca.make_lilypond_file(
+    lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily", "header.ily"],
