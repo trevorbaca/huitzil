@@ -402,107 +402,109 @@ manifests = accumulator.manifests()
 
 baca.metronome_mark(skips[1 - 1], accumulator.metronome_marks["78"], manifests)
 
-# VC
 
-voice = score["Cello.Music"]
-
-voice = score["Cello.Music"]
-
-voice.extend(music_)
-
-accumulator(
-    ("vc", 8),
-    baca.suite(
-        baca.untie(
-            lambda _: baca.select.pleaf(_, -2),
-        ),
-        baca.chunk(
-            baca.repeat_tie(
-                lambda _: baca.select.pleaf(_, 0),
+def VC(voice):
+    voice = score["Cello.Music"]
+    voice = score["Cello.Music"]
+    voice.extend(music_)
+    accumulator(
+        ("vc", 8),
+        baca.suite(
+            baca.untie(
+                lambda _: baca.select.pleaf(_, -2),
             ),
-            baca.repeat_tie_extra_offset((-1.5, 0)),
-            selector=lambda _: baca.select.pleaf(_, -1),
+            baca.chunk(
+                baca.repeat_tie(
+                    lambda _: baca.select.pleaf(_, 0),
+                ),
+                baca.repeat_tie_extra_offset((-1.5, 0)),
+                selector=lambda _: baca.select.pleaf(_, -1),
+            ),
         ),
-    ),
-)
-
-accumulator(
-    ("vc", 20),
-    baca.repeat_tie(
-        lambda _: baca.select.pleaf(_, 0),
-    ),
-)
-
-accumulator(
-    ("vc", 48),
-    baca.repeat_tie(
-        lambda _: baca.select.pleaf(_, 0),
-    ),
-)
-
-# RH
-
-voice = score["RH.Music"]
-
-voice = score["RH.Music"]
-
-music = baca.make_mmrests(accumulator.get())
-voice.extend(music)
-
-# vc
-
-accumulator(
-    "vc",
-    baca.instrument(accumulator.instruments["Cello"]),
-    baca.clef("bass"),
-    baca.markup(
-        r"\huitzil-phrasing-dynamics-see-preface-markup",
-        abjad.Tweak(r"- \tweak staff-padding 9"),
-        direction=abjad.DOWN,
-    ),
-)
-
-accumulator(
-    ("vc", (1, 51)),
-    baca.tuplet_bracket_staff_padding(3),
-)
-
-accumulator(
-    ("vc", 53),
-    baca.breathe(),
-)
-
-accumulator(
-    ("vc", (52, 54)),
-    baca.tuplet_bracket_staff_padding(4),
-)
-
-
-accumulator(
-    ("vc", 54),
-    baca.only_score(
-        baca.breathe(
-            lambda _: baca.select.pleaf(_, -1),
-            abjad.Tweak(r"\tweak extra-offset #'(0 . 2)"),
+    )
+    accumulator(
+        ("vc", 20),
+        baca.repeat_tie(
+            lambda _: baca.select.pleaf(_, 0),
         ),
-    ),
-    baca.only_section(
+    )
+    accumulator(
+        ("vc", 48),
+        baca.repeat_tie(
+            lambda _: baca.select.pleaf(_, 0),
+        ),
+    )
+
+
+def RH(voice):
+    voice = score["RH.Music"]
+    voice = score["RH.Music"]
+    music = baca.make_mmrests(accumulator.get())
+    voice.extend(music)
+
+
+def vc(m):
+    accumulator(
+        "vc",
+        baca.instrument(accumulator.instruments["Cello"]),
+        baca.clef("bass"),
+        baca.markup(
+            r"\huitzil-phrasing-dynamics-see-preface-markup",
+            abjad.Tweak(r"- \tweak staff-padding 9"),
+            direction=abjad.DOWN,
+        ),
+    )
+    accumulator(
+        ("vc", (1, 51)),
+        baca.tuplet_bracket_staff_padding(3),
+    )
+    accumulator(
+        ("vc", 53),
         baca.breathe(),
-    ),
-)
+    )
+    accumulator(
+        ("vc", (52, 54)),
+        baca.tuplet_bracket_staff_padding(4),
+    )
+    accumulator(
+        ("vc", 54),
+        baca.only_score(
+            baca.breathe(
+                lambda _: baca.select.pleaf(_, -1),
+                abjad.Tweak(r"\tweak extra-offset #'(0 . 2)"),
+            ),
+        ),
+        baca.only_section(
+            baca.breathe(),
+        ),
+    )
 
-# rh
 
-accumulator(
-    "rh",
-    baca.literal(r"\stopStaff"),
-    baca.mmrest_transparent(
-        selector=lambda _: baca.select.mmrests(_),
-    ),
-    baca.clef("percussion"),
-)
+def rh(m):
+    accumulator(
+        "rh",
+        baca.literal(r"\stopStaff"),
+        baca.mmrest_transparent(
+            selector=lambda _: baca.select.mmrests(_),
+        ),
+        baca.clef("percussion"),
+    )
+
+
+def main():
+    VC(accumulator.voice("vc"))
+    RH(accumulator.voice("rh"))
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    vc(cache["vc"])
+    rh(cache["rh"])
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),
