@@ -61,219 +61,204 @@ manifests = accumulator.manifests()
 
 baca.metronome_mark(skips[1 - 1], accumulator.metronome_marks["44"], manifests)
 
-# VC
 
-voice = score["Cello.Music"]
+def VC(voice):
+    voice = score["Cello.Music"]
+    music = baca.make_mmrests(accumulator.get(1, 24))
+    voice.extend(music)
+    # 25
+    music = baca.make_skeleton("{ c1 }")
+    voice.extend(music)
 
-music = baca.make_mmrests(accumulator.get(1, 24))
-voice.extend(music)
 
-# 25
-music = baca.make_skeleton("{ c1 }")
-voice.extend(music)
+def RH(voice):
+    voice = score["RH.Music"]
+    # (1, 4)
+    music = baca.make_skeleton("{ c4 r2 c4 r2 c4 r2 c4 r2 }")
+    voice.extend(music)
+    # (5, 8)
+    music = baca.make_skeleton(
+        "{ c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 }"
+    )
+    voice.extend(music)
+    # (9, 12)
+    music = baca.make_skeleton(
+        "{"
+        r" c4 \times 2/3 { c8 r4 } r4"
+        r" c4 \times 2/3 { c8 r4 } r4"
+        r" c4 c8 r8 r4"
+        r" c4 c8 r8 r4"
+        " }",
+    )
+    voice.extend(music)
+    # (13, 15)
+    music = baca.make_skeleton("{ c4 c4 c4 c4 c4 c4 }")
+    voice.extend(music)
+    # (16, 18)
+    music = baca.make_skeleton(
+        "{"
+        r" \times 2/3 { c4 c4 c4 }"
+        r" \times 2/3 { c4 c4 c4 }"
+        r" \times 2/3 { c4 c4 c4 }"
+        " }",
+    )
+    voice.extend(music)
+    # (19, 20)
+    music = baca.make_skeleton(
+        "{" r" c8 c8 c8 c8" r" c8 c8 c8 c8" " }",
+    )
+    voice.extend(music)
+    # (21, 24)
+    music = baca.make_skeleton(
+        "{"
+        r" \times 4/5 { c8 c8 c8 c8 c8 }"
+        r" \times 4/6 { c8 c8 c8 c8 c8 c8 }"
+        r" \times 4/7 { c8 c8 c8 c8 c8 c8 c8 }"
+        " c16 c16 c16 c16 c16 c16 c16 c16"
+        " }",
+    )
+    voice.extend(music)
+    # 25
+    music = baca.make_skeleton("{ c1 }")
+    voice.extend(music)
+    baca.append_anchor_note_function(voice)
 
-# RH
 
-voice = score["RH.Music"]
-
-# (1, 4)
-music = baca.make_skeleton("{ c4 r2 c4 r2 c4 r2 c4 r2 }")
-voice.extend(music)
-
-# (5, 8)
-music = baca.make_skeleton(
-    "{ c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 }"
-)
-voice.extend(music)
-
-# (9, 12)
-music = baca.make_skeleton(
-    "{"
-    r" c4 \times 2/3 { c8 r4 } r4"
-    r" c4 \times 2/3 { c8 r4 } r4"
-    r" c4 c8 r8 r4"
-    r" c4 c8 r8 r4"
-    " }",
-)
-voice.extend(music)
-
-# (13, 15)
-music = baca.make_skeleton("{ c4 c4 c4 c4 c4 c4 }")
-voice.extend(music)
-
-# (16, 18)
-music = baca.make_skeleton(
-    "{"
-    r" \times 2/3 { c4 c4 c4 }"
-    r" \times 2/3 { c4 c4 c4 }"
-    r" \times 2/3 { c4 c4 c4 }"
-    " }",
-)
-voice.extend(music)
-
-# (19, 20)
-music = baca.make_skeleton(
-    "{" r" c8 c8 c8 c8" r" c8 c8 c8 c8" " }",
-)
-voice.extend(music)
-
-# (21, 24)
-music = baca.make_skeleton(
-    "{"
-    r" \times 4/5 { c8 c8 c8 c8 c8 }"
-    r" \times 4/6 { c8 c8 c8 c8 c8 c8 }"
-    r" \times 4/7 { c8 c8 c8 c8 c8 c8 c8 }"
-    " c16 c16 c16 c16 c16 c16 c16 c16"
-    " }",
-)
-voice.extend(music)
-
-# 25
-music = baca.make_skeleton("{ c1 }")
-voice.extend(music)
-
-# anchor notes
-
-accumulator(
-    "rh",
-    baca.append_anchor_note(),
-)
-
-# reapply
-
-music_voices = [_ for _ in voice_names if "Music" in _]
-
-accumulator(
-    music_voices,
-    baca.reapply_persistent_indicators(),
-)
-
-# vc
-
-accumulator(
-    "vc",
-    baca.literal(
-        [
-            r"\stopStaff",
-            r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
-            r"\startStaff",
-        ]
-    ),
-    baca.mmrest_transparent(),
-    baca.new(
-        baca.bar_line_transparent(),
-        baca.span_bar_transparent(),
-        selector=lambda _: baca.select.leaves(_)[1:],
-    ),
-    baca.time_signature_stencil_false(),
-)
-
-accumulator(
-    ("vc", 25),
-    baca.literal(
-        [
-            r"\stopStaff",
-            r"\once \override Staff.StaffSymbol.line-count = 5",
-            r"\startStaff",
-        ]
-    ),
-    baca.pitch("B1"),
-)
-
-# rh
-
-accumulator(
-    ("rh", (1, 4)),
-    baca.rest_position(0),
-)
-
-accumulator(
-    ("rh", (19, 24)),
-    baca.beam(),
-)
-
-accumulator(
-    ("rh", [9, 10]),
-    baca.tag(
-        # TODO: make +ARCH_A_SCORE work
-        # "+ARCH_A_SCORE",
-        abjad.Tag("+SCORE"),
-        baca.literal(
-            r"\once \override TupletNumber.font-size = -2",
-            selector=lambda _: baca.select.pleaf(_, 1),
-        ),
-    ),
-)
-
-accumulator(
-    ("rh", 25),
-    baca.glissando(
-        right_broken=True,
-        selector=lambda _: baca.select.rleaves(_),
-    ),
-    baca.hairpin(
-        "(mp) -- !",
-        selector=lambda _: baca.select.rleaves(_),
-    ),
-    baca.literal(
-        r"\override DynamicLineSpanner.staff-padding = 7",
-    ),
-    baca.literal(
-        [
-            r"\stopStaff",
-            r"\once \override RHStaff.StaffSymbol.line-positions ="
-            " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-            r"\startStaff",
-        ]
-    ),
-    baca.markup(
-        r"\huitzil-sliding-from-bridge-onto-string-markup",
-        abjad.Tweak(r"- \tweak staff-padding 6"),
-    ),
-    baca.markup(
-        r"\huitzil-trem-moderato-markup",
-        abjad.Tweak(r"- \tweak staff-padding 3.5"),
-        direction=abjad.DOWN,
-    ),
-    baca.stem_tremolo(),
-)
-
-accumulator(
-    ("rh", 25),
-    baca.staff_position(
-        6,
-        allow_hidden=True,
-        selector=lambda _: baca.select.rleaf(_, -1),
-    ),
-)
-
-accumulator(
-    "rh",
-    baca.alternate_bow_strokes(),
-    baca.chunk(
+def vc(m):
+    accumulator(
+        "vc",
         baca.literal(
             [
-                r"\once \override RHStaff.StaffSymbol.line-positions ="
-                " #'(8.2 8 7.8 -5.8 -6 -6.2)"
+                r"\stopStaff",
+                r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
+                r"\startStaff",
             ]
         ),
-        baca.staff_lines(7),
-    ),
-    baca.dynamic(
-        "mp-sempre",
-        abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
-    ),
-    baca.literal(r"\override DynamicLineSpanner.staff-padding = 2.5"),
-    baca.literal(r"\override Score.BarNumber.transparent = ##t"),
-    baca.markup(
-        r"\huitzil-directly-on-bridge-markup",
-        abjad.Tweak(r"- \tweak staff-padding 3"),
-    ),
-    baca.staff_position(8),
-    baca.tuplet_bracket_down(),
-)
+        baca.mmrest_transparent(),
+        baca.new(
+            baca.bar_line_transparent(),
+            baca.span_bar_transparent(),
+            selector=lambda _: baca.select.leaves(_)[1:],
+        ),
+        baca.time_signature_stencil_false(),
+    )
+    accumulator(
+        ("vc", 25),
+        baca.literal(
+            [
+                r"\stopStaff",
+                r"\once \override Staff.StaffSymbol.line-count = 5",
+                r"\startStaff",
+            ]
+        ),
+        baca.pitch("B1"),
+    )
+
+
+def rh(m):
+    accumulator(
+        ("rh", (1, 4)),
+        baca.rest_position(0),
+    )
+    accumulator(
+        ("rh", (19, 24)),
+        baca.beam(),
+    )
+    accumulator(
+        ("rh", [9, 10]),
+        baca.tag(
+            # TODO: make +ARCH_A_SCORE work
+            # "+ARCH_A_SCORE",
+            abjad.Tag("+SCORE"),
+            baca.literal(
+                r"\once \override TupletNumber.font-size = -2",
+                selector=lambda _: baca.select.pleaf(_, 1),
+            ),
+        ),
+    )
+    accumulator(
+        ("rh", 25),
+        baca.glissando(
+            right_broken=True,
+            selector=lambda _: baca.select.rleaves(_),
+        ),
+        baca.hairpin(
+            "(mp) -- !",
+            selector=lambda _: baca.select.rleaves(_),
+        ),
+        baca.literal(
+            r"\override DynamicLineSpanner.staff-padding = 7",
+        ),
+        baca.literal(
+            [
+                r"\stopStaff",
+                r"\once \override RHStaff.StaffSymbol.line-positions ="
+                " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
+                r"\startStaff",
+            ]
+        ),
+        baca.markup(
+            r"\huitzil-sliding-from-bridge-onto-string-markup",
+            abjad.Tweak(r"- \tweak staff-padding 6"),
+        ),
+        baca.markup(
+            r"\huitzil-trem-moderato-markup",
+            abjad.Tweak(r"- \tweak staff-padding 3.5"),
+            direction=abjad.DOWN,
+        ),
+        baca.stem_tremolo(),
+    )
+    accumulator(
+        ("rh", 25),
+        baca.staff_position(
+            6,
+            allow_hidden=True,
+            selector=lambda _: baca.select.rleaf(_, -1),
+        ),
+    )
+    accumulator(
+        "rh",
+        baca.alternate_bow_strokes(),
+        baca.chunk(
+            baca.literal(
+                [
+                    r"\once \override RHStaff.StaffSymbol.line-positions ="
+                    " #'(8.2 8 7.8 -5.8 -6 -6.2)"
+                ]
+            ),
+            baca.staff_lines(7),
+        ),
+        baca.dynamic(
+            "mp-sempre",
+            abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
+        ),
+        baca.literal(r"\override DynamicLineSpanner.staff-padding = 2.5"),
+        baca.literal(r"\override Score.BarNumber.transparent = ##t"),
+        baca.markup(
+            r"\huitzil-directly-on-bridge-markup",
+            abjad.Tweak(r"- \tweak staff-padding 3"),
+        ),
+        baca.staff_position(8),
+        baca.tuplet_bracket_down(),
+    )
+
+
+def main():
+    VC(accumulator.voice("vc"))
+    RH(accumulator.voice("rh"))
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(accumulator, accumulator.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    vc(cache["vc"])
+    rh(cache["rh"])
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),
