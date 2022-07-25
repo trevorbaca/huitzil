@@ -147,12 +147,12 @@ def vc(m):
     with baca.scope(m[14]) as o:
         baca.clef_function(o, "treble")
         baca.literal_function(
-            o.leaf(0), 
+            o.leaf(0),
             [
                 r"\stopStaff",
                 r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
                 r"\startStaff",
-            ]
+            ],
         )
         baca.note_head_duration_log_function(o, 2)
         baca.note_head_no_ledgers_function(o, True)
@@ -161,12 +161,12 @@ def vc(m):
     with baca.scope(m[23]) as o:
         baca.clef_function(o, "bass")
         baca.literal_function(
-            o.leaf(0), 
+            o.leaf(0),
             [
                 r"\stopStaff",
                 r"\once \override Staff.StaffSymbol.line-count = 5",
                 r"\startStaff",
-            ]
+            ],
         ),
         baca.pitch_function(o, "Bb1")
     with baca.scope(m.leaves()) as o:
