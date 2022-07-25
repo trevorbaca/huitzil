@@ -1227,13 +1227,10 @@ number.2.RH.Music = {
         % [RH.Music measure 1]
         % BEFORE:
         % COMMANDS:
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2)
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \override DynamicLineSpanner.staff-padding = 2.5
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \override Score.BarNumber.transparent = ##t
           %! -PARTS
@@ -1242,8 +1239,7 @@ number.2.RH.Music = {
           %! baca._set_status_tag()
           %! baca.staff_lines(1)
         \override Staff.BarLine.bar-extent = #'(-2 . 4)
-          %! baca.OverrideCommand._call(1)
-          %! baca.tuplet_bracket_down()
+          %! baca.tuplet_bracket_down_function(1)
         \override TupletBracket.direction = #down
           %! EXPLICIT_STAFF_LINES
           %! baca.IndicatorCommand._call()
@@ -1284,7 +1280,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1305,10 +1300,8 @@ number.2.RH.Music = {
           %! baca.dynamic()
         \baca-mp-sempre
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         - \tweak staff-padding 3
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \huitzil-directly-on-bridge-markup
         % ABSOLUTE_AFTER:
@@ -1321,8 +1314,7 @@ number.2.RH.Music = {
 
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.rest_position()
+          %! baca.rest_staff_position_function(1)
         \override Rest.staff-position = 0
           %! baca.make_skeleton()
         r2
@@ -1335,7 +1327,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -1352,7 +1343,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1369,7 +1359,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -1379,8 +1368,7 @@ number.2.RH.Music = {
         r2
         % AFTER:
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.rest_position()
+          %! baca.rest_staff_position_function(2)
         \revert Rest.staff-position
         % CLOSING:
         % COMMANDS:
@@ -1403,7 +1391,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1413,7 +1400,6 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -1435,7 +1421,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1445,7 +1430,6 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -1467,7 +1451,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1477,7 +1460,6 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -1499,7 +1481,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1509,7 +1490,6 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -1543,7 +1523,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1560,14 +1539,12 @@ number.2.RH.Music = {
             % BEFORE:
             % COMMANDS:
               %! +SCORE
-              %! baca.IndicatorCommand._call()
               %! baca.literal()
         %%% \once \override TupletNumber.font-size = -2
               %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -1595,7 +1572,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1612,14 +1588,12 @@ number.2.RH.Music = {
             % BEFORE:
             % COMMANDS:
               %! +SCORE
-              %! baca.IndicatorCommand._call()
               %! baca.literal()
         %%% \once \override TupletNumber.font-size = -2
               %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -1647,7 +1621,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1657,7 +1630,6 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -1679,7 +1651,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1689,7 +1660,6 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -1723,7 +1693,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1733,7 +1702,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -1745,7 +1713,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1755,7 +1722,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -1767,7 +1733,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1777,7 +1742,6 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % CLOSING:
@@ -1809,7 +1773,6 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
@@ -1819,7 +1782,6 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -1829,7 +1791,6 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % CLOSING:
@@ -1855,7 +1816,6 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -1865,7 +1825,6 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
@@ -1875,7 +1834,6 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % CLOSING:
@@ -1901,7 +1859,6 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
@@ -1911,7 +1868,6 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -1921,7 +1877,6 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % CLOSING:
@@ -1951,12 +1906,11 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % START_BEAM:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.beam()
         [
         % ABSOLUTE_BEFORE:
@@ -1966,7 +1920,6 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1976,7 +1929,6 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -1986,7 +1938,6 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -1998,7 +1949,6 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -2008,7 +1958,6 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -2018,7 +1967,6 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -2028,7 +1976,6 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % CLOSING:
@@ -2060,7 +2007,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -2070,7 +2016,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
@@ -2080,7 +2025,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -2090,7 +2034,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
@@ -2100,7 +2043,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % CLOSING:
@@ -2126,7 +2068,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
@@ -2136,7 +2077,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -2146,7 +2086,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
@@ -2156,7 +2095,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -2166,7 +2104,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
@@ -2176,7 +2113,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % CLOSING:
@@ -2202,7 +2138,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
@@ -2212,7 +2147,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -2222,7 +2156,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
@@ -2232,7 +2165,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -2242,7 +2174,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
@@ -2252,7 +2183,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
@@ -2262,7 +2192,6 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
               %! baca.alternate_bow_strokes()
             - \downbow
             % CLOSING:
@@ -2280,7 +2209,6 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -2290,7 +2218,6 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -2300,7 +2227,6 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -2310,7 +2236,6 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -2320,7 +2245,6 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -2330,7 +2254,6 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
@@ -2340,7 +2263,6 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
@@ -2350,12 +2272,11 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \downbow
         % STOP_BEAM:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.beam()
         ]
         % CLOSING:
@@ -2377,23 +2298,18 @@ number.2.RH.Music = {
         % [RH.Music measure 25]
         % BEFORE:
         % COMMANDS:
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \override DynamicLineSpanner.staff-padding = 7
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \stopStaff
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \startStaff
           %! baca.make_skeleton()
         d''1
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -2411,20 +2327,15 @@ number.2.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \baca-mp-parenthesized
-          %! baca.IndicatorCommand._call()
           %! baca.alternate_bow_strokes()
         - \upbow
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         - \tweak staff-padding 3.5
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \huitzil-trem-moderato-markup
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         - \tweak staff-padding 6
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \huitzil-sliding-from-bridge-onto-string-markup
         % SPANNER_STARTS:
@@ -2452,8 +2363,7 @@ number.2.RH.Music = {
           %! baca.glissando()
         \glissando
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.tuplet_bracket_down()
+          %! baca.tuplet_bracket_down_function(2)
         \revert TupletBracket.direction
         % CLOSING:
         % COMMANDS:
@@ -2566,16 +2476,12 @@ number.2.Cello.Music = {
     % [Cello.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.mmrest_transparent()
+      %! baca.mmrest_transparent_function(1)
     \override MultiMeasureRest.transparent = ##t
-      %! baca.OverrideCommand._call(1)
-      %! baca.time_signature_stencil_false()
+      %! baca.time_signature_stencil_false_function(1)
     \override Score.TimeSignature.stencil = ##f
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \stopStaff
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
     % OPENING:
@@ -2617,11 +2523,9 @@ number.2.Cello.Music = {
     % [Cello.Music measure 2]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.bar_line_transparent()
+      %! baca.bar_line_transparent_function(1)
     \override Score.BarLine.transparent = ##t
-      %! baca.OverrideCommand._call(1)
-      %! baca.span_bar_transparent()
+      %! baca.span_bar_transparent_function(1)
     \override Score.SpanBar.transparent = ##t
       %! baca.make_mmrests(1)
     R1 * 3/4
@@ -2895,8 +2799,7 @@ number.2.Cello.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"2" #"4"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.mmrest_transparent()
+      %! baca.mmrest_transparent_function(2)
     \revert MultiMeasureRest.transparent
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2911,27 +2814,21 @@ number.2.Cello.Music = {
         % [Cello.Music measure 25]
         % BEFORE:
         % COMMANDS:
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \stopStaff
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \once \override Staff.StaffSymbol.line-count = 5
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \startStaff
           %! baca.make_skeleton()
         b,,1
         % AFTER:
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.bar_line_transparent()
+          %! baca.bar_line_transparent_function(2)
         \revert Score.BarLine.transparent
-          %! baca.OverrideCommand._call(2)
-          %! baca.span_bar_transparent()
+          %! baca.span_bar_transparent_function(2)
         \revert Score.SpanBar.transparent
-          %! baca.OverrideCommand._call(2)
-          %! baca.time_signature_stencil_false()
+          %! baca.time_signature_stencil_false_function(2)
         \revert Score.TimeSignature.stencil
         % CLOSING:
         % COMMANDS:

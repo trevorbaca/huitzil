@@ -123,122 +123,109 @@ def RH(voice):
 
 
 def vc(m):
-    accumulator(
-        "vc",
-        baca.literal(
+    with baca.scope(m.leaves()) as o:
+        baca.literal_function(
+            o.leaf(0),
             [
                 r"\stopStaff",
                 r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
                 r"\startStaff",
-            ]
-        ),
-        baca.mmrest_transparent(),
-        baca.new(
-            baca.bar_line_transparent(),
-            baca.span_bar_transparent(),
-            selector=lambda _: baca.select.leaves(_)[1:],
-        ),
-        baca.time_signature_stencil_false(),
-    )
-    accumulator(
-        ("vc", 25),
-        baca.literal(
+            ],
+        )
+        baca.mmrest_transparent_function(o.leaves()[:-1])
+        with baca.scope(o.leaves()[1:]) as u:
+            baca.bar_line_transparent_function(u)
+            baca.span_bar_transparent_function(u)
+        baca.time_signature_stencil_false_function(o)
+    with baca.scope(m[25]) as o:
+        baca.literal_function(
+            o.leaf(0),
             [
                 r"\stopStaff",
                 r"\once \override Staff.StaffSymbol.line-count = 5",
                 r"\startStaff",
-            ]
-        ),
-        baca.pitch("B1"),
-    )
+            ],
+        )
+        baca.pitch_function(o, "B1")
 
 
 def rh(m):
-    accumulator(
-        ("rh", (1, 4)),
-        baca.rest_position(0),
-    )
-    accumulator(
-        ("rh", (19, 24)),
-        baca.beam(),
-    )
-    accumulator(
-        ("rh", [9, 10]),
-        baca.tag(
-            # TODO: make +ARCH_A_SCORE work
-            # "+ARCH_A_SCORE",
-            abjad.Tag("+SCORE"),
-            baca.literal(
+    with baca.scope(m.get(1, 4)) as o:
+        baca.rest_staff_position_function(o.rests(), 0)
+    with baca.scope(m.get(19, 24)) as o:
+        baca.beam_function(o)
+    for n in [9, 10]:
+        with baca.scope(m[n]) as o:
+            baca.literal_function(
+                o.pleaf(1),
                 r"\once \override TupletNumber.font-size = -2",
-                selector=lambda _: baca.select.pleaf(_, 1),
-            ),
-        ),
-    )
-    accumulator(
-        ("rh", 25),
-        baca.glissando(
+                tags=[abjad.Tag("+SCORE")],
+            )
+    with baca.scope(m[25]) as o:
+        baca.glissando_function(
+            o.rleaves(),
             right_broken=True,
-            selector=lambda _: baca.select.rleaves(_),
         ),
-        baca.hairpin(
+        baca.hairpin_function(
+            o.rleaves(),
             "(mp) -- !",
-            selector=lambda _: baca.select.rleaves(_),
-        ),
-        baca.literal(
+        )
+        baca.literal_function(
+            o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
-        ),
-        baca.literal(
+        )
+        baca.literal_function(
+            o.leaf(0),
             [
                 r"\stopStaff",
                 r"\once \override RHStaff.StaffSymbol.line-positions ="
                 " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
                 r"\startStaff",
-            ]
+            ],
         ),
-        baca.markup(
+        baca.markup_function(
+            o,
             r"\huitzil-sliding-from-bridge-onto-string-markup",
             abjad.Tweak(r"- \tweak staff-padding 6"),
         ),
-        baca.markup(
+        baca.markup_function(
+            o,
             r"\huitzil-trem-moderato-markup",
             abjad.Tweak(r"- \tweak staff-padding 3.5"),
             direction=abjad.DOWN,
         ),
-        baca.stem_tremolo(),
-    )
-    accumulator(
-        ("rh", 25),
-        baca.staff_position(
+        baca.stem_tremolo_function(o)
+        baca.staff_position_function(
+            o.rleaf(-1),
             6,
             allow_hidden=True,
-            selector=lambda _: baca.select.rleaf(_, -1),
-        ),
-    )
-    accumulator(
-        "rh",
-        baca.alternate_bow_strokes(),
-        baca.chunk(
-            baca.literal(
-                [
-                    r"\once \override RHStaff.StaffSymbol.line-positions ="
-                    " #'(8.2 8 7.8 -5.8 -6 -6.2)"
-                ]
-            ),
-            baca.staff_lines(7),
-        ),
-        baca.dynamic(
+        )
+    with baca.scope(m.leaves()) as o:
+        baca.alternate_bow_strokes_function(o.pheads())
+        baca.literal_function(
+            o.leaf(0),
+            [
+                r"\once \override RHStaff.StaffSymbol.line-positions ="
+                " #'(8.2 8 7.8 -5.8 -6 -6.2)"
+            ],
+        )
+        baca.staff_lines_function(o, 7)
+        baca.dynamic_function(
+            o,
             "mp-sempre",
             abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
-        ),
-        baca.literal(r"\override DynamicLineSpanner.staff-padding = 2.5"),
-        baca.literal(r"\override Score.BarNumber.transparent = ##t"),
-        baca.markup(
+        )
+        baca.literal_function(
+            o.leaf(0), r"\override DynamicLineSpanner.staff-padding = 2.5"
+        )
+        baca.literal_function(o.leaf(0), r"\override Score.BarNumber.transparent = ##t")
+        baca.markup_function(
+            o,
             r"\huitzil-directly-on-bridge-markup",
             abjad.Tweak(r"- \tweak staff-padding 3"),
         ),
-        baca.staff_position(8),
-        baca.tuplet_bracket_down(),
-    )
+        baca.staff_position_function(o, 8)
+        baca.tuplet_bracket_down_function(o)
 
 
 def main():
@@ -267,7 +254,6 @@ if __name__ == "__main__":
             baca.tags.LOCAL_MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )

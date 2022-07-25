@@ -2923,10 +2923,8 @@ number.1.RH.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
 %%% \once \override RHStaff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.mmrest_transparent()
+      %! baca.mmrest_transparent_function(1)
     \override MultiMeasureRest.transparent = ##t
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \stopStaff
     % OPENING:
@@ -3597,8 +3595,7 @@ number.1.RH.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.mmrest_transparent()
+      %! baca.mmrest_transparent_function(2)
     \revert MultiMeasureRest.transparent
     % CLOSING:
     % COMMANDS:
@@ -3653,8 +3650,7 @@ number.1.Cello.Music = {
           %! SHIFTED_CLEF
           %! baca.clef_extra_offset_function(1)
     %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
-          %! baca.OverrideCommand._call(1)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(1)
         \override TupletBracket.staff-padding = 3
         % OPENING:
         % COMMANDS:
@@ -3678,10 +3674,8 @@ number.1.Cello.Music = {
         fs!8
         % AFTER:
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         - \tweak staff-padding 9
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \huitzil-phrasing-dynamics-see-preface-markup
           %! EXPLICIT_INSTRUMENT_ALERT
@@ -4339,8 +4333,7 @@ number.1.Cello.Music = {
 
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.repeat_tie_extra_offset()
+          %! baca.repeat_tie_extra_offset_function(1)
         \once \override RepeatTie.extra-offset = #'(-1.5 . 0)
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -4354,7 +4347,6 @@ number.1.Cello.Music = {
         af,16
         % AFTER:
         % SPANNER_STARTS:
-          %! baca.IndicatorCommand._call()
           %! baca.repeat_tie()
         \repeatTie
         % CLOSING:
@@ -5149,7 +5141,6 @@ number.1.Cello.Music = {
         fs4
         % AFTER:
         % SPANNER_STARTS:
-          %! baca.IndicatorCommand._call()
           %! baca.repeat_tie()
         \repeatTie
         % ABSOLUTE_BEFORE:
@@ -7281,7 +7272,6 @@ number.1.Cello.Music = {
         b,2
         % AFTER:
         % SPANNER_STARTS:
-          %! baca.IndicatorCommand._call()
           %! baca.repeat_tie()
         \repeatTie
         % ABSOLUTE_BEFORE:
@@ -7533,8 +7523,7 @@ number.1.Cello.Music = {
         bf,!1
         % AFTER:
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(2)
         \revert TupletBracket.staff-padding
         % CLOSING:
         % COMMANDS:
@@ -7555,8 +7544,7 @@ number.1.Cello.Music = {
         % [Cello.Music measure 52]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(1)
         \override TupletBracket.staff-padding = 4
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -7667,7 +7655,6 @@ number.1.Cello.Music = {
         g,2
         % AFTER:
         % COMMANDS:
-          %! baca.IndicatorCommand._call()
           %! baca.breathe()
         \breathe
         % CLOSING:
@@ -7728,18 +7715,14 @@ number.1.Cello.Music = {
         % AFTER:
         % COMMANDS:
           %! +SEGMENT
-          %! baca.IndicatorCommand._call()
           %! baca.breathe()
         \breathe
-          %! baca.OverrideCommand._call(2)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(2)
         \revert TupletBracket.staff-padding
           %! +SCORE
-          %! baca.IndicatorCommand._call()
           %! baca.breathe()
     %%% \tweak extra-offset #'(0 . 2)
           %! +SCORE
-          %! baca.IndicatorCommand._call()
           %! baca.breathe()
     %%% \breathe
         % CLOSING:
