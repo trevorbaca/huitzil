@@ -68,7 +68,6 @@ for index, item in (
 
 
 def VC(voice):
-    voice = score["Cello.Music"]
     music = baca.make_mmrests(accumulator.get(1, 7))
     voice.extend(music)
     # 8, 13
@@ -82,7 +81,6 @@ def VC(voice):
 
 
 def RH(voice):
-    voice = score["RH.Music"]
     # 1
     music = baca.make_monads("1/8  1/8  1/8  1/8")
     voice.extend(music)
