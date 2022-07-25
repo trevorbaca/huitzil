@@ -4,6 +4,10 @@ from abjadext import rmakers
 
 from huitzil import library
 
+#########################################################################################
+########################################### 01 ##########################################
+#########################################################################################
+
 
 def make_music(
     extra_counts,
@@ -405,33 +409,6 @@ baca.metronome_mark(skips[1 - 1], accumulator.metronome_marks["78"], manifests)
 
 def VC(voice):
     voice.extend(music_)
-    accumulator(
-        ("vc", 8),
-        baca.suite(
-            baca.untie(
-                lambda _: baca.select.pleaf(_, -2),
-            ),
-            baca.chunk(
-                baca.repeat_tie(
-                    lambda _: baca.select.pleaf(_, 0),
-                ),
-                baca.repeat_tie_extra_offset((-1.5, 0)),
-                selector=lambda _: baca.select.pleaf(_, -1),
-            ),
-        ),
-    )
-    accumulator(
-        ("vc", 20),
-        baca.repeat_tie(
-            lambda _: baca.select.pleaf(_, 0),
-        ),
-    )
-    accumulator(
-        ("vc", 48),
-        baca.repeat_tie(
-            lambda _: baca.select.pleaf(_, 0),
-        ),
-    )
 
 
 def RH(voice):
@@ -440,51 +417,48 @@ def RH(voice):
 
 
 def vc(m):
-    accumulator(
-        "vc",
-        baca.instrument(accumulator.instruments["Cello"]),
-        baca.clef("bass"),
-        baca.markup(
+    with baca.scope(m.leaves()) as o:
+        baca.instrument_function(
+            o, accumulator.instruments["Cello"], accumulator.manifests()
+        )
+        baca.clef_function(o, "bass")
+        baca.markup_function(
+            o,
             r"\huitzil-phrasing-dynamics-see-preface-markup",
             abjad.Tweak(r"- \tweak staff-padding 9"),
             direction=abjad.DOWN,
-        ),
-    )
-    accumulator(
-        ("vc", (1, 51)),
-        baca.tuplet_bracket_staff_padding(3),
-    )
-    accumulator(
-        ("vc", 53),
-        baca.breathe(),
-    )
-    accumulator(
-        ("vc", (52, 54)),
-        baca.tuplet_bracket_staff_padding(4),
-    )
-    accumulator(
-        ("vc", 54),
-        baca.only_score(
-            baca.breathe(
-                lambda _: baca.select.pleaf(_, -1),
-                abjad.Tweak(r"\tweak extra-offset #'(0 . 2)"),
-            ),
-        ),
-        baca.only_section(
-            baca.breathe(),
-        ),
-    )
+        )
+    with baca.scope(m[8]) as o:
+        baca.untie_function(o.pleaf(-2))
+        baca.repeat_tie_function(o.pleaf(-1))
+        baca.repeat_tie_extra_offset_function(o.pleaf(-1), (-1.5, 0))
+    with baca.scope(m[20]) as o:
+        baca.repeat_tie_function(o.pleaf(0))
+    with baca.scope(m[48]) as o:
+        baca.repeat_tie_function(o.pleaf(0))
+    with baca.scope(m.get(1, 51)) as o:
+        baca.tuplet_bracket_staff_padding_function(o, 3)
+    with baca.scope(m[53]) as o:
+        baca.breathe_function(o.pleaf(-1))
+    with baca.scope(m.get(52, 54)) as o:
+        baca.tuplet_bracket_staff_padding_function(o, 4)
+    with baca.scope(m[54]) as o:
+        baca.breathe_function(
+            o.pleaf(-1),
+            tags=[baca.tags.ONLY_SEGMENT],
+        )
+        baca.breathe_function(
+            o.pleaf(-1),
+            abjad.Tweak(r"\tweak extra-offset #'(0 . 2)"),
+            tags=[baca.tags.ONLY_SCORE],
+        )
 
 
 def rh(m):
-    accumulator(
-        "rh",
-        baca.literal(r"\stopStaff"),
-        baca.mmrest_transparent(
-            selector=lambda _: baca.select.mmrests(_),
-        ),
-        baca.clef("percussion"),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.literal_function(o.leaf(0), r"\stopStaff")
+        baca.mmrest_transparent_function(o)
+        baca.clef_function(o, "percussion")
 
 
 def main():
@@ -513,7 +487,6 @@ if __name__ == "__main__":
             # baca.enums.SPACING,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
