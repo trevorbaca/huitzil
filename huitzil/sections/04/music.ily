@@ -3044,17 +3044,13 @@ number.4.Cello.Music = {
     % [Cello.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.mmrest_transparent()
+      %! baca.mmrest_transparent_function(1)
     \override MultiMeasureRest.transparent = ##t
-      %! baca.OverrideCommand._call(1)
-      %! baca.bar_line_transparent()
+      %! baca.bar_line_transparent_function(1)
     \override Score.BarLine.transparent = ##t
-      %! baca.OverrideCommand._call(1)
-      %! baca.span_bar_transparent()
+      %! baca.span_bar_transparent_function(1)
     \override Score.SpanBar.transparent = ##t
-      %! baca.OverrideCommand._call(1)
-      %! baca.time_signature_stencil_false()
+      %! baca.time_signature_stencil_false_function(1)
     \override Score.TimeSignature.stencil = ##f
     % OPENING:
     % COMMANDS:
@@ -3182,7 +3178,6 @@ number.4.Cello.Music = {
           %! abjad.glissando(7)
           %! baca.glissando()
         \glissando
-          %! baca.IndicatorCommand._call()
           %! baca.repeat_tie()
         \repeatTie
         % ABSOLUTE_BEFORE:
@@ -3218,14 +3213,11 @@ number.4.Cello.Music = {
         % [Cello.Music measure 14]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.note_head_duration_log()
+          %! baca.note_head_duration_log_function(1)
         \once \override NoteHead.duration-log = 2
-          %! baca.OverrideCommand._call(1)
-          %! baca.note_head_no_ledgers()
+          %! baca.note_head_no_ledgers_function(1)
         \once \override NoteHead.no-ledgers = ##t
-          %! baca.OverrideCommand._call(1)
-          %! baca.note_head_style()
+          %! baca.note_head_style_function(1)
         \once \override NoteHead.style = #'do
           %! MEASURE_119
           %! SHIFTED_CLEF
@@ -3235,10 +3227,8 @@ number.4.Cello.Music = {
           %! SHIFTED_CLEF
           %! baca.clef_extra_offset_function(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \stopStaff
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
         % OPENING:
@@ -3370,8 +3360,7 @@ number.4.Cello.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.mmrest_transparent()
+      %! baca.mmrest_transparent_function(2)
     \revert MultiMeasureRest.transparent
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3394,13 +3383,10 @@ number.4.Cello.Music = {
           %! SHIFTED_CLEF
           %! baca.clef_extra_offset_function(1)
         \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \stopStaff
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \once \override Staff.StaffSymbol.line-count = 5
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \startStaff
         % OPENING:
@@ -3430,14 +3416,11 @@ number.4.Cello.Music = {
           %! baca._label_duration_multipliers()
         %@% ^ \baca-duration-multiplier-markup #"1" #"2"
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.bar_line_transparent()
+          %! baca.bar_line_transparent_function(2)
         \revert Score.BarLine.transparent
-          %! baca.OverrideCommand._call(2)
-          %! baca.span_bar_transparent()
+          %! baca.span_bar_transparent_function(2)
         \revert Score.SpanBar.transparent
-          %! baca.OverrideCommand._call(2)
-          %! baca.time_signature_stencil_false()
+          %! baca.time_signature_stencil_false_function(2)
         \revert Score.TimeSignature.stencil
         % ABSOLUTE_AFTER:
         % COMMANDS:

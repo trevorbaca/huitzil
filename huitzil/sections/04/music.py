@@ -141,51 +141,39 @@ def RH(voice):
 
 
 def vc(m):
-    accumulator(
-        ("vc", (8, 13)),
-        baca.pitches("B1 C2"),
-        baca.repeat_tie(
-            lambda _: baca.select.pleaf(_, 0),
-            allow_rest=True,
-        ),
-    )
-    accumulator(
-        ("vc", 14),
-        baca.clef("treble"),
-        baca.literal(
+    with baca.scope(m.get(8, 13)) as o:
+        baca.pitches_function(o, "B1 C2")
+        baca.repeat_tie_function(o.pleaf(0))
+    with baca.scope(m[14]) as o:
+        baca.clef_function(o, "treble")
+        baca.literal_function(
+            o.leaf(0), 
             [
                 r"\stopStaff",
                 r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
                 r"\startStaff",
             ]
-        ),
-        baca.note_head_duration_log(2),
-        baca.note_head_no_ledgers(True),
-        baca.note_head_style("#'do"),
-        baca.staff_position(7),
-    )
-    accumulator(
-        ("vc", 23),
-        baca.clef("bass"),
-        baca.literal(
+        )
+        baca.note_head_duration_log_function(o, 2)
+        baca.note_head_no_ledgers_function(o, True)
+        baca.note_head_style_function(o, "#'do")
+        baca.staff_position_function(o, 7)
+    with baca.scope(m[23]) as o:
+        baca.clef_function(o, "bass")
+        baca.literal_function(
+            o.leaf(0), 
             [
                 r"\stopStaff",
                 r"\once \override Staff.StaffSymbol.line-count = 5",
                 r"\startStaff",
             ]
         ),
-        baca.pitch("Bb1"),
-    )
-    accumulator(
-        "vc",
-        baca.mmrest_transparent(),
-        baca.new(
-            baca.bar_line_transparent(),
-            baca.span_bar_transparent(),
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.time_signature_stencil_false(),
-    )
+        baca.pitch_function(o, "Bb1")
+    with baca.scope(m.leaves()) as o:
+        baca.mmrest_transparent_function(o)
+        baca.bar_line_transparent_function(o)
+        baca.span_bar_transparent_function(o)
+        baca.time_signature_stencil_false_function(o)
 
 
 def rh(m):
