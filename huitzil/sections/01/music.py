@@ -404,8 +404,6 @@ baca.metronome_mark(skips[1 - 1], accumulator.metronome_marks["78"], manifests)
 
 
 def VC(voice):
-    voice = score["Cello.Music"]
-    voice = score["Cello.Music"]
     voice.extend(music_)
     accumulator(
         ("vc", 8),
@@ -437,8 +435,6 @@ def VC(voice):
 
 
 def RH(voice):
-    voice = score["RH.Music"]
-    voice = score["RH.Music"]
     music = baca.make_mmrests(accumulator.get())
     voice.extend(music)
 

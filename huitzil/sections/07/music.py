@@ -71,7 +71,6 @@ for index, item in (
 
 
 def VC(voice):
-    voice = score["Cello.Music"]
     # 1
     music = baca.make_skeleton("{ c1 * 1/4 }")
     voice.extend(music)
@@ -87,7 +86,6 @@ def VC(voice):
 
 
 def RH(voice):
-    voice = score["RH.Music"]
     # (1, 8))
     music = baca.make_monads("1/4 3/16 1/4 3/16 1/4 3/16 1/4 3/16")
     voice.extend(music)
