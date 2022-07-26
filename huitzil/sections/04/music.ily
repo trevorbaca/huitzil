@@ -1318,7 +1318,6 @@ number.4.RH.Music = {
     % BEFORE:
     % COMMANDS:
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \override DynamicLineSpanner.staff-padding = 7
       %! -PARTS
@@ -1327,14 +1326,11 @@ number.4.RH.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 4)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(1)
     \override TextScript.parent-alignment-X = 0
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_self_alignment_x()
+      %! baca.text_script_self_alignment_x_function(1)
     \override TextScript.self-alignment-X = 0
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(1)
     \override TextScript.staff-padding = 4
       %! REAPPLIED_STAFF_LINES
       %! baca._reapply_persistent_indicators(3)
@@ -1349,15 +1345,12 @@ number.4.RH.Music = {
       %! baca._set_status_tag()
     \startStaff
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \stopStaff
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \startStaff
     % OPENING:
@@ -1383,7 +1376,6 @@ number.4.RH.Music = {
     d8
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
@@ -1418,7 +1410,6 @@ number.4.RH.Music = {
     f8
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
@@ -1434,7 +1425,6 @@ number.4.RH.Music = {
     a8
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
@@ -1450,7 +1440,6 @@ number.4.RH.Music = {
     c'8
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
@@ -1464,7 +1453,6 @@ number.4.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1515,7 +1503,6 @@ number.4.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -1539,7 +1526,6 @@ number.4.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -1588,7 +1574,6 @@ number.4.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1639,7 +1624,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -1663,7 +1647,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -1687,7 +1670,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -1741,7 +1723,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -1760,7 +1741,6 @@ number.4.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1811,7 +1791,6 @@ number.4.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -1835,7 +1814,6 @@ number.4.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -1884,7 +1862,6 @@ number.4.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1935,7 +1912,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -1959,7 +1935,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -1983,7 +1958,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -2037,7 +2011,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -2056,7 +2029,6 @@ number.4.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2107,7 +2079,6 @@ number.4.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -2131,7 +2102,6 @@ number.4.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -2180,7 +2150,6 @@ number.4.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2231,7 +2200,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -2255,7 +2223,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -2279,7 +2246,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -2318,7 +2284,6 @@ number.4.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -2349,7 +2314,6 @@ number.4.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2418,7 +2382,6 @@ number.4.RH.Music = {
         d''2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -2442,7 +2405,6 @@ number.4.RH.Music = {
         d''2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -2461,7 +2423,6 @@ number.4.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2524,7 +2485,6 @@ number.4.RH.Music = {
         d''4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -2548,7 +2508,6 @@ number.4.RH.Music = {
         d''4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -2572,7 +2531,6 @@ number.4.RH.Music = {
         d''4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -2596,7 +2554,6 @@ number.4.RH.Music = {
         d''4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
@@ -2620,7 +2577,6 @@ number.4.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2692,7 +2648,6 @@ number.4.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
@@ -2728,7 +2683,6 @@ number.4.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
@@ -2764,7 +2718,6 @@ number.4.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
@@ -2821,7 +2774,6 @@ number.4.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2863,7 +2815,6 @@ number.4.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
@@ -2880,14 +2831,11 @@ number.4.RH.Music = {
       %! baca.glissando()
     \glissando
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(2)
     \revert TextScript.parent-alignment-X
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_self_alignment_x()
+      %! baca.text_script_self_alignment_x_function(2)
     \revert TextScript.self-alignment-X
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(2)
     \revert TextScript.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
