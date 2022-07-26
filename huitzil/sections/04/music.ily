@@ -1387,7 +1387,6 @@ number.4.RH.Music = {
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -1423,7 +1422,6 @@ number.4.RH.Music = {
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -1440,7 +1438,6 @@ number.4.RH.Music = {
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -1457,7 +1454,6 @@ number.4.RH.Music = {
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % ABSOLUTE_BEFORE:

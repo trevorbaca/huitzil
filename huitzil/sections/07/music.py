@@ -164,7 +164,6 @@ def rh(m):
         ("rh", (1, 8)),
         baca.staff_positions(
             [-6, -6, -8, -8, -10, -10, -12, -12],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -188,7 +187,6 @@ def rh(m):
         baca.staff_positions(
             [-14, -14, -16, -16, -18, -18, -16, -16],
             allow_out_of_range=True,
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -211,7 +209,6 @@ def rh(m):
         ("rh", (17, 24)),
         baca.staff_positions(
             [-14, -14, -12, -12, -10, -10, -8, -8],
-            allow_repeats=True,
         ),
     )
     accumulator(

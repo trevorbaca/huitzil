@@ -176,19 +176,14 @@ def vc(m):
         baca.time_signature_stencil_false_function(o)
 
 
+def sforzando(o, string):
+    baca.nonpersistent_markup(o, string, direction=abjad.DOWN)
+
+
 def rh(m):
-    accumulator(
-        ("rh", 1),
-        baca.markup(
-            r"\baca-ffz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.staff_positions(
-            [-6, -4, -2, 0],
-            allow_repeats=True,
-        ),
-    )
+    with baca.scope(m[1]) as o:
+        sforzando(o, r"\baca-ffz-markup")
+        baca.staff_positions_function(o, [-6, -4, -2, 0])
     accumulator(
         ("rh", 2),
         baca.markup(
@@ -198,7 +193,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -232,7 +226,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -243,7 +236,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -270,7 +262,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -281,7 +272,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -297,7 +287,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -308,7 +297,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -334,7 +322,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -345,7 +332,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -361,7 +347,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -372,7 +357,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -398,7 +382,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(

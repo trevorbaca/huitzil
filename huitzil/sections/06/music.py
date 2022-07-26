@@ -194,7 +194,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [-6, -4, -2, 0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -206,7 +205,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -240,7 +238,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -251,7 +248,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -278,7 +274,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -289,7 +284,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -305,7 +299,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -316,7 +309,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -342,7 +334,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -353,7 +344,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -369,7 +359,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -380,7 +369,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -406,7 +394,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
