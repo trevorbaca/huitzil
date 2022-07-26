@@ -185,7 +185,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [-6, -4, -2, 0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -197,7 +196,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     # NOTE: final_hairpin=False can be removed once
@@ -228,7 +226,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -239,7 +236,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -266,7 +262,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -277,7 +272,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -293,7 +287,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -304,7 +297,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -330,7 +322,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -341,7 +332,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -357,7 +347,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -368,7 +357,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -394,7 +382,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(

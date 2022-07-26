@@ -171,7 +171,7 @@ def vc(m):
 
 def rh(m):
     with baca.scope(m[1]) as o:
-        baca.staff_positions_function(o, [6, 6, 4], allow_repeats=True)
+        baca.staff_positions_function(o, [6, 6, 4])
     with baca.scope(m.get(1, 3)) as o:
         for leaf in o:
             baca.markup_function(
@@ -180,15 +180,15 @@ def rh(m):
                 direction=abjad.DOWN,
             )
     with baca.scope(m[2]) as o:
-        baca.staff_positions_function(o, [6, 6, 4], allow_repeats=True)
+        baca.staff_positions_function(o, [6, 6, 4])
     with baca.scope(m[3]) as o:
-        baca.staff_positions_function(o, [6, 6, 4], allow_repeats=True)
+        baca.staff_positions_function(o, [6, 6, 4])
     with baca.scope(m[4]) as o:
         baca.hairpin_function(
             baca.rleaves(o, count=2),
             "p -- !",
         )
-        baca.staff_positions_function(o, [4, 4, 2], allow_repeats=True)
+        baca.staff_positions_function(o, [4, 4, 2])
     with baca.scope(m.get(4, 5)) as o:
         baca.markup_function(o, r"\baca-fz-markup", direction=abjad.DOWN)
         for leaf in o.pleaves()[1:-3]:
@@ -197,7 +197,7 @@ def rh(m):
             baca.markup_function(leaf, r"\baca-mfz-markup", direction=abjad.DOWN)
     with baca.scope(m[5]) as o:
         baca.hairpin_function(o.leaves()[1:], "pp < mf")
-        baca.staff_positions_function(o, [4, 4, 2, 6, 4, 2], allow_repeats=True)
+        baca.staff_positions_function(o, [4, 4, 2, 6, 4, 2])
     with baca.scope(m[6]) as o:
         baca.hairpin_function(
             o.rleaves(),
@@ -207,9 +207,9 @@ def rh(m):
         baca.markup_function(o, r"\baca-fz-markup", direction=abjad.DOWN)
         for leaf in o.pleaves()[1:]:
             baca.markup_function(leaf, r"\baca-mpz-markup", direction=abjad.DOWN)
-        baca.staff_positions_function(o, [4, 4, 2, 6, 4, 2], allow_repeats=True)
+        baca.staff_positions_function(o, [4, 4, 2, 6, 4, 2])
     with baca.scope(m[7]) as o:
-        baca.staff_positions_function(o, [2], allow_repeats=True)
+        baca.staff_positions_function(o, [2])
     with baca.scope(m.get(7, 9)) as o:
         for leaf in o.leaves():
             baca.markup_function(leaf, r"\baca-fz-markup", direction=abjad.DOWN)
@@ -219,11 +219,11 @@ def rh(m):
             abjad.Tweak(r"- \tweak to-barline ##t"),
         )
     with baca.scope(m[8]) as o:
-        baca.staff_positions_function(o, [2, 2, 0], allow_repeats=True)
+        baca.staff_positions_function(o, [2, 2, 0])
     with baca.scope(m[9]) as o:
-        baca.staff_positions_function(o, [2], allow_repeats=True)
+        baca.staff_positions_function(o, [2])
     with baca.scope(m[10]) as o:
-        baca.staff_positions_function(o, [2, 6], allow_repeats=True)
+        baca.staff_positions_function(o, [2, 6])
     with baca.scope(m.get(10, 11)) as o:
         baca.nonpersistent_markup(
             o.leaves()[:4],
@@ -248,13 +248,13 @@ def rh(m):
             pieces=lambda _: baca.select.lparts(_, [4, 5 + 1]),
         )
     with baca.scope(m[11]) as o:
-        baca.staff_positions_function(o, [4, 2, 6, 4, 2, 0], allow_repeats=True)
+        baca.staff_positions_function(o, [4, 2, 6, 4, 2, 0])
     with baca.scope(m[12]) as o:
-        baca.staff_positions_function(o, [0], allow_repeats=True)
+        baca.staff_positions_function(o, [0])
     with baca.scope(m.get(12, 16)) as o:
         baca.nonpersistent_markup(o, r"\baca-ffz-markup", direction=abjad.DOWN)
     with baca.scope(m[13]) as o:
-        baca.staff_positions_function(o, [0], allow_repeats=True)
+        baca.staff_positions_function(o, [0])
     with baca.scope(m.get(13, 16)) as o:
         baca.hairpin_function(o, "p < mf")
         baca.text_spanner_function(
@@ -264,14 +264,14 @@ def rh(m):
             pieces=lambda _: baca.select.lparts(_, [1, 1, 2]),
         )
     with baca.scope(m[14]) as o:
-        baca.staff_positions_function(o, [-2], allow_repeats=True)
+        baca.staff_positions_function(o, [-2])
     with baca.scope(m[15]) as o:
-        baca.staff_positions_function(o, [-2], allow_repeats=True)
+        baca.staff_positions_function(o, [-2])
     with baca.scope(m[16]) as o:
-        baca.staff_positions_function(o, [-4], allow_repeats=True)
+        baca.staff_positions_function(o, [-4])
     with baca.scope(m[17]) as o:
         baca.nonpersistent_markup(o, r"\baca-fz-markup", direction=abjad.DOWN)
-        baca.staff_positions_function(o, [0], allow_repeats=True)
+        baca.staff_positions_function(o, [0])
     with baca.scope(m.get(17, 18)) as o:
         baca.hairpin_function(o, "mp >", bookend=False)
         baca.text_spanner_function(
@@ -281,7 +281,7 @@ def rh(m):
         )
     with baca.scope(m[18]) as o:
         baca.nonpersistent_markup(o, r"\baca-mfz-markup", direction=abjad.DOWN)
-        baca.staff_positions_function(o, [6, 4, 2], allow_repeats=True)
+        baca.staff_positions_function(o, [6, 4, 2])
     with baca.scope(m[19]) as o:
         baca.hairpin_function(
             baca.rleaves(o, count=2),
@@ -296,11 +296,11 @@ def rh(m):
             o,
             tags=[baca.tags.ONLY_SCORE],
         )
-        baca.staff_positions_function(o, [6, 4, 2, 0], allow_repeats=True)
+        baca.staff_positions_function(o, [6, 4, 2, 0])
     with baca.scope(m[20]) as o:
-        baca.staff_positions_function(o, [0], allow_repeats=True)
+        baca.staff_positions_function(o, [0])
     with baca.scope(m[21]) as o:
-        baca.staff_positions_function(o, [0], allow_repeats=True)
+        baca.staff_positions_function(o, [0])
     with baca.scope(m.get(20, 26)) as o:
         baca.hairpin_function(
             baca.select.rleak(o.leaves()[1:]),
@@ -321,13 +321,13 @@ def rh(m):
             pieces=lambda _: baca.select.lparts(_, [1, 1, 1, 1, 2]),
         )
     with baca.scope(m[22]) as o:
-        baca.staff_positions_function(o, [-2], allow_repeats=True)
+        baca.staff_positions_function(o, [-2])
     with baca.scope(m[23]) as o:
-        baca.staff_positions_function(o, [-2], allow_repeats=True)
+        baca.staff_positions_function(o, [-2])
     with baca.scope(m[24]) as o:
-        baca.staff_positions_function(o, [-4], allow_repeats=True)
+        baca.staff_positions_function(o, [-4])
     with baca.scope(m[25]) as o:
-        baca.staff_positions_function(o, [-4], allow_repeats=True)
+        baca.staff_positions_function(o, [-4])
     with baca.scope(m[26]) as o:
         baca.markup_function(
             o,
@@ -339,7 +339,7 @@ def rh(m):
             o,
             tags=[baca.tags.ONLY_SCORE],
         )
-        baca.staff_positions_function(o, [-6], allow_repeats=True)
+        baca.staff_positions_function(o, [-6])
     with baca.scope(m.leaves()) as o:
         baca.literal_function(
             o.leaf(0),

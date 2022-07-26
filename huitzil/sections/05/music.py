@@ -163,7 +163,6 @@ def rh(m):
         ("rh", 1),
         baca.staff_positions(
             [6, 6, 4],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -183,14 +182,12 @@ def rh(m):
         ("rh", 2),
         baca.staff_positions(
             [6, 6, 4],
-            allow_repeats=True,
         ),
     )
     accumulator(
         ("rh", 3),
         baca.staff_positions(
             [6, 6, 4],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -201,7 +198,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [4, 4, 2],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -229,7 +225,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [4, 4, 2, 6, 4, 2],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -250,14 +245,12 @@ def rh(m):
         ),
         baca.staff_positions(
             [4, 4, 2, 6, 4, 2],
-            allow_repeats=True,
         ),
     )
     accumulator(
         ("rh", 7),
         baca.staff_positions(
             [2],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -280,21 +273,18 @@ def rh(m):
         ("rh", 8),
         baca.staff_positions(
             [2, 2, 0],
-            allow_repeats=True,
         ),
     )
     accumulator(
         ("rh", 9),
         baca.staff_positions(
             [2],
-            allow_repeats=True,
         ),
     )
     accumulator(
         ("rh", 10),
         baca.staff_positions(
             [2, 6],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -328,14 +318,12 @@ def rh(m):
         ("rh", 11),
         baca.staff_positions(
             [4, 2, 6, 4, 2, 0],
-            allow_repeats=True,
         ),
     )
     accumulator(
         ("rh", 12),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -350,7 +338,6 @@ def rh(m):
         ("rh", 13),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -368,28 +355,24 @@ def rh(m):
         ("rh", 14),
         baca.staff_positions(
             [-2],
-            allow_repeats=True,
         ),
     )
     accumulator(
         ("rh", 15),
         baca.staff_positions(
             [-2],
-            allow_repeats=True,
         ),
     )
     accumulator(
         ("rh", 16),
         baca.staff_positions(
             [-4],
-            allow_repeats=True,
         ),
     )
     accumulator(
         ("rh", 17),
         baca.staff_positions(
             [0],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -415,28 +398,24 @@ def rh(m):
         ("rh", 18),
         baca.staff_positions(
             [-2],
-            allow_repeats=True,
         ),
     )
     accumulator(
         ("rh", 19),
         baca.staff_positions(
             [-2],
-            allow_repeats=True,
         ),
     )
     accumulator(
         ("rh", 20),
         baca.staff_positions(
             [-4],
-            allow_repeats=True,
         ),
     )
     accumulator(
         ("rh", 21),
         baca.staff_positions(
             [-4],
-            allow_repeats=True,
         ),
     )
     accumulator(
@@ -447,7 +426,6 @@ def rh(m):
         ),
         baca.staff_positions(
             [-6],
-            allow_repeats=True,
         ),
     )
     accumulator(
