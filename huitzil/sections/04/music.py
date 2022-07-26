@@ -154,7 +154,7 @@ def vc(m):
                 r"\startStaff",
             ],
         )
-        baca.note_head_duration_log_function(o, 2)
+        baca.note_head_duration_log_function(o.pleaves(), 2)
         baca.note_head_no_ledgers_function(o, True)
         baca.note_head_style_function(o, "#'do")
         baca.staff_position_function(o, 7)
