@@ -140,7 +140,9 @@ def RH(voice):
 def vc(m):
     accumulator(
         "vc",
-        baca.mmrest_transparent(),
+        baca.mmrest_transparent(
+            selector=lambda _: baca.select.mmrests(_),
+        ),
         baca.new(
             baca.bar_line_transparent(),
             baca.span_bar_transparent(),
