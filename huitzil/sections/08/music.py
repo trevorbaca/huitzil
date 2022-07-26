@@ -168,7 +168,9 @@ def RH(voice):
 def vc(m):
     accumulator(
         "vc",
-        baca.mmrest_transparent(),
+        baca.mmrest_transparent(
+            selector=lambda _: baca.select.mmrests(_),
+        ),
         baca.pitch("A1"),
         baca.new(
             baca.bar_line_transparent(),
