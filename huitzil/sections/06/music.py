@@ -148,7 +148,10 @@ def vc(m):
                     lambda _: baca.select.pleaf(_, 0),
                     allow_rest=True,
                 ),
-                baca.repeat_tie_extra_offset((-1.5, 0)),
+                baca.repeat_tie_extra_offset(
+                    (-1.5, 0),
+                    selector=lambda _: baca.select.pleaf(_, 0),
+                ),
             ),
         ),
     )
