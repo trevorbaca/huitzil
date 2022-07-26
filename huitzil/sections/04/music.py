@@ -174,6 +174,8 @@ def vc(m):
         baca.bar_line_transparent_function(o)
         baca.span_bar_transparent_function(o)
         baca.time_signature_stencil_false_function(o)
+    with baca.scope(m.get(8, 14)) as o:
+        baca.glissando_function(o)
 
 
 def rh(m):
@@ -333,42 +335,28 @@ def rh(m):
             6,
             allow_hidden=True,
         )
-    accumulator(
-        "rh",
-        baca.only_section(
-            baca.chunk(
-                baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
-                baca.literal(
-                    [
-                        r"\stopStaff",
-                        r"\once \override RHStaff.StaffSymbol.line-positions ="
-                        " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
-                        r"\startStaff",
-                    ]
-                ),
-            ),
-        ),
-        baca.stem_tremolo(
-            selector=lambda _: baca.select.pleaves(_),
-        ),
-        baca.text_script_parent_alignment_x(0),
-        baca.text_script_self_alignment_x(0),
-        baca.text_script_staff_padding(4),
-    )
-    # stage 2 (after staff position settings)
-    accumulator(
-        ("vc", (8, 14)),
-        baca.glissando(
-            selector=lambda _: baca.select.leaves(_),
-        ),
-    )
-    accumulator(
-        "rh",
-        baca.glissando(
-            right_broken=True,
-            selector=lambda _: baca.select.rleaves(_),
-        ),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.literal_function(
+            o.leaf(0),
+            r"\override DynamicLineSpanner.staff-padding = 7",
+            tags=[baca.tags.ONLY_SEGMENT],
+        )
+        baca.literal_function(
+            o.leaf(0),
+            [
+                r"\stopStaff",
+                r"\once \override RHStaff.StaffSymbol.line-positions ="
+                " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
+                r"\startStaff",
+            ],
+            tags=[baca.tags.ONLY_SEGMENT],
+        )
+        baca.stem_tremolo_function(o.pleaves())
+        baca.text_script_parent_alignment_x_function(o, 0)
+        baca.text_script_self_alignment_x_function(o, 0)
+        baca.text_script_staff_padding_function(o, 4)
+    with baca.scope(m.leaves()) as o:
+        baca.glissando_function(o.rleaves(), right_broken=True)
 
 
 def main():
@@ -397,7 +385,6 @@ if __name__ == "__main__":
             baca.tags.LOCAL_MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
