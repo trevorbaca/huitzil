@@ -119,6 +119,10 @@ def registrations():
     )
 
 
+def sforzando(argument, string):
+    baca.markup_function(argument, string, direction=abjad.DOWN)
+
+
 def voice_abbreviations():
     return {
         "rh": "RH.Music",
