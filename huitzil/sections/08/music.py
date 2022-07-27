@@ -189,7 +189,8 @@ def rh(m):
                 [
                     r"\once \override RHStaff.StaffSymbol.line-positions ="
                     " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)"
-                ]
+                ],
+                selector=lambda _: abjad.select.leaf(_, 0),
             ),
             baca.staff_lines(7),
         ),
@@ -533,7 +534,10 @@ def rh(m):
     )
     accumulator(
         "rh",
-        baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
+        baca.literal(
+            r"\override DynamicLineSpanner.staff-padding = 7",
+            selector=lambda _: abjad.select.leaf(_, 0),
+        ),
         baca.stem_tremolo(
             selector=lambda _: baca.select.pleaves(_),
         ),

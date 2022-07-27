@@ -79,7 +79,8 @@ def vc(m):
                     r"\stopStaff",
                     r"\once \override Staff.StaffSymbol.line-positions =" " #'(4 -4)",
                     r"\startStaff",
-                ]
+                ],
+                selector=lambda _: abjad.select.leaf(_, 0),
             ),
         ),
         baca.time_signature_stencil_false(),
@@ -92,6 +93,7 @@ def vc(m):
                 r"\once \override Score.RehearsalMark.padding = 6",
                 r"\mark \huitzil-colophon-markup",
             ],
+            selector=lambda _: abjad.select.leaf(_, 0),
             site="after",
         ),
         baca.literal(
@@ -100,7 +102,8 @@ def vc(m):
                 r"\override Score.BarLine.extra-offset = #'(8 . 0)",
                 r"\override Score.RehearsalMark.extra-offset = #'(4 . 0)",
                 r"\override Score.SpanBar.extra-offset = #'(8 . 0)",
-            ]
+            ],
+            selector=lambda _: abjad.select.leaf(_, 0),
         ),
     )
 
@@ -130,13 +133,20 @@ def rh(m):
     )
     accumulator(
         ("rh", -1),
-        baca.literal(r"\override Staff.BarLine.bar-extent = #'(-4 . 4)", site="after"),
+        baca.literal(
+            r"\override Staff.BarLine.bar-extent = #'(-4 . 4)",
+            site="after",
+            selector=lambda _: abjad.select.leaf(_, 0),
+        ),
     )
     accumulator(
         "rh",
         # TODO: fix right-broken text spanners and replace this:
-        baca.literal(r"<> \stopTextSpan"),
-        baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
+        baca.literal(r"<> \stopTextSpan", selector=lambda _: abjad.select.leaf(_, 0)),
+        baca.literal(
+            r"\override DynamicLineSpanner.staff-padding = 7",
+            selector=lambda _: abjad.select.leaf(_, 0),
+        ),
         baca.only_section(
             baca.literal(
                 [
@@ -144,7 +154,8 @@ def rh(m):
                     r"\once \override RHStaff.StaffSymbol.line-positions ="
                     " #'(8.2 8 7.8 -5.8 -6 -6.2)",
                     r"\startStaff",
-                ]
+                ],
+                selector=lambda _: abjad.select.leaf(_, 0),
             ),
         ),
         baca.stem_tremolo(

@@ -166,7 +166,8 @@ def vc(m):
                 r"\stopStaff",
                 r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
                 r"\startStaff",
-            ]
+            ],
+            selector=lambda _: abjad.select.leaf(_, 0),
         ),
         baca.note_head_duration_log(2, selector=lambda _: baca.select.pleaves(_)),
         baca.note_head_no_ledgers(True),
@@ -404,7 +405,8 @@ def rh(m):
                 r"\once \override RHStaff.StaffSymbol.line-positions ="
                 " #'(8.2 8 7.8 -5.8 -6 -6.2)",
                 r"\startStaff",
-            ]
+            ],
+            selector=lambda _: abjad.select.leaf(_, 0),
         ),
         baca.staff_position(8),
     )
@@ -509,14 +511,18 @@ def rh(m):
         "rh",
         baca.only_section(
             baca.chunk(
-                baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
+                baca.literal(
+                    r"\override DynamicLineSpanner.staff-padding = 7",
+                    selector=lambda _: abjad.select.leaf(_, 0),
+                ),
                 baca.literal(
                     [
                         r"\stopStaff",
                         r"\once \override RHStaff.StaffSymbol.line-positions ="
                         " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
                         r"\startStaff",
-                    ]
+                    ],
+                    selector=lambda _: abjad.select.leaf(_, 0),
                 ),
             ),
         ),
