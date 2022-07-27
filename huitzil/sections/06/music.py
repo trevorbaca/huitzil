@@ -139,64 +139,39 @@ def RH(voice):
 
 
 def vc(m):
-    accumulator(
-        ("vc", (8, 13)),
-        baca.suite(
-            baca.pitches("Bb1 Cb2"),
-            baca.chunk(
-                baca.repeat_tie(
-                    lambda _: baca.select.pleaf(_, 0),
-                    allow_rest=True,
-                ),
-                baca.repeat_tie_extra_offset(
-                    (-1.5, 0),
-                    selector=lambda _: baca.select.pleaf(_, 0),
-                ),
-            ),
-        ),
-    )
-    accumulator(
-        ("vc", 14),
-        baca.clef("treble"),
-        baca.literal(
+    with baca.scope(m.get(8, 13)) as o:
+        baca.pitches_function(o, "Bb1 Cb2")
+        baca.repeat_tie_function(o.pleaf(0))
+        baca.repeat_tie_extra_offset_function(
+            o.pleaf(0),
+            (-1.5, 0),
+        )
+    with baca.scope(m[14]) as o:
+        baca.clef_function(o.leaf(0), "treble")
+        baca.literal_function(
+            o.leaf(0),
             [
                 r"\stopStaff",
                 r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)"
                 r"\startStaff",
             ],
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        baca.note_head_duration_log(2, selector=lambda _: baca.select.pleaves(_)),
-        baca.note_head_no_ledgers(True),
-        baca.note_head_style("#'do"),
-        baca.staff_position(7),
-    )
-    accumulator(
-        "vc",
-        baca.mmrest_transparent(
-            selector=lambda _: baca.select.mmrests(_),
-        ),
-        baca.new(
-            baca.bar_line_transparent(),
-            baca.span_bar_transparent(),
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.time_signature_stencil_false(),
-    )
+        )
+        baca.note_head_duration_log_function(o.pleaves(), 2)
+        baca.note_head_no_ledgers_function(o, True)
+        baca.note_head_style_function(o, "#'do")
+        baca.staff_position_function(o, 7)
+    with baca.scope(m.leaves()) as o:
+        baca.mmrest_transparent_function(o.mmrests())
+        baca.bar_line_transparent_function(o)
+        baca.span_bar_transparent_function(o)
+        baca.time_signature_stencil_false_function(o)
 
 
 def rh(m):
-    accumulator(
-        ("rh", 1),
-        baca.markup(
-            r"\baca-ffz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.staff_positions(
-            [-6, -4, -2, 0],
-        ),
-    )
+    with baca.scope(m[1]) as o:
+        for leaf in o:
+            library.sforzando(leaf, r"\baca-ffz-markup")
+        baca.staff_positions_function(o, [-6, -4, -2, 0])
     accumulator(
         ("rh", 2),
         baca.markup(
