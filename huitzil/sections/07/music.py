@@ -140,7 +140,8 @@ def vc(m):
                 r"\stopStaff",
                 r"\once \override Staff.StaffSymbol.line-count = 5",
                 r"\startStaff",
-            ]
+            ],
+            selector=lambda _: abjad.select.leaf(_, 0),
         ),
         baca.mmrest_transparent(
             selector=lambda _: baca.select.mmrests(_),
@@ -224,7 +225,8 @@ def rh(m):
                 r"\once \override RHStaff.StaffSymbol.line-positions ="
                 " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
                 r"\startStaff",
-            ]
+            ],
+            selector=lambda _: abjad.select.leaf(_, 0),
         ),
         baca.markup(
             r"\huitzil-directly-above-end-of-fingerboard-column-markup",
@@ -270,11 +272,15 @@ def rh(m):
                     " #'(8.2 8  7.8 -5.8 -6 -6.2 -8 -10 -12 -14 -16 -17.8 -18 -18.2)",
                     r"\morleyDashedStaffSymbolLines #'("
                     "   #f  #f #f  #f   #f #f   #t #t  #t  #t  #t  #f    #f  #f)",
-                ]
+                ],
+                selector=lambda _: abjad.select.leaf(_, 0),
             ),
             baca.staff_lines(14),
         ),
-        baca.literal(r"\override DynamicLineSpanner.staff-padding = 7"),
+        baca.literal(
+            r"\override DynamicLineSpanner.staff-padding = 7",
+            selector=lambda _: abjad.select.leaf(_, 0),
+        ),
         baca.markup(
             r"\huitzil-ascending-fingerboard-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -1"),
