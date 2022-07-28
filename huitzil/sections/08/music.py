@@ -192,7 +192,7 @@ def rh(m):
                 ],
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            baca.staff_lines(7),
+            baca.staff_lines(7, selector=lambda _: abjad.select.leaf(_, 0)),
         ),
         baca.staff_positions(
             [6, 6, 4],
