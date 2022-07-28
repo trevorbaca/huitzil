@@ -186,7 +186,7 @@ def rh(m):
         )
         baca.staff_positions_function(o, [4, 4, 2])
     with baca.scope(m.get(4, 5)) as o:
-        baca.markup_function(o, r"\baca-fz-markup", direction=abjad.DOWN)
+        baca.markup_function(o.pleaf(0), r"\baca-fz-markup", direction=abjad.DOWN)
         for leaf in o.pleaves()[1:-3]:
             baca.markup_function(leaf, r"\baca-mpz-markup", direction=abjad.DOWN)
         for leaf in o.pleaves()[-3:]:
@@ -200,7 +200,7 @@ def rh(m):
             "p -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
         )
-        baca.markup_function(o, r"\baca-fz-markup", direction=abjad.DOWN)
+        baca.markup_function(o.pleaf(0), r"\baca-fz-markup", direction=abjad.DOWN)
         for leaf in o.pleaves()[1:]:
             baca.markup_function(leaf, r"\baca-mpz-markup", direction=abjad.DOWN)
         baca.staff_positions_function(o, [4, 4, 2, 6, 4, 2])
@@ -316,7 +316,7 @@ def rh(m):
         baca.staff_positions_function(o, [-4])
     with baca.scope(m[26]) as o:
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -0.75"),
             abjad.Tweak(r"- \tweak staff-padding 2"),

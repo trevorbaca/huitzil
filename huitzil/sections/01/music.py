@@ -423,7 +423,7 @@ def vc(m):
         )
         baca.clef_function(o.leaf(0), "bass")
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\huitzil-phrasing-dynamics-see-preface-markup",
             abjad.Tweak(r"- \tweak staff-padding 9"),
             direction=abjad.DOWN,

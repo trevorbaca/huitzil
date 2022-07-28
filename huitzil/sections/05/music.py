@@ -162,8 +162,7 @@ def rh(m):
             "mp -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
         )
-        for leaf in o:
-            library.sforzando(leaf, r"\baca-mfz-markup")
+        library.sforzando(o, r"\baca-mfz-markup")
     with baca.scope(m[2]) as o:
         baca.staff_positions_function(o, [6, 6, 4])
     with baca.scope(m[3]) as o:
@@ -175,11 +174,9 @@ def rh(m):
         )
         baca.staff_positions_function(o, [4, 4, 2])
     with baca.scope(m.get(4, 5)) as o:
-        library.sforzando(o, r"\baca-fz-markup")
-        for leaf in o.pleaves()[1:-3]:
-            library.sforzando(leaf, r"\baca-mpz-markup")
-        for leaf in o.pleaves()[-3:]:
-            library.sforzando(leaf, r"\baca-mfz-markup")
+        library.sforzando(o.leaf(0), r"\baca-fz-markup")
+        library.sforzando(o.leaves()[1:-3], r"\baca-mpz-markup")
+        library.sforzando(o.leaves()[-3:], r"\baca-mfz-markup")
     with baca.scope(m[5]) as o:
         baca.hairpin_function(o.leaves()[1:], "pp < mf")
         baca.staff_positions_function(o, [4, 4, 2, 6, 4, 2])
@@ -189,15 +186,13 @@ def rh(m):
             "p -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
         )
-        library.sforzando(o, r"\baca-fz-markup")
-        for leaf in o.pleaves()[1:]:
-            library.sforzando(leaf, r"\baca-mpz-markup")
+        library.sforzando(o.leaf(0), r"\baca-fz-markup")
+        library.sforzando(o.leaves()[1:], r"\baca-mpz-markup")
         baca.staff_positions_function(o, [4, 4, 2, 6, 4, 2])
     with baca.scope(m[7]) as o:
         baca.staff_positions_function(o, [2])
     with baca.scope(m.get(7, 9)) as o:
-        for leaf in o:
-            library.sforzando(leaf, r"\baca-fz-markup")
+        library.sforzando(o, r"\baca-fz-markup")
     with baca.scope(m.get(7, 9)) as o:
         baca.hairpin_function(
             o.rleaves(),
@@ -211,10 +206,8 @@ def rh(m):
     with baca.scope(m[10]) as o:
         baca.staff_positions_function(o, [2, 6])
     with baca.scope(m.get(10, 11)) as o:
-        for leaf in o.leaves()[:4]:
-            library.sforzando(leaf, r"\baca-mfz-markup")
-        for leaf in o.leaves()[4:]:
-            library.sforzando(leaf, r"\baca-mpz-markup")
+        library.sforzando(o.leaves()[:4], r"\baca-mfz-markup")
+        library.sforzando(o.leaves()[4:], r"\baca-mpz-markup")
         baca.text_spanner_function(
             baca.select.rleak(o.leaves()[:4]),
             "(trem. mod.) => trem. stretto",
@@ -232,8 +225,7 @@ def rh(m):
     with baca.scope(m[12]) as o:
         baca.staff_positions_function(o, [0])
     with baca.scope(m.get(12, 16)) as o:
-        for leaf in o:
-            library.sforzando(leaf, r"\baca-ffz-markup")
+        library.sforzando(o, r"\baca-ffz-markup")
     with baca.scope(m[13]) as o:
         baca.staff_positions_function(o, [0])
     with baca.scope(m.get(13, 16)) as o:
@@ -258,8 +250,7 @@ def rh(m):
             "p < f -- !",
             pieces=lambda _: baca.select.lparts(_, [5, 1 + 1]),
         )
-        for leaf in o:
-            library.sforzando(leaf, r"\baca-ffz-markup")
+        library.sforzando(o, r"\baca-ffz-markup")
         baca.text_spanner_function(
             o,
             "sub. mod. => più stretto => più largo => più stretto =>"

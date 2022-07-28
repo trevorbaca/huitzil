@@ -180,11 +180,10 @@ def vc(m):
 
 def rh(m):
     with baca.scope(m[1]) as o:
-        for leaf in o:
-            library.sforzando(leaf, r"\baca-ffz-markup")
+        library.sforzando(o, r"\baca-ffz-markup")
         baca.staff_positions_function(o, [-6, -4, -2, 0])
     with baca.scope(m[2]) as o:
-        library.sforzando(o, r"\baca-ffz-markup")
+        library.sforzando(o.leaf(0), r"\baca-ffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m.get(2, 13)) as o:
         # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
@@ -206,7 +205,7 @@ def rh(m):
         library.sforzando(o.leaf(1), r"\baca-fffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m[4]) as o:
-        library.sforzando(o, r"\baca-ffz-markup")
+        library.sforzando(o.leaf(0), r"\baca-ffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m[5]) as o:
         library.sforzando(o.leaf(0), r"\baca-mfz-markup")
@@ -215,39 +214,39 @@ def rh(m):
         library.sforzando(o.leaf(3), r"\baca-fffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m[6]) as o:
-        library.sforzando(o, r"\baca-ffz-markup")
+        library.sforzando(o.leaf(0), r"\baca-ffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m[7]) as o:
-        library.sforzando(o, r"\baca-fz-markup")
+        library.sforzando(o.leaf(0), r"\baca-fz-markup")
         library.sforzando(o.leaf(1), r"\baca-fffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m[8]) as o:
-        library.sforzando(o, r"\baca-ffz-markup")
+        library.sforzando(o.leaf(0), r"\baca-ffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m[9]) as o:
-        library.sforzando(o, r"\baca-mfz-markup")
+        library.sforzando(o.leaf(0), r"\baca-mfz-markup")
         library.sforzando(o.leaf(1), r"\baca-fz-markup")
         library.sforzando(o.leaf(2), r"\baca-ffz-markup")
         library.sforzando(o.leaf(3), r"\baca-fffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m[10]) as o:
-        library.sforzando(o, r"\baca-ffz-markup")
+        library.sforzando(o.leaf(0), r"\baca-ffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m[11]) as o:
-        library.sforzando(o, r"\baca-fz-markup")
+        library.sforzando(o.leaf(0), r"\baca-fz-markup")
         library.sforzando(o.leaf(1), r"\baca-fffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m[12]) as o:
-        library.sforzando(o, r"\baca-ffz-markup")
+        library.sforzando(o.leaf(0), r"\baca-ffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m[13]) as o:
-        library.sforzando(o, r"\baca-mfz-markup")
+        library.sforzando(o.leaf(0), r"\baca-mfz-markup")
         library.sforzando(o.leaf(1), r"\baca-fz-markup")
         library.sforzando(o.leaf(2), r"\baca-ffz-markup")
         library.sforzando(o.leaf(3), r"\baca-fffz-markup")
         baca.staff_positions_function(o, [0])
     with baca.scope(m[14]) as o:
-        library.sforzando(o, r"\baca-ffz-markup")
+        library.sforzando(o.leaf(0), r"\baca-ffz-markup")
     with baca.scope(m.get(14, 23)) as o:
         # FUTURE: use this when LilyPond fixes DynamicLine Spanner bug:
         # baca.hairpin(
@@ -281,12 +280,12 @@ def rh(m):
         )
         baca.staff_position_function(o, 8)
     with baca.scope(m[15]) as o:
-        library.sforzando(o, r"\baca-fz-markup")
+        library.sforzando(o.leaf(0), r"\baca-fz-markup")
         library.sforzando(o.leaf(1), r"\baca-fffz-markup")
     with baca.scope(m[16]) as o:
-        library.sforzando(o, r"\baca-ffz-markup")
+        library.sforzando(o.leaf(0), r"\baca-ffz-markup")
     with baca.scope(m[17]) as o:
-        library.sforzando(o, r"\baca-mfz-markup")
+        library.sforzando(o.leaf(0), r"\baca-mfz-markup")
         library.sforzando(o.leaf(1), r"\baca-fz-markup")
         library.sforzando(o.leaf(2), r"\baca-ffz-markup")
         library.sforzando(o.leaf(3), r"\baca-fffz-markup")
@@ -303,7 +302,7 @@ def rh(m):
             tags=[abjad.Tag("+SCORE")],
         )
     with baca.scope(m.get(18, 23)) as o:
-        library.sforzando(o, r"\baca-ffz-markup")
+        library.sforzando(o.leaf(0), r"\baca-ffz-markup")
         library.sforzando(o.leaf(1), r"\baca-fz-markup")
         library.sforzando(o.leaf(2), r"\baca-fz-markup")
         library.sforzando(o.leaf(3), r"\baca-mfz-markup")
