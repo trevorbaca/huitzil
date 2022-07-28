@@ -208,7 +208,7 @@ def rh(m):
         # ),
         # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
         baca.chunk(
-            baca.dynamic("mp"),
+            baca.dynamic("mp", selector=lambda _: baca.select.phead(_, 0)),
             baca.hairpin(
                 "mp -- !",
                 abjad.Tweak(r"- \tweak to-barline ##t"),
