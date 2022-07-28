@@ -184,12 +184,12 @@ def rh(m):
             ],
         ),
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\huitzil-sliding-from-bridge-onto-string-markup",
             abjad.Tweak(r"- \tweak staff-padding 6"),
         ),
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\huitzil-trem-moderato-markup",
             abjad.Tweak(r"- \tweak staff-padding 3.5"),
             direction=abjad.DOWN,
@@ -220,7 +220,7 @@ def rh(m):
         )
         baca.literal_function(o.leaf(0), r"\override Score.BarNumber.transparent = ##t")
         baca.markup_function(
-            o,
+            o.pleaf(0),
             r"\huitzil-directly-on-bridge-markup",
             abjad.Tweak(r"- \tweak staff-padding 3"),
         ),
