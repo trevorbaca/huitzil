@@ -145,7 +145,7 @@ def vc(m):
         baca.pitches_function(o, "B1 C2")
         baca.repeat_tie_function(o.pleaf(0))
     with baca.scope(m[14]) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.literal_function(
             o.leaf(0),
             [
@@ -159,7 +159,7 @@ def vc(m):
         baca.note_head_style_function(o, "#'do")
         baca.staff_position_function(o, 7)
     with baca.scope(m[23]) as o:
-        baca.clef_function(o, "bass")
+        baca.clef_function(o.leaf(0), "bass")
         baca.literal_function(
             o.leaf(0),
             [
