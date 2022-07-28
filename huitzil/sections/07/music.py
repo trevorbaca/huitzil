@@ -108,6 +108,7 @@ def vc(m):
             r"\baca-string-iii-markup",
             abjad.Tweak(r"- \tweak padding 2.5"),
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.pitch("A2"),
     )
@@ -129,6 +130,7 @@ def vc(m):
             abjad.Tweak(r"- \tweak parent-alignment-X 0"),
             abjad.Tweak(r"- \tweak self-alignment-X -0.05"),
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.pitch("G2"),
     )
@@ -196,6 +198,7 @@ def rh(m):
             r"\huitzil-close-to-lh-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -0.5"),
             abjad.Tweak(r"- \tweak staff-padding 2"),
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
     )
     accumulator(
@@ -204,6 +207,7 @@ def rh(m):
             r"\huitzil-descending-fingerboard-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -1"),
             abjad.Tweak(r"- \tweak staff-padding 2"),
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
     )
     accumulator(
@@ -232,6 +236,7 @@ def rh(m):
             r"\huitzil-directly-above-end-of-fingerboard-column-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -0.5"),
             abjad.Tweak(r"- \tweak staff-padding 2"),
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.parenthesize(
             selector=lambda _: baca.select.pleaf(_, -1),
@@ -285,11 +290,13 @@ def rh(m):
             r"\huitzil-ascending-fingerboard-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -1"),
             abjad.Tweak(r"- \tweak staff-padding 4.5"),
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.markup(
             r"\huitzil-directly-above-end-of-fingerboard-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -1"),
             abjad.Tweak(r"- \tweak staff-padding 1"),
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.stem_tremolo(
             selector=lambda _: baca.select.pleaves(_),
