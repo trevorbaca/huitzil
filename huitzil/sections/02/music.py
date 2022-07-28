@@ -211,7 +211,7 @@ def rh(m):
         )
         baca.staff_lines_function(o, 7)
         baca.dynamic_function(
-            o,
+            o.pleaf(0),
             "mp-sempre",
             abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
         )
