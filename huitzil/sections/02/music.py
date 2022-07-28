@@ -209,7 +209,7 @@ def rh(m):
                 " #'(8.2 8 7.8 -5.8 -6 -6.2)"
             ],
         )
-        baca.staff_lines_function(o, 7)
+        baca.staff_lines_function(o.leaf(0), 7)
         baca.dynamic_function(
             o.pleaf(0),
             "mp-sempre",

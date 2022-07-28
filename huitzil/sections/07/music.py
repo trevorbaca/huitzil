@@ -280,7 +280,7 @@ def rh(m):
                 ],
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            baca.staff_lines(14),
+            baca.staff_lines(14, selector=lambda _: abjad.select.leaf(_, 0)),
         ),
         baca.literal(
             r"\override DynamicLineSpanner.staff-padding = 7",
