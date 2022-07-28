@@ -248,6 +248,7 @@ def rh(m):
         baca.markup(
             r"\baca-fz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.markup(
             r"\baca-mpz-markup",
@@ -280,6 +281,7 @@ def rh(m):
         baca.markup(
             r"\baca-fz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.markup(
             r"\baca-mpz-markup",
@@ -417,6 +419,7 @@ def rh(m):
         baca.markup(
             r"\baca-fz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.staff_positions(
             [0],

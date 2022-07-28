@@ -234,6 +234,7 @@ def rh(m):
         baca.markup(
             r"\baca-ffz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.staff_positions(
             [0],
@@ -270,6 +271,7 @@ def rh(m):
         baca.markup(
             r"\baca-ffz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.staff_positions(
             [0],
@@ -280,6 +282,7 @@ def rh(m):
         baca.markup(
             r"\baca-fz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.markup(
             r"\baca-fffz-markup",
@@ -295,6 +298,7 @@ def rh(m):
         baca.markup(
             r"\baca-ffz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.staff_positions(
             [0],
@@ -305,6 +309,7 @@ def rh(m):
         baca.markup(
             r"\baca-mfz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.markup(
             r"\baca-fz-markup",
@@ -330,6 +335,7 @@ def rh(m):
         baca.markup(
             r"\baca-ffz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.staff_positions(
             [0],
@@ -340,6 +346,7 @@ def rh(m):
         baca.markup(
             r"\baca-fz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.markup(
             r"\baca-fffz-markup",
@@ -355,6 +362,7 @@ def rh(m):
         baca.markup(
             r"\baca-ffz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.staff_positions(
             [0],
@@ -365,6 +373,7 @@ def rh(m):
         baca.markup(
             r"\baca-mfz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.markup(
             r"\baca-fz-markup",
@@ -390,6 +399,7 @@ def rh(m):
         baca.markup(
             r"\baca-ffz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
     )
     accumulator(
@@ -415,6 +425,7 @@ def rh(m):
         baca.markup(
             r"\baca-fz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.markup(
             r"\baca-fffz-markup",
@@ -427,6 +438,7 @@ def rh(m):
         baca.markup(
             r"\baca-ffz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
     )
     accumulator(
@@ -434,6 +446,7 @@ def rh(m):
         baca.markup(
             r"\baca-mfz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.markup(
             r"\baca-fz-markup",
@@ -474,6 +487,7 @@ def rh(m):
         baca.markup(
             r"\baca-ffz-markup",
             direction=abjad.DOWN,
+            selector=lambda _: baca.select.pleaf(_, 0),
         ),
         baca.markup(
             r"\baca-fz-markup",
