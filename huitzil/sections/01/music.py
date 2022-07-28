@@ -421,7 +421,7 @@ def vc(m):
         baca.instrument_function(
             o.leaf(0), accumulator.instruments["Cello"], accumulator.manifests()
         )
-        baca.clef_function(o, "bass")
+        baca.clef_function(o.leaf(0), "bass")
         baca.markup_function(
             o,
             r"\huitzil-phrasing-dynamics-see-preface-markup",
@@ -458,7 +458,7 @@ def rh(m):
     with baca.scope(m.leaves()) as o:
         baca.literal_function(o.leaf(0), r"\stopStaff")
         baca.mmrest_transparent_function(o)
-        baca.clef_function(o, "percussion")
+        baca.clef_function(o.leaf(0), "percussion")
 
 
 def main():

@@ -160,7 +160,7 @@ def vc(m):
     )
     accumulator(
         ("vc", 14),
-        baca.clef("treble"),
+        baca.clef("treble", selector=lambda _: abjad.select.leaf(_, 0)),
         baca.literal(
             [
                 r"\stopStaff",

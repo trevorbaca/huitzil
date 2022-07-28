@@ -136,7 +136,7 @@ def vc(m):
     )
     accumulator(
         "vc",
-        baca.clef("bass"),
+        baca.clef("bass", selector=lambda _: abjad.select.leaf(_, 0)),
         baca.literal(
             [
                 r"\stopStaff",
