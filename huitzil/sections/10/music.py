@@ -65,107 +65,86 @@ def RH(voice):
 
 
 def vc(m):
-    accumulator(
-        "vc",
-        baca.mmrest_transparent(),
-        baca.new(
-            baca.bar_line_transparent(),
-            baca.span_bar_transparent(),
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.only_section(
-            baca.literal(
-                [
-                    r"\stopStaff",
-                    r"\once \override Staff.StaffSymbol.line-positions =" " #'(4 -4)",
-                    r"\startStaff",
-                ],
-                selector=lambda _: abjad.select.leaf(_, 0),
-            ),
-        ),
-        baca.time_signature_stencil_false(),
-    )
-    accumulator(
-        ("vc", -1),
-        baca.literal(
+    with baca.scope(m.leaves()) as o:
+        baca.mmrest_transparent_function(o)
+        baca.bar_line_transparent_function(o)
+        baca.span_bar_transparent_function(o)
+        baca.literal_function(
+            o.leaf(0),
+            [
+                r"\stopStaff",
+                r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)",
+                r"\startStaff",
+            ],
+            tags=[baca.tags.ONLY_SEGMENT],
+        )
+        baca.time_signature_stencil_false_function(o)
+    with baca.scope(m[10]) as o:
+        baca.literal_function(
+            o.leaf(0),
             [
                 r"\once \override Score.RehearsalMark.direction = #down",
                 r"\once \override Score.RehearsalMark.padding = 6",
                 r"\mark \huitzil-colophon-markup",
             ],
-            selector=lambda _: abjad.select.leaf(_, 0),
             site="after",
-        ),
-        baca.literal(
+        )
+        baca.literal_function(
+            o.leaf(0),
             [
                 r"\override Score.BarLine.X-extent = #'(0 . 8)",
                 r"\override Score.BarLine.extra-offset = #'(8 . 0)",
                 r"\override Score.RehearsalMark.extra-offset = #'(4 . 0)",
                 r"\override Score.SpanBar.extra-offset = #'(8 . 0)",
             ],
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-    )
+        )
 
 
 def rh(m):
-    accumulator(
-        ("rh", (1, 12)),
-        baca.staff_position(8),
-        baca.text_spanner(
+    with baca.scope(m.get(1, 12)) as o:
+        baca.staff_position_function(o, 8)
+        baca.text_spanner_function(
+            o,
             "larg. => strett. =>",
             abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=lambda _: baca.select.clparts(_, [1]),
-        ),
-    )
-    accumulator(
-        ("rh", (1, 10)),
-        baca.markup(
-            r"\baca-mpz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.pleaf(_, 0),
-        ),
-        baca.hairpin(
+        )
+    with baca.scope(m.get(1, 10)) as o:
+        library.sforzando(o.leaf(0), r"\baca-mpz-markup")
+        baca.hairpin_function(
+            o,
             "mp > pp <",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             final_hairpin=False,
             pieces=lambda _: baca.select.clparts(_, [1]),
-        ),
-    )
-    accumulator(
-        ("rh", -1),
-        baca.literal(
+        )
+    with baca.scope(m[10]) as o:
+        baca.literal_function(
+            o.leaf(0),
             r"\override Staff.BarLine.bar-extent = #'(-4 . 4)",
             site="after",
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-    )
-    accumulator(
-        "rh",
+        )
+    with baca.scope(m.leaves()) as o:
         # TODO: fix right-broken text spanners and replace this:
-        baca.literal(r"<> \stopTextSpan", selector=lambda _: abjad.select.leaf(_, 0)),
-        baca.literal(
+        baca.literal_function(o.leaf(0), r"<> \stopTextSpan")
+        baca.literal_function(
+            o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        baca.only_section(
-            baca.literal(
-                [
-                    r"\stopStaff",
-                    r"\once \override RHStaff.StaffSymbol.line-positions ="
-                    " #'(8.2 8 7.8 -5.8 -6 -6.2)",
-                    r"\startStaff",
-                ],
-                selector=lambda _: abjad.select.leaf(_, 0),
-            ),
-        ),
-        baca.stem_tremolo(
-            selector=lambda _: baca.select.pleaves(_),
-        ),
-        baca.text_script_parent_alignment_x(0),
-        baca.text_script_self_alignment_x(0),
-        baca.text_script_staff_padding(4),
-    )
+        )
+        baca.literal_function(
+            o.leaf(0),
+            [
+                r"\stopStaff",
+                r"\once \override RHStaff.StaffSymbol.line-positions ="
+                " #'(8.2 8 7.8 -5.8 -6 -6.2)",
+                r"\startStaff",
+            ],
+            tags=[baca.tags.ONLY_SEGMENT],
+        )
+        baca.stem_tremolo_function(o.pleaves())
+        baca.text_script_parent_alignment_x_function(o, 0)
+        baca.text_script_self_alignment_x_function(o, 0)
+        baca.text_script_staff_padding_function(o, 4)
 
 
 def main():
@@ -196,7 +175,6 @@ if __name__ == "__main__":
             baca.tags.LOCAL_MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
         final_section=True,
