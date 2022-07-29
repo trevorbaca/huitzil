@@ -166,40 +166,26 @@ def RH(voice):
 
 
 def vc(m):
-    accumulator(
-        "vc",
-        baca.mmrest_transparent(
-            selector=lambda _: baca.select.mmrests(_),
-        ),
-        baca.pitch("A1"),
-        baca.new(
-            baca.bar_line_transparent(),
-            baca.span_bar_transparent(),
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.time_signature_stencil_false(),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.mmrest_transparent_function(o.mmrests())
+        baca.pitch_function(o, "A1")
+        baca.bar_line_transparent_function(o)
+        baca.span_bar_transparent_function(o)
+        baca.time_signature_stencil_false_function(o)
 
 
 def rh(m):
-    accumulator(
-        ("rh", 1),
-        baca.chunk(
-            baca.literal(
-                [
-                    r"\once \override RHStaff.StaffSymbol.line-positions ="
-                    " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)"
-                ],
-                selector=lambda _: abjad.select.leaf(_, 0),
-            ),
-            baca.staff_lines(7, selector=lambda _: abjad.select.leaf(_, 0)),
-        ),
-        baca.staff_positions(
-            [6, 6, 4],
-        ),
-    )
-    accumulator(
-        ("rh", (1, 3)),
+    with baca.scope(m[1]) as o:
+        baca.literal_function(
+            o.leaf(0),
+            [
+                r"\once \override RHStaff.StaffSymbol.line-positions ="
+                " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)"
+            ],
+        )
+        baca.staff_lines_function(o.leaf(0), 7)
+        baca.staff_positions_function(o, [6, 6, 4])
+    with baca.scope(m.get(1, 3)) as o:
         # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
         # baca.hairpin(
         #    "mp -- !",
@@ -207,354 +193,163 @@ def rh(m):
         #    selector=lambda _: baca.select.rleaves(_),
         # ),
         # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
-        baca.chunk(
-            baca.dynamic("mp", selector=lambda _: baca.select.phead(_, 0)),
-            baca.hairpin(
-                "mp -- !",
-                abjad.Tweak(r"- \tweak to-barline ##t"),
-                selector=lambda _: baca.select.rleak(baca.select.leaves(_)[1:]),
-            ),
-        ),
-        baca.markup(
-            r"\baca-mfz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-    )
-    accumulator(
-        ("rh", 2),
-        baca.staff_positions(
-            [6, 6, 4],
-        ),
-    )
-    accumulator(
-        ("rh", 3),
-        baca.staff_positions(
-            [6, 6, 4],
-        ),
-    )
-    accumulator(
-        ("rh", 4),
-        baca.hairpin(
+        baca.dynamic_function(o.phead(0), "mp")
+        baca.hairpin_function(
+            baca.select.rleak(o.leaves()[1:]),
+            "mp -- !",
+            abjad.Tweak(r"- \tweak to-barline ##t"),
+        )
+        library.sforzando(o, r"\baca-mfz-markup")
+    with baca.scope(m[2]) as o:
+        baca.staff_positions_function(o, [6, 6, 4])
+    with baca.scope(m[3]) as o:
+        baca.staff_positions_function(o, [6, 6, 4])
+    with baca.scope(m[4]) as o:
+        baca.hairpin_function(
+            baca.select.rleaves(o, count=2),
             "p -- !",
-            selector=lambda _: baca.rleaves(_, count=2),
-        ),
-        baca.staff_positions(
-            [4, 4, 2],
-        ),
-    )
-    accumulator(
-        ("rh", (4, 5)),
-        baca.markup(
-            r"\baca-fz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.pleaf(_, 0),
-        ),
-        baca.markup(
-            r"\baca-mpz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.pleaves(_)[1:-3],
-        ),
-        baca.markup(
-            r"\baca-mfz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.pleaves(_)[-3:],
-        ),
-    )
-    accumulator(
-        ("rh", 5),
-        baca.hairpin(
-            "pp < mf",
-            selector=lambda _: baca.select.leaves(_)[1:],
-        ),
-        baca.staff_positions(
-            [4, 4, 2, 6, 4, 2],
-        ),
-    )
-    accumulator(
-        ("rh", 6),
-        baca.hairpin(
+        )
+        baca.staff_positions_function(o, [4, 4, 2])
+    with baca.scope(m.get(4, 5)) as o:
+        library.sforzando(o.leaf(0), r"\baca-fz-markup")
+        library.sforzando(o.leaves()[1:-3], r"\baca-mpz-markup")
+        library.sforzando(o.leaves()[-3:], r"\baca-mfz-markup")
+    with baca.scope(m[5]) as o:
+        baca.hairpin_function(o.leaves()[1:], "pp < mf")
+        baca.staff_positions_function(o, [4, 4, 2, 6, 4, 2])
+    with baca.scope(m[6]) as o:
+        baca.hairpin_function(
+            o.rleaves(),
             "p -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
-            selector=lambda _: baca.select.rleaves(_),
-        ),
-        baca.markup(
-            r"\baca-fz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.pleaf(_, 0),
-        ),
-        baca.markup(
-            r"\baca-mpz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.pleaves(_)[1:],
-        ),
-        baca.staff_positions(
-            [4, 4, 2, 6, 4, 2],
-        ),
-    )
-    accumulator(
-        ("rh", 7),
-        baca.staff_positions(
-            [2],
-        ),
-    )
-    accumulator(
-        ("rh", (7, 9)),
-        baca.markup(
-            r"\baca-fz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-    )
-    accumulator(
-        ("rh", (7, 9)),
-        baca.hairpin(
+        )
+        library.sforzando(o.leaf(0), r"\baca-fz-markup")
+        library.sforzando(o.leaves()[1:], r"\baca-mpz-markup")
+        baca.staff_positions_function(o, [4, 4, 2, 6, 4, 2])
+    with baca.scope(m[7]) as o:
+        baca.staff_positions_function(o, [2])
+    with baca.scope(m.get(7, 9)) as o:
+        library.sforzando(o.leaves(), r"\baca-fz-markup")
+    with baca.scope(m.get(7, 9)) as o:
+        baca.hairpin_function(
+            o.rleaves(),
             "mf -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
-            selector=lambda _: baca.select.rleaves(_),
-        ),
-    )
-    accumulator(
-        ("rh", 8),
-        baca.staff_positions(
-            [2, 2, 0],
-        ),
-    )
-    accumulator(
-        ("rh", 9),
-        baca.staff_positions(
-            [2],
-        ),
-    )
-    accumulator(
-        ("rh", 10),
-        baca.staff_positions(
-            [2, 6],
-        ),
-    )
-    accumulator(
-        ("rh", (10, 11)),
-        baca.markup(
-            r"\baca-mfz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.leaves(_)[:4],
-        ),
-        baca.markup(
-            r"\baca-mpz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.leaves(_)[4:],
-        ),
-        baca.text_spanner(
+        )
+    with baca.scope(m[8]) as o:
+        baca.staff_positions_function(o, [2, 2, 0])
+    with baca.scope(m[9]) as o:
+        baca.staff_positions_function(o, [2])
+    with baca.scope(m[10]) as o:
+        baca.staff_positions_function(o, [2, 6])
+    with baca.scope(m.get(10, 11)) as o:
+        library.sforzando(o.leaves()[:4], r"\baca-mfz-markup")
+        library.sforzando(o.leaves()[4:], r"\baca-mpz-markup")
+        baca.text_spanner_function(
+            baca.select.rleak(o.leaves()[:4]),
             "(trem. mod.) => trem. stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
-            selector=lambda _: baca.select.rleak(baca.select.leaves(_)[:4]),
-        ),
-    )
-    accumulator(
-        ("rh", (10, 12)),
-        baca.hairpin(
+        )
+    with baca.scope(m.get(10, 12)) as o:
+        baca.hairpin_function(
+            o.rleaves(),
             "mp > ppp -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             pieces=lambda _: baca.select.lparts(_, [4, 5 + 1]),
-            selector=lambda _: baca.select.rleaves(_),
-        ),
-    )
-    accumulator(
-        ("rh", 11),
-        baca.staff_positions(
-            [4, 2, 6, 4, 2, 0],
-        ),
-    )
-    accumulator(
-        ("rh", 12),
-        baca.staff_positions(
-            [0],
-        ),
-    )
-    accumulator(
-        ("rh", (12, 16)),
-        baca.markup(
-            r"\baca-ffz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-    )
-    accumulator(
-        ("rh", 13),
-        baca.staff_positions(
-            [0],
-        ),
-    )
-    accumulator(
-        ("rh", (13, 16)),
-        baca.hairpin(
-            "p < mf",
-        ),
-        baca.text_spanner(
+        )
+    with baca.scope(m[11]) as o:
+        baca.staff_positions_function(o, [4, 2, 6, 4, 2, 0])
+    with baca.scope(m[12]) as o:
+        baca.staff_positions_function(o, [0])
+    with baca.scope(m.get(12, 16)) as o:
+        library.sforzando(o, r"\baca-ffz-markup")
+    with baca.scope(m[13]) as o:
+        baca.staff_positions_function(o, [0])
+    with baca.scope(m.get(13, 16)) as o:
+        baca.hairpin_function(o, "p < mf")
+        baca.text_spanner_function(
+            o,
             "sub. trem. mod. => più stretto => più largo => più stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=lambda _: baca.select.lparts(_, [1, 1, 2]),
-        ),
-    )
-    accumulator(
-        ("rh", 14),
-        baca.staff_positions(
-            [-2],
-        ),
-    )
-    accumulator(
-        ("rh", 15),
-        baca.staff_positions(
-            [-2],
-        ),
-    )
-    accumulator(
-        ("rh", 16),
-        baca.staff_positions(
-            [-4],
-        ),
-    )
-    accumulator(
-        ("rh", 17),
-        baca.markup(
-            r"\baca-fz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.pleaf(_, 0),
-        ),
-        baca.staff_positions(
-            [0],
-        ),
-    )
-    accumulator(
-        ("rh", (17, 18)),
-        baca.hairpin(
+        )
+    with baca.scope(m[14]) as o:
+        baca.staff_positions_function(o, [-2])
+    with baca.scope(m[15]) as o:
+        baca.staff_positions_function(o, [-2])
+    with baca.scope(m[16]) as o:
+        baca.staff_positions_function(o, [-4])
+    with baca.scope(m[17]) as o:
+        library.sforzando(o.leaf(0), r"\baca-fz-markup")
+        baca.staff_positions_function(o, [0])
+    with baca.scope(m.get(17, 18)) as o:
+        baca.hairpin_function(
+            o,
             "mp >",
             bookend=False,
-        ),
-        baca.text_spanner(
+        )
+        baca.text_spanner_function(
+            o.rleaves(),
             "sub. trem. mod. => trem. stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
-            selector=lambda _: baca.select.rleaves(_),
-        ),
-    )
-    accumulator(
-        ("rh", 18),
-        baca.markup(
-            r"\baca-mfz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        baca.staff_positions(
-            [6, 4, 2],
-        ),
-    )
-    accumulator(
-        ("rh", 19),
-        baca.hairpin(
+        )
+    with baca.scope(m[18]) as o:
+        library.sforzando(o, r"\baca-mfz-markup")
+        baca.staff_positions_function(o, [6, 4, 2])
+    with baca.scope(m[19]) as o:
+        baca.hairpin_function(
+            baca.select.rleaves(o, count=2),
             "ppp -- !",
-            selector=lambda _: baca.rleaves(_, count=2),
-        ),
-        baca.markup(
-            r"\baca-mpz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-        # TODO: make +ARCH_A_SCORE work
-        baca.only_score(
-            baca.hairpin_to_barline(),
-        ),
-        baca.staff_positions(
-            [6, 4, 2, 0],
-        ),
-    )
-    accumulator(
-        ("rh", 20),
-        baca.staff_positions(
-            [0],
-        ),
-    )
-    accumulator(
-        ("rh", 21),
-        baca.staff_positions(
-            [0],
-        ),
-    )
-    accumulator(
-        ("rh", (20, 26)),
-        baca.hairpin(
+        )
+        library.sforzando(o, r"\baca-mpz-markup")
+        baca.hairpin_to_barline_function(
+            o,
+            tags=[baca.tags.ONLY_SCORE],
+        )
+        baca.staff_positions_function(o, [6, 4, 2, 0])
+    with baca.scope(m[20]) as o:
+        baca.staff_positions_function(o, [0])
+    with baca.scope(m[21]) as o:
+        baca.staff_positions_function(o, [0])
+    with baca.scope(m.get(20, 26)) as o:
+        baca.hairpin_function(
+            baca.select.rleak(o.leaves()[1:]),
             "p < f -- !",
             pieces=lambda _: baca.select.lparts(_, [5, 1 + 1]),
-            selector=lambda _: baca.select.rleak(baca.select.leaves(_)[1:]),
-        ),
-        baca.markup(
-            r"\baca-ffz-markup",
-            direction=abjad.DOWN,
-            selector=lambda _: baca.select.leaves(_),
-        ),
-    )
-    accumulator(
-        ("rh", (21, 26)),
-        baca.text_spanner(
+        )
+        library.sforzando(o, r"\baca-ffz-markup")
+    with baca.scope(m.get(21, 26)) as o:
+        baca.text_spanner_function(
+            o,
             "sub. trem. mod. => più stretto => più largo => più stretto =>"
             " più largo => mod.",
             abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=lambda _: baca.select.lparts(_, [1, 1, 1, 1, 2]),
-        ),
-    )
-    accumulator(
-        ("rh", 22),
-        baca.staff_positions(
-            [-2],
-        ),
-    )
-    accumulator(
-        ("rh", 23),
-        baca.staff_positions(
-            [-2],
-        ),
-    )
-    accumulator(
-        ("rh", 24),
-        baca.staff_positions(
-            [-4],
-        ),
-    )
-    accumulator(
-        ("rh", 25),
-        baca.staff_positions(
-            [-4],
-        ),
-    )
-    accumulator(
-        ("rh", 26),
-        # TODO: make +ARCH_A_SCORE work
-        baca.only_score(
-            baca.hairpin_to_barline(),
-        ),
-        baca.staff_positions(
-            [-6],
-        ),
-    )
-    accumulator(
-        "rh",
-        baca.literal(
+        )
+    with baca.scope(m[22]) as o:
+        baca.staff_positions_function(o, [-2])
+    with baca.scope(m[23]) as o:
+        baca.staff_positions_function(o, [-2])
+    with baca.scope(m[24]) as o:
+        baca.staff_positions_function(o, [-4])
+    with baca.scope(m[25]) as o:
+        baca.staff_positions_function(o, [-4])
+    with baca.scope(m[26]) as o:
+        baca.hairpin_to_barline_function(
+            o,
+            tags=[baca.tags.ONLY_SCORE],
+        )
+        baca.staff_positions_function(o, [-6])
+    with baca.scope(m.leaves()) as o:
+        baca.literal_function(
+            o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        baca.stem_tremolo(
-            selector=lambda _: baca.select.pleaves(_),
-        ),
-        baca.text_script_parent_alignment_x(0),
-        baca.text_script_self_alignment_x(0),
-        baca.text_script_staff_padding(4),
-    )
-    # stage 2 (after staff position settings)
-    accumulator(
-        "rh",
-        baca.glissando(
-            selector=lambda _: baca.select.leaves(_),
-        ),
-    )
+        )
+        baca.stem_tremolo_function(o.pleaves())
+        baca.text_script_parent_alignment_x_function(o, 0)
+        baca.text_script_self_alignment_x_function(o, 0)
+        baca.text_script_staff_padding_function(o, 4)
+        baca.glissando_function(o)
 
 
 def main():
@@ -583,7 +378,6 @@ if __name__ == "__main__":
             baca.tags.LOCAL_MEASURE_NUMBER,
         ),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )

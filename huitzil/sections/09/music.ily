@@ -1318,7 +1318,6 @@ number.9.RH.Music = {
     % BEFORE:
     % COMMANDS:
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \override DynamicLineSpanner.staff-padding = 7
       %! -PARTS
@@ -1327,14 +1326,11 @@ number.9.RH.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 4)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(1)
     \override TextScript.parent-alignment-X = 0
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_self_alignment_x()
+      %! baca.text_script_self_alignment_x_function(1)
     \override TextScript.self-alignment-X = 0
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(1)
     \override TextScript.staff-padding = 4
       %! REAPPLIED_STAFF_LINES
       %! baca._reapply_persistent_indicators(3)
@@ -1349,15 +1345,12 @@ number.9.RH.Music = {
       %! baca._set_status_tag()
     \startStaff
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \stopStaff
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \startStaff
     % OPENING:
@@ -1383,11 +1376,9 @@ number.9.RH.Music = {
     d8
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -1419,11 +1410,9 @@ number.9.RH.Music = {
     f8
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -1436,11 +1425,9 @@ number.9.RH.Music = {
     a8
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -1453,11 +1440,9 @@ number.9.RH.Music = {
     c'8
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % ABSOLUTE_BEFORE:
@@ -1468,7 +1453,6 @@ number.9.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1487,7 +1471,6 @@ number.9.RH.Music = {
       %! baca.hairpin()
     \mp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -1520,11 +1503,9 @@ number.9.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fz-markup
         % CLOSING:
@@ -1545,7 +1526,6 @@ number.9.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -1564,7 +1544,6 @@ number.9.RH.Music = {
           %! baca.hairpin()
         \p
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fffz-markup
         % SPANNER_STARTS:
@@ -1595,7 +1574,6 @@ number.9.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1614,7 +1592,6 @@ number.9.RH.Music = {
       %! baca.hairpin()
     \mp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -1647,11 +1624,9 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-mfz-markup
         % CLOSING:
@@ -1672,11 +1647,9 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fz-markup
         % CLOSING:
@@ -1697,7 +1670,6 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -1716,7 +1688,6 @@ number.9.RH.Music = {
           %! baca.hairpin()
         \p
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-ffz-markup
         % SPANNER_STARTS:
@@ -1752,11 +1723,9 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fffz-markup
         % CLOSING:
@@ -1772,7 +1741,6 @@ number.9.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1791,7 +1759,6 @@ number.9.RH.Music = {
       %! baca.hairpin()
     \mp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -1824,11 +1791,9 @@ number.9.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fz-markup
         % CLOSING:
@@ -1849,7 +1814,6 @@ number.9.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -1868,7 +1832,6 @@ number.9.RH.Music = {
           %! baca.hairpin()
         \p
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fffz-markup
         % SPANNER_STARTS:
@@ -1899,7 +1862,6 @@ number.9.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1918,7 +1880,6 @@ number.9.RH.Music = {
       %! baca.hairpin()
     \mp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -1951,11 +1912,9 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-mfz-markup
         % CLOSING:
@@ -1976,11 +1935,9 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fz-markup
         % CLOSING:
@@ -2001,7 +1958,6 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -2020,7 +1976,6 @@ number.9.RH.Music = {
           %! baca.hairpin()
         \p
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-ffz-markup
         % SPANNER_STARTS:
@@ -2056,11 +2011,9 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fffz-markup
         % CLOSING:
@@ -2076,7 +2029,6 @@ number.9.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2095,7 +2047,6 @@ number.9.RH.Music = {
       %! baca.hairpin()
     \mp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -2128,11 +2079,9 @@ number.9.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fz-markup
         % CLOSING:
@@ -2153,7 +2102,6 @@ number.9.RH.Music = {
         c'2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -2172,7 +2120,6 @@ number.9.RH.Music = {
           %! baca.hairpin()
         \p
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fffz-markup
         % SPANNER_STARTS:
@@ -2203,7 +2150,6 @@ number.9.RH.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2222,7 +2168,6 @@ number.9.RH.Music = {
       %! baca.hairpin()
     \mp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -2255,11 +2200,9 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-mfz-markup
         % CLOSING:
@@ -2280,11 +2223,9 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fz-markup
         % CLOSING:
@@ -2305,7 +2246,6 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -2313,18 +2253,17 @@ number.9.RH.Music = {
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
           %! SPANNER_STOP
-          %! baca.PiecewiseCommand._call(2)
+          %! baca.PiecewiseCommand._call(3)
           %! baca._set_status_tag()
           %! baca.hairpin()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! SPANNER_STOP
-          %! baca.PiecewiseCommand._call(2)
+          %! baca.PiecewiseCommand._call(3)
           %! baca._set_status_tag()
           %! baca.hairpin()
         \p
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-ffz-markup
         % CLOSING:
@@ -2345,11 +2284,9 @@ number.9.RH.Music = {
         c'4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fffz-markup
         % SPANNER_STARTS:
@@ -2368,19 +2305,15 @@ number.9.RH.Music = {
     % [RH.Music measure 14]
     % BEFORE:
     % COMMANDS:
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \stopStaff
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2)
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \startStaff
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2399,7 +2332,6 @@ number.9.RH.Music = {
       %! baca.hairpin()
     \mp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -2438,11 +2370,9 @@ number.9.RH.Music = {
         d''2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fz-markup
         % CLOSING:
@@ -2463,11 +2393,9 @@ number.9.RH.Music = {
         d''2
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fffz-markup
         % CLOSING:
@@ -2483,7 +2411,6 @@ number.9.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2502,7 +2429,6 @@ number.9.RH.Music = {
       %! baca.hairpin()
     \p
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -2541,11 +2467,9 @@ number.9.RH.Music = {
         d''4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-mfz-markup
         % CLOSING:
@@ -2566,11 +2490,9 @@ number.9.RH.Music = {
         d''4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fz-markup
         % CLOSING:
@@ -2591,11 +2513,9 @@ number.9.RH.Music = {
         d''4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-ffz-markup
         % CLOSING:
@@ -2616,11 +2536,9 @@ number.9.RH.Music = {
         d''4
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         _ \baca-fffz-markup
         % CLOSING:
@@ -2636,13 +2554,11 @@ number.9.RH.Music = {
     % BEFORE:
     % COMMANDS:
       %! +SCORE
-      %! baca.OverrideCommand._call(1)
-      %! baca.hairpin_to_barline()
+      %! baca.hairpin_to_barline_function(1)
 %%% \once \override Hairpin.to-barline = ##t
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2661,7 +2577,6 @@ number.9.RH.Music = {
       %! baca.hairpin()
     \pp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-ffz-markup
     % SPANNER_STARTS:
@@ -2709,11 +2624,9 @@ number.9.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-fz-markup
     % SPANNER_STOPS:
@@ -2746,11 +2659,9 @@ number.9.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-fz-markup
     % SPANNER_STOPS:
@@ -2783,11 +2694,9 @@ number.9.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-mfz-markup
     % SPANNER_STOPS:
@@ -2820,13 +2729,11 @@ number.9.RH.Music = {
     % BEFORE:
     % COMMANDS:
       %! +SEGMENT
-      %! baca.OverrideCommand._call(1)
-      %! baca.hairpin_to_barline()
+      %! baca.hairpin_to_barline_function(1)
     \once \override Hairpin.to-barline = ##t
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -2845,7 +2752,6 @@ number.9.RH.Music = {
       %! baca.hairpin()
     \p
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-mfz-markup
     % SPANNER_STOPS:
@@ -2898,49 +2804,39 @@ number.9.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-mpz-markup
     % SPANNER_STOPS:
-      %! RIGHT_BROKEN
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     \stopTextSpan
     % SPANNER_STARTS:
-      %! RIGHT_BROKEN
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     - \tweak staff-padding 6
-      %! RIGHT_BROKEN
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     - \abjad-dashed-line-with-arrow
-      %! RIGHT_BROKEN
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     - \baca-text-spanner-left-text "stretto"
-      %! RIGHT_BROKEN
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     \startTextSpan
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(2)
     \revert TextScript.parent-alignment-X
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_self_alignment_x()
+      %! baca.text_script_self_alignment_x_function(2)
     \revert TextScript.self-alignment-X
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(2)
     \revert TextScript.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3011,7 +2907,6 @@ number.9.RH.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     % SPANNER_STOPS:
       %! ANCHOR_NOTE
-      %! RIGHT_BROKEN
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(4)
       %! baca._style_anchor_notes()
@@ -3055,17 +2950,13 @@ number.9.Cello.Music = {
     % [Cello.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.mmrest_transparent()
+      %! baca.mmrest_transparent_function(1)
     \override MultiMeasureRest.transparent = ##t
-      %! baca.OverrideCommand._call(1)
-      %! baca.bar_line_transparent()
+      %! baca.bar_line_transparent_function(1)
     \override Score.BarLine.transparent = ##t
-      %! baca.OverrideCommand._call(1)
-      %! baca.span_bar_transparent()
+      %! baca.span_bar_transparent_function(1)
     \override Score.SpanBar.transparent = ##t
-      %! baca.OverrideCommand._call(1)
-      %! baca.time_signature_stencil_false()
+      %! baca.time_signature_stencil_false_function(1)
     \override Score.TimeSignature.stencil = ##f
     % OPENING:
     % COMMANDS:
@@ -3193,7 +3084,6 @@ number.9.Cello.Music = {
           %! abjad.glissando(7)
           %! baca.glissando()
         \glissando
-          %! baca.IndicatorCommand._call()
           %! baca.repeat_tie()
         \repeatTie
         % ABSOLUTE_BEFORE:
@@ -3229,14 +3119,11 @@ number.9.Cello.Music = {
         % [Cello.Music measure 14]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.note_head_duration_log()
+          %! baca.note_head_duration_log_function(1)
         \once \override NoteHead.duration-log = 2
-          %! baca.OverrideCommand._call(1)
-          %! baca.note_head_no_ledgers()
+          %! baca.note_head_no_ledgers_function(1)
         \once \override NoteHead.no-ledgers = ##t
-          %! baca.OverrideCommand._call(1)
-          %! baca.note_head_style()
+          %! baca.note_head_style_function(1)
         \once \override NoteHead.style = #'do
           %! MEASURE_239
           %! SHIFTED_CLEF
@@ -3246,10 +3133,8 @@ number.9.Cello.Music = {
           %! SHIFTED_CLEF
           %! baca.clef_extra_offset_function(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \stopStaff
-          %! baca.IndicatorCommand._call()
           %! baca.literal()
         \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
         % OPENING:
@@ -3393,17 +3278,13 @@ number.9.Cello.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.mmrest_transparent()
+      %! baca.mmrest_transparent_function(2)
     \revert MultiMeasureRest.transparent
-      %! baca.OverrideCommand._call(2)
-      %! baca.bar_line_transparent()
+      %! baca.bar_line_transparent_function(2)
     \revert Score.BarLine.transparent
-      %! baca.OverrideCommand._call(2)
-      %! baca.span_bar_transparent()
+      %! baca.span_bar_transparent_function(2)
     \revert Score.SpanBar.transparent
-      %! baca.OverrideCommand._call(2)
-      %! baca.time_signature_stencil_false()
+      %! baca.time_signature_stencil_false_function(2)
     \revert Score.TimeSignature.stencil
     % CLOSING:
     % COMMANDS:

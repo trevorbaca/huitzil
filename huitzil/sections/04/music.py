@@ -299,7 +299,7 @@ def rh(m):
     with baca.scope(m.get(18, 21)) as o:
         baca.hairpin_to_barline_function(
             o,
-            tags=[abjad.Tag("+SCORE")],
+            tags=[baca.tags.ONLY_SCORE],
         )
     with baca.scope(m.get(18, 23)) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")

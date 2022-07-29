@@ -490,10 +490,8 @@ number.10.RH.Music = {
     % [RH.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     <> \stopTextSpan
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \override DynamicLineSpanner.staff-padding = 7
       %! -PARTS
@@ -502,14 +500,11 @@ number.10.RH.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 4)
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(1)
     \override TextScript.parent-alignment-X = 0
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_self_alignment_x()
+      %! baca.text_script_self_alignment_x_function(1)
     \override TextScript.self-alignment-X = 0
-      %! baca.OverrideCommand._call(1)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(1)
     \override TextScript.staff-padding = 4
       %! REAPPLIED_STAFF_LINES
       %! baca._reapply_persistent_indicators(3)
@@ -524,15 +519,12 @@ number.10.RH.Music = {
       %! baca._set_status_tag()
     \startStaff
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \stopStaff
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2)
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \startStaff
     % OPENING:
@@ -558,7 +550,6 @@ number.10.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -577,7 +568,6 @@ number.10.RH.Music = {
       %! baca.hairpin()
     \mp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     _ \baca-mpz-markup
     % SPANNER_STARTS:
@@ -634,7 +624,6 @@ number.10.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -708,7 +697,6 @@ number.10.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -782,7 +770,6 @@ number.10.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -856,7 +843,6 @@ number.10.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -930,7 +916,6 @@ number.10.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1004,7 +989,6 @@ number.10.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1078,7 +1062,6 @@ number.10.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1152,7 +1135,6 @@ number.10.RH.Music = {
     d''2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1238,7 +1220,6 @@ number.10.RH.Music = {
     d''1.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1265,17 +1246,13 @@ number.10.RH.Music = {
       %! baca.repeat_tie()
     \repeatTie
     % COMMANDS:
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \override Staff.BarLine.bar-extent = #'(-4 . 4)
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_parent_alignment_x()
+      %! baca.text_script_parent_alignment_x_function(2)
     \revert TextScript.parent-alignment-X
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_self_alignment_x()
+      %! baca.text_script_self_alignment_x_function(2)
     \revert TextScript.self-alignment-X
-      %! baca.OverrideCommand._call(2)
-      %! baca.text_script_staff_padding()
+      %! baca.text_script_staff_padding_function(2)
     \revert TextScript.staff-padding
     % CLOSING:
     % COMMANDS:
@@ -1315,28 +1292,21 @@ number.10.Cello.Music = {
     % [Cello.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.mmrest_transparent()
+      %! baca.mmrest_transparent_function(1)
     \override MultiMeasureRest.transparent = ##t
-      %! baca.OverrideCommand._call(1)
-      %! baca.bar_line_transparent()
+      %! baca.bar_line_transparent_function(1)
     \override Score.BarLine.transparent = ##t
-      %! baca.OverrideCommand._call(1)
-      %! baca.span_bar_transparent()
+      %! baca.span_bar_transparent_function(1)
     \override Score.SpanBar.transparent = ##t
-      %! baca.OverrideCommand._call(1)
-      %! baca.time_signature_stencil_false()
+      %! baca.time_signature_stencil_false_function(1)
     \override Score.TimeSignature.stencil = ##f
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \stopStaff
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \once \override Staff.StaffSymbol.line-positions = #'(4 -4)
       %! +SEGMENT
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \startStaff
     % OPENING:
@@ -1474,16 +1444,12 @@ number.10.Cello.Music = {
     % [Cello.Music measure 10]
     % BEFORE:
     % COMMANDS:
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \override Score.BarLine.X-extent = #'(0 . 8)
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \override Score.BarLine.extra-offset = #'(8 . 0)
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \override Score.RehearsalMark.extra-offset = #'(4 . 0)
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \override Score.SpanBar.extra-offset = #'(8 . 0)
       %! baca.make_mmrests(1)
@@ -1494,26 +1460,19 @@ number.10.Cello.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"2"
     % COMMANDS:
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \once \override Score.RehearsalMark.direction = #down
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \once \override Score.RehearsalMark.padding = 6
-      %! baca.IndicatorCommand._call()
       %! baca.literal()
     \mark \huitzil-colophon-markup
-      %! baca.OverrideCommand._call(2)
-      %! baca.mmrest_transparent()
+      %! baca.mmrest_transparent_function(2)
     \revert MultiMeasureRest.transparent
-      %! baca.OverrideCommand._call(2)
-      %! baca.bar_line_transparent()
+      %! baca.bar_line_transparent_function(2)
     \revert Score.BarLine.transparent
-      %! baca.OverrideCommand._call(2)
-      %! baca.span_bar_transparent()
+      %! baca.span_bar_transparent_function(2)
     \revert Score.SpanBar.transparent
-      %! baca.OverrideCommand._call(2)
-      %! baca.time_signature_stencil_false()
+      %! baca.time_signature_stencil_false_function(2)
     \revert Score.TimeSignature.stencil
     % CLOSING:
     % COMMANDS:
