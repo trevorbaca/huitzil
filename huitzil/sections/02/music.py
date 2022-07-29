@@ -59,7 +59,7 @@ baca.interpret.set_up_score(
 skips = score["Skips"]
 manifests = accumulator.manifests()
 
-baca.metronome_mark(skips[1 - 1], accumulator.metronome_marks["44"], manifests)
+baca.metronome_mark_function(skips[1 - 1], accumulator.metronome_marks["44"], manifests)
 
 
 def VC(voice):
