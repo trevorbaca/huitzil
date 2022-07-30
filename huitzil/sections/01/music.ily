@@ -420,19 +420,19 @@ number.1.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "78"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2931,14 +2931,14 @@ number.1.RH.Music = {
 %%% \once \override RHStaff.Clef.extra-offset = #'(-2.5 . 0)
       %! baca.mmrest_transparent_function(1)
     \override MultiMeasureRest.transparent = ##t
-      %! baca.literal()
+      %! baca.literal_function()
     \stopStaff
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
     \clef "percussion"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -2949,7 +2949,7 @@ number.1.RH.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
       %! baca.treat_persistent_wrapper(2)
     \set RHStaff.forceClef = ##t
       %! baca.make_mmrests(1)
@@ -3663,7 +3663,7 @@ number.1.Cello.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
         \clef "bass"
           %! EXPLICIT_CLEF_COLOR
           %! baca._attach_color_literal(2)
@@ -3674,15 +3674,15 @@ number.1.Cello.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
         fs!8
         % AFTER:
         % MARKUP:
-          %! baca.markup()
+          %! baca.markup_function()
         - \tweak staff-padding 9
-          %! baca.markup()
+          %! baca.markup_function()
         _ \huitzil-phrasing-dynamics-see-preface-markup
           %! EXPLICIT_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
@@ -4353,7 +4353,7 @@ number.1.Cello.Music = {
         af,16
         % AFTER:
         % SPANNER_STARTS:
-          %! baca.repeat_tie()
+          %! baca.repeat_tie_function()
         \repeatTie
         % CLOSING:
         % COMMANDS:
@@ -5147,7 +5147,7 @@ number.1.Cello.Music = {
         fs4
         % AFTER:
         % SPANNER_STARTS:
-          %! baca.repeat_tie()
+          %! baca.repeat_tie_function()
         \repeatTie
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7278,7 +7278,7 @@ number.1.Cello.Music = {
         b,2
         % AFTER:
         % SPANNER_STARTS:
-          %! baca.repeat_tie()
+          %! baca.repeat_tie_function()
         \repeatTie
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7661,7 +7661,7 @@ number.1.Cello.Music = {
         g,2
         % AFTER:
         % COMMANDS:
-          %! baca.breathe()
+          %! baca.breathe_function()
         \breathe
         % CLOSING:
         % COMMANDS:
@@ -7721,15 +7721,15 @@ number.1.Cello.Music = {
         % AFTER:
         % COMMANDS:
           %! +SEGMENT
-          %! baca.breathe()
+          %! baca.breathe_function()
         \breathe
           %! baca.tuplet_bracket_staff_padding_function(2)
         \revert TupletBracket.staff-padding
           %! +SCORE
-          %! baca.breathe()
+          %! baca.breathe_function()
     %%% \tweak extra-offset #'(0 . 2)
           %! +SCORE
-          %! baca.breathe()
+          %! baca.breathe_function()
     %%% \breathe
         % CLOSING:
         % COMMANDS:
