@@ -156,11 +156,12 @@ def rh(m):
         baca.beam_function(o)
     for n in [9, 10]:
         with baca.scope(m[n]) as o:
-            baca.literal_function(
+            wrappers = baca.literal_function(
                 o.pleaf(1),
                 r"\once \override TupletNumber.font-size = -2",
-                tags=[abjad.Tag("+SCORE")],
             )
+            for wrapper in wrappers:
+                wrapper.tag = wrapper.tag.append(abjad.Tag("+SCORE"))
     with baca.scope(m[25]) as o:
         baca.glissando_function(
             o.rleaves(),

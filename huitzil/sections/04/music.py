@@ -297,10 +297,9 @@ def rh(m):
             pieces=lambda _: baca.select.lparts(_, [1, 1, 1, 1 + 1]),
         )
     with baca.scope(m.get(18, 21)) as o:
-        baca.hairpin_to_barline_function(
-            o,
-            tags=[baca.tags.ONLY_SCORE],
-        )
+        wrappers = baca.hairpin_to_barline_function(o)
+        for wrapper in wrappers:
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SCORE)
     with baca.scope(m.get(18, 23)) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
         library.sforzando(o.leaf(1), r"\baca-fz-markup")
@@ -309,10 +308,9 @@ def rh(m):
         library.sforzando(o.leaf(4), r"\baca-mfz-markup")
         library.sforzando(o.leaf(5), r"\baca-mpz-markup")
     with baca.scope(m[22]) as o:
-        baca.hairpin_to_barline_function(
-            o,
-            tags=[baca.tags.ONLY_SEGMENT],
-        )
+        wrappers = baca.hairpin_to_barline_function(o)
+        for wrapper in wrappers:
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SEGMENT)
     with baca.scope(m[23]) as o:
         baca.literal_function(
             o.leaf(0),
@@ -335,12 +333,13 @@ def rh(m):
             allow_hidden=True,
         )
     with baca.scope(m.leaves()) as o:
-        baca.literal_function(
+        wrappers = baca.literal_function(
             o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
-            tags=[baca.tags.ONLY_SEGMENT],
         )
-        baca.literal_function(
+        for wrapper in wrappers:
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SEGMENT)
+        wrappers = baca.literal_function(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -348,8 +347,9 @@ def rh(m):
                 " #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)",
                 r"\startStaff",
             ],
-            tags=[baca.tags.ONLY_SEGMENT],
         )
+        for wrapper in wrappers:
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SEGMENT)
         baca.stem_tremolo_function(o.pleaves())
         baca.text_script_parent_alignment_x_function(o, 0)
         baca.text_script_self_alignment_x_function(o, 0)
