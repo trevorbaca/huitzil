@@ -69,15 +69,16 @@ def vc(m):
         baca.mmrest_transparent_function(o)
         baca.bar_line_transparent_function(o)
         baca.span_bar_transparent_function(o)
-        baca.literal_function(
+        wrappers = baca.literal_function(
             o.leaf(0),
             [
                 r"\stopStaff",
                 r"\once \override Staff.StaffSymbol.line-positions = #'(4 -4)",
                 r"\startStaff",
             ],
-            tags=[baca.tags.ONLY_SEGMENT],
         )
+        for wrapper in wrappers:
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SEGMENT)
         baca.time_signature_stencil_false_function(o)
     with baca.scope(m[10]) as o:
         baca.literal_function(
@@ -131,7 +132,7 @@ def rh(m):
             o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
         )
-        baca.literal_function(
+        wrappers = baca.literal_function(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -139,8 +140,9 @@ def rh(m):
                 " #'(8.2 8 7.8 -5.8 -6 -6.2)",
                 r"\startStaff",
             ],
-            tags=[baca.tags.ONLY_SEGMENT],
         )
+        for wrapper in wrappers:
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SEGMENT)
         baca.stem_tremolo_function(o.pleaves())
         baca.text_script_parent_alignment_x_function(o, 0)
         baca.text_script_self_alignment_x_function(o, 0)
