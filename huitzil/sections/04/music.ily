@@ -182,7 +182,7 @@ number.4.Skips = {
       %! REAPPLIED_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'green4
-      %! +SEGMENT
+      %! +SECTION
       %! EMPTY_START_BAR
       %! baca._attach_nonfirst_empty_start_bar()
     \bar ""
@@ -1323,7 +1323,7 @@ number.4.RH.Music = {
     % [RH.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! +SEGMENT
+      %! +SECTION
       %! baca.literal_function()
     \override DynamicLineSpanner.staff-padding = 7
       %! -PARTS
@@ -1350,13 +1350,13 @@ number.4.RH.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \startStaff
-      %! +SEGMENT
+      %! +SECTION
       %! baca.literal_function()
     \stopStaff
-      %! +SEGMENT
+      %! +SECTION
       %! baca.literal_function()
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)
-      %! +SEGMENT
+      %! +SECTION
       %! baca.literal_function()
     \startStaff
     % OPENING:
@@ -2774,7 +2774,7 @@ number.4.RH.Music = {
     % [RH.Music measure 22]
     % BEFORE:
     % COMMANDS:
-      %! +SEGMENT
+      %! +SECTION
       %! baca.hairpin_to_barline_function(1)
     \once \override Hairpin.to-barline = ##t
     d''2

@@ -7720,7 +7720,7 @@ number.1.Cello.Music = {
         ef,!4
         % AFTER:
         % COMMANDS:
-          %! +SEGMENT
+          %! +SECTION
           %! baca.breathe_function()
         \breathe
           %! baca.tuplet_bracket_staff_padding_function(2)
