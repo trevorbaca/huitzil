@@ -181,7 +181,7 @@ def rh(m):
         baca.staff_positions_function(o, [6, 6, 4])
     with baca.scope(m[4]) as o:
         baca.hairpin_function(
-            baca.rleaves(o, count=2),
+            baca.select.rleaves(o, count=2),
             "p -- !",
         )
         baca.staff_positions_function(o, [4, 4, 2])
@@ -276,7 +276,7 @@ def rh(m):
         baca.staff_positions_function(o, [6, 4, 2])
     with baca.scope(m[19]) as o:
         baca.hairpin_function(
-            baca.rleaves(o, count=2),
+            baca.select.rleaves(o, count=2),
             "ppp -- !",
         )
         for leaf in o:

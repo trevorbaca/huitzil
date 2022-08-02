@@ -249,7 +249,7 @@ def rh(m):
         # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
         # baca.hairpin(
         #    "mp -- p -- pp -- p -- !",
-        #    pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
+        #    pieces=lambda _: baca.select.mgroups(_, [2, 2, 4, 2 + 1]),
         #    selector=lambda _: baca.select.rleaves(_),
         # ),
         # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
@@ -257,7 +257,7 @@ def rh(m):
             o.rleaves(),
             "mp -- p -- pp -- p",
             bookend=False,
-            pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
+            pieces=lambda _: baca.select.mgroups(_, [2, 2, 4, 2 + 1]),
         )
         baca.literal_function(
             o.leaf(0),

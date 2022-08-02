@@ -252,7 +252,7 @@ def rh(m):
         # baca.hairpin(
         #    "mp -- p -- pp -- p -- !",
         #    abjad.Tweak(r"- \tweak to-barline ##t"),
-        #    pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
+        #    pieces=lambda _: baca.select.mgroups(_, [2, 2, 4, 2 + 1]),
         #    selector=lambda _: baca.select.rleaves(_),
         # ),
         # FUTURE: replace this when LilyPond fixes DynamicLineSpanner bug:
@@ -261,7 +261,7 @@ def rh(m):
             "mp -- p -- pp -- p",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             bookend=False,
-            pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
+            pieces=lambda _: baca.select.mgroups(_, [2, 2, 4, 2 + 1]),
         )
         baca.literal_function(
             o.leaf(0),
