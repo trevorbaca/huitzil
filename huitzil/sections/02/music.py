@@ -132,7 +132,7 @@ def vc(m):
                 r"\startStaff",
             ],
         )
-        baca.mmrest_transparent_function(o.leaves()[:-1])
+        baca.mmrest_transparent_function(o.mmrests())
         with baca.scope(o.leaves()[1:]) as u:
             baca.bar_line_transparent_function(u)
             baca.span_bar_transparent_function(u)

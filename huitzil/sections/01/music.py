@@ -445,7 +445,7 @@ def vc(m):
     with baca.scope(m[54]) as o:
         wrappers = baca.breathe_function(o.pleaf(-1))
         for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SEGMENT)
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
         wrappers = baca.breathe_function(
             o.pleaf(-1),
             abjad.Tweak(r"\tweak extra-offset #'(0 . 2)"),
@@ -457,7 +457,7 @@ def vc(m):
 def rh(m):
     with baca.scope(m.leaves()) as o:
         baca.literal_function(o.leaf(0), r"\stopStaff")
-        baca.mmrest_transparent_function(o)
+        baca.mmrest_transparent_function(o.mmrests())
         baca.clef_function(o.leaf(0), "percussion")
 
 

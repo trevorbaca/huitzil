@@ -170,7 +170,7 @@ def vc(m):
         ),
         baca.pitch_function(o, "Bb1")
     with baca.scope(m.leaves()) as o:
-        baca.mmrest_transparent_function(o)
+        baca.mmrest_transparent_function(o.mmrests())
         baca.bar_line_transparent_function(o)
         baca.span_bar_transparent_function(o)
         baca.time_signature_stencil_false_function(o)
@@ -310,7 +310,7 @@ def rh(m):
     with baca.scope(m[22]) as o:
         wrappers = baca.hairpin_to_barline_function(o)
         for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SEGMENT)
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
     with baca.scope(m[23]) as o:
         baca.literal_function(
             o.leaf(0),
@@ -338,7 +338,7 @@ def rh(m):
             r"\override DynamicLineSpanner.staff-padding = 7",
         )
         for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SEGMENT)
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
         wrappers = baca.literal_function(
             o.leaf(0),
             [
@@ -349,7 +349,7 @@ def rh(m):
             ],
         )
         for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SEGMENT)
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
         baca.stem_tremolo_function(o.pleaves())
         baca.text_script_parent_alignment_x_function(o, 0)
         baca.text_script_self_alignment_x_function(o, 0)

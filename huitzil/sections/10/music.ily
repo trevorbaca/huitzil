@@ -91,7 +91,7 @@ number.10.Skips = {
       %! REAPPLIED_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'green4
-      %! +SEGMENT
+      %! +SECTION
       %! EMPTY_START_BAR
       %! baca._attach_nonfirst_empty_start_bar()
     \bar ""
@@ -524,13 +524,13 @@ number.10.RH.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \startStaff
-      %! +SEGMENT
+      %! +SECTION
       %! baca.literal_function()
     \stopStaff
-      %! +SEGMENT
+      %! +SECTION
       %! baca.literal_function()
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2)
-      %! +SEGMENT
+      %! +SECTION
       %! baca.literal_function()
     \startStaff
     % OPENING:
@@ -1306,13 +1306,13 @@ number.10.Cello.Music = {
     \override Score.SpanBar.transparent = ##t
       %! baca.time_signature_stencil_false_function(1)
     \override Score.TimeSignature.stencil = ##f
-      %! +SEGMENT
+      %! +SECTION
       %! baca.literal_function()
     \stopStaff
-      %! +SEGMENT
+      %! +SECTION
       %! baca.literal_function()
     \once \override Staff.StaffSymbol.line-positions = #'(4 -4)
-      %! +SEGMENT
+      %! +SECTION
       %! baca.literal_function()
     \startStaff
     % OPENING:

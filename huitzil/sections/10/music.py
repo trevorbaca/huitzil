@@ -66,7 +66,7 @@ def RH(voice):
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.mmrest_transparent_function(o)
+        baca.mmrest_transparent_function(o.mmrests())
         baca.bar_line_transparent_function(o)
         baca.span_bar_transparent_function(o)
         wrappers = baca.literal_function(
@@ -78,7 +78,7 @@ def vc(m):
             ],
         )
         for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SEGMENT)
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
         baca.time_signature_stencil_false_function(o)
     with baca.scope(m[10]) as o:
         baca.literal_function(
@@ -142,7 +142,7 @@ def rh(m):
             ],
         )
         for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SEGMENT)
+            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
         baca.stem_tremolo_function(o.pleaves())
         baca.text_script_parent_alignment_x_function(o, 0)
         baca.text_script_self_alignment_x_function(o, 0)
