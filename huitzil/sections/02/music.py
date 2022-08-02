@@ -160,8 +160,7 @@ def rh(m):
                 o.pleaf(1),
                 r"\once \override TupletNumber.font-size = -2",
             )
-            for wrapper in wrappers:
-                wrapper.tag = wrapper.tag.append(abjad.Tag("+SCORE"))
+            baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m[25]) as o:
         baca.glissando_function(
             o.rleaves(),
