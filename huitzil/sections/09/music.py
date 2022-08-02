@@ -237,7 +237,7 @@ def rh(m):
         baca.hairpin_function(
             o.rleaves(),
             "mp -- p -- pp -- p -- !",
-            pieces=lambda _: baca.mgroups(_, [2, 2, 4, 2 + 1]),
+            pieces=lambda _: baca.select.mgroups(_, [2, 2, 4, 2 + 1]),
         )
         baca.literal_function(
             o.leaf(0),
