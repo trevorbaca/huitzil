@@ -282,8 +282,7 @@ def rh(m):
         for leaf in o:
             library.sforzando(leaf, r"\baca-mpz-markup")
         wrappers = baca.hairpin_to_barline_function(o)
-        for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SCORE)
+        baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions_function(o, [6, 4, 2, 0])
     with baca.scope(m[20]) as o:
         baca.staff_positions_function(o, [0])
@@ -321,16 +320,14 @@ def rh(m):
             abjad.Tweak(r"- \tweak staff-padding 2"),
         )
         wrappers = baca.hairpin_to_barline_function(o)
-        for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SCORE)
+        baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions_function(o, [-6])
     with baca.scope(m.leaves()) as o:
         wrappers = baca.literal_function(
             o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
         )
-        for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
+        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
         wrappers = baca.literal_function(
             o.leaf(0),
             [
@@ -340,8 +337,7 @@ def rh(m):
                 r"\startStaff",
             ],
         )
-        for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
+        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
         baca.stem_tremolo_function(o.pleaves())
         baca.text_script_parent_alignment_x_function(o, 0)
         baca.text_script_self_alignment_x_function(o, 0)

@@ -295,29 +295,25 @@ def rh(m):
         library.sforzando(o.leaf(5), r"\baca-mpz-markup")
     with baca.scope(m[22]) as o:
         wrappers = baca.hairpin_to_barline_function(o)
-        for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
+        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
     with baca.scope(m.leaves()) as o:
         wrappers = baca.breathe_function(
             o.leaf(-1),
             abjad.Tweak(r"\tweak X-extent ##f"),
             abjad.Tweak(r"\tweak extra-offset #'(0 . 5)"),
         )
-        for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SCORE)
+        baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
         wrappers = baca.breathe_function(
             o.leaf(-1),
             abjad.Tweak(r"\tweak X-extent ##f"),
             abjad.Tweak(r"\tweak extra-offset #'(-1.5 . 2)"),
         )
-        for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
+        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
         wrappers = baca.literal_function(
             o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
         )
-        for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
+        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
         wrappers = baca.literal_function(
             o.leaf(0),
             [
@@ -327,8 +323,7 @@ def rh(m):
                 r"\startStaff",
             ],
         )
-        for wrapper in wrappers:
-            wrapper.tag = wrapper.tag.append(baca.tags.ONLY_SECTION)
+        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
         baca.stem_tremolo_function(o.pleaves())
         baca.text_script_parent_alignment_x_function(o, 0)
         baca.text_script_self_alignment_x_function(o, 0)
