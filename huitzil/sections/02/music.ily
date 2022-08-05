@@ -1916,7 +1916,7 @@ number.2.RH.Music = {
         - \upbow
         % START_BEAM:
           %! SPANNER_START
-          %! baca._attach_start_stop_indicators(2)
+          %! baca._do_spanner_indicator_command(2)
           %! baca.beam_function()
         [
         % ABSOLUTE_BEFORE:
@@ -2282,7 +2282,7 @@ number.2.RH.Music = {
         - \downbow
         % STOP_BEAM:
           %! SPANNER_STOP
-          %! baca._attach_start_stop_indicators(4)
+          %! baca._do_spanner_indicator_command(4)
           %! baca.beam_function()
         ]
         % CLOSING:
