@@ -5,16 +5,11 @@ import baca
 
 
 def instruments():
-    return dict(
-        [
-            (
-                "Cello",
-                abjad.Cello(
-                    context="StaffGroup", pitch_range=abjad.PitchRange("[A1, +inf]")
-                ),
-            )
-        ]
-    )
+    return {
+        "Cello": abjad.Cello(
+            context="StaffGroup", pitch_range=abjad.PitchRange("[A1, +inf]")
+        )
+    }
 
 
 def make_empty_score():
@@ -49,14 +44,12 @@ def make_empty_score():
 
 
 def metronome_marks():
-    return dict(
-        [
-            ("44", abjad.MetronomeMark((1, 4), 44)),
-            ("66", abjad.MetronomeMark((1, 4), 66)),
-            ("78", abjad.MetronomeMark((1, 4), 78)),
-            ("88", abjad.MetronomeMark((1, 4), 88)),
-        ]
-    )
+    return {
+        "44": abjad.MetronomeMark((1, 4), 44),
+        "66": abjad.MetronomeMark((1, 4), 66),
+        "78": abjad.MetronomeMark((1, 4), 78),
+        "88": abjad.MetronomeMark((1, 4), 88),
+    }
 
 
 def pitch_classes():
@@ -68,55 +61,44 @@ def pitch_classes():
 
 
 def registrations():
-    return dict(
-        [
-            (
-                "middle",
-                baca.Registration(
-                    components=[
-                        baca.RegistrationComponent(
-                            source_pitch_range=abjad.PitchRange("[A0, C4)"),
-                            target_octave_start_pitch=abjad.NumberedPitch(-13),
-                        ),
-                        baca.RegistrationComponent(
-                            source_pitch_range=abjad.PitchRange("[C4, A8]"),
-                            target_octave_start_pitch=abjad.NumberedPitch(-9),
-                        ),
-                    ]
+    return {
+        "middle": baca.Registration(
+            components=[
+                baca.RegistrationComponent(
+                    source_pitch_range=abjad.PitchRange("[A0, C4)"),
+                    target_octave_start_pitch=abjad.NumberedPitch(-13),
                 ),
-            ),
-            (
-                "low",
-                baca.Registration(
-                    components=[
-                        baca.RegistrationComponent(
-                            source_pitch_range=abjad.PitchRange("[A0, C4)"),
-                            target_octave_start_pitch=abjad.NumberedPitch(-19),
-                        ),
-                        baca.RegistrationComponent(
-                            source_pitch_range=abjad.PitchRange("[C4, A8]"),
-                            target_octave_start_pitch=abjad.NumberedPitch(-15),
-                        ),
-                    ]
+                baca.RegistrationComponent(
+                    source_pitch_range=abjad.PitchRange("[C4, A8]"),
+                    target_octave_start_pitch=abjad.NumberedPitch(-9),
                 ),
-            ),
-            (
-                "lowest",
-                baca.Registration(
-                    components=[
-                        baca.RegistrationComponent(
-                            source_pitch_range=abjad.PitchRange("[A0, C4)"),
-                            target_octave_start_pitch=abjad.NumberedPitch(-25),
-                        ),
-                        baca.RegistrationComponent(
-                            source_pitch_range=abjad.PitchRange("[C4, A8]"),
-                            target_octave_start_pitch=abjad.NumberedPitch(-21),
-                        ),
-                    ]
+            ]
+        ),
+        "low": baca.Registration(
+            components=[
+                baca.RegistrationComponent(
+                    source_pitch_range=abjad.PitchRange("[A0, C4)"),
+                    target_octave_start_pitch=abjad.NumberedPitch(-19),
                 ),
-            ),
-        ]
-    )
+                baca.RegistrationComponent(
+                    source_pitch_range=abjad.PitchRange("[C4, A8]"),
+                    target_octave_start_pitch=abjad.NumberedPitch(-15),
+                ),
+            ]
+        ),
+        "lowest": baca.Registration(
+            components=[
+                baca.RegistrationComponent(
+                    source_pitch_range=abjad.PitchRange("[A0, C4)"),
+                    target_octave_start_pitch=abjad.NumberedPitch(-25),
+                ),
+                baca.RegistrationComponent(
+                    source_pitch_range=abjad.PitchRange("[C4, A8]"),
+                    target_octave_start_pitch=abjad.NumberedPitch(-21),
+                ),
+            ]
+        ),
+    }
 
 
 def sforzando(argument, string):
