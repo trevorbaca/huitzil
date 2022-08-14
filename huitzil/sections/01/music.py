@@ -418,9 +418,7 @@ def RH(voice):
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(
-            o.leaf(0), accumulator.instruments["Cello"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Cello", accumulator.manifests())
         baca.clef_function(o.leaf(0), "bass")
         baca.markup_function(
             o.pleaf(0),
