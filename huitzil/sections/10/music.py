@@ -45,8 +45,7 @@ manifests = accumulator.manifests()
 
 for index, item in ((1 - 1, "66"),):
     skip = skips[index]
-    indicator = accumulator.metronome_marks.get(item, item)
-    baca.metronome_mark_function(skip, indicator, manifests)
+    baca.metronome_mark_function(skip, item, manifests)
 
 baca.bar_line_function(score["Skips"][10 - 1], "|.")
 
