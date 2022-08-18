@@ -384,8 +384,8 @@ score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 accumulator = baca.CommandAccumulator(
-    instruments=library.instruments(),
-    metronome_marks=library.metronome_marks(),
+    instruments=library.instruments,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
     voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
@@ -394,7 +394,7 @@ accumulator = baca.CommandAccumulator(
 baca.interpret.set_up_score(
     score,
     accumulator,
-    accumulator.manifests(),
+    library.manifests,
     accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
@@ -402,7 +402,7 @@ baca.interpret.set_up_score(
 )
 
 skips = score["Skips"]
-manifests = accumulator.manifests()
+manifests = library.manifests
 
 baca.metronome_mark_function(skips[1 - 1], accumulator.metronome_marks["78"], manifests)
 
@@ -418,7 +418,7 @@ def RH(voice):
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(o.leaf(0), "Cello", accumulator.manifests())
+        baca.instrument_function(o.leaf(0), "Cello", library.manifests)
         baca.clef_function(o.leaf(0), "bass")
         baca.markup_function(
             o.pleaf(0),
@@ -473,7 +473,7 @@ if __name__ == "__main__":
     main()
     metadata, persist, score, timing = baca.build.section(
         score,
-        accumulator.manifests(),
+        library.manifests,
         accumulator.time_signatures,
         **baca.interpret.section_defaults(),
         activate=(
