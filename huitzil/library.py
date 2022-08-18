@@ -88,13 +88,6 @@ def sforzando(argument, string):
     baca.markup_function(argument, string, direction=abjad.DOWN)
 
 
-def voice_abbreviations():
-    return {
-        "rh": "RH.Music",
-        "vc": "Cello.Music",
-    }
-
-
 instruments = {
     "Cello": abjad.Cello(
         context="StaffGroup", pitch_range=abjad.PitchRange("[A1, +inf]")
@@ -113,4 +106,10 @@ metronome_marks = {
 manifests = {
     "abjad.Instrument": instruments,
     "abjad.MetronomeMark": metronome_marks,
+}
+
+
+voice_abbreviations = {
+    "rh": "RH.Music",
+    "vc": "Cello.Music",
 }
