@@ -55,7 +55,6 @@ baca.interpret.set_up_score(
 )
 
 skips = score["Skips"]
-manifests = library.manifests
 
 for index, item in (
     (1 - 1, "88"),
@@ -63,10 +62,10 @@ for index, item in (
     (25 - 1, baca.Ritardando()),
 ):
     skip = skips[index]
-    baca.metronome_mark_function(skip, item, manifests)
+    baca.metronome_mark_function(skip, item, library.manifests)
 
 
-def VC(voice):
+def VC(voice, accumulator):
     # 1
     music = baca.make_skeleton("{ c1 * 1/4 }")
     voice.extend(music)
@@ -244,7 +243,7 @@ def rh(m):
 
 
 def main():
-    VC(accumulator.voice("vc"))
+    VC(accumulator.voice("vc"), accumulator)
     RH(accumulator.voice("rh"))
     previous_persist = baca.previous_persist(__file__)
     previous_persistent_indicators = previous_persist["persistent_indicators"]
