@@ -400,16 +400,17 @@ baca.interpret.set_up_score(
 )
 
 skips = score["Skips"]
-manifests = library.manifests
 
-baca.metronome_mark_function(skips[1 - 1], library.metronome_marks["78"], manifests)
+baca.metronome_mark_function(
+    skips[1 - 1], library.metronome_marks["78"], library.manifests
+)
 
 
 def VC(voice):
     voice.extend(music_)
 
 
-def RH(voice):
+def RH(voice, accumulator):
     music = baca.make_mmrests(accumulator.get())
     voice.extend(music)
 
@@ -457,7 +458,7 @@ def rh(m):
 
 def main():
     VC(accumulator.voice("vc"))
-    RH(accumulator.voice("rh"))
+    RH(accumulator.voice("rh"), accumulator)
     cache = baca.interpret.cache_leaves(
         score,
         len(accumulator.time_signatures),
