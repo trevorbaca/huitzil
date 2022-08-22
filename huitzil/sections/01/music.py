@@ -456,7 +456,7 @@ def rh(m):
         baca.clef_function(o.leaf(0), "percussion")
 
 
-def main():
+def make_score():
     VC(accumulator.voice("vc"))
     RH(accumulator.voice("rh"), accumulator)
     cache = baca.interpret.cache_leaves(
@@ -468,8 +468,8 @@ def main():
     rh(cache["rh"])
 
 
-if __name__ == "__main__":
-    main()
+def main():
+    make_score()
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
@@ -493,3 +493,7 @@ if __name__ == "__main__":
         spacing_extra_offset=(0, 1),
     )
     baca.build.persist(lilypond_file, metadata, persist, timing)
+
+
+if __name__ == "__main__":
+    main()
