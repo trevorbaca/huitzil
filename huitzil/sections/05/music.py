@@ -286,7 +286,7 @@ def rh(m):
         baca.glissando_function(o)
 
 
-def main():
+def make_score():
     VC(accumulator.voice("vc"), accumulator)
     RH(accumulator.voice("rh"))
     previous_persist = baca.previous_persist(__file__)
@@ -305,8 +305,8 @@ def main():
     rh(cache["rh"])
 
 
-if __name__ == "__main__":
-    main()
+def main():
+    make_score()
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
@@ -326,3 +326,7 @@ if __name__ == "__main__":
         includes=["../stylesheet.ily"],
     )
     baca.build.persist(lilypond_file, metadata, persist, timing)
+
+
+if __name__ == "__main__":
+    main()
