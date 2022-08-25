@@ -7,57 +7,49 @@ from huitzil import library
 ########################################### 02 ##########################################
 #########################################################################################
 
-time_signatures = [
-    (3, 4),
-    (3, 4),
-    (3, 4),
-    (3, 4),
-    (3, 4),
-    (3, 4),
-    (3, 4),
-    (3, 4),
-    (3, 4),
-    (3, 4),
-    (3, 4),
-    (3, 4),
-    (2, 4),
-    (2, 4),
-    (2, 4),
-    (2, 4),
-    (2, 4),
-    (2, 4),
-    (2, 4),
-    (2, 4),
-    (2, 4),
-    (2, 4),
-    (2, 4),
-    (2, 4),
-    (4, 4),
-]
 
-score = library.make_empty_score()
-voice_names = baca.accumulator.get_voice_names(score)
+def make_empty_score():
+    time_signatures = [
+        (3, 4),
+        (3, 4),
+        (3, 4),
+        (3, 4),
+        (3, 4),
+        (3, 4),
+        (3, 4),
+        (3, 4),
+        (3, 4),
+        (3, 4),
+        (3, 4),
+        (3, 4),
+        (2, 4),
+        (2, 4),
+        (2, 4),
+        (2, 4),
+        (2, 4),
+        (2, 4),
+        (2, 4),
+        (2, 4),
+        (2, 4),
+        (2, 4),
+        (2, 4),
+        (2, 4),
+        (4, 4),
+    ]
+    score = library.make_empty_score()
+    voice_names = baca.accumulator.get_voice_names(score)
+    accumulator = baca.CommandAccumulator(
+        time_signatures=time_signatures,
+        _voice_abbreviations=library.voice_abbreviations,
+        _voice_names=voice_names,
+    )
+    return score, accumulator
 
-accumulator = baca.CommandAccumulator(
-    time_signatures=time_signatures,
-    _voice_abbreviations=library.voice_abbreviations,
-    _voice_names=voice_names,
-)
 
-baca.interpret.set_up_score(
-    score,
-    accumulator.time_signatures,
-    accumulator,
-    library.manifests,
-    append_anchor_skip=True,
-    always_make_global_rests=True,
-)
-
-skips = score["Skips"]
-
-baca.metronome_mark_function(
-    skips[1 - 1], library.metronome_marks["44"], library.manifests
-)
+def GLOBALS(skips):
+    baca.metronome_mark_function(
+        skips[1 - 1], library.metronome_marks["44"], library.manifests
+    )
 
 
 def VC(voice, accumulator):
@@ -226,11 +218,21 @@ def rh(m):
         baca.tuplet_bracket_down_function(o)
 
 
-def make_score():
+def make_score(first_measure_number, previous_persistent_indicators):
+    score, accumulator = make_empty_score()
+    baca.interpret.set_up_score(
+        score,
+        accumulator.time_signatures,
+        accumulator,
+        library.manifests,
+        append_anchor_skip=True,
+        always_make_global_rests=True,
+        first_measure_number=first_measure_number,
+        previous_persistent_indicators=previous_persistent_indicators,
+    )
+    GLOBALS(score["Skips"])
     VC(accumulator.voice("vc"), accumulator)
     RH(accumulator.voice("rh"))
-    previous_persist = baca.previous_persist(__file__)
-    previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(
         accumulator.voices(),
         library.manifests,
@@ -243,10 +245,16 @@ def make_score():
     )
     vc(cache["vc"])
     rh(cache["rh"])
+    return score, accumulator
 
 
 def main():
-    make_score()
+    previous_metadata = baca.previous_metadata(__file__)
+    first_measure_number = previous_metadata["final_measure_number"] + 1
+    previous_persist = baca.previous_persist(__file__)
+    score, accumulator = make_score(
+        first_measure_number, previous_persist["persistent_indicators"]
+    )
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
@@ -259,6 +267,7 @@ def main():
         always_make_global_rests=True,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
+        first_measure_number=first_measure_number,
     )
     lilypond_file = baca.lilypond.file(
         score,

@@ -192,222 +192,182 @@ def _set_written_durations(note_lists):
             note.written_duration = duration
 
 
-#########################################################################################
-######################################### 01 [A] ########################################
-#########################################################################################
-
-### MUSIC-MAKERS ###
-
-music = []
-
-### stage [1] (middle) ###
-
-music_ = make_music(
-    [1, 2, 0, -1, 5],
-    library.pitch_classes()[:6],
-    [[2, range(0, 99)]],
-    pc_displacement=[abjad.index(list(range(15)), 30)],
-)
-music.extend(music_)
-
-
-### stage [2] (middle & lower) ###
-
-music_ = make_music(
-    [1, 2, 0, -1, 5],
-    library.pitch_classes()[2:8],
-    [
-        [2, range(0, 99)],
-        [3, (4, 14, 15, 28, 29, 35, 36)],
-    ],
-    pc_displacement=[abjad.index(list(range(15)), 30)],
-    pc_operators=[lambda _: _.transpose(n=1)],
-)
-music.extend(music_)
-
-### stage [3] (lower) ###
-
-music_ = make_music(
-    [4, 8, 0, -4, 20],
-    library.pitch_classes()[4:6],
-    [
-        [3, range(0, 99)],
-    ],
-    pc_operators=[
-        lambda _: _.transpose(n=2),
-        lambda _: _.invert(),
-    ],
-)
-music.extend(music_)
-
-### stage [4] (lower & upper) ###
-
-music_ = make_music(
-    [4, 8, 0, -4, 20],
-    library.pitch_classes()[6:8],
-    [
-        [3, range(0, 99)],
-        [1, (1, 2, 3, 6, 7, 10)],
-    ],
-    pc_operators=[
-        lambda _: _.transpose(n=3),
-    ],
-)
-music.extend(music_)
-
-### stage [5] (upper) ###
-
-music_ = make_music(
-    [2, 4, 0, -2, 10],
-    library.pitch_classes()[8:12],
-    [
-        [1, range(0, 99)],
-    ],
-    pc_displacement=[abjad.index(list(range(10, 20)), 20)],
-    pc_operators=[
-        lambda _: _.transpose(n=4),
-    ],
-)
-music.extend(music_)
-
-### stage [6] (upper & middle) ###
-
-music_ = make_music(
-    [2, 4, 0, -2, 10],
-    library.pitch_classes()[10:13],
-    [
-        [1, range(0, 99)],
-        [2, (0, 1, 2, 3, 13, 14, 15, 16, 17, 18)],
-    ],
-    pc_displacement=[abjad.index(list(range(10)), 20)],
-    pc_operators=[
-        lambda _: _.transpose(n=5),
-        lambda _: _.invert(),
-    ],
-)
-music.extend(music_)
-
-### stage [7] (upper, middle, lower) ###
-
-music_ = make_music(
-    [2, 4, 0, -2, 10],
-    library.pitch_classes()[12:20],
-    [
-        [1, range(0, 99)],
+def make_all_music():
+    music = []
+    ### stage [1] (middle) ###
+    music_ = make_music(
+        [1, 2, 0, -1, 5],
+        library.pitch_classes()[:6],
+        [[2, range(0, 99)]],
+        pc_displacement=[abjad.index(list(range(15)), 30)],
+    )
+    music.extend(music_)
+    ### stage [2] (middle & lower) ###
+    music_ = make_music(
+        [1, 2, 0, -1, 5],
+        library.pitch_classes()[2:8],
         [
-            2,
-            (
-                5,
-                6,
-                7,
-                8,
-                16,
-                17,
-                18,
-                23,
-                24,
-                25,
-                26,
-                31,
-                32,
-                33,
-                34,
-                37,
-                38,
-                39,
-                43,
-                44,
-                45,
-                46,
-                47,
-            ),
+            [2, range(0, 99)],
+            [3, (4, 14, 15, 28, 29, 35, 36)],
         ],
-        [3, (2, 13, 14, 27, 28, 40, 50, 51)],
-    ],
-    pc_displacement=[abjad.index(list(range(10, 20)), 20)],
-    pc_operators=[lambda _: _.transpose(n=6)],
-)
-music.extend(music_)
+        pc_displacement=[abjad.index(list(range(15)), 30)],
+        pc_operators=[lambda _: _.transpose(n=1)],
+    )
+    music.extend(music_)
+    ### stage [3] (lower) ###
+    music_ = make_music(
+        [4, 8, 0, -4, 20],
+        library.pitch_classes()[4:6],
+        [
+            [3, range(0, 99)],
+        ],
+        pc_operators=[
+            lambda _: _.transpose(n=2),
+            lambda _: _.invert(),
+        ],
+    )
+    music.extend(music_)
+    ### stage [4] (lower & upper) ###
+    music_ = make_music(
+        [4, 8, 0, -4, 20],
+        library.pitch_classes()[6:8],
+        [
+            [3, range(0, 99)],
+            [1, (1, 2, 3, 6, 7, 10)],
+        ],
+        pc_operators=[
+            lambda _: _.transpose(n=3),
+        ],
+    )
+    music.extend(music_)
+    ### stage [5] (upper) ###
+    music_ = make_music(
+        [2, 4, 0, -2, 10],
+        library.pitch_classes()[8:12],
+        [
+            [1, range(0, 99)],
+        ],
+        pc_displacement=[abjad.index(list(range(10, 20)), 20)],
+        pc_operators=[
+            lambda _: _.transpose(n=4),
+        ],
+    )
+    music.extend(music_)
+    ### stage [6] (upper & middle) ###
+    music_ = make_music(
+        [2, 4, 0, -2, 10],
+        library.pitch_classes()[10:13],
+        [
+            [1, range(0, 99)],
+            [2, (0, 1, 2, 3, 13, 14, 15, 16, 17, 18)],
+        ],
+        pc_displacement=[abjad.index(list(range(10)), 20)],
+        pc_operators=[
+            lambda _: _.transpose(n=5),
+            lambda _: _.invert(),
+        ],
+    )
+    music.extend(music_)
+    ### stage [7] (upper, middle, lower) ###
+    music_ = make_music(
+        [2, 4, 0, -2, 10],
+        library.pitch_classes()[12:20],
+        [
+            [1, range(0, 99)],
+            [
+                2,
+                (
+                    5,
+                    6,
+                    7,
+                    8,
+                    16,
+                    17,
+                    18,
+                    23,
+                    24,
+                    25,
+                    26,
+                    31,
+                    32,
+                    33,
+                    34,
+                    37,
+                    38,
+                    39,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                ),
+            ],
+            [3, (2, 13, 14, 27, 28, 40, 50, 51)],
+        ],
+        pc_displacement=[abjad.index(list(range(10, 20)), 20)],
+        pc_operators=[lambda _: _.transpose(n=6)],
+    )
+    music.extend(music_)
+    ### stage [8] (middle & lower) ###
+    music_ = make_music(
+        [1, 2, 0, -1, 5],
+        library.pitch_classes()[14:18],
+        [
+            [2, range(0, 99)],
+            [3, (5, 11, 12, 13, 19, 20)],
+        ],
+        pc_operators=[
+            lambda _: _.transpose(n=7),
+        ],
+    )
+    music.extend(music_)
+    ### stage [9] (lower) ###
+    music_ = make_music(
+        [4, 8, 0, -4, 20],
+        library.pitch_classes()[16:20],
+        [
+            [3, range(0, 99)],
+        ],
+        pc_displacement=[abjad.index(list(range(5)), 10)],
+        pc_operators=[
+            lambda _: _.transpose(n=8),
+            lambda _: _.invert(),
+        ],
+    )
+    music.extend(music_)
+    return music
 
-### stage [8] (middle & lower) ###
 
-music_ = make_music(
-    [1, 2, 0, -1, 5],
-    library.pitch_classes()[14:18],
-    [
-        [2, range(0, 99)],
-        [3, (5, 11, 12, 13, 19, 20)],
-    ],
-    pc_operators=[
-        lambda _: _.transpose(n=7),
-    ],
-)
-music.extend(music_)
+def make_time_signatures(music):
+    measure_durations = []
+    current_duration = abjad.Duration(0)
+    ideal_measure_duration = abjad.Duration(4, 4)
+    for component in music:
+        component_duration = abjad.get.duration(component)
+        candidate_duration = current_duration + component_duration
+        if ideal_measure_duration < candidate_duration:
+            if 0 < current_duration:
+                measure_durations.append(current_duration)
+            current_duration = component_duration
+        else:
+            current_duration = candidate_duration
+    measure_durations.append(current_duration)
+    time_signatures = []
+    for measure_duration in measure_durations:
+        duration = measure_duration.with_denominator(4)
+        time_signatures.append(duration)
+    return time_signatures
 
-### stage [9] (lower) ###
 
-music_ = make_music(
-    [4, 8, 0, -4, 20],
-    library.pitch_classes()[16:20],
-    [
-        [3, range(0, 99)],
-    ],
-    pc_displacement=[abjad.index(list(range(5)), 10)],
-    pc_operators=[
-        lambda _: _.transpose(n=8),
-        lambda _: _.invert(),
-    ],
-)
-music.extend(music_)
-
-measure_durations = []
-current_duration = abjad.Duration(0)
-ideal_measure_duration = abjad.Duration(4, 4)
-for component in music:
-    component_duration = abjad.get.duration(component)
-    candidate_duration = current_duration + component_duration
-    if ideal_measure_duration < candidate_duration:
-        if 0 < current_duration:
-            measure_durations.append(current_duration)
-        current_duration = component_duration
-    else:
-        current_duration = candidate_duration
-measure_durations.append(current_duration)
-time_signatures = []
-for measure_duration in measure_durations:
-    duration = measure_duration.with_denominator(4)
-    time_signatures.append(duration)
-
-music_ = music
-
-score = library.make_empty_score()
-voice_names = baca.accumulator.get_voice_names(score)
-
-accumulator = baca.CommandAccumulator(
-    time_signatures=time_signatures,
-    _voice_abbreviations=library.voice_abbreviations,
-    _voice_names=voice_names,
-)
-
-baca.interpret.set_up_score(
-    score,
-    accumulator.time_signatures,
-    accumulator,
-    library.manifests,
-    append_anchor_skip=True,
-    always_make_global_rests=True,
-    first_section=True,
-)
-
-skips = score["Skips"]
-
-baca.metronome_mark_function(
-    skips[1 - 1], library.metronome_marks["78"], library.manifests
-)
+def GLOBALS(skips):
+    baca.metronome_mark_function(
+        skips[1 - 1], library.metronome_marks["78"], library.manifests
+    )
 
 
 def VC(voice):
-    voice.extend(music_)
+    music = make_all_music()
+    voice.extend(music)
 
 
 def RH(voice, accumulator):
@@ -457,6 +417,25 @@ def rh(m):
 
 
 def make_score():
+    score = library.make_empty_score()
+    voice_names = baca.accumulator.get_voice_names(score)
+    music = make_all_music()
+    time_signatures = make_time_signatures(music)
+    accumulator = baca.CommandAccumulator(
+        time_signatures=time_signatures,
+        _voice_abbreviations=library.voice_abbreviations,
+        _voice_names=voice_names,
+    )
+    baca.interpret.set_up_score(
+        score,
+        accumulator.time_signatures,
+        accumulator,
+        library.manifests,
+        append_anchor_skip=True,
+        always_make_global_rests=True,
+        first_section=True,
+    )
+    GLOBALS(score["Skips"])
     VC(accumulator.voice("vc"))
     RH(accumulator.voice("rh"), accumulator)
     cache = baca.interpret.cache_leaves(
@@ -466,10 +445,11 @@ def make_score():
     )
     vc(cache["vc"])
     rh(cache["rh"])
+    return score, accumulator
 
 
 def main():
-    make_score()
+    score, accumulator = make_score()
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
