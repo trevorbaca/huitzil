@@ -177,10 +177,10 @@ def main():
         library.manifests,
         accumulator.time_signatures,
         **defaults,
-        activate=(
+        activate=[
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
-        ),
+        ],
         always_make_global_rests=True,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
