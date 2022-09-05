@@ -175,10 +175,10 @@ def rh(m):
     with baca.scope(m.get(1, 3)) as o:
         # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
         # baca.hairpin(
+        #    o.rleaves(),
         #    "mp -- !",
         #    abjad.Tweak(r"- \tweak to-barline ##t"),
-        #    selector=lambda _: baca.select.rleaves(_),
-        # ),
+        # )
         # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
         baca.dynamic_function(o.phead(0), "mp")
         baca.hairpin_function(
