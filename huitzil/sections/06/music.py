@@ -167,11 +167,11 @@ def rh(m):
     with baca.scope(m.get(2, 13)) as o:
         # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
         # baca.hairpin(
+        #    o.rleaves(),
         #    "mp > p <",
         #    bookend=False,
         #    pieces=lambda _: baca.select.lparts(_, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
-        #    selector=lambda _: baca.select.rleaves(_),
-        # ),
+        # )
         # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
         baca.hairpin_function(
             o.leaves()[:-1],
@@ -235,10 +235,10 @@ def rh(m):
     with baca.scope(m.get(14, 23)) as o:
         # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
         # baca.hairpin(
+        #    o.rleaves(),
         #    "mp -- p -- pp -- p -- !",
         #    pieces=lambda _: baca.select.mgroups(_, [2, 2, 4, 2 + 1]),
-        #    selector=lambda _: baca.select.rleaves(_),
-        # ),
+        # )
         # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
         baca.hairpin_function(
             o.rleaves(),
