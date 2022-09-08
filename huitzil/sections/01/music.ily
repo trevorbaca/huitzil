@@ -420,19 +420,19 @@ number.1.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "78"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2923,22 +2923,22 @@ number.1.RH.Music = {
     % COMMANDS:
       %! MEASURE_1
       %! SHIFTED_CLEF
-      %! baca.clef_x_extent_false_function(1)
+      %! baca.clef_x_extent_false(1)
 %%% \once \override RHStaff.Clef.X-extent = ##f
       %! MEASURE_1
       %! SHIFTED_CLEF
-      %! baca.clef_extra_offset_function(1)
+      %! baca.clef_extra_offset(1)
 %%% \once \override RHStaff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.mmrest_transparent_function(1)
+      %! baca.mmrest_transparent(1)
     \override MultiMeasureRest.transparent = ##t
-      %! baca.literal_function()
+      %! baca.literal()
     \stopStaff
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef_function()
+      %! baca.clef()
     \clef "percussion"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -2949,7 +2949,7 @@ number.1.RH.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef_function()
+      %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set RHStaff.forceClef = ##t
       %! baca.make_mmrests(1)
@@ -3601,7 +3601,7 @@ number.1.RH.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
     % COMMANDS:
-      %! baca.mmrest_transparent_function(2)
+      %! baca.mmrest_transparent(2)
     \revert MultiMeasureRest.transparent
     % CLOSING:
     % COMMANDS:
@@ -3650,20 +3650,20 @@ number.1.Cello.Music = {
         % COMMANDS:
           %! MEASURE_1
           %! SHIFTED_CLEF
-          %! baca.clef_x_extent_false_function(1)
+          %! baca.clef_x_extent_false(1)
     %%% \once \override Staff.Clef.X-extent = ##f
           %! MEASURE_1
           %! SHIFTED_CLEF
-          %! baca.clef_extra_offset_function(1)
+          %! baca.clef_extra_offset(1)
     %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
-          %! baca.tuplet_bracket_staff_padding_function(1)
+          %! baca.tuplet_bracket_staff_padding(1)
         \override TupletBracket.staff-padding = 3
         % OPENING:
         % COMMANDS:
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef_function()
+          %! baca.clef()
         \clef "bass"
           %! EXPLICIT_CLEF_COLOR
           %! baca._attach_color_literal(2)
@@ -3674,15 +3674,15 @@ number.1.Cello.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef_function()
+          %! baca.clef()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
         fs!8
         % AFTER:
         % MARKUP:
-          %! baca.markup_function()
+          %! baca.markup()
         - \tweak staff-padding 9
-          %! baca.markup_function()
+          %! baca.markup()
         _ \huitzil-phrasing-dynamics-see-preface-markup
           %! EXPLICIT_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
@@ -4339,7 +4339,7 @@ number.1.Cello.Music = {
 
         % BEFORE:
         % COMMANDS:
-          %! baca.repeat_tie_extra_offset_function(1)
+          %! baca.repeat_tie_extra_offset(1)
         \once \override RepeatTie.extra-offset = #'(-1.5 . 0)
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -4353,7 +4353,7 @@ number.1.Cello.Music = {
         af,16
         % AFTER:
         % SPANNER_STARTS:
-          %! baca.repeat_tie_function()
+          %! baca.repeat_tie()
         \repeatTie
         % CLOSING:
         % COMMANDS:
@@ -5147,7 +5147,7 @@ number.1.Cello.Music = {
         fs4
         % AFTER:
         % SPANNER_STARTS:
-          %! baca.repeat_tie_function()
+          %! baca.repeat_tie()
         \repeatTie
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7278,7 +7278,7 @@ number.1.Cello.Music = {
         b,2
         % AFTER:
         % SPANNER_STARTS:
-          %! baca.repeat_tie_function()
+          %! baca.repeat_tie()
         \repeatTie
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7529,7 +7529,7 @@ number.1.Cello.Music = {
         bf,!1
         % AFTER:
         % COMMANDS:
-          %! baca.tuplet_bracket_staff_padding_function(2)
+          %! baca.tuplet_bracket_staff_padding(2)
         \revert TupletBracket.staff-padding
         % CLOSING:
         % COMMANDS:
@@ -7550,7 +7550,7 @@ number.1.Cello.Music = {
         % [Cello.Music measure 52]
         % BEFORE:
         % COMMANDS:
-          %! baca.tuplet_bracket_staff_padding_function(1)
+          %! baca.tuplet_bracket_staff_padding(1)
         \override TupletBracket.staff-padding = 4
         % GROB_OVERRIDES:
         \once \override Accidental.color = #blue
@@ -7661,7 +7661,7 @@ number.1.Cello.Music = {
         g,2
         % AFTER:
         % COMMANDS:
-          %! baca.breathe_function()
+          %! baca.breathe()
         \breathe
         % CLOSING:
         % COMMANDS:
@@ -7721,15 +7721,15 @@ number.1.Cello.Music = {
         % AFTER:
         % COMMANDS:
           %! +SECTION
-          %! baca.breathe_function()
+          %! baca.breathe()
         \breathe
-          %! baca.tuplet_bracket_staff_padding_function(2)
+          %! baca.tuplet_bracket_staff_padding(2)
         \revert TupletBracket.staff-padding
           %! +SCORE
-          %! baca.breathe_function()
+          %! baca.breathe()
     %%% \tweak extra-offset #'(0 . 2)
           %! +SCORE
-          %! baca.breathe_function()
+          %! baca.breathe()
     %%% \breathe
         % CLOSING:
         % COMMANDS:

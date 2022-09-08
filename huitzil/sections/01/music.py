@@ -360,7 +360,7 @@ def make_time_signatures(music):
 
 
 def GLOBALS(skips):
-    baca.metronome_mark_function(
+    baca.metronome_mark(
         skips[1 - 1], library.metronome_marks["78"], library.manifests
     )
 
@@ -377,32 +377,32 @@ def RH(voice, accumulator):
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(o.leaf(0), "Cello", library.manifests)
-        baca.clef_function(o.leaf(0), "bass")
-        baca.markup_function(
+        baca.instrument(o.leaf(0), "Cello", library.manifests)
+        baca.clef(o.leaf(0), "bass")
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-phrasing-dynamics-see-preface-markup",
             abjad.Tweak(r"- \tweak staff-padding 9"),
             direction=abjad.DOWN,
         )
     with baca.scope(m[8]) as o:
-        baca.untie_function(o.pleaf(-2))
-        baca.repeat_tie_function(o.pleaf(-1))
-        baca.repeat_tie_extra_offset_function(o.pleaf(-1), (-1.5, 0))
+        baca.untie(o.pleaf(-2))
+        baca.repeat_tie(o.pleaf(-1))
+        baca.repeat_tie_extra_offset(o.pleaf(-1), (-1.5, 0))
     with baca.scope(m[20]) as o:
-        baca.repeat_tie_function(o.pleaf(0))
+        baca.repeat_tie(o.pleaf(0))
     with baca.scope(m[48]) as o:
-        baca.repeat_tie_function(o.pleaf(0))
+        baca.repeat_tie(o.pleaf(0))
     with baca.scope(m.get(1, 51)) as o:
-        baca.tuplet_bracket_staff_padding_function(o, 3)
+        baca.tuplet_bracket_staff_padding(o, 3)
     with baca.scope(m[53]) as o:
-        baca.breathe_function(o.pleaf(-1))
+        baca.breathe(o.pleaf(-1))
     with baca.scope(m.get(52, 54)) as o:
-        baca.tuplet_bracket_staff_padding_function(o, 4)
+        baca.tuplet_bracket_staff_padding(o, 4)
     with baca.scope(m[54]) as o:
-        wrappers = baca.breathe_function(o.pleaf(-1))
+        wrappers = baca.breathe(o.pleaf(-1))
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
-        wrappers = baca.breathe_function(
+        wrappers = baca.breathe(
             o.pleaf(-1),
             abjad.Tweak(r"\tweak extra-offset #'(0 . 2)"),
         )
@@ -411,9 +411,9 @@ def vc(m):
 
 def rh(m):
     with baca.scope(m.leaves()) as o:
-        baca.literal_function(o.leaf(0), r"\stopStaff")
-        baca.mmrest_transparent_function(o.mmrests())
-        baca.clef_function(o.leaf(0), "percussion")
+        baca.literal(o.leaf(0), r"\stopStaff")
+        baca.mmrest_transparent(o.mmrests())
+        baca.clef(o.leaf(0), "percussion")
 
 
 def make_score():

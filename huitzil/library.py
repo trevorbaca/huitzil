@@ -85,7 +85,7 @@ def registrations():
 
 
 def sforzando(argument, string):
-    baca.markup_function(argument, string, direction=abjad.DOWN)
+    baca.markup(argument, string, direction=abjad.DOWN)
 
 
 instruments = {

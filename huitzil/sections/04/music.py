@@ -50,7 +50,7 @@ def GLOBALS(skips):
         (18 - 1, baca.Ritardando()),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
 
 
 def VC(voice, accumulator):
@@ -124,16 +124,16 @@ def RH(voice):
     # (18, 23)
     music = baca.make_monads("1/2  1/2  1/2  1/2  1/2  1/2")
     voice.extend(music)
-    baca.append_anchor_note_function(voice)
+    baca.append_anchor_note(voice)
 
 
 def vc(m):
     with baca.scope(m.get(8, 13)) as o:
-        baca.pitches_function(o, "B1 C2")
-        baca.repeat_tie_function(o.pleaf(0))
+        baca.pitches(o, "B1 C2")
+        baca.repeat_tie(o.pleaf(0))
     with baca.scope(m[14]) as o:
-        baca.clef_function(o.leaf(0), "treble")
-        baca.literal_function(
+        baca.clef(o.leaf(0), "treble")
+        baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -141,13 +141,13 @@ def vc(m):
                 r"\startStaff",
             ],
         )
-        baca.note_head_duration_log_function(o.pleaves(), 2)
-        baca.note_head_no_ledgers_function(o, True)
-        baca.note_head_style_function(o, "#'do")
-        baca.staff_position_function(o, 7)
+        baca.note_head_duration_log(o.pleaves(), 2)
+        baca.note_head_no_ledgers(o, True)
+        baca.note_head_style(o, "#'do")
+        baca.staff_position(o, 7)
     with baca.scope(m[23]) as o:
-        baca.clef_function(o.leaf(0), "bass")
-        baca.literal_function(
+        baca.clef(o.leaf(0), "bass")
+        baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -155,23 +155,23 @@ def vc(m):
                 r"\startStaff",
             ],
         ),
-        baca.pitch_function(o, "Bb1")
+        baca.pitch(o, "Bb1")
     with baca.scope(m.leaves()) as o:
-        baca.mmrest_transparent_function(o.mmrests())
-        baca.bar_line_transparent_function(o)
-        baca.span_bar_transparent_function(o)
-        baca.time_signature_stencil_false_function(o)
+        baca.mmrest_transparent(o.mmrests())
+        baca.bar_line_transparent(o)
+        baca.span_bar_transparent(o)
+        baca.time_signature_stencil_false(o)
     with baca.scope(m.get(8, 14)) as o:
-        baca.glissando_function(o)
+        baca.glissando(o)
 
 
 def rh(m):
     with baca.scope(m[1]) as o:
         library.sforzando(o, r"\baca-ffz-markup")
-        baca.staff_positions_function(o, [-6, -4, -2, 0])
+        baca.staff_positions(o, [-6, -4, -2, 0])
     with baca.scope(m[2]) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m.get(2, 13)) as o:
         # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
         # baca.hairpin(
@@ -181,7 +181,7 @@ def rh(m):
         #    pieces=lambda _: baca.select.lparts(_, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
         # )
         # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
-        baca.hairpin_function(
+        baca.hairpin(
             o.leaves()[:-1],
             "mp > p <",
             # bookend=False,
@@ -190,48 +190,48 @@ def rh(m):
     with baca.scope(m[3]) as o:
         library.sforzando(o.leaf(0), r"\baca-fz-markup")
         library.sforzando(o.leaf(1), r"\baca-fffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[4]) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[5]) as o:
         library.sforzando(o.leaf(0), r"\baca-mfz-markup")
         library.sforzando(o.leaf(1), r"\baca-fz-markup")
         library.sforzando(o.leaf(2), r"\baca-ffz-markup")
         library.sforzando(o.leaf(3), r"\baca-fffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[6]) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[7]) as o:
         library.sforzando(o.leaf(0), r"\baca-fz-markup")
         library.sforzando(o.leaf(1), r"\baca-fffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[8]) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[9]) as o:
         library.sforzando(o.leaf(0), r"\baca-mfz-markup")
         library.sforzando(o.leaf(1), r"\baca-fz-markup")
         library.sforzando(o.leaf(2), r"\baca-ffz-markup")
         library.sforzando(o.leaf(3), r"\baca-fffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[10]) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[11]) as o:
         library.sforzando(o.leaf(0), r"\baca-fz-markup")
         library.sforzando(o.leaf(1), r"\baca-fffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[12]) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[13]) as o:
         library.sforzando(o.leaf(0), r"\baca-mfz-markup")
         library.sforzando(o.leaf(1), r"\baca-fz-markup")
         library.sforzando(o.leaf(2), r"\baca-ffz-markup")
         library.sforzando(o.leaf(3), r"\baca-fffz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[14]) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
     with baca.scope(m.get(14, 23)) as o:
@@ -243,14 +243,14 @@ def rh(m):
         #    pieces=lambda _: baca.select.mgroups(_, [2, 2, 4, 2 + 1]),
         # )
         # FUTURE: replace this when LilyPond fixes DynamicLineSpanner bug:
-        baca.hairpin_function(
+        baca.hairpin(
             o.rleaves(),
             "mp -- p -- pp -- p",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             bookend=False,
             pieces=lambda _: baca.select.mgroups(_, [2, 2, 4, 2 + 1]),
         )
-        baca.literal_function(
+        baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -259,13 +259,13 @@ def rh(m):
                 r"\startStaff",
             ],
         )
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-on-bridge-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -0.85"),
             abjad.Tweak(r"- \tweak staff-padding 2"),
         )
-        baca.staff_position_function(o, 8)
+        baca.staff_position(o, 8)
     with baca.scope(m[15]) as o:
         library.sforzando(o.leaf(0), r"\baca-fz-markup")
         library.sforzando(o.leaf(1), r"\baca-fffz-markup")
@@ -277,14 +277,14 @@ def rh(m):
         library.sforzando(o.leaf(2), r"\baca-ffz-markup")
         library.sforzando(o.leaf(3), r"\baca-fffz-markup")
     with baca.scope(m.get(18, 22)) as o:
-        baca.text_spanner_function(
+        baca.text_spanner(
             o,
             "(trem. mod.) => più stretto => più largo => più stretto => mod.",
             abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=lambda _: baca.select.lparts(_, [1, 1, 1, 1 + 1]),
         )
     with baca.scope(m.get(18, 21)) as o:
-        wrappers = baca.hairpin_to_barline_function(o)
+        wrappers = baca.hairpin_to_barline(o)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m.get(18, 23)) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
@@ -294,10 +294,10 @@ def rh(m):
         library.sforzando(o.leaf(4), r"\baca-mfz-markup")
         library.sforzando(o.leaf(5), r"\baca-mpz-markup")
     with baca.scope(m[22]) as o:
-        wrappers = baca.hairpin_to_barline_function(o)
+        wrappers = baca.hairpin_to_barline(o)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
     with baca.scope(m[23]) as o:
-        baca.literal_function(
+        baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -306,24 +306,24 @@ def rh(m):
                 r"\startStaff",
             ],
         )
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-sliding-back-onto-string-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -0.85"),
             abjad.Tweak(r"- \tweak staff-padding 6"),
         )
-        baca.staff_position_function(
+        baca.staff_position(
             o.rleaf(-1),
             6,
             allow_hidden=True,
         )
     with baca.scope(m.leaves()) as o:
-        wrappers = baca.literal_function(
+        wrappers = baca.literal(
             o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
         )
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
-        wrappers = baca.literal_function(
+        wrappers = baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -333,12 +333,12 @@ def rh(m):
             ],
         )
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
-        baca.stem_tremolo_function(o.pleaves())
-        baca.text_script_parent_alignment_x_function(o, 0)
-        baca.text_script_self_alignment_x_function(o, 0)
-        baca.text_script_staff_padding_function(o, 4)
+        baca.stem_tremolo(o.pleaves())
+        baca.text_script_parent_alignment_x(o, 0)
+        baca.text_script_self_alignment_x(o, 0)
+        baca.text_script_staff_padding(o, 4)
     with baca.scope(m.leaves()) as o:
-        baca.glissando_function(o.rleaves(), right_broken=True)
+        baca.glissando(o.rleaves(), right_broken=True)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):
