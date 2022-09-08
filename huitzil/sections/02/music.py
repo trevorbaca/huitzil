@@ -47,9 +47,7 @@ def make_empty_score():
 
 
 def GLOBALS(skips):
-    baca.metronome_mark(
-        skips[1 - 1], library.metronome_marks["44"], library.manifests
-    )
+    baca.metronome_mark(skips[1 - 1], library.metronome_marks["44"], library.manifests)
 
 
 def VC(voice, accumulator):
@@ -205,9 +203,7 @@ def rh(m):
             "mp-sempre",
             abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
         )
-        baca.literal(
-            o.leaf(0), r"\override DynamicLineSpanner.staff-padding = 2.5"
-        )
+        baca.literal(o.leaf(0), r"\override DynamicLineSpanner.staff-padding = 2.5")
         baca.literal(o.leaf(0), r"\override Score.BarNumber.transparent = ##t")
         baca.markup(
             o.pleaf(0),
