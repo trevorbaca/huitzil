@@ -222,19 +222,19 @@ number.2.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "44"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -1233,34 +1233,34 @@ number.2.RH.Music = {
         % [RH.Music measure 1]
         % BEFORE:
         % COMMANDS:
-          %! baca.literal_function()
+          %! baca.literal()
         \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2)
-          %! baca.literal_function()
+          %! baca.literal()
         \override DynamicLineSpanner.staff-padding = 2.5
-          %! baca.literal_function()
+          %! baca.literal()
         \override Score.BarNumber.transparent = ##t
           %! -PARTS
           %! EXPLICIT_BAR_EXTENT
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.staff_lines_function(1)
+          %! baca.staff_lines(1)
         \override Staff.BarLine.bar-extent = #'(-2 . 4)
-          %! baca.tuplet_bracket_down_function(1)
+          %! baca.tuplet_bracket_down(1)
         \override TupletBracket.direction = #down
           %! EXPLICIT_STAFF_LINES
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.staff_lines_function(2)
+          %! baca.staff_lines(2)
         \stopStaff
           %! EXPLICIT_STAFF_LINES
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.staff_lines_function(2)
+          %! baca.staff_lines(2)
         \once \override RHStaff.StaffSymbol.line-count = 7
           %! EXPLICIT_STAFF_LINES
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.staff_lines_function(2)
+          %! baca.staff_lines(2)
         \startStaff
         % OPENING:
         % COMMANDS:
@@ -1286,29 +1286,29 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic_function()
+          %! baca.dynamic()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic_function()
+          %! baca.dynamic()
         - \tweak self-alignment-X -0.9
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic_function()
+          %! baca.dynamic()
         \baca-mp-sempre
         % MARKUP:
-          %! baca.markup_function()
+          %! baca.markup()
         - \tweak staff-padding 3
-          %! baca.markup_function()
+          %! baca.markup()
         ^ \huitzil-directly-on-bridge-markup
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -1320,7 +1320,7 @@ number.2.RH.Music = {
 
         % BEFORE:
         % COMMANDS:
-          %! baca.rest_staff_position_function(1)
+          %! baca.rest_staff_position(1)
         \override Rest.staff-position = 0
           %! baca.make_skeleton()
         r2
@@ -1333,7 +1333,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1349,7 +1349,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1365,7 +1365,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1374,7 +1374,7 @@ number.2.RH.Music = {
         r2
         % AFTER:
         % COMMANDS:
-          %! baca.rest_staff_position_function(2)
+          %! baca.rest_staff_position(2)
         \revert Rest.staff-position
         % CLOSING:
         % COMMANDS:
@@ -1397,7 +1397,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1406,7 +1406,7 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1427,7 +1427,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1436,7 +1436,7 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1457,7 +1457,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1466,7 +1466,7 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1487,7 +1487,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1496,7 +1496,7 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1529,7 +1529,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1545,13 +1545,13 @@ number.2.RH.Music = {
             % BEFORE:
             % COMMANDS:
               %! +SCORE
-              %! baca.literal_function()
+              %! baca.literal()
         %%% \once \override TupletNumber.font-size = -2
               %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1578,7 +1578,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1594,13 +1594,13 @@ number.2.RH.Music = {
             % BEFORE:
             % COMMANDS:
               %! +SCORE
-              %! baca.literal_function()
+              %! baca.literal()
         %%% \once \override TupletNumber.font-size = -2
               %! baca.make_skeleton()
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1627,7 +1627,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1636,7 +1636,7 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1657,7 +1657,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1666,7 +1666,7 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1699,7 +1699,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1708,7 +1708,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1719,7 +1719,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1728,7 +1728,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1739,7 +1739,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1748,7 +1748,7 @@ number.2.RH.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % CLOSING:
         % COMMANDS:
@@ -1779,7 +1779,7 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1788,7 +1788,7 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1797,7 +1797,7 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % CLOSING:
             % COMMANDS:
@@ -1822,7 +1822,7 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1831,7 +1831,7 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1840,7 +1840,7 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % CLOSING:
             % COMMANDS:
@@ -1865,7 +1865,7 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1874,7 +1874,7 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1883,7 +1883,7 @@ number.2.RH.Music = {
             d''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % CLOSING:
             % COMMANDS:
@@ -1912,12 +1912,12 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % START_BEAM:
           %! SPANNER_START
           %! baca._do_spanner_indicator_command(1)
-          %! baca.beam_function()
+          %! baca.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1926,7 +1926,7 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1935,7 +1935,7 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1944,7 +1944,7 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1955,7 +1955,7 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1964,7 +1964,7 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1973,7 +1973,7 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1982,7 +1982,7 @@ number.2.RH.Music = {
         d''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % CLOSING:
         % COMMANDS:
@@ -2013,7 +2013,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2022,7 +2022,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2031,7 +2031,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2040,7 +2040,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2049,7 +2049,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % CLOSING:
             % COMMANDS:
@@ -2074,7 +2074,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2083,7 +2083,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2092,7 +2092,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2101,7 +2101,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2110,7 +2110,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2119,7 +2119,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % CLOSING:
             % COMMANDS:
@@ -2144,7 +2144,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2153,7 +2153,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2162,7 +2162,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2171,7 +2171,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2180,7 +2180,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2189,7 +2189,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \upbow
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2198,7 +2198,7 @@ number.2.RH.Music = {
             d''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.alternate_bow_strokes_function()
+              %! baca.alternate_bow_strokes()
             - \downbow
             % CLOSING:
             % COMMANDS:
@@ -2215,7 +2215,7 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2224,7 +2224,7 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2233,7 +2233,7 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2242,7 +2242,7 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2251,7 +2251,7 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2260,7 +2260,7 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2269,7 +2269,7 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2278,12 +2278,12 @@ number.2.RH.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \downbow
         % STOP_BEAM:
           %! SPANNER_STOP
           %! baca._do_spanner_indicator_command(2)
-          %! baca.beam_function()
+          %! baca.beam()
         ]
         % CLOSING:
         % COMMANDS:
@@ -2304,19 +2304,19 @@ number.2.RH.Music = {
         % [RH.Music measure 25]
         % BEFORE:
         % COMMANDS:
-          %! baca.literal_function()
+          %! baca.literal()
         \override DynamicLineSpanner.staff-padding = 7
-          %! baca.literal_function()
+          %! baca.literal()
         \stopStaff
-          %! baca.literal_function()
+          %! baca.literal()
         \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)
-          %! baca.literal_function()
+          %! baca.literal()
         \startStaff
           %! baca.make_skeleton()
         d''1
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.stem_tremolo_function()
+          %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
           %! EXPLICIT_DYNAMIC_COLOR
@@ -2325,24 +2325,24 @@ number.2.RH.Music = {
           %! SPANNER_STOP
           %! baca.PiecewiseCommand._call(2)
           %! baca._set_status_tag()
-          %! baca.hairpin_function()
+          %! baca.hairpin()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! SPANNER_STOP
           %! baca.PiecewiseCommand._call(2)
           %! baca._set_status_tag()
-          %! baca.hairpin_function()
+          %! baca.hairpin()
         \baca-mp-parenthesized
-          %! baca.alternate_bow_strokes_function()
+          %! baca.alternate_bow_strokes()
         - \upbow
         % MARKUP:
-          %! baca.markup_function()
+          %! baca.markup()
         - \tweak staff-padding 3.5
-          %! baca.markup_function()
+          %! baca.markup()
         _ \huitzil-trem-moderato-markup
-          %! baca.markup_function()
+          %! baca.markup()
         - \tweak staff-padding 6
-          %! baca.markup_function()
+          %! baca.markup()
         ^ \huitzil-sliding-from-bridge-onto-string-markup
         % SPANNER_STARTS:
           %! EXPLICIT_DYNAMIC_COLOR
@@ -2351,25 +2351,25 @@ number.2.RH.Music = {
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca._set_status_tag()
-          %! baca.hairpin_function()
+          %! baca.hairpin()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca._set_status_tag()
-          %! baca.hairpin_function()
+          %! baca.hairpin()
         - \tweak stencil #constante-hairpin
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca._set_status_tag()
-          %! baca.hairpin_function()
+          %! baca.hairpin()
         \<
           %! abjad.glissando(7)
-          %! baca.glissando_function()
+          %! baca.glissando()
         \glissando
         % COMMANDS:
-          %! baca.tuplet_bracket_down_function(2)
+          %! baca.tuplet_bracket_down(2)
         \revert TupletBracket.direction
         % CLOSING:
         % COMMANDS:
@@ -2427,7 +2427,7 @@ number.2.RH.Music = {
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(3)
       %! baca._style_anchor_notes()
-      %! baca.hairpin_function()
+      %! baca.hairpin()
     \!
     % MARKUP:
       %! ANCHOR_NOTE
@@ -2442,7 +2442,7 @@ number.2.RH.Music = {
       %! SHOW_TO_JOIN_BROKEN_SPANNERS
       %! abjad.glissando(7)
       %! baca._style_anchor_notes()
-      %! baca.glissando_function()
+      %! baca.glissando()
     %@% \glissando
     % CLOSING:
     % COMMANDS:
@@ -2482,13 +2482,13 @@ number.2.Cello.Music = {
     % [Cello.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.mmrest_transparent_function(1)
+      %! baca.mmrest_transparent(1)
     \override MultiMeasureRest.transparent = ##t
-      %! baca.time_signature_stencil_false_function(1)
+      %! baca.time_signature_stencil_false(1)
     \override Score.TimeSignature.stencil = ##f
-      %! baca.literal_function()
+      %! baca.literal()
     \stopStaff
-      %! baca.literal_function()
+      %! baca.literal()
     \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
     % OPENING:
     % COMMANDS:
@@ -2529,9 +2529,9 @@ number.2.Cello.Music = {
     % [Cello.Music measure 2]
     % BEFORE:
     % COMMANDS:
-      %! baca.bar_line_transparent_function(1)
+      %! baca.bar_line_transparent(1)
     \override Score.BarLine.transparent = ##t
-      %! baca.span_bar_transparent_function(1)
+      %! baca.span_bar_transparent(1)
     \override Score.SpanBar.transparent = ##t
       %! baca.make_mmrests(1)
     R1 * 3/4
@@ -2805,7 +2805,7 @@ number.2.Cello.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"2" #"4"
     % COMMANDS:
-      %! baca.mmrest_transparent_function(2)
+      %! baca.mmrest_transparent(2)
     \revert MultiMeasureRest.transparent
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2820,21 +2820,21 @@ number.2.Cello.Music = {
         % [Cello.Music measure 25]
         % BEFORE:
         % COMMANDS:
-          %! baca.literal_function()
+          %! baca.literal()
         \stopStaff
-          %! baca.literal_function()
+          %! baca.literal()
         \once \override Staff.StaffSymbol.line-count = 5
-          %! baca.literal_function()
+          %! baca.literal()
         \startStaff
           %! baca.make_skeleton()
         b,,1
         % AFTER:
         % COMMANDS:
-          %! baca.bar_line_transparent_function(2)
+          %! baca.bar_line_transparent(2)
         \revert Score.BarLine.transparent
-          %! baca.span_bar_transparent_function(2)
+          %! baca.span_bar_transparent(2)
         \revert Score.SpanBar.transparent
-          %! baca.time_signature_stencil_false_function(2)
+          %! baca.time_signature_stencil_false(2)
         \revert Score.TimeSignature.stencil
         % CLOSING:
         % COMMANDS:

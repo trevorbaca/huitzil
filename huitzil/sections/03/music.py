@@ -58,7 +58,7 @@ def GLOBALS(skips):
         (26 - 1, "88"),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
 
 
 def VC(voice, accumulator):
@@ -145,114 +145,114 @@ def RH(voice):
     # 26
     music = baca.make_monads("1/2")
     voice.extend(music)
-    baca.append_anchor_note_function(voice)
+    baca.append_anchor_note(voice)
 
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.mmrest_transparent_function(o.mmrests())
-        baca.time_signature_stencil_false_function(o)
-        baca.bar_line_transparent_function(o)
-        baca.span_bar_transparent_function(o)
+        baca.mmrest_transparent(o.mmrests())
+        baca.time_signature_stencil_false(o)
+        baca.bar_line_transparent(o)
+        baca.span_bar_transparent(o)
 
 
 def rh(m):
     with baca.scope(m[1]) as o:
-        baca.staff_positions_function(o, [6, 6, 4])
+        baca.staff_positions(o, [6, 6, 4])
     with baca.scope(m.get(1, 3)) as o:
         for leaf in o:
             library.sforzando(leaf, r"\baca-mfz-markup")
     with baca.scope(m[2]) as o:
-        baca.staff_positions_function(o, [6, 6, 4])
+        baca.staff_positions(o, [6, 6, 4])
     with baca.scope(m[3]) as o:
-        baca.staff_positions_function(o, [6, 6, 4])
+        baca.staff_positions(o, [6, 6, 4])
     with baca.scope(m[4]) as o:
-        baca.hairpin_function(
+        baca.hairpin(
             baca.select.rleaves(o, count=2),
             "p -- !",
         )
-        baca.staff_positions_function(o, [4, 4, 2])
+        baca.staff_positions(o, [4, 4, 2])
     with baca.scope(m.get(4, 5)) as o:
-        baca.markup_function(o.pleaf(0), r"\baca-fz-markup", direction=abjad.DOWN)
+        baca.markup(o.pleaf(0), r"\baca-fz-markup", direction=abjad.DOWN)
         for leaf in o.pleaves()[1:-3]:
-            baca.markup_function(leaf, r"\baca-mpz-markup", direction=abjad.DOWN)
+            baca.markup(leaf, r"\baca-mpz-markup", direction=abjad.DOWN)
         for leaf in o.pleaves()[-3:]:
-            baca.markup_function(leaf, r"\baca-mfz-markup", direction=abjad.DOWN)
+            baca.markup(leaf, r"\baca-mfz-markup", direction=abjad.DOWN)
     with baca.scope(m[5]) as o:
-        baca.hairpin_function(o.leaves()[1:], "pp < mf")
-        baca.staff_positions_function(o, [4, 4, 2, 6, 4, 2])
+        baca.hairpin(o.leaves()[1:], "pp < mf")
+        baca.staff_positions(o, [4, 4, 2, 6, 4, 2])
     with baca.scope(m[6]) as o:
-        baca.hairpin_function(
+        baca.hairpin(
             o.rleaves(),
             "p -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
         )
-        baca.markup_function(o.pleaf(0), r"\baca-fz-markup", direction=abjad.DOWN)
+        baca.markup(o.pleaf(0), r"\baca-fz-markup", direction=abjad.DOWN)
         for leaf in o.pleaves()[1:]:
-            baca.markup_function(leaf, r"\baca-mpz-markup", direction=abjad.DOWN)
-        baca.staff_positions_function(o, [4, 4, 2, 6, 4, 2])
+            baca.markup(leaf, r"\baca-mpz-markup", direction=abjad.DOWN)
+        baca.staff_positions(o, [4, 4, 2, 6, 4, 2])
     with baca.scope(m[7]) as o:
-        baca.staff_positions_function(o, [2])
+        baca.staff_positions(o, [2])
     with baca.scope(m.get(7, 9)) as o:
         for leaf in o.leaves():
-            baca.markup_function(leaf, r"\baca-fz-markup", direction=abjad.DOWN)
-        baca.hairpin_function(
+            baca.markup(leaf, r"\baca-fz-markup", direction=abjad.DOWN)
+        baca.hairpin(
             o.rleaves(),
             "mf -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
         )
     with baca.scope(m[8]) as o:
-        baca.staff_positions_function(o, [2, 2, 0])
+        baca.staff_positions(o, [2, 2, 0])
     with baca.scope(m[9]) as o:
-        baca.staff_positions_function(o, [2])
+        baca.staff_positions(o, [2])
     with baca.scope(m[10]) as o:
-        baca.staff_positions_function(o, [2, 6])
+        baca.staff_positions(o, [2, 6])
     with baca.scope(m.get(10, 11)) as o:
         for leaf in o.leaves()[:4]:
             library.sforzando(leaf, r"\baca-mfz-markup")
         for leaf in o.leaves()[4:]:
             library.sforzando(leaf, r"\baca-mpz-markup")
-        baca.text_spanner_function(
+        baca.text_spanner(
             baca.select.rleak(o.leaves()[:4]),
             "(trem. mod.) => trem. stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
         )
     with baca.scope(m.get(10, 12)) as o:
-        baca.hairpin_function(
+        baca.hairpin(
             o.rleaves(),
             "mp > ppp -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             pieces=lambda _: baca.select.lparts(_, [4, 5 + 1]),
         )
     with baca.scope(m[11]) as o:
-        baca.staff_positions_function(o, [4, 2, 6, 4, 2, 0])
+        baca.staff_positions(o, [4, 2, 6, 4, 2, 0])
     with baca.scope(m[12]) as o:
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m.get(12, 16)) as o:
         for leaf in o:
             library.sforzando(leaf, r"\baca-ffz-markup")
     with baca.scope(m[13]) as o:
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m.get(13, 16)) as o:
-        baca.hairpin_function(o, "p < mf")
-        baca.text_spanner_function(
+        baca.hairpin(o, "p < mf")
+        baca.text_spanner(
             o,
             "sub. trem. mod. => più stretto => più largo => più stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=lambda _: baca.select.lparts(_, [1, 1, 2]),
         )
     with baca.scope(m[14]) as o:
-        baca.staff_positions_function(o, [-2])
+        baca.staff_positions(o, [-2])
     with baca.scope(m[15]) as o:
-        baca.staff_positions_function(o, [-2])
+        baca.staff_positions(o, [-2])
     with baca.scope(m[16]) as o:
-        baca.staff_positions_function(o, [-4])
+        baca.staff_positions(o, [-4])
     with baca.scope(m[17]) as o:
         library.sforzando(o, r"\baca-fz-markup")
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m.get(17, 18)) as o:
-        baca.hairpin_function(o, "mp >", bookend=False)
-        baca.text_spanner_function(
+        baca.hairpin(o, "mp >", bookend=False)
+        baca.text_spanner(
             o.rleaves(),
             "sub. trem. mod. => trem. stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
@@ -260,23 +260,23 @@ def rh(m):
     with baca.scope(m[18]) as o:
         for leaf in o:
             library.sforzando(leaf, r"\baca-mfz-markup")
-        baca.staff_positions_function(o, [6, 4, 2])
+        baca.staff_positions(o, [6, 4, 2])
     with baca.scope(m[19]) as o:
-        baca.hairpin_function(
+        baca.hairpin(
             baca.select.rleaves(o, count=2),
             "ppp -- !",
         )
         for leaf in o:
             library.sforzando(leaf, r"\baca-mpz-markup")
-        wrappers = baca.hairpin_to_barline_function(o)
+        wrappers = baca.hairpin_to_barline(o)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
-        baca.staff_positions_function(o, [6, 4, 2, 0])
+        baca.staff_positions(o, [6, 4, 2, 0])
     with baca.scope(m[20]) as o:
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m[21]) as o:
-        baca.staff_positions_function(o, [0])
+        baca.staff_positions(o, [0])
     with baca.scope(m.get(20, 26)) as o:
-        baca.hairpin_function(
+        baca.hairpin(
             baca.select.rleak(o.leaves()[1:]),
             "p < f -- !",
             pieces=lambda _: baca.select.lparts(_, [5, 1 + 1]),
@@ -284,7 +284,7 @@ def rh(m):
         for leaf in o:
             library.sforzando(leaf, r"\baca-ffz-markup")
     with baca.scope(m.get(21, 26)) as o:
-        baca.text_spanner_function(
+        baca.text_spanner(
             o,
             "sub. trem. mod. => più stretto => più largo => più stretto =>"
             " più largo => trem. mod.",
@@ -292,30 +292,30 @@ def rh(m):
             pieces=lambda _: baca.select.lparts(_, [1, 1, 1, 1, 2]),
         )
     with baca.scope(m[22]) as o:
-        baca.staff_positions_function(o, [-2])
+        baca.staff_positions(o, [-2])
     with baca.scope(m[23]) as o:
-        baca.staff_positions_function(o, [-2])
+        baca.staff_positions(o, [-2])
     with baca.scope(m[24]) as o:
-        baca.staff_positions_function(o, [-4])
+        baca.staff_positions(o, [-4])
     with baca.scope(m[25]) as o:
-        baca.staff_positions_function(o, [-4])
+        baca.staff_positions(o, [-4])
     with baca.scope(m[26]) as o:
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -0.75"),
             abjad.Tweak(r"- \tweak staff-padding 2"),
         )
-        wrappers = baca.hairpin_to_barline_function(o)
+        wrappers = baca.hairpin_to_barline(o)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
-        baca.staff_positions_function(o, [-6])
+        baca.staff_positions(o, [-6])
     with baca.scope(m.leaves()) as o:
-        wrappers = baca.literal_function(
+        wrappers = baca.literal(
             o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
         )
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
-        wrappers = baca.literal_function(
+        wrappers = baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -325,12 +325,12 @@ def rh(m):
             ],
         )
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
-        baca.stem_tremolo_function(o.pleaves())
-        baca.text_script_parent_alignment_x_function(o, 0)
-        baca.text_script_self_alignment_x_function(o, 0)
-        baca.text_script_staff_padding_function(o, 4)
+        baca.stem_tremolo(o.pleaves())
+        baca.text_script_parent_alignment_x(o, 0)
+        baca.text_script_self_alignment_x(o, 0)
+        baca.text_script_staff_padding(o, 4)
     with baca.scope(m.leaves()) as o:
-        baca.glissando_function(o)
+        baca.glissando(o)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

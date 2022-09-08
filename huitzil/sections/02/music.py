@@ -47,7 +47,7 @@ def make_empty_score():
 
 
 def GLOBALS(skips):
-    baca.metronome_mark_function(
+    baca.metronome_mark(
         skips[1 - 1], library.metronome_marks["44"], library.manifests
     )
 
@@ -109,12 +109,12 @@ def RH(voice):
     # 25
     music = baca.make_skeleton("{ c1 }")
     voice.extend(music)
-    baca.append_anchor_note_function(voice)
+    baca.append_anchor_note(voice)
 
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.literal_function(
+        baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -122,13 +122,13 @@ def vc(m):
                 r"\startStaff",
             ],
         )
-        baca.mmrest_transparent_function(o.mmrests())
+        baca.mmrest_transparent(o.mmrests())
         with baca.scope(o.leaves()[1:]) as u:
-            baca.bar_line_transparent_function(u)
-            baca.span_bar_transparent_function(u)
-        baca.time_signature_stencil_false_function(o)
+            baca.bar_line_transparent(u)
+            baca.span_bar_transparent(u)
+        baca.time_signature_stencil_false(o)
     with baca.scope(m[25]) as o:
-        baca.literal_function(
+        baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -136,35 +136,35 @@ def vc(m):
                 r"\startStaff",
             ],
         )
-        baca.pitch_function(o, "B1")
+        baca.pitch(o, "B1")
 
 
 def rh(m):
     with baca.scope(m.get(1, 4)) as o:
-        baca.rest_staff_position_function(o.rests(), 0)
+        baca.rest_staff_position(o.rests(), 0)
     with baca.scope(m.get(19, 24)) as o:
-        baca.beam_function(o)
+        baca.beam(o)
     for n in [9, 10]:
         with baca.scope(m[n]) as o:
-            wrappers = baca.literal_function(
+            wrappers = baca.literal(
                 o.pleaf(1),
                 r"\once \override TupletNumber.font-size = -2",
             )
             baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m[25]) as o:
-        baca.glissando_function(
+        baca.glissando(
             o.rleaves(),
             right_broken=True,
         ),
-        baca.hairpin_function(
+        baca.hairpin(
             o.rleaves(),
             "(mp) -- !",
         )
-        baca.literal_function(
+        baca.literal(
             o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
         )
-        baca.literal_function(
+        baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -173,49 +173,49 @@ def rh(m):
                 r"\startStaff",
             ],
         ),
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-sliding-from-bridge-onto-string-markup",
             abjad.Tweak(r"- \tweak staff-padding 6"),
         ),
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-trem-moderato-markup",
             abjad.Tweak(r"- \tweak staff-padding 3.5"),
             direction=abjad.DOWN,
         ),
-        baca.stem_tremolo_function(o)
-        baca.staff_position_function(
+        baca.stem_tremolo(o)
+        baca.staff_position(
             o.rleaf(-1),
             6,
             allow_hidden=True,
         )
     with baca.scope(m.leaves()) as o:
-        baca.alternate_bow_strokes_function(o.pheads())
-        baca.literal_function(
+        baca.alternate_bow_strokes(o.pheads())
+        baca.literal(
             o.leaf(0),
             [
                 r"\once \override RHStaff.StaffSymbol.line-positions ="
                 " #'(8.2 8 7.8 -5.8 -6 -6.2)"
             ],
         )
-        baca.staff_lines_function(o.leaf(0), 7)
-        baca.dynamic_function(
+        baca.staff_lines(o.leaf(0), 7)
+        baca.dynamic(
             o.pleaf(0),
             "mp-sempre",
             abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
         )
-        baca.literal_function(
+        baca.literal(
             o.leaf(0), r"\override DynamicLineSpanner.staff-padding = 2.5"
         )
-        baca.literal_function(o.leaf(0), r"\override Score.BarNumber.transparent = ##t")
-        baca.markup_function(
+        baca.literal(o.leaf(0), r"\override Score.BarNumber.transparent = ##t")
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-on-bridge-markup",
             abjad.Tweak(r"- \tweak staff-padding 3"),
         ),
-        baca.staff_position_function(o, 8)
-        baca.tuplet_bracket_down_function(o)
+        baca.staff_position(o, 8)
+        baca.tuplet_bracket_down(o)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

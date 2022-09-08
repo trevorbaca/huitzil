@@ -34,8 +34,8 @@ def make_empty_score():
 def GLOBALS(skips):
     for index, item in ((1 - 1, "66"),):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
-    baca.bar_line_function(skips[10 - 1], "|.")
+        baca.metronome_mark(skip, item, library.manifests)
+    baca.bar_line(skips[10 - 1], "|.")
 
 
 def VC(voice, accumulator):
@@ -47,16 +47,16 @@ def RH(voice):
     # (1, 12)
     music = baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2")
     for pleaf in baca.select.pleaves(music)[1:]:
-        baca.repeat_tie_function(pleaf)
+        baca.repeat_tie(pleaf)
     voice.extend(music)
 
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.mmrest_transparent_function(o.mmrests())
-        baca.bar_line_transparent_function(o)
-        baca.span_bar_transparent_function(o)
-        wrappers = baca.literal_function(
+        baca.mmrest_transparent(o.mmrests())
+        baca.bar_line_transparent(o)
+        baca.span_bar_transparent(o)
+        wrappers = baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -65,9 +65,9 @@ def vc(m):
             ],
         )
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
-        baca.time_signature_stencil_false_function(o)
+        baca.time_signature_stencil_false(o)
     with baca.scope(m[10]) as o:
-        baca.literal_function(
+        baca.literal(
             o.leaf(0),
             [
                 r"\once \override Score.RehearsalMark.direction = #down",
@@ -76,7 +76,7 @@ def vc(m):
             ],
             site="after",
         )
-        baca.literal_function(
+        baca.literal(
             o.leaf(0),
             [
                 r"\override Score.BarLine.X-extent = #'(0 . 8)",
@@ -89,8 +89,8 @@ def vc(m):
 
 def rh(m):
     with baca.scope(m.get(1, 12)) as o:
-        baca.staff_position_function(o, 8)
-        baca.text_spanner_function(
+        baca.staff_position(o, 8)
+        baca.text_spanner(
             o,
             "larg. => strett. =>",
             abjad.Tweak(r"- \tweak staff-padding 6"),
@@ -98,7 +98,7 @@ def rh(m):
         )
     with baca.scope(m.get(1, 10)) as o:
         library.sforzando(o.leaf(0), r"\baca-mpz-markup")
-        baca.hairpin_function(
+        baca.hairpin(
             o,
             "mp > pp <",
             abjad.Tweak(r"- \tweak to-barline ##t"),
@@ -106,19 +106,19 @@ def rh(m):
             pieces=lambda _: baca.select.clparts(_, [1]),
         )
     with baca.scope(m[10]) as o:
-        baca.literal_function(
+        baca.literal(
             o.leaf(0),
             r"\override Staff.BarLine.bar-extent = #'(-4 . 4)",
             site="after",
         )
     with baca.scope(m.leaves()) as o:
         # TODO: fix right-broken text spanners and replace this:
-        baca.literal_function(o.leaf(0), r"<> \stopTextSpan")
-        baca.literal_function(
+        baca.literal(o.leaf(0), r"<> \stopTextSpan")
+        baca.literal(
             o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
         )
-        wrappers = baca.literal_function(
+        wrappers = baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -128,10 +128,10 @@ def rh(m):
             ],
         )
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
-        baca.stem_tremolo_function(o.pleaves())
-        baca.text_script_parent_alignment_x_function(o, 0)
-        baca.text_script_self_alignment_x_function(o, 0)
-        baca.text_script_staff_padding_function(o, 4)
+        baca.stem_tremolo(o.pleaves())
+        baca.text_script_parent_alignment_x(o, 0)
+        baca.text_script_self_alignment_x(o, 0)
+        baca.text_script_staff_padding(o, 4)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

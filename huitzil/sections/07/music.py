@@ -54,7 +54,7 @@ def GLOBALS(skips):
         (25 - 1, baca.Ritardando()),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
 
 
 def VC(voice, accumulator):
@@ -69,7 +69,7 @@ def VC(voice, accumulator):
     # (25, 26)
     music = baca.make_skeleton("{ c1 * 2 }")
     voice.extend(music)
-    baca.append_anchor_note_function(voice)
+    baca.append_anchor_note(voice)
 
 
 def RH(voice):
@@ -85,23 +85,23 @@ def RH(voice):
     # (25, 26))
     music = baca.make_monads("1 1")
     voice.extend(music)
-    baca.append_anchor_note_function(voice)
+    baca.append_anchor_note(voice)
 
 
 def vc(m):
     with baca.scope(m[1]) as o:
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\baca-string-iii-markup",
             abjad.Tweak(r"- \tweak padding 2.5"),
             direction=abjad.DOWN,
         )
-        baca.pitch_function(o, "A2")
+        baca.pitch(o, "A2")
     with baca.scope(m.get(14, 24)) as o:
-        baca.pitch_function(o, "A2")
-        baca.repeat_tie_function(o.pleaf(0))
+        baca.pitch(o, "A2")
+        baca.repeat_tie(o.pleaf(0))
     with baca.scope(m.get(25, 26)) as o:
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-string-three-to-four-markup",
             abjad.Tweak(r"- \tweak padding 2.5"),
@@ -109,10 +109,10 @@ def vc(m):
             abjad.Tweak(r"- \tweak self-alignment-X -0.05"),
             direction=abjad.DOWN,
         )
-        baca.pitch_function(o, "G2")
+        baca.pitch(o, "G2")
     with baca.scope(m.leaves()) as o:
-        baca.clef_function(o.leaf(0), "bass")
-        baca.literal_function(
+        baca.clef(o.leaf(0), "bass")
+        baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -120,19 +120,19 @@ def vc(m):
                 r"\startStaff",
             ],
         )
-        baca.mmrest_transparent_function(o.mmrests())
-        baca.bar_line_transparent_function(o)
-        baca.span_bar_transparent_function(o)
-        baca.pitch_function(
+        baca.mmrest_transparent(o.mmrests())
+        baca.bar_line_transparent(o)
+        baca.span_bar_transparent(o)
+        baca.pitch(
             o.rleaf(-1),
             "A1",
             allow_hidden=True,
         ),
-        baca.time_signature_stencil_false_function(o)
+        baca.time_signature_stencil_false(o)
     with baca.scope(m.get(14, 24)) as o:
-        baca.glissando_function(o.rleaves())
+        baca.glissando(o.rleaves())
     with baca.scope(m.get(25, 26)) as o:
-        baca.glissando_function(
+        baca.glissando(
             o.rleaves(),
             right_broken=True,
         )
@@ -140,43 +140,43 @@ def vc(m):
 
 def rh(m):
     with baca.scope(m.get(1, 8)) as o:
-        baca.staff_positions_function(o, [-6, -6, -8, -8, -10, -10, -12, -12])
+        baca.staff_positions(o, [-6, -6, -8, -8, -10, -10, -12, -12])
     with baca.scope(m.get(1, 20)) as o:
         for leaf in o:
             library.sforzando(leaf, r"\baca-fz-markup")
     with baca.scope(m.get(1, 13)) as o:
-        baca.hairpin_function(o, "mp > pp")
+        baca.hairpin(o, "mp > pp")
     with baca.scope(m.get(14, 26)) as o:
-        baca.hairpin_function(o, "(pp) < ff")
+        baca.hairpin(o, "(pp) < ff")
     with baca.scope(m.get(9, 16)) as o:
-        baca.staff_positions_function(
+        baca.staff_positions(
             o,
             [-14, -14, -16, -16, -18, -18, -16, -16],
             allow_out_of_range=True,
         )
     with baca.scope(m[13]) as o:
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-close-to-lh-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -0.5"),
             abjad.Tweak(r"- \tweak staff-padding 2"),
         )
     with baca.scope(m[14]) as o:
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-descending-fingerboard-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -1"),
             abjad.Tweak(r"- \tweak staff-padding 2"),
         )
     with baca.scope(m.get(17, 24)) as o:
-        baca.staff_positions_function(o, [-14, -14, -12, -12, -10, -10, -8, -8])
+        baca.staff_positions(o, [-14, -14, -12, -12, -10, -10, -8, -8])
     with baca.scope(m.get(25, 26)) as o:
-        baca.hairpin_function(
+        baca.hairpin(
             baca.select.rleak(o.leaves()[-1:]),
             ">",
             right_broken=True,
         )
-        baca.literal_function(
+        baca.literal(
             o.leaf(0),
             [
                 r"\stopStaff",
@@ -185,24 +185,24 @@ def rh(m):
                 r"\startStaff",
             ],
         )
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-column-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -0.5"),
             abjad.Tweak(r"- \tweak staff-padding 2"),
         )
-        baca.parenthesize_function(o.pleaf(-1))
-        baca.staff_positions_function(
+        baca.parenthesize(o.pleaf(-1))
+        baca.staff_positions(
             o.rleaves(),
             [-6, 0, 6],
             allow_hidden=True,
         )
     with baca.scope(m.leaves()) as o:
-        baca.glissando_function(
+        baca.glissando(
             o.rleaves(),
             right_broken=True,
         )
-        baca.literal_function(
+        baca.literal(
             o.leaf(0),
             [
                 r"\once \override RHStaff.StaffSymbol.line-positions ="
@@ -211,27 +211,27 @@ def rh(m):
                 "   #f  #f #f  #f   #f #f   #t #t  #t  #t  #t  #f    #f  #f)",
             ],
         ),
-        baca.staff_lines_function(o.leaf(0), 14)
-        baca.literal_function(
+        baca.staff_lines(o.leaf(0), 14)
+        baca.literal(
             o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
         )
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-ascending-fingerboard-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -1"),
             abjad.Tweak(r"- \tweak staff-padding 4.5"),
         )
-        baca.markup_function(
+        baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -1"),
             abjad.Tweak(r"- \tweak staff-padding 1"),
         )
-        baca.stem_tremolo_function(o.pleaves())
-        baca.text_script_parent_alignment_x_function(o, 0)
-        baca.text_script_self_alignment_x_function(o, 0)
-        baca.text_script_staff_padding_function(o, 4)
+        baca.stem_tremolo(o.pleaves())
+        baca.text_script_parent_alignment_x(o, 0)
+        baca.text_script_self_alignment_x(o, 0)
+        baca.text_script_staff_padding(o, 4)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):
