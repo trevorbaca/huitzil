@@ -93,13 +93,12 @@ def _make_inner_tuplets(note_lists, extra_counts):
             fraction = fraction.with_denominator(128)
             numerators.append(fraction.numerator)
         ratio = abjad.Ratio(numerators)
-        maker = rmakers.stack(
-            rmakers.tuplet([ratio]),
-            rmakers.rewrite_dots(),
-            rmakers.rewrite_sustained(),
-            rmakers.force_diminution(),
-        )
-        selection = maker([target_duration])
+        nested_music = rmakers.tuplet_function([target_duration], [ratio])
+        voice = rmakers.wrap_in_time_signature_staff(nested_music, [target_duration])
+        rmakers.rewrite_dots_function(voice)
+        rmakers.rewrite_sustained_function(voice)
+        rmakers.force_diminution_function(voice)
+        selection = abjad.mutate.eject_contents(voice)
         assert isinstance(selection, list)
         inner_tuplet = selection[0]
         if inner_tuplet.multiplier == 1:
