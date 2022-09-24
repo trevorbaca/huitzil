@@ -446,13 +446,13 @@ def make_score():
 
 
 def main():
-    arguments = baca.build.arguments()
+    environment = baca.build.read_environment(__file__, baca.build.argv())
     score, accumulator = make_score()
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
         accumulator.time_signatures,
-        baca.path.dictionaries(__file__),
+        environment,
         **baca.interpret.section_defaults(),
         activate=[
             baca.tags.CLOCK_TIME,
@@ -471,7 +471,13 @@ def main():
         local_measure_number_extra_offset=(0, -5),
         spacing_extra_offset=(0, 1),
     )
-    baca.build.persist(lilypond_file, metadata, persist, timing, arguments)
+    baca.build.persist(
+        lilypond_file,
+        environment.metadata,
+        environment.persist,
+        timing,
+        environment.arguments,
+    )
 
 
 if __name__ == "__main__":
