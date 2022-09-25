@@ -423,7 +423,7 @@ def make_score():
         _voice_abbreviations=library.voice_abbreviations,
         _voice_names=voice_names,
     )
-    baca.interpret.set_up_score(
+    baca.section.set_up_score(
         score,
         accumulator.time_signatures,
         accumulator,
@@ -435,7 +435,7 @@ def make_score():
     GLOBALS(score["Skips"])
     VC(accumulator.voice("vc"))
     RH(accumulator.voice("rh"), accumulator)
-    cache = baca.interpret.cache_leaves(
+    cache = baca.section.cache_leaves(
         score,
         len(accumulator.time_signatures),
         library.voice_abbreviations,
@@ -453,7 +453,7 @@ def main():
         library.manifests,
         accumulator.time_signatures,
         environment,
-        **baca.interpret.section_defaults(),
+        **baca.section.section_defaults(),
         activate=[
             baca.tags.CLOCK_TIME,
             baca.tags.LOCAL_MEASURE_NUMBER,
