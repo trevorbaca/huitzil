@@ -413,7 +413,7 @@ def rh(m):
         baca.clef(o.leaf(0), "percussion")
 
 
-@baca.build.timed
+@baca.build.timed("make_score")
 def make_score():
     score = library.make_empty_score()
     voice_names = baca.accumulator.get_voice_names(score)
