@@ -367,8 +367,8 @@ def VC(voice):
     voice.extend(music)
 
 
-def RH(voice, accumulator):
-    music = baca.make_mmrests(accumulator.get())
+def RH(voice, measures):
+    music = baca.make_mmrests(measures())
     voice.extend(music)
 
 
@@ -416,43 +416,38 @@ def rh(m):
 @baca.build.timed("make_score")
 def make_score():
     score = library.make_empty_score()
-    voice_names = baca.accumulator.get_voice_names(score)
+    voices = baca.section.cache_voices(score, library.voice_abbreviations)
     music = make_all_music()
     time_signatures = make_time_signatures(music)
-    accumulator = baca.CommandAccumulator(
-        time_signatures=time_signatures,
-        _voice_abbreviations=library.voice_abbreviations,
-        _voice_names=voice_names,
-    )
+    measures = baca.measures(time_signatures)
     baca.section.set_up_score(
         score,
-        accumulator.time_signatures,
-        accumulator,
+        measures(),
         append_anchor_skip=True,
         always_make_global_rests=True,
         first_section=True,
         manifests=library.manifests,
     )
     GLOBALS(score["Skips"])
-    VC(accumulator.voice("vc"))
-    RH(accumulator.voice("rh"), accumulator)
+    VC(voices("vc"))
+    RH(voices("rh"), measures)
     cache = baca.section.cache_leaves(
         score,
-        len(accumulator.time_signatures),
+        len(measures()),
         library.voice_abbreviations,
     )
     vc(cache["vc"])
     rh(cache["rh"])
-    return score, accumulator
+    return score, measures
 
 
 def main():
     environment = baca.build.read_environment(__file__, baca.build.argv())
     timing = baca.build.Timing()
-    score, accumulator = make_score(timing)
+    score, measures = make_score(timing)
     metadata, persist = baca.section.postprocess_score(
         score,
-        accumulator.time_signatures,
+        measures(),
         **baca.section.section_defaults(),
         activate=[
             baca.tags.CLOCK_TIME,
