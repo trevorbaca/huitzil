@@ -268,10 +268,11 @@ def main():
         spacing_extra_offset=(0, 16),
     )
     baca.build.persist_lilypond_file(
+        environment.arguments,
+        environment.section_directory,
+        environment.timing,
         lilypond_file,
         metadata,
-        environment.timing,
-        environment.arguments,
     )
 
 
