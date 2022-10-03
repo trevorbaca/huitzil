@@ -388,10 +388,11 @@ def main():
         # measure_number_extra_offset=(0, 13),
     )
     baca.build.persist_lilypond_file(
+        environment.arguments,
+        environment.section_directory,
+        environment.timing,
         lilypond_file,
         metadata,
-        environment.timing,
-        environment.arguments,
     )
 
 
