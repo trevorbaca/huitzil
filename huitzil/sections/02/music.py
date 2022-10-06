@@ -255,12 +255,11 @@ def main():
         environment=environment,
         error_on_not_yet_pitched=True,
         manifests=library.manifests,
-        tags=baca.tags.Tags(
-            activate=[
-                baca.tags.CLOCK_TIME,
-                baca.tags.LOCAL_MEASURE_NUMBER,
-            ],
-        ),
+    )
+    baca.tags.activate(
+        score,
+        baca.tags.CLOCK_TIME,
+        baca.tags.LOCAL_MEASURE_NUMBER,
     )
     lilypond_file = baca.lilypond.file(
         score,
