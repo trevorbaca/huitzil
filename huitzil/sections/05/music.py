@@ -311,11 +311,11 @@ def main():
     )
     metadata = baca.section.postprocess_score(
         score,
+        environment,
+        library.manifests,
         always_make_global_rests=True,
         do_not_require_short_instrument_names=True,
-        environment=environment,
         error_on_not_yet_pitched=True,
-        manifests=library.manifests,
     )
     baca.tags.activate(
         score,
