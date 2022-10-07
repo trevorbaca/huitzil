@@ -15,6 +15,7 @@
     "duration": "0'21''",
     "final_measure_number": 258,
     "first_measure_number": 249,
+    "has_anchor_skip": False,
     "persistent_indicators": {
         "Cello.Staff": [
             baca.Memento(
