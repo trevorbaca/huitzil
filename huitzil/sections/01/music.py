@@ -89,8 +89,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
         numerators = []
         for note in note_list:
             duration = note.written_duration
-            fraction = abjad.NonreducedFraction(duration)
-            fraction = fraction.with_denominator(128)
+            fraction = abjad.NonreducedFraction(duration).with_denominator(128)
             numerators.append(fraction.numerator)
         ratio = abjad.Ratio(numerators)
         nested_music = rmakers.tuplet([target_duration], [ratio])
