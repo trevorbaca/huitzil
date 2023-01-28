@@ -2449,7 +2449,7 @@ number.7.Cello.Music = {
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 25]
           %! baca.make_skeleton()
-        g,1 * 2
+        g,1 * 2/1
         % AFTER:
         % MARKUP:
           %! baca.markup()
