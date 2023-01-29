@@ -89,7 +89,8 @@ def _make_inner_tuplets(note_lists, extra_counts):
         numerators = []
         for note in note_list:
             duration = note.written_duration
-            fraction = abjad.NonreducedFraction(duration).with_denominator(128)
+            pair = abjad.duration.with_denominator(duration, 128)
+            fraction = abjad.NonreducedFraction(pair)
             numerators.append(fraction.numerator)
         ratio = abjad.Ratio(numerators)
         nested_music = rmakers.tuplet([target_duration], [ratio])
@@ -352,7 +353,8 @@ def make_time_signatures(music):
     measure_durations.append(current_duration)
     time_signatures = []
     for measure_duration in measure_durations:
-        duration = measure_duration.with_denominator(4)
+        pair = abjad.duration.with_denominator(measure_duration, 4)
+        duration = abjad.NonreducedFraction(pair)
         time_signatures.append(duration)
     return time_signatures
 
