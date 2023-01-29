@@ -4271,7 +4271,7 @@ number.1.Cello.Music = {
 
     % OPEN_BRACKETS:
     \tweak text #tuplet-number::calc-fraction-text
-    \times 33/36
+    \times 11/12
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4549,7 +4549,7 @@ number.1.Cello.Music = {
 
     % OPEN_BRACKETS:
     \tweak text #tuplet-number::calc-fraction-text
-    \times 15/24
+    \times 5/8
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5127,7 +5127,7 @@ number.1.Cello.Music = {
 
     % OPEN_BRACKETS:
     \tweak text #tuplet-number::calc-fraction-text
-    \times 15/24
+    \times 5/8
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5516,7 +5516,7 @@ number.1.Cello.Music = {
 
     % OPEN_BRACKETS:
     \tweak text #tuplet-number::calc-fraction-text
-    \times 15/18
+    \times 5/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:

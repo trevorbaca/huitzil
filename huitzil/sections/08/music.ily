@@ -1736,7 +1736,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1910,7 +1910,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1970,7 +1970,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1997,7 +1997,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \times 8/10
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2024,7 +2024,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \times 8/10
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2051,7 +2051,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \times 8/10
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2148,7 +2148,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2175,7 +2175,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2369,7 +2369,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2465,7 +2465,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2492,7 +2492,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2521,7 +2521,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2548,7 +2548,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \times 8/10
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2621,7 +2621,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \times 8/10
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2648,7 +2648,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \times 8/10
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2675,7 +2675,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \times 8/10
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2899,7 +2899,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2985,7 +2985,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3014,7 +3014,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3041,7 +3041,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \times 4/6
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3068,7 +3068,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \times 8/10
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3142,7 +3142,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \times 8/10
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3169,7 +3169,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \times 8/10
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3196,7 +3196,7 @@ number.8.RH.Music = {
 
     % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \times 8/10
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
