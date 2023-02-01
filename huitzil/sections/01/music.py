@@ -91,7 +91,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
             duration = note.written_duration
             pair = abjad.duration.with_denominator(duration, 128)
             numerators.append(pair[0])
-        ratio = abjad.Ratio(numerators)
+        ratio = tuple(numerators)
         nested_music = rmakers.tuplet([target_duration], [ratio])
         voice = rmakers.wrap_in_time_signature_staff(nested_music, [target_duration])
         rmakers.rewrite_dots(voice)
