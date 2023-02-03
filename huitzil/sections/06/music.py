@@ -36,8 +36,8 @@ def make_empty_score():
     ]
     score = library.make_empty_score()
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    measures = baca.section.measures(time_signatures)
-    return score, voices, measures
+    signatures = baca.section.signatures(time_signatures)
+    return score, voices, signatures
 
 
 def GLOBALS(skips):
@@ -50,8 +50,8 @@ def GLOBALS(skips):
         baca.metronome_mark(skip, item, library.manifests)
 
 
-def VC(voice, measures):
-    music = baca.make_mmrests(measures(1, 7))
+def VC(voice, signatures):
+    music = baca.make_mmrests(signatures(1, 7))
     voice.extend(music)
     # 8, 13
     music = baca.make_skeleton("{ c1 * 107/30 c1 * 1/5 }")
@@ -59,7 +59,7 @@ def VC(voice, measures):
     # 14
     music = baca.make_skeleton("{ c2 }")
     voice.extend(music)
-    music = baca.make_mmrests(measures(15, 23))
+    music = baca.make_mmrests(signatures(15, 23))
     voice.extend(music)
 
 
@@ -317,10 +317,10 @@ def rh(m):
 
 @baca.build.timed("make_score")
 def make_score(first_measure_number, previous_persistent_indicators):
-    score, voices, measures = make_empty_score()
+    score, voices, signatures = make_empty_score()
     baca.section.set_up_score(
         score,
-        measures(),
+        signatures(),
         append_anchor_skip=True,
         always_make_global_rests=True,
         first_measure_number=first_measure_number,
@@ -328,7 +328,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
         previous_persistent_indicators=previous_persistent_indicators,
     )
     GLOBALS(score["Skips"])
-    VC(voices("vc"), measures)
+    VC(voices("vc"), signatures)
     RH(voices("rh"))
     baca.section.reapply(
         voices,
@@ -337,7 +337,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
     )
     cache = baca.section.cache_leaves(
         score,
-        len(measures()),
+        len(signatures()),
         library.voice_abbreviations,
     )
     vc(cache["vc"])
