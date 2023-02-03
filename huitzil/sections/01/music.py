@@ -366,8 +366,8 @@ def VC(voice):
     voice.extend(music)
 
 
-def RH(voice, measures):
-    music = baca.make_mmrests(measures())
+def RH(voice, signatures):
+    music = baca.make_mmrests(signatures())
     voice.extend(music)
 
 
@@ -418,10 +418,10 @@ def make_score():
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     music = make_all_music()
     time_signatures = make_time_signatures(music)
-    measures = baca.section.measures(time_signatures)
+    signatures = baca.section.signatures(time_signatures)
     baca.section.set_up_score(
         score,
-        measures(),
+        signatures(),
         append_anchor_skip=True,
         always_make_global_rests=True,
         first_section=True,
@@ -429,10 +429,10 @@ def make_score():
     )
     GLOBALS(score["Skips"])
     VC(voices("vc"))
-    RH(voices("rh"), measures)
+    RH(voices("rh"), signatures)
     cache = baca.section.cache_leaves(
         score,
-        len(measures()),
+        len(signatures()),
         library.voice_abbreviations,
     )
     vc(cache["vc"])
