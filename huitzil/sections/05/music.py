@@ -201,7 +201,7 @@ def rh(m):
             o.rleaves(),
             "mp > ppp -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
-            pieces=lambda _: baca.select.lparts(_, [4, 5 + 1]),
+            the_pieces=baca.select.lparts(o.rleaves(), [4, 5 + 1]),
         )
     with baca.scope(m[11]) as o:
         baca.staff_positions(o, [4, 2, 6, 4, 2, 0])
@@ -217,7 +217,7 @@ def rh(m):
             o,
             "sub. mod. => più stretto => più largo => più stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
-            pieces=lambda _: baca.select.lparts(_, [1, 1, 2]),
+            the_pieces=baca.select.lparts(o, [1, 1, 2]),
         )
     with baca.scope(m[14]) as o:
         baca.staff_positions(o, [-2])
@@ -231,7 +231,7 @@ def rh(m):
         baca.hairpin(
             o.rleaves(),
             "p < f -- !",
-            pieces=lambda _: baca.select.lparts(_, [5, 1 + 1]),
+            the_pieces=baca.select.lparts(o.rleaves(), [5, 1 + 1]),
         )
         library.sforzando(o, r"\baca-ffz-markup")
         baca.text_spanner(
@@ -239,7 +239,7 @@ def rh(m):
             "sub. mod. => più stretto => più largo => più stretto =>"
             " più largo => trem. mod.",
             abjad.Tweak(r"- \tweak staff-padding 6"),
-            pieces=lambda _: baca.select.lparts(_, [1, 1, 1, 1, 2]),
+            the_pieces=baca.select.lparts(o, [1, 1, 1, 1, 2]),
         )
     with baca.scope(m[18]) as o:
         baca.staff_positions(o, [-2])
