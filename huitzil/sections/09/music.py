@@ -160,14 +160,15 @@ def rh(m):
         #    o.rleaves(),
         #    "mp > p <",
         #    bookend=False,
-        #    pieces=lambda _: baca.select.lparts(_, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
+        #    the_pieces=baca.select.lparts(o.rleaves(), [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
         # )
         # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
+        leaves = o.leaves()[:-1]
         baca.hairpin(
-            o.leaves()[:-1],
+            leaves,
             "mp > p <",
             # bookend=False,
-            pieces=lambda _: baca.select.lparts(_, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
+            the_pieces=baca.select.lparts(leaves, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
         )
     with baca.scope(m[3]) as o:
         library.sforzando(o.leaf(0), r"\baca-fz-markup")
@@ -220,7 +221,7 @@ def rh(m):
         baca.hairpin(
             o.rleaves(),
             "mp -- p -- pp -- p -- !",
-            pieces=lambda _: baca.select.mgroups(_, [2, 2, 4, 2 + 1]),
+            the_pieces=baca.select.mgroups(o.rleaves(), [2, 2, 4, 2 + 1]),
         )
         baca.literal(
             o.leaf(0),
@@ -251,7 +252,7 @@ def rh(m):
             "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
             abjad.Tweak(r"- \tweak staff-padding 6"),
             bookend=False,
-            pieces=lambda _: baca.select.lparts(_, [1, 1, 1, 1, 1, 1 + 1]),
+            the_pieces=baca.select.lparts(o.rleaves(), [1, 1, 1, 1, 1, 1 + 1]),
             right_broken=True,
         )
     with baca.scope(m.get(18, 23)) as o:

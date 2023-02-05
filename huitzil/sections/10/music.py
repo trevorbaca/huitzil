@@ -90,7 +90,7 @@ def rh(m):
             o,
             "larg. => strett. =>",
             abjad.Tweak(r"- \tweak staff-padding 6"),
-            pieces=lambda _: baca.select.clparts(_, [1]),
+            the_pieces=baca.select.clparts(o, [1]),
         )
     with baca.scope(m.get(1, 10)) as o:
         library.sforzando(o.leaf(0), r"\baca-mpz-markup")
@@ -99,7 +99,7 @@ def rh(m):
             "mp > pp <",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             final_hairpin=False,
-            pieces=lambda _: baca.select.clparts(_, [1]),
+            the_pieces=baca.select.clparts(o, [1]),
         )
     with baca.scope(m[10]) as o:
         baca.literal(
