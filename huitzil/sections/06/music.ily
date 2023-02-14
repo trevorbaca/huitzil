@@ -1,170 +1,121 @@
   %! baca.path.extern()
 number.6.Rests = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 1]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 2]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 3]
       %! baca._make_global_rests(1)
     R1 * 2/3
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 4]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 5]
       %! baca._make_global_rests(1)
     R1 * 4/5
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 6]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 7]
       %! baca._make_global_rests(1)
     R1 * 2/3
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 8]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 9]
       %! baca._make_global_rests(1)
     R1 * 4/5
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 10]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 11]
       %! baca._make_global_rests(1)
     R1 * 2/3
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 12]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 13]
       %! baca._make_global_rests(1)
     R1 * 4/5
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 14]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 15]
       %! baca._make_global_rests(1)
     R1 * 2/3
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 16]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 17]
       %! baca._make_global_rests(1)
     R1 * 4/5
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 18]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 19]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 20]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 21]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 22]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 23]
       %! baca._make_global_rests(1)
     R1 * 1/2
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! baca.make_global_context()
   %! baca.path.extern()
 }
@@ -172,13 +123,9 @@ number.6.Rests = {
 
   %! baca.path.extern()
 number.6.Skips = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 1]
-    % OPENING:
-    % COMMANDS:
       %! REAPPLIED_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'green4
@@ -193,8 +140,6 @@ number.6.Skips = {
     \time 1/2
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STARTS:
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
       %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
@@ -237,15 +182,11 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 2]
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -255,7 +196,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[6'53'']"
@@ -274,13 +214,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 3]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE
       %! baca._make_global_skips(2)
       %! baca._set_status_tag()
@@ -294,8 +230,6 @@ number.6.Skips = {
     \baca-time-signature-color #'blue
       %! baca._make_global_skips(1)
     s1 * 2/3
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -305,7 +239,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[6'54'']"
@@ -324,13 +257,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 4]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -340,8 +269,6 @@ number.6.Skips = {
     \time 1/2
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -351,7 +278,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[6'56'']"
@@ -370,13 +296,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 5]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE
       %! baca._make_global_skips(2)
       %! baca._set_status_tag()
@@ -390,8 +312,6 @@ number.6.Skips = {
     \baca-time-signature-color #'blue
       %! baca._make_global_skips(1)
     s1 * 4/5
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -401,7 +321,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[6'57'']"
@@ -420,13 +339,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 6]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -436,8 +351,6 @@ number.6.Skips = {
     \time 1/2
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -447,7 +360,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'00'']"
@@ -466,13 +378,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 7]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE
       %! baca._make_global_skips(2)
       %! baca._set_status_tag()
@@ -486,8 +394,6 @@ number.6.Skips = {
     \baca-time-signature-color #'blue
       %! baca._make_global_skips(1)
     s1 * 2/3
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -497,7 +403,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'01'']"
@@ -516,13 +421,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 8]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -532,8 +433,6 @@ number.6.Skips = {
     \time 1/2
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -543,7 +442,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'03'']"
@@ -562,13 +460,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 9]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE
       %! baca._make_global_skips(2)
       %! baca._set_status_tag()
@@ -582,8 +476,6 @@ number.6.Skips = {
     \baca-time-signature-color #'blue
       %! baca._make_global_skips(1)
     s1 * 4/5
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -593,7 +485,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'04'']"
@@ -612,13 +503,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 10]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -628,8 +515,6 @@ number.6.Skips = {
     \time 1/2
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -639,7 +524,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'06'']"
@@ -658,13 +542,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 11]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE
       %! baca._make_global_skips(2)
       %! baca._set_status_tag()
@@ -678,8 +558,6 @@ number.6.Skips = {
     \baca-time-signature-color #'blue
       %! baca._make_global_skips(1)
     s1 * 2/3
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -689,7 +567,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'08'']"
@@ -708,13 +585,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 12]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -724,8 +597,6 @@ number.6.Skips = {
     \time 1/2
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -735,7 +606,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'10'']"
@@ -754,13 +624,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 13]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE
       %! baca._make_global_skips(2)
       %! baca._set_status_tag()
@@ -774,8 +640,6 @@ number.6.Skips = {
     \baca-time-signature-color #'blue
       %! baca._make_global_skips(1)
     s1 * 4/5
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -785,7 +649,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'11'']"
@@ -804,13 +667,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 14]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -820,8 +679,6 @@ number.6.Skips = {
     \time 1/2
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -831,7 +688,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'13'']"
@@ -850,13 +706,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 15]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE
       %! baca._make_global_skips(2)
       %! baca._set_status_tag()
@@ -870,8 +722,6 @@ number.6.Skips = {
     \baca-time-signature-color #'blue
       %! baca._make_global_skips(1)
     s1 * 2/3
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -881,7 +731,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'14'']"
@@ -900,13 +749,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 16]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -916,8 +761,6 @@ number.6.Skips = {
     \time 1/2
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -927,7 +770,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'16'']"
@@ -946,13 +788,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 17]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE
       %! baca._make_global_skips(2)
       %! baca._set_status_tag()
@@ -966,8 +804,6 @@ number.6.Skips = {
     \baca-time-signature-color #'blue
       %! baca._make_global_skips(1)
     s1 * 4/5
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -977,7 +813,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'18'']"
@@ -996,13 +831,9 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 18]
-    % OPENING:
-    % COMMANDS:
       %! EXPLICIT_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
@@ -1012,8 +843,6 @@ number.6.Skips = {
     \time 1/2
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -1025,7 +854,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca.span_metronome_marks(3)
     - \abjad-dashed-line-with-arrow
@@ -1071,15 +899,11 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 19]
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -1089,7 +913,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'21'']"
@@ -1108,15 +931,11 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 20]
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -1126,7 +945,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'23'']"
@@ -1145,15 +963,11 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 21]
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -1163,7 +977,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'24'']"
@@ -1182,15 +995,11 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 22]
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -1202,7 +1011,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
@@ -1248,15 +1056,11 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Skips measure 23]
       %! baca._make_global_skips(1)
     s1 * 1/2
-    % AFTER:
-    % SPANNER_STOPS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     \bacaStopTextSpanCT
@@ -1266,7 +1070,6 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
-    % SPANNER_STARTS:
       %! CLOCK_TIME
       %! baca._label_clock_time()
     - \baca-start-ct-both "[7'28'']" "[7'31'']"
@@ -1285,15 +1088,11 @@ number.6.Skips = {
       %! MEASURE_NUMBER
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
       %! baca.style_anchor_skip(1)
     % [anchor skip]
-    % OPENING:
-    % COMMANDS:
       %! ANCHOR_SKIP
       %! baca.style_anchor_skip(2)
     \baca-time-signature-transparent
@@ -1305,8 +1104,6 @@ number.6.Skips = {
       %! ANCHOR_SKIP
       %! baca._make_global_skips(3)
     s1 * 1/4
-    % AFTER:
-    % SPANNER_STOPS:
       %! ANCHOR_SKIP
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -1327,17 +1124,13 @@ number.6.Skips = {
       %! baca._label_measure_numbers()
       %! baca.style_anchor_skip(1)
     %@% \bacaStopTextSpanMN
-    % COMMANDS:
       %! ANCHOR_SKIP
       %! baca.style_anchor_skip(3)
     \once \override Score.BarLine.transparent = ##t
       %! ANCHOR_SKIP
       %! baca.style_anchor_skip(3)
     \once \override Score.SpanBar.transparent = ##t
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! baca.make_global_context()
   %! baca.path.extern()
 }
@@ -1345,13 +1138,9 @@ number.6.Skips = {
 
   %! baca.path.extern()
 number.6.RH.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 1]
-    % BEFORE:
-    % COMMANDS:
       %! +SECTION
       %! baca.literal()
     \override DynamicLineSpanner.staff-padding = 7
@@ -1388,8 +1177,6 @@ number.6.RH.Music = {
       %! +SECTION
       %! baca.literal()
     \startStaff
-    % OPENING:
-    % COMMANDS:
       %! REAPPLIED_CLEF
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
@@ -1409,14 +1196,10 @@ number.6.RH.Music = {
       %! baca.treat_persistent_wrapper(2)
     \set RHStaff.forceClef = ##t
     d8
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! REAPPLIED_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! REAPPLIED_DYNAMIC
@@ -1434,63 +1217,39 @@ number.6.RH.Music = {
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! REAPPLIED_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
     f8
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
     a8
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! abjad.glissando(7)
       %! baca.glissando()
     \glissando
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
     c'8
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 2]
     c'2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -1505,10 +1264,8 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \mp
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -1523,47 +1280,28 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH.Music measure 3]
         c'2
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'2
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ARTICULATIONS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -1578,10 +1316,8 @@ number.6.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \p
-        % MARKUP:
           %! baca.markup()
         _ \baca-fffz-markup
-        % SPANNER_STARTS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -1596,22 +1332,14 @@ number.6.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \<
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 4]
     c'2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -1626,10 +1354,8 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \mp
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -1644,70 +1370,40 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH.Music measure 5]
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-mfz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ARTICULATIONS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -1722,10 +1418,8 @@ number.6.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \p
-        % MARKUP:
           %! baca.markup()
         _ \baca-ffz-markup
-        % SPANNER_STARTS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -1740,45 +1434,26 @@ number.6.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \<
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fffz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 6]
     c'2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -1793,10 +1468,8 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \mp
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -1811,47 +1484,28 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH.Music measure 7]
         c'2
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'2
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ARTICULATIONS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -1866,10 +1520,8 @@ number.6.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \p
-        % MARKUP:
           %! baca.markup()
         _ \baca-fffz-markup
-        % SPANNER_STARTS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -1884,22 +1536,14 @@ number.6.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \<
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 8]
     c'2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -1914,10 +1558,8 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \mp
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -1932,70 +1574,40 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH.Music measure 9]
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-mfz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ARTICULATIONS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -2010,10 +1622,8 @@ number.6.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \p
-        % MARKUP:
           %! baca.markup()
         _ \baca-ffz-markup
-        % SPANNER_STARTS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -2028,45 +1638,26 @@ number.6.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \<
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fffz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 10]
     c'2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2081,10 +1672,8 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \mp
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2099,47 +1688,28 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH.Music measure 11]
         c'2
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'2
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ARTICULATIONS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -2154,10 +1724,8 @@ number.6.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \p
-        % MARKUP:
           %! baca.markup()
         _ \baca-fffz-markup
-        % SPANNER_STARTS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -2172,22 +1740,14 @@ number.6.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \<
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 12]
     c'2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2202,10 +1762,8 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \mp
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2220,70 +1778,40 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \>
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH.Music measure 13]
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-mfz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % ARTICULATIONS:
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
@@ -2298,48 +1826,28 @@ number.6.RH.Music = {
           %! baca._set_status_tag()
           %! baca.hairpin()
         \p
-        % MARKUP:
           %! baca.markup()
         _ \baca-ffz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         c'4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fffz-markup
-        % SPANNER_STARTS:
           %! abjad.glissando(7)
           %! baca.glissando()
         \glissando
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 14]
-    % BEFORE:
-    % COMMANDS:
       %! baca.literal()
     \stopStaff
       %! baca.literal()
@@ -2347,11 +1855,8 @@ number.6.RH.Music = {
       %! baca.literal()
     \startStaff
     d''2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2366,7 +1871,6 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \mp
-    % MARKUP:
       %! baca.markup()
     - \tweak self-alignment-X -0.9
       %! baca.markup()
@@ -2375,7 +1879,6 @@ number.6.RH.Music = {
     ^ \huitzil-directly-on-bridge-markup
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2396,65 +1899,38 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH.Music measure 15]
         d''2
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 2/3
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         d''2
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fffz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 16]
     d''2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2469,10 +1945,8 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \p
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2493,111 +1967,62 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \<
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [RH.Music measure 17]
         d''4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-mfz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         d''4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         d''4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-ffz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
     \tweak edge-height #'(0.7 . 0)
     \times 4/5
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
         d''4
-        % AFTER:
-        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
-        % MARKUP:
           %! baca.markup()
         _ \baca-fffz-markup
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 18]
     d''2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2612,10 +2037,8 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \pp
-    % MARKUP:
       %! baca.markup()
     _ \baca-ffz-markup
-    % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2652,25 +2075,18 @@ number.6.RH.Music = {
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     \startTextSpan
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 19]
     d''2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % MARKUP:
       %! baca.markup()
     _ \baca-fz-markup
-    % SPANNER_STOPS:
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     \stopTextSpan
-    % SPANNER_STARTS:
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
@@ -2687,25 +2103,18 @@ number.6.RH.Music = {
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     \startTextSpan
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 20]
     d''2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % MARKUP:
       %! baca.markup()
     _ \baca-fz-markup
-    % SPANNER_STOPS:
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     \stopTextSpan
-    % SPANNER_STARTS:
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
@@ -2722,25 +2131,18 @@ number.6.RH.Music = {
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     \startTextSpan
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 21]
     d''2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % MARKUP:
       %! baca.markup()
     _ \baca-mfz-markup
-    % SPANNER_STOPS:
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     \stopTextSpan
-    % SPANNER_STARTS:
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
@@ -2769,22 +2171,15 @@ number.6.RH.Music = {
       %! baca.PiecewiseCommand._call(2)
       %! baca.text_spanner()
     \startTextSpan
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 22]
-    % BEFORE:
-    % COMMANDS:
       %! +SECTION
       %! baca.hairpin_to_barline(1)
     \once \override Hairpin.to-barline = ##t
     d''2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % ARTICULATIONS:
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
@@ -2799,28 +2194,20 @@ number.6.RH.Music = {
       %! baca._set_status_tag()
       %! baca.hairpin()
     \p
-    % MARKUP:
       %! baca.markup()
     _ \baca-mfz-markup
-    % SPANNER_STOPS:
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(3)
       %! baca.text_spanner()
     \stopTextSpan
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [RH.Music measure 23]
     d''2
-    % AFTER:
-    % STEM_TREMOLOS:
       %! baca.stem_tremolo()
     :32
-    % MARKUP:
       %! baca.markup()
     _ \baca-mpz-markup
-    % COMMANDS:
       %! baca.text_script_parent_alignment_x(2)
     \revert TextScript.parent-alignment-X
       %! baca.text_script_self_alignment_x(2)
@@ -2845,15 +2232,11 @@ number.6.RH.Music = {
       %! +SCORE
       %! baca.breathe()
 %%% \breathe
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! ANCHOR_NOTE
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_notes()
     % [RH.Music anchor note]
-    % BEFORE:
-    % COMMANDS:
       %! ANCHOR_NOTE
       %! INVISIBLE_MUSIC_COMMAND
       %! NOTE
@@ -2873,8 +2256,6 @@ number.6.RH.Music = {
       %! baca._color_not_yet_pitched()
       %! baca._style_anchor_notes()
     \baca-not-yet-pitched-coloring
-    % OPENING:
-    % COMMANDS:
       %! ANCHOR_NOTE
       %! baca._style_anchor_notes()
       %! baca.append_anchor_note(5)
@@ -2896,8 +2277,6 @@ number.6.RH.Music = {
       %! NOTE
       %! baca.append_anchor_note(1)
     c'1 * 1/4
-    % AFTER:
-    % MARKUP:
       %! ANCHOR_NOTE
       %! DURATION_MULTIPLIER
       %! HIDDEN
@@ -2905,10 +2284,7 @@ number.6.RH.Music = {
       %! baca._label_duration_multipliers()
       %! baca._style_anchor_notes()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! huitzil.make_empty_score()
   %! baca.path.extern()
 }
@@ -2916,19 +2292,13 @@ number.6.RH.Music = {
 
   %! baca.path.extern()
 number.6.RH.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! huitzil.make_empty_score()
     \context Voice = "RH.Music"
       %! huitzil.make_empty_score()
       %! baca.path.extern()
     { \number.6.RH.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! huitzil.make_empty_score()
   %! baca.path.extern()
 }
@@ -2936,13 +2306,9 @@ number.6.RH.Staff = {
 
   %! baca.path.extern()
 number.6.Cello.Music = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 1]
-    % BEFORE:
-    % COMMANDS:
       %! baca.mmrest_transparent(1)
     \override MultiMeasureRest.transparent = ##t
       %! baca.bar_line_transparent(1)
@@ -2951,8 +2317,6 @@ number.6.Cello.Music = {
     \override Score.SpanBar.transparent = ##t
       %! baca.time_signature_stencil_false(1)
     \override Score.TimeSignature.stencil = ##f
-    % OPENING:
-    % COMMANDS:
       %! REAPPLIED_CLEF
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
@@ -2970,152 +2334,99 @@ number.6.Cello.Music = {
     \set Staff.forceClef = ##t
       %! baca.make_mmrests(1)
     R1 * 1/2
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
       %! REAPPLIED_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
     ^ \baca-reapplied-instrument-markup "(“Cello”)"
-    % ABSOLUTE_AFTER:
-    % COMMANDS:
       %! REAPPLIED_CLEF_REDRAW_COLOR
       %! baca._attach_color_literal(2)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 2]
       %! baca.make_mmrests(1)
     R1 * 1/2
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 3]
       %! baca.make_mmrests(1)
     R1 * 2/3
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"2" #"3"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 4]
       %! baca.make_mmrests(1)
     R1 * 1/2
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 5]
       %! baca.make_mmrests(1)
     R1 * 4/5
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"5"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 6]
       %! baca.make_mmrests(1)
     R1 * 1/2
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 7]
       %! baca.make_mmrests(1)
     R1 * 2/3
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"2" #"3"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! baca.make_skeleton()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 8]
-        % BEFORE:
-        % COMMANDS:
           %! baca.repeat_tie_extra_offset(1)
         \once \override RepeatTie.extra-offset = #'(-1.5 . 0)
           %! baca.make_skeleton()
         bf,,!1 * 107/30
-        % AFTER:
-        % MARKUP:
           %! DURATION_MULTIPLIER
           %! baca._label_duration_multipliers()
         %@% ^ \baca-duration-multiplier-markup #"107" #"30"
-        % SPANNER_STARTS:
           %! abjad.glissando(7)
           %! baca.glissando()
         \glissando
           %! baca.repeat_tie()
         \repeatTie
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca.make_skeleton()
         cf,!1 * 1/5
-        % AFTER:
-        % MARKUP:
           %! DURATION_MULTIPLIER
           %! baca._label_duration_multipliers()
         %@% ^ \baca-duration-multiplier-markup #"1" #"5"
-        % SPANNER_STARTS:
           %! abjad.glissando(7)
           %! baca.glissando()
         \glissando
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! baca.make_skeleton()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! baca.make_skeleton()
     {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello.Music measure 14]
-        % BEFORE:
-        % COMMANDS:
           %! baca.note_head_duration_log(1)
         \once \override NoteHead.duration-log = 2
           %! baca.note_head_no_ledgers(1)
@@ -3134,8 +2445,6 @@ number.6.Cello.Music = {
         \stopStaff
           %! baca.literal()
         \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
-        % OPENING:
-        % COMMANDS:
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
@@ -3155,126 +2464,84 @@ number.6.Cello.Music = {
         \set Staff.forceClef = ##t
           %! baca.make_skeleton()
         b''2
-        % ABSOLUTE_AFTER:
-        % COMMANDS:
           %! EXPLICIT_CLEF_REDRAW_COLOR
           %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
-        % CLOSING:
-        % COMMANDS:
 
-    % CLOSE_BRACKETS:
       %! baca.make_skeleton()
     }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 15]
       %! baca.make_mmrests(1)
     R1 * 2/3
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"2" #"3"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 16]
       %! baca.make_mmrests(1)
     R1 * 1/2
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 17]
       %! baca.make_mmrests(1)
     R1 * 4/5
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"4" #"5"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 18]
       %! baca.make_mmrests(1)
     R1 * 1/2
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 19]
       %! baca.make_mmrests(1)
     R1 * 1/2
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 20]
       %! baca.make_mmrests(1)
     R1 * 1/2
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 21]
       %! baca.make_mmrests(1)
     R1 * 1/2
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 22]
       %! baca.make_mmrests(1)
     R1 * 1/2
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 23]
       %! baca.make_mmrests(1)
     R1 * 1/2
-    % AFTER:
-    % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
-    % COMMANDS:
       %! baca.mmrest_transparent(2)
     \revert MultiMeasureRest.transparent
       %! baca.bar_line_transparent(2)
@@ -3283,10 +2550,7 @@ number.6.Cello.Music = {
     \revert Score.SpanBar.transparent
       %! baca.time_signature_stencil_false(2)
     \revert Score.TimeSignature.stencil
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! huitzil.make_empty_score()
   %! baca.path.extern()
 }
@@ -3294,19 +2558,13 @@ number.6.Cello.Music = {
 
   %! baca.path.extern()
 number.6.Cello.Staff = {
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
 
-    % OPEN_BRACKETS:
       %! huitzil.make_empty_score()
     \context Voice = "Cello.Music"
       %! huitzil.make_empty_score()
       %! baca.path.extern()
     { \number.6.Cello.Music }
-    % CLOSING:
-    % COMMANDS:
 
-% CLOSE_BRACKETS:
   %! huitzil.make_empty_score()
   %! baca.path.extern()
 }
