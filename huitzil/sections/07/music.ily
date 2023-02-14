@@ -1,2043 +1,1234 @@
-  %! baca.path.extern()
 number.7.Rests = {
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 1]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 2]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 3]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 4]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 5]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 6]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 7]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 8]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 9]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 10]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 11]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 12]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 13]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 14]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 15]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 16]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 17]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 18]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 19]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 20]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 21]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 22]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 23]
-      %! baca._make_global_rests(1)
     R1 * 1/4
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 24]
-      %! baca._make_global_rests(1)
     R1 * 3/16
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 25]
-      %! baca._make_global_rests(1)
     R1 * 1/1
 
-      %! baca._comment_measure_numbers()
     % [Rests measure 26]
-      %! baca._make_global_rests(1)
     R1 * 1/1
 
-  %! baca.make_global_context()
-  %! baca.path.extern()
 }
 
 
-  %! baca.path.extern()
 number.7.Skips = {
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! +SECTION
       %! EMPTY_START_BAR
-      %! baca._attach_nonfirst_empty_start_bar()
     \bar ""
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca.span_metronome_marks(3)
     - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca.span_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "88" #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca.span_metronome_marks(3)
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_persistent_indicator()
-      %! baca._set_status_tag()
-      %! baca.metronome_mark()
-      %! baca.span_metronome_marks(2)
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_persistent_indicator()
-      %! baca._set_status_tag()
-      %! baca.metronome_mark()
-      %! baca.span_metronome_marks(2)
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "88"
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_persistent_indicator()
-      %! baca._set_status_tag()
-      %! baca.metronome_mark()
-      %! baca.span_metronome_marks(2)
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'32'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "1"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "174"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 2]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'32'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "2"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "175"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 3]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'33'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "3"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "176"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 4]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'33'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "4"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "177"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 5]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'34'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "5"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "178"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 6]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'35'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "6"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "179"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 7]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'35'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "7"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "180"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 8]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'36'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "8"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "181"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 9]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'36'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "9"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "182"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 10]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'37'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "10"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "183"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 11]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'37'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "11"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "184"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 12]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'38'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "12"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "185"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 13]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'39'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "13"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "186"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 14]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'39'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "14"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "187"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 15]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'40'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "15"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "188"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 16]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'41'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "16"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "189"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 17]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'41'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "17"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "190"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 18]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'42'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "18"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "191"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 19]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'42'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "19"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "192"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 20]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'43'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "20"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "193"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 21]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'43'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "21"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "194"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 22]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'44'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "22"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "195"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 23]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/4
-      %! baca._make_global_skips(1)
     s1 * 1/4
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'45'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "23"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "196"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 24]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 3/16
-      %! baca._make_global_skips(1)
     s1 * 3/16
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'45'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "24"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "197"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 25]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-      %! baca._attach_color_literal(2)
     \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._make_global_skips(2)
-      %! baca._set_status_tag()
     \time 1/1
-      %! baca._make_global_skips(1)
     s1 * 1/1
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
-      %! baca.span_metronome_marks(1)
     \bacaStopTextSpanMM
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca.span_metronome_marks(3)
     - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca.span_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "88" #'blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-      %! baca.span_metronome_marks(3)
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_persistent_indicator()
-      %! baca._set_status_tag()
-      %! baca.metronome_mark()
-      %! baca.span_metronome_marks(2)
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_persistent_indicator()
-      %! baca._set_status_tag()
-      %! baca.metronome_mark()
-      %! baca.span_metronome_marks(2)
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "88"
       %! EXPLICIT_METRONOME_MARK
-      %! baca._attach_persistent_indicator()
-      %! baca._set_status_tag()
-      %! baca.metronome_mark()
-      %! baca.span_metronome_marks(2)
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-left-only "[7'46'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "25"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "198"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
-      %! baca._comment_measure_numbers()
     % [Skips measure 26]
-      %! baca._make_global_skips(1)
     s1 * 1/1
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStopTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStopTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStopTextSpanMN
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     - \baca-start-ct-both "[7'49'']" "[7'51'']"
       %! CLOCK_TIME
-      %! baca._label_clock_time()
     \bacaStartTextSpanCT
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     - \baca-start-lmn-left-only "26"
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     \bacaStartTextSpanLMN
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% - \baca-start-mn-left-only "199"
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
 
       %! ANCHOR_SKIP
-      %! baca._comment_measure_numbers()
-      %! baca.style_anchor_skip(1)
     % [anchor skip]
       %! ANCHOR_SKIP
-      %! baca.style_anchor_skip(2)
     \baca-time-signature-transparent
       %! ANCHOR_SKIP
       %! EXPLICIT_TIME_SIGNATURE
-      %! baca._set_status_tag()
-      %! baca.style_anchor_skip(1)
     \time 1/4
       %! ANCHOR_SKIP
-      %! baca._make_global_skips(3)
     s1 * 1/4
       %! ANCHOR_SKIP
       %! CLOCK_TIME
-      %! baca._label_clock_time()
-      %! baca.style_anchor_skip(1)
     \bacaStopTextSpanCT
       %! ANCHOR_SKIP
       %! LOCAL_MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-      %! baca.style_anchor_skip(1)
     \bacaStopTextSpanLMN
       %! ANCHOR_SKIP
       %! EOS_STOP_MM_SPANNER
-      %! baca.span_metronome_marks(4)
-      %! baca.style_anchor_skip(1)
     \bacaStopTextSpanMM
       %! ANCHOR_SKIP
       %! MEASURE_NUMBER
-      %! baca._label_measure_numbers()
-      %! baca.style_anchor_skip(1)
     %@% \bacaStopTextSpanMN
       %! ANCHOR_SKIP
-      %! baca.style_anchor_skip(3)
     \once \override Score.BarLine.transparent = ##t
       %! ANCHOR_SKIP
-      %! baca.style_anchor_skip(3)
     \once \override Score.SpanBar.transparent = ##t
 
-  %! baca.make_global_context()
-  %! baca.path.extern()
 }
 
 
-  %! baca.path.extern()
 number.7.RH.Music = {
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 1]
-      %! baca.literal()
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8  7.8 -5.8 -6 -6.2 -8 -10 -12 -14 -16 -17.8 -18 -18.2)
-      %! baca.literal()
     \morleyDashedStaffSymbolLines #'(   #f  #f #f  #f   #f #f   #t #t  #t  #t  #t  #f    #f  #f)
-      %! baca.literal()
     \override DynamicLineSpanner.staff-padding = 7
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
-      %! baca._attach_persistent_indicator()
-      %! baca._set_status_tag()
-      %! baca.staff_lines(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 4)
-      %! baca.text_script_parent_alignment_x(1)
     \override TextScript.parent-alignment-X = 0
-      %! baca.text_script_self_alignment_x(1)
     \override TextScript.self-alignment-X = 0
-      %! baca.text_script_staff_padding(1)
     \override TextScript.staff-padding = 4
       %! EXPLICIT_STAFF_LINES
-      %! baca._attach_persistent_indicator()
-      %! baca._set_status_tag()
-      %! baca.staff_lines(2)
     \stopStaff
       %! EXPLICIT_STAFF_LINES
-      %! baca._attach_persistent_indicator()
-      %! baca._set_status_tag()
-      %! baca.staff_lines(2)
     \once \override RHStaff.StaffSymbol.line-count = 14
       %! EXPLICIT_STAFF_LINES
-      %! baca._attach_persistent_indicator()
-      %! baca._set_status_tag()
-      %! baca.staff_lines(2)
     \startStaff
       %! REAPPLIED_CLEF
-      %! baca._reapply_persistent_indicators(3)
-      %! baca._set_status_tag()
     \clef "percussion"
       %! REAPPLIED_CLEF_COLOR
-      %! baca._attach_color_literal(2)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)
       %! EXPLICIT_STAFF_LINES_COLOR
-      %! baca._attach_color_literal(2)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
-      %! baca._attach_color_literal(1)
     %@% \override RHStaff.Clef.color = ##f
       %! REAPPLIED_CLEF
-      %! baca._reapply_persistent_indicators(3)
-      %! baca._set_status_tag()
-      %! baca.treat_persistent_wrapper(2)
     \set RHStaff.forceClef = ##t
     d4
-      %! baca.stem_tremolo()
     :32
       %! EXPLICIT_DYNAMIC_COLOR
-      %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-      %! baca.PiecewiseCommand._call(2)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-      %! baca.PiecewiseCommand._call(2)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     \mp
-      %! baca.markup()
     - \tweak self-alignment-X -1
-      %! baca.markup()
     - \tweak staff-padding 1
-      %! baca.markup()
     ^ \huitzil-directly-above-end-of-fingerboard-markup
-      %! baca.markup()
     - \tweak self-alignment-X -1
-      %! baca.markup()
     - \tweak staff-padding 4.5
-      %! baca.markup()
     ^ \huitzil-ascending-fingerboard-markup
-      %! baca.markup()
     _ \baca-fz-markup
       %! EXPLICIT_DYNAMIC_COLOR
-      %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
-      %! baca.PiecewiseCommand._call(2)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
-      %! baca.PiecewiseCommand._call(2)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     \>
       %! REAPPLIED_CLEF_REDRAW_COLOR
-      %! baca._attach_color_literal(2)
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 2]
     d8.
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 3]
     b,4
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 4]
     b,8.
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 5]
     g,4
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 6]
     g,8.
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 7]
     e,4
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 8]
     e,8.
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 9]
     c,4
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 10]
     c,8.
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 11]
     a,,4
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 12]
     a,,8.
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 13]
     f,,4
-      %! baca.stem_tremolo()
     :32
       %! EXPLICIT_DYNAMIC_COLOR
-      %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-      %! baca.PiecewiseCommand._call(3)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-      %! baca.PiecewiseCommand._call(3)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     \pp
-      %! baca.markup()
     - \tweak self-alignment-X -0.5
-      %! baca.markup()
     - \tweak staff-padding 2
-      %! baca.markup()
     ^ \huitzil-close-to-lh-markup
-      %! baca.markup()
     _ \baca-fz-markup
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 14]
     f,,8.
-      %! baca.stem_tremolo()
     :32
       %! EXPLICIT_DYNAMIC_COLOR
-      %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-      %! baca.PiecewiseCommand._call(2)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-      %! baca.PiecewiseCommand._call(2)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     \baca-pp-parenthesized
-      %! baca.markup()
     - \tweak self-alignment-X -1
-      %! baca.markup()
     - \tweak staff-padding 2
-      %! baca.markup()
     ^ \huitzil-descending-fingerboard-markup
-      %! baca.markup()
     _ \baca-fz-markup
       %! EXPLICIT_DYNAMIC_COLOR
-      %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
-      %! baca.PiecewiseCommand._call(2)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
-      %! baca.PiecewiseCommand._call(2)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     \<
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 15]
     a,,4
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 16]
     a,,8.
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 17]
     c,4
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 18]
     c,8.
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 19]
     e,4
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 20]
     e,8.
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     _ \baca-fz-markup
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 21]
     g,4
-      %! baca.stem_tremolo()
     :32
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 22]
     g,8.
-      %! baca.stem_tremolo()
     :32
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 23]
     b,4
-      %! baca.stem_tremolo()
     :32
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 24]
     b,8.
-      %! baca.stem_tremolo()
     :32
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 25]
-      %! baca.literal()
     \stopStaff
-      %! baca.literal()
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)
-      %! baca.literal()
     \startStaff
     d1
-      %! baca.stem_tremolo()
     :32
-      %! baca.markup()
     - \tweak self-alignment-X -0.5
-      %! baca.markup()
     - \tweak staff-padding 2
-      %! baca.markup()
     ^ \huitzil-directly-above-end-of-fingerboard-column-markup
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
 
-      %! baca._comment_measure_numbers()
     % [RH.Music measure 26]
-      %! baca.parenthesize()
     \parenthesize
     c'1
-      %! baca.stem_tremolo()
     :32
       %! EXPLICIT_DYNAMIC_COLOR
-      %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-      %! baca.PiecewiseCommand._call(3)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-      %! baca.PiecewiseCommand._call(3)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     \ff
       %! EXPLICIT_DYNAMIC_COLOR
-      %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! RIGHT_BROKEN
       %! SPANNER_START
-      %! baca.PiecewiseCommand._call(2)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! RIGHT_BROKEN
       %! SPANNER_START
-      %! baca.PiecewiseCommand._call(2)
-      %! baca._set_status_tag()
-      %! baca.hairpin()
     \>
-      %! abjad.glissando(7)
-      %! baca.glissando()
     \glissando
-      %! baca.text_script_parent_alignment_x(2)
     \revert TextScript.parent-alignment-X
-      %! baca.text_script_self_alignment_x(2)
     \revert TextScript.self-alignment-X
-      %! baca.text_script_staff_padding(2)
     \revert TextScript.staff-padding
 
       %! ANCHOR_NOTE
-      %! baca._comment_measure_numbers()
-      %! baca._style_anchor_notes()
     % [RH.Music anchor note]
       %! ANCHOR_NOTE
       %! INVISIBLE_MUSIC_COMMAND
       %! NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(3)
     %@% \abjad-invisible-music
       %! ANCHOR_NOTE
       %! INVISIBLE_MUSIC_COLORING
       %! NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(2)
     \abjad-invisible-music-coloring
       %! ANCHOR_NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(5)
     \once \override Accidental.stencil = ##f
       %! ANCHOR_NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(4)
     \stopStaff
       %! ANCHOR_NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(4)
     \once \override Staff.StaffSymbol.transparent = ##t
       %! ANCHOR_NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(4)
     \startStaff
       %! ANCHOR_NOTE
       %! HIDDEN
       %! NOTE
-      %! baca.append_anchor_note(1)
     b'1 * 1/4
       %! ANCHOR_NOTE
       %! DURATION_MULTIPLIER
       %! HIDDEN
       %! NOTE
-      %! baca._label_duration_multipliers()
-      %! baca._style_anchor_notes()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
       %! ANCHOR_NOTE
       %! SHOW_TO_JOIN_BROKEN_SPANNERS
-      %! abjad.glissando(7)
-      %! baca._style_anchor_notes()
-      %! baca.glissando()
     %@% \glissando
       %! ANCHOR_NOTE
       %! RIGHT_BROKEN
-      %! baca.PiecewiseCommand._call(1)
-      %! baca._style_anchor_notes()
-      %! baca.hairpin()
     \!
 
-  %! huitzil.make_empty_score()
-  %! baca.path.extern()
 }
 
 
-  %! baca.path.extern()
 number.7.RH.Staff = {
 
-      %! huitzil.make_empty_score()
     \context Voice = "RH.Music"
-      %! huitzil.make_empty_score()
-      %! baca.path.extern()
     { \number.7.RH.Music }
 
-  %! huitzil.make_empty_score()
-  %! baca.path.extern()
 }
 
 
-  %! baca.path.extern()
 number.7.Cello.Music = {
 
-      %! baca.make_skeleton()
     {
 
-          %! baca._comment_measure_numbers()
         % [Cello.Music measure 1]
           %! MEASURE_174
           %! SHIFTED_CLEF
-          %! baca.clef_x_extent_false(1)
     %%% \once \override Staff.Clef.X-extent = ##f
           %! MEASURE_174
           %! SHIFTED_CLEF
-          %! baca.clef_extra_offset(1)
     %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
-          %! baca.bar_line_transparent(1)
         \override Score.BarLine.transparent = ##t
-          %! baca.span_bar_transparent(1)
         \override Score.SpanBar.transparent = ##t
-          %! baca.time_signature_stencil_false(1)
         \override Score.TimeSignature.stencil = ##f
-          %! baca.literal()
         \stopStaff
-          %! baca.literal()
         \once \override Staff.StaffSymbol.line-count = 5
-          %! baca.literal()
         \startStaff
           %! EXPLICIT_CLEF
-          %! baca._attach_persistent_indicator()
-          %! baca._set_status_tag()
-          %! baca.clef()
         \clef "bass"
           %! EXPLICIT_CLEF_COLOR
-          %! baca._attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'blue)
           %! EXPLICIT_CLEF_COLOR_CANCELLATION
-          %! baca._attach_color_literal(1)
         %@% \override Staff.Clef.color = ##f
           %! EXPLICIT_CLEF
-          %! baca._attach_persistent_indicator()
-          %! baca._set_status_tag()
-          %! baca.clef()
-          %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! baca.make_skeleton()
         a,1 * 1/4
-          %! baca.markup()
         - \tweak padding 2.5
-          %! baca.markup()
         _ \baca-string-iii-markup
           %! DURATION_MULTIPLIER
-          %! baca._label_duration_multipliers()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"
           %! REAPPLIED_INSTRUMENT_ALERT
-          %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Cello”)"
           %! EXPLICIT_CLEF_REDRAW_COLOR
-          %! baca._attach_color_literal(2)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
-      %! baca.make_skeleton()
     }
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 2]
-      %! baca.mmrest_transparent(1)
     \override MultiMeasureRest.transparent = ##t
-      %! baca.make_mmrests(1)
     R1 * 3/16
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 3]
-      %! baca.make_mmrests(1)
     R1 * 1/4
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 4]
-      %! baca.make_mmrests(1)
     R1 * 3/16
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 5]
-      %! baca.make_mmrests(1)
     R1 * 1/4
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 6]
-      %! baca.make_mmrests(1)
     R1 * 3/16
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 7]
-      %! baca.make_mmrests(1)
     R1 * 1/4
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 8]
-      %! baca.make_mmrests(1)
     R1 * 3/16
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 9]
-      %! baca.make_mmrests(1)
     R1 * 1/4
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 10]
-      %! baca.make_mmrests(1)
     R1 * 3/16
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 11]
-      %! baca.make_mmrests(1)
     R1 * 1/4
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 12]
-      %! baca.make_mmrests(1)
     R1 * 3/16
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"16"
 
-      %! baca._comment_measure_numbers()
     % [Cello.Music measure 13]
-      %! baca.make_mmrests(1)
     R1 * 1/4
       %! DURATION_MULTIPLIER
-      %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
-      %! baca.mmrest_transparent(2)
     \revert MultiMeasureRest.transparent
 
-      %! baca.make_skeleton()
     {
 
-          %! baca._comment_measure_numbers()
         % [Cello.Music measure 14]
-          %! baca.make_skeleton()
         a,1 * 19/8
           %! DURATION_MULTIPLIER
-          %! baca._label_duration_multipliers()
         %@% ^ \baca-duration-multiplier-markup #"19" #"8"
-          %! abjad.glissando(7)
-          %! baca.glissando()
         \glissando
-          %! baca.repeat_tie()
         \repeatTie
 
-      %! baca.make_skeleton()
     }
 
-      %! baca.make_skeleton()
     {
 
-          %! baca._comment_measure_numbers()
         % [Cello.Music measure 25]
-          %! baca.make_skeleton()
         g,1 * 2/1
-          %! baca.markup()
         - \tweak padding 2.5
-          %! baca.markup()
         - \tweak parent-alignment-X 0
-          %! baca.markup()
         - \tweak self-alignment-X -0.05
-          %! baca.markup()
         _ \huitzil-string-three-to-four-markup
           %! DURATION_MULTIPLIER
-          %! baca._label_duration_multipliers()
         %@% ^ \baca-duration-multiplier-markup #"2" #"1"
-          %! abjad.glissando(7)
-          %! baca.glissando()
         \glissando
-          %! baca.bar_line_transparent(2)
         \revert Score.BarLine.transparent
-          %! baca.span_bar_transparent(2)
         \revert Score.SpanBar.transparent
-          %! baca.time_signature_stencil_false(2)
         \revert Score.TimeSignature.stencil
 
-      %! baca.make_skeleton()
     }
 
       %! ANCHOR_NOTE
-      %! baca._comment_measure_numbers()
-      %! baca._style_anchor_notes()
     % [Cello.Music anchor note]
       %! ANCHOR_NOTE
       %! INVISIBLE_MUSIC_COMMAND
       %! NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(3)
     %@% \abjad-invisible-music
       %! ANCHOR_NOTE
       %! INVISIBLE_MUSIC_COLORING
       %! NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(2)
     \abjad-invisible-music-coloring
       %! ANCHOR_NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(5)
     \once \override Accidental.stencil = ##f
       %! ANCHOR_NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(4)
     \stopStaff
       %! ANCHOR_NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(4)
     \once \override Staff.StaffSymbol.transparent = ##t
       %! ANCHOR_NOTE
-      %! baca._style_anchor_notes()
-      %! baca.append_anchor_note(4)
     \startStaff
       %! ANCHOR_NOTE
       %! HIDDEN
       %! NOTE
-      %! baca.append_anchor_note(1)
     a,,1 * 1/4
       %! ANCHOR_NOTE
       %! DURATION_MULTIPLIER
       %! HIDDEN
       %! NOTE
-      %! baca._label_duration_multipliers()
-      %! baca._style_anchor_notes()
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
       %! ANCHOR_NOTE
       %! SHOW_TO_JOIN_BROKEN_SPANNERS
-      %! abjad.glissando(7)
-      %! baca._style_anchor_notes()
-      %! baca.glissando()
     %@% \glissando
 
-  %! huitzil.make_empty_score()
-  %! baca.path.extern()
 }
 
 
-  %! baca.path.extern()
 number.7.Cello.Staff = {
 
-      %! huitzil.make_empty_score()
     \context Voice = "Cello.Music"
-      %! huitzil.make_empty_score()
-      %! baca.path.extern()
     { \number.7.Cello.Music }
 
-  %! huitzil.make_empty_score()
-  %! baca.path.extern()
 }
