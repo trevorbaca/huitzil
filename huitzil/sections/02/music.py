@@ -59,9 +59,7 @@ def RH(voice):
     music = baca.parse("{ c4 r2 c4 r2 c4 r2 c4 r2 }")
     voice.extend(music)
     # (5, 8)
-    music = baca.parse(
-        "{ c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 }"
-    )
+    music = baca.parse("{ c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 }")
     voice.extend(music)
     # (9, 12)
     music = baca.parse(
