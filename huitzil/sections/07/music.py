@@ -55,15 +55,15 @@ def GLOBALS(skips):
 
 def VC(voice, time_signatures):
     # 1
-    music = baca.make_skeleton("{ c1 * 1/4 }")
+    music = baca.parse("{ c1 * 1/4 }")
     voice.extend(music)
     music = baca.make_mmrests(time_signatures(2, 13))
     voice.extend(music)
     # (14, 24)
-    music = baca.make_skeleton("{ c1 * 19/8 }")
+    music = baca.parse("{ c1 * 19/8 }")
     voice.extend(music)
     # (25, 26)
-    music = baca.make_skeleton("{ c1 * 2 }")
+    music = baca.parse("{ c1 * 2 }")
     voice.extend(music)
     baca.section.append_anchor_note(voice)
 

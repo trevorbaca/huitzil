@@ -53,10 +53,10 @@ def VC(voice, time_signatures):
     music = baca.make_mmrests(time_signatures(1, 7))
     voice.extend(music)
     # (8, 13)
-    music = baca.make_skeleton("{ c1 * 107/30 c1 * 1/5 }")
+    music = baca.parse("{ c1 * 107/30 c1 * 1/5 }")
     voice.extend(music)
     # 14
-    music = baca.make_skeleton("{ c2 }")
+    music = baca.parse("{ c2 }")
     voice.extend(music)
     music = baca.make_mmrests(time_signatures(15, 23))
     voice.extend(music)
