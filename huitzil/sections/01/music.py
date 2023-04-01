@@ -419,7 +419,7 @@ def make_score():
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     music = make_all_music()
     time_signatures = make_time_signatures(music)
-    time_signatures = baca.section.time_signatures(time_signatures)
+    time_signatures = baca.section.wrap(time_signatures)
     baca.section.set_up_score(
         score,
         time_signatures(),
