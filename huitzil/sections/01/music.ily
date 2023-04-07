@@ -1542,19 +1542,19 @@ number.1.RH.Music = {
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override RHStaff.Clef.X-extent = ##f
+      %! EXPLICIT_CLEF_COLOR
+    \once \override RHStaff.Clef.color = #(x11-color 'blue)
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override RHStaff.Clef.extra-offset = #'(-2.5 . 0)
     \override MultiMeasureRest.transparent = ##t
-    \stopStaff
-      %! EXPLICIT_CLEF
-    \clef "percussion"
-      %! EXPLICIT_CLEF_COLOR
-    \once \override RHStaff.Clef.color = #(x11-color 'blue)
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
     %@% \override RHStaff.Clef.color = ##f
       %! EXPLICIT_CLEF
     \set RHStaff.forceClef = ##t
+    \stopStaff
+      %! EXPLICIT_CLEF
+    \clef "percussion"
     R1 * 7/8
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"
@@ -1848,18 +1848,18 @@ number.1.Cello.Music = {
           %! MEASURE_1
           %! SHIFTED_CLEF
     %%% \once \override Staff.Clef.X-extent = ##f
+          %! EXPLICIT_CLEF_COLOR
+        \once \override Staff.Clef.color = #(x11-color 'blue)
           %! MEASURE_1
           %! SHIFTED_CLEF
     %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
-        \override TupletBracket.staff-padding = 3
-          %! EXPLICIT_CLEF
-        \clef "bass"
-          %! EXPLICIT_CLEF_COLOR
-        \once \override Staff.Clef.color = #(x11-color 'blue)
           %! EXPLICIT_CLEF_COLOR_CANCELLATION
         %@% \override Staff.Clef.color = ##f
+        \override TupletBracket.staff-padding = 3
           %! EXPLICIT_CLEF
         \set Staff.forceClef = ##t
+          %! EXPLICIT_CLEF
+        \clef "bass"
         fs!8
         - \tweak staff-padding 9
         _ \huitzil-phrasing-dynamics-see-preface-markup

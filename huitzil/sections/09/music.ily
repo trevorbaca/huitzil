@@ -130,12 +130,12 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 3]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 2/3
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 2/3
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -182,12 +182,12 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 5]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/5
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 4/5
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -234,12 +234,12 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 7]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 2/3
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 2/3
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -286,12 +286,12 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 9]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/5
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 4/5
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -338,12 +338,12 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 11]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 2/3
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 2/3
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -390,12 +390,12 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 13]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/5
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 4/5
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -442,12 +442,12 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 15]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 2/3
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 2/3
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -494,12 +494,12 @@ number.9.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 17]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/5
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 4/5
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -695,8 +695,14 @@ number.9.Skips = {
 number.9.RH.Music = {
 
     % [RH.Music measure 1]
+      %! REAPPLIED_CLEF_COLOR
+    \once \override RHStaff.Clef.color = #(x11-color 'green4)
+      %! REAPPLIED_STAFF_LINES_COLOR
+    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
       %! +SECTION
     \override DynamicLineSpanner.staff-padding = 7
+      %! REAPPLIED_CLEF_COLOR_CANCELLATION
+    %@% \override RHStaff.Clef.color = ##f
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
       %! REAPPLIED_BAR_EXTENT
@@ -704,6 +710,8 @@ number.9.RH.Music = {
     \override TextScript.parent-alignment-X = 0
     \override TextScript.self-alignment-X = 0
     \override TextScript.staff-padding = 4
+      %! REAPPLIED_CLEF
+    \set RHStaff.forceClef = ##t
       %! REAPPLIED_STAFF_LINES
     \stopStaff
       %! REAPPLIED_STAFF_LINES
@@ -718,14 +726,6 @@ number.9.RH.Music = {
     \startStaff
       %! REAPPLIED_CLEF
     \clef "percussion"
-      %! REAPPLIED_CLEF_COLOR
-    \once \override RHStaff.Clef.color = #(x11-color 'green4)
-      %! REAPPLIED_STAFF_LINES_COLOR
-    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
-      %! REAPPLIED_CLEF_COLOR_CANCELLATION
-    %@% \override RHStaff.Clef.color = ##f
-      %! REAPPLIED_CLEF
-    \set RHStaff.forceClef = ##t
     d8
     :32
     _ \baca-ffz-markup
@@ -1429,18 +1429,18 @@ number.9.RH.Staff = {
 number.9.Cello.Music = {
 
     % [Cello.Music measure 1]
+      %! REAPPLIED_CLEF_COLOR
+    \once \override Staff.Clef.color = #(x11-color 'green4)
     \override MultiMeasureRest.transparent = ##t
     \override Score.BarLine.transparent = ##t
     \override Score.SpanBar.transparent = ##t
     \override Score.TimeSignature.stencil = ##f
-      %! REAPPLIED_CLEF
-    \clef "bass"
-      %! REAPPLIED_CLEF_COLOR
-    \once \override Staff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override Staff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set Staff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "bass"
     R1 * 1/2
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
@@ -1504,19 +1504,19 @@ number.9.Cello.Music = {
           %! MEASURE_239
           %! SHIFTED_CLEF
         \once \override Staff.Clef.X-extent = ##f
+          %! EXPLICIT_CLEF_COLOR
+        \once \override Staff.Clef.color = #(x11-color 'blue)
           %! MEASURE_239
           %! SHIFTED_CLEF
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-        \stopStaff
-        \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
-          %! EXPLICIT_CLEF
-        \clef "treble"
-          %! EXPLICIT_CLEF_COLOR
-        \once \override Staff.Clef.color = #(x11-color 'blue)
           %! EXPLICIT_CLEF_COLOR_CANCELLATION
         %@% \override Staff.Clef.color = ##f
           %! EXPLICIT_CLEF
         \set Staff.forceClef = ##t
+        \stopStaff
+        \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
+          %! EXPLICIT_CLEF
+        \clef "treble"
         b''2
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)

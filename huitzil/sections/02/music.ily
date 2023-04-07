@@ -660,13 +660,21 @@ number.2.RH.Music = {
     {
 
         % [RH.Music measure 1]
+          %! REAPPLIED_CLEF_COLOR
+        \once \override RHStaff.Clef.color = #(x11-color 'green4)
+          %! EXPLICIT_STAFF_LINES_COLOR
+        \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)
         \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2)
         \override DynamicLineSpanner.staff-padding = 2.5
+          %! REAPPLIED_CLEF_COLOR_CANCELLATION
+        %@% \override RHStaff.Clef.color = ##f
         \override Score.BarNumber.transparent = ##t
           %! -PARTS
           %! EXPLICIT_BAR_EXTENT
         \override Staff.BarLine.bar-extent = #'(-2 . 4)
         \override TupletBracket.direction = #down
+          %! REAPPLIED_CLEF
+        \set RHStaff.forceClef = ##t
           %! EXPLICIT_STAFF_LINES
         \stopStaff
           %! EXPLICIT_STAFF_LINES
@@ -675,14 +683,6 @@ number.2.RH.Music = {
         \startStaff
           %! REAPPLIED_CLEF
         \clef "percussion"
-          %! REAPPLIED_CLEF_COLOR
-        \once \override RHStaff.Clef.color = #(x11-color 'green4)
-          %! EXPLICIT_STAFF_LINES_COLOR
-        \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)
-          %! REAPPLIED_CLEF_COLOR_CANCELLATION
-        %@% \override RHStaff.Clef.color = ##f
-          %! REAPPLIED_CLEF
-        \set RHStaff.forceClef = ##t
         d''4
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1124,18 +1124,18 @@ number.2.RH.Staff = {
 number.2.Cello.Music = {
 
     % [Cello.Music measure 1]
-    \override MultiMeasureRest.transparent = ##t
-    \override Score.TimeSignature.stencil = ##f
-    \stopStaff
-    \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
-      %! REAPPLIED_CLEF
-    \clef "bass"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
+    \override MultiMeasureRest.transparent = ##t
+    \override Score.TimeSignature.stencil = ##f
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override Staff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set Staff.forceClef = ##t
+    \stopStaff
+    \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
+      %! REAPPLIED_CLEF
+    \clef "bass"
     R1 * 3/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"

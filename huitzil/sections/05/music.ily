@@ -106,12 +106,12 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 2]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 13/24
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 13/24
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -158,12 +158,12 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 4]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 7/12
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 7/12
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -185,12 +185,12 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 5]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 53/60
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 53/60
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -212,12 +212,12 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 6]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 23/24
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 23/24
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -310,12 +310,12 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 10]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/3
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 1/3
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -337,12 +337,12 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 11]
+      %! EXPLICIT_TIME_SIGNATURE_COLOR
+    \baca-time-signature-color #'blue
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE
     \time 11/15
-      %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
     s1 * 11/15
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -682,7 +682,13 @@ number.5.Skips = {
 number.5.RH.Music = {
 
     % [RH.Music measure 1]
+      %! REAPPLIED_CLEF_COLOR
+    \once \override RHStaff.Clef.color = #(x11-color 'green4)
+      %! REAPPLIED_STAFF_LINES_COLOR
+    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
     \override DynamicLineSpanner.staff-padding = 7
+      %! REAPPLIED_CLEF_COLOR_CANCELLATION
+    %@% \override RHStaff.Clef.color = ##f
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
       %! REAPPLIED_BAR_EXTENT
@@ -690,6 +696,8 @@ number.5.RH.Music = {
     \override TextScript.parent-alignment-X = 0
     \override TextScript.self-alignment-X = 0
     \override TextScript.staff-padding = 4
+      %! REAPPLIED_CLEF
+    \set RHStaff.forceClef = ##t
       %! REAPPLIED_STAFF_LINES
     \stopStaff
       %! REAPPLIED_STAFF_LINES
@@ -701,14 +709,6 @@ number.5.RH.Music = {
     \startStaff
       %! REAPPLIED_CLEF
     \clef "percussion"
-      %! REAPPLIED_CLEF_COLOR
-    \once \override RHStaff.Clef.color = #(x11-color 'green4)
-      %! REAPPLIED_STAFF_LINES_COLOR
-    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)
-      %! REAPPLIED_CLEF_COLOR_CANCELLATION
-    %@% \override RHStaff.Clef.color = ##f
-      %! REAPPLIED_CLEF
-    \set RHStaff.forceClef = ##t
     b'4
     :32
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1421,18 +1421,18 @@ number.5.RH.Staff = {
 number.5.Cello.Music = {
 
     % [Cello.Music measure 1]
+      %! REAPPLIED_CLEF_COLOR
+    \once \override Staff.Clef.color = #(x11-color 'green4)
     \override MultiMeasureRest.transparent = ##t
     \override Score.BarLine.transparent = ##t
     \override Score.SpanBar.transparent = ##t
     \override Score.TimeSignature.stencil = ##f
-      %! REAPPLIED_CLEF
-    \clef "bass"
-      %! REAPPLIED_CLEF_COLOR
-    \once \override Staff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override Staff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set Staff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "bass"
     R1 * 1/2
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"

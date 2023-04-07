@@ -783,15 +783,23 @@ number.7.Skips = {
 number.7.RH.Music = {
 
     % [RH.Music measure 1]
+      %! REAPPLIED_CLEF_COLOR
+    \once \override RHStaff.Clef.color = #(x11-color 'green4)
+      %! EXPLICIT_STAFF_LINES_COLOR
+    \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8  7.8 -5.8 -6 -6.2 -8 -10 -12 -14 -16 -17.8 -18 -18.2)
     \morleyDashedStaffSymbolLines #'(   #f  #f #f  #f   #f #f   #t #t  #t  #t  #t  #f    #f  #f)
     \override DynamicLineSpanner.staff-padding = 7
+      %! REAPPLIED_CLEF_COLOR_CANCELLATION
+    %@% \override RHStaff.Clef.color = ##f
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
     \override Staff.BarLine.bar-extent = #'(-2 . 4)
     \override TextScript.parent-alignment-X = 0
     \override TextScript.self-alignment-X = 0
     \override TextScript.staff-padding = 4
+      %! REAPPLIED_CLEF
+    \set RHStaff.forceClef = ##t
       %! EXPLICIT_STAFF_LINES
     \stopStaff
       %! EXPLICIT_STAFF_LINES
@@ -800,14 +808,6 @@ number.7.RH.Music = {
     \startStaff
       %! REAPPLIED_CLEF
     \clef "percussion"
-      %! REAPPLIED_CLEF_COLOR
-    \once \override RHStaff.Clef.color = #(x11-color 'green4)
-      %! EXPLICIT_STAFF_LINES_COLOR
-    \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)
-      %! REAPPLIED_CLEF_COLOR_CANCELLATION
-    %@% \override RHStaff.Clef.color = ##f
-      %! REAPPLIED_CLEF
-    \set RHStaff.forceClef = ##t
     d4
     :32
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1073,23 +1073,23 @@ number.7.Cello.Music = {
           %! MEASURE_174
           %! SHIFTED_CLEF
     %%% \once \override Staff.Clef.X-extent = ##f
+          %! EXPLICIT_CLEF_COLOR
+        \once \override Staff.Clef.color = #(x11-color 'blue)
           %! MEASURE_174
           %! SHIFTED_CLEF
     %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
         \override Score.BarLine.transparent = ##t
         \override Score.SpanBar.transparent = ##t
         \override Score.TimeSignature.stencil = ##f
+          %! EXPLICIT_CLEF_COLOR_CANCELLATION
+        %@% \override Staff.Clef.color = ##f
+          %! EXPLICIT_CLEF
+        \set Staff.forceClef = ##t
         \stopStaff
         \once \override Staff.StaffSymbol.line-count = 5
         \startStaff
           %! EXPLICIT_CLEF
         \clef "bass"
-          %! EXPLICIT_CLEF_COLOR
-        \once \override Staff.Clef.color = #(x11-color 'blue)
-          %! EXPLICIT_CLEF_COLOR_CANCELLATION
-        %@% \override Staff.Clef.color = ##f
-          %! EXPLICIT_CLEF
-        \set Staff.forceClef = ##t
         a,1 * 1/4
         - \tweak padding 2.5
         _ \baca-string-iii-markup
