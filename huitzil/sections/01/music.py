@@ -101,8 +101,6 @@ def _make_inner_tuplets(note_lists, extra_counts):
         selection = abjad.mutate.eject_contents(voice)
         assert isinstance(selection, list)
         inner_tuplet = selection[0]
-        if abjad.Fraction(*inner_tuplet.multiplier) == 1:
-            inner_tuplet.hide = True
         plts = baca.select.plts(inner_tuplet)
         for j, plt in enumerate(plts):
             source_note = note_list[j]
@@ -111,6 +109,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
                 voice_number = abjad.get.indicator(source_note, int)
                 abjad.attach(voice_number, pleaf)
         inner_tuplets.append(inner_tuplet)
+    rmakers.hide_trivial(inner_tuplets)
     return inner_tuplets
 
 
