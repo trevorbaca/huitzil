@@ -25,8 +25,6 @@
               %! SPACING_COMMAND
             \baca-new-spacing-section #1 #28
               %! BREAK
-            \noBreak
-              %! BREAK
             \pageBreak
             s1 * 1/4
               %! SPACING
