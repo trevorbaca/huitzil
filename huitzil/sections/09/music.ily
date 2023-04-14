@@ -1403,13 +1403,13 @@ number.9.RH.Music = {
       %! NOTE
     c'1 * 1/4
       %! ANCHOR_NOTE
-      %! SPANNER_STOP
-    \!
-      %! ANCHOR_NOTE
       %! DURATION_MULTIPLIER
       %! HIDDEN
       %! NOTE
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
+      %! ANCHOR_NOTE
+      %! SPANNER_STOP
+    \!
       %! ANCHOR_NOTE
       %! RIGHT_BROKEN
       %! SPANNER_STOP

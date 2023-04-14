@@ -956,9 +956,9 @@ number.3.RH.Music = {
           %! EXPLICIT_DYNAMIC
           %! SPANNER_STOP
         \pp
+        _ \baca-mpz-markup
           %! SPANNER_STOP
         \!
-        _ \baca-mpz-markup
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
@@ -1092,9 +1092,9 @@ number.3.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
     \mf
+    _ \baca-fz-markup
       %! SPANNER_STOP
     \!
-    _ \baca-fz-markup
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -1147,9 +1147,9 @@ number.3.RH.Music = {
           %! EXPLICIT_DYNAMIC
           %! SPANNER_STOP
         \mp
+        _ \baca-mfz-markup
           %! SPANNER_STOP
         \!
-        _ \baca-mfz-markup
           %! SPANNER_START
         - \tweak bound-details.right.padding 0.5
           %! SPANNER_START
@@ -1292,9 +1292,9 @@ number.3.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
     \p
+    _ \baca-ffz-markup
       %! SPANNER_STOP
     \!
-    _ \baca-ffz-markup
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -1520,9 +1520,9 @@ number.3.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
     \p
+    _ \baca-ffz-markup
       %! SPANNER_STOP
     \!
-    _ \baca-ffz-markup
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -1668,13 +1668,13 @@ number.3.RH.Music = {
       %! NOTE
     c'1 * 1/4
       %! ANCHOR_NOTE
-      %! SPANNER_STOP
-    \!
-      %! ANCHOR_NOTE
       %! DURATION_MULTIPLIER
       %! HIDDEN
       %! NOTE
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
+      %! ANCHOR_NOTE
+      %! SPANNER_STOP
+    \!
 
 }
 
