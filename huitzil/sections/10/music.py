@@ -42,9 +42,9 @@ def VC(voice, time_signatures):
 def RH(voice):
     # (1, 12)
     music = baca.make_monads("1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 3/2")
+    voice.extend(music)
     for pleaf in baca.select.pleaves(music)[1:]:
         baca.repeat_tie(pleaf)
-    voice.extend(music)
 
 
 def vc(m):
