@@ -26,6 +26,7 @@ def make_music(
 
 
 def _attach_beams(music):
+    voice = abjad.Voice(music, name="Temporary")
     tuplets = abjad.iterate.components(music, abjad.Tuplet)
     for tuplet in tuplets:
         voice_numbers = [abjad.get.indicator(_, int) for _ in tuplet]
@@ -34,6 +35,7 @@ def _attach_beams(music):
         note_groups = abjad.sequence.partition_by_counts(tuplet[:], counts)
         for note_group in note_groups:
             abjad.beam(note_group)
+    voice[:] = []
 
 
 def _attach_voice_numbers(note_lists, voice_map):
