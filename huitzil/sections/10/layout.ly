@@ -1,6 +1,6 @@
 % first_page_number = 10
 % page_count = 1
-% measure_count = 10 + 1
+% measure_count = 10
 % time_signatures = [
 % '1/2', '1/2', '1/2', '1/2', '1/2', '1/2', '1/2', '1/2', '1/2', '3/2'
 %  ]
@@ -136,7 +136,7 @@
 
             % [PageLayout measure 10]
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #32
+            \baca-new-spacing-section #35 #768
               %! BREAK
             \noBreak
             s1 * 3/2
