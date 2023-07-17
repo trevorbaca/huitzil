@@ -1,5 +1,5 @@
 % page_count = 5
-% measure_count = 258 + 1
+% measure_count = 258
 % time_signatures = [
 % '7/8', '15/16', '11/16', '7/8', '15/16', '15/16', '3/8', '4/4', '3/4',
 %  '7/8', '4/4', '3/4', '6/4', '5/4', '1/4', '8/4', '9/8', '7/8', '3/4', '5/8',
@@ -50,16 +50,13 @@
               %! baca.apply_breaks(1)
             \autoPageBreaksOff
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #201 #'(15 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #24
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 7/8
@@ -233,16 +230,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 10]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #71 #'(10)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #24
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 7/8
@@ -379,16 +373,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 17]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #97 #'(10)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #24
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 9/8
@@ -565,16 +556,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 26]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #123 #'(10)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #24
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 5/4
@@ -751,16 +739,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 35]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #149 #'(10)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #24
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 13/16
@@ -957,16 +942,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 45]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #175 #'(10)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #24
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 7/8
@@ -1323,16 +1305,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 63]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #15 #'(10 15)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #24
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \pageBreak
               %! baca._make_global_skips(1)
             s1 * 3/4
@@ -1649,16 +1628,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 79]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #60 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 4/4
@@ -1795,16 +1771,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 86]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #105 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -2001,16 +1974,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 96]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #150 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/6
@@ -2227,16 +2197,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 107]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #195 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -2393,16 +2360,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 115]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #15 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \pageBreak
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -2579,16 +2543,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 124]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #60 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -2785,16 +2746,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 134]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #105 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 23/24
@@ -2991,16 +2949,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 144]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #150 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -3197,16 +3152,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 154]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #195 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -3403,16 +3355,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 164]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #15 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \pageBreak
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -3609,16 +3558,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 174]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #60 #'(10 22)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/4
@@ -4095,16 +4041,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 198]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #105 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/1
@@ -4241,16 +4184,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 205]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #150 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 23/24
@@ -4447,16 +4387,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 215]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #195 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -4673,16 +4610,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 226]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #15 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \pageBreak
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -4859,16 +4793,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 235]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #60 #'(10 22)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -5065,16 +4996,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 245]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #105 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -5271,16 +5199,13 @@
               %! baca._comment_measure_numbers()
             % [PageLayout measure 255]
               %! BREAK
-              %! baca.apply_breaks()
+              %! baca.apply_breaks(2)
             \baca-lbsd #150 #'(10 17)
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #44
               %! BREAK
               %! baca.apply_breaks(2)
-            \noBreak
-              %! BREAK
-              %! baca.apply_breaks()
             \break
               %! baca._make_global_skips(1)
             s1 * 1/2
@@ -5338,7 +5263,7 @@
             % [PageLayout measure 258]
               %! SPACING_COMMAND
               %! baca.SpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #44
+            \baca-new-spacing-section #35 #1056
               %! BREAK
               %! baca.apply_breaks(2)
             \noBreak
