@@ -1061,13 +1061,13 @@ number.2.RH.Music = {
         _ \huitzil-trem-moderato-markup
         - \tweak staff-padding 6
         ^ \huitzil-sliding-from-bridge-onto-string-markup
+          %! EXPLICIT_DYNAMIC
+          %! SPANNER_START
+        - \tweak stencil #constante-hairpin
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         - \tweak color #(x11-color 'blue)
-          %! EXPLICIT_DYNAMIC
-          %! SPANNER_START
-        - \tweak stencil #constante-hairpin
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         \<

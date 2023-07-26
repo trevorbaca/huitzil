@@ -742,11 +742,11 @@ number.6.RH.Music = {
     d8
     :32
     _ \baca-ffz-markup
+      %! REAPPLIED_DYNAMIC
+    - \tweak stencil #constante-hairpin
       %! REAPPLIED_DYNAMIC_COLOR
       %! REAPPLIED_DYNAMIC
     - \tweak color #(x11-color 'green4)
-      %! REAPPLIED_DYNAMIC
-    - \tweak stencil #constante-hairpin
       %! REAPPLIED_DYNAMIC
     \<
     \glissando
@@ -1162,13 +1162,13 @@ number.6.RH.Music = {
     - \tweak staff-padding 2
     ^ \huitzil-directly-on-bridge-markup
     _ \baca-ffz-markup
+      %! EXPLICIT_DYNAMIC
+      %! SPANNER_START
+    - \tweak stencil #constante-hairpin
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     - \tweak color #(x11-color 'blue)
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
-    - \tweak stencil #constante-hairpin
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
@@ -1205,13 +1205,13 @@ number.6.RH.Music = {
       %! SPANNER_STOP
     \p
     _ \baca-ffz-markup
+      %! EXPLICIT_DYNAMIC
+      %! SPANNER_START
+    - \tweak stencil #constante-hairpin
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     - \tweak color #(x11-color 'blue)
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
-    - \tweak stencil #constante-hairpin
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
@@ -1268,24 +1268,24 @@ number.6.RH.Music = {
       %! SPANNER_STOP
     \pp
     _ \baca-ffz-markup
+      %! SPANNER_START
+    - \abjad-dashed-line-with-arrow
+      %! SPANNER_START
+    - \baca-text-spanner-left-text "(trem. mod.)"
+      %! SPANNER_START
+    - \tweak staff-padding 6
+      %! SPANNER_START
+    \startTextSpan
+      %! EXPLICIT_DYNAMIC
+      %! SPANNER_START
+    - \tweak stencil #constante-hairpin
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
-    - \tweak stencil #constante-hairpin
-      %! EXPLICIT_DYNAMIC
-      %! SPANNER_START
     \<
-      %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
-      %! SPANNER_START
-    - \baca-text-spanner-left-text "(trem. mod.)"
-      %! SPANNER_START
-    \startTextSpan
 
     % [RH.Music measure 19]
     d''2
@@ -1294,11 +1294,11 @@ number.6.RH.Music = {
       %! SPANNER_STOP
     \stopTextSpan
       %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "più stretto"
+      %! SPANNER_START
+    - \tweak staff-padding 6
       %! SPANNER_START
     \startTextSpan
 
@@ -1309,11 +1309,11 @@ number.6.RH.Music = {
       %! SPANNER_STOP
     \stopTextSpan
       %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "più largo"
+      %! SPANNER_START
+    - \tweak staff-padding 6
       %! SPANNER_START
     \startTextSpan
 
@@ -1324,17 +1324,17 @@ number.6.RH.Music = {
       %! SPANNER_STOP
     \stopTextSpan
       %! SPANNER_START
-    - \tweak bound-details.right.padding 0.5
-      %! SPANNER_START
-    - \tweak bound-details.right.stencil-align-dir-y #center
-      %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "più stretto"
       %! SPANNER_START
     - \baca-text-spanner-right-text "mod."
+      %! SPANNER_START
+    - \tweak bound-details.right.padding 0.5
+      %! SPANNER_START
+    - \tweak bound-details.right.stencil-align-dir-y #center
+      %! SPANNER_START
+    - \tweak staff-padding 6
       %! SPANNER_START
     \startTextSpan
 
