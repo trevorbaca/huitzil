@@ -360,7 +360,9 @@ def make_time_signatures(music):
 
 
 def GLOBALS(skips):
-    baca.metronome_mark(skips[1 - 1], library.metronome_marks["78"], library.manifests)
+    baca.metronome_mark(
+        skips[1 - 1], library.metronome_marks["78"], manifests=library.manifests
+    )
 
 
 def VC(voice):

@@ -50,7 +50,7 @@ def GLOBALS(skips):
         (25 - 1, baca.Ritardando()),
     ):
         skip = skips[index]
-        baca.metronome_mark(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, manifests=library.manifests)
 
 
 def VC(voice, time_signatures):
