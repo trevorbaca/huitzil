@@ -300,6 +300,14 @@ number.10.RH.Music = {
       %! SPANNER_STOP
     \mp
     _ \baca-mpz-markup
+      %! SPANNER_START
+    - \abjad-dashed-line-with-arrow
+      %! SPANNER_START
+    - \baca-text-spanner-left-text "larg."
+      %! SPANNER_START
+    - \tweak staff-padding 6
+      %! SPANNER_START
+    \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -310,14 +318,6 @@ number.10.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \>
-      %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
-      %! SPANNER_START
-    - \baca-text-spanner-left-text "larg."
-      %! SPANNER_START
-    \startTextSpan
     - \tweak stencil ##f
     ~
       %! REAPPLIED_CLEF_REDRAW_COLOR
@@ -335,6 +335,14 @@ number.10.RH.Music = {
     \pp
       %! SPANNER_STOP
     \stopTextSpan
+      %! SPANNER_START
+    - \abjad-dashed-line-with-arrow
+      %! SPANNER_START
+    - \baca-text-spanner-left-text "strett."
+      %! SPANNER_START
+    - \tweak staff-padding 6
+      %! SPANNER_START
+    \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -345,14 +353,6 @@ number.10.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
-      %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
-      %! SPANNER_START
-    - \baca-text-spanner-left-text "strett."
-      %! SPANNER_START
-    \startTextSpan
     - \tweak stencil ##f
     ~
     \repeatTie
@@ -369,6 +369,14 @@ number.10.RH.Music = {
     \mp
       %! SPANNER_STOP
     \stopTextSpan
+      %! SPANNER_START
+    - \abjad-dashed-line-with-arrow
+      %! SPANNER_START
+    - \baca-text-spanner-left-text "larg."
+      %! SPANNER_START
+    - \tweak staff-padding 6
+      %! SPANNER_START
+    \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -379,14 +387,6 @@ number.10.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \>
-      %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
-      %! SPANNER_START
-    - \baca-text-spanner-left-text "larg."
-      %! SPANNER_START
-    \startTextSpan
     - \tweak stencil ##f
     ~
     \repeatTie
@@ -403,6 +403,14 @@ number.10.RH.Music = {
     \pp
       %! SPANNER_STOP
     \stopTextSpan
+      %! SPANNER_START
+    - \abjad-dashed-line-with-arrow
+      %! SPANNER_START
+    - \baca-text-spanner-left-text "strett."
+      %! SPANNER_START
+    - \tweak staff-padding 6
+      %! SPANNER_START
+    \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -413,14 +421,6 @@ number.10.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
-      %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
-      %! SPANNER_START
-    - \baca-text-spanner-left-text "strett."
-      %! SPANNER_START
-    \startTextSpan
     - \tweak stencil ##f
     ~
     \repeatTie
@@ -437,6 +437,14 @@ number.10.RH.Music = {
     \mp
       %! SPANNER_STOP
     \stopTextSpan
+      %! SPANNER_START
+    - \abjad-dashed-line-with-arrow
+      %! SPANNER_START
+    - \baca-text-spanner-left-text "larg."
+      %! SPANNER_START
+    - \tweak staff-padding 6
+      %! SPANNER_START
+    \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -447,14 +455,6 @@ number.10.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \>
-      %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
-      %! SPANNER_START
-    - \baca-text-spanner-left-text "larg."
-      %! SPANNER_START
-    \startTextSpan
     - \tweak stencil ##f
     ~
     \repeatTie
@@ -471,6 +471,14 @@ number.10.RH.Music = {
     \pp
       %! SPANNER_STOP
     \stopTextSpan
+      %! SPANNER_START
+    - \abjad-dashed-line-with-arrow
+      %! SPANNER_START
+    - \baca-text-spanner-left-text "strett."
+      %! SPANNER_START
+    - \tweak staff-padding 6
+      %! SPANNER_START
+    \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -481,14 +489,6 @@ number.10.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
-      %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
-      %! SPANNER_START
-    - \baca-text-spanner-left-text "strett."
-      %! SPANNER_START
-    \startTextSpan
     - \tweak stencil ##f
     ~
     \repeatTie
@@ -505,6 +505,14 @@ number.10.RH.Music = {
     \mp
       %! SPANNER_STOP
     \stopTextSpan
+      %! SPANNER_START
+    - \abjad-dashed-line-with-arrow
+      %! SPANNER_START
+    - \baca-text-spanner-left-text "larg."
+      %! SPANNER_START
+    - \tweak staff-padding 6
+      %! SPANNER_START
+    \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -515,14 +523,6 @@ number.10.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \>
-      %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
-      %! SPANNER_START
-    - \baca-text-spanner-left-text "larg."
-      %! SPANNER_START
-    \startTextSpan
     - \tweak stencil ##f
     ~
     \repeatTie
@@ -539,6 +539,14 @@ number.10.RH.Music = {
     \pp
       %! SPANNER_STOP
     \stopTextSpan
+      %! SPANNER_START
+    - \abjad-dashed-line-with-arrow
+      %! SPANNER_START
+    - \baca-text-spanner-left-text "strett."
+      %! SPANNER_START
+    - \tweak staff-padding 6
+      %! SPANNER_START
+    \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
@@ -549,14 +557,6 @@ number.10.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
-      %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
-    - \abjad-dashed-line-with-arrow
-      %! SPANNER_START
-    - \baca-text-spanner-left-text "strett."
-      %! SPANNER_START
-    \startTextSpan
     - \tweak stencil ##f
     ~
     \repeatTie
@@ -574,17 +574,17 @@ number.10.RH.Music = {
       %! SPANNER_STOP
     \stopTextSpan
       %! SPANNER_START
-    - \tweak bound-details.right.padding 0.5
-      %! SPANNER_START
-    - \tweak bound-details.right.stencil-align-dir-y #center
-      %! SPANNER_START
-    - \tweak staff-padding 6
-      %! SPANNER_START
     - \abjad-dashed-line-with-arrow
       %! SPANNER_START
     - \baca-text-spanner-left-text "larg."
       %! SPANNER_START
     - \baca-text-spanner-right-text "strett."
+      %! SPANNER_START
+    - \tweak bound-details.right.padding 0.5
+      %! SPANNER_START
+    - \tweak bound-details.right.stencil-align-dir-y #center
+      %! SPANNER_START
+    - \tweak staff-padding 6
       %! SPANNER_START
     \startTextSpan
       %! EXPLICIT_DYNAMIC_COLOR
