@@ -43,7 +43,9 @@ def make_empty_score():
 
 
 def GLOBALS(skips):
-    baca.metronome_mark(skips[1 - 1], library.metronome_marks["44"], library.manifests)
+    baca.metronome_mark(
+        skips[1 - 1], library.metronome_marks["44"], manifests=library.manifests
+    )
 
 
 def VC(voice, time_signatures):
