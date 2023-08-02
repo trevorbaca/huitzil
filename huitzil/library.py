@@ -5,7 +5,7 @@ import baca
 
 
 def make_empty_score():
-    tag = baca.tags.function_name(inspect.currentframe())
+    tag = baca.helpers.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
     rh_music_voice = abjad.Voice(name="RH.Music", tag=tag)
     rh_music_staff = abjad.Staff(
