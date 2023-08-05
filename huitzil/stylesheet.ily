@@ -209,9 +209,7 @@
 
     \override BarLine.hair-thickness = 0.5
 
-    \override Beam.breakable = ##t
 
-    \override Glissando.breakable = ##t
     \override Glissando.thickness = 3
 
     \override Hairpin.to-barline = ##f
@@ -234,7 +232,6 @@
 
     \override TextSpanner.to-barline = ##t
 
-    \override TupletBracket.breakable = ##t
     \override TupletBracket.direction = #down
     \override TupletNumber.font-size = 1
     \override TupletNumber.text = #tuplet-number::calc-fraction-text
