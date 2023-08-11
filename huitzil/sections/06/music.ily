@@ -78,7 +78,7 @@ number.6.Skips = {
       %! RED_START_BAR
     %@% \baca-thick-red-bar-line
       %! REAPPLIED_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'green4
+    \baca-time-signature-color #(x11-color 'green4)
       %! REAPPLIED_TIME_SIGNATURE
     \time 1/2
       %! RED_START_BAR
@@ -138,7 +138,7 @@ number.6.Skips = {
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 2/3
     s1 * 2/3
@@ -163,7 +163,7 @@ number.6.Skips = {
 
     % [Skips measure 4]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/2
     s1 * 1/2
@@ -190,7 +190,7 @@ number.6.Skips = {
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/5
     s1 * 4/5
@@ -215,7 +215,7 @@ number.6.Skips = {
 
     % [Skips measure 6]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/2
     s1 * 1/2
@@ -242,7 +242,7 @@ number.6.Skips = {
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 2/3
     s1 * 2/3
@@ -267,7 +267,7 @@ number.6.Skips = {
 
     % [Skips measure 8]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/2
     s1 * 1/2
@@ -294,7 +294,7 @@ number.6.Skips = {
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/5
     s1 * 4/5
@@ -319,7 +319,7 @@ number.6.Skips = {
 
     % [Skips measure 10]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/2
     s1 * 1/2
@@ -346,7 +346,7 @@ number.6.Skips = {
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 2/3
     s1 * 2/3
@@ -371,7 +371,7 @@ number.6.Skips = {
 
     % [Skips measure 12]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/2
     s1 * 1/2
@@ -398,7 +398,7 @@ number.6.Skips = {
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/5
     s1 * 4/5
@@ -423,7 +423,7 @@ number.6.Skips = {
 
     % [Skips measure 14]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/2
     s1 * 1/2
@@ -450,7 +450,7 @@ number.6.Skips = {
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 2/3
     s1 * 2/3
@@ -475,7 +475,7 @@ number.6.Skips = {
 
     % [Skips measure 16]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/2
     s1 * 1/2
@@ -502,7 +502,7 @@ number.6.Skips = {
       %! EXPLICIT_TIME_SIGNATURE
     #(ly:expect-warning "strange time signature found")
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 4/5
     s1 * 4/5
@@ -527,7 +527,7 @@ number.6.Skips = {
 
     % [Skips measure 18]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #'blue
+    \baca-time-signature-color #blue
       %! EXPLICIT_TIME_SIGNATURE
     \time 1/2
     s1 * 1/2
