@@ -100,7 +100,7 @@ number.7.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "88" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "88" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -713,7 +713,7 @@ number.7.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "88" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "88" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -791,7 +791,7 @@ number.7.RH.Music = {
       %! REAPPLIED_CLEF_COLOR
     \once \override RHStaff.Clef.color = #(x11-color 'green4)
       %! EXPLICIT_STAFF_LINES_COLOR
-    \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)
+    \once \override RHStaff.StaffSymbol.color = #blue
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8  7.8 -5.8 -6 -6.2 -8 -10 -12 -14 -16 -17.8 -18 -18.2)
     \morleyDashedStaffSymbolLines #'(   #f  #f #f  #f   #f #f   #t #t  #t  #t  #t  #f    #f  #f)
     \override DynamicLineSpanner.staff-padding = 7
@@ -818,7 +818,7 @@ number.7.RH.Music = {
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
     \mp
@@ -832,7 +832,7 @@ number.7.RH.Music = {
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \>
@@ -906,7 +906,7 @@ number.7.RH.Music = {
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
     \pp
@@ -921,7 +921,7 @@ number.7.RH.Music = {
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
     \baca-pp-parenthesized
@@ -932,7 +932,7 @@ number.7.RH.Music = {
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
     \<
@@ -1007,7 +1007,7 @@ number.7.RH.Music = {
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
     \ff
@@ -1015,7 +1015,7 @@ number.7.RH.Music = {
       %! EXPLICIT_DYNAMIC
       %! RIGHT_BROKEN
       %! SPANNER_START
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #blue
       %! EXPLICIT_DYNAMIC
       %! RIGHT_BROKEN
       %! SPANNER_START
@@ -1079,7 +1079,7 @@ number.7.Cello.Music = {
           %! SHIFTED_CLEF
     %%% \once \override Staff.Clef.X-extent = ##f
           %! EXPLICIT_CLEF_COLOR
-        \once \override Staff.Clef.color = #(x11-color 'blue)
+        \once \override Staff.Clef.color = #blue
           %! MEASURE_174
           %! SHIFTED_CLEF
     %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)

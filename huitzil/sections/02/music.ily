@@ -84,7 +84,7 @@ number.2.Skips = {
       %! RED_START_BAR
     %@% \baca-thick-red-bar-line
       %! REAPPLIED_TIME_SIGNATURE_COLOR
-    \baca-time-signature-color #(x11-color 'green4)
+    \baca-time-signature-color  #(x11-color 'green4)
       %! REAPPLIED_TIME_SIGNATURE
     \time 3/4
       %! RED_START_BAR
@@ -97,7 +97,7 @@ number.2.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "44" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -668,7 +668,7 @@ number.2.RH.Music = {
           %! REAPPLIED_CLEF_COLOR
         \once \override RHStaff.Clef.color = #(x11-color 'green4)
           %! EXPLICIT_STAFF_LINES_COLOR
-        \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)
+        \once \override RHStaff.StaffSymbol.color = #blue
         \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2)
         \override DynamicLineSpanner.staff-padding = 2.5
           %! REAPPLIED_CLEF_COLOR_CANCELLATION
@@ -692,7 +692,7 @@ number.2.RH.Music = {
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         - \tweak self-alignment-X -0.9
           %! EXPLICIT_DYNAMIC
@@ -1057,7 +1057,7 @@ number.2.RH.Music = {
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
           %! SPANNER_STOP
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
           %! SPANNER_STOP
         \baca-mp-parenthesized
@@ -1072,7 +1072,7 @@ number.2.RH.Music = {
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         \<
