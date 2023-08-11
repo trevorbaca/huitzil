@@ -87,6 +87,12 @@ number.2.Skips = {
     \baca-time-signature-color #'green4
       %! REAPPLIED_TIME_SIGNATURE
     \time 3/4
+      %! RED_START_BAR
+    %@% \tweak break-visibility ##(#t #t #f)
+      %! RED_START_BAR
+    %@% \tweak color #red
+      %! RED_START_BAR
+    %@% \mark \markup \with-dimensions-from \null "02"
     s1 * 3/4
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
