@@ -1,11 +1,10 @@
 import baca
 
-top = 17
-staves = (10, 17)
-separation = 70
-
 
 def main():
+    top = 17
+    staves = (10, 17)
+    separation = 70
     spacing = baca.make_layout(
         baca.page(
             1,
