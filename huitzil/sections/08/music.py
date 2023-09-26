@@ -60,8 +60,7 @@ def GLOBALS(skips):
 
 def VC(voice, time_signatures):
     # 1
-    music = baca.parse("{ c1 * 1/2 }")
-    voice.extend(music)
+    voice.append("{ c1 * 1/2 }")
     music = baca.make_mmrests(time_signatures(2, 26))
     voice.extend(music)
 
