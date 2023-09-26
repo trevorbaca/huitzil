@@ -52,19 +52,16 @@ def VC(voice, time_signatures):
     music = baca.make_mmrests(time_signatures(1, 24))
     voice.extend(music)
     # 25
-    music = baca.parse("{ c1 }")
-    voice.extend(music)
+    voice.append("{ c1 }")
 
 
 def RH(voice):
     # (1, 4)
-    music = baca.parse("{ c4 r2 c4 r2 c4 r2 c4 r2 }")
-    voice.extend(music)
+    voice.append("{ c4 r2 c4 r2 c4 r2 c4 r2 }")
     # (5, 8)
-    music = baca.parse("{ c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 }")
-    voice.extend(music)
+    voice.append("{ c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 c4 c16 r8. r4 }")
     # (9, 12)
-    music = baca.parse(
+    voice.append(
         "{"
         r" c4 \times 2/3 { c8 r4 } r4"
         r" c4 \times 2/3 { c8 r4 } r4"
@@ -72,26 +69,20 @@ def RH(voice):
         r" c4 c8 r8 r4"
         " }",
     )
-    voice.extend(music)
     # (13, 15)
-    music = baca.parse("{ c4 c4 c4 c4 c4 c4 }")
-    voice.extend(music)
+    voice.append("{ c4 c4 c4 c4 c4 c4 }")
     # (16, 18)
-    music = baca.parse(
+    voice.append(
         "{"
         r" \times 2/3 { c4 c4 c4 }"
         r" \times 2/3 { c4 c4 c4 }"
         r" \times 2/3 { c4 c4 c4 }"
         " }",
     )
-    voice.extend(music)
     # (19, 20)
-    music = baca.parse(
-        "{" r" c8 c8 c8 c8" r" c8 c8 c8 c8" " }",
-    )
-    voice.extend(music)
+    voice.append("{ c8 c8 c8 c8 c8 c8 c8 c8 }")
     # (21, 24)
-    music = baca.parse(
+    voice.append(
         "{"
         r" \times 4/5 { c8 c8 c8 c8 c8 }"
         r" \times 4/6 { c8 c8 c8 c8 c8 c8 }"
@@ -99,10 +90,8 @@ def RH(voice):
         " c16 c16 c16 c16 c16 c16 c16 c16"
         " }",
     )
-    voice.extend(music)
     # 25
-    music = baca.parse("{ c1 }")
-    voice.extend(music)
+    voice.append("{ c1 }")
     baca.section.append_anchor_note(voice)
 
 
