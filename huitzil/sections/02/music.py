@@ -107,7 +107,7 @@ def vc(m):
         )
         baca.mmrest_transparent(o.mmrests())
         with baca.scope(o.leaves()[1:]) as u:
-            baca.bar_line_transparent(u)
+            baca.override.bar_line_transparent(u)
             baca.span_bar_transparent(u)
         baca.time_signature_stencil_false(o)
     with baca.scope(m[25]) as o:
