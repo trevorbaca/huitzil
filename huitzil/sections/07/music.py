@@ -113,15 +113,15 @@ def vc(m):
                 r"\startStaff",
             ],
         )
-        baca.mmrest_transparent(o.mmrests())
+        baca.override.mmrest_transparent(o.mmrests())
         baca.override.bar_line_transparent(o)
-        baca.span_bar_transparent(o)
+        baca.override.span_bar_transparent(o)
         baca.pitch(
             o.rleaf(-1),
             "A1",
             allow_hidden=True,
         ),
-        baca.time_signature_stencil_false(o)
+        baca.override.time_signature_stencil_false(o)
     with baca.scope(m.get(14, 24)) as o:
         baca.glissando(o.rleaves())
     with baca.scope(m.get(25, 26)) as o:
@@ -222,9 +222,9 @@ def rh(m):
             abjad.Tweak(r"- \tweak staff-padding 1"),
         )
         baca.stem_tremolo(o.pleaves())
-        baca.text_script_parent_alignment_x(o, 0)
-        baca.text_script_self_alignment_x(o, 0)
-        baca.text_script_staff_padding(o, 4)
+        baca.override.text_script_parent_alignment_x(o, 0)
+        baca.override.text_script_self_alignment_x(o, 0)
+        baca.override.text_script_staff_padding(o, 4)
 
 
 @baca.build.timed("make_score")

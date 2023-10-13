@@ -146,10 +146,10 @@ def RH(voice):
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.mmrest_transparent(o.mmrests())
-        baca.time_signature_stencil_false(o)
+        baca.override.mmrest_transparent(o.mmrests())
+        baca.override.time_signature_stencil_false(o)
         baca.override.bar_line_transparent(o)
-        baca.span_bar_transparent(o)
+        baca.override.span_bar_transparent(o)
 
 
 def rh(m):
@@ -264,7 +264,7 @@ def rh(m):
         )
         for leaf in o:
             library.sforzando(leaf, r"\baca-mpz-markup")
-        wrappers = baca.hairpin_to_barline(o)
+        wrappers = baca.override.hairpin_to_barline(o)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions(o, [6, 4, 2, 0])
     with baca.scope(m[20]) as o:
@@ -303,7 +303,7 @@ def rh(m):
             abjad.Tweak(r"- \tweak self-alignment-X -0.75"),
             abjad.Tweak(r"- \tweak staff-padding 2"),
         )
-        wrappers = baca.hairpin_to_barline(o)
+        wrappers = baca.override.hairpin_to_barline(o)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions(o, [-6])
     with baca.scope(m.leaves()) as o:
@@ -323,9 +323,9 @@ def rh(m):
         )
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
         baca.stem_tremolo(o.pleaves())
-        baca.text_script_parent_alignment_x(o, 0)
-        baca.text_script_self_alignment_x(o, 0)
-        baca.text_script_staff_padding(o, 4)
+        baca.override.text_script_parent_alignment_x(o, 0)
+        baca.override.text_script_self_alignment_x(o, 0)
+        baca.override.text_script_staff_padding(o, 4)
     with baca.scope(m.leaves()) as o:
         baca.glissando(o)
 

@@ -130,10 +130,10 @@ def RH(voice):
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.mmrest_transparent(o.mmrests())
+        baca.override.mmrest_transparent(o.mmrests())
         baca.override.bar_line_transparent(o)
-        baca.span_bar_transparent(o)
-        baca.time_signature_stencil_false(o)
+        baca.override.span_bar_transparent(o)
+        baca.override.time_signature_stencil_false(o)
 
 
 def rh(m):
@@ -250,7 +250,7 @@ def rh(m):
     with baca.scope(m[21]) as o:
         baca.staff_positions(o, [-4])
     with baca.scope(m[22]) as o:
-        wrappers = baca.hairpin_to_barline(o)
+        wrappers = baca.override.hairpin_to_barline(o)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions(o, [-6])
     with baca.scope(m.leaves()) as o:
@@ -265,9 +265,9 @@ def rh(m):
             ],
         ),
         baca.stem_tremolo(o.pleaves())
-        baca.text_script_parent_alignment_x(o, 0)
-        baca.text_script_self_alignment_x(o, 0)
-        baca.text_script_staff_padding(o, 4)
+        baca.override.text_script_parent_alignment_x(o, 0)
+        baca.override.text_script_self_alignment_x(o, 0)
+        baca.override.text_script_staff_padding(o, 4)
     with baca.scope(m.leaves()) as o:
         baca.glissando(o)
 

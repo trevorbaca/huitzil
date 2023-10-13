@@ -49,9 +49,9 @@ def RH(voice):
 
 def vc(m):
     with baca.scope(m.leaves()) as o:
-        baca.mmrest_transparent(o.mmrests())
+        baca.override.mmrest_transparent(o.mmrests())
         baca.override.bar_line_transparent(o)
-        baca.span_bar_transparent(o)
+        baca.override.span_bar_transparent(o)
         wrappers = baca.literal(
             o.leaf(0),
             [
@@ -61,7 +61,7 @@ def vc(m):
             ],
         )
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
-        baca.time_signature_stencil_false(o)
+        baca.override.time_signature_stencil_false(o)
     with baca.scope(m[10]) as o:
         baca.literal(
             o.leaf(0),
@@ -125,9 +125,9 @@ def rh(m):
         )
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
         baca.stem_tremolo(o.pleaves())
-        baca.text_script_parent_alignment_x(o, 0)
-        baca.text_script_self_alignment_x(o, 0)
-        baca.text_script_staff_padding(o, 4)
+        baca.override.text_script_parent_alignment_x(o, 0)
+        baca.override.text_script_self_alignment_x(o, 0)
+        baca.override.text_script_staff_padding(o, 4)
 
 
 @baca.build.timed("make_score")
