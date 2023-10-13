@@ -143,7 +143,7 @@ def vc(m):
         baca.staff_position(o, 7)
     with baca.scope(m.leaves()) as o:
         baca.mmrest_transparent(o.mmrests())
-        baca.bar_line_transparent(o)
+        baca.override.bar_line_transparent(o)
         baca.span_bar_transparent(o)
         baca.time_signature_stencil_false(o)
     with baca.scope(m.get(8, 14)) as o:

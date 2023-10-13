@@ -131,7 +131,7 @@ def RH(voice):
 def vc(m):
     with baca.scope(m.leaves()) as o:
         baca.mmrest_transparent(o.mmrests())
-        baca.bar_line_transparent(o)
+        baca.override.bar_line_transparent(o)
         baca.span_bar_transparent(o)
         baca.time_signature_stencil_false(o)
 

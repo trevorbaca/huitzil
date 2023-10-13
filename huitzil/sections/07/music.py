@@ -114,7 +114,7 @@ def vc(m):
             ],
         )
         baca.mmrest_transparent(o.mmrests())
-        baca.bar_line_transparent(o)
+        baca.override.bar_line_transparent(o)
         baca.span_bar_transparent(o)
         baca.pitch(
             o.rleaf(-1),
