@@ -105,11 +105,11 @@ def vc(m):
                 r"\startStaff",
             ],
         )
-        baca.mmrest_transparent(o.mmrests())
+        baca.override.mmrest_transparent(o.mmrests())
         with baca.scope(o.leaves()[1:]) as u:
             baca.override.bar_line_transparent(u)
-            baca.span_bar_transparent(u)
-        baca.time_signature_stencil_false(o)
+            baca.override.span_bar_transparent(u)
+        baca.override.time_signature_stencil_false(o)
     with baca.scope(m[25]) as o:
         baca.literal(
             o.leaf(0),
@@ -124,7 +124,7 @@ def vc(m):
 
 def rh(m):
     with baca.scope(m.get(1, 4)) as o:
-        baca.rest_staff_position(o.rests(), 0)
+        baca.override.rest_staff_position(o.rests(), 0)
     with baca.scope(m.get(19, 24)) as o:
         baca.beam(o)
     for n in [9, 10]:
@@ -196,7 +196,7 @@ def rh(m):
             abjad.Tweak(r"- \tweak staff-padding 3"),
         ),
         baca.staff_position(o, 8)
-        baca.tuplet_bracket_down(o)
+        baca.override.tuplet_bracket_down(o)
 
 
 @baca.build.timed("make_score")

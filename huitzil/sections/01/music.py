@@ -388,17 +388,17 @@ def vc(m):
     with baca.scope(m[8]) as o:
         baca.untie(o.pleaf(-2))
         baca.repeat_tie(o.pleaf(-1))
-        baca.repeat_tie_extra_offset(o.pleaf(-1), (-1.5, 0))
+        baca.override.repeat_tie_extra_offset(o.pleaf(-1), (-1.5, 0))
     with baca.scope(m[20]) as o:
         baca.repeat_tie(o.pleaf(0))
     with baca.scope(m[48]) as o:
         baca.repeat_tie(o.pleaf(0))
     with baca.scope(m.get(1, 51)) as o:
-        baca.tuplet_bracket_staff_padding(o, 3)
+        baca.override.tuplet_bracket_staff_padding(o, 3)
     with baca.scope(m[53]) as o:
         baca.breathe(o.pleaf(-1))
     with baca.scope(m.get(52, 54)) as o:
-        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.override.tuplet_bracket_staff_padding(o, 4)
     with baca.scope(m[54]) as o:
         wrappers = baca.breathe(o.pleaf(-1))
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
@@ -412,7 +412,7 @@ def vc(m):
 def rh(m):
     with baca.scope(m.leaves()) as o:
         baca.literal(o.leaf(0), r"\stopStaff")
-        baca.mmrest_transparent(o.mmrests())
+        baca.override.mmrest_transparent(o.mmrests())
         baca.clef(o.leaf(0), "percussion")
 
 
