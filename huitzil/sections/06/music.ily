@@ -713,6 +713,8 @@ number.6.Skips = {
 number.6.RH.Music = {
 
     % [RH.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "percussion"
       %! REAPPLIED_CLEF_COLOR
     \once \override RHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_STAFF_LINES_COLOR
@@ -742,8 +744,6 @@ number.6.RH.Music = {
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)
       %! +SECTION
     \startStaff
-      %! REAPPLIED_CLEF
-    \clef "percussion"
     d8
     :32
     _ \baca-ffz-markup
@@ -1426,6 +1426,8 @@ number.6.RH.Staff = {
 number.6.Cello.Music = {
 
     % [Cello.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "bass"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
     \override MultiMeasureRest.transparent = ##t
@@ -1436,8 +1438,6 @@ number.6.Cello.Music = {
     %@% \override Staff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set Staff.forceClef = ##t
-      %! REAPPLIED_CLEF
-    \clef "bass"
     R1 * 1/2
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"
@@ -1496,6 +1496,8 @@ number.6.Cello.Music = {
     {
 
         % [Cello.Music measure 14]
+          %! EXPLICIT_CLEF
+        \clef "treble"
         \once \override NoteHead.duration-log = 2
         \once \override NoteHead.no-ledgers = ##t
         \once \override NoteHead.style = #'do
@@ -1513,8 +1515,6 @@ number.6.Cello.Music = {
         \set Staff.forceClef = ##t
         \stopStaff
         \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
-          %! EXPLICIT_CLEF
-        \clef "treble"
         b''2
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)

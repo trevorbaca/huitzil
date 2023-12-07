@@ -788,6 +788,8 @@ number.7.Skips = {
 number.7.RH.Music = {
 
     % [RH.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "percussion"
       %! REAPPLIED_CLEF_COLOR
     \once \override RHStaff.Clef.color = #(x11-color 'green4)
       %! EXPLICIT_STAFF_LINES_COLOR
@@ -811,8 +813,6 @@ number.7.RH.Music = {
     \once \override RHStaff.StaffSymbol.line-count = 14
       %! EXPLICIT_STAFF_LINES
     \startStaff
-      %! REAPPLIED_CLEF
-    \clef "percussion"
     d4
     :32
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1075,6 +1075,8 @@ number.7.Cello.Music = {
     {
 
         % [Cello.Music measure 1]
+          %! EXPLICIT_CLEF
+        \clef "bass"
           %! MEASURE_174
           %! SHIFTED_CLEF
     %%% \once \override Staff.Clef.X-extent = ##f
@@ -1093,8 +1095,6 @@ number.7.Cello.Music = {
         \stopStaff
         \once \override Staff.StaffSymbol.line-count = 5
         \startStaff
-          %! EXPLICIT_CLEF
-        \clef "bass"
         a,1 * 1/4
         - \tweak padding 2.5
         _ \baca-string-iii-markup

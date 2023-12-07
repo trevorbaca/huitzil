@@ -1539,6 +1539,8 @@ number.1.Skips = {
 number.1.RH.Music = {
 
     % [RH.Music measure 1]
+      %! EXPLICIT_CLEF
+    \clef "percussion"
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override RHStaff.Clef.X-extent = ##f
@@ -1553,8 +1555,6 @@ number.1.RH.Music = {
       %! EXPLICIT_CLEF
     \set RHStaff.forceClef = ##t
     \stopStaff
-      %! EXPLICIT_CLEF
-    \clef "percussion"
     R1 * 7/8
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"7" #"8"
@@ -1845,6 +1845,8 @@ number.1.Cello.Music = {
     {
 
         % [Cello.Music measure 1]
+          %! EXPLICIT_CLEF
+        \clef "bass"
           %! MEASURE_1
           %! SHIFTED_CLEF
     %%% \once \override Staff.Clef.X-extent = ##f
@@ -1858,8 +1860,6 @@ number.1.Cello.Music = {
         \override TupletBracket.staff-padding = 3
           %! EXPLICIT_CLEF
         \set Staff.forceClef = ##t
-          %! EXPLICIT_CLEF
-        \clef "bass"
         fs!8
         - \tweak staff-padding 9
         _ \huitzil-phrasing-dynamics-see-preface-markup
