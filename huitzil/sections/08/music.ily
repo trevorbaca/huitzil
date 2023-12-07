@@ -816,6 +816,8 @@ number.8.Skips = {
 number.8.RH.Music = {
 
     % [RH.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "percussion"
       %! REAPPLIED_CLEF_COLOR
     \once \override RHStaff.Clef.color = #(x11-color 'green4)
       %! EXPLICIT_STAFF_LINES_COLOR
@@ -838,8 +840,6 @@ number.8.RH.Music = {
     \once \override RHStaff.StaffSymbol.line-count = 7
       %! EXPLICIT_STAFF_LINES
     \startStaff
-      %! REAPPLIED_CLEF
-    \clef "percussion"
     b'4
     :32
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1707,6 +1707,8 @@ number.8.Cello.Music = {
     {
 
         % [Cello.Music measure 1]
+          %! REAPPLIED_CLEF
+        \clef "bass"
           %! REAPPLIED_CLEF_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)
         \override Score.BarLine.transparent = ##t
@@ -1716,8 +1718,6 @@ number.8.Cello.Music = {
         %@% \override Staff.Clef.color = ##f
           %! REAPPLIED_CLEF
         \set Staff.forceClef = ##t
-          %! REAPPLIED_CLEF
-        \clef "bass"
         a,,1 * 1/2
           %! DURATION_MULTIPLIER
         %@% ^ \baca-duration-multiplier-markup #"1" #"2"

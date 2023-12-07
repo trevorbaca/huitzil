@@ -687,6 +687,8 @@ number.5.Skips = {
 number.5.RH.Music = {
 
     % [RH.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "percussion"
       %! REAPPLIED_CLEF_COLOR
     \once \override RHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_STAFF_LINES_COLOR
@@ -712,8 +714,6 @@ number.5.RH.Music = {
     \stopStaff
     \once \override RHStaff.StaffSymbol.line-positions = #'(8.2 8 7.8 6 4 2 0 -2 -4 -5.8 -6 -6.2)
     \startStaff
-      %! REAPPLIED_CLEF
-    \clef "percussion"
     b'4
     :32
       %! EXPLICIT_DYNAMIC_COLOR
@@ -1426,6 +1426,8 @@ number.5.RH.Staff = {
 number.5.Cello.Music = {
 
     % [Cello.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "bass"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
     \override MultiMeasureRest.transparent = ##t
@@ -1436,8 +1438,6 @@ number.5.Cello.Music = {
     %@% \override Staff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set Staff.forceClef = ##t
-      %! REAPPLIED_CLEF
-    \clef "bass"
     R1 * 1/2
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"1" #"2"

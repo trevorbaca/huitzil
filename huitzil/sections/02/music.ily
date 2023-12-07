@@ -665,6 +665,8 @@ number.2.RH.Music = {
     {
 
         % [RH.Music measure 1]
+          %! REAPPLIED_CLEF
+        \clef "percussion"
           %! REAPPLIED_CLEF_COLOR
         \once \override RHStaff.Clef.color = #(x11-color 'green4)
           %! EXPLICIT_STAFF_LINES_COLOR
@@ -686,8 +688,6 @@ number.2.RH.Music = {
         \once \override RHStaff.StaffSymbol.line-count = 7
           %! EXPLICIT_STAFF_LINES
         \startStaff
-          %! REAPPLIED_CLEF
-        \clef "percussion"
         d''4
         - \downbow
           %! EXPLICIT_DYNAMIC_COLOR
@@ -1129,6 +1129,8 @@ number.2.RH.Staff = {
 number.2.Cello.Music = {
 
     % [Cello.Music measure 1]
+      %! REAPPLIED_CLEF
+    \clef "bass"
       %! REAPPLIED_CLEF_COLOR
     \once \override Staff.Clef.color = #(x11-color 'green4)
     \override MultiMeasureRest.transparent = ##t
@@ -1139,8 +1141,6 @@ number.2.Cello.Music = {
     \set Staff.forceClef = ##t
     \stopStaff
     \once \override Staff.StaffSymbol.line-positions = #'(4 -4)\startStaff
-      %! REAPPLIED_CLEF
-    \clef "bass"
     R1 * 3/4
       %! DURATION_MULTIPLIER
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
