@@ -215,7 +215,7 @@ def rh(m):
         )
     with baca.scope(m.get(10, 12)) as o:
         baca.hairpin(
-            o.rleaves(),
+            (),
             "mp > ppp -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             pieces=baca.select.lparts(o.rleaves(), [4, 5 + 1]),
@@ -274,7 +274,7 @@ def rh(m):
     with baca.scope(m.get(20, 26)) as o:
         leaves = baca.select.rleak(o.leaves()[1:])
         baca.hairpin(
-            leaves,
+            (),
             "p < f -- !",
             pieces=baca.select.lparts(leaves, [5, 1 + 1]),
         )

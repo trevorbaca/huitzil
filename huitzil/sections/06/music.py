@@ -169,7 +169,7 @@ def rh(m):
         # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
         leaves = o.leaves()[:-1]
         baca.hairpin(
-            leaves,
+            (),
             "mp > p <",
             # bookend=False,
             pieces=baca.select.lparts(leaves, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
@@ -236,7 +236,7 @@ def rh(m):
         # )
         # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
         baca.hairpin(
-            o.rleaves(),
+            (),
             "mp -- p -- pp -- p",
             bookend=False,
             pieces=baca.select.mgroups(o.rleaves(), [2, 2, 4, 2 + 1]),

@@ -95,7 +95,7 @@ def rh(m):
     with baca.scope(m.get(1, 10)) as o:
         library.sforzando(o.leaf(0), r"\baca-mpz-markup")
         baca.hairpin(
-            o,
+            (),
             "mp > pp <",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             final_hairpin=False,
