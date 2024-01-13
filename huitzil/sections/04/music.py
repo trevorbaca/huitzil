@@ -176,7 +176,7 @@ def rh(m):
         # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
         leaves = o.leaves()[:-1]
         baca.hairpin(
-            leaves,
+            (),
             "mp > p <",
             # bookend=False,
             pieces=baca.select.lparts(leaves, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
@@ -238,7 +238,7 @@ def rh(m):
         # )
         # FUTURE: replace this when LilyPond fixes DynamicLineSpanner bug:
         baca.hairpin(
-            o.rleaves(),
+            (),
             "mp -- p -- pp -- p",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             bookend=False,
