@@ -264,7 +264,7 @@ def rh(m):
         )
         for leaf in o:
             library.sforzando(leaf, r"\baca-mpz-markup")
-        wrappers = baca.override.hairpin_to_barline(o)
+        wrappers = baca.override.hairpin_to_bar_line(o, True)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions(o, [6, 4, 2, 0])
     with baca.scope(m[20]) as o:
@@ -303,7 +303,7 @@ def rh(m):
             abjad.Tweak(r"- \tweak self-alignment-X -0.75"),
             abjad.Tweak(r"- \tweak staff-padding 2"),
         )
-        wrappers = baca.override.hairpin_to_barline(o)
+        wrappers = baca.override.hairpin_to_bar_line(o, True)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions(o, [-6])
     with baca.scope(m.leaves()) as o:

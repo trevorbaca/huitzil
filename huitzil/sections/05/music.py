@@ -250,7 +250,7 @@ def rh(m):
     with baca.scope(m[21]) as o:
         baca.staff_positions(o, [-4])
     with baca.scope(m[22]) as o:
-        wrappers = baca.override.hairpin_to_barline(o)
+        wrappers = baca.override.hairpin_to_bar_line(o, True)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions(o, [-6])
     with baca.scope(m.leaves()) as o:
