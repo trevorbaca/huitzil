@@ -284,7 +284,7 @@ def rh(m):
             "ppp -- !",
         )
         library.sforzando(o, r"\baca-mpz-markup")
-        wrappers = baca.override.hairpin_to_barline(o)
+        wrappers = baca.override.hairpin_to_bar_line(o, True)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions(o, [6, 4, 2, 0])
     with baca.scope(m[20]) as o:
@@ -316,7 +316,7 @@ def rh(m):
     with baca.scope(m[25]) as o:
         baca.staff_positions(o, [-4])
     with baca.scope(m[26]) as o:
-        wrappers = baca.override.hairpin_to_barline(o)
+        wrappers = baca.override.hairpin_to_bar_line(o, True)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions(o, [-6])
     with baca.scope(m.leaves()) as o:

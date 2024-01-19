@@ -276,7 +276,7 @@ def rh(m):
         library.sforzando(o.leaf(4), r"\baca-mfz-markup")
         library.sforzando(o.leaf(5), r"\baca-mpz-markup")
     with baca.scope(m[22]) as o:
-        wrappers = baca.override.hairpin_to_barline(o)
+        wrappers = baca.override.hairpin_to_bar_line(o, True)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
     with baca.scope(m.leaves()) as o:
         wrappers = baca.breathe(

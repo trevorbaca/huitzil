@@ -278,7 +278,7 @@ def rh(m):
             pieces=baca.select.lparts(o, [1, 1, 1, 1 + 1]),
         )
     with baca.scope(m.get(18, 21)) as o:
-        wrappers = baca.override.hairpin_to_barline(o)
+        wrappers = baca.override.hairpin_to_bar_line(o, True)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m.get(18, 23)) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
@@ -288,7 +288,7 @@ def rh(m):
         library.sforzando(o.leaf(4), r"\baca-mfz-markup")
         library.sforzando(o.leaf(5), r"\baca-mpz-markup")
     with baca.scope(m[22]) as o:
-        wrappers = baca.override.hairpin_to_barline(o)
+        wrappers = baca.override.hairpin_to_bar_line(o, True)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
     with baca.scope(m[23]) as o:
         baca.literal(
