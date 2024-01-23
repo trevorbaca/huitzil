@@ -141,9 +141,10 @@ def rh(m):
         baca.staff_positions(o, [6, 6, 4])
     with baca.scope(m.get(1, 3)) as o:
         baca.hairpin(
-            o.rleaves(),
+            (),
             "mp -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
+            pieces=[o.rleaves()],
         )
         library.sforzando(o, r"\baca-mfz-markup")
     with baca.scope(m[2]) as o:
@@ -152,8 +153,9 @@ def rh(m):
         baca.staff_positions(o, [6, 6, 4])
     with baca.scope(m[4]) as o:
         baca.hairpin(
-            baca.select.rleaves(o, count=2),
+            (),
             "p -- !",
+            pieces=[baca.select.rleaves(o, count=2)],
         )
         baca.staff_positions(o, [4, 4, 2])
     with baca.scope(m.get(4, 5)) as o:
@@ -161,13 +163,18 @@ def rh(m):
         library.sforzando(o.leaves()[1:-3], r"\baca-mpz-markup")
         library.sforzando(o.leaves()[-3:], r"\baca-mfz-markup")
     with baca.scope(m[5]) as o:
-        baca.hairpin(o.leaves()[1:], "pp < mf")
+        baca.hairpin(
+            (),
+            "pp < mf",
+            pieces=[o.leaves()[1:]],
+        )
         baca.staff_positions(o, [4, 4, 2, 6, 4, 2])
     with baca.scope(m[6]) as o:
         baca.hairpin(
-            o.rleaves(),
+            (),
             "p -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
+            pieces=[o.rleaves()],
         )
         library.sforzando(o.leaf(0), r"\baca-fz-markup")
         library.sforzando(o.leaves()[1:], r"\baca-mpz-markup")
@@ -178,9 +185,10 @@ def rh(m):
         library.sforzando(o, r"\baca-fz-markup")
     with baca.scope(m.get(7, 9)) as o:
         baca.hairpin(
-            o.rleaves(),
+            (),
             "mf -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
+            pieces=[o.rleaves()],
         )
     with baca.scope(m[8]) as o:
         baca.staff_positions(o, [2, 2, 0])
@@ -192,9 +200,10 @@ def rh(m):
         library.sforzando(o.leaves()[:4], r"\baca-mfz-markup")
         library.sforzando(o.leaves()[4:], r"\baca-mpz-markup")
         baca.text_spanner(
-            baca.select.rleak(o.leaves()[:4]),
+            (),
             "(trem. mod.) => trem. stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
+            pieces=[baca.select.rleak(o.leaves()[:4])],
         )
     with baca.scope(m.get(10, 12)) as o:
         baca.hairpin(
@@ -212,7 +221,11 @@ def rh(m):
     with baca.scope(m[13]) as o:
         baca.staff_positions(o, [0])
     with baca.scope(m.get(13, 16)) as o:
-        baca.hairpin(o, "p < mf")
+        baca.hairpin(
+            (),
+            "p < mf",
+            pieces=[o],
+        )
         baca.text_spanner(
             (),
             "sub. mod. => più stretto => più largo => più stretto",
