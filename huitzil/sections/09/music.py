@@ -155,7 +155,7 @@ def rh(m):
     with baca.scope(m.get(2, 13)) as o:
         # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
         # baca.hairpin(
-        #    o.rleaves(),
+        #    (),
         #    "mp > p <",
         #    bookend=False,
         #    pieces=baca.select.lparts(o.rleaves(), [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
@@ -246,7 +246,7 @@ def rh(m):
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m.get(18, 23)) as o:
         baca.text_spanner(
-            o.rleaves(),
+            (),
             "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
             abjad.Tweak(r"- \tweak staff-padding 6"),
             bookend=False,

@@ -250,7 +250,7 @@ def rh(m):
     with baca.scope(m.get(13, 16)) as o:
         baca.hairpin(o, "p < mf")
         baca.text_spanner(
-            o,
+            (),
             "sub. trem. mod. => più stretto => più largo => più stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=baca.select.lparts(o, [1, 1, 2]),
@@ -301,7 +301,7 @@ def rh(m):
         library.sforzando(o, r"\baca-ffz-markup")
     with baca.scope(m.get(21, 26)) as o:
         baca.text_spanner(
-            o,
+            (),
             "sub. trem. mod. => più stretto => più largo => più stretto =>"
             " più largo => mod.",
             abjad.Tweak(r"- \tweak staff-padding 6"),

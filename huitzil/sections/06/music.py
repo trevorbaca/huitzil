@@ -161,7 +161,7 @@ def rh(m):
     with baca.scope(m.get(2, 13)) as o:
         # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
         # baca.hairpin(
-        #    o.rleaves(),
+        #    (),
         #    "mp > p <",
         #    bookend=False,
         #    pieces=baca.select.lparts(o.rleaves(), [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
@@ -230,7 +230,7 @@ def rh(m):
     with baca.scope(m.get(14, 23)) as o:
         # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
         # baca.hairpin(
-        #    o.rleaves(),
+        #    (),
         #    "mp -- p -- pp -- p -- !",
         #    pieces=baca.select.mgroups(o.rleaves(), [2, 2, 4, 2 + 1]),
         # )
@@ -263,7 +263,7 @@ def rh(m):
         library.sforzando(o.leaf(3), r"\baca-fffz-markup")
     with baca.scope(m.get(18, 22)) as o:
         baca.text_spanner(
-            o,
+            (),
             "(trem. mod.) => più stretto => più largo => più stretto => mod.",
             abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=baca.select.lparts(o, [1, 1, 1, 1 + 1]),
