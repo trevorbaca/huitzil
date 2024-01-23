@@ -138,9 +138,17 @@ def rh(m):
         for leaf in o:
             library.sforzando(leaf, r"\baca-fz-markup")
     with baca.scope(m.get(1, 13)) as o:
-        baca.hairpin(o, "mp > pp")
+        baca.hairpin(
+            (),
+            "mp > pp",
+            pieces=[o],
+        )
     with baca.scope(m.get(14, 26)) as o:
-        baca.hairpin(o, "(pp) < ff")
+        baca.hairpin(
+            (),
+            "(pp) < ff",
+            pieces=[o],
+        )
     with baca.scope(m.get(9, 16)) as o:
         baca.staff_positions(
             o,
@@ -165,8 +173,9 @@ def rh(m):
         baca.staff_positions(o, [-14, -14, -12, -12, -10, -10, -8, -8])
     with baca.scope(m.get(25, 26)) as o:
         baca.hairpin(
-            baca.select.rleak(o.leaves()[-1:]),
+            (),
             ">",
+            pieces=[baca.select.rleak(o.leaves()[-1:])],
             right_broken=True,
         )
         baca.literal(
