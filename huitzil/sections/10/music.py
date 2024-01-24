@@ -98,7 +98,7 @@ def rh(m):
             (),
             "mp > pp <",
             abjad.Tweak(r"- \tweak to-barline ##t"),
-            final_hairpin=False,
+            do_not_start_spanner_on_final_piece=True,
             pieces=baca.select.clparts(o, [1]),
         )
     with baca.scope(m[10]) as o:
