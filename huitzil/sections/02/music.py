@@ -126,7 +126,7 @@ def rh(m):
     with baca.scope(m.get(1, 4)) as o:
         baca.override.rest_staff_position(o.rests(), 0)
     with baca.scope(m.get(19, 24)) as o:
-        baca.beam(o)
+        baca.spanners.beam(o)
     for n in [9, 10]:
         with baca.scope(m[n]) as o:
             wrappers = baca.literal(
