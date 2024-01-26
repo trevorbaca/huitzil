@@ -139,10 +139,9 @@ def rh(m):
             o.rleaves(),
             right_broken=True,
         ),
-        baca.hairpin(
-            (),
+        baca.spanners.hairpin(
+            o.rleaves(),
             "(mp) -- !",
-            pieces=[o.rleaves()],
         )
         baca.literal(
             o.leaf(0),
