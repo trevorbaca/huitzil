@@ -161,18 +161,16 @@ def rh(m):
     with baca.scope(m.get(2, 13)) as o:
         # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
         # baca.hairpin(
-        #    (),
+        #    baca.select.lparts(o.rleaves(), [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
         #    "mp > p <",
         #    bookend=False,
-        #    pieces=baca.select.lparts(o.rleaves(), [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
         # )
         # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
         leaves = o.leaves()[:-1]
         baca.hairpin(
-            (),
+            baca.select.lparts(leaves, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
             "mp > p <",
             # bookend=False,
-            pieces=baca.select.lparts(leaves, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
         )
     with baca.scope(m[3]) as o:
         library.sforzando(o.leaf(0), r"\baca-fz-markup")
@@ -230,16 +228,14 @@ def rh(m):
     with baca.scope(m.get(14, 23)) as o:
         # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
         # baca.hairpin(
-        #    (),
+        #    baca.select.mgroups(o.rleaves(), [2, 2, 4, 2 + 1]),
         #    "mp -- p -- pp -- p -- !",
-        #    pieces=baca.select.mgroups(o.rleaves(), [2, 2, 4, 2 + 1]),
         # )
         # FUTURE: replace this once LilyPond fixes DynamicLineSpanner bug:
         baca.hairpin(
-            (),
+            baca.select.mgroups(o.rleaves(), [2, 2, 4, 2 + 1]),
             "mp -- p -- pp -- p",
             bookend=False,
-            pieces=baca.select.mgroups(o.rleaves(), [2, 2, 4, 2 + 1]),
         )
         baca.literal(
             o.leaf(0),

@@ -238,10 +238,9 @@ def rh(m):
         )
     with baca.scope(m.get(10, 12)) as o:
         baca.hairpin(
-            (),
+            baca.select.lparts(o.rleaves(), [4, 5 + 1]),
             "mp > ppp -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
-            pieces=baca.select.lparts(o.rleaves(), [4, 5 + 1]),
         )
     with baca.scope(m[11]) as o:
         baca.staff_positions(o, [4, 2, 6, 4, 2, 0])
@@ -301,9 +300,8 @@ def rh(m):
     with baca.scope(m.get(20, 26)) as o:
         leaves = baca.select.rleak(o.leaves()[1:])
         baca.hairpin(
-            (),
+            baca.select.lparts(leaves, [5, 1 + 1]),
             "p < f -- !",
-            pieces=baca.select.lparts(leaves, [5, 1 + 1]),
         )
         library.sforzando(o, r"\baca-ffz-markup")
     with baca.scope(m.get(21, 26)) as o:
