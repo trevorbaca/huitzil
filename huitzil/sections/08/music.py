@@ -169,7 +169,7 @@ def rh(m):
         baca.staff_positions(o, [6, 6, 4])
     with baca.scope(m.get(1, 3)) as o:
         # FUTURE: use this once LilyPond fixes DynamicLineSpanner bug:
-        # baca.hairpin(
+        # baca.piecewise.hairpin(
         #    o.rleaves(),
         #    "mp -- !",
         #    abjad.Tweak(r"- \tweak to-barline ##t"),
@@ -230,14 +230,14 @@ def rh(m):
     with baca.scope(m.get(10, 11)) as o:
         library.sforzando(o.leaves()[:4], r"\baca-mfz-markup")
         library.sforzando(o.leaves()[4:], r"\baca-mpz-markup")
-        baca.text_spanner(
+        baca.piecewise.text(
             (),
             "(trem. mod.) => trem. stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=[baca.select.rleak(o.leaves()[:4])],
         )
     with baca.scope(m.get(10, 12)) as o:
-        baca.hairpin(
+        baca.piecewise.hairpin(
             baca.select.lparts(o.rleaves(), [4, 5 + 1]),
             "mp > ppp -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
@@ -255,7 +255,7 @@ def rh(m):
             o,
             "p < mf",
         )
-        baca.text_spanner(
+        baca.piecewise.text(
             (),
             "sub. trem. mod. => più stretto => più largo => più stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
@@ -275,7 +275,7 @@ def rh(m):
             o,
             "mp >",
         )
-        baca.text_spanner(
+        baca.piecewise.text(
             (),
             "sub. trem. mod. => trem. stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
@@ -299,13 +299,13 @@ def rh(m):
         baca.staff_positions(o, [0])
     with baca.scope(m.get(20, 26)) as o:
         leaves = baca.select.rleak(o.leaves()[1:])
-        baca.hairpin(
+        baca.piecewise.hairpin(
             baca.select.lparts(leaves, [5, 1 + 1]),
             "p < f -- !",
         )
         library.sforzando(o, r"\baca-ffz-markup")
     with baca.scope(m.get(21, 26)) as o:
-        baca.text_spanner(
+        baca.piecewise.text(
             (),
             "sub. trem. mod. => più stretto => più largo => più stretto =>"
             " più largo => mod.",
