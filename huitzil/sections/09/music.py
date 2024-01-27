@@ -154,14 +154,14 @@ def rh(m):
         baca.staff_positions(o, [0])
     with baca.scope(m.get(2, 13)) as o:
         # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
-        # baca.hairpin(
+        # baca.piecewise.hairpin(
         #    baca.select.lparts(o.rleaves(), [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
         #    "mp > p <",
         #    bookend=False,
         # )
         # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
         leaves = o.leaves()[:-1]
-        baca.hairpin(
+        baca.piecewise.hairpin(
             baca.select.lparts(leaves, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
             "mp > p <",
             # bookend=False,
@@ -214,7 +214,7 @@ def rh(m):
     with baca.scope(m[14]) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
     with baca.scope(m.get(14, 23)) as o:
-        baca.hairpin(
+        baca.piecewise.hairpin(
             baca.select.mgroups(o.rleaves(), [2, 2, 4, 2 + 1]),
             "mp -- p -- pp -- p -- !",
         )
@@ -242,7 +242,7 @@ def rh(m):
         wrappers = baca.override.hairpin_to_bar_line(o, True)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m.get(18, 23)) as o:
-        baca.text_spanner(
+        baca.piecewise.text(
             (),
             "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
             abjad.Tweak(r"- \tweak staff-padding 6"),

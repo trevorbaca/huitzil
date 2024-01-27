@@ -170,7 +170,7 @@ def rh(m):
     with baca.scope(m.get(17, 24)) as o:
         baca.staff_positions(o, [-14, -14, -12, -12, -10, -10, -8, -8])
     with baca.scope(m.get(25, 26)) as o:
-        baca.hairpin(
+        baca.piecewise.hairpin(
             [baca.select.rleak(o.leaves()[-1:])],
             ">",
             right_broken=True,

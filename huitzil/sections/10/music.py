@@ -86,7 +86,7 @@ def vc(m):
 def rh(m):
     with baca.scope(m.get(1, 12)) as o:
         baca.staff_position(o, 8)
-        baca.text_spanner(
+        baca.piecewise.text(
             (),
             "larg. => strett. =>",
             abjad.Tweak(r"- \tweak staff-padding 6"),
@@ -94,7 +94,7 @@ def rh(m):
         )
     with baca.scope(m.get(1, 10)) as o:
         library.sforzando(o.leaf(0), r"\baca-mpz-markup")
-        baca.hairpin(
+        baca.piecewise.hairpin(
             baca.select.clparts(o, [1]),
             "mp > pp <",
             abjad.Tweak(r"- \tweak to-barline ##t"),
