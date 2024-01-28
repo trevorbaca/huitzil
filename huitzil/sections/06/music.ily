@@ -747,13 +747,6 @@ number.6.RH.Music = {
     d8
     :32
     _ \baca-ffz-markup
-      %! REAPPLIED_DYNAMIC
-    - \tweak stencil #constante-hairpin
-      %! REAPPLIED_DYNAMIC_COLOR
-      %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-      %! REAPPLIED_DYNAMIC
-    \<
     \glissando
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)

@@ -850,13 +850,6 @@ number.3.RH.Music = {
     b'4
     :32
     _ \baca-mfz-markup
-      %! REAPPLIED_DYNAMIC
-    - \tweak stencil #constante-hairpin
-      %! REAPPLIED_DYNAMIC_COLOR
-      %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-      %! REAPPLIED_DYNAMIC
-    \<
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)
 
@@ -920,14 +913,14 @@ number.3.RH.Music = {
           %! SPANNER_STOP
         \p
         _ \baca-fz-markup
-          %! REDUNDANT_DYNAMIC
+          %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         - \tweak stencil #constante-hairpin
-          %! REDUNDANT_DYNAMIC_COLOR
-          %! REDUNDANT_DYNAMIC
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
           %! SPANNER_START
-        - \tweak color #(x11-color 'DeepPink1)
-          %! REDUNDANT_DYNAMIC
+        - \tweak color #blue
+          %! EXPLICIT_DYNAMIC
           %! SPANNER_START
         \<
 
