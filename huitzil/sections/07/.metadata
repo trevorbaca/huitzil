@@ -37,16 +37,6 @@
                 value="Cello",
             )
         ],
-        "RH.Music": [
-            baca.Memento(
-                context="RH.Music",
-                edition=None,
-                manifest=None,
-                prototype="abjad.StartHairpin",
-                synthetic_offset=None,
-                value=">",
-            )
-        ],
         "RH.Staff": [
             baca.Memento(
                 context="RH.Music",
