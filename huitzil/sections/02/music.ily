@@ -1056,10 +1056,8 @@ number.2.RH.Music = {
         :32
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \baca-mp-parenthesized
         - \upbow
         - \tweak staff-padding 3.5
