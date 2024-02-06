@@ -1148,10 +1148,8 @@ number.8.RH.Music = {
         :32
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \mp
         _ \baca-mfz-markup
           %! SPANNER_STOP
@@ -1226,10 +1224,8 @@ number.8.RH.Music = {
         :32
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         - \tweak color #blue
           %! EXPLICIT_DYNAMIC
-          %! SPANNER_STOP
         \ppp
         _ \baca-mpz-markup
           %! SPANNER_STOP
@@ -1513,10 +1509,8 @@ number.8.RH.Music = {
     :32
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \p
     _ \baca-ffz-markup
       %! SPANNER_STOP
@@ -1613,10 +1607,8 @@ number.8.RH.Music = {
     :32
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \f
     _ \baca-ffz-markup
       %! SPANNER_STOP
