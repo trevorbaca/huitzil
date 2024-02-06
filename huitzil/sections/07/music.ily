@@ -1045,11 +1045,12 @@ number.7.RH.Music = {
       %! NOTE
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
       %! ANCHOR_NOTE
+      %! RIGHT_BROKEN
+      %! SPANNER_STOP
+    \!
+      %! ANCHOR_NOTE
       %! SHOW_TO_JOIN_BROKEN_SPANNERS
     %@% \glissando
-      %! ANCHOR_NOTE
-      %! RIGHT_BROKEN
-    \!
 
 }
 
