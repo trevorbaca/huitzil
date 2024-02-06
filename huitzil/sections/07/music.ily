@@ -903,10 +903,8 @@ number.7.RH.Music = {
     :32
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \pp
     - \tweak self-alignment-X -0.5
     - \tweak staff-padding 2
@@ -1002,10 +1000,8 @@ number.7.RH.Music = {
     :32
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     - \tweak color #blue
       %! EXPLICIT_DYNAMIC
-      %! SPANNER_STOP
     \ff
       %! EXPLICIT_DYNAMIC_COLOR
       %! EXPLICIT_DYNAMIC
