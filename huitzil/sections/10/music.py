@@ -95,11 +95,11 @@ def rh(m):
     with baca.scope(m.get(1, 10)) as o:
         library.sforzando(o.leaf(0), r"\baca-mpz-markup")
         baca.piecewise.hairpin(
-            baca.select.clparts(o, [1]),
+            baca.select.clparts(o[:-1], [1]),
             "mp > pp <",
             abjad.Tweak(r"- \tweak to-barline ##t"),
-            do_not_start_spanner_on_final_piece=True,
         )
+        baca.dynamic(o[-1], "pp")
     with baca.scope(m[10]) as o:
         baca.literal(
             o.leaf(0),
