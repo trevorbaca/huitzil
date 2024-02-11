@@ -87,9 +87,8 @@ def rh(m):
     with baca.scope(m.get(1, 12)) as o:
         baca.staff_position(o, 8)
         baca.mspanners.text(
-            (),
+            baca.select.clparts(o, [1]),
             "larg. => strett. =>",
-            pieces=baca.select.clparts(o, [1]),
             staff_padding=6,
         )
     with baca.scope(m.get(1, 10)) as o:
