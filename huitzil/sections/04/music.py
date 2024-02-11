@@ -270,8 +270,8 @@ def rh(m):
         baca.mspanners.text(
             (),
             "(trem. mod.) => più stretto => più largo => più stretto => mod.",
-            abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=baca.select.lparts(o, [1, 1, 1, 1 + 1]),
+            staff_padding=6,
         )
     with baca.scope(m.get(18, 21)) as o:
         wrappers = baca.override.hairpin_to_bar_line(o, True)

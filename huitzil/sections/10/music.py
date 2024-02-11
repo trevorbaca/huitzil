@@ -89,8 +89,8 @@ def rh(m):
         baca.mspanners.text(
             (),
             "larg. => strett. =>",
-            abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=baca.select.clparts(o, [1]),
+            staff_padding=6,
         )
     with baca.scope(m.get(1, 10)) as o:
         library.sforzando(o.leaf(0), r"\baca-mpz-markup")

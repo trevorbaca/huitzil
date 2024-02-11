@@ -197,8 +197,8 @@ def rh(m):
         baca.mspanners.text(
             (),
             "(trem. mod.) => trem. stretto",
-            abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=[baca.select.rleak(o.leaves()[:4])],
+            staff_padding=6,
         )
     with baca.scope(m.get(10, 12)) as o:
         baca.piecewise.hairpin(
@@ -222,8 +222,8 @@ def rh(m):
         baca.mspanners.text(
             (),
             "sub. mod. => più stretto => più largo => più stretto",
-            abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=baca.select.lparts(o, [1, 1, 2]),
+            staff_padding=6,
         )
     with baca.scope(m[14]) as o:
         baca.staff_positions(o, [-2])
@@ -243,8 +243,8 @@ def rh(m):
             (),
             "sub. mod. => più stretto => più largo => più stretto =>"
             " più largo => trem. mod.",
-            abjad.Tweak(r"- \tweak staff-padding 6"),
             pieces=baca.select.lparts(o, [1, 1, 1, 1, 2]),
+            staff_padding=6,
         )
     with baca.scope(m[18]) as o:
         baca.staff_positions(o, [-2])
