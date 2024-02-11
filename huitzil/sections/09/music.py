@@ -242,7 +242,7 @@ def rh(m):
         wrappers = baca.override.hairpin_to_bar_line(o, True)
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m.get(18, 23)) as o:
-        baca.piecewise.text(
+        baca.mspanners.text(
             (),
             "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
             abjad.Tweak(r"- \tweak staff-padding 6"),

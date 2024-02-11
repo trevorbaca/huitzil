@@ -211,7 +211,7 @@ def rh(m):
             library.sforzando(leaf, r"\baca-mfz-markup")
         for leaf in o.leaves()[4:]:
             library.sforzando(leaf, r"\baca-mpz-markup")
-        baca.piecewise.text(
+        baca.mspanners.text(
             (),
             "(trem. mod.) => trem. stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
@@ -237,7 +237,7 @@ def rh(m):
             o,
             "p < mf",
         )
-        baca.piecewise.text(
+        baca.mspanners.text(
             (),
             "sub. trem. mod. => più stretto => più largo => più stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
@@ -257,7 +257,7 @@ def rh(m):
             o,
             "mp >",
         )
-        baca.piecewise.text(
+        baca.mspanners.text(
             (),
             "sub. trem. mod. => trem. stretto",
             abjad.Tweak(r"- \tweak staff-padding 6"),
@@ -290,7 +290,7 @@ def rh(m):
         for leaf in o:
             library.sforzando(leaf, r"\baca-ffz-markup")
     with baca.scope(m.get(21, 26)) as o:
-        baca.piecewise.text(
+        baca.mspanners.text(
             (),
             "sub. trem. mod. => più stretto => più largo => più stretto =>"
             " più largo => trem. mod.",

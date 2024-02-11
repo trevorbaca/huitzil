@@ -267,7 +267,7 @@ def rh(m):
         library.sforzando(o.leaf(2), r"\baca-ffz-markup")
         library.sforzando(o.leaf(3), r"\baca-fffz-markup")
     with baca.scope(m.get(18, 22)) as o:
-        baca.piecewise.text(
+        baca.mspanners.text(
             (),
             "(trem. mod.) => più stretto => più largo => più stretto => mod.",
             abjad.Tweak(r"- \tweak staff-padding 6"),
