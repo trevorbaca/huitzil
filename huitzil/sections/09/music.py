@@ -1,4 +1,3 @@
-import abjad
 import baca
 
 from huitzil import library
@@ -245,10 +244,10 @@ def rh(m):
         baca.mspanners.text(
             (),
             "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
-            abjad.Tweak(r"- \tweak staff-padding 6"),
             bookend=False,
             pieces=baca.select.lparts(o.rleaves(), [1, 1, 1, 1, 1, 1 + 1]),
             right_broken=True,
+            staff_padding=6,
         )
     with baca.scope(m.get(18, 23)) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
