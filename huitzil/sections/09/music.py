@@ -242,10 +242,9 @@ def rh(m):
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m.get(18, 23)) as o:
         baca.mspanners.text(
-            (),
+            baca.select.lparts(o.rleaves(), [1, 1, 1, 1, 1, 1 + 1]),
             "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
             bookend=False,
-            pieces=baca.select.lparts(o.rleaves(), [1, 1, 1, 1, 1, 1 + 1]),
             right_broken=True,
             staff_padding=6,
         )

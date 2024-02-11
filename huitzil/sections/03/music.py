@@ -212,9 +212,8 @@ def rh(m):
         for leaf in o.leaves()[4:]:
             library.sforzando(leaf, r"\baca-mpz-markup")
         baca.mspanners.text(
-            (),
+            [baca.select.rleak(o.leaves()[:4])],
             "(trem. mod.) => trem. stretto",
-            pieces=[baca.select.rleak(o.leaves()[:4])],
             staff_padding=6,
         )
     with baca.scope(m.get(10, 12)) as o:
@@ -238,9 +237,8 @@ def rh(m):
             "p < mf",
         )
         baca.mspanners.text(
-            (),
+            baca.select.lparts(o, [1, 1, 2]),
             "sub. trem. mod. => più stretto => più largo => più stretto",
-            pieces=baca.select.lparts(o, [1, 1, 2]),
             staff_padding=6,
         )
     with baca.scope(m[14]) as o:
@@ -258,9 +256,8 @@ def rh(m):
             "mp >",
         )
         baca.mspanners.text(
-            (),
+            [o.rleaves()],
             "sub. trem. mod. => trem. stretto",
-            pieces=[o.rleaves()],
             staff_padding=6,
         )
     with baca.scope(m[18]) as o:
@@ -291,10 +288,9 @@ def rh(m):
             library.sforzando(leaf, r"\baca-ffz-markup")
     with baca.scope(m.get(21, 26)) as o:
         baca.mspanners.text(
-            (),
+            baca.select.lparts(o, [1, 1, 1, 1, 2]),
             "sub. trem. mod. => più stretto => più largo => più stretto =>"
             " più largo => trem. mod.",
-            pieces=baca.select.lparts(o, [1, 1, 1, 1, 2]),
             staff_padding=6,
         )
     with baca.scope(m[22]) as o:
