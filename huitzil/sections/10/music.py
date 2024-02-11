@@ -86,7 +86,7 @@ def vc(m):
 def rh(m):
     with baca.scope(m.get(1, 12)) as o:
         baca.staff_position(o, 8)
-        baca.piecewise.text(
+        baca.mspanners.text(
             (),
             "larg. => strett. =>",
             abjad.Tweak(r"- \tweak staff-padding 6"),
