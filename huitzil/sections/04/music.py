@@ -170,14 +170,14 @@ def rh(m):
         # baca.piecewise.hairpin(
         #    baca.select.lparts(o.rleaves(), [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
         #    "mp > p <",
-        #    bookend=False,
+        #    do_not_bookend=True,
         # )
         # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
         leaves = o.leaves()[:-1]
         baca.piecewise.hairpin(
             baca.select.lparts(leaves, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
             "mp > p <",
-            # bookend=False,
+            # do_not_bookend=True,
         )
     with baca.scope(m[3]) as o:
         library.sforzando(o.leaf(0), r"\baca-fz-markup")
@@ -238,7 +238,7 @@ def rh(m):
             baca.select.mgroups(o.rleaves(), [2, 2, 4, 2 + 1]),
             "mp -- p -- pp -- p",
             abjad.Tweak(r"- \tweak to-barline ##t"),
-            bookend=False,
+            do_not_bookend=True,
         )
         baca.literal(
             o.leaf(0),
