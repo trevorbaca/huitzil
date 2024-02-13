@@ -1,4 +1,3 @@
-import abjad
 import baca
 
 from huitzil import library
@@ -97,7 +96,7 @@ def rh(m):
         baca.piecewise.hairpin(
             baca.select.clparts(o[:-1], [1]),
             "mp > pp <",
-            abjad.Tweak(r"- \tweak to-barline ##t"),
+            cyclic=True,
         )
         baca.dynamic(o[-1], "pp")
     with baca.scope(m[10]) as o:

@@ -237,7 +237,7 @@ def rh(m):
         baca.staff_positions(o, [0])
     with baca.scope(m.get(17, 22)) as o:
         baca.piecewise.hairpin(
-            baca.select.lparts(o.rleaves(), [5, 1, 1]),
+            baca.select.lparts(o.anchor(), [5, 1, 1]),
             "p < f -- !",
             (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
         )

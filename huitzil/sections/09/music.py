@@ -1,3 +1,4 @@
+import abjad
 import baca
 
 from huitzil import library
@@ -155,6 +156,7 @@ def rh(m):
         baca.piecewise.hairpin(
             baca.select.lparts(o[:-1], [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3]),
             "mp > p <",
+            cyclic=True,
             rleak=True,
         )
     with baca.scope(m[3]) as o:
@@ -204,12 +206,13 @@ def rh(m):
         baca.staff_positions(o, [0])
     with baca.scope(m[14]) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
-    with baca.scope(m.get(14, 23)) as o:
+    with baca.scope(m.get(14, 23, anchor=True)) as o:
         baca.piecewise.hairpin(
-            baca.select.mgroups(o, [2, 2, 4, 2]),
+            baca.select.mgroups(o, [2, 2, 4, 2, 1]),
             "mp -- p -- pp -- p -- !",
-            rleak=True,
+            abjad.Tweak(r"- \tweak to-barline ##t"),
         )
+    with baca.scope(m.get(14, 23)) as o:
         baca.literal(
             o.leaf(0),
             [
