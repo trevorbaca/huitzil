@@ -246,7 +246,6 @@ def rh(m):
             "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
             do_not_bookend=True,
             right_broken=True,
-            rleak=True,
             staff_padding=6,
         )
     with baca.scope(m.get(18, 23)) as o:
