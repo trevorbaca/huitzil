@@ -270,7 +270,6 @@ def rh(m):
         baca.mspanners.text(
             baca.select.lparts(o, [1, 1, 1, 1]),
             "(trem. mod.) => più stretto => più largo => più stretto => mod.",
-            rleak=True,
             staff_padding=6,
         )
     with baca.scope(m.get(18, 21)) as o:

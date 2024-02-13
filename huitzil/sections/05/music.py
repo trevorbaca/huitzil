@@ -197,7 +197,6 @@ def rh(m):
         baca.mspanners.text(
             [o[:4]],
             "(trem. mod.) => trem. stretto",
-            rleak=True,
             staff_padding=6,
         )
     with baca.scope(m.get(10, 12)) as o:
@@ -222,7 +221,6 @@ def rh(m):
         baca.mspanners.text(
             baca.select.lparts(o, [1, 1, 1]),
             "sub. mod. => più stretto => più largo => più stretto",
-            rleak=True,
             staff_padding=6,
         )
     with baca.scope(m[14]) as o:
@@ -243,7 +241,6 @@ def rh(m):
             baca.select.lparts(o, [1, 1, 1, 1, 1]),
             "sub. mod. => più stretto => più largo => più stretto =>"
             " più largo => trem. mod.",
-            rleak=True,
             staff_padding=6,
         )
     with baca.scope(m[18]) as o:
