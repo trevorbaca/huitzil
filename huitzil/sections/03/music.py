@@ -221,10 +221,9 @@ def rh(m):
         )
     with baca.scope(m.get(10, 12)) as o:
         baca.piecewise.hairpin(
-            baca.select.lparts(o, [4, 5]),
+            baca.select.lparts(o.rleaves(), [4, 5, 1]),
             "mp > ppp -- !",
-            abjad.Tweak(r"- \tweak to-barline ##t"),
-            rleak=True,
+            (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
         )
     with baca.scope(m[11]) as o:
         baca.staff_positions(o, [4, 2, 6, 4, 2, 0])
@@ -283,12 +282,13 @@ def rh(m):
         baca.staff_positions(o, [0])
     with baca.scope(m[21]) as o:
         baca.staff_positions(o, [0])
-    with baca.scope(m.get(20, 26)) as o:
+    with baca.scope(m.get(21, 26)) as o:
         baca.piecewise.hairpin(
-            baca.select.lparts(o[1:], [5, 1]),
+            baca.select.lparts(o.rleaves(), [5, 1, 1]),
             "p < f -- !",
-            rleak=True,
+            (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
         )
+    with baca.scope(m.get(20, 26)) as o:
         for leaf in o:
             library.sforzando(leaf, r"\baca-ffz-markup")
     with baca.scope(m.get(21, 26)) as o:
