@@ -169,6 +169,7 @@ def rh(m):
         baca.piecewise.hairpin(
             baca.select.lparts(o[:-1], [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3]),
             "mp > p <",
+            cyclic=True,
             rleak=True,
         )
     with baca.scope(m[3]) as o:

@@ -282,7 +282,7 @@ def rh(m):
         baca.staff_positions(o, [0])
     with baca.scope(m[21]) as o:
         baca.staff_positions(o, [0])
-    with baca.scope(m.get(21, 26)) as o:
+    with baca.scope(m.get(21, 27)) as o:
         baca.piecewise.hairpin(
             baca.select.lparts(o.rleaves(), [5, 1, 1]),
             "p < f -- !",

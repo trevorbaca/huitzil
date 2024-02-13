@@ -203,12 +203,11 @@ def rh(m):
             "(trem. mod.) => trem. stretto",
             staff_padding=6,
         )
-    with baca.scope(m.get(10, 12)) as o:
+    with baca.scope(m.get(10, 13)) as o:
         baca.piecewise.hairpin(
-            baca.select.lparts(o, [4, 5]),
+            baca.select.lparts(o, [4, 5, 1]),
             "mp > ppp -- !",
-            abjad.Tweak(r"- \tweak to-barline ##t"),
-            rleak=True,
+            (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
         )
     with baca.scope(m[11]) as o:
         baca.staff_positions(o, [4, 2, 6, 4, 2, 0])
@@ -238,9 +237,9 @@ def rh(m):
         baca.staff_positions(o, [0])
     with baca.scope(m.get(17, 22)) as o:
         baca.piecewise.hairpin(
-            baca.select.lparts(o, [5, 1]),
+            baca.select.lparts(o.rleaves(), [5, 1, 1]),
             "p < f -- !",
-            rleak=True,
+            (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
         )
         library.sforzando(o, r"\baca-ffz-markup")
         baca.mspanners.text(
