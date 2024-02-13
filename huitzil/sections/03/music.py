@@ -164,8 +164,9 @@ def rh(m):
         baca.staff_positions(o, [6, 6, 4])
     with baca.scope(m[4]) as o:
         baca.spanners.hairpin(
-            baca.select.rleaves(o, count=2),
+            baca.select.rleaves(o),
             "p -- !",
+            rleak=True,
         )
         baca.staff_positions(o, [4, 4, 2])
     with baca.scope(m.get(4, 5)) as o:
@@ -176,15 +177,16 @@ def rh(m):
             baca.markup(leaf, r"\baca-mfz-markup", direction=abjad.DOWN)
     with baca.scope(m[5]) as o:
         baca.spanners.hairpin(
-            o.leaves()[1:],
+            o[1:],
             "pp < mf",
         )
         baca.staff_positions(o, [4, 4, 2, 6, 4, 2])
     with baca.scope(m[6]) as o:
         baca.spanners.hairpin(
-            o.rleaves(),
+            o,
             "p -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
+            rleak=True,
         )
         baca.markup(o.pleaf(0), r"\baca-fz-markup", direction=abjad.DOWN)
         for leaf in o.pleaves()[1:]:
@@ -196,9 +198,10 @@ def rh(m):
         for leaf in o.leaves():
             baca.markup(leaf, r"\baca-fz-markup", direction=abjad.DOWN)
         baca.spanners.hairpin(
-            o.rleaves(),
+            o,
             "mf -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
+            rleak=True,
         )
     with baca.scope(m[8]) as o:
         baca.staff_positions(o, [2, 2, 0])
@@ -218,9 +221,10 @@ def rh(m):
         )
     with baca.scope(m.get(10, 12)) as o:
         baca.piecewise.hairpin(
-            baca.select.lparts(o.rleaves(), [4, 5 + 1]),
+            baca.select.lparts(o, [4, 5]),
             "mp > ppp -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
+            rleak=True,
         )
     with baca.scope(m[11]) as o:
         baca.staff_positions(o, [4, 2, 6, 4, 2, 0])
@@ -266,8 +270,9 @@ def rh(m):
         baca.staff_positions(o, [6, 4, 2])
     with baca.scope(m[19]) as o:
         baca.spanners.hairpin(
-            baca.select.rleaves(o, count=2),
+            baca.select.rleaves(o),
             "ppp -- !",
+            rleak=True,
         )
         for leaf in o:
             library.sforzando(leaf, r"\baca-mpz-markup")
@@ -279,10 +284,10 @@ def rh(m):
     with baca.scope(m[21]) as o:
         baca.staff_positions(o, [0])
     with baca.scope(m.get(20, 26)) as o:
-        leaves = baca.select.rleak(o.leaves()[1:])
         baca.piecewise.hairpin(
-            baca.select.lparts(leaves, [5, 1 + 1]),
+            baca.select.lparts(o[1:], [5, 1]),
             "p < f -- !",
+            rleak=True,
         )
         for leaf in o:
             library.sforzando(leaf, r"\baca-ffz-markup")

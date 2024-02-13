@@ -152,18 +152,10 @@ def rh(m):
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
         baca.staff_positions(o, [0])
     with baca.scope(m.get(2, 13)) as o:
-        # FUTURE: use after LilyPond fixes DynamicLineSpanner bug:
-        # baca.piecewise.hairpin(
-        #    baca.select.lparts(o.rleaves(), [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2 + 1]),
-        #    "mp > p <",
-        #    do_not_bookend=True,
-        # )
-        # FUTURE: replace after LilyPond fixes DynamicLineSpanner bug:
-        leaves = o.leaves()[:-1]
         baca.piecewise.hairpin(
-            baca.select.lparts(leaves, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 4]),
+            baca.select.lparts(o[:-1], [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3]),
             "mp > p <",
-            # do_not_bookend=True,
+            rleak=True,
         )
     with baca.scope(m[3]) as o:
         library.sforzando(o.leaf(0), r"\baca-fz-markup")
@@ -214,8 +206,9 @@ def rh(m):
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
     with baca.scope(m.get(14, 23)) as o:
         baca.piecewise.hairpin(
-            baca.select.mgroups(o.rleaves(), [2, 2, 4, 2 + 1]),
+            baca.select.mgroups(o, [2, 2, 4, 2]),
             "mp -- p -- pp -- p -- !",
+            rleak=True,
         )
         baca.literal(
             o.leaf(0),
