@@ -1337,16 +1337,12 @@ number.9.RH.Music = {
       %! RIGHT_BROKEN
       %! SPANNER_STOP
     \stopTextSpan
-      %! RIGHT_BROKEN
       %! SPANNER_START
     - \baca-dashed-line-with-arrow
-      %! RIGHT_BROKEN
       %! SPANNER_START
     - \baca-text-spanner-left-text "stretto"
-      %! RIGHT_BROKEN
       %! SPANNER_START
     - \tweak staff-padding 6
-      %! RIGHT_BROKEN
       %! SPANNER_START
     \startTextSpan
     \revert TextScript.parent-alignment-X
