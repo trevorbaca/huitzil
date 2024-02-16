@@ -233,7 +233,7 @@ def rh(m):
             staff_padding=6,
         )
     with baca.scope(m.get(10, 13)) as o:
-        baca.piecewise.hairpin(
+        baca.hairpinlib.hairpin(
             baca.select.lparts(o, [4, 5, 1]),
             "mp > ppp -- !",
             (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
@@ -294,7 +294,7 @@ def rh(m):
     with baca.scope(m[21]) as o:
         baca.staff_positions(o, [0])
     with baca.scope(m.get(21, 26, anchor=True)) as o:
-        baca.piecewise.hairpin(
+        baca.hairpinlib.hairpin(
             baca.select.lparts(o, [5, 1, 1]),
             "p < f -- !",
             (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
