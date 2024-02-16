@@ -237,6 +237,7 @@ def rh(m):
             baca.select.lparts(o, [4, 5, 1]),
             "mp > ppp -- !",
             (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
+            do_not_bookend=True,
         )
     with baca.scope(m[11]) as o:
         baca.staff_positions(o, [4, 2, 6, 4, 2, 0])
@@ -297,6 +298,7 @@ def rh(m):
             baca.select.lparts(o, [5, 1, 1]),
             "p < f -- !",
             (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
+            do_not_bookend=True,
         )
     library.sforzando(m[20, 26], r"\baca-ffz-markup")
     with baca.scope(m.get(21, 26)) as o:
