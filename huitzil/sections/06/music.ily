@@ -1105,6 +1105,13 @@ number.6.RH.Music = {
           %! EXPLICIT_DYNAMIC
         \p
         _ \baca-ffz-markup
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+          %! SPANNER_START
+        - \tweak color #blue
+          %! EXPLICIT_DYNAMIC
+          %! SPANNER_START
+        \<
 
     }
 
