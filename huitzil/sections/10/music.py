@@ -97,6 +97,7 @@ def rh(m):
             baca.select.clparts(o[:-1], [1]),
             "mp > pp <",
             cyclic=True,
+            do_not_bookend=True,
         )
         baca.dynamic(o[-1], "pp")
     with baca.scope(m[10]) as o:

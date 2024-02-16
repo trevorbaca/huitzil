@@ -211,6 +211,7 @@ def rh(m):
             baca.select.mgroups(o, [2, 2, 4, 2, 1]),
             "mp -- p -- pp -- p -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
+            do_not_bookend=True,
         )
     with baca.scope(m.get(14, 23)) as o:
         baca.literal(
