@@ -166,10 +166,9 @@ def rh(m):
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
         baca.staff_positions(o, [0])
     with baca.scope(m.get(2, 13)) as o:
-        baca.hairpinlib.hairpin(
+        baca.hairpinlib.cyclic(
             baca.select.lparts(o, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2]),
             "mp > p <",
-            cyclic=True,
             do_not_bookend=True,
         )
     with baca.scope(m[3]) as o:

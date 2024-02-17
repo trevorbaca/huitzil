@@ -93,10 +93,9 @@ def rh(m):
         )
     with baca.scope(m.get(1, 10)) as o:
         library.sforzando(o.leaf(0), r"\baca-mpz-markup")
-        baca.hairpinlib.hairpin(
+        baca.hairpinlib.cyclic(
             baca.select.clparts(o[:-1], [1]),
             "mp > pp <",
-            cyclic=True,
             do_not_bookend=True,
         )
         baca.dynamic(o[-1], "pp")
