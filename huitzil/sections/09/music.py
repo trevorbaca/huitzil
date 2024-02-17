@@ -208,10 +208,10 @@ def rh(m):
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")
     with baca.scope(m.get(14, 23, anchor=True)) as o:
         baca.hairpinlib.hairpin(
-            baca.select.mgroups(o, [2, 2, 4, 2, 1]),
+            baca.select.mgroups(o, [2, 2, 4, 3]),
             "mp -- p -- pp -- p -- !",
             abjad.Tweak(r"- \tweak to-barline ##t"),
-            do_not_bookend=True,
+            glue=True,
         )
     with baca.scope(m.get(14, 23)) as o:
         baca.literal(

@@ -222,8 +222,6 @@ def rh(m):
         baca.hairpinlib.hairpin(
             baca.select.mgroups(o, [2, 2, 4, 2]),
             "mp -- p -- pp -- p",
-            do_not_bookend=True,
-            rleak=True,
         )
         baca.literal(
             o.leaf(0),

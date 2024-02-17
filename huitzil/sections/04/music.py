@@ -224,8 +224,6 @@ def rh(m):
             baca.select.mgroups(o, [2, 2, 4, 2]),
             "mp -- p -- pp -- p",
             abjad.Tweak(r"- \tweak to-barline ##t"),
-            do_not_bookend=True,
-            rleak=True,
         )
         baca.literal(
             o.leaf(0),
