@@ -221,10 +221,10 @@ def rh(m):
         )
     with baca.scope(m.get(10, 12)) as o:
         baca.hairpinlib.hairpin(
-            baca.select.lparts(o.rleaves(), [4, 5, 1]),
+            baca.select.lparts(o.rleaves(), [4, 6]),
             "mp > ppp -- !",
             (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
-            do_not_bookend=True,
+            glue=True,
         )
     with baca.scope(m[11]) as o:
         baca.staff_positions(o, [4, 2, 6, 4, 2, 0])
@@ -285,10 +285,10 @@ def rh(m):
         baca.staff_positions(o, [0])
     with baca.scope(m.get(21, 27)) as o:
         baca.hairpinlib.hairpin(
-            baca.select.lparts(o.rleaves(), [5, 1, 1]),
+            baca.select.lparts(o.rleaves(), [5, 2]),
             "p < f -- !",
             (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
-            do_not_bookend=True,
+            glue=True,
         )
     with baca.scope(m.get(20, 26)) as o:
         for leaf in o:
