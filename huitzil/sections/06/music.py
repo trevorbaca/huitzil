@@ -159,7 +159,7 @@ def rh(m):
         library.sforzando(o, r"\baca-ffz-markup")
         baca.staff_positions(o, [0])
     with baca.scope(m.get(2, 13)) as o:
-        baca.hairpinlib.cyclic(
+        baca.hairpins.cyclic(
             baca.select.lparts(o, [2, 1, 3, 2, 2, 1, 3, 2, 2, 1, 3, 2]),
             "mp > p <",
             do_not_bookend=True,
@@ -218,7 +218,7 @@ def rh(m):
             abjad.Tweak(r"- \tweak staff-padding 2"),
         )
     with baca.scope(m.get(14, 23)) as o:
-        baca.hairpinlib.hairpin(
+        baca.hairpins.hairpin(
             baca.select.mgroups(o, [2, 2, 4, 2]),
             "mp -- p -- pp -- p",
         )
