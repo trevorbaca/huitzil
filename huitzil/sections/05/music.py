@@ -140,9 +140,9 @@ def rh(m):
     with baca.scope(m[1]) as o:
         baca.staff_positions(o, [6, 6, 4])
     with baca.scope(m.get(1, 3)) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             o,
-            "mp -- !",
+            "mp--!",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             rleak=True,
         )
@@ -152,9 +152,9 @@ def rh(m):
     with baca.scope(m[3]) as o:
         baca.staff_positions(o, [6, 6, 4])
     with baca.scope(m[4]) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             baca.select.rleaves(o),
-            "p -- !",
+            "p--!",
             rleak=True,
         )
         baca.staff_positions(o, [4, 4, 2])
@@ -163,15 +163,15 @@ def rh(m):
         library.sforzando(o.leaves()[1:-3], r"\baca-mpz-markup")
         library.sforzando(o.leaves()[-3:], r"\baca-mfz-markup")
     with baca.scope(m[5]) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             o[1:],
-            "pp < mf",
+            "pp<mf",
         )
         baca.staff_positions(o, [4, 4, 2, 6, 4, 2])
     with baca.scope(m[6]) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             o,
-            "p -- !",
+            "p--!",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             rleak=True,
         )
@@ -183,9 +183,9 @@ def rh(m):
     with baca.scope(m.get(7, 9)) as o:
         library.sforzando(o, r"\baca-fz-markup")
     with baca.scope(m.get(7, 9)) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             o,
-            "mf -- !",
+            "mf--!",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             rleak=True,
         )
@@ -219,9 +219,9 @@ def rh(m):
     with baca.scope(m[13]) as o:
         baca.staff_positions(o, [0])
     with baca.scope(m.get(13, 16)) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             o,
-            "p < mf",
+            "p<mf",
         )
         baca.mspanners.text(
             baca.select.lparts(o, [1, 1, 1]),

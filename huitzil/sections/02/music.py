@@ -139,9 +139,9 @@ def rh(m):
             o.rleaves(),
             right_broken=True,
         ),
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             o,
-            "(mp) -- !",
+            "(mp)--!",
             rleak=True,
         )
         baca.literal(
