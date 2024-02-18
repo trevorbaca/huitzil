@@ -163,9 +163,9 @@ def rh(m):
     with baca.scope(m[3]) as o:
         baca.staff_positions(o, [6, 6, 4])
     with baca.scope(m[4]) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             baca.select.rleaves(o),
-            "p -- !",
+            "p--!",
             rleak=True,
         )
         baca.staff_positions(o, [4, 4, 2])
@@ -176,15 +176,15 @@ def rh(m):
         for leaf in o.pleaves()[-3:]:
             baca.markup(leaf, r"\baca-mfz-markup", direction=abjad.DOWN)
     with baca.scope(m[5]) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             o[1:],
-            "pp < mf",
+            "pp<mf",
         )
         baca.staff_positions(o, [4, 4, 2, 6, 4, 2])
     with baca.scope(m[6]) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             o,
-            "p -- !",
+            "p--!",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             rleak=True,
         )
@@ -197,9 +197,9 @@ def rh(m):
     with baca.scope(m.get(7, 9)) as o:
         for leaf in o.leaves():
             baca.markup(leaf, r"\baca-fz-markup", direction=abjad.DOWN)
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             o,
-            "mf -- !",
+            "mf--!",
             abjad.Tweak(r"- \tweak to-barline ##t"),
             rleak=True,
         )
@@ -236,9 +236,9 @@ def rh(m):
     with baca.scope(m[13]) as o:
         baca.staff_positions(o, [0])
     with baca.scope(m.get(13, 16)) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             o,
-            "p < mf",
+            "p<mf",
         )
         baca.mspanners.text(
             baca.select.lparts(o, [1, 1, 1]),
@@ -255,9 +255,9 @@ def rh(m):
         library.sforzando(o, r"\baca-fz-markup")
         baca.staff_positions(o, [0])
     with baca.scope(m.get(17, 18)) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             o,
-            "mp >",
+            "mp>",
         )
         baca.mspanners.text(
             [o],
@@ -269,9 +269,9 @@ def rh(m):
             library.sforzando(leaf, r"\baca-mfz-markup")
         baca.staff_positions(o, [6, 4, 2])
     with baca.scope(m[19]) as o:
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             baca.select.rleaves(o),
-            "ppp -- !",
+            "ppp--!",
             rleak=True,
         )
         for leaf in o:
