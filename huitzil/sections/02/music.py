@@ -139,7 +139,7 @@ def rh(m):
             o.rleaves(),
             right_broken=True,
         ),
-        baca.hairpins.exact(
+        baca.hairpin(
             o,
             "(mp)--!",
             rleak=True,

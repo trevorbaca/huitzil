@@ -218,7 +218,7 @@ def rh(m):
             abjad.Tweak(r"- \tweak staff-padding 2"),
         )
     with baca.scope(m.get(14, 23)) as o:
-        baca.hairpins.exact(
+        baca.hairpin(
             baca.select.mgroups(o, [2, 2, 4, 2]),
             "mp-- p-- pp-- p",
         )
