@@ -163,7 +163,7 @@ def rh(m):
     with baca.scope(m[3]) as o:
         baca.staff_positions(o, [6, 6, 4])
     with baca.scope(m[4]) as o:
-        baca.hairpins.exact(
+        baca.hairpin(
             baca.select.rleaves(o),
             "p--!",
             rleak=True,
@@ -176,13 +176,13 @@ def rh(m):
         for leaf in o.pleaves()[-3:]:
             baca.markup(leaf, r"\baca-mfz-markup", direction=abjad.DOWN)
     with baca.scope(m[5]) as o:
-        baca.hairpins.exact(
+        baca.hairpin(
             o[1:],
             "pp<mf",
         )
         baca.staff_positions(o, [4, 4, 2, 6, 4, 2])
     with baca.scope(m[6]) as o:
-        baca.hairpins.exact(
+        baca.hairpin(
             o,
             "p--!",
             abjad.Tweak(r"- \tweak to-barline ##t"),
@@ -197,7 +197,7 @@ def rh(m):
     with baca.scope(m.get(7, 9)) as o:
         for leaf in o.leaves():
             baca.markup(leaf, r"\baca-fz-markup", direction=abjad.DOWN)
-        baca.hairpins.exact(
+        baca.hairpin(
             o,
             "mf--!",
             abjad.Tweak(r"- \tweak to-barline ##t"),
@@ -220,7 +220,7 @@ def rh(m):
             staff_padding=6,
         )
     with baca.scope(m.get(10, 12)) as o:
-        baca.hairpins.exact(
+        baca.hairpin(
             baca.select.lparts(o.rleaves(), [4, 6]),
             "mp> ppp--!",
             (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
@@ -235,7 +235,7 @@ def rh(m):
     with baca.scope(m[13]) as o:
         baca.staff_positions(o, [0])
     with baca.scope(m.get(13, 16)) as o:
-        baca.hairpins.exact(
+        baca.hairpin(
             o,
             "p<mf",
         )
@@ -254,7 +254,7 @@ def rh(m):
         library.sforzando(o, r"\baca-fz-markup")
         baca.staff_positions(o, [0])
     with baca.scope(m.get(17, 18)) as o:
-        baca.hairpins.exact(
+        baca.hairpin(
             o,
             "mp>",
         )
@@ -268,7 +268,7 @@ def rh(m):
             library.sforzando(leaf, r"\baca-mfz-markup")
         baca.staff_positions(o, [6, 4, 2])
     with baca.scope(m[19]) as o:
-        baca.hairpins.exact(
+        baca.hairpin(
             baca.select.rleaves(o),
             "ppp--!",
             rleak=True,
@@ -283,7 +283,7 @@ def rh(m):
     with baca.scope(m[21]) as o:
         baca.staff_positions(o, [0])
     with baca.scope(m.get(21, 27)) as o:
-        baca.hairpins.exact(
+        baca.hairpin(
             baca.select.lparts(o.rleaves(), [5, 2]),
             "p< f--!",
             (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
