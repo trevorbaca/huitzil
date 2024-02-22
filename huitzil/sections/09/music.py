@@ -142,7 +142,7 @@ def vc(m):
         baca.override.note_head_style(o, "#'do")
         baca.staff_position(o, 7)
     with baca.scope(m.get(8, 14)) as o:
-        baca.basic_glissando(o)
+        baca.basic_glissando(o, do_not_allow_repeats=True)
 
 
 def rh(m):
@@ -273,7 +273,7 @@ def rh(m):
         baca.override.text_script_parent_alignment_x(o, 0)
         baca.override.text_script_self_alignment_x(o, 0)
         baca.override.text_script_staff_padding(o, 4)
-        baca.basic_glissando(o)
+        baca.basic_glissando(o, do_not_allow_repeats=True)
 
 
 @baca.build.timed("make_score")

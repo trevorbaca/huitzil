@@ -137,6 +137,7 @@ def rh(m):
     with baca.scope(m[25]) as o:
         baca.basic_glissando(
             o.rleaves(),
+            do_not_allow_repeats=True,
             right_broken=True,
         ),
         baca.hairpin(
