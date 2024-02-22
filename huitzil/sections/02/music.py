@@ -135,7 +135,7 @@ def rh(m):
             )
             baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m[25]) as o:
-        baca.glissando(
+        baca.basic_glissando(
             o.rleaves(),
             right_broken=True,
         ),

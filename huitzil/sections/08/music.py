@@ -327,7 +327,7 @@ def rh(m):
         baca.override.text_script_parent_alignment_x(o, 0)
         baca.override.text_script_self_alignment_x(o, 0)
         baca.override.text_script_staff_padding(o, 4)
-        baca.glissando(o)
+        baca.basic_glissando(o)
 
 
 @baca.build.timed("make_score")
