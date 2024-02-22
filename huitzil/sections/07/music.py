@@ -123,9 +123,9 @@ def vc(m):
         ),
         baca.override.time_signature_stencil_false(o)
     with baca.scope(m.get(14, 24)) as o:
-        baca.glissando(o.rleaves())
+        baca.basic_glissando(o.rleaves())
     with baca.scope(m.get(25, 26)) as o:
-        baca.glissando(
+        baca.basic_glissando(
             o.rleaves(),
             right_broken=True,
         )
@@ -198,7 +198,7 @@ def rh(m):
             allow_hidden=True,
         )
     with baca.scope(m.leaves()) as o:
-        baca.glissando(
+        baca.basic_glissando(
             o.rleaves(),
             right_broken=True,
         )
