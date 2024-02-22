@@ -147,7 +147,7 @@ def vc(m):
         baca.override.span_bar_transparent(o)
         baca.override.time_signature_stencil_false(o)
     with baca.scope(m.get(8, 14)) as o:
-        baca.basic_glissando(o)
+        baca.basic_glissando(o, do_not_allow_repeats=True)
 
 
 def rh(m):
@@ -291,7 +291,7 @@ def rh(m):
         baca.override.text_script_self_alignment_x(o, 0)
         baca.override.text_script_staff_padding(o, 4)
     with baca.scope(m.leaves()) as o:
-        baca.basic_glissando(o)
+        baca.basic_glissando(o, do_not_allow_repeats=True)
 
 
 @baca.build.timed("make_score")
