@@ -123,6 +123,12 @@ def RH(voice):
 def vc(m):
     with baca.scope(m.get(8, 13)) as o:
         baca.pitches(o, "B1 C2")
+        baca.multistage_glissando(
+            o,
+            do_not_allow_repeats=True,
+            do_not_hide_middle_note_heads=True,
+            rleak=True,
+        )
         baca.repeat_tie(o.pleaf(0))
     with baca.scope(m[14]) as o:
         baca.clef(o.leaf(0), "treble")
@@ -154,8 +160,6 @@ def vc(m):
         baca.override.bar_line_transparent(o)
         baca.override.span_bar_transparent(o)
         baca.override.time_signature_stencil_false(o)
-    with baca.scope(m.get(8, 14)) as o:
-        baca.basic_glissando(o, do_not_allow_repeats=True)
 
 
 def rh(m):
@@ -311,7 +315,12 @@ def rh(m):
         baca.override.text_script_self_alignment_x(o, 0)
         baca.override.text_script_staff_padding(o, 4)
     with baca.scope(m.leaves()) as o:
-        baca.basic_glissando(o.rleaves(), do_not_allow_repeats=True, right_broken=True)
+        baca.multistage_glissando(
+            o.rleaves(),
+            do_not_allow_repeats=True,
+            do_not_hide_middle_note_heads=True,
+            right_broken=True,
+        )
 
 
 @baca.build.timed("make_score")
