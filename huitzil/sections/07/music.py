@@ -92,7 +92,7 @@ def vc(m):
         baca.pitch(o, "A2")
     with baca.scope(m.get(14, 24)) as o:
         baca.pitch(o, "A2")
-        baca.multistage_glissando(
+        baca.glissando(
             o,
             do_not_allow_repeats=True,
             do_not_hide_middle_note_heads=True,
@@ -129,7 +129,7 @@ def vc(m):
         ),
         baca.override.time_signature_stencil_false(o)
     with baca.scope(m.get(25, 26)) as o:
-        baca.multistage_glissando(
+        baca.glissando(
             o.rleaves(),
             do_not_allow_repeats=True,
             do_not_hide_middle_note_heads=True,
@@ -204,7 +204,7 @@ def rh(m):
             allow_hidden=True,
         )
     with baca.scope(m.leaves()) as o:
-        baca.multistage_glissando(
+        baca.glissando(
             o.rleaves(),
             do_not_allow_repeats=True,
             do_not_hide_middle_note_heads=True,

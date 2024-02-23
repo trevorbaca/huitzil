@@ -337,7 +337,7 @@ def rh(m):
         baca.override.text_script_self_alignment_x(o, 0)
         baca.override.text_script_staff_padding(o, 4)
     with baca.scope(m.leaves()) as o:
-        baca.multistage_glissando(
+        baca.glissando(
             o,
             do_not_allow_repeats=True,
             do_not_hide_middle_note_heads=True,

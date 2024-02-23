@@ -135,7 +135,7 @@ def rh(m):
             )
             baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m[25]) as o:
-        baca.multistage_glissando(
+        baca.glissando(
             o.rleaves(),
             do_not_allow_repeats=True,
             do_not_hide_middle_note_heads=True,
