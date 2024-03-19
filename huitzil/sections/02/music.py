@@ -199,7 +199,7 @@ def rh(m):
             abjad.Tweak(r"- \tweak staff-padding 3"),
         ),
         baca.staff_position(o, 8)
-        baca.override.tuplet_bracket_down(o)
+        baca.override.tuplet_bracket_direction_down(o)
 
 
 @baca.build.timed("make_score")
