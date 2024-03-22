@@ -59,7 +59,7 @@ def vc(m):
                 r"\startStaff",
             ],
         )
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
         baca.override.time_signature_stencil_false(o)
     with baca.scope(m[10]) as o:
         baca.literal(
@@ -121,7 +121,7 @@ def rh(m):
                 r"\startStaff",
             ],
         )
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
         baca.stem_tremolo(o.pleaves())
         baca.override.text_script_parent_alignment_x(o, 0)
         baca.override.text_script_self_alignment_x(o, 0)

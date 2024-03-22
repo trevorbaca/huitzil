@@ -238,7 +238,7 @@ def rh(m):
         library.sforzando(o.leaf(3), r"\baca-fffz-markup")
     with baca.scope(m[18]) as o:
         wrappers = baca.override.hairpin_to_bar_line(o, True)
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m.get(18, 23)) as o:
         baca.mspanners.text(
             baca.select.lparts(o.rleaves(), [1, 1, 1, 1, 1, 1]),
@@ -256,13 +256,13 @@ def rh(m):
         library.sforzando(o.leaf(5), r"\baca-mpz-markup")
     with baca.scope(m[22]) as o:
         wrappers = baca.override.hairpin_to_bar_line(o, True)
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
     with baca.scope(m.leaves()) as o:
         wrappers = baca.literal(
             o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
         )
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
         wrappers = baca.literal(
             o.leaf(0),
             [
@@ -272,7 +272,7 @@ def rh(m):
                 r"\startStaff",
             ],
         )
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
         baca.stem_tremolo(o.pleaves())
         baca.override.text_script_parent_alignment_x(o, 0)
         baca.override.text_script_self_alignment_x(o, 0)
