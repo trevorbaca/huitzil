@@ -451,7 +451,7 @@ def persist_score(score, environment):
         error_on_not_yet_pitched=True,
         first_section=True,
     )
-    baca.tags.activate(
+    baca.section.activate_tags(
         score,
         baca.tags.CLOCK_TIME,
         baca.tags.LOCAL_MEASURE_NUMBER,

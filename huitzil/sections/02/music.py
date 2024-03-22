@@ -239,7 +239,7 @@ def persist_score(score, environment):
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
-    baca.tags.activate(
+    baca.section.activate_tags(
         score,
         baca.tags.CLOCK_TIME,
         baca.tags.LOCAL_MEASURE_NUMBER,
