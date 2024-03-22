@@ -1864,7 +1864,7 @@ number.1.Cello.Music = {
         - \tweak staff-padding 9
         _ \huitzil-phrasing-dynamics-see-preface-markup
           %! EXPLICIT_INSTRUMENT_ALERT
-        ^ \baca-explicit-instrument-markup "(“Cello”)"
+        %@% ^ \baca-explicit-instrument-markup "(“Cello”)"
         [
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
