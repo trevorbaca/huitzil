@@ -133,7 +133,7 @@ def rh(m):
                 o.pleaf(1),
                 r"\once \override TupletNumber.font-size = -2",
             )
-            baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
+            baca.tags.tag(wrappers, baca.tags.ONLY_SCORE)
     with baca.scope(m[25]) as o:
         baca.glissando(
             o.rleaves(),

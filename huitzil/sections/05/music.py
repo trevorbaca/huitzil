@@ -258,7 +258,7 @@ def rh(m):
         baca.staff_positions(o, [-4])
     with baca.scope(m[22]) as o:
         wrappers = baca.override.hairpin_to_bar_line(o, True)
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions(o, [-6])
     with baca.scope(m.leaves()) as o:
         baca.literal(o.leaf(0), r"\override DynamicLineSpanner.staff-padding = 7")

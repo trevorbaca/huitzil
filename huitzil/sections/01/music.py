@@ -401,12 +401,12 @@ def vc(m):
         baca.override.tuplet_bracket_staff_padding(o, 4)
     with baca.scope(m[54]) as o:
         wrappers = baca.breathe(o.pleaf(-1))
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
         wrappers = baca.breathe(
             o.pleaf(-1),
             abjad.Tweak(r"\tweak extra-offset #'(0 . 2)"),
         )
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SCORE)
 
 
 def rh(m):

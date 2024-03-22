@@ -276,7 +276,7 @@ def rh(m):
         for leaf in o:
             library.sforzando(leaf, r"\baca-mpz-markup")
         wrappers = baca.override.hairpin_to_bar_line(o, True)
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions(o, [6, 4, 2, 0])
     with baca.scope(m[20]) as o:
         baca.staff_positions(o, [0])
@@ -314,14 +314,14 @@ def rh(m):
             abjad.Tweak(r"- \tweak staff-padding 2"),
         )
         wrappers = baca.override.hairpin_to_bar_line(o, True)
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SCORE)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SCORE)
         baca.staff_positions(o, [-6])
     with baca.scope(m.leaves()) as o:
         wrappers = baca.literal(
             o.leaf(0),
             r"\override DynamicLineSpanner.staff-padding = 7",
         )
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
         wrappers = baca.literal(
             o.leaf(0),
             [
@@ -331,7 +331,7 @@ def rh(m):
                 r"\startStaff",
             ],
         )
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
         baca.stem_tremolo(o.pleaves())
         baca.override.text_script_parent_alignment_x(o, 0)
         baca.override.text_script_self_alignment_x(o, 0)
