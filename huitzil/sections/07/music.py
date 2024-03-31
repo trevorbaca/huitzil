@@ -302,14 +302,16 @@ def make_layout():
     top = 17
     staves = (8, 22)
     separation = 70
-    layout = baca.layout.Layout(
+    breaks = baca.layout.Breaks(
         baca.layout.Page(
             1,
             baca.layout.System(1, y_offset=top + 0 * separation, distances=staves),
         ),
+    )
+    spacing = baca.layout.Spacing(
         default_spacing=(1, 28),
     )
-    baca.build.write_layout_ly(layout)
+    baca.build.write_layout_ly(breaks, spacing)
 
 
 def main():
