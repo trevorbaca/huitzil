@@ -345,8 +345,8 @@ def make_layout():
     top = 17
     staves = (10, 17)
     separation = 70
-    layout = baca.layout.layout(
-        baca.layout.page(
+    layout = baca.layout.Layout(
+        baca.layout.Page(
             1,
             baca.layout.System(1, y_offset=top + 0 * separation, distances=staves),
             baca.layout.System(12, y_offset=top + 1 * separation, distances=staves),
