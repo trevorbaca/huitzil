@@ -104,7 +104,7 @@ def vc(m):
             o.pleaf(0),
             r"\huitzil-string-three-to-four-markup",
             abjad.Tweak(r"- \tweak padding 2.5"),
-            abjad.Tweak(r"- \tweak parent-alignment-X 0"),
+            baca.postevent.parent_alignment_x(0),
             abjad.Tweak(r"- \tweak self-alignment-X -0.05"),
             direction=abjad.DOWN,
         )
@@ -164,14 +164,14 @@ def rh(m):
             o.pleaf(0),
             r"\huitzil-close-to-lh-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -0.5"),
-            abjad.Tweak(r"- \tweak staff-padding 2"),
+            baca.postevent.staff_padding(2),
         )
     with baca.scope(m[14]) as o:
         baca.markup(
             o.pleaf(0),
             r"\huitzil-descending-fingerboard-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -1"),
-            abjad.Tweak(r"- \tweak staff-padding 2"),
+            baca.postevent.staff_padding(2),
         )
     with baca.scope(m.get(17, 24)) as o:
         baca.staff_positions(o, [-14, -14, -12, -12, -10, -10, -8, -8])
@@ -195,7 +195,7 @@ def rh(m):
             o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-column-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -0.5"),
-            abjad.Tweak(r"- \tweak staff-padding 2"),
+            baca.postevent.staff_padding(2),
         )
         baca.parenthesize(o.pleaf(-1))
         baca.staff_positions(
@@ -228,7 +228,7 @@ def rh(m):
             o.pleaf(0),
             r"\huitzil-ascending-fingerboard-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -1"),
-            abjad.Tweak(r"- \tweak staff-padding 4.5"),
+            baca.postevent.staff_padding(4.5),
         )
         baca.markup(
             o.pleaf(0),
