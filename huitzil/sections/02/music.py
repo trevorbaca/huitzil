@@ -162,12 +162,12 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-sliding-from-bridge-onto-string-markup",
-            abjad.Tweak(r"- \tweak staff-padding 6"),
+            baca.postevent.staff_padding(6),
         ),
         baca.markup(
             o.pleaf(0),
             r"\huitzil-trem-moderato-markup",
-            abjad.Tweak(r"- \tweak staff-padding 3.5"),
+            baca.postevent.staff_padding(3.5),
             direction=abjad.DOWN,
         ),
         baca.stem_tremolo(o)
@@ -196,7 +196,7 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-on-bridge-markup",
-            abjad.Tweak(r"- \tweak staff-padding 3"),
+            baca.postevent.staff_padding(3),
         ),
         baca.staff_position(o, 8)
         baca.override.tuplet_bracket_direction_down(o)

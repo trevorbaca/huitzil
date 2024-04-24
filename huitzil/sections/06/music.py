@@ -219,7 +219,7 @@ def rh(m):
             o.leaf(0),
             r"\huitzil-directly-on-bridge-markup",
             abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
-            abjad.Tweak(r"- \tweak staff-padding 2"),
+            baca.postevent.staff_padding(2),
         )
     with baca.scope(m.get(14, 23)) as o:
         baca.hairpin(
