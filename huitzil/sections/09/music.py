@@ -213,7 +213,7 @@ def rh(m):
         baca.hairpin(
             baca.select.mgroups(o, [2, 2, 4, 3]),
             "mp-- p-- pp-- p--!",
-            abjad.Tweak(r"- \tweak to-barline ##t"),
+            baca.postevent.to_bar_line_true(),
         )
     with baca.scope(m.get(14, 23)) as o:
         baca.literal(

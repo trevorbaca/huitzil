@@ -172,7 +172,7 @@ def rh(m):
         baca.hairpin(
             o[1:],
             "mp--!",
-            abjad.Tweak(r"- \tweak to-barline ##t"),
+            baca.postevent.to_bar_line_true(),
             rleak=True,
         )
         library.sforzando(o, r"\baca-mfz-markup")
@@ -201,7 +201,7 @@ def rh(m):
         baca.hairpin(
             o,
             "p--!",
-            abjad.Tweak(r"- \tweak to-barline ##t"),
+            baca.postevent.to_bar_line_true(),
             rleak=True,
         )
         library.sforzando(o.leaf(0), r"\baca-fz-markup")
@@ -215,7 +215,7 @@ def rh(m):
         baca.hairpin(
             o,
             "mf--!",
-            abjad.Tweak(r"- \tweak to-barline ##t"),
+            baca.postevent.to_bar_line_true(),
             rleak=True,
         )
     with baca.scope(m[8]) as o:
@@ -237,7 +237,7 @@ def rh(m):
         baca.hairpin(
             baca.select.lparts(o, [4, 6]),
             "mp> ppp--!",
-            (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
+            (baca.postevent.to_bar_line_true(), 1),
         )
     with baca.scope(m[11]) as o:
         baca.staff_positions(o, [4, 2, 6, 4, 2, 0])
@@ -299,7 +299,7 @@ def rh(m):
         baca.hairpin(
             baca.select.lparts(o, [5, 2]),
             "p< f--!",
-            (abjad.Tweak(r"- \tweak to-barline ##t"), 1),
+            (baca.postevent.to_bar_line_true(), 1),
         )
     library.sforzando(m[20, 26], r"\baca-ffz-markup")
     with baca.scope(m.get(21, 26)) as o:
