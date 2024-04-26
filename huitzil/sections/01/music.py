@@ -404,7 +404,7 @@ def vc(m):
         baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
         wrappers = baca.breathe(
             o.pleaf(-1),
-            abjad.Tweak(r"\tweak extra-offset #'(0 . 2)"),
+            extra_offset=(0, 2),
         )
         baca.tags.tag(wrappers, baca.tags.ONLY_SCORE)
 
