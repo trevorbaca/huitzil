@@ -86,7 +86,7 @@ def vc(m):
         baca.markup(
             o.pleaf(0),
             r"\baca-string-iii-markup",
-            abjad.Tweak(r"- \tweak padding 2.5"),
+            baca.postevent.padding(2.5),
             direction=abjad.DOWN,
         )
         baca.pitch(o, "A2")
@@ -103,9 +103,9 @@ def vc(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-string-three-to-four-markup",
-            abjad.Tweak(r"- \tweak padding 2.5"),
+            baca.postevent.padding(2.5),
             baca.postevent.parent_alignment_x(0),
-            abjad.Tweak(r"- \tweak self-alignment-X -0.05"),
+            baca.postevent.self_alignment_x(-0.05),
             direction=abjad.DOWN,
         )
         baca.pitch(o, "G2")
@@ -234,7 +234,7 @@ def rh(m):
             o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-markup",
             baca.postevent.self_alignment_x(-1),
-            abjad.Tweak(r"- \tweak staff-padding 1"),
+            baca.postevent.staff_padding(1),
         )
         baca.stem_tremolo(o.pleaves())
         baca.override.text_script_parent_alignment_x(o, 0)
