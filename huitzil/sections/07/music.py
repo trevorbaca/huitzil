@@ -163,14 +163,14 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-close-to-lh-markup",
-            abjad.Tweak(r"- \tweak self-alignment-X -0.5"),
+            baca.postevent.self_alignment_x(-0.5),
             baca.postevent.staff_padding(2),
         )
     with baca.scope(m[14]) as o:
         baca.markup(
             o.pleaf(0),
             r"\huitzil-descending-fingerboard-markup",
-            abjad.Tweak(r"- \tweak self-alignment-X -1"),
+            baca.postevent.self_alignment_x(-1),
             baca.postevent.staff_padding(2),
         )
     with baca.scope(m.get(17, 24)) as o:
@@ -194,7 +194,7 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-column-markup",
-            abjad.Tweak(r"- \tweak self-alignment-X -0.5"),
+            baca.postevent.self_alignment_x(-0.5),
             baca.postevent.staff_padding(2),
         )
         baca.parenthesize(o.pleaf(-1))
@@ -227,13 +227,13 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-ascending-fingerboard-markup",
-            abjad.Tweak(r"- \tweak self-alignment-X -1"),
+            baca.postevent.self_alignment_x(-1),
             baca.postevent.staff_padding(4.5),
         )
         baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-markup",
-            abjad.Tweak(r"- \tweak self-alignment-X -1"),
+            baca.postevent.self_alignment_x(-1),
             abjad.Tweak(r"- \tweak staff-padding 1"),
         )
         baca.stem_tremolo(o.pleaves())

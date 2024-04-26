@@ -314,7 +314,7 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-markup",
-            abjad.Tweak(r"- \tweak self-alignment-X -0.75"),
+            baca.postevent.self_alignment_x(-0.75),
             baca.postevent.staff_padding(2),
         )
         wrappers = baca.override.hairpin_to_bar_line(o, True)
