@@ -162,12 +162,12 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-sliding-from-bridge-onto-string-markup",
-            baca.postevent.staff_padding(6),
+            baca.tweak.staff_padding(6),
         ),
         baca.markup(
             o.pleaf(0),
             r"\huitzil-trem-moderato-markup",
-            baca.postevent.staff_padding(3.5),
+            baca.tweak.staff_padding(3.5),
             direction=abjad.DOWN,
         ),
         baca.stem_tremolo(o)
@@ -189,14 +189,14 @@ def rh(m):
         baca.dynamic(
             o.pleaf(0),
             "mp-sempre",
-            baca.postevent.self_alignment_x(-0.9),
+            baca.tweak.self_alignment_x(-0.9),
         )
         baca.literal(o.leaf(0), r"\override DynamicLineSpanner.staff-padding = 2.5")
         baca.literal(o.leaf(0), r"\override Score.BarNumber.transparent = ##t")
         baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-on-bridge-markup",
-            baca.postevent.staff_padding(3),
+            baca.tweak.staff_padding(3),
         ),
         baca.staff_position(o, 8)
         baca.override.tuplet_bracket_direction_down(o)

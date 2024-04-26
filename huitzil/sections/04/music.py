@@ -226,7 +226,7 @@ def rh(m):
         baca.hairpin(
             baca.select.mgroups(o, [2, 2, 4, 2]),
             "mp-- p-- pp-- p",
-            baca.postevent.to_bar_line_true(),
+            baca.tweak.to_bar_line_true(),
         )
         baca.literal(
             o.leaf(0),
@@ -240,8 +240,8 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-on-bridge-markup",
-            baca.postevent.self_alignment_x(-0.85),
-            baca.postevent.staff_padding(2),
+            baca.tweak.self_alignment_x(-0.85),
+            baca.tweak.staff_padding(2),
         )
         baca.staff_position(o, 8)
     with baca.scope(m[15]) as o:
@@ -287,8 +287,8 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-sliding-back-onto-string-markup",
-            baca.postevent.self_alignment_x(-0.85),
-            baca.postevent.staff_padding(6),
+            baca.tweak.self_alignment_x(-0.85),
+            baca.tweak.staff_padding(6),
         )
         baca.staff_position(
             o.rleaf(-1),

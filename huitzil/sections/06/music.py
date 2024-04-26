@@ -218,8 +218,8 @@ def rh(m):
         baca.markup(
             o.leaf(0),
             r"\huitzil-directly-on-bridge-markup",
-            baca.postevent.self_alignment_x(-0.9),
-            baca.postevent.staff_padding(2),
+            baca.tweak.self_alignment_x(-0.9),
+            baca.tweak.staff_padding(2),
         )
     with baca.scope(m.get(14, 23)) as o:
         baca.hairpin(
