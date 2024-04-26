@@ -185,7 +185,7 @@ def rh(m):
         baca.hairpin(
             o,
             "p--!",
-            baca.postevent.to_bar_line_true(),
+            baca.tweak.to_bar_line_true(),
             rleak=True,
         )
         baca.markup(o.pleaf(0), r"\baca-fz-markup", direction=abjad.DOWN)
@@ -200,7 +200,7 @@ def rh(m):
         baca.hairpin(
             o,
             "mf--!",
-            baca.postevent.to_bar_line_true(),
+            baca.tweak.to_bar_line_true(),
             rleak=True,
         )
     with baca.scope(m[8]) as o:
@@ -224,7 +224,7 @@ def rh(m):
         baca.hairpin(
             baca.select.lparts(o.rleaves(), [4, 6]),
             "mp> ppp--!",
-            (baca.postevent.to_bar_line_true(), 1),
+            (baca.tweak.to_bar_line_true(), 1),
         )
     with baca.scope(m[11]) as o:
         baca.staff_positions(o, [4, 2, 6, 4, 2, 0])
@@ -289,7 +289,7 @@ def rh(m):
         baca.hairpin(
             baca.select.lparts(o.rleaves(), [5, 2]),
             "p< f--!",
-            (baca.postevent.to_bar_line_true(), 1),
+            (baca.tweak.to_bar_line_true(), 1),
         )
     with baca.scope(m.get(20, 26)) as o:
         for leaf in o:
@@ -314,8 +314,8 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-markup",
-            baca.postevent.self_alignment_x(-0.75),
-            baca.postevent.staff_padding(2),
+            baca.tweak.self_alignment_x(-0.75),
+            baca.tweak.staff_padding(2),
         )
         wrappers = baca.override.hairpin_to_bar_line(o, True)
         baca.tags.tag(wrappers, baca.tags.ONLY_SCORE)

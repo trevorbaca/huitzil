@@ -86,7 +86,7 @@ def vc(m):
         baca.markup(
             o.pleaf(0),
             r"\baca-string-iii-markup",
-            baca.postevent.padding(2.5),
+            baca.tweak.padding(2.5),
             direction=abjad.DOWN,
         )
         baca.pitch(o, "A2")
@@ -103,9 +103,9 @@ def vc(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-string-three-to-four-markup",
-            baca.postevent.padding(2.5),
-            baca.postevent.parent_alignment_x(0),
-            baca.postevent.self_alignment_x(-0.05),
+            baca.tweak.padding(2.5),
+            baca.tweak.parent_alignment_x(0),
+            baca.tweak.self_alignment_x(-0.05),
             direction=abjad.DOWN,
         )
         baca.pitch(o, "G2")
@@ -163,15 +163,15 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-close-to-lh-markup",
-            baca.postevent.self_alignment_x(-0.5),
-            baca.postevent.staff_padding(2),
+            baca.tweak.self_alignment_x(-0.5),
+            baca.tweak.staff_padding(2),
         )
     with baca.scope(m[14]) as o:
         baca.markup(
             o.pleaf(0),
             r"\huitzil-descending-fingerboard-markup",
-            baca.postevent.self_alignment_x(-1),
-            baca.postevent.staff_padding(2),
+            baca.tweak.self_alignment_x(-1),
+            baca.tweak.staff_padding(2),
         )
     with baca.scope(m.get(17, 24)) as o:
         baca.staff_positions(o, [-14, -14, -12, -12, -10, -10, -8, -8])
@@ -194,8 +194,8 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-column-markup",
-            baca.postevent.self_alignment_x(-0.5),
-            baca.postevent.staff_padding(2),
+            baca.tweak.self_alignment_x(-0.5),
+            baca.tweak.staff_padding(2),
         )
         baca.parenthesize(o.pleaf(-1))
         baca.staff_positions(
@@ -227,14 +227,14 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-ascending-fingerboard-markup",
-            baca.postevent.self_alignment_x(-1),
-            baca.postevent.staff_padding(4.5),
+            baca.tweak.self_alignment_x(-1),
+            baca.tweak.staff_padding(4.5),
         )
         baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-above-end-of-fingerboard-markup",
-            baca.postevent.self_alignment_x(-1),
-            baca.postevent.staff_padding(1),
+            baca.tweak.self_alignment_x(-1),
+            baca.tweak.staff_padding(1),
         )
         baca.stem_tremolo(o.pleaves())
         baca.override.text_script_parent_alignment_x(o, 0)
