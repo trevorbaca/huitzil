@@ -189,7 +189,7 @@ def rh(m):
         baca.dynamic(
             o.pleaf(0),
             "mp-sempre",
-            abjad.Tweak(r"- \tweak self-alignment-X -0.9"),
+            baca.postevent.self_alignment_x(-0.9),
         )
         baca.literal(o.leaf(0), r"\override DynamicLineSpanner.staff-padding = 2.5")
         baca.literal(o.leaf(0), r"\override Score.BarNumber.transparent = ##t")

@@ -240,7 +240,7 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-directly-on-bridge-markup",
-            abjad.Tweak(r"- \tweak self-alignment-X -0.85"),
+            baca.postevent.self_alignment_x(-0.85),
             baca.postevent.staff_padding(2),
         )
         baca.staff_position(o, 8)
@@ -287,7 +287,7 @@ def rh(m):
         baca.markup(
             o.pleaf(0),
             r"\huitzil-sliding-back-onto-string-markup",
-            abjad.Tweak(r"- \tweak self-alignment-X -0.85"),
+            baca.postevent.self_alignment_x(-0.85),
             baca.postevent.staff_padding(6),
         )
         baca.staff_position(
