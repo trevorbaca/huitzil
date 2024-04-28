@@ -242,10 +242,10 @@ def rh(m):
         baca.spanners.text(
             baca.select.lparts(o.rleaves(), [1, 1, 1, 1, 1, 1]),
             "(trem. mod.) => stretto => largo => stretto =>" " largo => stretto =>",
+            baca.tweak.staff_padding(6),
             do_not_bookend=True,
             right_broken=True,
             rleak=True,
-            staff_padding=6,
         )
     with baca.scope(m.get(18, 23)) as o:
         library.sforzando(o.leaf(0), r"\baca-ffz-markup")

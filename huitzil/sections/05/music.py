@@ -200,8 +200,8 @@ def rh(m):
         baca.spanners.text(
             [o[:4]],
             "(trem. mod.) => trem. stretto",
+            baca.tweak.staff_padding(6),
             rleak=True,
-            staff_padding=6,
         )
     with baca.scope(m.get(10, 13)) as o:
         baca.hairpin(
@@ -225,8 +225,8 @@ def rh(m):
         baca.spanners.text(
             baca.select.lparts(o, [1, 1, 1]),
             "sub. mod. => più stretto => più largo => più stretto",
+            baca.tweak.staff_padding(6),
             rleak=True,
-            staff_padding=6,
         )
     with baca.scope(m[14]) as o:
         baca.staff_positions(o, [-2])
@@ -247,8 +247,8 @@ def rh(m):
             baca.select.lparts(o, [1, 1, 1, 1, 1]),
             "sub. mod. => più stretto => più largo => più stretto =>"
             " più largo => trem. mod.",
+            baca.tweak.staff_padding(6),
             rleak=True,
-            staff_padding=6,
         )
     with baca.scope(m[18]) as o:
         baca.staff_positions(o, [-2])
