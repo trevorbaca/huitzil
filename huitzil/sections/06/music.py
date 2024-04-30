@@ -266,13 +266,13 @@ def rh(m):
         wrappers = baca.breathe(
             o.leaf(-1),
             baca.tweak.x_extent_false(event=True),
-            extra_offset=(0, 5),
+            baca.tweak.extra_offset((0, 5), event=True),
         )
         baca.tags.tag(wrappers, baca.tags.ONLY_SCORE)
         wrappers = baca.breathe(
             o.leaf(-1),
             baca.tweak.x_extent_false(event=True),
-            extra_offset=(-1.5, 2),
+            baca.tweak.extra_offset((-1.5, 2), event=True),
         )
         baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
         wrappers = baca.literal(
