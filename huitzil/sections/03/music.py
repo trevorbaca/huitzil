@@ -224,7 +224,7 @@ def rh(m):
         baca.hairpin(
             baca.select.lparts(o.rleaves(), [4, 6]),
             "mp> ppp--!",
-            baca.tweak.to_bar_line_true(index=1),
+            baca.tweak.to_bar_line_true(i=1),
         )
     with baca.scope(m[11]) as o:
         baca.staff_positions(o, [4, 2, 6, 4, 2, 0])
@@ -289,7 +289,7 @@ def rh(m):
         baca.hairpin(
             baca.select.lparts(o.rleaves(), [5, 2]),
             "p< f--!",
-            baca.tweak.to_bar_line_true(index=1),
+            baca.tweak.to_bar_line_true(i=1),
         )
     with baca.scope(m.get(20, 26)) as o:
         for leaf in o:
