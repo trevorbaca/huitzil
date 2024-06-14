@@ -1843,7 +1843,7 @@ number.1.RH.Staff = {
 number.1.Cello.Music = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5
+    \tuplet 5/3
     {
 
         % [Cello.Music measure 1]
@@ -1914,7 +1914,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16
+    \tuplet 16/9
     {
 
         % [Cello.Music measure 2]
@@ -1929,7 +1929,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5
+    \tuplet 5/3
     {
 
         f,8
@@ -1971,7 +1971,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         af,!16
@@ -1989,7 +1989,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8
+    \tuplet 8/7
     {
 
         % [Cello.Music measure 4]
@@ -1999,7 +1999,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         cs!8
@@ -2035,7 +2035,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         e16
@@ -2053,7 +2053,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8
+    \tuplet 8/7
     {
 
         f,4
@@ -2062,7 +2062,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 6]
@@ -2077,7 +2077,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         cs!8
@@ -2088,7 +2088,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         b,8
@@ -2139,7 +2139,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 11/12
+    \tuplet 12/11
     {
 
         % [Cello.Music measure 8]
@@ -2191,7 +2191,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         % [Cello.Music measure 9]
@@ -2236,7 +2236,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9
+    \tuplet 9/7
     {
 
         % [Cello.Music measure 10]
@@ -2265,7 +2265,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5
+    \tuplet 5/3
     {
 
         % [Cello.Music measure 11]
@@ -2284,7 +2284,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8
+    \tuplet 8/5
     {
 
         \once \override Accidental.color = #blue
@@ -2346,7 +2346,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         % [Cello.Music measure 13]
@@ -2476,7 +2476,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 16]
@@ -2513,7 +2513,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/14
+    \tuplet 14/9
     {
 
         % [Cello.Music measure 17]
@@ -2570,7 +2570,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12
+    \tuplet 12/7
     {
 
         % [Cello.Music measure 18]
@@ -2650,7 +2650,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8
+    \tuplet 8/5
     {
 
         % [Cello.Music measure 20]
@@ -2698,7 +2698,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/10
+    \tuplet 10/7
     {
 
         % [Cello.Music measure 21]
@@ -2782,7 +2782,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         \once \override Accidental.color = #red
@@ -2876,7 +2876,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         % [Cello.Music measure 24]
@@ -2903,7 +2903,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6
+    \tuplet 6/5
     {
 
         \once \override Accidental.color = #red
@@ -2955,7 +2955,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         \once \override Accidental.color = #red
@@ -3058,7 +3058,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 27]
@@ -3162,7 +3162,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 29]
@@ -3192,7 +3192,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 30]
@@ -3282,7 +3282,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         \once \override Accidental.color = #red
@@ -3308,7 +3308,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         % [Cello.Music measure 32]
@@ -3450,7 +3450,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/10
+    \tuplet 10/9
     {
 
         fs!8
@@ -3564,7 +3564,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 38]
@@ -3644,7 +3644,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [Cello.Music measure 40]
@@ -3675,7 +3675,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/14
+    \tuplet 14/9
     {
 
         % [Cello.Music measure 41]
@@ -3710,7 +3710,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         % [Cello.Music measure 42]
@@ -3782,7 +3782,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4
+    \tuplet 4/3
     {
 
         g8
@@ -3823,7 +3823,7 @@ number.1.Cello.Music = {
 
     }
 
-    \times 4/5
+    \tuplet 5/4
     {
 
         e16
@@ -3841,7 +3841,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9
+    \tuplet 9/7
     {
 
         % [Cello.Music measure 45]
@@ -3870,7 +3870,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16
+    \tuplet 16/9
     {
 
         % [Cello.Music measure 46]
@@ -3897,7 +3897,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/10
+    \tuplet 10/7
     {
 
         \once \override Accidental.color = #blue
@@ -3938,7 +3938,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5
+    \tuplet 5/3
     {
 
         % [Cello.Music measure 48]
@@ -4073,7 +4073,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/16
+    \tuplet 16/9
     {
 
         % [Cello.Music measure 51]
@@ -4121,7 +4121,7 @@ number.1.Cello.Music = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5
+    \tuplet 5/3
     {
 
         % [Cello.Music measure 52]

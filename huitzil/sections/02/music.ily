@@ -782,7 +782,7 @@ number.2.RH.Music = {
         d''4
         - \downbow
 
-        \times 2/3
+        \tuplet 3/2
         {
 
               %! +SCORE
@@ -800,7 +800,7 @@ number.2.RH.Music = {
         d''4
         - \downbow
 
-        \times 2/3
+        \tuplet 3/2
         {
 
               %! +SCORE
@@ -865,7 +865,7 @@ number.2.RH.Music = {
 
     {
 
-        \times 2/3
+        \tuplet 3/2
         {
 
             % [RH.Music measure 16]
@@ -880,7 +880,7 @@ number.2.RH.Music = {
 
         }
 
-        \times 2/3
+        \tuplet 3/2
         {
 
             % [RH.Music measure 17]
@@ -895,7 +895,7 @@ number.2.RH.Music = {
 
         }
 
-        \times 2/3
+        \tuplet 3/2
         {
 
             % [RH.Music measure 18]
@@ -946,7 +946,7 @@ number.2.RH.Music = {
 
     {
 
-        \times 4/5
+        \tuplet 5/4
         {
 
             % [RH.Music measure 21]
@@ -967,7 +967,7 @@ number.2.RH.Music = {
 
         }
 
-        \times 4/6
+        \tuplet 6/4
         {
 
             % [RH.Music measure 22]
@@ -991,7 +991,7 @@ number.2.RH.Music = {
 
         }
 
-        \times 4/7
+        \tuplet 7/4
         {
 
             % [RH.Music measure 23]
