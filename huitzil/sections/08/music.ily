@@ -892,7 +892,7 @@ number.8.RH.Music = {
     \glissando
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         g'4
@@ -917,7 +917,7 @@ number.8.RH.Music = {
     _ \baca-mfz-markup
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [RH.Music measure 4]
@@ -960,7 +960,7 @@ number.8.RH.Music = {
     _ \baca-mpz-markup
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         g'4
@@ -985,7 +985,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         e'4
@@ -996,7 +996,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/10
+    \tuplet 10/8
     {
 
         b'8
@@ -1007,7 +1007,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/10
+    \tuplet 10/8
     {
 
         g'8
@@ -1018,7 +1018,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/10
+    \tuplet 10/8
     {
 
         e'8
@@ -1057,7 +1057,7 @@ number.8.RH.Music = {
     \<
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         g'4
@@ -1068,7 +1068,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         e'4
@@ -1142,7 +1142,7 @@ number.8.RH.Music = {
     _ \baca-fz-markup
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         % [RH.Music measure 10]
@@ -1182,7 +1182,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         b'4
@@ -1193,7 +1193,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         % [RH.Music measure 11]
@@ -1205,7 +1205,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         e'4
@@ -1216,7 +1216,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/10
+    \tuplet 10/8
     {
 
         b'8
@@ -1247,7 +1247,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/10
+    \tuplet 10/8
     {
 
         g'8
@@ -1258,7 +1258,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/10
+    \tuplet 10/8
     {
 
         e'8
@@ -1269,7 +1269,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/10
+    \tuplet 10/8
     {
 
         c'8
@@ -1362,7 +1362,7 @@ number.8.RH.Music = {
     \glissando
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         % [RH.Music measure 17]
@@ -1400,7 +1400,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         % [RH.Music measure 18]
@@ -1412,7 +1412,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         g'4
@@ -1423,7 +1423,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/6
+    \tuplet 6/4
     {
 
         e'4
@@ -1434,7 +1434,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/10
+    \tuplet 10/8
     {
 
         % [RH.Music measure 19]
@@ -1465,7 +1465,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/10
+    \tuplet 10/8
     {
 
         g'8
@@ -1476,7 +1476,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/10
+    \tuplet 10/8
     {
 
         e'8
@@ -1487,7 +1487,7 @@ number.8.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 8/10
+    \tuplet 10/8
     {
 
         c'8

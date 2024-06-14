@@ -772,7 +772,7 @@ number.9.RH.Music = {
     \>
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [RH.Music measure 3]
@@ -783,7 +783,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         c'2
@@ -822,7 +822,7 @@ number.9.RH.Music = {
     \>
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [RH.Music measure 5]
@@ -833,7 +833,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         c'4
@@ -843,7 +843,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         c'4
@@ -865,7 +865,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         c'4
@@ -892,7 +892,7 @@ number.9.RH.Music = {
     \>
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [RH.Music measure 7]
@@ -903,7 +903,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         c'2
@@ -942,7 +942,7 @@ number.9.RH.Music = {
     \>
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [RH.Music measure 9]
@@ -953,7 +953,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         c'4
@@ -963,7 +963,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         c'4
@@ -985,7 +985,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         c'4
@@ -1012,7 +1012,7 @@ number.9.RH.Music = {
     \>
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [RH.Music measure 11]
@@ -1023,7 +1023,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         c'2
@@ -1062,7 +1062,7 @@ number.9.RH.Music = {
     \>
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [RH.Music measure 13]
@@ -1073,7 +1073,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         c'4
@@ -1083,7 +1083,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         c'4
@@ -1105,7 +1105,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         c'4
@@ -1142,7 +1142,7 @@ number.9.RH.Music = {
     \<
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         % [RH.Music measure 15]
@@ -1153,7 +1153,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 2/3
+    \tuplet 3/2
     {
 
         d''2
@@ -1186,7 +1186,7 @@ number.9.RH.Music = {
     \<
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         % [RH.Music measure 17]
@@ -1197,7 +1197,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         d''4
@@ -1207,7 +1207,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         d''4
@@ -1217,7 +1217,7 @@ number.9.RH.Music = {
     }
 
     \tweak edge-height #'(0.7 . 0)
-    \times 4/5
+    \tuplet 5/4
     {
 
         d''4
