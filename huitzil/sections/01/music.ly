@@ -11,7 +11,7 @@ spacing-extra-offset = #'(0 . 1)
     <<
 
         {
-            \include "layout.ly"
+            \include "layout.ily"
         }
 
         \context Score = "Score"
