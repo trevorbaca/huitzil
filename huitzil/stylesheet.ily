@@ -1,3 +1,4 @@
+\version "2.25.13"
 #(set-default-paper-size "ledger")
 #(set-global-staff-size 13)
 
@@ -130,6 +131,7 @@
     % prevents LilyPond cyclic chain in pure-Y-offset callbacks warning:
     \consists Staff_collecting_engraver
     \accepts GlobalSkips
+    \defaultchild GlobalSkips
     \accepts GlobalRests
     \accepts PageLayout
 
@@ -237,7 +239,7 @@
     \override TupletNumber.text = #tuplet-number::calc-fraction-text
 
     autoBeaming = ##f
-    proportionalNotationDuration = #(ly:make-moment 1 24)
+    proportionalNotationDuration = \musicLength 1*1/24
     tupletFullLength = ##t
   }
 }
