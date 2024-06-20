@@ -6,14 +6,13 @@
 
 \layout
 {
-    \context
-    {
-        \Staff
-        instrumentName = \markup \hcenter-in #12 \smallCaps Cello
-    }
-
-    ragged-right = ##f
-    %ragged-right = ##t
+  \context
+  {
+    \Staff
+    instrumentName = \markup \hcenter-in #12 \smallCaps Cello
+  }
+  ragged-right = ##f
+  %ragged-right = ##t
 }
 
 clock-time-extra-offset = #'(0 . 4)
