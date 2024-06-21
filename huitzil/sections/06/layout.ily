@@ -280,136 +280,109 @@
         }   %*% PageLayout
 
         \context GlobalSkips = "Breaks"
-        {
+        {   %*% Breaks
 
             % [Breaks measure 1]
-              %! BREAK
             \autoPageBreaksOff
-              %! BREAK
             \baca-lbsd #17 #'(10 17)
-              %! BREAK
             \pageBreak
             s1 * 1/2
 
             % [Breaks measure 2]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 3]
-              %! BREAK
             \noBreak
             s1 * 2/3
 
             % [Breaks measure 4]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 5]
-              %! BREAK
             \noBreak
             s1 * 4/5
 
             % [Breaks measure 6]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 7]
-              %! BREAK
             \noBreak
             s1 * 2/3
 
             % [Breaks measure 8]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 9]
-              %! BREAK
             \noBreak
             s1 * 4/5
 
             % [Breaks measure 10]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 11]
-              %! BREAK
             \noBreak
             s1 * 2/3
 
             % [Breaks measure 12]
-              %! BREAK
             \baca-lbsd #87 #'(10 17)
-              %! BREAK
             \break
             s1 * 1/2
 
             % [Breaks measure 13]
-              %! BREAK
             \noBreak
             s1 * 4/5
 
             % [Breaks measure 14]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 15]
-              %! BREAK
             \noBreak
             s1 * 2/3
 
             % [Breaks measure 16]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 17]
-              %! BREAK
             \noBreak
             s1 * 4/5
 
             % [Breaks measure 18]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 19]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 20]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 21]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 22]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [Breaks measure 23]
-              %! BREAK
             \noBreak
             s1 * 1/2
 
             % [anchor skip]
-              %! BREAK
             \noBreak
               %! ANCHOR_SKIP
             s1 * 1/4
 
-        }
+        }   %*% Breaks
 
     >>
 
