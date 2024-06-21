@@ -91,9 +91,7 @@
     \name GlobalRests
     \type Engraver_group
     \consists Multi_measure_rest_engraver
-
     \override MultiMeasureRest.transparent = ##t
-
     \override MultiMeasureRestText.font-size = 3
     \override MultiMeasureRestText.outside-staff-priority = 0
     \override MultiMeasureRestText.padding = 0
@@ -186,10 +184,6 @@
     \override SpacingSpanner.strict-grace-spacing = ##t
     \override SpacingSpanner.strict-note-spacing = ##t
     \override SpacingSpanner.uniform-stretching = ##t
-    % DISCOVERY: overriding TextScript.X-extent = ##f
-    %      makes LilyPond ignore self-alignment-X tweaks;
-    %      probably should never be done at stylesheet level.
-    % NOTE:    may be best to override NO text script properties.
     \override TextSpanner.to-barline = ##t
     \override TupletBracket.direction = #down
     \override TupletNumber.font-size = 1
