@@ -5202,7 +5202,7 @@ SpacingAnnotations = {
 
 
 page-layout-score = \context Score = "Score"
-<<
+{
 
     \context GlobalContext = "GlobalContext"
     <<
@@ -5221,4 +5221,4 @@ page-layout-score = \context Score = "Score"
 
     >>
 
->>
+}
