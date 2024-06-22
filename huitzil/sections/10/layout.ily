@@ -93,52 +93,42 @@
         {   %*% SpacingCommands
 
             % [SpacingCommands measure 1]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 2]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 3]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 4]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 5]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 6]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 7]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 8]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 9]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 10]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #35 #768
             s1 * 3/2
 
