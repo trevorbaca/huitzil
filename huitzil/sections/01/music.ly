@@ -26,6 +26,9 @@ spacing-extra-offset = #'(0 . 1)
                 \context GlobalSkips = "Skips"
                 { \number.1.Skips }
 
+                \context GlobalSkips = "TimeSignatures"
+                { \number.1.TimeSignatures }
+
             >>
 
             \context MusicContext = "MusicContext"
