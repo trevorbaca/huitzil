@@ -6,7 +6,7 @@ import baca
 
 def make_empty_score():
     tag = baca.helpers.function_name(inspect.currentframe())
-    global_context = baca.score.make_global_context()
+    global_context = baca.score.make_global_context(make_time_signatures_context=True)
     rh_music_voice = abjad.Voice(name="RH.Music", tag=tag)
     rh_music_staff = abjad.Staff(
         [rh_music_voice],
