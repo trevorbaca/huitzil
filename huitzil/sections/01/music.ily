@@ -170,6 +170,8 @@ number.1.Rests = {
 number.1.Skips = {
 
     % [Skips measure 1]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=78
     s1 * 7/8
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
