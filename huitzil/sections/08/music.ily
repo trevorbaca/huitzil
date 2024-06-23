@@ -88,6 +88,8 @@ number.8.Skips = {
     % [Skips measure 1]
       %! RED_START_BAR
     %@% \baca-thick-red-bar-line
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=44
       %! RED_START_BAR
     %@% \tweak break-visibility ##(#t #t #f)
       %! RED_START_BAR
@@ -352,6 +354,8 @@ number.8.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 13]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=44
     s1 * 1/2
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -428,6 +432,8 @@ number.8.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 16]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=66
     s1 * 1/2
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -462,6 +468,8 @@ number.8.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 17]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=44
     s1 * 1/6
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -559,6 +567,8 @@ number.8.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 21]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=44
     s1 * 1/2
       %! CLOCK_TIME
     \bacaStopTextSpanCT
@@ -677,6 +687,8 @@ number.8.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 26]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=88
     s1 * 1/2
       %! CLOCK_TIME
     \bacaStopTextSpanCT
