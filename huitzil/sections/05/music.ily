@@ -76,7 +76,7 @@ number.5.Skips = {
     % [Skips measure 1]
       %! RED_START_BAR
     %@% \baca-thick-red-bar-line
-      %! EXPLICIT_METRONOME_MARK
+      %! LILYPOND_TEMPO_COMMAND
     \tempo 4=44
       %! RED_START_BAR
     %@% \tweak break-visibility ##(#t #t #f)
@@ -342,7 +342,7 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 13]
-      %! EXPLICIT_METRONOME_MARK
+      %! LILYPOND_TEMPO_COMMAND
     \tempo 4=44
     s1 * 1/2
       %! CLOCK_TIME
@@ -420,7 +420,7 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 16]
-      %! EXPLICIT_METRONOME_MARK
+      %! LILYPOND_TEMPO_COMMAND
     \tempo 4=66
     s1 * 1/2
       %! CLOCK_TIME
@@ -456,7 +456,7 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 17]
-      %! EXPLICIT_METRONOME_MARK
+      %! LILYPOND_TEMPO_COMMAND
     \tempo 4=44
     s1 * 1/2
       %! CLOCK_TIME
@@ -576,7 +576,7 @@ number.5.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 22]
-      %! EXPLICIT_METRONOME_MARK
+      %! LILYPOND_TEMPO_COMMAND
     \tempo 4=88
     s1 * 1/2
       %! CLOCK_TIME
