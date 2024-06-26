@@ -17,39 +17,30 @@
             s1 * 1/2
 
             % [Breaks measure 2]
-            \noBreak
             s1 * 1/2
 
             % [Breaks measure 3]
-            \noBreak
             s1 * 1/2
 
             % [Breaks measure 4]
-            \noBreak
             s1 * 1/2
 
             % [Breaks measure 5]
-            \noBreak
             s1 * 1/2
 
             % [Breaks measure 6]
-            \noBreak
             s1 * 1/2
 
             % [Breaks measure 7]
-            \noBreak
             s1 * 1/2
 
             % [Breaks measure 8]
-            \noBreak
             s1 * 1/2
 
             % [Breaks measure 9]
-            \noBreak
             s1 * 1/2
 
             % [Breaks measure 10]
-            \noBreak
             s1 * 3/2
 
         }   %*% Breaks
