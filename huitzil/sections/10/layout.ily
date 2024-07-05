@@ -49,43 +49,43 @@
         {   %*% SpacingCommands
 
             % [SpacingCommands measure 1]
-            \baca-new-strict-spacing-section #1 #32
+            \baca-start-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 2]
-            \baca-new-strict-spacing-section #1 #32
+            \baca-start-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 3]
-            \baca-new-strict-spacing-section #1 #32
+            \baca-start-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 4]
-            \baca-new-strict-spacing-section #1 #32
+            \baca-start-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 5]
-            \baca-new-strict-spacing-section #1 #32
+            \baca-start-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 6]
-            \baca-new-strict-spacing-section #1 #32
+            \baca-start-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 7]
-            \baca-new-strict-spacing-section #1 #32
+            \baca-start-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 8]
-            \baca-new-strict-spacing-section #1 #32
+            \baca-start-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 9]
-            \baca-new-strict-spacing-section #1 #32
+            \baca-start-strict-spacing-section #1 #32
             s1 * 1/2
 
             % [SpacingCommands measure 10]
-            \baca-new-strict-spacing-section #35 #768
+            \baca-start-strict-spacing-section #35 #768
             s1 * 3/2
 
         }   %*% SpacingCommands
