@@ -1,6 +1,6 @@
 % lilypond rh-tablature.ly; pdfcrop rh-tablature.pdf rh-tablature.pdf
 
-\version "2.25.19"
+\version "2.25.22"
 \include "../../markups.ily"
 \include "stylesheet.ily"
 
