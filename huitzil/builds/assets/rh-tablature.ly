@@ -1,6 +1,6 @@
 % lilypond rh-tablature.ly; pdfcrop rh-tablature.pdf rh-tablature.pdf
 
-\version "2.25.22"
+\version "2.25.23"
 \include "../../markups.ily"
 \include "stylesheet.ily"
 
@@ -84,7 +84,7 @@ note-head-extra-offset = #'(-2.5 . 0)
 {
 
     \override Score.SystemStartBar.stencil = ##f
-    \set Score.proportionalNotationDuration = \musicLength 8.
+    \set Score.proportionalNotationDuration = #3/16
     \override Staff.StaffSymbol.line-positions = #'(8.2 8 7.8 -5.8 -6 -6.2)
     c'''1
     _ \tweak staff-padding 4
