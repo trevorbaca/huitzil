@@ -1,6 +1,6 @@
 % Huitzil (2014/19) for cello
 
-\version "2.25.22"
+\version "2.25.23"
 
 \include "stylesheet.ily"
 \include "layout.ily"
