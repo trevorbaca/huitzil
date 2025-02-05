@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "huitzil"
-version = "1.0.0"
+version = "3.21"
 description = "Huitzil (2014/19) for cello"
 authors = [{ name = "Trevor Bača", email = "trevor.baca@gmail.com" }]
 license = { text = "MIT" }
