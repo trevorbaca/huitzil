@@ -4,14 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "huitzil"
-version = "3.21"
+version = "3.22"
 description = "Huitzil (2014/19) for cello"
 authors = [{ name = "Trevor Bača", email = "trevor.baca@gmail.com" }]
 license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.12"
 keywords = ["abjad", "lilypond", "music composition", "music notation"]
-dependencies = ["abjad>=3.21"]
+dependencies = ["abjad>=3.22"]
 
 [project.urls]
 Homepage = "https://github.com/trevorbaca/huitzil"
