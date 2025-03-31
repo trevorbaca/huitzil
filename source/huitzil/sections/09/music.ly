@@ -18,13 +18,19 @@
             <<
 
                 \context GlobalRests = "Rests"
-                { \number.9.Rests }
+                {
+                    \number.9.Rests
+                }
 
                 \context GlobalSkips = "Skips"
-                { \number.9.Skips }
+                {
+                    \number.9.Skips
+                }
 
                 \context GlobalSkips = "TimeSignatures"
-                { \number.9.TimeSignatures }
+                {
+                    \number.9.TimeSignatures
+                }
 
             >>
 
@@ -35,10 +41,14 @@
                 <<
 
                     \context RHStaff = "RH.Staff"
-                    { \number.9.RH.Staff }
+                    {
+                        \number.9.RH.Staff
+                    }
 
                     \context Staff = "Cello.Staff"
-                    { \number.9.Cello.Staff }
+                    {
+                        \number.9.Cello.Staff
+                    }
 
                 >>
 

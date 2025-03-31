@@ -21,13 +21,19 @@ spacing-extra-offset = #'(0 . 1)
             <<
 
                 \context GlobalRests = "Rests"
-                { \number.1.Rests }
+                {
+                    \number.1.Rests
+                }
 
                 \context GlobalSkips = "Skips"
-                { \number.1.Skips }
+                {
+                    \number.1.Skips
+                }
 
                 \context GlobalSkips = "TimeSignatures"
-                { \number.1.TimeSignatures }
+                {
+                    \number.1.TimeSignatures
+                }
 
             >>
 
@@ -38,10 +44,14 @@ spacing-extra-offset = #'(0 . 1)
                 <<
 
                     \context RHStaff = "RH.Staff"
-                    { \number.1.RH.Staff }
+                    {
+                        \number.1.RH.Staff
+                    }
 
                     \context Staff = "Cello.Staff"
-                    { \number.1.Cello.Staff }
+                    {
+                        \number.1.Cello.Staff
+                    }
 
                 >>
 

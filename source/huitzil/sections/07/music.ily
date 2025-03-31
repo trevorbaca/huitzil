@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.7.Rests = {
+number.7.Rests =
+{
 
     % [Rests measure 1]
     R1 * 1/4
@@ -83,7 +84,8 @@ number.7.Rests = {
 }
 
 
-number.7.Skips = {
+number.7.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -686,7 +688,8 @@ number.7.Skips = {
 }
 
 
-number.7.TimeSignatures = {
+number.7.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -883,7 +886,8 @@ number.7.TimeSignatures = {
 }
 
 
-number.7.RH.Music = {
+number.7.RH.Music =
+{
 
     % [RH.Music measure 1]
       %! REAPPLIED_CLEF
@@ -1151,15 +1155,19 @@ number.7.RH.Music = {
 }
 
 
-number.7.RH.Staff = {
+number.7.RH.Staff =
+{
 
     \context Voice = "RH.Music"
-    { \number.7.RH.Music }
+    {
+        \number.7.RH.Music
+    }
 
 }
 
 
-number.7.Cello.Music = {
+number.7.Cello.Music =
+{
 
     {
 
@@ -1320,9 +1328,12 @@ number.7.Cello.Music = {
 }
 
 
-number.7.Cello.Staff = {
+number.7.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.7.Cello.Music }
+    {
+        \number.7.Cello.Music
+    }
 
 }

@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.1.Rests = {
+number.1.Rests =
+{
 
     % [Rests measure 1]
     R1 * 7/8
@@ -167,7 +168,8 @@ number.1.Rests = {
 }
 
 
-number.1.Skips = {
+number.1.Skips =
+{
 
     % [Skips measure 1]
       %! LILYPOND_TEMPO_COMMAND
@@ -1335,7 +1337,8 @@ number.1.Skips = {
 }
 
 
-number.1.TimeSignatures = {
+number.1.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -1716,7 +1719,8 @@ number.1.TimeSignatures = {
 }
 
 
-number.1.RH.Music = {
+number.1.RH.Music =
+{
 
     % [RH.Music measure 1]
       %! EXPLICIT_CLEF
@@ -2010,15 +2014,19 @@ number.1.RH.Music = {
 }
 
 
-number.1.RH.Staff = {
+number.1.RH.Staff =
+{
 
     \context Voice = "RH.Music"
-    { \number.1.RH.Music }
+    {
+        \number.1.RH.Music
+    }
 
 }
 
 
-number.1.Cello.Music = {
+number.1.Cello.Music =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 5/3
@@ -4429,9 +4437,12 @@ number.1.Cello.Music = {
 }
 
 
-number.1.Cello.Staff = {
+number.1.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.1.Cello.Music }
+    {
+        \number.1.Cello.Music
+    }
 
 }

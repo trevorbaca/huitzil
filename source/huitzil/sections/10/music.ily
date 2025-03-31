@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.10.Rests = {
+number.10.Rests =
+{
 
     % [Rests measure 1]
     R1 * 1/2
@@ -35,7 +36,8 @@ number.10.Rests = {
 }
 
 
-number.10.Skips = {
+number.10.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -257,7 +259,8 @@ number.10.Skips = {
 }
 
 
-number.10.TimeSignatures = {
+number.10.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! REAPPLIED_TIME_SIGNATURE_COLOR
@@ -300,7 +303,8 @@ number.10.TimeSignatures = {
 }
 
 
-number.10.RH.Music = {
+number.10.RH.Music =
+{
 
     % [RH.Music measure 1]
     <> \stopTextSpan
@@ -619,15 +623,19 @@ number.10.RH.Music = {
 }
 
 
-number.10.RH.Staff = {
+number.10.RH.Staff =
+{
 
     \context Voice = "RH.Music"
-    { \number.10.RH.Music }
+    {
+        \number.10.RH.Music
+    }
 
 }
 
 
-number.10.Cello.Music = {
+number.10.Cello.Music =
+{
 
     % [Cello.Music measure 1]
       %! REAPPLIED_CLEF
@@ -715,9 +723,12 @@ number.10.Cello.Music = {
 }
 
 
-number.10.Cello.Staff = {
+number.10.Cello.Staff =
+{
 
     \context Voice = "Cello.Music"
-    { \number.10.Cello.Music }
+    {
+        \number.10.Cello.Music
+    }
 
 }
