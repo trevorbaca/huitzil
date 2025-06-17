@@ -2068,7 +2068,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         a,8
@@ -2079,7 +2081,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         d16
@@ -2092,7 +2096,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         cs!16
@@ -2132,7 +2138,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 3]
@@ -2144,7 +2152,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         bf,!16
@@ -2198,14 +2208,18 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         g8.
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 5]
@@ -2295,7 +2309,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 7]
@@ -2313,7 +2329,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         c32
@@ -2347,7 +2365,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \once \override Accidental.color = #blue
@@ -2393,7 +2413,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         f,16
@@ -2410,7 +2432,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         fs,!32
@@ -2495,7 +2519,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 12]
@@ -2509,14 +2535,18 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         e16
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \once \override Accidental.color = #blue
@@ -2578,7 +2608,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 14]
@@ -2634,7 +2666,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 15]
@@ -2782,7 +2816,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 19]
@@ -2818,7 +2854,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \once \override Accidental.color = #red
@@ -2940,7 +2978,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 22]
@@ -3005,7 +3045,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 23]
@@ -3124,7 +3166,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 25]
@@ -3188,7 +3232,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 26]
@@ -3270,7 +3316,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \once \override Accidental.color = #red
@@ -3295,7 +3343,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 28]
@@ -3333,7 +3383,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \once \override Accidental.color = #red
@@ -3404,7 +3456,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \once \override Accidental.color = #red
@@ -3429,7 +3483,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 31]
@@ -3530,7 +3586,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 33]
@@ -3556,7 +3614,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \once \override Accidental.color = #red
@@ -3583,7 +3643,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 34]
@@ -3619,7 +3681,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 35]
@@ -3659,7 +3723,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 36]
@@ -3703,7 +3769,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         ef!16
@@ -3714,7 +3782,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 37]
@@ -3776,7 +3846,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \once \override Accidental.color = #red
@@ -3801,7 +3873,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 39]
@@ -3815,7 +3889,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \once \override Accidental.color = #blue
@@ -3922,7 +3998,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 43]
@@ -3960,7 +4038,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         fs!8
@@ -3983,7 +4063,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 44]
@@ -4100,7 +4182,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 47]
@@ -4114,7 +4198,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         b,16
@@ -4181,7 +4267,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 49]
@@ -4207,7 +4295,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 50]
@@ -4243,7 +4333,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \once \override Accidental.color = #blue
@@ -4364,7 +4456,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 53]
@@ -4391,7 +4485,9 @@ number.1.Cello.Music =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [Cello.Music measure 54]
