@@ -111,7 +111,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
                 voice_number = abjad.get.indicator(source_note, int)
                 abjad.attach(voice_number, pleaf)
         inner_tuplets.append(inner_tuplet)
-    rmakers.hide_trivial(inner_tuplets)
+    rmakers.tweak_trivial_tuplets_stencil_false(inner_tuplets)
     return inner_tuplets
 
 

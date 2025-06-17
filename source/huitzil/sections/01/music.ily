@@ -2068,8 +2068,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2081,8 +2081,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2096,8 +2096,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2138,8 +2138,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2152,8 +2152,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2208,8 +2208,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2217,8 +2217,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2309,8 +2309,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2329,8 +2329,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2365,8 +2365,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2413,8 +2413,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2432,8 +2432,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2519,8 +2519,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2535,8 +2535,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2544,8 +2544,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2608,8 +2608,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2666,8 +2666,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2816,8 +2816,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2854,8 +2854,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2978,8 +2978,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3045,8 +3045,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3166,8 +3166,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3232,8 +3232,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3316,8 +3316,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3343,8 +3343,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3383,8 +3383,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3456,8 +3456,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3483,8 +3483,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3586,8 +3586,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3614,8 +3614,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3643,8 +3643,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3681,8 +3681,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3723,8 +3723,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3769,8 +3769,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3782,8 +3782,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3846,8 +3846,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3873,8 +3873,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3889,8 +3889,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -3998,8 +3998,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -4038,8 +4038,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -4063,8 +4063,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -4182,8 +4182,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -4198,8 +4198,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -4267,8 +4267,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -4295,8 +4295,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -4333,8 +4333,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -4456,8 +4456,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -4485,8 +4485,8 @@ number.1.Cello.Music =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
