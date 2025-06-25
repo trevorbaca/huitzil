@@ -14,7 +14,6 @@ def make_empty_score():
         name="RH.Staff",
         tag=tag,
     )
-    abjad.annotate(rh_music_staff, baca.enums.REMOVE_ALL_EMPTY_STAVES, True)
     cello_music_voice = abjad.Voice(name="Cello.Music", tag=tag)
     cello_music_staff = abjad.Staff([cello_music_voice], name="Cello.Staff", tag=tag)
     cello_staff_group = abjad.StaffGroup(
