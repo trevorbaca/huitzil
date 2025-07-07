@@ -63,8 +63,8 @@ def RH(voice):
     # (9, 12)
     voice.append(
         "{"
-        r" c4 \times 2/3 { c8 r4 } r4"
-        r" c4 \times 2/3 { c8 r4 } r4"
+        r" c4 \tuplet 3/2 { c8 r4 } r4"
+        r" c4 \tuplet 3/2 { c8 r4 } r4"
         r" c4 c8 r8 r4"
         r" c4 c8 r8 r4"
         " }",
@@ -74,9 +74,9 @@ def RH(voice):
     # (16, 18)
     voice.append(
         "{"
-        r" \times 2/3 { c4 c4 c4 }"
-        r" \times 2/3 { c4 c4 c4 }"
-        r" \times 2/3 { c4 c4 c4 }"
+        r" \tuplet 3/2 { c4 c4 c4 }"
+        r" \tuplet 3/2 { c4 c4 c4 }"
+        r" \tuplet 3/2 { c4 c4 c4 }"
         " }",
     )
     # (19, 20)
@@ -84,9 +84,9 @@ def RH(voice):
     # (21, 24)
     voice.append(
         "{"
-        r" \times 4/5 { c8 c8 c8 c8 c8 }"
-        r" \times 4/6 { c8 c8 c8 c8 c8 c8 }"
-        r" \times 4/7 { c8 c8 c8 c8 c8 c8 c8 }"
+        r" \tuplet 5/4 { c8 c8 c8 c8 c8 }"
+        r" \tuplet 6/4 { c8 c8 c8 c8 c8 c8 }"
+        r" \tuplet 7/4 { c8 c8 c8 c8 c8 c8 c8 }"
         " c16 c16 c16 c16 c16 c16 c16 c16"
         " }",
     )
