@@ -100,9 +100,9 @@ def _make_inner_tuplets(note_lists, extra_counts):
         rmakers.rewrite_dots(voice)
         rmakers.rewrite_sustained(voice)
         rmakers.force_diminution(voice)
-        selection = abjad.mutate.eject_contents(voice)
-        assert isinstance(selection, list)
-        inner_tuplet = selection[0]
+        components = abjad.mutate.eject_contents(voice)
+        assert isinstance(components, list)
+        inner_tuplet = components[0]
         plts = baca.select.plts(inner_tuplet)
         for j, plt in enumerate(plts):
             source_note = note_list[j]
