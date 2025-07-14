@@ -71,7 +71,7 @@
                 manifest=None,
                 prototype="baca.Ritardando",
                 synthetic_offset=None,
-                value={"hide": True},
+                value=None,
             ),
             baca.Memento(
                 context="TimeSignatures",
