@@ -69,7 +69,7 @@ def _displace_pitch_classes(music, pc_displacement):
         if register == "high":
             pass
         elif register == "low":
-            source_pitch = note.get_written_pitch()
+            source_pitch = note.written_pitch()
             transposed_pitch = source_pitch.transpose(n=-12)
             note.set_written_pitch(transposed_pitch)
         else:
@@ -81,7 +81,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
     extra_counts = abjad.CyclicTuple(extra_counts)
     inner_tuplets = []
     for i, note_list in enumerate(note_lists):
-        start_duration = sum(_.get_written_duration() for _ in note_list)
+        start_duration = sum(_.written_duration() for _ in note_list)
         extra_count = extra_counts[i]
         extra_duration = extra_count * abjad.Duration(1, 16)
         if 0 < start_duration + extra_duration:
@@ -90,7 +90,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
             target_duration = start_duration
         numerators = []
         for note in note_list:
-            duration = note.get_written_duration()
+            duration = note.written_duration()
             pair = abjad.duration.with_denominator(duration, 128)
             numerators.append(pair[0])
         ratio = tuple(numerators)
@@ -107,7 +107,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
         for j, plt in enumerate(plts):
             source_note = note_list[j]
             for pleaf in plt:
-                pleaf.set_written_pitch(source_note.get_written_pitch())
+                pleaf.set_written_pitch(source_note.written_pitch())
                 voice_number = abjad.get.indicator(source_note, int)
                 abjad.attach(voice_number, pleaf)
         inner_tuplets.append(inner_tuplet)
@@ -171,7 +171,7 @@ def _register_voices(music):
             registration = voice_3_registration
         else:
             raise ValueError(voice_number)
-        pitches = [note.get_written_pitch()]
+        pitches = [note.written_pitch()]
         transposed_pitches = registration(pitches)
         transposed_pitch = transposed_pitches[0]
         note.set_written_pitch(transposed_pitch)
