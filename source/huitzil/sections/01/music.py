@@ -91,7 +91,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
         numerators = []
         for note in note_list:
             duration = note.written_duration()
-            pair = abjad.duration.with_denominator(duration, 128)
+            pair = abjad.duration.pair_with_denominator(duration, 128)
             numerators.append(pair[0])
         ratio = tuple(numerators)
         tuplets = rmakers.tuplet([target_duration], [ratio])
@@ -354,7 +354,7 @@ def make_time_signatures(music):
     measure_durations.append(current_duration)
     time_signatures = []
     for measure_duration in measure_durations:
-        pair = abjad.duration.with_denominator(measure_duration, 4)
+        pair = abjad.duration.pair_with_denominator(measure_duration, 4)
         time_signatures.append(pair)
     return time_signatures
 
