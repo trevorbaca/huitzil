@@ -125,7 +125,8 @@ def _make_note_lists(segment_lists, pc_operators):
                 pitch_class = abjad.NumberedPitchClass(number)
                 for operator in pc_operators:
                     pitch_class = operator(pitch_class)
-                note = abjad.Note(pitch_class, abjad.Duration(1, 4))
+                pitch = abjad.NamedPitch(pitch_class)
+                note = abjad.Note.from_pitch_and_duration(pitch, abjad.Duration(1, 4))
                 note_list.append(note)
             note_lists.append(note_list)
     return note_lists
