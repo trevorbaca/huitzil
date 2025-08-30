@@ -117,6 +117,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
 
 def _make_note_lists(segment_lists, pc_operators):
     note_lists = []
+    duration = abjad.Duration(1, 4)
     for segment_list in segment_lists:
         assert 0 < len(segment_list)
         for segment in segment_list:
@@ -126,7 +127,7 @@ def _make_note_lists(segment_lists, pc_operators):
                 for operator in pc_operators:
                     pitch_class = operator(pitch_class)
                 pitch = abjad.NamedPitch(pitch_class)
-                note = abjad.Note.from_duration_and_pitch(abjad.Duration(1, 4), pitch)
+                note = abjad.Note.from_duration_and_pitch(duration, pitch)
                 note_list.append(note)
             note_lists.append(note_list)
     return note_lists
