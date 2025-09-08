@@ -95,10 +95,10 @@ instruments = {
 
 
 metronome_marks = {
-    "44": abjad.MetronomeMark(abjad.Duration(1, 4), 44),
-    "66": abjad.MetronomeMark(abjad.Duration(1, 4), 66),
-    "78": abjad.MetronomeMark(abjad.Duration(1, 4), 78),
-    "88": abjad.MetronomeMark(abjad.Duration(1, 4), 88),
+    "44": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 44),
+    "66": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 66),
+    "78": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 78),
+    "88": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 88),
 }
 
 

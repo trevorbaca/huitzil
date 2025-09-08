@@ -83,15 +83,15 @@ def _make_inner_tuplets(note_lists, extra_counts):
     for i, note_list in enumerate(note_lists):
         start_duration = sum(_.written_duration() for _ in note_list)
         extra_count = extra_counts[i]
-        extra_duration = extra_count * abjad.Duration(1, 16)
-        if 0 < start_duration + extra_duration:
+        extra_duration = extra_count * abjad.ValueDuration(1, 16)
+        if abjad.ValueDuration(0) < start_duration + extra_duration:
             target_duration = start_duration + extra_duration
         else:
             target_duration = start_duration
         numerators = []
         for note in note_list:
             duration = note.written_duration()
-            pair = abjad.duration.pair_with_denominator(duration, 128)
+            pair = abjad.duration.pair_with_denominator(duration.as_fraction(), 128)
             numerators.append(pair[0])
         ratio = tuple(numerators)
         tuplets = rmakers.tuplet([target_duration], [ratio])
@@ -117,7 +117,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
 
 def _make_note_lists(segment_lists, pc_operators):
     note_lists = []
-    duration = abjad.Duration(1, 4)
+    duration = abjad.ValueDuration(1, 4)
     for segment_list in segment_lists:
         assert 0 < len(segment_list)
         for segment in segment_list:
@@ -184,11 +184,11 @@ def _set_written_durations(note_lists):
         for note in note_list:
             voice_number = abjad.get.indicator(note, int)
             if voice_number == 1:
-                duration = abjad.Duration(1, 8)
+                duration = abjad.ValueDuration(1, 8)
             elif voice_number == 2:
-                duration = abjad.Duration(1, 16)
+                duration = abjad.ValueDuration(1, 16)
             elif voice_number == 3:
-                duration = abjad.Duration(1, 4)
+                duration = abjad.ValueDuration(1, 4)
             else:
                 raise ValueError(voice_number)
             note.set_written_duration(duration)
@@ -342,13 +342,13 @@ def make_all_music():
 
 def make_time_signatures(music):
     measure_durations = []
-    current_duration = abjad.Duration(0)
-    ideal_measure_duration = abjad.Duration(4, 4)
+    current_duration = abjad.ValueDuration(0)
+    ideal_measure_duration = abjad.ValueDuration(4, 4)
     for component in music:
         component_duration = abjad.get.duration(component)
         candidate_duration = current_duration + component_duration
         if ideal_measure_duration < candidate_duration:
-            if 0 < current_duration:
+            if abjad.ValueDuration(0) < current_duration:
                 measure_durations.append(current_duration)
             current_duration = component_duration
         else:
@@ -356,7 +356,7 @@ def make_time_signatures(music):
     measure_durations.append(current_duration)
     time_signatures = []
     for measure_duration in measure_durations:
-        pair = abjad.duration.pair_with_denominator(measure_duration, 4)
+        pair = abjad.duration.pair_with_denominator(measure_duration.as_fraction(), 4)
         time_signatures.append(pair)
     return time_signatures
 
