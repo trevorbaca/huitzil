@@ -98,7 +98,7 @@ def _make_inner_tuplets(note_lists, extra_counts):
         time_signatures = [abjad.TimeSignature(target_duration.pair())]
         voice = rmakers.wrap_in_time_signature_staff(tuplets, time_signatures)
         rmakers.respell_tuplets_without_dots(tuplets)
-        rmakers.force_diminution(tuplets)
+        rmakers.toggle_augmented_tuplets(tuplets)
         rmakers.rewrite_sustained_tuplets(tuplets)
         components = abjad.mutate.eject_contents(voice)
         assert isinstance(components, list)
